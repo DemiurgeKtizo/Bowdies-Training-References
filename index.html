@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -25,394 +26,395 @@
     --vodka: #2A3A4A;
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+- { margin: 0; padding: 0; box-sizing: border-box; }
 
-  body {
-    background: var(--surface);
-    color: var(--text-primary);
-    font-family: 'Cormorant Garamond', serif;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+body {
+background: var(–surface);
+color: var(–text-primary);
+font-family: ‘Cormorant Garamond’, serif;
+min-height: 100vh;
+overflow-x: hidden;
+}
 
-  /* Grain overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 999;
-    opacity: 0.4;
-  }
+/* Grain overlay */
+body::before {
+content: ‘’;
+position: fixed;
+inset: 0;
+background-image: url(“data:image/svg+xml,%3Csvg viewBox=‘0 0 256 256’ xmlns=‘http://www.w3.org/2000/svg’%3E%3Cfilter id=‘noise’%3E%3CfeTurbulence type=‘fractalNoise’ baseFrequency=‘0.9’ numOctaves=‘4’ stitchTiles=‘stitch’/%3E%3C/filter%3E%3Crect width=‘100%25’ height=‘100%25’ filter=‘url(%23noise)’ opacity=‘0.04’/%3E%3C/svg%3E”);
+pointer-events: none;
+z-index: 999;
+opacity: 0.4;
+}
 
-  /* Header */
-  .header {
-    text-align: center;
-    padding: 60px 40px 40px;
-    position: relative;
-    border-bottom: 1px solid var(--border);
-  }
+/* Header */
+.header {
+text-align: center;
+padding: 60px 40px 40px;
+position: relative;
+border-bottom: 1px solid var(–border);
+}
 
-  .header::after {
-    content: '';
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 20px auto 0;
-  }
+.header::after {
+content: ‘’;
+display: block;
+width: 120px;
+height: 1px;
+background: linear-gradient(90deg, transparent, var(–gold), transparent);
+margin: 20px auto 0;
+}
 
-  .header-eyebrow {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 16px;
-    opacity: 0.9;
-  }
+.header-eyebrow {
+font-family: ‘Josefin Sans’, sans-serif;
+font-size: 10px;
+letter-spacing: 0.35em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 16px;
+opacity: 0.9;
+}
 
-  .header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(32px, 5vw, 52px);
-    font-weight: 700;
-    color: var(--text-primary);
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-  }
+.header h1 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(32px, 5vw, 52px);
+font-weight: 700;
+color: var(–text-primary);
+line-height: 1.1;
+letter-spacing: -0.01em;
+}
 
-  .header h1 em {
-    font-style: italic;
-    color: var(--gold);
-  }
+.header h1 em {
+font-style: italic;
+color: var(–gold);
+}
 
-  .header-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 15px;
-    font-style: italic;
-    color: var(--text-muted);
-    margin-top: 10px;
-    letter-spacing: 0.05em;
-  }
+.header-sub {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 15px;
+font-style: italic;
+color: var(–text-muted);
+margin-top: 10px;
+letter-spacing: 0.05em;
+}
 
-  /* Filter bar */
-  .filter-bar {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 28px 40px;
-    border-bottom: 1px solid var(--border);
-    background: var(--surface);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(8px);
-  }
+/* Filter bar */
+.filter-bar {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 8px;
+padding: 28px 40px;
+border-bottom: 1px solid var(–border);
+background: var(–surface);
+position: sticky;
+top: 0;
+z-index: 100;
+backdrop-filter: blur(8px);
+}
 
-  .filter-btn {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 7px 18px;
-    border: 1px solid var(--border);
-    background: transparent;
-    color: var(--text-muted);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border-radius: 2px;
-  }
+.filter-btn {
+font-family: ‘Josefin Sans’, sans-serif;
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+padding: 7px 18px;
+border: 1px solid var(–border);
+background: transparent;
+color: var(–text-muted);
+cursor: pointer;
+transition: all 0.2s ease;
+border-radius: 2px;
+}
 
-  .filter-btn:hover {
-    border-color: var(--gold);
-    color: var(--gold);
-  }
+.filter-btn:hover {
+border-color: var(–gold);
+color: var(–gold);
+}
 
-  .filter-btn.active {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: var(--charcoal);
-    font-weight: 600;
-  }
+.filter-btn.active {
+background: var(–gold);
+border-color: var(–gold);
+color: var(–charcoal);
+font-weight: 600;
+}
 
-  /* Search */
-  .search-wrap {
-    padding: 20px 40px;
-    max-width: 400px;
-    margin: 0 auto;
-    background: var(--surface);
-  }
+/* Search */
+.search-wrap {
+padding: 20px 40px;
+max-width: 400px;
+margin: 0 auto;
+background: var(–surface);
+}
 
-  .search-input {
-    width: 100%;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    color: var(--text-primary);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    padding: 10px 16px;
-    outline: none;
-    border-radius: 2px;
-    transition: border-color 0.2s;
-  }
+.search-input {
+width: 100%;
+background: var(–surface-2);
+border: 1px solid var(–border);
+color: var(–text-primary);
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 16px;
+padding: 10px 16px;
+outline: none;
+border-radius: 2px;
+transition: border-color 0.2s;
+}
 
-  .search-input::placeholder { color: var(--text-dim); }
-  .search-input:focus { border-color: var(--gold-dim); }
+.search-input::placeholder { color: var(–text-dim); }
+.search-input:focus { border-color: var(–gold-dim); }
 
-  /* Grid */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    margin: 0;
-    border-top: 1px solid var(--border);
-  }
+/* Grid */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+gap: 1px;
+background: var(–border);
+margin: 0;
+border-top: 1px solid var(–border);
+}
 
-  /* Card */
-  .card {
-    background: var(--surface);
-    padding: 32px 28px;
-    cursor: pointer;
-    transition: background 0.2s ease;
-    position: relative;
-    overflow: hidden;
-  }
+/* Card */
+.card {
+background: var(–surface);
+padding: 32px 28px;
+cursor: pointer;
+transition: background 0.2s ease;
+position: relative;
+overflow: hidden;
+}
 
-  .card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
+.card::before {
+content: ‘’;
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 2px;
+background: linear-gradient(90deg, transparent, var(–gold-dim), transparent);
+opacity: 0;
+transition: opacity 0.2s;
+}
 
-  .card:hover { background: var(--surface-2); }
-  .card:hover::before { opacity: 1; }
+.card:hover { background: var(–surface-2); }
+.card:hover::before { opacity: 1; }
 
-  .card.expanded { background: var(--surface-2); }
-  .card.expanded::before { opacity: 1; }
-  .card.hidden { display: none; }
+.card.expanded { background: var(–surface-2); }
+.card.expanded::before { opacity: 1; }
+.card.hidden { display: none; }
 
-  .card-category {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+.card-category {
+font-family: ‘Josefin Sans’, sans-serif;
+font-size: 9px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
 
-  .card-category::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
+.card-category::after {
+content: ‘’;
+flex: 1;
+height: 1px;
+background: var(–border);
+}
 
-  .cat-whiskey { color: #C87941; }
-  .cat-gin { color: #72B89A; }
-  .cat-tequila { color: #D4A843; }
-  .cat-vodka { color: #7BA8C4; }
+.cat-whiskey { color: #C87941; }
+.cat-gin { color: #72B89A; }
+.cat-tequila { color: #D4A843; }
+.cat-vodka { color: #7BA8C4; }
 
-  .card-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--text-primary);
-    line-height: 1.2;
-    margin-bottom: 6px;
-    transition: color 0.2s;
-  }
+.card-name {
+font-family: ‘Playfair Display’, serif;
+font-size: 22px;
+font-weight: 600;
+color: var(–text-primary);
+line-height: 1.2;
+margin-bottom: 6px;
+transition: color 0.2s;
+}
 
-  .card:hover .card-name, .card.expanded .card-name { color: var(--gold-light); }
+.card:hover .card-name, .card.expanded .card-name { color: var(–gold-light); }
 
-  .card-glass {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 13px;
-    font-style: italic;
-    color: var(--text-dim);
-    margin-bottom: 16px;
-  }
+.card-glass {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 13px;
+font-style: italic;
+color: var(–text-dim);
+margin-bottom: 16px;
+}
 
-  /* Ingredients preview */
-  .ingredients-preview {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
+/* Ingredients preview */
+.ingredients-preview {
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+}
 
-  .ingredient-tag {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    background: var(--surface-3);
-    padding: 3px 8px;
-    border-radius: 1px;
-    border: 1px solid rgba(255,255,255,0.04);
-  }
+.ingredient-tag {
+font-family: ‘Josefin Sans’, sans-serif;
+font-size: 9px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(–text-dim);
+background: var(–surface-3);
+padding: 3px 8px;
+border-radius: 1px;
+border: 1px solid rgba(255,255,255,0.04);
+}
 
-  .expand-hint {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold-dim);
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    transition: color 0.2s;
-  }
+.expand-hint {
+font-family: ‘Josefin Sans’, sans-serif;
+font-size: 9px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–gold-dim);
+margin-top: 16px;
+display: flex;
+align-items: center;
+gap: 6px;
+transition: color 0.2s;
+}
 
-  .expand-hint::after {
-    content: '▾';
-    font-size: 12px;
-    transition: transform 0.25s ease;
-  }
+.expand-hint::after {
+content: ‘▾’;
+font-size: 12px;
+transition: transform 0.25s ease;
+}
 
-  .card.expanded .expand-hint::after { transform: rotate(180deg); }
-  .card:hover .expand-hint { color: var(--gold); }
+.card.expanded .expand-hint::after { transform: rotate(180deg); }
+.card:hover .expand-hint { color: var(–gold); }
 
-  /* Expanded content */
-  .recipe-detail {
-    display: none;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    animation: fadeIn 0.2s ease;
-  }
+/* Expanded content */
+.recipe-detail {
+display: none;
+margin-top: 20px;
+padding-top: 20px;
+border-top: 1px solid var(–border);
+animation: fadeIn 0.2s ease;
+}
 
-  .card.expanded .recipe-detail { display: block; }
+.card.expanded .recipe-detail { display: block; }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(4px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(4px); }
+to { opacity: 1; transform: translateY(0); }
+}
 
-  .recipe-section-label {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 12px;
-  }
+.recipe-section-label {
+font-family: ‘Josefin Sans’, sans-serif;
+font-size: 9px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 12px;
+}
 
-  .ingredient-list {
-    list-style: none;
-    margin-bottom: 24px;
-  }
+.ingredient-list {
+list-style: none;
+margin-bottom: 24px;
+}
 
-  .ingredient-list li {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    color: var(--text-primary);
-    padding: 5px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    display: flex;
-    gap: 10px;
-    line-height: 1.3;
-  }
+.ingredient-list li {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 16px;
+color: var(–text-primary);
+padding: 5px 0;
+border-bottom: 1px solid rgba(255,255,255,0.04);
+display: flex;
+gap: 10px;
+line-height: 1.3;
+}
 
-  .ingredient-list li .amt {
-    color: var(--gold);
-    font-weight: 500;
-    min-width: 50px;
-    font-size: 14px;
-    padding-top: 1px;
-  }
+.ingredient-list li .amt {
+color: var(–gold);
+font-weight: 500;
+min-width: 50px;
+font-size: 14px;
+padding-top: 1px;
+}
 
-  .step-list {
-    list-style: none;
-    counter-reset: steps;
-  }
+.step-list {
+list-style: none;
+counter-reset: steps;
+}
 
-  .step-list li {
-    counter-increment: steps;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 15px;
-    color: var(--text-primary);
-    padding: 8px 0 8px 32px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    position: relative;
-    line-height: 1.5;
-  }
+.step-list li {
+counter-increment: steps;
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 15px;
+color: var(–text-primary);
+padding: 8px 0 8px 32px;
+border-bottom: 1px solid rgba(255,255,255,0.04);
+position: relative;
+line-height: 1.5;
+}
 
-  .step-list li:last-child { border-bottom: none; }
+.step-list li:last-child { border-bottom: none; }
 
-  .step-list li::before {
-    content: counter(steps);
-    position: absolute;
-    left: 0;
-    top: 9px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 9px;
-    color: var(--gold);
-    background: rgba(201,168,76,0.1);
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    letter-spacing: 0;
-  }
+.step-list li::before {
+content: counter(steps);
+position: absolute;
+left: 0;
+top: 9px;
+font-family: ‘Josefin Sans’, sans-serif;
+font-size: 9px;
+color: var(–gold);
+background: rgba(201,168,76,0.1);
+width: 20px;
+height: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+letter-spacing: 0;
+}
 
-  .garnish-line {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 14px;
-    color: var(--gold-dim);
-    margin-top: 16px;
-    padding-top: 14px;
-    border-top: 1px solid var(--border);
-  }
+.garnish-line {
+font-family: ‘Cormorant Garamond’, serif;
+font-style: italic;
+font-size: 14px;
+color: var(–gold-dim);
+margin-top: 16px;
+padding-top: 14px;
+border-top: 1px solid var(–border);
+}
 
-  .garnish-line span { color: var(--gold); }
+.garnish-line span { color: var(–gold); }
 
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding: 40px;
-    border-top: 1px solid var(--border);
-    margin-top: 40px;
-  }
+/* Footer */
+.footer {
+text-align: center;
+padding: 40px;
+border-top: 1px solid var(–border);
+margin-top: 40px;
+}
 
-  .footer p {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
+.footer p {
+font-family: ‘Josefin Sans’, sans-serif;
+font-size: 10px;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(–text-dim);
+}
 
-  .divider {
-    width: 60px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
-    margin: 12px auto;
-  }
+.divider {
+width: 60px;
+height: 1px;
+background: linear-gradient(90deg, transparent, var(–gold-dim), transparent);
+margin: 12px auto;
+}
 
-  .no-results {
-    text-align: center;
-    padding: 60px;
-    grid-column: 1 / -1;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    font-style: italic;
-    color: var(--text-dim);
-    display: none;
-  }
+.no-results {
+text-align: center;
+padding: 60px;
+grid-column: 1 / -1;
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 20px;
+font-style: italic;
+color: var(–text-dim);
+display: none;
+}
 </style>
+
 </head>
 <body>
 
@@ -431,16 +433,17 @@
 </nav>
 
 <div class="search-wrap">
-  <input class="search-input" type="text" placeholder="Search cocktails or spirits…" id="searchInput">
+  <input class="search-input" type="text" placeholder="Search cocktails or ingredients…" id="searchInput">
 </div>
 
 <div class="grid" id="grid">
 
   <!-- WHISKEY -->
+
   <div class="card" data-category="whiskey" data-name="Bowdie's Old Fashioned">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">Bowdie's Old Fashioned</div>
-    <div class="card-glass">Small Rox Glass &nbsp;·&nbsp; Muddle + Stir</div>
+    <div class="card-glass">Small Rocks Glass &nbsp;·&nbsp; Muddle + Stir</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Buffalo Trace</span>
       <span class="ingredient-tag">Rum-infused Cherries</span>
@@ -459,7 +462,7 @@
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Muddle orange slice, sugar, cherries, and bitters in Small Rox Glass</li>
+        <li>Muddle orange slice, sugar, cherries, and bitters in Small Rocks Glass</li>
         <li>Add 2 oz Buffalo Trace</li>
         <li>Add Large Cube and stir</li>
       </ol>
@@ -470,7 +473,7 @@
   <div class="card" data-category="whiskey" data-name="The Manhattan">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">The Manhattan</div>
-    <div class="card-glass">Large Rox Glass &nbsp;·&nbsp; Stir</div>
+    <div class="card-glass">Large Rocks Glass &nbsp;·&nbsp; Stir</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Maker's Mark PB</span>
       <span class="ingredient-tag">Contratto Vermouth</span>
@@ -488,7 +491,7 @@
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Combine all ingredients in Large Rox Glass</li>
+        <li>Combine all ingredients in Large Rocks Glass</li>
         <li>Add ice and stir</li>
       </ol>
       <div class="garnish-line">Garnish: <span>Flamed Orange Peel</span></div>
@@ -498,7 +501,7 @@
   <div class="card" data-category="whiskey" data-name="Vieux Carré">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">Vieux Carré</div>
-    <div class="card-glass">Small Rox Glass &nbsp;·&nbsp; Build</div>
+    <div class="card-glass">Small Rocks Glass &nbsp;·&nbsp; Build</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Sazerac Rye</span>
       <span class="ingredient-tag">Pierre Ferrand</span>
@@ -512,12 +515,13 @@
         <li><span class="amt">2 oz</span> Sazerac Rye (100 Proof)</li>
         <li><span class="amt">1 oz</span> Pierre Ferrand Cognac</li>
         <li><span class="amt">½ oz</span> Contratto</li>
+        <li><span class="amt">1 tbsp</span> Dom Bénédictine</li>
         <li><span class="amt">3 dash</span> Angostura Bitters</li>
         <li><span class="amt">3 dash</span> Peychaud's Bitters</li>
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Add all ingredients to Small Rox Glass</li>
+        <li>Add all ingredients to Small Rocks Glass</li>
         <li>Add Large Cube</li>
       </ol>
       <div class="garnish-line">Garnish: <span>Skewer of Rum-infused Cherries</span></div>
@@ -527,7 +531,7 @@
   <div class="card" data-category="whiskey" data-name="Sazerac">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">Sazerac</div>
-    <div class="card-glass">Small Rox Glass &nbsp;·&nbsp; Mixing Glass + Strain</div>
+    <div class="card-glass">Small Rocks Glass &nbsp;·&nbsp; Mixing Glass + Strain</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Sazerac Rye</span>
       <span class="ingredient-tag">Peychaud's</span>
@@ -545,11 +549,11 @@
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Add ice to Small Rox Glass immediately — set aside</li>
+        <li>Add ice to Small Rocks Glass immediately — set aside</li>
         <li>In mixing glass: add sugar, Peychaud's, rye, and Absente</li>
         <li>Add ice and stir until cold</li>
-        <li>Empty ice from Rox Glass</li>
-        <li>Strain mixing glass contents into Rox Glass</li>
+        <li>Empty ice from Rocks Glass</li>
+        <li>Strain mixing glass contents into Rocks Glass</li>
       </ol>
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
@@ -589,7 +593,7 @@
   <div class="card" data-category="whiskey" data-name="Espresso Old Fashioned">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">Espresso Old Fashioned</div>
-    <div class="card-glass">Large Rox Glass &nbsp;·&nbsp; Shaker</div>
+    <div class="card-glass">Large Rocks Glass &nbsp;·&nbsp; Shaker</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Buffalo Trace</span>
       <span class="ingredient-tag">Bourbon Cream</span>
@@ -611,13 +615,14 @@
       <ol class="step-list">
         <li>Combine all ingredients in shaker</li>
         <li>Add ice and shake</li>
-        <li>Pour into Large Rox Glass</li>
+        <li>Pour into Large Rocks Glass</li>
       </ol>
       <div class="garnish-line">Garnish: <span>Espresso Beans</span></div>
     </div>
   </div>
 
   <!-- GIN -->
+
   <div class="card" data-category="gin" data-name="Vesper">
     <div class="card-category cat-gin">Gin &amp; More</div>
     <div class="card-name">Vesper</div>
@@ -707,7 +712,7 @@
   <div class="card" data-category="gin" data-name="Cucumber Gimlet">
     <div class="card-category cat-gin">Gin</div>
     <div class="card-name">Cucumber Gimlet</div>
-    <div class="card-glass">Large Rox Glass &nbsp;·&nbsp; Muddle + Build</div>
+    <div class="card-glass">Large Rocks Glass &nbsp;·&nbsp; Muddle + Build</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Hendrick's Gin</span>
       <span class="ingredient-tag">Cucumber</span>
@@ -726,7 +731,7 @@
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Muddle cucumber, lime juice, and ginger syrup in Large Rox Glass</li>
+        <li>Muddle cucumber, lime juice, and ginger syrup in Large Rocks Glass</li>
         <li>Add 2 oz Hendrick's Gin</li>
         <li>Add ice and top with soda</li>
       </ol>
@@ -766,7 +771,7 @@
   <div class="card" data-category="gin" data-name="Bee's Knees">
     <div class="card-category cat-gin">Gin</div>
     <div class="card-name">Bee's Knees</div>
-    <div class="card-glass">Small Rox Glass &nbsp;·&nbsp; Build</div>
+    <div class="card-glass">Small Rocks Glass &nbsp;·&nbsp; Build</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Empress Indigo Gin</span>
       <span class="ingredient-tag">Lemon Juice</span>
@@ -782,17 +787,18 @@
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Combine all in Small Rox Glass over ice</li>
+        <li>Combine all in Small Rocks Glass over ice</li>
       </ol>
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
   </div>
 
   <!-- TEQUILA -->
+
   <div class="card" data-category="tequila" data-name="Paloma">
     <div class="card-category cat-tequila">Tequila</div>
     <div class="card-name">Paloma</div>
-    <div class="card-glass">Small Rox Glass &nbsp;·&nbsp; Build</div>
+    <div class="card-glass">Small Rocks Glass &nbsp;·&nbsp; Build</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Reposado Tequila</span>
       <span class="ingredient-tag">Grapefruit</span>
@@ -808,7 +814,7 @@
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Combine all in Small Rox Glass over ice</li>
+        <li>Combine all in Small Rocks Glass over ice</li>
       </ol>
       <div class="garnish-line">Garnish: <span>Lime Peel</span></div>
     </div>
@@ -817,7 +823,7 @@
   <div class="card" data-category="tequila" data-name="Pablo Sour">
     <div class="card-category cat-tequila">Tequila</div>
     <div class="card-name">Pablo Sour</div>
-    <div class="card-glass">Small Rox Glass &nbsp;·&nbsp; Shaker + Pour (Egg White)</div>
+    <div class="card-glass">Small Rocks Glass &nbsp;·&nbsp; Shaker + Pour (Egg White)</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Reposado Tequila</span>
       <span class="ingredient-tag">Egg White</span>
@@ -835,10 +841,10 @@
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Add ice to Small Rox Glass immediately — set aside</li>
+        <li>Add ice to Small Rocks Glass immediately — set aside</li>
         <li>In shaker: add tequila, lemon, vanilla syrup, and egg white</li>
         <li>Add coil and shake (dry shake recommended)</li>
-        <li>Pour shaker contents into the iced Rox Glass</li>
+        <li>Pour shaker contents into the iced Rocks Glass</li>
       </ol>
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
@@ -876,6 +882,7 @@
   </div>
 
   <!-- VODKA -->
+
   <div class="card" data-category="vodka" data-name="Espresso Martini">
     <div class="card-category cat-vodka">Vodka</div>
     <div class="card-name">Espresso Martini</div>
@@ -910,7 +917,7 @@
   <div class="card" data-category="vodka" data-name="The Happy Wife">
     <div class="card-category cat-vodka">Vodka</div>
     <div class="card-name">The Happy Wife</div>
-    <div class="card-glass">Small Rox Glass &nbsp;·&nbsp; Stir</div>
+    <div class="card-glass">Small Rocks Glass &nbsp;·&nbsp; Stir</div>
     <div class="ingredients-preview">
       <span class="ingredient-tag">Tito's</span>
       <span class="ingredient-tag">Orange Juice</span>
@@ -926,7 +933,7 @@
       </ul>
       <div class="recipe-section-label">Method</div>
       <ol class="step-list">
-        <li>Combine all in Small Rox Glass with ice</li>
+        <li>Combine all in Small Rocks Glass with ice</li>
         <li>Stir</li>
       </ol>
       <div class="garnish-line">Garnish: <span>Brûléed Orange</span></div>
@@ -992,6 +999,70 @@
     </div>
   </div>
 
+  <!-- ADDITIONAL VODKA -->
+
+  <div class="card" data-category="vodka" data-name="Inhibited">
+    <div class="card-category cat-vodka">Vodka</div>
+    <div class="card-name">Inhibited</div>
+    <div class="card-glass">Martini Glass &nbsp;·&nbsp; Shaker + Chocolate Drizzle</div>
+    <div class="ingredients-preview">
+      <span class="ingredient-tag">Tito's</span>
+      <span class="ingredient-tag">Kahlúa</span>
+      <span class="ingredient-tag">Bailey's</span>
+      <span class="ingredient-tag">Chocolate Liqueur</span>
+      <span class="ingredient-tag">Espresso</span>
+    </div>
+    <div class="expand-hint">Build</div>
+    <div class="recipe-detail">
+      <div class="recipe-section-label">Ingredients</div>
+      <ul class="ingredient-list">
+        <li><span class="amt">1½ oz</span> Tito's Handmade Vodka</li>
+        <li><span class="amt">½ oz</span> Kahlúa</li>
+        <li><span class="amt">½ oz</span> Bailey's Irish Cream</li>
+        <li><span class="amt">½ oz</span> Chocolate Liqueur</li>
+        <li><span class="amt">1 oz</span> Espresso</li>
+      </ul>
+      <div class="recipe-section-label">Method</div>
+      <ol class="step-list">
+        <li>Combine all in shaker with ice</li>
+        <li>Shake well</li>
+        <li>Drizzle Chocolate Syrup inside Martini Glass</li>
+        <li>Pour shaker contents into glass</li>
+      </ol>
+      <div class="garnish-line">Garnish: <span>Chocolate Shavings</span></div>
+    </div>
+  </div>
+
+  <!-- ADDITIONAL WHISKEY -->
+
+  <div class="card" data-category="whiskey" data-name="Not a Paper Plane">
+    <div class="card-category cat-whiskey">Whiskey</div>
+    <div class="card-name">Not a Paper Plane</div>
+    <div class="card-glass">Large Rocks Glass &nbsp;·&nbsp; Stir</div>
+    <div class="ingredients-preview">
+      <span class="ingredient-tag">Bulleit Bourbon</span>
+      <span class="ingredient-tag">Nonino Amaro</span>
+      <span class="ingredient-tag">Aperol</span>
+      <span class="ingredient-tag">Angostura</span>
+    </div>
+    <div class="expand-hint">Build</div>
+    <div class="recipe-detail">
+      <div class="recipe-section-label">Ingredients</div>
+      <ul class="ingredient-list">
+        <li><span class="amt">2 oz</span> Bulleit Bourbon</li>
+        <li><span class="amt">½ oz</span> Nonino Quintessential Amaro</li>
+        <li><span class="amt">½ oz</span> Aperol Apertivo</li>
+        <li><span class="amt">4 dash</span> Angostura Bitters</li>
+      </ul>
+      <div class="recipe-section-label">Method</div>
+      <ol class="step-list">
+        <li>Combine all in Large Rocks Glass</li>
+        <li>Add Large Cube and stir</li>
+      </ol>
+      <div class="garnish-line">Garnish: <span>Orange Peel</span></div>
+    </div>
+  </div>
+
   <div class="no-results" id="noResults">No cocktails found.</div>
 </div>
 
@@ -1048,5 +1119,6 @@
     applyFilters();
   });
 </script>
+
 </body>
 </html>
