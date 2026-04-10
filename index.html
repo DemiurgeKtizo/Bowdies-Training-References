@@ -24,9 +24,9 @@
     --tequila: #4A3A1A;
     --vodka: #2A3A4A;
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   body {
     background: var(--surface);
     color: var(--text-primary);
@@ -34,7 +34,7 @@
     min-height: 100vh;
     overflow-x: hidden;
   }
-
+ 
   /* Grain overlay */
   body::before {
     content: '';
@@ -45,7 +45,7 @@
     z-index: 999;
     opacity: 0.4;
   }
-
+ 
   /* Header */
   .header {
     text-align: center;
@@ -53,7 +53,7 @@
     position: relative;
     border-bottom: 1px solid var(--border);
   }
-
+ 
   .header::after {
     content: '';
     display: block;
@@ -62,7 +62,7 @@
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
     margin: 20px auto 0;
   }
-
+ 
   .header-eyebrow {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10px;
@@ -72,7 +72,7 @@
     margin-bottom: 16px;
     opacity: 0.9;
   }
-
+ 
   .header h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(32px, 5vw, 52px);
@@ -81,12 +81,12 @@
     line-height: 1.1;
     letter-spacing: -0.01em;
   }
-
+ 
   .header h1 em {
     font-style: italic;
     color: var(--gold);
   }
-
+ 
   .header-sub {
     font-family: 'Cormorant Garamond', serif;
     font-size: 15px;
@@ -95,7 +95,7 @@
     margin-top: 10px;
     letter-spacing: 0.05em;
   }
-
+ 
   /* Filter bar */
   .filter-bar {
     display: flex;
@@ -110,7 +110,7 @@
     z-index: 100;
     backdrop-filter: blur(8px);
   }
-
+ 
   .filter-btn {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10px;
@@ -124,19 +124,19 @@
     transition: all 0.2s ease;
     border-radius: 2px;
   }
-
+ 
   .filter-btn:hover {
     border-color: var(--gold);
     color: var(--gold);
   }
-
+ 
   .filter-btn.active {
     background: var(--gold);
     border-color: var(--gold);
     color: var(--charcoal);
     font-weight: 600;
   }
-
+ 
   /* Search */
   .search-wrap {
     padding: 20px 40px;
@@ -144,7 +144,7 @@
     margin: 0 auto;
     background: var(--surface);
   }
-
+ 
   .search-input {
     width: 100%;
     background: var(--surface-2);
@@ -157,10 +157,10 @@
     border-radius: 2px;
     transition: border-color 0.2s;
   }
-
+ 
   .search-input::placeholder { color: var(--text-dim); }
   .search-input:focus { border-color: var(--gold-dim); }
-
+ 
   /* Grid */
   .grid {
     display: grid;
@@ -170,7 +170,7 @@
     margin: 0;
     border-top: 1px solid var(--border);
   }
-
+ 
   /* Card */
   .card {
     background: var(--surface);
@@ -180,7 +180,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .card::before {
     content: '';
     position: absolute;
@@ -190,14 +190,14 @@
     opacity: 0;
     transition: opacity 0.2s;
   }
-
+ 
   .card:hover { background: var(--surface-2); }
   .card:hover::before { opacity: 1; }
-
+ 
   .card.expanded { background: var(--surface-2); }
   .card.expanded::before { opacity: 1; }
   .card.hidden { display: none; }
-
+ 
   .card-category {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 9px;
@@ -208,20 +208,20 @@
     align-items: center;
     gap: 8px;
   }
-
+ 
   .card-category::after {
     content: '';
     flex: 1;
     height: 1px;
     background: var(--border);
   }
-
+ 
   .cat-whiskey { color: #C87941; }
   .cat-gin { color: #72B89A; }
   .cat-tequila { color: #D4A843; }
   .cat-vodka { color: #7BA8C4; }
   .cat-offmenu { color: #A07BC4; }
-
+ 
   .card-name {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
@@ -231,9 +231,9 @@
     margin-bottom: 6px;
     transition: color 0.2s;
   }
-
+ 
   .card:hover .card-name, .card.expanded .card-name { color: var(--gold-light); }
-
+ 
   .card-glass {
     font-family: 'Cormorant Garamond', serif;
     font-size: 13px;
@@ -241,14 +241,14 @@
     color: var(--text-dim);
     margin-bottom: 16px;
   }
-
+ 
   /* Ingredients preview */
   .ingredients-preview {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
   }
-
+ 
   .ingredient-tag {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 9px;
@@ -260,7 +260,7 @@
     border-radius: 1px;
     border: 1px solid rgba(255,255,255,0.04);
   }
-
+ 
   .expand-hint {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 9px;
@@ -273,16 +273,16 @@
     gap: 6px;
     transition: color 0.2s;
   }
-
+ 
   .expand-hint::after {
     content: '▾';
     font-size: 12px;
     transition: transform 0.25s ease;
   }
-
+ 
   .card.expanded .expand-hint::after { transform: rotate(180deg); }
   .card:hover .expand-hint { color: var(--gold); }
-
+ 
   /* Expanded content */
   .recipe-detail {
     display: none;
@@ -291,14 +291,14 @@
     border-top: 1px solid var(--border);
     animation: fadeIn 0.2s ease;
   }
-
+ 
   .card.expanded .recipe-detail { display: block; }
-
+ 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(4px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   .recipe-section-label {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 9px;
@@ -307,12 +307,12 @@
     color: var(--gold);
     margin-bottom: 12px;
   }
-
+ 
   .ingredient-list {
     list-style: none;
     margin-bottom: 24px;
   }
-
+ 
   .ingredient-list li {
     font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
@@ -323,7 +323,7 @@
     gap: 10px;
     line-height: 1.3;
   }
-
+ 
   .ingredient-list li .amt {
     color: var(--gold);
     font-weight: 500;
@@ -331,12 +331,12 @@
     font-size: 14px;
     padding-top: 1px;
   }
-
+ 
   .step-list {
     list-style: none;
     counter-reset: steps;
   }
-
+ 
   .step-list li {
     counter-increment: steps;
     font-family: 'Cormorant Garamond', serif;
@@ -347,9 +347,9 @@
     position: relative;
     line-height: 1.5;
   }
-
+ 
   .step-list li:last-child { border-bottom: none; }
-
+ 
   .step-list li::before {
     content: counter(steps);
     position: absolute;
@@ -367,7 +367,7 @@
     border-radius: 50%;
     letter-spacing: 0;
   }
-
+ 
   .garnish-line {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -377,9 +377,9 @@
     padding-top: 14px;
     border-top: 1px solid var(--border);
   }
-
+ 
   .garnish-line span { color: var(--gold); }
-
+ 
   /* Footer */
   .footer {
     text-align: center;
@@ -387,7 +387,7 @@
     border-top: 1px solid var(--border);
     margin-top: 40px;
   }
-
+ 
   .footer p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10px;
@@ -395,14 +395,14 @@
     text-transform: uppercase;
     color: var(--text-dim);
   }
-
+ 
   .divider {
     width: 60px;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
     margin: 12px auto;
   }
-
+ 
   .no-results {
     text-align: center;
     padding: 60px;
@@ -416,13 +416,13 @@
 </style>
 </head>
 <body>
-
+ 
 <header class="header">
   <div class="header-eyebrow">East Grand Rapids, Michigan — 2026</div>
   <h1>Bowdie's <em>Chophouse</em></h1>
   <p class="header-sub">Cocktail Program — Bar Training Reference</p>
 </header>
-
+ 
 <nav class="filter-bar">
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="whiskey">Whiskey</button>
@@ -431,13 +431,13 @@
   <button class="filter-btn" data-filter="vodka">Vodka</button>
   <button class="filter-btn" data-filter="offmenu">Off Menu</button>
 </nav>
-
+ 
 <div class="search-wrap">
   <input class="search-input" type="text" placeholder="Search cocktails or ingredients…" id="searchInput">
 </div>
-
+ 
 <div class="grid" id="grid">
-
+ 
   <!-- WHISKEY -->
   <div class="card" data-category="whiskey" data-name="Bowdie's Old Fashioned">
     <div class="card-category cat-whiskey">Whiskey</div>
@@ -468,7 +468,7 @@
       <div class="garnish-line">Garnish: <span>Brûléed Orange</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="whiskey" data-name="The Manhattan">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">The Manhattan</div>
@@ -496,7 +496,7 @@
       <div class="garnish-line">Garnish: <span>Flamed Orange Peel</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="whiskey" data-name="Vieux Carré">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">Vieux Carré</div>
@@ -527,7 +527,7 @@
       <div class="garnish-line">Garnish: <span>Skewer of Rum-infused Cherries</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="whiskey" data-name="Sazerac">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">Sazerac</div>
@@ -558,7 +558,7 @@
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="whiskey" data-name="The BG">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">The BG</div>
@@ -589,7 +589,7 @@
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="whiskey" data-name="Espresso Old Fashioned">
     <div class="card-category cat-whiskey">Whiskey</div>
     <div class="card-name">Espresso Old Fashioned</div>
@@ -620,7 +620,7 @@
       <div class="garnish-line">Garnish: <span>Espresso Beans</span></div>
     </div>
   </div>
-
+ 
   <!-- GIN -->
   <div class="card" data-category="gin" data-name="Vesper">
     <div class="card-category cat-gin">Gin &amp; More</div>
@@ -648,7 +648,7 @@
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="gin" data-name="Corpse Reviver">
     <div class="card-category cat-gin">Gin</div>
     <div class="card-name">Corpse Reviver</div>
@@ -678,7 +678,7 @@
       </ol>
     </div>
   </div>
-
+ 
   <div class="card" data-category="gin" data-name="Aviation">
     <div class="card-category cat-gin">Gin</div>
     <div class="card-name">Aviation</div>
@@ -707,7 +707,7 @@
       <div class="garnish-line">Garnish: <span>Lemon Twist</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="gin" data-name="Cucumber Gimlet">
     <div class="card-category cat-gin">Gin</div>
     <div class="card-name">Cucumber Gimlet</div>
@@ -736,7 +736,7 @@
       </ol>
     </div>
   </div>
-
+ 
   <div class="card" data-category="gin" data-name="French 75">
     <div class="card-category cat-gin">Gin</div>
     <div class="card-name">French 75</div>
@@ -766,7 +766,7 @@
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="gin" data-name="Bee's Knees">
     <div class="card-category cat-gin">Gin</div>
     <div class="card-name">Bee's Knees</div>
@@ -791,7 +791,7 @@
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
   </div>
-
+ 
   <!-- TEQUILA -->
   <div class="card" data-category="tequila" data-name="Paloma">
     <div class="card-category cat-tequila">Tequila</div>
@@ -817,7 +817,7 @@
       <div class="garnish-line">Garnish: <span>Lime Peel</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="tequila" data-name="Pablo Sour">
     <div class="card-category cat-tequila">Tequila</div>
     <div class="card-name">Pablo Sour</div>
@@ -847,7 +847,7 @@
       <div class="garnish-line">Garnish: <span>Lemon Peel</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="tequila" data-name="Margarita">
     <div class="card-category cat-tequila">Tequila</div>
     <div class="card-name">Margarita</div>
@@ -878,7 +878,7 @@
       <div class="garnish-line">Garnish: <span>Salt Rim, Lime</span></div>
     </div>
   </div>
-
+ 
   <!-- VODKA -->
   <div class="card" data-category="vodka" data-name="Espresso Martini">
     <div class="card-category cat-vodka">Vodka</div>
@@ -910,7 +910,7 @@
       <div class="garnish-line">Garnish: <span>3 Espresso Beans</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="vodka" data-name="The Happy Wife">
     <div class="card-category cat-vodka">Vodka</div>
     <div class="card-name">The Happy Wife</div>
@@ -936,7 +936,7 @@
       <div class="garnish-line">Garnish: <span>Brûléed Orange</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="vodka" data-name="Transfusion">
     <div class="card-category cat-vodka">Vodka</div>
     <div class="card-name">Transfusion</div>
@@ -964,7 +964,7 @@
       <div class="garnish-line">Garnish: <span>Lime Peel</span></div>
     </div>
   </div>
-
+ 
   <div class="card" data-category="vodka" data-name="Head Fake">
     <div class="card-category cat-vodka">Vodka</div>
     <div class="card-name">Head Fake</div>
@@ -995,7 +995,7 @@
       <div class="garnish-line">Garnish: <span>Sugar Rim, Lemon Twist</span></div>
     </div>
   </div>
-
+ 
   <!-- ADDITIONAL WHISKEY -->
   <div class="card" data-category="offmenu gin" data-name="Negroni">
     <div class="card-category cat-offmenu">Off Menu</div>
@@ -1023,7 +1023,7 @@
       <div class="garnish-line">Garnish: <span>Orange Peel</span></div>
     </div>
   </div>
-
+ 
   <!-- ADDITIONAL VODKA -->
   <div class="card" data-category="offmenu vodka" data-name="Inhibited">
     <div class="card-category cat-offmenu">Off Menu</div>
@@ -1056,7 +1056,7 @@
       <div class="garnish-line">Garnish: <span>Chocolate Shavings</span></div>
     </div>
   </div>
-
+ 
   <!-- ADDITIONAL WHISKEY -->
   <div class="card" data-category="offmenu whiskey" data-name="Not a Paper Plane">
     <div class="card-category cat-offmenu">Off Menu</div>
@@ -1085,16 +1085,16 @@
       <div class="garnish-line">Garnish: <span>Orange Peel</span></div>
     </div>
   </div>
-
-  <div class="no-results" id="noResults">No cocktails found.</div>
+ 
+  <div class="no-results" id="noResults">No cocktails found — try a different filter.</div>
 </div>
-
+ 
 <footer class="footer">
   <div class="divider"></div>
   <p>Bowdie's Chophouse &nbsp;·&nbsp; Bar Training Reference &nbsp;·&nbsp; 2026</p>
   <p style="margin-top:6px; font-size:9px;">For internal use only</p>
 </footer>
-
+ 
 <script>
   // Expand/collapse
   document.querySelectorAll('.card').forEach(card => {
@@ -1104,13 +1104,13 @@
       if (!wasExpanded) card.classList.add('expanded');
     });
   });
-
+ 
   // Filter
   const filterBtns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.card');
   let activeFilter = 'all';
   let searchTerm = '';
-
+ 
   function applyFilters() {
     let visible = 0;
     cards.forEach(card => {
@@ -1127,7 +1127,7 @@
     });
     document.getElementById('noResults').style.display = visible === 0 ? 'block' : 'none';
   }
-
+ 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
@@ -1136,7 +1136,7 @@
       applyFilters();
     });
   });
-
+ 
   document.getElementById('searchInput').addEventListener('input', e => {
     searchTerm = e.target.value.toLowerCase().trim();
     applyFilters();
