@@ -107,6 +107,8 @@
     background: var(--charcoal);
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 200;
   }
  
@@ -141,12 +143,12 @@
  
   /* ── STICKY NAV WRAPPER (search + filters) ── */
   .sticky-nav {
-    position: sticky;
-    top: 53px;
-    z-index: 100;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
   }
+ 
+  /* Push content below fixed header + tabs + nav */
+  .header { padding-bottom: 32px; }
  
   .global-search-wrap {
     padding: 16px 40px 0;
@@ -499,7 +501,7 @@
 <body>
  
 <header class="header">
-  <div class="header-eyebrow">East Grand Rapids, Michigan — 2026</div>
+  <div class="header-eyebrow">East Grand Rapids, Michigan</div>
   <h1>Bowdie's <em>Chophouse</em></h1>
   <p class="header-sub">Staff Training Reference</p>
 </header>
@@ -2629,9 +2631,11 @@
   </div><!-- /grid-wine -->
 </div><!-- /panel-wine -->
  
+</div><!-- /page-content -->
+ 
 <footer class="footer">
   <div class="divider"></div>
-  <p>Bowdie's Chophouse &nbsp;·&nbsp; Staff Training Reference &nbsp;·&nbsp; 2026</p>
+  <p>Bowdie's Chophouse &nbsp;·&nbsp; Staff Training Reference</p>
   <p style="margin-top:6px; font-size:9px;">For internal use only</p>
 </footer>
  
@@ -2720,5 +2724,6 @@
     });
   });
 </script>
+ 
 </body>
 </html>
