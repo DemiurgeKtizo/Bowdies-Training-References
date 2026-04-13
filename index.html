@@ -273,12 +273,20 @@
     color: #3a3a3a;
     border-color: #2e2e2e;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
-  .home-btn-inactive:hover, .home-btn-inactive:active {
-    color: #3a3a3a;
-    border-color: #2e2e2e;
-    background: transparent;
+  .home-btn-inactive:hover,
+  .home-btn-inactive:active {
+    color: #3a3a3a !important;
+    border-color: #2e2e2e !important;
+    background: transparent !important;
+  }
+
+  .home-btn-inactive.home-btn-active {
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+    background: rgba(201,168,76,0.05) !important;
   }
 
   .home-btn:hover, .home-btn:active {
@@ -3694,7 +3702,7 @@
   // ── HOME SCREEN ──
   const SEARCH_TIPS = {
     cocktails: '*tip — avoid filler words  (good searches: "campari cocktail", "stirred strained martini")',
-    wine: '*tip — avoid filler words  (good searches: "light apple", "earthy spanish red", "plum medium bodied soft tannins")'
+    wine: '*tip — avoid filler words  (good searches: "light apple", "french rose", "plum medium bodied soft tannins")'
   };
 
   function switchGuide(guide) {
@@ -3796,14 +3804,18 @@
   document.getElementById('top-bar-return').addEventListener('click', returnHome);
 
 
-  // Prime & Plate toast — stays visible until another button is pressed
+  // Prime & Plate toast — toggle on repeated tap, dismiss on tap elsewhere
+  const primeBtn = document.getElementById('home-prime');
   document.getElementById('home-prime').addEventListener('click', (e) => {
     e.stopPropagation();
-    document.getElementById('home-toast').classList.add('visible');
+    const toast = document.getElementById('home-toast');
+    const isVisible = toast.classList.toggle('visible');
+    primeBtn.classList.toggle('home-btn-active', isVisible);
   });
 
   document.addEventListener('click', () => {
     document.getElementById('home-toast').classList.remove('visible');
+    primeBtn.classList.remove('home-btn-active');
   });
 
   // Align home logo script the same way as header logo
