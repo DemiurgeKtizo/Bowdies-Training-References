@@ -119,6 +119,37 @@
   }
  
 
+  /* ── TOAST POPUP ── */
+  #home-toast {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+    white-space: normal;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding: 14px 24px;
+    white-space: nowrap;
+    z-index: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  #home-toast.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    white-space: normal;
+  }
+
   /* ── HOME SCREEN ── */
   #home-screen {
     position: fixed;
@@ -239,6 +270,18 @@
     cursor: pointer;
     transition: all 0.25s ease;
     width: 100%;
+  }
+
+  .home-btn-inactive {
+    color: #3a3a3a;
+    border-color: #2e2e2e;
+    cursor: pointer;
+  }
+
+  .home-btn-inactive:hover, .home-btn-inactive:active {
+    color: #3a3a3a;
+    border-color: #2e2e2e;
+    background: transparent;
   }
 
   .home-btn:hover, .home-btn:active {
@@ -771,6 +814,7 @@
   <div class="home-select" id="home-select">
     <button class="home-btn" id="home-spirits">Spirits</button>
     <button class="home-btn" id="home-wine">Wine</button>
+    <button class="home-btn home-btn-inactive" id="home-prime">Prime &amp; Plate</button>
   </div>
 
   <!-- After selection: section name + return -->
@@ -3391,6 +3435,7 @@
 </footer>
  
 </div>
+<div id="home-toast">Kitchen intelligence gathering in progress — recipes &amp; allergens coming soon.</div>
 <script>
   // ── GUIDE TAB SWITCHING ──
   const guideTabs = document.querySelectorAll('.guide-tab');
@@ -3652,7 +3697,7 @@
   // ── HOME SCREEN ──
   const SEARCH_TIPS = {
     cocktails: '*tip — avoid filler words  (good searches: "campari cocktail", "stirred strained martini")',
-    wine: '*tip — avoid filler words  (good searches: "light apple", "earthy spanish red", "plum medium bodied soft tannins")'
+    wine: '*tip — avoid filler words  (good searches: "light apple", "french rose", "plum medium bodied soft tannins")'
   };
 
   function switchGuide(guide) {
@@ -3752,6 +3797,17 @@
   document.getElementById('home-wine').addEventListener('click', () => selectSection('wine'));
   document.getElementById('home-return').addEventListener('click', returnHome);
   document.getElementById('top-bar-return').addEventListener('click', returnHome);
+
+
+  // Prime & Plate toast — stays visible until another button is pressed
+  document.getElementById('home-prime').addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.getElementById('home-toast').classList.add('visible');
+  });
+
+  document.addEventListener('click', () => {
+    document.getElementById('home-toast').classList.remove('visible');
+  });
 
   // Align home logo script the same way as header logo
   function alignHomeScript() {
