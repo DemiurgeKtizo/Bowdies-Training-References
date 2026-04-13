@@ -3427,6 +3427,20 @@
   }
 
   alignLogo();
+
+  // Auto-switch to tab based on URL hash (e.g. #wine or #spirits)
+  const hash = window.location.hash.replace('#', '');
+  if (hash === 'wine' || hash === 'spirits') {
+    const target = hash === 'wine' ? 'wine' : 'cocktails';
+    document.querySelectorAll('.guide-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.guide-panel').forEach(p => p.classList.remove('active'));
+    document.querySelector('[data-guide="' + target + '"]').classList.add('active');
+    document.getElementById('panel-' + target).classList.add('active');
+    document.getElementById('filters-cocktails').style.display = target === 'cocktails' ? 'flex' : 'none';
+    document.getElementById('filters-wine').style.display = target === 'wine' ? 'flex' : 'none';
+    activeGuide = target;
+    searchInput.placeholder = target === 'wine' ? 'Search wines, varietals, or tasting notes…' : 'Search cocktails, spirits, or ingredients…';
+  }
   window.addEventListener('resize', alignLogo);
 
   // ── WINE PRICES ──
