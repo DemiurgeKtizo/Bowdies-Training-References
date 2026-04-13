@@ -854,7 +854,7 @@
       <div class="card-category cat-gin">Gin</div>
       <div class="card-name">French 75</div>
       <div class="card-sub">Champagne Flute &nbsp;·&nbsp; Shaker + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Sparkling</span><span class="tag">Bubbly</span><span class="tag">Lemon</span><span class="tag">Prosecco</span><span class="tag">Light</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Bubbly</span><span class="tag">Lemon</span><span class="tag">Prosecco</span><span class="tag">Light</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Ingredients</div>
@@ -1174,7 +1174,7 @@
       <div class="card-category cat-offmenu">Off Menu</div>
       <div class="card-name">Lemon Lavender Gin Martini</div>
       <div class="card-sub">Martini Glass &nbsp;·&nbsp; Shaker + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Lavender</span><span class="tag">Lemon</span><span class="tag">Honey</span><span class="tag">Sparkling</span><span class="tag">Martini</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Lavender</span><span class="tag">Lemon</span><span class="tag">Honey</span><span class="tag">Martini</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Ingredients</div>
@@ -1212,7 +1212,7 @@
       <div class="card-category cat-bubbles">Bubbles</div>
       <div class="card-name">G.D. Vajra Moscato d'Asti</div>
       <div class="card-sub">Moscato &nbsp;·&nbsp; Piedmont, Italy</div>
-      <div class="tag-row"><span class="tag">Sparkling</span><span class="tag">Sweet</span><span class="tag">Light Body</span><span class="tag">Low Tannin</span></div>
+      <div class="tag-row"><span class="tag">Sweet</span><span class="tag">Light Body</span><span class="tag">Low Tannin</span></div>
       <div class="expand-hint">Tasting Notes</div>
       <div class="card-detail">
         <div class="section-label">Vintage</div>
@@ -1230,7 +1230,7 @@
       <div class="card-category cat-bubbles">Bubbles</div>
       <div class="card-name">Il Colle Prosecco Superiore</div>
       <div class="card-sub">Glera &nbsp;·&nbsp; Veneto, Italy</div>
-      <div class="tag-row"><span class="tag">Sparkling</span><span class="tag">Dry</span><span class="tag">Light Body</span></div>
+      <div class="tag-row"><span class="tag">Dry</span><span class="tag">Light Body</span></div>
       <div class="expand-hint">Tasting Notes</div>
       <div class="card-detail">
         <div class="section-label">Vintage</div>
@@ -1248,7 +1248,7 @@
       <div class="card-category cat-bubbles">Bubbles</div>
       <div class="card-name">Raventós Cava de NIT Rosé Brut</div>
       <div class="card-sub">Blend &nbsp;·&nbsp; Catalonia, Spain</div>
-      <div class="tag-row"><span class="tag">Sparkling</span><span class="tag">Dry</span><span class="tag">Light Body</span><span class="tag">Rosé</span><span class="tag">Elegant</span></div>
+      <div class="tag-row"><span class="tag">Dry</span><span class="tag">Light Body</span><span class="tag">Rosé</span><span class="tag">Elegant</span></div>
       <div class="expand-hint">Tasting Notes</div>
       <div class="card-detail">
         <div class="section-label">Vintage</div>
@@ -3188,6 +3188,45 @@
   });
  
   // ── FILTERS ──
+  // Synonym expansion — searching one term also searches its equivalent
+  const SYNONYMS = {
+    'french': 'france',
+    'france': 'french',
+    'italian': 'italy',
+    'italy': 'italian',
+    'spanish': 'spain',
+    'spain': 'spanish',
+    'american': 'california',
+    'california': 'american',
+    'burgundy': 'bourgogne',
+    'bourgogne': 'burgundy',
+    'champagne': 'france',
+    'bordeaux': 'france',
+    'tuscan': 'tuscany',
+    'tuscany': 'tuscan',
+    'rhone': 'rhône',
+    'rhône': 'rhone',
+    'cocoa': 'chocolate',
+    'chocolate': 'cocoa',
+    'cab': 'cabernet',
+    'cabernet': 'cab',
+    'sauv': 'sauvignon',
+    'sauvignon': 'sauv',
+    'chard': 'chardonnay',
+    'chardonnay': 'chard',
+  };
+
+  function expandSynonyms(tokens) {
+    const expanded = [];
+    tokens.forEach(token => {
+      expanded.push(token);
+      const syn = SYNONYMS[token.value];
+      if (syn) expanded.push({ type: 'word', value: syn });
+    });
+    return expanded;
+  }
+
+
   function applyFilters() {
     const cards = document.querySelectorAll('#grid-' + activeGuide + ' .card');
     const noResults = document.getElementById('no-' + activeGuide);
@@ -3196,8 +3235,29 @@
     const cardTags = (card) =>
       Array.from(card.querySelectorAll('.tag')).map(el => el.textContent.trim().toLowerCase());
 
-    const wordBoundary = (text, word) =>
+    const wordBoundary = (text, word) => {
+      // Match each word in the card text against the search input:
+      // - Card words of 7+ letters: search input must share first 5 letters
+      // - Card words of 5-6 letters: search input must share first 4 letters
+      // - Card words of 4 or fewer letters: exact match required
+      // Find any word in text that starts with the right prefix of the search word
+      const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      // Extract all words from text and check each
+      const textWords = text.match(/\b[a-zÀ-ÿ']+\b/gi) || [];
+      return textWords.some(tw => {
+        const tl = tw.length;
+        if (tl >= 7) return tw.toLowerCase().startsWith(word.slice(0, 5));
+        if (tl >= 5) return tw.toLowerCase().startsWith(word.slice(0, 4));
+        return tw.toLowerCase() === word;
+      });
+    };
+
+    // Synonym matches always require exact word boundary — no prefix relaxation
+    const exactWordBoundary = (text, word) =>
       new RegExp('\\b' + word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(text);
+
+    // Expand synonyms — each word token also checks its synonym
+    const tokens = expandSynonyms(searchTerm);
 
     let visible = 0;
     cards.forEach(card => {
@@ -3205,22 +3265,25 @@
       const matchesFilter = filter === 'all' || cat.split(' ').includes(filter);
       if (!matchesFilter) { card.classList.add('hidden'); return; }
 
-      if (!searchTerm.length) {
+      if (!tokens.length) {
         card.classList.remove('hidden');
         visible++;
         return;
       }
 
       const tags = cardTags(card);
-      const notesEl = card.querySelector('.detail-value.notes');
-      const subEl = card.querySelector('.card-sub');
-      const text = [(card.dataset.name || ''), notesEl ? notesEl.textContent : '', subEl ? subEl.textContent : ''].join(' ').toLowerCase();
+      const detailEl = card.querySelector('.card-detail');
+      const text = (card.dataset.name || '').toLowerCase() + ' ' + (detailEl ? detailEl.textContent : card.textContent).toLowerCase();
 
-      // Each token checked by its own type — ALL must pass
+      // Group tokens by original search word — a word OR its synonym must match
+      // expandSynonyms pushes synonym immediately after original, so evaluate pairs
       const matches = searchTerm.every(token => {
         if (token.type === 'tag') {
           return tags.includes(token.value);
         } else {
+          const syn = SYNONYMS[token.value];
+          // If a synonym exists, only match via exact synonym — don't prefix-expand the abbreviation
+          if (syn) return exactWordBoundary(text, token.value) || exactWordBoundary(text, syn);
           return wordBoundary(text, token.value);
         }
       });
@@ -3233,16 +3296,17 @@
       }
     });
 
-    // Zero results: retry with all tokens as word boundary
+    // Zero results with tag tokens: retry as plain word search with synonyms
     if (visible === 0 && searchTerm.some(t => t.type === 'tag')) {
       cards.forEach(card => {
         const cat = card.dataset.category || '';
-        const matchesFilter = filter === 'all' || cat.split(' ').includes(filter);
-        if (!matchesFilter) return;
-        const notesEl = card.querySelector('.detail-value.notes');
-      const subEl = card.querySelector('.card-sub');
-      const text = [(card.dataset.name || ''), notesEl ? notesEl.textContent : '', subEl ? subEl.textContent : ''].join(' ').toLowerCase();
-        const matches = searchTerm.every(t => wordBoundary(text, t.value));
+        if (filter !== 'all' && !cat.split(' ').includes(filter)) return;
+        const detailEl = card.querySelector('.card-detail');
+        const text = (card.dataset.name || '').toLowerCase() + ' ' + (detailEl ? detailEl.textContent : card.textContent).toLowerCase();
+        const matches = searchTerm.every(t => {
+          const syn = SYNONYMS[t.value];
+          return wordBoundary(text, t.value) || (syn && exactWordBoundary(text, syn));
+        });
         if (matches) {
           card.classList.remove('hidden');
           visible++;
@@ -3280,15 +3344,18 @@
 
   // Check if a query segment matches a tag using:
   // full first word + first letter of second word (if multi-word tag)
+  // Tags that need 5-letter prefix match to avoid false positives
+  const LONG_PREFIX_TAGS = new Set(['champagne']);
+
   function matchesTag(query, tag) {
     const qWords = query.trim().split(/\s+/);
     const tWords = tag.split(/\s+/);
     if (qWords.length === 1) {
-      // Single-word query only matches single-word tags (first 3 letters)
       if (tWords.length !== 1) return false;
-      return tWords[0].startsWith(qWords[0].slice(0, 3));
+      const prefixLen = LONG_PREFIX_TAGS.has(tWords[0]) ? 5 : 3;
+      return tWords[0].startsWith(qWords[0].slice(0, prefixLen));
     }
-    // Multi-word query: first 3 letters of word 1 match, first letter of word 2 match
+    // Multi-word query: first 3 letters of word 1, first letter of word 2
     if (tWords.length < 2) return false;
     return tWords[0].startsWith(qWords[0].slice(0, 3)) && tWords[1].startsWith(qWords[1][0]);
   }
