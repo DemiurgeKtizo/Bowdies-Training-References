@@ -433,8 +433,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 14px 40px 18px;
+    padding: 14px 0 18px;
     background: var(--surface);
+    max-width: 400px;
+    margin: 0 auto;
   }
  
   .filter-btn {
@@ -477,7 +479,7 @@
     font-size: 11px;
     color: var(--text-dim);
     text-align: center;
-    margin-top: 6px;
+    padding: 6px 40px 12px;
     letter-spacing: 0.02em;
     opacity: 0.8;
   }
@@ -856,7 +858,6 @@
 <div class="sticky-nav">
   <div class="global-search-wrap">
     <input class="search-input" type="text" placeholder="Search cocktails, spirits, or ingredients…" id="search-active">
-    <p class="search-tip" id="search-tip-text">*tip — avoid filler words &nbsp;(good searches: "campari cocktail", "stirred strained martini")</p>
   </div>
   <div id="filters-cocktails" class="filter-bar">
     <button class="filter-btn active" data-filter="all">All</button>
@@ -876,6 +877,7 @@
     <button class="filter-btn" data-filter="old">Old World</button>
     <button class="filter-btn" data-filter="blends">Blends</button>
   </div>
+  <p class="search-tip" id="search-tip-text">*tip — avoid filler words &nbsp;(good searches: "campari cocktail", "stirred strained martini")</p>
 </div>
  
 <!-- ════════════════════════════════════════
@@ -894,6 +896,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Old Fashioned</span><span class="tag">Sweet</span><span class="tag">Spirit Forward</span><span class="tag">Orange</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">The house take on a classic — Buffalo Trace muddled with rum-soaked cherries, orange, and bitters over a large cube. Familiar enough to be a safe recommendation, distinct enough to be memorable.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Buffalo Trace brings vanilla and caramel; the rum-infused cherries add a subtle sweetness that sets this apart from a standard Old Fashioned. The brûléed orange garnish adds a faint smokiness on the nose. Lead with this for guests who want something spirit-forward but approachable.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Buffalo Trace</li>
@@ -919,6 +926,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Manhattan</span><span class="tag">Sweet</span><span class="tag">Spirit Forward</span><span class="tag">Stirred</span><span class="tag">Vermouth</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Maker's Mark private barrel stirred with Contratto vermouth and vanilla syrup — rich, smooth, and built for guests who know what they want.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The vanilla syrup rounds out what would otherwise be a drier Manhattan, making it more accessible without sacrificing structure. Contratto is a quality Italian vermouth — worth mentioning if a guest asks. This is the move for someone who orders whiskey neat but wants a cocktail.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Maker's Mark (private barrel)</li>
@@ -942,6 +954,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Rye</span><span class="tag">Cognac</span><span class="tag">Spirit Forward</span><span class="tag">Stirred</span><span class="tag">Bitters</span><span class="tag">New Orleans</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">A New Orleans classic split between Sazerac rye and Pierre Ferrand cognac, tied together with Bénédictine and two bitters. Complex, layered, and meant for the guest who wants to be impressed.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">One of the most historically significant cocktails on the list — born at the Hotel Monteleone in New Orleans. The split base gives it both the spice of rye and the richness of cognac, with Bénédictine adding herbal depth. If a guest asks what's interesting, this is your answer.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Sazerac Rye (100 Proof)</li>
@@ -968,6 +985,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Rye</span><span class="tag">Spirit Forward</span><span class="tag">Stirred</span><span class="tag">Bitters</span><span class="tag">Classic</span><span class="tag">New Orleans</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">The original American cocktail. Sazerac rye, Peychaud's, and an absinthe-rinsed glass — nothing unnecessary, nothing missing.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The absinthe rinse is the detail that defines it — just enough anise on the nose to set the stage without dominating the rye. Peychaud's bitters are lighter and more floral than Angostura, giving the Sazerac its distinctive pink hue and subtle cherry note. For the guest who takes their whiskey seriously.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Sazerac Rye</li>
@@ -994,6 +1016,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Refreshing</span><span class="tag">Grapefruit</span><span class="tag">Ginger Beer</span><span class="tag">Shaken</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Bourbon, fresh-squeezed grapefruit, honey lavender, black walnut bitters, and ginger beer. The most refreshing whiskey cocktail on the menu — and the most unexpected.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The whole grapefruit squeeze is the key — bright, slightly bitter, and gives the drink a freshness that makes it work even for guests who don't usually order whiskey. Black walnut bitters add a subtle earthy depth that keeps it from reading as a simple punch. Great for guests who want something tall and sessionable.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Traveller Whiskey (or house bourbon)</li>
@@ -1020,6 +1047,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Espresso</span><span class="tag">Coffee</span><span class="tag">Sweet</span><span class="tag">Rich</span><span class="tag">Shaken</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Buffalo Trace, espresso, Frangelico, bourbon cream, and brown sugar — the dessert cocktail that doesn't apologize for it.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Built like an Old Fashioned but driven by espresso and Frangelico's hazelnut warmth. The buffalo bourbon cream softens everything into a rich, velvety finish. Best positioned as an after-dinner drink or for guests who order espresso martinis and want something with more backbone.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">1½ oz</span> Buffalo Trace</li>
@@ -1047,6 +1079,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Vodka</span><span class="tag">Spirit Forward</span><span class="tag">Stirred</span><span class="tag">Classic</span><span class="tag">James Bond</span><span class="tag">Dry</span><span class="tag">Martini</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Equal parts Nolet's gin, Ketel One vodka, and Lillet — stirred cold and served up. James Bond ordered it shaken. We know better.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The Vesper sits between a martini and something altogether its own. Nolet's brings rose and peach where a London Dry would bring juniper — softer and more aromatic. Lillet adds a slight citrus bitterness that ties the gin and vodka together cleanly. For guests who want a martini that tells a story.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">1½ oz</span> Nolet's Gin</li>
@@ -1070,6 +1107,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Cognac</span><span class="tag">Lemon</span><span class="tag">Stirred</span><span class="tag">Classic</span><span class="tag">Absinthe</span><span class="tag">Martini</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Gin, cognac, Lillet, lemon, and an absinthe-rinsed glass. A pre-Prohibition classic that earns its name — equal parts elegant and reviving.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The balance here is precise — Warner's gin, Pierre Ferrand cognac, and Lillet in equal measure with just enough lemon to lift it. The absinthe rinse is the ghost in the background, adding anise on the nose without touching the palate. A cocktail for guests who appreciate craft and history.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">1 oz</span> Warner's Gin</li>
@@ -1095,6 +1137,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Sweet</span><span class="tag">Shaken</span><span class="tag">Classic</span><span class="tag">Violet</span><span class="tag">Martini</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Aviation gin, Luxardo maraschino, crème de violette, and ginger syrup — floral, slightly sweet, and a beautiful pale purple in the glass.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The violette is what makes an Aviation an Aviation — just enough to give it its signature color and a delicate floral note. Luxardo maraschino adds a cherry-almond sweetness that Aviation gin's botanical profile plays well against. Sell it to guests who want something visually striking and lighter on the palate.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Aviation Gin</li>
@@ -1119,6 +1166,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Refreshing</span><span class="tag">Cucumber</span><span class="tag">Light</span><span class="tag">Crisp</span><span class="tag">Bubbly</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Hendrick's muddled with cucumber, lime, and ginger, topped with soda. Crisp, clean, and the easiest cocktail on the menu to love.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Hendrick's is built for this — its cucumber and rose botanicals amplify what's already in the glass. The ginger syrup adds subtle warmth that keeps it from being one-dimensional. This is the drink for guests who say they don't really drink cocktails. It converts.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Hendrick's Gin</li>
@@ -1143,6 +1195,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Bubbly</span><span class="tag">Lemon</span><span class="tag">Prosecco</span><span class="tag">Light</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Inverroche gin shaken with lemon and vanilla, topped with Prosecco in a flute. Light, celebratory, and always the right call.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The vanilla syrup in place of simple syrup rounds out the lemon and softens the gin in a way that makes this more refined than the standard build. Inverroche is a South African gin with fynbos botanicals — earthy and aromatic. A great opener or stand-alone for guests who want something festive.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">1½ oz</span> Inverroche Gin</li>
@@ -1168,6 +1225,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Honey</span><span class="tag">Lemon</span><span class="tag">Sweet</span><span class="tag">Refreshing</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Empress Indigo gin with honey lavender and fresh lemon — three ingredients, zero filler. The simplest cocktail on the menu and one of the best.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Empress Indigo turns a soft blue-grey in the glass from butterfly pea flower — a detail worth mentioning. The honey lavender syrup pulls double duty as sweetener and aromatic. Short, strong, and elegant. For guests who want something simple but don't want to feel like they ordered something simple.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Empress Indigo Gin</li>
@@ -1190,6 +1252,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Tequila</span><span class="tag">Grapefruit</span><span class="tag">Refreshing</span><span class="tag">Light</span><span class="tag">Simple</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Reposado tequila, fresh grapefruit, vanilla syrup. Three ingredients, no tricks — just a clean, easy-drinking cocktail that works at any point in the meal.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The reposado brings light oak and agave warmth that complements the grapefruit's natural bitterness. Vanilla syrup does the balancing work without adding unnecessary complexity. This is the tequila cocktail for guests who think they don't like tequila.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Reposado Tequila</li>
@@ -1211,6 +1278,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Tequila</span><span class="tag">Sour</span><span class="tag">Lemon</span><span class="tag">Egg White</span><span class="tag">Frothy</span><span class="tag">Silky</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Reposado tequila, lemon, vanilla, and egg white — silky, frothy, and deceptively smooth. The most texturally interesting cocktail on the tequila side.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The egg white dry shake creates a foam that carries the vanilla and lemon aromatics on every sip. Underneath, the reposado provides enough weight to keep it from reading as light. Sell it to guests who want something different — the texture alone tends to close the conversation.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Reposado Tequila</li>
@@ -1236,6 +1308,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Tequila</span><span class="tag">Sour</span><span class="tag">Shaken</span><span class="tag">Salt Rim</span><span class="tag">Classic</span><span class="tag">Triple Sec</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Corazon Blanco, lemon, lime, orange juice, and Cointreau — the classic, built correctly, on a salted rim.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The triple citrus build gives this more dimension than a standard margarita without complicating it. Corazon Blanco is clean and agave-forward, letting the citrus lead. Cointreau over a cheaper triple sec makes the finish noticeably smoother. If a guest orders a margarita, this is one they'll actually remember.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Corazon Blanco Tequila</li>
@@ -1263,6 +1340,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Espresso</span><span class="tag">Coffee</span><span class="tag">Sweet</span><span class="tag">Rich</span><span class="tag">Shaken</span><span class="tag">Martini</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Tito's, fresh espresso, Grind liqueur, Averna amaro, and vanilla — rich, complex, and built to finish a meal or start one.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Averna amaro is the differentiator — it adds a bitter herbal backbone that keeps the drink from being purely sweet and pairs naturally with espresso's roast. Grind espresso liqueur reinforces the coffee without muddying the vodka. The three-foam top is the target — shake hard and cold. One of the most ordered cocktails in fine dining for a reason.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Tito's Handmade Vodka</li>
@@ -1289,6 +1371,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Orange</span><span class="tag">Ginger</span><span class="tag">Sweet</span><span class="tag">Light</span><span class="tag">Stirred</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Tito's, orange juice, and ginger syrup — straightforward, approachable, and exactly what it sounds like.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The ginger syrup is the only thing separating this from a screwdriver, and it's enough. Adds warmth and a slight spice that makes it drink better than its simplicity suggests. The cocktail for the guest who wants something uncomplicated and pleasant — order it without hesitation.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Tito's Handmade Vodka</li>
@@ -1311,6 +1398,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Grape</span><span class="tag">Lime</span><span class="tag">Ginger Beer</span><span class="tag">Refreshing</span><span class="tag">Fruity</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Hangar 1 vodka muddled with black grapes and lime, topped with ginger beer. Fruity, refreshing, and more complex than it looks.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The muddled black grapes bring a tart, slightly tannic fruit note that grape juice wouldn't replicate. Hangar 1 is a clean California vodka that lets the fruit lead. The ginger beer adds effervescence and a dry finish. Great for guests who want something tall and sessionable.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Hangar 1 Vodka</li>
@@ -1337,6 +1429,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Lemon</span><span class="tag">Sweet</span><span class="tag">Shaken</span><span class="tag">Martini</span><span class="tag">Sugar Rim</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Wheatley vodka, limoncello, triple sec, lemon, simple syrup, and a sugar rim — a lemon drop that's been thought through.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The limoncello gives it a rounder, more Italian citrus quality than straight lemon juice alone. Wheatley is a wheat-based vodka with a clean finish that doesn't fight the citrus. For guests who want something sweet and bright — this is the version worth ordering.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">1½ oz</span> Wheatley Vodka</li>
@@ -1364,6 +1461,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Bitter</span><span class="tag">Campari</span><span class="tag">Stirred</span><span class="tag">Spirit Forward</span><span class="tag">Vermouth</span><span class="tag">Classic</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">The equal-parts classic. Gin, Contratto vermouth, Campari — stirred, strained, orange peel. Bitter, balanced, and built for people who know.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Contratto brings more complexity than a standard sweet vermouth — slightly more herbal and less sugary. Campari's bitter orange is the backbone of the whole thing. Guests who order it know what they want; guests who are curious should be walked toward it carefully — start with 'do you like bitter?'</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">1½ oz</span> Gin (house)</li>
@@ -1387,6 +1489,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Chocolate</span><span class="tag">Espresso</span><span class="tag">Coffee</span><span class="tag">Rich</span><span class="tag">Sweet</span><span class="tag">Dessert</span><span class="tag">Martini</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Tito's, Kahlúa, Bailey's, chocolate liqueur, and espresso — served in a chocolate-drizzled martini glass. The dessert course, in cocktail form.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Kahlúa and chocolate liqueur layer coffee and cocoa over the espresso base, with Bailey's adding a cream note that softens everything. Best positioned after dinner for guests who want something sweet without committing to a full dessert. The chocolate drizzle on the glass is a visual sell — let them see it going out.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">1½ oz</span> Tito's Handmade Vodka</li>
@@ -1413,6 +1520,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Bitter</span><span class="tag">Stirred</span><span class="tag">Spirit Forward</span><span class="tag">Aperol</span><span class="tag">Complex</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Bulleit Bourbon, Nonino amaro, Aperol, and bitters — stirred down and spirit-forward with a bittersweet complexity that rewards attention.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">A riff on the Paper Plane, deliberately heavier — replacing lemon with more bitters and leaning into the amaro. Nonino Quintessential is one of the finer Italian amaros, grappa-based with a clean herbal bitterness. Aperol keeps it from going too dark. For guests who want something stirred and interesting — this is the off-menu call that tends to land.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Bulleit Bourbon</li>
@@ -1436,6 +1548,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Sour</span><span class="tag">Lemon</span><span class="tag">Egg White</span><span class="tag">Frothy</span><span class="tag">Red Wine Float</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Jameson, lemon, egg white, and a Daou Cabernet float — the cocktail that looks like nothing else on the table.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The red wine float is the entire conversation. Daou Cab sits on top of the foam and bleeds into the drink slowly as it's consumed — each sip shifts as the wine integrates. The Jameson base keeps it approachable; the egg white gives it body. Worth describing before a guest orders — once they see it arrive at another table, they'll ask.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Jameson Irish Whiskey</li>
@@ -1463,6 +1580,11 @@
       <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Lavender</span><span class="tag">Lemon</span><span class="tag">Honey</span><span class="tag">Martini</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
+        <div class="section-label">Sell It</div>
+        <div class="detail-value notes">Plymouth gin, fresh lemon, honey lavender syrup, and a Prosecco float — floral, bright, and elegant in the glass.</div>
+        <div class="section-label">Staff Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Plymouth is a softer, rounder gin than most — less juniper-forward, which lets the honey lavender and lemon express themselves without competition. The Prosecco float adds light effervescence that lifts the finish. The martini for guests who are hesitant about gin — approachable enough to convert, interesting enough to remember.</div>
+
         <div class="section-label">Ingredients</div>
         <ul class="ingredient-list">
           <li><span class="amt">2 oz</span> Plymouth Gin</li>
@@ -1757,11 +1879,11 @@
         <div class="section-label">Vintage</div>
         <span class="vintage-badge check">Check Inventory</span>
         <div class="section-label">Origin</div>
-        <div class="origin-line">Chablis, Burgundy, France</div>
+        <div class="origin-line">Chablis, Burgundy, France — Bourgogne</div>
         <div class="section-label">Varietal</div>
         <div class="detail-value">Chardonnay</div>
         <div class="section-label">Tasting Notes</div>
-        <div class="detail-value notes">The textbook case for unoaked Chardonnay. Flinty, chalky minerality with bright lemon and green apple. Lean and precise — ideal alongside oysters, seafood, or anything delicate.</div>
+        <div class="detail-value notes">The textbook case for unoaked Chardonnay. Flinty, chalky minerality with bright lemon and green apple. Lean and precise — ideal alongside oysters, seafood, or anything delicate. A classic Burgundy white.</div>
       </div>
     </div>
  
@@ -3502,6 +3624,9 @@
     'sauvignon': 'sauv',
     'chard': 'chardonnay',
     'chardonnay': 'chard',
+    'citrusy': 'citrus',
+    'sparkling': 'bubbles',
+    'bubbles': 'sparkling',
   };
 
   function expandSynonyms(tokens) {
@@ -3514,6 +3639,165 @@
     return expanded;
   }
 
+
+
+  // ── PRICE RANGE SEARCH ──
+  const winePrices = {
+    // Bubbles (glass/bottle where applicable)
+    "G.D. Vajra Moscato d'Asti": "$12 / $48",
+    "Il Colle Prosecco Superiore": "$13 / $52",
+    "Raventós Cava de NIT Rosé Brut": "$18 / $72",
+    "Laurent Perrier Le Cuvée Brut": "$25 / $100",
+    "Laurent Perrier Brut Rosé": "$120",
+    "Veuve Clicquot Brut": "$120",
+    "Paul Bara Grand Rosé Brut": "$150",
+    "Robert Moncuit Les Grand Blancs": "$160",
+    "Pierre Gimonnet Special Club Brut": "$200",
+    "Pommery Cuvée Louise": "$300",
+    // Whites (glass/bottle where applicable)
+    "Stoneleigh Sauvignon Blanc": "$10 / $40",
+    "Alexander Valley Chardonnay": "$12 / $48",
+    "St Supéry Sauvignon Blanc": "$12 / $48",
+    "Elk Cove Pinot Blanc": "$13 / $52",
+    "Jean-Pierre Grossot Chablis": "$16 / $64",
+    "Schloss Vollrads Riesling": "$16 / $64",
+    "Le Garenne Rosé": "$17 / $68",
+    "Domaine de Berthiers Pouilly-Fumé": "$19 / $76",
+    "Our Lady of Guadalupe Acolytes": "$20 / $80",
+    "Joseph Mellot Sancerre": "$76",
+    "Keenan Chardonnay": "$120",
+    "Far Niente Chardonnay": "$140",
+    // By the Glass
+    "Lunaria Coste di Moro": "$12 / $48",
+    "Kermit Lynch Côtes du Rhône": "$12 / $48",
+    "Alexander Valley Homestead Red": "$13 / $52",
+    "Scotto Cellars The Lost Chapters": "$13 / $52",
+    "Corazón del Sol Malbec": "$15 / $60",
+    "Fento Ollo de Sapo Mencía": "$15 / $60",
+    "Lingua Franca Avni Pinot Noir": "$18 / $72",
+    "Fisher Unity Pinot Noir": "$19 / $76",
+    "Château de Rouillac": "$20 / $80",
+    "St Supéry Cabernet Sauvignon": "$20 / $80",
+    "Quilt Cabernet Sauvignon": "$22 / $88",
+    "Scavino Barolo": "$25 / $100",
+    "Caymus Cabernet Sauvignon": "$28 / $180",
+    // Pinot Noir
+    "Cristom Mt Jefferson Cuvée": "$75",
+    "Daniel Chotard Sancerre Rouge": "$90",
+    "Evening Land Seven Springs": "$100",
+    "Marimar Estate Christina": "$110",
+    "Jax Calesa Vineyard Pinot Noir": "$120",
+    "Macauley Pinot Noir": "$120",
+    "Elk Cove Five Mountain": "$125",
+    "RAEN Royal St Robert": "$125",
+    "Sanford & Benedict Pinot Noir": "$130",
+    "J Davies Ferrington Vineyards": "$140",
+    // Cabernet
+    "1881 Napa Valley": "$85",
+    "Faust Napa Valley Cabernet": "$100",
+    "Gundlach Bundschu Cabernet": "$115",
+    "Venge Silencieux": "$120",
+    "Austin Hope Cabernet Sauvignon": "$135",
+    "Peju Cabernet Sauvignon": "$140",
+    "Jordan Cabernet Sauvignon": "$145",
+    "J. Davies Cabernet Sauvignon": "$150",
+    "Teeter Totter Cabernet Sauvignon": "$150",
+    "Ghost Block Cabernet Sauvignon": "$160",
+    "Silver Oak Cabernet Sauvignon": "$160",
+    "Brandlin Estate Cabernet Sauvignon": "$175",
+    "Lail Vineyards Blueprint": "$175",
+    "Spottswoode Lyndenhurst": "$175",
+    "Nickel & Nickel Cabernet": "$195",
+    "Shafer 1.5": "$195",
+    "Cade Cabernet Sauvignon": "$210",
+    "Darioush Cabernet Sauvignon": "$215",
+    "Heitz Trailside Vineyard": "$220",
+    "Frias Block 5": "$225",
+    "Far Niente Cabernet Sauvignon": "$250",
+    "Odette Cabernet Sauvignon": "$275",
+    "Macauley Stagecoach Vineyard": "$295",
+    "Freemark Abbey Bosché": "$300",
+    "Venge Family Reserve": "$325",
+    "Lail Vineyards Daniel Cuvée": "$350",
+    "Heitz Martha's Vineyard": "$400",
+    "Simon Family Estate Reserve": "$400",
+    "Shafer Hillside Select": "$450",
+    "Opus One": "$475",
+    // Old World
+    "Marc Brédif Chinon": "$60",
+    "Braida Montebruna Barbera": "$70",
+    "Le Volte dell'Ornellaia": "$80",
+    "Muga Reserva": "$80",
+    "Les Pallières Raciné": "$90",
+    "Tenuta di Arceno Chianti Classico": "$95",
+    "Château Haut Segottes": "$100",
+    "Clos Petit Ona Grenache": "$110",
+    "G.D. Vajra Albe Nebbiolo": "$120",
+    "Le Ragnaie Brunello": "$120",
+    "Domaine Tempier Bandol": "$130",
+    "Domaine du Grand Tinel": "$140",
+    "Pio Cesare Barbaresco": "$140",
+    "Fattoria Le Pupille Saffredi": "$150",
+    "Château Gombaude-Guillot": "$170",
+    "Château Batailley": "$185",
+    "Château Beaucastel": "$225",
+    "Poderi Aldo Conterno Nebbiolo": "$225",
+    "Sesti Brunello di Montalcino": "$225",
+    // Blends
+    "Bodega Noemia A Lisa": "$65",
+    "Ghost Block Zinfandel": "$90",
+    "The Prisoner Red Blend": "$100",
+    "Macauley Petite Syrah": "$120",
+    "Alexander Valley Cyrus": "$125",
+    "Epoch Ingenuity": "$125",
+    "San Simeon Stormwatch": "$130",
+    "Domaine Serene Grand Cheval": "$140",
+    "St Supéry Élu Meritage": "$140",
+    "Darioush Cabernet Franc": "$150",
+    "Keenan Mernet": "$190",
+    "Venge Scout's Honor": "$110",
+    "Jubilation by Colgin": "$350",
+  };
+
+  function extractPriceFilter(raw) {
+    const s = raw.toLowerCase();
+    let mode = 'bottle';
+    if (/\bglass(es|\s+pour)?\b/.test(s)) mode = 'glass';
+    else if (/\bbottles?\b/.test(s)) mode = 'bottle';
+
+    let min = null, max = null, matched = '';
+
+    const between = s.match(/\bbetween\s+\$?(\d+)\s+and\s+\$?(\d+)/);
+    const range = s.match(/\$?(\d+)\s*(?:to|-|–)\s*\$?(\d+)/);
+    const under = s.match(/\bunder\s+\$?(\d+)/);
+    const over  = s.match(/\b(?:over|above)\s+\$?(\d+)/);
+    const around = s.match(/\baround\s+\$?(\d+)/);
+
+    if (between){ min = +between[1]; max = +between[2]; matched = between[0]; }
+    else if (range)  { min = +range[1]; max = +range[2]; matched = range[0]; }
+    else if (under) { max = +under[1]; matched = under[0]; }
+    else if (over)  { min = +over[1];  matched = over[0]; }
+    else if (around){ min = +around[1] - 15; max = +around[1] + 15; matched = around[0]; }
+
+    return { min, max, mode, matched };
+  }
+
+  function getPriceForCard(name, mode) {
+    const raw = winePrices[name];
+    if (!raw) return null;
+    const parts = raw.replace(/\$/g, '').split('/').map(p => parseInt(p.trim(), 10));
+    if (mode === 'glass' && parts.length === 2) return parts[0];
+    return parts[parts.length - 1];
+  }
+
+  function cardMatchesPrice(name, filter) {
+    if (filter.min === null && filter.max === null) return true;
+    const price = getPriceForCard(name, filter.mode);
+    if (price === null) return false;
+    if (filter.min !== null && price < filter.min) return false;
+    if (filter.max !== null && price > filter.max) return false;
+    return true;
+  }
 
   function applyFilters() {
     const cards = document.querySelectorAll('#grid-' + activeGuide + ' .card');
@@ -3553,9 +3837,12 @@
       const matchesFilter = filter === 'all' || cat.split(' ').includes(filter);
       if (!matchesFilter) { card.classList.add('hidden'); return; }
 
+      const priceFilter = extractPriceFilter(searchInput.value);
+      const matchesPrice = activeGuide === 'wine' ? cardMatchesPrice(card.dataset.name, priceFilter) : true;
+
       if (!tokens.length) {
-        card.classList.remove('hidden');
-        visible++;
+        if (matchesPrice) { card.classList.remove('hidden'); visible++; }
+        else { card.classList.add('hidden'); }
         return;
       }
 
@@ -3563,14 +3850,11 @@
       const detailEl = card.querySelector('.card-detail');
       const text = (card.dataset.name || '').toLowerCase() + ' ' + (detailEl ? detailEl.textContent : card.textContent).toLowerCase();
 
-      // Group tokens by original search word — a word OR its synonym must match
-      // expandSynonyms pushes synonym immediately after original, so evaluate pairs
-      const matches = searchTerm.every(token => {
+      const matches = matchesPrice && searchTerm.every(token => {
         if (token.type === 'tag') {
           return tags.includes(token.value);
         } else {
           const syn = SYNONYMS[token.value];
-          // If a synonym exists, only match via exact synonym — don't prefix-expand the abbreviation
           if (syn) return exactWordBoundary(text, token.value) || exactWordBoundary(text, syn);
           return wordBoundary(text, token.value);
         }
@@ -3654,9 +3938,22 @@
 
   // Parse raw input into a list of {type, value} tokens
   // type: 'tag' (must match tag exactly) or 'word' (loose match)
+  const STOPWORDS = new Set([
+    'and', 'or', 'with', 'plus', 'also',
+    'a', 'an', 'the', 'of', 'in', 'on', 'at', 'to', 'for', 'by', 'from',
+    'some', 'any', 'something', 'like', 'similar', 'kind', 'type', 'style', 'sort',
+    'i', 'want', 'give', 'me', 'show', 'anything', 'worthy', 'drink', 'under',
+  ]);
+
   function tokenizeQuery(raw) {
     const allTags = getAllTags();
-    const words = raw.trim().split(/\s+/).filter(Boolean);
+    const words = raw.trim()
+      .replace(/\boff\s+dry\b/g, 'off-dry')
+      .replace(/\bage\s+worthy\b/g, 'age-worthy')
+      .replace(/\bbetween\s+\$?\d+\s+and\s+\$?\d+/g, '')
+      .replace(/\$?\d+/g, '')
+      .replace(/\b(under|over|above|around|to|glass(?:es)?|bottle(?:s)?)\b/g, '')
+      .split(/\s+/).filter(w => w && !STOPWORDS.has(w));
     const tokens = [];
     let i = 0;
     while (i < words.length) {
@@ -3701,8 +3998,8 @@
 
   // ── HOME SCREEN ──
   const SEARCH_TIPS = {
-    cocktails: '*tip — avoid filler words  (good searches: "campari cocktail", "stirred strained martini")',
-    wine: '*tip — avoid filler words  (good searches: "light apple", "earthy spanish red", "plum medium bodied soft tannins")'
+    cocktails: '*tip — get familiar with the search bar  (try: "campari cocktail", "stirred strained martini")',
+    wine: '*tip — get familiar with the search bar (try: "$100 to $150 blends", "earthy spanish red", "plum with medium body and soft tannins")'
   };
 
   function switchGuide(guide) {
@@ -3894,122 +4191,6 @@
   window.addEventListener('resize', alignLogo);
 
   // ── WINE PRICES ──
-  const winePrices = {
-    // Bubbles (glass/bottle where applicable)
-    "G.D. Vajra Moscato d'Asti": "$12 / $48",
-    "Il Colle Prosecco Superiore": "$13 / $52",
-    "Raventós Cava de NIT Rosé Brut": "$18 / $72",
-    "Laurent Perrier Le Cuvée Brut": "$25 / $100",
-    "Laurent Perrier Brut Rosé": "$120",
-    "Veuve Clicquot Brut": "$120",
-    "Paul Bara Grand Rosé Brut": "$150",
-    "Robert Moncuit Les Grand Blancs": "$160",
-    "Pierre Gimonnet Special Club Brut": "$200",
-    "Pommery Cuvée Louise": "$300",
-    // Whites (glass/bottle where applicable)
-    "Stoneleigh Sauvignon Blanc": "$10 / $40",
-    "Alexander Valley Chardonnay": "$12 / $48",
-    "St Supéry Sauvignon Blanc": "$12 / $48",
-    "Elk Cove Pinot Blanc": "$13 / $52",
-    "Jean-Pierre Grossot Chablis": "$16 / $64",
-    "Schloss Vollrads Riesling": "$16 / $64",
-    "Le Garenne Rosé": "$17 / $68",
-    "Domaine de Berthiers Pouilly-Fumé": "$19 / $76",
-    "Our Lady of Guadalupe Acolytes": "$20 / $80",
-    "Joseph Mellot Sancerre": "$76",
-    "Keenan Chardonnay": "$120",
-    "Far Niente Chardonnay": "$140",
-    // By the Glass
-    "Lunaria Coste di Moro": "$12 / $48",
-    "Kermit Lynch Côtes du Rhône": "$12 / $48",
-    "Alexander Valley Homestead Red": "$13 / $52",
-    "Scotto Cellars The Lost Chapters": "$13 / $52",
-    "Corazón del Sol Malbec": "$15 / $60",
-    "Fento Ollo de Sapo Mencía": "$15 / $60",
-    "Lingua Franca Avni Pinot Noir": "$18 / $72",
-    "Fisher Unity Pinot Noir": "$19 / $76",
-    "Château de Rouillac": "$20 / $80",
-    "St Supéry Cabernet Sauvignon": "$20 / $80",
-    "Quilt Cabernet Sauvignon": "$22 / $88",
-    "Scavino Barolo": "$25 / $100",
-    "Caymus Cabernet Sauvignon": "$28 / $180",
-    // Pinot Noir
-    "Cristom Mt Jefferson Cuvée": "$75",
-    "Daniel Chotard Sancerre Rouge": "$90",
-    "Evening Land Seven Springs": "$100",
-    "Marimar Estate Christina": "$110",
-    "Jax Calesa Vineyard Pinot Noir": "$120",
-    "Macauley Pinot Noir": "$120",
-    "Elk Cove Five Mountain": "$125",
-    "RAEN Royal St Robert": "$125",
-    "Sanford & Benedict Pinot Noir": "$130",
-    "J Davies Ferrington Vineyards": "$140",
-    // Cabernet
-    "1881 Napa Valley": "$85",
-    "Faust Napa Valley Cabernet": "$100",
-    "Gundlach Bundschu Cabernet": "$115",
-    "Venge Silencieux": "$120",
-    "Austin Hope Cabernet Sauvignon": "$135",
-    "Peju Cabernet Sauvignon": "$140",
-    "Jordan Cabernet Sauvignon": "$145",
-    "J. Davies Cabernet Sauvignon": "$150",
-    "Teeter Totter Cabernet Sauvignon": "$150",
-    "Ghost Block Cabernet Sauvignon": "$160",
-    "Silver Oak Cabernet Sauvignon": "$160",
-    "Brandlin Estate Cabernet Sauvignon": "$175",
-    "Lail Vineyards Blueprint": "$175",
-    "Spottswoode Lyndenhurst": "$175",
-    "Nickel & Nickel Cabernet": "$195",
-    "Shafer 1.5": "$195",
-    "Cade Cabernet Sauvignon": "$210",
-    "Darioush Cabernet Sauvignon": "$215",
-    "Heitz Trailside Vineyard": "$220",
-    "Frias Block 5": "$225",
-    "Far Niente Cabernet Sauvignon": "$250",
-    "Odette Cabernet Sauvignon": "$275",
-    "Macauley Stagecoach Vineyard": "$295",
-    "Freemark Abbey Bosché": "$300",
-    "Venge Family Reserve": "$325",
-    "Lail Vineyards Daniel Cuvée": "$350",
-    "Heitz Martha's Vineyard": "$400",
-    "Simon Family Estate Reserve": "$400",
-    "Shafer Hillside Select": "$450",
-    "Opus One": "$475",
-    // Old World
-    "Marc Brédif Chinon": "$60",
-    "Braida Montebruna Barbera": "$70",
-    "Le Volte dell'Ornellaia": "$80",
-    "Muga Reserva": "$80",
-    "Les Pallières Raciné": "$90",
-    "Tenuta di Arceno Chianti Classico": "$95",
-    "Château Haut Segottes": "$100",
-    "Clos Petit Ona Grenache": "$110",
-    "G.D. Vajra Albe Nebbiolo": "$120",
-    "Le Ragnaie Brunello": "$120",
-    "Domaine Tempier Bandol": "$130",
-    "Domaine du Grand Tinel": "$140",
-    "Pio Cesare Barbaresco": "$140",
-    "Fattoria Le Pupille Saffredi": "$150",
-    "Château Gombaude-Guillot": "$170",
-    "Château Batailley": "$185",
-    "Château Beaucastel": "$225",
-    "Poderi Aldo Conterno Nebbiolo": "$225",
-    "Sesti Brunello di Montalcino": "$225",
-    // Blends
-    "Bodega Noemia A Lisa": "$65",
-    "Ghost Block Zinfandel": "$90",
-    "The Prisoner Red Blend": "$100",
-    "Macauley Petite Syrah": "$120",
-    "Alexander Valley Cyrus": "$125",
-    "Epoch Ingenuity": "$125",
-    "San Simeon Stormwatch": "$130",
-    "Domaine Serene Grand Cheval": "$140",
-    "St Supéry Élu Meritage": "$140",
-    "Darioush Cabernet Franc": "$150",
-    "Keenan Mernet": "$190",
-    "Venge Scout's Honor": "$110",
-    "Jubilation by Colgin": "$350",
-  };
 
   // Helper: extract numeric sort value from price string
   function priceToNum(str) {
