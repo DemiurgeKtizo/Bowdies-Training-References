@@ -11,9 +11,9 @@
     --gold-light: #E8C96A;
     --gold-dim: #8A6B2A;
     --charcoal: #111010;
-    --surface: #1A1816;
-    --surface-2: #221F1C;
-    --surface-3: #2A2622;
+    --surface: #171513;
+    --surface-2: #1E1B18;
+    --surface-3: #242018;
     --border: rgba(201,168,76,0.18);
     --text-primary: #F0E8D8;
     --text-muted: #8A8070;
@@ -35,6 +35,8 @@
   }
  
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { background: #111010; }
  
   body {
     background: var(--surface);
@@ -500,7 +502,7 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 1px;
+    gap: 2px;
     background: var(--charcoal);
     border-top: 1px solid rgba(201,168,76,0.1);
   }
