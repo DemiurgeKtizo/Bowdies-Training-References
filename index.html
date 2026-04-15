@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Bowdie's Chophouse — Staff Training Reference</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
@@ -460,6 +460,22 @@
  
   .filter-btn:hover { border-color: rgba(201,168,76,0.5); color: var(--text-muted); }
   .filter-btn.active { background: rgba(201,168,76,0.12); border-color: var(--gold); color: var(--gold); font-weight: 600; letter-spacing: 0.28em; }
+
+  .sub-filter-bar {
+    padding-top: 0;
+    padding-bottom: 14px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    margin-top: -4px;
+  }
+
+  .sub-filter-btn {
+    font-size: 8.5px;
+    padding: 6px 12px;
+    min-width: 60px;
+    border-color: rgba(255,255,255,0.05);
+    color: var(--text-dim);
+    opacity: 0.85;
+  }
  
   /* ── SEARCH ── */
   .search-input {
@@ -874,13 +890,26 @@
   </div>
   <div id="filters-cocktails" class="filter-bar">
     <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cocktail">Cocktails</button>
     <button class="filter-btn" data-filter="whiskey">Whiskey</button>
-    <button class="filter-btn" data-filter="gin">Gin</button>
-    <button class="filter-btn" data-filter="tequila">Tequila</button>
-    <button class="filter-btn" data-filter="vodka">Vodka</button>
-    <button class="filter-btn" data-filter="offmenu">Off Menu</button>
   </div>
-  <div id="filters-wine" class="filter-bar" style="display:none;">
+  <div id="subfilters-cocktail" class="filter-bar sub-filter-bar" style="display:none;">
+    <button class="filter-btn sub-filter-btn active" data-subfilter="all">All</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="whiskey2">Whiskey</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="gin">Gin</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="tequila">Tequila</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="vodka">Vodka</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="offmenu">Off Menu</button>
+  </div>
+  <div id="subfilters-whiskey" class="filter-bar sub-filter-bar" style="display:none;">
+    <button class="filter-btn sub-filter-btn active" data-subfilter="all">All</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="bourbon">Bourbon</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="rye">Rye</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="singlemalt">Single Malt</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="irish">Irish</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="japanese">Japanese</button>
+    <button class="filter-btn sub-filter-btn" data-subfilter="canadian">Canadian</button>
+  </div>  <div id="filters-wine" class="filter-bar" style="display:none;">
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="bubbles">Bubbles</button>
     <button class="filter-btn" data-filter="whites">Whites</button>
@@ -902,11 +931,11 @@
   <div class="grid" id="grid-cocktails">
  
     <!-- WHISKEY -->
-    <div class="card" data-category="whiskey" data-name="Bowdie's Old Fashioned">
+    <div class="card" data-category="cocktail whiskey2" data-name="Bowdie's Old Fashioned">
       <div class="card-category cat-whiskey">Whiskey</div>
       <div class="card-name">Bowdie's Old Fashioned</div>
       <div class="card-sub">Small Rocks Glass &nbsp;·&nbsp; Muddle + Stir</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Spirit Forward</span><span class="tag">Citrus</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Spirit Forward</span><span class="tag">Citrus</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -932,11 +961,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="whiskey" data-name="The Manhattan">
+    <div class="card" data-category="cocktail whiskey2" data-name="The Manhattan">
       <div class="card-category cat-whiskey">Whiskey</div>
       <div class="card-name">The Manhattan</div>
       <div class="card-sub">Large Rocks Glass &nbsp;·&nbsp; Stir</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Spirit Forward</span><span class="tag">Stirred</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Spirit Forward</span><span class="tag">Stirred</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -960,11 +989,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="whiskey" data-name="Vieux Carré">
+    <div class="card" data-category="cocktail whiskey2" data-name="Vieux Carré">
       <div class="card-category cat-whiskey">Whiskey</div>
       <div class="card-name">Vieux Carré</div>
       <div class="card-sub">Large Rocks Glass &nbsp;·&nbsp; Mixing Glass + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Rye</span><span class="tag">Cognac</span><span class="tag">Spirit Forward</span><span class="tag">Stirred</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Spirit Forward</span><span class="tag">Stirred</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -991,11 +1020,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="whiskey" data-name="Sazerac">
+    <div class="card" data-category="cocktail whiskey2" data-name="Sazerac">
       <div class="card-category cat-whiskey">Whiskey</div>
       <div class="card-name">Sazerac</div>
       <div class="card-sub">Small Rocks Glass &nbsp;·&nbsp; Mixing Glass + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Rye</span><span class="tag">Spirit Forward</span><span class="tag">Classic</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Spirit Forward</span><span class="tag">Classic</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1022,11 +1051,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="whiskey" data-name="The BG">
+    <div class="card" data-category="cocktail whiskey2" data-name="The BG">
       <div class="card-category cat-whiskey">Whiskey</div>
       <div class="card-name">The BG</div>
       <div class="card-sub">Water Glass &nbsp;·&nbsp; Shaker</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Refreshing</span><span class="tag">Citrus</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Refreshing</span><span class="tag">Citrus</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1053,11 +1082,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="whiskey" data-name="Espresso Old Fashioned">
+    <div class="card" data-category="cocktail whiskey2" data-name="Espresso Old Fashioned">
       <div class="card-category cat-whiskey">Whiskey</div>
       <div class="card-name">Espresso Old Fashioned</div>
       <div class="card-sub">Large Rocks Glass &nbsp;·&nbsp; Shaker</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Coffee</span><span class="tag">Dessert</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Rich</span><span class="tag">Coffee</span><span class="tag">Dessert</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1085,11 +1114,11 @@
     </div>
  
     <!-- GIN -->
-    <div class="card" data-category="gin" data-name="Vesper">
+    <div class="card" data-category="cocktail gin" data-name="Vesper">
       <div class="card-category cat-gin">Gin &amp; More</div>
       <div class="card-name">Vesper</div>
       <div class="card-sub">Martini Glass &nbsp;·&nbsp; Mixing Glass + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Vodka</span><span class="tag">Spirit Forward</span><span class="tag">Dry</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Spirit Forward</span><span class="tag">Dry</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1113,11 +1142,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="gin" data-name="Corpse Reviver">
+    <div class="card" data-category="cocktail gin" data-name="Corpse Reviver">
       <div class="card-category cat-gin">Gin</div>
       <div class="card-name">Corpse Reviver</div>
       <div class="card-sub">Martini Glass &nbsp;·&nbsp; Shaker + Absinthe Rinse</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Cognac</span><span class="tag">Classic</span><span class="tag">Citrus</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Classic</span><span class="tag">Citrus</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1143,11 +1172,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="gin" data-name="Aviation">
+    <div class="card" data-category="cocktail gin" data-name="Aviation">
       <div class="card-category cat-gin">Gin</div>
       <div class="card-name">Aviation</div>
       <div class="card-sub">Martini Glass &nbsp;·&nbsp; Shaker + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Sweet</span><span class="tag">Floral</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Sweet</span><span class="tag">Floral</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1172,11 +1201,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="gin" data-name="Cucumber Gimlet">
+    <div class="card" data-category="cocktail gin" data-name="Cucumber Gimlet">
       <div class="card-category cat-gin">Gin</div>
       <div class="card-name">Cucumber Gimlet</div>
       <div class="card-sub">Large Rocks Glass &nbsp;·&nbsp; Muddle + Build</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Refreshing</span><span class="tag">Light</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Refreshing</span><span class="tag">Light</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1201,11 +1230,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="gin" data-name="French 75">
+    <div class="card" data-category="cocktail gin" data-name="French 75">
       <div class="card-category cat-gin">Gin</div>
       <div class="card-name">French 75</div>
       <div class="card-sub">Champagne Flute &nbsp;·&nbsp; Shaker + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Light</span><span class="tag">Bubbly</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Light</span><span class="tag">Bubbly</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1231,11 +1260,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="gin" data-name="Bee's Knees">
+    <div class="card" data-category="cocktail gin" data-name="Bee's Knees">
       <div class="card-category cat-gin">Gin</div>
       <div class="card-name">Bee's Knees</div>
       <div class="card-sub">Small Rocks Glass &nbsp;·&nbsp; Build</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Sweet</span><span class="tag">Citrus</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Sweet</span><span class="tag">Citrus</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1258,11 +1287,11 @@
     </div>
  
     <!-- TEQUILA -->
-    <div class="card" data-category="tequila" data-name="Paloma">
+    <div class="card" data-category="cocktail tequila" data-name="Paloma">
       <div class="card-category cat-tequila">Tequila</div>
       <div class="card-name">Paloma</div>
       <div class="card-sub">Small Rocks Glass &nbsp;·&nbsp; Build</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Tequila</span><span class="tag">Refreshing</span><span class="tag">Citrus</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Refreshing</span><span class="tag">Citrus</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1284,11 +1313,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="tequila" data-name="Pablo Sour">
+    <div class="card" data-category="cocktail tequila" data-name="Pablo Sour">
       <div class="card-category cat-tequila">Tequila</div>
       <div class="card-name">Pablo Sour</div>
       <div class="card-sub">Small Rocks Glass &nbsp;·&nbsp; Shaker + Pour (Egg White)</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Tequila</span><span class="tag">Sour</span><span class="tag">Silky</span><span class="tag">Egg White</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Sour</span><span class="tag">Silky</span><span class="tag">Egg White</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1314,11 +1343,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="tequila" data-name="Margarita">
+    <div class="card" data-category="cocktail tequila" data-name="Margarita">
       <div class="card-category cat-tequila">Tequila</div>
       <div class="card-name">Margarita</div>
       <div class="card-sub">Margarita Glass &nbsp;·&nbsp; Shaker + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Tequila</span><span class="tag">Sour</span><span class="tag">Classic</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Sour</span><span class="tag">Classic</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1346,11 +1375,11 @@
     </div>
  
     <!-- VODKA -->
-    <div class="card" data-category="vodka" data-name="Espresso Martini">
+    <div class="card" data-category="cocktail vodka" data-name="Espresso Martini">
       <div class="card-category cat-vodka">Vodka</div>
       <div class="card-name">Espresso Martini</div>
       <div class="card-sub">Martini Glass &nbsp;·&nbsp; Shaker + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Rich</span><span class="tag">Coffee</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Rich</span><span class="tag">Coffee</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1377,11 +1406,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="vodka" data-name="The Happy Wife">
+    <div class="card" data-category="cocktail vodka" data-name="The Happy Wife">
       <div class="card-category cat-vodka">Vodka</div>
       <div class="card-name">The Happy Wife</div>
       <div class="card-sub">Small Rocks Glass &nbsp;·&nbsp; Stir</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Light</span><span class="tag">Citrus</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Light</span><span class="tag">Citrus</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1404,11 +1433,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="vodka" data-name="Transfusion">
+    <div class="card" data-category="cocktail vodka" data-name="Transfusion">
       <div class="card-category cat-vodka">Vodka</div>
       <div class="card-name">Transfusion</div>
       <div class="card-sub">Water Glass &nbsp;·&nbsp; Mixing Glass + Muddle</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Refreshing</span><span class="tag">Fruity</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Refreshing</span><span class="tag">Fruity</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1435,11 +1464,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="vodka" data-name="Head Fake">
+    <div class="card" data-category="cocktail vodka" data-name="Head Fake">
       <div class="card-category cat-vodka">Vodka</div>
       <div class="card-name">Head Fake</div>
       <div class="card-sub">Martini Glass &nbsp;·&nbsp; Shaker + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Sweet</span><span class="tag">Citrus</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Sweet</span><span class="tag">Citrus</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1467,11 +1496,11 @@
     </div>
  
     <!-- OFF MENU -->
-    <div class="card" data-category="offmenu gin" data-name="Negroni">
+    <div class="card" data-category="cocktail gin offmenu" data-name="Negroni">
       <div class="card-category cat-offmenu">Off Menu</div>
       <div class="card-name">Negroni</div>
       <div class="card-sub">Large Rocks Glass &nbsp;·&nbsp; Mixing Glass + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Bitter</span><span class="tag">Spirit Forward</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Bitter</span><span class="tag">Spirit Forward</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1495,11 +1524,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="offmenu vodka" data-name="Inhibited">
+    <div class="card" data-category="cocktail vodka offmenu" data-name="Inhibited">
       <div class="card-category cat-offmenu">Off Menu</div>
       <div class="card-name">Inhibited</div>
       <div class="card-sub">Martini Glass &nbsp;·&nbsp; Shaker + Chocolate Drizzle</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Vodka</span><span class="tag">Rich</span><span class="tag">Dessert</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Rich</span><span class="tag">Dessert</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1526,11 +1555,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="offmenu whiskey" data-name="Not a Paper Plane">
+    <div class="card" data-category="cocktail whiskey2" data-name="Not a Paper Plane">
       <div class="card-category cat-offmenu">Off Menu</div>
       <div class="card-name">Not a Paper Plane</div>
       <div class="card-sub">Large Rocks Glass &nbsp;·&nbsp; Stir</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Bourbon</span><span class="tag">Bitter</span><span class="tag">Spirit Forward</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Bitter</span><span class="tag">Spirit Forward</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1554,11 +1583,11 @@
       </div>
     </div>
  
-    <div class="card" data-category="offmenu whiskey" data-name="New York Sour">
+    <div class="card" data-category="cocktail whiskey2" data-name="New York Sour">
       <div class="card-category cat-offmenu">Off Menu</div>
       <div class="card-name">New York Sour</div>
       <div class="card-sub">Small Rocks Glass &nbsp;·&nbsp; Shaker + Pour</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Whiskey</span><span class="tag">Sour</span><span class="tag">Egg White</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Sour</span><span class="tag">Egg White</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1586,11 +1615,11 @@
       </div>
     </div>
 
-    <div class="card" data-category="offmenu gin" data-name="Lemon Lavender Gin Martini">
+    <div class="card" data-category="cocktail gin offmenu" data-name="Lemon Lavender Gin Martini">
       <div class="card-category cat-offmenu">Off Menu</div>
       <div class="card-name">Lemon Lavender Gin Martini</div>
       <div class="card-sub">Martini Glass &nbsp;·&nbsp; Shaker + Strain</div>
-      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Gin</span><span class="tag">Floral</span><span class="tag">Citrus</span></div>
+      <div class="tag-row"><span class="tag">Cocktail</span><span class="tag">Floral</span><span class="tag">Citrus</span></div>
       <div class="expand-hint">Build</div>
       <div class="card-detail">
         <div class="section-label">Sell It</div>
@@ -1616,11 +1645,2007 @@
       </div>
     </div>
 
+<div class="card" data-category="whiskey bourbon" data-name="1792 Small Batch">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">1792 Small Batch</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Barton 1792 Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Barton 1792 Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$14</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Caramel, vanilla, and a hint of spice — soft and approachable with a gentle warmth. One of Kentucky's better-kept secrets at a great price point.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="1792 Sweet Wheat">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">1792 Sweet Wheat</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Barton 1792 Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Sweet</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Barton 1792 Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Wheat in place of rye softens everything — honeyed vanilla, butterscotch, and a warm, gentle finish. The move for guests who find standard bourbons too harsh.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="A Midnight's Winter Dram">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">A Midnight's Winter Dram</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Collaboration Release, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Spicy</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Collaboration Release, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$40</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Dark fruit, baking spice, and toasted oak with a long warming finish. A conversation piece — worth telling the table what it is.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Angel's Envy">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Angel's Envy</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Louisville Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Port Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Louisville Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in ruby port wine casks — ripe fruit, vanilla, and a delicate sweetness that sets it apart from standard bourbon. One of the most recommended bottles on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Angel's Envy Cask Strength">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Angel's Envy Cask Strength</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Louisville Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Rich</span><span class="tag">Cask Strength</span><span class="tag">Port Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Louisville Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$65</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The full-proof version of the port-finished expression — amplified dark fruit, maple, and a long powerful finish. For guests who know the original and want more.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Angel's Envy Triple Cask">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Angel's Envy Triple Cask</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Louisville Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Complex</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Louisville Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$20</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in three different casks — layers of fruit, vanilla, and subtle spice with a remarkably smooth finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Baker's">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Baker's</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Spicy</span><span class="tag">High Proof</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$22</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for Baker Beam, grandson of Jim Beam. Big and bold at 107 proof — caramel, oak, and a pronounced spice that demands respect.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bardstown Discovery #6">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bardstown Discovery #6</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Bardstown Bourbon Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Blended</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bardstown Bourbon Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$25</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A blended bourbon sourced from multiple distilleries — layered and complex with dark fruit, vanilla, and toasted oak. Bardstown's Discovery series is consistently one of the most interesting on the shelf.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bardstown Founders KBS">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bardstown Founders KBS</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Bardstown Bourbon Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Stout Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bardstown Bourbon Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$32</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in KBS stout barrels from Founders Brewing — chocolate, coffee, and a rich roasted depth alongside classic bourbon sweetness. For guests who want something genuinely different.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bardstown Foursquare">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bardstown Foursquare</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Bardstown Bourbon Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Rum Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bardstown Bourbon Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$45</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A collaboration with Foursquare Rum Distillery — Barbadian rum cask finishing adds tropical fruit and molasses notes to the Kentucky bourbon base. Unique and worth the conversation.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bardstown Fusion #7">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bardstown Fusion #7</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Bardstown Bourbon Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">Blended</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bardstown Bourbon Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$22</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A blend of straight bourbons from different distilleries and ages — fruit-forward and smooth with a long, well-integrated finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bardstown Château Laboude">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bardstown Château Laboude</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Bardstown Bourbon Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Wine Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bardstown Bourbon Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$40</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in French Bordeaux wine casks — dark fruit, vanilla, and an elegant wine-influenced finish that bridges the gap between bourbon and Old World wine.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bardstown Rishi's Single Barrel">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bardstown Rishi's Single Barrel</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Bardstown Bourbon Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Single Barrel</span><span class="tag">Tea Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bardstown Bourbon Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$30</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A Bowdie's private selection finished in Rishi's tea casks — subtle floral and herbal notes layered over classic bourbon character. One of the more distinctive bottles on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Basil Hayden's">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Basil Hayden's</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Light</span><span class="tag">Smooth</span><span class="tag">Spicy</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$14</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">High rye content for a bourbon — light-bodied with a pleasant spice and gentle sweetness. The gateway bourbon for guests who are new to the category.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Basil Hayden's 10 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Basil Hayden's 10 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">10 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A decade of aging adds depth to Basil Hayden's light house style — more vanilla and oak without losing the accessible character.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Basil Hayden's Malted Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Basil Hayden's Malted Rye</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Spicy</span><span class="tag">Unique</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$20</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Malted rye in the mashbill gives this a distinctive bready, slightly earthy note alongside the classic Hayden spice. Worth recommending to guests who want something off the standard path.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Basil Hayden's Red Wine Cask">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Basil Hayden's Red Wine Cask</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Wine Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$22</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in California red wine casks — subtle fruit and a touch of tartness layered over Basil Hayden's light, accessible base.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Basil Hayden's Toast">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Basil Hayden's Toast</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$20</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Made with a toasted barrel stave insert — amplified vanilla and caramel with a warm, slightly smoky finish. The sweeter expression in the Hayden range.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Blade & Bow">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Blade & Bow</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Stitzel-Weller Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Stitzel-Weller Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Made using the Solera aging method with barrels from the legendary Stitzel-Weller Distillery. Rich vanilla, honey, and dried fruit — a nod to one of Kentucky's great heritage distilleries.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Blanton's Original">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Blanton's Original</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Smooth</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$30</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The original single barrel bourbon — the bottle that started the category. Honey, citrus, and a long warming finish. The collectible stopper alone starts conversations.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Blanton's Straight from the Barrel">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Blanton's Straight from the Barrel</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Rich</span><span class="tag">Cask Strength</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$80</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Uncut and unfiltered at full cask strength — typically around 130 proof. Intensely concentrated Blanton's character: vanilla, honey, and oak at maximum expression. For the serious guest.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Blanton's Gold">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Blanton's Gold</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Smooth</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$75</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A step above the Original — same single barrel concept with added barrel time, producing a richer, more complex profile. Dark caramel, toasted oak, and a finish that lingers.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Blood Oath Pact 10">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Blood Oath Pact 10</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Lux Row Distillers, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Cognac Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Lux Row Distillers, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$45</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A limited blend with Cognac barrel finishing — dark fruit, baking spice, and a European brandy-influenced warmth.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Blood Oath Pact 8">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Blood Oath Pact 8</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Lux Row Distillers, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Rum Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Lux Row Distillers, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$50</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in Caribbean rum casks — tropical fruit, molasses, and vanilla layered over a well-aged bourbon base.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Blood Oath Pact 9">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Blood Oath Pact 9</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Lux Row Distillers, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Spicy</span><span class="tag">Blended</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Lux Row Distillers, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$50</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A trio of bourbons finished in toasted French oak — amplified spice, dark cherry, and a long warming finish with exceptional depth.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Booker's">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Booker's</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Rich</span><span class="tag">Cask Strength</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$25</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for Booker Noe, Jim Beam's grandson. Uncut and unfiltered at barrel strength — typically 120–130 proof. Massive vanilla, caramel, and oak with a long, warming finish. Not for the timid.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bowdie's Private Select — Maker's Mark">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bowdie's Private Select — Maker's Mark</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Maker's Mark Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">Private Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Maker's Mark Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Our house private barrel selection from Maker's Mark — customized with a proprietary stave profile chosen by Bowdie's. More complexity than the standard Maker's with a distinct character you won't find anywhere else.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bowman Brothers Small Batch">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bowman Brothers Small Batch</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; A. Smith Bowman Distillery, Virginia</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">A. Smith Bowman Distillery, Virginia</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Distilled in Virginia from a wheated mashbill — soft, approachable, and fruit-forward with a gentle sweetness. A lesser-known bottle worth recommending.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Buffalo Trace">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Buffalo Trace</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Classic</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$14</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The flagship of one of America's greatest distilleries — vanilla, caramel, and a hint of dark fruit with a clean, balanced finish. The benchmark entry-level bourbon. Used in our Old Fashioned for good reason.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Bulleit Bourbon">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Bulleit Bourbon</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Bulleit Distilling Co., Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Spicy</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bulleit Distilling Co., Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$10</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">High rye mashbill gives Bulleit more spice than most bourbons at this price. Bold oak and vanilla with a distinctive rye kick. The most accessible spirit-forward bourbon on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey canadian" data-name="Caribou Crossing">
+      <div class="card-category" style="color: var(--cat-offmenu);">Canadian</div>
+      <div class="card-name">Caribou Crossing</div>
+      <div class="card-sub">Canadian &nbsp;·&nbsp; Sazerac Company, Canada</div>
+      <div class="tag-row"><span class="tag">Canadian</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Sazerac Company, Canada</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$25</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Canada's first single barrel Canadian whisky — honeyed and soft with vanilla, dried fruit, and a gentle oak finish. An easy recommendation for guests who want something smooth and approachable.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey canadian" data-name="Canadian Club">
+      <div class="card-category" style="color: var(--cat-offmenu);">Canadian</div>
+      <div class="card-name">Canadian Club</div>
+      <div class="card-sub">Canadian &nbsp;·&nbsp; Hiram Walker Distillery, Ontario</div>
+      <div class="tag-row"><span class="tag">Canadian</span><span class="tag">Light</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Hiram Walker Distillery, Ontario</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$8</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Light, clean, and session-friendly. The straightforward Canadian for guests who want something simple and mixable.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey canadian" data-name="Canadian Club 43 Year">
+      <div class="card-category" style="color: var(--cat-offmenu);">Canadian</div>
+      <div class="card-name">Canadian Club 43 Year</div>
+      <div class="card-sub">Canadian &nbsp;·&nbsp; Hiram Walker Distillery, Ontario</div>
+      <div class="tag-row"><span class="tag">Canadian</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">43 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Hiram Walker Distillery, Ontario</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$110</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">One of the oldest Canadian whiskies available — 43 years of aging produces extraordinary complexity with dried fruit, dark honey, and a remarkably silky finish. A conversation piece.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Clermont Steep">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Clermont Steep</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Unique</span><span class="tag">Smooth</span><span class="tag">Charcoal Filtered</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$32</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Charcoal filtered like Tennessee whiskey but distilled in Kentucky — an unusually smooth bourbon with a distinctive clean sweetness. Worth recommending to guests who enjoy Jack Daniel's but want something more refined.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey canadian" data-name="Crown Royal">
+      <div class="card-category" style="color: var(--cat-offmenu);">Canadian</div>
+      <div class="card-name">Crown Royal</div>
+      <div class="card-sub">Canadian &nbsp;·&nbsp; Crown Royal Distillery, Manitoba</div>
+      <div class="tag-row"><span class="tag">Canadian</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Light</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Crown Royal Distillery, Manitoba</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$11</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Canada's most iconic whisky — soft, approachable, and crowd-pleasing with vanilla and light fruit. The Canadian everyone knows.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Doc Swinson's Alter Ego Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Doc Swinson's Alter Ego Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Empirical Spirits, Colorado</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Complex</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Empirical Spirits, Colorado</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A blended rye with finishing in multiple barrel types — spice-forward with fruit and a dry, herbal finish. A solid value rye for guests who want something interesting without a premium price.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey singlemalt" data-name="Dunville's Single Malt">
+      <div class="card-category" style="color: var(--cat-gin);">Single Malt</div>
+      <div class="card-name">Dunville's Single Malt</div>
+      <div class="card-sub">Single Malt &nbsp;·&nbsp; Echlinville Distillery, Northern Ireland</div>
+      <div class="tag-row"><span class="tag">Single Malt</span><span class="tag">Smooth</span><span class="tag">Fruity</span><span class="tag">Irish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Echlinville Distillery, Northern Ireland</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$17</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A revival of one of Ireland's oldest whiskey brands — light malt, orchard fruit, and a gentle sweetness. The bridge between Irish whiskey and Scotch for guests who want to explore.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="E.H. Taylor Full Proof">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">E.H. Taylor Full Proof</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Spicy</span><span class="tag">Full Proof</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$60</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Bottled at the same proof it entered the barrel — around 125 proof. Intense corn sweetness, baking spice, and a powerful, long finish. One of the most sought-after bottles in the Buffalo Trace Antique Collection.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="E.H. Taylor Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">E.H. Taylor Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Complex</span><span class="tag">Bold</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$55</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for legendary distiller Edmund Haynes Taylor Jr. — a high-rye expression with pepper, dried fruit, and a firm, structured finish. One of the finest ryes available at any price.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="E.H. Taylor Small Batch">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">E.H. Taylor Small Batch</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Complex</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$28</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The most accessible of the E.H. Taylor range — vanilla, honey, and a balanced spice with a long, clean finish. Named for the man who wrote Kentucky's standards for bourbon production.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Eagle Rare 10 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Eagle Rare 10 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">10 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$20</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Ten years of aging at Buffalo Trace — dry oak, honey, and a hint of dark chocolate with a long elegant finish. One of the best value bourbons on the list and consistently award-winning.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Elijah Craig Small Batch">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Elijah Craig Small Batch</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Sweet</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$16</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for the Baptist minister credited with first aging whiskey in charred oak barrels. Rich vanilla and caramel with a warm, consistent finish — a reliable recommendation at any price point.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Elijah Craig 18 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Elijah Craig 18 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Bold</span><span class="tag">18 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$40</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Eighteen years of Kentucky aging — dried fruit, dark chocolate, oak, and tobacco with a long, sophisticated finish. One of the most age-worthy bottles on the list at this price.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Elijah Craig Private Barrel">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Elijah Craig Private Barrel</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Bold</span><span class="tag">Single Barrel</span><span class="tag">Private Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A single barrel selection — more concentrated and characterful than the small batch. Always delivers more intensity than the standard expression.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Elijah Craig Single Barrel">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Elijah Craig Single Barrel</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Rich</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$20</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Bottled at 94 proof from a single barrel — more focused and intense than the small batch, with deeper caramel and spice. Worth the upgrade for guests who want more character.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Elijah Craig Straight Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Elijah Craig Straight Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Heaven Hill's rye entry — fruity and spicy with a clean, dry finish. A solid introduction to American rye for guests stepping away from bourbon.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Elmer T. Lee">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Elmer T. Lee</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$55</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for the master distiller who created Blanton's and pioneered single barrel bourbon. Light and elegant — honey, herbs, and a delicate finish. A collector's bottle with a remarkable story.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Four Roses Yellow Label">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Four Roses Yellow Label</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Four Roses Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Fruity</span><span class="tag">Light</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Four Roses Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The entry point into one of Kentucky's most distinctive distilleries. Fruity and approachable — floral notes, light caramel, and an easy finish. Four Roses uses 10 separate bourbon recipes; this blends them all.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Four Roses Small Batch Select">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Four Roses Small Batch Select</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Four Roses Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Spicy</span><span class="tag">Rich</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Four Roses Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A selection of four of Four Roses' ten recipes — more complexity and spice than the Yellow Label with a longer, more satisfying finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Fox & Oden">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Fox & Oden</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Fox & Oden Distillery, Arkansas</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Fox & Oden Distillery, Arkansas</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">An Arkansas small-batch bourbon — approachable and well-made with vanilla, caramel, and a clean finish. A lesser-known label worth putting in front of curious guests.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Fox & Oden Double Oaked">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Fox & Oden Double Oaked</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Fox & Oden Distillery, Arkansas</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Sweet</span><span class="tag">Double Oak</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Fox & Oden Distillery, Arkansas</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$28</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A second maturation in new charred oak amplifies the vanilla and caramel — richer and fuller than the standard expression.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey irish" data-name="Garavogue Irish Whiskey">
+      <div class="card-category" style="color: var(--cat-tequila);">Irish</div>
+      <div class="card-name">Garavogue Irish Whiskey</div>
+      <div class="card-sub">Irish &nbsp;·&nbsp; Connacht Distillery, Ireland</div>
+      <div class="tag-row"><span class="tag">Single Malt</span><span class="tag">Smooth</span><span class="tag">Fruity</span><span class="tag">Irish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Connacht Distillery, Ireland</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$45</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for the river running through Sligo — a single malt Irish with orchard fruit, light honey, and a clean mineral finish. Craft-distilled and distinctive.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="George T. Stagg">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">George T. Stagg</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Rich</span><span class="tag">Cask Strength</span><span class="tag">Rare</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$110</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">One of the most coveted bottles in American whiskey — part of the Buffalo Trace Antique Collection, released once a year. Uncut and unfiltered at barrel strength, typically 120–140 proof. Dark fruit, leather, vanilla, and an extraordinary finish. Treat this accordingly.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey japanese" data-name="Hakushu 12 Year">
+      <div class="card-category" style="color: var(--cat-vodka);">Japanese</div>
+      <div class="card-name">Hakushu 12 Year</div>
+      <div class="card-sub">Japanese &nbsp;·&nbsp; Hakushu Distillery, Yamanashi, Japan</div>
+      <div class="tag-row"><span class="tag">Japanese</span><span class="tag">Smooth</span><span class="tag">Light</span><span class="tag">Smoky</span><span class="tag">12 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Hakushu Distillery, Yamanashi, Japan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$50</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The mountain distillery expression from Suntory — lighter and more herbaceous than Yamazaki, with a subtle smokiness and fresh green character. Remarkable with a drop of water.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Hancock's Reserve Single Barrel">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Hancock's Reserve Single Barrel</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$19</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A single barrel Buffalo Trace expression — soft and approachable with vanilla and light oak. Often overlooked in favor of its famous stablemates, which makes it an easy recommendation for value-seekers.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Heaven Hill 20 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Heaven Hill 20 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Bold</span><span class="tag">20 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$120</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Two decades of Kentucky aging — extraordinarily complex with dark fruit, leather, tobacco, and a finish that evolves for minutes. One of the most age-worthy American whiskies available.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Heaven Hill Bottled in Bond">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Heaven Hill Bottled in Bond</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Spicy</span><span class="tag">Bold</span><span class="tag">Bottled in Bond</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$20</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">100 proof, one distillery, one season, four years minimum — an honest, no-compromise bourbon with corn sweetness, firm rye spice, and a clean finish. Outstanding value.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Heaven's Door 10 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Heaven's Door 10 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven's Door Spirits, Tennessee</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">10 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven's Door Spirits, Tennessee</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$28</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Bob Dylan's whiskey label — a decade-aged Tennessee bourbon with vanilla, caramel, and a smooth, measured finish. The story sells it; the whiskey earns it.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Henry McKenna 10 Year Bottled in Bond">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Henry McKenna 10 Year Bottled in Bond</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Spicy</span><span class="tag">10 Yr</span><span class="tag">Bottled in Bond</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Ten years, 100 proof, single barrel, bottled in bond — an extraordinary value that won Best in Show at the San Francisco Spirits Competition. Caramel, baking spice, and a long, firm finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey japanese" data-name="Hibiki Japanese Harmony">
+      <div class="card-category" style="color: var(--cat-vodka);">Japanese</div>
+      <div class="card-name">Hibiki Japanese Harmony</div>
+      <div class="card-sub">Japanese &nbsp;·&nbsp; Suntory Distilleries, Japan</div>
+      <div class="tag-row"><span class="tag">Japanese</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">Blended</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Suntory Distilleries, Japan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$30</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Suntory's flagship blend — honeyed and floral with orange peel, white chocolate, and a long silky finish. One of the most beautifully crafted blended whiskies in the world.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="I.W. Harper 15 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">I.W. Harper 15 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">15 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Fifteen years of aging produce a remarkably soft and refined bourbon — vanilla, honey, and a delicate oak that doesn't overpower. An underappreciated bottle at a fair price.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Ironfish Bourbon in Mezcal Casks">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Ironfish Bourbon in Mezcal Casks</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Ironfish Distillery, Michigan</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Unique</span><span class="tag">Smoky</span><span class="tag">Mezcal Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Ironfish Distillery, Michigan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$16</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A local Michigan bourbon finished in mezcal casks — subtle smoke and agave notes layered over classic bourbon sweetness. Worth recommending to curious guests.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Isaac Bowman Port Finish">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Isaac Bowman Port Finish</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; A. Smith Bowman Distillery, Virginia</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Sweet</span><span class="tag">Smooth</span><span class="tag">Port Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">A. Smith Bowman Distillery, Virginia</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$12</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A Virginia bourbon finished in port wine barrels — fruit-forward and approachable with a gentle sweetness. One of the best value bottles on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey singlemalt" data-name="Jack Daniel's 12 Year">
+      <div class="card-category" style="color: var(--cat-gin);">Single Malt</div>
+      <div class="card-name">Jack Daniel's 12 Year</div>
+      <div class="card-sub">Single Malt &nbsp;·&nbsp; Jack Daniel's Distillery, Tennessee</div>
+      <div class="tag-row"><span class="tag">Single Malt</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">12 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jack Daniel's Distillery, Tennessee</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A rare aged expression from Lynchburg — twelve years of Tennessee charcoal mellowing and barrel aging produces a noticeably richer, more complex character than the standard Black Label.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey singlemalt" data-name="Jack Daniel's Old No. 7">
+      <div class="card-category" style="color: var(--cat-gin);">Single Malt</div>
+      <div class="card-name">Jack Daniel's Old No. 7</div>
+      <div class="card-sub">Single Malt &nbsp;·&nbsp; Jack Daniel's Distillery, Tennessee</div>
+      <div class="tag-row"><span class="tag">Single Malt</span><span class="tag">Smooth</span><span class="tag">Light</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jack Daniel's Distillery, Tennessee</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$9.50</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">America's most recognized whiskey — charcoal mellowed for a distinctively smooth, slightly sweet character. The benchmark Tennessee whiskey.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey singlemalt" data-name="Jack Daniel's Bonded">
+      <div class="card-category" style="color: var(--cat-gin);">Single Malt</div>
+      <div class="card-name">Jack Daniel's Bonded</div>
+      <div class="card-sub">Single Malt &nbsp;·&nbsp; Jack Daniel's Distillery, Tennessee</div>
+      <div class="tag-row"><span class="tag">Single Malt</span><span class="tag">Bold</span><span class="tag">Smooth</span><span class="tag">Bottled in Bond</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jack Daniel's Distillery, Tennessee</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">100 proof and bottled in bond — a significantly more substantial Jack Daniel's with more fruit, spice, and depth than the standard expression.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey singlemalt" data-name="Jack Daniel's Sinatra Select">
+      <div class="card-category" style="color: var(--cat-gin);">Single Malt</div>
+      <div class="card-name">Jack Daniel's Sinatra Select</div>
+      <div class="card-sub">Single Malt &nbsp;·&nbsp; Jack Daniel's Distillery, Tennessee</div>
+      <div class="tag-row"><span class="tag">Single Malt</span><span class="tag">Rich</span><span class="tag">Smooth</span><span class="tag">Bold</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jack Daniel's Distillery, Tennessee</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$35</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Made with special sinatra barrels with deep grooves cut into the staves — more oak contact produces a richer, more intense character. Frank Sinatra's favorite whiskey, elevated.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey irish" data-name="Jameson Irish Whiskey">
+      <div class="card-category" style="color: var(--cat-tequila);">Irish</div>
+      <div class="card-name">Jameson Irish Whiskey</div>
+      <div class="card-sub">Irish &nbsp;·&nbsp; Midleton Distillery, Cork, Ireland</div>
+      <div class="tag-row"><span class="tag">Irish</span><span class="tag">Smooth</span><span class="tag">Light</span><span class="tag">Sweet</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Midleton Distillery, Cork, Ireland</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$9.50</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The world's best-selling Irish whiskey — triple distilled for exceptional smoothness, with vanilla, toasted wood, and a light fruit character. The gateway to Irish whiskey for any guest.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Jefferson's Ocean Marian McLain L.E.">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Jefferson's Ocean Marian McLain L.E.</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jefferson's Bourbon, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Unique</span><span class="tag">Complex</span><span class="tag">Sea-Aged</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jefferson's Bourbon, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$60</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Part of Jefferson's Ocean series — aged at sea aboard a ship, where constant motion and temperature changes accelerate barrel interaction. Salty, briny notes alongside caramel and vanilla.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Jefferson's Ocean Voyage 23">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Jefferson's Ocean Voyage 23</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jefferson's Bourbon, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Unique</span><span class="tag">Smooth</span><span class="tag">Sea-Aged</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jefferson's Bourbon, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$22</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">One of the ongoing Ocean voyage releases — each batch travels different seas. Accessible and interesting with a maritime character unlike any standard bourbon.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Jefferson's Reserve">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Jefferson's Reserve</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jefferson's Bourbon, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Complex</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jefferson's Bourbon, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$14</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A very small batch bourbon blended from barrels ranging 8 to 12 years — vanilla, caramel, and toasted oak with a well-balanced, approachable finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Jefferson's Reserve VR Twin Oak">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Jefferson's Reserve VR Twin Oak</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jefferson's Bourbon, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Double Oak</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jefferson's Bourbon, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$25</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in toasted virgin white oak — layers of vanilla, butterscotch, and a warming finish beyond the standard Reserve.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Jim Beam White Label">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Jim Beam White Label</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; James B. Beam Distilling, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Light</span><span class="tag">Sweet</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">James B. Beam Distilling, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$10</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The world's best-selling bourbon — corn-forward sweetness with light oak and vanilla. The starting point for the category.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Jim Beam Black Label">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Jim Beam Black Label</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; James B. Beam Distilling, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">James B. Beam Distilling, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$11</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Double-aged compared to the White Label — noticeably more vanilla, caramel, and oak with a longer, fuller finish. Worth upgrading guests who order standard Jim Beam.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Kentucky Owl 10 Year Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Kentucky Owl 10 Year Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Kentucky Owl, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Complex</span><span class="tag">10 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Kentucky Owl, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$35</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A decade-aged Kentucky rye — pepper, dried fruit, and a firm tannic structure with a long, warming finish. One of the more serious ryes on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Kentucky Owl Confiscated">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Kentucky Owl Confiscated</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Kentucky Owl, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">Blended</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Kentucky Owl, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$30</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A blended bourbon named for the Prohibition-era confiscation of Kentucky Owl stock. Accessible and food-friendly — vanilla, light spice, and a clean finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey irish" data-name="Kentucky Owl St. Patrick's">
+      <div class="card-category" style="color: var(--cat-tequila);">Irish</div>
+      <div class="card-name">Kentucky Owl St. Patrick's</div>
+      <div class="card-sub">Irish &nbsp;·&nbsp; Kentucky Owl / Teeling Distillery</div>
+      <div class="tag-row"><span class="tag">Irish</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">Blended</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Kentucky Owl / Teeling Distillery</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A collaboration between Kentucky Owl and Teeling — American bourbon blended with Irish whiskey. Two worlds in one glass: bourbon sweetness and Irish lightness.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Knob Creek Bourbon/Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Knob Creek Bourbon/Rye</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Spicy</span><span class="tag">Bold</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The Knob Creek mashbill leans heavy on rye — more spice and structure than most bourbons at this price.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Knob Creek">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Knob Creek</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Spicy</span><span class="tag">Rich</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$11</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for Abraham Lincoln's childhood home — 100 proof and nine years aged. Caramel, oak, and a pronounced spice that made small-batch bourbon famous.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Knob Creek 12 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Knob Creek 12 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Rich</span><span class="tag">12 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Three additional years of aging deepen everything — more fruit, more oak, and a longer, more complex finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Knob Creek 15 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Knob Creek 15 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">15 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$30</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Fifteen years produces a noticeably drier, more oak-forward Knob Creek — dark fruit, leather, and a long, warming finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Knob Creek 18 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Knob Creek 18 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Bold</span><span class="tag">18 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$45</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">One of the oldest standard releases in the Knob Creek range — intense tannin, dark chocolate, dried fruit, and an extraordinary finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Knob Creek Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Knob Creek Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Bold</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$12</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">100 proof rye from one of Kentucky's most trusted houses — pepper, citrus, and a firm, dry finish. A dependable rye at an excellent price.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Larceny Small Batch">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Larceny Small Batch</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Wheated</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A wheated bourbon — honey, light fruit, and a gentle finish. For guests who find rye-heavy bourbons too sharp.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Little Book">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Little Book</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Complex</span><span class="tag">Blended</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$50</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Created by Freddie Noe, eighth generation Beam distiller — each release is a different blend, always bold and always interesting. Worth mentioning the family legacy.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Lock Stock & Barrel Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Lock Stock & Barrel Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Contract Distilled, Canada</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Complex</span><span class="tag">13 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Contract Distilled, Canada</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A 13-year-old straight rye — fruit, pepper, and a long dry finish with exceptional complexity for the price. One of the better value ryes on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Maker's Mark Cellar Aged">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Maker's Mark Cellar Aged</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Maker's Mark Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">Complex</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Maker's Mark Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$36</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Rotated through different warehouse floors for more complex barrel influence — rounder and fuller than standard Maker's with added depth.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Maker's Mark">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Maker's Mark</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Maker's Mark Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Wheated</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Maker's Mark Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$14</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The iconic red wax — a wheated mashbill produces a soft, approachable bourbon with caramel, vanilla, and a long, gentle finish. One of the most recommended bourbons on the planet.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Mammoth 16 Year Single Barrel Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Mammoth 16 Year Single Barrel Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Mammoth Distilling, Michigan</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Complex</span><span class="tag">16 Yr</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Mammoth Distilling, Michigan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$35</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A local Michigan rye aged 16 years — one of the most age-forward ryes on the list. Oak, pepper, and dried fruit with a long, tannic finish. Worth mentioning the Michigan provenance.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Michter's 10 Year Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Michter's 10 Year Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Michter's Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">10 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Michter's Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$50</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">One of the finest aged ryes available — a decade of Kentucky aging produces an extraordinarily complex expression with pepper, dark fruit, and a finish that evolves for minutes.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Michter's US*1 Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Michter's US*1 Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Michter's Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Michter's Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Michter's entry-level rye — accessible spice, light fruit, and a clean finish. An excellent introduction to the Michter's range.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Michter's 10 Year Bourbon">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Michter's 10 Year Bourbon</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Michter's Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Smooth</span><span class="tag">10 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Michter's Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$39</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A decade of aging in carefully selected barrels — vanilla, caramel, and oak with a long, refined finish. Michter's meticulous barrel selection shows.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Mister Sam Tribute Whiskey">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Mister Sam Tribute Whiskey</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Sazerac Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Rare</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Sazerac Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$160</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A tribute to Sam Bronfman — a blend of straight Canadian rye and straight bourbon aged up to 24 years. Extraordinarily complex with dark fruit, leather, and a finish that lasts. Handle accordingly.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Never Say Die Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Never Say Die Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Bardstown Bourbon Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bardstown Bourbon Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$20</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A Churchill-inspired rye — accessible spice and fruit with a clean, pleasant finish. An easy recommendation for guests stepping into the rye category.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Never Say Die Small Batch">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Never Say Die Small Batch</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Bardstown Bourbon Company, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Bardstown Bourbon Company, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A small batch bourbon at an accessible price — vanilla, caramel, and a gentle finish. A reliable mid-tier recommendation.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="New Holland Beer Barrel Bourbon">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">New Holland Beer Barrel Bourbon</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; New Holland Brewing, Michigan</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Unique</span><span class="tag">Smooth</span><span class="tag">Beer Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">New Holland Brewing, Michigan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$14</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A Michigan bourbon finished in New Holland Brewing beer barrels — subtle malt and hop notes layered over classic bourbon sweetness. A local conversation piece worth recommending.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Old Elk Cigar Cut">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Old Elk Cigar Cut</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Old Elk Distillery, Colorado</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Smooth</span><span class="tag">Unique</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Old Elk Distillery, Colorado</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$30</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A blend inspired by cigar pairing — rich and full-bodied with dark chocolate, dried fruit, and a long warming finish. An easy sell for guests ordering from the bar.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey singlemalt" data-name="Old Emmer">
+      <div class="card-category" style="color: var(--cat-gin);">Single Malt</div>
+      <div class="card-name">Old Emmer</div>
+      <div class="card-sub">Single Malt &nbsp;·&nbsp; Mammoth Distilling, Michigan</div>
+      <div class="tag-row"><span class="tag">Single Malt</span><span class="tag">Unique</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Mammoth Distilling, Michigan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$19</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Made from emmer wheat — an ancient grain that gives this Michigan single malt a nutty, slightly earthy character unlike anything else on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Old Fitzgerald 7 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Old Fitzgerald 7 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">Wheated</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$48</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A wheated bourbon released in the classic Old Fitzgerald decanter — rich caramel, vanilla, and a long, honeyed finish. One of Heaven Hill's most celebrated expressions.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Old Fitzgerald 9 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Old Fitzgerald 9 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Wheated</span><span class="tag">9 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$45</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Two additional years of aging add noticeable depth — darker fruit, more oak, and a longer finish with exceptional balance.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Old Grand-Dad 16 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Old Grand-Dad 16 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Jim Beam Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Spicy</span><span class="tag">16 Yr</span><span class="tag">High Proof</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Jim Beam Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$38</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A high-rye bourbon aged 16 years — intense spice, dark fruit, and a powerful finish. At 16 years the Old Grand-Dad mashbill is fully realized.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Pappy Van Winkle 13 Year Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Pappy Van Winkle 13 Year Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Spicy</span><span class="tag">13 Yr</span><span class="tag">Rare</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$125</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">From the Van Winkle family at Buffalo Trace — one of the most coveted ryes in American whiskey. Deep pepper, dark fruit, and a finish that lingers for minutes. Reserve for the right table.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Parker's Heritage Collection 16th Edition">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Parker's Heritage Collection 16th Edition</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Bold</span><span class="tag">Rare</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$95</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">An annual limited release honoring Heaven Hill's late Master Distiller Parker Beam — each edition is different and each is extraordinary. Ask what the current expression is and sell the story.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Pikesville Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Pikesville Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Heaven Hill Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Smooth</span><span class="tag">Bold</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Heaven Hill Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$16</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A Maryland-style straight rye from Heaven Hill — 110 proof with pepper, citrus, and a firm, dry finish. One of the best value ryes on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey irish" data-name="Redbreast 12 Year">
+      <div class="card-category" style="color: var(--cat-tequila);">Irish</div>
+      <div class="card-name">Redbreast 12 Year</div>
+      <div class="card-sub">Irish &nbsp;·&nbsp; Midleton Distillery, Cork, Ireland</div>
+      <div class="tag-row"><span class="tag">Irish</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">12 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Midleton Distillery, Cork, Ireland</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$14</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Ireland's most celebrated single pot still whiskey — creamy, full, and complex with fruit, spice, and a long, warming finish. The Irish whiskey to recommend when a guest wants something serious.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey irish" data-name="Redbreast 21 Year">
+      <div class="card-category" style="color: var(--cat-tequila);">Irish</div>
+      <div class="card-name">Redbreast 21 Year</div>
+      <div class="card-sub">Irish &nbsp;·&nbsp; Midleton Distillery, Cork, Ireland</div>
+      <div class="tag-row"><span class="tag">Irish</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Smooth</span><span class="tag">21 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Midleton Distillery, Cork, Ireland</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$95</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Twenty-one years in sherry and bourbon casks — extraordinary depth with dried fruit, dark chocolate, and a finish that evolves for minutes. One of the finest Irish whiskies ever produced.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Remus 15 Year Gatsby Reserve">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Remus 15 Year Gatsby Reserve</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; MGP Distillery, Indiana</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">15 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">MGP Distillery, Indiana</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$65</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for George Remus, the real-life King of the Bootleggers — 15 years of aging produces a deeply complex bourbon with dark fruit, vanilla, and a long, layered finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Rishi's Old Antique">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Rishi's Old Antique</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Single Barrel</span><span class="tag">Tea Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$55</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A Bowdie's private selection finished in Rishi's aged tea casks — delicate floral and herbal complexity layered over a well-aged bourbon base. One of the most distinctive private barrels on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Russell's Reserve 10 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Russell's Reserve 10 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Wild Turkey Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">10 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Wild Turkey Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$18</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Named for master distiller Jimmy Russell, who has been at Wild Turkey for over 60 years. Richer and more refined than standard Wild Turkey — vanilla, honey, and a long, balanced finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Sazerac Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Sazerac Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Classic</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The rye used in our Sazerac cocktail — and one of the most important ryes in American whiskey history. Light pepper, fruit, and a clean finish that makes it exceptional in cocktails or neat.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey singlemalt" data-name="Scapegrace Fortuna">
+      <div class="card-category" style="color: var(--cat-gin);">Single Malt</div>
+      <div class="card-name">Scapegrace Fortuna</div>
+      <div class="card-sub">Single Malt &nbsp;·&nbsp; Scapegrace Distillery, New Zealand</div>
+      <div class="tag-row"><span class="tag">Single Malt</span><span class="tag">Smooth</span><span class="tag">Unique</span><span class="tag">Fruity</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Scapegrace Distillery, New Zealand</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$17</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A New Zealand single malt — light and fruit-forward with a delicate floral character unlike anything from Scotland or Ireland.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Stagg Jr. Batch #15">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Stagg Jr. Batch #15</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Cask Strength</span><span class="tag">Rich</span><span class="tag">Complex</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$60</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The younger sibling of George T. Stagg — uncut and unfiltered at barrel strength. Dark fruit, vanilla, and a powerful finish that demands a splash of water.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Thomas H. Handy Sazerac Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Thomas H. Handy Sazerac Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Bold</span><span class="tag">Spicy</span><span class="tag">Cask Strength</span><span class="tag">Rare</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$90</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Part of the Buffalo Trace Antique Collection — released once a year. Uncut and unfiltered, typically around 130 proof. Intense rye spice, dark fruit, and a finish that lasts for minutes. One of the most coveted ryes in the world.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Thomas S. Moore Chardonnay Cask">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Thomas S. Moore Chardonnay Cask</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Barton 1792 Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Unique</span><span class="tag">Wine Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Barton 1792 Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$27</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in Chardonnay wine barrels — subtle stone fruit and a gentle acidity layered over classic bourbon sweetness. A distinctive and conversation-worthy bottle.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey japanese" data-name="Toki Suntory Japanese Whisky">
+      <div class="card-category" style="color: var(--cat-vodka);">Japanese</div>
+      <div class="card-name">Toki Suntory Japanese Whisky</div>
+      <div class="card-sub">Japanese &nbsp;·&nbsp; Suntory Distilleries, Japan</div>
+      <div class="tag-row"><span class="tag">Japanese</span><span class="tag">Smooth</span><span class="tag">Light</span><span class="tag">Blended</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Suntory Distilleries, Japan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Suntory's approachable blended Japanese whisky — honeyed and light with green apple and a clean, refreshing finish. The most accessible Japanese whisky on the list.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey irish" data-name="Tullamore D.E.W.">
+      <div class="card-category" style="color: var(--cat-tequila);">Irish</div>
+      <div class="card-name">Tullamore D.E.W.</div>
+      <div class="card-sub">Irish &nbsp;·&nbsp; Tullamore Distillery, Offaly, Ireland</div>
+      <div class="tag-row"><span class="tag">Irish</span><span class="tag">Light</span><span class="tag">Smooth</span><span class="tag">Sweet</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Tullamore Distillery, Offaly, Ireland</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$12</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Triple distilled and triple blended — grain, malt, and pot still whiskey in one bottle. Light and approachable with vanilla, fruit, and a gentle finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Weller 107">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Weller 107</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Bold</span><span class="tag">Sweet</span><span class="tag">Wheated</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$40</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A wheated Buffalo Trace bourbon at 107 proof — more intensity than the Special Reserve with the same soft, honey-forward character. A great value in the Weller lineup.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Weller 12 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Weller 12 Year</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">Complex</span><span class="tag">Wheated</span><span class="tag">12 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$65</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Twelve years on the same wheated mashbill as Pappy Van Winkle — made at the same distillery. Honey, vanilla, and a long elegant finish. The bottle guests reach for when they can't get Pappy.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Weller Millennium">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Weller Millennium</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Rare</span><span class="tag">Wheated</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$350</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">An extraordinarily rare Weller expression — extraordinarily aged and extraordinarily limited. Reserve for guests who know exactly what they're ordering.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Weller Special Reserve">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Weller Special Reserve</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Buffalo Trace Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Wheated</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Buffalo Trace Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$24</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The entry point into the Weller family — wheated and approachable with honey, caramel, and a gentle finish. Often called Poor Man's Pappy, though that undersells it.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="WhistlePig Boss Hog IX 17 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">WhistlePig Boss Hog IX 17 Year</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; WhistlePig Farm, Vermont</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Complex</span><span class="tag">Bold</span><span class="tag">Rich</span><span class="tag">17 Yr</span><span class="tag">Rare</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">WhistlePig Farm, Vermont</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$95</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">One of WhistlePig's most coveted annual releases — 17 years of Vermont rye aging with an extraordinary finish. Among their finest.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="WhistlePig Boss Hog X Commandments">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">WhistlePig Boss Hog X Commandments</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; WhistlePig Farm, Vermont</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Complex</span><span class="tag">Bold</span><span class="tag">Spicy</span><span class="tag">Rare</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">WhistlePig Farm, Vermont</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$100</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">The tenth Boss Hog release — bold and complex with layers of rye spice, dark fruit, and oak. A limited annual release worth the conversation at the table.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="WhistlePig 10 Year Single Barrel Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">WhistlePig 10 Year Single Barrel Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; WhistlePig Farm, Vermont</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Smooth</span><span class="tag">10 Yr</span><span class="tag">Single Barrel</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">WhistlePig Farm, Vermont</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$25</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A single barrel selection from Vermont's premier rye distillery — pepper, fruit, and a dry, elegant finish. The entry point into the WhistlePig range.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="WhistlePig 12 Year Old World">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">WhistlePig 12 Year Old World</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; WhistlePig Farm, Vermont</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Complex</span><span class="tag">Smooth</span><span class="tag">12 Yr</span><span class="tag">Wine Finish</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">WhistlePig Farm, Vermont</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$35</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Finished in a rotation of European wine casks — Madeira, Sauternes, and Port. Rich fruit, honey, and a long finish with Old World wine character.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="WhistlePig 15 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">WhistlePig 15 Year</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; WhistlePig Farm, Vermont</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Bold</span><span class="tag">15 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">WhistlePig Farm, Vermont</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$50</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Fifteen years of Vermont aging produce WhistlePig's most complete standard expression — deep pepper, dark fruit, oak, and a finish that evolves for minutes. A benchmark aged rye.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="WhistlePig PiggyBack 6 Year">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">WhistlePig PiggyBack 6 Year</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; WhistlePig Farm, Vermont</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Light</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">WhistlePig Farm, Vermont</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">WhistlePig's most accessible expression — six years, 100% rye, approachable spice and fruit. The gateway into the WhistlePig range.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Willett Pot Still Reserve">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Willett Pot Still Reserve</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Willett Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Sweet</span><span class="tag">Unique</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Willett Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$16</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Bottled in the distinctive pot still shaped bottle — light and approachable with vanilla and caramel. The bottle starts conversations; the whiskey closes them.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Woodford Reserve">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Woodford Reserve</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Woodford Reserve Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Smooth</span><span class="tag">Rich</span><span class="tag">Classic</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Woodford Reserve Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">One of Kentucky's most celebrated distilleries — triple distilled in copper pot stills. Vanilla, toasted oak, and a long, sophisticated finish. A premium pour at a very accessible price.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey bourbon" data-name="Woodford Reserve Double Oaked">
+      <div class="card-category" style="color: var(--cat-whiskey);">Bourbon</div>
+      <div class="card-name">Woodford Reserve Double Oaked</div>
+      <div class="card-sub">Bourbon &nbsp;·&nbsp; Woodford Reserve Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Bourbon</span><span class="tag">Rich</span><span class="tag">Sweet</span><span class="tag">Double Oak</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Woodford Reserve Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$22</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A second maturation in deeply toasted new oak amplifies everything — more vanilla, more caramel, and a richer, longer finish. An easy upgrade recommendation.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Woodford Reserve Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Woodford Reserve Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Woodford Reserve Distillery, Kentucky</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Spicy</span><span class="tag">Smooth</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Woodford Reserve Distillery, Kentucky</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$15</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A high-rye malt whiskey from Woodford's copper pot stills — distinctive spice, light fruit, and a dry finish.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey rye" data-name="Woodinville Rye">
+      <div class="card-category" style="color: var(--cat-whiskey);">Rye</div>
+      <div class="card-name">Woodinville Rye</div>
+      <div class="card-sub">Rye &nbsp;·&nbsp; Woodinville Whiskey Co., Washington</div>
+      <div class="tag-row"><span class="tag">Rye</span><span class="tag">Smooth</span><span class="tag">Spicy</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Woodinville Whiskey Co., Washington</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$12</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">A craft rye from Washington State — accessible spice and a clean finish. A Pacific Northwest alternative worth recommending to guests who want something craft and regional.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey japanese" data-name="Yamazaki 12 Year">
+      <div class="card-category" style="color: var(--cat-vodka);">Japanese</div>
+      <div class="card-name">Yamazaki 12 Year</div>
+      <div class="card-sub">Japanese &nbsp;·&nbsp; Yamazaki Distillery, Osaka, Japan</div>
+      <div class="tag-row"><span class="tag">Japanese</span><span class="tag">Smooth</span><span class="tag">Complex</span><span class="tag">Fruity</span><span class="tag">12 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Yamazaki Distillery, Osaka, Japan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$30</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">Japan's oldest malt whisky distillery — peach, pineapple, and a hint of sandalwood with a silky, elegant finish. Consistently one of the world's highest-rated whiskies. Founded in 1923.</div>
+      </div>
+    </div>
+<div class="card" data-category="whiskey japanese" data-name="Yamazaki 18 Year">
+      <div class="card-category" style="color: var(--cat-vodka);">Japanese</div>
+      <div class="card-name">Yamazaki 18 Year</div>
+      <div class="card-sub">Japanese &nbsp;·&nbsp; Yamazaki Distillery, Osaka, Japan</div>
+      <div class="tag-row"><span class="tag">Japanese</span><span class="tag">Complex</span><span class="tag">Rich</span><span class="tag">Smooth</span><span class="tag">18 Yr</span></div>
+      <div class="expand-hint">Tasting Notes</div>
+      <div class="card-detail">
+        <div class="section-label">Origin</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted);">Yamazaki Distillery, Osaka, Japan</div>
+        <div class="section-label">Price</div>
+        <div class="detail-value" style="font-size:14px; color: var(--gold);">$130</div>
+        <div class="section-label">Tasting Notes</div>
+        <div class="detail-value notes">One of the most celebrated whiskies in the world — 18 years in Mizunara oak, sherry casks, and bourbon barrels produces extraordinary complexity. Dark fruit, incense, and a finish that lingers for minutes. Reserve for the right table.</div>
+      </div>
+    </div>
     <div class="no-results" id="no-cocktails">No cocktails found — try a different filter.</div>
   </div><!-- /grid-cocktails -->
 </div><!-- /panel-cocktails -->
  
  
+
 <!-- ════════════════════════════════════════
      WINE PANEL
 ════════════════════════════════════════ -->
@@ -3943,6 +5968,16 @@
  
   let activeGuide = 'cocktails';
   let activeFilters = { cocktails: 'all', wine: 'all' };
+  let activeSubFilter = 'all';
+
+  function updateSubFilters(primary) {
+    document.getElementById('subfilters-cocktail').style.display = primary === 'cocktail' ? 'flex' : 'none';
+    document.getElementById('subfilters-whiskey').style.display = primary === 'whiskey' ? 'flex' : 'none';
+    // Reset sub-filter when switching primary
+    activeSubFilter = 'all';
+    document.querySelectorAll('.sub-filter-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.sub-filter-btn[data-subfilter="all"]').forEach(b => b.classList.add('active'));
+  }
   let searchTerm = [];
  
   guideTabs.forEach(tab => {
@@ -4208,11 +6243,21 @@
     let visible = 0;
     cards.forEach(card => {
       const cat = card.dataset.category || '';
-      const matchesFilter = filter === 'all' || cat.split(' ').includes(filter);
+      const matchesFilter = (() => {
+        if (filter === 'all') return true;
+        const catParts = cat.split(' ');
+        if (!catParts.includes(filter)) return false;
+        // If a sub-filter is active, also check it
+        if (activeSubFilter !== 'all') {
+          return catParts.includes(activeSubFilter) ||
+            (filter === 'cocktail' && activeSubFilter === 'offmenu' && cat.includes('offmenu'));
+        }
+        return true;
+      })();
       if (!matchesFilter) { card.classList.add('hidden'); return; }
 
       const priceFilter = extractPriceFilter(searchInput.value);
-      const matchesPrice = activeGuide === 'wine' ? cardMatchesPrice(card.dataset.name, priceFilter) : true;
+      const matchesPrice = (activeGuide === 'wine') ? cardMatchesPrice(card.dataset.name, priceFilter) : true;
 
       if (!tokens.length) {
         if (matchesPrice) { card.classList.remove('hidden'); visible++; }
@@ -4272,9 +6317,22 @@
         document.querySelectorAll('#filters-' + guide + ' .filter-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         activeFilters[guide] = btn.dataset.filter;
+        if (guide === 'cocktails') updateSubFilters(btn.dataset.filter);
         if (searchTerm.length) searchTerm = tokenizeQuery(searchInput.value.toLowerCase().trim());
         applyFilters();
       });
+    });
+  });
+
+  // Wire sub-filter buttons
+  document.querySelectorAll('.sub-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Only deactivate siblings in same sub-filter bar
+      btn.closest('.sub-filter-bar').querySelectorAll('.sub-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeSubFilter = btn.dataset.subfilter;
+      if (searchTerm.length) searchTerm = tokenizeQuery(searchInput.value.toLowerCase().trim());
+      applyFilters();
     });
   });
  
@@ -4393,6 +6451,9 @@
     switchGuide(guide);
     searchInput.value = '';
     searchTerm = [];
+    activeSubFilter = 'all';
+    document.getElementById('subfilters-cocktail').style.display = 'none';
+    document.getElementById('subfilters-whiskey').style.display = 'none';
     applyFilters();
     const label = guide === 'wine' ? 'Wine' : 'Spirits';
     document.getElementById('home-section-label').textContent = label;
@@ -4455,6 +6516,9 @@
     searchInput.value = '';
     searchTerm = [];
     activeFilters = { cocktails: 'all', wine: 'all' };
+    activeSubFilter = 'all';
+    document.getElementById('subfilters-cocktail').style.display = 'none';
+    document.getElementById('subfilters-whiskey').style.display = 'none';
     ['cocktails', 'wine'].forEach(guide => {
       document.querySelectorAll(`#filters-${guide} .filter-btn`).forEach(b => b.classList.remove('active'));
       document.querySelector(`#filters-${guide} .filter-btn[data-filter="all"]`).classList.add('active');
