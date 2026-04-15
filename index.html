@@ -121,33 +121,7 @@
   }
  
 
-  /* ── TOAST POPUP ── */
-  #home-toast {
-    position: fixed;
-    bottom: 40px;
-    left: 50%;
-    width: 90%;
-    max-width: 380px;
-    text-align: center;
-    white-space: normal;
-    transform: translateX(-50%);
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    color: var(--text-muted);
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    padding: 14px 24px;
-    z-index: 600;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-  }
 
-  #home-toast.visible {
-    opacity: 1;
-  }
 
   /* ── HOME SCREEN ── */
   #home-screen {
@@ -823,6 +797,41 @@
     color: var(--text-dim);
   }
  
+
+  /* ── ALLERGEN HIGHLIGHTS ── */
+  .allergen {
+    color: #C8956A;
+    font-weight: 600;
+    font-style: normal;
+  }
+  /* ── TAKE THE WHEEL TOAST ── */
+  #wheel-toast {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+    white-space: normal;
+    transform: translateX(-50%);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding: 14px 24px;
+    z-index: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  #wheel-toast.visible {
+    opacity: 1;
+  }
+
   /* ── NO RESULTS ── */
   .no-results {
     text-align: center;
@@ -877,7 +886,8 @@
   <div class="home-select" id="home-select">
     <button class="home-btn" id="home-spirits">Spirits</button>
     <button class="home-btn" id="home-wine">Wine</button>
-    <button class="home-btn home-btn-inactive" id="home-prime">Prime &amp; Plate</button>
+    <button class="home-btn" id="home-prime">Prime &amp; Plate</button>
+    <button class="home-btn home-btn-inactive" id="home-wheel">Take the Wheel</button>
   </div>
 
   <!-- After selection: section name + return -->
@@ -908,6 +918,7 @@
 <nav class="guide-tabs">
   <button class="guide-tab active" data-guide="cocktails">Spirits</button>
   <button class="guide-tab" data-guide="wine">Wine</button>
+  <button class="guide-tab" data-guide="food">Prime &amp; Plate</button>
 </nav>
  
 <!-- STICKY NAV: shared search + per-guide filters -->
@@ -997,6 +1008,15 @@
     <button class="filter-btn" data-filter="cab">Cabernet</button>
     <button class="filter-btn" data-filter="old">Old World</button>
     <button class="filter-btn" data-filter="blends">Blends</button>
+  </div>
+  <div id="filters-food" class="filter-bar" style="display:none;">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="food-start">To Start</button>
+    <button class="filter-btn" data-filter="food-soup">Soups &amp; Salads</button>
+    <button class="filter-btn" data-filter="food-prime">Prime</button>
+    <button class="filter-btn" data-filter="food-mains">Mains</button>
+    <button class="filter-btn" data-filter="food-sharing">For Sharing</button>
+    <button class="filter-btn" data-filter="food-dessert">Desserts</button>
   </div>
   <p class="search-tip" id="search-tip-text">*tip — avoid filler words &nbsp;(good searches: "campari cocktail", "stirred strained martini")</p>
 </div>
@@ -9585,6 +9605,497 @@
   </div><!-- /grid-wine -->
 </div><!-- /panel-wine -->
  
+
+<!-- ════════════════════════════════════════
+     PRIME & PLATE PANEL
+════════════════════════════════════════ -->
+<div class="guide-panel" id="panel-food">
+  <div class="grid" id="grid-food">
+
+    <!-- TO START -->
+    <div class="card" data-category="food food-start" data-name="Shrimp Cocktail">
+      <div class="card-category" style="color: var(--cat-bubbles);">To Start</div>
+      <div class="card-name">Shrimp Cocktail</div>
+      <div class="card-sub">$23 &nbsp;·&nbsp; Spicy Cocktail Sauce, Watercress Puree</div>
+      <div class="tag-row"><span class="tag">Starter</span><span class="tag">Seafood</span><span class="tag">Cold</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Chilled shrimp served with house cocktail sauce and our watercress puree. The puree is emulsified with roasted garlic and red wine vinegar — bright, peppery, and a counterpoint to the spice in the cocktail sauce.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains shellfish (shrimp), fish (anchovies in worcestershire).</span> <span class="allergen">Contains gluten if served with cocktail sauce</span> — the worcestershire used in the sauce contains gluten. Cocktail sauce can be omitted to make the dish gluten free; confirm with the kitchen. Watercress puree is blended to order; if too runny, additional watercress is added.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-start" data-name="Escargot">
+      <div class="card-category" style="color: var(--cat-bubbles);">To Start</div>
+      <div class="card-name">Escargot</div>
+      <div class="card-sub">$18 &nbsp;·&nbsp; Garlic Herb Butter, Crostini</div>
+      <div class="tag-row"><span class="tag">Starter</span><span class="tag">Classic</span><span class="tag">Rich</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Helix snails sautéed in escargot butter with Herbs de Provence and a finish of absinthe — the alcohol cooks out over 2–3 minutes, leaving a subtle anise note. Served with house crostini.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (butter), gluten (crostini), molluscs (snails).</span> Escargot butter is house-made: unsalted butter with chives, garlic, shallot, and salt. The absinthe finish is a defining detail worth mentioning to guests. Crostini are baked in escargot butter with cayenne, garlic powder, and onion powder.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-start" data-name="Seared Scallops">
+      <div class="card-category" style="color: var(--cat-bubbles);">To Start</div>
+      <div class="card-name">Seared Scallops</div>
+      <div class="card-sub">$MP &nbsp;·&nbsp; Ask your server for seasonal preparation</div>
+      <div class="tag-row"><span class="tag">Starter</span><span class="tag">Seafood</span><span class="tag">Seasonal</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Market-priced seasonal preparation — check with the kitchen for today's build. Preparation and accompaniments change based on what's best. Always worth asking about for guests who want something lighter and elegant to start.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains shellfish (scallops).</span> <span class="allergen">Allergen content varies by preparation.</span> Always confirm full allergen content with the kitchen before presenting to allergy guests.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-start" data-name="Crab Cake">
+      <div class="card-category" style="color: var(--cat-bubbles);">To Start</div>
+      <div class="card-name">Crab Cake</div>
+      <div class="card-sub">$30 &nbsp;·&nbsp; Red Pepper, Shallot, Garlic, Romesco, Garlic Bread Crumbs</div>
+      <div class="tag-row"><span class="tag">Starter</span><span class="tag">Seafood</span><span class="tag">Rich</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Jumbo lump crab with fine-diced red pepper, shallot, and garlic — minimal binder, maximum crab. Served over house romesco: roasted red pepper and jalapeño blended with parmesan, shallot, and garlic until perfectly smooth. Finished with garlic bread crumbs.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">The romesco carries heat from roasted jalapeño — level adjustable with crushed red pepper. <span class="allergen">Contains shellfish, dairy (parmesan in romesco), gluten (bread crumbs).</span> Worth noting for allergy guests that the romesco contains parmesan and bread crumbs even if they avoid the crab cake itself.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-start" data-name="Burrata">
+      <div class="card-category" style="color: var(--cat-bubbles);">To Start</div>
+      <div class="card-name">Burrata</div>
+      <div class="card-sub">$17 &nbsp;·&nbsp; Seasonal Fruit, Balsamic Glaze, Toasted Baguette</div>
+      <div class="tag-row"><span class="tag">Starter</span><span class="tag">Vegetarian</span><span class="tag">Light</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Fresh burrata with seasonal fruit, balsamic glaze, and toasted baguette. Preparation shifts with the season — the fruit component changes based on what's best. A lighter starter that works well before a rich main.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy, gluten (baguette).</span> <span class="allergen">Vegetarian.</span> Always confirm full allergen content — accompaniments vary seasonally. Ask the kitchen for today's fruit component.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-start" data-name="Prime Tartare">
+      <div class="card-category" style="color: var(--cat-bubbles);">To Start</div>
+      <div class="card-name">Prime Tartare</div>
+      <div class="card-sub">$30 &nbsp;·&nbsp; Filet Mignon, House-Aged Worcestershire, Chive, Cured Egg Yolk, Truffle Potato Chips</div>
+      <div class="tag-row"><span class="tag">Starter</span><span class="tag">Raw</span><span class="tag">Rich</span><span class="tag">Signature</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Hand-cut filet mignon, finished with house-aged worcestershire, chive, and a cured egg yolk — the egg is covered in equal parts salt and sugar and left 24 hours before blending to desired consistency. Served with house truffle potato chips, baguette, and crostini.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains raw beef, raw egg, gluten (worcestershire, truffle potato chips, baguette, crostini), fish (anchovies in worcestershire).</span> Alert the kitchen for guests with immunocompromising conditions — this dish contains both raw beef and raw egg. The worcestershire is house-aged 30 days before service. One of the most interesting preparations on the menu — worth describing fully to curious guests.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-start" data-name="Bone Marrow">
+      <div class="card-category" style="color: var(--cat-bubbles);">To Start</div>
+      <div class="card-name">Bone Marrow</div>
+      <div class="card-sub">$20 &nbsp;·&nbsp; Citrus Salt, Toasted Baguette</div>
+      <div class="tag-row"><span class="tag">Starter</span><span class="tag">Rich</span><span class="tag">Beef</span><span class="tag">Signature</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Roasted bone marrow with citrus salt and toasted baguette. The marrow is brined before service — 2 cups salt, 1 cup sugar, red wine vinegar, and water — which tempers the richness and seasons it throughout. One of the most spirit-friendly items on the menu.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains gluten (baguette).</span> Dairy free. Baguette can be omitted to make the dish gluten free — confirm with the kitchen. The brine distinguishes this preparation: brined in salt, sugar, and red wine vinegar, seasoned from the inside. Pairs exceptionally well with bold whiskey, rye, and aged spirits.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-start" data-name="Seafood Tower">
+      <div class="card-category" style="color: var(--cat-bubbles);">To Start</div>
+      <div class="card-name">Seafood Tower</div>
+      <div class="card-sub">Small $95 &nbsp;·&nbsp; Large $170 &nbsp;·&nbsp; Oysters, Crab Claws, Shrimp, Lobster</div>
+      <div class="tag-row"><span class="tag">Starter</span><span class="tag">Seafood</span><span class="tag">Shareable</span><span class="tag">Signature</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Oysters on the half shell, crab claws, shrimp, and lobster — served cold on ice. Small feeds 2–3, Large feeds 4+. The table centerpiece. Comes with house cocktail sauce and fry sauce.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains shellfish (oysters, crab, shrimp, lobster), fish (anchovies in worcestershire/cocktail sauce).</span> <span class="allergen">Contains gluten if served with cocktail sauce</span> — the worcestershire used in the sauce contains gluten. Cocktail sauce can be omitted to make the tower gluten free; confirm with the kitchen. Ask the kitchen for today's oyster selection. Best positioned as a table-share opener for groups.</div>
+      </div>
+    </div>
+
+    <!-- SOUPS & SALADS -->
+    <div class="card" data-category="food food-soup" data-name="Shrimp Bisque">
+      <div class="card-category" style="color: var(--cat-whites);">Soups &amp; Salads</div>
+      <div class="card-name">Shrimp Bisque</div>
+      <div class="card-sub">$12 &nbsp;·&nbsp; Crème Fraîche, Chive Oil</div>
+      <div class="tag-row"><span class="tag">Soup</span><span class="tag">Seafood</span><span class="tag">Rich</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Shrimp shells simmered 2–3 hours in heavy cream and coconut milk, then strained and rebuilt with carrot, celery, shallot, garlic, and tomato paste. Finished with smoked paprika and topped with house crème fraîche and chive oil.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains shellfish (shrimp), dairy (heavy cream, crème fraîche).</span> Gluten free as prepared — no gluten ingredients in the bisque. The coconut milk is the unexpected element — adds subtle sweetness and body. Crème fraîche is house-made; chive oil is blanched, shocked, and strained.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-soup" data-name="House Wedge">
+      <div class="card-category" style="color: var(--cat-whites);">Soups &amp; Salads</div>
+      <div class="card-name">House Wedge</div>
+      <div class="card-sub">$16 &nbsp;·&nbsp; Blue Cheese Dressing, Red Onion, Lardons</div>
+      <div class="tag-row"><span class="tag">Salad</span><span class="tag">Classic</span><span class="tag">Rich</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Iceberg wedge with house blue cheese dressing and lardons — pork belly cubed and seasoned with cumin, smoked paprika, and brown sugar. The lardons bring smokiness and sweetness that the blue cheese dressing anchors against.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (blue cheese, crème fraîche), pork.</span> Gluten free as prepared — dressing and lardons contain no gluten. The lardons can be omitted for non-pork guests. Blue cheese dressing is house-made: crème fraîche, mayo, blue cheese crumble, red wine vinegar, and spices.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-soup" data-name="Grilled Caesar">
+      <div class="card-category" style="color: var(--cat-whites);">Soups &amp; Salads</div>
+      <div class="card-name">Grilled Caesar</div>
+      <div class="card-sub">$16 &nbsp;·&nbsp; House Dressing, Garlic Crouton, Shaved Parmesan</div>
+      <div class="tag-row"><span class="tag">Salad</span><span class="tag">Classic</span><span class="tag">Rich</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Grilled romaine with house Caesar dressing, house-made garlic croutons, and shaved parmesan. The dressing is a large-format recipe built on an anchovy and white wine base, emulsified with 5 lbs parmesan, egg yolks, and 6 quarts blend oil — rich, deeply savory, and house-made from scratch.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains raw egg (dressing), fish (anchovies), dairy (parmesan), gluten (croutons).</span> The croutons are baked in escargot butter with cayenne — they carry heat. Dressing contains anchovies — flag for guests who avoid fish. Do not represent this as gluten free — confirm all components with the kitchen for allergy guests.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-soup" data-name="Seasonal Soup">
+      <div class="card-category" style="color: var(--cat-whites);">Soups &amp; Salads</div>
+      <div class="card-name">Seasonal Soup</div>
+      <div class="card-sub">$12 &nbsp;·&nbsp; Ask your server for today's preparation</div>
+      <div class="tag-row"><span class="tag">Soup</span><span class="tag">Seasonal</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Changes daily based on what's available. Always check with the kitchen before presenting to guests with dietary restrictions — <span class="allergen">allergen content varies by preparation.</span> Confirm with the kitchen every service.</div>
+      </div>
+    </div>
+
+    <!-- PRIME -->
+    <div class="card" data-category="food food-prime" data-name="Kansas City">
+      <div class="card-category" style="color: var(--cat-cab);">Prime</div>
+      <div class="card-name">Kansas City</div>
+      <div class="card-sub">$66 &nbsp;·&nbsp; Light Marble, Bone-In 18oz</div>
+      <div class="tag-row"><span class="tag">Steak</span><span class="tag">Bone-In</span><span class="tag">18oz</span><span class="tag">Light Marble</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">A bone-in strip steak — the Kansas City cut carries more fat than a New York strip while remaining leaner than a ribeye. The bone conducts heat during cooking and adds flavor to the meat adjacent to it. Light marble means a cleaner, beefier flavor profile than the heavily marbled cuts.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (steak butter).</span> <span class="allergen">Gluten free.</span> Confirm allergens with the kitchen — add-ons and sauces vary. We do not guarantee steaks ordered medium well or above. Served with steak butter (unsalted butter and chives) unless guest requests otherwise. Add-ons: Bowdie's Sauce $5, House-Aged Worcestershire $5, Blue Cheese Crumbles $5, Horseradish $3, Lobster Tail $34.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-prime" data-name="Bone-In Filet">
+      <div class="card-category" style="color: var(--cat-cab);">Prime</div>
+      <div class="card-name">Bone-In Filet</div>
+      <div class="card-sub">$80 &nbsp;·&nbsp; Bold Marbling, 14oz</div>
+      <div class="tag-row"><span class="tag">Steak</span><span class="tag">Bone-In</span><span class="tag">14oz</span><span class="tag">Bold Marble</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">The filet with the bone left in — all the tenderness of the filet mignon with the added flavor from the bone during cooking. Bold marbling is unusual for a filet and produces a richer, more buttery result than a standard tenderloin cut.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (steak butter).</span> <span class="allergen">Gluten free.</span> Confirm allergens with the kitchen. We do not guarantee steaks ordered medium well or above. The bone-in distinction is worth explaining to guests who expect the lean profile of a classic filet — this one is considerably richer.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-prime" data-name="The Tomahawk">
+      <div class="card-category" style="color: var(--cat-cab);">Prime</div>
+      <div class="card-name">The Tomahawk</div>
+      <div class="card-sub">$130 &nbsp;·&nbsp; Bone-In Ribeye for Two, 36oz</div>
+      <div class="tag-row"><span class="tag">Steak</span><span class="tag">For Two</span><span class="tag">36oz</span><span class="tag">Bone-In</span><span class="tag">Signature</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">A bone-in ribeye for two with the full rib bone left intact — the presentation alone is a table moment. 36oz of heavily marbled ribeye. The long bone makes it one of the most visually striking dishes in the building. Best presented to the table before carving.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (steak butter).</span> <span class="allergen">Gluten free.</span> Confirm allergens with the kitchen. We do not guarantee steaks ordered medium well or above. Designed for two — set the expectation before ordering. When this goes to a table, neighboring tables notice.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-prime" data-name="Porterhouse">
+      <div class="card-category" style="color: var(--cat-cab);">Prime</div>
+      <div class="card-name">Porterhouse</div>
+      <div class="card-sub">$150 &nbsp;·&nbsp; Bone-In Tenderloin &amp; Strip in One, 40oz</div>
+      <div class="tag-row"><span class="tag">Steak</span><span class="tag">For Two</span><span class="tag">40oz</span><span class="tag">Bone-In</span><span class="tag">Signature</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Both a tenderloin and a strip steak separated by the T-bone — two different textures and fat levels in a single 40oz cut. The strip side is bolder and more marbled; the tenderloin side is tender and lean. A table for two gets the full range of the steakhouse experience in one plate.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (steak butter).</span> <span class="allergen">Gluten free.</span> Confirm allergens with the kitchen. We do not guarantee steaks ordered medium well or above. The most expensive cut on the menu — position it for guests who want the full table experience. Worth explaining the two-cut nature to guests unfamiliar with porterhouse.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-prime" data-name="Filet Mignon">
+      <div class="card-category" style="color: var(--cat-cab);">Prime</div>
+      <div class="card-name">Filet Mignon</div>
+      <div class="card-sub">$69 &nbsp;·&nbsp; Soft Marble, Melt in Your Mouth, 10oz</div>
+      <div class="tag-row"><span class="tag">Steak</span><span class="tag">10oz</span><span class="tag">Soft Marble</span><span class="tag">Tender</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">The most tender cut on the menu — from the least-worked muscle on the animal. Soft marble and a lean profile that finishes clean. The go-to for guests who want tenderness over fat. Our steak butter and add-ons play particularly well here since the cut doesn't have built-in fat to compensate.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (steak butter).</span> <span class="allergen">Gluten free.</span> Confirm allergens with the kitchen. We do not guarantee steaks ordered medium well or above. The lobster tail add-on ($34) is especially well-suited here — surf and turf on a lean, clean cut is a classic for a reason.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-prime" data-name="Cowboy Ribeye">
+      <div class="card-category" style="color: var(--cat-cab);">Prime</div>
+      <div class="card-name">Cowboy Ribeye</div>
+      <div class="card-sub">$85 &nbsp;·&nbsp; Rich Marbling, Bone-In, Smooth Texture, 26oz</div>
+      <div class="tag-row"><span class="tag">Steak</span><span class="tag">Bone-In</span><span class="tag">26oz</span><span class="tag">Rich Marble</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">A short-bone ribeye — the richest marbled cut on the menu. 26oz with a smooth, buttery texture from the high fat content. For guests who want maximum flavor and richness. The ribeye cap (spinalis) is the most prized and flavorful part of this cut.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (steak butter).</span> <span class="allergen">Gluten free.</span> Confirm allergens with the kitchen. We do not guarantee steaks ordered medium well or above. Rich marbling means this cut is self-basting. Blue cheese crumbles ($5) pair exceptionally well here.</div>
+      </div>
+    </div>
+
+    <!-- MAINS -->
+    <div class="card" data-category="food food-mains" data-name="Faroe Island Salmon">
+      <div class="card-category" style="color: var(--cat-glass);">Mains</div>
+      <div class="card-name">Faroe Island Salmon</div>
+      <div class="card-sub">$MP &nbsp;·&nbsp; Ask your server for seasonal preparation</div>
+      <div class="tag-row"><span class="tag">Seafood</span><span class="tag">Seasonal</span><span class="tag">Fish</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Faroe Islands salmon is among the finest available — cold Atlantic waters and stringent farming standards produce fish with exceptional fat content and a clean, rich flavor. Preparation changes seasonally; always check with the kitchen for today's build.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains fish (salmon).</span> <span class="allergen">Allergen content varies by preparation.</span> Confirm with the kitchen before presenting to allergy guests. Worth describing the Faroe Islands provenance to guests who ask about sourcing — it's a genuine quality differentiator.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-mains" data-name="Market Fish">
+      <div class="card-category" style="color: var(--cat-glass);">Mains</div>
+      <div class="card-name">Market Fish</div>
+      <div class="card-sub">$MP &nbsp;·&nbsp; Ask your server for seasonal preparation</div>
+      <div class="tag-row"><span class="tag">Seafood</span><span class="tag">Seasonal</span><span class="tag">Fish</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Daily market selection — preparation and price change based on availability. Always check with the kitchen before service for today's fish and preparation details.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains fish.</span> <span class="allergen">Allergen content varies by preparation.</span> Confirm with the kitchen every service.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-mains" data-name="Roast Half Chicken">
+      <div class="card-category" style="color: var(--cat-glass);">Mains</div>
+      <div class="card-name">Roast Half Chicken</div>
+      <div class="card-sub">$32 &nbsp;·&nbsp; Ask your server for seasonal preparation</div>
+      <div class="tag-row"><span class="tag">Poultry</span><span class="tag">Seasonal</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Roasted half chicken with seasonal accompaniments — check with the kitchen for today's build. Consistently one of the most recommended mains for guests who want something satisfying without a steak.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains poultry.</span> <span class="allergen">Allergen content varies by preparation.</span> Confirm accompaniments with the kitchen before presenting to allergy guests. A strong recommendation for guests who are uncertain between fish and beef.</div>
+      </div>
+    </div>
+
+    <!-- FOR SHARING -->
+    <div class="card" data-category="food food-sharing" data-name="Brussels and Belly">
+      <div class="card-category" style="color: var(--cat-blends);">For Sharing</div>
+      <div class="card-name">Brussels &amp; Belly</div>
+      <div class="card-sub">$20 &nbsp;·&nbsp; Serves 3–4</div>
+      <div class="tag-row"><span class="tag">Shareable</span><span class="tag">Pork</span><span class="tag">Rich</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Brussels sprouts with lardons — house pork belly seasoned with cumin, smoked paprika, cayenne, and brown sugar. The lardons are the same preparation as in the House Wedge: rendered pork belly that adds smoky-sweet depth to the vegetables.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains pork.</span> Gluten free as prepared — pork belly and spice rub contain no gluten. Serves 3–4 as a side. A strong pairing with any of the steaks — the bitterness of the brussels and the richness of the pork belly both hold up to the beef.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-sharing" data-name="Au Gratin Potatoes">
+      <div class="card-category" style="color: var(--cat-blends);">For Sharing</div>
+      <div class="card-name">Au Gratin Potatoes</div>
+      <div class="card-sub">$16 &nbsp;·&nbsp; Serves 3–4</div>
+      <div class="tag-row"><span class="tag">Shareable</span><span class="tag">Potato</span><span class="tag">Rich</span><span class="tag">Vegetarian</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Potatoes sliced 1/4 inch and layered with shredded manchego, baked in a cream mixture of heavy cream, egg, salt, and pepper at 180°C for 90 minutes. Finished with a 1:1 manchego cream sauce. Rich, deeply savory, and one of the most ordered sides.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (manchego, heavy cream), eggs.</span> <span class="allergen">Gluten free.</span> <span class="allergen">Vegetarian.</span> Confirm allergens with the kitchen. The manchego is the distinguishing detail — an aged Spanish sheep's milk cheese that melts differently and tastes more complex than a standard gratin cheese.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-sharing" data-name="Sauteed Garlic Spinach">
+      <div class="card-category" style="color: var(--cat-blends);">For Sharing</div>
+      <div class="card-name">Sautéed Garlic Spinach</div>
+      <div class="card-sub">$13 &nbsp;·&nbsp; Serves 3–4</div>
+      <div class="tag-row"><span class="tag">Shareable</span><span class="tag">Vegetarian</span><span class="tag">Light</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Wilted spinach with escargot butter — the same butter used in the escargot starter: unsalted butter, chives, garlic, and shallot. The butter makes this considerably more flavorful than a standard garlic sauté. The lightest side on the sharing menu and the best balance against a rich steak.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy (escargot butter).</span> <span class="allergen">Vegetarian.</span> Gluten free as prepared — escargot butter contains no gluten. The escargot butter connection is worth noting to guests who enjoyed the escargot starter. A creamed spinach version is also available on some service periods — confirm allergens with the kitchen if ordered.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-sharing" data-name="Lobster Mac">
+      <div class="card-category" style="color: var(--cat-blends);">For Sharing</div>
+      <div class="card-name">Lobster Mac</div>
+      <div class="card-sub">$40 &nbsp;·&nbsp; Serves 3–4</div>
+      <div class="tag-row"><span class="tag">Shareable</span><span class="tag">Seafood</span><span class="tag">Rich</span><span class="tag">Signature</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Pasta in house truffle mac sauce with lobster — the sauce is a truffle roux built from butter, truffle oil, flour, heavy cream, and manchego, finished with truffle salt. One of the richest sides on the menu and one of the most ordered.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains gluten (pasta, roux), dairy (manchego, heavy cream), shellfish (lobster).</span> The truffle component is both the oil in the roux and truffle salt at finish — double application. Worth describing to guests who ask what makes the sauce different. Pairs well with the Filet Mignon for guests who want richness without committing to another steak cut.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-sharing" data-name="Seasonal Vegetables">
+      <div class="card-category" style="color: var(--cat-blends);">For Sharing</div>
+      <div class="card-name">Seasonal Vegetables</div>
+      <div class="card-sub">$MP &nbsp;·&nbsp; Serves 3–4</div>
+      <div class="tag-row"><span class="tag">Shareable</span><span class="tag">Vegetarian</span><span class="tag">Seasonal</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Changes based on what's in season. Check with the kitchen for today's preparation and pricing. Always gluten free as the base — confirm accompaniments.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;">Base preparation is <span class="allergen">Gluten free</span> and <span class="allergen">Vegetarian</span>. Accompaniments and finishing ingredients vary — always confirm full allergen content with the kitchen. May contain dairy depending on preparation.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-sharing" data-name="Mushrooms">
+      <div class="card-category" style="color: var(--cat-blends);">For Sharing</div>
+      <div class="card-name">Mushrooms</div>
+      <div class="card-sub">$17 &nbsp;·&nbsp; Serves 3–4</div>
+      <div class="tag-row"><span class="tag">Shareable</span><span class="tag">Vegetarian</span><span class="tag">Rich</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Sautéed mushrooms — preparation details vary by service. Check with the kitchen. One of the most spirit-friendly sides on the menu: earthy, umami-rich, and a natural pairing with aged whiskey, Scotch, and bold reds.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Vegetarian.</span> <span class="allergen">Allergen content varies by preparation</span> — confirm with the kitchen. Do not represent as gluten free without checking. Strong recommendation for guests ordering aged spirits.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-sharing" data-name="Truffle Fries">
+      <div class="card-category" style="color: var(--cat-blends);">For Sharing</div>
+      <div class="card-name">Truffle Fries</div>
+      <div class="card-sub">$14 &nbsp;·&nbsp; Serves 3–4</div>
+      <div class="tag-row"><span class="tag">Shareable</span><span class="tag">Vegetarian</span><span class="tag">Truffle</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Fried potatoes with truffle finishing and fry sauce — the sauce is house-made with mayo, Dijon, smashed garlic, red wine vinegar, onion powder, and paprika. The combination of truffle and the savory-tangy fry sauce makes these one of the most ordered sides at the table.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Vegetarian.</span> Gluten free as prepared — fries and fry sauce contain no gluten ingredients. The fry sauce is house-made with mayo, Dijon, garlic, red wine vinegar, and paprika — guests frequently ask about it. Also served alongside the Seafood Tower.</div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="card" data-category="food food-dessert" data-name="Creme Brulee">
+      <div class="card-category" style="color: var(--cat-old);">Dessert</div>
+      <div class="card-name">Crème Brûlée</div>
+      <div class="card-sub">Classic Vanilla Custard, Caramelized Sugar Crust</div>
+      <div class="tag-row"><span class="tag">Dessert</span><span class="tag">Classic</span><span class="tag">Vegetarian</span><span class="tag">Gluten Free</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Classic vanilla custard baked in a water bath at 300°F until just set, then finished with a torched sugar crust. Made from egg yolks, heavy cream, vanilla, and a blend of granulated and brown sugar for depth. The brown sugar adds a subtle molasses note beneath the caramelized top.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains eggs, dairy.</span> <span class="allergen">Gluten free.</span> <span class="allergen">Vegetarian.</span> The custard should have a slight wobble when it comes out of the oven — it firms as it cools. The top is torched to order. One of the most approachable desserts for guests who are undecided.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-dessert" data-name="Cheesecake">
+      <div class="card-category" style="color: var(--cat-old);">Dessert</div>
+      <div class="card-name">Cheesecake</div>
+      <div class="card-sub">Graham Cracker Crust, Cream Cheese, Sour Cream</div>
+      <div class="tag-row"><span class="tag">Dessert</span><span class="tag">Classic</span><span class="tag">Vegetarian</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">House cheesecake baked in a water bath — cream cheese, sour cream, heavy cream, and vanilla bean with a graham cracker crust made from both granulated and brown sugar. Dense, rich, and properly baked without cracking.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains dairy, eggs, gluten (graham cracker crust).</span> <span class="allergen">Vegetarian.</span> The water bath bake produces a smoother, creamier texture than direct-heat cheesecake.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-dessert" data-name="Carrot Cake">
+      <div class="card-category" style="color: var(--cat-old);">Dessert</div>
+      <div class="card-name">Carrot Cake</div>
+      <div class="card-sub">Cream Cheese Frosting, Carrot Puree, Warm Spice</div>
+      <div class="tag-row"><span class="tag">Dessert</span><span class="tag">Spiced</span><span class="tag">Vegetarian</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Large-format carrot cake made with carrot puree (not shredded carrot), allspice, cinnamon, and oil — baked in half sheet trays and finished with cream cheese frosting made from cream cheese, butter, powdered sugar, and vanilla bean paste. Frozen between baking and frosting to build a clean, even layer.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains gluten, dairy, eggs.</span> <span class="allergen">Vegetarian</span>. The carrot puree rather than shredded carrot gives the crumb a more uniform, tender texture. Allspice and cinnamon are the primary spice notes. Frosting contains vanilla bean paste — deeper vanilla flavor than extract.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-dessert" data-name="Peanut Butter Brownie">
+      <div class="card-category" style="color: var(--cat-old);">Dessert</div>
+      <div class="card-name">Peanut Butter Brownie</div>
+      <div class="card-sub">Fudge Brownie Base, Peanut Butter Frosting</div>
+      <div class="tag-row"><span class="tag">Dessert</span><span class="tag">Rich</span><span class="tag">Chocolate</span><span class="tag">Peanut Butter</span><span class="tag">Vegetarian</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Dense fudge brownie made with butter, sugar, brown sugar, and cocoa powder — no flour-heavy build, maximum richness. Topped with peanut butter frosting: whipped peanut butter, butter, powdered sugar, and vanilla.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains gluten, dairy, eggs, peanuts.</span> <span class="allergen">Vegetarian.</span> Baked in hotel pans, cooled, and stored in the walk-in — the cold hold tightens the fudge texture. Flag peanut allergy guests before ordering. The frosting is made fresh and applied before chilling and cutting.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-dessert" data-name="Chocolate Brownie">
+      <div class="card-category" style="color: var(--cat-old);">Dessert</div>
+      <div class="card-name">Chocolate Brownie</div>
+      <div class="card-sub">Fudge Brownie Base, Chocolate Frosting</div>
+      <div class="tag-row"><span class="tag">Dessert</span><span class="tag">Rich</span><span class="tag">Chocolate</span><span class="tag">Vegetarian</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Same dense brownie base as the peanut butter version, finished with chocolate frosting — cocoa powder, butter, powdered sugar, vanilla, and heavy cream whipped to a smooth, spreadable consistency.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains gluten, dairy, eggs.</span> <span class="allergen">Vegetarian</span>. No nuts — the safer brownie option for allergy tables. Frosting is applied before chilling and cutting, same process as the peanut butter version.</div>
+      </div>
+    </div>
+
+    <div class="card" data-category="food food-dessert" data-name="Beignets">
+      <div class="card-category" style="color: var(--cat-old);">Dessert</div>
+      <div class="card-name">Beignets</div>
+      <div class="card-sub">Choux-Style Doughnuts, Powdered Sugar</div>
+      <div class="tag-row"><span class="tag">Dessert</span><span class="tag">Fried</span><span class="tag">Light</span><span class="tag">Vegetarian</span></div>
+      <div class="expand-hint">Details</div>
+      <div class="card-detail">
+        <div class="section-label">Description</div>
+        <div class="detail-value notes">Choux-based beignets — butter, water, flour, eggs, sugar, and salt cooked into a dough and fried. The key step is vigorous mixing over heat to build gluten before the eggs go in, which produces the fluffy, hollow interior. Light and airy in contrast to the richer desserts on the menu.</div>
+        <div class="section-label">Kitchen Notes</div>
+        <div class="detail-value" style="font-size:14px; color: var(--text-muted); line-height:1.6;"><span class="allergen">Contains gluten, dairy, eggs.</span> <span class="allergen">Vegetarian</span>. The dough is prepped in advance and held — fried to order. The choux method (panade) is the differentiator from a standard doughnut: the steam from the water creates the rise, not leavening. A lighter finish for guests who want something sweet without the density of the brownie or cheesecake.</div>
+      </div>
+    </div>
+
+    <div class="no-results" id="no-food">No items found — try a different filter.</div>
+  </div><!-- /grid-food -->
+</div><!-- /panel-food -->
+
 </div><!-- /page-content -->
  
 <footer class="footer">
@@ -9593,16 +10104,17 @@
 </footer>
  
 </div>
-<div id="home-toast">Kitchen intelligence gathering in progress — recipes &amp; allergens coming soon.</div>
+
+<div id="wheel-toast">Pairing guidance coming soon — four paths, one perfect night.</div>
 <script>
   // ── GUIDE TAB SWITCHING ──
   const guideTabs = document.querySelectorAll('.guide-tab');
   const guidePanels = document.querySelectorAll('.guide-panel');
-  const filterBarsAll = { cocktails: document.getElementById('filters-cocktails'), wine: document.getElementById('filters-wine') };
+  const filterBarsAll = { cocktails: document.getElementById('filters-cocktails'), wine: document.getElementById('filters-wine'), food: document.getElementById('filters-food') };
   const searchInput = document.getElementById('search-active');
  
   let activeGuide = 'cocktails';
-  let activeFilters = { cocktails: 'all', wine: 'all' };
+  let activeFilters = { cocktails: 'all', wine: 'all', food: 'all' };
   let activeSubFilter = 'all';
 
   function updateSubFilters(primary) {
@@ -9953,7 +10465,7 @@
   }
  
   // Wire filter buttons for both guides
-  ['cocktails', 'wine'].forEach(guide => {
+  ['cocktails', 'wine', 'food'].forEach(guide => {
     document.querySelectorAll('#filters-' + guide + ' .filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('#filters-' + guide + ' .filter-btn').forEach(b => b.classList.remove('active'));
@@ -10073,7 +10585,8 @@
   // ── HOME SCREEN ──
   const SEARCH_TIPS = {
     cocktails: '*tip — get familiar with the search bar  (try: "campari cocktail", "refreshing gin", "spirit forward and stirred")',
-    wine: '*tip — get familiar with the search bar (try: "$100 to $150 blends", "earthy spanish red", "plum with medium body and soft tannins")'
+    wine: '*tip — get familiar with the search bar (try: "$100 to $150 blends", "earthy spanish red", "plum with medium body and soft tannins")',
+    food: '*tip — search by dish, ingredient, or dietary need  (try: "gluten free", "seafood", "vegetarian")'
   };
 
   function switchGuide(guide) {
@@ -10083,10 +10596,11 @@
     document.getElementById('panel-' + guide).classList.add('active');
     document.getElementById('filters-cocktails').style.display = guide === 'cocktails' ? 'flex' : 'none';
     document.getElementById('filters-wine').style.display = guide === 'wine' ? 'flex' : 'none';
+    document.getElementById('filters-food').style.display = guide === 'food' ? 'flex' : 'none';
     activeGuide = guide;
-    searchInput.placeholder = guide === 'wine' ? 'Search wines, varietals, or tasting notes…' : 'Search cocktails, spirits, or ingredients…';
+    searchInput.placeholder = guide === 'wine' ? 'Search wines, varietals, or tasting notes…' : guide === 'food' ? 'Search dishes, ingredients, or dietary needs…' : 'Search cocktails, spirits, or ingredients…';
     const tipEl = document.getElementById('search-tip-text');
-    if (tipEl) tipEl.textContent = SEARCH_TIPS[guide];
+    if (tipEl) tipEl.textContent = SEARCH_TIPS[guide] || SEARCH_TIPS.cocktails;
   }
 
   function selectSection(guide) {
@@ -10104,7 +10618,7 @@
     document.getElementById('subfilters-port').style.display = 'none';
     document.getElementById('subfilters-rum').style.display = 'none';
     applyFilters();
-    const label = guide === 'wine' ? 'Wine' : 'Spirits';
+    const label = guide === 'wine' ? 'Wine' : guide === 'food' ? 'Prime & Plate' : 'Spirits';
     document.getElementById('home-section-label').textContent = label;
     document.getElementById('home-select').classList.add('hidden');
     document.getElementById('home-active').classList.add('visible');
@@ -10164,7 +10678,7 @@
   function returnHome() {
     searchInput.value = '';
     searchTerm = [];
-    activeFilters = { cocktails: 'all', wine: 'all' };
+    activeFilters = { cocktails: 'all', wine: 'all', food: 'all' };
     activeSubFilter = 'all';
     document.getElementById('subfilters-cocktail').style.display = 'none';
     document.getElementById('subfilters-whiskey').style.display = 'none';
@@ -10179,6 +10693,8 @@
       document.querySelectorAll(`#filters-${guide} .filter-btn`).forEach(b => b.classList.remove('active'));
       document.querySelector(`#filters-${guide} .filter-btn[data-filter="all"]`).classList.add('active');
     });
+    document.querySelectorAll('#filters-food .filter-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('#filters-food .filter-btn[data-filter="all"]').classList.add('active');
     applyFilters();
     const hs = document.getElementById('home-screen');
     // Position above viewport instantly (no transition), then slide down
@@ -10202,23 +10718,26 @@
 
   document.getElementById('home-spirits').addEventListener('click', () => selectSection('cocktails'));
   document.getElementById('home-wine').addEventListener('click', () => selectSection('wine'));
+  document.getElementById('home-prime').addEventListener('click', () => selectSection('food'));
   document.getElementById('home-return').addEventListener('click', returnHome);
   document.getElementById('top-bar-return').addEventListener('click', returnHome);
 
-
-  // Prime & Plate toast — toggle on repeated tap, dismiss on tap elsewhere
-  const primeBtn = document.getElementById('home-prime');
-  document.getElementById('home-prime').addEventListener('click', (e) => {
+  // Take the Wheel toast — toggle on tap, dismiss on tap elsewhere
+  const wheelBtn = document.getElementById('home-wheel');
+  wheelBtn.addEventListener('click', (e) => {
     e.stopPropagation();
-    const toast = document.getElementById('home-toast');
+    const toast = document.getElementById('wheel-toast');
     const isVisible = toast.classList.toggle('visible');
-    primeBtn.classList.toggle('home-btn-active', isVisible);
+    wheelBtn.classList.toggle('home-btn-active', isVisible);
   });
 
   document.addEventListener('click', () => {
-    document.getElementById('home-toast').classList.remove('visible');
-    primeBtn.classList.remove('home-btn-active');
+    document.getElementById('wheel-toast').classList.remove('visible');
+    wheelBtn.classList.remove('home-btn-active');
   });
+
+
+
 
   // Align home logo script the same way as header logo
   function alignHomeScript() {
