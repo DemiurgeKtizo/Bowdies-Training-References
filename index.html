@@ -887,7 +887,7 @@
     <button class="home-btn" id="home-spirits">Spirits</button>
     <button class="home-btn" id="home-wine">Wine</button>
     <button class="home-btn" id="home-prime">Prime &amp; Plate</button>
-    <button class="home-btn home-btn-inactive" id="home-wheel">Take the Wheel</button>
+    <button class="home-btn home-btn-inactive" id="home-wheel">Set the Stage</button>
   </div>
 
   <!-- After selection: section name + return -->
@@ -10105,7 +10105,7 @@
  
 </div>
 
-<div id="wheel-toast">Pairing guidance coming soon — four paths, one perfect night.</div>
+<div id="wheel-toast">Pairing guidance coming soon — endless paths, one perfect night.</div>
 <script>
   // ── GUIDE TAB SWITCHING ──
   const guideTabs = document.querySelectorAll('.guide-tab');
@@ -10722,7 +10722,7 @@
   document.getElementById('home-return').addEventListener('click', returnHome);
   document.getElementById('top-bar-return').addEventListener('click', returnHome);
 
-  // Take the Wheel toast — toggle on tap, dismiss on tap elsewhere
+  // Set the Stage toast — toggle on tap, dismiss on tap elsewhere
   const wheelBtn = document.getElementById('home-wheel');
   wheelBtn.addEventListener('click', (e) => {
     e.stopPropagation();
