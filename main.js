@@ -477,7 +477,7 @@
   const SEARCH_TIPS = {
     cocktails: '*tip — get familiar with the search bar  (try: "campari cocktail", "refreshing gin", "spirit forward and stirred")',
     wine: '*tip — get familiar with the search bar (try: "$100 to $150 blends", "earthy spanish red", "plum with medium body and soft tannins")',
-    food: '*tip — search by dish, ingredient, or dietary need  (try: "gluten free", "seafood", "vegetarian")'
+    food: '*tip — get familiar with the search bar  (try: "gluten free", "seafood", "vegetarian")'
   };
 
   function switchGuide(guide) {
