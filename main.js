@@ -431,7 +431,30 @@ const ALLERGEN_FREE_WORDS = new Set([
   'gluten', 'dairy', 'nut', 'nuts', 'peanut', 'peanuts',
   'shellfish', 'fish', 'egg', 'eggs', 'soy', 'wheat',
   'garlic', 'onion', 'lactose', 'sesame',
+  // Common alternate names
+  'milk', 'tree', 'shrimp', 'crab', 'lobster', 'oyster',
+  'mustard', 'tamarind', 'ginger', 'shallot', 'pork', 'mollusc',
 ]);
+
+// Allergen alternate name → canonical tag word
+// Applied when the word precedes "free", so "milk free" → "dairy free"
+const ALLERGEN_FREE_SYNONYMS = {
+  'milk':    'dairy',
+  'lactose': 'dairy',
+  'wheat':   'gluten',
+  'tree':    'tree nut',   // "tree free" → "tree nut free" (edge case, but covered)
+  'nuts':    'tree nut',
+  'nut':     'tree nut',
+  'peanuts': 'peanut',
+  'eggs':    'egg',
+  'shrimp':  'shellfish',
+  'crab':    'shellfish',
+  'lobster': 'shellfish',
+  'oyster':  'shellfish',
+  'mollusc': 'shellfish',
+  'sesame':  'sesame',
+  'soy':     'soy',
+};
 
 function tokenizeQuery(raw) {
   const allTags = getAllTags();
@@ -447,7 +470,8 @@ function tokenizeQuery(raw) {
   while (i < words.length) {
     // Allergen + "free": force tag-only match — never search card text, even in fallback
     if (words[i + 1] === 'free' && ALLERGEN_FREE_WORDS.has(words[i])) {
-      const twoWord = words[i] + ' ' + words[i + 1];
+      const canonical = ALLERGEN_FREE_SYNONYMS[words[i]] || words[i];
+      const twoWord = canonical + ' free';
       const tagMatch = findMatchingTag(twoWord, allTags);
       tokens.push({ type: 'tag', value: tagMatch || twoWord, allergenFree: true });
       i += 2;
