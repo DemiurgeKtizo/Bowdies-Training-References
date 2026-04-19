@@ -77,7 +77,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 
 /* SEARCH */
 .search-wrap{position:relative;margin-bottom:12px}
-.search-input{width:100%;background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:14px 16px;outline:none;transition:border-color 0.2s;border-radius:0;-webkit-appearance:none}
+.search-input{width:100%;background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:14px 16px;outline:none;transition:border-color 0.2s;border-radius:0;-webkit-appearance:none;appearance:none}
 .search-input::placeholder{color:var(--text-dim)}
 .search-input:focus{border-color:var(--gold-dim)}
 .search-results{position:absolute;top:100%;left:0;right:0;background:var(--surface-3);border:1px solid var(--border);border-top:none;max-height:260px;overflow-y:auto;z-index:150;display:none}
@@ -106,10 +106,10 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .modal-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:24px}
 .modal-field{margin-bottom:16px}
 .modal-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block}
-.modal-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;transition:border-color 0.2s}
+.modal-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;transition:border-color 0.2s}
 .modal-input:focus{border-color:var(--gold-dim)}
 .tag-picker{display:flex;flex-wrap:wrap;gap:6px}
-.tag-pick{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:5px 10px;cursor:pointer;transition:all 0.15s;-webkit-appearance:none;border-radius:0}
+.tag-pick{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:5px 10px;cursor:pointer;transition:all 0.15s;-webkit-appearance:none;appearance:none;border-radius:0}
 .tag-pick.selected{color:var(--gold);border-color:var(--gold-dim);background:rgba(201,168,76,0.08)}
 .modal-actions{display:flex;gap:10px;margin-top:24px}
 .modal-btn{flex:1;padding:14px;background:transparent;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
@@ -171,7 +171,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .ft-question{margin-bottom:24px;animation:fadeUp 0.25s ease}
 .ft-question-label{font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:var(--text-primary);margin-bottom:14px;line-height:1.4}
 .ft-options{display:flex;flex-direction:column;gap:8px}
-.ft-option{padding:14px 16px;background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-size:16px;cursor:pointer;transition:all 0.2s;text-align:left;border-radius:0;-webkit-appearance:none;width:100%}
+.ft-option{padding:14px 16px;background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-size:16px;cursor:pointer;transition:all 0.2s;text-align:left;border-radius:0;-webkit-appearance:none;appearance:none;width:100%}
 .ft-option:hover{border-color:var(--border);color:var(--text-primary)}
 .ft-option.selected{border-color:var(--gold-dim);color:var(--gold);background:rgba(201,168,76,0.06)}
 .ft-progress{display:flex;gap:4px;margin-bottom:24px}
@@ -185,7 +185,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .session-reset:hover{color:var(--text-muted)}
 
 /* FOOTER */
-footer{text-align:center;padding:40px;background:var(--charcoal)}
+footer{text-align:center;padding:40px;background:var(--surface)}
 footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim)}
 .footer-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);margin:12px auto}
 </style>
@@ -453,7 +453,15 @@ function handleSearch(val){
   },80);
 }
 
-document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap')) document.getElementById('search-results').classList.remove('visible')});
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.search-wrap')) document.getElementById('search-results').classList.remove('visible');
+  const removeBtn=e.target.closest('[data-remove]');
+  if(removeBtn){ removeItem(decodeURIComponent(removeBtn.dataset.remove)); return; }
+  const addBtn=e.target.closest('[data-add]');
+  if(addBtn){ addRecToOrder(decodeURIComponent(addBtn.dataset.add),addBtn.dataset.cat); return; }
+  const ftBtn=e.target.closest('[data-ftval]');
+  if(ftBtn){ selectFTAnswer(ftBtn.dataset.ftval,ftBtn); return; }
+});
 
 function selectItem(name,category,isVariable){
   const guest=state.guests[state.activeGuest];
@@ -499,8 +507,7 @@ function renderSelected(){
     if(!groups[cat]) continue;
     html+='<div class="selected-section"><div class="selected-section-label">'+getCategoryForDisplay(cat)+'</div><div class="selected-chips">';
     for(const sel of groups[cat]){
-      const safeName=sel.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-      html+='<div class="chip">'+sel.name+'<button class="chip-remove" onclick="removeItem(\''+safeName+'\')">×</button></div>';
+      html+='<div class="chip">'+sel.name+'<button class="chip-remove" data-remove="'+encodeURIComponent(sel.name)+'">×</button></div>';
     }
     html+='</div></div>';
   }
@@ -532,8 +539,7 @@ function renderRecs(){
       if(rec.offMenu) meta.push('Off Menu');
       if(rec.oos) meta.push('Currently Unavailable');
       const alreadySel=guest.selections.find(s=>s.name===rec.name);
-      const safeName=rec.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-      html+='<button class="rec-item'+(alreadySel?' selected-rec':'')+'" onclick="addRecToOrder(\''+safeName+'\',\''+cat+'\')">'
+      html+='<button class="rec-item'+(alreadySel?' selected-rec':'')+'" data-add="'+encodeURIComponent(rec.name)+'" data-cat="'+cat+'">'
         +'<div class="tier-pip '+rec.tier+'"></div>'
         +'<div class="rec-info"><div class="rec-name">'+rec.name+'</div>'
         +(meta.length?'<div class="rec-meta">'+meta.join(' · ')+'</div>':'')
@@ -699,7 +705,7 @@ function renderFTQuestion(){
   let html='<div class="ft-question"><div class="ft-question-label">'+q.q+'</div><div class="ft-options">';
   for(const opt of q.options){
     const sel=state.ftAnswers[state.ftCurrentQ]===opt.value;
-    html+='<button class="ft-option'+(sel?' selected':'')+'" onclick="selectFTAnswer(\''+opt.value+'\',this)">'+opt.label+'</button>';
+    html+='<button class="ft-option'+(sel?' selected':'')+'" data-ftval="'+opt.value+'">'+opt.label+'</button>';
   }
   html+='</div></div>';
   document.getElementById('ft-question-area').innerHTML=html;
