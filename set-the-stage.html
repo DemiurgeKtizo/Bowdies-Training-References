@@ -18,26 +18,28 @@ html{background:#111010}
 body{background:var(--surface);color:var(--text-primary);font-family:'Cormorant Garamond',serif;min-height:100vh;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:0.4}
 
-/* TOP BAR */
+/* ── TOP BAR ── */
 #top-bar{position:sticky;top:0;z-index:200;background:var(--charcoal);border-bottom:1px solid var(--border);padding:14px 24px 14px 28px;display:flex;align-items:center;justify-content:space-between}
 .top-bar-logo{display:inline-block;text-align:left;line-height:1}
 .top-bar-wordmark{display:block;font-family:'Josefin Sans',sans-serif;font-size:18px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-primary);line-height:1}
-.top-bar-section{display:block;font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:var(--gold);letter-spacing:0.04em;margin-top:1px}
+.top-bar-section{display:block;font-family:'Playfair Display',serif;font-style:italic;font-size:11px;color:var(--gold);letter-spacing:0.03em;margin-top:1px}
+.top-bar-actions{display:flex;align-items:center;gap:20px}
+#btn-reset{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px 0;transition:color 0.2s}
+#btn-reset:hover{color:var(--text-muted)}
 #btn-back{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px 0;transition:color 0.2s}
 #btn-back:hover{color:var(--text-muted)}
 
-/* SCREENS */
+/* ── SCREENS ── */
 .screen{display:none;padding:32px 24px 80px;max-width:600px;margin:0 auto}
+#screen-path{padding-top:8px}
 .screen.active{display:block;animation:fadeUp 0.3s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
-/* PATH SELECT */
-.stage-header{text-align:center;padding:40px 0 32px}
-.stage-eyebrow{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);opacity:0.8;margin-bottom:16px}
-.stage-title{font-family:'Playfair Display',serif;font-size:clamp(28px,7vw,44px);font-weight:600;color:var(--text-primary);line-height:1.1}
+/* ── PATH SELECT ── */
+.stage-header{text-align:center;padding:0 0 12px}
 .stage-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-muted);margin-top:10px;letter-spacing:0.04em}
 .stage-divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:24px auto 0}
-.path-cards{display:flex;flex-direction:column;gap:12px;margin-top:40px}
+.path-cards{display:flex;flex-direction:column;gap:12px;margin-top:20px}
 .path-card{background:var(--surface-2);border:1px solid var(--border-soft);padding:24px 20px;cursor:pointer;transition:all 0.25s ease;position:relative;overflow:hidden}
 .path-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity 0.25s}
 .path-card:hover,.path-card:active{background:var(--surface-3);border-color:var(--border)}
@@ -46,24 +48,20 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .path-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--text-primary);margin-bottom:6px}
 .path-desc{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);line-height:1.5}
 
-/* SECTION HEADING */
+/* ── GUEST SETUP ── */
 .section-heading{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border-soft)}
-
-/* GUEST SETUP */
 .guest-count-row{display:flex;align-items:center;gap:16px;margin-bottom:32px}
 .guest-count-label{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text-muted);flex:1}
 .count-controls{display:flex;align-items:center;gap:12px}
 .count-btn{width:36px;height:36px;border:1px solid var(--border);background:transparent;color:var(--gold);font-family:'Josefin Sans',sans-serif;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
 .count-btn:hover{background:rgba(201,168,76,0.08)}
 .count-display{font-family:'Playfair Display',serif;font-size:28px;color:var(--text-primary);min-width:32px;text-align:center}
-
-/* BUTTONS */
 .btn-primary{width:100%;padding:18px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;cursor:pointer;transition:all 0.25s;margin-top:8px;border-radius:0}
 .btn-primary:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
 .btn-secondary{width:100%;padding:14px;background:transparent;border:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.25s;margin-top:8px;border-radius:0}
 .btn-secondary:hover{border-color:var(--border);color:var(--text-muted)}
 
-/* GUEST TABS */
+/* ── GUEST TABS ── */
 #guest-tab-bar{display:none;position:sticky;top:57px;z-index:100;background:var(--surface);border-bottom:1px solid var(--border-soft);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 #guest-tab-bar::-webkit-scrollbar{display:none}
 #guest-tab-bar.visible{display:flex}
@@ -75,7 +73,19 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .table-tab{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:12px 16px;background:transparent;border:none;border-bottom:2px solid transparent;border-left:1px solid var(--border-soft);cursor:pointer;transition:all 0.2s;margin-left:auto}
 .table-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
 
-/* SEARCH */
+/* ── COURSE PROGRESS STEPPER ── */
+#course-stepper{display:none;background:var(--surface);border-bottom:1px solid var(--border-soft);padding:0 8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#course-stepper::-webkit-scrollbar{display:none}
+#course-stepper.visible{display:block}
+.stepper-inner{display:flex;align-items:center;padding:10px 8px;min-width:max-content;gap:0}
+.stepper-step{display:flex;align-items:center;gap:0}
+.stepper-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);padding:4px 8px;white-space:nowrap;transition:color 0.2s;position:relative}
+.stepper-label.active{color:var(--gold)}
+.stepper-label.done{color:var(--text-muted)}
+.stepper-label.done::after{content:'✓';margin-left:4px;color:var(--gold-dim);font-size:8px}
+.stepper-sep{color:var(--text-dim);font-size:8px;opacity:0.4;padding:0 2px}
+
+/* ── SEARCH ── */
 .search-wrap{position:relative;margin-bottom:12px}
 .search-input{width:100%;background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:14px 16px;outline:none;transition:border-color 0.2s;border-radius:0;-webkit-appearance:none;appearance:none}
 .search-input::placeholder{color:var(--text-dim)}
@@ -88,49 +98,34 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .result-name{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text-primary)}
 .result-cat{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0}
 
-/* SELECTED CHIPS */
-.selected-section{margin-bottom:20px}
+/* ── SELECTED ITEMS ── */
+.selected-section{margin-bottom:16px}
 .selected-section-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:10px}
 .selected-chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:5px 10px 5px 12px;display:flex;align-items:center;gap:8px}
-.chip-remove{color:var(--text-dim);cursor:pointer;font-size:14px;line-height:1;transition:color 0.15s;background:none;border:none;padding:0;font-family:inherit}
+.chip-remove{color:var(--text-dim);cursor:pointer;font-size:14px;line-height:1;transition:color 0.15s;background:none;border:none;padding:0}
 .chip-remove:hover{color:var(--gold)}
 .empty-state{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-dim);text-align:center;padding:32px 0}
 
-/* SPECIALS MODAL */
-#specials-modal{display:none;position:fixed;inset:0;background:rgba(17,16,16,0.85);z-index:500;align-items:flex-end;justify-content:center}
-#specials-modal.open{display:flex}
-.modal-sheet{background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;padding:32px 24px 48px;animation:slideUp 0.3s ease}
-@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
-.modal-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text-primary);margin-bottom:4px}
-.modal-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:24px}
-.modal-field{margin-bottom:16px}
-.modal-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block}
-.modal-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;transition:border-color 0.2s}
-.modal-input:focus{border-color:var(--gold-dim)}
-.tag-picker{display:flex;flex-wrap:wrap;gap:6px}
-.tag-pick{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:5px 10px;cursor:pointer;transition:all 0.15s;-webkit-appearance:none;appearance:none;border-radius:0}
-.tag-pick.selected{color:var(--gold);border-color:var(--gold-dim);background:rgba(201,168,76,0.08)}
-.modal-actions{display:flex;gap:10px;margin-top:24px}
-.modal-btn{flex:1;padding:14px;background:transparent;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
-.modal-btn-confirm{border:1px solid var(--gold-dim);color:var(--gold)}
-.modal-btn-confirm:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
-.modal-btn-cancel{border:1px solid var(--border-soft);color:var(--text-dim)}
-.modal-btn-cancel:hover{border-color:var(--border);color:var(--text-muted)}
+/* ── COMPLETE COURSE BUTTON ── */
+.complete-course-bar{display:flex;gap:10px;margin:16px 0;padding-top:16px;border-top:1px solid var(--border-soft)}
+.btn-complete{flex:1;padding:13px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
+.btn-complete:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
+.btn-complete.done{border-color:var(--text-dim);color:var(--text-dim);opacity:0.6;cursor:default}
 
-/* VARIABLE PROMPT */
-.variable-prompt{background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--gold-dim);padding:16px;margin-bottom:16px;display:none}
-.variable-prompt.visible{display:block}
-.variable-prompt-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.variable-input{width:100%;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:16px;padding:6px 0;outline:none}
-.variable-input::placeholder{color:var(--text-dim)}
+/* ── COURSE TABS (horizontal recs) ── */
+#course-tab-bar{margin:24px 0 0;border-bottom:1px solid var(--border-soft);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#course-tab-bar::-webkit-scrollbar{display:none}
+.course-tab-inner{display:flex;min-width:max-content}
+.course-tab{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:10px 14px;background:transparent;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:all 0.2s;white-space:nowrap}
+.course-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+.course-tab.has-recs{color:var(--text-muted)}
+.course-tab.active.has-recs{color:var(--gold)}
 
-/* RECOMMENDATIONS */
-#recs-panel{margin-top:28px}
+/* ── RECOMMENDATIONS ── */
+#recs-panel{margin-top:8px}
 .recs-heading{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between}
 .recs-count{color:var(--text-dim);font-size:8px}
-.rec-category-group{margin-bottom:20px}
-.rec-cat-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
 .rec-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.04);cursor:pointer;transition:background 0.15s;border-radius:0;background:none;width:100%;text-align:left}
 .rec-item:last-child{border-bottom:none}
 .rec-item:hover{background:rgba(255,255,255,0.02)}
@@ -147,16 +142,21 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .tier-badge.excellent{color:var(--tier-excellent);border:1px solid rgba(201,168,76,0.3)}
 .tier-badge.strong{color:var(--tier-strong);border:1px solid rgba(123,168,196,0.3)}
 .tier-badge.works{color:var(--tier-works);border:1px solid rgba(122,154,138,0.3)}
-
-/* LEGEND */
-.legend{display:flex;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.legend{display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap}
 .legend-item{display:flex;align-items:center;gap:6px;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim)}
 
-/* ADD SPECIAL */
+/* ── VARIABLE PROMPT ── */
+.variable-prompt{background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--gold-dim);padding:16px;margin-bottom:16px;display:none}
+.variable-prompt.visible{display:block}
+.variable-prompt-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.variable-input{width:100%;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:16px;padding:6px 0;outline:none}
+.variable-input::placeholder{color:var(--text-dim)}
+
+/* ── ADD SPECIAL ── */
 .add-special-btn{width:100%;padding:12px;background:transparent;border:1px dashed rgba(201,168,76,0.2);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;margin-bottom:16px}
 .add-special-btn:hover{border-color:var(--gold-dim);color:var(--gold)}
 
-/* TABLE VIEW */
+/* ── TABLE VIEW ── */
 .table-view-guest{margin-bottom:20px;background:var(--surface-2);border:1px solid var(--border-soft);padding:16px}
 .table-guest-label{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
 .table-item-list{display:flex;flex-wrap:wrap;gap:6px}
@@ -164,7 +164,38 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .table-empty{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim)}
 .table-recs-divider{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin:28px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--border-soft)}
 
-/* FIRST TIMER */
+/* ── TABLE SUMMARY (done state) ── */
+.table-summary-card{background:var(--surface-2);border:1px solid var(--border-soft);padding:20px;margin-bottom:16px}
+.table-summary-title{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.summary-row{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text-muted);padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.summary-row:last-child{border-bottom:none}
+
+/* ── ROUND 2 / ANOTHER DRINK PROMPT MODAL ── */
+#round-modal{display:none;position:fixed;inset:0;background:rgba(17,16,16,0.85);z-index:500;align-items:flex-end;justify-content:center}
+#round-modal.open{display:flex}
+.modal-sheet{background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;padding:32px 24px 48px;animation:slideUp 0.3s ease}
+@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text-primary);margin-bottom:4px}
+.modal-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:24px}
+.modal-actions{display:flex;gap:10px;margin-top:8px}
+.modal-btn{flex:1;padding:16px;background:transparent;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
+.modal-btn-confirm{border:1px solid var(--gold-dim);color:var(--gold)}
+.modal-btn-confirm:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
+.modal-btn-cancel{border:1px solid var(--border-soft);color:var(--text-dim)}
+.modal-btn-cancel:hover{border-color:var(--border);color:var(--text-muted)}
+
+/* ── SPECIALS MODAL ── */
+#specials-modal{display:none;position:fixed;inset:0;background:rgba(17,16,16,0.85);z-index:500;align-items:flex-end;justify-content:center}
+#specials-modal.open{display:flex}
+.modal-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block}
+.modal-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;transition:border-color 0.2s}
+.modal-input:focus{border-color:var(--gold-dim)}
+.modal-field{margin-bottom:16px}
+.tag-picker{display:flex;flex-wrap:wrap;gap:6px}
+.tag-pick{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:5px 10px;cursor:pointer;transition:all 0.15s;-webkit-appearance:none;appearance:none;border-radius:0}
+.tag-pick.selected{color:var(--gold);border-color:var(--gold-dim);background:rgba(201,168,76,0.08)}
+
+/* ── FIRST TIMER ── */
 .ft-depth-picker{display:flex;gap:10px;margin-bottom:28px}
 .ft-depth-btn{flex:1;padding:16px;background:transparent;border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
 .ft-depth-btn.active{border-color:var(--gold-dim);color:var(--gold);background:rgba(201,168,76,0.06)}
@@ -180,11 +211,11 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .ft-progress-pip.active{background:var(--gold)}
 .ft-nav{display:flex;gap:10px;margin-top:20px}
 
-/* RESET */
-.session-reset{position:fixed;bottom:24px;right:24px;padding:10px 16px;background:var(--charcoal);border:1px solid var(--border);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;cursor:pointer;z-index:300;transition:all 0.2s}
-.session-reset:hover{color:var(--text-muted)}
+/* ── TOAST CONFIRMATION ── */
+#add-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%);background:var(--surface-3);border:1px solid var(--border);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;padding:10px 20px;border-radius:2px;z-index:600;opacity:0;transition:opacity 0.25s;pointer-events:none;white-space:nowrap;max-width:90vw;text-align:center}
+#add-toast.show{opacity:1}
 
-/* FOOTER */
+/* ── FOOTER ── */
 footer{text-align:center;padding:40px;background:var(--surface)}
 footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim)}
 .footer-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);margin:12px auto}
@@ -192,25 +223,34 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 </head>
 <body>
 
+<!-- TOP BAR -->
 <div id="top-bar">
   <div class="top-bar-logo">
     <span class="top-bar-wordmark">Bowdie's</span>
-    <span class="top-bar-section">Set The Stage</span>
+    <span class="top-bar-section" id="top-bar-section">Set The Stage</span>
   </div>
-  <button id="btn-back" onclick="goBack()">← Reference</button>
+  <div class="top-bar-actions">
+    <button id="btn-reset" onclick="confirmReset()">Reset</button>
+    <button id="btn-back" onclick="goBack()">← Reference</button>
+  </div>
 </div>
 
+<!-- GUEST TAB BAR -->
 <div id="guest-tab-bar">
   <div class="guest-tab-inner" id="guest-tabs-inner"></div>
+</div>
+
+<!-- COURSE PROGRESS STEPPER -->
+<div id="course-stepper">
+  <div class="stepper-inner" id="stepper-inner"></div>
 </div>
 
 <!-- SCREEN 0: PATH SELECT -->
 <div id="screen-path" class="screen active">
   <div class="stage-header">
-    <div class="stage-eyebrow">Bowdie's Chophouse</div>
-    <div class="stage-title">Set The Stage</div>
-    <p class="stage-sub">Guide your guests to their perfect evening.</p>
     <div class="stage-divider"></div>
+    <p class="stage-sub" style="margin-top:10px">Guide your guests to their perfect evening.</p>
+    <div class="stage-divider" style="margin-top:10px"></div>
   </div>
   <div class="path-cards">
     <div class="path-card" onclick="selectPath('drinks')">
@@ -252,7 +292,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 
   <div class="search-wrap">
     <input type="text" class="search-input" id="main-search"
-           placeholder="Search menu items…"
+           placeholder="Search…"
            autocomplete="off" autocorrect="off" spellcheck="false"
            oninput="handleSearch(this.value)">
     <div class="search-results" id="search-results"></div>
@@ -268,6 +308,16 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 
   <div id="selected-display"></div>
+
+  <!-- Complete course bar -->
+  <div class="complete-course-bar" id="complete-course-bar" style="display:none">
+    <button class="btn-complete" id="btn-complete-course" onclick="completeCourse()">Mark as Done</button>
+  </div>
+
+  <!-- Course tab bar for recommendations -->
+  <div id="course-tab-bar" style="display:none">
+    <div class="course-tab-inner" id="course-tab-inner"></div>
+  </div>
 
   <div id="recs-panel">
     <div class="empty-state" id="recs-empty">Add items above to see pairing recommendations.</div>
@@ -286,6 +336,11 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     <div class="legend-item"><div class="tier-pip works"></div> Works</div>
   </div>
   <div id="table-recs-content"></div>
+  <div id="table-summary-area" style="margin-top:32px;display:none">
+    <div class="table-recs-divider">Table Summary</div>
+    <div id="table-summary-content"></div>
+    <button class="btn-primary" style="margin-top:24px" onclick="confirmReset()">Start New Table</button>
+  </div>
 </div>
 
 <!-- SCREEN 4: FIRST TIMER -->
@@ -312,11 +367,23 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
+<!-- ROUND MODAL -->
+<div id="round-modal">
+  <div class="modal-sheet">
+    <div class="modal-title" id="round-modal-title">Another Round?</div>
+    <div class="modal-sub" id="round-modal-sub">Is your guest going for another drink?</div>
+    <div class="modal-actions">
+      <button class="modal-btn modal-btn-cancel" onclick="closeRoundModal(false)">Not Yet</button>
+      <button class="modal-btn modal-btn-confirm" onclick="closeRoundModal(true)">Yes — Show Options</button>
+    </div>
+  </div>
+</div>
+
 <!-- SPECIALS MODAL -->
 <div id="specials-modal">
   <div class="modal-sheet">
     <div class="modal-title">Add Today's Special</div>
-    <div class="modal-sub">Name it and tag the profile — the engine handles the rest.</div>
+    <div class="modal-sub" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:24px">Name it and tag the profile — the engine handles the rest.</div>
     <div class="modal-field">
       <label class="modal-label">Item Name</label>
       <input type="text" class="modal-input" id="special-name" placeholder="e.g. Pan-Seared Halibut" autocomplete="off">
@@ -354,374 +421,737 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
-<button class="session-reset" onclick="confirmReset()">Reset Session</button>
+<!-- TOAST -->
+<div id="add-toast"></div>
 
 <footer>
   <div class="footer-divider"></div>
   <p>Internal use only</p>
 </footer>
 
-<script src="pairing-map.js?v=2"></script>
+<script src="pairing-map.js?v=3"></script>
 <script>
-// ── STATE ──────────────────────────────────────────────────────────────────
-const state={path:null,guestCount:1,activeGuest:0,activeView:'guest',guests:[],specials:[],ftDepth:'short',ftAnswers:[],ftCurrentQ:0};
+// ── STATE ──────────────────────────────────────────────────────────────────────
+const state = {
+  path: null,           // 'drinks' | 'food' | 'firsttimer'
+  guestCount: 1,
+  activeGuest: 0,
+  activeView: 'guest',  // 'guest' | 'table'
+  guests: [],           // [{ selections:[], completedCourses:Set, drinksComplete:false, onRound2:false, dietaryFlags:[] }]
+  specials: [],
+  activeCourseTab: 'starters', // which rec tab is active
+  ftDepth: 'short',
+  ftAnswers: [],
+  ftCurrentQ: 0,
+};
 
-function saveState(){try{localStorage.setItem('sts_session',JSON.stringify(state))}catch(e){}}
-function loadState(){try{const s=localStorage.getItem('sts_session');if(s){Object.assign(state,JSON.parse(s));return true}}catch(e){}return false}
+// ── COURSE DEFINITIONS ─────────────────────────────────────────────────────────
+// Defines the horizontal course tabs for recommendations
+const DRINK_CATS = ['cocktail','wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
+const FOOD_CATS  = ['steak','starter','soup-salad','main','side','dessert'];
 
-function goBack(){saveState();window.location.href='index.html'}
-function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0)}
+const COURSE_TABS = [
+  { id: 'starters',  label: 'To Start',       cats: ['starter'] },
+  { id: 'soups',     label: 'Soups & Salads',  cats: ['soup-salad'] },
+  { id: 'entrees',   label: 'Entrées & Sides', cats: ['steak','main','side'] },
+  { id: 'dessert',   label: 'Dessert',         cats: ['dessert','wine-dessert'] },
+  { id: 'drinks',    label: 'Another Round',   cats: DRINK_CATS },
+  { id: 'all-food',  label: 'All Food',        cats: FOOD_CATS },
+];
 
-function selectPath(path){
-  state.path=path;
-  if(path==='firsttimer'){showScreen('screen-firsttimer');initFirstTimer()}
-  else{showScreen('screen-setup')}
+// ── PERSISTENCE ────────────────────────────────────────────────────────────────
+function saveState() {
+  try {
+    const s = JSON.parse(JSON.stringify(state));
+    // Sets aren't serializable
+    s.guests = s.guests.map(g => ({ ...g, completedCourses: [...(g.completedCourses||[])] }));
+    localStorage.setItem('sts_session', JSON.stringify(s));
+  } catch(e) {}
 }
 
-function adjustGuests(d){state.guestCount=Math.max(1,Math.min(12,state.guestCount+d));document.getElementById('guest-count-display').textContent=state.guestCount}
+function loadState() {
+  try {
+    const raw = localStorage.getItem('sts_session');
+    if (!raw) return false;
+    const parsed = JSON.parse(raw);
+    // Restore Sets
+    if (parsed.guests) {
+      parsed.guests = parsed.guests.map(g => ({
+        ...g,
+        completedCourses: new Set(g.completedCourses || [])
+      }));
+    }
+    Object.assign(state, parsed);
+    return true;
+  } catch(e) { return false; }
+}
 
-function confirmSetup(){
-  state.guests=[];
-  for(let i=0;i<state.guestCount;i++) state.guests.push({selections:[]});
-  state.activeGuest=0;state.activeView='guest';
+// ── NAV ────────────────────────────────────────────────────────────────────────
+function goBack() { saveState(); window.location.href = 'index.html'; }
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ── PATH SELECTION ─────────────────────────────────────────────────────────────
+function selectPath(path) {
+  state.path = path;
+  if (path === 'firsttimer') {
+    showScreen('screen-firsttimer');
+    initFirstTimer();
+  } else {
+    showScreen('screen-setup');
+  }
+}
+
+// ── GUEST SETUP ────────────────────────────────────────────────────────────────
+function adjustGuests(d) {
+  state.guestCount = Math.max(1, Math.min(12, state.guestCount + d));
+  document.getElementById('guest-count-display').textContent = state.guestCount;
+}
+
+function makeGuest() {
+  return { selections: [], completedCourses: new Set(), drinksComplete: false, onRound2: false, dietaryFlags: [] };
+}
+
+function confirmSetup() {
+  state.guests = Array.from({ length: state.guestCount }, makeGuest);
+  state.activeGuest = 0;
+  state.activeView = 'guest';
+  state.activeCourseTab = state.path === 'drinks' ? 'starters' : 'drinks';
   buildGuestTabs();
   document.getElementById('guest-tab-bar').classList.add('visible');
+  document.getElementById('course-stepper').classList.add('visible');
   showScreen('screen-session');
-  updateSessionHeading();renderSelected();renderRecs();saveState();
+  updateSessionHeading();
+  renderStepper();
+  renderSelected();
+  renderRecs();
+  saveState();
 }
 
-function buildGuestTabs(){
-  const inner=document.getElementById('guest-tabs-inner');
-  inner.innerHTML='';
-  for(let i=0;i<state.guestCount;i++){
-    const btn=document.createElement('button');
-    btn.className='guest-tab'+(i===state.activeGuest?' active':'');
-    if(state.guests[i]&&state.guests[i].selections.length>0) btn.classList.add('has-items');
-    btn.textContent='Guest '+(i+1);
-    btn.onclick=()=>switchGuest(i);
+// ── GUEST TABS ─────────────────────────────────────────────────────────────────
+function buildGuestTabs() {
+  const inner = document.getElementById('guest-tabs-inner');
+  inner.innerHTML = '';
+  for (let i = 0; i < state.guestCount; i++) {
+    const btn = document.createElement('button');
+    btn.className = 'guest-tab' + (i === state.activeGuest ? ' active' : '');
+    if (state.guests[i]?.selections.length > 0) btn.classList.add('has-items');
+    btn.textContent = 'Guest ' + (i + 1);
+    btn.onclick = () => switchGuest(i);
     inner.appendChild(btn);
   }
-  const tb=document.createElement('button');
-  tb.className='table-tab'+(state.activeView==='table'?' active':'');
-  tb.textContent='Full Table';
-  tb.onclick=()=>switchToTable();
+  const tb = document.createElement('button');
+  tb.className = 'table-tab' + (state.activeView === 'table' ? ' active' : '');
+  tb.textContent = 'Full Table';
+  tb.onclick = () => switchToTable();
   inner.appendChild(tb);
 }
 
-function switchGuest(i){state.activeGuest=i;state.activeView='guest';buildGuestTabs();showScreen('screen-session');updateSessionHeading();renderSelected();renderRecs()}
-function switchToTable(){state.activeView='table';buildGuestTabs();showScreen('screen-table');renderTableView()}
-function updateSessionHeading(){document.getElementById('session-heading').textContent='Guest '+(state.activeGuest+1)+' — Add Items'}
+function switchGuest(i) {
+  state.activeGuest = i;
+  state.activeView = 'guest';
+  buildGuestTabs();
+  showScreen('screen-session');
+  updateSessionHeading();
+  renderStepper();
+  renderSelected();
+  renderRecs();
+}
 
-// ── SEARCH ──────────────────────────────────────────────────────────────────
-function getAllItems(){
-  const items=[];
-  for(const e of PAIRING_MAP){
-    if(e.spiritCluster){
-      items.push({name:e.name,category:e.category,variable:false,spiritCluster:true});
-      if(e.members) for(const m of e.members) items.push({name:m,category:e.category,variable:false,parentCluster:e.name});
+function switchToTable() {
+  state.activeView = 'table';
+  buildGuestTabs();
+  showScreen('screen-table');
+  renderTableView();
+}
+
+function updateSessionHeading() {
+  const pathLabel = state.path === 'drinks' ? 'Drinks' : 'Food';
+  document.getElementById('session-heading').textContent = 'Guest ' + (state.activeGuest + 1) + ' — Add ' + pathLabel;
+}
+
+// ── COURSE STEPPER ─────────────────────────────────────────────────────────────
+const STEPPER_STEPS_DRINKS = ['Drinks', 'Starters', 'Soups & Salads', 'Entrées', 'Dessert', 'Round 2'];
+const STEPPER_STEPS_FOOD   = ['Food', 'Drinks', 'More Food', 'Dessert', 'Another Round'];
+
+function renderStepper() {
+  const guest = state.guests[state.activeGuest];
+  if (!guest) return;
+  const steps = state.path === 'drinks' ? STEPPER_STEPS_DRINKS : STEPPER_STEPS_FOOD;
+  const inner = document.getElementById('stepper-inner');
+  inner.innerHTML = steps.map((s, i) => {
+    const isDone = guest.completedCourses.has(i);
+    const isActive = !isDone && getCurrentStepIndex(guest) === i;
+    const cls = isDone ? 'done' : isActive ? 'active' : '';
+    return (i > 0 ? '<span class="stepper-sep">›</span>' : '') +
+      '<div class="stepper-step"><span class="stepper-label ' + cls + '">' + s + '</span></div>';
+  }).join('');
+}
+
+function getCurrentStepIndex(guest) {
+  if (!guest) return 0;
+  const done = guest.completedCourses;
+  for (let i = 0; i < 6; i++) { if (!done.has(i)) return i; }
+  return 5;
+}
+
+// ── SEARCH — PATH FILTERED ─────────────────────────────────────────────────────
+function getAllItems() {
+  const items = [];
+  for (const e of PAIRING_MAP) {
+    if (e.spiritCluster) {
+      items.push({ name: e.name, category: e.category, variable: false, spiritCluster: true });
+      if (e.members) e.members.forEach(m => items.push({ name: m, category: e.category, variable: false, parentCluster: e.name }));
     } else {
-      items.push({name:e.name,category:e.category,variable:e.variable||false});
+      items.push({ name: e.name, category: e.category, variable: e.variable || false });
     }
   }
-  for(const s of state.specials) items.push({name:s.name,category:s.category,variable:false,special:true});
+  state.specials.forEach(s => items.push({ name: s.name, category: s.category, variable: false, special: true }));
   return items;
 }
 
-function getCategoryForDisplay(cat){
-  const m={'steak':'Prime','starter':'Starter','soup-salad':'Soup / Salad','main':'Main','side':'Side','dessert':'Dessert','cocktail':'Cocktail','wine-sparkling':'Sparkling','wine-white':'White Wine','wine-red':'Red Wine','wine-dessert':'Dessert Wine','bourbon':'Bourbon','rye':'Rye','scotch':'Scotch','irish':'Irish','japanese':'Japanese','canadian':'Canadian','tequila':'Tequila','mezcal':'Mezcal','vodka':'Vodka','gin':'Gin','rum':'Rum','cognac':'Cognac','liqueur':'Liqueur','singlemalt':'Single Malt'};
-  return m[cat]||cat;
+function getFilteredItems() {
+  const all = getAllItems();
+  // Drinks First: show only drinks in search
+  if (state.path === 'drinks') return all.filter(i => DRINK_CATS.includes(i.category));
+  // Food First: show only food in search
+  if (state.path === 'food') return all.filter(i => FOOD_CATS.includes(i.category));
+  return all;
 }
 
-let searchDebounce=null;
-function handleSearch(val){
+function getCategoryForDisplay(cat) {
+  const m = {
+    'steak':'Prime','starter':'Starter','soup-salad':'Soup / Salad','main':'Main',
+    'side':'Side','dessert':'Dessert','cocktail':'Cocktail','wine-sparkling':'Sparkling',
+    'wine-white':'White Wine','wine-red':'Red Wine','wine-dessert':'Dessert Wine',
+    'bourbon':'Bourbon','rye':'Rye','scotch':'Scotch','irish':'Irish','japanese':'Japanese',
+    'canadian':'Canadian','tequila':'Tequila','mezcal':'Mezcal','vodka':'Vodka',
+    'gin':'Gin','rum':'Rum','cognac':'Cognac','liqueur':'Liqueur','singlemalt':'Single Malt'
+  };
+  return m[cat] || cat;
+}
+
+let searchDebounce = null;
+function handleSearch(val) {
   clearTimeout(searchDebounce);
-  searchDebounce=setTimeout(()=>{
-    const results=document.getElementById('search-results');
-    if(!val||val.trim().length<1){results.classList.remove('visible');return}
-    const q=val.toLowerCase();
-    const matches=getAllItems().filter(i=>i.name.toLowerCase().includes(q)).slice(0,20);
-    if(!matches.length){results.classList.remove('visible');return}
-    results.innerHTML='';
-    for(const item of matches){
-      const div=document.createElement('div');
-      div.className='search-result-item';
-      div.innerHTML='<span class="result-name">'+item.name+'</span><span class="result-cat">'+getCategoryForDisplay(item.category)+'</span>';
-      div.onclick=()=>selectItem(item.name,item.category,item.variable);
+  searchDebounce = setTimeout(() => {
+    const results = document.getElementById('search-results');
+    if (!val || val.trim().length < 1) { results.classList.remove('visible'); return; }
+    const q = val.toLowerCase();
+    const matches = getFilteredItems().filter(i => i.name.toLowerCase().includes(q)).slice(0, 20);
+    if (!matches.length) { results.classList.remove('visible'); return; }
+    results.innerHTML = '';
+    matches.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'search-result-item';
+      div.innerHTML = '<span class="result-name">' + item.name + '</span><span class="result-cat">' + getCategoryForDisplay(item.category) + '</span>';
+      div.onclick = () => selectItem(item.name, item.category, item.variable);
       results.appendChild(div);
-    }
+    });
     results.classList.add('visible');
-  },80);
+  }, 80);
 }
 
-document.addEventListener('click',e=>{
-  if(!e.target.closest('.search-wrap')) document.getElementById('search-results').classList.remove('visible');
-  const removeBtn=e.target.closest('[data-remove]');
-  if(removeBtn){ removeItem(decodeURIComponent(removeBtn.dataset.remove)); return; }
-  const addBtn=e.target.closest('[data-add]');
-  if(addBtn){ addRecToOrder(decodeURIComponent(addBtn.dataset.add),addBtn.dataset.cat); return; }
-  const ftBtn=e.target.closest('[data-ftval]');
-  if(ftBtn){ selectFTAnswer(ftBtn.dataset.ftval,ftBtn); return; }
+document.addEventListener('click', e => {
+  if (!e.target.closest('.search-wrap')) document.getElementById('search-results').classList.remove('visible');
+  const removeBtn = e.target.closest('[data-remove]');
+  if (removeBtn) { removeItem(decodeURIComponent(removeBtn.dataset.remove)); return; }
+  const addBtn = e.target.closest('[data-add]');
+  if (addBtn) { addRecToOrder(decodeURIComponent(addBtn.dataset.add), addBtn.dataset.cat); return; }
+  const ftBtn = e.target.closest('[data-ftval]');
+  if (ftBtn) { selectFTAnswer(ftBtn.dataset.ftval, ftBtn); return; }
 });
 
-function selectItem(name,category,isVariable){
-  const guest=state.guests[state.activeGuest];
-  if(!guest.selections.find(s=>s.name===name)) guest.selections.push({name,category});
-  document.getElementById('main-search').value='';
+function selectItem(name, category, isVariable) {
+  if (!state.guests || !state.guests[state.activeGuest]) return;
+  const guest = state.guests[state.activeGuest];
+  if (!guest.selections.find(s => s.name === name)) {
+    guest.selections.push({ name, category });
+    showToast('Added — ' + name);
+  }
+  document.getElementById('main-search').value = '';
   document.getElementById('search-results').classList.remove('visible');
-  if(isVariable){
-    const entry=PAIRING_MAP.find(e=>e.name===name);
-    if(entry&&entry.variablePrompt){
-      document.getElementById('variable-prompt-label').textContent=entry.variablePrompt;
+  if (isVariable) {
+    const entry = PAIRING_MAP.find(e => e.name === name);
+    if (entry?.variablePrompt) {
+      document.getElementById('variable-prompt-label').textContent = entry.variablePrompt;
       document.getElementById('variable-prompt').classList.add('visible');
-      document.getElementById('variable-input').dataset.item=name;
-      document.getElementById('variable-input').value='';
+      document.getElementById('variable-input').dataset.item = name;
+      document.getElementById('variable-input').value = '';
     }
   }
-  buildGuestTabs();renderSelected();renderRecs();saveState();
+  buildGuestTabs();
+  renderStepper();
+  renderSelected();
+  renderRecs();
+  saveState();
 }
 
-function handleVariableInput(val){
-  const itemName=document.getElementById('variable-input').dataset.item;
-  const guest=state.guests[state.activeGuest];
-  const sel=guest.selections.find(s=>s.name===itemName);
-  if(sel) sel.variableNote=val;
+function handleVariableInput(val) {
+  if (!state.guests || !state.guests[state.activeGuest]) return;
+  const itemName = document.getElementById('variable-input').dataset.item;
+  const sel = state.guests[state.activeGuest].selections.find(s => s.name === itemName);
+  if (sel) sel.variableNote = val;
 }
 
-function removeItem(name){
-  const guest=state.guests[state.activeGuest];
-  guest.selections=guest.selections.filter(s=>s.name!==name);
-  buildGuestTabs();renderSelected();renderRecs();saveState();
+function removeItem(name) {
+  if (!state.guests || !state.guests[state.activeGuest]) return;
+  state.guests[state.activeGuest].selections = state.guests[state.activeGuest].selections.filter(s => s.name !== name);
+  buildGuestTabs();
+  renderStepper();
+  renderSelected();
+  renderRecs();
+  saveState();
 }
 
-// ── SELECTED DISPLAY ────────────────────────────────────────────────────────
-const CATEGORY_ORDER=['steak','starter','soup-salad','main','side','dessert','cocktail','wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
+// ── SELECTED DISPLAY ───────────────────────────────────────────────────────────
+const CATEGORY_ORDER = ['steak','starter','soup-salad','main','side','dessert','cocktail','wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
 
-function renderSelected(){
-  const guest=state.guests[state.activeGuest];
-  const container=document.getElementById('selected-display');
-  if(!guest.selections.length){container.innerHTML='<div class="empty-state" style="padding:16px 0">No items added yet.</div>';return}
-  const groups={};
-  for(const sel of guest.selections){const cat=sel.category||'other';if(!groups[cat])groups[cat]=[];groups[cat].push(sel)}
-  let html='';
-  for(const cat of CATEGORY_ORDER){
-    if(!groups[cat]) continue;
-    html+='<div class="selected-section"><div class="selected-section-label">'+getCategoryForDisplay(cat)+'</div><div class="selected-chips">';
-    for(const sel of groups[cat]){
-      html+='<div class="chip">'+sel.name+'<button class="chip-remove" data-remove="'+encodeURIComponent(sel.name)+'">×</button></div>';
+function renderSelected() {
+  if (!state.guests || !state.guests[state.activeGuest]) return;
+  const guest = state.guests[state.activeGuest];
+  const container = document.getElementById('selected-display');
+
+  if (!guest.selections.length) {
+    container.innerHTML = '<div class="empty-state" style="padding:16px 0">No items added yet.</div>';
+    document.getElementById('complete-course-bar').style.display = 'none';
+    return;
+  }
+
+  const groups = {};
+  guest.selections.forEach(sel => {
+    const cat = sel.category || 'other';
+    if (!groups[cat]) groups[cat] = [];
+    groups[cat].push(sel);
+  });
+
+  let html = '';
+  CATEGORY_ORDER.forEach(cat => {
+    if (!groups[cat]) return;
+    html += '<div class="selected-section"><div class="selected-section-label">' + getCategoryForDisplay(cat) + '</div><div class="selected-chips">';
+    groups[cat].forEach(sel => {
+      html += '<div class="chip">' + sel.name + '<button class="chip-remove" data-remove="' + encodeURIComponent(sel.name) + '">×</button></div>';
+    });
+    html += '</div></div>';
+  });
+  container.innerHTML = html;
+
+  // Show complete bar
+  const bar = document.getElementById('complete-course-bar');
+  const btn = document.getElementById('btn-complete-course');
+  bar.style.display = 'flex';
+
+  const isDone = guest.drinksComplete || (state.path === 'food' && guest.completedCourses.has(0));
+  btn.textContent = isDone ? '✓ Done' : (state.path === 'drinks' ? 'Drinks Done — Show Food' : 'Course Done — Show Drinks');
+  btn.className = 'btn-complete' + (isDone ? ' done' : '');
+  btn.onclick = isDone ? null : completeCourse;
+}
+
+// ── COMPLETE COURSE ────────────────────────────────────────────────────────────
+function completeCourse() {
+  if (!state.guests || !state.guests[state.activeGuest]) return;
+  const guest = state.guests[state.activeGuest];
+
+  if (state.path === 'drinks' && !guest.drinksComplete) {
+    guest.drinksComplete = true;
+    guest.completedCourses.add(0);
+    // Flip search to food
+    document.getElementById('session-heading').textContent = 'Guest ' + (state.activeGuest + 1) + ' — Add Food';
+    document.querySelector('#main-search').placeholder = 'Search food…';
+    // Default to starters tab
+    state.activeCourseTab = 'starters';
+    renderSelected();
+    renderRecs();
+    renderStepper();
+    saveState();
+    // Prompt for food recommendations
+    openRoundModal('Ready to order food?', 'What course are they starting with?', false);
+    return;
+  }
+
+  if (state.path === 'food' && !guest.completedCourses.has(0)) {
+    guest.completedCourses.add(0);
+    document.getElementById('session-heading').textContent = 'Guest ' + (state.activeGuest + 1) + ' — Add Drinks';
+    document.querySelector('#main-search').placeholder = 'Search drinks…';
+    state.activeCourseTab = 'drinks';
+    renderSelected();
+    renderRecs();
+    renderStepper();
+    saveState();
+    openRoundModal('Time for drinks?', 'Would your guest like a recommendation based on what they\'re having?', false);
+    return;
+  }
+
+  // Subsequent completions — prompt another round
+  const nextStepIdx = getCurrentStepIndex(guest) + 1;
+  guest.completedCourses.add(getCurrentStepIndex(guest));
+  renderStepper();
+  saveState();
+  openRoundModal('Another round?', 'Is your guest going for another drink?', true);
+}
+
+// ── ROUND MODAL ────────────────────────────────────────────────────────────────
+let roundModalIsAnotherRound = false;
+
+function openRoundModal(title, sub, isAnotherRound) {
+  roundModalIsAnotherRound = isAnotherRound;
+  document.getElementById('round-modal-title').textContent = title;
+  document.getElementById('round-modal-sub').textContent = sub;
+  document.getElementById('round-modal').classList.add('open');
+}
+
+function closeRoundModal(confirmed) {
+  document.getElementById('round-modal').classList.remove('open');
+  if (!confirmed) return;
+
+  const guest = state.guests[state.activeGuest];
+  if (roundModalIsAnotherRound) {
+    guest.onRound2 = true;
+    state.activeCourseTab = 'drinks';
+  } else {
+    // Just ensure recs are visible
+  }
+  renderRecs();
+  renderSelected();
+}
+
+// ── COURSE TAB BAR ─────────────────────────────────────────────────────────────
+function renderCourseTabs(hasRecs) {
+  const bar = document.getElementById('course-tab-bar');
+  const inner = document.getElementById('course-tab-inner');
+
+  if (!hasRecs) { bar.style.display = 'none'; return; }
+  bar.style.display = 'block';
+
+  inner.innerHTML = COURSE_TABS.map(tab => {
+    const isActive = tab.id === state.activeCourseTab;
+    return '<button class="course-tab' + (isActive ? ' active' : '') + '" data-course="' + tab.id + '">' + tab.label + '</button>';
+  }).join('');
+
+  inner.querySelectorAll('.course-tab').forEach(btn => {
+    btn.onclick = () => {
+      state.activeCourseTab = btn.dataset.course;
+      inner.querySelectorAll('.course-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderRecsForCourse();
+    };
+  });
+}
+
+// ── RECOMMENDATIONS ────────────────────────────────────────────────────────────
+function renderRecs() {
+  if (!state.guests || !state.guests[state.activeGuest]) return;
+  const guest = state.guests[state.activeGuest];
+  const selections = guest.selections.map(s => s.name);
+  const empty = document.getElementById('recs-empty');
+  const content = document.getElementById('recs-content');
+
+  if (!selections.length) {
+    empty.style.display = 'block';
+    content.innerHTML = '';
+    renderCourseTabs(false);
+    return;
+  }
+
+  empty.style.display = 'none';
+  const recs = getRecommendations(selections);
+
+  if (!recs.length) {
+    content.innerHTML = '<div class="empty-state">No strong pairings found for this combination.</div>';
+    renderCourseTabs(false);
+    return;
+  }
+
+  renderCourseTabs(true);
+  renderRecsForCourse(recs);
+}
+
+function renderRecsForCourse(recsIn) {
+  if (!state.guests || !state.guests[state.activeGuest]) return;
+  const guest = state.guests[state.activeGuest];
+  const selections = guest.selections.map(s => s.name);
+  const recs = recsIn || getRecommendations(selections);
+  const content = document.getElementById('recs-content');
+
+  const tab = COURSE_TABS.find(t => t.id === state.activeCourseTab) || COURSE_TABS[0];
+  const filtered = recs.filter(r => tab.cats.includes(r.category));
+
+  if (!filtered.length) {
+    content.innerHTML = '<div class="empty-state" style="padding:24px 0">No ' + tab.label.toLowerCase() + ' pairings for this selection.</div>';
+    return;
+  }
+
+  // Group by category within the tab
+  const groups = {};
+  filtered.forEach(rec => {
+    if (!groups[rec.category]) groups[rec.category] = [];
+    groups[rec.category].push(rec);
+  });
+
+  let html = '<div class="legend"><div class="legend-item"><div class="tier-pip excellent"></div> Excellent</div><div class="legend-item"><div class="tier-pip strong"></div> Strong</div><div class="legend-item"><div class="tier-pip works"></div> Works</div></div>';
+
+  CATEGORY_ORDER.forEach(cat => {
+    if (!groups[cat]) return;
+    html += '<div style="margin-bottom:20px"><div style="font-family:\'Josefin Sans\',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px">' + getCategoryForDisplay(cat) + '</div>';
+    groups[cat].forEach(rec => {
+      const meta = [];
+      if (rec.price) meta.push(rec.price);
+      if (rec.offMenu) meta.push('Off Menu');
+      if (rec.oos) meta.push('Currently Unavailable');
+      const alreadySel = guest.selections.find(s => s.name === rec.name);
+      html += '<button class="rec-item' + (alreadySel ? ' selected-rec' : '') + '" data-add="' + encodeURIComponent(rec.name) + '" data-cat="' + rec.category + '">'
+        + '<div class="tier-pip ' + rec.tier + '"></div>'
+        + '<div class="rec-info"><div class="rec-name">' + rec.name + '</div>'
+        + (meta.length ? '<div class="rec-meta">' + meta.join(' · ') + '</div>' : '')
+        + '</div><div class="tier-badge ' + rec.tier + '">' + rec.tier + '</div></button>';
+    });
+    html += '</div>';
+  });
+
+  content.innerHTML = html;
+}
+
+function addRecToOrder(name, category) {
+  selectItem(name, category, false);
+}
+
+// ── TOAST ──────────────────────────────────────────────────────────────────────
+let toastTimer = null;
+function showToast(msg) {
+  const t = document.getElementById('add-toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+// ── TABLE VIEW ─────────────────────────────────────────────────────────────────
+function renderTableView() {
+  const guestList = document.getElementById('table-guest-list');
+  let html = '';
+  state.guests.forEach((guest, i) => {
+    html += '<div class="table-view-guest"><div class="table-guest-label">Guest ' + (i + 1) + '</div>';
+    if (!guest.selections.length) {
+      html += '<div class="table-empty">Nothing added yet.</div>';
+    } else {
+      html += '<div class="table-item-list">';
+      guest.selections.forEach(sel => { html += '<div class="table-item-chip">' + sel.name + '</div>'; });
+      html += '</div>';
     }
-    html+='</div></div>';
+    html += '</div>';
+  });
+  guestList.innerHTML = html;
+
+  const allSel = [];
+  state.guests.forEach(g => g.selections.forEach(s => { if (!allSel.includes(s.name)) allSel.push(s.name); }));
+  const recsContent = document.getElementById('table-recs-content');
+
+  if (!allSel.length) {
+    recsContent.innerHTML = '<div class="empty-state">Add items to guests above to see table-level pairings.</div>';
+    return;
   }
-  container.innerHTML=html;
+
+  const recs = getRecommendations(allSel);
+  if (!recs.length) { recsContent.innerHTML = '<div class="empty-state">No strong pairings for this table combination.</div>'; return; }
+
+  const groups = {};
+  recs.slice(0, 30).forEach(rec => {
+    if (!groups[rec.category]) groups[rec.category] = [];
+    groups[rec.category].push(rec);
+  });
+
+  let html2 = '';
+  CATEGORY_ORDER.forEach(cat => {
+    if (!groups[cat]) return;
+    html2 += '<div style="margin-bottom:20px"><div style="font-family:\'Josefin Sans\',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px">' + getCategoryForDisplay(cat) + '</div>';
+    groups[cat].forEach(rec => {
+      const meta = [];
+      if (rec.price) meta.push(rec.price);
+      if (rec.offMenu) meta.push('Off Menu');
+      html2 += '<div class="rec-item"><div class="tier-pip ' + rec.tier + '"></div><div class="rec-info"><div class="rec-name">' + rec.name + '</div>' + (meta.length ? '<div class="rec-meta">' + meta.join(' · ') + '</div>' : '') + '</div><div class="tier-badge ' + rec.tier + '">' + rec.tier + '</div></div>';
+    });
+    html2 += '</div>';
+  });
+  recsContent.innerHTML = html2;
+
+  // Check if all guests are done — show summary
+  const allDone = state.guests.every(g => g.completedCourses.size >= 2);
+  const summaryArea = document.getElementById('table-summary-area');
+  if (allDone) {
+    summaryArea.style.display = 'block';
+    let shtml = '';
+    state.guests.forEach((g, i) => {
+      shtml += '<div class="table-summary-card"><div class="table-summary-title">Guest ' + (i + 1) + '</div>';
+      g.selections.forEach(s => { shtml += '<div class="summary-row">' + s.name + '</div>'; });
+      shtml += '</div>';
+    });
+    document.getElementById('table-summary-content').innerHTML = shtml;
+  } else {
+    summaryArea.style.display = 'none';
+  }
 }
 
-// ── RECOMMENDATIONS ─────────────────────────────────────────────────────────
-function renderRecs(){
-  const guest=state.guests[state.activeGuest];
-  const selections=guest.selections.map(s=>s.name);
-  const empty=document.getElementById('recs-empty');
-  const content=document.getElementById('recs-content');
-  if(!selections.length){empty.style.display='block';content.innerHTML='';return}
-  empty.style.display='none';
-  const recs=getRecommendations(selections);
-  if(!recs.length){content.innerHTML='<div class="empty-state">No strong pairings found for this combination.</div>';return}
-  const groups={};
-  for(const rec of recs){if(!groups[rec.category])groups[rec.category]=[];groups[rec.category].push(rec)}
-  let html='<div class="recs-heading">Pairings<span class="recs-count">'+recs.length+' suggestions</span></div>'
-    +'<div class="legend"><div class="legend-item"><div class="tier-pip excellent"></div> Excellent</div>'
-    +'<div class="legend-item"><div class="tier-pip strong"></div> Strong</div>'
-    +'<div class="legend-item"><div class="tier-pip works"></div> Works</div></div>';
-  for(const cat of CATEGORY_ORDER){
-    if(!groups[cat]) continue;
-    html+='<div class="rec-category-group"><div class="rec-cat-label">'+getCategoryForDisplay(cat)+'</div>';
-    for(const rec of groups[cat]){
-      const meta=[];
-      if(rec.price) meta.push(rec.price);
-      if(rec.offMenu) meta.push('Off Menu');
-      if(rec.oos) meta.push('Currently Unavailable');
-      const alreadySel=guest.selections.find(s=>s.name===rec.name);
-      html+='<button class="rec-item'+(alreadySel?' selected-rec':'')+'" data-add="'+encodeURIComponent(rec.name)+'" data-cat="'+cat+'">'
-        +'<div class="tier-pip '+rec.tier+'"></div>'
-        +'<div class="rec-info"><div class="rec-name">'+rec.name+'</div>'
-        +(meta.length?'<div class="rec-meta">'+meta.join(' · ')+'</div>':'')
-        +'</div><div class="tier-badge '+rec.tier+'">'+rec.tier+'</div></button>';
-    }
-    html+='</div>';
-  }
-  content.innerHTML=html;
-}
+// ── SPECIALS MODAL ─────────────────────────────────────────────────────────────
+const PROFILE_TAGS = ['bold','light','rich','delicate','sweet','savory','smoky','earthy','fatty','citrus','herbal','floral','spice','umami','creamy','crisp','tannic','fruity','oak','approachable','fresh','indulgent'];
 
-function addRecToOrder(name,category){selectItem(name,category,false)}
-
-// ── TABLE VIEW ──────────────────────────────────────────────────────────────
-function renderTableView(){
-  const guestList=document.getElementById('table-guest-list');
-  let html='';
-  for(let i=0;i<state.guestCount;i++){
-    const guest=state.guests[i];
-    html+='<div class="table-view-guest"><div class="table-guest-label">Guest '+(i+1)+'</div>';
-    if(!guest.selections.length){html+='<div class="table-empty">Nothing added yet.</div>'}
-    else{html+='<div class="table-item-list">';for(const sel of guest.selections) html+='<div class="table-item-chip">'+sel.name+'</div>';html+='</div>'}
-    html+='</div>';
-  }
-  guestList.innerHTML=html;
-
-  const allSel=[];
-  for(const g of state.guests) for(const s of g.selections) if(!allSel.includes(s.name)) allSel.push(s.name);
-  const recsContent=document.getElementById('table-recs-content');
-  if(!allSel.length){recsContent.innerHTML='<div class="empty-state">Add items to guests above to see table-level pairings.</div>';return}
-  const recs=getRecommendations(allSel);
-  if(!recs.length){recsContent.innerHTML='<div class="empty-state">No strong pairings for this table combination.</div>';return}
-  const groups={};
-  for(const rec of recs.slice(0,30)){if(!groups[rec.category])groups[rec.category]=[];groups[rec.category].push(rec)}
-  let html2='';
-  for(const cat of CATEGORY_ORDER){
-    if(!groups[cat]) continue;
-    html2+='<div class="rec-category-group"><div class="rec-cat-label">'+getCategoryForDisplay(cat)+'</div>';
-    for(const rec of groups[cat]){
-      const meta=[];if(rec.price)meta.push(rec.price);if(rec.offMenu)meta.push('Off Menu');
-      html2+='<div class="rec-item"><div class="tier-pip '+rec.tier+'"></div>'
-        +'<div class="rec-info"><div class="rec-name">'+rec.name+'</div>'
-        +(meta.length?'<div class="rec-meta">'+meta.join(' · ')+'</div>':'')
-        +'</div><div class="tier-badge '+rec.tier+'">'+rec.tier+'</div></div>';
-    }
-    html2+='</div>';
-  }
-  recsContent.innerHTML=html2;
-}
-
-// ── SPECIALS MODAL ──────────────────────────────────────────────────────────
-const PROFILE_TAGS=['bold','light','rich','delicate','sweet','savory','smoky','earthy','fatty','citrus','herbal','floral','spice','umami','creamy','crisp','tannic','fruity','oak','approachable','fresh','indulgent'];
-
-function openSpecialsModal(){
-  const picker=document.getElementById('special-tags');
-  picker.innerHTML='';
-  for(const tag of PROFILE_TAGS){
-    const btn=document.createElement('button');
-    btn.className='tag-pick';btn.textContent=tag;
-    btn.onclick=()=>btn.classList.toggle('selected');
+function openSpecialsModal() {
+  const picker = document.getElementById('special-tags');
+  picker.innerHTML = '';
+  PROFILE_TAGS.forEach(tag => {
+    const btn = document.createElement('button');
+    btn.className = 'tag-pick'; btn.textContent = tag;
+    btn.onclick = () => btn.classList.toggle('selected');
     picker.appendChild(btn);
-  }
-  document.getElementById('special-name').value='';
+  });
+  document.getElementById('special-name').value = '';
   document.getElementById('specials-modal').classList.add('open');
 }
 
-function closeSpecialsModal(){document.getElementById('specials-modal').classList.remove('open')}
+function closeSpecialsModal() { document.getElementById('specials-modal').classList.remove('open'); }
 
-function confirmSpecial(){
-  const name=document.getElementById('special-name').value.trim();
-  if(!name){alert('Please enter a name for the special.');return}
-  const category=document.getElementById('special-category').value;
-  const tags=Array.from(document.querySelectorAll('.tag-pick.selected')).map(b=>b.textContent);
-  const entry={name,category,profile:tags,excellent:[],strong:[],works:[],avoid:[],special:true};
-  for(const e of PAIRING_MAP){
-    if(e.variable||e.oos) continue;
-    const overlap=e.profile.filter(p=>tags.includes(p)).length;
-    if(overlap>=2) entry.excellent.push(e.name);
-    else if(overlap===1) entry.strong.push(e.name);
-  }
+function confirmSpecial() {
+  const name = document.getElementById('special-name').value.trim();
+  if (!name) { alert('Please enter a name for the special.'); return; }
+  const category = document.getElementById('special-category').value;
+  const tags = Array.from(document.querySelectorAll('.tag-pick.selected')).map(b => b.textContent);
+  const entry = { name, category, profile: tags, excellent: [], strong: [], works: [], avoid: [], special: true };
+  PAIRING_MAP.forEach(e => {
+    if (e.variable || e.oos) return;
+    const overlap = e.profile.filter(p => tags.includes(p)).length;
+    if (overlap >= 2) entry.excellent.push(e.name);
+    else if (overlap === 1) entry.strong.push(e.name);
+  });
   PAIRING_MAP.push(entry);
-  state.specials.push({name,category,profile:tags});
-  selectItem(name,category,false);
-  closeSpecialsModal();saveState();
+  state.specials.push({ name, category, profile: tags });
+  selectItem(name, category, false);
+  closeSpecialsModal();
+  saveState();
 }
 
-// ── FIRST TIMER ─────────────────────────────────────────────────────────────
-const FT_QUESTIONS_SHORT=[
-  {q:"Is your guest drinking tonight?",key:'drinking',options:[
-    {label:"Yes — open to everything",value:'drinkingYes'},
-    {label:"Wine only",value:'drinkingWineOnly'},
-    {label:"Cocktails only",value:'drinkingCocktailsOnly'},
-    {label:"No — non-alcoholic evening",value:'drinkingNo'}
+// ── FIRST TIMER ────────────────────────────────────────────────────────────────
+const FT_QUESTIONS_SHORT = [
+  { q: "Is your guest drinking tonight?", key: 'drinking', options: [
+    { label: "Yes — open to everything", value: 'drinkingYes' },
+    { label: "Wine only", value: 'drinkingWineOnly' },
+    { label: "Cocktails only", value: 'drinkingCocktailsOnly' },
+    { label: "No — non-alcoholic evening", value: 'drinkingNo' }
   ]},
-  {q:"How do they typically take their protein?",key:'protein',options:[
-    {label:"Rare to medium-rare — they want it red",value:'proteinRareMR'},
-    {label:"Medium — right down the middle",value:'proteinMedium'},
-    {label:"Medium-well to well — no pink",value:'proteinMWWell'},
-    {label:"No red meat tonight",value:'proteinNoRed'}
+  { q: "How do they typically take their protein?", key: 'protein', options: [
+    { label: "Rare to medium-rare — they want it red", value: 'proteinRareMR' },
+    { label: "Medium — right down the middle", value: 'proteinMedium' },
+    { label: "Medium-well to well — no pink", value: 'proteinMWWell' },
+    { label: "No red meat tonight", value: 'proteinNoRed' }
   ]},
-  {q:"How do they tend to eat and drink?",key:'style',options:[
-    {label:"Bold and rich — the more the better",value:'boldAndRich'},
-    {label:"Somewhere in the middle",value:'middle'},
-    {label:"Light and fresh — clean flavors",value:'lightAndFresh'}
+  { q: "How do they tend to eat and drink?", key: 'style', options: [
+    { label: "Bold and rich — the more the better", value: 'boldAndRich' },
+    { label: "Somewhere in the middle", value: 'middle' },
+    { label: "Light and fresh — clean flavors", value: 'lightAndFresh' }
   ]},
-  {q:"Any dietary restrictions or allergies to note?",key:'restrictions',options:[
-    {label:"None",value:'none'},
-    {label:"Dairy-free",value:'none'},
-    {label:"Gluten-free",value:'none'},
-    {label:"Shellfish allergy",value:'none'},
-    {label:"Vegetarian / pescatarian",value:'proteinNoRed'}
+  { q: "Any dietary restrictions or allergies to note?", key: 'restrictions', options: [
+    { label: "None", value: 'none' },
+    { label: "Dairy-free", value: 'none' },
+    { label: "Gluten-free", value: 'none' },
+    { label: "Shellfish allergy", value: 'none' },
+    { label: "Vegetarian / pescatarian", value: 'proteinNoRed' }
   ]}
 ];
 
-const FT_QUESTIONS_DEEP=[
+const FT_QUESTIONS_DEEP = [
   ...FT_QUESTIONS_SHORT,
-  {q:"Do they gravitate toward sweet, savory, or both?",key:'flavor',options:[
-    {label:"Mostly sweet",value:'sweetFlavor'},
-    {label:"Mostly savory",value:'savoryFlavor'},
-    {label:"Both — they appreciate the full spectrum",value:'bothFlavors'}
+  { q: "Do they gravitate toward sweet, savory, or both?", key: 'flavor', options: [
+    { label: "Mostly sweet", value: 'sweetFlavor' },
+    { label: "Mostly savory", value: 'savoryFlavor' },
+    { label: "Both — they appreciate the full spectrum", value: 'bothFlavors' }
   ]},
-  {q:"How familiar are they with wine?",key:'wine',options:[
-    {label:"Knowledgeable — they know what they like",value:'wineExpert'},
-    {label:"Curious — they'd appreciate a thoughtful recommendation",value:'wineGuided'},
-    {label:"Not their focus tonight",value:'none'}
+  { q: "How familiar are they with wine?", key: 'wine', options: [
+    { label: "Knowledgeable — they know what they like", value: 'wineExpert' },
+    { label: "Curious — they'd appreciate a thoughtful recommendation", value: 'wineGuided' },
+    { label: "Not their focus tonight", value: 'none' }
   ]},
-  {q:"Are they celebrating something?",key:'occasion',options:[
-    {label:"Yes — special occasion",value:'celebrating'},
-    {label:"Just a great dinner",value:'none'}
+  { q: "Are they celebrating something?", key: 'occasion', options: [
+    { label: "Yes — special occasion", value: 'celebrating' },
+    { label: "Just a great dinner", value: 'none' }
   ]},
-  {q:"What's their comfort level on spend tonight?",key:'budget',options:[
-    {label:"Approachable — keep it reasonable",value:'budgetApproachable'},
-    {label:"Mid-range — they're here to enjoy themselves",value:'budgetMid'},
-    {label:"The sky's the limit",value:'budgetSky'}
+  { q: "What's their comfort level on spend tonight?", key: 'budget', options: [
+    { label: "Approachable — keep it reasonable", value: 'budgetApproachable' },
+    { label: "Mid-range — they're here to enjoy themselves", value: 'budgetMid' },
+    { label: "The sky's the limit", value: 'budgetSky' }
   ]}
 ];
 
-let ftQuestions=FT_QUESTIONS_SHORT;
+let ftQuestions = FT_QUESTIONS_SHORT;
 
-function setFTDepth(depth){
-  state.ftDepth=depth;state.ftAnswers=[];state.ftCurrentQ=0;
-  ftQuestions=depth==='deep'?FT_QUESTIONS_DEEP:FT_QUESTIONS_SHORT;
-  document.getElementById('ft-short-btn').classList.toggle('active',depth==='short');
-  document.getElementById('ft-deep-btn').classList.toggle('active',depth==='deep');
-  document.getElementById('ft-recs-area').style.display='none';
+function setFTDepth(depth) {
+  state.ftDepth = depth;
+  state.ftAnswers = []; state.ftCurrentQ = 0;
+  ftQuestions = depth === 'deep' ? FT_QUESTIONS_DEEP : FT_QUESTIONS_SHORT;
+  document.getElementById('ft-short-btn').classList.toggle('active', depth === 'short');
+  document.getElementById('ft-deep-btn').classList.toggle('active', depth === 'deep');
+  document.getElementById('ft-recs-area').style.display = 'none';
   initFirstTimer();
 }
 
-function initFirstTimer(){
-  state.ftAnswers=[];state.ftCurrentQ=0;
-  ftQuestions=state.ftDepth==='deep'?FT_QUESTIONS_DEEP:FT_QUESTIONS_SHORT;
+function initFirstTimer() {
+  state.ftAnswers = []; state.ftCurrentQ = 0;
+  ftQuestions = state.ftDepth === 'deep' ? FT_QUESTIONS_DEEP : FT_QUESTIONS_SHORT;
   renderFTQuestion();
 }
 
-function renderFTQuestion(){
-  const q=ftQuestions[state.ftCurrentQ];
-  const total=ftQuestions.length;
-  let pipHtml='';
-  for(let i=0;i<total;i++){
-    const cls=i<state.ftCurrentQ?'done':i===state.ftCurrentQ?'active':'';
-    pipHtml+='<div class="ft-progress-pip '+cls+'"></div>';
-  }
-  document.getElementById('ft-progress').innerHTML=pipHtml;
-  let html='<div class="ft-question"><div class="ft-question-label">'+q.q+'</div><div class="ft-options">';
-  for(const opt of q.options){
-    const sel=state.ftAnswers[state.ftCurrentQ]===opt.value;
-    html+='<button class="ft-option'+(sel?' selected':'')+'" data-ftval="'+opt.value+'">'+opt.label+'</button>';
-  }
-  html+='</div></div>';
-  document.getElementById('ft-question-area').innerHTML=html;
-  document.getElementById('ft-prev-btn').style.display=state.ftCurrentQ>0?'block':'none';
-  document.getElementById('ft-next-btn').textContent=state.ftCurrentQ===total-1?'See Recommendations':'Next →';
-  document.getElementById('ft-next-btn').onclick=ftNext;
+function renderFTQuestion() {
+  const q = ftQuestions[state.ftCurrentQ];
+  const total = ftQuestions.length;
+  document.getElementById('ft-progress').innerHTML = Array.from({ length: total }, (_, i) => {
+    const cls = i < state.ftCurrentQ ? 'done' : i === state.ftCurrentQ ? 'active' : '';
+    return '<div class="ft-progress-pip ' + cls + '"></div>';
+  }).join('');
+  document.getElementById('ft-question-area').innerHTML =
+    '<div class="ft-question"><div class="ft-question-label">' + q.q + '</div><div class="ft-options">' +
+    q.options.map(opt => {
+      const sel = state.ftAnswers[state.ftCurrentQ] === opt.value;
+      return '<button class="ft-option' + (sel ? ' selected' : '') + '" data-ftval="' + opt.value + '">' + opt.label + '</button>';
+    }).join('') + '</div></div>';
+  document.getElementById('ft-prev-btn').style.display = state.ftCurrentQ > 0 ? 'block' : 'none';
+  document.getElementById('ft-next-btn').textContent = state.ftCurrentQ === total - 1 ? 'See Recommendations' : 'Next →';
+  document.getElementById('ft-next-btn').onclick = ftNext;
 }
 
-function selectFTAnswer(value,btn){
-  state.ftAnswers[state.ftCurrentQ]=value;
-  btn.closest('.ft-options').querySelectorAll('.ft-option').forEach(b=>b.classList.remove('selected'));
+function selectFTAnswer(value, btn) {
+  state.ftAnswers[state.ftCurrentQ] = value;
+  btn.closest('.ft-options').querySelectorAll('.ft-option').forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
 }
 
-// ── JS COMPLETION (ftNext, ftPrev, renderFTRecs, reset, restore, init) ──────
+// ── ALIGNMENT ─────────────────────────────────────────────────────────────────
+function alignSectionLabel() {
+  const wm = document.querySelector('.top-bar-wordmark');
+  const sc = document.getElementById('top-bar-section');
+  if (!wm || !sc) return;
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  ctx.font = '600 60px Josefin Sans, sans-serif';
+  const homeWmWidth = ctx.measureText("BOWDIE'S").width;
+  const homeBowdWidth = ctx.measureText('BOWD').width;
+  ctx.font = 'italic 400 36px Playfair Display, serif';
+  const homeScWidth = ctx.measureText('Chophouse').width;
+  const rightFraction = (homeBowdWidth + homeScWidth) / homeWmWidth;
+  const wmStyle = window.getComputedStyle(wm);
+  ctx.font = wmStyle.fontWeight + ' ' + wmStyle.fontSize + ' ' + wmStyle.fontFamily;
+  const tbWmWidth = ctx.measureText("BOWDIE'S").width;
+  const targetRight = tbWmWidth * rightFraction;
+  const scStyle = window.getComputedStyle(sc);
+  ctx.font = scStyle.fontStyle + ' ' + scStyle.fontWeight + ' ' + scStyle.fontSize + ' ' + scStyle.fontFamily;
+  const scWidth = ctx.measureText(sc.textContent).width;
+  sc.style.paddingLeft = Math.max(0, targetRight - scWidth) + 'px';
+}
+alignSectionLabel();
+window.addEventListener('resize', alignSectionLabel);
+
+// ── JS COMPLETION ──────────────────────────────────────────────────────────────
 </script>
-<script src="set-the-stage-completion.js?v=2"></script>
+<script src="set-the-stage-completion.js?v=3"></script>
 </body>
 </html>
