@@ -18,29 +18,27 @@ html{background:#111010}
 body{background:var(--surface);color:var(--text-primary);font-family:'Cormorant Garamond',serif;min-height:100vh;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:0.4}
 
-/* ── TOP BAR ── */
+/* TOP BAR */
 #top-bar{position:sticky;top:0;z-index:200;background:var(--charcoal);border-bottom:1px solid var(--border);padding:14px 24px 14px 28px;display:flex;align-items:center;justify-content:space-between}
 .top-bar-logo{display:inline-block;text-align:left;line-height:1}
 .top-bar-wordmark{display:block;font-family:'Josefin Sans',sans-serif;font-size:18px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-primary);line-height:1}
 .top-bar-section{display:block;font-family:'Playfair Display',serif;font-style:italic;font-size:11px;color:var(--gold);letter-spacing:0.03em;margin-top:1px}
 .top-bar-actions{display:flex;align-items:center;gap:20px}
-#btn-reset{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px 0;transition:color 0.2s}
-#btn-reset:hover{color:var(--text-muted)}
-#btn-back{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px 0;transition:color 0.2s}
-#btn-back:hover{color:var(--text-muted)}
+#btn-reset,#btn-back{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px 0;transition:color 0.2s}
+#btn-reset:hover,#btn-back:hover{color:var(--text-muted)}
 
-/* ── SCREENS ── */
+/* SCREENS */
 .screen{display:none;padding:32px 24px 80px;max-width:600px;margin:0 auto}
 #screen-path{padding-top:8px}
 .screen.active{display:block;animation:fadeUp 0.3s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
-/* ── PATH SELECT ── */
+/* PATH SELECT */
 .stage-header{text-align:center;padding:0 0 12px}
 .stage-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-muted);margin-top:10px;letter-spacing:0.04em}
 .stage-divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:24px auto 0}
 .path-cards{display:flex;flex-direction:column;gap:12px;margin-top:20px}
-.path-card{background:var(--surface-2);border:1px solid var(--border-soft);padding:24px 20px;cursor:pointer;transition:all 0.25s ease;position:relative;overflow:hidden}
+.path-card{background:var(--surface-2);border:1px solid var(--border-soft);padding:24px 20px;cursor:pointer;transition:all 0.25s;position:relative;overflow:hidden}
 .path-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity 0.25s}
 .path-card:hover,.path-card:active{background:var(--surface-3);border-color:var(--border)}
 .path-card:hover::before{opacity:1}
@@ -48,12 +46,12 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .path-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--text-primary);margin-bottom:6px}
 .path-desc{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);line-height:1.5}
 
-/* ── GUEST SETUP ── */
+/* GUEST SETUP */
 .section-heading{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border-soft)}
 .guest-count-row{display:flex;align-items:center;gap:16px;margin-bottom:32px}
 .guest-count-label{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text-muted);flex:1}
 .count-controls{display:flex;align-items:center;gap:12px}
-.count-btn{width:36px;height:36px;border:1px solid var(--border);background:transparent;color:var(--gold);font-family:'Josefin Sans',sans-serif;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
+.count-btn{width:36px;height:36px;border:1px solid var(--border);background:transparent;color:var(--gold);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
 .count-btn:hover{background:rgba(201,168,76,0.08)}
 .count-display{font-family:'Playfair Display',serif;font-size:28px;color:var(--text-primary);min-width:32px;text-align:center}
 .btn-primary{width:100%;padding:18px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;cursor:pointer;transition:all 0.25s;margin-top:8px;border-radius:0}
@@ -61,7 +59,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .btn-secondary{width:100%;padding:14px;background:transparent;border:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.25s;margin-top:8px;border-radius:0}
 .btn-secondary:hover{border-color:var(--border);color:var(--text-muted)}
 
-/* ── GUEST TABS ── */
+/* GUEST TABS */
 #guest-tab-bar{display:none;position:sticky;top:57px;z-index:100;background:var(--surface);border-bottom:1px solid var(--border-soft);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 #guest-tab-bar::-webkit-scrollbar{display:none}
 #guest-tab-bar.visible{display:flex}
@@ -73,19 +71,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .table-tab{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:12px 16px;background:transparent;border:none;border-bottom:2px solid transparent;border-left:1px solid var(--border-soft);cursor:pointer;transition:all 0.2s;margin-left:auto}
 .table-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
 
-/* ── COURSE PROGRESS STEPPER ── */
-#course-stepper{display:none;background:var(--surface);border-bottom:1px solid var(--border-soft);padding:0 8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-#course-stepper::-webkit-scrollbar{display:none}
-#course-stepper.visible{display:block}
-.stepper-inner{display:flex;align-items:center;padding:10px 8px;min-width:max-content;gap:0}
-.stepper-step{display:flex;align-items:center;gap:0}
-.stepper-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);padding:4px 8px;white-space:nowrap;transition:color 0.2s;position:relative}
-.stepper-label.active{color:var(--gold)}
-.stepper-label.done{color:var(--text-muted)}
-.stepper-label.done::after{content:'✓';margin-left:4px;color:var(--gold-dim);font-size:8px}
-.stepper-sep{color:var(--text-dim);font-size:8px;opacity:0.4;padding:0 2px}
-
-/* ── SEARCH ── */
+/* SEARCH */
 .search-wrap{position:relative;margin-bottom:12px}
 .search-input{width:100%;background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:14px 16px;outline:none;transition:border-color 0.2s;border-radius:0;-webkit-appearance:none;appearance:none}
 .search-input::placeholder{color:var(--text-dim)}
@@ -98,39 +84,45 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .result-name{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text-primary)}
 .result-cat{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0}
 
-/* ── SELECTED ITEMS ── */
-.selected-section{margin-bottom:16px}
-.selected-section-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:10px}
-.selected-chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:5px 10px 5px 12px;display:flex;align-items:center;gap:8px}
-.chip-remove{color:var(--text-dim);cursor:pointer;font-size:14px;line-height:1;transition:color 0.15s;background:none;border:none;padding:0}
-.chip-remove:hover{color:var(--gold)}
-.empty-state{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-dim);text-align:center;padding:32px 0}
+/* ADD SPECIAL */
+.add-special-link{display:inline-block;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:6px 0;margin-bottom:16px;transition:color 0.2s}
+.add-special-link:hover{color:var(--gold)}
 
-/* ── COMPLETE COURSE BUTTON ── */
-.complete-course-bar{display:flex;gap:10px;margin:16px 0;padding-top:16px;border-top:1px solid var(--border-soft)}
-.btn-complete{flex:1;padding:13px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
-.btn-complete:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
-.btn-complete.done{border-color:var(--text-dim);color:var(--text-dim);opacity:0.6;cursor:default}
+/* ITEM STATE DISPLAY */
+.items-section{margin-bottom:20px}
+.items-section-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:var(--text-dim);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border-soft)}
+.items-section-label.considering-label{color:var(--text-dim)}
+.item-card{background:var(--surface-2);border:1px solid var(--border-soft);margin-bottom:8px;overflow:hidden}
+.item-card:last-child{margin-bottom:0}
+.item-row{display:flex;align-items:center;padding:12px 14px;gap:12px}
+.item-name{font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.2;flex:1}
+.item-name.state-locked{color:var(--text-primary)}
+.item-name.state-finished{color:var(--text-dim);text-decoration:line-through;text-decoration-color:var(--text-dim)}
+.item-name.state-considering{color:var(--text-muted);font-style:italic}
+.item-cat{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);margin-top:2px}
+.item-finish-bar{width:100%;padding:10px 14px;background:transparent;border:none;border-top:1px solid rgba(201,168,76,0.12);color:var(--gold-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;text-align:center;transition:all 0.2s}
+.item-finish-bar:hover{background:rgba(201,168,76,0.06);color:var(--gold)}
+.item-remove-btn{color:var(--text-dim);font-size:16px;background:transparent;border:none;cursor:pointer;padding:2px 4px;transition:color 0.15s;flex-shrink:0}
+.item-remove-btn:hover{color:var(--gold)}
+.empty-state{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-dim);text-align:center;padding:28px 0}
 
-/* ── COURSE TABS (horizontal recs) ── */
-#course-tab-bar{margin:24px 0 0;border-bottom:1px solid var(--border-soft);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+/* COURSE TAB BAR */
+#course-tab-bar{margin:0 0 20px;border-bottom:1px solid var(--border-soft);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;display:none}
 #course-tab-bar::-webkit-scrollbar{display:none}
 .course-tab-inner{display:flex;min-width:max-content}
 .course-tab{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:10px 14px;background:transparent;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:all 0.2s;white-space:nowrap}
 .course-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
-.course-tab.has-recs{color:var(--text-muted)}
-.course-tab.active.has-recs{color:var(--gold)}
 
-/* ── RECOMMENDATIONS ── */
+/* RECS */
 #recs-panel{margin-top:8px}
 .recs-heading{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between}
 .recs-count{color:var(--text-dim);font-size:8px}
-.rec-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.04);cursor:pointer;transition:background 0.15s;border-radius:0;background:none;width:100%;text-align:left}
+.rec-group{margin-bottom:20px}
+.rec-group-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
+.rec-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.04);cursor:pointer;background:none;width:100%;text-align:left;border-radius:0;transition:background 0.15s}
 .rec-item:last-child{border-bottom:none}
 .rec-item:hover{background:rgba(255,255,255,0.02)}
-.rec-item.selected-rec{background:rgba(201,168,76,0.06)}
-.rec-item.selected-rec .rec-name{color:var(--gold-light)}
+.rec-item.already-added .rec-name{color:var(--gold-light)}
 .tier-pip{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 .tier-pip.excellent{background:var(--tier-excellent)}
 .tier-pip.strong{background:var(--tier-strong)}
@@ -145,48 +137,38 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .legend{display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap}
 .legend-item{display:flex;align-items:center;gap:6px;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim)}
 
-/* ── VARIABLE PROMPT ── */
+/* VARIABLE PROMPT */
 .variable-prompt{background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--gold-dim);padding:16px;margin-bottom:16px;display:none}
 .variable-prompt.visible{display:block}
 .variable-prompt-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
 .variable-input{width:100%;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:16px;padding:6px 0;outline:none}
 .variable-input::placeholder{color:var(--text-dim)}
 
-/* ── ADD SPECIAL ── */
-.add-special-btn{width:100%;padding:12px;background:transparent;border:1px dashed rgba(201,168,76,0.2);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;margin-bottom:16px}
-.add-special-btn:hover{border-color:var(--gold-dim);color:var(--gold)}
-
-/* ── TABLE VIEW ── */
+/* TABLE VIEW */
 .table-view-guest{margin-bottom:20px;background:var(--surface-2);border:1px solid var(--border-soft);padding:16px}
 .table-guest-label{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
 .table-item-list{display:flex;flex-wrap:wrap;gap:6px}
 .table-item-chip{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--text-muted);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);padding:3px 10px}
+.table-item-chip.finished{opacity:0.45;text-decoration:line-through}
+.table-item-chip.considering{font-style:italic;opacity:0.6}
 .table-empty{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim)}
 .table-recs-divider{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin:28px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--border-soft)}
 
-/* ── TABLE SUMMARY (done state) ── */
-.table-summary-card{background:var(--surface-2);border:1px solid var(--border-soft);padding:20px;margin-bottom:16px}
-.table-summary-title{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.summary-row{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text-muted);padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
-.summary-row:last-child{border-bottom:none}
-
-/* ── ROUND 2 / ANOTHER DRINK PROMPT MODAL ── */
-#round-modal{display:none;position:fixed;inset:0;background:rgba(17,16,16,0.85);z-index:500;align-items:flex-end;justify-content:center}
-#round-modal.open{display:flex}
-.modal-sheet{background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;padding:32px 24px 48px;animation:slideUp 0.3s ease}
+/* MODALS */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(17,16,16,0.85);z-index:500;align-items:flex-end;justify-content:center}
+.modal-overlay.open{display:flex}
+.modal-sheet{background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;padding:28px 24px 44px;animation:slideUp 0.3s ease}
 @keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
 .modal-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text-primary);margin-bottom:4px}
-.modal-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:24px}
-.modal-actions{display:flex;gap:10px;margin-top:8px}
-.modal-btn{flex:1;padding:16px;background:transparent;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
-.modal-btn-confirm{border:1px solid var(--gold-dim);color:var(--gold)}
-.modal-btn-confirm:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
-.modal-btn-cancel{border:1px solid var(--border-soft);color:var(--text-dim)}
-.modal-btn-cancel:hover{border-color:var(--border);color:var(--text-muted)}
+.modal-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:20px;line-height:1.5}
+.modal-item-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--gold);margin-bottom:20px}
+.modal-options{display:flex;flex-direction:column;gap:8px}
+.modal-option{padding:15px 16px;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-size:16px;cursor:pointer;transition:all 0.2s;text-align:left;border-radius:0;width:100%}
+.modal-option:hover{border-color:var(--border);color:var(--text-primary)}
+.modal-option.primary{border-color:var(--gold-dim);color:var(--gold);background:rgba(201,168,76,0.04)}
+.modal-option.primary:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
 
-/* ── SPECIALS MODAL ── */
-#specials-modal{display:none;position:fixed;inset:0;background:rgba(17,16,16,0.85);z-index:500;align-items:flex-end;justify-content:center}
-#specials-modal.open{display:flex}
+/* SPECIALS MODAL */
 .modal-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block}
 .modal-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;transition:border-color 0.2s}
 .modal-input:focus{border-color:var(--gold-dim)}
@@ -194,8 +176,14 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .tag-picker{display:flex;flex-wrap:wrap;gap:6px}
 .tag-pick{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:5px 10px;cursor:pointer;transition:all 0.15s;-webkit-appearance:none;appearance:none;border-radius:0}
 .tag-pick.selected{color:var(--gold);border-color:var(--gold-dim);background:rgba(201,168,76,0.08)}
+.modal-actions{display:flex;gap:10px;margin-top:20px}
+.modal-btn{flex:1;padding:14px;background:transparent;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
+.modal-btn-confirm{border:1px solid var(--gold-dim);color:var(--gold)}
+.modal-btn-confirm:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
+.modal-btn-cancel{border:1px solid var(--border-soft);color:var(--text-dim)}
+.modal-btn-cancel:hover{border-color:var(--border);color:var(--text-muted)}
 
-/* ── FIRST TIMER ── */
+/* FIRST TIMER */
 .ft-depth-picker{display:flex;gap:10px;margin-bottom:28px}
 .ft-depth-btn{flex:1;padding:16px;background:transparent;border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
 .ft-depth-btn.active{border-color:var(--gold-dim);color:var(--gold);background:rgba(201,168,76,0.06)}
@@ -211,11 +199,11 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .ft-progress-pip.active{background:var(--gold)}
 .ft-nav{display:flex;gap:10px;margin-top:20px}
 
-/* ── TOAST CONFIRMATION ── */
+/* TOAST */
 #add-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%);background:var(--surface-3);border:1px solid var(--border);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;padding:10px 20px;border-radius:2px;z-index:600;opacity:0;transition:opacity 0.25s;pointer-events:none;white-space:nowrap;max-width:90vw;text-align:center}
 #add-toast.show{opacity:1}
 
-/* ── FOOTER ── */
+/* FOOTER */
 footer{text-align:center;padding:40px;background:var(--surface)}
 footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim)}
 .footer-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);margin:12px auto}
@@ -223,7 +211,6 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 </head>
 <body>
 
-<!-- TOP BAR -->
 <div id="top-bar">
   <div class="top-bar-logo">
     <span class="top-bar-wordmark">Bowdie's</span>
@@ -235,14 +222,8 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
-<!-- GUEST TAB BAR -->
 <div id="guest-tab-bar">
   <div class="guest-tab-inner" id="guest-tabs-inner"></div>
-</div>
-
-<!-- COURSE PROGRESS STEPPER -->
-<div id="course-stepper">
-  <div class="stepper-inner" id="stepper-inner"></div>
 </div>
 
 <!-- SCREEN 0: PATH SELECT -->
@@ -292,13 +273,17 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 
   <div class="search-wrap">
     <input type="text" class="search-input" id="main-search"
-           placeholder="Search…"
+           placeholder="Search menu items…"
            autocomplete="off" autocorrect="off" spellcheck="false"
            oninput="handleSearch(this.value)">
     <div class="search-results" id="search-results"></div>
   </div>
 
-  <button class="add-special-btn" onclick="openSpecialsModal()">+ Add Today's Special</button>
+  <div id="course-tab-bar">
+    <div class="course-tab-inner" id="course-tab-inner"></div>
+  </div>
+
+  <button class="add-special-link" onclick="openSpecialsModal()">+ Today's Special</button>
 
   <div class="variable-prompt" id="variable-prompt">
     <div class="variable-prompt-label" id="variable-prompt-label">Today's Preparation</div>
@@ -308,16 +293,6 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 
   <div id="selected-display"></div>
-
-  <!-- Complete course bar -->
-  <div class="complete-course-bar" id="complete-course-bar" style="display:none">
-    <button class="btn-complete" id="btn-complete-course" onclick="completeCourse()">Mark as Done</button>
-  </div>
-
-  <!-- Course tab bar for recommendations -->
-  <div id="course-tab-bar" style="display:none">
-    <div class="course-tab-inner" id="course-tab-inner"></div>
-  </div>
 
   <div id="recs-panel">
     <div class="empty-state" id="recs-empty">Add items above to see pairing recommendations.</div>
@@ -336,11 +311,6 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     <div class="legend-item"><div class="tier-pip works"></div> Works</div>
   </div>
   <div id="table-recs-content"></div>
-  <div id="table-summary-area" style="margin-top:32px;display:none">
-    <div class="table-recs-divider">Table Summary</div>
-    <div id="table-summary-content"></div>
-    <button class="btn-primary" style="margin-top:24px" onclick="confirmReset()">Start New Table</button>
-  </div>
 </div>
 
 <!-- SCREEN 4: FIRST TIMER -->
@@ -367,23 +337,51 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
-<!-- ROUND MODAL -->
-<div id="round-modal">
+<!-- LOCK IT IN MODAL -->
+<div class="modal-overlay" id="lock-modal">
   <div class="modal-sheet">
-    <div class="modal-title" id="round-modal-title">Another Round?</div>
-    <div class="modal-sub" id="round-modal-sub">Is your guest going for another drink?</div>
-    <div class="modal-actions">
-      <button class="modal-btn modal-btn-cancel" onclick="closeRoundModal(false)">Not Yet</button>
-      <button class="modal-btn modal-btn-confirm" onclick="closeRoundModal(true)">Yes — Show Options</button>
+    <div class="modal-title">Lock it in?</div>
+    <div class="modal-item-name" id="lock-modal-item"></div>
+    <div class="modal-options">
+      <button class="modal-option primary" onclick="lockModalChoice('lock')">Ordered</button>
+      <button class="modal-option" onclick="lockModalChoice('consider')">Still Deciding — Steer Recommendations</button>
+      <button class="modal-option" onclick="lockModalChoice('cancel')">Never Mind</button>
     </div>
   </div>
 </div>
 
+<!-- FINISH ITEM MODAL (drink) -->
+<div class="modal-overlay" id="finish-drink-modal">
+  <div class="modal-sheet">
+    <div class="modal-title" id="finish-drink-title">That one's done.</div>
+    <div class="modal-sub" id="finish-drink-sub">What's next for your guest?</div>
+    <div class="modal-options" id="finish-drink-options"></div>
+  </div>
+</div>
+
+<!-- FINISH ITEM MODAL (food) -->
+<div class="modal-overlay" id="finish-food-modal">
+  <div class="modal-sheet">
+    <div class="modal-title" id="finish-food-title">Course down.</div>
+    <div class="modal-sub" id="finish-food-sub">Where are they headed?</div>
+    <div class="modal-options" id="finish-food-options"></div>
+  </div>
+</div>
+
+<!-- COURSE PICKER SHEET -->
+<div class="modal-overlay" id="course-picker-modal">
+  <div class="modal-sheet">
+    <div class="modal-title" id="course-picker-title">What's next?</div>
+    <div class="modal-sub" id="course-picker-sub">Select a course to see recommendations.</div>
+    <div class="modal-options" id="course-picker-options"></div>
+  </div>
+</div>
+
 <!-- SPECIALS MODAL -->
-<div id="specials-modal">
+<div class="modal-overlay" id="specials-modal">
   <div class="modal-sheet">
     <div class="modal-title">Add Today's Special</div>
-    <div class="modal-sub" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:24px">Name it and tag the profile — the engine handles the rest.</div>
+    <div class="modal-sub" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:20px">Name it and tag the profile — the engine handles the rest.</div>
     <div class="modal-field">
       <label class="modal-label">Item Name</label>
       <input type="text" class="modal-input" id="special-name" placeholder="e.g. Pan-Seared Halibut" autocomplete="off">
@@ -411,7 +409,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
       </select>
     </div>
     <div class="modal-field">
-      <label class="modal-label">Flavor Profile — Select All That Apply</label>
+      <label class="modal-label">Flavor Profile</label>
       <div class="tag-picker" id="special-tags"></div>
     </div>
     <div class="modal-actions">
@@ -421,7 +419,6 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
-<!-- TOAST -->
 <div id="add-toast"></div>
 
 <footer>
@@ -429,81 +426,91 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <p>Internal use only</p>
 </footer>
 
-<script src="pairing-map.js?v=3"></script>
+<script src="pairing-map.js?v=6"></script>
 <script>
-// ── STATE ──────────────────────────────────────────────────────────────────────
-const state = {
-  path: null,           // 'drinks' | 'food' | 'firsttimer'
-  guestCount: 1,
-  activeGuest: 0,
-  activeView: 'guest',  // 'guest' | 'table'
-  guests: [],           // [{ selections:[], completedCourses:Set, drinksComplete:false, onRound2:false, dietaryFlags:[] }]
-  specials: [],
-  activeCourseTab: 'starters', // which rec tab is active
-  ftDepth: 'short',
-  ftAnswers: [],
-  ftCurrentQ: 0,
-};
+// ── CONSTANTS ──────────────────────────────────────────────────────────────────
 
-// ── COURSE DEFINITIONS ─────────────────────────────────────────────────────────
-// Defines the horizontal course tabs for recommendations
-const DRINK_CATS = ['cocktail','wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
+const DRINK_CATS = ['cocktail','wine-sparkling','wine-white','wine-red','wine-dessert',
+  'bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
 const FOOD_CATS  = ['steak','starter','soup-salad','main','side','dessert'];
+const CATEGORY_ORDER = ['steak','starter','soup-salad','main','side','dessert','cocktail',
+  'wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish',
+  'japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
 
+// Item states
+const STATE_LOCKED      = 'locked';      // weight 1.0 — ordered, on the table
+const STATE_CONSIDERING = 'considering'; // weight 0.5 — steers recs, removable
+const STATE_FINISHED    = 'finished';    // weight depends on round decision
+
+// Course tabs
 const COURSE_TABS = [
   { id: 'starters',  label: 'To Start',       cats: ['starter'] },
   { id: 'soups',     label: 'Soups & Salads',  cats: ['soup-salad'] },
   { id: 'entrees',   label: 'Entrées & Sides', cats: ['steak','main','side'] },
   { id: 'dessert',   label: 'Dessert',         cats: ['dessert','wine-dessert'] },
-  { id: 'drinks',    label: 'Another Round',   cats: DRINK_CATS },
+  { id: 'drinks',    label: 'Drinks',          cats: DRINK_CATS },
   { id: 'all-food',  label: 'All Food',        cats: FOOD_CATS },
 ];
 
-// ── PERSISTENCE ────────────────────────────────────────────────────────────────
-function saveState() {
-  try {
-    const s = JSON.parse(JSON.stringify(state));
-    // Sets aren't serializable
-    s.guests = s.guests.map(g => ({ ...g, completedCourses: [...(g.completedCourses||[])] }));
-    localStorage.setItem('sts_session', JSON.stringify(s));
-  } catch(e) {}
+// ── STATE ──────────────────────────────────────────────────────────────────────
+
+const state = {
+  path: null,
+  guestCount: 1,
+  activeGuest: 0,
+  activeView: 'guest',
+  // Each guest: { items: [{name, category, state, finishedWeight}], activeCourseTab }
+  guests: [],
+  specials: [],
+  ftDepth: 'short',
+  ftAnswers: [],
+  ftCurrentQ: 0,
+};
+
+// ── ITEM WEIGHT ────────────────────────────────────────────────────────────────
+// Returns the scoring weight for an item based on its state and finishedWeight
+function itemWeight(item) {
+  if (item.state === STATE_CONSIDERING) return 0.5;
+  if (item.state === STATE_FINISHED) return item.finishedWeight || 0;
+  return 1.0; // locked
 }
 
+// Build weighted selections array for scoring engine
+function getWeightedSelections(guest) {
+  // Include ALL items — weight-0 items are excluded from scoring
+  // but kept so the engine's seenNames suppresses them from appearing as recs
+  return (guest.items || []).map(item => ({
+    name: item.name,
+    weight: itemWeight(item)
+  }));
+}
+
+// ── PERSISTENCE ────────────────────────────────────────────────────────────────
+function saveState() {
+  try { localStorage.setItem('sts_session', JSON.stringify(state)); } catch(e) {}
+}
 function loadState() {
   try {
     const raw = localStorage.getItem('sts_session');
     if (!raw) return false;
-    const parsed = JSON.parse(raw);
-    // Restore Sets
-    if (parsed.guests) {
-      parsed.guests = parsed.guests.map(g => ({
-        ...g,
-        completedCourses: new Set(g.completedCourses || [])
-      }));
-    }
-    Object.assign(state, parsed);
+    Object.assign(state, JSON.parse(raw));
     return true;
   } catch(e) { return false; }
 }
 
 // ── NAV ────────────────────────────────────────────────────────────────────────
 function goBack() { saveState(); window.location.href = 'index.html'; }
-
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   window.scrollTo(0, 0);
 }
 
-// ── PATH SELECTION ─────────────────────────────────────────────────────────────
+// ── PATH ───────────────────────────────────────────────────────────────────────
 function selectPath(path) {
   state.path = path;
-  if (path === 'firsttimer') {
-    showScreen('screen-firsttimer');
-    initFirstTimer();
-  } else {
-    showScreen('screen-setup');
-  }
+  if (path === 'firsttimer') { showScreen('screen-firsttimer'); initFirstTimer(); }
+  else showScreen('screen-setup');
 }
 
 // ── GUEST SETUP ────────────────────────────────────────────────────────────────
@@ -513,21 +520,21 @@ function adjustGuests(d) {
 }
 
 function makeGuest() {
-  return { selections: [], completedCourses: new Set(), drinksComplete: false, onRound2: false, dietaryFlags: [] };
+  return {
+    items: [],
+    activeCourseTab: state.path === 'drinks' ? 'starters' : 'drinks'
+  };
 }
 
 function confirmSetup() {
   state.guests = Array.from({ length: state.guestCount }, makeGuest);
   state.activeGuest = 0;
   state.activeView = 'guest';
-  state.activeCourseTab = state.path === 'drinks' ? 'starters' : 'drinks';
   buildGuestTabs();
   document.getElementById('guest-tab-bar').classList.add('visible');
-  document.getElementById('course-stepper').classList.add('visible');
   showScreen('screen-session');
   updateSessionHeading();
-  renderStepper();
-  renderSelected();
+  renderItems();
   renderRecs();
   saveState();
 }
@@ -536,14 +543,14 @@ function confirmSetup() {
 function buildGuestTabs() {
   const inner = document.getElementById('guest-tabs-inner');
   inner.innerHTML = '';
-  for (let i = 0; i < state.guestCount; i++) {
+  state.guests.forEach((g, i) => {
     const btn = document.createElement('button');
     btn.className = 'guest-tab' + (i === state.activeGuest ? ' active' : '');
-    if (state.guests[i]?.selections.length > 0) btn.classList.add('has-items');
+    if (g.items && g.items.length > 0) btn.classList.add('has-items');
     btn.textContent = 'Guest ' + (i + 1);
     btn.onclick = () => switchGuest(i);
     inner.appendChild(btn);
-  }
+  });
   const tb = document.createElement('button');
   tb.className = 'table-tab' + (state.activeView === 'table' ? ' active' : '');
   tb.textContent = 'Full Table';
@@ -557,8 +564,7 @@ function switchGuest(i) {
   buildGuestTabs();
   showScreen('screen-session');
   updateSessionHeading();
-  renderStepper();
-  renderSelected();
+  renderItems();
   renderRecs();
 }
 
@@ -570,57 +576,54 @@ function switchToTable() {
 }
 
 function updateSessionHeading() {
-  const pathLabel = state.path === 'drinks' ? 'Drinks' : 'Food';
-  document.getElementById('session-heading').textContent = 'Guest ' + (state.activeGuest + 1) + ' — Add ' + pathLabel;
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  const hasDrinks = g.items.some(i => DRINK_CATS.includes(i.category));
+  const hasFood = g.items.some(i => FOOD_CATS.includes(i.category));
+  let label = 'Add to Order';
+  if (state.path === 'drinks' && !hasDrinks) label = 'Guest ' + (state.activeGuest + 1) + ' — What Are They Drinking?';
+  else if (state.path === 'drinks' && hasDrinks && !hasFood) label = 'Guest ' + (state.activeGuest + 1) + ' — Add Food';
+  else if (state.path === 'food' && !hasFood) label = 'Guest ' + (state.activeGuest + 1) + ' — What Are They Having?';
+  else if (state.path === 'food' && hasFood && !hasDrinks) label = 'Guest ' + (state.activeGuest + 1) + ' — Add Drinks';
+  else label = 'Guest ' + (state.activeGuest + 1) + ' — Add Items';
+  document.getElementById('session-heading').textContent = label;
 }
 
-// ── COURSE STEPPER ─────────────────────────────────────────────────────────────
-const STEPPER_STEPS_DRINKS = ['Drinks', 'Starters', 'Soups & Salads', 'Entrées', 'Dessert', 'Round 2'];
-const STEPPER_STEPS_FOOD   = ['Food', 'Drinks', 'More Food', 'Dessert', 'Another Round'];
+// ── STEPPER ────────────────────────────────────────────────────────────────────
+function renderStepper() { return; // removed
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  const hasDrinks = g.items.some(i => DRINK_CATS.includes(i.category) && i.state === STATE_LOCKED);
+  const hasFood   = g.items.some(i => FOOD_CATS.includes(i.category) && i.state === STATE_LOCKED);
+  const hasDessert = g.items.some(i => i.category === 'dessert' && i.state === STATE_LOCKED);
+  const finishedDrink = g.items.some(i => DRINK_CATS.includes(i.category) && i.state === STATE_FINISHED);
 
-function renderStepper() {
-  const guest = state.guests[state.activeGuest];
-  if (!guest) return;
-  const steps = state.path === 'drinks' ? STEPPER_STEPS_DRINKS : STEPPER_STEPS_FOOD;
-  const inner = document.getElementById('stepper-inner');
-  inner.innerHTML = steps.map((s, i) => {
-    const isDone = guest.completedCourses.has(i);
-    const isActive = !isDone && getCurrentStepIndex(guest) === i;
-    const cls = isDone ? 'done' : isActive ? 'active' : '';
-    return (i > 0 ? '<span class="stepper-sep">›</span>' : '') +
-      '<div class="stepper-step"><span class="stepper-label ' + cls + '">' + s + '</span></div>';
-  }).join('');
+  const steps = [
+    { label: state.path === 'drinks' ? 'Drinks' : 'Food', done: state.path === 'drinks' ? hasDrinks : hasFood },
+    { label: state.path === 'drinks' ? 'Food' : 'Drinks', done: state.path === 'drinks' ? hasFood : hasDrinks },
+    { label: 'Dessert', done: hasDessert },
+    { label: 'Round 2', done: finishedDrink && hasDrinks },
+  ];
+
+  document.getElementById('stepper-inner').innerHTML = steps.map((s, i) =>
+    (i > 0 ? '<span class="stepper-sep">›</span>' : '') +
+    '<span class="stepper-label' + (s.done ? ' done' : '') + '">' + s.label + '</span>'
+  ).join('');
 }
 
-function getCurrentStepIndex(guest) {
-  if (!guest) return 0;
-  const done = guest.completedCourses;
-  for (let i = 0; i < 6; i++) { if (!done.has(i)) return i; }
-  return 5;
-}
-
-// ── SEARCH — PATH FILTERED ─────────────────────────────────────────────────────
+// ── SEARCH ─────────────────────────────────────────────────────────────────────
 function getAllItems() {
   const items = [];
-  for (const e of PAIRING_MAP) {
+  PAIRING_MAP.forEach(e => {
     if (e.spiritCluster) {
-      items.push({ name: e.name, category: e.category, variable: false, spiritCluster: true });
-      if (e.members) e.members.forEach(m => items.push({ name: m, category: e.category, variable: false, parentCluster: e.name }));
+      items.push({ name: e.name, category: e.category, variable: false });
+      (e.members || []).forEach(m => items.push({ name: m, category: e.category, variable: false }));
     } else {
       items.push({ name: e.name, category: e.category, variable: e.variable || false });
     }
-  }
-  state.specials.forEach(s => items.push({ name: s.name, category: s.category, variable: false, special: true }));
+  });
+  state.specials.forEach(s => items.push({ name: s.name, category: s.category, variable: false }));
   return items;
-}
-
-function getFilteredItems() {
-  const all = getAllItems();
-  // Drinks First: show only drinks in search
-  if (state.path === 'drinks') return all.filter(i => DRINK_CATS.includes(i.category));
-  // Food First: show only food in search
-  if (state.path === 'food') return all.filter(i => FOOD_CATS.includes(i.category));
-  return all;
 }
 
 function getCategoryForDisplay(cat) {
@@ -636,6 +639,13 @@ function getCategoryForDisplay(cat) {
 }
 
 let searchDebounce = null;
+function getFilteredItems() {
+  const all = getAllItems();
+  if (state.path === 'drinks') return all.filter(i => DRINK_CATS.includes(i.category));
+  if (state.path === 'food')   return all.filter(i => FOOD_CATS.includes(i.category));
+  return all;
+}
+
 function handleSearch(val) {
   clearTimeout(searchDebounce);
   searchDebounce = setTimeout(() => {
@@ -649,7 +659,7 @@ function handleSearch(val) {
       const div = document.createElement('div');
       div.className = 'search-result-item';
       div.innerHTML = '<span class="result-name">' + item.name + '</span><span class="result-cat">' + getCategoryForDisplay(item.category) + '</span>';
-      div.onclick = () => selectItem(item.name, item.category, item.variable);
+      div.onclick = () => { document.getElementById('main-search').value = ''; results.classList.remove('visible'); openLockModal(item.name, item.category, item.variable); };
       results.appendChild(div);
     });
     results.classList.add('visible');
@@ -658,23 +668,68 @@ function handleSearch(val) {
 
 document.addEventListener('click', e => {
   if (!e.target.closest('.search-wrap')) document.getElementById('search-results').classList.remove('visible');
-  const removeBtn = e.target.closest('[data-remove]');
-  if (removeBtn) { removeItem(decodeURIComponent(removeBtn.dataset.remove)); return; }
-  const addBtn = e.target.closest('[data-add]');
-  if (addBtn) { addRecToOrder(decodeURIComponent(addBtn.dataset.add), addBtn.dataset.cat); return; }
+  const remove = e.target.closest('[data-remove]');
+  if (remove) { removeItem(decodeURIComponent(remove.dataset.remove)); return; }
+  const finish = e.target.closest('[data-finish]');
+  if (finish) { openFinishModal(decodeURIComponent(finish.dataset.finish)); return; }
+  const addRec = e.target.closest('[data-add]');
+  if (addRec) { lockRecImmediate(decodeURIComponent(addRec.dataset.add), addRec.dataset.cat); return; }
   const ftBtn = e.target.closest('[data-ftval]');
   if (ftBtn) { selectFTAnswer(ftBtn.dataset.ftval, ftBtn); return; }
 });
 
-function selectItem(name, category, isVariable) {
-  if (!state.guests || !state.guests[state.activeGuest]) return;
-  const guest = state.guests[state.activeGuest];
-  if (!guest.selections.find(s => s.name === name)) {
-    guest.selections.push({ name, category });
-    showToast('Added — ' + name);
+function handleVariableInput(val) {
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  const itemName = document.getElementById('variable-input').dataset.item;
+  const item = g.items.find(i => i.name === itemName);
+  if (item) item.variableNote = val;
+}
+
+// ── LOCK MODAL ─────────────────────────────────────────────────────────────────
+let lockModalPending = null;
+
+function openLockModal(name, category, isVariable) {
+  lockModalPending = { name, category, isVariable };
+  document.getElementById('lock-modal-item').textContent = name;
+  document.getElementById('lock-modal').classList.add('open');
+}
+
+function lockModalChoice(choice) {
+  document.getElementById('lock-modal').classList.remove('open');
+  if (!lockModalPending) return;
+  const { name, category, isVariable } = lockModalPending;
+  lockModalPending = null;
+
+  if (choice === 'cancel') return;
+
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+
+  const existing = g.items.find(i => i.name === name);
+  if (existing) {
+    if (choice === 'lock') existing.state = STATE_LOCKED;
+    // If already there and choosing consider, leave as is
+  } else {
+    g.items.push({
+      name,
+      category,
+      state: choice === 'lock' ? STATE_LOCKED : STATE_CONSIDERING,
+      finishedWeight: 0
+    });
+    showToast((choice === 'lock' ? 'Locked in — ' : 'Considering — ') + name);
   }
-  document.getElementById('main-search').value = '';
-  document.getElementById('search-results').classList.remove('visible');
+
+  // If a drink is locked in, zero out any pending-replacement finished drinks
+  if (choice === 'lock' && DRINK_CATS.includes(category)) {
+    g.items.forEach(i => {
+      if (i.state === STATE_FINISHED && i.pendingReplacement) {
+        i.finishedWeight = 0;
+        i.pendingReplacement = false;
+      }
+    });
+  }
+
   if (isVariable) {
     const entry = PAIRING_MAP.find(e => e.name === name);
     if (entry?.variablePrompt) {
@@ -684,226 +739,410 @@ function selectItem(name, category, isVariable) {
       document.getElementById('variable-input').value = '';
     }
   }
+
   buildGuestTabs();
-  renderStepper();
-  renderSelected();
+  updateSessionHeading();
+  renderItems();
   renderRecs();
   saveState();
 }
 
-function handleVariableInput(val) {
-  if (!state.guests || !state.guests[state.activeGuest]) return;
-  const itemName = document.getElementById('variable-input').dataset.item;
-  const sel = state.guests[state.activeGuest].selections.find(s => s.name === itemName);
-  if (sel) sel.variableNote = val;
+// ── INSTANT REC LOCK (no modal — recs are intentional taps) ─────────────────
+let undoTimer = null;
+let undoPending = null;
+
+function lockRecImmediate(name, category) {
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  const existing = g.items.find(i => i.name === name);
+  if (existing) {
+    if (existing.state === STATE_CONSIDERING) {
+      existing.state = STATE_LOCKED;
+      showToast('Locked in — ' + name);
+    }
+    return;
+  }
+  g.items.push({ name, category, state: STATE_LOCKED, finishedWeight: 0 });
+
+  // Zero out pending-replacement finished drinks if this is a drink
+  if (DRINK_CATS.includes(category)) {
+    g.items.forEach(i => {
+      if (i.state === STATE_FINISHED && i.pendingReplacement) {
+        i.finishedWeight = 0;
+        i.pendingReplacement = false;
+      }
+    });
+  }
+
+  buildGuestTabs();
+  updateSessionHeading();
+  renderItems();
+  renderRecs();
+  saveState();
+
+  // Undo window — 3 seconds
+  undoPending = { name, g };
+  clearTimeout(undoTimer);
+  showToastWithUndo('Added — ' + name, () => {
+    g.items = g.items.filter(i => !(i.name === name && i.state === STATE_LOCKED));
+    buildGuestTabs();
+    updateSessionHeading();
+    renderItems();
+    renderRecs();
+    saveState();
+  });
 }
 
+// ── REMOVE ITEM ────────────────────────────────────────────────────────────────
 function removeItem(name) {
-  if (!state.guests || !state.guests[state.activeGuest]) return;
-  state.guests[state.activeGuest].selections = state.guests[state.activeGuest].selections.filter(s => s.name !== name);
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  g.items = g.items.filter(i => i.name !== name);
   buildGuestTabs();
-  renderStepper();
-  renderSelected();
+  updateSessionHeading();
+  renderItems();
   renderRecs();
   saveState();
 }
 
-// ── SELECTED DISPLAY ───────────────────────────────────────────────────────────
-const CATEGORY_ORDER = ['steak','starter','soup-salad','main','side','dessert','cocktail','wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
+// ── FINISH MODAL ───────────────────────────────────────────────────────────────
+let finishModalPending = null;
 
-function renderSelected() {
-  if (!state.guests || !state.guests[state.activeGuest]) return;
-  const guest = state.guests[state.activeGuest];
+function openFinishModal(name) {
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  const item = g.items.find(i => i.name === name);
+  if (!item) return;
+
+  finishModalPending = { name, category: item.category };
+  const isDrink = DRINK_CATS.includes(item.category);
+
+  if (isDrink) {
+    document.getElementById('finish-drink-title').textContent = name + ' — all done?';
+    document.getElementById('finish-drink-sub').textContent = 'What\'s next for your guest?';
+
+    const options = [
+      { label: 'Another Round', action: 'round-same' },
+      { label: 'Different Drink', action: 'round-new' },
+      { label: 'Moving to Food', action: 'food-next' },
+      { label: 'All Done', action: 'done' },
+    ];
+
+    document.getElementById('finish-drink-options').innerHTML = options.map((o, i) =>
+      '<button class="modal-option' + (i === 0 ? ' primary' : '') + '" onclick="finishDrinkChoice(\'' + o.action + '\')">' + o.label + '</button>'
+    ).join('');
+
+    document.getElementById('finish-drink-modal').classList.add('open');
+  } else {
+    document.getElementById('finish-food-title').textContent = name + ' — finished?';
+    document.getElementById('finish-food-sub').textContent = 'What\'s coming next?';
+
+    const options = [
+      { label: 'Next Course — Show Options', action: 'next-course' },
+      { label: 'Another ' + getCategoryForDisplay(item.category), action: 'same-course' },
+      { label: 'Time for a Drink', action: 'drinks' },
+      { label: 'Skip to Dessert', action: 'dessert' },
+      { label: 'We\'re All Set', action: 'done' },
+    ];
+
+    document.getElementById('finish-food-options').innerHTML = options.map((o, i) =>
+      '<button class="modal-option' + (i === 0 ? ' primary' : '') + '" onclick="finishFoodChoice(\'' + o.action + '\')">' + o.label + '</button>'
+    ).join('');
+
+    document.getElementById('finish-food-modal').classList.add('open');
+  }
+}
+
+function markItemFinished(name, keepWeight) {
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  const item = g.items.find(i => i.name === name);
+  if (item) { item.state = STATE_FINISHED; item.finishedWeight = keepWeight ? 1.0 : 0; }
+}
+
+function finishDrinkChoice(action) {
+  document.getElementById('finish-drink-modal').classList.remove('open');
+  if (!finishModalPending) return;
+  const { name } = finishModalPending;
+  finishModalPending = null;
+  const g = state.guests[state.activeGuest];
+
+  if (action === 'round-same') {
+    // Mark finished but keep weight — same drink coming again
+    markItemFinished(name, true);
+    // Add a fresh locked entry for round 2
+    const orig = g.items.find(i => i.name === name && i.state === STATE_FINISHED);
+    const cat = orig ? orig.category : 'cocktail';
+    // Only add if not already an active locked version
+    if (!g.items.find(i => i.name === name && i.state === STATE_LOCKED)) {
+      g.items.push({ name, category: cat, state: STATE_LOCKED, finishedWeight: 0 });
+    }
+    showToast('Another ' + name + ' locked in');
+    setActiveCourseTab('starters');
+  } else if (action === 'round-new') {
+    // Keep weight until new drink is chosen — set pendingReplacement flag
+    markItemFinished(name, true);
+    const item = g.items.find(i => i.name === name);
+    if (item) item.pendingReplacement = true;
+    setActiveCourseTab('drinks');
+    showToast('Select a new drink');
+  } else if (action === 'round-wine') {
+    // Same — keep weight until wine is chosen
+    markItemFinished(name, true);
+    const item = g.items.find(i => i.name === name);
+    if (item) item.pendingReplacement = true;
+    setActiveCourseTab('drinks');
+    showToast('Select a wine');
+  } else if (action === 'food-next') {
+    markItemFinished(name, false);
+    openCoursePickerModal('What course are they starting with?');
+    return;
+  } else if (action === 'done') {
+    markItemFinished(name, false);
+    // Default to all-food — shows everything driven by active food items
+    const g2 = state.guests[state.activeGuest];
+    if (g2) {
+      const hasAnyFood = g2.items.some(i => FOOD_CATS.includes(i.category) && i.state === STATE_LOCKED);
+      g2.activeCourseTab = hasAnyFood ? 'all-food' : 'starters';
+    }
+  }
+
+  buildGuestTabs();
+  updateSessionHeading();
+  renderItems();
+  renderRecs();
+  saveState();
+}
+
+function finishFoodChoice(action) {
+  document.getElementById('finish-food-modal').classList.remove('open');
+  if (!finishModalPending) return;
+  const { name, category } = finishModalPending;
+  finishModalPending = null;
+
+  markItemFinished(name, false);
+
+  if (action === 'next-course') {
+    openCoursePickerModal('What course is next?');
+    return;
+  } else if (action === 'same-course') {
+    setActiveCourseTab(catToCourseTab(category));
+  } else if (action === 'drinks') {
+    setActiveCourseTab('drinks');
+  } else if (action === 'dessert') {
+    setActiveCourseTab('dessert');
+  } else if (action === 'done') {
+    const g2 = state.guests[state.activeGuest];
+    if (g2) {
+      const hasDrinks = g2.items.some(i => DRINK_CATS.includes(i.category) && i.state === STATE_LOCKED);
+      g2.activeCourseTab = hasDrinks ? 'all-food' : 'drinks';
+    }
+  }
+
+  buildGuestTabs();
+  updateSessionHeading();
+  renderItems();
+  renderRecs();
+  saveState();
+}
+
+function catToCourseTab(cat) {
+  if (cat === 'starter') return 'starters';
+  if (cat === 'soup-salad') return 'soups';
+  if (['steak','main','side'].includes(cat)) return 'entrees';
+  if (['dessert','wine-dessert'].includes(cat)) return 'dessert';
+  if (DRINK_CATS.includes(cat)) return 'drinks';
+  return 'all-food';
+}
+
+// ── COURSE PICKER MODAL ────────────────────────────────────────────────────────
+function openCoursePickerModal(title) {
+  document.getElementById('course-picker-title').textContent = title;
+  document.getElementById('course-picker-sub').textContent = 'Select a course to see recommendations.';
+
+  const courses = [
+    { label: 'To Start', tab: 'starters' },
+    { label: 'Soups & Salads', tab: 'soups' },
+    { label: 'Entrées & Sides', tab: 'entrees' },
+    { label: 'Dessert', tab: 'dessert' },
+    { label: 'Drinks', tab: 'drinks' },
+    { label: 'We\'re Done', tab: null },
+  ];
+
+  document.getElementById('course-picker-options').innerHTML = courses.map((c, i) =>
+    '<button class="modal-option' + (i === 0 ? ' primary' : '') + '" onclick="coursePickerChoice(\'' + (c.tab || 'done') + '\')">' + c.label + '</button>'
+  ).join('');
+
+  document.getElementById('course-picker-modal').classList.add('open');
+}
+
+function coursePickerChoice(tab) {
+  document.getElementById('course-picker-modal').classList.remove('open');
+  if (tab && tab !== 'done') {
+    const g = state.guests[state.activeGuest];
+    if (g) g.activeCourseTab = tab;
+  }
+  buildGuestTabs();
+  updateSessionHeading();
+  renderItems();
+  renderRecs();
+  saveState();
+}
+
+// ── ACTIVE COURSE TAB ──────────────────────────────────────────────────────────
+function setActiveCourseTab(tabId) {
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  g.activeCourseTab = tabId;
+  // Update tab UI
+  document.querySelectorAll('.course-tab').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.course === tabId);
+  });
+  renderRecsForCourse();
+}
+
+// ── RENDER ITEMS ───────────────────────────────────────────────────────────────
+function renderItems() {
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
   const container = document.getElementById('selected-display');
 
-  if (!guest.selections.length) {
+  const locked      = g.items.filter(i => i.state === STATE_LOCKED);
+  const considering = g.items.filter(i => i.state === STATE_CONSIDERING);
+  const finished    = g.items.filter(i => i.state === STATE_FINISHED);
+
+  if (!g.items.length) {
     container.innerHTML = '<div class="empty-state" style="padding:16px 0">No items added yet.</div>';
-    document.getElementById('complete-course-bar').style.display = 'none';
     return;
   }
-
-  const groups = {};
-  guest.selections.forEach(sel => {
-    const cat = sel.category || 'other';
-    if (!groups[cat]) groups[cat] = [];
-    groups[cat].push(sel);
-  });
 
   let html = '';
-  CATEGORY_ORDER.forEach(cat => {
-    if (!groups[cat]) return;
-    html += '<div class="selected-section"><div class="selected-section-label">' + getCategoryForDisplay(cat) + '</div><div class="selected-chips">';
-    groups[cat].forEach(sel => {
-      html += '<div class="chip">' + sel.name + '<button class="chip-remove" data-remove="' + encodeURIComponent(sel.name) + '">×</button></div>';
+
+  // Locked items — grouped by category
+  if (locked.length) {
+    const groups = {};
+    locked.forEach(item => {
+      if (!groups[item.category]) groups[item.category] = [];
+      groups[item.category].push(item);
     });
-    html += '</div></div>';
-  });
+    CATEGORY_ORDER.forEach(cat => {
+      if (!groups[cat]) return;
+      html += '<div class="items-section"><div class="items-section-label">' + getCategoryForDisplay(cat) + '</div>';
+      groups[cat].forEach(item => {
+        html += '<div class="item-row">'
+          + '<div><div class="item-name state-locked">' + item.name + '</div></div>'
+          + '<button class="item-action finish-btn" data-finish="' + encodeURIComponent(item.name) + '">Tap to Finish</button>'
+          + '</div>';
+      });
+      html += '</div>';
+    });
+  }
+
+  // Considering items
+  if (considering.length) {
+    html += '<div class="items-section"><div class="items-section-label considering-label">Considering</div>';
+    considering.forEach(item => {
+      html += '<div class="item-row">'
+        + '<div><div class="item-name state-considering">' + item.name + '</div>'
+        + '<div class="item-cat">' + getCategoryForDisplay(item.category) + '</div></div>'
+        + '<button class="item-action remove-btn" data-remove="' + encodeURIComponent(item.name) + '">×</button>'
+        + '</div>';
+    });
+    html += '</div>';
+  }
+
+  // Finished items — muted
+  if (finished.length) {
+    html += '<div class="items-section"><div class="items-section-label">Finished</div>';
+    finished.forEach(item => {
+      html += '<div class="item-row">'
+        + '<div><div class="item-name state-finished">' + item.name + '</div></div>'
+        + '<span style="font-family:\'Josefin Sans\',sans-serif;font-size:7.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim)">Done</span>'
+        + '</div>';
+    });
+    html += '</div>';
+  }
+
   container.innerHTML = html;
-
-  // Show complete bar
-  const bar = document.getElementById('complete-course-bar');
-  const btn = document.getElementById('btn-complete-course');
-  bar.style.display = 'flex';
-
-  const isDone = guest.drinksComplete || (state.path === 'food' && guest.completedCourses.has(0));
-  btn.textContent = isDone ? '✓ Done' : (state.path === 'drinks' ? 'Drinks Done — Show Food' : 'Course Done — Show Drinks');
-  btn.className = 'btn-complete' + (isDone ? ' done' : '');
-  btn.onclick = isDone ? null : completeCourse;
 }
 
-// ── COMPLETE COURSE ────────────────────────────────────────────────────────────
-function completeCourse() {
-  if (!state.guests || !state.guests[state.activeGuest]) return;
-  const guest = state.guests[state.activeGuest];
-
-  if (state.path === 'drinks' && !guest.drinksComplete) {
-    guest.drinksComplete = true;
-    guest.completedCourses.add(0);
-    // Flip search to food
-    document.getElementById('session-heading').textContent = 'Guest ' + (state.activeGuest + 1) + ' — Add Food';
-    document.querySelector('#main-search').placeholder = 'Search food…';
-    // Default to starters tab
-    state.activeCourseTab = 'starters';
-    renderSelected();
-    renderRecs();
-    renderStepper();
-    saveState();
-    // Prompt for food recommendations
-    openRoundModal('Ready to order food?', 'What course are they starting with?', false);
-    return;
-  }
-
-  if (state.path === 'food' && !guest.completedCourses.has(0)) {
-    guest.completedCourses.add(0);
-    document.getElementById('session-heading').textContent = 'Guest ' + (state.activeGuest + 1) + ' — Add Drinks';
-    document.querySelector('#main-search').placeholder = 'Search drinks…';
-    state.activeCourseTab = 'drinks';
-    renderSelected();
-    renderRecs();
-    renderStepper();
-    saveState();
-    openRoundModal('Time for drinks?', 'Would your guest like a recommendation based on what they\'re having?', false);
-    return;
-  }
-
-  // Subsequent completions — prompt another round
-  const nextStepIdx = getCurrentStepIndex(guest) + 1;
-  guest.completedCourses.add(getCurrentStepIndex(guest));
-  renderStepper();
-  saveState();
-  openRoundModal('Another round?', 'Is your guest going for another drink?', true);
-}
-
-// ── ROUND MODAL ────────────────────────────────────────────────────────────────
-let roundModalIsAnotherRound = false;
-
-function openRoundModal(title, sub, isAnotherRound) {
-  roundModalIsAnotherRound = isAnotherRound;
-  document.getElementById('round-modal-title').textContent = title;
-  document.getElementById('round-modal-sub').textContent = sub;
-  document.getElementById('round-modal').classList.add('open');
-}
-
-function closeRoundModal(confirmed) {
-  document.getElementById('round-modal').classList.remove('open');
-  if (!confirmed) return;
-
-  const guest = state.guests[state.activeGuest];
-  if (roundModalIsAnotherRound) {
-    guest.onRound2 = true;
-    state.activeCourseTab = 'drinks';
-  } else {
-    // Just ensure recs are visible
-  }
-  renderRecs();
-  renderSelected();
-}
-
-// ── COURSE TAB BAR ─────────────────────────────────────────────────────────────
-function renderCourseTabs(hasRecs) {
-  const bar = document.getElementById('course-tab-bar');
-  const inner = document.getElementById('course-tab-inner');
-
-  if (!hasRecs) { bar.style.display = 'none'; return; }
-  bar.style.display = 'block';
-
-  inner.innerHTML = COURSE_TABS.map(tab => {
-    const isActive = tab.id === state.activeCourseTab;
-    return '<button class="course-tab' + (isActive ? ' active' : '') + '" data-course="' + tab.id + '">' + tab.label + '</button>';
-  }).join('');
-
-  inner.querySelectorAll('.course-tab').forEach(btn => {
-    btn.onclick = () => {
-      state.activeCourseTab = btn.dataset.course;
-      inner.querySelectorAll('.course-tab').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderRecsForCourse();
-    };
-  });
-}
-
-// ── RECOMMENDATIONS ────────────────────────────────────────────────────────────
+// ── RENDER RECS ────────────────────────────────────────────────────────────────
 function renderRecs() {
-  if (!state.guests || !state.guests[state.activeGuest]) return;
-  const guest = state.guests[state.activeGuest];
-  const selections = guest.selections.map(s => s.name);
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  const weighted = getWeightedSelections(g);
   const empty = document.getElementById('recs-empty');
   const content = document.getElementById('recs-content');
+  const tabBar = document.getElementById('course-tab-bar');
 
-  if (!selections.length) {
+  if (!weighted.length) {
     empty.style.display = 'block';
     content.innerHTML = '';
-    renderCourseTabs(false);
+    tabBar.style.display = 'none';
     return;
   }
 
   empty.style.display = 'none';
-  const recs = getRecommendations(selections);
+  const recs = getRecommendations(weighted);
 
   if (!recs.length) {
     content.innerHTML = '<div class="empty-state">No strong pairings found for this combination.</div>';
-    renderCourseTabs(false);
+    tabBar.style.display = 'none';
     return;
   }
 
-  renderCourseTabs(true);
+  // Build course tabs
+  tabBar.style.display = 'block';
+  const inner = document.getElementById('course-tab-inner');
+  inner.innerHTML = COURSE_TABS.map(tab => {
+    const hasRecs = recs.some(r => tab.cats.includes(r.category));
+    const isActive = tab.id === (g.activeCourseTab || 'starters');
+    return '<button class="course-tab' + (isActive ? ' active' : '') + (hasRecs ? '' : ' style="opacity:0.4"') + '" data-course="' + tab.id + '">' + tab.label + '</button>';
+  }).join('');
+
+  inner.querySelectorAll('.course-tab').forEach(btn => {
+    btn.onclick = () => setActiveCourseTab(btn.dataset.course);
+  });
+
   renderRecsForCourse(recs);
 }
 
 function renderRecsForCourse(recsIn) {
-  if (!state.guests || !state.guests[state.activeGuest]) return;
-  const guest = state.guests[state.activeGuest];
-  const selections = guest.selections.map(s => s.name);
-  const recs = recsIn || getRecommendations(selections);
+  const g = state.guests[state.activeGuest];
+  if (!g) return;
+  const weighted = getWeightedSelections(g);
+  const recs = recsIn || getRecommendations(weighted);
   const content = document.getElementById('recs-content');
 
-  const tab = COURSE_TABS.find(t => t.id === state.activeCourseTab) || COURSE_TABS[0];
+  const tabId = g.activeCourseTab || 'starters';
+  const tab = COURSE_TABS.find(t => t.id === tabId) || COURSE_TABS[0];
   const filtered = recs.filter(r => tab.cats.includes(r.category));
 
   if (!filtered.length) {
-    content.innerHTML = '<div class="empty-state" style="padding:24px 0">No ' + tab.label.toLowerCase() + ' pairings for this selection.</div>';
+    content.innerHTML = '<div class="empty-state" style="padding:24px 0">No ' + tab.label.toLowerCase() + ' pairings for this selection. Try another course or add more items.</div>';
     return;
   }
 
-  // Group by category within the tab
   const groups = {};
-  filtered.forEach(rec => {
-    if (!groups[rec.category]) groups[rec.category] = [];
-    groups[rec.category].push(rec);
+  filtered.forEach(r => {
+    if (!groups[r.category]) groups[r.category] = [];
+    groups[r.category].push(r);
   });
+
+  const lockedNames = new Set(g.items.filter(i => i.state === STATE_LOCKED).map(i => i.name));
 
   let html = '<div class="legend"><div class="legend-item"><div class="tier-pip excellent"></div> Excellent</div><div class="legend-item"><div class="tier-pip strong"></div> Strong</div><div class="legend-item"><div class="tier-pip works"></div> Works</div></div>';
 
   CATEGORY_ORDER.forEach(cat => {
     if (!groups[cat]) return;
-    html += '<div style="margin-bottom:20px"><div style="font-family:\'Josefin Sans\',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px">' + getCategoryForDisplay(cat) + '</div>';
+    html += '<div class="rec-group"><div class="rec-group-label">' + getCategoryForDisplay(cat) + '</div>';
     groups[cat].forEach(rec => {
       const meta = [];
       if (rec.price) meta.push(rec.price);
       if (rec.offMenu) meta.push('Off Menu');
       if (rec.oos) meta.push('Currently Unavailable');
-      const alreadySel = guest.selections.find(s => s.name === rec.name);
-      html += '<button class="rec-item' + (alreadySel ? ' selected-rec' : '') + '" data-add="' + encodeURIComponent(rec.name) + '" data-cat="' + rec.category + '">'
+      const isAdded = lockedNames.has(rec.name);
+      html += '<button class="rec-item' + (isAdded ? ' already-added' : '') + '" data-add="' + encodeURIComponent(rec.name) + '" data-cat="' + rec.category + '">'
         + '<div class="tier-pip ' + rec.tier + '"></div>'
         + '<div class="rec-info"><div class="rec-name">' + rec.name + '</div>'
         + (meta.length ? '<div class="rec-meta">' + meta.join(' · ') + '</div>' : '')
@@ -915,84 +1154,56 @@ function renderRecsForCourse(recsIn) {
   content.innerHTML = html;
 }
 
-function addRecToOrder(name, category) {
-  selectItem(name, category, false);
-}
-
-// ── TOAST ──────────────────────────────────────────────────────────────────────
-let toastTimer = null;
-function showToast(msg) {
-  const t = document.getElementById('add-toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => t.classList.remove('show'), 2000);
-}
-
 // ── TABLE VIEW ─────────────────────────────────────────────────────────────────
 function renderTableView() {
   const guestList = document.getElementById('table-guest-list');
-  let html = '';
-  state.guests.forEach((guest, i) => {
-    html += '<div class="table-view-guest"><div class="table-guest-label">Guest ' + (i + 1) + '</div>';
-    if (!guest.selections.length) {
-      html += '<div class="table-empty">Nothing added yet.</div>';
-    } else {
+  guestList.innerHTML = state.guests.map((g, i) => {
+    const locked      = g.items.filter(i => i.state === STATE_LOCKED);
+    const considering = g.items.filter(i => i.state === STATE_CONSIDERING);
+    const finished    = g.items.filter(i => i.state === STATE_FINISHED);
+    let html = '<div class="table-view-guest"><div class="table-guest-label">Guest ' + (i + 1) + '</div>';
+    if (!g.items.length) { html += '<div class="table-empty">Nothing added yet.</div>'; }
+    else {
       html += '<div class="table-item-list">';
-      guest.selections.forEach(sel => { html += '<div class="table-item-chip">' + sel.name + '</div>'; });
+      locked.forEach(item => { html += '<div class="table-item-chip">' + item.name + '</div>'; });
+      considering.forEach(item => { html += '<div class="table-item-chip considering">' + item.name + '</div>'; });
+      finished.forEach(item => { html += '<div class="table-item-chip finished">' + item.name + '</div>'; });
       html += '</div>';
     }
-    html += '</div>';
+    return html + '</div>';
+  }).join('');
+
+  const allWeighted = [];
+  state.guests.forEach(g => {
+    getWeightedSelections(g).forEach(s => {
+      const existing = allWeighted.find(w => w.name === s.name);
+      if (existing) { existing.weight = Math.max(existing.weight, s.weight); }
+      else allWeighted.push({ ...s });
+    });
   });
-  guestList.innerHTML = html;
 
-  const allSel = [];
-  state.guests.forEach(g => g.selections.forEach(s => { if (!allSel.includes(s.name)) allSel.push(s.name); }));
   const recsContent = document.getElementById('table-recs-content');
+  if (!allWeighted.length) { recsContent.innerHTML = '<div class="empty-state">Add items to guests above to see table-level pairings.</div>'; return; }
 
-  if (!allSel.length) {
-    recsContent.innerHTML = '<div class="empty-state">Add items to guests above to see table-level pairings.</div>';
-    return;
-  }
-
-  const recs = getRecommendations(allSel);
+  const recs = getRecommendations(allWeighted);
   if (!recs.length) { recsContent.innerHTML = '<div class="empty-state">No strong pairings for this table combination.</div>'; return; }
 
   const groups = {};
-  recs.slice(0, 30).forEach(rec => {
-    if (!groups[rec.category]) groups[rec.category] = [];
-    groups[rec.category].push(rec);
-  });
+  recs.slice(0, 30).forEach(r => { if (!groups[r.category]) groups[r.category] = []; groups[r.category].push(r); });
 
-  let html2 = '';
+  let html = '';
   CATEGORY_ORDER.forEach(cat => {
     if (!groups[cat]) return;
-    html2 += '<div style="margin-bottom:20px"><div style="font-family:\'Josefin Sans\',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px">' + getCategoryForDisplay(cat) + '</div>';
+    html += '<div class="rec-group"><div class="rec-group-label">' + getCategoryForDisplay(cat) + '</div>';
     groups[cat].forEach(rec => {
       const meta = [];
       if (rec.price) meta.push(rec.price);
       if (rec.offMenu) meta.push('Off Menu');
-      html2 += '<div class="rec-item"><div class="tier-pip ' + rec.tier + '"></div><div class="rec-info"><div class="rec-name">' + rec.name + '</div>' + (meta.length ? '<div class="rec-meta">' + meta.join(' · ') + '</div>' : '') + '</div><div class="tier-badge ' + rec.tier + '">' + rec.tier + '</div></div>';
+      html += '<div class="rec-item"><div class="tier-pip ' + rec.tier + '"></div><div class="rec-info"><div class="rec-name">' + rec.name + '</div>' + (meta.length ? '<div class="rec-meta">' + meta.join(' · ') + '</div>' : '') + '</div><div class="tier-badge ' + rec.tier + '">' + rec.tier + '</div></div>';
     });
-    html2 += '</div>';
+    html += '</div>';
   });
-  recsContent.innerHTML = html2;
-
-  // Check if all guests are done — show summary
-  const allDone = state.guests.every(g => g.completedCourses.size >= 2);
-  const summaryArea = document.getElementById('table-summary-area');
-  if (allDone) {
-    summaryArea.style.display = 'block';
-    let shtml = '';
-    state.guests.forEach((g, i) => {
-      shtml += '<div class="table-summary-card"><div class="table-summary-title">Guest ' + (i + 1) + '</div>';
-      g.selections.forEach(s => { shtml += '<div class="summary-row">' + s.name + '</div>'; });
-      shtml += '</div>';
-    });
-    document.getElementById('table-summary-content').innerHTML = shtml;
-  } else {
-    summaryArea.style.display = 'none';
-  }
+  recsContent.innerHTML = html;
 }
 
 // ── SPECIALS MODAL ─────────────────────────────────────────────────────────────
@@ -1010,12 +1221,11 @@ function openSpecialsModal() {
   document.getElementById('special-name').value = '';
   document.getElementById('specials-modal').classList.add('open');
 }
-
 function closeSpecialsModal() { document.getElementById('specials-modal').classList.remove('open'); }
 
 function confirmSpecial() {
   const name = document.getElementById('special-name').value.trim();
-  if (!name) { alert('Please enter a name for the special.'); return; }
+  if (!name) { alert('Please enter a name.'); return; }
   const category = document.getElementById('special-category').value;
   const tags = Array.from(document.querySelectorAll('.tag-pick.selected')).map(b => b.textContent);
   const entry = { name, category, profile: tags, excellent: [], strong: [], works: [], avoid: [], special: true };
@@ -1027,31 +1237,62 @@ function confirmSpecial() {
   });
   PAIRING_MAP.push(entry);
   state.specials.push({ name, category, profile: tags });
-  selectItem(name, category, false);
   closeSpecialsModal();
+  openLockModal(name, category, false);
   saveState();
 }
 
+// ── TOAST ──────────────────────────────────────────────────────────────────────
+let toastTimer = null;
+let toastUndoFn = null;
+
+function showToast(msg) {
+  const t = document.getElementById('add-toast');
+  t.innerHTML = msg;
+  t.classList.add('show');
+  toastUndoFn = null;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function showToastWithUndo(msg, undoFn) {
+  const t = document.getElementById('add-toast');
+  t.innerHTML = msg + ' <span id="toast-undo" style="color:var(--gold);margin-left:10px;cursor:pointer;text-decoration:underline;font-style:normal">Undo</span>';
+  t.classList.add('show');
+  toastUndoFn = undoFn;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.classList.remove('show'); toastUndoFn = null; }, 3000);
+}
+
+document.addEventListener('click', e => {
+  if (e.target.id === 'toast-undo' && toastUndoFn) {
+    toastUndoFn();
+    toastUndoFn = null;
+    clearTimeout(toastTimer);
+    document.getElementById('add-toast').classList.remove('show');
+  }
+}, true);
+
 // ── FIRST TIMER ────────────────────────────────────────────────────────────────
 const FT_QUESTIONS_SHORT = [
-  { q: "Is your guest drinking tonight?", key: 'drinking', options: [
+  { q: "Is your guest drinking tonight?", options: [
     { label: "Yes — open to everything", value: 'drinkingYes' },
     { label: "Wine only", value: 'drinkingWineOnly' },
     { label: "Cocktails only", value: 'drinkingCocktailsOnly' },
     { label: "No — non-alcoholic evening", value: 'drinkingNo' }
   ]},
-  { q: "How do they typically take their protein?", key: 'protein', options: [
+  { q: "How do they typically take their protein?", options: [
     { label: "Rare to medium-rare — they want it red", value: 'proteinRareMR' },
     { label: "Medium — right down the middle", value: 'proteinMedium' },
     { label: "Medium-well to well — no pink", value: 'proteinMWWell' },
     { label: "No red meat tonight", value: 'proteinNoRed' }
   ]},
-  { q: "How do they tend to eat and drink?", key: 'style', options: [
+  { q: "How do they tend to eat and drink?", options: [
     { label: "Bold and rich — the more the better", value: 'boldAndRich' },
     { label: "Somewhere in the middle", value: 'middle' },
     { label: "Light and fresh — clean flavors", value: 'lightAndFresh' }
   ]},
-  { q: "Any dietary restrictions or allergies to note?", key: 'restrictions', options: [
+  { q: "Any dietary restrictions or allergies?", options: [
     { label: "None", value: 'none' },
     { label: "Dairy-free", value: 'none' },
     { label: "Gluten-free", value: 'none' },
@@ -1059,30 +1300,28 @@ const FT_QUESTIONS_SHORT = [
     { label: "Vegetarian / pescatarian", value: 'proteinNoRed' }
   ]}
 ];
-
 const FT_QUESTIONS_DEEP = [
   ...FT_QUESTIONS_SHORT,
-  { q: "Do they gravitate toward sweet, savory, or both?", key: 'flavor', options: [
+  { q: "Do they gravitate toward sweet, savory, or both?", options: [
     { label: "Mostly sweet", value: 'sweetFlavor' },
     { label: "Mostly savory", value: 'savoryFlavor' },
     { label: "Both — they appreciate the full spectrum", value: 'bothFlavors' }
   ]},
-  { q: "How familiar are they with wine?", key: 'wine', options: [
+  { q: "How familiar are they with wine?", options: [
     { label: "Knowledgeable — they know what they like", value: 'wineExpert' },
     { label: "Curious — they'd appreciate a thoughtful recommendation", value: 'wineGuided' },
     { label: "Not their focus tonight", value: 'none' }
   ]},
-  { q: "Are they celebrating something?", key: 'occasion', options: [
+  { q: "Are they celebrating something?", options: [
     { label: "Yes — special occasion", value: 'celebrating' },
     { label: "Just a great dinner", value: 'none' }
   ]},
-  { q: "What's their comfort level on spend tonight?", key: 'budget', options: [
+  { q: "What's their comfort level on spend tonight?", options: [
     { label: "Approachable — keep it reasonable", value: 'budgetApproachable' },
     { label: "Mid-range — they're here to enjoy themselves", value: 'budgetMid' },
     { label: "The sky's the limit", value: 'budgetSky' }
   ]}
 ];
-
 let ftQuestions = FT_QUESTIONS_SHORT;
 
 function setFTDepth(depth) {
@@ -1094,38 +1333,33 @@ function setFTDepth(depth) {
   document.getElementById('ft-recs-area').style.display = 'none';
   initFirstTimer();
 }
-
 function initFirstTimer() {
   state.ftAnswers = []; state.ftCurrentQ = 0;
   ftQuestions = state.ftDepth === 'deep' ? FT_QUESTIONS_DEEP : FT_QUESTIONS_SHORT;
   renderFTQuestion();
 }
-
 function renderFTQuestion() {
   const q = ftQuestions[state.ftCurrentQ];
   const total = ftQuestions.length;
-  document.getElementById('ft-progress').innerHTML = Array.from({ length: total }, (_, i) => {
-    const cls = i < state.ftCurrentQ ? 'done' : i === state.ftCurrentQ ? 'active' : '';
-    return '<div class="ft-progress-pip ' + cls + '"></div>';
-  }).join('');
+  document.getElementById('ft-progress').innerHTML = Array.from({ length: total }, (_, i) =>
+    '<div class="ft-progress-pip ' + (i < state.ftCurrentQ ? 'done' : i === state.ftCurrentQ ? 'active' : '') + '"></div>'
+  ).join('');
   document.getElementById('ft-question-area').innerHTML =
     '<div class="ft-question"><div class="ft-question-label">' + q.q + '</div><div class="ft-options">' +
-    q.options.map(opt => {
-      const sel = state.ftAnswers[state.ftCurrentQ] === opt.value;
-      return '<button class="ft-option' + (sel ? ' selected' : '') + '" data-ftval="' + opt.value + '">' + opt.label + '</button>';
-    }).join('') + '</div></div>';
+    q.options.map(opt =>
+      '<button class="ft-option' + (state.ftAnswers[state.ftCurrentQ] === opt.value ? ' selected' : '') + '" data-ftval="' + opt.value + '">' + opt.label + '</button>'
+    ).join('') + '</div></div>';
   document.getElementById('ft-prev-btn').style.display = state.ftCurrentQ > 0 ? 'block' : 'none';
   document.getElementById('ft-next-btn').textContent = state.ftCurrentQ === total - 1 ? 'See Recommendations' : 'Next →';
   document.getElementById('ft-next-btn').onclick = ftNext;
 }
-
 function selectFTAnswer(value, btn) {
   state.ftAnswers[state.ftCurrentQ] = value;
   btn.closest('.ft-options').querySelectorAll('.ft-option').forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
 }
 
-// ── ALIGNMENT ─────────────────────────────────────────────────────────────────
+// ── LOGO ALIGNMENT ────────────────────────────────────────────────────────────
 function alignSectionLabel() {
   const wm = document.querySelector('.top-bar-wordmark');
   const sc = document.getElementById('top-bar-section');
@@ -1144,14 +1378,13 @@ function alignSectionLabel() {
   const targetRight = tbWmWidth * rightFraction;
   const scStyle = window.getComputedStyle(sc);
   ctx.font = scStyle.fontStyle + ' ' + scStyle.fontWeight + ' ' + scStyle.fontSize + ' ' + scStyle.fontFamily;
-  const scWidth = ctx.measureText(sc.textContent).width;
-  sc.style.paddingLeft = Math.max(0, targetRight - scWidth) + 'px';
+  sc.style.paddingLeft = Math.max(0, targetRight - ctx.measureText(sc.textContent).width) + 'px';
 }
 alignSectionLabel();
 window.addEventListener('resize', alignSectionLabel);
 
 // ── JS COMPLETION ──────────────────────────────────────────────────────────────
 </script>
-<script src="set-the-stage-completion.js?v=3"></script>
+<script src="set-the-stage-completion.js?v=6"></script>
 </body>
 </html>

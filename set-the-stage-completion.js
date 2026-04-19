@@ -1,4 +1,4 @@
-// set-the-stage-completion.js — v2
+// set-the-stage-completion.js — v3
 
 function ftNext() {
   if (!state.ftAnswers[state.ftCurrentQ]) {
@@ -55,17 +55,20 @@ function renderFTRecs() {
     groups[rec.category].push(rec);
   });
 
+  const CATEGORY_ORDER = ['steak','starter','soup-salad','main','side','dessert','cocktail',
+    'wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish',
+    'japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
+
   let html = '';
   CATEGORY_ORDER.forEach(cat => {
     if (!groups[cat]) return;
-    html += '<div style="margin-bottom:20px"><div style="font-family:\'Josefin Sans\',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px">' + getCategoryForDisplay(cat) + '</div>';
+    html += '<div class="rec-group"><div class="rec-group-label">' + getCategoryForDisplay(cat) + '</div>';
     groups[cat].forEach(rec => {
       const tier = rec.overlapScore >= maxScore * 0.75 ? 'excellent'
                  : rec.overlapScore >= maxScore * 0.4  ? 'strong' : 'works';
-      const meta = rec.price || '';
       html += '<div class="rec-item"><div class="tier-pip ' + tier + '"></div>'
             + '<div class="rec-info"><div class="rec-name">' + rec.name + '</div>'
-            + (meta ? '<div class="rec-meta">' + meta + '</div>' : '')
+            + (rec.price ? '<div class="rec-meta">' + rec.price + '</div>' : '')
             + '</div><div class="tier-badge ' + tier + '">' + tier + '</div></div>';
     });
     html += '</div>';
@@ -88,7 +91,6 @@ function resetSession() {
   state.activeView = 'guest';
   state.guests = [];
   state.specials = [];
-  state.activeCourseTab = 'starters';
   state.ftDepth = 'short';
   state.ftAnswers = [];
   state.ftCurrentQ = 0;
@@ -98,7 +100,6 @@ function resetSession() {
   }
 
   document.getElementById('guest-tab-bar').classList.remove('visible');
-  document.getElementById('course-stepper').classList.remove('visible');
   document.getElementById('guest-count-display').textContent = '1';
   document.getElementById('ft-recs-area').style.display = 'none';
   document.getElementById('ft-short-btn').classList.add('active');
@@ -106,6 +107,9 @@ function resetSession() {
   document.getElementById('ft-question-area').innerHTML = '';
   document.getElementById('ft-progress').innerHTML = '';
   document.getElementById('course-tab-bar').style.display = 'none';
+
+  // Close any open modals
+  document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
 
   try { localStorage.removeItem('sts_session'); } catch(e) {}
   showScreen('screen-path');
@@ -127,10 +131,11 @@ function restoreSession() {
   }
 
   if (state.guests && state.guests.length > 0) {
-    // Ensure completedCourses is a Set (may have been serialized as array)
+    // Ensure items arrays exist
     state.guests = state.guests.map(g => ({
-      ...g,
-      completedCourses: new Set(Array.isArray(g.completedCourses) ? g.completedCourses : [...(g.completedCourses || [])])
+      items: [],
+      activeCourseTab: 'starters',
+      ...g
     }));
 
     document.getElementById('guest-count-display').textContent = state.guestCount;
@@ -138,7 +143,8 @@ function restoreSession() {
     // Rebuild specials
     (state.specials || []).forEach(s => {
       if (PAIRING_MAP.find(e => e.name === s.name && e.special)) return;
-      const entry = { name: s.name, category: s.category, profile: s.profile || [], excellent: [], strong: [], works: [], avoid: [], special: true };
+      const entry = { name: s.name, category: s.category, profile: s.profile || [],
+        excellent: [], strong: [], works: [], avoid: [], special: true };
       PAIRING_MAP.forEach(e => {
         if (e.variable || e.oos) return;
         const overlap = e.profile.filter(p => (s.profile || []).includes(p)).length;
@@ -150,8 +156,7 @@ function restoreSession() {
 
     buildGuestTabs();
     document.getElementById('guest-tab-bar').classList.add('visible');
-    document.getElementById('course-stepper').classList.add('visible');
-
+  
     if (state.activeView === 'table') {
       showScreen('screen-table');
       renderTableView();
@@ -159,7 +164,7 @@ function restoreSession() {
       showScreen('screen-session');
       updateSessionHeading();
       renderStepper();
-      renderSelected();
+      renderItems();
       renderRecs();
     }
   }
