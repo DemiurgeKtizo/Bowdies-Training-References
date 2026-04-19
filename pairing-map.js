@@ -16,7 +16,7 @@ const PAIRING_MAP = [
     profile: ['lean','tender','mild','buttery','delicate'],
     excellent: ['Caymus Cabernet Sauvignon','Jordan Cabernet Sauvignon','Far Niente Cabernet Sauvignon','Evening Land Seven Springs','Scavino Barolo','Escargot Butter','Truffle Fries','Lobster Mac'],
     strong: ['Silver Oak Cabernet Sauvignon','Lingua Franca Avni Pinot Noir','Creamed Spinach','Shrimp Bisque','The Manhattan','Frias Block 5','Lail Vineyards Blueprint'],
-    works: ['Quilt Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','Château de Rouillac','Au Gratin Potatoes','Mushrooms'],
+    works: ['Quilt Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','Château de Rouillac','Au Gratin Potatoes','Mushrooms','Creme Brulee','Cheesecake','Beignets','Carrot Cake','Chocolate Brownie','Peanut Butter Brownie'],
     avoid: ['Stoneleigh Sauvignon Blanc','G.D. Vajra Moscato d\'Asti','Il Colle Prosecco Superiore','Faroe Island Salmon']
   },
   {
@@ -25,7 +25,7 @@ const PAIRING_MAP = [
     profile: ['lean','tender','mild','buttery','delicate','bone-enhanced'],
     excellent: ['Caymus Cabernet Sauvignon','Jordan Cabernet Sauvignon','Far Niente Cabernet Sauvignon','Evening Land Seven Springs','Scavino Barolo','Escargot Butter','Truffle Fries','Lobster Mac'],
     strong: ['Silver Oak Cabernet Sauvignon','Lingua Franca Avni Pinot Noir','Creamed Spinach','Shrimp Bisque','The Manhattan','Bowdie\'s Old Fashioned','Frias Block 5'],
-    works: ['Quilt Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','Château de Rouillac','Au Gratin Potatoes','Mushrooms'],
+    works: ['Quilt Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','Château de Rouillac','Au Gratin Potatoes','Mushrooms','Creme Brulee','Cheesecake','Beignets','Carrot Cake','Chocolate Brownie','Peanut Butter Brownie'],
     avoid: ['Stoneleigh Sauvignon Blanc','G.D. Vajra Moscato d\'Asti','Il Colle Prosecco Superiore']
   },
   {
@@ -34,7 +34,7 @@ const PAIRING_MAP = [
     profile: ['lean','bold','beefy','firm','savory','well-marbled'],
     excellent: ['Jordan Cabernet Sauvignon','Silver Oak Cabernet Sauvignon','Caymus Cabernet Sauvignon','Scavino Barolo','The Manhattan','Lail Vineyards Blueprint'],
     strong: ['Ghost Block Cabernet Sauvignon','Austin Hope Cabernet Sauvignon','Peju Cabernet Sauvignon','Lingua Franca Avni Pinot Noir','Creamed Spinach','Truffle Fries'],
-    works: ['Quilt Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','RAEN Royal St Robert','Mushrooms'],
+    works: ['Quilt Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','RAEN Royal St Robert','Mushrooms','Chocolate Brownie','Peanut Butter Brownie','Cheesecake','Creme Brulee','Carrot Cake','Beignets'],
     avoid: ['G.D. Vajra Moscato d\'Asti','Schloss Vollrads Riesling','Stoneleigh Sauvignon Blanc']
   },
   {
@@ -43,7 +43,7 @@ const PAIRING_MAP = [
     profile: ['fatty','rich','bold','marbled','beefy','bone-in'],
     excellent: ['Silver Oak Cabernet Sauvignon','Shafer Hillside Select','Opus One','Scavino Barolo','Darioush Cabernet Sauvignon','Bowdie\'s Old Fashioned','Espresso Old Fashioned'],
     strong: ['Caymus Cabernet Sauvignon','Ghost Block Cabernet Sauvignon','Nickel & Nickel Cabernet','Creamed Spinach','Brussels and Belly','Venge Silencieux'],
-    works: ['Jordan Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','Marimar Estate Christina','Truffle Fries'],
+    works: ['Jordan Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','Marimar Estate Christina','Truffle Fries','Chocolate Brownie','Peanut Butter Brownie','Cheesecake','Creme Brulee','Carrot Cake','Beignets'],
     avoid: ['G.D. Vajra Moscato d\'Asti','Schloss Vollrads Riesling','Le Garenne Rosé','Crab Cake','Seared Scallops']
   },
   {
@@ -52,7 +52,7 @@ const PAIRING_MAP = [
     profile: ['fatty','rich','bold','marbled','smoky','beefy','theatrical'],
     excellent: ['Opus One','Shafer Hillside Select','Heitz Martha\'s Vineyard','Scavino Barolo','Bowdie\'s Old Fashioned','Espresso Old Fashioned','Bone Marrow'],
     strong: ['Darioush Cabernet Sauvignon','Silver Oak Cabernet Sauvignon','Venge Family Reserve','Lail Vineyards Blueprint','Creamed Spinach','Brussels and Belly'],
-    works: ['Ghost Block Cabernet Sauvignon','Nickel & Nickel Cabernet','Truffle Fries','Mushrooms'],
+    works: ['Ghost Block Cabernet Sauvignon','Nickel & Nickel Cabernet','Truffle Fries','Mushrooms','Chocolate Brownie','Peanut Butter Brownie','Cheesecake','Creme Brulee','Carrot Cake','Beignets'],
     avoid: ['G.D. Vajra Moscato d\'Asti','Schloss Vollrads Riesling','Raventós Cava de NIT Rosé Brut','Stoneleigh Sauvignon Blanc','Crab Cake','Seared Scallops','Burrata']
   },
   {
@@ -61,7 +61,7 @@ const PAIRING_MAP = [
     profile: ['lean','fatty','bold','beefy','dual-texture','rich'],
     excellent: ['Silver Oak Cabernet Sauvignon','Caymus Cabernet Sauvignon','Jordan Cabernet Sauvignon','Scavino Barolo','The Manhattan','Truffle Fries','Creamed Spinach'],
     strong: ['Ghost Block Cabernet Sauvignon','Lail Vineyards Blueprint','Far Niente Cabernet Sauvignon','Brussels and Belly','Bowdie\'s Old Fashioned','Lobster Mac'],
-    works: ['Faust Napa Valley Cabernet','Peju Cabernet Sauvignon','House Wedge','RAEN Royal St Robert','Mushrooms'],
+    works: ['Faust Napa Valley Cabernet','Peju Cabernet Sauvignon','House Wedge','RAEN Royal St Robert','Mushrooms','Chocolate Brownie','Peanut Butter Brownie','Cheesecake','Creme Brulee','Carrot Cake','Beignets'],
     avoid: ['G.D. Vajra Moscato d\'Asti','Schloss Vollrads Riesling','Stoneleigh Sauvignon Blanc','Crab Cake','Seared Scallops']
   },
 
@@ -82,7 +82,7 @@ const PAIRING_MAP = [
     profile: ['rich','fatty','umami','smoky','indulgent','bold'],
     excellent: ['Bowdie\'s Old Fashioned','Espresso Old Fashioned','Scavino Barolo','Caymus Cabernet Sauvignon','The Manhattan'],
     strong: ['Silver Oak Cabernet Sauvignon','Ghost Block Cabernet Sauvignon','Venge Silencieux','Brussels and Belly','Creamed Spinach'],
-    works: ['Jordan Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge'],
+    works: ['Jordan Cabernet Sauvignon','Faust Napa Valley Cabernet','House Wedge','Chocolate Brownie','Peanut Butter Brownie','Cheesecake'],
     avoid: ['Laurent Perrier Le Cuvée Brut','G.D. Vajra Moscato d\'Asti','Stoneleigh Sauvignon Blanc','Lingua Franca Avni Pinot Noir']
   },
   {
@@ -189,7 +189,7 @@ const PAIRING_MAP = [
     profile: ['seafood','rich','fatty','delicate','fresh','seasonal'],
     excellent: ['Far Niente Chardonnay','Keenan Chardonnay','Jean-Pierre Grossot Chablis','Elk Cove Pinot Blanc','Lingua Franca Avni Pinot Noir','Evening Land Seven Springs'],
     strong: ['Domaine de Berthiers Pouilly-Fumé','Joseph Mellot Sancerre','Laurent Perrier Le Cuvée Brut','Raventós Cava de NIT Rosé Brut','Cucumber Gimlet','The Happy Wife','Transfusion'],
-    works: ['Le Garenne Rosé','Fisher Unity Pinot Noir','Cristom Mt Jefferson Cuvée','Bee\'s Knees','Paloma'],
+    works: ['Le Garenne Rosé','Fisher Unity Pinot Noir','Cristom Mt Jefferson Cuvée','Bee\'s Knees','Paloma','Creme Brulee','Beignets','Cheesecake'],
     avoid: ['Caymus Cabernet Sauvignon','Opus One','Shafer Hillside Select','Bowdie\'s Old Fashioned','Scavino Barolo','The Manhattan']
   },
   {
@@ -209,7 +209,7 @@ const PAIRING_MAP = [
     profile: ['poultry','rich','savory','roasted','seasonal','approachable'],
     excellent: ['Keenan Chardonnay','Far Niente Chardonnay','Lingua Franca Avni Pinot Noir','Cristom Mt Jefferson Cuvée','Muga Reserva'],
     strong: ['Jean-Pierre Grossot Chablis','Evening Land Seven Springs','Alexander Valley Chardonnay','The Happy Wife','Paloma','The BG'],
-    works: ['Jordan Cabernet Sauvignon','Faust Napa Valley Cabernet','Le Garenne Rosé','Raventós Cava de NIT Rosé Brut','Margarita'],
+    works: ['Jordan Cabernet Sauvignon','Faust Napa Valley Cabernet','Le Garenne Rosé','Raventós Cava de NIT Rosé Brut','Margarita','Creme Brulee','Beignets','Cheesecake','Carrot Cake'],
     avoid: ['Opus One','Shafer Hillside Select','Heitz Martha\'s Vineyard','Bowdie\'s Old Fashioned','The Manhattan']
   },
 
@@ -375,7 +375,7 @@ const PAIRING_MAP = [
     profile: ['bold','whiskey','sweet','oak','smoky','spirit-forward'],
     excellent: ['Cowboy Ribeye','The Tomahawk','Bone Marrow','Prime Tartare','Brussels and Belly'],
     strong: ['Kansas City','Filet Mignon','Truffle Fries','Caymus Cabernet Sauvignon','Lardons','Mushrooms'],
-    works: ['House Wedge','Shrimp Bisque','Creamed Spinach'],
+    works: ['House Wedge','Shrimp Bisque','Creamed Spinach','Chocolate Brownie','Peanut Butter Brownie','Cheesecake','Creme Brulee'],
     avoid: ['Laurent Perrier Le Cuvée Brut','Seared Scallops','Crab Cake','Burrata']
   },
   {
@@ -402,7 +402,7 @@ const PAIRING_MAP = [
     profile: ['bold','whiskey','cognac','herbal','complex','spirit-forward'],
     excellent: ['Filet Mignon','Kansas City','Bone Marrow','Prime Tartare','Truffle Fries'],
     strong: ['Cowboy Ribeye','Porterhouse','Creamed Spinach','Mushrooms'],
-    works: ['House Wedge','Brussels and Belly','Grilled Caesar'],
+    works: ['House Wedge','Brussels and Belly','Grilled Caesar','Chocolate Brownie','Cheesecake','Creme Brulee'],
     avoid: ['Laurent Perrier Le Cuvée Brut','Seared Scallops','Crab Cake','Burrata']
   },
   {
@@ -411,7 +411,7 @@ const PAIRING_MAP = [
     profile: ['bold','rye','herbal','anise','spirit-forward','classic'],
     excellent: ['Filet Mignon','Kansas City','Prime Tartare','Bone Marrow','Truffle Fries'],
     strong: ['Cowboy Ribeye','Porterhouse','Creamed Spinach','Grilled Caesar','Mushrooms'],
-    works: ['House Wedge','Brussels and Belly','Shrimp Bisque'],
+    works: ['House Wedge','Brussels and Belly','Shrimp Bisque','Chocolate Brownie','Cheesecake','Creme Brulee'],
     avoid: ['Laurent Perrier Le Cuvée Brut','Seared Scallops','Burrata','G.D. Vajra Moscato d\'Asti']
   },
   {
@@ -936,7 +936,7 @@ const PAIRING_MAP = [
     price: '$25 / $100',
     excellent: ['Filet Mignon','Bone-In Filet','Kansas City','The Tomahawk','Truffle Fries','Bone Marrow','Grilled Caesar'],
     strong: ['Cowboy Ribeye','Porterhouse','Brussels and Belly','Lardons','Creamed Spinach','Mushrooms'],
-    works: ['House Wedge','Shrimp Bisque','Au Gratin Potatoes'],
+    works: ['House Wedge','Shrimp Bisque','Au Gratin Potatoes','Chocolate Brownie','Cheesecake','Creme Brulee'],
     avoid: ['Prime Tartare','Crab Cake','Seared Scallops','Burrata','G.D. Vajra Moscato d\'Asti']
   },
   {
@@ -946,7 +946,7 @@ const PAIRING_MAP = [
     price: '$28 / $180',
     excellent: ['Cowboy Ribeye','Kansas City','Filet Mignon','Truffle Fries','Creamed Spinach','Brussels and Belly','Bone Marrow'],
     strong: ['The Tomahawk','Porterhouse','Au Gratin Potatoes','Mushrooms','Lobster Mac'],
-    works: ['Shrimp Bisque','Lardons','Grilled Caesar'],
+    works: ['Shrimp Bisque','Lardons','Grilled Caesar','Chocolate Brownie','Cheesecake','Creme Brulee','Carrot Cake'],
     avoid: ['Prime Tartare','Crab Cake','Seared Scallops','Shrimp Cocktail']
   },
 
@@ -1112,7 +1112,7 @@ const PAIRING_MAP = [
     price: '$145',
     excellent: ['Filet Mignon','Bone-In Filet','Kansas City','Truffle Fries','Creamed Spinach'],
     strong: ['Cowboy Ribeye','Porterhouse','Shrimp Bisque','Brussels and Belly','Lobster Mac'],
-    works: ['House Wedge','Bone Marrow','Lardons','Mushrooms'],
+    works: ['House Wedge','Bone Marrow','Lardons','Mushrooms','Chocolate Brownie','Cheesecake','Creme Brulee','Carrot Cake'],
     avoid: ['Prime Tartare','Crab Cake','Seared Scallops']
   },
   {
@@ -1152,7 +1152,7 @@ const PAIRING_MAP = [
     price: '$160',
     excellent: ['Cowboy Ribeye','Kansas City','The Tomahawk','Truffle Fries','Creamed Spinach','Porterhouse'],
     strong: ['Filet Mignon','Ghost Block Cabernet Sauvignon','Bone Marrow','Brussels and Belly','Mushrooms'],
-    works: ['Shrimp Bisque','House Wedge','Lardons','Au Gratin Potatoes'],
+    works: ['Shrimp Bisque','House Wedge','Lardons','Au Gratin Potatoes','Chocolate Brownie','Cheesecake','Creme Brulee'],
     avoid: ['Prime Tartare','Crab Cake','Seared Scallops','Burrata']
   },
   {
@@ -1262,7 +1262,7 @@ const PAIRING_MAP = [
     price: '$250',
     excellent: ['Filet Mignon','Bone-In Filet','Cowboy Ribeye','Truffle Fries','Bone Marrow','Lobster Mac'],
     strong: ['Kansas City','The Tomahawk','Creamed Spinach','Brussels and Belly','Mushrooms'],
-    works: ['House Wedge','Shrimp Bisque','Au Gratin Potatoes'],
+    works: ['House Wedge','Shrimp Bisque','Au Gratin Potatoes','Chocolate Brownie','Cheesecake','Creme Brulee','Carrot Cake'],
     avoid: ['Prime Tartare','Crab Cake','Seared Scallops','Burrata']
   },
   {
@@ -1352,7 +1352,7 @@ const PAIRING_MAP = [
     price: '$475',
     excellent: ['The Tomahawk','Cowboy Ribeye','Filet Mignon','Bone-In Filet','Truffle Fries','Bone Marrow'],
     strong: ['Kansas City','Porterhouse','Creamed Spinach','Brussels and Belly','Lobster Mac'],
-    works: ['House Wedge','Mushrooms','Au Gratin Potatoes'],
+    works: ['House Wedge','Mushrooms','Au Gratin Potatoes','Chocolate Brownie','Peanut Butter Brownie','Cheesecake','Creme Brulee'],
     avoid: ['Prime Tartare','Crab Cake','Seared Scallops','Burrata']
   },
   {
@@ -2109,58 +2109,74 @@ const PAIRING_MAP = [
 // Takes an array of selected item names, returns ranked recommendations
 // with intersection scoring across all selections.
 
-function scoreItem(candidateName, selections) {
-  let score = 0;
-  let matchCount = 0;
+// ── WEIGHTED SCORING ENGINE ───────────────────────────────────────────────────
+// selections: array of { name: string, weight: number }
+//   weight 1.0 = active/locked in
+//   weight 0.5 = considering (steers but doesn't dominate)
+//   weight 0.0 = finished+declined (excluded from scoring)
 
-  for (const sel of selections) {
+function scoreItem(candidateName, weightedSelections) {
+  let score = 0;
+  let totalWeight = 0;
+
+  for (const sel of weightedSelections) {
+    if (sel.weight <= 0) continue; // finished+declined — skip entirely
     const entry = PAIRING_MAP.find(e => {
-      if (e.spiritCluster) return e.members && e.members.includes(sel);
-      return e.name === sel;
+      if (e.spiritCluster) return e.members && e.members.includes(sel.name);
+      return e.name === sel.name;
     });
     if (!entry) continue;
 
-    if (entry.excellent.includes(candidateName)) { score += 3; matchCount++; }
-    else if (entry.strong.includes(candidateName)) { score += 2; matchCount++; }
-    else if (entry.works.includes(candidateName)) { score += 1; matchCount++; }
-    else if (entry.avoid.includes(candidateName)) { score -= 4; }
+    const w = sel.weight;
+    if (entry.avoid && entry.avoid.includes(candidateName)) { score -= 4 * w; }
+    else if (entry.excellent && entry.excellent.includes(candidateName)) { score += 3 * w; totalWeight += w; }
+    else if (entry.strong && entry.strong.includes(candidateName)) { score += 2 * w; totalWeight += w; }
+    else if (entry.works && entry.works.includes(candidateName)) { score += 1 * w; totalWeight += w; }
   }
 
-  return { score, matchCount };
+  return { score, totalWeight };
 }
 
-function getTier(score, selectionCount) {
-  if (selectionCount === 0) return null;
-  const avg = score / selectionCount;
+function getTier(score, totalWeight) {
+  if (totalWeight <= 0) return null;
+  const avg = score / totalWeight;
   if (avg >= 2.5) return 'excellent';
   if (avg >= 1.5) return 'strong';
   if (avg >= 0.5) return 'works';
-  return null; // suppress
+  return null;
 }
 
-function getRecommendations(selections, excludeCategories = [], includeOOS = false) {
-  if (!selections || selections.length === 0) return [];
+// weightedSelections: [{ name, weight }]
+// Backwards compatible: also accepts plain string array (all weight 1.0)
+function getRecommendations(selectionsRaw, excludeCategories = [], includeOOS = false) {
+  if (!selectionsRaw || selectionsRaw.length === 0) return [];
 
+  // Normalise — accept both [{name,weight}] and ['name']
+  const weighted = selectionsRaw.map(s =>
+    typeof s === 'string' ? { name: s, weight: 1.0 } : s
+  ).filter(s => s.weight > 0);
+
+  if (weighted.length === 0) return [];
+
+  // seenNames includes ALL items on the table regardless of weight
+  // so finished/declined items don't re-appear as recommendations
+  const seenNames = new Set(selectionsRaw.map(s => typeof s === 'string' ? s : s.name));
   const results = [];
-  const seen = new Set(selections);
 
   for (const entry of PAIRING_MAP) {
     if (entry.variable) continue;
     if (!includeOOS && entry.oos) continue;
     if (excludeCategories.includes(entry.category)) continue;
+    if (seenNames.has(entry.name)) continue;
 
-    const name = entry.spiritCluster ? entry.name : entry.name;
-    if (seen.has(name)) continue;
-
-    const { score, matchCount } = scoreItem(name, selections);
+    const { score, totalWeight } = scoreItem(entry.name, weighted);
     if (score <= 0) continue;
 
-    const tier = getTier(score, selections.length);
+    const tier = getTier(score, totalWeight);
     if (!tier) continue;
 
     results.push({
-      name: entry.spiritCluster ? entry.name : entry.name,
-      displayName: entry.spiritCluster ? (entry.members ? entry.members[0] + ' & more' : entry.name) : entry.name,
+      name: entry.name,
       category: entry.category,
       tier,
       score,
@@ -2173,7 +2189,6 @@ function getRecommendations(selections, excludeCategories = [], includeOOS = fal
     });
   }
 
-  // Sort: tier priority, then score
   const tierOrder = { excellent: 0, strong: 1, works: 2 };
   results.sort((a, b) => {
     if (tierOrder[a.tier] !== tierOrder[b.tier]) return tierOrder[a.tier] - tierOrder[b.tier];
