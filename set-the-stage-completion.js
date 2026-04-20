@@ -1,4 +1,4 @@
-// set-the-stage-completion.js — v4
+// set-the-stage-completion.js — v5
 
 function ftNext() {
   if (!state.ftAnswers[state.ftCurrentQ]) state.ftAnswers[state.ftCurrentQ] = 'none';
@@ -49,12 +49,12 @@ function renderFTRecs() {
     groups[rec.category].push(rec);
   });
 
-  const CATEGORY_ORDER = ['steak','starter','soup-salad','main','side','dessert','cocktail',
+  const CAT_ORDER = ['steak','starter','soup-salad','main','side','dessert','cocktail',
     'wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish',
     'japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
 
   let html = '';
-  CATEGORY_ORDER.forEach(cat => {
+  CAT_ORDER.forEach(cat => {
     if (!groups[cat]) return;
     html += '<div class="rec-group"><div class="rec-group-label">' + getCategoryForDisplay(cat) + '</div>';
     groups[cat].forEach(rec => {
@@ -71,34 +71,40 @@ function renderFTRecs() {
   document.getElementById('ft-recs-content').innerHTML = html;
   document.getElementById('ft-recs-area').scrollIntoView({behavior:'smooth',block:'start'});
 
-  // If this was for a specific seat, offer to apply to that seat
   if (state.ftForSeat !== null) {
     const seatIdx = state.ftForSeat;
     const applyBtn = document.createElement('button');
     applyBtn.className = 'btn-secondary';
     applyBtn.style.marginTop = '16px';
-    applyBtn.textContent = '← Back to Guest ' + (seatIdx + 1);
+    applyBtn.textContent = '← Back to ' + (state.activeTableId === 'bar'
+      ? 'Seat ' + (seatIdx + 1) : 'Guest ' + (seatIdx + 1));
     applyBtn.onclick = () => {
       state.ftForSeat = null;
-      showScreen('screen-session');
+      state.ftForTable = null;
+      showScreen('screen-table');
+      updateTopBar('screen-table');
       openSeatSheet(seatIdx);
     };
     document.getElementById('ft-recs-area').appendChild(applyBtn);
   }
 }
 
-// ── RESET ──────────────────────────────────────────────────────────────────────
+// ── RESET ───────────────────────────────────────────────────────────────────────
 
 function confirmReset() {
-  state.seats = [];
+  state.mode = 'server';
+  state.selectedTableIds = [];
+  state.tables = {};
+  state.activeTableId = null;
   state.activeSeat = null;
-  state.activeCourseTab = 'starters';
+  state.groupMode = false;
+  state.pendingGroupSeats = [];
   state.specials = [];
-  state.guestCount = 2;
   state.ftDepth = 'short';
   state.ftAnswers = [];
   state.ftCurrentQ = 0;
   state.ftForSeat = null;
+  state.ftForTable = null;
 
   for (let i = PAIRING_MAP.length - 1; i >= 0; i--) {
     if (PAIRING_MAP[i].special) PAIRING_MAP.splice(i, 1);
@@ -106,48 +112,80 @@ function confirmReset() {
 
   document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
   document.getElementById('seat-sheet').classList.remove('open');
-  document.getElementById('guest-count-display').textContent = '2';
   document.getElementById('ft-recs-area').style.display = 'none';
   document.getElementById('ft-short-btn').classList.add('active');
   document.getElementById('ft-deep-btn').classList.remove('active');
   document.getElementById('ft-question-area').innerHTML = '';
   document.getElementById('ft-progress').innerHTML = '';
 
+  try { localStorage.removeItem('sts_v5'); } catch(e) {}
   try { localStorage.removeItem('sts_v4'); } catch(e) {}
-  showScreen('screen-landing');
+
+  document.querySelectorAll('.mode-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.mode === 'server'));
+  document.getElementById('table-chip-section').style.display = 'block';
+
+  showScreen('screen-selection');
+  updateTopBar('screen-selection');
+  renderChips();
 }
 
-// ── RESTORE ────────────────────────────────────────────────────────────────────
+// ── RESTORE ─────────────────────────────────────────────────────────────────────
 
 function restoreSession() {
   if (!loadState()) return;
 
-  document.getElementById('guest-count-display').textContent = state.guestCount;
-
-  if (state.seats && state.seats.length > 0) {
-    // Rebuild specials
-    (state.specials || []).forEach(s => {
-      if (PAIRING_MAP.find(e => e.name === s.name && e.special)) return;
-      const entry = { name:s.name, category:s.category, profile:s.profile||[],
-        excellent:[], strong:[], works:[], avoid:[], special:true };
-      PAIRING_MAP.forEach(e => {
-        if (e.variable || e.oos) return;
-        const overlap = e.profile.filter(p => (s.profile||[]).includes(p)).length;
-        if (overlap >= 2) entry.excellent.push(e.name);
-        else if (overlap === 1) entry.strong.push(e.name);
-      });
-      PAIRING_MAP.push(entry);
+  (state.specials || []).forEach(s => {
+    if (PAIRING_MAP.find(e => e.name === s.name && e.special)) return;
+    const entry = { name:s.name, category:s.category, profile:s.profile||[],
+      excellent:[], strong:[], works:[], avoid:[], special:true };
+    PAIRING_MAP.forEach(e => {
+      if (e.variable || e.oos) return;
+      const overlap = e.profile.filter(p => (s.profile||[]).includes(p)).length;
+      if (overlap >= 2) entry.excellent.push(e.name);
+      else if (overlap === 1) entry.strong.push(e.name);
     });
+    PAIRING_MAP.push(entry);
+  });
 
-    document.getElementById('session-heading').textContent = 'Table of ' + state.guestCount;
-    showScreen('screen-session');
-    renderTable();
-    renderTableRecs();
+  const mode = state.mode || 'server';
+  document.querySelectorAll('.mode-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.mode === mode));
+  if (mode === 'bar') document.getElementById('table-chip-section').style.display = 'none';
+
+  renderChips();
+
+  if (Object.keys(state.tables || {}).length > 0) {
+    showScreen('screen-overview');
+    updateTopBar('screen-overview');
+    renderOverview();
+    if (state.activeTableId !== null) {
+      openTable(state.activeTableId);
+    }
   }
 }
 
 // ── INIT ────────────────────────────────────────────────────────────────────────
 
 window.addEventListener('DOMContentLoaded', () => {
+  renderChips();
+  restoreSession();
+});
+  renderChips();
+
+  if (Object.keys(state.tables || {}).length > 0) {
+    showScreen('screen-overview');
+    updateTopBar('screen-overview');
+    renderOverview();
+    if (state.activeTableId !== null) {
+      openTable(state.activeTableId);
+    }
+  }
+  
+
+// ── INIT ────────────────────────────────────────────────────────────────────────
+
+window.addEventListener('DOMContentLoaded', () => {
+  renderChips();
   restoreSession();
 });
