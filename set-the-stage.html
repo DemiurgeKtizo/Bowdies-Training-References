@@ -18,7 +18,7 @@ html{background:#111010}
 body{background:var(--surface);color:var(--text-primary);font-family:'Cormorant Garamond',serif;min-height:100vh;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:0.4}
 
-/* TOP BAR */
+/* ── TOP BAR ── */
 #top-bar{position:sticky;top:0;z-index:200;background:var(--charcoal);border-bottom:1px solid var(--border);padding:14px 24px 14px 28px;display:flex;align-items:center;justify-content:space-between}
 .top-bar-logo{display:inline-block;text-align:left;line-height:1}
 .top-bar-wordmark{display:block;font-family:'Josefin Sans',sans-serif;font-size:18px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-primary);line-height:1}
@@ -27,28 +27,17 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 #btn-reset,#btn-back{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px 0;transition:color 0.2s}
 #btn-reset:hover,#btn-back:hover{color:var(--text-muted)}
 
-/* SCREENS */
+/* ── SCREENS ── */
 .screen{display:none;padding:32px 24px 80px;max-width:600px;margin:0 auto}
-#screen-path{padding-top:8px}
 .screen.active{display:block;animation:fadeUp 0.3s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
-/* PATH SELECT */
+/* ── LANDING ── */
+#screen-landing{padding-top:8px}
 .stage-header{text-align:center;padding:0 0 12px}
 .stage-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-muted);margin-top:10px;letter-spacing:0.04em}
-.stage-divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:24px auto 0}
-.path-cards{display:flex;flex-direction:column;gap:12px;margin-top:20px}
-.path-card{background:var(--surface-2);border:1px solid var(--border-soft);padding:24px 20px;cursor:pointer;transition:all 0.25s;position:relative;overflow:hidden}
-.path-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity 0.25s}
-.path-card:hover,.path-card:active{background:var(--surface-3);border-color:var(--border)}
-.path-card:hover::before{opacity:1}
-.path-label{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.path-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--text-primary);margin-bottom:6px}
-.path-desc{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);line-height:1.5}
-
-/* GUEST SETUP */
-.section-heading{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border-soft)}
-.guest-count-row{display:flex;align-items:center;gap:16px;margin-bottom:32px}
+.stage-divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto}
+.guest-count-row{display:flex;align-items:center;gap:16px;margin:32px 0 8px}
 .guest-count-label{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text-muted);flex:1}
 .count-controls{display:flex;align-items:center;gap:12px}
 .count-btn{width:36px;height:36px;border:1px solid var(--border);background:transparent;color:var(--gold);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
@@ -59,70 +48,30 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .btn-secondary{width:100%;padding:14px;background:transparent;border:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.25s;margin-top:8px;border-radius:0}
 .btn-secondary:hover{border-color:var(--border);color:var(--text-muted)}
 
-/* GUEST TABS */
-#guest-tab-bar{display:none;position:sticky;top:57px;z-index:100;background:var(--surface);border-bottom:1px solid var(--border-soft);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-#guest-tab-bar::-webkit-scrollbar{display:none}
-#guest-tab-bar.visible{display:flex}
-.guest-tab-inner{display:flex;gap:0;padding:0 8px;min-width:max-content;width:100%}
-.guest-tab{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:12px 16px;background:transparent;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:all 0.2s;white-space:nowrap}
-.guest-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
-.guest-tab.has-items{color:var(--text-muted)}
-.guest-tab.active.has-items{color:var(--gold)}
-.table-tab{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:12px 16px;background:transparent;border:none;border-bottom:2px solid transparent;border-left:1px solid var(--border-soft);cursor:pointer;transition:all 0.2s;margin-left:auto}
-.table-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+/* ── SESSION SCREEN ── */
+#screen-session{padding:0 0 80px;max-width:600px;margin:0 auto}
+.session-heading{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);padding:16px 24px 12px;border-bottom:1px solid var(--border-soft)}
 
-/* SEARCH */
-.search-wrap{position:relative;margin-bottom:12px}
-.search-input{width:100%;background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:14px 16px;outline:none;transition:border-color 0.2s;border-radius:0;-webkit-appearance:none;appearance:none}
-.search-input::placeholder{color:var(--text-dim)}
-.search-input:focus{border-color:var(--gold-dim)}
-.search-results{position:absolute;top:100%;left:0;right:0;background:var(--surface-3);border:1px solid var(--border);border-top:none;max-height:260px;overflow-y:auto;z-index:150;display:none}
-.search-results.visible{display:block}
-.search-result-item{padding:12px 16px;cursor:pointer;border-bottom:1px solid var(--border-soft);transition:background 0.15s;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.search-result-item:hover{background:var(--surface-2)}
-.search-result-item:last-child{border-bottom:none}
-.result-name{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text-primary)}
-.result-cat{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0}
+/* ── TABLE CANVAS ── */
+#table-canvas-wrap{padding:20px 24px;display:flex;align-items:center;justify-content:center;background:var(--surface)}
+#table-svg{width:100%;max-width:340px;display:block;margin:0 auto}
 
-/* ADD SPECIAL */
-.add-special-link{display:inline-block;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:6px 0;margin-bottom:16px;transition:color 0.2s}
-.add-special-link:hover{color:var(--gold)}
-
-/* ITEM STATE DISPLAY */
-.items-section{margin-bottom:20px}
-.items-section-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:var(--text-dim);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border-soft)}
-.items-section-label.considering-label{color:var(--text-dim)}
-.item-card{background:var(--surface-2);border:1px solid var(--border-soft);margin-bottom:6px;overflow:hidden}
-.item-row{display:flex;align-items:center;padding:13px 16px;gap:12px}
-.item-name{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.2;flex:1}
-.item-name.state-locked{color:var(--text-primary)}
-.item-name.state-finished{color:var(--text-dim);text-decoration:line-through;text-decoration-color:rgba(90,82,72,0.6)}
-.item-name.state-considering{color:var(--text-muted);font-style:italic}
-.item-cat{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);margin-top:2px}
-.item-finish-bar{width:100%;padding:9px 16px;background:transparent;border:none;border-top:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;cursor:pointer;text-align:center;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:8px}
-.item-finish-bar::before{content:'';display:block;width:4px;height:4px;border-radius:50%;background:currentColor;opacity:0.4}
-.item-finish-bar:hover{background:rgba(201,168,76,0.05);color:var(--gold-dim);border-top-color:var(--border)}
-.item-remove-btn{color:var(--text-dim);font-size:18px;font-weight:300;background:transparent;border:none;cursor:pointer;padding:2px 4px;line-height:1;transition:color 0.15s;flex-shrink:0}
-.item-remove-btn:hover{color:var(--text-muted)}
-.empty-state{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-dim);text-align:center;padding:28px 0}
-
-/* COURSE TAB BAR */
-#course-tab-bar{margin:0 0 20px;border-bottom:1px solid var(--border-soft);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;display:none}
+/* ── RECS PANEL (below table) ── */
+#recs-wrap{padding:0 24px 24px;border-top:1px solid var(--border-soft)}
+.recs-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0 12px}
+.recs-bar-label{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold)}
+.recs-bar-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:var(--text-dim)}
+#course-tab-bar{margin:0 0 16px;border-bottom:1px solid var(--border-soft);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 #course-tab-bar::-webkit-scrollbar{display:none}
 .course-tab-inner{display:flex;min-width:max-content}
 .course-tab{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:10px 14px;background:transparent;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:all 0.2s;white-space:nowrap}
 .course-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
-.course-tab.dim{opacity:0.35;pointer-events:none}
-
-/* RECS */
-#recs-panel{margin-top:8px}
-.recs-heading{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between}
-.recs-count{color:var(--text-dim);font-size:8px}
-.rec-group{margin-bottom:16px;border:1px solid var(--border-soft);overflow:hidden}
+.course-tab.dim{opacity:0.3;pointer-events:none}
+.empty-state{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-dim);text-align:center;padding:28px 0}
+.rec-group{margin-bottom:12px;border:1px solid var(--border-soft);overflow:hidden}
 .rec-group-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-dim);padding:10px 16px;background:var(--surface);border-bottom:1px solid var(--border-soft)}
 .rec-item{display:flex;align-items:center;gap:14px;padding:14px 16px;border-bottom:1px solid var(--border-soft);cursor:pointer;background:var(--surface-2);width:100%;text-align:left;border-radius:0;transition:all 0.15s;border-left:2px solid transparent}
 .rec-item:last-child{border-bottom:none}
-.rec-item:first-child{border-top:none}
 .rec-item:hover{background:var(--surface-3);border-left-color:var(--gold-dim)}
 .rec-item.already-added{background:rgba(201,168,76,0.06);border-left-color:var(--gold)}
 .rec-item.already-added .rec-name{color:var(--gold-light)}
@@ -131,62 +80,69 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .tier-pip.strong{background:var(--tier-strong)}
 .tier-pip.works{background:var(--tier-works)}
 .rec-info{flex:1;min-width:0}
-.rec-name{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text-primary);line-height:1.2;transition:color 0.2s}
+.rec-name{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text-primary);line-height:1.2}
 .rec-meta{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);margin-top:3px}
-.tier-badge{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.2em;text-transform:uppercase;flex-shrink:0;padding:0}
+.tier-badge{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.2em;text-transform:uppercase;flex-shrink:0}
 .tier-badge.excellent{color:var(--tier-excellent)}
 .tier-badge.strong{color:var(--tier-strong)}
 .tier-badge.works{color:var(--tier-works)}
-.legend{display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap}
-.legend-item{display:flex;align-items:center;gap:6px;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim)}
 
-/* VARIABLE PROMPT */
-.variable-prompt{background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--gold-dim);padding:16px;margin-bottom:16px;display:none}
+/* ── SEAT BOTTOM SHEET ── */
+#seat-sheet{position:fixed;inset:0;z-index:400;display:none;align-items:flex-end;justify-content:center}
+#seat-sheet.open{display:flex}
+#seat-sheet-backdrop{position:absolute;inset:0;background:rgba(17,16,16,0.6)}
+#seat-sheet-panel{position:relative;background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;max-height:82vh;display:flex;flex-direction:column;animation:slideUp 0.3s ease}
+@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+.sheet-handle{width:36px;height:3px;background:var(--border);border-radius:2px;margin:12px auto 0;flex-shrink:0}
+.sheet-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid var(--border-soft);flex-shrink:0}
+.sheet-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--text-primary)}
+.sheet-close{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px}
+.sheet-close:hover{color:var(--text-muted)}
+.sheet-body{overflow-y:auto;flex:1;padding:16px 20px 32px}
+
+/* ── SEARCH ── */
+.search-wrap{position:relative;margin-bottom:8px}
+.search-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:13px 16px;outline:none;transition:border-color 0.2s;border-radius:0;-webkit-appearance:none;appearance:none}
+.search-input::placeholder{color:var(--text-dim)}
+.search-input:focus{border-color:var(--gold-dim)}
+.search-results{position:absolute;top:100%;left:0;right:0;background:var(--surface-3);border:1px solid var(--border);border-top:none;max-height:220px;overflow-y:auto;z-index:150;display:none}
+.search-results.visible{display:block}
+.search-result-item{padding:12px 16px;cursor:pointer;border-bottom:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between;gap:12px;transition:background 0.15s}
+.search-result-item:hover{background:var(--surface-2)}
+.search-result-item:last-child{border-bottom:none}
+.result-name{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text-primary)}
+.result-cat{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0}
+.add-special-link{display:inline-block;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:6px 0;margin-bottom:14px;transition:color 0.2s}
+.add-special-link:hover{color:var(--gold)}
+
+/* ── SEAT ITEMS ── */
+.sheet-items-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--border-soft)}
+.item-card{background:var(--surface-3);border:1px solid var(--border-soft);margin-bottom:6px;overflow:hidden}
+.item-row{display:flex;align-items:center;padding:13px 16px;gap:12px}
+.item-name{font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.2;flex:1}
+.item-name.state-locked{color:var(--text-primary)}
+.item-name.state-finished{color:var(--text-dim);text-decoration:line-through;text-decoration-color:rgba(90,82,72,0.6)}
+.item-name.state-considering{color:var(--text-muted);font-style:italic}
+.item-cat{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);margin-top:2px}
+.item-finish-bar{width:100%;padding:9px 16px;background:transparent;border:none;border-top:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;cursor:pointer;text-align:center;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.item-finish-bar::before{content:'';display:block;width:4px;height:4px;border-radius:50%;background:currentColor;opacity:0.4}
+.item-finish-bar:hover{background:rgba(201,168,76,0.05);color:var(--gold-dim)}
+.item-remove-btn{color:var(--text-dim);font-size:18px;font-weight:300;background:transparent;border:none;cursor:pointer;padding:2px 4px;line-height:1;transition:color 0.15s;flex-shrink:0}
+.item-remove-btn:hover{color:var(--text-muted)}
+.first-timer-link{display:flex;align-items:center;gap:8px;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;border-top:1px solid var(--border-soft);cursor:pointer;padding:12px 16px;width:100%;transition:color 0.2s;margin-top:8px}
+.first-timer-link:hover{color:var(--gold-dim)}
+.first-timer-link::before{content:'✦';font-size:8px;opacity:0.5}
+
+/* ── VARIABLE PROMPT ── */
+.variable-prompt{background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--gold-dim);padding:14px 16px;margin-bottom:12px;display:none}
 .variable-prompt.visible{display:block}
 .variable-prompt-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
 .variable-input{width:100%;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:16px;padding:6px 0;outline:none}
 .variable-input::placeholder{color:var(--text-dim)}
 
-/* TABLE VIEW */
-.table-view-guest{margin-bottom:20px;background:var(--surface-2);border:1px solid var(--border-soft);padding:16px}
-.table-guest-label{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.table-item-list{display:flex;flex-wrap:wrap;gap:6px}
-.table-item-chip{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--text-muted);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);padding:3px 10px}
-.table-item-chip.finished{opacity:0.45;text-decoration:line-through}
-.table-item-chip.considering{font-style:italic;opacity:0.6}
-.table-empty{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim)}
-.table-recs-divider{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin:28px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--border-soft)}
-
-/* MODALS */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(17,16,16,0.85);z-index:500;align-items:flex-end;justify-content:center}
-.modal-overlay.open{display:flex}
-.modal-sheet{background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;padding:28px 24px 44px;animation:slideUp 0.3s ease}
-@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
-.modal-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text-primary);margin-bottom:4px}
-.modal-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:20px;line-height:1.5}
-.modal-item-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--gold);margin-bottom:20px}
-.modal-options{display:flex;flex-direction:column;gap:8px}
-.modal-option{padding:15px 16px;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-size:16px;cursor:pointer;transition:all 0.2s;text-align:left;border-radius:0;width:100%}
-.modal-option:hover{border-color:var(--border);color:var(--text-primary)}
-.modal-option.primary{border-color:var(--gold-dim);color:var(--gold);background:rgba(201,168,76,0.04)}
-.modal-option.primary:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
-
-/* SPECIALS MODAL */
-.modal-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block}
-.modal-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;transition:border-color 0.2s}
-.modal-input:focus{border-color:var(--gold-dim)}
-.modal-field{margin-bottom:16px}
-.tag-picker{display:flex;flex-wrap:wrap;gap:6px}
-.tag-pick{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:5px 10px;cursor:pointer;transition:all 0.15s;-webkit-appearance:none;appearance:none;border-radius:0}
-.tag-pick.selected{color:var(--gold);border-color:var(--gold-dim);background:rgba(201,168,76,0.08)}
-.modal-actions{display:flex;gap:10px;margin-top:20px}
-.modal-btn{flex:1;padding:14px;background:transparent;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
-.modal-btn-confirm{border:1px solid var(--gold-dim);color:var(--gold)}
-.modal-btn-confirm:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
-.modal-btn-cancel{border:1px solid var(--border-soft);color:var(--text-dim)}
-.modal-btn-cancel:hover{border-color:var(--border);color:var(--text-muted)}
-
-/* FIRST TIMER */
+/* ── FIRST TIMER SCREEN ── */
+#screen-firsttimer{padding:32px 24px 80px;max-width:600px;margin:0 auto}
+.section-heading{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border-soft)}
 .ft-depth-picker{display:flex;gap:10px;margin-bottom:28px}
 .ft-depth-btn{flex:1;padding:16px;background:transparent;border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
 .ft-depth-btn.active{border-color:var(--gold-dim);color:var(--gold);background:rgba(201,168,76,0.06)}
@@ -202,11 +158,37 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .ft-progress-pip.active{background:var(--gold)}
 .ft-nav{display:flex;gap:10px;margin-top:20px}
 
-/* TOAST */
-#add-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%);background:var(--surface-3);border:1px solid var(--border);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;padding:10px 20px;border-radius:2px;z-index:600;opacity:0;transition:opacity 0.25s;pointer-events:none;white-space:nowrap;max-width:90vw;text-align:center}
-#add-toast.show{opacity:1}
+/* ── MODALS ── */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(17,16,16,0.85);z-index:500;align-items:flex-end;justify-content:center}
+.modal-overlay.open{display:flex}
+.modal-sheet{background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;padding:28px 24px 44px;animation:slideUp 0.3s ease}
+.modal-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--text-primary);margin-bottom:4px}
+.modal-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:20px;line-height:1.5}
+.modal-item-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--gold);margin-bottom:20px}
+.modal-options{display:flex;flex-direction:column;gap:8px}
+.modal-option{padding:15px 16px;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-size:16px;cursor:pointer;transition:all 0.2s;text-align:left;border-radius:0;width:100%}
+.modal-option:hover{border-color:var(--border);color:var(--text-primary)}
+.modal-option.primary{border-color:var(--gold-dim);color:var(--gold);background:rgba(201,168,76,0.04)}
+.modal-option.primary:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
+.modal-actions{display:flex;gap:10px;margin-top:20px}
+.modal-btn{flex:1;padding:14px;background:transparent;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
+.modal-btn-confirm{border:1px solid var(--gold-dim);color:var(--gold)}
+.modal-btn-confirm:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
+.modal-btn-cancel{border:1px solid var(--border-soft);color:var(--text-dim)}
+.modal-btn-cancel:hover{border-color:var(--border);color:var(--text-muted)}
+.modal-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block}
+.modal-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;transition:border-color 0.2s}
+.modal-input:focus{border-color:var(--gold-dim)}
+.modal-field{margin-bottom:16px}
+.tag-picker{display:flex;flex-wrap:wrap;gap:6px}
+.tag-pick{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:5px 10px;cursor:pointer;transition:all 0.15s;border-radius:0}
+.tag-pick.selected{color:var(--gold);border-color:var(--gold-dim);background:rgba(201,168,76,0.08)}
 
-/* FOOTER */
+/* ── TOAST ── */
+#add-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%);background:var(--surface-3);border:1px solid var(--border);color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;padding:10px 20px;border-radius:2px;z-index:600;opacity:0;transition:opacity 0.25s;pointer-events:none;white-space:nowrap;max-width:90vw;text-align:center}
+#add-toast.show{opacity:1;pointer-events:auto}
+
+/* ── FOOTER ── */
 footer{text-align:center;padding:40px;background:var(--surface)}
 footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim)}
 .footer-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);margin:12px auto}
@@ -225,98 +207,44 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
-<div id="guest-tab-bar">
-  <div class="guest-tab-inner" id="guest-tabs-inner"></div>
-</div>
-
-<!-- SCREEN 0: PATH SELECT -->
-<div id="screen-path" class="screen active">
+<!-- LANDING -->
+<div id="screen-landing" class="screen active">
   <div class="stage-header">
     <div class="stage-divider"></div>
     <p class="stage-sub" style="margin-top:10px">Guide your guests to their perfect evening.</p>
     <div class="stage-divider" style="margin-top:10px"></div>
   </div>
-  <div class="path-cards">
-    <div class="path-card" onclick="selectPath('drinks')">
-      <div class="path-label">Path One</div>
-      <div class="path-name">Drinks First</div>
-      <div class="path-desc">Start with what's in the glass. Input drinks ordered and build the perfect meal around them.</div>
-    </div>
-    <div class="path-card" onclick="selectPath('food')">
-      <div class="path-label">Path Two</div>
-      <div class="path-name">Food First</div>
-      <div class="path-desc">Start with what's on the plate. Input food selections and find the ideal pairings across the bar.</div>
-    </div>
-    <div class="path-card" onclick="selectPath('firsttimer')">
-      <div class="path-label">Path Three</div>
-      <div class="path-name">First Timer</div>
-      <div class="path-desc">A guest who needs guidance. Answer a few questions on their behalf and let the recommendations do the talking.</div>
-    </div>
-  </div>
-</div>
-
-<!-- SCREEN 1: GUEST SETUP -->
-<div id="screen-setup" class="screen">
-  <div class="section-heading">Table Setup</div>
   <div class="guest-count-row">
-    <div class="guest-count-label">How many guests at this table?</div>
+    <div class="guest-count-label">How many guests tonight?</div>
     <div class="count-controls">
       <button class="count-btn" onclick="adjustGuests(-1)">−</button>
-      <div class="count-display" id="guest-count-display">1</div>
+      <div class="count-display" id="guest-count-display">2</div>
       <button class="count-btn" onclick="adjustGuests(1)">+</button>
     </div>
   </div>
-  <button class="btn-primary" onclick="confirmSetup()">Begin Session</button>
-  <button class="btn-secondary" onclick="showScreen('screen-path')">← Back</button>
+  <button class="btn-primary" onclick="beginSession()">Set The Stage</button>
+  <button class="btn-secondary" onclick="beginFirstTimer()">✦ First Timer</button>
 </div>
 
-<!-- SCREEN 2: SESSION -->
+<!-- SESSION -->
 <div id="screen-session" class="screen">
-  <div class="section-heading" id="session-heading">Add to Order</div>
-
-  <div class="search-wrap">
-    <input type="text" class="search-input" id="main-search"
-           placeholder="Search menu items…"
-           autocomplete="off" autocorrect="off" spellcheck="false"
-           oninput="handleSearch(this.value)">
-    <div class="search-results" id="search-results"></div>
-  </div>
-
-  <div id="course-tab-bar">
-    <div class="course-tab-inner" id="course-tab-inner"></div>
-  </div>
-
-  <button class="add-special-link" onclick="openSpecialsModal()">+ Today's Special</button>
-
-  <div class="variable-prompt" id="variable-prompt">
-    <div class="variable-prompt-label" id="variable-prompt-label">Today's Preparation</div>
-    <input type="text" class="variable-input" id="variable-input"
-           placeholder="Describe the preparation…"
-           oninput="handleVariableInput(this.value)">
-  </div>
-
-  <div id="selected-display"></div>
-
-  <div id="recs-panel">
-    <div class="empty-state" id="recs-empty">Add items above to see pairing recommendations.</div>
-    <div id="recs-content"></div>
+  <div class="session-heading" id="session-heading">Table of 2</div>
+  <div id="table-canvas-wrap"></div>
+  <div id="recs-wrap">
+    <div class="recs-bar">
+      <span class="recs-bar-label">What's Next</span>
+      <span class="recs-bar-sub" id="recs-bar-sub"></span>
+    </div>
+    <div id="course-tab-bar" style="display:none">
+      <div class="course-tab-inner" id="course-tab-inner"></div>
+    </div>
+    <div id="recs-content">
+      <div class="empty-state">Tap a seat to add items and see recommendations.</div>
+    </div>
   </div>
 </div>
 
-<!-- SCREEN 3: TABLE VIEW -->
-<div id="screen-table" class="screen">
-  <div class="section-heading">Full Table View</div>
-  <div id="table-guest-list"></div>
-  <div class="table-recs-divider">Table-Level Recommendations</div>
-  <div class="legend">
-    <div class="legend-item"><div class="tier-pip excellent"></div> Excellent</div>
-    <div class="legend-item"><div class="tier-pip strong"></div> Strong</div>
-    <div class="legend-item"><div class="tier-pip works"></div> Works</div>
-  </div>
-  <div id="table-recs-content"></div>
-</div>
-
-<!-- SCREEN 4: FIRST TIMER -->
+<!-- FIRST TIMER -->
 <div id="screen-firsttimer" class="screen">
   <div class="section-heading">First Timer — Guest Profile</div>
   <div class="ft-depth-picker">
@@ -330,17 +258,45 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     <button class="btn-primary" id="ft-next-btn" onclick="ftNext()">Next →</button>
   </div>
   <div id="ft-recs-area" style="margin-top:32px;display:none">
-    <div class="recs-heading">Recommendations<span class="recs-count" id="ft-recs-count"></span></div>
-    <div class="legend">
-      <div class="legend-item"><div class="tier-pip excellent"></div> Excellent</div>
-      <div class="legend-item"><div class="tier-pip strong"></div> Strong</div>
-      <div class="legend-item"><div class="tier-pip works"></div> Works</div>
+    <div style="font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between">
+      Recommendations<span id="ft-recs-count" style="color:var(--text-dim);font-size:8px"></span>
     </div>
     <div id="ft-recs-content"></div>
   </div>
+  <button class="btn-secondary" onclick="showScreen('screen-landing')" style="margin-top:24px">← Back</button>
 </div>
 
-<!-- LOCK IT IN MODAL -->
+<!-- SEAT BOTTOM SHEET -->
+<div id="seat-sheet">
+  <div id="seat-sheet-backdrop" onclick="closeSeatSheet()"></div>
+  <div id="seat-sheet-panel">
+    <div class="sheet-handle"></div>
+    <div class="sheet-header">
+      <div class="sheet-title" id="sheet-title">Guest 1</div>
+      <button class="sheet-close" onclick="closeSeatSheet()">Close</button>
+    </div>
+    <div class="sheet-body">
+      <div class="search-wrap">
+        <input type="text" class="search-input" id="main-search"
+               placeholder="Search menu items…"
+               autocomplete="off" autocorrect="off" spellcheck="false"
+               oninput="handleSearch(this.value)">
+        <div class="search-results" id="search-results"></div>
+      </div>
+      <button class="add-special-link" onclick="openSpecialsModal()">+ Today's Special</button>
+      <div class="variable-prompt" id="variable-prompt">
+        <div class="variable-prompt-label" id="variable-prompt-label">Today's Preparation</div>
+        <input type="text" class="variable-input" id="variable-input"
+               placeholder="Describe the preparation…"
+               oninput="handleVariableInput(this.value)">
+      </div>
+      <div id="seat-items-display"></div>
+      <button class="first-timer-link" onclick="openFirstTimerForSeat()">This guest is a first timer</button>
+    </div>
+  </div>
+</div>
+
+<!-- LOCK MODAL -->
 <div class="modal-overlay" id="lock-modal">
   <div class="modal-sheet">
     <div class="modal-title">Lock it in?</div>
@@ -353,16 +309,16 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
-<!-- FINISH ITEM MODAL (drink) -->
+<!-- FINISH DRINK MODAL -->
 <div class="modal-overlay" id="finish-drink-modal">
   <div class="modal-sheet">
     <div class="modal-title" id="finish-drink-title">That one's done.</div>
-    <div class="modal-sub" id="finish-drink-sub">What's next for your guest?</div>
+    <div class="modal-sub" id="finish-drink-sub">What's next?</div>
     <div class="modal-options" id="finish-drink-options"></div>
   </div>
 </div>
 
-<!-- FINISH ITEM MODAL (food) -->
+<!-- FINISH FOOD MODAL -->
 <div class="modal-overlay" id="finish-food-modal">
   <div class="modal-sheet">
     <div class="modal-title" id="finish-food-title">Course down.</div>
@@ -371,11 +327,11 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
-<!-- COURSE PICKER SHEET -->
+<!-- COURSE PICKER -->
 <div class="modal-overlay" id="course-picker-modal">
   <div class="modal-sheet">
     <div class="modal-title" id="course-picker-title">What's next?</div>
-    <div class="modal-sub" id="course-picker-sub">Select a course to see recommendations.</div>
+    <div class="modal-sub">Select a course to see recommendations.</div>
     <div class="modal-options" id="course-picker-options"></div>
   </div>
 </div>
@@ -384,7 +340,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 <div class="modal-overlay" id="specials-modal">
   <div class="modal-sheet">
     <div class="modal-title">Add Today's Special</div>
-    <div class="modal-sub" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:20px">Name it and tag the profile — the engine handles the rest.</div>
+    <div class="modal-sub">Name it and tag the profile — the engine handles the rest.</div>
     <div class="modal-field">
       <label class="modal-label">Item Name</label>
       <input type="text" class="modal-input" id="special-name" placeholder="e.g. Pan-Seared Halibut" autocomplete="off">
@@ -432,69 +388,65 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 <script src="pairing-map.js?v=9"></script>
 <script>
 // ── CONSTANTS ──────────────────────────────────────────────────────────────────
-
 const DRINK_CATS = ['cocktail','wine-sparkling','wine-white','wine-red','wine-dessert',
-  'bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
-const FOOD_CATS  = ['steak','starter','soup-salad','main','side','dessert'];
+  'bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka',
+  'gin','rum','cognac','liqueur','singlemalt'];
+const FOOD_CATS = ['steak','starter','soup-salad','main','side','dessert'];
 const CATEGORY_ORDER = ['steak','starter','soup-salad','main','side','dessert','cocktail',
   'wine-sparkling','wine-white','wine-red','wine-dessert','bourbon','rye','scotch','irish',
   'japanese','canadian','tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
-
-// Item states
-const STATE_LOCKED      = 'locked';      // weight 1.0 — ordered, on the table
-const STATE_CONSIDERING = 'considering'; // weight 0.5 — steers recs, removable
-const STATE_FINISHED    = 'finished';    // weight depends on round decision
-
-// Course tabs
+const STATE_LOCKED      = 'locked';
+const STATE_CONSIDERING = 'considering';
+const STATE_FINISHED    = 'finished';
 const COURSE_TABS = [
-  { id: 'starters',  label: 'To Start',       cats: ['starter'] },
-  { id: 'soups',     label: 'Soups & Salads',  cats: ['soup-salad'] },
-  { id: 'entrees',   label: 'Entrées & Sides', cats: ['steak','main','side'] },
-  { id: 'dessert',   label: 'Dessert',         cats: ['dessert','wine-dessert'] },
-  { id: 'drinks',    label: 'Drinks',          cats: DRINK_CATS },
-  { id: 'all-food',  label: 'All Food',        cats: FOOD_CATS },
+  { id:'starters', label:'To Start',       cats:['starter'] },
+  { id:'soups',    label:'Soups & Salads',  cats:['soup-salad'] },
+  { id:'entrees',  label:'Entrées & Sides', cats:['steak','main','side'] },
+  { id:'dessert',  label:'Dessert',         cats:['dessert','wine-dessert'] },
+  { id:'drinks',   label:'Drinks',          cats:DRINK_CATS },
+  { id:'all-food', label:'All Food',        cats:FOOD_CATS },
 ];
 
 // ── STATE ──────────────────────────────────────────────────────────────────────
-
 const state = {
-  path: null,
-  guestCount: 1,
-  activeGuest: 0,
-  activeView: 'guest',
-  // Each guest: { items: [{name, category, state, finishedWeight}], activeCourseTab }
-  guests: [],
+  guestCount: 2,
+  activeSeat: null,       // 0-indexed
+  // seats: [{ items:[{name,category,state,finishedWeight,pendingReplacement?}] }]
+  seats: [],
+  activeCourseTab: 'starters',
   specials: [],
   ftDepth: 'short',
   ftAnswers: [],
   ftCurrentQ: 0,
+  ftForSeat: null,
 };
 
-// ── ITEM WEIGHT ────────────────────────────────────────────────────────────────
-// Returns the scoring weight for an item based on its state and finishedWeight
+// ── WEIGHTS ────────────────────────────────────────────────────────────────────
 function itemWeight(item) {
   if (item.state === STATE_CONSIDERING) return 0.5;
   if (item.state === STATE_FINISHED) return item.finishedWeight || 0;
-  return 1.0; // locked
+  return 1.0;
 }
 
-// Build weighted selections array for scoring engine
-function getWeightedSelections(guest) {
-  // Include ALL items — weight-0 items are excluded from scoring
-  // but kept so the engine's seenNames suppresses them from appearing as recs
-  return (guest.items || []).map(item => ({
-    name: item.name,
-    weight: itemWeight(item)
-  }));
+// All items across all seats, weighted — for table-level recs
+function getTableWeightedSelections() {
+  const map = {};
+  state.seats.forEach(seat => {
+    (seat.items || []).forEach(item => {
+      const w = itemWeight(item);
+      if (!map[item.name] || w > map[item.name]) map[item.name] = w;
+    });
+  });
+  return Object.entries(map).map(([name, weight]) => ({ name, weight }));
 }
 
 // ── PERSISTENCE ────────────────────────────────────────────────────────────────
 function saveState() {
-  try { localStorage.setItem('sts_session', JSON.stringify(state)); } catch(e) {}
+  try { localStorage.setItem('sts_v4', JSON.stringify(state)); } catch(e) {}
 }
 function loadState() {
   try {
-    const raw = localStorage.getItem('sts_session');
+    const raw = localStorage.getItem('sts_v4');
     if (!raw) return false;
     Object.assign(state, JSON.parse(raw));
     return true;
@@ -509,109 +461,279 @@ function showScreen(id) {
   window.scrollTo(0, 0);
 }
 
-// ── PATH ───────────────────────────────────────────────────────────────────────
-function selectPath(path) {
-  state.path = path;
-  if (path === 'firsttimer') { showScreen('screen-firsttimer'); initFirstTimer(); }
-  else showScreen('screen-setup');
-}
-
-// ── GUEST SETUP ────────────────────────────────────────────────────────────────
+// ── GUEST COUNT ────────────────────────────────────────────────────────────────
 function adjustGuests(d) {
   state.guestCount = Math.max(1, Math.min(12, state.guestCount + d));
   document.getElementById('guest-count-display').textContent = state.guestCount;
 }
 
-function makeGuest() {
-  return {
-    items: [],
-    activeCourseTab: state.path === 'drinks' ? 'starters' : 'drinks'
-  };
-}
-
-function confirmSetup() {
-  state.guests = Array.from({ length: state.guestCount }, makeGuest);
-  state.activeGuest = 0;
-  state.activeView = 'guest';
-  buildGuestTabs();
-  document.getElementById('guest-tab-bar').classList.add('visible');
+// ── BEGIN SESSION ──────────────────────────────────────────────────────────────
+function beginSession() {
+  state.seats = Array.from({ length: state.guestCount }, () => ({ items: [] }));
+  state.activeSeat = null;
+  state.activeCourseTab = 'starters';
+  document.getElementById('session-heading').textContent =
+    'Table of ' + state.guestCount;
   showScreen('screen-session');
-  updateSessionHeading();
-  renderItems();
-  renderRecs();
+  renderTable();
+  renderTableRecs();
   saveState();
 }
 
-// ── GUEST TABS ─────────────────────────────────────────────────────────────────
-function buildGuestTabs() {
-  const inner = document.getElementById('guest-tabs-inner');
-  inner.innerHTML = '';
-  state.guests.forEach((g, i) => {
-    const btn = document.createElement('button');
-    btn.className = 'guest-tab' + (i === state.activeGuest ? ' active' : '');
-    if (g.items && g.items.length > 0) btn.classList.add('has-items');
-    btn.textContent = 'Guest ' + (i + 1);
-    btn.onclick = () => switchGuest(i);
-    inner.appendChild(btn);
-  });
-  const tb = document.createElement('button');
-  tb.className = 'table-tab' + (state.activeView === 'table' ? ' active' : '');
-  tb.textContent = 'Full Table';
-  tb.onclick = () => switchToTable();
-  inner.appendChild(tb);
+// ── TABLE RENDER ───────────────────────────────────────────────────────────────
+function renderTable() {
+  const n = state.guestCount;
+  const wrap = document.getElementById('table-canvas-wrap');
+  let svg = document.getElementById('table-svg');
+  if (!svg) {
+    const old = document.getElementById('table-canvas');
+    if (old) old.remove();
+    svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    svg.id = 'table-svg';
+    svg.setAttribute('viewBox','0 0 340 340');
+    svg.setAttribute('xmlns','http://www.w3.org/2000/svg');
+    wrap.appendChild(svg);
+  }
+  svg.innerHTML = '';
+  if (n === 1) renderBarSeatSVG(svg);
+  else renderRoundTableSVG(svg, n);
 }
 
-function switchGuest(i) {
-  state.activeGuest = i;
-  state.activeView = 'guest';
-  buildGuestTabs();
-  showScreen('screen-session');
-  updateSessionHeading();
-  renderItems();
-  renderRecs();
+function renderBarSeatSVG(svg) {
+  const seat = state.seats[0];
+  const hasItems = seat.items.some(i => i.state === STATE_LOCKED || i.state === STATE_CONSIDERING);
+  const allFinished = seat.items.length > 0 && seat.items.every(i => i.state === STATE_FINISHED);
+  const isActive = state.activeSeat === 0;
+  const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.innerHTML = `
+    <rect x="110" y="230" width="120" height="40" rx="3"
+      fill="#1E1B18" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
+    <text x="170" y="255" text-anchor="middle"
+      font-family="Josefin Sans, sans-serif" font-size="8" letter-spacing="3"
+      fill="#5A5248">BAR</text>`;
+  svg.appendChild(g);
+  drawSeatSVG(svg, 170, 148, 0, hasItems, isActive, allFinished, 1);
 }
 
-function switchToTable() {
-  state.activeView = 'table';
-  buildGuestTabs();
-  showScreen('screen-table');
-  renderTableView();
+function renderRoundTableSVG(svg, n) {
+  const CX = 170, CY = 170, TABLE_R = 82, ORBIT_R = 126;
+
+  // Outer decorative ring
+  const outerRing = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  outerRing.setAttribute('cx',CX); outerRing.setAttribute('cy',CY);
+  outerRing.setAttribute('r', TABLE_R+4);
+  outerRing.setAttribute('fill','none');
+  outerRing.setAttribute('stroke','rgba(201,168,76,0.08)');
+  outerRing.setAttribute('stroke-width','1');
+  svg.appendChild(outerRing);
+
+  // Main table surface
+  const table = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  table.setAttribute('cx',CX); table.setAttribute('cy',CY);
+  table.setAttribute('r', TABLE_R);
+  table.setAttribute('fill','#1E1B18');
+  table.setAttribute('stroke','rgba(201,168,76,0.14)');
+  table.setAttribute('stroke-width','1');
+  svg.appendChild(table);
+
+  // Inner cloth ring (dashed)
+  const cloth = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  cloth.setAttribute('cx',CX); cloth.setAttribute('cy',CY);
+  cloth.setAttribute('r', TABLE_R-12);
+  cloth.setAttribute('fill','none');
+  cloth.setAttribute('stroke','rgba(201,168,76,0.07)');
+  cloth.setAttribute('stroke-width','1');
+  cloth.setAttribute('stroke-dasharray','3 7');
+  svg.appendChild(cloth);
+
+  // Table label
+  const lblG = document.createElementNS('http://www.w3.org/2000/svg','g');
+  lblG.innerHTML = `
+    <text x="${CX}" y="${CY+9}" text-anchor="middle"
+      font-family="Playfair Display, serif" font-size="24" font-weight="400"
+      fill="#5A5248">${n}</text>
+    <text x="${CX}" y="${CY+23}" text-anchor="middle"
+      font-family="Josefin Sans, sans-serif" font-size="7" letter-spacing="3"
+      fill="#5A5248" opacity="0.6">GUESTS</text>`;
+  svg.appendChild(lblG);
+
+  // Seats
+  for (let i = 0; i < n; i++) {
+    const angle = (i / n) * 2 * Math.PI - Math.PI / 2;
+    const x = CX + ORBIT_R * Math.cos(angle);
+    const y = CY + ORBIT_R * Math.sin(angle);
+    const seat = state.seats[i];
+    const hasItems = seat.items.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING);
+    const allFinished = seat.items.length > 0 && seat.items.every(it => it.state === STATE_FINISHED);
+    const isActive = state.activeSeat === i;
+    drawSeatSVG(svg, x, y, i, hasItems, isActive, allFinished, i+1);
+  }
 }
 
-function updateSessionHeading() {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  const hasDrinks = g.items.some(i => DRINK_CATS.includes(i.category));
-  const hasFood = g.items.some(i => FOOD_CATS.includes(i.category));
-  let label = 'Add to Order';
-  if (state.path === 'drinks' && !hasDrinks) label = 'Guest ' + (state.activeGuest + 1) + ' — What Are They Drinking?';
-  else if (state.path === 'drinks' && hasDrinks && !hasFood) label = 'Guest ' + (state.activeGuest + 1) + ' — Add Food';
-  else if (state.path === 'food' && !hasFood) label = 'Guest ' + (state.activeGuest + 1) + ' — What Are They Having?';
-  else if (state.path === 'food' && hasFood && !hasDrinks) label = 'Guest ' + (state.activeGuest + 1) + ' — Add Drinks';
-  else label = 'Guest ' + (state.activeGuest + 1) + ' — Add Items';
-  document.getElementById('session-heading').textContent = label;
+function drawSeatSVG(svg, x, y, seatIndex, hasItems, isActive, allFinished, label) {
+  const R = 22;
+  const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.style.cursor = 'pointer';
+  if (allFinished) g.style.opacity = '0.38';
+
+  // Active glow
+  if (isActive) {
+    const glow = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    glow.setAttribute('cx',x); glow.setAttribute('cy',y); glow.setAttribute('r',R+7);
+    glow.setAttribute('fill','rgba(201,168,76,0.09)');
+    glow.setAttribute('stroke','rgba(201,168,76,0.3)'); glow.setAttribute('stroke-width','1');
+    g.appendChild(glow);
+  }
+
+  // Has-items halo
+  if (hasItems && !isActive) {
+    const halo = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    halo.setAttribute('cx',x); halo.setAttribute('cy',y); halo.setAttribute('r',R+5);
+    halo.setAttribute('fill','none');
+    halo.setAttribute('stroke','rgba(201,168,76,0.2)'); halo.setAttribute('stroke-width','1');
+    g.appendChild(halo);
+  }
+
+  // Fork (left)
+  const forkColor = isActive ? 'rgba(201,168,76,0.6)' : 'rgba(201,168,76,0.18)';
+  const fL = document.createElementNS('http://www.w3.org/2000/svg','line');
+  fL.setAttribute('x1',x-R-6); fL.setAttribute('y1',y-11);
+  fL.setAttribute('x2',x-R-6); fL.setAttribute('y2',y+11);
+  fL.setAttribute('stroke',forkColor); fL.setAttribute('stroke-width','1.5');
+  fL.setAttribute('stroke-linecap','round');
+  g.appendChild(fL);
+
+  // Knife (right)
+  const kL = document.createElementNS('http://www.w3.org/2000/svg','line');
+  kL.setAttribute('x1',x+R+6); kL.setAttribute('y1',y-11);
+  kL.setAttribute('x2',x+R+6); kL.setAttribute('y2',y+11);
+  kL.setAttribute('stroke',forkColor); kL.setAttribute('stroke-width','1.5');
+  kL.setAttribute('stroke-linecap','round');
+  g.appendChild(kL);
+
+  // Plate base
+  const plate = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  plate.setAttribute('cx',x); plate.setAttribute('cy',y); plate.setAttribute('r',R);
+  plate.setAttribute('fill', isActive ? 'rgba(201,168,76,0.07)' : hasItems ? '#1E1B18' : '#171513');
+  plate.setAttribute('stroke', isActive ? '#C9A84C' : hasItems ? 'rgba(201,168,76,0.38)' : 'rgba(201,168,76,0.12)');
+  plate.setAttribute('stroke-width', isActive ? '1.5' : '1');
+  g.appendChild(plate);
+
+  // Inner plate ring
+  const inner = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  inner.setAttribute('cx',x); inner.setAttribute('cy',y); inner.setAttribute('r',R-7);
+  inner.setAttribute('fill','none');
+  inner.setAttribute('stroke', isActive ? 'rgba(201,168,76,0.35)' : 'rgba(201,168,76,0.07)');
+  inner.setAttribute('stroke-width','0.75');
+  g.appendChild(inner);
+
+  // Items dot
+  if (hasItems) {
+    const dot = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    dot.setAttribute('cx',x+R-4); dot.setAttribute('cy',y-R+4); dot.setAttribute('r',4);
+    dot.setAttribute('fill','#C9A84C');
+    dot.setAttribute('stroke','#171513'); dot.setAttribute('stroke-width','1.5');
+    g.appendChild(dot);
+  }
+
+  // Seat number
+  const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
+  txt.setAttribute('x',x); txt.setAttribute('y',y+4);
+  txt.setAttribute('text-anchor','middle');
+  txt.setAttribute('font-family','Josefin Sans, sans-serif');
+  txt.setAttribute('font-size','8'); txt.setAttribute('letter-spacing','1');
+  txt.setAttribute('fill', isActive ? '#C9A84C' : hasItems ? '#8A8070' : '#5A5248');
+  txt.textContent = label;
+  g.appendChild(txt);
+
+  // Invisible hit rect (includes cutlery)
+  const hit = document.createElementNS('http://www.w3.org/2000/svg','rect');
+  hit.setAttribute('x',x-R-12); hit.setAttribute('y',y-R-8);
+  hit.setAttribute('width',(R+12)*2); hit.setAttribute('height',(R+8)*2);
+  hit.setAttribute('fill','transparent');
+  g.appendChild(hit);
+
+  g.addEventListener('click', () => openSeatSheet(seatIndex));
+  svg.appendChild(g);
 }
 
-// ── STEPPER ────────────────────────────────────────────────────────────────────
-function renderStepper() { return; // removed
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  const hasDrinks = g.items.some(i => DRINK_CATS.includes(i.category) && i.state === STATE_LOCKED);
-  const hasFood   = g.items.some(i => FOOD_CATS.includes(i.category) && i.state === STATE_LOCKED);
-  const hasDessert = g.items.some(i => i.category === 'dessert' && i.state === STATE_LOCKED);
-  const finishedDrink = g.items.some(i => DRINK_CATS.includes(i.category) && i.state === STATE_FINISHED);
+// ── SEAT SHEET ─────────────────────────────────────────────────────────────────
+function openSeatSheet(seatIndex) {
+  state.activeSeat = seatIndex;
+  document.getElementById('sheet-title').textContent = 'Guest ' + (seatIndex + 1);
+  document.getElementById('main-search').value = '';
+  document.getElementById('search-results').classList.remove('visible');
+  document.getElementById('variable-prompt').classList.remove('visible');
+  renderSeatItems();
+  document.getElementById('seat-sheet').classList.add('open');
+  renderTable(); // update active seat highlight
+  setTimeout(() => document.getElementById('main-search').focus(), 300);
+}
 
-  const steps = [
-    { label: state.path === 'drinks' ? 'Drinks' : 'Food', done: state.path === 'drinks' ? hasDrinks : hasFood },
-    { label: state.path === 'drinks' ? 'Food' : 'Drinks', done: state.path === 'drinks' ? hasFood : hasDrinks },
-    { label: 'Dessert', done: hasDessert },
-    { label: 'Round 2', done: finishedDrink && hasDrinks },
-  ];
+function closeSeatSheet() {
+  document.getElementById('seat-sheet').classList.remove('open');
+  state.activeSeat = null;
+  renderTable();
+  renderTableRecs();
+}
 
-  document.getElementById('stepper-inner').innerHTML = steps.map((s, i) =>
-    (i > 0 ? '<span class="stepper-sep">›</span>' : '') +
-    '<span class="stepper-label' + (s.done ? ' done' : '') + '">' + s.label + '</span>'
-  ).join('');
+function renderSeatItems() {
+  const si = state.activeSeat;
+  if (si === null || !state.seats[si]) return;
+  const seat = state.seats[si];
+  const container = document.getElementById('seat-items-display');
+
+  const locked      = seat.items.filter(i => i.state === STATE_LOCKED);
+  const considering = seat.items.filter(i => i.state === STATE_CONSIDERING);
+  const finished    = seat.items.filter(i => i.state === STATE_FINISHED);
+
+  if (!seat.items.length) {
+    container.innerHTML = '<div class="empty-state" style="padding:12px 0 8px;font-size:14px">Nothing added yet.</div>';
+    return;
+  }
+
+  let html = '';
+
+  if (locked.length) {
+    const groups = {};
+    locked.forEach(item => { if (!groups[item.category]) groups[item.category]=[]; groups[item.category].push(item); });
+    CATEGORY_ORDER.forEach(cat => {
+      if (!groups[cat]) return;
+      html += '<div style="margin-bottom:12px"><div class="sheet-items-label">' + getCategoryForDisplay(cat) + '</div>';
+      groups[cat].forEach(item => {
+        html += '<div class="item-card">'
+          + '<div class="item-row"><div class="item-name state-locked">' + item.name + '</div></div>'
+          + '<button class="item-finish-bar" data-finish="' + encodeURIComponent(item.name) + '">Mark as Finished</button>'
+          + '</div>';
+      });
+      html += '</div>';
+    });
+  }
+
+  if (considering.length) {
+    html += '<div style="margin-bottom:12px"><div class="sheet-items-label">Still Deciding</div>';
+    considering.forEach(item => {
+      html += '<div class="item-card"><div class="item-row">'
+        + '<div style="flex:1"><div class="item-name state-considering">' + item.name + '</div>'
+        + '<div class="item-cat">' + getCategoryForDisplay(item.category) + '</div></div>'
+        + '<button class="item-remove-btn" data-remove="' + encodeURIComponent(item.name) + '">×</button>'
+        + '</div></div>';
+    });
+    html += '</div>';
+  }
+
+  if (finished.length) {
+    html += '<div style="margin-bottom:12px"><div class="sheet-items-label">Finished</div>';
+    finished.forEach(item => {
+      html += '<div class="item-card"><div class="item-row">'
+        + '<div class="item-name state-finished">' + item.name + '</div>'
+        + '<span style="font-family:\'Josefin Sans\',sans-serif;font-size:7.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0;opacity:0.5">Done</span>'
+        + '</div></div>';
+    });
+    html += '</div>';
+  }
+
+  container.innerHTML = html;
 }
 
 // ── SEARCH ─────────────────────────────────────────────────────────────────────
@@ -619,13 +741,13 @@ function getAllItems() {
   const items = [];
   PAIRING_MAP.forEach(e => {
     if (e.spiritCluster) {
-      items.push({ name: e.name, category: e.category, variable: false });
-      (e.members || []).forEach(m => items.push({ name: m, category: e.category, variable: false }));
+      items.push({ name:e.name, category:e.category, variable:false });
+      (e.members||[]).forEach(m => items.push({ name:m, category:e.category, variable:false }));
     } else {
-      items.push({ name: e.name, category: e.category, variable: e.variable || false });
+      items.push({ name:e.name, category:e.category, variable:e.variable||false });
     }
   });
-  state.specials.forEach(s => items.push({ name: s.name, category: s.category, variable: false }));
+  state.specials.forEach(s => items.push({ name:s.name, category:s.category, variable:false }));
   return items;
 }
 
@@ -642,27 +764,24 @@ function getCategoryForDisplay(cat) {
 }
 
 let searchDebounce = null;
-function getFilteredItems() {
-  const all = getAllItems();
-  if (state.path === 'drinks') return all.filter(i => DRINK_CATS.includes(i.category));
-  if (state.path === 'food')   return all.filter(i => FOOD_CATS.includes(i.category));
-  return all;
-}
-
 function handleSearch(val) {
   clearTimeout(searchDebounce);
   searchDebounce = setTimeout(() => {
     const results = document.getElementById('search-results');
     if (!val || val.trim().length < 1) { results.classList.remove('visible'); return; }
     const q = val.toLowerCase();
-    const matches = getFilteredItems().filter(i => i.name.toLowerCase().includes(q)).slice(0, 20);
+    const matches = getAllItems().filter(i => i.name.toLowerCase().includes(q)).slice(0, 20);
     if (!matches.length) { results.classList.remove('visible'); return; }
     results.innerHTML = '';
     matches.forEach(item => {
       const div = document.createElement('div');
       div.className = 'search-result-item';
       div.innerHTML = '<span class="result-name">' + item.name + '</span><span class="result-cat">' + getCategoryForDisplay(item.category) + '</span>';
-      div.onclick = () => { document.getElementById('main-search').value = ''; results.classList.remove('visible'); openLockModal(item.name, item.category, item.variable); };
+      div.onclick = () => {
+        document.getElementById('main-search').value = '';
+        results.classList.remove('visible');
+        openLockModal(item.name, item.category, item.variable);
+      };
       results.appendChild(div);
     });
     results.classList.add('visible');
@@ -670,22 +789,29 @@ function handleSearch(val) {
 }
 
 document.addEventListener('click', e => {
-  if (!e.target.closest('.search-wrap')) document.getElementById('search-results').classList.remove('visible');
-  const remove = e.target.closest('[data-remove]');
-  if (remove) { removeItem(decodeURIComponent(remove.dataset.remove)); return; }
+  if (!e.target.closest('.search-wrap') && !e.target.closest('#seat-sheet-panel')) {
+    document.getElementById('search-results').classList.remove('visible');
+  }
   const finish = e.target.closest('[data-finish]');
   if (finish) { openFinishModal(decodeURIComponent(finish.dataset.finish)); return; }
+  const remove = e.target.closest('[data-remove]');
+  if (remove) { removeItem(decodeURIComponent(remove.dataset.remove)); return; }
   const addRec = e.target.closest('[data-add]');
   if (addRec) { lockRecImmediate(decodeURIComponent(addRec.dataset.add), addRec.dataset.cat); return; }
   const ftBtn = e.target.closest('[data-ftval]');
   if (ftBtn) { selectFTAnswer(ftBtn.dataset.ftval, ftBtn); return; }
+  if (e.target.id === 'toast-undo' && toastUndoFn) {
+    toastUndoFn(); toastUndoFn = null;
+    clearTimeout(toastTimer);
+    document.getElementById('add-toast').classList.remove('show');
+  }
 });
 
 function handleVariableInput(val) {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
+  const si = state.activeSeat;
+  if (si === null || !state.seats[si]) return;
   const itemName = document.getElementById('variable-input').dataset.item;
-  const item = g.items.find(i => i.name === itemName);
+  const item = state.seats[si].items.find(i => i.name === itemName);
   if (item) item.variableNote = val;
 }
 
@@ -703,32 +829,24 @@ function lockModalChoice(choice) {
   if (!lockModalPending) return;
   const { name, category, isVariable } = lockModalPending;
   lockModalPending = null;
-
   if (choice === 'cancel') return;
 
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
+  const si = state.activeSeat !== null ? state.activeSeat : 0;
+  const seat = state.seats[si];
+  if (!seat) return;
 
-  const existing = g.items.find(i => i.name === name);
+  const existing = seat.items.find(i => i.name === name);
   if (existing) {
     if (choice === 'lock') existing.state = STATE_LOCKED;
-    // If already there and choosing consider, leave as is
   } else {
-    g.items.push({
-      name,
-      category,
-      state: choice === 'lock' ? STATE_LOCKED : STATE_CONSIDERING,
-      finishedWeight: 0
-    });
+    seat.items.push({ name, category, state: choice === 'lock' ? STATE_LOCKED : STATE_CONSIDERING, finishedWeight: 0 });
     showToast((choice === 'lock' ? 'Locked in — ' : 'Considering — ') + name);
   }
 
-  // If a drink is locked in, zero out any pending-replacement finished drinks
   if (choice === 'lock' && DRINK_CATS.includes(category)) {
-    g.items.forEach(i => {
+    seat.items.forEach(i => {
       if (i.state === STATE_FINISHED && i.pendingReplacement) {
-        i.finishedWeight = 0;
-        i.pendingReplacement = false;
+        i.finishedWeight = 0; i.pendingReplacement = false;
       }
     });
   }
@@ -743,210 +861,152 @@ function lockModalChoice(choice) {
     }
   }
 
-  buildGuestTabs();
-  updateSessionHeading();
-  renderItems();
-  renderRecs();
+  renderSeatItems();
+  renderTable();
+  renderTableRecs();
   saveState();
 }
 
-// ── INSTANT REC LOCK (no modal — recs are intentional taps) ─────────────────
-let undoTimer = null;
-let undoPending = null;
+// ── INSTANT REC LOCK ───────────────────────────────────────────────────────────
+let toastTimer = null, toastUndoFn = null;
 
 function lockRecImmediate(name, category) {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  const existing = g.items.find(i => i.name === name);
+  const si = state.activeSeat !== null ? state.activeSeat : 0;
+  const seat = state.seats[si];
+  if (!seat) return;
+
+  const existing = seat.items.find(i => i.name === name);
   if (existing) {
-    if (existing.state === STATE_CONSIDERING) {
-      existing.state = STATE_LOCKED;
-      showToast('Locked in — ' + name);
-    }
+    if (existing.state === STATE_CONSIDERING) { existing.state = STATE_LOCKED; showToast('Locked in — ' + name); }
     return;
   }
-  g.items.push({ name, category, state: STATE_LOCKED, finishedWeight: 0 });
 
-  // Zero out pending-replacement finished drinks if this is a drink
+  seat.items.push({ name, category, state: STATE_LOCKED, finishedWeight: 0 });
+
   if (DRINK_CATS.includes(category)) {
-    g.items.forEach(i => {
-      if (i.state === STATE_FINISHED && i.pendingReplacement) {
-        i.finishedWeight = 0;
-        i.pendingReplacement = false;
-      }
+    seat.items.forEach(i => {
+      if (i.state === STATE_FINISHED && i.pendingReplacement) { i.finishedWeight = 0; i.pendingReplacement = false; }
     });
   }
 
-  buildGuestTabs();
-  updateSessionHeading();
-  renderItems();
-  renderRecs();
+  renderSeatItems();
+  renderTable();
+  renderTableRecs();
   saveState();
 
-  // Undo window — 3 seconds
-  undoPending = { name, g };
-  clearTimeout(undoTimer);
   showToastWithUndo('Added — ' + name, () => {
-    g.items = g.items.filter(i => !(i.name === name && i.state === STATE_LOCKED));
-    buildGuestTabs();
-    updateSessionHeading();
-    renderItems();
-    renderRecs();
-    saveState();
+    seat.items = seat.items.filter(i => !(i.name === name && i.state === STATE_LOCKED));
+    renderSeatItems(); renderTable(); renderTableRecs(); saveState();
   });
 }
 
-// ── REMOVE ITEM ────────────────────────────────────────────────────────────────
 function removeItem(name) {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  g.items = g.items.filter(i => i.name !== name);
-  buildGuestTabs();
-  updateSessionHeading();
-  renderItems();
-  renderRecs();
-  saveState();
+  const si = state.activeSeat;
+  if (si === null || !state.seats[si]) return;
+  state.seats[si].items = state.seats[si].items.filter(i => i.name !== name);
+  renderSeatItems(); renderTable(); renderTableRecs(); saveState();
 }
 
 // ── FINISH MODAL ───────────────────────────────────────────────────────────────
-let finishModalPending = null;
+let finishPending = null;
 
 function openFinishModal(name) {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  const item = g.items.find(i => i.name === name);
+  const si = state.activeSeat;
+  if (si === null || !state.seats[si]) return;
+  const item = state.seats[si].items.find(i => i.name === name);
   if (!item) return;
-
-  finishModalPending = { name, category: item.category };
+  finishPending = { name, category: item.category, seatIndex: si };
   const isDrink = DRINK_CATS.includes(item.category);
 
   if (isDrink) {
     document.getElementById('finish-drink-title').textContent = name + ' — all done?';
-    document.getElementById('finish-drink-sub').textContent = 'What\'s next for your guest?';
-
-    const options = [
-      { label: 'Another Round', action: 'round-same' },
-      { label: 'Different Drink', action: 'round-new' },
-      { label: 'Moving to Food', action: 'food-next' },
-      { label: 'All Done', action: 'done' },
+    document.getElementById('finish-drink-sub').textContent = 'What\'s next for this guest?';
+    const opts = [
+      { label:'Another Round', action:'round-same' },
+      { label:'Different Drink', action:'round-new' },
+      { label:'Moving to Food', action:'food-next' },
+      { label:'All Done', action:'done' },
     ];
-
-    document.getElementById('finish-drink-options').innerHTML = options.map((o, i) =>
-      '<button class="modal-option' + (i === 0 ? ' primary' : '') + '" onclick="finishDrinkChoice(\'' + o.action + '\')">' + o.label + '</button>'
+    document.getElementById('finish-drink-options').innerHTML = opts.map((o,i) =>
+      '<button class="modal-option' + (i===0?' primary':'') + '" onclick="finishDrinkChoice(\'' + o.action + '\')">' + o.label + '</button>'
     ).join('');
-
     document.getElementById('finish-drink-modal').classList.add('open');
   } else {
     document.getElementById('finish-food-title').textContent = name + ' — finished?';
     document.getElementById('finish-food-sub').textContent = 'What\'s coming next?';
-
-    const options = [
-      { label: 'Next Course — Show Options', action: 'next-course' },
-      { label: 'Another ' + getCategoryForDisplay(item.category), action: 'same-course' },
-      { label: 'Time for a Drink', action: 'drinks' },
-      { label: 'Skip to Dessert', action: 'dessert' },
-      { label: 'We\'re All Set', action: 'done' },
+    const opts = [
+      { label:'Next Course', action:'next-course' },
+      { label:'Another ' + getCategoryForDisplay(item.category), action:'same-course' },
+      { label:'Time for a Drink', action:'drinks' },
+      { label:'Skip to Dessert', action:'dessert' },
+      { label:'All Set', action:'done' },
     ];
-
-    document.getElementById('finish-food-options').innerHTML = options.map((o, i) =>
-      '<button class="modal-option' + (i === 0 ? ' primary' : '') + '" onclick="finishFoodChoice(\'' + o.action + '\')">' + o.label + '</button>'
+    document.getElementById('finish-food-options').innerHTML = opts.map((o,i) =>
+      '<button class="modal-option' + (i===0?' primary':'') + '" onclick="finishFoodChoice(\'' + o.action + '\')">' + o.label + '</button>'
     ).join('');
-
     document.getElementById('finish-food-modal').classList.add('open');
   }
 }
 
-function markItemFinished(name, keepWeight) {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  const item = g.items.find(i => i.name === name);
+function markItemFinished(name, seatIndex, keepWeight) {
+  const seat = state.seats[seatIndex];
+  if (!seat) return;
+  const item = seat.items.find(i => i.name === name && i.state !== STATE_FINISHED);
   if (item) { item.state = STATE_FINISHED; item.finishedWeight = keepWeight ? 1.0 : 0; }
 }
 
 function finishDrinkChoice(action) {
   document.getElementById('finish-drink-modal').classList.remove('open');
-  if (!finishModalPending) return;
-  const { name } = finishModalPending;
-  finishModalPending = null;
-  const g = state.guests[state.activeGuest];
+  if (!finishPending) return;
+  const { name, seatIndex } = finishPending;
+  finishPending = null;
+  const seat = state.seats[seatIndex];
 
   if (action === 'round-same') {
-    // Mark finished but keep weight — same drink coming again
-    markItemFinished(name, true);
-    // Add a fresh locked entry for round 2
-    const orig = g.items.find(i => i.name === name && i.state === STATE_FINISHED);
-    const cat = orig ? orig.category : 'cocktail';
-    // Only add if not already an active locked version
-    if (!g.items.find(i => i.name === name && i.state === STATE_LOCKED)) {
-      g.items.push({ name, category: cat, state: STATE_LOCKED, finishedWeight: 0 });
+    markItemFinished(name, seatIndex, true);
+    if (!seat.items.find(i => i.name === name && i.state === STATE_LOCKED)) {
+      const orig = seat.items.find(i => i.name === name);
+      seat.items.push({ name, category: orig?.category || 'cocktail', state: STATE_LOCKED, finishedWeight: 0 });
     }
     showToast('Another ' + name + ' locked in');
-    setActiveCourseTab('starters');
+    state.activeCourseTab = 'starters';
   } else if (action === 'round-new') {
-    // Keep weight until new drink is chosen — set pendingReplacement flag
-    markItemFinished(name, true);
-    const item = g.items.find(i => i.name === name);
+    markItemFinished(name, seatIndex, true);
+    const item = seat.items.find(i => i.name === name);
     if (item) item.pendingReplacement = true;
-    setActiveCourseTab('drinks');
+    state.activeCourseTab = 'drinks';
     showToast('Select a new drink');
-  } else if (action === 'round-wine') {
-    // Same — keep weight until wine is chosen
-    markItemFinished(name, true);
-    const item = g.items.find(i => i.name === name);
-    if (item) item.pendingReplacement = true;
-    setActiveCourseTab('drinks');
-    showToast('Select a wine');
   } else if (action === 'food-next') {
-    markItemFinished(name, false);
+    markItemFinished(name, seatIndex, false);
     openCoursePickerModal('What course are they starting with?');
     return;
   } else if (action === 'done') {
-    markItemFinished(name, false);
-    // Default to all-food — shows everything driven by active food items
-    const g2 = state.guests[state.activeGuest];
-    if (g2) {
-      const hasAnyFood = g2.items.some(i => FOOD_CATS.includes(i.category) && i.state === STATE_LOCKED);
-      g2.activeCourseTab = hasAnyFood ? 'all-food' : 'starters';
-    }
+    markItemFinished(name, seatIndex, false);
+    const hasFood = seat.items.some(i => FOOD_CATS.includes(i.category) && i.state === STATE_LOCKED);
+    state.activeCourseTab = hasFood ? 'all-food' : 'starters';
   }
 
-  buildGuestTabs();
-  updateSessionHeading();
-  renderItems();
-  renderRecs();
-  saveState();
+  renderSeatItems(); renderTable(); renderTableRecs(); saveState();
 }
 
 function finishFoodChoice(action) {
   document.getElementById('finish-food-modal').classList.remove('open');
-  if (!finishModalPending) return;
-  const { name, category } = finishModalPending;
-  finishModalPending = null;
+  if (!finishPending) return;
+  const { name, category, seatIndex } = finishPending;
+  finishPending = null;
+  markItemFinished(name, seatIndex, false);
 
-  markItemFinished(name, false);
-
-  if (action === 'next-course') {
-    openCoursePickerModal('What course is next?');
-    return;
-  } else if (action === 'same-course') {
-    setActiveCourseTab(catToCourseTab(category));
-  } else if (action === 'drinks') {
-    setActiveCourseTab('drinks');
-  } else if (action === 'dessert') {
-    setActiveCourseTab('dessert');
-  } else if (action === 'done') {
-    const g2 = state.guests[state.activeGuest];
-    if (g2) {
-      const hasDrinks = g2.items.some(i => DRINK_CATS.includes(i.category) && i.state === STATE_LOCKED);
-      g2.activeCourseTab = hasDrinks ? 'all-food' : 'drinks';
-    }
+  if (action === 'next-course') { openCoursePickerModal('What course is next?'); return; }
+  else if (action === 'same-course') state.activeCourseTab = catToCourseTab(category);
+  else if (action === 'drinks') state.activeCourseTab = 'drinks';
+  else if (action === 'dessert') state.activeCourseTab = 'dessert';
+  else if (action === 'done') {
+    const seat = state.seats[seatIndex];
+    const hasDrinks = seat?.items.some(i => DRINK_CATS.includes(i.category) && i.state === STATE_LOCKED);
+    state.activeCourseTab = hasDrinks ? 'all-food' : 'drinks';
   }
 
-  buildGuestTabs();
-  updateSessionHeading();
-  renderItems();
-  renderRecs();
-  saveState();
+  renderSeatItems(); renderTable(); renderTableRecs(); saveState();
 }
 
 function catToCourseTab(cat) {
@@ -958,213 +1018,102 @@ function catToCourseTab(cat) {
   return 'all-food';
 }
 
-// ── COURSE PICKER MODAL ────────────────────────────────────────────────────────
 function openCoursePickerModal(title) {
   document.getElementById('course-picker-title').textContent = title;
-  document.getElementById('course-picker-sub').textContent = 'Select a course to see recommendations.';
-
   const courses = [
-    { label: 'To Start', tab: 'starters' },
-    { label: 'Soups & Salads', tab: 'soups' },
-    { label: 'Entrées & Sides', tab: 'entrees' },
-    { label: 'Dessert', tab: 'dessert' },
-    { label: 'Drinks', tab: 'drinks' },
-    { label: 'We\'re Done', tab: null },
+    { label:'To Start', tab:'starters' },
+    { label:'Soups & Salads', tab:'soups' },
+    { label:'Entrées & Sides', tab:'entrees' },
+    { label:'Dessert', tab:'dessert' },
+    { label:'Drinks', tab:'drinks' },
+    { label:'We\'re Done', tab:null },
   ];
-
-  document.getElementById('course-picker-options').innerHTML = courses.map((c, i) =>
-    '<button class="modal-option' + (i === 0 ? ' primary' : '') + '" onclick="coursePickerChoice(\'' + (c.tab || 'done') + '\')">' + c.label + '</button>'
+  document.getElementById('course-picker-options').innerHTML = courses.map((c,i) =>
+    '<button class="modal-option' + (i===0?' primary':'') + '" onclick="coursePickerChoice(\'' + (c.tab||'done') + '\')">' + c.label + '</button>'
   ).join('');
-
   document.getElementById('course-picker-modal').classList.add('open');
 }
 
 function coursePickerChoice(tab) {
   document.getElementById('course-picker-modal').classList.remove('open');
-  if (tab && tab !== 'done') {
-    const g = state.guests[state.activeGuest];
-    if (g) g.activeCourseTab = tab;
-  }
-  buildGuestTabs();
-  updateSessionHeading();
-  renderItems();
-  renderRecs();
-  saveState();
+  if (tab && tab !== 'done') state.activeCourseTab = tab;
+  renderSeatItems(); renderTable(); renderTableRecs(); saveState();
 }
 
-// ── ACTIVE COURSE TAB ──────────────────────────────────────────────────────────
-function setActiveCourseTab(tabId) {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  g.activeCourseTab = tabId;
-  // Update tab UI
-  document.querySelectorAll('.course-tab').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.course === tabId);
-  });
-  renderRecsForCourse();
-}
-
-// ── RENDER ITEMS ───────────────────────────────────────────────────────────────
-function renderItems() {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  const container = document.getElementById('selected-display');
-
-  const locked      = g.items.filter(i => i.state === STATE_LOCKED);
-  const considering = g.items.filter(i => i.state === STATE_CONSIDERING);
-  const finished    = g.items.filter(i => i.state === STATE_FINISHED);
-
-  if (!g.items.length) {
-    container.innerHTML = '<div class="empty-state" style="padding:16px 0">No items added yet.</div>';
-    return;
-  }
-
-  let html = '';
-
-  // Locked items — grouped by category
-  if (locked.length) {
-    const groups = {};
-    locked.forEach(item => {
-      if (!groups[item.category]) groups[item.category] = [];
-      groups[item.category].push(item);
-    });
-    CATEGORY_ORDER.forEach(cat => {
-      if (!groups[cat]) return;
-      html += '<div class="items-section"><div class="items-section-label">' + getCategoryForDisplay(cat) + '</div>';
-      groups[cat].forEach(item => {
-        html += '<div class="item-card">'
-          + '<div class="item-row"><div class="item-name state-locked">' + item.name + '</div></div>'
-          + '<button class="item-finish-bar" data-finish="' + encodeURIComponent(item.name) + '">Mark as Finished</button>'
-          + '</div>';
-      });
-      html += '</div>';
-    });
-  }
-
-  // Considering items
-  if (considering.length) {
-    html += '<div class="items-section"><div class="items-section-label considering-label">Considering</div>';
-    considering.forEach(item => {
-      html += '<div class="item-card"><div class="item-row">'
-        + '<div style="flex:1"><div class="item-name state-considering">' + item.name + '</div>'
-        + '<div class="item-cat">' + getCategoryForDisplay(item.category) + '</div></div>'
-        + '<button class="item-remove-btn" data-remove="' + encodeURIComponent(item.name) + '">×</button>'
-        + '</div></div>';
-    });
-    html += '</div>';
-  }
-
-  // Finished items — muted
-  if (finished.length) {
-    html += '<div class="items-section"><div class="items-section-label">Finished</div>';
-    finished.forEach(item => {
-      html += '<div class="item-card"><div class="item-row">'
-        + '<div class="item-name state-finished">' + item.name + '</div>'
-        + '<span style="font-family:\'Josefin Sans\',sans-serif;font-size:7.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0;opacity:0.5">Done</span>'
-        + '</div></div>';
-    html += '</div>';
-    });
-  }
-
-  container.innerHTML = html;
-}
-
-// ── RENDER RECS ────────────────────────────────────────────────────────────────
-function renderRecs() {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  const weighted = getWeightedSelections(g);
-  const empty = document.getElementById('recs-empty');
+// ── TABLE RECS ─────────────────────────────────────────────────────────────────
+function renderTableRecs() {
+  const weighted = getTableWeightedSelections();
+  const activeWeighted = weighted.filter(s => s.weight > 0);
   const content = document.getElementById('recs-content');
   const tabBar = document.getElementById('course-tab-bar');
+  const sub = document.getElementById('recs-bar-sub');
 
-  const activeWeighted = weighted.filter(s => s.weight > 0);
+  // Count active items across table
+  let activeCount = 0;
+  state.seats.forEach(seat => {
+    activeCount += seat.items.filter(i => i.state === STATE_LOCKED).length;
+  });
+  sub.textContent = activeCount > 0 ? activeCount + ' item' + (activeCount !== 1 ? 's' : '') + ' on the table' : '';
 
   if (!weighted.length) {
-    empty.style.display = 'block';
-    content.innerHTML = '';
-    tabBar.style.display = 'none';
-    return;
+    content.innerHTML = '<div class="empty-state">Tap a seat to add items and see recommendations.</div>';
+    tabBar.style.display = 'none'; return;
   }
 
-  empty.style.display = 'none';
-
   if (!activeWeighted.length) {
-    // Only finished items — guide server to add next item
-    const hasFood = g.items.some(i => FOOD_CATS.includes(i.category));
-    const hasDrinks = g.items.some(i => DRINK_CATS.includes(i.category));
-    const msg = state.path === 'drinks' && !hasFood
-      ? 'Drink finished. Search for a food item above to see pairing recommendations.'
-      : 'Add another item above to continue.';
-    content.innerHTML = '<div class="empty-state">' + msg + '</div>';
-    tabBar.style.display = 'none';
-    return;
+    content.innerHTML = '<div class="empty-state">Tap a seat to add the next item.</div>';
+    tabBar.style.display = 'none'; return;
   }
 
   const recs = getRecommendations(weighted);
 
   if (!recs.length) {
-    content.innerHTML = '<div class="empty-state">No strong pairings found. Try adding more items.</div>';
-    tabBar.style.display = 'none';
-    return;
+    content.innerHTML = '<div class="empty-state">No strong pairings found. Add more items to guide recommendations.</div>';
+    tabBar.style.display = 'none'; return;
   }
 
-  // Build course tabs
+  // Build tabs
   tabBar.style.display = 'block';
   const inner = document.getElementById('course-tab-inner');
   inner.innerHTML = COURSE_TABS.map(tab => {
     const hasRecs = recs.some(r => tab.cats.includes(r.category));
-    const isActive = tab.id === (g.activeCourseTab || 'starters');
-    const cls = 'course-tab' + (isActive ? ' active' : '') + (hasRecs ? '' : ' dim');
-    return '<button class="' + cls + '" data-course="' + tab.id + '">' + tab.label + '</button>';
+    const isActive = tab.id === state.activeCourseTab;
+    return '<button class="course-tab' + (isActive ? ' active' : '') + (hasRecs ? '' : ' dim') + '" data-course="' + tab.id + '">' + tab.label + '</button>';
   }).join('');
-
   inner.querySelectorAll('.course-tab').forEach(btn => {
-    btn.onclick = () => setActiveCourseTab(btn.dataset.course);
+    btn.onclick = () => { state.activeCourseTab = btn.dataset.course; renderTableRecs(); };
   });
 
-  renderRecsForCourse(recs);
-}
+  // Filter to active tab
+  const tab = COURSE_TABS.find(t => t.id === state.activeCourseTab) || COURSE_TABS[0];
+  let filtered = recs.filter(r => tab.cats.includes(r.category));
 
-function renderRecsForCourse(recsIn) {
-  const g = state.guests[state.activeGuest];
-  if (!g) return;
-  const weighted = getWeightedSelections(g);
-  const recs = recsIn || getRecommendations(weighted);
-  const content = document.getElementById('recs-content');
-
-  const tabId = g.activeCourseTab || 'starters';
-  const tab = COURSE_TABS.find(t => t.id === tabId) || COURSE_TABS[0];
-  const filtered = recs.filter(r => tab.cats.includes(r.category));
+  // Auto-advance to richest tab if current is empty
+  if (!filtered.length) {
+    const best = COURSE_TABS.reduce((b, t) => {
+      const c = recs.filter(r => t.cats.includes(r.category)).length;
+      return c > (b.count||0) ? { tab:t, count:c } : b;
+    }, {});
+    if (best.tab) {
+      state.activeCourseTab = best.tab.id;
+      inner.querySelectorAll('.course-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.course === best.tab.id));
+      filtered = recs.filter(r => best.tab.cats.includes(r.category));
+    }
+  }
 
   if (!filtered.length) {
-    // Auto-advance to the tab with the most recs
-    const bestTab = COURSE_TABS.reduce((best, t) => {
-      const count = recs.filter(r => t.cats.includes(r.category)).length;
-      return count > (best.count || 0) ? { tab: t, count } : best;
-    }, {});
-    if (bestTab.tab && bestTab.tab.id !== tabId) {
-      g.activeCourseTab = bestTab.tab.id;
-      document.querySelectorAll('.course-tab').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.course === bestTab.tab.id);
-      });
-      renderRecsForCourse(recs);
-      return;
-    }
-    content.innerHTML = '<div class="empty-state" style="padding:24px 0">No pairings on this tab. Select another above.</div>';
+    content.innerHTML = '<div class="empty-state">No pairings on this tab. Select another above.</div>';
     return;
   }
 
-  const groups = {};
-  filtered.forEach(r => {
-    if (!groups[r.category]) groups[r.category] = [];
-    groups[r.category].push(r);
-  });
+  // Build all locked names across table for already-added highlight
+  const lockedNames = new Set();
+  state.seats.forEach(seat => seat.items.filter(i => i.state === STATE_LOCKED).forEach(i => lockedNames.add(i.name)));
 
-  const lockedNames = new Set(g.items.filter(i => i.state === STATE_LOCKED).map(i => i.name));
+  const groups = {};
+  filtered.forEach(r => { if (!groups[r.category]) groups[r.category]=[]; groups[r.category].push(r); });
 
   let html = '';
-
   CATEGORY_ORDER.forEach(cat => {
     if (!groups[cat]) return;
     html += '<div class="rec-group"><div class="rec-group-label">' + getCategoryForDisplay(cat) + '</div>';
@@ -1174,7 +1123,7 @@ function renderRecsForCourse(recsIn) {
       if (rec.offMenu) meta.push('Off Menu');
       if (rec.oos) meta.push('Currently Unavailable');
       const isAdded = lockedNames.has(rec.name);
-      html += '<button class="rec-item' + (isAdded ? ' already-added' : '') + '" data-add="' + encodeURIComponent(rec.name) + '" data-cat="' + rec.category + '">'
+      html += '<button class="rec-item' + (isAdded?' already-added':'') + '" data-add="' + encodeURIComponent(rec.name) + '" data-cat="' + rec.category + '">'
         + '<div class="tier-pip ' + rec.tier + '"></div>'
         + '<div class="rec-info"><div class="rec-name">' + rec.name + '</div>'
         + (meta.length ? '<div class="rec-meta">' + meta.join(' · ') + '</div>' : '')
@@ -1186,60 +1135,9 @@ function renderRecsForCourse(recsIn) {
   content.innerHTML = html;
 }
 
-// ── TABLE VIEW ─────────────────────────────────────────────────────────────────
-function renderTableView() {
-  const guestList = document.getElementById('table-guest-list');
-  guestList.innerHTML = state.guests.map((g, i) => {
-    const locked      = g.items.filter(i => i.state === STATE_LOCKED);
-    const considering = g.items.filter(i => i.state === STATE_CONSIDERING);
-    const finished    = g.items.filter(i => i.state === STATE_FINISHED);
-    let html = '<div class="table-view-guest"><div class="table-guest-label">Guest ' + (i + 1) + '</div>';
-    if (!g.items.length) { html += '<div class="table-empty">Nothing added yet.</div>'; }
-    else {
-      html += '<div class="table-item-list">';
-      locked.forEach(item => { html += '<div class="table-item-chip">' + item.name + '</div>'; });
-      considering.forEach(item => { html += '<div class="table-item-chip considering">' + item.name + '</div>'; });
-      finished.forEach(item => { html += '<div class="table-item-chip finished">' + item.name + '</div>'; });
-      html += '</div>';
-    }
-    return html + '</div>';
-  }).join('');
-
-  const allWeighted = [];
-  state.guests.forEach(g => {
-    getWeightedSelections(g).forEach(s => {
-      const existing = allWeighted.find(w => w.name === s.name);
-      if (existing) { existing.weight = Math.max(existing.weight, s.weight); }
-      else allWeighted.push({ ...s });
-    });
-  });
-
-  const recsContent = document.getElementById('table-recs-content');
-  if (!allWeighted.length) { recsContent.innerHTML = '<div class="empty-state">Add items to guests above to see table-level pairings.</div>'; return; }
-
-  const recs = getRecommendations(allWeighted);
-  if (!recs.length) { recsContent.innerHTML = '<div class="empty-state">No strong pairings for this table combination.</div>'; return; }
-
-  const groups = {};
-  recs.slice(0, 30).forEach(r => { if (!groups[r.category]) groups[r.category] = []; groups[r.category].push(r); });
-
-  let html = '';
-  CATEGORY_ORDER.forEach(cat => {
-    if (!groups[cat]) return;
-    html += '<div class="rec-group"><div class="rec-group-label">' + getCategoryForDisplay(cat) + '</div>';
-    groups[cat].forEach(rec => {
-      const meta = [];
-      if (rec.price) meta.push(rec.price);
-      if (rec.offMenu) meta.push('Off Menu');
-      html += '<div class="rec-item"><div class="tier-pip ' + rec.tier + '"></div><div class="rec-info"><div class="rec-name">' + rec.name + '</div>' + (meta.length ? '<div class="rec-meta">' + meta.join(' · ') + '</div>' : '') + '</div><div class="tier-badge ' + rec.tier + '">' + rec.tier + '</div></div>';
-    });
-    html += '</div>';
-  });
-  recsContent.innerHTML = html;
-}
-
-// ── SPECIALS MODAL ─────────────────────────────────────────────────────────────
-const PROFILE_TAGS = ['bold','light','rich','delicate','sweet','savory','smoky','earthy','fatty','citrus','herbal','floral','spice','umami','creamy','crisp','tannic','fruity','oak','approachable','fresh','indulgent'];
+// ── SPECIALS ───────────────────────────────────────────────────────────────────
+const PROFILE_TAGS = ['bold','light','rich','delicate','sweet','savory','smoky','earthy',
+  'fatty','citrus','herbal','floral','spice','umami','creamy','crisp','tannic','fruity','oak','approachable','fresh','indulgent'];
 
 function openSpecialsModal() {
   const picker = document.getElementById('special-tags');
@@ -1260,7 +1158,7 @@ function confirmSpecial() {
   if (!name) { alert('Please enter a name.'); return; }
   const category = document.getElementById('special-category').value;
   const tags = Array.from(document.querySelectorAll('.tag-pick.selected')).map(b => b.textContent);
-  const entry = { name, category, profile: tags, excellent: [], strong: [], works: [], avoid: [], special: true };
+  const entry = { name, category, profile:tags, excellent:[], strong:[], works:[], avoid:[], special:true };
   PAIRING_MAP.forEach(e => {
     if (e.variable || e.oos) return;
     const overlap = e.profile.filter(p => tags.includes(p)).length;
@@ -1268,90 +1166,82 @@ function confirmSpecial() {
     else if (overlap === 1) entry.strong.push(e.name);
   });
   PAIRING_MAP.push(entry);
-  state.specials.push({ name, category, profile: tags });
+  state.specials.push({ name, category, profile:tags });
   closeSpecialsModal();
   openLockModal(name, category, false);
   saveState();
 }
 
 // ── TOAST ──────────────────────────────────────────────────────────────────────
-let toastTimer = null;
-let toastUndoFn = null;
-
 function showToast(msg) {
   const t = document.getElementById('add-toast');
-  t.innerHTML = msg;
-  t.classList.add('show');
-  toastUndoFn = null;
+  t.innerHTML = msg; t.classList.add('show'); toastUndoFn = null;
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
 }
-
 function showToastWithUndo(msg, undoFn) {
   const t = document.getElementById('add-toast');
   t.innerHTML = msg + ' <span id="toast-undo" style="color:var(--gold);margin-left:10px;cursor:pointer;text-decoration:underline;font-style:normal">Undo</span>';
-  t.classList.add('show');
-  toastUndoFn = undoFn;
+  t.classList.add('show'); toastUndoFn = undoFn;
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => { t.classList.remove('show'); toastUndoFn = null; }, 3000);
 }
 
-document.addEventListener('click', e => {
-  if (e.target.id === 'toast-undo' && toastUndoFn) {
-    toastUndoFn();
-    toastUndoFn = null;
-    clearTimeout(toastTimer);
-    document.getElementById('add-toast').classList.remove('show');
-  }
-}, true);
-
 // ── FIRST TIMER ────────────────────────────────────────────────────────────────
+function beginFirstTimer() { showScreen('screen-firsttimer'); initFirstTimer(); }
+function openFirstTimerForSeat() {
+  state.ftForSeat = state.activeSeat;
+  closeSeatSheet();
+  showScreen('screen-firsttimer');
+  initFirstTimer();
+}
+
 const FT_QUESTIONS_SHORT = [
-  { q: "Is your guest drinking tonight?", options: [
-    { label: "Yes — open to everything", value: 'drinkingYes' },
-    { label: "Wine only", value: 'drinkingWineOnly' },
-    { label: "Cocktails only", value: 'drinkingCocktailsOnly' },
-    { label: "No — non-alcoholic evening", value: 'drinkingNo' }
+  { q:"Is your guest drinking tonight?", options:[
+    {label:"Yes — open to everything", value:'drinkingYes'},
+    {label:"Wine only", value:'drinkingWineOnly'},
+    {label:"Cocktails only", value:'drinkingCocktailsOnly'},
+    {label:"No — non-alcoholic evening", value:'drinkingNo'}
   ]},
-  { q: "How do they typically take their protein?", options: [
-    { label: "Rare to medium-rare — they want it red", value: 'proteinRareMR' },
-    { label: "Medium — right down the middle", value: 'proteinMedium' },
-    { label: "Medium-well to well — no pink", value: 'proteinMWWell' },
-    { label: "No red meat tonight", value: 'proteinNoRed' }
+  { q:"How do they typically take their protein?", options:[
+    {label:"Rare to medium-rare — they want it red", value:'proteinRareMR'},
+    {label:"Medium — right down the middle", value:'proteinMedium'},
+    {label:"Medium-well to well — no pink", value:'proteinMWWell'},
+    {label:"No red meat tonight", value:'proteinNoRed'}
   ]},
-  { q: "How do they tend to eat and drink?", options: [
-    { label: "Bold and rich — the more the better", value: 'boldAndRich' },
-    { label: "Somewhere in the middle", value: 'middle' },
-    { label: "Light and fresh — clean flavors", value: 'lightAndFresh' }
+  { q:"How do they tend to eat and drink?", options:[
+    {label:"Bold and rich — the more the better", value:'boldAndRich'},
+    {label:"Somewhere in the middle", value:'middle'},
+    {label:"Light and fresh — clean flavors", value:'lightAndFresh'}
   ]},
-  { q: "Any dietary restrictions or allergies?", options: [
-    { label: "None", value: 'none' },
-    { label: "Dairy-free", value: 'none' },
-    { label: "Gluten-free", value: 'none' },
-    { label: "Shellfish allergy", value: 'none' },
-    { label: "Vegetarian / pescatarian", value: 'proteinNoRed' }
+  { q:"Any dietary restrictions or allergies?", options:[
+    {label:"None", value:'none'},
+    {label:"Dairy-free", value:'none'},
+    {label:"Gluten-free", value:'none'},
+    {label:"Shellfish allergy", value:'none'},
+    {label:"Vegetarian / pescatarian", value:'proteinNoRed'}
   ]}
 ];
 const FT_QUESTIONS_DEEP = [
   ...FT_QUESTIONS_SHORT,
-  { q: "Do they gravitate toward sweet, savory, or both?", options: [
-    { label: "Mostly sweet", value: 'sweetFlavor' },
-    { label: "Mostly savory", value: 'savoryFlavor' },
-    { label: "Both — they appreciate the full spectrum", value: 'bothFlavors' }
+  { q:"Do they gravitate toward sweet, savory, or both?", options:[
+    {label:"Mostly sweet", value:'sweetFlavor'},
+    {label:"Mostly savory", value:'savoryFlavor'},
+    {label:"Both — they appreciate the full spectrum", value:'bothFlavors'}
   ]},
-  { q: "How familiar are they with wine?", options: [
-    { label: "Knowledgeable — they know what they like", value: 'wineExpert' },
-    { label: "Curious — they'd appreciate a thoughtful recommendation", value: 'wineGuided' },
-    { label: "Not their focus tonight", value: 'none' }
+  { q:"How familiar are they with wine?", options:[
+    {label:"Knowledgeable — they know what they like", value:'wineExpert'},
+    {label:"Curious — they'd appreciate a recommendation", value:'wineGuided'},
+    {label:"Not their focus tonight", value:'none'}
   ]},
-  { q: "Are they celebrating something?", options: [
-    { label: "Yes — special occasion", value: 'celebrating' },
-    { label: "Just a great dinner", value: 'none' }
+  { q:"Are they celebrating something?", options:[
+    {label:"Yes — special occasion", value:'celebrating'},
+    {label:"Just a great dinner", value:'none'}
   ]},
-  { q: "What's their comfort level on spend tonight?", options: [
-    { label: "Approachable — keep it reasonable", value: 'budgetApproachable' },
-    { label: "Mid-range — they're here to enjoy themselves", value: 'budgetMid' },
-    { label: "The sky's the limit", value: 'budgetSky' }
+  { q:"What's their comfort level on spend?", options:[
+    {label:"Approachable — keep it reasonable", value:'budgetApproachable'},
+    {label:"Mid-range — they're here to enjoy themselves", value:'budgetMid'},
+    {label:"The sky's the limit", value:'budgetSky'}
   ]}
 ];
 let ftQuestions = FT_QUESTIONS_SHORT;
@@ -1360,38 +1250,41 @@ function setFTDepth(depth) {
   state.ftDepth = depth;
   state.ftAnswers = []; state.ftCurrentQ = 0;
   ftQuestions = depth === 'deep' ? FT_QUESTIONS_DEEP : FT_QUESTIONS_SHORT;
-  document.getElementById('ft-short-btn').classList.toggle('active', depth === 'short');
-  document.getElementById('ft-deep-btn').classList.toggle('active', depth === 'deep');
+  document.getElementById('ft-short-btn').classList.toggle('active', depth==='short');
+  document.getElementById('ft-deep-btn').classList.toggle('active', depth==='deep');
   document.getElementById('ft-recs-area').style.display = 'none';
   initFirstTimer();
 }
+
 function initFirstTimer() {
   state.ftAnswers = []; state.ftCurrentQ = 0;
   ftQuestions = state.ftDepth === 'deep' ? FT_QUESTIONS_DEEP : FT_QUESTIONS_SHORT;
   renderFTQuestion();
 }
+
 function renderFTQuestion() {
   const q = ftQuestions[state.ftCurrentQ];
   const total = ftQuestions.length;
-  document.getElementById('ft-progress').innerHTML = Array.from({ length: total }, (_, i) =>
-    '<div class="ft-progress-pip ' + (i < state.ftCurrentQ ? 'done' : i === state.ftCurrentQ ? 'active' : '') + '"></div>'
+  document.getElementById('ft-progress').innerHTML = Array.from({length:total},(_,i) =>
+    '<div class="ft-progress-pip ' + (i<state.ftCurrentQ?'done':i===state.ftCurrentQ?'active':'') + '"></div>'
   ).join('');
   document.getElementById('ft-question-area').innerHTML =
     '<div class="ft-question"><div class="ft-question-label">' + q.q + '</div><div class="ft-options">' +
     q.options.map(opt =>
-      '<button class="ft-option' + (state.ftAnswers[state.ftCurrentQ] === opt.value ? ' selected' : '') + '" data-ftval="' + opt.value + '">' + opt.label + '</button>'
+      '<button class="ft-option' + (state.ftAnswers[state.ftCurrentQ]===opt.value?' selected':'') + '" data-ftval="' + opt.value + '">' + opt.label + '</button>'
     ).join('') + '</div></div>';
-  document.getElementById('ft-prev-btn').style.display = state.ftCurrentQ > 0 ? 'block' : 'none';
-  document.getElementById('ft-next-btn').textContent = state.ftCurrentQ === total - 1 ? 'See Recommendations' : 'Next →';
+  document.getElementById('ft-prev-btn').style.display = state.ftCurrentQ>0?'block':'none';
+  document.getElementById('ft-next-btn').textContent = state.ftCurrentQ===total-1?'See Recommendations':'Next →';
   document.getElementById('ft-next-btn').onclick = ftNext;
 }
+
 function selectFTAnswer(value, btn) {
   state.ftAnswers[state.ftCurrentQ] = value;
   btn.closest('.ft-options').querySelectorAll('.ft-option').forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
 }
 
-// ── LOGO ALIGNMENT ────────────────────────────────────────────────────────────
+// ── LOGO ALIGNMENT ─────────────────────────────────────────────────────────────
 function alignSectionLabel() {
   const wm = document.querySelector('.top-bar-wordmark');
   const sc = document.getElementById('top-bar-section');
@@ -1415,7 +1308,7 @@ function alignSectionLabel() {
 alignSectionLabel();
 window.addEventListener('resize', alignSectionLabel);
 
-// ── JS COMPLETION ──────────────────────────────────────────────────────────────
+// ── JS COMPLETION ───────────────────────────────────────────────────────────────
 </script>
 <script src="set-the-stage-completion.js?v=9"></script>
 </body>
