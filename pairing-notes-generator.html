@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pairing Notes Generator — Bowdie's</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --gold:#C9A84C;--gold-dim:#8A6B2A;--gold-soft:rgba(201,168,76,0.12);
+  --charcoal:#111010;--surface:#171513;--surface-2:#1E1B18;--surface-3:#242018;
+  --border:rgba(201,168,76,0.18);--border-soft:rgba(201,168,76,0.10);
+  --text:#F0E8D8;--muted:#8A8070;--dim:#5A5248;
+}
+html,body{background:var(--charcoal);color:var(--text);font-family:'Cormorant Garamond',serif;min-height:100vh}
+
+header{background:var(--surface);border-bottom:1px solid var(--border);padding:20px 32px;display:flex;align-items:baseline;gap:16px}
+.header-title{font-family:'Josefin Sans',sans-serif;font-size:11px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold)}
+.header-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--dim)}
+
+main{max-width:900px;margin:0 auto;padding:32px 24px 80px}
+
+/* ── UPLOAD / STATUS ── */
+.card{background:var(--surface);border:1px solid var(--border-soft);padding:24px;margin-bottom:20px}
+.card-label{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border-soft)}
+.file-drop{border:1px dashed rgba(201,168,76,0.25);padding:28px;text-align:center;cursor:pointer;transition:all 0.2s;border-radius:2px}
+.file-drop:hover,.file-drop.over{border-color:var(--gold-dim);background:var(--gold-soft)}
+.file-drop input{display:none}
+.file-drop-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--muted)}
+.file-drop-sub{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-top:6px}
+.file-loaded{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text)}
+.file-loaded span{color:var(--gold)}
+
+/* ── STATS ROW ── */
+.stats{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:8px}
+.stat{text-align:center}
+.stat-n{font-family:'Playfair Display',serif;font-size:28px;color:var(--text);line-height:1}
+.stat-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-top:4px}
+
+/* ── PROGRESS ── */
+.progress-wrap{margin:16px 0}
+.progress-bar-bg{height:2px;background:var(--border-soft);width:100%}
+.progress-bar-fill{height:2px;background:var(--gold);transition:width 0.3s;width:0%}
+.progress-text{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-top:8px}
+
+/* ── BUTTONS ── */
+.btn{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0;padding:14px 24px}
+.btn-gold{background:transparent;border:1px solid var(--gold-dim);color:var(--gold)}
+.btn-gold:hover{background:var(--gold-soft);border-color:var(--gold)}
+.btn-gold:disabled{opacity:0.35;cursor:not-allowed}
+.btn-dim{background:transparent;border:1px solid var(--border-soft);color:var(--dim)}
+.btn-dim:hover{border-color:var(--border);color:var(--muted)}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+
+/* ── LOG ── */
+.log{background:var(--surface-2);border:1px solid var(--border-soft);padding:14px 16px;max-height:180px;overflow-y:auto;font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.1em;color:var(--dim);line-height:1.8;margin-top:12px}
+.log-entry{border-bottom:1px solid rgba(255,255,255,0.03);padding:2px 0}
+.log-entry.ok{color:var(--muted)}
+.log-entry.err{color:#c47b7b}
+.log-entry.info{color:var(--gold-dim)}
+
+/* ── REVIEW TABLE ── */
+#review-section{display:none}
+.review-controls{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.search-notes{background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text);font-family:'Cormorant Garamond',serif;font-size:16px;padding:10px 14px;outline:none;width:280px;border-radius:0}
+.search-notes:focus{border-color:var(--gold-dim)}
+.filter-btn{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;background:transparent;border:1px solid var(--border-soft);color:var(--dim);padding:8px 12px;cursor:pointer;transition:all 0.15s}
+.filter-btn.active{border-color:var(--gold-dim);color:var(--gold);background:var(--gold-soft)}
+
+.entry-card{background:var(--surface);border:1px solid var(--border-soft);margin-bottom:12px;overflow:hidden}
+.entry-header{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;border-bottom:1px solid var(--border-soft);transition:background 0.15s}
+.entry-header:hover{background:var(--surface-2)}
+.entry-name{font-family:'Playfair Display',serif;font-size:17px;color:var(--text)}
+.entry-cat{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim)}
+.entry-count{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;color:var(--muted)}
+.entry-body{display:none;padding:0}
+.entry-body.open{display:block}
+
+.pairing-row{display:grid;grid-template-columns:180px 1fr 32px;gap:12px;align-items:start;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.04)}
+.pairing-row:last-child{border-bottom:none}
+.pairing-target{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text);padding-top:2px}
+.pairing-tier{font-family:'Josefin Sans',sans-serif;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;margin-top:4px}
+.tier-excellent{color:var(--gold)}
+.tier-strong{color:#7BA8C4}
+.tier-works{color:#7A9A8A}
+.note-field{background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;padding:8px 12px;width:100%;resize:vertical;min-height:52px;outline:none;border-radius:0;line-height:1.5;transition:border-color 0.2s}
+.note-field:focus{border-color:var(--gold-dim)}
+.note-field.empty{border-color:rgba(196,123,123,0.3)}
+.regen-btn{background:transparent;border:1px solid var(--border-soft);color:var(--dim);font-family:'Josefin Sans',sans-serif;font-size:10px;cursor:pointer;padding:4px;transition:all 0.15s;width:28px;height:28px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.regen-btn:hover{border-color:var(--gold-dim);color:var(--gold)}
+
+/* ── API KEY ── */
+.api-key-wrap{margin-bottom:20px}
+.api-key-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-bottom:8px}
+.api-key-input{background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text);font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:0.05em;padding:10px 14px;outline:none;width:100%;border-radius:0;transition:border-color 0.2s}
+.api-key-input:focus{border-color:var(--gold-dim)}
+.api-key-input.set{border-color:rgba(122,154,138,0.45)}
+.api-key-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--dim);margin-top:6px}
+
+/* ── EXPORT ── */
+#export-section{display:none}
+.export-area{background:var(--surface-2);border:1px solid var(--border-soft);padding:16px;font-family:'Josefin Sans',sans-serif;font-size:9px;color:var(--dim);line-height:1.6;max-height:200px;overflow-y:auto;white-space:pre-wrap;word-break:break-all}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">Pairing Notes Generator</div>
+  <div class="header-sub">Bowdie's Chophouse — Internal Tool</div>
+</header>
+
+<main>
+
+<!-- STEP 1: LOAD FILE -->
+<div class="card" id="step-load">
+  <div class="card-label">Step 1 — Load Pairing Map</div>
+  <div class="file-drop" id="file-drop" onclick="document.getElementById('file-input').click()">
+    <input type="file" id="file-input" accept=".js" onchange="handleFile(this)">
+    <div class="file-drop-label" id="drop-label">Drop pairing-map.js here or tap to browse</div>
+    <div class="file-drop-sub">pairing-map.js only</div>
+  </div>
+  <div id="file-stats" style="display:none;margin-top:16px">
+    <div class="stats" id="stats-row"></div>
+  </div>
+</div>
+
+<!-- STEP 2: GENERATE -->
+<div class="card" id="step-generate" style="display:none">
+  <div class="card-label">Step 2 — Generate Notes</div>
+  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--muted);margin-bottom:20px;line-height:1.6">
+    The generator will write a specific, voice-consistent tasting note for every explicit pairing in the map.
+    Notes are written in Bowdie's voice — confident, educated, specific. Not generic.
+    You can edit any note after generation before exporting.
+  </p>
+
+  <div class="api-key-wrap">
+    <div class="api-key-label">Anthropic API Key</div>
+    <input type="password" class="api-key-input" id="api-key-input" placeholder="sk-ant-…" oninput="onApiKeyInput(this)" autocomplete="off" spellcheck="false">
+    <div class="api-key-hint">Required to generate notes. Your key is never stored or sent anywhere except Anthropic's API.</div>
+  </div>
+
+  <div class="progress-wrap" id="progress-wrap" style="display:none">
+    <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-fill"></div></div>
+    <div class="progress-text" id="progress-text">Preparing…</div>
+  </div>
+  <div class="log" id="log" style="display:none"></div>
+  <div class="btn-row">
+    <button class="btn btn-gold" id="btn-generate" onclick="startGeneration()">Generate All Notes</button>
+    <button class="btn btn-dim" id="btn-stop" onclick="stopGeneration()" style="display:none">Stop</button>
+  </div>
+</div>
+
+<!-- STEP 3: REVIEW -->
+<div id="review-section">
+  <div class="card">
+    <div class="card-label">Step 3 — Review &amp; Edit</div>
+    <div class="review-controls">
+      <input class="search-notes" id="search-notes" placeholder="Search items or pairings…" oninput="filterEntries()">
+      <button class="filter-btn active" data-filter="all" onclick="setFilter(this,'all')">All</button>
+      <button class="filter-btn" data-filter="steak" onclick="setFilter(this,'steak')">Prime</button>
+      <button class="filter-btn" data-filter="food" onclick="setFilter(this,'food')">Food</button>
+      <button class="filter-btn" data-filter="drink" onclick="setFilter(this,'drink')">Drinks</button>
+      <button class="filter-btn" data-filter="empty" onclick="setFilter(this,'empty')">Missing</button>
+    </div>
+    <div id="entries-list"></div>
+  </div>
+</div>
+
+<!-- STEP 4: EXPORT -->
+<div id="export-section">
+  <div class="card">
+    <div class="card-label">Step 4 — Export</div>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.6">
+      Download the updated <code style="font-family:monospace;font-size:13px;color:var(--gold)">pairing-map.js</code> with all pairing notes embedded. 
+      Replace the file in your project — no other changes needed.
+    </p>
+    <div id="export-summary" style="margin-bottom:16px"></div>
+    <div class="btn-row">
+      <button class="btn btn-gold" onclick="downloadMap()">Download pairing-map.js</button>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<script>
+// ── STATE ──────────────────────────────────────────────────────────────────────
+let mapSource = '';       // raw JS source
+let pairingData = [];     // [{name, category, profile, excellent, strong, works}]
+let notes = {};           // { "ItemA|||ItemB": "note text" }
+let currentFilter = 'all';
+let stopFlag = false;
+let apiKey = '';          // Anthropic API key — entered by user, never persisted
+
+function onApiKeyInput(el) {
+  apiKey = el.value.trim();
+  el.classList.toggle('set', apiKey.length > 10);
+}
+
+const FOOD_CATS = new Set(['steak','starter','soup-salad','main','side','dessert']);
+const DRINK_CATS = new Set(['cocktail','wine-sparkling','wine-white','wine-red','wine-dessert',
+  'bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum',
+  'cognac','liqueur','singlemalt']);
+
+function noteKey(itemA, itemB) { return itemA + '|||' + itemB; }
+
+// ── FILE HANDLING ──────────────────────────────────────────────────────────────
+function handleFile(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    mapSource = e.target.result;
+    parseMap(mapSource);
+  };
+  reader.readAsText(file);
+}
+
+const drop = document.getElementById('file-drop');
+drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('over'); });
+drop.addEventListener('dragleave', () => drop.classList.remove('over'));
+drop.addEventListener('drop', e => {
+  e.preventDefault(); drop.classList.remove('over');
+  const file = e.dataTransfer.files[0];
+  if (file) { const r = new FileReader(); r.onload = ev => { mapSource = ev.target.result; parseMap(mapSource); }; r.readAsText(file); }
+});
+
+function parseMap(source) {
+  try {
+    const sandboxed = source
+      .replace(/if \(typeof module[\s\S]*$/, '')
+      .replace('const PAIRING_MAP', 'var _PARSED_MAP');
+    const fn = new Function(sandboxed + '; return _PARSED_MAP;');
+    const map = fn();
+    pairingData = map.filter(e => !e.variable && !e.oos && !e.spiritCluster)
+      .map(e => ({
+        name: e.name,
+        category: e.category,
+        profile: e.profile || [],
+        excellent: e.excellent || [],
+        strong: e.strong || [],
+        works: e.works || []
+      }));
+
+    let totalPairings = 0;
+    pairingData.forEach(e => { totalPairings += e.excellent.length + e.strong.length + e.works.length; });
+
+    document.getElementById('drop-label').innerHTML = '<span style="color:var(--gold)">' + (source.match(/name:/g)||[]).length + ' items loaded</span>';
+    document.getElementById('file-stats').style.display = 'block';
+    document.getElementById('stats-row').innerHTML = `
+      <div class="stat"><div class="stat-n">${pairingData.length}</div><div class="stat-label">Entries</div></div>
+      <div class="stat"><div class="stat-n">${totalPairings}</div><div class="stat-label">Pairings</div></div>
+      <div class="stat"><div class="stat-n">${pairingData.filter(e=>FOOD_CATS.has(e.category)).length}</div><div class="stat-label">Food Items</div></div>
+      <div class="stat"><div class="stat-n">${pairingData.filter(e=>DRINK_CATS.has(e.category)).length}</div><div class="stat-label">Drink Items</div></div>`;
+    document.getElementById('step-generate').style.display = 'block';
+    log('Map loaded — ' + pairingData.length + ' entries, ' + totalPairings + ' pairings to annotate', 'info');
+  } catch(err) {
+    log('Failed to parse file: ' + err.message, 'err');
+  }
+}
+
+// ── LOGGING ────────────────────────────────────────────────────────────────────
+function log(msg, type='ok') {
+  const logEl = document.getElementById('log');
+  logEl.style.display = 'block';
+  const div = document.createElement('div');
+  div.className = 'log-entry ' + type;
+  div.textContent = msg;
+  logEl.appendChild(div);
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+// ── GENERATION ────────────────────────────────────────────────────────────────
+async function startGeneration() {
+  if (!pairingData.length) return;
+  if (!apiKey) {
+    log('Enter your Anthropic API key above before generating.', 'err');
+    document.getElementById('api-key-input').focus();
+    return;
+  }
+  stopFlag = false;
+  document.getElementById('btn-generate').disabled = true;
+  document.getElementById('btn-stop').style.display = 'inline-block';
+  document.getElementById('progress-wrap').style.display = 'block';
+
+  // Build all pairing jobs: [{itemName, itemCat, itemProfile, target, tier}]
+  const jobs = [];
+  pairingData.forEach(entry => {
+    ['excellent','strong','works'].forEach(tier => {
+      (entry[tier] || []).forEach(target => {
+        jobs.push({ itemName: entry.name, itemCat: entry.category, itemProfile: entry.profile, target, tier });
+      });
+    });
+  });
+
+  const total = jobs.length;
+  let done = 0;
+
+  // Process in batches of 8 pairings per API call
+  const BATCH_SIZE = 8;
+  for (let i = 0; i < jobs.length; i += BATCH_SIZE) {
+    if (stopFlag) { log('Stopped by user.', 'info'); break; }
+    const batch = jobs.slice(i, i + BATCH_SIZE);
+    await processBatch(batch);
+    done = Math.min(i + BATCH_SIZE, total);
+    const pct = Math.round((done / total) * 100);
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('progress-text').textContent = done + ' / ' + total + ' pairings — ' + pct + '%';
+  }
+
+  document.getElementById('btn-generate').disabled = false;
+  document.getElementById('btn-stop').style.display = 'none';
+  log('Generation complete — ' + Object.keys(notes).length + ' notes written', 'info');
+
+  showReview();
+}
+
+function stopGeneration() { stopFlag = true; }
+
+// Category class helpers
+const _FOOD_SET  = new Set(['steak','starter','soup-salad','main','side','dessert']);
+const _DRINK_SET = new Set(['cocktail','wine-sparkling','wine-white','wine-red','wine-dessert',
+  'bourbon','rye','scotch','irish','japanese','canadian','tequila','mezcal','vodka','gin','rum',
+  'cognac','liqueur','singlemalt']);
+
+function getPairingType(itemCat, targetCat) {
+  const iSame = (_FOOD_SET.has(itemCat) && _FOOD_SET.has(targetCat)) ||
+                (_DRINK_SET.has(itemCat) && _DRINK_SET.has(targetCat));
+  if (!iSame) return 'cross';
+  if (_FOOD_SET.has(itemCat)) return 'food-food';
+  return 'drink-drink';
+}
+
+const SYSTEM_PROMPTS = {
+  cross: `You are writing food and drink pairing notes for Bowdie's Chophouse, a fine dining steakhouse in East Grand Rapids, Michigan. These are cross-category pairings — one item is food, one is a drink.
+
+Two sentences maximum. First sentence: name the specific flavor bridge — what characteristic in the drink speaks to the food, or what contrast creates balance (e.g. "The oak and caramel in the bourbon echo the char on the ribeye"). Second sentence: the payoff — what the guest actually experiences when they have both together.
+
+Write like you're briefing a server who will say this out loud at the table, not reading from a wine list. Reference actual flavor compounds, textures, or techniques. No filler phrases like "complements beautifully" or "pairs well with." Specific is everything.
+
+Respond ONLY with a JSON object: {"ItemA|||ItemB": "note"}. No other text.`,
+
+  'food-food': `You are writing progression notes for Bowdie's Chophouse, a fine dining steakhouse in East Grand Rapids, Michigan. These are food-to-food notes — not simultaneous pairings, but sequential progression recommendations. If a guest enjoyed the first item, here's why the second item is their natural next move.
+
+Two sentences maximum. Frame it as flavor progression, not pairing: "If they went for the tartare, the ribeye takes those same bold, savory instincts and turns up the volume." Name what profile characteristic connects the two items and how the second item builds on or contrasts the first in a satisfying way.
+
+Write like you're briefing a server who will say this out loud. Specific flavor language, no filler.
+
+Respond ONLY with a JSON object: {"ItemA|||ItemB": "note"}. No other text.`,
+
+  'drink-drink': `You are writing drink progression notes for Bowdie's Chophouse, a fine dining steakhouse in East Grand Rapids, Michigan. These are drink-to-drink notes — how a guest who enjoyed the first drink might naturally move to the second across the arc of the evening.
+
+Two sentences maximum. Frame it as the evening's arc, not a simultaneous pairing: "The Manhattan sets up a rye-forward palate — the Barolo carries that same structured tannin into the meal." Name what flavor thread or style connects them and why one follows the other naturally.
+
+Write like you're briefing a server who will say this out loud. Specific flavor language, no filler.
+
+Respond ONLY with a JSON object: {"ItemA|||ItemB": "note"}. No other text.`
+};
+
+async function processBatch(batch) {
+  // Group batch by pairing type — different system prompts
+  const groups = { cross: [], 'food-food': [], 'drink-drink': [] };
+  batch.forEach(job => {
+    const targetEntry = pairingData.find(e => e.name === job.target);
+    const targetCat = targetEntry ? targetEntry.category : '';
+    const type = getPairingType(job.itemCat, targetCat);
+    job.pairingType = type;
+    job.targetProfile = targetEntry ? targetEntry.profile.slice(0,4) : [];
+    groups[type].push(job);
+  });
+
+  // Process each non-empty group
+  for (const [type, jobs] of Object.entries(groups)) {
+    if (!jobs.length) continue;
+
+    const pairingLines = jobs.map(job =>
+      `- "${job.itemName}" (${job.itemCat}, profile: ${job.itemProfile.slice(0,4).join(', ')}) → "${job.target}" [${job.tier}]${job.targetProfile.length ? ' (target profile: ' + job.targetProfile.join(', ') + ')' : ''}`
+    ).join('\n');
+
+    const systemPrompt = SYSTEM_PROMPTS[type];
+    // Smaller batches within each type group to avoid truncation
+    const TYPE_BATCH = 4;
+    for (let ti = 0; ti < jobs.length; ti += TYPE_BATCH) {
+      if (stopFlag) break;
+      const subBatch = jobs.slice(ti, ti + TYPE_BATCH);
+      const subLines = subBatch.map(job =>
+        `- "${job.itemName}" (${job.itemCat}, profile: ${job.itemProfile.slice(0,4).join(', ')}) → "${job.target}" [${job.tier}]${job.targetProfile.length ? ' (target: ' + job.targetProfile.join(', ') + ')' : ''}`
+      ).join('\n');
+
+      const userPrompt = `Write pairing notes for these ${subBatch.length} pairings.\n\n${subLines}\n\nReturn ONLY a raw JSON object. No markdown, no backticks, no explanation. Example format:\n{"Item A|||Item B": "The note goes here.", "Item C|||Item D": "Another note."}`;
+
+      try {
+        const response = await fetch('https://api.anthropic.com/v1/messages', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': apiKey,
+            'anthropic-version': '2023-06-01',
+            'anthropic-dangerous-direct-browser-access': 'true'
+          },
+          body: JSON.stringify({
+            model: 'claude-sonnet-4-6',
+            max_tokens: 1500,
+            system: systemPrompt,
+            messages: [{ role: 'user', content: userPrompt }]
+          })
+        });
+
+        if (!response.ok) {
+          const errText = await response.text();
+          log('HTTP ' + response.status + ': ' + errText.slice(0, 120), 'err');
+          await new Promise(r => setTimeout(r, 2000));
+          continue;
+        }
+
+        const data = await response.json();
+
+        // Log any API-level errors
+        if (data.error) {
+          log('API error: ' + JSON.stringify(data.error).slice(0,120), 'err');
+          continue;
+        }
+
+        const text = (data.content || [])
+          .filter(b => b.type === 'text')
+          .map(b => b.text).join('');
+
+        if (!text) {
+          log('Empty response for batch at ' + subBatch[0].itemName + ' — stop_reason: ' + data.stop_reason, 'err');
+          continue;
+        }
+
+        // Strip any accidental markdown fences
+        let clean = text.trim();
+        clean = clean.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim();
+
+        // Find the JSON object boundaries robustly
+        const jsonStart = clean.indexOf('{');
+        const jsonEnd = clean.lastIndexOf('}');
+        if (jsonStart === -1 || jsonEnd === -1) {
+          log('No JSON object found in response: ' + clean.slice(0, 100), 'err');
+          continue;
+        }
+        clean = clean.slice(jsonStart, jsonEnd + 1);
+
+        let parsed;
+        try {
+          parsed = JSON.parse(clean);
+        } catch(e) {
+          log('JSON parse failed: ' + e.message + ' | Raw: ' + clean.slice(0, 120), 'err');
+          continue;
+        }
+
+        let count = 0;
+        subBatch.forEach(job => {
+          const key = noteKey(job.itemName, job.target);
+          const val = parsed[key];
+          if (val && typeof val === 'string') { notes[key] = val; count++; }
+        });
+        log(type + ': ' + count + '/' + subBatch.length + ' — ' + subBatch[0].itemName, 'ok');
+
+      } catch(err) {
+        log('Fetch error: ' + err.message, 'err');
+        await new Promise(r => setTimeout(r, 1500));
+      }
+
+      await new Promise(r => setTimeout(r, 150));
+    } // end sub-batch
+  } // end for groups
+}
+
+// ── SINGLE REGEN ──────────────────────────────────────────────────────────────
+async function regenNote(itemName, target, tier, btn) {
+  btn.textContent = '…';
+  btn.disabled = true;
+  const entry = pairingData.find(e => e.name === itemName);
+  const targetEntry = pairingData.find(e => e.name === target);
+  if (!entry) { btn.textContent = '↺'; btn.disabled = false; return; }
+
+  await processBatch([{
+    itemName, itemCat: entry.category, itemProfile: entry.profile, target, tier
+  }]);
+
+  // Update textarea
+  const key = noteKey(itemName, target);
+  const ta = document.querySelector(`[data-key="${CSS.escape(key)}"]`);
+  if (ta) { ta.value = notes[key] || ''; ta.classList.toggle('empty', !notes[key]); }
+
+  btn.textContent = '↺';
+  btn.disabled = false;
+  updateExportSummary();
+}
+
+// ── REVIEW UI ─────────────────────────────────────────────────────────────────
+function showReview() {
+  document.getElementById('review-section').style.display = 'block';
+  document.getElementById('export-section').style.display = 'block';
+  renderEntries();
+  updateExportSummary();
+  document.getElementById('review-section').scrollIntoView({ behavior: 'smooth' });
+}
+
+function renderEntries() {
+  const list = document.getElementById('entries-list');
+  const search = document.getElementById('search-notes').value.toLowerCase();
+  list.innerHTML = '';
+
+  let filtered = pairingData;
+  if (currentFilter === 'steak') filtered = filtered.filter(e => e.category === 'steak');
+  else if (currentFilter === 'food') filtered = filtered.filter(e => FOOD_CATS.has(e.category));
+  else if (currentFilter === 'drink') filtered = filtered.filter(e => DRINK_CATS.has(e.category));
+  else if (currentFilter === 'empty') {
+    filtered = filtered.filter(e => {
+      const pairs = [...e.excellent,...e.strong,...e.works];
+      return pairs.some(t => !notes[noteKey(e.name, t)]);
+    });
+  }
+
+  if (search) {
+    filtered = filtered.filter(e =>
+      e.name.toLowerCase().includes(search) ||
+      [...e.excellent,...e.strong,...e.works].some(t => t.toLowerCase().includes(search))
+    );
+  }
+
+  filtered.forEach(entry => {
+    const allPairs = [
+      ...entry.excellent.map(t=>({t,tier:'excellent'})),
+      ...entry.strong.map(t=>({t,tier:'strong'})),
+      ...entry.works.map(t=>({t,tier:'works'}))
+    ];
+    const noteCount = allPairs.filter(p => notes[noteKey(entry.name, p.t)]).length;
+
+    const card = document.createElement('div');
+    card.className = 'entry-card';
+    card.innerHTML = `
+      <div class="entry-header" onclick="toggleEntry(this)">
+        <div>
+          <div class="entry-name">${entry.name}</div>
+          <div class="entry-cat">${entry.category}</div>
+        </div>
+        <div class="entry-count">${noteCount}/${allPairs.length} notes</div>
+      </div>
+      <div class="entry-body">
+        ${allPairs.map(({t, tier}) => {
+          const key = noteKey(entry.name, t);
+          const val = notes[key] || '';
+          const safeKey = key.replace(/"/g,'&quot;');
+          return `<div class="pairing-row">
+            <div>
+              <div class="pairing-target">${t}</div>
+              <div class="pairing-tier tier-${tier}">${tier}</div>
+            </div>
+            <textarea class="note-field${val?'':' empty'}" data-key="${safeKey}"
+              oninput="notes[this.dataset.key]=this.value;this.classList.toggle('empty',!this.value);updateExportSummary()"
+              rows="2">${val}</textarea>
+            <button class="regen-btn" title="Regenerate" onclick="regenNote('${entry.name.replace(/'/g,"\\'")}','${t.replace(/'/g,"\\'")}','${tier}',this)">↺</button>
+          </div>`;
+        }).join('')}
+      </div>`;
+    list.appendChild(card);
+  });
+}
+
+function toggleEntry(header) {
+  const body = header.nextElementSibling;
+  body.classList.toggle('open');
+}
+
+function filterEntries() { renderEntries(); }
+function setFilter(btn, val) {
+  currentFilter = val;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderEntries();
+}
+
+function updateExportSummary() {
+  const total = pairingData.reduce((n,e) => n + e.excellent.length + e.strong.length + e.works.length, 0);
+  const filled = Object.keys(notes).filter(k => notes[k]).length;
+  const pct = Math.round((filled/total)*100);
+  document.getElementById('export-summary').innerHTML = `
+    <div class="stats">
+      <div class="stat"><div class="stat-n">${filled}</div><div class="stat-label">Notes Written</div></div>
+      <div class="stat"><div class="stat-n">${total-filled}</div><div class="stat-label">Still Empty</div></div>
+      <div class="stat"><div class="stat-n">${pct}%</div><div class="stat-label">Complete</div></div>
+    </div>`;
+}
+
+// ── EXPORT ────────────────────────────────────────────────────────────────────
+
+// Find the closing } of an entry object using bracket-depth counting.
+// Skips single-quoted strings so braces inside item names don't count.
+// Returns the index of the matching }, or -1 if not found.
+function findEntryCloseBrace(src, openBraceIdx) {
+  let depth = 0;
+  for (let i = openBraceIdx; i < src.length; i++) {
+    const ch = src[i];
+    if (ch === "'") {
+      i++;
+      while (i < src.length && src[i] !== "'") {
+        if (src[i] === '\\') i++; // escaped char — skip next
+        i++;
+      }
+      continue;
+    }
+    if (ch === '{') depth++;
+    else if (ch === '}') {
+      depth--;
+      if (depth === 0) return i;
+    }
+  }
+  return -1;
+}
+
+function downloadMap() {
+  let output = mapSource;
+
+  pairingData.forEach(entry => {
+    const entryNotes = {};
+    [...entry.excellent, ...entry.strong, ...entry.works].forEach(target => {
+      const key = noteKey(entry.name, target);
+      if (notes[key]) entryNotes[target] = notes[key];
+    });
+    if (Object.keys(entryNotes).length === 0) return;
+
+    // Locate this entry in the source by its name field
+    const nameLiteral = "name: '" + entry.name.replace(/\\/g, '\\\\').replace(/'/g, "\\'") + "'";
+    const nameIdx = output.indexOf(nameLiteral);
+    if (nameIdx === -1) {
+      log('Export: could not locate "' + entry.name + '" in source — skipped', 'err');
+      return;
+    }
+
+    // Walk backwards from nameIdx to find the opening { of this entry
+    let openBrace = -1;
+    for (let i = nameIdx - 1; i >= 0; i--) {
+      if (output[i] === '{') { openBrace = i; break; }
+    }
+    if (openBrace === -1) return;
+
+    // Find the matching closing }
+    const closeBrace = findEntryCloseBrace(output, openBrace);
+    if (closeBrace === -1) {
+      log('Export: could not find closing brace for "' + entry.name + '" — skipped', 'err');
+      return;
+    }
+
+    const notesJson = JSON.stringify(entryNotes, null, 2)
+      .split('\n').map((l, i) => i === 0 ? l : '    ' + l).join('\n');
+
+    // If pairingNotes already exists in this entry block, replace it
+    const entryBlock = output.slice(openBrace, closeBrace + 1);
+    const pnLocalIdx = entryBlock.indexOf('pairingNotes:');
+
+    if (pnLocalIdx !== -1) {
+      // Find the comma that precedes pairingNotes and replace from there to closeBrace
+      let commaIdx = openBrace + pnLocalIdx - 1;
+      while (commaIdx > openBrace && output[commaIdx] !== ',') commaIdx--;
+      output = output.slice(0, commaIdx) +
+               ',\n    pairingNotes: ' + notesJson +
+               '\n  ' + output.slice(closeBrace);
+    } else {
+      // First-time injection — insert before the closing }
+      output = output.slice(0, closeBrace) +
+               ',\n    pairingNotes: ' + notesJson +
+               '\n  ' + output.slice(closeBrace);
+    }
+  });
+
+  const blob = new Blob([output], { type: 'application/javascript' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'pairing-map.js';
+  a.click();
+  URL.revokeObjectURL(url);
+  log('Downloaded pairing-map.js with ' + Object.keys(notes).filter(k => notes[k]).length + ' embedded notes', 'info');
+}
+</script>
+</body>
+</html>

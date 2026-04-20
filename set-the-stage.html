@@ -258,7 +258,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 </div>
 
 <!-- ── SELECTION SCREEN ── -->
-<div id="screen-selection" class="screen active">
+<div id="screen-selection" class="screen">
   <div id="floor-sections-setup"></div>
 </div>
 <div id="floor-done-bar">
@@ -266,7 +266,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 </div>
 
 <!-- ── OVERVIEW SCREEN ── -->
-<div id="screen-overview" class="screen" style="padding:0 0 80px">
+<div id="screen-overview" class="screen active" style="padding:0 0 80px">
   <div id="overview-sections"></div>
 </div>
 
@@ -462,7 +462,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <p>Internal use only</p>
 </footer>
 
-<script src="table-defs.js?v=11"></script>
+<script src="table-defs.js?v=15"></script>
 <script src="pairing-map.js?v=15"></script>
 <script>
 // ── CONSTANTS ──────────────────────────────────────────────────────────────────
@@ -492,11 +492,14 @@ function getEffectiveShape(baseShape, guestCount) {
     case 'square-sm': return n <= 2 ? 'square-sm' : n <= 4 ? 'square' : n <= 9 ? 'rect-h' : 'rect-xl';
     case 'square':    return n <= 4 ? 'square'    : n <= 9 ? 'rect-h' : 'rect-xl';
     case 'rect-sm':   return n <= 4 ? 'rect-sm'   : n <= 9 ? 'rect-h' : 'rect-xl';
-    case 'rect-h':    return n <= 9 ? 'rect-h'    : 'rect-xl';
-    case 'round-sm':  return n <= 2 ? 'round-sm'  : n <= 4 ? 'round-md' : 'round-lg';
-    case 'round-md':  return n <= 4 ? 'round-md'  : 'round-lg';
-    case 'round-lg':  return 'round-lg';
-    default:          return baseShape;
+    case 'rect-h':     return n <= 9 ? 'rect-h'      : 'rect-xl';
+    case 'square-tall':return n <= 4 ? 'square-tall' : n <= 9 ? 'rect-h' : 'rect-xl';
+    case 'rect-v':     return n <= 6 ? 'rect-v'      : n <= 9 ? 'rect-h' : 'rect-xl';
+    case 'rect-thin':  return n <= 2 ? 'rect-thin'   : n <= 4 ? 'square' : n <= 9 ? 'rect-h' : 'rect-xl';
+    case 'round-sm':   return n <= 2 ? 'round-sm'    : n <= 4 ? 'round-md' : 'round-lg';
+    case 'round-md':   return n <= 4 ? 'round-md'    : 'round-lg';
+    case 'round-lg':   return 'round-lg';
+    default:           return baseShape;
   }
 }
 
@@ -598,6 +601,7 @@ function pickMode(mode) {
   if (mode === 'bar') {
     beginSession();
   } else {
+    showScreen('screen-selection');
     renderFloorSetup();
     document.getElementById('floor-done-bar').classList.add('visible');
   }
@@ -608,13 +612,27 @@ function renderFloorSetup() {
   container.innerHTML = '';
   FLOOR_ORDER.forEach(sectId => {
     if (sectId === 'bar') {
+      const block = document.createElement('div');
+      block.className = 'overview-section-block';
+      block.innerHTML = '<div class="overview-section-label">Bar</div>';
       if (state.mode === 'bar+table') {
-        const block = document.createElement('div');
-        block.className = 'overview-section-block';
-        block.innerHTML = '<div class="overview-section-label">Bar</div>'
-          + '<div class="floor-bar-note">Bar — 13 seats will be included</div>';
-        container.appendChild(block);
+        block.innerHTML += '<div class="floor-bar-note">Bar — 13 seats will be included</div>';
+      } else {
+        // server mode — show greyed strip, no interaction
+        const strip = document.createElement('div');
+        strip.className = 'bar-strip-row';
+        strip.style.pointerEvents = 'none';
+        for (let i = 0; i < 13; i++) {
+          const btn = document.createElement('button');
+          btn.className = 'bar-stool-btn';
+          btn.textContent = i + 1;
+          btn.style.opacity = '0.28';
+          btn.style.cursor = 'default';
+          strip.appendChild(btn);
+        }
+        block.appendChild(strip);
       }
+      container.appendChild(block);
       return;
     }
     const sect = SECTION_DEFS.find(s => s.id === sectId);
@@ -902,7 +920,8 @@ function openTable(tableId) {
   } else if (!table || table.guestCount == null) {
     document.getElementById('table-svg').innerHTML = '';
     document.getElementById('session-heading').textContent = 'Table ' + tableId;
-    promptCount = getTableDef(tableId)?.defaultSeats || 2;
+    const maxGuests = [70,71,72,73].includes(tableId) ? 3 : 12;
+    promptCount = Math.min(getTableDef(tableId)?.defaultSeats || 2, maxGuests);
     document.getElementById('prompt-count-display').textContent = promptCount;
     document.getElementById('guest-prompt-overlay').style.display = 'flex';
   } else {
@@ -964,10 +983,11 @@ function renderTableView() {
     svg.setAttribute('viewBox','0 0 340 340');
     const def = getTableDef(tableId);
     const shape = getEffectiveShape(def ? def.shape : 'square', table.guestCount);
+    const tableLabel = def ? def.label : String(tableId);
     if (shape === 'round-lg' || shape === 'round-md' || shape === 'round-sm') {
-      renderRoundTableSVG(svg, table.guestCount, table, shape);
+      renderRoundTableSVG(svg, table.guestCount, table, shape, tableLabel);
     } else {
-      renderRectTableSVG(svg, table.guestCount, table, shape);
+      renderRectTableSVG(svg, table.guestCount, table, shape, tableLabel);
     }
   }
 }
@@ -1052,7 +1072,7 @@ function drawBarStool(svg, x, y, seatIdx, table, R = 5.5) {
 }
 
 // ── ROUND TABLE SVG ───────────────────────────────────────────────────────────
-function renderRoundTableSVG(svg, n, table, shape) {
+function renderRoundTableSVG(svg, n, table, shape, lbl) {
   const CX=170, CY=170;
   const TABLE_R = (shape === 'round-md') ? 65 : (shape === 'round-sm') ? 50 : 82;
   const ORBIT_R = (shape === 'round-md') ? 108 : (shape === 'round-sm') ? 90 : 126;
@@ -1070,8 +1090,8 @@ function renderRoundTableSVG(svg, n, table, shape) {
   cloth.setAttribute('stroke-width','1'); cloth.setAttribute('stroke-dasharray','3 7');
   svg.appendChild(cloth);
   const lblG = document.createElementNS('http://www.w3.org/2000/svg','g');
-  lblG.innerHTML = '<text x="'+CX+'" y="'+(CY+9)+'" text-anchor="middle" font-family="Playfair Display, serif" font-size="24" font-weight="400" fill="#5A5248">'+n+'</text>'
-    +'<text x="'+CX+'" y="'+(CY+23)+'" text-anchor="middle" font-family="Josefin Sans, sans-serif" font-size="7" letter-spacing="3" fill="#5A5248" opacity="0.6">GUESTS</text>';
+  lblG.innerHTML = '<text x="'+CX+'" y="'+(CY+9)+'" text-anchor="middle" font-family="Playfair Display, serif" font-size="24" font-weight="400" fill="#5A5248">'+(lbl !== undefined ? lbl : n)+'</text>'
+    +'<text x="'+CX+'" y="'+(CY+23)+'" text-anchor="middle" font-family="Josefin Sans, sans-serif" font-size="7" letter-spacing="3" fill="#5A5248" opacity="0.6">TABLE</text>';
   svg.appendChild(lblG);
   for (let i = 0; i < n; i++) {
     const angle = (i/n)*2*Math.PI - Math.PI/2;
@@ -1146,14 +1166,17 @@ function drawSeatSVG(svg, x, y, seatIndex, hasItems, isActive, allFinished, labe
 }
 
 // ── RECT TABLE SVG ────────────────────────────────────────────────────────────
-function renderRectTableSVG(svg, n, table, shape) {
+function renderRectTableSVG(svg, n, table, shape, lbl) {
   const CX = 170, CY = 170;
   const BODIES = {
-    'square':    { tw: 130, th: 130, r: 10 },
-    'rect-h':    { tw: 190, th: 110, r: 10 },
-    'rect-xl':   { tw: 260, th: 110, r: 10 },
-    'rect-sm':   { tw: 150, th:  90, r:  8 },
-    'square-sm': { tw: 100, th: 100, r:  8 },
+    'square':      { tw: 130, th: 130, r: 10 },
+    'square-tall': { tw:  90, th: 175, r: 10 },
+    'rect-h':      { tw: 190, th: 110, r: 10 },
+    'rect-v':      { tw: 110, th: 190, r: 10 },
+    'rect-xl':     { tw: 260, th: 110, r: 10 },
+    'rect-sm':     { tw: 150, th:  90, r:  8 },
+    'rect-thin':   { tw: 130, th:  80, r:  8 },
+    'square-sm':   { tw: 100, th: 100, r:  8 },
   };
   const d = BODIES[shape] || BODIES['square'];
 
@@ -1184,8 +1207,8 @@ function renderRectTableSVG(svg, n, table, shape) {
 
   // Center label
   const lblG = document.createElementNS('http://www.w3.org/2000/svg','g');
-  lblG.innerHTML = '<text x="'+CX+'" y="'+(CY+9)+'" text-anchor="middle" font-family="Playfair Display,serif" font-size="24" font-weight="400" fill="#5A5248">'+n+'</text>'
-    +'<text x="'+CX+'" y="'+(CY+23)+'" text-anchor="middle" font-family="Josefin Sans,sans-serif" font-size="7" letter-spacing="3" fill="#5A5248" opacity="0.6">GUESTS</text>';
+  lblG.innerHTML = '<text x="'+CX+'" y="'+(CY+9)+'" text-anchor="middle" font-family="Playfair Display,serif" font-size="24" font-weight="400" fill="#5A5248">'+(lbl !== undefined ? lbl : n)+'</text>'
+    +'<text x="'+CX+'" y="'+(CY+23)+'" text-anchor="middle" font-family="Josefin Sans,sans-serif" font-size="7" letter-spacing="3" fill="#5A5248" opacity="0.6">TABLE</text>';
   svg.appendChild(lblG);
 
   // Seats
@@ -1246,6 +1269,30 @@ function getRectSeatPositions(shape, n, CX, CY, TW, TH) {
     return [...tops, ...bots].slice(0, n);
   }
 
+  if (shape === 'square-tall') {
+    // Portrait rectangle — 1 per side for up to 4, spread on long sides beyond that
+    const base4 = [T(), B(), L(), R()];
+    if (n <= 4) return base4.slice(0, n);
+    const base8 = [T(), B(), L(-26), L(26), R(26), R(-26)];
+    return base8.slice(0, n);
+  }
+
+  if (shape === 'rect-v') {
+    // Portrait version of rect-h — long axis is vertical, more seats on L/R
+    const off = Math.min(HH * 0.45, 42);
+    const base6 = [L(-off), L(off), T(), R(off), R(-off), B()];
+    if (n <= 6) return base6.slice(0, n);
+    const off2 = Math.min(HH * 0.8, 68);
+    const base8 = [L(-off2), L(0), L(off2), T(), R(off2), R(0), R(-off2), B()];
+    return base8.slice(0, n);
+  }
+
+  if (shape === 'rect-thin') {
+    // Short landscape rectangle — seats L/R first, then T/B
+    const base4 = [L(), R(), T(), B()];
+    return base4.slice(0, n);
+  }
+
   // Fallback: circular orbit
   return Array.from({length: n}, (_, i) => ({
     x: CX + 120 * Math.cos((i/n)*2*Math.PI - Math.PI/2),
@@ -1255,7 +1302,8 @@ function getRectSeatPositions(shape, n, CX, CY, TW, TH) {
 
 // ── GUEST COUNT ───────────────────────────────────────────────────────────────
 function promptAdjustCount(delta) {
-  promptCount = Math.max(1, Math.min(12, promptCount + delta));
+  const maxGuests = [70,71,72,73].includes(state.activeTableId) ? 3 : 12;
+  promptCount = Math.max(1, Math.min(maxGuests, promptCount + delta));
   document.getElementById('prompt-count-display').textContent = promptCount;
 }
 
@@ -1279,7 +1327,8 @@ function adjustGuestsForTable(delta) {
   const table = state.tables[tableId];
   if (!table || table.guestCount == null) return;
   if (delta > 0) {
-    if (table.guestCount >= 12) return;
+    const maxGuests = [70,71,72,73].includes(tableId) ? 3 : 12;
+    if (table.guestCount >= maxGuests) return;
     table.guestCount++;
     table.seats.push({ items:[], groupId:null });
     const n = table.guestCount;
@@ -2197,7 +2246,7 @@ document.addEventListener('click', e => {
   const remove = e.target.closest('[data-remove]');
   if (remove) { removeItem(decodeURIComponent(remove.dataset.remove)); return; }
   const addRec = e.target.closest('[data-add]');
-  if (addRec) { lockRecImmediate(decodeURIComponent(addRec.dataset.add), addRec.dataset.cat); return; }
+  if (addRec) { lockRecImmediate(decodeURIComponent(addRec.dataset.add)); return; }
   const ftBtn = e.target.closest('[data-ftval]');
   if (ftBtn) { selectFTAnswer(ftBtn.dataset.ftval, ftBtn); return; }
 });
@@ -2213,7 +2262,7 @@ document.addEventListener('touchmove', e => {
 }, {passive: false, capture: true});
 </script>
 <script src="set-the-stage-completion.js?v=23"></script>
-<!-- ── MODE MODAL ── -->
+<\!-- ── MODE MODAL ── -->
 <div id="mode-modal" class="modal-overlay centered open">
   <div class="mode-modal-panel">
     <div class="mode-modal-eyebrow">Bowdie’s Chophouse</div>
@@ -2225,7 +2274,7 @@ document.addEventListener('touchmove', e => {
   </div>
 </div>
 
-<!-- ── BAR SEAT MODAL ── -->
+<\!-- ── BAR SEAT MODAL ── -->
 <div id="bar-seat-modal" class="modal-overlay">
   <div class="modal-sheet">
     <div class="modal-title">Seat <span id="bar-seat-number"></span></div>
@@ -2237,7 +2286,7 @@ document.addEventListener('touchmove', e => {
   </div>
 </div>
 
-<!-- ── ADD TABLE MODAL ── -->
+<\!-- ── ADD TABLE MODAL ── -->
 <div id="add-table-modal" class="modal-overlay">
   <div class="modal-sheet">
     <div class="modal-title">Table <span id="add-table-label"></span></div>
