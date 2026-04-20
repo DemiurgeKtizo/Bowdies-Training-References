@@ -124,8 +124,9 @@ function confirmReset() {
   document.getElementById('floor-done-bar').classList.remove('visible');
   document.getElementById('mode-modal').classList.add('open');
 
-  showScreen('screen-selection');
-  updateTopBar('screen-selection');
+  renderOverview();
+  showScreen('screen-overview');
+  updateTopBar('screen-overview');
 }
 
 // ── RESTORE ─────────────────────────────────────────────────────────────────────

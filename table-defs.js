@@ -62,31 +62,31 @@ const TABLE_DEFS = [
 
   // ── PATIO — y coords scaled ×0.7 from original; svgH reduced from 85 → 60 ────
 
-  { id: 50, label: '50', section: 'patio', shape: 'square-sm', defaultSeats: 2, pos: { x: 71, y: 49 } },
-  { id: 51, label: '51', section: 'patio', shape: 'round-md',  defaultSeats: 4, pos: { x: 91, y: 25 } },
-  { id: 52, label: '52', section: 'patio', shape: 'round-lg',  defaultSeats: 6, pos: { x: 72, y: 17 } },
-  { id: 53, label: '53', section: 'patio', shape: 'rect-sm',   defaultSeats: 2, pos: { x: 52, y: 14 } },
-  { id: 54, label: '54', section: 'patio', shape: 'rect-sm',   defaultSeats: 2, pos: { x: 36, y:  6 } },
-  { id: 55, label: '55', section: 'patio', shape: 'round-lg',  defaultSeats: 6, pos: { x: 16, y: 12 } },
-  { id: 56, label: '56', section: 'patio', shape: 'square-sm', defaultSeats: 2, pos: { x: 16, y: 34 } },
-  { id: 57, label: '57', section: 'patio', shape: 'rect-sm',   defaultSeats: 4, pos: { x: 34, y: 48 } },
+  { id: 50, label: '50', section: 'patio', shape: 'square-sm', defaultSeats: 2, pos: { x: 71,  y: 49 } },
+  { id: 51, label: '51', section: 'patio', shape: 'round-md',  defaultSeats: 4, pos: { x: 88,  y: 25 } },
+  { id: 52, label: '52', section: 'patio', shape: 'round-lg',  defaultSeats: 6, pos: { x: 72,  y: 17 } },
+  { id: 53, label: '53', section: 'patio', shape: 'rect-sm',   defaultSeats: 2, pos: { x: 52,  y: 14 } },
+  { id: 54, label: '54', section: 'patio', shape: 'rect-sm',   defaultSeats: 2, pos: { x: 36,  y:  6 } },
+  { id: 55, label: '55', section: 'patio', shape: 'round-lg',  defaultSeats: 6, pos: { x:  9.3, y: 12 } },
+  { id: 56, label: '56', section: 'patio', shape: 'square-sm', defaultSeats: 2, pos: { x:  6.2, y: 34 } },
+  { id: 57, label: '57', section: 'patio', shape: 'rect-sm',   defaultSeats: 4, pos: { x: 34,  y: 48 } },
 
   // ── EVENT ROOM ────────────────────────────────────────────────────────────────
 
-  { id: 60, label: '60', section: 'event', shape: 'rect-h',    defaultSeats: 6, pos: { x: 90, y: 53 } },
-  { id: 61, label: '61', section: 'event', shape: 'rect-h',    defaultSeats: 6, pos: { x: 64, y: 53 } },
-  { id: 62, label: '62', section: 'event', shape: 'rect-h',    defaultSeats: 6, pos: { x: 36, y: 53 } },
-  { id: 63, label: '63', section: 'event', shape: 'rect-h',    defaultSeats: 6, pos: { x: 10, y: 53 } },
+  { id: 60, label: '60', section: 'event', shape: 'rect-h',      defaultSeats: 6, pos: { x: 86.2,  y: 53 } },
+  { id: 61, label: '61', section: 'event', shape: 'rect-h',      defaultSeats: 6, pos: { x: 60.73, y: 53 } },
+  { id: 62, label: '62', section: 'event', shape: 'rect-h',      defaultSeats: 6, pos: { x: 35.27, y: 53 } },
+  { id: 63, label: '63', section: 'event', shape: 'rect-h',      defaultSeats: 6, pos: { x:  9.8,  y: 53 } },
 
-  { id: 64, label: '64', section: 'event', shape: 'square-tall', defaultSeats: 4, pos: { x: 10, y: 30 } },
-  { id: 65, label: '65', section: 'event', shape: 'square-tall', defaultSeats: 4, pos: { x: 36, y: 30 } },
-  { id: 66, label: '66', section: 'event', shape: 'square-tall', defaultSeats: 4, pos: { x: 64, y: 30 } },
-  { id: 67, label: '67', section: 'event', shape: 'square-tall', defaultSeats: 4, pos: { x: 90, y: 30 } },
+  { id: 64, label: '64', section: 'event', shape: 'square-tall', defaultSeats: 4, pos: { x:  7.0,  y: 30 } },
+  { id: 65, label: '65', section: 'event', shape: 'square-tall', defaultSeats: 4, pos: { x: 34.33, y: 30 } },
+  { id: 66, label: '66', section: 'event', shape: 'square-tall', defaultSeats: 4, pos: { x: 61.67, y: 30 } },
+  { id: 67, label: '67', section: 'event', shape: 'square-tall', defaultSeats: 4, pos: { x: 89.0,  y: 30 } },
 
-  { id: 70, label: '70', section: 'event', shape: 'round-sm', defaultSeats: 2, pos: { x: 91, y: 11 } },
-  { id: 71, label: '71', section: 'event', shape: 'round-sm', defaultSeats: 2, pos: { x: 64, y: 11 } },
-  { id: 72, label: '72', section: 'event', shape: 'round-sm', defaultSeats: 2, pos: { x: 36, y: 11 } },
-  { id: 73, label: '73', section: 'event', shape: 'round-sm', defaultSeats: 2, pos: { x: 10, y: 11 } },
+  { id: 70, label: '70', section: 'event', shape: 'round-sm',    defaultSeats: 2, pos: { x: 89.4,  y: 11 } },
+  { id: 71, label: '71', section: 'event', shape: 'round-sm',    defaultSeats: 2, pos: { x: 61.8,  y: 11 } },
+  { id: 72, label: '72', section: 'event', shape: 'round-sm',    defaultSeats: 2, pos: { x: 34.2,  y: 11 } },
+  { id: 73, label: '73', section: 'event', shape: 'round-sm',    defaultSeats: 2, pos: { x:  6.6,  y: 11 } },
 
 ];
 
