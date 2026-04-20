@@ -55,6 +55,14 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .bar-strip-row{display:flex;flex-wrap:nowrap;gap:4px;padding:16px 16px 20px}
 .bar-stool-btn{flex:1 1 0;min-width:0;aspect-ratio:1/1;border-radius:50%;border:1px solid rgba(201,168,76,0.2);background:#1E1B18;color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.05em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
 .bar-stool-btn:hover{border-color:rgba(201,168,76,0.5);color:var(--text-muted)}
+.bar-stool-btn.group-pending{border-color:rgba(201,168,76,0.9);background:rgba(201,168,76,0.15);color:var(--gold)}
+.bar-stool-btn.group-anchor{border-color:var(--gold);background:rgba(201,168,76,0.2);color:var(--gold)}
+.bar-group-controls{display:flex;gap:10px;padding:4px 16px 16px;justify-content:center}
+.bar-group-confirm{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:11px 20px;cursor:pointer;transition:all 0.2s;border-radius:0}
+.bar-group-confirm:hover{background:rgba(201,168,76,0.08);border-color:var(--gold)}
+.bar-group-confirm:disabled{opacity:0.35;cursor:not-allowed}
+.bar-group-cancel{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;background:transparent;border:1px solid var(--border-soft);color:var(--text-dim);padding:11px 20px;cursor:pointer;transition:color 0.2s;border-radius:0}
+.bar-group-cancel:hover{color:var(--text-muted)}
 .overview-back-row{padding:16px 24px 0}
 
 /* ── TABLE SCREEN ── */
@@ -110,7 +118,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 #seat-sheet-backdrop{position:absolute;inset:0;background:rgba(17,16,16,0.6)}
 #seat-sheet-panel{position:relative;background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;height:52vh;display:flex;flex-direction:column;animation:slideUp 0.3s ease;transition:height 0.25s ease}
 #seat-sheet-panel.expanded{height:88vh}
-body.sheet-open{overflow:hidden}
+body.sheet-open{overflow:hidden;position:fixed;width:100%;left:0}
 .sheet-expand-zone{display:flex;align-items:center;justify-content:center;padding:10px 0 4px;cursor:pointer;flex-shrink:0;user-select:none}
 .sheet-expand-arrow{font-size:9px;color:var(--text-dim);letter-spacing:0.1em;transition:color 0.2s}
 .sheet-expand-zone:hover .sheet-expand-arrow{color:var(--text-muted)}
@@ -454,7 +462,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <p>Internal use only</p>
 </footer>
 
-<script src="table-defs.js?v=8"></script>
+<script src="table-defs.js?v=11"></script>
 <script src="pairing-map.js?v=15"></script>
 <script>
 // ── CONSTANTS ──────────────────────────────────────────────────────────────────
@@ -503,6 +511,8 @@ const state = {
   activeSeat: null,       // number | number[] | null
   groupMode: false,
   pendingGroupSeats: [],
+  barGroupSelectMode: false,
+  barGroupPendingSeats: [],
   specials: [],
   ftDepth: 'short',
   ftAnswers: [],
@@ -580,6 +590,7 @@ function updateTopBar(screen) {
 // ── FLOOR SECTION ORDER ───────────────────────────────────────────────────────
 const FLOOR_ORDER = ['main', 'bar', 'event', 'patio'];
 let _pendingAddTableId = null;
+let _pendingBarSeat = null;
 
 function pickMode(mode) {
   state.mode = mode;
@@ -736,31 +747,62 @@ function renderOverview() {
 
   FLOOR_ORDER.forEach(sectId => {
     if (sectId === 'bar') {
-      if (state.mode === 'bar' || state.mode === 'bar+table') {
-        const block = document.createElement('div');
-        block.className = 'overview-section-block';
-        block.innerHTML = '<div class="overview-section-label">Bar</div>';
-        const strip = document.createElement('div');
-        strip.className = 'bar-strip-row';
-        const barData = state.tables['bar'];
-        for (let i = 0; i < 13; i++) {
-          const seat = barData?.seats[i];
-          const btn = document.createElement('button');
-          btn.className = 'bar-stool-btn';
+      const barInSession = state.mode === 'bar' || state.mode === 'bar+table';
+      const inGroupSelect = state.barGroupSelectMode;
+      const block = document.createElement('div');
+      block.className = 'overview-section-block';
+      block.innerHTML = '<div class="overview-section-label">Bar</div>';
+      const strip = document.createElement('div');
+      strip.className = 'bar-strip-row';
+      const barData = state.tables['bar'];
+      for (let i = 0; i < 13; i++) {
+        const seat = barData?.seats[i];
+        const btn = document.createElement('button');
+        btn.className = 'bar-stool-btn';
+        if (inGroupSelect) {
+          // Group-select mode: show pending state, anchor seat distinct
+          const isPending = state.barGroupPendingSeats.includes(i);
+          const isAnchor = i === _pendingBarSeat;
+          if (isAnchor) btn.classList.add('group-anchor');
+          else if (isPending) btn.classList.add('group-pending');
+          btn.onclick = () => toggleBarGroupSeat(i);
+        } else if (!barInSession) {
+          btn.style.opacity = '0.28';
+          btn.style.cursor = 'default';
+        } else {
+          // Normal session mode: show group colors / item indicators
           const groupId = seat?.groupId;
-          if (groupId != null) {
+          if (groupId != null && barData) {
             const grp = barData.groups.find(g => g.id === groupId);
             if (grp) { btn.style.background = grp.color + '33'; btn.style.borderColor = grp.color; }
           }
           const hasItems = seat?.items?.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING);
           if (hasItems && groupId == null) btn.style.borderColor = 'rgba(201,168,76,0.6)';
-          btn.textContent = i + 1;
-          btn.onclick = () => openTable('bar');
-          strip.appendChild(btn);
+          btn.onclick = () => openBarSeatDirect(i);
         }
-        block.appendChild(strip);
-        container.appendChild(block);
+        btn.textContent = i + 1;
+        strip.appendChild(btn);
       }
+      block.appendChild(strip);
+      // Group-select controls
+      if (inGroupSelect) {
+        const n = state.barGroupPendingSeats.length;
+        const controls = document.createElement('div');
+        controls.className = 'bar-group-controls';
+        const confirm = document.createElement('button');
+        confirm.className = 'bar-group-confirm';
+        confirm.textContent = n >= 2 ? 'Confirm Group (' + n + ')' : 'Select Another Seat';
+        confirm.disabled = n < 2;
+        confirm.onclick = confirmBarGroupFromOverview;
+        const cancel = document.createElement('button');
+        cancel.className = 'bar-group-cancel';
+        cancel.textContent = 'Cancel';
+        cancel.onclick = cancelBarGroupSelect;
+        controls.appendChild(confirm);
+        controls.appendChild(cancel);
+        block.appendChild(controls);
+      }
+      container.appendChild(block);
       return;
     }
     const sect = SECTION_DEFS.find(s => s.id === sectId);
@@ -1375,14 +1417,95 @@ function dissolveGroup(groupId) {
   const table = state.tables['bar'];
   const group = table.groups.find(g => g.id === groupId);
   if (!group) return;
-  group.seatIndices.forEach(si => { if (table.seats[si]) table.seats[si].groupId = null; });
+  // Clear groupId and wipe all items from every seat in the group
+  group.seatIndices.forEach(si => {
+    if (table.seats[si]) {
+      table.seats[si].groupId = null;
+      table.seats[si].items = [];
+    }
+  });
   table.groups = table.groups.filter(g => g.id !== groupId);
-  document.getElementById('seat-sheet').classList.remove('open');
-  state.activeSeat = null;
-  renderTableView(); renderTableRecs(); saveState();
+  closeSeatSheet();
+  saveState();
+  renderOverview();
 }
 
 // ── SEAT SHEET ────────────────────────────────────────────────────────────────
+// Open a bar seat from the overview — prompts group/solo for fresh seats
+function openBarSeatDirect(seatIndex) {
+  if (!state.tables['bar']) {
+    state.tables['bar'] = {
+      guestCount: 13,
+      seats: Array.from({length: 13}, () => ({ items: [], groupId: null })),
+      groups: [],
+      activeCourseTab: 'starters',
+    };
+    saveState();
+  }
+  state.activeTableId = 'bar';
+  const table = state.tables['bar'];
+  const seat = table.seats[seatIndex];
+  // Already in a group — open the full group sheet
+  if (seat?.groupId != null) {
+    const group = table.groups.find(g => g.id === seat.groupId);
+    if (group) { openSeatSheet(group.seatIndices); return; }
+  }
+  // Already has items — established solo context, go straight in
+  const hasItems = seat?.items?.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING);
+  if (hasItems) { openSeatSheet(seatIndex); return; }
+  // Fresh seat — show group/solo prompt
+  _pendingBarSeat = seatIndex;
+  document.getElementById('bar-seat-number').textContent = seatIndex + 1;
+  document.getElementById('bar-seat-modal').classList.add('open');
+}
+
+function confirmBarSolo() {
+  document.getElementById('bar-seat-modal').classList.remove('open');
+  openSeatSheet(_pendingBarSeat);
+}
+
+function startBarGroupSelect() {
+  document.getElementById('bar-seat-modal').classList.remove('open');
+  state.barGroupSelectMode = true;
+  state.barGroupPendingSeats = [_pendingBarSeat];
+  renderOverview();
+}
+
+function toggleBarGroupSeat(i) {
+  const idx = state.barGroupPendingSeats.indexOf(i);
+  if (idx >= 0) {
+    if (i === _pendingBarSeat) return; // anchor seat can't be deselected
+    state.barGroupPendingSeats.splice(idx, 1);
+  } else {
+    state.barGroupPendingSeats.push(i);
+  }
+  renderOverview();
+}
+
+function confirmBarGroupFromOverview() {
+  const pending = state.barGroupPendingSeats;
+  if (pending.length < 2) return;
+  const table = state.tables['bar'];
+  const usedColors = table.groups.map(g => g.color);
+  const color = GROUP_COLORS.find(c => !usedColors.includes(c)) || GROUP_COLORS[0];
+  const newGroup = { id: Date.now(), color, seatIndices: [...pending] };
+  table.groups.push(newGroup);
+  pending.forEach(si => { if (table.seats[si]) table.seats[si].groupId = newGroup.id; });
+  state.barGroupSelectMode = false;
+  state.barGroupPendingSeats = [];
+  _pendingBarSeat = null;
+  saveState();
+  renderOverview();
+  openSeatSheet(newGroup.seatIndices);
+}
+
+function cancelBarGroupSelect() {
+  state.barGroupSelectMode = false;
+  state.barGroupPendingSeats = [];
+  _pendingBarSeat = null;
+  renderOverview();
+}
+
 function openSeatSheet(seatIndex) {
   state.activeSeat = seatIndex;
   const isGroup = Array.isArray(seatIndex);
@@ -1398,6 +1521,7 @@ function openSeatSheet(seatIndex) {
   document.getElementById('seat-sheet-panel').classList.remove('expanded');
   const arr = document.getElementById('sheet-expand-arrow');
   if (arr) arr.textContent = '▲';
+  document.body.style.top = '-' + window.scrollY + 'px';
   document.body.classList.add('sheet-open');
   document.getElementById('seat-sheet').classList.add('open');
   renderTableView();
@@ -1407,7 +1531,10 @@ function openSeatSheet(seatIndex) {
 function closeSeatSheet() {
   document.getElementById('seat-sheet').classList.remove('open');
   document.getElementById('seat-sheet-panel').classList.remove('expanded');
+  const scrollY = Math.abs(parseInt(document.body.style.top || '0'));
   document.body.classList.remove('sheet-open');
+  document.body.style.top = '';
+  window.scrollTo(0, scrollY);
   state.activeSeat = null;
   renderTableView();
   renderTableRecs();
@@ -2073,92 +2200,40 @@ document.addEventListener('click', e => {
   if (addRec) { lockRecImmediate(decodeURIComponent(addRec.dataset.add), addRec.dataset.cat); return; }
   const ftBtn = e.target.closest('[data-ftval]');
   if (ftBtn) { selectFTAnswer(ftBtn.dataset.ftval, ftBtn); return; }
-  if (e.target.id === 'toast-undo' && toastUndoFn) {
-    toastUndoFn(); toastUndoFn = null;
-    clearTimeout(toastTimer);
-    document.getElementById('add-toast').classList.remove('show');
-  }
 });
 
-// ── TOUCH/ZOOM BLOCK ──────────────────────────────────────────────────────────
-document.addEventListener('touchstart', e => { if (e.touches.length>1) e.preventDefault(); }, {passive:false,capture:true});
-document.addEventListener('touchmove',  e => { if (e.touches.length>1) e.preventDefault(); }, {passive:false,capture:true});
-document.addEventListener('gesturestart',  e => e.preventDefault(), {passive:false,capture:true});
-document.addEventListener('gesturechange', e => e.preventDefault(), {passive:false,capture:true});
-
-// ── LOGO ALIGNMENT ────────────────────────────────────────────────────────────
-function alignSectionLabel() {
-  const wm = document.querySelector('.top-bar-wordmark');
-  const sc = document.getElementById('top-bar-section');
-  if (!wm || !sc) return;
-  const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
-  ctx.font = '600 60px Josefin Sans, sans-serif';
-  const homeWmWidth = ctx.measureText("BOWDIE'S").width;
-  const homeBowdWidth = ctx.measureText('BOWD').width;
-  ctx.font = 'italic 400 36px Playfair Display, serif';
-  const homeScWidth = ctx.measureText('Chophouse').width;
-  const rightFraction = (homeBowdWidth + homeScWidth) / homeWmWidth;
-  const wmStyle = window.getComputedStyle(wm);
-  ctx.font = wmStyle.fontWeight+' '+wmStyle.fontSize+' '+wmStyle.fontFamily;
-  const tbWmWidth = ctx.measureText("BOWDIE'S").width;
-  const targetRight = tbWmWidth * rightFraction;
-  const scStyle = window.getComputedStyle(sc);
-  ctx.font = scStyle.fontWeight + ' ' + scStyle.fontSize + ' ' + scStyle.fontFamily;
-  const scWidth = ctx.measureText(sc.textContent).width;
-  sc.style.paddingLeft = Math.max(0, targetRight - scWidth) + 'px';
-}
-window.addEventListener('load', alignSectionLabel);
-window.addEventListener('resize', alignSectionLabel);
-
-// ── FIRST TIMER RECOMMENDATIONS ───────────────────────────────────────────────
-const FT_ANSWER_PROFILES = {
-  drinkingYes:[], drinkingWineOnly:[], drinkingCocktailsOnly:[], drinkingNo:[],
-  proteinRareMR:['bold','rich','tannic','umami','fatty'],
-  proteinMedium:['approachable','fruity'],
-  proteinMWWell:['light','approachable','crisp'],
-  proteinNoRed:['delicate','fresh','light','crisp','herbal'],
-  boldAndRich:['bold','rich','fatty','umami','oak','tannic','smoky','indulgent'],
-  middle:['approachable','fruity','crisp','fresh'],
-  lightAndFresh:['light','delicate','fresh','citrus','floral','herbal'],
-  sweetFlavor:['sweet','fruity','floral'],
-  savoryFlavor:['savory','umami','earthy','smoky'],
-  bothFlavors:['approachable','fruity','savory'],
-  wineExpert:[], wineGuided:[], celebrating:['indulgent','rich','bold'],
-  budgetApproachable:[], budgetMid:[], budgetSky:['indulgent','rich','bold','oak'],
-  none:[],
-};
-
-function getFirstTimerRecommendations(answers) {
-  const tagPool = [];
-  answers.forEach(a => (FT_ANSWER_PROFILES[a]||[]).forEach(t => tagPool.push(t)));
-  const noDrinks  = answers.includes('drinkingNo');
-  const drinkOnly = answers.includes('drinkingCocktailsOnly');
-  const wineOnly  = answers.includes('drinkingWineOnly');
-  return PAIRING_MAP
-    .filter(e => {
-      if (e.variable || e.oos || e.special) return false;
-      if (noDrinks  && DRINK_CATS.includes(e.category)) return false;
-      if (drinkOnly && FOOD_CATS.includes(e.category))  return false;
-      if (wineOnly  && DRINK_CATS.includes(e.category) && !e.category.startsWith('wine')) return false;
-      return true;
-    })
-    .map(e => ({ ...e, overlapScore: e.profile.filter(p => tagPool.includes(p)).length }))
-    .filter(e => tagPool.length === 0 || e.overlapScore > 0)
-    .sort((a,b) => b.overlapScore - a.overlapScore);
-}
-
+document.addEventListener('touchmove', e => {
+  if (document.body.classList.contains('sheet-open')) {
+    const sheetBody = document.getElementById('seat-sheet-panel');
+    if (sheetBody && sheetBody.classList.contains('expanded') && sheetBody.contains(e.target)) return;
+    e.preventDefault();
+  } else if (e.touches.length > 1) {
+    e.preventDefault();
+  }
+}, {passive: false, capture: true});
 </script>
-<script src="set-the-stage-completion.js?v=20"></script>
+<script src="set-the-stage-completion.js?v=23"></script>
 <!-- ── MODE MODAL ── -->
 <div id="mode-modal" class="modal-overlay centered open">
   <div class="mode-modal-panel">
-    <div class="mode-modal-eyebrow">Bowdie's Chophouse</div>
+    <div class="mode-modal-eyebrow">Bowdie’s Chophouse</div>
     <div class="mode-modal-title">Set The Stage</div>
     <div class="mode-modal-sub">How are you working tonight?</div>
     <button class="mode-choice-btn" onclick="pickMode('server')">Server</button>
     <button class="mode-choice-btn" onclick="pickMode('bar')">Bar Only</button>
     <button class="mode-choice-btn" onclick="pickMode('bar+table')">Bar + Tables</button>
+  </div>
+</div>
+
+<!-- ── BAR SEAT MODAL ── -->
+<div id="bar-seat-modal" class="modal-overlay">
+  <div class="modal-sheet">
+    <div class="modal-title">Seat <span id="bar-seat-number"></span></div>
+    <div class="modal-sub">Is this guest seated with others at the bar?</div>
+    <div class="modal-options">
+      <button class="modal-option primary" onclick="startBarGroupSelect()">Create a Group</button>
+      <button class="modal-option" onclick="confirmBarSolo()">Solo Guest — Add Items</button>
+    </div>
   </div>
 </div>
 
