@@ -103,6 +103,7 @@ const SHAPE_DIMS = {
   'round-sm':  { type: 'circle', r: 4   },
   'square':    { type: 'rect',   w: 5.5, h: 5.5 },
   'rect-h':    { type: 'rect',   w: 7.5, h: 5.5 },
+  'rect-xl':   { type: 'rect',   w: 11,  h: 5.5 },
   'rect-sm':   { type: 'rect',   w: 5,   h: 3.5 },
   'square-sm': { type: 'rect',   w: 3.5, h: 3.5 },
 };

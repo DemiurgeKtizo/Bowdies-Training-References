@@ -439,7 +439,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <p>Internal use only</p>
 </footer>
 
-<script src="table-defs.js?v=3"></script>
+<script src="table-defs.js?v=6"></script>
 <script src="pairing-map.js?v=15"></script>
 <script>
 // ── CONSTANTS ──────────────────────────────────────────────────────────────────
@@ -461,6 +461,22 @@ const COURSE_TABS = [
 const STATE_LOCKED      = 'locked';
 const STATE_CONSIDERING = 'considering';
 const STATE_FINISHED    = 'finished';
+
+// ── EFFECTIVE SHAPE (expands table when guests exceed default capacity) ────────
+function getEffectiveShape(baseShape, guestCount) {
+  const n = guestCount || 0;
+  switch (baseShape) {
+    case 'square-sm': return n <= 2 ? 'square-sm' : n <= 4 ? 'square' : n <= 9 ? 'rect-h' : 'rect-xl';
+    case 'square':    return n <= 4 ? 'square'    : n <= 9 ? 'rect-h' : 'rect-xl';
+    case 'rect-sm':   return n <= 4 ? 'rect-sm'   : n <= 9 ? 'rect-h' : 'rect-xl';
+    case 'rect-h':    return n <= 9 ? 'rect-h'    : 'rect-xl';
+    case 'round-sm':  return n <= 2 ? 'round-sm'  : n <= 4 ? 'round-md' : 'round-lg';
+    case 'round-md':  return n <= 4 ? 'round-md'  : 'round-lg';
+    case 'round-lg':  return 'round-lg';
+    default:          return baseShape;
+  }
+}
+
 
 // ── STATE ──────────────────────────────────────────────────────────────────────
 // tables: { [tableId]: { guestCount, seats:[{items,groupId}], groups:[{id,color,seatIndices}], activeCourseTab } }
@@ -629,7 +645,23 @@ function renderOverview() {
       block.className = 'overview-section-block';
       block.innerHTML = '<div class="overview-section-label">' + sect.label + '</div>';
       const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
-      svg.setAttribute('viewBox','0 0 100 ' + sect.svgH);
+      // Compute bounding box of selected tables and zoom to it
+      let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+      defs.forEach(def => {
+        const d = SHAPE_DIMS[def.shape];
+        const hw = d.type === 'circle' ? d.r : d.w;
+        const hh = d.type === 'circle' ? d.r : d.h;
+        minX = Math.min(minX, def.pos.x - hw);
+        minY = Math.min(minY, def.pos.y - hh);
+        maxX = Math.max(maxX, def.pos.x + hw);
+        maxY = Math.max(maxY, def.pos.y + hh);
+      });
+      const OVP = 14;
+      const vbX = Math.max(0, minX - OVP);
+      const vbY = Math.max(0, minY - OVP);
+      const vbW = Math.max(25, Math.min(100, maxX + OVP) - vbX);
+      const vbH = Math.max(25, Math.min(sect.svgH, maxY + OVP) - vbY);
+      svg.setAttribute('viewBox', vbX + ' ' + vbY + ' ' + vbW + ' ' + vbH);
       svg.classList.add('overview-svg');
       defs.forEach(def => drawTableInOverview(svg, def));
       block.appendChild(svg);
@@ -742,6 +774,7 @@ function openTable(tableId) {
     renderTableView();
     renderTableRecs();
   } else if (!table || table.guestCount == null) {
+    document.getElementById('table-svg').innerHTML = '';
     document.getElementById('session-heading').textContent = 'Table ' + tableId;
     promptCount = getTableDef(tableId)?.defaultSeats || 2;
     document.getElementById('prompt-count-display').textContent = promptCount;
@@ -804,7 +837,7 @@ function renderTableView() {
   } else {
     svg.setAttribute('viewBox','0 0 340 340');
     const def = getTableDef(tableId);
-    const shape = def ? def.shape : 'square';
+    const shape = getEffectiveShape(def ? def.shape : 'square', table.guestCount);
     if (shape === 'round-lg' || shape === 'round-md' || shape === 'round-sm') {
       renderRoundTableSVG(svg, table.guestCount, table, shape);
     } else {
@@ -992,6 +1025,7 @@ function renderRectTableSVG(svg, n, table, shape) {
   const BODIES = {
     'square':    { tw: 130, th: 130, r: 10 },
     'rect-h':    { tw: 190, th: 110, r: 10 },
+    'rect-xl':   { tw: 260, th: 110, r: 10 },
     'rect-sm':   { tw: 150, th:  90, r:  8 },
     'square-sm': { tw: 100, th: 100, r:  8 },
   };
@@ -1077,6 +1111,15 @@ function getRectSeatPositions(shape, n, CX, CY, TW, TH) {
     return base4.slice(0, n);
   }
 
+  if (shape === 'rect-xl') {
+    // Long banquet table — seats run along top then bottom, wrapping around
+    // Top: left→right (seats 1–6), Bottom: right→left (seats 7–12)
+    const xs = [-90, -54, -18, 18, 54, 90];
+    const tops = xs.map(dx => T(dx));
+    const bots = [...xs].reverse().map(dx => B(dx));
+    return [...tops, ...bots].slice(0, n);
+  }
+
   // Fallback: circular orbit
   return Array.from({length: n}, (_, i) => ({
     x: CX + 120 * Math.cos((i/n)*2*Math.PI - Math.PI/2),
@@ -1110,6 +1153,7 @@ function adjustGuestsForTable(delta) {
   const table = state.tables[tableId];
   if (!table || table.guestCount == null) return;
   if (delta > 0) {
+    if (table.guestCount >= 12) return;
     table.guestCount++;
     table.seats.push({ items:[], groupId:null });
     const n = table.guestCount;
@@ -2008,6 +2052,6 @@ function getFirstTimerRecommendations(answers) {
 }
 
 </script>
-<script src="set-the-stage-completion.js?v=15"></script>
+<script src="set-the-stage-completion.js?v=18"></script>
 </body>
 </html>
