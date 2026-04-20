@@ -774,7 +774,7 @@ function handleSearch(val) {
       div.onclick = () => {
         document.getElementById('main-search').value = '';
         results.classList.remove('visible');
-        openLockModal(item.name, item.category, item.variable);
+        addItemDirectly(item.name, item.category, item.variable);
       };
       results.appendChild(div);
     });
@@ -807,6 +807,38 @@ function handleVariableInput(val) {
   const itemName = document.getElementById('variable-input').dataset.item;
   const item = state.seats[si].items.find(i => i.name === itemName);
   if (item) item.variableNote = val;
+}
+
+// ── DIRECT ADD (from search) ───────────────────────────────────────────────────
+function addItemDirectly(name, category, isVariable) {
+  const si = state.activeSeat !== null ? state.activeSeat : 0;
+  const seat = state.seats[si];
+  if (!seat) return;
+
+  const existing = seat.items.find(i => i.name === name);
+  if (!existing) {
+    seat.items.push({ name, category, state: STATE_LOCKED, finishedWeight: 0 });
+  } else if (existing.state === STATE_CONSIDERING) {
+    existing.state = STATE_LOCKED;
+  } else {
+    return;
+  }
+
+  if (isVariable) {
+    const entry = PAIRING_MAP.find(e => e.name === name);
+    if (entry?.variablePrompt) {
+      document.getElementById('variable-prompt-label').textContent = entry.variablePrompt;
+      document.getElementById('variable-prompt').classList.add('visible');
+      document.getElementById('variable-input').dataset.item = name;
+      document.getElementById('variable-input').value = '';
+    }
+  }
+
+  renderSeatItems(); renderTable(); renderTableRecs(); saveState();
+  showToastWithUndo('Added — ' + name, () => {
+    seat.items = seat.items.filter(i => i.name !== name);
+    renderSeatItems(); renderTable(); renderTableRecs(); saveState();
+  });
 }
 
 // ── LOCK MODAL ─────────────────────────────────────────────────────────────────
