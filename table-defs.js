@@ -37,8 +37,8 @@ const TABLE_DEFS = [
   // ── MAIN DINING ROOM ─────────────────────────────────────────────────────────
 
   { id: 20, label: '20', section: 'main', shape: 'square',    defaultSeats: 4, pos: { x:  8, y: 77 } },
-  { id: 21, label: '21', section: 'main', shape: 'square',    defaultSeats: 4, pos: { x:  8, y: 55 } },
-  { id: 22, label: '22', section: 'main', shape: 'square',    defaultSeats: 4, pos: { x:  8, y: 32 } },
+  { id: 21, label: '21', section: 'main', shape: 'square',    defaultSeats: 4, pos: { x:  8, y: 57 } },
+  { id: 22, label: '22', section: 'main', shape: 'square',    defaultSeats: 4, pos: { x:  8, y: 37 } },
   { id: 23, label: '23', section: 'main', shape: 'square',    defaultSeats: 4, pos: { x:  8, y: 17 } },
   { id: 24, label: '24', section: 'main', shape: 'round-lg',  defaultSeats: 8, pos: { x: 30, y: 13 } },
 

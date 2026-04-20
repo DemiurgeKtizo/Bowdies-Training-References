@@ -52,8 +52,8 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .overview-section-block{margin-bottom:4px}
 .overview-section-label{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);padding:14px 24px 10px;border-bottom:1px solid var(--border-soft)}
 .overview-svg{width:100%;display:block;padding:0 16px;box-sizing:border-box}
-.bar-strip-row{display:flex;flex-wrap:wrap;gap:8px;padding:16px 24px 20px}
-.bar-stool-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(201,168,76,0.2);background:#1E1B18;color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.05em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;flex-shrink:0}
+.bar-strip-row{display:flex;flex-wrap:nowrap;gap:4px;padding:16px 16px 20px}
+.bar-stool-btn{flex:1 1 0;min-width:0;aspect-ratio:1/1;border-radius:50%;border:1px solid rgba(201,168,76,0.2);background:#1E1B18;color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.05em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
 .bar-stool-btn:hover{border-color:rgba(201,168,76,0.5);color:var(--text-muted)}
 .overview-back-row{padding:16px 24px 0}
 
@@ -815,33 +815,29 @@ function renderTableView() {
 
 // ── BAR SVG ───────────────────────────────────────────────────────────────────
 function renderBarSVG(svg, table) {
+  // Bar counter
   const counter = document.createElementNS('http://www.w3.org/2000/svg','rect');
-  counter.setAttribute('x','8'); counter.setAttribute('y','38');
-  counter.setAttribute('width','84'); counter.setAttribute('height','16');
+  counter.setAttribute('x','4'); counter.setAttribute('y','30');
+  counter.setAttribute('width','92'); counter.setAttribute('height','18');
   counter.setAttribute('fill','#1E1B18');
   counter.setAttribute('stroke','rgba(201,168,76,0.15)'); counter.setAttribute('stroke-width','0.5');
   svg.appendChild(counter);
   const lbl = document.createElementNS('http://www.w3.org/2000/svg','text');
-  lbl.setAttribute('x','50'); lbl.setAttribute('y','49'); lbl.setAttribute('text-anchor','middle');
+  lbl.setAttribute('x','50'); lbl.setAttribute('y','42'); lbl.setAttribute('text-anchor','middle');
   lbl.setAttribute('font-family','Josefin Sans, sans-serif');
   lbl.setAttribute('font-size','4.5'); lbl.setAttribute('letter-spacing','2');
   lbl.setAttribute('fill','#5A5248'); lbl.setAttribute('pointer-events','none');
   lbl.textContent = 'BAR';
   svg.appendChild(lbl);
 
-  // Row 1: seats 1-7  (y=22)
-  for (let i = 0; i < 7; i++) {
-    const x = 9 + i * 14;
-    drawBarStool(svg, x, 22, i, table);
-  }
-  // Row 2: seats 8-13 (y=59)
-  for (let i = 0; i < 6; i++) {
-    const x = 16 + i * 14;
-    drawBarStool(svg, x, 59, 7 + i, table);
+  // Single row of 13 seats above counter — R=3.5, step=7, start x=8
+  for (let i = 0; i < 13; i++) {
+    const x = 8 + i * 7;
+    drawBarStool(svg, x, 18, i, table, 3.5);
   }
 }
 
-function drawBarStool(svg, x, y, seatIdx, table) {
+function drawBarStool(svg, x, y, seatIdx, table, R = 5.5) {
   const seat = table.seats[seatIdx];
   const hasItems = seat?.items?.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING);
   const allFinished = seat?.items?.length > 0 && seat?.items?.every(it => it.state === STATE_FINISHED);
@@ -850,7 +846,6 @@ function drawBarStool(svg, x, y, seatIdx, table) {
   const isPending = state.groupMode && state.pendingGroupSeats.includes(seatIdx);
   const activeSeatArr = getActiveSeatsArray();
   const isActive = activeSeatArr.includes(seatIdx);
-  const R = 5.5;
 
   const g = document.createElementNS('http://www.w3.org/2000/svg','g');
   g.style.cursor = 'pointer';
