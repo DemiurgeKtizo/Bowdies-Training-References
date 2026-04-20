@@ -33,11 +33,11 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
 /* ── LANDING ── */
-#screen-landing{padding:72px 24px 80px!important}
+#screen-landing{padding-top:8px}
 .stage-header{text-align:center;padding:0 0 12px}
 .stage-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text-muted);margin-top:10px;letter-spacing:0.04em}
 .stage-divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto}
-.guest-count-row{display:flex;align-items:center;gap:16px;margin:48px 0 8px}
+.guest-count-row{display:flex;align-items:center;gap:16px;margin:32px 0 8px}
 .guest-count-label{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text-muted);flex:1}
 .count-controls{display:flex;align-items:center;gap:12px}
 .count-btn{width:36px;height:36px;border:1px solid var(--border);background:transparent;color:var(--gold);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
@@ -222,8 +222,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
       <button class="count-btn" onclick="adjustGuests(1)">+</button>
     </div>
   </div>
-  <button class="btn-primary" onclick="beginSession()">Set The Stage</button>
-  <button class="btn-secondary" onclick="beginFirstTimer()">✦ First Timer</button>
+  <button class="btn-primary" onclick="beginSession()">Begin</button>
 </div>
 
 <!-- SESSION -->
@@ -385,7 +384,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <p>Internal use only</p>
 </footer>
 
-<script src="pairing-map.js?v=9"></script>
+<script src="pairing-map.js?v=11"></script>
 <script>
 // ── CONSTANTS ──────────────────────────────────────────────────────────────────
 const DRINK_CATS = ['cocktail','wine-sparkling','wine-white','wine-red','wine-dessert',
@@ -1310,6 +1309,6 @@ window.addEventListener('resize', alignSectionLabel);
 
 // ── JS COMPLETION ───────────────────────────────────────────────────────────────
 </script>
-<script src="set-the-stage-completion.js?v=9"></script>
+<script src="set-the-stage-completion.js?v=11"></script>
 </body>
 </html>
