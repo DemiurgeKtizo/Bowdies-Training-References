@@ -121,13 +121,11 @@ function confirmReset() {
   try { localStorage.removeItem('sts_v5'); } catch(e) {}
   try { localStorage.removeItem('sts_v4'); } catch(e) {}
 
-  document.querySelectorAll('.mode-btn').forEach(b =>
-    b.classList.toggle('active', b.dataset.mode === 'server'));
-  document.getElementById('table-chip-section').style.display = 'block';
+  document.getElementById('floor-done-bar').classList.remove('visible');
+  document.getElementById('mode-modal').classList.add('open');
 
   showScreen('screen-selection');
   updateTopBar('screen-selection');
-  renderChips();
 }
 
 // ── RESTORE ─────────────────────────────────────────────────────────────────────
@@ -148,14 +146,8 @@ function restoreSession() {
     PAIRING_MAP.push(entry);
   });
 
-  const mode = state.mode || 'server';
-  document.querySelectorAll('.mode-btn').forEach(b =>
-    b.classList.toggle('active', b.dataset.mode === mode));
-  if (mode === 'bar') document.getElementById('table-chip-section').style.display = 'none';
-
-  renderChips();
-
   if (Object.keys(state.tables || {}).length > 0) {
+    document.getElementById('mode-modal').classList.remove('open');
     showScreen('screen-overview');
     updateTopBar('screen-overview');
     renderOverview();
@@ -171,21 +163,4 @@ window.addEventListener('DOMContentLoaded', () => {
   renderChips();
   restoreSession();
 });
-  renderChips();
-
-  if (Object.keys(state.tables || {}).length > 0) {
-    showScreen('screen-overview');
-    updateTopBar('screen-overview');
-    renderOverview();
-    if (state.activeTableId !== null) {
-      openTable(state.activeTableId);
-    }
-  }
   
-
-// ── INIT ────────────────────────────────────────────────────────────────────────
-
-window.addEventListener('DOMContentLoaded', () => {
-  renderChips();
-  restoreSession();
-});

@@ -98,12 +98,12 @@ function getTablesBySection(sectionId) {
 // No external scaling factor needed; these values produce proportionate display sizes
 // that match the actual floor plan images.
 const SHAPE_DIMS = {
-  'round-lg':  { type: 'circle', r: 7   },
-  'round-md':  { type: 'circle', r: 5.5 },
-  'round-sm':  { type: 'circle', r: 4   },
-  'square':    { type: 'rect',   w: 5.5, h: 5.5 },
-  'rect-h':    { type: 'rect',   w: 7.5, h: 5.5 },
-  'rect-xl':   { type: 'rect',   w: 11,  h: 5.5 },
-  'rect-sm':   { type: 'rect',   w: 5,   h: 3.5 },
-  'square-sm': { type: 'rect',   w: 3.5, h: 3.5 },
+  'round-lg':  { type: 'circle', r: 6.3  },
+  'round-md':  { type: 'circle', r: 5.0  },
+  'round-sm':  { type: 'circle', r: 3.6  },
+  'square':    { type: 'rect',   w: 5.0, h: 5.0 },
+  'rect-h':    { type: 'rect',   w: 6.8, h: 5.0 },
+  'rect-xl':   { type: 'rect',   w: 9.9, h: 5.0 },
+  'rect-sm':   { type: 'rect',   w: 4.5, h: 3.2 },
+  'square-sm': { type: 'rect',   w: 3.2, h: 3.2 },
 };

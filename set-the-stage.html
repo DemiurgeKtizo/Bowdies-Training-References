@@ -108,13 +108,18 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 #seat-sheet{position:fixed;inset:0;z-index:400;display:none;align-items:flex-end;justify-content:center}
 #seat-sheet.open{display:flex}
 #seat-sheet-backdrop{position:absolute;inset:0;background:rgba(17,16,16,0.6)}
-#seat-sheet-panel{position:relative;background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;max-height:82vh;display:flex;flex-direction:column;animation:slideUp 0.3s ease}
-.sheet-handle{width:36px;height:3px;background:var(--border);border-radius:2px;margin:12px auto 0;flex-shrink:0}
+#seat-sheet-panel{position:relative;background:var(--surface-2);border-top:1px solid var(--border);width:100%;max-width:600px;height:52vh;display:flex;flex-direction:column;animation:slideUp 0.3s ease;transition:height 0.25s ease}
+#seat-sheet-panel.expanded{height:88vh}
+body.sheet-open{overflow:hidden}
+.sheet-expand-zone{display:flex;align-items:center;justify-content:center;padding:10px 0 4px;cursor:pointer;flex-shrink:0;user-select:none}
+.sheet-expand-arrow{font-size:9px;color:var(--text-dim);letter-spacing:0.1em;transition:color 0.2s}
+.sheet-expand-zone:hover .sheet-expand-arrow{color:var(--text-muted)}
 .sheet-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid var(--border-soft);flex-shrink:0}
 .sheet-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--text-primary)}
 .sheet-close{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px}
 .sheet-close:hover{color:var(--text-muted)}
-.sheet-body{overflow-y:auto;flex:1;padding:16px 20px 32px}
+.sheet-body{overflow:hidden;flex:1;padding:16px 20px 32px}
+#seat-sheet-panel.expanded .sheet-body{overflow-y:auto}
 .search-wrap{position:relative;margin-bottom:8px}
 .search-input{width:100%;background:var(--surface-3);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:17px;padding:13px 16px;outline:none;transition:border-color 0.2s;border-radius:0;-webkit-appearance:none;appearance:none}
 .search-input::placeholder{color:var(--text-dim)}
@@ -213,6 +218,22 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 footer{text-align:center;padding:40px;background:var(--surface)}
 footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim)}
 .footer-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);margin:12px auto}
+
+/* ── MODE MODAL (centered) ── */
+.modal-overlay.centered{align-items:center}
+.mode-modal-panel{background:var(--surface-2);border:1px solid var(--border);width:calc(100% - 48px);max-width:360px;padding:36px 28px 40px}
+.mode-modal-eyebrow{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.mode-modal-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:600;color:var(--text-primary);margin-bottom:6px}
+.mode-modal-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);margin-bottom:28px;line-height:1.5}
+.mode-choice-btn{display:block;width:100%;padding:16px 20px;margin-bottom:10px;background:transparent;border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
+.mode-choice-btn:hover{border-color:var(--gold-dim);color:var(--gold);background:rgba(201,168,76,0.05)}
+.mode-choice-btn:last-child{margin-bottom:0}
+/* ── FLOOR DONE BAR ── */
+#floor-done-bar{display:none;position:fixed;bottom:0;left:0;right:0;padding:16px 24px 32px;background:linear-gradient(transparent,var(--charcoal) 45%);z-index:150;max-width:600px;margin:0 auto}
+#floor-done-bar.visible{display:block}
+.floor-bar-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);padding:12px 24px 16px}
+/* ── SCREEN-SELECTION as floor view ── */
+#screen-selection{padding:0 0 100px;max-width:600px;margin:0 auto}
 </style>
 </head>
 <body>
@@ -230,16 +251,10 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 
 <!-- ── SELECTION SCREEN ── -->
 <div id="screen-selection" class="screen active">
-  <div class="mode-toggle-row">
-    <button class="mode-btn active" data-mode="server" onclick="selectMode('server')">Server</button>
-    <button class="mode-btn" data-mode="bar" onclick="selectMode('bar')">Bar Only</button>
-    <button class="mode-btn" data-mode="bar+table" onclick="selectMode('bar+table')">Bar + Tables</button>
-  </div>
-  <div id="table-chip-section">
-    <div class="chip-section-label">Select Tables</div>
-    <div id="table-chips" class="chip-grid"></div>
-  </div>
-  <button class="btn-primary" id="begin-btn" onclick="beginSession()" disabled style="opacity:0.4">Begin</button>
+  <div id="floor-sections-setup"></div>
+</div>
+<div id="floor-done-bar">
+  <button class="btn-primary" id="floor-done-btn" onclick="beginSession()" disabled style="opacity:0.4">Done</button>
 </div>
 
 <!-- ── OVERVIEW SCREEN ── -->
@@ -302,7 +317,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 <div id="seat-sheet">
   <div id="seat-sheet-backdrop" onclick="closeSeatSheet()"></div>
   <div id="seat-sheet-panel">
-    <div class="sheet-handle"></div>
+    <div class="sheet-expand-zone" onclick="toggleSeatSheetExpand()"><span class="sheet-expand-arrow" id="sheet-expand-arrow">▲</span></div>
     <div class="sheet-header">
       <div class="sheet-title" id="sheet-title">Guest 1</div>
       <button class="sheet-close" onclick="closeSeatSheet()">Close</button>
@@ -439,7 +454,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <p>Internal use only</p>
 </footer>
 
-<script src="table-defs.js?v=6"></script>
+<script src="table-defs.js?v=8"></script>
 <script src="pairing-map.js?v=15"></script>
 <script>
 // ── CONSTANTS ──────────────────────────────────────────────────────────────────
@@ -562,46 +577,135 @@ function updateTopBar(screen) {
 }
 
 // ── SELECTION SCREEN ──────────────────────────────────────────────────────────
-function selectMode(mode) {
+// ── FLOOR SECTION ORDER ───────────────────────────────────────────────────────
+const FLOOR_ORDER = ['main', 'bar', 'event', 'patio'];
+let _pendingAddTableId = null;
+
+function pickMode(mode) {
   state.mode = mode;
-  document.querySelectorAll('.mode-btn').forEach(b =>
-    b.classList.toggle('active', b.dataset.mode === mode));
-  const chipSection = document.getElementById('table-chip-section');
-  chipSection.style.display = (mode === 'bar') ? 'none' : 'block';
-  validateBegin();
+  document.getElementById('mode-modal').classList.remove('open');
+  if (mode === 'bar') {
+    beginSession();
+  } else {
+    renderFloorSetup();
+    document.getElementById('floor-done-bar').classList.add('visible');
+  }
 }
 
-function renderChips() {
-  const grid = document.getElementById('table-chips');
-  if (!grid) return;
-  grid.innerHTML = '';
-  TABLE_DEFS.forEach(def => {
-    const btn = document.createElement('button');
-    btn.className = 'table-chip' + (state.selectedTableIds.includes(def.id) ? ' selected' : '');
-    btn.textContent = def.id;
-    btn.onclick = () => toggleTableChip(def.id);
-    grid.appendChild(btn);
+function renderFloorSetup() {
+  const container = document.getElementById('floor-sections-setup');
+  container.innerHTML = '';
+  FLOOR_ORDER.forEach(sectId => {
+    if (sectId === 'bar') {
+      if (state.mode === 'bar+table') {
+        const block = document.createElement('div');
+        block.className = 'overview-section-block';
+        block.innerHTML = '<div class="overview-section-label">Bar</div>'
+          + '<div class="floor-bar-note">Bar — 13 seats will be included</div>';
+        container.appendChild(block);
+      }
+      return;
+    }
+    const sect = SECTION_DEFS.find(s => s.id === sectId);
+    if (!sect) return;
+    const allDefs = getTablesBySection(sectId);
+    const block = document.createElement('div');
+    block.className = 'overview-section-block';
+    block.innerHTML = '<div class="overview-section-label">' + sect.label + '</div>';
+    const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    svg.setAttribute('viewBox','0 0 100 ' + sect.svgH);
+    svg.classList.add('overview-svg');
+    allDefs.forEach(def => drawTableForSelection(svg, def));
+    block.appendChild(svg);
+    container.appendChild(block);
   });
+  updateFloorDoneBtn();
 }
 
-function toggleTableChip(id) {
+function drawTableForSelection(svg, def) {
+  const isSelected = state.selectedTableIds.includes(def.id);
+  const dim = SHAPE_DIMS[def.shape];
+  const { pos, id, label } = def;
+  const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.style.cursor = 'pointer';
+  g.style.opacity = isSelected ? '1' : '0.32';
+  g.addEventListener('click', () => { toggleFloorSelection(id); });
+  const hw = dim.type === 'circle' ? dim.r : dim.w;
+  const hh = dim.type === 'circle' ? dim.r : dim.h;
+  const hit = document.createElementNS('http://www.w3.org/2000/svg','rect');
+  hit.setAttribute('x', pos.x - hw - 5); hit.setAttribute('y', pos.y - hh - 5);
+  hit.setAttribute('width', (hw + 5) * 2); hit.setAttribute('height', (hh + 5) * 2);
+  hit.setAttribute('fill','transparent');
+  g.appendChild(hit);
+  const fill = isSelected ? 'rgba(201,168,76,0.12)' : '#1E1B18';
+  const stroke = isSelected ? 'rgba(201,168,76,0.7)' : 'rgba(201,168,76,0.3)';
+  const swidth = isSelected ? '1' : '0.6';
+  if (dim.type === 'circle') {
+    const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    c.setAttribute('cx',pos.x); c.setAttribute('cy',pos.y); c.setAttribute('r',dim.r);
+    c.setAttribute('fill',fill); c.setAttribute('stroke',stroke); c.setAttribute('stroke-width',swidth);
+    g.appendChild(c);
+  } else {
+    const r = document.createElementNS('http://www.w3.org/2000/svg','rect');
+    r.setAttribute('x',pos.x - dim.w); r.setAttribute('y',pos.y - dim.h);
+    r.setAttribute('width',dim.w * 2); r.setAttribute('height',dim.h * 2);
+    r.setAttribute('rx','1');
+    r.setAttribute('fill',fill); r.setAttribute('stroke',stroke); r.setAttribute('stroke-width',swidth);
+    g.appendChild(r);
+  }
+  const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
+  txt.setAttribute('x',pos.x); txt.setAttribute('y',pos.y + 2.5);
+  txt.setAttribute('text-anchor','middle');
+  txt.setAttribute('font-family','Josefin Sans, sans-serif');
+  txt.setAttribute('font-size','3.5');
+  txt.setAttribute('fill', isSelected ? 'rgba(201,168,76,0.9)' : 'rgba(201,168,76,0.5)');
+  txt.setAttribute('pointer-events','none');
+  txt.textContent = label;
+  g.appendChild(txt);
+  svg.appendChild(g);
+}
+
+function toggleFloorSelection(id) {
   const idx = state.selectedTableIds.indexOf(id);
   if (idx >= 0) state.selectedTableIds.splice(idx, 1);
   else state.selectedTableIds.push(id);
-  renderChips();
-  validateBegin();
+  renderFloorSetup();
 }
 
-function validateBegin() {
-  const btn = document.getElementById('begin-btn');
+function updateFloorDoneBtn() {
+  const btn = document.getElementById('floor-done-btn');
   if (!btn) return;
-  const valid = state.mode === 'bar' || state.selectedTableIds.length > 0;
+  const valid = state.selectedTableIds.length > 0;
   btn.disabled = !valid;
   btn.style.opacity = valid ? '1' : '0.4';
 }
 
+function promptAddTable(id) {
+  _pendingAddTableId = id;
+  document.getElementById('add-table-label').textContent = id;
+  document.getElementById('add-table-modal').classList.add('open');
+}
+
+function confirmAddTable() {
+  document.getElementById('add-table-modal').classList.remove('open');
+  const id = _pendingAddTableId;
+  _pendingAddTableId = null;
+  if (id == null) return;
+  if (!state.selectedTableIds.includes(id)) {
+    state.selectedTableIds.push(id);
+    state.tables[id] = { guestCount:null, seats:[], groups:[], activeCourseTab:'starters' };
+  }
+  renderOverview();
+  saveState();
+  openTable(id);
+}
+
+// legacy stubs
+function renderChips() {}
+function validateBegin() {}
 // ── BEGIN SESSION ─────────────────────────────────────────────────────────────
 function beginSession() {
+  document.getElementById('floor-done-bar').classList.remove('visible');
   if (state.mode === 'bar' || state.mode === 'bar+table') {
     if (!state.tables['bar']) {
       state.tables['bar'] = {
@@ -625,76 +729,55 @@ function beginSession() {
   saveState();
 }
 
-// ── OVERVIEW ──────────────────────────────────────────────────────────────────
+// ── OVERVIEW: full floor, all tables, session state ────────────────────────────
 function renderOverview() {
   const container = document.getElementById('overview-sections');
   container.innerHTML = '';
 
-  if (state.mode !== 'bar') {
-    const bySect = {};
-    state.selectedTableIds.forEach(id => {
-      const def = getTableDef(id);
-      if (!def) return;
-      if (!bySect[def.section]) bySect[def.section] = [];
-      bySect[def.section].push(def);
-    });
-    SECTION_DEFS.forEach(sect => {
-      const defs = bySect[sect.id];
-      if (!defs || !defs.length) return;
-      const block = document.createElement('div');
-      block.className = 'overview-section-block';
-      block.innerHTML = '<div class="overview-section-label">' + sect.label + '</div>';
-      const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
-      // Compute bounding box of selected tables and zoom to it
-      let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-      defs.forEach(def => {
-        const d = SHAPE_DIMS[def.shape];
-        const hw = d.type === 'circle' ? d.r : d.w;
-        const hh = d.type === 'circle' ? d.r : d.h;
-        minX = Math.min(minX, def.pos.x - hw);
-        minY = Math.min(minY, def.pos.y - hh);
-        maxX = Math.max(maxX, def.pos.x + hw);
-        maxY = Math.max(maxY, def.pos.y + hh);
-      });
-      const OVP = 14;
-      const vbX = Math.max(0, minX - OVP);
-      const vbY = Math.max(0, minY - OVP);
-      const vbW = Math.max(25, Math.min(100, maxX + OVP) - vbX);
-      const vbH = Math.max(25, Math.min(sect.svgH, maxY + OVP) - vbY);
-      svg.setAttribute('viewBox', vbX + ' ' + vbY + ' ' + vbW + ' ' + vbH);
-      svg.classList.add('overview-svg');
-      defs.forEach(def => drawTableInOverview(svg, def));
-      block.appendChild(svg);
-      container.appendChild(block);
-    });
-  }
-
-  if (state.mode === 'bar' || state.mode === 'bar+table') {
+  FLOOR_ORDER.forEach(sectId => {
+    if (sectId === 'bar') {
+      if (state.mode === 'bar' || state.mode === 'bar+table') {
+        const block = document.createElement('div');
+        block.className = 'overview-section-block';
+        block.innerHTML = '<div class="overview-section-label">Bar</div>';
+        const strip = document.createElement('div');
+        strip.className = 'bar-strip-row';
+        const barData = state.tables['bar'];
+        for (let i = 0; i < 13; i++) {
+          const seat = barData?.seats[i];
+          const btn = document.createElement('button');
+          btn.className = 'bar-stool-btn';
+          const groupId = seat?.groupId;
+          if (groupId != null) {
+            const grp = barData.groups.find(g => g.id === groupId);
+            if (grp) { btn.style.background = grp.color + '33'; btn.style.borderColor = grp.color; }
+          }
+          const hasItems = seat?.items?.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING);
+          if (hasItems && groupId == null) btn.style.borderColor = 'rgba(201,168,76,0.6)';
+          btn.textContent = i + 1;
+          btn.onclick = () => openTable('bar');
+          strip.appendChild(btn);
+        }
+        block.appendChild(strip);
+        container.appendChild(block);
+      }
+      return;
+    }
+    const sect = SECTION_DEFS.find(s => s.id === sectId);
+    if (!sect) return;
+    const allDefs = getTablesBySection(sectId);
     const block = document.createElement('div');
     block.className = 'overview-section-block';
-    block.innerHTML = '<div class="overview-section-label">Bar</div>';
-    const strip = document.createElement('div');
-    strip.className = 'bar-strip-row';
-    const barData = state.tables['bar'];
-    for (let i = 0; i < 13; i++) {
-      const seat = barData?.seats[i];
-      const btn = document.createElement('button');
-      btn.className = 'bar-stool-btn';
-      const groupId = seat?.groupId;
-      if (groupId != null) {
-        const grp = barData.groups.find(g => g.id === groupId);
-        if (grp) { btn.style.background = grp.color + '33'; btn.style.borderColor = grp.color; }
-      }
-      const hasItems = seat?.items?.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING);
-      if (hasItems && groupId == null) btn.style.borderColor = 'rgba(201,168,76,0.6)';
-      btn.textContent = i + 1;
-      btn.onclick = () => openTable('bar');
-      strip.appendChild(btn);
-    }
-    block.appendChild(strip);
+    block.innerHTML = '<div class="overview-section-label">' + sect.label + '</div>';
+    const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    svg.setAttribute('viewBox','0 0 100 ' + sect.svgH);
+    svg.classList.add('overview-svg');
+    allDefs.forEach(def => drawTableInOverview(svg, def));
+    block.appendChild(svg);
     container.appendChild(block);
-  }
+  });
 }
+
 
 function drawTableInOverview(svg, def) {
   const { pos, shape, id, label } = def;
@@ -703,15 +786,16 @@ function drawTableInOverview(svg, def) {
   const hasData = tableData?.seats?.some(s =>
     s.items?.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING));
   const isVisited = tableData?.guestCount != null;
+  const isInSection = state.selectedTableIds.includes(id);
 
-  // SHAPE_DIMS are already calibrated for the 0–100 overview coordinate space
   const sr  = dim.type === 'circle' ? dim.r : 0;
   const sw  = dim.type === 'rect'   ? dim.w : 0;
   const sh  = dim.type === 'rect'   ? dim.h : 0;
 
   const g = document.createElementNS('http://www.w3.org/2000/svg','g');
   g.style.cursor = 'pointer';
-  g.addEventListener('click', () => openTable(id));
+  if (!isInSection) g.style.opacity = '0.28';
+  g.addEventListener('click', () => isInSection ? openTable(id) : promptAddTable(id));
 
   const hw = dim.type === 'circle' ? sr : sw;
   const hh = dim.type === 'circle' ? sr : sh;
@@ -795,7 +879,7 @@ function backToOverview() {
   state.groupMode = false;
   state.pendingGroupSeats = [];
   document.getElementById('seat-sheet').classList.remove('open');
-  document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
+  document.querySelectorAll('.modal-overlay:not(#mode-modal).open').forEach(m => m.classList.remove('open'));
   showScreen('screen-overview');
   updateTopBar('screen-overview');
   renderOverview();
@@ -1311,6 +1395,10 @@ function openSeatSheet(seatIndex) {
   document.getElementById('search-results').classList.remove('visible');
   document.getElementById('variable-prompt').classList.remove('visible');
   renderSeatItems();
+  document.getElementById('seat-sheet-panel').classList.remove('expanded');
+  const arr = document.getElementById('sheet-expand-arrow');
+  if (arr) arr.textContent = '▲';
+  document.body.classList.add('sheet-open');
   document.getElementById('seat-sheet').classList.add('open');
   renderTableView();
   setTimeout(() => document.getElementById('main-search').focus(), 300);
@@ -1318,11 +1406,20 @@ function openSeatSheet(seatIndex) {
 
 function closeSeatSheet() {
   document.getElementById('seat-sheet').classList.remove('open');
+  document.getElementById('seat-sheet-panel').classList.remove('expanded');
+  document.body.classList.remove('sheet-open');
   state.activeSeat = null;
   renderTableView();
   renderTableRecs();
 }
 
+
+function toggleSeatSheetExpand() {
+  const panel = document.getElementById('seat-sheet-panel');
+  const arrow = document.getElementById('sheet-expand-arrow');
+  panel.classList.toggle('expanded');
+  if (arrow) arrow.textContent = panel.classList.contains('expanded') ? '▼' : '▲';
+}
 function renderSeatItems() {
   const tableId = state.activeTableId;
   const table = state.tables[tableId];
@@ -2052,6 +2149,30 @@ function getFirstTimerRecommendations(answers) {
 }
 
 </script>
-<script src="set-the-stage-completion.js?v=18"></script>
+<script src="set-the-stage-completion.js?v=20"></script>
+<!-- ── MODE MODAL ── -->
+<div id="mode-modal" class="modal-overlay centered open">
+  <div class="mode-modal-panel">
+    <div class="mode-modal-eyebrow">Bowdie's Chophouse</div>
+    <div class="mode-modal-title">Set The Stage</div>
+    <div class="mode-modal-sub">How are you working tonight?</div>
+    <button class="mode-choice-btn" onclick="pickMode('server')">Server</button>
+    <button class="mode-choice-btn" onclick="pickMode('bar')">Bar Only</button>
+    <button class="mode-choice-btn" onclick="pickMode('bar+table')">Bar + Tables</button>
+  </div>
+</div>
+
+<!-- ── ADD TABLE MODAL ── -->
+<div id="add-table-modal" class="modal-overlay">
+  <div class="modal-sheet">
+    <div class="modal-title">Table <span id="add-table-label"></span></div>
+    <div class="modal-sub">Add this table to your section?</div>
+    <div class="modal-options">
+      <button class="modal-option primary" onclick="confirmAddTable()">Add to Section</button>
+      <button class="modal-option" onclick="document.getElementById('add-table-modal').classList.remove('open')">Not Now</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
