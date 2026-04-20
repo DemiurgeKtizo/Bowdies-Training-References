@@ -26,7 +26,7 @@
   --cat-glass: #C49A7A;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; touch-action: manipulation; }
+* { margin: 0; padding: 0; box-sizing: border-box; touch-action: pan-x pan-y; }
 
 html { background: #111010; }
 

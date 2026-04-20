@@ -6,7 +6,7 @@
 <title>Set The Stage — Bowdie's Chophouse</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;touch-action:pan-x pan-y}
 :root{
   --gold:#C9A84C;--gold-light:#E8C96A;--gold-dim:#8A6B2A;
   --charcoal:#111010;--surface:#171513;--surface-2:#1E1B18;--surface-3:#242018;
@@ -1309,6 +1309,11 @@ function selectFTAnswer(value, btn) {
   btn.closest('.ft-options').querySelectorAll('.ft-option').forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
 }
+
+// ── PINCH / ZOOM BLOCK ─────────────────────────────────────────────────────────
+document.addEventListener('touchmove', e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
+document.addEventListener('gesturestart', e => e.preventDefault(), { passive: false });
+document.addEventListener('gesturechange', e => e.preventDefault(), { passive: false });
 
 // ── LOGO ALIGNMENT ─────────────────────────────────────────────────────────────
 function alignSectionLabel() {
