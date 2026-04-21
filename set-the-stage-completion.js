@@ -165,4 +165,3 @@ window.addEventListener('DOMContentLoaded', () => {
   renderOverview(); // populate floor plan behind the mode modal on fresh load
   restoreSession(); // overwrites if there is a saved session
 });
-  

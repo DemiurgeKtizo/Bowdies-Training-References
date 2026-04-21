@@ -28,8 +28,6 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .top-bar-btn:hover{color:var(--text-muted)}
 .top-bar-guest-controls{display:flex;align-items:center;gap:8px}
 .top-bar-count{font-family:'Playfair Display',serif;font-size:18px;color:var(--text-primary);min-width:22px;text-align:center}
-.top-bar-count-btn{width:26px;height:26px;border:1px solid var(--border);background:transparent;color:var(--gold);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s}
-.top-bar-count-btn:hover{background:rgba(201,168,76,0.08)}
 
 /* ── SCREENS ── */
 .screen{display:none;padding:32px 24px 80px;max-width:600px;margin:0 auto}
@@ -98,8 +96,13 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .rec-item{display:flex;align-items:center;gap:14px;padding:14px 16px;border-bottom:1px solid var(--border-soft);cursor:pointer;background:var(--surface-2);width:100%;text-align:left;border-radius:0;transition:all 0.15s;border-left:2px solid transparent}
 .rec-item:last-child{border-bottom:none}
 .rec-item:hover{background:var(--surface-3);border-left-color:var(--gold-dim)}
-.rec-item.already-added{background:rgba(201,168,76,0.06);border-left-color:var(--gold)}
-.rec-item.already-added .rec-name{color:var(--gold-light)}
+.rec-explain{background:var(--surface);border-bottom:1px solid var(--border-soft);border-left:2px solid var(--gold);max-height:0;overflow:hidden;transition:max-height 0.25s ease, padding 0.25s ease;padding:0 18px}
+.rec-explain.open{max-height:600px;padding:14px 18px}
+.rec-explain-source{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
+.rec-explain-source strong{color:var(--gold-light);font-weight:600}
+.rec-explain-body{font-family:'Cormorant Garamond',serif;font-size:15px;line-height:1.5;color:var(--text-primary)}
+.rec-explain-body.rec-explain-pending{font-style:italic;color:var(--text-muted)}
+.rec-explain-body.rec-explain-pending strong{color:var(--text-primary);font-style:normal}
 .tier-pip{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 .tier-pip.excellent{background:var(--tier-excellent)}
 .tier-pip.strong{background:var(--tier-strong)}
@@ -124,8 +127,6 @@ body.sheet-open{overflow:hidden;position:fixed;width:100%;left:0}
 .sheet-expand-zone:hover .sheet-expand-arrow{color:var(--text-muted)}
 .sheet-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 12px;border-bottom:1px solid var(--border-soft);flex-shrink:0}
 .sheet-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--text-primary)}
-.sheet-close{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:4px}
-.sheet-close:hover{color:var(--text-muted)}
 .sheet-body{overflow:hidden;flex:1;padding:16px 20px 32px}
 #seat-sheet-panel.expanded .sheet-body{overflow-y:auto}
 .search-wrap{position:relative;margin-bottom:8px}
@@ -152,6 +153,8 @@ body.sheet-open{overflow:hidden;position:fixed;width:100%;left:0}
 .item-finish-bar{width:100%;padding:9px 16px;background:transparent;border:none;border-top:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;cursor:pointer;text-align:center;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:8px}
 .item-finish-bar::before{content:'';display:block;width:4px;height:4px;border-radius:50%;background:currentColor;opacity:0.4}
 .item-finish-bar:hover{background:rgba(201,168,76,0.05);color:var(--gold-dim)}
+.item-unfinish-bar{color:var(--text-muted)}
+.item-unfinish-bar:hover{color:var(--text-primary)}
 .item-remove-btn{color:var(--text-dim);font-size:18px;font-weight:300;background:transparent;border:none;cursor:pointer;padding:2px 4px;line-height:1;transition:color 0.15s;flex-shrink:0}
 .item-remove-btn:hover{color:var(--text-muted)}
 .first-timer-link{display:flex;align-items:center;gap:8px;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;border-top:1px solid var(--border-soft);cursor:pointer;padding:12px 16px;width:100%;transition:color 0.2s;margin-top:8px}
@@ -328,7 +331,6 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     <div class="sheet-expand-zone" onclick="toggleSeatSheetExpand()"><span class="sheet-expand-arrow" id="sheet-expand-arrow">▲</span></div>
     <div class="sheet-header">
       <div class="sheet-title" id="sheet-title">Guest 1</div>
-      <button class="sheet-close" onclick="closeSeatSheet()">Close</button>
     </div>
     <div class="sheet-body">
       <div class="search-wrap">
@@ -361,33 +363,6 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
       <button class="modal-option" onclick="lockModalChoice('consider')">Still Deciding — Steer Recommendations</button>
       <button class="modal-option" onclick="lockModalChoice('cancel')">Never Mind</button>
     </div>
-  </div>
-</div>
-
-<!-- ── FINISH DRINK MODAL ── -->
-<div class="modal-overlay" id="finish-drink-modal">
-  <div class="modal-sheet">
-    <div class="modal-title" id="finish-drink-title">That one's done.</div>
-    <div class="modal-sub" id="finish-drink-sub">What's next?</div>
-    <div class="modal-options" id="finish-drink-options"></div>
-  </div>
-</div>
-
-<!-- ── FINISH FOOD MODAL ── -->
-<div class="modal-overlay" id="finish-food-modal">
-  <div class="modal-sheet">
-    <div class="modal-title" id="finish-food-title">Course down.</div>
-    <div class="modal-sub" id="finish-food-sub">Where are they headed?</div>
-    <div class="modal-options" id="finish-food-options"></div>
-  </div>
-</div>
-
-<!-- ── COURSE PICKER ── -->
-<div class="modal-overlay" id="course-picker-modal">
-  <div class="modal-sheet">
-    <div class="modal-title" id="course-picker-title">What's next?</div>
-    <div class="modal-sub">Select a course to see recommendations.</div>
-    <div class="modal-options" id="course-picker-options"></div>
   </div>
 </div>
 
@@ -445,13 +420,15 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   </div>
 </div>
 
-<!-- ── REMOVE GUEST MODAL ── -->
-<div class="modal-overlay" id="remove-guest-modal">
+<!-- ── COMBINE TABLES MODAL ── -->
+<div class="modal-overlay" id="combine-modal">
   <div class="modal-sheet">
-    <div class="modal-title">Which guest?</div>
-    <div class="modal-sub">Select the guest to remove from this table.</div>
-    <div class="modal-options" id="remove-guest-options"></div>
-    <button class="modal-btn modal-btn-cancel" style="margin-top:12px;width:100%" onclick="document.getElementById('remove-guest-modal').classList.remove('open')">Cancel</button>
+    <div class="modal-title" id="combine-modal-title">Combine tables?</div>
+    <div class="modal-sub" id="combine-modal-sub"></div>
+    <div class="modal-options" id="combine-modal-options"></div>
+    <div class="modal-actions">
+      <button class="modal-btn modal-btn-cancel" onclick="cancelCombine()">Cancel</button>
+    </div>
   </div>
 </div>
 
@@ -462,8 +439,9 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <p>Internal use only</p>
 </footer>
 
-<script src="table-defs.js?v=17"></script>
-<script src="pairing-map.js?v=15"></script>
+<script src="table-defs.js?v=19"></script>
+<script src="pairing-map-v2.js?v=2"></script>
+<script src="pairing-notes.js?v=1"></script>
 <script>
 // ── CONSTANTS ──────────────────────────────────────────────────────────────────
 const DRINK_CATS = ['cocktail','wine-sparkling','wine-white','wine-red','wine-dessert',
@@ -499,6 +477,8 @@ function getEffectiveShape(baseShape, guestCount) {
     case 'round-sm':   return n <= 2 ? 'round-sm'    : n <= 4 ? 'round-md' : 'round-lg';
     case 'round-md':   return n <= 4 ? 'round-md'    : 'round-lg';
     case 'round-lg':   return 'round-lg';
+    case 'booth-left': return 'booth-left';     // geometry fixed by BOOTH_CAPS
+    case 'booth-bottom': return 'booth-bottom'; // geometry fixed by BOOTH_CAPS
     default:           return baseShape;
   }
 }
@@ -538,14 +518,25 @@ function getActiveSeatsArray() {
 function getActiveTable() { return state.tables[state.activeTableId] || null; }
 
 // ── PERSISTENCE ────────────────────────────────────────────────────────────────
+// sts_v6 added combinedWith / satelliteOf table fields (Apr 2026). Older sts_v5
+// sessions are intentionally dropped on first load to avoid mid-migration glitches.
 function saveState() {
-  try { localStorage.setItem('sts_v5', JSON.stringify(state)); } catch(e) {}
+  try { localStorage.setItem('sts_v6', JSON.stringify(state)); } catch(e) {}
 }
 function loadState() {
   try {
-    const raw = localStorage.getItem('sts_v5');
-    if (!raw) return false;
+    const raw = localStorage.getItem('sts_v6');
+    if (!raw) {
+      // Stale v5 data from prior release → force fresh session.
+      localStorage.removeItem('sts_v5');
+      return false;
+    }
     Object.assign(state, JSON.parse(raw));
+    // Backfill new fields on any pre-existing tables.
+    Object.values(state.tables || {}).forEach(t => {
+      if (t.combinedWith === undefined) t.combinedWith = [];
+      if (t.satelliteOf  === undefined) t.satelliteOf  = null;
+    });
     return true;
   } catch(e) { return false; }
 }
@@ -572,11 +563,13 @@ function updateTopBar(screen) {
     html += '<button class="top-bar-btn" onclick="backToOverview()">← Tables</button>';
     html += '<button class="top-bar-btn" onclick="showResetTableModal()">Reset</button>';
     if (!isBar && table && table.guestCount !== null) {
+      const isCombined = table.combinedWith && table.combinedWith.length;
+      const label = isCombined ? combinedTableLabel(tableId) : ('Table ' + tableId);
       html += '<div class="top-bar-guest-controls">'
-        + '<button class="top-bar-count-btn" onclick="adjustGuestsForTable(-1)">−</button>'
-        + '<span class="top-bar-count" id="top-bar-guest-count">' + table.guestCount + '</span>'
-        + '<button class="top-bar-count-btn" onclick="adjustGuestsForTable(1)">+</button>'
-        + '</div>';
+        + '<span class="top-bar-count" id="top-bar-guest-count">'
+        + (isCombined ? label + ' · ' : '')
+        + table.guestCount + ' Guest' + (table.guestCount !== 1 ? 's' : '')
+        + '</span></div>';
     }
     if (isBar) {
       html += '<button class="top-bar-btn" id="group-mode-btn" onclick="toggleGroupMode()">'
@@ -832,6 +825,23 @@ function renderOverview() {
     const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
     svg.setAttribute('viewBox','0 0 100 ' + sect.svgH);
     svg.classList.add('overview-svg');
+    // Draw combine connector lines BEFORE tables so tables render on top.
+    allDefs.forEach(def => {
+      const td = state.tables[def.id];
+      if (!td || !td.combinedWith || !td.combinedWith.length) return;
+      td.combinedWith.forEach(satId => {
+        const satDef = getTableDef(satId);
+        if (!satDef || satDef.section !== def.section) return;
+        const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+        line.setAttribute('x1', def.pos.x); line.setAttribute('y1', def.pos.y);
+        line.setAttribute('x2', satDef.pos.x); line.setAttribute('y2', satDef.pos.y);
+        line.setAttribute('stroke', 'rgba(201,168,76,0.55)');
+        line.setAttribute('stroke-width', '0.7');
+        line.setAttribute('stroke-dasharray', '1.5 1.5');
+        line.setAttribute('pointer-events', 'none');
+        svg.appendChild(line);
+      });
+    });
     allDefs.forEach(def => drawTableInOverview(svg, def));
     block.appendChild(svg);
     container.appendChild(block);
@@ -847,6 +857,13 @@ function drawTableInOverview(svg, def) {
     s.items?.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING));
   const isVisited = tableData?.guestCount != null;
   const isInSection = state.selectedTableIds.includes(id);
+  const isSatellite = tableData && tableData.satelliteOf != null;
+  const primaryData = isSatellite ? state.tables[tableData.satelliteOf] : null;
+  const primaryHasData = primaryData?.seats?.some(s =>
+    s.items?.some(it => it.state === STATE_LOCKED || it.state === STATE_CONSIDERING));
+  // Satellites inherit their primary's "visited" and "has data" styling.
+  const effectiveVisited = isVisited || (isSatellite && primaryData?.guestCount != null);
+  const effectiveHasData = hasData || primaryHasData;
 
   const sr  = dim.type === 'circle' ? dim.r : 0;
   const sw  = dim.type === 'rect'   ? dim.w : 0;
@@ -854,8 +871,13 @@ function drawTableInOverview(svg, def) {
 
   const g = document.createElementNS('http://www.w3.org/2000/svg','g');
   g.style.cursor = 'pointer';
-  if (!isInSection) g.style.opacity = '0.28';
-  g.addEventListener('click', () => isInSection ? openTable(id) : promptAddTable(id));
+  // Satellites should appear in-session (full opacity + tinted) even if user
+  // never pre-selected them — combining auto-added them to the session.
+  if (!isInSection && !isSatellite) g.style.opacity = '0.28';
+  g.addEventListener('click', () => {
+    if (isSatellite) return openTable(tableData.satelliteOf);
+    return isInSection ? openTable(id) : promptAddTable(id);
+  });
 
   const hw = dim.type === 'circle' ? sr : sw;
   const hh = dim.type === 'circle' ? sr : sh;
@@ -866,8 +888,8 @@ function drawTableInOverview(svg, def) {
   hit.setAttribute('fill','transparent');
   g.appendChild(hit);
 
-  const fill = hasData ? 'rgba(201,168,76,0.12)' : '#1E1B18';
-  const stroke = isVisited ? 'rgba(201,168,76,0.5)' : 'rgba(201,168,76,0.2)';
+  const fill = effectiveHasData ? 'rgba(201,168,76,0.12)' : '#1E1B18';
+  const stroke = effectiveVisited ? 'rgba(201,168,76,0.5)' : 'rgba(201,168,76,0.2)';
 
   if (dim.type === 'circle') {
     const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
@@ -887,12 +909,12 @@ function drawTableInOverview(svg, def) {
   txt.setAttribute('text-anchor','middle');
   txt.setAttribute('font-family','Josefin Sans, sans-serif');
   txt.setAttribute('font-size','3.5');
-  txt.setAttribute('fill', isVisited ? 'rgba(201,168,76,0.85)' : 'rgba(201,168,76,0.4)');
+  txt.setAttribute('fill', effectiveVisited ? 'rgba(201,168,76,0.85)' : 'rgba(201,168,76,0.4)');
   txt.setAttribute('pointer-events','none');
   txt.textContent = label;
   g.appendChild(txt);
 
-  if (hasData) {
+  if (effectiveHasData) {
     const dot = document.createElementNS('http://www.w3.org/2000/svg','circle');
     dot.setAttribute('cx', pos.x + hw - 1.5); dot.setAttribute('cy', pos.y - hh + 1.5);
     dot.setAttribute('r','2'); dot.setAttribute('fill','#C9A84C');
@@ -904,6 +926,11 @@ function drawTableInOverview(svg, def) {
 
 // ── TABLE VIEW ────────────────────────────────────────────────────────────────
 function openTable(tableId) {
+  // If this is a satellite, reroute to the primary — combined tables share one view.
+  const peek = state.tables[tableId];
+  if (peek && peek.satelliteOf != null) {
+    tableId = peek.satelliteOf;
+  }
   state.activeTableId = tableId;
   state.activeSeat = null;
   state.groupMode = false;
@@ -920,15 +947,18 @@ function openTable(tableId) {
   } else if (!table || table.guestCount == null) {
     document.getElementById('table-svg').innerHTML = '';
     document.getElementById('session-heading').textContent = 'Table ' + tableId;
-    const maxGuests = [70,71,72,73].includes(tableId) ? 3 : 12;
+    const maxGuests = [70,71,72,73].includes(tableId) ? 3 : 20;
     promptCount = Math.min(getTableDef(tableId)?.defaultSeats || 2, maxGuests);
     document.getElementById('prompt-count-display').textContent = promptCount;
     document.getElementById('guest-prompt-overlay').style.display = 'flex';
   } else {
     document.getElementById('guest-prompt-overlay').style.display = 'none';
     const n = table.guestCount;
+    const label = (table.combinedWith && table.combinedWith.length)
+      ? combinedTableLabel(tableId)
+      : ('Table ' + tableId);
     document.getElementById('session-heading').textContent =
-      'Table ' + tableId + ' — ' + n + ' Guest' + (n !== 1 ? 's' : '');
+      label + ' — ' + n + ' Guest' + (n !== 1 ? 's' : '');
     renderTableView();
     renderTableRecs();
   }
@@ -982,8 +1012,17 @@ function renderTableView() {
   } else {
     svg.setAttribute('viewBox','0 0 340 340');
     const def = getTableDef(tableId);
-    const shape = getEffectiveShape(def ? def.shape : 'square', table.guestCount);
-    const tableLabel = def ? def.label : String(tableId);
+    const isCombined = table.combinedWith && table.combinedWith.length;
+    // When booths are combined, promote to a standard rect so the expanded seat
+    // math works. Booth-left → rect-v (portrait); booth-bottom → rect-h (landscape).
+    let baseShape = def ? def.shape : 'square';
+    if (isCombined) {
+      if (baseShape === 'booth-left')   baseShape = 'rect-v';
+      if (baseShape === 'booth-bottom') baseShape = 'rect-h';
+    }
+    const shape = getEffectiveShape(baseShape, table.guestCount);
+    const tableLabel = isCombined ? combinedTableLabel(tableId).replace(/^Table /, '')
+                                  : (def ? def.label : String(tableId));
     if (shape === 'round-lg' || shape === 'round-md' || shape === 'round-sm') {
       renderRoundTableSVG(svg, table.guestCount, table, shape, tableLabel);
     } else {
@@ -1169,14 +1208,16 @@ function drawSeatSVG(svg, x, y, seatIndex, hasItems, isActive, allFinished, labe
 function renderRectTableSVG(svg, n, table, shape, lbl) {
   const CX = 170, CY = 170;
   const BODIES = {
-    'square':      { tw: 130, th: 130, r: 10 },
-    'square-tall': { tw:  90, th: 175, r: 10 },
-    'rect-h':      { tw: 190, th: 110, r: 10 },
-    'rect-v':      { tw: 110, th: 190, r: 10 },
-    'rect-xl':     { tw: 260, th: 110, r: 10 },
-    'rect-sm':     { tw: 150, th:  90, r:  8 },
-    'rect-thin':   { tw: 130, th:  80, r:  8 },
-    'square-sm':   { tw: 100, th: 100, r:  8 },
+    'square':       { tw: 130, th: 130, r: 10 },
+    'square-tall':  { tw:  90, th: 175, r: 10 },
+    'rect-h':       { tw: 190, th: 110, r: 10 },
+    'rect-v':       { tw: 110, th: 190, r: 10 },
+    'rect-xl':      { tw: 260, th: 110, r: 10 },
+    'rect-sm':      { tw: 150, th:  90, r:  8 },
+    'rect-thin':    { tw: 130, th:  80, r:  8 },
+    'square-sm':    { tw: 100, th: 100, r:  8 },
+    'booth-left':   { tw: 120, th: 170, r: 10 },
+    'booth-bottom': { tw: 210, th: 110, r: 10 },
   };
   const d = BODIES[shape] || BODIES['square'];
 
@@ -1293,6 +1334,26 @@ function getRectSeatPositions(shape, n, CX, CY, TW, TH) {
     return base4.slice(0, n);
   }
 
+  if (shape === 'booth-left') {
+    // Bench on LEFT wall: 2 stacked seats on left, chairs above + below.
+    // n=1:1L · n=2:2L · n=3:2L+T · n=4:2L+T+B · n=5:2L+2T+B · n=6:2L+2T+2B
+    if (n <= 1) return [L()];
+    if (n === 2) return [L(-32), L(32)];
+    if (n === 3) return [L(-32), L(32), T()];
+    if (n === 4) return [L(-32), L(32), T(), B()];
+    if (n === 5) return [L(-32), L(32), T(-28), T(28), B()];
+    return [L(-32), L(32), T(-28), T(28), B(-28), B(28)];
+  }
+
+  if (shape === 'booth-bottom') {
+    // Bench on BOTTOM wall: chair L, chair R, up to 2 seats at bottom.
+    // n=1:L · n=2:L+R · n=3:L+R+B · n=4:L+R+2B.  Max 4.
+    if (n <= 1) return [L()];
+    if (n === 2) return [L(), R()];
+    if (n === 3) return [L(), R(), B()];
+    return [L(), R(), B(-42), B(42)];
+  }
+
   // Fallback: circular orbit
   return Array.from({length: n}, (_, i) => ({
     x: CX + 120 * Math.cos((i/n)*2*Math.PI - Math.PI/2),
@@ -1302,7 +1363,9 @@ function getRectSeatPositions(shape, n, CX, CY, TW, TH) {
 
 // ── GUEST COUNT ───────────────────────────────────────────────────────────────
 function promptAdjustCount(delta) {
-  const maxGuests = [70,71,72,73].includes(state.activeTableId) ? 3 : 12;
+  // Soft upper cap — high enough to always trigger the combine flow when exceeded.
+  // Round-sm tables (70-73) hard-cap at 3 — they have no realistic combine partner.
+  const maxGuests = [70,71,72,73].includes(state.activeTableId) ? 3 : 20;
   promptCount = Math.max(1, Math.min(maxGuests, promptCount + delta));
   document.getElementById('prompt-count-display').textContent = promptCount;
 }
@@ -1310,8 +1373,17 @@ function promptAdjustCount(delta) {
 function confirmTableGuests() {
   const tableId = state.activeTableId;
   const table = state.tables[tableId];
+  if (tableId === 'bar') return; // bar has fixed 13 seats
+  const cap = getTableCapacity(tableId);
+  // If guest count exceeds this table's physical capacity, open combine flow.
+  if (promptCount > cap) {
+    openCombineFlow(tableId, promptCount);
+    return;
+  }
   table.guestCount = promptCount;
   table.seats = Array.from({length:promptCount}, () => ({ items:[], groupId:null }));
+  table.combinedWith = [];
+  table.satelliteOf = null;
   document.getElementById('guest-prompt-overlay').style.display = 'none';
   const n = promptCount;
   document.getElementById('session-heading').textContent =
@@ -1322,52 +1394,109 @@ function confirmTableGuests() {
   saveState();
 }
 
-function adjustGuestsForTable(delta) {
-  const tableId = state.activeTableId;
-  const table = state.tables[tableId];
-  if (!table || table.guestCount == null) return;
-  if (delta > 0) {
-    const maxGuests = [70,71,72,73].includes(tableId) ? 3 : 12;
-    if (table.guestCount >= maxGuests) return;
-    table.guestCount++;
-    table.seats.push({ items:[], groupId:null });
-    const n = table.guestCount;
-    document.getElementById('session-heading').textContent =
-      'Table ' + tableId + ' — ' + n + ' Guest' + (n !== 1 ? 's' : '');
-    updateTopBar('screen-table');
-    renderTableView(); renderTableRecs(); saveState();
+// ── COMBINE FLOW ──────────────────────────────────────────────────────────────
+// When guest count > primary's capacity, offer to link one or more adjacent
+// tables. Combined tables share a single unified seat list owned by the primary;
+// satellites carry only a pointer (satelliteOf) and no guest data of their own.
+let _pendingCombine = null; // { primaryId, requestedCount }
+
+function openCombineFlow(primaryId, requestedCount) {
+  const primaryCap = getTableCapacity(primaryId);
+  const neighbors = getAdjacentTables(primaryId)
+    .filter(n => {
+      // Must be in this session's selected tables AND not already occupied by another combine
+      if (!state.selectedTableIds.includes(n.id)) return false;
+      const nData = state.tables[n.id];
+      if (!nData) return true;
+      // Skip if already being used as primary or satellite of another group
+      if (nData.satelliteOf != null) return false;
+      if (nData.combinedWith && nData.combinedWith.length) return false;
+      // Skip if guests already seated at that table
+      if (nData.guestCount != null) return false;
+      return true;
+    })
+    // sort by proximity — closest first
+    .sort((a, b) => {
+      const p = getTableDef(primaryId).pos;
+      const da = Math.hypot(a.pos.x - p.x, a.pos.y - p.y);
+      const db = Math.hypot(b.pos.x - p.x, b.pos.y - p.y);
+      return da - db;
+    });
+  _pendingCombine = { primaryId, requestedCount, neighbors };
+  const title = document.getElementById('combine-modal-title');
+  const sub   = document.getElementById('combine-modal-sub');
+  const opts  = document.getElementById('combine-modal-options');
+  title.textContent = requestedCount + ' guests at Table ' + primaryId + '?';
+  if (!neighbors.length) {
+    sub.textContent = 'Table ' + primaryId + ' seats ' + primaryCap + '. No adjacent tables are available in this session to combine with.';
+    opts.innerHTML = '';
   } else {
-    if (table.guestCount <= 1) return;
-    showRemoveGuestModal();
+    sub.textContent = 'Table ' + primaryId + ' seats ' + primaryCap +
+      '. Pick an adjacent table to combine — its seats will be added to this table.';
+    opts.innerHTML = '';
+    neighbors.forEach(n => {
+      const nCap = getTableCapacity(n.id);
+      const totalCap = primaryCap + nCap;
+      const enough = totalCap >= requestedCount;
+      const btn = document.createElement('button');
+      btn.className = 'modal-option' + (enough ? ' primary' : '');
+      btn.innerHTML = '+ Table ' + n.id
+        + '  <span style="opacity:0.6;font-size:0.85em">(total seats: ' + totalCap + ')</span>';
+      btn.onclick = () => confirmCombine(n.id);
+      opts.appendChild(btn);
+    });
   }
+  document.getElementById('combine-modal').classList.add('open');
 }
 
-function showRemoveGuestModal() {
-  const table = state.tables[state.activeTableId];
-  document.getElementById('remove-guest-options').innerHTML =
-    table.seats.map((_,i) =>
-      '<button class="modal-option" onclick="removeGuestAtIndex('+i+')">Guest '+(i+1)+'</button>'
-    ).join('');
-  document.getElementById('remove-guest-modal').classList.add('open');
-}
-
-function removeGuestAtIndex(idx) {
-  document.getElementById('remove-guest-modal').classList.remove('open');
-  const tableId = state.activeTableId;
-  const table = state.tables[tableId];
-  table.seats.splice(idx, 1);
-  table.guestCount--;
-  if (state.activeSeat === idx) {
-    state.activeSeat = null;
-    document.getElementById('seat-sheet').classList.remove('open');
-  } else if (typeof state.activeSeat === 'number' && state.activeSeat > idx) {
-    state.activeSeat--;
+function confirmCombine(satelliteId) {
+  if (!_pendingCombine) return;
+  const { primaryId, requestedCount } = _pendingCombine;
+  const primary = state.tables[primaryId];
+  if (!primary) { cancelCombine(); return; }
+  // Ensure satellite is in selection
+  if (!state.selectedTableIds.includes(satelliteId)) {
+    state.selectedTableIds.push(satelliteId);
   }
-  const n = table.guestCount;
+  // Wire up pointers
+  primary.guestCount = requestedCount;
+  primary.seats = Array.from({length: requestedCount}, () => ({ items:[], groupId:null }));
+  primary.combinedWith = [...(primary.combinedWith || []), satelliteId];
+  primary.satelliteOf = null;
+  // Satellite table: minimal shell, just a pointer
+  state.tables[satelliteId] = {
+    guestCount: null,
+    seats: [],
+    groups: [],
+    activeCourseTab: 'starters',
+    satelliteOf: primaryId,
+    combinedWith: [],
+  };
+  _pendingCombine = null;
+  document.getElementById('combine-modal').classList.remove('open');
+  document.getElementById('guest-prompt-overlay').style.display = 'none';
+  const n = requestedCount;
   document.getElementById('session-heading').textContent =
-    'Table ' + tableId + ' — ' + n + ' Guest' + (n !== 1 ? 's' : '');
+    combinedTableLabel(primaryId) + ' — ' + n + ' Guest' + (n !== 1 ? 's' : '');
   updateTopBar('screen-table');
-  renderTableView(); renderTableRecs(); saveState();
+  renderTableView();
+  renderTableRecs();
+  saveState();
+}
+
+function cancelCombine() {
+  _pendingCombine = null;
+  document.getElementById('combine-modal').classList.remove('open');
+  // Leave the guest-prompt overlay open so user can pick a smaller count or re-try
+}
+
+// "Table 20 + 21" style label for a primary with combinedWith
+function combinedTableLabel(primaryId) {
+  const primary = state.tables[primaryId];
+  if (!primary || !primary.combinedWith || !primary.combinedWith.length) {
+    return 'Table ' + primaryId;
+  }
+  return 'Table ' + [primaryId, ...primary.combinedWith].join(' + ');
 }
 
 // ── TABLE RESET ───────────────────────────────────────────────────────────────
@@ -1395,7 +1524,21 @@ function doResetTable() {
     updateTopBar('screen-table');
     renderTableView(); renderTableRecs();
   } else {
-    state.tables[tableId] = { guestCount:null, seats:[], groups:[], activeCourseTab:'starters' };
+    // Force-reset: any combine relationships on this table are torn down.
+    const current = state.tables[tableId];
+    if (current && current.combinedWith && current.combinedWith.length) {
+      // This table was a primary — clear its satellites too.
+      current.combinedWith.forEach(satId => {
+        state.tables[satId] = {
+          guestCount:null, seats:[], groups:[],
+          activeCourseTab:'starters', combinedWith:[], satelliteOf:null,
+        };
+      });
+    }
+    state.tables[tableId] = {
+      guestCount:null, seats:[], groups:[],
+      activeCourseTab:'starters', combinedWith:[], satelliteOf:null,
+    };
     document.getElementById('session-heading').textContent = 'Table ' + tableId;
     const def = getTableDef(tableId);
     promptCount = def?.defaultSeats || 2;
@@ -1657,9 +1800,8 @@ function renderSeatItems() {
   if (finished.length) {
     html += '<div style="margin-bottom:12px"><div class="sheet-items-label">Finished</div>';
     finished.forEach(item => {
-      html += '<div class="item-card"><div class="item-row"><div class="item-name state-finished">'+item.name+'</div>'
-        +'<span style="font-family:\'Josefin Sans\',sans-serif;font-size:7.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0;opacity:0.5">Done</span>'
-        +'</div></div>';
+      html += '<div class="item-card"><div class="item-row"><div class="item-name state-finished">'+item.name+'</div></div>'
+        +'<button class="item-finish-bar item-unfinish-bar" data-finish="'+encodeURIComponent(item.name)+'">Mark Active</button></div>';
     });
     html += '</div>';
   }
@@ -1798,9 +1940,6 @@ function lockModalChoice(choice) {
     } else {
       seat.items.push({ name, category, state: choice==='lock' ? STATE_LOCKED : STATE_CONSIDERING, finishedWeight:0 });
     }
-    if (choice === 'lock' && DRINK_CATS.includes(category)) {
-      seat.items.forEach(it => { if (it.state===STATE_FINISHED && it.pendingReplacement) { it.finishedWeight=0; it.pendingReplacement=false; } });
-    }
   });
   if (seatIndices.length) showToast((choice==='lock'?'Locked in — ':'Considering — ')+name);
   if (isVariable) {
@@ -1829,9 +1968,6 @@ function lockRecImmediate(name, category) {
     const existing = seat.items.find(i => i.name === name);
     if (existing) { if (existing.state===STATE_CONSIDERING) existing.state=STATE_LOCKED; return; }
     seat.items.push({ name, category, state:STATE_LOCKED, finishedWeight:0 });
-    if (DRINK_CATS.includes(category)) {
-      seat.items.forEach(it => { if (it.state===STATE_FINISHED && it.pendingReplacement) { it.finishedWeight=0; it.pendingReplacement=false; } });
-    }
   });
   renderSeatItems(); renderTableView(); renderTableRecs(); saveState();
   showToastWithUndo('Added — '+name, () => {
@@ -1853,141 +1989,27 @@ function removeItem(name) {
   renderSeatItems(); renderTableView(); renderTableRecs(); saveState();
 }
 
-// ── FINISH MODALS ─────────────────────────────────────────────────────────────
-let finishPending = null;
-
-function openFinishModal(name) {
+// ── ITEM FINISHED TOGGLE ──────────────────────────────────────────────────────
+// Tap to mark finished; tap again to un-finish. No modal, no follow-up prompts.
+function toggleItemFinished(name) {
   const tableId = state.activeTableId;
   const table = state.tables[tableId];
   if (!table) return;
   const seatIndices = getActiveSeatsArray();
   if (!seatIndices.length) return;
-  const item = table.seats[seatIndices[0]]?.items.find(i => i.name === name);
-  if (!item) return;
-  finishPending = { name, category:item.category, tableId, seatIndices };
-  const isDrink = DRINK_CATS.includes(item.category);
-  if (isDrink) {
-    document.getElementById('finish-drink-title').textContent = name + ' — all done?';
-    document.getElementById('finish-drink-sub').textContent = "What's next for this guest?";
-    const opts = [
-      {label:'Another Round',action:'round-same'},
-      {label:'Different Drink',action:'round-new'},
-      {label:'Moving to Food',action:'food-next'},
-      {label:'All Done',action:'done'},
-    ];
-    document.getElementById('finish-drink-options').innerHTML = opts.map((o,i) =>
-      '<button class="modal-option'+(i===0?' primary':'')+'" onclick="finishDrinkChoice(\''+o.action+'\')">'+o.label+'</button>'
-    ).join('');
-    document.getElementById('finish-drink-modal').classList.add('open');
-  } else {
-    document.getElementById('finish-food-title').textContent = name + ' — finished?';
-    document.getElementById('finish-food-sub').textContent = "What's coming next?";
-    const opts = [
-      {label:'Next Course',action:'next-course'},
-      {label:'Another '+getCategoryForDisplay(item.category),action:'same-course'},
-      {label:'Time for a Drink',action:'drinks'},
-      {label:'Skip to Dessert',action:'dessert'},
-      {label:'All Set',action:'done'},
-    ];
-    document.getElementById('finish-food-options').innerHTML = opts.map((o,i) =>
-      '<button class="modal-option'+(i===0?' primary':'')+'" onclick="finishFoodChoice(\''+o.action+'\')">'+o.label+'</button>'
-    ).join('');
-    document.getElementById('finish-food-modal').classList.add('open');
-  }
-}
-
-function markItemFinished(name, tableId, seatIndices, keepWeight) {
-  const table = state.tables[tableId];
-  if (!table) return;
   seatIndices.forEach(si => {
     const seat = table.seats[si];
     if (!seat) return;
-    const item = seat.items.find(i => i.name===name && i.state!==STATE_FINISHED);
-    if (item) { item.state=STATE_FINISHED; item.finishedWeight = keepWeight ? 1.0 : 0; }
+    const item = seat.items.find(i => i.name === name);
+    if (!item) return;
+    if (item.state === STATE_FINISHED) {
+      item.state = STATE_LOCKED;
+      item.finishedWeight = 0;
+    } else {
+      item.state = STATE_FINISHED;
+      item.finishedWeight = 0;
+    }
   });
-}
-
-function finishDrinkChoice(action) {
-  document.getElementById('finish-drink-modal').classList.remove('open');
-  if (!finishPending) return;
-  const { name, tableId, seatIndices } = finishPending;
-  finishPending = null;
-  const table = state.tables[tableId];
-  if (action === 'round-same') {
-    markItemFinished(name, tableId, seatIndices, true);
-    seatIndices.forEach(si => {
-      const seat = table.seats[si]; if (!seat) return;
-      if (!seat.items.find(i => i.name===name && i.state===STATE_LOCKED)) {
-        const orig = seat.items.find(i => i.name===name);
-        seat.items.push({ name, category:orig?.category||'cocktail', state:STATE_LOCKED, finishedWeight:0 });
-      }
-    });
-    showToast('Another '+name+' locked in');
-    table.activeCourseTab = 'starters';
-  } else if (action === 'round-new') {
-    markItemFinished(name, tableId, seatIndices, true);
-    seatIndices.forEach(si => {
-      const it = table.seats[si]?.items.find(i => i.name===name);
-      if (it) it.pendingReplacement = true;
-    });
-    table.activeCourseTab = 'drinks';
-    showToast('Select a new drink');
-  } else if (action === 'food-next') {
-    markItemFinished(name, tableId, seatIndices, false);
-    openCoursePickerModal("What course are they starting with?");
-    return;
-  } else if (action === 'done') {
-    markItemFinished(name, tableId, seatIndices, false);
-    const hasFood = table.seats.some(s => s.items.some(i => FOOD_CATS.includes(i.category) && i.state===STATE_LOCKED));
-    table.activeCourseTab = hasFood ? 'all-food' : 'starters';
-  }
-  renderSeatItems(); renderTableView(); renderTableRecs(); saveState();
-}
-
-function finishFoodChoice(action) {
-  document.getElementById('finish-food-modal').classList.remove('open');
-  if (!finishPending) return;
-  const { name, category, tableId, seatIndices } = finishPending;
-  finishPending = null;
-  const table = state.tables[tableId];
-  markItemFinished(name, tableId, seatIndices, false);
-  if (action === 'next-course') { openCoursePickerModal('What course is next?'); return; }
-  else if (action === 'same-course') table.activeCourseTab = catToCourseTab(category);
-  else if (action === 'drinks') table.activeCourseTab = 'drinks';
-  else if (action === 'dessert') table.activeCourseTab = 'dessert';
-  else if (action === 'done') {
-    const hasDrinks = table.seats.some(s => s.items.some(i => DRINK_CATS.includes(i.category) && i.state===STATE_LOCKED));
-    table.activeCourseTab = hasDrinks ? 'all-food' : 'drinks';
-  }
-  renderSeatItems(); renderTableView(); renderTableRecs(); saveState();
-}
-
-function catToCourseTab(cat) {
-  if (cat==='starter') return 'starters';
-  if (cat==='soup-salad') return 'soups';
-  if (['steak','main','side'].includes(cat)) return 'entrees';
-  if (['dessert','wine-dessert'].includes(cat)) return 'dessert';
-  if (DRINK_CATS.includes(cat)) return 'drinks';
-  return 'all-food';
-}
-
-function openCoursePickerModal(title) {
-  document.getElementById('course-picker-title').textContent = title;
-  const courses = [
-    {label:'To Start',tab:'starters'},{label:'Soups & Salads',tab:'soups'},
-    {label:'Entrées & Sides',tab:'entrees'},{label:'Dessert',tab:'dessert'},
-    {label:'Drinks',tab:'drinks'},{label:"We're Done",tab:null},
-  ];
-  document.getElementById('course-picker-options').innerHTML = courses.map((c,i) =>
-    '<button class="modal-option'+(i===0?' primary':'')+'" onclick="coursePickerChoice(\''+(c.tab||'done')+'\')">'+c.label+'</button>'
-  ).join('');
-  document.getElementById('course-picker-modal').classList.add('open');
-}
-
-function coursePickerChoice(tab) {
-  document.getElementById('course-picker-modal').classList.remove('open');
-  const table = getActiveTable();
-  if (table && tab && tab !== 'done') table.activeCourseTab = tab;
   renderSeatItems(); renderTableView(); renderTableRecs(); saveState();
 }
 
@@ -2059,8 +2081,6 @@ function renderTableRecs() {
   if (!filtered.length) {
     content.innerHTML = '<div class="empty-state">No pairings on this tab. Select another above.</div>'; return;
   }
-  const lockedNames = new Set();
-  table.seats.forEach(seat => (seat.items||[]).filter(i => i.state===STATE_LOCKED).forEach(i => lockedNames.add(i.name)));
   const groups = {};
   filtered.forEach(r => { if (!groups[r.category]) groups[r.category]=[]; groups[r.category].push(r); });
   let html = '';
@@ -2072,16 +2092,74 @@ function renderTableRecs() {
       if (rec.price) meta.push(rec.price);
       if (rec.offMenu) meta.push('Off Menu');
       if (rec.oos) meta.push('Currently Unavailable');
-      const isAdded = lockedNames.has(rec.name);
-      html += '<button class="rec-item'+(isAdded?' already-added':'')+'" data-add="'+encodeURIComponent(rec.name)+'" data-cat="'+rec.category+'">'
+      const encName = encodeURIComponent(rec.name);
+      html += '<button class="rec-item" data-explain="'+encName+'" data-cat="'+rec.category+'">'
         +'<div class="tier-pip '+rec.tier+'"></div>'
         +'<div class="rec-info"><div class="rec-name">'+rec.name+'</div>'
         +(meta.length?'<div class="rec-meta">'+meta.join(' · ')+'</div>':'')
-        +'</div><div class="tier-badge '+rec.tier+'">'+rec.tier+'</div></button>';
+        +'</div><div class="tier-badge '+rec.tier+'">'+rec.tier+'</div></button>'
+        +'<div class="rec-explain" id="explain-'+encName+'" hidden></div>';
     });
     html += '</div>';
   });
   content.innerHTML = html;
+}
+
+// Resolve which locked item's pairingNotes entry contains `recName`.
+// Prefers the most recently added locked item (iterates seats/items in reverse push order).
+function findPairingSource(recName) {
+  const table = getActiveTable();
+  if (!table) return null;
+  // Flatten all locked items in addition order (seats in order, items in order)
+  const locked = [];
+  (table.seats||[]).forEach(seat => {
+    (seat.items||[]).forEach(item => {
+      if (item.state === STATE_LOCKED) locked.push(item);
+    });
+  });
+  // Iterate from most recent backward
+  for (let i = locked.length - 1; i >= 0; i--) {
+    const src = locked[i];
+    const entry = PAIRING_MAP.find(e => e.name === src.name);
+    if (!entry) continue;
+    const tiers = ['excellent','strong','works'];
+    for (const t of tiers) {
+      if ((entry[t]||[]).includes(recName)) {
+        return { sourceName: src.name, tier: t, note: getPairingNote(src.name, recName) };
+      }
+    }
+  }
+  return null;
+}
+
+function toggleRecExplain(recName) {
+  const encName = encodeURIComponent(recName);
+  const panel = document.getElementById('explain-' + encName);
+  if (!panel) return;
+  // Close any other open panel first (one-at-a-time reading)
+  document.querySelectorAll('.rec-explain.open').forEach(p => {
+    if (p !== panel) { p.classList.remove('open'); p.hidden = true; }
+  });
+  if (panel.classList.contains('open')) {
+    panel.classList.remove('open');
+    panel.hidden = true;
+    return;
+  }
+  const src = findPairingSource(recName);
+  let body;
+  if (src && src.note) {
+    body = '<div class="rec-explain-source">Why this pairs with <strong>'+src.sourceName+'</strong>:</div>'
+         + '<div class="rec-explain-body">'+src.note+'</div>';
+  } else if (src) {
+    body = '<div class="rec-explain-source">Paired with <strong>'+src.sourceName+'</strong> — <em>'+src.tier+'</em> match.</div>'
+         + '<div class="rec-explain-body rec-explain-pending">This pairing earned a <strong>'+src.tier+'</strong> score based on flavor profile — detailed notes coming soon.</div>';
+  } else {
+    body = '<div class="rec-explain-body rec-explain-pending">Detailed pairing notes coming soon.</div>';
+  }
+  panel.innerHTML = body;
+  panel.hidden = false;
+  // Next frame so the transition plays
+  requestAnimationFrame(() => panel.classList.add('open'));
 }
 
 // ── SPECIALS ──────────────────────────────────────────────────────────────────
@@ -2242,11 +2320,11 @@ document.addEventListener('click', e => {
     document.getElementById('search-results').classList.remove('visible');
   }
   const finish = e.target.closest('[data-finish]');
-  if (finish) { openFinishModal(decodeURIComponent(finish.dataset.finish)); return; }
+  if (finish) { toggleItemFinished(decodeURIComponent(finish.dataset.finish)); return; }
   const remove = e.target.closest('[data-remove]');
   if (remove) { removeItem(decodeURIComponent(remove.dataset.remove)); return; }
-  const addRec = e.target.closest('[data-add]');
-  if (addRec) { lockRecImmediate(decodeURIComponent(addRec.dataset.add)); return; }
+  const explainRec = e.target.closest('[data-explain]');
+  if (explainRec) { toggleRecExplain(decodeURIComponent(explainRec.dataset.explain)); return; }
   const ftBtn = e.target.closest('[data-ftval]');
   if (ftBtn) { selectFTAnswer(ftBtn.dataset.ftval, ftBtn); return; }
 });
@@ -2294,9 +2372,4 @@ document.addEventListener('touchmove', e => {
     <div class="modal-options">
       <button class="modal-option primary" onclick="confirmAddTable()">Add to Section</button>
       <button class="modal-option" onclick="document.getElementById('add-table-modal').classList.remove('open')">Not Now</button>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
+    </di

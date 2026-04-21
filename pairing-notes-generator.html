@@ -148,6 +148,7 @@ main{max-width:900px;margin:0 auto;padding:32px 24px 80px}
   <div class="btn-row">
     <button class="btn btn-gold" id="btn-generate" onclick="startGeneration()">Generate All Notes</button>
     <button class="btn btn-dim" id="btn-stop" onclick="stopGeneration()" style="display:none">Stop</button>
+    <button class="btn btn-dim" id="btn-reset" onclick="resetGeneration()" style="display:none">Reset</button>
   </div>
 </div>
 
@@ -192,6 +193,25 @@ let notes = {};           // { "ItemA|||ItemB": "note text" }
 let currentFilter = 'all';
 let stopFlag = false;
 let apiKey = '';          // Anthropic API key — entered by user, never persisted
+
+const NOTES_STORAGE_KEY = 'png_notes_v1';
+
+function saveNotesToStorage() {
+  try { localStorage.setItem(NOTES_STORAGE_KEY, JSON.stringify(notes)); } catch(e) {}
+}
+
+function loadNotesFromStorage() {
+  try {
+    const raw = localStorage.getItem(NOTES_STORAGE_KEY);
+    if (!raw) return false;
+    const parsed = JSON.parse(raw);
+    if (typeof parsed === 'object' && Object.keys(parsed).length > 0) {
+      notes = parsed;
+      return true;
+    }
+  } catch(e) {}
+  return false;
+}
 
 function onApiKeyInput(el) {
   apiKey = el.value.trim();
@@ -282,41 +302,106 @@ async function startGeneration() {
   stopFlag = false;
   document.getElementById('btn-generate').disabled = true;
   document.getElementById('btn-stop').style.display = 'inline-block';
+  document.getElementById('btn-reset').style.display = 'inline-block';
   document.getElementById('progress-wrap').style.display = 'block';
 
-  // Build all pairing jobs: [{itemName, itemCat, itemProfile, target, tier}]
+  // Build all pairing jobs and annotate with type/target profile upfront
   const jobs = [];
   pairingData.forEach(entry => {
     ['excellent','strong','works'].forEach(tier => {
       (entry[tier] || []).forEach(target => {
-        jobs.push({ itemName: entry.name, itemCat: entry.category, itemProfile: entry.profile, target, tier });
+        const targetEntry = pairingData.find(e => e.name === target);
+        jobs.push({
+          itemName: entry.name, itemCat: entry.category,
+          itemProfile: entry.profile, target, tier,
+          pairingType: getPairingType(entry.category, targetEntry ? targetEntry.category : ''),
+          targetProfile: targetEntry ? targetEntry.profile.slice(0,4) : []
+        });
       });
     });
   });
 
   const total = jobs.length;
-  let done = 0;
+  let doneCount = 0;
 
-  // Process in batches of 8 pairings per API call
-  const BATCH_SIZE = 8;
-  for (let i = 0; i < jobs.length; i += BATCH_SIZE) {
-    if (stopFlag) { log('Stopped by user.', 'info'); break; }
-    const batch = jobs.slice(i, i + BATCH_SIZE);
-    await processBatch(batch);
-    done = Math.min(i + BATCH_SIZE, total);
-    const pct = Math.round((done / total) * 100);
-    document.getElementById('progress-fill').style.width = pct + '%';
-    document.getElementById('progress-text').textContent = done + ' / ' + total + ' pairings — ' + pct + '%';
+  // Group by pairing type — each type uses a different system prompt
+  const TYPE_BATCH = 8; // pairings per API call
+  const groups = { cross: [], 'food-food': [], 'drink-drink': [] };
+  jobs.forEach(job => groups[job.pairingType].push(job));
+
+  // Flatten into ordered list of sub-batch call descriptors
+  const allCalls = [];
+  for (const [type, typeJobs] of Object.entries(groups)) {
+    for (let i = 0; i < typeJobs.length; i += TYPE_BATCH) {
+      allCalls.push({ type, subBatch: typeJobs.slice(i, i + TYPE_BATCH) });
+    }
   }
 
+  log('Starting ' + allCalls.length + ' API calls for ' + total + ' pairings (3 concurrent)…', 'info');
+
+  // Concurrent worker pool — 3 calls in flight, staggered starts to avoid burst
+  const CONCURRENCY = 3;
+  let callIdx = 0;
+
+  async function worker(startDelay) {
+    await new Promise(r => setTimeout(r, startDelay));
+    while (!stopFlag) {
+      const myIdx = callIdx++;
+      if (myIdx >= allCalls.length) break;
+      const { type, subBatch } = allCalls[myIdx];
+      await makeAPICall(type, subBatch);
+      doneCount += subBatch.length;
+      const pct = Math.round((Math.min(doneCount, total) / total) * 100);
+      document.getElementById('progress-fill').style.width = pct + '%';
+      document.getElementById('progress-text').textContent =
+        Math.min(doneCount, total) + ' / ' + total + ' pairings — ' + pct + '%';
+    }
+  }
+
+  // Stagger worker starts by 400ms each to spread the initial burst
+  await Promise.all(Array.from({ length: CONCURRENCY }, (_, i) => worker(i * 400)));
+
+  if (stopFlag) log('Stopped by user.', 'info');
   document.getElementById('btn-generate').disabled = false;
   document.getElementById('btn-stop').style.display = 'none';
+  document.getElementById('btn-reset').style.display = 'inline-block';
   log('Generation complete — ' + Object.keys(notes).length + ' notes written', 'info');
-
   showReview();
 }
 
 function stopGeneration() { stopFlag = true; }
+
+function resetGeneration() {
+  const noteCount = Object.keys(notes).length;
+  if (noteCount > 0 && !confirm('Reset will permanently clear all ' + noteCount + ' generated notes. Continue?')) return;
+  stopFlag = true;
+  notes = {};
+  try { localStorage.removeItem(NOTES_STORAGE_KEY); } catch(e) {}
+  currentFilter = 'all';
+
+  // Reset progress UI
+  document.getElementById('progress-fill').style.width = '0%';
+  document.getElementById('progress-text').textContent = 'Preparing…';
+  document.getElementById('progress-wrap').style.display = 'none';
+
+  // Reset log
+  const logEl = document.getElementById('log');
+  logEl.innerHTML = '';
+  logEl.style.display = 'none';
+
+  // Reset buttons
+  document.getElementById('btn-generate').disabled = false;
+  document.getElementById('btn-stop').style.display = 'none';
+  document.getElementById('btn-reset').style.display = 'none';
+
+  // Hide review and export sections
+  document.getElementById('review-section').style.display = 'none';
+  document.getElementById('export-section').style.display = 'none';
+  document.getElementById('entries-list').innerHTML = '';
+
+  log('Reset complete — ready to generate.', 'info');
+  document.getElementById('log').style.display = 'block';
+}
 
 // Category class helpers
 const _FOOD_SET  = new Set(['steak','starter','soup-salad','main','side','dessert']);
@@ -358,68 +443,49 @@ Write like you're briefing a server who will say this out loud. Specific flavor 
 Respond ONLY with a JSON object: {"ItemA|||ItemB": "note"}. No other text.`
 };
 
-async function processBatch(batch) {
-  // Group batch by pairing type — different system prompts
-  const groups = { cross: [], 'food-food': [], 'drink-drink': [] };
-  batch.forEach(job => {
-    const targetEntry = pairingData.find(e => e.name === job.target);
-    const targetCat = targetEntry ? targetEntry.category : '';
-    const type = getPairingType(job.itemCat, targetCat);
-    job.pairingType = type;
-    job.targetProfile = targetEntry ? targetEntry.profile.slice(0,4) : [];
-    groups[type].push(job);
-  });
+async function makeAPICall(type, subBatch) {
+  const subLines = subBatch.map(job =>
+    `- "${job.itemName}" (${job.itemCat}, profile: ${job.itemProfile.slice(0,4).join(', ')}) → "${job.target}" [${job.tier}]${job.targetProfile.length ? ' (target: ' + job.targetProfile.join(', ') + ')' : ''}`
+  ).join('\n');
 
-  // Process each non-empty group
-  for (const [type, jobs] of Object.entries(groups)) {
-    if (!jobs.length) continue;
+  const userPrompt = `Write pairing notes for these ${subBatch.length} pairings.\n\n${subLines}\n\nReturn ONLY a raw JSON object. No markdown, no backticks, no explanation. Example format:\n{"Item A|||Item B": "The note goes here.", "Item C|||Item D": "Another note."}`;
 
-    const pairingLines = jobs.map(job =>
-      `- "${job.itemName}" (${job.itemCat}, profile: ${job.itemProfile.slice(0,4).join(', ')}) → "${job.target}" [${job.tier}]${job.targetProfile.length ? ' (target profile: ' + job.targetProfile.join(', ') + ')' : ''}`
-    ).join('\n');
+  try {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 2048,
+        system: SYSTEM_PROMPTS[type],
+        messages: [{ role: 'user', content: userPrompt }]
+      })
+    });
 
-    const systemPrompt = SYSTEM_PROMPTS[type];
-    // Smaller batches within each type group to avoid truncation
-    const TYPE_BATCH = 4;
-    for (let ti = 0; ti < jobs.length; ti += TYPE_BATCH) {
-      if (stopFlag) break;
-      const subBatch = jobs.slice(ti, ti + TYPE_BATCH);
-      const subLines = subBatch.map(job =>
-        `- "${job.itemName}" (${job.itemCat}, profile: ${job.itemProfile.slice(0,4).join(', ')}) → "${job.target}" [${job.tier}]${job.targetProfile.length ? ' (target: ' + job.targetProfile.join(', ') + ')' : ''}`
-      ).join('\n');
+    if (!response.ok) {
+      if (response.status === 429) {
+        const retryAfter = Math.max(parseInt(response.headers.get('retry-after') || '10'), 10) * 1000;
+        log('Rate limited — retrying in ' + (retryAfter/1000) + 's…', 'info');
+        await new Promise(r => setTimeout(r, retryAfter));
+        return makeAPICall(type, subBatch); // retry
+      }
+      const errText = await response.text();
+      log('HTTP ' + response.status + ': ' + errText.slice(0, 120), 'err');
+      await new Promise(r => setTimeout(r, 2000));
+      return;
+    }
 
-      const userPrompt = `Write pairing notes for these ${subBatch.length} pairings.\n\n${subLines}\n\nReturn ONLY a raw JSON object. No markdown, no backticks, no explanation. Example format:\n{"Item A|||Item B": "The note goes here.", "Item C|||Item D": "Another note."}`;
-
-      try {
-        const response = await fetch('https://api.anthropic.com/v1/messages', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': apiKey,
-            'anthropic-version': '2023-06-01',
-            'anthropic-dangerous-direct-browser-access': 'true'
-          },
-          body: JSON.stringify({
-            model: 'claude-sonnet-4-6',
-            max_tokens: 1500,
-            system: systemPrompt,
-            messages: [{ role: 'user', content: userPrompt }]
-          })
-        });
-
-        if (!response.ok) {
-          const errText = await response.text();
-          log('HTTP ' + response.status + ': ' + errText.slice(0, 120), 'err');
-          await new Promise(r => setTimeout(r, 2000));
-          continue;
-        }
-
-        const data = await response.json();
+    const data = await response.json();
 
         // Log any API-level errors
         if (data.error) {
           log('API error: ' + JSON.stringify(data.error).slice(0,120), 'err');
-          continue;
+          return;
         }
 
         const text = (data.content || [])
@@ -427,20 +493,18 @@ async function processBatch(batch) {
           .map(b => b.text).join('');
 
         if (!text) {
-          log('Empty response for batch at ' + subBatch[0].itemName + ' — stop_reason: ' + data.stop_reason, 'err');
-          continue;
+          log('Empty response at ' + subBatch[0].itemName + ' — stop_reason: ' + data.stop_reason, 'err');
+          return;
         }
 
-        // Strip any accidental markdown fences
         let clean = text.trim();
         clean = clean.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim();
 
-        // Find the JSON object boundaries robustly
         const jsonStart = clean.indexOf('{');
         const jsonEnd = clean.lastIndexOf('}');
         if (jsonStart === -1 || jsonEnd === -1) {
-          log('No JSON object found in response: ' + clean.slice(0, 100), 'err');
-          continue;
+          log('No JSON object found: ' + clean.slice(0, 100), 'err');
+          return;
         }
         clean = clean.slice(jsonStart, jsonEnd + 1);
 
@@ -449,7 +513,7 @@ async function processBatch(batch) {
           parsed = JSON.parse(clean);
         } catch(e) {
           log('JSON parse failed: ' + e.message + ' | Raw: ' + clean.slice(0, 120), 'err');
-          continue;
+          return;
         }
 
         let count = 0;
@@ -458,16 +522,13 @@ async function processBatch(batch) {
           const val = parsed[key];
           if (val && typeof val === 'string') { notes[key] = val; count++; }
         });
+        saveNotesToStorage();
         log(type + ': ' + count + '/' + subBatch.length + ' — ' + subBatch[0].itemName, 'ok');
 
-      } catch(err) {
-        log('Fetch error: ' + err.message, 'err');
-        await new Promise(r => setTimeout(r, 1500));
-      }
-
-      await new Promise(r => setTimeout(r, 150));
-    } // end sub-batch
-  } // end for groups
+  } catch(err) {
+    log('Fetch error: ' + err.message, 'err');
+    await new Promise(r => setTimeout(r, 1500));
+  }
 }
 
 // ── SINGLE REGEN ──────────────────────────────────────────────────────────────
@@ -478,9 +539,12 @@ async function regenNote(itemName, target, tier, btn) {
   const targetEntry = pairingData.find(e => e.name === target);
   if (!entry) { btn.textContent = '↺'; btn.disabled = false; return; }
 
-  await processBatch([{
-    itemName, itemCat: entry.category, itemProfile: entry.profile, target, tier
-  }]);
+  const job = {
+    itemName, itemCat: entry.category, itemProfile: entry.profile, target, tier,
+    pairingType: getPairingType(entry.category, targetEntry ? targetEntry.category : ''),
+    targetProfile: targetEntry ? targetEntry.profile.slice(0,4) : []
+  };
+  await makeAPICall(job.pairingType, [job]);
 
   // Update textarea
   const key = noteKey(itemName, target);
@@ -553,7 +617,7 @@ function renderEntries() {
               <div class="pairing-tier tier-${tier}">${tier}</div>
             </div>
             <textarea class="note-field${val?'':' empty'}" data-key="${safeKey}"
-              oninput="notes[this.dataset.key]=this.value;this.classList.toggle('empty',!this.value);updateExportSummary()"
+              oninput="notes[this.dataset.key]=this.value;this.classList.toggle('empty',!this.value);updateExportSummary();saveNotesToStorage()"
               rows="2">${val}</textarea>
             <button class="regen-btn" title="Regenerate" onclick="regenNote('${entry.name.replace(/'/g,"\\'")}','${t.replace(/'/g,"\\'")}','${tier}',this)">↺</button>
           </div>`;
@@ -633,14 +697,12 @@ function downloadMap() {
       return;
     }
 
-    // Walk backwards from nameIdx to find the opening { of this entry
     let openBrace = -1;
     for (let i = nameIdx - 1; i >= 0; i--) {
       if (output[i] === '{') { openBrace = i; break; }
     }
     if (openBrace === -1) return;
 
-    // Find the matching closing }
     const closeBrace = findEntryCloseBrace(output, openBrace);
     if (closeBrace === -1) {
       log('Export: could not find closing brace for "' + entry.name + '" — skipped', 'err');
@@ -650,19 +712,16 @@ function downloadMap() {
     const notesJson = JSON.stringify(entryNotes, null, 2)
       .split('\n').map((l, i) => i === 0 ? l : '    ' + l).join('\n');
 
-    // If pairingNotes already exists in this entry block, replace it
     const entryBlock = output.slice(openBrace, closeBrace + 1);
     const pnLocalIdx = entryBlock.indexOf('pairingNotes:');
 
     if (pnLocalIdx !== -1) {
-      // Find the comma that precedes pairingNotes and replace from there to closeBrace
       let commaIdx = openBrace + pnLocalIdx - 1;
       while (commaIdx > openBrace && output[commaIdx] !== ',') commaIdx--;
       output = output.slice(0, commaIdx) +
                ',\n    pairingNotes: ' + notesJson +
                '\n  ' + output.slice(closeBrace);
     } else {
-      // First-time injection — insert before the closing }
       output = output.slice(0, closeBrace) +
                ',\n    pairingNotes: ' + notesJson +
                '\n  ' + output.slice(closeBrace);
@@ -673,10 +732,27 @@ function downloadMap() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url; a.download = 'pairing-map.js';
+  a.style.display = 'none';
+  document.body.appendChild(a);
   a.click();
+  document.body.removeChild(a);
   URL.revokeObjectURL(url);
   log('Downloaded pairing-map.js with ' + Object.keys(notes).filter(k => notes[k]).length + ' embedded notes', 'info');
 }
+
+// ── INIT ──────────────────────────────────────────────────────────────────────────────
+(function initRestoreNotes() {
+  if (loadNotesFromStorage()) {
+    const n = Object.keys(notes).length;
+    const banner = document.createElement('div');
+    banner.style.cssText = 'background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.25);color:rgba(201,168,76,0.9);font-family:Josefin Sans,sans-serif;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;padding:10px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:16px';
+    banner.innerHTML = '<span>⚠️ ' + n + ' notes restored from last session</span>'
+      + '<button onclick="this.parentNode.remove()" style="background:none;border:none;color:rgba(201,168,76,0.6);cursor:pointer;font-size:14px;padding:0">×</button>';
+    const main = document.querySelector('main');
+    if (main) main.insertBefore(banner, main.firstChild);
+  }
+})();
 </script>
 </body>
 </html>
+                                                                                                                                                                             
