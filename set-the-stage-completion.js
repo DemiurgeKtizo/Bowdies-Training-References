@@ -1,4 +1,4 @@
-// set-the-stage-completion.js — v5
+// set-the-stage-completion.js — v6
 
 function ftNext() {
   if (!state.ftAnswers[state.ftCurrentQ]) state.ftAnswers[state.ftCurrentQ] = 'none';
@@ -157,30 +157,47 @@ function restoreSession() {
     });
   }
 
-  // Active-session path: user has a seating layout in progress, drop them
-  // back into it exactly where they left off.
-  if (loaded && Object.keys(state.tables || {}).length > 0) {
-    document.getElementById('mode-modal').classList.remove('open');
-    showScreen('screen-overview');
-    updateTopBar('screen-overview');
-    renderOverview();
-    if (state.activeTableId !== null) {
-      openTable(state.activeTableId);
+  // The body of the post-auth boot flow. Wrapped so the auth gate can run
+  // first and invoke this when login resolves (either silently from an
+  // existing session or after a login/signup submit).
+  function proceedAfterAuth() {
+    // Apply the OOS overlay onto PAIRING_MAP now that specials have been
+    // merged — this flips `entry.oos = true` on anything admin marked 86'd
+    // so the existing rec filters silently exclude them.
+    if (typeof applyOosOverlay === 'function') applyOosOverlay();
+
+    // Active-session path: user has a seating layout in progress.
+    if (loaded && Object.keys(state.tables || {}).length > 0) {
+      document.getElementById('mode-modal').classList.remove('open');
+      showScreen('screen-overview');
+      updateTopBar('screen-overview');
+      renderOverview();
+      if (state.activeTableId !== null) {
+        openTable(state.activeTableId);
+      }
+      return;
     }
-    return;
+
+    // Cold-start / no-active-session path: the pairing browser is home.
+    // The mode modal is NOT auto-opened anymore — it only appears when the
+    // user explicitly taps "Simulate a shift".
+    document.getElementById('mode-modal').classList.remove('open');
+    if (typeof pbOpen === 'function') {
+      pbOpen(null);
+    } else {
+      // Fallback — should never happen in practice but keeps a sane screen.
+      showScreen('screen-pairings');
+      updateTopBar('screen-pairings');
+    }
   }
 
-  // Cold-start / no-active-session path: the pairing browser is home.
-  // The mode modal is NOT auto-opened anymore — it only appears when the user
-  // explicitly taps "Simulate a shift".
-  document.getElementById('mode-modal').classList.remove('open');
-  if (typeof pbOpen === 'function') {
-    pbOpen(null);
-  } else {
-    // Fallback — should never happen in practice but keeps a sane screen visible.
-    showScreen('screen-pairings');
-    updateTopBar('screen-pairings');
-  }
+  // Register the callback so auth can re-enter the boot flow post-login,
+  // then attempt auth. If a valid session already exists, authBoot returns
+  // true and we proceed immediately; otherwise the gate is on screen and
+  // proceedAfterAuth fires once login/signup completes.
+  window.authOnLoginComplete = proceedAfterAuth;
+  const alreadyAuthed = (typeof authBoot === 'function') ? authBoot() : true;
+  if (alreadyAuthed) proceedAfterAuth();
 }
 
 // ── INIT ────────────────────────────────────────────────────────────────────────

@@ -6,6 +6,38 @@
 //                    'bourbon' | 'rye' | 'scotch' | 'irish' | 'japanese' | 'canadian' |
 //                    'tequila' | 'mezcal' | 'vodka' | 'gin' | 'rum' | 'cognac' | 'liqueur' | 'singlemalt'
 
+// Display labels for each category slug. Consumers should look up a slug here
+// first and fall back to a title-case prettify for any unknown slug — that
+// way a newly-added category still renders cleanly even before this map is
+// updated. Keep this sorted to match the order used in recommendation groups.
+const CATEGORY_LABELS = {
+  'steak':          'Prime',
+  'starter':        'Starter',
+  'soup-salad':     'Soup / Salad',
+  'main':           'Main',
+  'side':           'Side',
+  'dessert':        'Dessert',
+  'cocktail':       'Cocktail',
+  'wine-sparkling': 'Sparkling',
+  'wine-white':     'White Wine',
+  'wine-red':       'Red Wine',
+  'wine-dessert':   'Dessert Wine',
+  'bourbon':        'Bourbon',
+  'rye':            'Rye',
+  'scotch':         'Scotch',
+  'irish':          'Irish',
+  'japanese':       'Japanese',
+  'canadian':       'Canadian',
+  'tequila':        'Tequila',
+  'mezcal':         'Mezcal',
+  'vodka':          'Vodka',
+  'gin':            'Gin',
+  'rum':            'Rum',
+  'cognac':         'Cognac',
+  'liqueur':        'Liqueur',
+  'singlemalt':     'Single Malt'
+};
+
 const PAIRING_MAP = [
 
   // ── STEAKS ──────────────────────────────────────────────────────────────────
@@ -2274,5 +2306,5 @@ function getFirstTimerRecommendations(answers) {
 
 // Export for use in set-the-stage.js
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { PAIRING_MAP, getRecommendations, getFirstTimerRecommendations };
+  module.exports = { PAIRING_MAP, CATEGORY_LABELS, getRecommendations, getFirstTimerRecommendations };
 }

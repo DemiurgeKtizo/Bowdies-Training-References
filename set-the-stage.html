@@ -362,9 +362,109 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 .ss-saved-actions .ss-btn{flex:0 0 auto}
 .ss-saved-delete.confirming{color:var(--warning);border-color:var(--warning-dim);background:rgba(184,105,73,0.08)}
 .ss-empty-saved{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);padding:18px 16px;background:var(--surface-2);border:1px dashed var(--border-soft);text-align:center}
+
+/* ── DEVICE SETUP GATE ────────────────────────────────────────────────────── */
+#setup-gate{display:none;position:fixed;inset:0;background:var(--surface);z-index:1000;overflow-y:auto;padding:40px 20px}
+#setup-gate.visible{display:flex;align-items:flex-start;justify-content:center}
+.setup-panel{background:var(--surface-2);border:1px solid var(--border);width:100%;max-width:440px;padding:36px 28px 32px;margin:auto}
+.setup-header{text-align:center;margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid var(--border-soft)}
+.setup-wordmark{font-family:'Josefin Sans',sans-serif;font-size:22px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-primary)}
+.setup-tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:var(--gold);margin-top:4px;letter-spacing:0.05em}
+.setup-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:600;color:var(--text-primary);margin-bottom:6px}
+.setup-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-muted);margin-bottom:22px;line-height:1.55}
+.setup-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--text-dim);margin-top:6px;line-height:1.5}
+.setup-error{background:rgba(180,60,60,0.08);border:1px solid rgba(180,60,60,0.3);color:#d99b9b;padding:10px 12px;font-family:'Cormorant Garamond',serif;font-size:14px;margin-bottom:16px;line-height:1.45}
+/* Reset-device modal floats above the gate when the gate is on screen. */
+#reset-device-modal{z-index:1100}
+.top-bar-profile{background:transparent;border:1px solid var(--border-soft);padding:6px 10px;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;line-height:1.15;transition:border-color 0.2s;font-family:inherit}
+.top-bar-profile:hover{border-color:var(--border)}
+.top-bar-profile[hidden]{display:none}
+.top-bar-profile-name{font-family:'Playfair Display',serif;font-size:13px;color:var(--text-primary);line-height:1.1}
+.top-bar-profile-role{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-top:2px;line-height:1}
+#top-bar-profile-menu{display:none;position:fixed;top:64px;right:24px;background:var(--surface-2);border:1px solid var(--border);padding:16px;z-index:550;min-width:220px;box-shadow:0 8px 24px rgba(0,0,0,0.4)}
+#top-bar-profile-menu.open{display:block}
+.top-bar-profile-menu-name{font-family:'Playfair Display',serif;font-size:15px;color:var(--text-primary);margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border-soft)}
+.top-bar-profile-menu-btn{width:100%;background:transparent;border:1px solid var(--border-soft);color:var(--text-muted);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;padding:10px;cursor:pointer;transition:all 0.2s;margin-bottom:6px}
+.top-bar-profile-menu-btn:last-child{margin-bottom:0}
+.top-bar-profile-menu-btn:hover{border-color:var(--border);color:var(--text-primary)}
+.top-bar-profile-menu-btn.admin{border-color:var(--gold-dim);color:var(--gold)}
+.top-bar-profile-menu-btn.admin:hover{background:rgba(201,168,76,0.08);border-color:var(--gold);color:var(--gold-light)}
+
+/* ── ADMIN SCREEN ─────────────────────────────────────────────────────────── */
+#screen-admin{padding:28px 24px 100px;max-width:600px;margin:0 auto}
+.admin-title-block{margin-bottom:18px}
+.admin-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);margin-top:-10px;margin-bottom:20px;line-height:1.5}
+.admin-stats{display:flex;justify-content:space-between;align-items:baseline;background:var(--surface-2);border:1px solid var(--border-soft);padding:14px 16px;margin-bottom:16px}
+.admin-stats-count{font-family:'Playfair Display',serif;font-size:22px;color:var(--gold)}
+.admin-stats-count .n{color:var(--text-primary)}
+.admin-stats-meta{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);text-align:right;line-height:1.4}
+.admin-stats-meta .who{color:var(--text-muted)}
+.admin-search-wrap{margin-bottom:18px}
+.admin-search{width:100%;background:var(--surface-2);border:1px solid var(--border-soft);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:16px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;transition:border-color 0.2s}
+.admin-search:focus{border-color:var(--gold-dim)}
+.admin-group{margin-bottom:22px}
+.admin-group-label{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border-soft)}
+.admin-item{display:flex;align-items:center;justify-content:space-between;padding:12px 4px;border-bottom:1px solid rgba(201,168,76,0.06);gap:12px;min-height:44px}
+.admin-item:last-child{border-bottom:none}
+.admin-item-name{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text-primary);flex:1;line-height:1.3}
+.admin-item.oos .admin-item-name{color:var(--text-dim);text-decoration:line-through;text-decoration-color:rgba(140,128,110,0.7)}
+.admin-toggle{position:relative;width:44px;height:24px;background:var(--surface-3);border:1px solid var(--border-soft);cursor:pointer;transition:all 0.2s;flex-shrink:0;padding:0;border-radius:12px}
+.admin-toggle::before{content:'';position:absolute;top:2px;left:2px;width:18px;height:18px;background:var(--text-dim);border-radius:50%;transition:all 0.2s}
+.admin-toggle.on{background:rgba(184,105,73,0.15);border-color:rgba(184,105,73,0.45)}
+.admin-toggle.on::before{left:22px;background:#c97a58}
+.admin-toggle:hover{border-color:var(--border)}
+.admin-toggle.on:hover{border-color:#c97a58}
+.admin-86-badge{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:#c97a58;font-weight:600;padding:2px 6px;border:1px solid rgba(184,105,73,0.4);background:rgba(184,105,73,0.08);flex-shrink:0}
+.admin-empty{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);padding:28px 16px;text-align:center;border:1px dashed var(--border-soft);background:var(--surface-2)}
+
+/* ── OOS TREATMENT IN SEARCH RESULTS (pairing browser) ────────────────────── */
+.search-result-item.oos .result-name{color:var(--text-dim);text-decoration:line-through;text-decoration-color:rgba(140,128,110,0.7)}
+.search-result-item.oos .result-cat{color:var(--text-dim)}
+.result-86{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:#c97a58;font-weight:600;padding:2px 6px;border:1px solid rgba(184,105,73,0.4);background:rgba(184,105,73,0.08);margin-left:8px;flex-shrink:0}
+
+/* ── OOS BANNER (pairing detail page) ──────────────────────────────────────── */
+.pb-oos-banner{background:rgba(184,105,73,0.08);border:1px solid rgba(184,105,73,0.35);border-left:3px solid #c97a58;padding:10px 14px;margin:-4px 0 16px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:#d9b0a1;line-height:1.45}
+.pb-oos-banner strong{font-family:'Josefin Sans',sans-serif;font-style:normal;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:#c97a58;margin-right:6px}
 </style>
 </head>
 <body>
+
+<!-- ── SETUP GATE (one-time, per device) ── -->
+<div id="setup-gate">
+  <div class="setup-panel">
+    <div class="setup-header">
+      <div class="setup-wordmark">Bowdie's</div>
+      <div class="setup-tagline">Set The Stage</div>
+    </div>
+    <div class="setup-title">Welcome</div>
+    <div class="setup-sub">Enter your name to continue. Lives on this device only — nothing is sent anywhere.</div>
+
+    <div class="modal-field">
+      <label class="modal-label">Your name</label>
+      <input type="text" class="modal-input" id="setup-name" autocomplete="name">
+    </div>
+    <div class="modal-field">
+      <label class="modal-label">Management code <span style="color:var(--text-dim);font-weight:normal;text-transform:none;letter-spacing:0">(optional)</span></label>
+      <input type="password" class="modal-input" id="setup-code" autocomplete="off">
+      <div class="setup-hint">Leave blank to continue as staff. Management has been given a code that unlocks the 86 / admin tools.</div>
+    </div>
+    <div class="setup-error" id="setup-error" hidden></div>
+    <button class="btn-primary" onclick="authHandleSetup()">Enter</button>
+  </div>
+</div>
+
+<!-- ── RESET DEVICE MODAL ── -->
+<div id="reset-device-modal" class="modal-overlay centered">
+  <div class="mode-modal-panel">
+    <div class="mode-modal-eyebrow">Reset Device</div>
+    <div class="mode-modal-title">Reset this device?</div>
+    <div class="mode-modal-sub">Clears your name and role so setup runs fresh. Saved sessions and specials are left alone. You'll need the management code again to come back as management.</div>
+    <div class="modal-actions">
+      <button class="modal-btn modal-btn-cancel" onclick="authCancelReset()">Cancel</button>
+      <button class="modal-btn modal-btn-confirm" onclick="authHandleReset()">Reset</button>
+    </div>
+  </div>
+</div>
 
 <!-- ── TOP BAR ── -->
 <div id="top-bar">
@@ -373,8 +473,19 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     <span class="top-bar-section" id="top-bar-section">Set The Stage</span>
   </div>
   <div id="top-bar-actions">
+    <button class="top-bar-profile" id="top-bar-profile" onclick="authToggleProfileMenu()" hidden>
+      <span class="top-bar-profile-name" id="top-bar-profile-name"></span>
+      <span class="top-bar-profile-role" id="top-bar-profile-role">Staff</span>
+    </button>
     <button class="top-bar-btn" onclick="goBack()">← Reference</button>
   </div>
+</div>
+
+<!-- Profile dropdown menu (fixed-position popover) -->
+<div id="top-bar-profile-menu">
+  <div class="top-bar-profile-menu-name" id="top-bar-profile-menu-name"></div>
+  <button class="top-bar-profile-menu-btn admin" id="top-bar-profile-admin-btn" onclick="openAdminFromMenu()" style="display:none">Menu Admin</button>
+  <button class="top-bar-profile-menu-btn" onclick="authPromptReset()">Reset Device</button>
 </div>
 
 <!-- ── SELECTION SCREEN ── -->
@@ -488,10 +599,29 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     <div class="pb-item-cat-row">
       <span class="pb-item-cat-badge" id="pb-item-cat-badge"></span>
     </div>
+    <div id="pb-oos-banner-slot"></div>
     <div class="pb-item-profile" id="pb-item-profile"></div>
     <div id="pb-tiers"></div>
     <div id="pb-avoid"></div>
   </div>
+</div>
+
+<!-- ── ADMIN SCREEN (86/OOS toggle — management) ── -->
+<div id="screen-admin" class="screen">
+  <div class="admin-title-block">
+    <div class="section-heading" style="margin-bottom:4px">Menu Admin</div>
+    <div class="admin-subtitle">Flip anything that's 86'd — it'll gray out across pairings and disappear from recommendations until you flip it back.</div>
+  </div>
+  <div class="admin-stats">
+    <div class="admin-stats-count"><span class="n" id="admin-oos-count">0</span> 86'd</div>
+    <div class="admin-stats-meta" id="admin-stats-meta">Never updated</div>
+  </div>
+  <div class="admin-search-wrap">
+    <input type="text" class="admin-search" id="admin-search-input"
+           placeholder="Filter by name or category…"
+           oninput="renderAdminScreen(this.value)" autocomplete="off">
+  </div>
+  <div id="admin-list"></div>
 </div>
 
 <!-- ── SESSIONS SCREEN (save/load layouts) ── -->
@@ -659,7 +789,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 <!-- Cache-bust convention: increment ?v=N on any edit to the referenced file.
      Deprecated files (pairing-map.js, pairing-map-v2.old.js) are in /archive. -->
 <script src="table-defs.js?v=19"></script>
-<script src="pairing-map-v2.js?v=2"></script>
+<script src="pairing-map-v2.js?v=3"></script>
 <script src="pairing-notes.js?v=1"></script>
 <script>
 // ── CONSTANTS ──────────────────────────────────────────────────────────────────
@@ -789,8 +919,14 @@ function updateTopBar(screen) {
     const modesEl = document.getElementById('pb-modes-block');
     if (!pbReturnScreen) {
       if (modesEl) modesEl.style.display = '';
+      // Admin button is management-only. authIsManagement() returns true
+      // whenever a device has completed setup (the only identity we have).
+      const adminBtn = (typeof authIsManagement === 'function' && authIsManagement())
+        ? '<button class="top-bar-btn" onclick="openAdmin()">Admin</button>'
+        : '';
       actions.innerHTML = '<button class="top-bar-btn" onclick="openModeModal()">Simulate Shift</button>'
         + '<button class="top-bar-btn" onclick="ssOpen(\'screen-pairings\')">Sessions</button>'
+        + adminBtn
         + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
     } else {
       if (modesEl) modesEl.style.display = 'none';
@@ -800,6 +936,9 @@ function updateTopBar(screen) {
       actions.innerHTML = '<button class="top-bar-btn" onclick="pbExit()">← ' + returnLabel + '</button>'
         + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
     }
+  } else if (screen === 'screen-admin') {
+    actions.innerHTML = '<button class="top-bar-btn" onclick="closeAdmin()">← Pairings</button>'
+      + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
   } else if (screen === 'screen-sessions') {
     const returnLabel = ssReturnScreen === 'screen-selection' ? 'Setup'
       : ssReturnScreen === 'screen-table' ? 'Table'
@@ -2098,16 +2237,22 @@ function getAllItems() {
   return items;
 }
 
+// Display label for a category slug. The canonical source of truth is
+// CATEGORY_LABELS in pairing-map-v2.js — we look there first so adding a new
+// category only requires touching the pairing data. If a slug isn't mapped
+// (e.g. a special or a brand-new category), fall back to a title-case
+// prettifier so it renders legibly instead of as a raw slug.
+function prettifyCategorySlug(cat) {
+  if (!cat || typeof cat !== 'string') return '';
+  return cat.split(/[-_]/).map(part =>
+    part ? part.charAt(0).toUpperCase() + part.slice(1) : ''
+  ).join(' ');
+}
 function getCategoryForDisplay(cat) {
-  const m = {
-    'steak':'Prime','starter':'Starter','soup-salad':'Soup / Salad','main':'Main',
-    'side':'Side','dessert':'Dessert','cocktail':'Cocktail','wine-sparkling':'Sparkling',
-    'wine-white':'White Wine','wine-red':'Red Wine','wine-dessert':'Dessert Wine',
-    'bourbon':'Bourbon','rye':'Rye','scotch':'Scotch','irish':'Irish','japanese':'Japanese',
-    'canadian':'Canadian','tequila':'Tequila','mezcal':'Mezcal','vodka':'Vodka',
-    'gin':'Gin','rum':'Rum','cognac':'Cognac','liqueur':'Liqueur','singlemalt':'Single Malt'
-  };
-  return m[cat] || cat;
+  if (typeof CATEGORY_LABELS !== 'undefined' && CATEGORY_LABELS && CATEGORY_LABELS[cat]) {
+    return CATEGORY_LABELS[cat];
+  }
+  return prettifyCategorySlug(cat) || cat;
 }
 
 let searchDebounce = null;
@@ -2319,10 +2464,15 @@ function handlePbSearch(val) {
     if (!matches.length) { results.innerHTML = ''; results.classList.remove('visible'); return; }
     results.innerHTML = '';
     matches.forEach(item => {
+      // OOS items stay surfaced and tappable — staff still need the context,
+      // they just need to see it's 86'd before they pitch it.
+      const oos = isItemOos(item.name);
       const div = document.createElement('div');
-      div.className = 'search-result-item';
+      div.className = 'search-result-item' + (oos ? ' oos' : '');
       div.innerHTML = '<span class="press-fill"></span><span class="result-name">'
-        + item.name + '</span><span class="result-cat">'
+        + item.name + '</span>'
+        + (oos ? '<span class="result-86">86</span>' : '')
+        + '<span class="result-cat">'
         + getCategoryForDisplay(item.category) + '</span>';
       div.onclick = () => pbNavigate(item.name);
       results.appendChild(div);
@@ -2360,6 +2510,16 @@ function pbRenderDetail() {
   document.getElementById('pb-item-title').textContent = name;
   document.getElementById('pb-item-cat-badge').textContent = getCategoryForDisplay(entry.category);
   document.getElementById('pb-back-label').textContent = pbState.history.length ? 'Back' : 'Search';
+
+  // OOS banner — rendered only when the item is currently 86'd. The full
+  // pairing card stays visible so staff can still read the context, but the
+  // banner makes it unmistakable that this isn't a sellable item right now.
+  const bannerSlot = document.getElementById('pb-oos-banner-slot');
+  if (bannerSlot) {
+    bannerSlot.innerHTML = entry.oos
+      ? '<div class="pb-oos-banner"><strong>86\u2019d</strong>Currently out of stock \u2014 do not offer. Check with management before pitching.</div>'
+      : '';
+  }
 
   const profileEl = document.getElementById('pb-item-profile');
   const profile = entry.profile || [];
@@ -2680,10 +2840,17 @@ function ssSaveCurrent() {
   if (!state.sessionId) state.sessionId = ssMakeId();
   const list = ssLoadSavedSessions();
   const now = Date.now();
+  // Attribution stamp: record who saved this. Display is wired up in the
+  // next session (admin UI); we stamp now so we don't have to retrofit old
+  // snapshots later. authCurrentUser() returns null if auth isn't loaded —
+  // saving still works in that case.
+  const currentUser = (typeof authCurrentUser === 'function') ? authCurrentUser() : null;
+  const savedBy = currentUser ? { id: currentUser.id, name: currentUser.name, role: currentUser.role } : null;
   const snapshot = {
     id: state.sessionId,
     name: (state.sessionName && state.sessionName.trim()) || 'Unnamed session',
     savedAt: now,
+    savedBy,
     state: JSON.parse(JSON.stringify(state)),
   };
   const idx = list.findIndex(s => s.id === state.sessionId);
@@ -3457,8 +3624,175 @@ document.addEventListener('touchmove', e => {
   // Pinch-zoom elsewhere (floor map, recs panel) is intentionally allowed
   // so low-vision users and small-phone users can read dense content.
 }, {passive: false, capture: true});
+
+// ── ADMIN / OOS OVERLAY ──────────────────────────────────────────────────────
+// OOS state is stored separately from PAIRING_MAP (which is code-defined and
+// should never be mutated to persist admin decisions). On boot we flip
+// `entry.oos = true` on each matching PAIRING_MAP row — existing filter logic
+// in getRecommendations/getFirstTimerRecommendations already excludes oos rows.
+const OOS_KEY = 'sts_oos_items_v1';
+
+function loadOosOverlay() {
+  try {
+    const raw = localStorage.getItem(OOS_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    if (!parsed || typeof parsed !== 'object') return { names: [], updatedAt: 0, updatedBy: null };
+    return {
+      names: Array.isArray(parsed.names) ? parsed.names : [],
+      updatedAt: typeof parsed.updatedAt === 'number' ? parsed.updatedAt : 0,
+      updatedBy: parsed.updatedBy || null
+    };
+  } catch (e) { return { names: [], updatedAt: 0, updatedBy: null }; }
+}
+
+function persistOosOverlay(overlay) {
+  try { localStorage.setItem(OOS_KEY, JSON.stringify(overlay)); } catch (e) {}
+}
+
+// Apply the persisted OOS set to PAIRING_MAP. Called on boot (after specials
+// merge) and after every toggle so filtered renders stay in sync.
+function applyOosOverlay() {
+  const overlay = loadOosOverlay();
+  const oosSet = new Set(overlay.names || []);
+  PAIRING_MAP.forEach(entry => {
+    // `variable` is a structural flag (e.g. Today's Special placeholders) —
+    // never stomp it. We only touch the oos flag.
+    if (entry.variable) return;
+    entry.oos = oosSet.has(entry.name);
+  });
+}
+
+function isItemOos(name) {
+  const entry = PAIRING_MAP.find(e => e.name === name);
+  return !!(entry && entry.oos);
+}
+
+function toggleOos(name) {
+  const overlay = loadOosOverlay();
+  const set = new Set(overlay.names || []);
+  if (set.has(name)) set.delete(name); else set.add(name);
+  const currentUser = (typeof authCurrentUser === 'function') ? authCurrentUser() : null;
+  const nextOverlay = {
+    names: Array.from(set).sort(),
+    updatedAt: Date.now(),
+    updatedBy: currentUser ? { id: currentUser.id, name: currentUser.name } : null
+  };
+  persistOosOverlay(nextOverlay);
+  applyOosOverlay();
+  // Re-render the admin screen with the current filter preserved.
+  const filterInput = document.getElementById('admin-search-input');
+  renderAdminScreen(filterInput ? filterInput.value : '');
+  showToast(set.has(name) ? name + ' \u2014 86\u2019d' : name + ' \u2014 back on');
+}
+
+// ── ADMIN SCREEN RENDER ──────────────────────────────────────────────────────
+// Same category ordering used by first-timer recs, so the list reads the way
+// staff already expect to scan the menu.
+const ADMIN_CAT_ORDER = ['steak','starter','soup-salad','main','side','dessert',
+  'cocktail','wine-sparkling','wine-white','wine-red','wine-dessert',
+  'bourbon','rye','scotch','irish','japanese','canadian',
+  'tequila','mezcal','vodka','gin','rum','cognac','liqueur','singlemalt'];
+
+function openAdmin() {
+  if (typeof authIsManagement === 'function' && !authIsManagement()) {
+    showToast('Admin is management-only.');
+    return;
+  }
+  const input = document.getElementById('admin-search-input');
+  if (input) input.value = '';
+  renderAdminScreen('');
+  showScreen('screen-admin');
+  updateTopBar('screen-admin');
+}
+
+function openAdminFromMenu() {
+  if (typeof authHideProfileMenu === 'function') authHideProfileMenu();
+  openAdmin();
+}
+
+function closeAdmin() {
+  // Always land back on the pairing browser home — the admin screen is
+  // reached from there (or from the profile menu), so "back" = home.
+  if (typeof pbOpen === 'function') { pbOpen(null); return; }
+  showScreen('screen-pairings');
+  updateTopBar('screen-pairings');
+}
+
+function renderAdminScreen(filterRaw) {
+  const list = document.getElementById('admin-list');
+  if (!list) return;
+  const overlay = loadOosOverlay();
+  const oosSet = new Set(overlay.names || []);
+
+  // Update stats bar.
+  const countEl = document.getElementById('admin-oos-count');
+  if (countEl) countEl.textContent = oosSet.size;
+  const metaEl = document.getElementById('admin-stats-meta');
+  if (metaEl) {
+    if (!overlay.updatedAt) {
+      metaEl.innerHTML = 'Never updated';
+    } else {
+      const who = overlay.updatedBy && overlay.updatedBy.name ? overlay.updatedBy.name : 'Unknown';
+      metaEl.innerHTML = ssRelTime(overlay.updatedAt) + ' \u00b7 <span class="who">' + escapeHtml(who) + '</span>';
+    }
+  }
+
+  // Candidate items: everything that could appear in a pairing card, minus
+  // variable entries (Today's Special placeholders) and spirit-cluster parents
+  // (the individual bottles are listed instead, under `members`).
+  const candidates = [];
+  PAIRING_MAP.forEach(e => {
+    if (e.variable) return;
+    if (e.spiritCluster) {
+      (e.members || []).forEach(m => candidates.push({ name: m, category: e.category }));
+      return;
+    }
+    candidates.push({ name: e.name, category: e.category });
+  });
+
+  const filter = (filterRaw || '').trim().toLowerCase();
+  const filtered = filter
+    ? candidates.filter(c => c.name.toLowerCase().includes(filter)
+        || (getCategoryForDisplay(c.category) || '').toLowerCase().includes(filter))
+    : candidates;
+
+  if (!filtered.length) {
+    list.innerHTML = '<div class="admin-empty">No items match that filter.</div>';
+    return;
+  }
+
+  // Group by category using ADMIN_CAT_ORDER; anything unknown falls to the end.
+  const groups = {};
+  filtered.forEach(item => {
+    const cat = item.category || 'other';
+    if (!groups[cat]) groups[cat] = [];
+    groups[cat].push(item);
+  });
+  const orderedCats = ADMIN_CAT_ORDER.filter(c => groups[c])
+    .concat(Object.keys(groups).filter(c => !ADMIN_CAT_ORDER.includes(c)));
+
+  let html = '';
+  orderedCats.forEach(cat => {
+    const items = groups[cat].slice().sort((a, b) => a.name.localeCompare(b.name));
+    html += '<div class="admin-group">'
+      + '<div class="admin-group-label">' + escapeHtml(getCategoryForDisplay(cat)) + '</div>';
+    items.forEach(item => {
+      const isOos = oosSet.has(item.name);
+      html += '<div class="admin-item' + (isOos ? ' oos' : '') + '">'
+        + '<div class="admin-item-name">' + escapeHtml(item.name) + '</div>'
+        + (isOos ? '<span class="admin-86-badge">86</span>' : '')
+        + '<button type="button" class="admin-toggle' + (isOos ? ' on' : '') + '"'
+        + ' aria-label="Toggle 86 for ' + escapeHtml(item.name) + '"'
+        + ' onclick="toggleOos(' + JSON.stringify(item.name) + ')"></button>'
+        + '</div>';
+    });
+    html += '</div>';
+  });
+  list.innerHTML = html;
+}
 </script>
-<script src="set-the-stage-completion.js?v=24"></script>
+<script src="set-the-stage-auth.js?v=4"></script>
+<script src="set-the-stage-completion.js?v=26"></script>
 <!-- ── MODE MODAL ── -->
 <div id="mode-modal" class="modal-overlay centered">
   <div class="mode-modal-panel">
