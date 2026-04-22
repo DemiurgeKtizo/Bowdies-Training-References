@@ -5,10 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Bowdie's Chophouse — Staff Training Reference</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css?v=15">
+<link rel="stylesheet" href="./styles.css?v=16">
 </head>
 <body>
- 
+
+<!-- ── DEVICE SETUP GATE (one-time, per device — migrated from Set the Stage Apr 2026) ── -->
+<div id="setup-gate">
+  <div class="setup-panel">
+    <div class="setup-header">
+      <div class="setup-wordmark">Bowdie's</div>
+      <div class="setup-tagline">Staff Training Reference</div>
+    </div>
+    <div class="setup-title">Welcome</div>
+    <div class="setup-sub">Enter your name to continue. Lives on this device only — nothing is sent anywhere.</div>
+
+    <div class="modal-field">
+      <label class="modal-label">Your name</label>
+      <input type="text" class="modal-input" id="setup-name" autocomplete="name">
+    </div>
+    <div class="modal-field">
+      <label class="modal-label">Management code <span style="color:var(--text-dim);font-weight:normal;text-transform:none;letter-spacing:0">(optional)</span></label>
+      <input type="password" class="modal-input" id="setup-code" autocomplete="off">
+      <div class="setup-hint">Leave blank to continue as staff. Management has been given a code that unlocks the 86 / admin tools.</div>
+    </div>
+    <div class="setup-error" id="setup-error" hidden></div>
+    <button class="btn-primary" onclick="authHandleSetup()">Enter</button>
+  </div>
+</div>
+
+<!-- ── RESET DEVICE MODAL ── -->
+<div id="reset-device-modal" class="modal-overlay centered">
+  <div class="mode-modal-panel">
+    <div class="mode-modal-eyebrow">Reset Device</div>
+    <div class="mode-modal-title">Reset this device?</div>
+    <div class="mode-modal-sub">Clears your name and role so setup runs fresh. Saved specials and 86'd items are left alone. You'll need the management code again to come back as management.</div>
+    <div class="modal-actions">
+      <button class="modal-btn modal-btn-cancel" onclick="authCancelReset()">Cancel</button>
+      <button class="modal-btn modal-btn-confirm" onclick="authHandleReset()">Reset</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── PROFILE CHIP + DROPDOWN (fixed top-right, visible across home/main/admin) ── -->
+<button class="top-bar-profile" id="top-bar-profile" onclick="authToggleProfileMenu()" hidden>
+  <span class="top-bar-profile-name" id="top-bar-profile-name"></span>
+  <span class="top-bar-profile-role" id="top-bar-profile-role">Staff</span>
+</button>
+<div id="top-bar-profile-menu">
+  <div class="top-bar-profile-menu-name" id="top-bar-profile-menu-name"></div>
+  <button class="top-bar-profile-menu-btn admin" id="top-bar-profile-admin-btn" onclick="openAdminFromMenu()" style="display:none">Menu Admin</button>
+  <button class="top-bar-profile-menu-btn" onclick="authPromptReset()">Reset Device</button>
+</div>
 
 <div id="home-screen">
   <div class="home-eyebrow">East Grand Rapids, Michigan</div>
@@ -9663,8 +9710,35 @@
  
 </div>
 
+<!-- ── ADMIN SCREEN (86 / OOS toggle — management only) ── -->
+<div id="screen-admin">
+  <div class="admin-topbar">
+    <button class="admin-topbar-btn" onclick="closeAdmin()">← Back</button>
+  </div>
+  <div class="admin-title-block">
+    <div class="section-heading" style="margin-bottom:4px">Menu Admin</div>
+    <div class="admin-subtitle">Flip anything that's 86'd — it'll gray out across the reference and disappear from pairing recommendations until you flip it back.</div>
+  </div>
+  <div class="admin-stats">
+    <div class="admin-stats-count"><span class="n" id="admin-oos-count">0</span> 86'd</div>
+    <div class="admin-stats-meta" id="admin-stats-meta">Never updated</div>
+  </div>
+  <div class="admin-search-wrap">
+    <input type="text" class="admin-search" id="admin-search-input"
+           placeholder="Filter by name or category…"
+           oninput="renderAdminScreen(this.value)" autocomplete="off">
+  </div>
+  <div id="admin-list"></div>
+</div>
+
+<div id="add-toast"></div>
+
 <div id="wheel-toast">Pairing simulator coming soon — endless paths, one perfect night.</div>
-<script src="./main.js?v=15"></script>
+<!-- Cache-bust convention: increment ?v=N on any edit to the referenced file. -->
+<script src="pairing-map-v2.js?v=3"></script>
+<script src="set-the-stage-auth.js?v=4"></script>
+<script src="admin.js?v=1"></script>
+<script src="./main.js?v=16"></script>
 <script>
 document.addEventListener('touchmove', e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
 document.addEventListener('gesturestart', e => e.preventDefault(), { passive: false });

@@ -1,4 +1,7 @@
-// set-the-stage-completion.js — v6
+// set-the-stage-completion.js — v7
+//
+// Post-scope-down: the seating simulation and sessions library are gone.
+// This file now just owns first-timer rec rendering + boot.
 
 function ftNext() {
   if (!state.ftAnswers[state.ftCurrentQ]) state.ftAnswers[state.ftCurrentQ] = 'none';
@@ -70,143 +73,59 @@ function renderFTRecs() {
 
   document.getElementById('ft-recs-content').innerHTML = html;
   document.getElementById('ft-recs-area').scrollIntoView({behavior:'smooth',block:'start'});
-
-  if (state.ftForSeat !== null) {
-    const seatIdx = state.ftForSeat;
-    const applyBtn = document.createElement('button');
-    applyBtn.className = 'btn-secondary';
-    applyBtn.style.marginTop = '16px';
-    applyBtn.textContent = '← Back to ' + (state.activeTableId === 'bar'
-      ? 'Seat ' + (seatIdx + 1) : 'Guest ' + (seatIdx + 1));
-    applyBtn.onclick = () => {
-      state.ftForSeat = null;
-      state.ftForTable = null;
-      showScreen('screen-table');
-      updateTopBar('screen-table');
-      openSeatSheet(seatIdx);
-    };
-    document.getElementById('ft-recs-area').appendChild(applyBtn);
-  }
 }
 
-// ── RESET ───────────────────────────────────────────────────────────────────────
+// ── BOOT ────────────────────────────────────────────────────────────────────────
+// Post-Phase-2: the device setup gate lives on index.html. If this device
+// hasn't been configured we bounce there (the gate writes to the shared
+// sts_device_profile_v2 key, so returning here afterward just works). If it
+// IS configured, we merge specials, apply the OOS overlay, and open the
+// pairing browser. No gate UI runs on this page anymore.
 
-function confirmReset() {
-  state.mode = 'server';
-  state.selectedTableIds = [];
-  state.tables = {};
-  state.activeTableId = null;
-  state.activeSeat = null;
-  state.groupMode = false;
-  state.pendingGroupSeats = [];
-  state.specials = [];
-  state.ftDepth = 'short';
-  state.ftAnswers = [];
-  state.ftCurrentQ = 0;
-  state.ftForSeat = null;
-  state.ftForTable = null;
-  // Reset also clears the session label + library link. Saved copies in the
-  // library are intentionally preserved — only the live session is wiped.
-  state.sessionName = '';
-  state.sessionId = null;
-  if (typeof updateTopBarSessionLabel === 'function') updateTopBarSessionLabel();
-
-  for (let i = PAIRING_MAP.length - 1; i >= 0; i--) {
-    if (PAIRING_MAP[i].special) PAIRING_MAP.splice(i, 1);
-  }
-
-  document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
-  document.getElementById('seat-sheet').classList.remove('open');
-  document.getElementById('ft-recs-area').style.display = 'none';
-  document.getElementById('ft-short-btn').classList.add('active');
-  document.getElementById('ft-deep-btn').classList.remove('active');
-  document.getElementById('ft-question-area').innerHTML = '';
-  document.getElementById('ft-progress').innerHTML = '';
-
-  try { localStorage.removeItem('sts_v5'); } catch(e) {}
-  try { localStorage.removeItem('sts_v4'); } catch(e) {}
-
-  document.getElementById('floor-done-bar').classList.remove('visible');
-
-  // Under the pairing-reference-first identity, reset lands the user on the
-  // pairing browser home — not on the seating mode modal. The mode modal is
-  // now only reachable via the explicit "Simulate Shift" entry point.
-  renderOverview();
-  pbOpen(null);
-}
-
-// ── RESTORE ─────────────────────────────────────────────────────────────────────
-
-function restoreSession() {
-  const loaded = loadState();
-
-  // Re-populate specials into PAIRING_MAP (runs on every boot so that even a
-  // pairing-browser cold start has specials available if they were in state).
-  if (loaded) {
-    (state.specials || []).forEach(s => {
-      if (PAIRING_MAP.find(e => e.name === s.name && e.special)) return;
-      const entry = { name:s.name, category:s.category, profile:s.profile||[],
-        excellent:[], strong:[], works:[], avoid:[], special:true };
-      PAIRING_MAP.forEach(e => {
-        if (e.variable || e.oos) return;
-        const overlap = e.profile.filter(p => (s.profile||[]).includes(p)).length;
-        if (overlap >= 2) entry.excellent.push(e.name);
-        else if (overlap === 1) entry.strong.push(e.name);
+function bootStage() {
+  // Merge any pre-existing specials (from the old sts_v6 state blob) into
+  // PAIRING_MAP so pairing recommendations account for them. This is a
+  // one-way read — we don't write back to sts_v6 from this page anymore.
+  try {
+    const raw = localStorage.getItem('sts_v6');
+    if (raw) {
+      const prior = JSON.parse(raw);
+      (prior.specials || []).forEach(s => {
+        if (PAIRING_MAP.find(e => e.name === s.name && e.special)) return;
+        const entry = { name: s.name, category: s.category, profile: s.profile || [],
+          excellent: [], strong: [], works: [], avoid: [], special: true };
+        PAIRING_MAP.forEach(e => {
+          if (e.variable || e.oos) return;
+          const overlap = e.profile.filter(p => (s.profile || []).includes(p)).length;
+          if (overlap >= 2) entry.excellent.push(e.name);
+          else if (overlap === 1) entry.strong.push(e.name);
+        });
+        PAIRING_MAP.push(entry);
       });
-      PAIRING_MAP.push(entry);
-    });
+    }
+  } catch (e) {}
+
+  // Device identity check — redirect to the gate on index.html if unset.
+  // authLoadProfile hydrates authState.profile from localStorage without
+  // touching the DOM; authIsConfigured reads that flag.
+  if (typeof authLoadProfile === 'function') authLoadProfile();
+  if (typeof authIsConfigured === 'function' && !authIsConfigured()) {
+    window.location.href = 'index.html';
+    return;
   }
 
-  // The body of the post-auth boot flow. Wrapped so the auth gate can run
-  // first and invoke this when login resolves (either silently from an
-  // existing session or after a login/signup submit).
-  function proceedAfterAuth() {
-    // Apply the OOS overlay onto PAIRING_MAP now that specials have been
-    // merged — this flips `entry.oos = true` on anything admin marked 86'd
-    // so the existing rec filters silently exclude them.
-    if (typeof applyOosOverlay === 'function') applyOosOverlay();
+  // Apply the OOS overlay now that specials have been merged — this flips
+  // `entry.oos = true` on each matching PAIRING_MAP row so the existing rec
+  // filters silently exclude them. admin.js provides applyOosOverlay.
+  if (typeof applyOosOverlay === 'function') applyOosOverlay();
 
-    // Active-session path: user has a seating layout in progress.
-    if (loaded && Object.keys(state.tables || {}).length > 0) {
-      document.getElementById('mode-modal').classList.remove('open');
-      showScreen('screen-overview');
-      updateTopBar('screen-overview');
-      renderOverview();
-      if (state.activeTableId !== null) {
-        openTable(state.activeTableId);
-      }
-      return;
-    }
-
-    // Cold-start / no-active-session path: the pairing browser is home.
-    // The mode modal is NOT auto-opened anymore — it only appears when the
-    // user explicitly taps "Simulate a shift".
-    document.getElementById('mode-modal').classList.remove('open');
-    if (typeof pbOpen === 'function') {
-      pbOpen(null);
-    } else {
-      // Fallback — should never happen in practice but keeps a sane screen.
-      showScreen('screen-pairings');
-      updateTopBar('screen-pairings');
-    }
+  // Pairing browser is home. Nothing else to restore.
+  if (typeof pbOpen === 'function') {
+    pbOpen(null);
+  } else {
+    showScreen('screen-pairings');
+    updateTopBar('screen-pairings');
   }
-
-  // Register the callback so auth can re-enter the boot flow post-login,
-  // then attempt auth. If a valid session already exists, authBoot returns
-  // true and we proceed immediately; otherwise the gate is on screen and
-  // proceedAfterAuth fires once login/signup completes.
-  window.authOnLoginComplete = proceedAfterAuth;
-  const alreadyAuthed = (typeof authBoot === 'function') ? authBoot() : true;
-  if (alreadyAuthed) proceedAfterAuth();
 }
 
-// ── INIT ────────────────────────────────────────────────────────────────────────
-
-window.addEventListener('DOMContentLoaded', () => {
-  renderChips();
-  // Render the overview floor plan eagerly even though it won't be visible on
-  // cold start — keeps the "Simulate Shift" path snappy when the user does
-  // eventually opt in to a seating flow.
-  renderOverview();
-  restoreSession();
-});
+window.addEventListener('DOMContentLoaded', bootStage);

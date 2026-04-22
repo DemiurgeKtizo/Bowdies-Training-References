@@ -890,3 +890,19 @@ document.querySelectorAll('.card').forEach(card => {
     if (!wasExpanded) card.classList.add('expanded');
   });
 });
+
+// ── DEVICE GATE + OOS OVERLAY BOOT ──
+// auth.js shows the one-time setup gate if this device has never been configured.
+// admin.js already wires its own DOMContentLoaded to tag home cards with 86
+// badges, but the first PAIRING_MAP mutation happens here too so rec-filtering
+// logic stays consistent even if a downstream script boots later.
+(function bootIndex() {
+  if (typeof authBoot === 'function') {
+    // No special handler needed — the home-screen lives under the gate, so
+    // hiding the gate reveals it. authBoot returns true when already set up.
+    authBoot();
+  }
+  // admin.js runs adminBoot() on its own; no re-call here. If pairing-map-v2.js
+  // loaded successfully, it'll have already flipped entry.oos on any 86'd items
+  // before adminBoot ran the home-card overlay.
+})();

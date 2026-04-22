@@ -863,3 +863,365 @@ body::before {
   background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
   margin: 12px auto;
 }
+
+/* ── DEVICE GATE + ADMIN (migrated from set-the-stage.html Apr 2026) ────────
+   These rules were self-contained on the Set the Stage page until the gate
+   and admin screen moved to index.html. Variables in use match the existing
+   palette above; anything new (--border-soft, --warning, --surface-2) is
+   defined here so older cards that referenced them keep rendering. */
+
+:root {
+  --border-soft: rgba(201,168,76,0.10);
+  --warning: #B86949;
+  --warning-dim: #7A3E28;
+  /* --surface-2 already in palette; aliasing --surface-3 for admin rows.  */
+  --surface-3: #242018;
+}
+
+/* Reusable modal primitives — the reset-device confirm uses these. */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(17,16,16,0.85);
+  z-index: 500;
+  align-items: flex-end;
+  justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal-overlay.centered { align-items: center; }
+.mode-modal-panel {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  width: calc(100% - 48px);
+  max-width: 360px;
+  padding: 36px 28px 40px;
+}
+.mode-modal-eyebrow {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px; letter-spacing: 0.35em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 10px;
+}
+.mode-modal-title {
+  font-family: 'Playfair Display', serif; font-size: 18px;
+  color: var(--text-primary); margin-bottom: 8px;
+}
+.mode-modal-sub {
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14px;
+  color: var(--text-muted); line-height: 1.55; margin-bottom: 22px;
+}
+.modal-actions { display: flex; gap: 10px; margin-top: 20px; }
+.modal-btn {
+  flex: 1; padding: 14px; background: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+  cursor: pointer; transition: all 0.2s; border-radius: 0;
+}
+.modal-btn-confirm { border: 1px solid var(--gold-dim); color: var(--gold); }
+.modal-btn-confirm:hover { background: rgba(201,168,76,0.08); border-color: var(--gold); }
+.modal-btn-cancel { border: 1px solid var(--border-soft); color: var(--text-dim); }
+.modal-btn-cancel:hover { border-color: var(--border); color: var(--text-muted); }
+.modal-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 8.5px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 8px; display: block;
+}
+.modal-input {
+  width: 100%; background: var(--surface-3);
+  border: 1px solid var(--border-soft); color: var(--text-primary);
+  font-family: 'Cormorant Garamond', serif; font-size: 17px;
+  padding: 12px 14px; outline: none; border-radius: 0;
+  -webkit-appearance: none; appearance: none; transition: border-color 0.2s;
+}
+.modal-input:focus { border-color: var(--gold-dim); }
+.modal-field { margin-bottom: 16px; }
+.btn-primary {
+  width: 100%; padding: 18px; background: transparent;
+  border: 1px solid var(--gold-dim); color: var(--gold);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+  cursor: pointer; transition: all 0.25s; margin-top: 8px; border-radius: 0;
+}
+.btn-primary:hover { background: rgba(201,168,76,0.08); border-color: var(--gold); }
+.btn-primary:disabled { opacity: 0.4; pointer-events: none; }
+
+/* Setup gate — full-screen device identity prompt. */
+#setup-gate {
+  display: none;
+  position: fixed; inset: 0;
+  background: var(--surface);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 40px 20px;
+}
+#setup-gate.visible { display: flex; align-items: flex-start; justify-content: center; }
+.setup-panel {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  width: 100%; max-width: 440px;
+  padding: 36px 28px 32px;
+  margin: auto;
+}
+.setup-header {
+  text-align: center; margin-bottom: 22px;
+  padding-bottom: 18px; border-bottom: 1px solid var(--border-soft);
+}
+.setup-wordmark {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px; font-weight: 600;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--text-primary);
+}
+.setup-tagline {
+  font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: 13px; color: var(--gold);
+  margin-top: 4px; letter-spacing: 0.05em;
+}
+.setup-title {
+  font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 600;
+  color: var(--text-primary); margin-bottom: 6px;
+}
+.setup-sub {
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: 14px; color: var(--text-muted);
+  margin-bottom: 22px; line-height: 1.55;
+}
+.setup-hint {
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: 13px; color: var(--text-dim);
+  margin-top: 6px; line-height: 1.5;
+}
+.setup-error {
+  background: rgba(180,60,60,0.08);
+  border: 1px solid rgba(180,60,60,0.3);
+  color: #d99b9b;
+  padding: 10px 12px;
+  font-family: 'Cormorant Garamond', serif; font-size: 14px;
+  margin-bottom: 16px; line-height: 1.45;
+}
+/* Reset-device modal floats above the gate when the gate is on screen. */
+#reset-device-modal { z-index: 1100; }
+
+/* Profile chip — fixed top-right on index.html (outside the top-bar flex). */
+.top-bar-profile {
+  position: fixed; top: 14px; right: 16px; z-index: 600;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex; flex-direction: column; align-items: flex-start;
+  line-height: 1.15;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+.top-bar-profile:hover { border-color: var(--border); }
+.top-bar-profile[hidden] { display: none; }
+.top-bar-profile-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px; color: var(--text-primary); line-height: 1.1;
+}
+.top-bar-profile-role {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7.5px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold); margin-top: 2px; line-height: 1;
+}
+#top-bar-profile-menu {
+  display: none;
+  position: fixed; top: 60px; right: 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 16px;
+  z-index: 650;
+  min-width: 220px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+#top-bar-profile-menu.open { display: block; }
+.top-bar-profile-menu-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px; color: var(--text-primary);
+  margin-bottom: 14px; padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.top-bar-profile-menu-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--border-soft);
+  color: var(--text-muted);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+  padding: 10px; cursor: pointer; transition: all 0.2s;
+  margin-bottom: 6px;
+}
+.top-bar-profile-menu-btn:last-child { margin-bottom: 0; }
+.top-bar-profile-menu-btn:hover { border-color: var(--border); color: var(--text-primary); }
+.top-bar-profile-menu-btn.admin { border-color: var(--gold-dim); color: var(--gold); }
+.top-bar-profile-menu-btn.admin:hover {
+  background: rgba(201,168,76,0.08);
+  border-color: var(--gold); color: var(--gold-light);
+}
+
+/* Admin screen — full-page takeover on index.html. */
+#screen-admin {
+  display: none;
+  padding: 28px 24px 100px;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--surface);
+  position: relative;
+  z-index: 400;
+}
+.admin-title-block { margin-bottom: 18px; }
+.admin-topbar {
+  display: flex; gap: 10px;
+  margin-bottom: 18px; padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.admin-topbar-btn {
+  background: transparent;
+  border: 1px solid var(--border-soft);
+  color: var(--text-muted);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+  padding: 10px 16px; cursor: pointer; transition: all 0.2s;
+}
+.admin-topbar-btn:hover { border-color: var(--border); color: var(--text-primary); }
+.section-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px; letter-spacing: 0.35em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px; padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.admin-subtitle {
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: 14px; color: var(--text-dim);
+  margin-top: -10px; margin-bottom: 20px; line-height: 1.5;
+}
+.admin-stats {
+  display: flex; justify-content: space-between; align-items: baseline;
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  padding: 14px 16px; margin-bottom: 16px;
+}
+.admin-stats-count { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold); }
+.admin-stats-count .n { color: var(--text-primary); }
+.admin-stats-meta {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--text-dim); text-align: right; line-height: 1.4;
+}
+.admin-stats-meta .who { color: var(--text-muted); }
+.admin-search-wrap { margin-bottom: 18px; }
+.admin-search {
+  width: 100%;
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  color: var(--text-primary);
+  font-family: 'Cormorant Garamond', serif; font-size: 16px;
+  padding: 12px 14px; outline: none; border-radius: 0;
+  -webkit-appearance: none; appearance: none;
+  transition: border-color 0.2s;
+}
+.admin-search:focus { border-color: var(--gold-dim); }
+.admin-group { margin-bottom: 22px; }
+.admin-group-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.admin-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 4px;
+  border-bottom: 1px solid rgba(201,168,76,0.06);
+  gap: 12px; min-height: 44px;
+}
+.admin-item:last-child { border-bottom: none; }
+.admin-item-name {
+  font-family: 'Cormorant Garamond', serif; font-size: 16px;
+  color: var(--text-primary); flex: 1; line-height: 1.3;
+}
+.admin-item.oos .admin-item-name {
+  color: var(--text-dim);
+  text-decoration: line-through;
+  text-decoration-color: rgba(140,128,110,0.7);
+}
+.admin-toggle {
+  position: relative; width: 44px; height: 24px;
+  background: var(--surface-3);
+  border: 1px solid var(--border-soft);
+  cursor: pointer; transition: all 0.2s;
+  flex-shrink: 0; padding: 0; border-radius: 12px;
+}
+.admin-toggle::before {
+  content: ''; position: absolute; top: 2px; left: 2px;
+  width: 18px; height: 18px;
+  background: var(--text-dim); border-radius: 50%;
+  transition: all 0.2s;
+}
+.admin-toggle.on { background: rgba(184,105,73,0.15); border-color: rgba(184,105,73,0.45); }
+.admin-toggle.on::before { left: 22px; background: #c97a58; }
+.admin-toggle:hover { border-color: var(--border); }
+.admin-toggle.on:hover { border-color: #c97a58; }
+.admin-86-badge {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: #c97a58; font-weight: 600;
+  padding: 2px 6px;
+  border: 1px solid rgba(184,105,73,0.4);
+  background: rgba(184,105,73,0.08);
+  flex-shrink: 0;
+}
+.admin-empty {
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: 14px; color: var(--text-dim);
+  padding: 28px 16px; text-align: center;
+  border: 1px dashed var(--border-soft);
+  background: var(--surface-2);
+}
+
+/* 86 badge on home-reference cards (Spirits/Wine/Prime & Plate).
+   The toggle flow adds .card-86-badge and the .oos class; hardcoded oos
+   cards in index.html keep their existing visual (no badge) so we don't
+   double up. */
+.card.oos .card-name {
+  color: var(--text-dim);
+  text-decoration: line-through;
+  text-decoration-color: rgba(140,128,110,0.5);
+}
+.card-86-badge {
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: #c97a58; font-weight: 600;
+  padding: 2px 6px;
+  border: 1px solid rgba(184,105,73,0.4);
+  background: rgba(184,105,73,0.08);
+  position: absolute; top: 10px; right: 10px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Toast (reused by admin's 86-toggle confirmations). */
+#add-toast {
+  position: fixed;
+  bottom: 28px; left: 50%;
+  transform: translateX(-50%) translateY(40px);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-family: 'Cormorant Garamond', serif; font-size: 15px;
+  padding: 12px 20px;
+  opacity: 0;
+  transition: all 0.25s ease;
+  z-index: 1200;
+  pointer-events: none;
+  max-width: calc(100% - 48px);
+  text-align: center;
+}
+#add-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
