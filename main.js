@@ -665,6 +665,9 @@ function selectSection(guide) {
   document.getElementById('main-content').style.display = 'block';
   const topBar = document.getElementById('top-bar');
   topBar.style.display = 'flex';
+  // Hide the profile chip — it sits top-right and would cover "← Home"
+  // inside the sticky top bar. The chip is only visible on home + admin.
+  if (typeof setChipVisible === 'function') setChipVisible(false);
   document.getElementById('top-bar-section').textContent = label;
   // Scale font size down for longer section names
   const sectionEl = document.getElementById('top-bar-section');
@@ -756,6 +759,8 @@ function returnHome() {
       }, 400);
     });
   });
+  // Back on home — restore the profile chip (if the device is configured).
+  if (typeof setChipVisible === 'function') setChipVisible(true);
 }
 
 document.getElementById('home-spirits').addEventListener('click', () => selectSection('cocktails'));

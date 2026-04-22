@@ -1,4 +1,4 @@
-// set-the-stage-completion.js — v7
+// set-the-stage-completion.js — v8
 //
 // Post-scope-down: the seating simulation and sessions library are gone.
 // This file now just owns first-timer rec rendering + boot.
@@ -110,7 +110,10 @@ function bootStage() {
   // touching the DOM; authIsConfigured reads that flag.
   if (typeof authLoadProfile === 'function') authLoadProfile();
   if (typeof authIsConfigured === 'function' && !authIsConfigured()) {
-    window.location.href = 'index.html';
+    // `replace` so we don't leave an unconfigured sts.html entry in the
+    // browser history — back from index.html should go to whatever was
+    // before, not bounce-redirect us right back here.
+    window.location.replace('index.html');
     return;
   }
 

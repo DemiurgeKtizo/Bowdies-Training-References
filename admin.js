@@ -1,4 +1,4 @@
-// admin.js — v1
+// admin.js — v2
 //
 // Shared OOS / 86 overlay + management admin screen. Loaded by both
 // index.html (where the admin screen DOM and home-reference cards live) and
@@ -21,6 +21,10 @@
 // other module.
 
 const OOS_KEY = 'sts_oos_items_v1';
+// One-time migration flag. When set, migrateHardcodedOosCards has already
+// seeded the overlay from HTML-baked .card.oos[data-name] markers on this
+// device. Bump the key (v2, v3, …) to force a re-migration on all devices.
+const OOS_MIGRATION_KEY = 'sts_oos_migration_v1';
 
 // ── SHARED HELPERS ──────────────────────────────────────────────────────────
 
@@ -191,6 +195,7 @@ function openAdmin() {
   if (main) main.style.display = 'none';
   if (topBar) topBar.style.display = 'none';
   admin.style.display = 'block';
+  setChipVisible(false);
   window.scrollTo(0, 0);
 }
 
@@ -207,9 +212,13 @@ function closeAdmin() {
     const topBar = document.getElementById('top-bar');
     if (main) main.style.display = '';
     if (topBar) topBar.style.display = '';
+    // Main-content has its own back button, leave chip hidden to avoid
+    // overlapping the "← Home" control in the top bar.
+    setChipVisible(false);
   } else {
     const home = document.getElementById('home-screen');
     if (home) home.style.display = 'flex';
+    setChipVisible(true);
   }
 }
 
@@ -298,9 +307,73 @@ document.addEventListener('click', e => {
   if (oosBtn) { toggleOos(decodeURIComponent(oosBtn.dataset.oosToggle)); return; }
 });
 
+// ── MIGRATION: hardcoded .oos cards → admin-managed overlay ─────────────────
+// Before the admin feature existed, ~35 home-reference cards had `.oos` baked
+// into their HTML class (permanent kitchen 86's). Now that admin is the
+// source of truth, we seed those names into the overlay so the toggles
+// reflect reality and managers can bring an item back on without editing
+// markup. Runs exactly once per device — the flag prevents re-seeding if a
+// manager intentionally toggles one of these back on later.
+//
+// Items not in PAIRING_MAP (e.g. Salted Caramel Sauce add-on) are skipped
+// because admin can't surface a toggle for them — they'd become unreachable.
+// Their HTML .oos class still shows them struck through; no regression.
+function migrateHardcodedOosCards() {
+  try {
+    if (localStorage.getItem(OOS_MIGRATION_KEY)) return;
+  } catch (e) { return; }
+  if (typeof PAIRING_MAP === 'undefined') return; // wait for a later boot
+  // Build the set of names that PAIRING_MAP can address (entries + cluster members).
+  const addressable = new Set();
+  PAIRING_MAP.forEach(e => {
+    if (e.spiritCluster && Array.isArray(e.members)) {
+      e.members.forEach(m => addressable.add(m));
+    } else if (e.name) {
+      addressable.add(e.name);
+    }
+  });
+  const hardcoded = [];
+  document.querySelectorAll('.card.oos[data-name]').forEach(card => {
+    const n = card.dataset.name;
+    if (n && addressable.has(n)) hardcoded.push(n);
+  });
+  if (!hardcoded.length) {
+    try { localStorage.setItem(OOS_MIGRATION_KEY, '1'); } catch (e) {}
+    return;
+  }
+  const overlay = loadOosOverlay();
+  const set = new Set(overlay.names || []);
+  hardcoded.forEach(n => set.add(n));
+  const next = {
+    names: Array.from(set).sort(),
+    updatedAt: Date.now(),
+    updatedBy: { id: 'migration', name: 'HTML baseline' }
+  };
+  persistOosOverlay(next);
+  try { localStorage.setItem(OOS_MIGRATION_KEY, '1'); } catch (e) {}
+}
+
+// ── CHIP VISIBILITY HELPER ──────────────────────────────────────────────────
+// The profile chip is fixed top-right and overlaps the "← Home" back button
+// inside main-content's top-bar. We hide it while deep in a guide or on the
+// admin screen and restore it when returning home. authUpdateChip() handles
+// the "authorized to show" case; this just toggles the CSS display on top.
+function setChipVisible(visible) {
+  const chip = document.getElementById('top-bar-profile');
+  if (!chip) return;
+  // Don't promote an un-authorized chip; if authUpdateChip has it hidden,
+  // leave it hidden even when asked to show.
+  if (visible) {
+    if (typeof authIsConfigured === 'function' && authIsConfigured()) chip.hidden = false;
+  } else {
+    chip.hidden = true;
+  }
+}
+
 // ── BOOT ────────────────────────────────────────────────────────────────────
 
 function adminBoot() {
+  migrateHardcodedOosCards();
   applyOosOverlay();
   applyOosOverlayToHomeCards();
   // Deep-link support: index.html#admin lands straight on admin for management.
