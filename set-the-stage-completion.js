@@ -105,6 +105,11 @@ function confirmReset() {
   state.ftCurrentQ = 0;
   state.ftForSeat = null;
   state.ftForTable = null;
+  // Reset also clears the session label + library link. Saved copies in the
+  // library are intentionally preserved — only the live session is wiped.
+  state.sessionName = '';
+  state.sessionId = null;
+  if (typeof updateTopBarSessionLabel === 'function') updateTopBarSessionLabel();
 
   for (let i = PAIRING_MAP.length - 1; i >= 0; i--) {
     if (PAIRING_MAP[i].special) PAIRING_MAP.splice(i, 1);
@@ -122,32 +127,39 @@ function confirmReset() {
   try { localStorage.removeItem('sts_v4'); } catch(e) {}
 
   document.getElementById('floor-done-bar').classList.remove('visible');
-  document.getElementById('mode-modal').classList.add('open');
 
+  // Under the pairing-reference-first identity, reset lands the user on the
+  // pairing browser home — not on the seating mode modal. The mode modal is
+  // now only reachable via the explicit "Simulate Shift" entry point.
   renderOverview();
-  showScreen('screen-overview');
-  updateTopBar('screen-overview');
+  pbOpen(null);
 }
 
 // ── RESTORE ─────────────────────────────────────────────────────────────────────
 
 function restoreSession() {
-  if (!loadState()) return;
+  const loaded = loadState();
 
-  (state.specials || []).forEach(s => {
-    if (PAIRING_MAP.find(e => e.name === s.name && e.special)) return;
-    const entry = { name:s.name, category:s.category, profile:s.profile||[],
-      excellent:[], strong:[], works:[], avoid:[], special:true };
-    PAIRING_MAP.forEach(e => {
-      if (e.variable || e.oos) return;
-      const overlap = e.profile.filter(p => (s.profile||[]).includes(p)).length;
-      if (overlap >= 2) entry.excellent.push(e.name);
-      else if (overlap === 1) entry.strong.push(e.name);
+  // Re-populate specials into PAIRING_MAP (runs on every boot so that even a
+  // pairing-browser cold start has specials available if they were in state).
+  if (loaded) {
+    (state.specials || []).forEach(s => {
+      if (PAIRING_MAP.find(e => e.name === s.name && e.special)) return;
+      const entry = { name:s.name, category:s.category, profile:s.profile||[],
+        excellent:[], strong:[], works:[], avoid:[], special:true };
+      PAIRING_MAP.forEach(e => {
+        if (e.variable || e.oos) return;
+        const overlap = e.profile.filter(p => (s.profile||[]).includes(p)).length;
+        if (overlap >= 2) entry.excellent.push(e.name);
+        else if (overlap === 1) entry.strong.push(e.name);
+      });
+      PAIRING_MAP.push(entry);
     });
-    PAIRING_MAP.push(entry);
-  });
+  }
 
-  if (Object.keys(state.tables || {}).length > 0) {
+  // Active-session path: user has a seating layout in progress, drop them
+  // back into it exactly where they left off.
+  if (loaded && Object.keys(state.tables || {}).length > 0) {
     document.getElementById('mode-modal').classList.remove('open');
     showScreen('screen-overview');
     updateTopBar('screen-overview');
@@ -155,6 +167,19 @@ function restoreSession() {
     if (state.activeTableId !== null) {
       openTable(state.activeTableId);
     }
+    return;
+  }
+
+  // Cold-start / no-active-session path: the pairing browser is home.
+  // The mode modal is NOT auto-opened anymore — it only appears when the user
+  // explicitly taps "Simulate a shift".
+  document.getElementById('mode-modal').classList.remove('open');
+  if (typeof pbOpen === 'function') {
+    pbOpen(null);
+  } else {
+    // Fallback — should never happen in practice but keeps a sane screen visible.
+    showScreen('screen-pairings');
+    updateTopBar('screen-pairings');
   }
 }
 
@@ -162,6 +187,9 @@ function restoreSession() {
 
 window.addEventListener('DOMContentLoaded', () => {
   renderChips();
-  renderOverview(); // populate floor plan behind the mode modal on fresh load
-  restoreSession(); // overwrites if there is a saved session
+  // Render the overview floor plan eagerly even though it won't be visible on
+  // cold start — keeps the "Simulate Shift" path snappy when the user does
+  // eventually opt in to a seating flow.
+  renderOverview();
+  restoreSession();
 });

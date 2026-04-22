@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Set The Stage — Bowdie's Chophouse</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;touch-action:pan-x pan-y}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 :root{
   --gold:#C9A84C;--gold-light:#E8C96A;--gold-dim:#8A6B2A;
   --charcoal:#111010;--surface:#171513;--surface-2:#1E1B18;--surface-3:#242018;
   --border:rgba(201,168,76,0.18);--border-soft:rgba(201,168,76,0.10);
   --text-primary:#F0E8D8;--text-muted:#8A8070;--text-dim:#5A5248;
   --tier-excellent:#C9A84C;--tier-strong:#7BA8C4;--tier-works:#7A9A8A;
+  --warning:#B86949;--warning-dim:#7A3E28;
 }
 html{background:#111010}
 body{background:var(--surface);color:var(--text-primary);font-family:'Cormorant Garamond',serif;min-height:100vh;overflow-x:hidden}
@@ -50,8 +51,8 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .overview-section-block{margin-bottom:4px}
 .overview-section-label{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);padding:14px 24px 10px;border-bottom:1px solid var(--border-soft)}
 .overview-svg{width:100%;display:block;padding:0 16px;box-sizing:border-box}
-.bar-strip-row{display:flex;flex-wrap:nowrap;gap:4px;padding:16px 16px 20px}
-.bar-stool-btn{flex:1 1 0;min-width:0;aspect-ratio:1/1;border-radius:50%;border:1px solid rgba(201,168,76,0.2);background:#1E1B18;color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.05em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
+.bar-strip-row{display:flex;flex-wrap:wrap;gap:6px;padding:16px 16px 20px;justify-content:center}
+.bar-stool-btn{flex:0 0 44px;min-width:44px;aspect-ratio:1/1;border-radius:50%;border:1px solid rgba(201,168,76,0.2);background:#1E1B18;color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:11px;letter-spacing:0.05em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
 .bar-stool-btn:hover{border-color:rgba(201,168,76,0.5);color:var(--text-muted)}
 .bar-stool-btn.group-pending{border-color:rgba(201,168,76,0.9);background:rgba(201,168,76,0.15);color:var(--gold)}
 .bar-stool-btn.group-anchor{border-color:var(--gold);background:rgba(201,168,76,0.2);color:var(--gold)}
@@ -103,10 +104,13 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .rec-explain-body{font-family:'Cormorant Garamond',serif;font-size:15px;line-height:1.5;color:var(--text-primary)}
 .rec-explain-body.rec-explain-pending{font-style:italic;color:var(--text-muted)}
 .rec-explain-body.rec-explain-pending strong{color:var(--text-primary);font-style:normal}
-.tier-pip{width:6px;height:6px;border-radius:50%;flex-shrink:0}
-.tier-pip.excellent{background:var(--tier-excellent)}
-.tier-pip.strong{background:var(--tier-strong)}
-.tier-pip.works{background:var(--tier-works)}
+.tier-pip{width:auto;height:auto;min-width:10px;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:10px;line-height:1;font-family:'Josefin Sans',sans-serif;font-weight:400}
+.tier-pip.excellent{color:var(--tier-excellent)}
+.tier-pip.excellent::before{content:'\25C6'} /* ◆ filled diamond */
+.tier-pip.strong{color:var(--tier-strong)}
+.tier-pip.strong::before{content:'\25C7'} /* ◇ open diamond */
+.tier-pip.works{color:var(--tier-works)}
+.tier-pip.works::before{content:'\25CB'} /* ○ open circle */
 .rec-info{flex:1;min-width:0}
 .rec-name{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text-primary);line-height:1.2}
 .rec-meta{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);margin-top:3px}
@@ -114,6 +118,9 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .tier-badge.excellent{color:var(--tier-excellent)}
 .tier-badge.strong{color:var(--tier-strong)}
 .tier-badge.works{color:var(--tier-works)}
+.rec-warning{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--warning);margin-top:4px;display:flex;align-items:center;gap:6px;line-height:1.3}
+.rec-warning::before{content:'▲';font-size:8px;opacity:0.85;flex-shrink:0}
+.rec-item.has-conflict{border-left-color:var(--warning-dim)}
 
 /* ── SEAT SHEET ── */
 #seat-sheet{position:fixed;inset:0;z-index:400;display:none;align-items:flex-end;justify-content:center}
@@ -135,9 +142,14 @@ body.sheet-open{overflow:hidden;position:fixed;width:100%;left:0}
 .search-input:focus{border-color:var(--gold-dim)}
 .search-results{position:absolute;top:100%;left:0;right:0;background:var(--surface-3);border:1px solid var(--border);border-top:none;max-height:220px;overflow-y:auto;z-index:150;display:none}
 .search-results.visible{display:block}
-.search-result-item{padding:12px 16px;cursor:pointer;border-bottom:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between;gap:12px;transition:background 0.15s}
+.search-result-item{position:relative;padding:12px 16px;cursor:pointer;border-bottom:1px solid var(--border-soft);display:flex;align-items:center;justify-content:space-between;gap:12px;transition:background 0.15s;user-select:none;-webkit-user-select:none;overflow:hidden}
 .search-result-item:hover{background:var(--surface-2)}
 .search-result-item:last-child{border-bottom:none}
+.search-result-item > *{position:relative;z-index:1}
+.search-result-item .press-fill{position:absolute;inset:0;background:linear-gradient(90deg,rgba(201,168,76,0.28) 0%,rgba(201,168,76,0.08) 100%);transform:scaleX(0);transform-origin:left center;pointer-events:none;z-index:0}
+.search-result-item.pressing .press-fill{animation:stsPressFill 500ms linear forwards}
+.search-result-item.quick-flash{background:rgba(201,168,76,0.28);transition:background 0.35s ease-out}
+@keyframes stsPressFill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .result-name{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text-primary)}
 .result-cat{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0}
 .add-special-link{display:inline-block;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;cursor:pointer;padding:6px 0;margin-bottom:14px;transition:color 0.2s}
@@ -145,9 +157,9 @@ body.sheet-open{overflow:hidden;position:fixed;width:100%;left:0}
 .sheet-items-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--border-soft)}
 .item-card{background:var(--surface-3);border:1px solid var(--border-soft);margin-bottom:6px;overflow:hidden}
 .item-row{display:flex;align-items:center;padding:13px 16px;gap:12px}
-.item-name{font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.2;flex:1}
+.item-name{font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.2;flex:1;transition:color 200ms ease, text-decoration-color 200ms ease, font-style 200ms ease}
 .item-name.state-locked{color:var(--text-primary)}
-.item-name.state-finished{color:var(--text-dim);text-decoration:line-through;text-decoration-color:rgba(90,82,72,0.6)}
+.item-name.state-finished{color:var(--text-dim);text-decoration:line-through;text-decoration-color:rgba(140,128,110,0.9)}
 .item-name.state-considering{color:var(--text-muted);font-style:italic}
 .item-cat{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);margin-top:2px}
 .item-finish-bar{width:100%;padding:9px 16px;background:transparent;border:none;border-top:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;cursor:pointer;text-align:center;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:8px}
@@ -162,7 +174,17 @@ body.sheet-open{overflow:hidden;position:fixed;width:100%;left:0}
 .first-timer-link::before{content:'✦';font-size:8px;opacity:0.5}
 .variable-prompt{background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--gold-dim);padding:14px 16px;margin-bottom:12px;display:none}
 .variable-prompt.visible{display:block}
-.variable-prompt-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.variable-prompt-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.variable-prompt-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold)}
+.variable-prompt-progress{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold-dim);display:none;flex-shrink:0}
+.variable-prompt-progress.visible{display:inline-block}
+.variable-prompt-row{display:flex;align-items:center;gap:10px}
+.variable-prompt-row .variable-input{flex:1;min-width:0}
+.variable-prompt-done{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);background:transparent;border:1px solid var(--gold-dim);padding:7px 11px;cursor:pointer;transition:all 0.2s;flex-shrink:0;min-height:32px}
+.variable-prompt-done:hover{background:rgba(201,168,76,0.08);color:var(--gold-light);border-color:var(--gold)}
+.variable-prompt-skip{display:none;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:none;padding:10px 0 0;cursor:pointer;margin-top:4px;text-align:left}
+.variable-prompt-skip.visible{display:block}
+.variable-prompt-skip:hover{color:var(--text-muted)}
 .variable-input{width:100%;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:16px;padding:6px 0;outline:none}
 .variable-input::placeholder{color:var(--text-dim)}
 
@@ -245,6 +267,101 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 .floor-bar-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);padding:12px 24px 16px}
 /* ── SCREEN-SELECTION as floor view ── */
 #screen-selection{padding:0 0 100px;max-width:600px;margin:0 auto}
+/* ── PAIRING BROWSER (standalone reference screen) ── */
+#screen-pairings{max-width:600px;margin:0 auto;padding:20px 24px 80px}
+.pb-title-block{margin-bottom:18px}
+.pb-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);line-height:1.45}
+.pb-search-wrap{margin-bottom:18px;position:relative}
+.pb-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--text-dim);margin-top:24px;padding:16px;border-left:2px solid var(--border-soft);background:var(--surface-2)}
+.pb-section-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin:10px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border-soft)}
+.pb-recents-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.pb-recent-chip{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--text-primary);background:var(--surface-2);border:1px solid var(--border-soft);padding:8px 14px;cursor:pointer;transition:all 0.15s;min-height:36px}
+.pb-recent-chip:hover{border-color:var(--gold-dim);background:rgba(201,168,76,0.06);color:var(--gold-light)}
+.pb-back-row{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.pb-back-btn{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-muted);background:transparent;border:1px solid var(--border-soft);padding:9px 14px;cursor:pointer;transition:all 0.15s;min-height:36px}
+.pb-back-btn:hover{color:var(--gold);border-color:var(--gold-dim)}
+.pb-item-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--text-primary);margin:6px 0 8px;line-height:1.2}
+.pb-item-cat-row{margin-bottom:12px}
+.pb-item-cat-badge{display:inline-block;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold-dim);padding:5px 10px;border:1px solid var(--border-soft)}
+.pb-item-profile{margin-bottom:22px;display:flex;flex-wrap:wrap;gap:6px}
+.pb-profile-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:var(--text-dim);padding:3px 9px;background:var(--surface-2);border-radius:2px}
+.pb-tier-section{margin-bottom:22px;padding:14px 16px;background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--border)}
+.pb-tier-section:has(.tier-pip.excellent){border-left-color:var(--tier-excellent)}
+.pb-tier-section:has(.tier-pip.strong){border-left-color:var(--tier-strong)}
+.pb-tier-section:has(.tier-pip.works){border-left-color:var(--tier-works)}
+.pb-tier-label{display:flex;align-items:center;gap:10px;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border-soft)}
+.pb-tier-label .tier-pip{min-width:11px;font-size:11px}
+.pb-tier-name{color:var(--text-primary);flex:1}
+.pb-tier-count{color:var(--text-dim);font-size:8px}
+.pb-rec-list{display:flex;flex-direction:column;gap:0}
+.pb-rec-row{border-bottom:1px solid var(--border-soft)}
+.pb-rec-row:last-child{border-bottom:none}
+.pb-rec-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 10px;background:transparent;border:none;color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:15px;text-align:left;cursor:pointer;transition:background 0.15s;min-height:44px;width:100%}
+.pb-rec-item:hover{background:var(--surface-3)}
+.pb-rec-item.oos{opacity:0.55}
+.pb-rec-item.expanded{background:var(--surface-3)}
+.pb-rec-info{flex:1;min-width:0}
+.pb-rec-name{font-size:15px;color:var(--text-primary);line-height:1.3}
+.pb-rec-cat{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim);margin-top:3px}
+.pb-rec-oos{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--warning);margin-top:3px}
+.pb-rec-arrow{color:var(--text-dim);font-size:14px;flex-shrink:0;padding-left:8px;transition:transform 0.2s ease, color 0.2s ease}
+.pb-rec-item.expanded .pb-rec-arrow{transform:rotate(90deg);color:var(--gold-dim)}
+.pb-rec-explain{background:var(--surface);border-left:2px solid var(--gold);max-height:0;overflow:hidden;transition:max-height 0.25s ease, padding 0.25s ease;padding:0 14px}
+.pb-rec-explain.open{max-height:800px;padding:12px 14px 14px}
+.pb-rec-explain-nav{display:inline-block;margin-top:10px;font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);background:transparent;border:1px solid var(--gold-dim);padding:8px 12px;cursor:pointer;transition:all 0.15s;min-height:32px}
+.pb-rec-explain-nav:hover{background:rgba(201,168,76,0.08);border-color:var(--gold);color:var(--gold-light)}
+.pb-avoid-section{border-left-color:var(--warning-dim)}
+.pb-avoid-glyph{color:var(--warning);font-size:11px}
+.pb-avoid-label .pb-tier-name{color:var(--warning)}
+.pb-avoid-list{display:flex;flex-direction:column;gap:4px}
+.pb-avoid-row{display:flex;flex-direction:column}
+.pb-avoid-item{display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--text-muted);background:transparent;border:1px solid var(--border-soft);padding:9px 12px;cursor:pointer;transition:all 0.15s;min-height:40px;text-align:left;width:100%}
+.pb-avoid-item:hover{color:var(--warning);border-color:var(--warning-dim);background:rgba(184,105,73,0.05)}
+.pb-avoid-item.expanded{color:var(--warning);border-color:var(--warning-dim);background:rgba(184,105,73,0.07)}
+.pb-avoid-arrow{color:var(--text-dim);font-size:14px;flex-shrink:0;transition:transform 0.2s ease, color 0.2s ease}
+.pb-avoid-item.expanded .pb-avoid-arrow{transform:rotate(90deg);color:var(--warning)}
+.pb-avoid-explain{background:var(--surface);border-left:2px solid var(--warning-dim);max-height:0;overflow:hidden;transition:max-height 0.25s ease, padding 0.25s ease;padding:0 14px;margin-top:2px}
+.pb-avoid-explain.open{max-height:800px;padding:12px 14px 14px}
+.pb-empty{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);padding:14px;text-align:center;background:var(--surface-2);border:1px solid var(--border-soft)}
+.pb-modes{margin-top:28px;padding-top:22px;border-top:1px solid var(--border-soft)}
+.pb-modes-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.pb-mode-btn{display:block;width:100%;text-align:left;padding:14px 16px;margin-bottom:8px;background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--border);color:var(--text-primary);cursor:pointer;transition:all 0.15s;border-radius:0}
+.pb-mode-btn:hover{border-color:var(--gold-dim);border-left-color:var(--gold-dim);background:var(--surface-3)}
+.pb-mode-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:var(--text-primary);margin-bottom:4px}
+.pb-mode-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--text-dim);line-height:1.45}
+.mode-choice-cancel{display:block;width:100%;margin-top:10px;padding:12px;background:transparent;border:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
+.mode-choice-cancel:hover{border-color:var(--border);color:var(--text-muted)}
+/* ── SESSIONS SCREEN (save/load layouts) ── */
+#screen-sessions{max-width:600px;margin:0 auto;padding:20px 24px 80px}
+.ss-title-block{margin-bottom:18px}
+.ss-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);line-height:1.45}
+.ss-section-label{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin:16px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border-soft)}
+.ss-current-card{background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--gold-dim);padding:16px 18px;margin-bottom:12px}
+.ss-card-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.ss-name-row{margin-bottom:12px}
+.ss-name-input{width:100%;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--text-primary);font-family:'Playfair Display',serif;font-size:19px;padding:6px 0 8px;outline:none;font-weight:600}
+.ss-name-input::placeholder{color:var(--text-dim);font-style:italic;font-weight:400}
+.ss-name-input:focus{border-bottom-color:var(--gold-dim)}
+.ss-current-meta{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;padding:6px 0;min-height:14px}
+.ss-card-actions{display:flex;gap:8px;flex-wrap:wrap}
+.ss-btn{font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-muted);background:transparent;border:1px solid var(--border-soft);padding:10px 14px;cursor:pointer;transition:all 0.15s;min-height:36px}
+.ss-btn:hover{color:var(--gold);border-color:var(--gold-dim);background:rgba(201,168,76,0.05)}
+.ss-btn-primary{color:var(--gold);border-color:var(--gold-dim);background:rgba(201,168,76,0.04)}
+.ss-btn-primary:hover{background:rgba(201,168,76,0.1);color:var(--gold-light);border-color:var(--gold)}
+.ss-btn-danger{color:var(--warning)}
+.ss-btn-danger:hover{border-color:var(--warning-dim);background:rgba(184,105,73,0.08);color:var(--warning)}
+.ss-saved-card{background:var(--surface-2);border:1px solid var(--border-soft);padding:14px 16px;margin-bottom:10px;transition:border-color 0.15s}
+.ss-saved-card:hover{border-color:var(--border)}
+.ss-saved-card.current{border-left:2px solid var(--gold)}
+.ss-saved-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px}
+.ss-saved-name{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:var(--text-primary);line-height:1.25;flex:1;min-width:0;word-break:break-word}
+.ss-saved-time{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);flex-shrink:0;padding-top:3px}
+.ss-saved-meta{font-family:'Josefin Sans',sans-serif;font-size:8.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px}
+.ss-saved-meta .dot{margin:0 8px;color:var(--text-dim)}
+.ss-saved-actions{display:flex;gap:8px;flex-wrap:wrap}
+.ss-saved-actions .ss-btn{flex:0 0 auto}
+.ss-saved-delete.confirming{color:var(--warning);border-color:var(--warning-dim);background:rgba(184,105,73,0.08)}
+.ss-empty-saved{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);padding:18px 16px;background:var(--surface-2);border:1px dashed var(--border-soft);text-align:center}
 </style>
 </head>
 <body>
@@ -269,7 +386,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 </div>
 
 <!-- ── OVERVIEW SCREEN ── -->
-<div id="screen-overview" class="screen active" style="padding:0 0 80px">
+<div id="screen-overview" class="screen" style="padding:0 0 80px">
   <div id="overview-sections"></div>
 </div>
 
@@ -324,6 +441,98 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <button class="btn-secondary" onclick="backFromFT()" style="margin-top:24px">← Back</button>
 </div>
 
+<!-- ── PAIRING BROWSER SCREEN (standalone reference, decoupled from seating) ── -->
+<div id="screen-pairings" class="screen active">
+  <div class="pb-title-block">
+    <div class="section-heading" style="margin-bottom:4px">Pairing Reference</div>
+    <div class="pb-subtitle">Look up pairings for any item — no table setup required.</div>
+  </div>
+
+  <!-- SEARCH / HOME VIEW -->
+  <div id="pb-search-view">
+    <div class="pb-search-wrap search-wrap">
+      <input type="text" class="search-input" id="pb-search-input"
+             placeholder="Search — dish, wine, cocktail, spirit…"
+             oninput="handlePbSearch(this.value)" autocomplete="off">
+      <div class="search-results" id="pb-search-results"></div>
+    </div>
+    <div id="pb-recents-wrap" style="display:none">
+      <div class="pb-section-label">Recent Look-ups</div>
+      <div id="pb-recents-list" class="pb-recents-list"></div>
+    </div>
+    <div class="pb-hint">Type any menu item above — the reference opens a pairing card with Excellent / Strong / Works options and an Avoid list. Tap any recommendation to see the reasoning behind the pairing.</div>
+
+    <div class="pb-modes" id="pb-modes-block">
+      <div class="pb-modes-label">Or step into a workflow</div>
+      <button type="button" class="pb-mode-btn" onclick="openModeModal()">
+        <div class="pb-mode-title">Simulate a shift</div>
+        <div class="pb-mode-sub">Set a section, seat guests, and plan pairings table-by-table.</div>
+      </button>
+      <button type="button" class="pb-mode-btn" onclick="startFirstTimerStandalone()">
+        <div class="pb-mode-title">Coach a first-timer</div>
+        <div class="pb-mode-sub">Run the guest-preference flow without a seat — useful for training or prep.</div>
+      </button>
+      <button type="button" class="pb-mode-btn" onclick="ssOpen('screen-pairings')">
+        <div class="pb-mode-title">Open a saved session</div>
+        <div class="pb-mode-sub">Pick up a seating layout you saved earlier.</div>
+      </button>
+    </div>
+  </div>
+
+  <!-- ITEM DETAIL VIEW -->
+  <div id="pb-detail-view" style="display:none">
+    <div class="pb-back-row">
+      <button class="pb-back-btn" onclick="pbBack()">← <span id="pb-back-label">Search</span></button>
+    </div>
+    <div class="pb-item-title" id="pb-item-title"></div>
+    <div class="pb-item-cat-row">
+      <span class="pb-item-cat-badge" id="pb-item-cat-badge"></span>
+    </div>
+    <div class="pb-item-profile" id="pb-item-profile"></div>
+    <div id="pb-tiers"></div>
+    <div id="pb-avoid"></div>
+  </div>
+</div>
+
+<!-- ── SESSIONS SCREEN (save/load layouts) ── -->
+<div id="screen-sessions" class="screen">
+  <div class="ss-title-block">
+    <div class="section-heading" style="margin-bottom:4px">Sessions</div>
+    <div class="ss-subtitle">Name and save the current layout, or reload one you saved before.</div>
+  </div>
+
+  <!-- CURRENT SESSION CARD -->
+  <div class="ss-current-card">
+    <div class="ss-card-label">Current Session</div>
+    <div class="ss-name-row">
+      <input type="text" class="ss-name-input" id="ss-current-name"
+             placeholder="Name this session (optional)…"
+             oninput="ssHandleNameInput(this.value)" autocomplete="off" maxlength="60">
+    </div>
+    <div class="ss-current-meta" id="ss-current-meta"></div>
+    <div class="ss-card-actions">
+      <button type="button" class="ss-btn ss-btn-primary" id="ss-save-btn" onclick="ssSaveCurrent()">Save to Library</button>
+      <button type="button" class="ss-btn" id="ss-saveas-btn" onclick="ssSaveAsNew()">Save as New</button>
+    </div>
+  </div>
+
+  <!-- SAVED SESSIONS LIST -->
+  <div class="ss-section-label">Saved Sessions</div>
+  <div id="ss-saved-list"></div>
+</div>
+
+<!-- ── SESSIONS CONFIRM MODAL (reused for load + delete) ── -->
+<div class="modal-overlay centered" id="ss-confirm-modal">
+  <div class="mode-modal-panel">
+    <div class="modal-title" id="ss-confirm-title">Confirm</div>
+    <div class="modal-sub" id="ss-confirm-body" style="margin:6px 0 20px;color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-size:15px;line-height:1.4"></div>
+    <div class="modal-options">
+      <button class="modal-option primary" id="ss-confirm-yes" onclick="ssConfirmYes()">Yes</button>
+      <button class="modal-option" onclick="ssConfirmNo()">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <!-- ── SEAT BOTTOM SHEET ── -->
 <div id="seat-sheet">
   <div id="seat-sheet-backdrop" onclick="closeSeatSheet()"></div>
@@ -342,10 +551,18 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
       </div>
       <button class="add-special-link" onclick="openSpecialsModal()">+ Today's Special</button>
       <div class="variable-prompt" id="variable-prompt">
-        <div class="variable-prompt-label" id="variable-prompt-label">Today's Preparation</div>
-        <input type="text" class="variable-input" id="variable-input"
-               placeholder="Describe the preparation…"
-               oninput="handleVariableInput(this.value)">
+        <div class="variable-prompt-head">
+          <div class="variable-prompt-label" id="variable-prompt-label">Today's Preparation</div>
+          <div class="variable-prompt-progress" id="variable-prompt-progress"></div>
+        </div>
+        <div class="variable-prompt-row">
+          <input type="text" class="variable-input" id="variable-input"
+                 placeholder="Describe the preparation…"
+                 oninput="handleVariableInput(this.value)"
+                 onkeydown="if(event.key==='Enter'){event.preventDefault();advanceVarQueue();}">
+          <button type="button" class="variable-prompt-done" onclick="advanceVarQueue()" title="Enter">Done ↵</button>
+        </div>
+        <button type="button" class="variable-prompt-skip" id="variable-prompt-skip" onclick="skipVarQueue()">Skip this one</button>
       </div>
       <div id="seat-items-display"></div>
       <button class="first-timer-link" onclick="openFirstTimerForSeat()">This guest is a first timer</button>
@@ -439,6 +656,8 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
   <p>Internal use only</p>
 </footer>
 
+<!-- Cache-bust convention: increment ?v=N on any edit to the referenced file.
+     Deprecated files (pairing-map.js, pairing-map-v2.old.js) are in /archive. -->
 <script src="table-defs.js?v=19"></script>
 <script src="pairing-map-v2.js?v=2"></script>
 <script src="pairing-notes.js?v=1"></script>
@@ -502,6 +721,8 @@ const state = {
   ftCurrentQ: 0,
   ftForSeat: null,
   ftForTable: null,
+  sessionName: '',        // user-given label, surfaces in top bar
+  sessionId: null,        // stable id once session has been saved to library (re-saves update same slot)
 };
 let promptCount = 2;
 
@@ -549,11 +770,41 @@ function showScreen(id) {
   window.scrollTo(0, 0);
 }
 function updateTopBar(screen) {
+  updateTopBarSessionLabel();
   const actions = document.getElementById('top-bar-actions');
   if (screen === 'screen-selection') {
-    actions.innerHTML = '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
+    actions.innerHTML = '<button class="top-bar-btn" onclick="ssOpen(\'screen-selection\')">Sessions</button>'
+      + '<button class="top-bar-btn" onclick="pbOpen(\'screen-selection\')">Pairings</button>'
+      + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
   } else if (screen === 'screen-overview') {
-    actions.innerHTML = '<button class="top-bar-btn" onclick="confirmReset()">Reset</button>'
+    actions.innerHTML = '<button class="top-bar-btn" onclick="ssOpen(\'screen-overview\')">Sessions</button>'
+      + '<button class="top-bar-btn" onclick="pbOpen(\'screen-overview\')">Pairings</button>'
+      + '<button class="top-bar-btn" onclick="confirmReset()">Reset</button>'
+      + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
+  } else if (screen === 'screen-pairings') {
+    // Two modes:
+    //  - Home (pbReturnScreen === null): cold-start / reset landing — offer shift launcher + sessions.
+    //  - Navigated-in: show the back button for the screen we came from.
+    // Also toggle the modes card: home shows it, navigated-in hides it (it's noise there).
+    const modesEl = document.getElementById('pb-modes-block');
+    if (!pbReturnScreen) {
+      if (modesEl) modesEl.style.display = '';
+      actions.innerHTML = '<button class="top-bar-btn" onclick="openModeModal()">Simulate Shift</button>'
+        + '<button class="top-bar-btn" onclick="ssOpen(\'screen-pairings\')">Sessions</button>'
+        + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
+    } else {
+      if (modesEl) modesEl.style.display = 'none';
+      const returnLabel = pbReturnScreen === 'screen-selection' ? 'Setup'
+        : pbReturnScreen === 'screen-table' ? 'Table'
+        : 'Tables';
+      actions.innerHTML = '<button class="top-bar-btn" onclick="pbExit()">← ' + returnLabel + '</button>'
+        + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
+    }
+  } else if (screen === 'screen-sessions') {
+    const returnLabel = ssReturnScreen === 'screen-selection' ? 'Setup'
+      : ssReturnScreen === 'screen-table' ? 'Table'
+      : 'Tables';
+    actions.innerHTML = '<button class="top-bar-btn" onclick="ssExit()">← ' + returnLabel + '</button>'
       + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
   } else if (screen === 'screen-table') {
     const tableId = state.activeTableId;
@@ -578,7 +829,17 @@ function updateTopBar(screen) {
     html += '</div>';
     actions.innerHTML = html;
   } else if (screen === 'screen-firsttimer') {
-    actions.innerHTML = '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
+    // If first-timer was launched standalone (no seat/table context), the only
+    // sensible "back" is the pairing browser home. In the seating-context case,
+    // the rec page renders its own "Back to Seat/Guest N" button so we don't
+    // duplicate that affordance here.
+    const standalone = state.ftForSeat === null && state.ftForTable === null;
+    if (standalone) {
+      actions.innerHTML = '<button class="top-bar-btn" onclick="pbOpen(null)">← Pairings</button>'
+        + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
+    } else {
+      actions.innerHTML = '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
+    }
   }
 }
 
@@ -1709,6 +1970,12 @@ function openSeatSheet(seatIndex) {
   document.getElementById('main-search').value = '';
   document.getElementById('search-results').classList.remove('visible');
   document.getElementById('variable-prompt').classList.remove('visible');
+  // Opening a fresh seat clears any queued variable prompts from a prior seat.
+  pendingVarQueue = [];
+  const vpp = document.getElementById('variable-prompt-progress');
+  if (vpp) { vpp.classList.remove('visible'); vpp.textContent = ''; }
+  const vps = document.getElementById('variable-prompt-skip');
+  if (vps) vps.classList.remove('visible');
   renderSeatItems();
   document.getElementById('seat-sheet-panel').classList.remove('expanded');
   const arr = document.getElementById('sheet-expand-arrow');
@@ -1844,6 +2111,7 @@ function getCategoryForDisplay(cat) {
 }
 
 let searchDebounce = null;
+const STS_LONG_PRESS_MS = 500;
 function handleSearch(val) {
   clearTimeout(searchDebounce);
   searchDebounce = setTimeout(() => {
@@ -1856,28 +2124,850 @@ function handleSearch(val) {
     matches.forEach(item => {
       const div = document.createElement('div');
       div.className = 'search-result-item';
-      div.innerHTML = '<span class="result-name">'+item.name+'</span><span class="result-cat">'+getCategoryForDisplay(item.category)+'</span>';
-      div.onclick = () => {
-        document.getElementById('main-search').value = '';
-        results.classList.remove('visible');
-        addItemDirectly(item.name, item.category, item.variable);
-      };
+      div.innerHTML = '<span class="press-fill"></span><span class="result-name">'+item.name+'</span><span class="result-cat">'+getCategoryForDisplay(item.category)+'</span>';
+      attachSearchResultHandlers(div, item);
       results.appendChild(div);
     });
     results.classList.add('visible');
   }, 80);
 }
 
+// Long-press on a search result = lock immediately, keep search open (rapid multi-add).
+// Tap = open the lock modal so user can choose Ordered / Considering / Cancel.
+function attachSearchResultHandlers(div, item) {
+  let pressTimer = null;
+  let longPressFired = false;
+  let startX = 0, startY = 0, moved = false;
+
+  const cancelPress = () => {
+    if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; }
+    div.classList.remove('pressing');
+  };
+
+  const start = (x, y) => {
+    longPressFired = false;
+    moved = false;
+    startX = x; startY = y;
+    div.classList.remove('pressing');
+    // Force reflow so the animation restarts cleanly each press.
+    void div.offsetWidth;
+    div.classList.add('pressing');
+    pressTimer = setTimeout(() => {
+      pressTimer = null;
+      longPressFired = true;
+      div.classList.remove('pressing');
+      div.classList.add('quick-flash');
+      setTimeout(() => div.classList.remove('quick-flash'), 350);
+      if (navigator.vibrate) { try { navigator.vibrate(25); } catch(e){} }
+      quickLockFromSearch(item.name, item.category, item.variable);
+    }, STS_LONG_PRESS_MS);
+  };
+
+  const move = (x, y) => {
+    if (Math.abs(x - startX) > 8 || Math.abs(y - startY) > 8) {
+      moved = true;
+      cancelPress();
+    }
+  };
+
+  div.addEventListener('touchstart', e => {
+    const t = e.touches[0]; if (!t) return;
+    start(t.clientX, t.clientY);
+  }, { passive: true });
+  div.addEventListener('touchmove', e => {
+    const t = e.touches[0]; if (!t) return;
+    move(t.clientX, t.clientY);
+  }, { passive: true });
+  div.addEventListener('touchend', () => cancelPress());
+  div.addEventListener('touchcancel', () => cancelPress());
+
+  div.addEventListener('mousedown', e => start(e.clientX, e.clientY));
+  div.addEventListener('mousemove', e => { if (pressTimer) move(e.clientX, e.clientY); });
+  div.addEventListener('mouseup', () => cancelPress());
+  div.addEventListener('mouseleave', () => cancelPress());
+
+  div.addEventListener('click', e => {
+    if (longPressFired) { e.preventDefault(); e.stopPropagation(); longPressFired = false; return; }
+    if (moved) return;
+    // Tap path: close search and open lock modal.
+    document.getElementById('main-search').value = '';
+    document.getElementById('search-results').classList.remove('visible');
+    openLockModal(item.name, item.category, item.variable);
+  });
+}
+
+// ── PAIRING BROWSER (decoupled reference screen) ─────────────────────────────
+// Lets a server look up pairings for any item without building a seating chart.
+// Bidirectional: tap any rec to pivot the browser to that item's pairings.
+let pbState = { current: null, history: [], recents: [], searchDebounce: null };
+// null = "pairing browser is home" (cold-start or reset); a string means we came from another screen.
+// This changes how the top bar renders (no back button when home) and how pbExit behaves.
+let pbReturnScreen = null;
+const PB_RECENTS_KEY = 'bc_sts_pb_recents_v1';
+const PB_RECENTS_MAX = 6;
+
+function pbLoadRecents() {
+  try { pbState.recents = JSON.parse(localStorage.getItem(PB_RECENTS_KEY) || '[]'); }
+  catch(e) { pbState.recents = []; }
+  if (!Array.isArray(pbState.recents)) pbState.recents = [];
+}
+
+function pbSaveRecents() {
+  try { localStorage.setItem(PB_RECENTS_KEY, JSON.stringify(pbState.recents)); } catch(e){}
+}
+
+function pbRememberRecent(name) {
+  // Only remember items that actually exist in the pairing map (skip spirit-cluster members).
+  if (!PAIRING_MAP.some(e => e.name === name)) return;
+  pbState.recents = pbState.recents.filter(n => n !== name);
+  pbState.recents.unshift(name);
+  if (pbState.recents.length > PB_RECENTS_MAX) pbState.recents = pbState.recents.slice(0, PB_RECENTS_MAX);
+  pbSaveRecents();
+}
+
+function pbOpen(fromScreen) {
+  // fromScreen is explicitly passed when another screen routes in via the
+  // "Pairings" top-bar button. Passing null (or omitting) means the browser
+  // is being opened as home — no back button, modes card visible.
+  pbReturnScreen = fromScreen || null;
+  pbLoadRecents();
+  pbState.current = null;
+  pbState.history = [];
+  pbShowSearch();
+  showScreen('screen-pairings');
+  updateTopBar('screen-pairings');
+}
+
+function pbExit() {
+  // Home mode has nothing to exit to. This is a safety net — the Exit button
+  // is not rendered in home mode, but a stray call (e.g. programmatic) is a no-op.
+  if (!pbReturnScreen) return;
+  showScreen(pbReturnScreen);
+  updateTopBar(pbReturnScreen);
+}
+
+// Entry point for "Simulate a shift" — opens the mode modal from the pairing
+// browser home. Paired with closeModeModal() which the Cancel button calls.
+function openModeModal() {
+  document.getElementById('mode-modal').classList.add('open');
+}
+function closeModeModal() {
+  document.getElementById('mode-modal').classList.remove('open');
+}
+
+// Launch first-timer as a standalone training flow, not attached to a seat/table.
+// ftForSeat=null keeps the "Back to Seat N" button from rendering at recs time.
+function startFirstTimerStandalone() {
+  state.ftForSeat = null;
+  state.ftForTable = null;
+  state.ftAnswers = [];
+  state.ftCurrentQ = 0;
+  state.ftDepth = state.ftDepth || 'short';
+  // renderChips/renderFTQuestion are defined elsewhere in the main script bundle.
+  if (typeof renderChips === 'function') renderChips();
+  if (typeof renderFTQuestion === 'function') renderFTQuestion();
+  document.getElementById('ft-recs-area').style.display = 'none';
+  showScreen('screen-firsttimer');
+  updateTopBar('screen-firsttimer');
+}
+
+function pbHome() {
+  pbState.current = null;
+  pbState.history = [];
+  pbShowSearch();
+}
+
+function pbShowSearch() {
+  document.getElementById('pb-search-view').style.display = 'block';
+  document.getElementById('pb-detail-view').style.display = 'none';
+  const input = document.getElementById('pb-search-input');
+  if (input) input.value = '';
+  const results = document.getElementById('pb-search-results');
+  if (results) results.classList.remove('visible');
+  pbRenderRecents();
+  window.scrollTo(0, 0);
+}
+
+function pbRenderRecents() {
+  const wrap = document.getElementById('pb-recents-wrap');
+  const list = document.getElementById('pb-recents-list');
+  if (!wrap || !list) return;
+  // Filter out any stale names that no longer exist.
+  pbState.recents = pbState.recents.filter(n => PAIRING_MAP.some(e => e.name === n));
+  if (!pbState.recents.length) { wrap.style.display = 'none'; list.innerHTML = ''; return; }
+  list.innerHTML = '';
+  pbState.recents.forEach(name => {
+    const btn = document.createElement('button');
+    btn.className = 'pb-recent-chip';
+    btn.textContent = name;
+    btn.onclick = () => pbNavigate(name);
+    list.appendChild(btn);
+  });
+  wrap.style.display = 'block';
+}
+
+function handlePbSearch(val) {
+  clearTimeout(pbState.searchDebounce);
+  pbState.searchDebounce = setTimeout(() => {
+    const results = document.getElementById('pb-search-results');
+    if (!val || val.trim().length < 1) { results.classList.remove('visible'); return; }
+    const q = val.toLowerCase();
+    // Only surface items that have a PAIRING_MAP entry we can render (exclude spirit-cluster members).
+    const matches = getAllItems()
+      .filter(i => PAIRING_MAP.some(e => e.name === i.name) && i.name.toLowerCase().includes(q))
+      .slice(0, 20);
+    if (!matches.length) { results.innerHTML = ''; results.classList.remove('visible'); return; }
+    results.innerHTML = '';
+    matches.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'search-result-item';
+      div.innerHTML = '<span class="press-fill"></span><span class="result-name">'
+        + item.name + '</span><span class="result-cat">'
+        + getCategoryForDisplay(item.category) + '</span>';
+      div.onclick = () => pbNavigate(item.name);
+      results.appendChild(div);
+    });
+    results.classList.add('visible');
+  }, 80);
+}
+
+function pbNavigate(name) {
+  const entry = PAIRING_MAP.find(e => e.name === name);
+  if (!entry) return; // Spirit-cluster members and unknown names: no pairing card.
+  if (pbState.current && pbState.current !== name) {
+    pbState.history.push(pbState.current);
+  }
+  pbState.current = name;
+  pbRememberRecent(name);
+  pbRenderDetail();
+}
+
+function pbBack() {
+  if (pbState.history.length) {
+    pbState.current = pbState.history.pop();
+    pbRenderDetail();
+  } else {
+    pbHome();
+  }
+}
+
+function pbRenderDetail() {
+  const name = pbState.current;
+  const entry = PAIRING_MAP.find(e => e.name === name);
+  if (!entry) { pbHome(); return; }
+  document.getElementById('pb-search-view').style.display = 'none';
+  document.getElementById('pb-detail-view').style.display = 'block';
+  document.getElementById('pb-item-title').textContent = name;
+  document.getElementById('pb-item-cat-badge').textContent = getCategoryForDisplay(entry.category);
+  document.getElementById('pb-back-label').textContent = pbState.history.length ? 'Back' : 'Search';
+
+  const profileEl = document.getElementById('pb-item-profile');
+  const profile = entry.profile || [];
+  profileEl.innerHTML = profile.slice(0, 10)
+    .map(p => '<span class="pb-profile-tag">'+escapeHtml(p)+'</span>').join('');
+
+  const tiers = document.getElementById('pb-tiers');
+  tiers.innerHTML = '';
+  let anyTier = false;
+  ['excellent','strong','works'].forEach(tier => {
+    const names = entry[tier] || [];
+    if (!names.length) return;
+    anyTier = true;
+    const section = document.createElement('div');
+    section.className = 'pb-tier-section';
+    section.innerHTML =
+      '<div class="pb-tier-label">'
+      + '<span class="tier-pip ' + tier + '"></span>'
+      + '<span class="pb-tier-name">' + tier.toUpperCase() + '</span>'
+      + '<span class="pb-tier-count">' + names.length + '</span>'
+      + '</div>';
+    const list = document.createElement('div');
+    list.className = 'pb-rec-list';
+    names.forEach(recName => {
+      const recEntry = PAIRING_MAP.find(e => e.name === recName);
+      const cat = recEntry && recEntry.category;
+      const oos = recEntry && recEntry.oos;
+      const row = document.createElement('div');
+      row.className = 'pb-rec-row';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'pb-rec-item' + (oos ? ' oos' : '');
+      btn.innerHTML = '<div class="pb-rec-info">'
+        + '<div class="pb-rec-name">' + escapeHtml(recName) + '</div>'
+        + (cat ? '<div class="pb-rec-cat">' + escapeHtml(getCategoryForDisplay(cat)) + '</div>' : '')
+        + (oos ? '<div class="pb-rec-oos">Currently Unavailable</div>' : '')
+        + '</div><span class="pb-rec-arrow">›</span>';
+      // Primary action: expand the pairing reasoning inline (same pattern as seating panel).
+      // Navigation lives inside the expanded panel as an explicit secondary action.
+      btn.onclick = () => pbToggleRecExplain(recName);
+      row.appendChild(btn);
+      const explain = document.createElement('div');
+      explain.className = 'pb-rec-explain';
+      explain.id = 'pb-explain-' + encodeURIComponent(recName);
+      explain.hidden = true;
+      row.appendChild(explain);
+      list.appendChild(row);
+    });
+    section.appendChild(list);
+    tiers.appendChild(section);
+  });
+  if (!anyTier) {
+    tiers.innerHTML = '<div class="pb-empty">No tiered pairings for this item.</div>';
+  }
+
+  const avoidEl = document.getElementById('pb-avoid');
+  const avoid = entry.avoid || [];
+  if (avoid.length) {
+    let avoidHtml = '<div class="pb-tier-section pb-avoid-section">'
+      + '<div class="pb-tier-label pb-avoid-label">'
+      + '<span class="pb-avoid-glyph">⚠</span>'
+      + '<span class="pb-tier-name">AVOID WITH</span>'
+      + '<span class="pb-tier-count">' + avoid.length + '</span>'
+      + '</div><div class="pb-avoid-list"></div></div>';
+    avoidEl.innerHTML = avoidHtml;
+    const listNode = avoidEl.querySelector('.pb-avoid-list');
+    avoid.forEach(n => {
+      const row = document.createElement('div');
+      row.className = 'pb-avoid-row';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'pb-avoid-item';
+      btn.innerHTML = '<span>' + escapeHtml(n) + '</span><span class="pb-avoid-arrow">›</span>';
+      // Primary action on avoid rows: expand the "never pair with" reasoning inline.
+      // If no note exists we still show an informational placeholder.
+      btn.onclick = () => pbToggleAvoidExplain(n);
+      row.appendChild(btn);
+      const explain = document.createElement('div');
+      explain.className = 'pb-avoid-explain';
+      explain.id = 'pb-avoid-explain-' + encodeURIComponent(n);
+      explain.hidden = true;
+      row.appendChild(explain);
+      listNode.appendChild(row);
+    });
+  } else {
+    avoidEl.innerHTML = '';
+  }
+
+  window.scrollTo(0, 0);
+}
+
+// Close every open explain panel inside the pairing browser (tier + avoid).
+// Used when toggling a new panel (one-open-at-a-time) and when navigating away.
+function pbCloseAllExplainPanels(except) {
+  document.querySelectorAll('#screen-pairings .pb-rec-explain.open, #screen-pairings .pb-avoid-explain.open').forEach(p => {
+    if (p !== except) { p.classList.remove('open'); p.hidden = true; }
+  });
+  document.querySelectorAll('#screen-pairings .pb-rec-item.expanded, #screen-pairings .pb-avoid-item.expanded').forEach(b => {
+    if (!except || !b.parentElement || b.parentElement.querySelector('.pb-rec-explain, .pb-avoid-explain') !== except) {
+      b.classList.remove('expanded');
+    }
+  });
+}
+
+// Expand the pairing reasoning for a recommended item inline. The "source" is
+// the item currently being browsed (pbState.current) — i.e. the reason shown
+// answers "why does THIS item pair with that rec", not the other way around.
+function pbToggleRecExplain(recName) {
+  const panel = document.getElementById('pb-explain-' + encodeURIComponent(recName));
+  if (!panel) return;
+  const btn = panel.parentElement && panel.parentElement.querySelector('.pb-rec-item');
+  const wasOpen = panel.classList.contains('open');
+  pbCloseAllExplainPanels(panel);
+  if (wasOpen) {
+    panel.classList.remove('open');
+    panel.hidden = true;
+    if (btn) btn.classList.remove('expanded');
+    return;
+  }
+  const sourceName = pbState.current;
+  const note = typeof getPairingNote === 'function' ? getPairingNote(sourceName, recName) : null;
+  const targetEntry = PAIRING_MAP.find(e => e.name === recName);
+  let body;
+  if (note) {
+    body = '<div class="rec-explain-source">Why this pairs with <strong>' + escapeHtml(sourceName) + '</strong>:</div>'
+         + '<div class="rec-explain-body">' + escapeHtml(note) + '</div>';
+  } else {
+    body = '<div class="rec-explain-source">Paired with <strong>' + escapeHtml(sourceName) + '</strong></div>'
+         + '<div class="rec-explain-body rec-explain-pending">Detailed pairing notes coming soon.</div>';
+  }
+  panel.innerHTML = body;
+  if (targetEntry) {
+    const navBtn = document.createElement('button');
+    navBtn.type = 'button';
+    navBtn.className = 'pb-rec-explain-nav';
+    navBtn.textContent = 'View ' + recName + '\u2019s pairings \u2192';
+    navBtn.onclick = (e) => { e.stopPropagation(); pbCloseAllExplainPanels(null); pbNavigate(recName); };
+    panel.appendChild(navBtn);
+  }
+  panel.hidden = false;
+  if (btn) btn.classList.add('expanded');
+  requestAnimationFrame(() => panel.classList.add('open'));
+}
+
+// Avoid-list analog: expand the "never pair with" reasoning inline.
+function pbToggleAvoidExplain(avoidName) {
+  const panel = document.getElementById('pb-avoid-explain-' + encodeURIComponent(avoidName));
+  if (!panel) return;
+  const btn = panel.parentElement && panel.parentElement.querySelector('.pb-avoid-item');
+  const wasOpen = panel.classList.contains('open');
+  pbCloseAllExplainPanels(panel);
+  if (wasOpen) {
+    panel.classList.remove('open');
+    panel.hidden = true;
+    if (btn) btn.classList.remove('expanded');
+    return;
+  }
+  const sourceName = pbState.current;
+  const note = typeof getPairingNote === 'function' ? getPairingNote(sourceName, avoidName) : null;
+  const targetEntry = PAIRING_MAP.find(e => e.name === avoidName);
+  let body;
+  if (note) {
+    body = '<div class="rec-explain-source">Why <strong>' + escapeHtml(sourceName) + '</strong> + <strong>' + escapeHtml(avoidName) + '</strong> doesn\u2019t work:</div>'
+         + '<div class="rec-explain-body">' + escapeHtml(note) + '</div>';
+  } else {
+    body = '<div class="rec-explain-source">Avoid pairing <strong>' + escapeHtml(sourceName) + '</strong> with <strong>' + escapeHtml(avoidName) + '</strong></div>'
+         + '<div class="rec-explain-body rec-explain-pending">Detailed conflict notes coming soon.</div>';
+  }
+  panel.innerHTML = body;
+  if (targetEntry) {
+    const navBtn = document.createElement('button');
+    navBtn.type = 'button';
+    navBtn.className = 'pb-rec-explain-nav';
+    navBtn.textContent = 'View ' + avoidName + '\u2019s pairings \u2192';
+    navBtn.onclick = (e) => { e.stopPropagation(); pbCloseAllExplainPanels(null); pbNavigate(avoidName); };
+    panel.appendChild(navBtn);
+  }
+  panel.hidden = false;
+  if (btn) btn.classList.add('expanded');
+  requestAnimationFrame(() => panel.classList.add('open'));
+}
+
+// Small HTML-escape guard — PAIRING_MAP items come from a trusted local dataset,
+// but keeping this honest means we can safely swap in user-editable specials later.
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+}
+
+// ── SESSION LIBRARY (save/load named snapshots) ──────────────────────────────
+// Separate localStorage slot from the live session (sts_v6). Saved entries are
+// full state snapshots keyed by a stable id so re-saves overwrite the same slot.
+const SS_SAVED_KEY = 'sts_saved_v1';
+let ssReturnScreen = 'screen-overview';
+let ssConfirmAction = null;
+const ssDeleteArmed = new Set();
+
+function ssLoadSavedSessions() {
+  try {
+    const raw = localStorage.getItem(SS_SAVED_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch(e) { return []; }
+}
+function ssPersistSavedSessions(list) {
+  try { localStorage.setItem(SS_SAVED_KEY, JSON.stringify(list)); } catch(e) {}
+}
+function ssMakeId() {
+  return 'sess_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+}
+function ssSessionMeta(snapshotState) {
+  const tables = snapshotState && snapshotState.tables || {};
+  const tableCount = Object.keys(tables).length;
+  let lockedCount = 0, guestCount = 0;
+  Object.values(tables).forEach(t => {
+    if (typeof t.guestCount === 'number') guestCount += t.guestCount;
+    (t.seats || []).forEach(seat => {
+      (seat.items || []).forEach(i => { if (i.state === STATE_LOCKED) lockedCount++; });
+    });
+  });
+  return { tableCount, lockedCount, guestCount };
+}
+function ssRelTime(ts) {
+  const sec = Math.floor((Date.now() - ts) / 1000);
+  if (sec < 60)       return 'Just now';
+  if (sec < 3600)     return Math.floor(sec/60) + 'm ago';
+  if (sec < 86400)    return Math.floor(sec/3600) + 'h ago';
+  if (sec < 86400*7)  return Math.floor(sec/86400) + 'd ago';
+  const d = new Date(ts);
+  return d.toLocaleDateString('en-US', { month:'short', day:'numeric' });
+}
+
+function ssOpen(fromScreen) {
+  ssReturnScreen = fromScreen || 'screen-overview';
+  ssRenderCurrent();
+  ssRenderList();
+  showScreen('screen-sessions');
+  updateTopBar('screen-sessions');
+}
+function ssExit() {
+  // Clear any armed delete confirmations so they don't carry across sessions.
+  ssDeleteArmed.clear();
+  showScreen(ssReturnScreen);
+  updateTopBar(ssReturnScreen);
+}
+function ssHandleNameInput(val) {
+  state.sessionName = (val || '').slice(0, 60);
+  saveState();
+  updateTopBarSessionLabel();
+  // Keep the saved-list "current" marker's name in sync if it's already in the library.
+  ssRenderList();
+}
+
+function ssRenderCurrent() {
+  const input = document.getElementById('ss-current-name');
+  if (input) input.value = state.sessionName || '';
+  const metaEl = document.getElementById('ss-current-meta');
+  const meta = ssSessionMeta(state);
+  const bits = [];
+  bits.push(meta.tableCount + ' table' + (meta.tableCount !== 1 ? 's' : ''));
+  if (meta.guestCount) bits.push(meta.guestCount + ' guest' + (meta.guestCount !== 1 ? 's' : ''));
+  bits.push(meta.lockedCount + ' locked item' + (meta.lockedCount !== 1 ? 's' : ''));
+  if (state.sessionId) bits.push('saved');
+  metaEl.textContent = bits.join('  ·  ');
+  const saveBtn = document.getElementById('ss-save-btn');
+  if (saveBtn) saveBtn.textContent = state.sessionId ? 'Update Saved Copy' : 'Save to Library';
+  const saveAsBtn = document.getElementById('ss-saveas-btn');
+  if (saveAsBtn) saveAsBtn.style.display = state.sessionId ? 'inline-block' : 'none';
+}
+
+function ssRenderList() {
+  const listEl = document.getElementById('ss-saved-list');
+  if (!listEl) return;
+  const all = ssLoadSavedSessions().slice().sort((a, b) => (b.savedAt||0) - (a.savedAt||0));
+  if (!all.length) {
+    listEl.innerHTML = '<div class="ss-empty-saved">No saved sessions yet. Use <em>Save to Library</em> above to stash the current setup.</div>';
+    return;
+  }
+  listEl.innerHTML = '';
+  all.forEach(s => {
+    const meta = ssSessionMeta(s.state || {});
+    const isCurrent = s.id === state.sessionId;
+    const card = document.createElement('div');
+    card.className = 'ss-saved-card' + (isCurrent ? ' current' : '');
+    const metaParts = [meta.tableCount + ' table' + (meta.tableCount !== 1 ? 's' : '')];
+    if (meta.guestCount) metaParts.push(meta.guestCount + ' guest' + (meta.guestCount !== 1 ? 's' : ''));
+    metaParts.push(meta.lockedCount + ' locked');
+    card.innerHTML =
+      '<div class="ss-saved-head">'
+        + '<div class="ss-saved-name">' + escapeHtml(s.name || 'Unnamed session') + (isCurrent ? ' <span style="font-family:Josefin Sans,sans-serif;font-size:8px;letter-spacing:0.2em;color:var(--gold);padding-left:6px">· CURRENT</span>' : '') + '</div>'
+        + '<div class="ss-saved-time">' + escapeHtml(ssRelTime(s.savedAt || 0)) + '</div>'
+      + '</div>'
+      + '<div class="ss-saved-meta">' + metaParts.join('<span class="dot">·</span>') + '</div>'
+      + '<div class="ss-saved-actions">'
+        + '<button type="button" class="ss-btn ss-btn-primary ss-saved-load" data-id="' + s.id + '">Load</button>'
+        + '<button type="button" class="ss-btn ss-saved-rename" data-id="' + s.id + '">Rename</button>'
+        + '<button type="button" class="ss-btn ss-saved-delete" data-id="' + s.id + '">Delete</button>'
+      + '</div>';
+    listEl.appendChild(card);
+  });
+  // Bind actions
+  listEl.querySelectorAll('.ss-saved-load').forEach(b => {
+    b.onclick = () => ssRequestLoad(b.dataset.id);
+  });
+  listEl.querySelectorAll('.ss-saved-rename').forEach(b => {
+    b.onclick = () => ssRename(b.dataset.id);
+  });
+  listEl.querySelectorAll('.ss-saved-delete').forEach(b => {
+    const id = b.dataset.id;
+    if (ssDeleteArmed.has(id)) {
+      b.textContent = 'Tap again to delete';
+      b.classList.add('confirming');
+    }
+    b.onclick = () => ssRequestDelete(id, b);
+  });
+}
+
+function ssSaveCurrent() {
+  if (!state.sessionId) state.sessionId = ssMakeId();
+  const list = ssLoadSavedSessions();
+  const now = Date.now();
+  const snapshot = {
+    id: state.sessionId,
+    name: (state.sessionName && state.sessionName.trim()) || 'Unnamed session',
+    savedAt: now,
+    state: JSON.parse(JSON.stringify(state)),
+  };
+  const idx = list.findIndex(s => s.id === state.sessionId);
+  if (idx >= 0) list[idx] = snapshot; else list.unshift(snapshot);
+  ssPersistSavedSessions(list);
+  saveState();
+  showToast(idx >= 0 ? 'Saved — updated' : 'Saved to Library');
+  ssRenderCurrent();
+  ssRenderList();
+}
+
+function ssSaveAsNew() {
+  // Break the link to the previously-saved slot so this creates a fresh entry.
+  const oldId = state.sessionId;
+  state.sessionId = ssMakeId();
+  // If name is unchanged, nudge user to differentiate — append " (copy)" if it
+  // would otherwise duplicate an existing name.
+  const list = ssLoadSavedSessions();
+  const baseName = (state.sessionName && state.sessionName.trim()) || 'Unnamed session';
+  let name = baseName;
+  if (oldId) {
+    const clashes = list.some(s => s.name === baseName && s.id !== state.sessionId);
+    if (clashes) name = baseName + ' (copy)';
+  }
+  state.sessionName = name;
+  ssSaveCurrent();
+}
+
+function ssRequestLoad(id) {
+  const found = ssLoadSavedSessions().find(s => s.id === id);
+  if (!found) return;
+  const currentMeta = ssSessionMeta(state);
+  const warn = currentMeta.tableCount > 0 && !state.sessionId;
+  if (warn) {
+    ssConfirm('Load "' + (found.name || 'Unnamed session') + '"?',
+              'Your current layout has ' + currentMeta.tableCount + ' table' + (currentMeta.tableCount !== 1 ? 's' : '') + ' and isn\'t saved yet. Loading will replace it.',
+              () => ssDoLoad(id), 'Replace & Load');
+  } else {
+    ssDoLoad(id);
+  }
+}
+function ssDoLoad(id) {
+  const found = ssLoadSavedSessions().find(s => s.id === id);
+  if (!found || !found.state) { showToast('Session not found'); return; }
+  // Wipe and replace state in-place so all references stay valid. Overlay on
+  // a defaults dict so older snapshots keep working after new state fields ship.
+  const defaults = {
+    mode: 'server', selectedTableIds: [], tables: {},
+    activeTableId: null, activeSeat: null,
+    groupMode: false, pendingGroupSeats: [],
+    barGroupSelectMode: false, barGroupPendingSeats: [],
+    specials: [], ftDepth: 'short', ftAnswers: [],
+    ftCurrentQ: 0, ftForSeat: null, ftForTable: null,
+    sessionName: '', sessionId: null,
+  };
+  Object.keys(state).forEach(k => delete state[k]);
+  Object.assign(state, defaults, JSON.parse(JSON.stringify(found.state)));
+  // Backfill any schema drift.
+  Object.values(state.tables || {}).forEach(t => {
+    if (t.combinedWith === undefined) t.combinedWith = [];
+    if (t.satelliteOf  === undefined) t.satelliteOf  = null;
+  });
+  if (state.sessionId !== found.id) state.sessionId = found.id;
+  // Re-populate specials into PAIRING_MAP (mirrors restoreSession logic).
+  (state.specials || []).forEach(s => {
+    if (PAIRING_MAP.find(e => e.name === s.name && e.special)) return;
+    const entry = { name:s.name, category:s.category, profile:s.profile||[],
+      excellent:[], strong:[], works:[], avoid:[], special:true };
+    PAIRING_MAP.forEach(e => {
+      if (e.variable || e.oos) return;
+      const overlap = e.profile.filter(p => (s.profile||[]).includes(p)).length;
+      if (overlap >= 2) entry.excellent.push(e.name);
+      else if (overlap === 1) entry.strong.push(e.name);
+    });
+    PAIRING_MAP.push(entry);
+  });
+  saveState();
+  showToast('Loaded — ' + (found.name || 'Unnamed session'));
+  // Navigate to overview for the loaded session.
+  ssReturnScreen = 'screen-overview';
+  renderOverview();
+  showScreen('screen-overview');
+  updateTopBar('screen-overview');
+}
+
+function ssRequestDelete(id, btn) {
+  if (!ssDeleteArmed.has(id)) {
+    ssDeleteArmed.add(id);
+    if (btn) { btn.textContent = 'Tap again to delete'; btn.classList.add('confirming'); }
+    // Auto-disarm after 4s so a stale armed state doesn't linger.
+    setTimeout(() => {
+      if (ssDeleteArmed.has(id)) {
+        ssDeleteArmed.delete(id);
+        ssRenderList();
+      }
+    }, 4000);
+    return;
+  }
+  ssDeleteArmed.delete(id);
+  const list = ssLoadSavedSessions().filter(s => s.id !== id);
+  ssPersistSavedSessions(list);
+  // If user deleted the slot the current session was linked to, break the link.
+  if (state.sessionId === id) { state.sessionId = null; saveState(); }
+  showToast('Deleted');
+  ssRenderCurrent();
+  ssRenderList();
+}
+
+function ssRename(id) {
+  const list = ssLoadSavedSessions();
+  const idx = list.findIndex(s => s.id === id);
+  if (idx < 0) return;
+  const current = list[idx].name || '';
+  // Browser prompt is pragmatic here; a nicer in-app prompt can come later.
+  const next = window.prompt('Rename session:', current);
+  if (next === null) return;
+  const trimmed = next.trim().slice(0, 60);
+  if (!trimmed) return;
+  list[idx].name = trimmed;
+  ssPersistSavedSessions(list);
+  if (state.sessionId === id) {
+    state.sessionName = trimmed;
+    saveState();
+    updateTopBarSessionLabel();
+  }
+  ssRenderCurrent();
+  ssRenderList();
+}
+
+function ssConfirm(title, body, onYes, yesLabel) {
+  document.getElementById('ss-confirm-title').textContent = title;
+  document.getElementById('ss-confirm-body').textContent = body;
+  document.getElementById('ss-confirm-yes').textContent = yesLabel || 'Yes';
+  ssConfirmAction = onYes || null;
+  document.getElementById('ss-confirm-modal').classList.add('open');
+}
+function ssConfirmYes() {
+  document.getElementById('ss-confirm-modal').classList.remove('open');
+  const fn = ssConfirmAction; ssConfirmAction = null;
+  if (fn) fn();
+}
+function ssConfirmNo() {
+  document.getElementById('ss-confirm-modal').classList.remove('open');
+  ssConfirmAction = null;
+}
+
+// Keeps the small italic line under "Bowdie's" in the top bar in sync with the
+// current session name. Falls back to "Set The Stage" when no name is set.
+function updateTopBarSessionLabel() {
+  const el = document.getElementById('top-bar-section');
+  if (!el) return;
+  const name = (state && state.sessionName && state.sessionName.trim()) || '';
+  el.textContent = name ? name : 'Set The Stage';
+}
+
+// Adds item as LOCKED to all currently-active seats without closing the search panel.
+// Used by the long-press quick-add flow so servers can rapid-fire multiple items.
+function quickLockFromSearch(name, category, isVariable) {
+  const tableId = state.activeTableId;
+  const table = state.tables[tableId];
+  if (!table) { showToast('Pick a table first'); return; }
+  const seatIndices = getActiveSeatsArray();
+  if (!seatIndices.length) { showToast('Select seats first'); return; }
+
+  seatIndices.forEach(si => {
+    const seat = table.seats[si];
+    if (!seat) return;
+    const existing = seat.items.find(i => i.name === name);
+    if (!existing) seat.items.push({ name, category, state: STATE_LOCKED, finishedWeight: 0 });
+    else if (existing.state === STATE_CONSIDERING) existing.state = STATE_LOCKED;
+  });
+
+  renderSeatItems(); renderTableView(); renderTableRecs(); saveState();
+  showToast('Locked — ' + name);
+
+  // If this item needs a variable note (e.g. bourbon neat/rocks, steak temp),
+  // queue it up rather than interrupting the rapid-fire flow. User fills in
+  // notes at the end — see enqueueVariablePrompt / advanceVarQueue.
+  if (isVariable) {
+    const entry = PAIRING_MAP.find(e => e.name === name);
+    if (entry?.variablePrompt) {
+      enqueueVariablePrompt(name, entry.variablePrompt, seatIndices);
+    }
+  }
+
+  // Deliberately DO NOT clear the search input or hide results — that's the whole point.
+  // Re-focus the search field so a quick retype replaces the current query without an extra tap.
+  const searchInput = document.getElementById('main-search');
+  if (searchInput && document.activeElement !== searchInput) {
+    // Only re-focus on non-touch environments; refocusing on iOS pops the keyboard aggressively.
+    if (!('ontouchstart' in window)) searchInput.focus();
+  }
+}
+
 function handleVariableInput(val) {
   const tableId = state.activeTableId;
   const table = state.tables[tableId];
   if (!table) return;
-  const itemName = document.getElementById('variable-input').dataset.item;
-  const seatIndices = getActiveSeatsArray();
+  const input = document.getElementById('variable-input');
+  const itemName = input.dataset.item;
+  // If the prompt came from a queued long-press, seats are bound at enqueue time
+  // (preserves correctness even if the active-seat selection changes mid-queue).
+  const boundSeats = input.dataset.seats;
+  const seatIndices = boundSeats
+    ? boundSeats.split(',').filter(Boolean).map(Number)
+    : getActiveSeatsArray();
   seatIndices.forEach(si => {
     const item = table.seats[si]?.items.find(i => i.name === itemName);
     if (item) item.variableNote = val;
   });
+}
+
+// ── QUEUED VARIABLE PROMPTS (for long-press rapid-add) ────────────────────────
+let pendingVarQueue = []; // [{ name, prompt, seatIndices:[...] }]
+
+function enqueueVariablePrompt(name, prompt, seatIndices) {
+  const sig = name + '|' + seatIndices.slice().sort().join(',');
+  if (pendingVarQueue.some(q => (q.name + '|' + q.seatIndices.slice().sort().join(',')) === sig)) return;
+  pendingVarQueue.push({ name, prompt, seatIndices: seatIndices.slice() });
+  const promptEl = document.getElementById('variable-prompt');
+  if (!promptEl.classList.contains('visible')) {
+    showNextVarPrompt();
+  } else {
+    updateVarPromptProgress();
+    // Keep the Skip affordance in sync: once there's a next item waiting, the user
+    // should be able to bypass the current one without typing.
+    const skip = document.getElementById('variable-prompt-skip');
+    if (skip) skip.classList.toggle('visible', pendingVarQueue.length > 1);
+  }
+}
+
+function showNextVarPrompt() {
+  const promptEl = document.getElementById('variable-prompt');
+  if (!pendingVarQueue.length) {
+    promptEl.classList.remove('visible');
+    updateVarPromptProgress();
+    const skip = document.getElementById('variable-prompt-skip');
+    if (skip) skip.classList.remove('visible');
+    const input = document.getElementById('variable-input');
+    delete input.dataset.seats;
+    return;
+  }
+  const next = pendingVarQueue[0];
+  document.getElementById('variable-prompt-label').textContent = next.prompt + ' — ' + next.name;
+  const input = document.getElementById('variable-input');
+  input.dataset.item = next.name;
+  input.dataset.seats = next.seatIndices.join(',');
+  input.value = '';
+  promptEl.classList.add('visible');
+  updateVarPromptProgress();
+  const skip = document.getElementById('variable-prompt-skip');
+  if (skip) skip.classList.toggle('visible', pendingVarQueue.length > 1);
+}
+
+function updateVarPromptProgress() {
+  const el = document.getElementById('variable-prompt-progress');
+  if (!el) return;
+  if (pendingVarQueue.length > 1) {
+    el.textContent = pendingVarQueue.length + ' queued';
+    el.classList.add('visible');
+  } else {
+    el.classList.remove('visible');
+    el.textContent = '';
+  }
+}
+
+function advanceVarQueue() {
+  // Input is already written via handleVariableInput; just pop and advance.
+  pendingVarQueue.shift();
+  saveState();
+  renderSeatItems();
+  showNextVarPrompt();
+}
+
+function skipVarQueue() {
+  // Clear any partially-typed note on the current item before advancing.
+  const input = document.getElementById('variable-input');
+  if (input && input.value) {
+    input.value = '';
+    handleVariableInput('');
+  }
+  pendingVarQueue.shift();
+  saveState();
+  showNextVarPrompt();
 }
 
 // ── ITEM MANAGEMENT ───────────────────────────────────────────────────────────
@@ -2093,16 +3183,45 @@ function renderTableRecs() {
       if (rec.offMenu) meta.push('Off Menu');
       if (rec.oos) meta.push('Currently Unavailable');
       const encName = encodeURIComponent(rec.name);
-      html += '<button class="rec-item" data-explain="'+encName+'" data-cat="'+rec.category+'">'
+      const conflicts = getAvoidConflicts(rec.name);
+      const hasConflict = conflicts.length > 0;
+      const conflictText = hasConflict
+        ? 'Avoid with ' + (conflicts.length === 1
+            ? conflicts[0]
+            : conflicts.slice(0, 2).join(', ') + (conflicts.length > 2 ? ' +' + (conflicts.length - 2) : ''))
+        : '';
+      html += '<button class="rec-item'+(hasConflict?' has-conflict':'')+'" data-explain="'+encName+'" data-cat="'+rec.category+'">'
         +'<div class="tier-pip '+rec.tier+'"></div>'
         +'<div class="rec-info"><div class="rec-name">'+rec.name+'</div>'
         +(meta.length?'<div class="rec-meta">'+meta.join(' · ')+'</div>':'')
+        +(hasConflict?'<div class="rec-warning">'+conflictText+'</div>':'')
         +'</div><div class="tier-badge '+rec.tier+'">'+rec.tier+'</div></button>'
         +'<div class="rec-explain" id="explain-'+encName+'" hidden></div>';
     });
     html += '</div>';
   });
   content.innerHTML = html;
+}
+
+// Find locked items whose avoid[] list contains recName.
+// Returns array of source item names (for "avoid with X" warnings on the recs panel).
+function getAvoidConflicts(recName) {
+  const table = getActiveTable();
+  if (!table) return [];
+  const conflicts = [];
+  const seen = new Set();
+  (table.seats||[]).forEach(seat => {
+    (seat.items||[]).forEach(item => {
+      if (item.state !== STATE_LOCKED) return;
+      if (seen.has(item.name)) return;
+      const entry = PAIRING_MAP.find(e => e.name === item.name);
+      if (entry && (entry.avoid||[]).includes(recName)) {
+        conflicts.push(item.name);
+        seen.add(item.name);
+      }
+    });
+  });
+  return conflicts;
 }
 
 // Resolve which locked item's pairingNotes entry contains `recName`.
@@ -2334,25 +3453,26 @@ document.addEventListener('touchmove', e => {
     const sheetBody = document.getElementById('seat-sheet-panel');
     if (sheetBody && sheetBody.classList.contains('expanded') && sheetBody.contains(e.target)) return;
     e.preventDefault();
-  } else if (e.touches.length > 1) {
-    e.preventDefault();
   }
+  // Pinch-zoom elsewhere (floor map, recs panel) is intentionally allowed
+  // so low-vision users and small-phone users can read dense content.
 }, {passive: false, capture: true});
 </script>
-<script src="set-the-stage-completion.js?v=23"></script>
-<\!-- ── MODE MODAL ── -->
-<div id="mode-modal" class="modal-overlay centered open">
+<script src="set-the-stage-completion.js?v=24"></script>
+<!-- ── MODE MODAL ── -->
+<div id="mode-modal" class="modal-overlay centered">
   <div class="mode-modal-panel">
-    <div class="mode-modal-eyebrow">Bowdie’s Chophouse</div>
-    <div class="mode-modal-title">Set The Stage</div>
-    <div class="mode-modal-sub">How are you working tonight?</div>
+    <div class="mode-modal-eyebrow">Simulate a Shift</div>
+    <div class="mode-modal-title">How are you working?</div>
+    <div class="mode-modal-sub">Pick the layout you want to plan for. You can come back to the pairing reference anytime.</div>
     <button class="mode-choice-btn" onclick="pickMode('server')">Server</button>
     <button class="mode-choice-btn" onclick="pickMode('bar')">Bar Only</button>
     <button class="mode-choice-btn" onclick="pickMode('bar+table')">Bar + Tables</button>
+    <button type="button" class="mode-choice-cancel" onclick="closeModeModal()">Cancel</button>
   </div>
 </div>
 
-<\!-- ── BAR SEAT MODAL ── -->
+<!-- ── BAR SEAT MODAL ── -->
 <div id="bar-seat-modal" class="modal-overlay">
   <div class="modal-sheet">
     <div class="modal-title">Seat <span id="bar-seat-number"></span></div>
@@ -2364,7 +3484,7 @@ document.addEventListener('touchmove', e => {
   </div>
 </div>
 
-<\!-- ── ADD TABLE MODAL ── -->
+<!-- ── ADD TABLE MODAL ── -->
 <div id="add-table-modal" class="modal-overlay">
   <div class="modal-sheet">
     <div class="modal-title">Table <span id="add-table-label"></span></div>
@@ -2372,4 +3492,9 @@ document.addEventListener('touchmove', e => {
     <div class="modal-options">
       <button class="modal-option primary" onclick="confirmAddTable()">Add to Section</button>
       <button class="modal-option" onclick="document.getElementById('add-table-modal').classList.remove('open')">Not Now</button>
-    </di
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
