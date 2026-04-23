@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Set The Stage — Bowdie's Chophouse</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
@@ -479,13 +479,14 @@ const state = {
 };
 
 // ── NAV ────────────────────────────────────────────────────────────────────────
-// Return to the reference. Using history.back() when possible pops sts.html
-// off the stack — otherwise the OS / browser back gesture from a subsequent
-// reference view would jump back into sts.html instead of staying on home.
-// Fallback to a hard replace if there's no prior history (e.g. direct URL).
+// Return to the reference. We always `replace` rather than `history.back()`
+// so sts.html is fully consumed from the history stack — otherwise iOS's
+// right-edge forward-swipe gesture silently pulls sts back in (it sits in
+// the forward direction after a normal `back` navigation). The wheel icon
+// is the only intended entry point to sts; there's no value in a hidden
+// re-entry gesture that staff will trigger by accident.
 function goBack() {
-  if (window.history.length > 1) window.history.back();
-  else window.location.replace('index.html');
+  window.location.replace('index.html');
 }
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
