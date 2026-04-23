@@ -42,33 +42,229 @@ const PAIRING_MAP = [
   {
     name: "Filet Mignon",
     category: "steak",
-    profile: [
-      "lean",
-      "tender",
-      "mild",
-      "buttery",
-      "delicate"
-    ],
+    profile: ["lean","tender","mild","buttery","delicate"],
     excellent: [
       "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
       "Far Niente Cabernet Sauvignon",
       "Evening Land Seven Springs",
       "Scavino Barolo",
-      "Escargot Butter",
       "Truffle Fries",
-      "Lobster Mac"
+      "Lobster Mac",
+      "Vieux Carré",
+      "Sazerac",
+      "New York Sour",
+      "Not a Paper Plane",
+      "Paul Bara Grand Rosé Brut",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Lunaria Coste di Moro",
+      "Alexander Valley Homestead Red",
+      "Fisher Unity Pinot Noir",
+      "St Supéry Cabernet Sauvignon",
+      "Cristom Mt Jefferson Cuvée",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Macauley Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "1881 Napa Valley",
+      "Peju Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Spottswoode Lyndenhurst",
+      "Heitz Trailside Vineyard",
+      "Odette Cabernet Sauvignon",
+      "Freemark Abbey Bosché",
+      "Lail Vineyards Daniel Cuvée",
+      "Opus One",
+      "Jubilation by Colgin",
+      "Le Volte dell'Ornellaia",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "G.D. Vajra Albe Nebbiolo",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Domaine Serene Grand Cheval",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Reposado Tequila",
+      "Cognac / Brandy",
+      "Lingua Franca Avni Pinot Noir",
+      "The Manhattan",
+      "Lail Vineyards Blueprint",
+      "Château Gombaude-Guillot",
+      "Quilt Cabernet Sauvignon",
+      "Château de Rouillac",
+      "Aged Super-Premium Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Bruichladdich",
+    ],
+    strong: [
+      "Silver Oak Cabernet Sauvignon",
+      "Creamed Spinach",
+      "Shrimp Bisque",
+      "Frias Block 5",
+      "Fattoria Le Pupille Saffredi",
+      "Bowdie's Old Fashioned",
+      "Espresso Old Fashioned",
+      "Pablo Sour",
+      "Negroni",
+      "Raventós Cava de NIT Rosé Brut",
+      "Laurent Perrier Le Cuvée Brut",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Kermit Lynch Côtes du Rhône",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Fento Ollo de Sapo Mencía",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Venge Family Reserve",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Marc Brédif Chinon",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Muga Reserva",
+      "Clos Petit Ona Grenache",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Château Beaucastel",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "Bold / Premium Rye",
+      "Faust Napa Valley Cabernet",
+      "Craft / Blended Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Barrel-Finished Tequila",
+    ],
+    works: [
+      "House Wedge",
+      "Au Gratin Potatoes",
+      "Mushrooms",
+      "Creme Brulee",
+      "Cheesecake",
+      "Beignets",
+      "Carrot Cake",
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Venge Scout's Honor",
+      "The BG",
+      "French 75",
+      "Bee's Knees",
+      "Cucumber Gimlet",
+      "Vesper",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Margarita",
+      "Espresso Martini",
+      "The Happy Wife",
+      "Transfusion",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Alexander Valley Chardonnay",
+      "Elk Cove Pinot Blanc",
+      "Jean-Pierre Grossot Chablis",
+      "Le Garenne Rosé",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Daniel Chotard Sancerre Rouge",
+      "Blanco Tequila",
+      "Mezcal",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "Herbal / Anise Liqueur",
+      "Il Colle Prosecco Superiore",
+      "Barrel-Proof Bourbon",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+      "Peated Islay Scotch",
+    ],
+    avoid: [
+      "Stoneleigh Sauvignon Blanc",
+      "G.D. Vajra Moscato d'Asti",
+      "Faroe Island Salmon",
+    ]
+  },
+  {
+    name: "Bone-In Filet",
+    category: "steak",
+    profile: ["lean","tender","mild","buttery","delicate","bone-enhanced"],
+    excellent: [
+      "Caymus Cabernet Sauvignon",
+      "Jordan Cabernet Sauvignon",
+      "Far Niente Cabernet Sauvignon",
+      "Evening Land Seven Springs",
+      "Scavino Barolo",
+      "Truffle Fries",
+      "Lobster Mac",
+      "Opus One",
+      "Jubilation by Colgin",
+      "Japanese Whisky",
+      "The Manhattan",
+      "Château Gombaude-Guillot",
+      "Aged Super-Premium Bourbon",
+      "Wine-Finished Bourbon",
+      "Extra Añejo Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
     ],
     strong: [
       "Silver Oak Cabernet Sauvignon",
       "Lingua Franca Avni Pinot Noir",
       "Creamed Spinach",
       "Shrimp Bisque",
-      "The Manhattan",
+      "Bowdie's Old Fashioned",
       "Frias Block 5",
-      "Lail Vineyards Blueprint",
-      "Château Gombaude-Guillot",
-      "Fattoria Le Pupille Saffredi"
+      "Fattoria Le Pupille Saffredi",
+      "Laurent Perrier Le Cuvée Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Pommery Cuvée Louise",
+      "Heitz Martha's Vineyard",
     ],
     works: [
       "Quilt Cabernet Sauvignon",
@@ -83,100 +279,137 @@ const PAIRING_MAP = [
       "Carrot Cake",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
-      "Venge Scout's Honor"
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
     ],
     avoid: [
       "Stoneleigh Sauvignon Blanc",
       "G.D. Vajra Moscato d'Asti",
       "Il Colle Prosecco Superiore",
-      "Faroe Island Salmon"
-    ],
-  },
-  {
-    name: "Bone-In Filet",
-    category: "steak",
-    profile: [
-      "lean",
-      "tender",
-      "mild",
-      "buttery",
-      "delicate",
-      "bone-enhanced"
-    ],
-    excellent: [
-      "Caymus Cabernet Sauvignon",
-      "Jordan Cabernet Sauvignon",
-      "Far Niente Cabernet Sauvignon",
-      "Evening Land Seven Springs",
-      "Scavino Barolo",
-      "Escargot Butter",
-      "Truffle Fries",
-      "Lobster Mac"
-    ],
-    strong: [
-      "Silver Oak Cabernet Sauvignon",
-      "Lingua Franca Avni Pinot Noir",
-      "Creamed Spinach",
-      "Shrimp Bisque",
-      "The Manhattan",
-      "Bowdie's Old Fashioned",
-      "Frias Block 5",
-      "Château Gombaude-Guillot",
-      "Fattoria Le Pupille Saffredi"
-    ],
-    works: [
-      "Quilt Cabernet Sauvignon",
-      "Faust Napa Valley Cabernet",
-      "House Wedge",
-      "Château de Rouillac",
-      "Au Gratin Potatoes",
-      "Mushrooms",
-      "Creme Brulee",
-      "Cheesecake",
-      "Beignets",
-      "Carrot Cake",
-      "Chocolate Brownie",
-      "Peanut Butter Brownie"
-    ],
-    avoid: [
-      "Stoneleigh Sauvignon Blanc",
-      "G.D. Vajra Moscato d'Asti",
-      "Il Colle Prosecco Superiore"
-    ],
+    ]
   },
   {
     name: "Kansas City",
     category: "steak",
-    profile: [
-      "lean",
-      "bold",
-      "beefy",
-      "firm",
-      "savory",
-      "well-marbled"
-    ],
+    profile: ["lean","bold","beefy","firm","savory","well-marbled"],
     excellent: [
       "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "The Manhattan",
-      "Lail Vineyards Blueprint"
-    ],
-    strong: [
+      "Lail Vineyards Blueprint",
+      "Vieux Carré",
+      "Sazerac",
+      "The BG",
+      "Negroni",
+      "New York Sour",
+      "Not a Paper Plane",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Macauley Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "1881 Napa Valley",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Irish Whiskey",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Reposado Tequila",
       "Ghost Block Cabernet Sauvignon",
       "Austin Hope Cabernet Sauvignon",
       "Peju Cabernet Sauvignon",
+      "Venge Scout's Honor",
+      "Fattoria Le Pupille Saffredi",
+      "Quilt Cabernet Sauvignon",
+      "Faust Napa Valley Cabernet",
+      "Barrel-Proof Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Barrel-Finished Tequila",
+    ],
+    strong: [
       "Lingua Franca Avni Pinot Noir",
       "Creamed Spinach",
       "Truffle Fries",
-      "Venge Scout's Honor",
-      "Fattoria Le Pupille Saffredi",
-      "Château Gombaude-Guillot"
+      "Château Gombaude-Guillot",
+      "Bowdie's Old Fashioned",
+      "Espresso Old Fashioned",
+      "Fento Ollo de Sapo Mencía",
+      "Evening Land Seven Springs",
+      "Far Niente Cabernet Sauvignon",
+      "Lail Vineyards Daniel Cuvée",
+      "Shafer Hillside Select",
+      "Opus One",
+      "Jubilation by Colgin",
+      "Clos Petit Ona Grenache",
+      "Sesti Brunello di Montalcino",
+      "Japanese Whisky",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Aged Super-Premium Bourbon",
+      "Wine-Finished Bourbon",
+      "Extra Añejo Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
     ],
     works: [
-      "Quilt Cabernet Sauvignon",
-      "Faust Napa Valley Cabernet",
       "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
@@ -185,25 +418,30 @@ const PAIRING_MAP = [
       "Cheesecake",
       "Creme Brulee",
       "Carrot Cake",
-      "Beignets"
+      "Beignets",
+      "Pablo Sour",
+      "Espresso Martini",
+      "Fisher Unity Pinot Noir",
+      "Cristom Mt Jefferson Cuvée",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "Sanford & Benedict Pinot Noir",
+      "Marc Brédif Chinon",
+      "Domaine Serene Grand Cheval",
+      "Herbal / Anise Liqueur",
+      "Bruichladdich",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Schloss Vollrads Riesling",
-      "Stoneleigh Sauvignon Blanc"
-    ],
+      "Stoneleigh Sauvignon Blanc",
+    ]
   },
   {
     name: "Cowboy Ribeye",
     category: "steak",
-    profile: [
-      "fatty",
-      "rich",
-      "bold",
-      "marbled",
-      "beefy",
-      "bone-in"
-    ],
+    profile: ["fatty","rich","bold","marbled","beefy","bone-in"],
     excellent: [
       "Silver Oak Cabernet Sauvignon",
       "Shafer Hillside Select",
@@ -212,20 +450,100 @@ const PAIRING_MAP = [
       "Darioush Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
       "Espresso Old Fashioned",
-      "Fattoria Le Pupille Saffredi"
-    ],
-    strong: [
+      "Fattoria Le Pupille Saffredi",
+      "The BG",
+      "Corazón del Sol Malbec",
+      "Gundlach Bundschu Cabernet",
+      "Austin Hope Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Frias Block 5",
+      "Far Niente Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Les Pallières Raciné",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Château Beaucastel",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "Bold / Premium Rye",
+      "Mezcal",
       "Caymus Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "Nickel & Nickel Cabernet",
+      "Venge Silencieux",
+      "Venge Scout's Honor",
+      "Faust Napa Valley Cabernet",
+      "Barrel-Proof Bourbon",
+      "Craft / Blended Bourbon",
+      "Barrel-Finished Tequila",
+      "Peated Islay Scotch",
+    ],
+    strong: [
       "Creamed Spinach",
       "Brussels and Belly",
-      "Venge Silencieux",
-      "Venge Scout's Honor"
+      "The Manhattan",
+      "Vieux Carré",
+      "Sazerac",
+      "Negroni",
+      "Not a Paper Plane",
+      "Lunaria Coste di Moro",
+      "Alexander Valley Homestead Red",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Peju Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Heitz Trailside Vineyard",
+      "Odette Cabernet Sauvignon",
+      "Freemark Abbey Bosché",
+      "Jubilation by Colgin",
+      "Le Volte dell'Ornellaia",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "G.D. Vajra Albe Nebbiolo",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "American Single Malt / Tennessee",
+      "Reposado Tequila",
+      "Dark / Aged Rum",
+      "Jordan Cabernet Sauvignon",
+      "Aged Super-Premium Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
     ],
     works: [
-      "Jordan Cabernet Sauvignon",
-      "Faust Napa Valley Cabernet",
       "House Wedge",
       "Marimar Estate Christina",
       "Truffle Fries",
@@ -235,28 +553,72 @@ const PAIRING_MAP = [
       "Creme Brulee",
       "Carrot Cake",
       "Beignets",
-      "Château Gombaude-Guillot"
+      "Château Gombaude-Guillot",
+      "New York Sour",
+      "Kermit Lynch Côtes du Rhône",
+      "Scotto Cellars The Lost Chapters",
+      "Fento Ollo de Sapo Mencía",
+      "Lingua Franca Avni Pinot Noir",
+      "Evening Land Seven Springs",
+      "Macauley Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Braida Montebruna Barbera",
+      "Clos Petit Ona Grenache",
+      "Canadian Whisky",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Schloss Vollrads Riesling",
       "Le Garenne Rosé",
       "Crab Cake",
-      "Seared Scallops"
-    ],
+      "Seared Scallops",
+      "French 75",
+      "Bee's Knees",
+      "Cucumber Gimlet",
+      "Corpse Reviver",
+      "Paloma",
+      "Il Colle Prosecco Superiore",
+      "Raventós Cava de NIT Rosé Brut",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Stoneleigh Sauvignon Blanc",
+      "St Supéry Sauvignon Blanc",
+      "Elk Cove Pinot Blanc",
+      "Jean-Pierre Grossot Chablis",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Fisher Unity Pinot Noir",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Tawny",
+      "Taylor Fladgate Vintage Bottle",
+      "Casa LBV Port",
+      "Pineau des Charentes",
+      "Vin Santo",
+      "Sauternes Glass",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+    ]
   },
   {
     name: "The Tomahawk",
     category: "steak",
-    profile: [
-      "fatty",
-      "rich",
-      "bold",
-      "marbled",
-      "smoky",
-      "beefy",
-      "theatrical"
-    ],
+    profile: ["fatty","rich","bold","marbled","smoky","beefy","theatrical"],
     excellent: [
       "Opus One",
       "Shafer Hillside Select",
@@ -264,21 +626,55 @@ const PAIRING_MAP = [
       "Scavino Barolo",
       "Bowdie's Old Fashioned",
       "Espresso Old Fashioned",
-      "Bone Marrow"
-    ],
-    strong: [
+      "Bone Marrow",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Cade Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Lail Vineyards Daniel Cuvée",
+      "Simon Family Estate Reserve",
+      "Jubilation by Colgin",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Macauley Petite Syrah",
+      "Bold / Premium Rye",
+      "Mezcal",
       "Darioush Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Venge Family Reserve",
+      "Fattoria Le Pupille Saffredi",
+      "Ghost Block Cabernet Sauvignon",
+      "Nickel & Nickel Cabernet",
+      "Barrel-Proof Bourbon",
+      "Peated Islay Scotch",
+    ],
+    strong: [
       "Lail Vineyards Blueprint",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Fattoria Le Pupille Saffredi",
-      "Venge Scout's Honor"
+      "Venge Scout's Honor",
+      "Caymus Cabernet Sauvignon",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "Shafer 1.5",
+      "Far Niente Cabernet Sauvignon",
+      "Odette Cabernet Sauvignon",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Ghost Block Zinfandel",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Barrel-Finished Tequila",
     ],
     works: [
-      "Ghost Block Cabernet Sauvignon",
-      "Nickel & Nickel Cabernet",
       "Truffle Fries",
       "Mushrooms",
       "Chocolate Brownie",
@@ -286,7 +682,8 @@ const PAIRING_MAP = [
       "Cheesecake",
       "Creme Brulee",
       "Carrot Cake",
-      "Beignets"
+      "Beignets",
+      "Aged Super-Premium Bourbon",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
@@ -295,20 +692,90 @@ const PAIRING_MAP = [
       "Stoneleigh Sauvignon Blanc",
       "Crab Cake",
       "Seared Scallops",
-      "Burrata"
-    ],
+      "Burrata",
+      "French 75",
+      "Bee's Knees",
+      "Cucumber Gimlet",
+      "Vesper",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Pablo Sour",
+      "Margarita",
+      "The Happy Wife",
+      "Transfusion",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "New York Sour",
+      "Il Colle Prosecco Superiore",
+      "Laurent Perrier Le Cuvée Brut",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Alexander Valley Chardonnay",
+      "St Supéry Sauvignon Blanc",
+      "Elk Cove Pinot Blanc",
+      "Jean-Pierre Grossot Chablis",
+      "Le Garenne Rosé",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Fento Ollo de Sapo Mencía",
+      "Lingua Franca Avni Pinot Noir",
+      "Fisher Unity Pinot Noir",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Evening Land Seven Springs",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Macauley Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Marc Brédif Chinon",
+      "Domaine Serene Grand Cheval",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Tawny",
+      "Taylor Fladgate Vintage Bottle",
+      "Casa LBV Port",
+      "Pineau des Charentes",
+      "Vin Santo",
+      "Sauternes Glass",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
+      "Spiced / Flavored Rum",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Limoncello",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
+    ]
   },
   {
     name: "Porterhouse",
     category: "steak",
-    profile: [
-      "lean",
-      "fatty",
-      "bold",
-      "beefy",
-      "dual-texture",
-      "rich"
-    ],
+    profile: ["lean","fatty","bold","beefy","dual-texture","rich"],
     excellent: [
       "Silver Oak Cabernet Sauvignon",
       "Caymus Cabernet Sauvignon",
@@ -316,7 +783,8 @@ const PAIRING_MAP = [
       "Scavino Barolo",
       "The Manhattan",
       "Truffle Fries",
-      "Creamed Spinach"
+      "Creamed Spinach",
+      "Fattoria Le Pupille Saffredi",
     ],
     strong: [
       "Ghost Block Cabernet Sauvignon",
@@ -325,13 +793,74 @@ const PAIRING_MAP = [
       "Brussels and Belly",
       "Bowdie's Old Fashioned",
       "Lobster Mac",
-      "Fattoria Le Pupille Saffredi",
       "Venge Scout's Honor",
-      "Château Gombaude-Guillot"
-    ],
-    works: [
+      "Château Gombaude-Guillot",
+      "Vieux Carré",
+      "Sazerac",
+      "The BG",
+      "New York Sour",
+      "Not a Paper Plane",
+      "Corazón del Sol Malbec",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Opus One",
+      "Jubilation by Colgin",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "G.D. Vajra Albe Nebbiolo",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Alexander Valley Cyrus",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "American Single Malt / Tennessee",
       "Faust Napa Valley Cabernet",
       "Peju Cabernet Sauvignon",
+      "Barrel-Proof Bourbon",
+      "Standard High-Proof Bourbon",
+      "Añejo Tequila",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
+    ],
+    works: [
       "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
@@ -340,851 +869,2006 @@ const PAIRING_MAP = [
       "Cheesecake",
       "Creme Brulee",
       "Carrot Cake",
-      "Beignets"
+      "Beignets",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "San Simeon Stormwatch",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Schloss Vollrads Riesling",
       "Stoneleigh Sauvignon Blanc",
       "Crab Cake",
-      "Seared Scallops"
-    ],
+      "Seared Scallops",
+    ]
   },
   {
     name: "Prime Tartare",
     category: "starter",
-    profile: [
-      "umami",
-      "rich",
-      "raw",
-      "bold",
-      "fatty",
-      "delicate"
-    ],
+    profile: ["umami","rich","raw","bold","fatty","delicate"],
     excellent: [
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Jean-Pierre Grossot Chablis",
       "Bowdie's Old Fashioned",
-      "Joseph Mellot Sancerre"
+      "Joseph Mellot Sancerre",
+      "Vieux Carré",
+      "Sazerac",
+      "Vesper",
+      "Pablo Sour",
+      "New York Sour",
+      "Not a Paper Plane",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Evening Land Seven Springs",
+      "Approachable Rye",
+      "Blanco Tequila",
+      "Mezcal",
+      "Negroni",
+      "Lingua Franca Avni Pinot Noir",
+      "Botanical-Forward Craft Gin",
     ],
     strong: [
       "Elk Cove Pinot Blanc",
       "St Supéry Sauvignon Blanc",
       "Domaine de Berthiers Pouilly-Fumé",
       "Espresso Old Fashioned",
-      "Negroni"
+      "The Manhattan",
+      "French 75",
+      "Bee's Knees",
+      "Cucumber Gimlet",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Margarita",
+      "Transfusion",
+      "Lemon Lavender Gin Martini",
+      "Il Colle Prosecco Superiore",
+      "Robert Moncuit Les Grand Blancs",
+      "Stoneleigh Sauvignon Blanc",
+      "Le Garenne Rosé",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "Marc Brédif Chinon",
+      "Domaine Serene Grand Cheval",
+      "Pineau des Charentes",
+      "Bold / Premium Rye",
+      "Japanese Whisky",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
+      "Fisher Unity Pinot Noir",
+      "Hendrick's Family",
+      "Smooth / Citrus Craft Gin",
+      "Peated Islay Scotch",
+      "Bruichladdich",
     ],
     works: [
-      "Lingua Franca Avni Pinot Noir",
-      "Fisher Unity Pinot Noir",
-      "House Wedge"
+      "House Wedge",
+      "The BG",
+      "The Happy Wife",
+      "Head Fake",
+      "G.D. Vajra Moscato d'Asti",
+      "Schloss Vollrads Riesling",
+      "Our Lady of Guadalupe Acolytes",
+      "Macauley Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Fattoria Le Pupille Saffredi",
+      "Reposado Tequila",
+      "White / Light Rum",
     ],
     avoid: [
       "Opus One",
       "Shafer Hillside Select",
       "Heitz Martha's Vineyard",
-      "Caymus Cabernet Sauvignon"
-    ],
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+      "Jordan Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon",
+      "Far Niente Cabernet Sauvignon",
+    ]
   },
   {
     name: "Bone Marrow",
     category: "starter",
-    profile: [
-      "rich",
-      "fatty",
-      "umami",
-      "smoky",
-      "indulgent",
-      "bold"
-    ],
+    profile: ["rich","fatty","umami","smoky","indulgent","bold"],
     excellent: [
       "Bowdie's Old Fashioned",
       "Espresso Old Fashioned",
       "Scavino Barolo",
       "Caymus Cabernet Sauvignon",
-      "The Manhattan"
+      "The Manhattan",
+      "The Tomahawk",
+      "Vieux Carré",
+      "Sazerac",
+      "The BG",
+      "Negroni",
+      "Not a Paper Plane",
+      "Corazón del Sol Malbec",
+      "Austin Hope Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Far Niente Cabernet Sauvignon",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Opus One",
+      "Jubilation by Colgin",
+      "Les Pallières Raciné",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Ghost Block Cabernet Sauvignon",
+      "Venge Silencieux",
+      "Fattoria Le Pupille Saffredi",
+      "Venge Scout's Honor",
+      "Faust Napa Valley Cabernet",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Peated Islay Scotch",
     ],
     strong: [
       "Silver Oak Cabernet Sauvignon",
-      "Ghost Block Cabernet Sauvignon",
-      "Venge Silencieux",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Fattoria Le Pupille Saffredi",
-      "Venge Scout's Honor"
+      "Espresso Martini",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Gundlach Bundschu Cabernet",
+      "Peju Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Spottswoode Lyndenhurst",
+      "Château Haut Segottes",
+      "Highland Scotch",
+      "American Single Malt / Tennessee",
+      "Reposado Tequila",
+      "Amaro / Bitter Liqueur",
+      "Château Gombaude-Guillot",
+      "Standard High-Proof Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Sherried Speyside",
     ],
     works: [
       "Jordan Cabernet Sauvignon",
-      "Faust Napa Valley Cabernet",
       "House Wedge",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
       "Cheesecake",
-      "Château Gombaude-Guillot"
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Le Volte dell'Ornellaia",
+      "Tenuta di Arceno Chianti Classico",
+      "G.D. Vajra Albe Nebbiolo",
+      "Blended Scotch",
+      "Lingua Franca Avni Pinot Noir",
+      "Wine-Finished Bourbon",
+      "Bourbon-Cask Speyside",
     ],
     avoid: [
       "Laurent Perrier Le Cuvée Brut",
       "G.D. Vajra Moscato d'Asti",
       "Stoneleigh Sauvignon Blanc",
-      "Lingua Franca Avni Pinot Noir"
-    ],
+      "French 75",
+      "Cucumber Gimlet",
+      "Vesper",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Pablo Sour",
+      "The Happy Wife",
+      "Transfusion",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Il Colle Prosecco Superiore",
+      "Raventós Cava de NIT Rosé Brut",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "St Supéry Sauvignon Blanc",
+      "Jean-Pierre Grossot Chablis",
+      "Schloss Vollrads Riesling",
+      "Le Garenne Rosé",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Fisher Unity Pinot Noir",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Evening Land Seven Springs",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Macauley Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Domaine Serene Grand Cheval",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Tawny",
+      "Taylor Fladgate Vintage Bottle",
+      "Casa LBV Port",
+      "Pineau des Charentes",
+      "Vin Santo",
+      "Sauternes Glass",
+      "Blanco Tequila",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
+      "Spiced / Flavored Rum",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Limoncello",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
+    ]
   },
   {
     name: "Crab Cake",
     category: "starter",
-    profile: [
-      "delicate",
-      "sweet",
-      "seafood",
-      "crispy",
-      "light"
-    ],
+    profile: ["delicate","sweet","seafood","crispy","light"],
     excellent: [
       "Laurent Perrier Le Cuvée Brut",
       "Jean-Pierre Grossot Chablis",
       "Elk Cove Pinot Blanc",
       "Raventós Cava de NIT Rosé Brut",
-      "St Supéry Sauvignon Blanc"
-    ],
-    strong: [
+      "St Supéry Sauvignon Blanc",
+      "Vesper",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Pablo Sour",
+      "Margarita",
+      "The Happy Wife",
+      "Transfusion",
+      "Lemon Lavender Gin Martini",
+      "New York Sour",
+      "Il Colle Prosecco Superiore",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Stoneleigh Sauvignon Blanc",
+      "Schloss Vollrads Riesling",
+      "Fisher Unity Pinot Noir",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
       "Lingua Franca Avni Pinot Noir",
       "Domaine de Berthiers Pouilly-Fumé",
       "Joseph Mellot Sancerre",
       "Cucumber Gimlet",
-      "French 75"
-    ],
-    works: [
+      "French 75",
       "Le Garenne Rosé",
       "Evening Land Seven Springs",
-      "Bee's Knees"
+      "Bee's Knees",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+    ],
+    strong: [
+      "Head Fake",
+      "G.D. Vajra Moscato d'Asti",
+      "Alexander Valley Chardonnay",
+      "Our Lady of Guadalupe Acolytes",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Macauley Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Domaine Serene Grand Cheval",
+      "Spiced / Flavored Rum",
+      "Hendrick's Family",
+    ],
+    works: [
+      "Marc Brédif Chinon",
+      "Pineau des Charentes",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "Limoncello",
+      "Bruichladdich",
     ],
     avoid: [
       "Opus One",
       "Shafer Hillside Select",
       "Caymus Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
-      "The Manhattan"
-    ],
+      "The Manhattan",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Espresso Old Fashioned",
+      "Vieux Carré",
+      "Espresso Martini",
+      "Negroni",
+      "Inhibited",
+      "Not a Paper Plane",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Fento Ollo de Sapo Mencía",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "Scavino Barolo",
+      "1881 Napa Valley",
+      "Faust Napa Valley Cabernet",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Jordan Cabernet Sauvignon",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Far Niente Cabernet Sauvignon",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Jubilation by Colgin",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Fattoria Le Pupille Saffredi",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "Château Gombaude-Guillot",
+      "Clos Petit Ona Grenache",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "American Single Malt / Tennessee",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
+    ]
   },
   {
     name: "Seafood Tower",
     category: "starter",
-    profile: [
-      "seafood",
-      "delicate",
-      "briny",
-      "fresh",
-      "celebratory",
-      "varied"
-    ],
+    profile: ["seafood","delicate","briny","fresh","celebratory","varied"],
     excellent: [
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Paul Bara Grand Rosé Brut",
       "Jean-Pierre Grossot Chablis",
-      "French 75"
+      "French 75",
+      "Vesper",
+      "Laurent Perrier Brut Rosé",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Classic Vodka",
+      "London Dry Gin",
+      "Veuve Clicquot Brut",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
     ],
     strong: [
       "Elk Cove Pinot Blanc",
       "Joseph Mellot Sancerre",
       "St Supéry Sauvignon Blanc",
-      "Veuve Clicquot Brut"
-    ],
-    works: [
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Pablo Sour",
+      "Margarita",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Il Colle Prosecco Superiore",
+      "Stoneleigh Sauvignon Blanc",
+      "Blanco Tequila",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
       "Le Garenne Rosé",
       "Cucumber Gimlet",
-      "Bee's Knees"
+      "Bee's Knees",
+      "Smooth / Citrus Craft Gin",
+    ],
+    works: [
+      "Limoncello",
+      "Bruichladdich",
     ],
     avoid: [
       "Opus One",
       "Caymus Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+      "Espresso Old Fashioned",
+      "Espresso Martini",
+      "Inhibited",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+    ]
   },
   {
     name: "Shrimp Cocktail",
     category: "starter",
-    profile: [
-      "seafood",
-      "delicate",
-      "briny",
-      "chilled",
-      "classic"
-    ],
+    profile: ["seafood","delicate","briny","chilled","classic"],
     excellent: [
       "Laurent Perrier Le Cuvée Brut",
       "Jean-Pierre Grossot Chablis",
       "St Supéry Sauvignon Blanc",
-      "Raventós Cava de NIT Rosé Brut"
-    ],
-    strong: [
+      "Raventós Cava de NIT Rosé Brut",
+      "Vesper",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Margarita",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Il Colle Prosecco Superiore",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Schloss Vollrads Riesling",
+      "Joseph Mellot Sancerre",
+      "Pineau des Charentes",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
       "Elk Cove Pinot Blanc",
       "Stoneleigh Sauvignon Blanc",
       "Cucumber Gimlet",
       "French 75",
-      "The Happy Wife"
+      "The Happy Wife",
+      "Le Garenne Rosé",
+      "Bee's Knees",
+      "Transfusion",
+      "Hendrick's Family",
+      "Smooth / Citrus Craft Gin",
+    ],
+    strong: [
+      "G.D. Vajra Moscato d'Asti",
+      "Paul Bara Grand Rosé Brut",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Spiced / Flavored Rum",
+      "Botanical-Forward Craft Gin",
+      "Bruichladdich",
     ],
     works: [
-      "Le Garenne Rosé",
       "Lingua Franca Avni Pinot Noir",
-      "Bee's Knees",
-      "Transfusion"
+      "Limoncello",
     ],
     avoid: [
       "Opus One",
       "Caymus Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Faust Napa Valley Cabernet",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Jubilation by Colgin",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Fattoria Le Pupille Saffredi",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "Château Gombaude-Guillot",
+      "Clos Petit Ona Grenache",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "American Single Malt / Tennessee",
+      "Dark / Aged Rum",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
+    ]
   },
   {
     name: "Seared Scallops",
     category: "starter",
-    profile: [
-      "seafood",
-      "delicate",
-      "sweet",
-      "seared",
-      "rich",
-      "light"
-    ],
+    profile: ["seafood","delicate","sweet","seared","rich","light"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
       "Laurent Perrier Le Cuvée Brut",
-      "Elk Cove Pinot Blanc"
-    ],
-    strong: [
+      "Elk Cove Pinot Blanc",
+      "French 75",
+      "Vesper",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Pablo Sour",
+      "Margarita",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Stoneleigh Sauvignon Blanc",
+      "St Supéry Sauvignon Blanc",
+      "Schloss Vollrads Riesling",
+      "Our Lady of Guadalupe Acolytes",
+      "Daniel Chotard Sancerre Rouge",
+      "Evening Land Seven Springs",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "Domaine Serene Grand Cheval",
+      "Japanese Whisky",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
       "Domaine de Berthiers Pouilly-Fumé",
       "Joseph Mellot Sancerre",
       "Lingua Franca Avni Pinot Noir",
-      "Cucumber Gimlet"
+      "Cucumber Gimlet",
+      "Le Garenne Rosé",
+      "Bee's Knees",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+    ],
+    strong: [
+      "The Happy Wife",
+      "Transfusion",
+      "Il Colle Prosecco Superiore",
+      "Raventós Cava de NIT Rosé Brut",
+      "Alexander Valley Chardonnay",
+      "Cristom Mt Jefferson Cuvée",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Macauley Pinot Noir",
+      "Elk Cove Five Mountain",
+      "J Davies Ferrington Vineyards",
+      "Pineau des Charentes",
+      "Fisher Unity Pinot Noir",
+      "Hendrick's Family",
     ],
     works: [
-      "Le Garenne Rosé",
-      "Fisher Unity Pinot Noir",
-      "Bee's Knees"
+      "G.D. Vajra Moscato d'Asti",
+      "Irish Whiskey",
+      "Limoncello",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
       "Scavino Barolo",
-      "Opus One"
-    ],
+      "Opus One",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Espresso Old Fashioned",
+      "The Manhattan",
+      "Vieux Carré",
+      "Sazerac",
+      "The BG",
+      "Espresso Martini",
+      "Negroni",
+      "Inhibited",
+      "New York Sour",
+      "Not a Paper Plane",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Fento Ollo de Sapo Mencía",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Faust Napa Valley Cabernet",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Jordan Cabernet Sauvignon",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Far Niente Cabernet Sauvignon",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Jubilation by Colgin",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Fattoria Le Pupille Saffredi",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "Château Gombaude-Guillot",
+      "Clos Petit Ona Grenache",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
+      "Bruichladdich",
+    ]
   },
   {
     name: "Escargot",
     category: "starter",
-    profile: [
-      "rich",
-      "buttery",
-      "herbaceous",
-      "garlic",
-      "French",
-      "indulgent"
-    ],
+    profile: ["rich","buttery","herbaceous","garlic","French","indulgent"],
     excellent: [
       "Jean-Pierre Grossot Chablis",
       "Domaine de Berthiers Pouilly-Fumé",
       "Joseph Mellot Sancerre",
       "French 75",
-      "Bee's Knees"
-    ],
-    strong: [
+      "Bee's Knees",
+      "Aviation",
+      "Negroni",
+      "Lemon Lavender Gin Martini",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Daniel Chotard Sancerre Rouge",
+      "London Dry Gin",
+      "Herbal / Anise Liqueur",
       "Elk Cove Pinot Blanc",
       "Laurent Perrier Le Cuvée Brut",
       "Corpse Reviver",
-      "Keenan Chardonnay"
+      "Botanical-Forward Craft Gin",
+    ],
+    strong: [
+      "Keenan Chardonnay",
+      "Vesper",
+      "Head Fake",
+      "Il Colle Prosecco Superiore",
+      "Raventós Cava de NIT Rosé Brut",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Stoneleigh Sauvignon Blanc",
+      "Alexander Valley Chardonnay",
+      "St Supéry Sauvignon Blanc",
+      "Schloss Vollrads Riesling",
+      "Our Lady of Guadalupe Acolytes",
+      "Far Niente Chardonnay",
+      "Fento Ollo de Sapo Mencía",
+      "Marc Brédif Chinon",
+      "Pineau des Charentes",
+      "Blanco Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "Le Garenne Rosé",
+      "Cucumber Gimlet",
     ],
     works: [
-      "Le Garenne Rosé",
       "Lingua Franca Avni Pinot Noir",
-      "Cucumber Gimlet"
+      "Hendrick's Family",
+      "Smooth / Citrus Craft Gin",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+    ]
   },
   {
     name: "Burrata",
     category: "starter",
-    profile: [
-      "creamy",
-      "mild",
-      "fresh",
-      "delicate",
-      "dairy-rich"
-    ],
+    profile: ["creamy","mild","fresh","delicate","dairy-rich"],
     excellent: [
       "Le Garenne Rosé",
       "Jean-Pierre Grossot Chablis",
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
-      "Bee's Knees"
-    ],
-    strong: [
+      "Bee's Knees",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Margarita",
+      "Transfusion",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Il Colle Prosecco Superiore",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Schloss Vollrads Riesling",
+      "Pineau des Charentes",
+      "Blanco Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
       "Elk Cove Pinot Blanc",
       "St Supéry Sauvignon Blanc",
       "Stoneleigh Sauvignon Blanc",
       "Cucumber Gimlet",
-      "French 75"
+      "French 75",
+      "G.D. Vajra Moscato d'Asti",
+      "Hendrick's Family",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
+    ],
+    strong: [
+      "Vesper",
+      "Pablo Sour",
+      "The Happy Wife",
+      "Paul Bara Grand Rosé Brut",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Alexander Valley Chardonnay",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Daniel Chotard Sancerre Rouge",
+      "Marc Brédif Chinon",
+      "Sauternes Glass",
+      "Botanical-Forward Craft Gin",
     ],
     works: [
       "Lingua Franca Avni Pinot Noir",
-      "G.D. Vajra Moscato d'Asti",
-      "Domaine de Berthiers Pouilly-Fumé"
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Fento Ollo de Sapo Mencía",
+      "Fisher Unity Pinot Noir",
+      "Cristom Mt Jefferson Cuvée",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Clos Petit Ona Grenache",
+      "Domaine Serene Grand Cheval",
+      "Japanese Whisky",
+      "Spiced / Flavored Rum",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+      "The Tomahawk",
+      "Espresso Old Fashioned",
+      "The Manhattan",
+      "Vieux Carré",
+      "Sazerac",
+      "The BG",
+      "Espresso Martini",
+      "Negroni",
+      "Inhibited",
+      "New York Sour",
+      "Not a Paper Plane",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Faust Napa Valley Cabernet",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Far Niente Cabernet Sauvignon",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Jubilation by Colgin",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Fattoria Le Pupille Saffredi",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "Château Gombaude-Guillot",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
+    ]
   },
   {
     name: "Shrimp Bisque",
     category: "soup-salad",
-    profile: [
-      "rich",
-      "creamy",
-      "seafood",
-      "sweet",
-      "warm",
-      "indulgent"
-    ],
+    profile: ["rich","creamy","seafood","sweet","warm","indulgent"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
-    strong: [
+      "Laurent Perrier Le Cuvée Brut",
+      "Pablo Sour",
+      "Alexander Valley Chardonnay",
+      "Schloss Vollrads Riesling",
+      "Our Lady of Guadalupe Acolytes",
+      "Evening Land Seven Springs",
       "Elk Cove Pinot Blanc",
       "Domaine de Berthiers Pouilly-Fumé",
       "Lingua Franca Avni Pinot Noir",
-      "Raventós Cava de NIT Rosé Brut"
+    ],
+    strong: [
+      "Raventós Cava de NIT Rosé Brut",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "The BG",
+      "Cucumber Gimlet",
+      "Vesper",
+      "Aviation",
+      "Paloma",
+      "Margarita",
+      "The Happy Wife",
+      "Transfusion",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "New York Sour",
+      "Joseph Mellot Sancerre",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Château Gombaude-Guillot",
+      "Clos Petit Ona Grenache",
+      "Domaine Serene Grand Cheval",
+      "Sauternes Glass",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "Mezcal",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
+      "Herbal / Anise Liqueur",
+      "Jordan Cabernet Sauvignon",
+      "Fisher Unity Pinot Noir",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+      "Peated Islay Scotch",
+      "Bruichladdich",
     ],
     works: [
       "Le Garenne Rosé",
-      "Jordan Cabernet Sauvignon",
-      "Fisher Unity Pinot Noir"
+      "Espresso Old Fashioned",
+      "Sazerac",
+      "French 75",
+      "Bee's Knees",
+      "Corpse Reviver",
+      "Stoneleigh Sauvignon Blanc",
+      "St Supéry Sauvignon Blanc",
+      "Corazón del Sol Malbec",
+      "Fento Ollo de Sapo Mencía",
+      "Macauley Pinot Noir",
+      "Silver Oak Cabernet Sauvignon",
+      "Far Niente Cabernet Sauvignon",
+      "Marc Brédif Chinon",
+      "Pineau des Charentes",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "American Single Malt / Tennessee",
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+      "Bowdie's Old Fashioned",
+      "Bourbon-Cask Speyside",
     ],
     avoid: [
-      "Caymus Cabernet Sauvignon",
       "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+    ]
   },
   {
     name: "House Wedge",
     category: "soup-salad",
-    profile: [
-      "crisp",
-      "creamy",
-      "fresh",
-      "classic",
-      "approachable"
-    ],
+    profile: ["crisp","creamy","fresh","classic","approachable"],
     excellent: [
       "Le Garenne Rosé",
       "Lingua Franca Avni Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
-      "St Supéry Sauvignon Blanc"
+      "St Supéry Sauvignon Blanc",
+      "Paloma",
+      "Pablo Sour",
+      "Margarita",
+      "Transfusion",
+      "New York Sour",
+      "Scotto Cellars The Lost Chapters",
+      "Fento Ollo de Sapo Mencía",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Evening Land Seven Springs",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Marc Brédif Chinon",
+      "Clos Petit Ona Grenache",
+      "Domaine Serene Grand Cheval",
+      "Blended Scotch",
+      "Irish Whiskey",
+      "Canadian Whisky",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "Local Michigan Gin",
+      "White / Light Rum",
+      "Spiced / Flavored Rum",
+      "Stoneleigh Sauvignon Blanc",
+      "Cucumber Gimlet",
+      "Fisher Unity Pinot Noir",
     ],
     strong: [
       "Laurent Perrier Le Cuvée Brut",
-      "Stoneleigh Sauvignon Blanc",
       "Elk Cove Pinot Blanc",
-      "Cucumber Gimlet"
+      "The BG",
+      "Bee's Knees",
+      "Vesper",
+      "Corpse Reviver",
+      "Aviation",
+      "The Happy Wife",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Il Colle Prosecco Superiore",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Alexander Valley Chardonnay",
+      "Jean-Pierre Grossot Chablis",
+      "Schloss Vollrads Riesling",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Macauley Pinot Noir",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Braida Montebruna Barbera",
+      "Pineau des Charentes",
+      "Approachable Rye",
+      "Highland Scotch",
+      "Japanese Whisky",
+      "American Single Malt / Tennessee",
+      "London Dry Gin",
+      "Japanese Gin",
+      "Herbal / Anise Liqueur",
+      "French 75",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
     ],
     works: [
       "Jordan Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
-      "Fisher Unity Pinot Noir",
-      "French 75"
-    ],
-    avoid: [
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "Porterhouse",
+      "Prime Tartare",
+      "Bone Marrow",
+      "Bowdie's Old Fashioned",
+      "Espresso Old Fashioned",
+      "The Manhattan",
+      "Vieux Carré",
+      "Sazerac",
+      "Negroni",
+      "Not a Paper Plane",
+      "G.D. Vajra Moscato d'Asti",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Lunaria Coste di Moro",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "Scavino Barolo",
+      "1881 Napa Valley",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Far Niente Cabernet Sauvignon",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Simon Family Estate Reserve",
+      "Jubilation by Colgin",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "Château Gombaude-Guillot",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Bold / Premium Rye",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
       "Opus One",
       "Shafer Hillside Select",
-      "Heitz Martha's Vineyard"
+      "Heitz Martha's Vineyard",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Añejo Tequila",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
     ],
+    avoid: [
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Limoncello",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+    ]
   },
   {
     name: "Grilled Caesar",
     category: "soup-salad",
-    profile: [
-      "smoky",
-      "umami",
-      "creamy",
-      "bold",
-      "anchovy",
-      "charred"
-    ],
+    profile: ["smoky","umami","creamy","bold","anchovy","charred"],
     excellent: [
       "Jean-Pierre Grossot Chablis",
       "Scavino Barolo",
       "Domaine de Berthiers Pouilly-Fumé",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
+      "Negroni",
+      "Not a Paper Plane",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Fento Ollo de Sapo Mencía",
+      "Château de Rouillac",
+      "Marc Brédif Chinon",
+      "Braida Montebruna Barbera",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Clos Petit Ona Grenache",
+      "G.D. Vajra Albe Nebbiolo",
+      "Approachable Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Herbal / Anise Liqueur",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
+      "Bruichladdich",
     ],
     strong: [
       "Keenan Chardonnay",
       "Jordan Cabernet Sauvignon",
       "Raventós Cava de NIT Rosé Brut",
-      "Corpse Reviver"
+      "Corpse Reviver",
+      "Sazerac",
+      "The BG",
+      "French 75",
+      "Bee's Knees",
+      "Paloma",
+      "Pablo Sour",
+      "Margarita",
+      "Transfusion",
+      "New York Sour",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "St Supéry Sauvignon Blanc",
+      "Elk Cove Pinot Blanc",
+      "Le Garenne Rosé",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Far Niente Chardonnay",
+      "Fisher Unity Pinot Noir",
+      "St Supéry Cabernet Sauvignon",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Evening Land Seven Springs",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Macauley Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "San Simeon Stormwatch",
+      "Domaine Serene Grand Cheval",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "Mezcal",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "White / Light Rum",
+      "Amaro / Bitter Liqueur",
+      "Laurent Perrier Le Cuvée Brut",
+      "Stoneleigh Sauvignon Blanc",
     ],
     works: [
-      "Laurent Perrier Le Cuvée Brut",
-      "Faust Napa Valley Cabernet"
+      "Faust Napa Valley Cabernet",
+      "Vieux Carré",
+      "Cucumber Gimlet",
+      "Vesper",
+      "Aviation",
+      "The Happy Wife",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Il Colle Prosecco Superiore",
+      "Paul Bara Grand Rosé Brut",
+      "Pommery Cuvée Louise",
+      "Alexander Valley Chardonnay",
+      "Schloss Vollrads Riesling",
+      "Corazón del Sol Malbec",
+      "Quilt Cabernet Sauvignon",
+      "Caymus Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Gundlach Bundschu Cabernet",
+      "Austin Hope Cabernet Sauvignon",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Simon Family Estate Reserve",
+      "Château Haut Segottes",
+      "Château Gombaude-Guillot",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "St Supéry Élu Meritage",
+      "Pineau des Charentes",
+      "Light / Wheated Bourbon",
+      "Bold / Premium Rye",
+      "Local Michigan Gin",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
-      "Stoneleigh Sauvignon Blanc",
-      "Opus One"
-    ],
+      "Opus One",
+    ]
   },
   {
     name: "Seasonal Soup",
     category: "soup-salad",
-    profile: [
-      "variable",
-      "seasonal"
-    ],
+    variable: true,
+    profile: ["variable","seasonal"],
     strong: [
       "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
       "Le Garenne Rosé",
-      "Elk Cove Pinot Blanc"
+      "Elk Cove Pinot Blanc",
     ],
-    variable: true,
-    variablePrompt: "What is today's soup? (e.g. French onion, butternut squash, tomato basil)",
+    variablePrompt: "What is today's soup? (e.g. French onion, butternut squash, tomato basil)"
   },
   {
     name: "Mushroom Bisque",
     category: "soup-salad",
-    profile: [
-      "rich",
-      "creamy",
-      "earthy",
-      "umami",
-      "dairy-rich",
-      "savory"
-    ],
+    profile: ["rich","creamy","earthy","umami","dairy-rich","savory"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     strong: [
       "Elk Cove Pinot Blanc",
       "Alexander Valley Chardonnay",
       "Cristom Mt Jefferson Cuvée",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
       "Evening Land Seven Springs",
       "Jordan Cabernet Sauvignon",
-      "Vieux Carré"
+      "Vieux Carré",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Stoneleigh Sauvignon Blanc",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+    ]
   },
   {
     name: "Creamy Potato",
     category: "soup-salad",
-    profile: [
-      "rich",
-      "creamy",
-      "starchy",
-      "mild",
-      "dairy-rich",
-      "comforting"
-    ],
+    profile: ["rich","creamy","starchy","mild","dairy-rich","comforting"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
-      "Jean-Pierre Grossot Chablis"
+      "Jean-Pierre Grossot Chablis",
     ],
     strong: [
       "Elk Cove Pinot Blanc",
       "Alexander Valley Chardonnay",
       "Laurent Perrier Le Cuvée Brut",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     works: [
       "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
-      "Domaine de Berthiers Pouilly-Fumé"
+      "Domaine de Berthiers Pouilly-Fumé",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+    ]
   },
   {
     name: "Loaded Potato",
     category: "soup-salad",
-    profile: [
-      "rich",
-      "creamy",
-      "pork",
-      "cheese",
-      "hearty",
-      "indulgent"
-    ],
+    profile: ["rich","creamy","pork","cheese","hearty","indulgent"],
     excellent: [
       "Keenan Chardonnay",
       "Far Niente Chardonnay",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     strong: [
       "Alexander Valley Chardonnay",
       "Jordan Cabernet Sauvignon",
       "The Manhattan",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
       "Fisher Unity Pinot Noir",
       "Faust Napa Valley Cabernet",
       "Vieux Carré",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Stoneleigh Sauvignon Blanc",
       "Paloma",
-      "Cucumber Gimlet"
-    ],
+      "Cucumber Gimlet",
+    ]
   },
   {
     name: "Tomato Basil",
     category: "soup-salad",
-    profile: [
-      "acidic",
-      "herbal",
-      "bright",
-      "tomato",
-      "vegetable",
-      "light"
-    ],
+    profile: ["acidic","herbal","bright","tomato","vegetable","light"],
     excellent: [
       "Stoneleigh Sauvignon Blanc",
       "Jean-Pierre Grossot Chablis",
       "Le Garenne Rosé",
-      "Domaine de Berthiers Pouilly-Fumé"
+      "Domaine de Berthiers Pouilly-Fumé",
     ],
     strong: [
       "Joseph Mellot Sancerre",
       "Raventós Cava de NIT Rosé Brut",
       "St Supéry Sauvignon Blanc",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     works: [
       "Elk Cove Pinot Blanc",
       "Laurent Perrier Le Cuvée Brut",
-      "Cristom Mt Jefferson Cuvée"
+      "Cristom Mt Jefferson Cuvée",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+    ]
   },
   {
     name: "Gumbo",
     category: "soup-salad",
-    profile: [
-      "spicy",
-      "smoky",
-      "hearty",
-      "rich",
-      "tomato",
-      "bold"
-    ],
+    profile: ["spicy","smoky","hearty","rich","tomato","bold"],
     excellent: [
       "Fattoria Le Pupille Saffredi",
       "Muga Reserva",
       "Domaine du Grand Tinel",
-      "Château Gombaude-Guillot"
+      "Château Gombaude-Guillot",
     ],
     strong: [
       "Venge Scout's Honor",
       "The Prisoner Red Blend",
       "Ghost Block Zinfandel",
-      "Braida Montebruna Barbera"
+      "Braida Montebruna Barbera",
     ],
     works: [
       "Jordan Cabernet Sauvignon",
       "The BG",
       "Paloma",
-      "Margarita"
+      "Margarita",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
       "Stoneleigh Sauvignon Blanc",
-      "Far Niente Chardonnay"
-    ],
+      "Far Niente Chardonnay",
+    ]
   },
   {
     name: "Roasted Red Pepper Chickpea",
     category: "soup-salad",
-    profile: [
-      "smoky",
-      "sweet",
-      "nutty",
-      "vegetable",
-      "hearty",
-      "earthy"
-    ],
+    profile: ["smoky","sweet","nutty","vegetable","hearty","earthy"],
     excellent: [
       "Lingua Franca Avni Pinot Noir",
       "Cristom Mt Jefferson Cuvée",
-      "Le Garenne Rosé"
+      "Le Garenne Rosé",
     ],
     strong: [
       "Evening Land Seven Springs",
       "Muga Reserva",
       "Jean-Pierre Grossot Chablis",
-      "Elk Cove Pinot Blanc"
+      "Elk Cove Pinot Blanc",
     ],
     works: [
       "Fisher Unity Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
-      "Tenuta di Arceno Chianti Classico"
+      "Tenuta di Arceno Chianti Classico",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Shafer Hillside Select"
-    ],
+      "Shafer Hillside Select",
+    ]
   },
   {
     name: "Clam Chowder",
     category: "soup-salad",
-    profile: [
-      "rich",
-      "creamy",
-      "seafood",
-      "briny",
-      "dairy-rich",
-      "warm"
-    ],
+    profile: ["rich","creamy","seafood","briny","dairy-rich","warm"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
-      "Elk Cove Pinot Blanc"
+      "Elk Cove Pinot Blanc",
     ],
     strong: [
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Domaine de Berthiers Pouilly-Fumé",
-      "Alexander Valley Chardonnay"
+      "Alexander Valley Chardonnay",
     ],
     works: [
       "Le Garenne Rosé",
       "Lingua Franca Avni Pinot Noir",
-      "Joseph Mellot Sancerre"
+      "Joseph Mellot Sancerre",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Vegetable Curry with Chickpeas",
     category: "soup-salad",
-    profile: [
-      "spiced",
-      "warm",
-      "hearty",
-      "vegetable",
-      "complex",
-      "aromatic"
-    ],
+    profile: ["spiced","warm","hearty","vegetable","complex","aromatic"],
     excellent: [
       "Schloss Vollrads Riesling",
       "Lingua Franca Avni Pinot Noir",
-      "Le Garenne Rosé"
+      "Le Garenne Rosé",
     ],
     strong: [
       "Elk Cove Pinot Blanc",
       "Cristom Mt Jefferson Cuvée",
       "Domaine Tempier Bandol",
-      "Evening Land Seven Springs"
+      "Evening Land Seven Springs",
     ],
     works: [
       "Raventós Cava de NIT Rosé Brut",
       "Joseph Mellot Sancerre",
-      "Stoneleigh Sauvignon Blanc"
+      "Stoneleigh Sauvignon Blanc",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Shafer Hillside Select",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Broccoli Cheddar",
     category: "soup-salad",
-    profile: [
-      "rich",
-      "creamy",
-      "cheese",
-      "savory",
-      "dairy-rich",
-      "indulgent"
-    ],
+    profile: ["rich","creamy","cheese","savory","dairy-rich","indulgent"],
     excellent: [
       "Keenan Chardonnay",
       "Far Niente Chardonnay",
-      "Alexander Valley Chardonnay"
+      "Alexander Valley Chardonnay",
     ],
     strong: [
       "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
       "Elk Cove Pinot Blanc",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
       "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
-      "Joseph Mellot Sancerre"
+      "Joseph Mellot Sancerre",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Butternut Squash",
     category: "soup-salad",
-    profile: [
-      "sweet",
-      "earthy",
-      "smooth",
-      "warm",
-      "vegetable",
-      "fall"
-    ],
+    profile: ["sweet","earthy","smooth","warm","vegetable","fall"],
     excellent: [
       "Keenan Chardonnay",
       "Schloss Vollrads Riesling",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     strong: [
       "Far Niente Chardonnay",
       "Cristom Mt Jefferson Cuvée",
       "Alexander Valley Chardonnay",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
       "Elk Cove Pinot Blanc",
       "Le Garenne Rosé",
       "Evening Land Seven Springs",
-      "Raventós Cava de NIT Rosé Brut"
+      "Raventós Cava de NIT Rosé Brut",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Stoneleigh Sauvignon Blanc"
-    ],
+      "Stoneleigh Sauvignon Blanc",
+    ]
   },
   {
     name: "French Onion",
     category: "soup-salad",
-    profile: [
-      "rich",
-      "savory",
-      "umami",
-      "caramelized",
-      "cheese",
-      "hearty"
-    ],
+    profile: ["rich","savory","umami","caramelized","cheese","hearty"],
     excellent: [
       "Lingua Franca Avni Pinot Noir",
       "Cristom Mt Jefferson Cuvée",
       "Fisher Unity Pinot Noir",
-      "Evening Land Seven Springs"
+      "Evening Land Seven Springs",
     ],
     strong: [
       "Keenan Chardonnay",
       "Far Niente Chardonnay",
       "Jordan Cabernet Sauvignon",
-      "Muga Reserva"
+      "Muga Reserva",
     ],
     works: [
       "Faust Napa Valley Cabernet",
       "Laurent Perrier Le Cuvée Brut",
       "Vieux Carré",
-      "The Manhattan"
+      "The Manhattan",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Stoneleigh Sauvignon Blanc",
       "Paloma",
-      "Cucumber Gimlet"
-    ],
+      "Cucumber Gimlet",
+    ]
   },
   {
     name: "Faroe Island Salmon",
     category: "main",
-    profile: [
-      "seafood",
-      "rich",
-      "fatty",
-      "delicate",
-      "fresh",
-      "seasonal"
-    ],
+    profile: ["seafood","rich","fatty","delicate","fresh","seasonal"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
       "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
-      "Evening Land Seven Springs"
-    ],
-    strong: [
+      "Evening Land Seven Springs",
+      "Alexander Valley Chardonnay",
+      "Our Lady of Guadalupe Acolytes",
+      "Kermit Lynch Côtes du Rhône",
+      "Fento Ollo de Sapo Mencía",
+      "Daniel Chotard Sancerre Rouge",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Macauley Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Marc Brédif Chinon",
+      "Clos Petit Ona Grenache",
+      "Domaine Serene Grand Cheval",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Japanese Gin",
       "Domaine de Berthiers Pouilly-Fumé",
       "Joseph Mellot Sancerre",
+      "Fisher Unity Pinot Noir",
+      "Cristom Mt Jefferson Cuvée",
+      "Hendrick's Family",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
+    ],
+    strong: [
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
       "The Happy Wife",
-      "Transfusion"
+      "Transfusion",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Schloss Vollrads Riesling",
+      "Braida Montebruna Barbera",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "White / Light Rum",
+      "Le Garenne Rosé",
+      "Botanical-Forward Craft Gin",
     ],
     works: [
-      "Le Garenne Rosé",
-      "Fisher Unity Pinot Noir",
-      "Cristom Mt Jefferson Cuvée",
       "Bee's Knees",
       "Paloma",
       "Creme Brulee",
       "Beignets",
-      "Cheesecake"
+      "Cheesecake",
+      "Sauteed Garlic Spinach",
+      "Pablo Sour",
+      "Margarita",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Stoneleigh Sauvignon Blanc",
+      "St Supéry Sauvignon Blanc",
+      "Muga Reserva",
+      "Spiced / Flavored Rum",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
@@ -1192,231 +2876,221 @@ const PAIRING_MAP = [
       "Shafer Hillside Select",
       "Bowdie's Old Fashioned",
       "Scavino Barolo",
-      "The Manhattan"
-    ],
+      "The Manhattan",
+      "Filet Mignon",
+      "Venge Scout's Honor",
+      "Barrel-Proof Bourbon",
+      "Wine-Finished Bourbon",
+    ]
   },
   {
     name: "Market Fish",
     category: "main",
-    profile: [
-      "seafood",
-      "variable",
-      "delicate",
-      "seasonal"
-    ],
+    variable: true,
+    profile: ["seafood","variable","delicate","seasonal"],
     strong: [
       "Jean-Pierre Grossot Chablis",
       "Laurent Perrier Le Cuvée Brut",
       "Elk Cove Pinot Blanc",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
-    variable: true,
-    variablePrompt: "What is today's market fish and preparation?",
+    works: [
+      "Blanco Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Japanese Gin",
+      "White / Light Rum",
+    ],
+    variablePrompt: "What is today's market fish and preparation?"
   },
   {
     name: "Tuxedo-Crusted Yellowfin Tuna",
     category: "main",
-    profile: [
-      "seafood",
-      "lean",
-      "seared",
-      "spicy",
-      "sweet",
-      "sesame"
-    ],
+    profile: ["seafood","lean","seared","spicy","sweet","sesame"],
     excellent: [
       "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
       "Cristom Mt Jefferson Cuvée",
-      "Jean-Pierre Grossot Chablis"
+      "Jean-Pierre Grossot Chablis",
     ],
     strong: [
       "Evening Land Seven Springs",
       "Fisher Unity Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
       "Le Garenne Rosé",
       "Joseph Mellot Sancerre",
       "Cucumber Gimlet",
-      "The Happy Wife"
+      "The Happy Wife",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Shafer Hillside Select",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Salt-Cured Halibut",
     category: "main",
-    profile: [
-      "seafood",
-      "delicate",
-      "mild",
-      "umami",
-      "sweet",
-      "elegant"
-    ],
+    profile: ["seafood","delicate","mild","umami","sweet","elegant"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
-      "Elk Cove Pinot Blanc"
+      "Elk Cove Pinot Blanc",
     ],
     strong: [
       "Domaine de Berthiers Pouilly-Fumé",
       "Joseph Mellot Sancerre",
       "Laurent Perrier Le Cuvée Brut",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     works: [
       "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
-      "Cucumber Gimlet"
+      "Cucumber Gimlet",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Swordfish",
     category: "main",
-    profile: [
-      "seafood",
-      "meaty",
-      "firm",
-      "substantial",
-      "savory",
-      "grilled"
-    ],
+    profile: ["seafood","meaty","firm","substantial","savory","grilled"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Lingua Franca Avni Pinot Noir",
-      "Evening Land Seven Springs"
+      "Evening Land Seven Springs",
     ],
     strong: [
       "Cristom Mt Jefferson Cuvée",
       "Fisher Unity Pinot Noir",
       "Alexander Valley Chardonnay",
-      "Le Garenne Rosé"
+      "Le Garenne Rosé",
     ],
     works: [
       "Jean-Pierre Grossot Chablis",
       "Joseph Mellot Sancerre",
       "Raventós Cava de NIT Rosé Brut",
-      "Jordan Cabernet Sauvignon"
+      "Jordan Cabernet Sauvignon",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Shafer Hillside Select",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+    ]
   },
   {
     name: "Chilean Seabass",
     category: "main",
-    profile: [
-      "seafood",
-      "rich",
-      "buttery",
-      "fatty",
-      "delicate",
-      "indulgent"
-    ],
+    profile: ["seafood","rich","buttery","fatty","delicate","indulgent"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Alexander Valley Chardonnay",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     strong: [
       "Evening Land Seven Springs",
       "Laurent Perrier Le Cuvée Brut",
       "Jean-Pierre Grossot Chablis",
-      "Cristom Mt Jefferson Cuvée"
+      "Cristom Mt Jefferson Cuvée",
     ],
     works: [
       "Elk Cove Pinot Blanc",
       "Jordan Cabernet Sauvignon",
       "Fisher Unity Pinot Noir",
-      "Le Garenne Rosé"
+      "Le Garenne Rosé",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Shafer Hillside Select",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Rainbow Trout",
     category: "main",
-    profile: [
-      "seafood",
-      "delicate",
-      "mild",
-      "freshwater",
-      "flaky",
-      "light"
-    ],
+    profile: ["seafood","delicate","mild","freshwater","flaky","light"],
     excellent: [
       "Jean-Pierre Grossot Chablis",
       "Joseph Mellot Sancerre",
       "Domaine de Berthiers Pouilly-Fumé",
-      "Elk Cove Pinot Blanc"
+      "Elk Cove Pinot Blanc",
     ],
     strong: [
       "Stoneleigh Sauvignon Blanc",
       "St Supéry Sauvignon Blanc",
       "Le Garenne Rosé",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
       "Lingua Franca Avni Pinot Noir",
       "Far Niente Chardonnay",
       "Raventós Cava de NIT Rosé Brut",
-      "Cucumber Gimlet"
+      "Cucumber Gimlet",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Roast Half Chicken",
     category: "main",
-    profile: [
-      "poultry",
-      "rich",
-      "savory",
-      "roasted",
-      "seasonal",
-      "approachable"
-    ],
+    profile: ["poultry","rich","savory","roasted","seasonal","approachable"],
     excellent: [
       "Keenan Chardonnay",
       "Far Niente Chardonnay",
       "Lingua Franca Avni Pinot Noir",
       "Cristom Mt Jefferson Cuvée",
-      "Muga Reserva"
+      "Muga Reserva",
+      "Our Lady of Guadalupe Acolytes",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Fento Ollo de Sapo Mencía",
+      "Fisher Unity Pinot Noir",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Macauley Pinot Noir",
+      "Elk Cove Five Mountain",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Marc Brédif Chinon",
+      "Braida Montebruna Barbera",
+      "Clos Petit Ona Grenache",
+      "San Simeon Stormwatch",
+      "Domaine Serene Grand Cheval",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "Alexander Valley Chardonnay",
+      "The Happy Wife",
     ],
     strong: [
       "Jean-Pierre Grossot Chablis",
       "Evening Land Seven Springs",
-      "Alexander Valley Chardonnay",
-      "The Happy Wife",
       "Paloma",
-      "The BG"
+      "The BG",
+      "Schloss Vollrads Riesling",
+      "Daniel Chotard Sancerre Rouge",
+      "RAEN Royal St Robert",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
     ],
     works: [
       "Jordan Cabernet Sauvignon",
@@ -1427,258 +3101,724 @@ const PAIRING_MAP = [
       "Creme Brulee",
       "Beignets",
       "Cheesecake",
-      "Carrot Cake"
+      "Carrot Cake",
+      "Sauteed Garlic Spinach",
+      "Pablo Sour",
+      "Transfusion",
+      "Laurent Perrier Le Cuvée Brut",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Stoneleigh Sauvignon Blanc",
+      "St Supéry Sauvignon Blanc",
+      "Elk Cove Pinot Blanc",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Joseph Mellot Sancerre",
+      "Tenuta di Arceno Chianti Classico",
+      "G.D. Vajra Albe Nebbiolo",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "Classic Vodka",
+      "Craft Vodka",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
+      "Spiced / Flavored Rum",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
     ],
     avoid: [
       "Opus One",
       "Shafer Hillside Select",
       "Heitz Martha's Vineyard",
       "Bowdie's Old Fashioned",
-      "The Manhattan"
-    ],
+      "The Manhattan",
+      "Barrel-Proof Bourbon",
+    ]
   },
   {
     name: "Truffle Fries",
     category: "side",
-    profile: [
-      "rich",
-      "umami",
-      "earthy",
-      "indulgent",
-      "fatty",
-      "savory"
-    ],
+    profile: ["rich","umami","earthy","indulgent","fatty","savory"],
     excellent: [
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Jordan Cabernet Sauvignon",
       "The Manhattan",
       "Bowdie's Old Fashioned",
-      "Silver Oak Cabernet Sauvignon"
-    ],
-    strong: [
+      "Silver Oak Cabernet Sauvignon",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Porterhouse",
+      "Sazerac",
+      "Lunaria Coste di Moro",
+      "Corazón del Sol Malbec",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Faust Napa Valley Cabernet",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Opus One",
+      "Jubilation by Colgin",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "The Prisoner Red Blend",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Highland Scotch",
+      "American Single Malt / Tennessee",
+      "Cognac / Brandy",
       "Far Niente Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "Vieux Carré",
+      "Château Gombaude-Guillot",
+      "Venge Scout's Honor",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Bruichladdich",
+    ],
+    strong: [
       "Not a Paper Plane",
       "Mushrooms",
-      "Château Gombaude-Guillot"
+      "Kansas City",
+      "Espresso Martini",
+      "Inhibited",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Ghost Block Zinfandel",
+      "Macauley Petite Syrah",
+      "Blended Scotch",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Espresso Old Fashioned",
+      "Barrel-Proof Bourbon",
+      "Peated Islay Scotch",
     ],
     works: [
       "Lingua Franca Avni Pinot Noir",
       "Evening Land Seven Springs",
-      "Espresso Old Fashioned",
-      "Venge Scout's Honor",
-      "Fattoria Le Pupille Saffredi"
+      "Fattoria Le Pupille Saffredi",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Au Gratin Potatoes",
+      "The BG",
+      "Negroni",
+      "New York Sour",
+      "Reposado Tequila",
+      "Amaro / Bitter Liqueur",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Stoneleigh Sauvignon Blanc",
       "Laurent Perrier Le Cuvée Brut",
       "French 75",
-      "Head Fake"
-    ],
+      "Head Fake",
+    ]
   },
   {
     name: "Lobster Mac",
     category: "side",
-    profile: [
-      "rich",
-      "creamy",
-      "seafood",
-      "indulgent",
-      "umami",
-      "dairy-rich"
-    ],
+    profile: ["rich","creamy","seafood","indulgent","umami","dairy-rich"],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Laurent Perrier Le Cuvée Brut",
-      "Jordan Cabernet Sauvignon"
+      "Jordan Cabernet Sauvignon",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Alexander Valley Chardonnay",
+      "Far Niente Cabernet Sauvignon",
+      "The Manhattan",
+      "Château Gombaude-Guillot",
     ],
     strong: [
       "Jean-Pierre Grossot Chablis",
       "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
-      "The Manhattan",
-      "Château Gombaude-Guillot"
+      "Porterhouse",
+      "Inhibited",
+      "Cognac / Brandy",
+      "Caymus Cabernet Sauvignon",
+      "Opus One",
     ],
     works: [
-      "Caymus Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
-      "Cucumber Gimlet"
+      "Cucumber Gimlet",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Fisher Unity Pinot Noir",
+      "Fattoria Le Pupille Saffredi",
+      "Domaine Serene Grand Cheval",
+      "Japanese Whisky",
     ],
     avoid: [
       "Scavino Barolo",
-      "Opus One",
       "Bowdie's Old Fashioned",
       "Espresso Old Fashioned",
-      "Negroni"
-    ],
+      "Negroni",
+    ]
   },
   {
     name: "Au Gratin Potatoes",
     category: "side",
-    profile: [
-      "rich",
-      "creamy",
-      "dairy-rich",
-      "savory",
-      "manchego",
-      "indulgent"
-    ],
+    profile: ["rich","creamy","dairy-rich","savory","manchego","indulgent"],
     excellent: [
       "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
-      "Silver Oak Cabernet Sauvignon"
+      "Silver Oak Cabernet Sauvignon",
+      "Aged Super-Premium Bourbon",
     ],
     strong: [
       "Far Niente Cabernet Sauvignon",
       "Scavino Barolo",
       "The Manhattan",
-      "Vieux Carré"
+      "Vieux Carré",
+      "Inhibited",
+      "Lunaria Coste di Moro",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Gundlach Bundschu Cabernet",
+      "Peju Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Spottswoode Lyndenhurst",
+      "Le Volte dell'Ornellaia",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "Château Gombaude-Guillot",
+      "G.D. Vajra Albe Nebbiolo",
+      "Château Batailley",
+      "Bodega Noemia A Lisa",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Light / Wheated Bourbon",
+      "Faust Napa Valley Cabernet",
+      "Standard High-Proof Bourbon",
+      "Bourbon-Cask Speyside",
     ],
     works: [
       "Lingua Franca Avni Pinot Noir",
-      "Faust Napa Valley Cabernet",
-      "Truffle Fries"
+      "Truffle Fries",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Kermit Lynch Côtes du Rhône",
+      "Corazón del Sol Malbec",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Opus One",
+      "Jubilation by Colgin",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Fattoria Le Pupille Saffredi",
+      "Muga Reserva",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Approachable Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Cognac / Brandy",
+      "Barrel-Proof Bourbon",
+      "Craft / Blended Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
       "Stoneleigh Sauvignon Blanc",
       "Head Fake",
-      "Paloma"
-    ],
+      "Paloma",
+    ]
   },
   {
     name: "Brussels and Belly",
     category: "side",
-    profile: [
-      "smoky",
-      "sweet",
-      "bitter",
-      "pork",
-      "rich",
-      "umami",
-      "bold"
-    ],
+    profile: ["smoky","sweet","bitter","pork","rich","umami","bold"],
     excellent: [
       "Caymus Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
       "Scavino Barolo",
       "Espresso Old Fashioned",
-      "Silver Oak Cabernet Sauvignon"
+      "Silver Oak Cabernet Sauvignon",
+      "Austin Hope Cabernet Sauvignon",
+      "Shafer Hillside Select",
+      "Ghost Block Zinfandel",
+      "Light / Wheated Bourbon",
+      "Bold / Premium Rye",
+      "American Single Malt / Tennessee",
+      "Mezcal",
+      "Barrel-Proof Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Añejo Tequila",
+      "Peated Islay Scotch",
     ],
     strong: [
       "Jordan Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "The BG",
-      "Not a Paper Plane"
+      "Not a Paper Plane",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Bone Marrow",
+      "Espresso Martini",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Fento Ollo de Sapo Mencía",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "Macauley Pinot Noir",
+      "1881 Napa Valley",
+      "Faust Napa Valley Cabernet",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Far Niente Cabernet Sauvignon",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Simon Family Estate Reserve",
+      "Opus One",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Fattoria Le Pupille Saffredi",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "Clos Petit Ona Grenache",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "The Prisoner Red Blend",
+      "Macauley Petite Syrah",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Approachable Rye",
+      "Blended Scotch",
+      "Irish Whiskey",
+      "Canadian Whisky",
+      "Dark / Aged Rum",
+      "Herbal / Anise Liqueur",
+      "Lingua Franca Avni Pinot Noir",
+      "Barrel-Finished Tequila",
     ],
     works: [
-      "Lingua Franca Avni Pinot Noir",
       "Negroni",
-      "Vieux Carré"
+      "Vieux Carré",
+      "The Manhattan",
+      "Sazerac",
+      "Inhibited",
+      "New York Sour",
+      "Evening Land Seven Springs",
+      "Heitz Martha's Vineyard",
+      "Jubilation by Colgin",
+      "Château Gombaude-Guillot",
+      "Highland Scotch",
+      "Reposado Tequila",
+      "Amaro / Bitter Liqueur",
+      "Aged Super-Premium Bourbon",
+      "Double-Oaked Bourbon",
+      "Extra Añejo Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Bruichladdich",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
       "Stoneleigh Sauvignon Blanc",
       "Head Fake",
-      "Cucumber Gimlet"
-    ],
+      "Cucumber Gimlet",
+    ]
   },
   {
     name: "Creamed Spinach",
     category: "side",
-    profile: [
-      "rich",
-      "creamy",
-      "dairy-rich",
-      "savory",
-      "garlic",
-      "indulgent"
-    ],
+    profile: ["rich","creamy","dairy-rich","savory","garlic","indulgent"],
     excellent: [
       "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
-      "Caymus Cabernet Sauvignon"
+      "Caymus Cabernet Sauvignon",
+      "Porterhouse",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "1881 Napa Valley",
+      "Gundlach Bundschu Cabernet",
+      "Peju Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Spottswoode Lyndenhurst",
+      "Le Volte dell'Ornellaia",
+      "Château Haut Segottes",
+      "San Simeon Stormwatch",
     ],
     strong: [
       "Far Niente Cabernet Sauvignon",
       "Scavino Barolo",
       "The Manhattan",
-      "Bowdie's Old Fashioned"
-    ],
-    works: [
+      "Bowdie's Old Fashioned",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Espresso Old Fashioned",
+      "Sazerac",
+      "Espresso Martini",
+      "Negroni",
+      "Not a Paper Plane",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Château de Rouillac",
+      "Venge Silencieux",
+      "Austin Hope Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "Ghost Block Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Nickel & Nickel Cabernet",
+      "Shafer 1.5",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Odette Cabernet Sauvignon",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Opus One",
+      "Jubilation by Colgin",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Fattoria Le Pupille Saffredi",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Gombaude-Guillot",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Sesti Brunello di Montalcino",
+      "Bodega Noemia A Lisa",
+      "Ghost Block Zinfandel",
+      "The Prisoner Red Blend",
+      "Venge Scout's Honor",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Cognac / Brandy",
       "Lingua Franca Avni Pinot Noir",
       "Faust Napa Valley Cabernet",
       "Evening Land Seven Springs",
-      "Vieux Carré"
+      "Vieux Carré",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Bourbon-Cask Speyside",
+    ],
+    works: [
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Alexander Valley Homestead Red",
+      "Domaine Tempier Bandol",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Sherried Speyside",
+      "Peated Islay Scotch",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
       "Stoneleigh Sauvignon Blanc",
       "Paloma",
-      "Margarita"
-    ],
+      "Margarita",
+    ]
   },
   {
     name: "Sauteed Garlic Spinach",
     category: "side",
-    profile: [
-      "savory",
-      "garlic",
-      "light",
-      "vegetable",
-      "clean"
-    ],
+    profile: ["savory","garlic","light","vegetable","clean"],
     excellent: [
       "Jean-Pierre Grossot Chablis",
       "Domaine de Berthiers Pouilly-Fumé",
       "Lingua Franca Avni Pinot Noir",
-      "Evening Land Seven Springs"
+      "Evening Land Seven Springs",
     ],
     strong: [
       "Elk Cove Pinot Blanc",
       "Le Garenne Rosé",
       "Cristom Mt Jefferson Cuvée",
       "Cucumber Gimlet",
-      "Bee's Knees"
+      "Bee's Knees",
+      "Stoneleigh Sauvignon Blanc",
+      "St Supéry Sauvignon Blanc",
+      "Kermit Lynch Côtes du Rhône",
+      "Fento Ollo de Sapo Mencía",
+      "Fisher Unity Pinot Noir",
+      "Marc Brédif Chinon",
+      "Clos Petit Ona Grenache",
     ],
     works: [
       "Jordan Cabernet Sauvignon",
       "Faroe Island Salmon",
       "Roast Half Chicken",
-      "French 75"
+      "French 75",
+      "Alexander Valley Chardonnay",
+      "Schloss Vollrads Riesling",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Daniel Chotard Sancerre Rouge",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Bowdie's Old Fashioned",
-      "Espresso Old Fashioned"
-    ],
+      "Espresso Old Fashioned",
+    ]
   },
   {
     name: "Mushrooms",
     category: "side",
-    profile: [
-      "umami",
-      "earthy",
-      "savory",
-      "rich",
-      "meaty"
-    ],
+    profile: ["umami","earthy","savory","rich","meaty"],
     excellent: [
       "Scavino Barolo",
       "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
-      "The Manhattan"
+      "The Manhattan",
+      "Lunaria Coste di Moro",
+      "Kermit Lynch Côtes du Rhône",
+      "Alexander Valley Homestead Red",
+      "Scotto Cellars The Lost Chapters",
+      "Corazón del Sol Malbec",
+      "Fento Ollo de Sapo Mencía",
+      "Château de Rouillac",
+      "St Supéry Cabernet Sauvignon",
+      "Quilt Cabernet Sauvignon",
+      "Macauley Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "1881 Napa Valley",
+      "Gundlach Bundschu Cabernet",
+      "Venge Silencieux",
+      "Peju Cabernet Sauvignon",
+      "Teeter Totter Cabernet Sauvignon",
+      "J. Davies Cabernet Sauvignon",
+      "Lail Vineyards Blueprint",
+      "Spottswoode Lyndenhurst",
+      "Shafer 1.5",
+      "Odette Cabernet Sauvignon",
+      "Marc Brédif Chinon",
+      "Braida Montebruna Barbera",
+      "Les Pallières Raciné",
+      "Le Volte dell'Ornellaia",
+      "Muga Reserva",
+      "Tenuta di Arceno Chianti Classico",
+      "Château Haut Segottes",
+      "Clos Petit Ona Grenache",
+      "G.D. Vajra Albe Nebbiolo",
+      "Domaine Tempier Bandol",
+      "Domaine du Grand Tinel",
+      "Pio Cesare Barbaresco",
+      "Château Batailley",
+      "Château Beaucastel",
+      "Poderi Aldo Conterno Nebbiolo",
+      "Le Ragnaie Brunello",
+      "Bodega Noemia A Lisa",
+      "The Prisoner Red Blend",
+      "Alexander Valley Cyrus",
+      "Epoch Ingenuity",
+      "San Simeon Stormwatch",
+      "St Supéry Élu Meritage",
+      "Darioush Cabernet Franc",
+      "Keenan Mernet",
+      "Light / Wheated Bourbon",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Faust Napa Valley Cabernet",
+      "Château Gombaude-Guillot",
+      "Venge Scout's Honor",
+      "Aged Super-Premium Bourbon",
+      "Standard High-Proof Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Bruichladdich",
     ],
     strong: [
       "Far Niente Cabernet Sauvignon",
@@ -1687,359 +3827,577 @@ const PAIRING_MAP = [
       "Not a Paper Plane",
       "Vieux Carré",
       "Negroni",
-      "Fattoria Le Pupille Saffredi"
+      "Fattoria Le Pupille Saffredi",
+      "Sazerac",
+      "Cristom Mt Jefferson Cuvée",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "Austin Hope Cabernet Sauvignon",
+      "Brandlin Estate Cabernet Sauvignon",
+      "Nickel & Nickel Cabernet",
+      "Cade Cabernet Sauvignon",
+      "Darioush Cabernet Sauvignon",
+      "Heitz Trailside Vineyard",
+      "Frias Block 5",
+      "Macauley Stagecoach Vineyard",
+      "Freemark Abbey Bosché",
+      "Venge Family Reserve",
+      "Lail Vineyards Daniel Cuvée",
+      "Heitz Martha's Vineyard",
+      "Simon Family Estate Reserve",
+      "Shafer Hillside Select",
+      "Jubilation by Colgin",
+      "Sesti Brunello di Montalcino",
+      "Ghost Block Zinfandel",
+      "Macauley Petite Syrah",
+      "Domaine Serene Grand Cheval",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Irish Whiskey",
+      "Reposado Tequila",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
+      "Truffle Fries",
+      "Barrel-Proof Bourbon",
+      "Craft / Blended Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Barrel-Finished Tequila",
+      "Peated Islay Scotch",
     ],
     works: [
       "Evening Land Seven Springs",
-      "Faust Napa Valley Cabernet",
-      "Truffle Fries",
-      "Château Gombaude-Guillot",
-      "Venge Scout's Honor"
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "The Tomahawk",
+      "Porterhouse",
+      "Daniel Chotard Sancerre Rouge",
+      "Opus One",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
       "Stoneleigh Sauvignon Blanc",
       "Head Fake",
-      "Paloma"
-    ],
+      "Paloma",
+    ]
   },
   {
     name: "Seasonal Vegetables",
     category: "side",
-    profile: [
-      "variable",
-      "light",
-      "vegetable",
-      "seasonal"
-    ],
+    variable: true,
+    profile: ["variable","light","vegetable","seasonal"],
     strong: [
       "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
       "Le Garenne Rosé",
-      "Elk Cove Pinot Blanc"
+      "Elk Cove Pinot Blanc",
     ],
-    variable: true,
-    variablePrompt: "What are today's seasonal vegetables?",
+    variablePrompt: "What are today's seasonal vegetables?"
   },
   {
     name: "Honey Roasted Carrots",
     category: "side",
-    profile: [
-      "sweet",
-      "earthy",
-      "caramelized",
-      "vegetable",
-      "warm",
-      "roasted"
-    ],
+    profile: ["sweet","earthy","caramelized","vegetable","warm","roasted"],
     excellent: [
       "Lingua Franca Avni Pinot Noir",
       "Cristom Mt Jefferson Cuvée",
-      "Le Garenne Rosé"
+      "Le Garenne Rosé",
     ],
     strong: [
       "Keenan Chardonnay",
       "Evening Land Seven Springs",
       "Elk Cove Pinot Blanc",
-      "Alexander Valley Chardonnay"
+      "Alexander Valley Chardonnay",
     ],
     works: [
       "Fisher Unity Pinot Noir",
       "Jordan Cabernet Sauvignon",
       "Raventós Cava de NIT Rosé Brut",
-      "Schloss Vollrads Riesling"
+      "Schloss Vollrads Riesling",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Stoneleigh Sauvignon Blanc"
-    ],
+      "Stoneleigh Sauvignon Blanc",
+    ]
   },
   {
     name: "Broccolini",
     category: "side",
-    profile: [
-      "bitter",
-      "green",
-      "vegetable",
-      "grilled",
-      "light",
-      "herbal"
-    ],
+    profile: ["bitter","green","vegetable","grilled","light","herbal"],
     excellent: [
       "Jean-Pierre Grossot Chablis",
       "Domaine de Berthiers Pouilly-Fumé",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     strong: [
       "Joseph Mellot Sancerre",
       "Stoneleigh Sauvignon Blanc",
       "Evening Land Seven Springs",
-      "Elk Cove Pinot Blanc"
+      "Elk Cove Pinot Blanc",
+      "Le Garenne Rosé",
     ],
     works: [
-      "Le Garenne Rosé",
       "Cristom Mt Jefferson Cuvée",
       "Cucumber Gimlet",
-      "Bee's Knees"
+      "Bee's Knees",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Asparagus",
     category: "side",
-    profile: [
-      "grassy",
-      "green",
-      "vegetal",
-      "spring",
-      "light",
-      "herbal"
-    ],
+    profile: ["grassy","green","vegetal","spring","light","herbal"],
     excellent: [
       "Stoneleigh Sauvignon Blanc",
       "Joseph Mellot Sancerre",
       "Domaine de Berthiers Pouilly-Fumé",
-      "Jean-Pierre Grossot Chablis"
+      "Jean-Pierre Grossot Chablis",
+      "Le Garenne Rosé",
     ],
     strong: [
       "St Supéry Sauvignon Blanc",
       "Elk Cove Pinot Blanc",
-      "Le Garenne Rosé",
-      "Lingua Franca Avni Pinot Noir"
+      "Lingua Franca Avni Pinot Noir",
     ],
     works: [
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
-      "Bee's Knees"
+      "Bee's Knees",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Shafer Hillside Select",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Creme Brulee",
     category: "dessert",
-    profile: [
-      "sweet",
-      "creamy",
-      "vanilla",
-      "delicate",
-      "classic",
-      "dairy-rich"
-    ],
+    profile: ["sweet","creamy","vanilla","delicate","classic","dairy-rich"],
     excellent: [
       "G.D. Vajra Moscato d'Asti",
       "Vin Santo",
       "Sauternes Glass",
       "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny"
+      "Graham's 20 Year Tawny",
+      "Casa LBV Port",
+      "Pineau des Charentes",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
+      "Inhibited",
+      "Taylor Fladgate Tawny",
+      "Cream Liqueur",
+      "Nut Liqueur",
+      "Licor 43",
+      "Double-Oaked Bourbon",
     ],
     strong: [
-      "Inhibited",
       "Espresso Martini",
-      "Baileys Irish Cream",
-      "Frangelico",
-      "Taylor Fladgate Tawny"
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Vintage Bottle",
+      "Cognac / Brandy",
+      "Coffee Liqueur",
+      "Grand Marnier",
+      "Limoncello",
+      "Wine-Finished Bourbon",
+      "Extra Añejo Tequila",
+      "Sherried Speyside",
     ],
     works: [
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
-      "Beignets"
-    ],
-    avoid: [
+      "Beignets",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
+      "Vieux Carré",
+      "Sazerac",
+      "Jordan Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon",
+      "Far Niente Cabernet Sauvignon",
+      "Dark / Aged Rum",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Opus One",
       "Bowdie's Old Fashioned",
-      "Negroni"
+      "Chambord",
     ],
+    avoid: [
+      "Negroni",
+      "Fireball Whisky",
+    ]
   },
   {
     name: "Cheesecake",
     category: "dessert",
-    profile: [
-      "sweet",
-      "creamy",
-      "rich",
-      "tangy",
-      "dairy-rich",
-      "dense"
-    ],
+    profile: ["sweet","creamy","rich","tangy","dairy-rich","dense"],
     excellent: [
       "G.D. Vajra Moscato d'Asti",
       "Vin Santo",
       "Graham's 10 Year Tawny",
       "Sauternes Glass",
-      "Espresso Martini"
-    ],
-    strong: [
+      "Espresso Martini",
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Vintage Bottle",
+      "Casa LBV Port",
+      "Pineau des Charentes",
+      "Dark / Aged Rum",
+      "Spiced / Flavored Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
       "Inhibited",
       "Graham's 20 Year Tawny",
-      "Frangelico",
-      "Baileys Irish Cream",
-      "Taylor Fladgate Tawny"
+      "Taylor Fladgate Tawny",
+      "Il Colle Prosecco Superiore",
+      "Cream Liqueur",
+      "Limoncello",
+    ],
+    strong: [
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Licor 43",
+      "Chambord",
+      "Wine-Finished Bourbon",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
     ],
     works: [
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
-      "Il Colle Prosecco Superiore"
-    ],
-    avoid: [
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Bone Marrow",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
+      "Vieux Carré",
+      "Sazerac",
+      "Jordan Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon",
+      "Far Niente Cabernet Sauvignon",
+      "Light / Wheated Bourbon",
+      "Highland Scotch",
+      "Classic Vodka",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Opus One",
       "Bowdie's Old Fashioned",
-      "Negroni"
+      "Grand Marnier",
+      "Aged Super-Premium Bourbon",
+      "Standard High-Proof Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Hendrick's Family",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
     ],
+    avoid: [
+      "Negroni",
+      "Mezcal",
+      "Fireball Whisky",
+      "Barrel-Proof Bourbon",
+      "Peated Islay Scotch",
+    ]
   },
   {
     name: "Carrot Cake",
     category: "dessert",
-    profile: [
-      "sweet",
-      "spiced",
-      "warm",
-      "cream-cheese",
-      "dense",
-      "earthy"
-    ],
+    profile: ["sweet","spiced","warm","cream-cheese","dense","earthy"],
     excellent: [
       "Graham's 10 Year Tawny",
       "Graham's 20 Year Tawny",
       "G.D. Vajra Moscato d'Asti",
       "Espresso Martini",
-      "Frangelico"
-    ],
-    strong: [
+      "Taylor Fladgate Tawny",
+      "Casa LBV Port",
+      "Dark / Aged Rum",
+      "Spiced / Flavored Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
       "Inhibited",
       "Vin Santo",
       "Sauternes Glass",
-      "Baileys Irish Cream",
-      "Espresso Old Fashioned"
+      "Cream Liqueur",
+      "Fireball Whisky",
+      "Wine-Finished Bourbon",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+    ],
+    strong: [
+      "Espresso Old Fashioned",
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Vintage Bottle",
+      "Pineau des Charentes",
+      "Light / Wheated Bourbon",
+      "Highland Scotch",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Limoncello",
+      "Licor 43",
+      "Aged Super-Premium Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Bruichladdich",
     ],
     works: [
       "Beignets",
-      "Il Colle Prosecco Superiore"
+      "Il Colle Prosecco Superiore",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Roast Half Chicken",
+      "Jordan Cabernet Sauvignon",
+      "Far Niente Cabernet Sauvignon",
+      "Approachable Rye",
+      "Blended Scotch",
+      "Irish Whiskey",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Herbal / Anise Liqueur",
+      "Caymus Cabernet Sauvignon",
+      "Coffee Liqueur",
+      "Chambord",
+      "Barrel-Proof Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Barrel-Finished Tequila",
     ],
     avoid: [
-      "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Bowdie's Old Fashioned",
       "Negroni",
-      "Sazerac"
-    ],
+      "Sazerac",
+    ]
   },
   {
     name: "Chocolate Brownie",
     category: "dessert",
-    profile: [
-      "sweet",
-      "rich",
-      "chocolate",
-      "dense",
-      "indulgent"
-    ],
+    profile: ["sweet","rich","chocolate","dense","indulgent"],
     excellent: [
       "Espresso Martini",
       "Inhibited",
       "Graham's 20 Year Tawny",
       "Espresso Old Fashioned",
-      "Frangelico"
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Tawny",
+      "Taylor Fladgate Vintage Bottle",
+      "Casa LBV Port",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
+      "Graham's 10 Year Tawny",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Grand Marnier",
+      "Chambord",
+      "Nut Liqueur",
+      "Barrel-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
     ],
     strong: [
       "G.D. Vajra Moscato d'Asti",
-      "Kahlua",
-      "Baileys Irish Cream",
-      "Graham's 10 Year Tawny"
+      "Spiced / Flavored Rum",
+      "Vin Santo",
+      "Sauternes Glass",
+      "Fireball Whisky",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
     ],
     works: [
-      "Vin Santo",
-      "Sauternes Glass"
-    ],
-    avoid: [
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Bone Marrow",
+      "Bowdie's Old Fashioned",
+      "Vieux Carré",
+      "Jordan Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon",
+      "Far Niente Cabernet Sauvignon",
+      "Opus One",
+      "Light / Wheated Bourbon",
+      "Bold / Premium Rye",
+      "Mezcal",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Sazerac",
-      "Negroni",
-      "Stoneleigh Sauvignon Blanc"
+      "Licor 43",
+      "Standard High-Proof Bourbon",
+      "Peated Islay Scotch",
     ],
+    avoid: [
+      "Negroni",
+      "Stoneleigh Sauvignon Blanc",
+      "Limoncello",
+    ]
   },
   {
     name: "Peanut Butter Brownie",
     category: "dessert",
-    profile: [
-      "sweet",
-      "rich",
-      "chocolate",
-      "nutty",
-      "dense",
-      "indulgent"
-    ],
+    profile: ["sweet","rich","chocolate","nutty","dense","indulgent"],
     excellent: [
       "Espresso Martini",
       "Inhibited",
       "Graham's 20 Year Tawny",
       "Espresso Old Fashioned",
-      "Frangelico"
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Vintage Bottle",
+      "Casa LBV Port",
+      "Dark / Aged Rum",
+      "Amaro / Bitter Liqueur",
+      "Graham's 10 Year Tawny",
+      "Vin Santo",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Craft / Blended Bourbon",
+      "Wine-Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Barrel-Finished Tequila",
     ],
     strong: [
       "G.D. Vajra Moscato d'Asti",
-      "Kahlua",
-      "Baileys Irish Cream",
-      "Graham's 10 Year Tawny"
+      "Taylor Fladgate Tawny",
+      "Spiced / Flavored Rum",
+      "Cognac / Brandy",
+      "Sauternes Glass",
+      "Nut Liqueur",
+      "Chambord",
+      "Barrel-Proof Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Sherried Speyside",
     ],
     works: [
-      "Vin Santo",
-      "Sauternes Glass"
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Bone Marrow",
+      "Bowdie's Old Fashioned",
+      "Opus One",
+      "Bold / Premium Rye",
+      "Grand Marnier",
+      "Licor 43",
+      "Fireball Whisky",
+      "Aged Super-Premium Bourbon",
+      "Standard High-Proof Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Bourbon-Cask Speyside",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Sazerac",
       "Negroni",
-      "Stoneleigh Sauvignon Blanc"
-    ],
+      "Stoneleigh Sauvignon Blanc",
+      "Limoncello",
+    ]
   },
   {
     name: "Beignets",
     category: "dessert",
-    profile: [
-      "sweet",
-      "light",
-      "fried",
-      "powdered-sugar",
-      "airy",
-      "approachable"
-    ],
+    profile: ["sweet","light","fried","powdered-sugar","airy","approachable"],
     excellent: [
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Il Colle Prosecco Superiore",
-      "Frangelico"
+      "Taylor Fladgate Tawny",
+      "Pineau des Charentes",
+      "Spiced / Flavored Rum",
+      "Herbal / Anise Liqueur",
+      "Sauternes Glass",
+      "Vin Santo",
+      "Inhibited",
+      "Grand Marnier",
+      "Hendrick's Family",
+      "Smooth / Citrus Craft Gin",
     ],
     strong: [
       "Graham's 10 Year Tawny",
-      "Sauternes Glass",
       "Espresso Martini",
-      "Baileys Irish Cream"
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Schloss Vollrads Riesling",
+      "Graham's 20 Year Tawny",
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Vintage Bottle",
+      "Casa LBV Port",
+      "White / Light Rum",
+      "Dark / Aged Rum",
+      "Cream Liqueur",
+      "Nut Liqueur",
+      "Licor 43",
+      "Limoncello",
+      "Coffee Liqueur",
     ],
     works: [
-      "Vin Santo",
-      "Inhibited"
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Porterhouse",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
+      "Creme Brulee",
+      "Carrot Cake",
+      "Espresso Old Fashioned",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "London Dry Gin",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Chambord",
+      "Botanical-Forward Craft Gin",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
@@ -2047,116 +4405,121 @@ const PAIRING_MAP = [
       "Opus One",
       "Bowdie's Old Fashioned",
       "Negroni",
-      "Sazerac"
-    ],
+      "Sazerac",
+      "Fireball Whisky",
+    ]
   },
   {
     name: "Chocolate Cake",
     category: "dessert",
-    profile: [
-      "sweet",
-      "rich",
-      "chocolate",
-      "layered",
-      "indulgent",
-      "bold"
-    ],
     oos: true,
+    profile: ["sweet","rich","chocolate","layered","indulgent","bold"],
     excellent: [
       "Espresso Martini",
       "Inhibited",
       "Graham's 20 Year Tawny",
       "Espresso Old Fashioned",
-      "Frangelico"
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Vintage Bottle",
+      "Coffee Liqueur",
+      "Chambord",
+      "Grand Marnier",
     ],
     strong: [
       "G.D. Vajra Moscato d'Asti",
-      "Kahlua",
-      "Baileys Irish Cream",
-      "Vin Santo"
+      "Vin Santo",
+      "Graham's 10 Year Tawny",
+      "Taylor Fladgate Tawny",
+      "Casa LBV Port",
+      "Cream Liqueur",
+      "Nut Liqueur",
     ],
     works: [
-      "Sauternes Glass"
+      "Sauternes Glass",
+      "Licor 43",
+      "Fireball Whisky",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Sazerac",
       "Negroni",
-      "Stoneleigh Sauvignon Blanc"
-    ],
+      "Stoneleigh Sauvignon Blanc",
+      "Limoncello",
+    ]
   },
   {
     name: "Mocha Creme",
     category: "dessert",
-    profile: [
-      "sweet",
-      "coffee",
-      "chocolate",
-      "creamy",
-      "rich",
-      "dessert"
-    ],
     oos: true,
+    profile: ["sweet","coffee","chocolate","creamy","rich","dessert"],
     excellent: [
       "Espresso Martini",
       "Inhibited",
       "Espresso Old Fashioned",
       "Graham's 20 Year Tawny",
-      "Frangelico"
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Vintage Bottle",
+      "Coffee Liqueur",
+      "Cream Liqueur",
+      "Grand Marnier",
+      "Chambord",
+      "Nut Liqueur",
     ],
     strong: [
       "G.D. Vajra Moscato d'Asti",
-      "Kahlua",
-      "Baileys Irish Cream",
-      "Vin Santo"
+      "Vin Santo",
+      "Graham's 10 Year Tawny",
+      "Taylor Fladgate Tawny",
+      "Casa LBV Port",
+      "Licor 43",
     ],
     works: [
-      "Sauternes Glass"
+      "Sauternes Glass",
+      "Wine-Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Extra Añejo Tequila",
+      "Sherried Speyside",
     ],
     avoid: [
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Sazerac",
       "Negroni",
-      "Stoneleigh Sauvignon Blanc"
-    ],
+      "Stoneleigh Sauvignon Blanc",
+      "Limoncello",
+      "Fireball Whisky",
+    ]
   },
   {
     name: "Bowdie's Old Fashioned",
     category: "cocktail",
-    profile: [
-      "bold",
-      "whiskey",
-      "sweet",
-      "oak",
-      "smoky",
-      "spirit-forward"
-    ],
+    profile: ["bold","whiskey","sweet","oak","smoky","spirit-forward"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
       "Prime Tartare",
-      "Brussels and Belly"
+      "Brussels and Belly",
+      "Truffle Fries",
+      "Mushrooms",
     ],
     strong: [
       "Kansas City",
       "Filet Mignon",
-      "Truffle Fries",
       "Caymus Cabernet Sauvignon",
-      "Lardons",
-      "Mushrooms"
+      "Bone-In Filet",
+      "Porterhouse",
+      "Creamed Spinach",
     ],
     works: [
       "House Wedge",
       "Shrimp Bisque",
-      "Creamed Spinach",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
       "Cheesecake",
       "Creme Brulee",
-      "Loaded Potato"
+      "Loaded Potato",
     ],
     avoid: [
       "Laurent Perrier Le Cuvée Brut",
@@ -2173,112 +4536,156 @@ const PAIRING_MAP = [
       "Chilean Seabass",
       "Rainbow Trout",
       "Broccolini",
-      "Asparagus"
-    ],
+      "Asparagus",
+      "Seafood Tower",
+      "Shrimp Cocktail",
+      "Escargot",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
+      "Lobster Mac",
+      "Sauteed Garlic Spinach",
+      "Carrot Cake",
+      "Beignets",
+      "G.D. Vajra Moscato d'Asti",
+      "Il Colle Prosecco Superiore",
+      "Stoneleigh Sauvignon Blanc",
+      "Alexander Valley Chardonnay",
+      "Elk Cove Pinot Blanc",
+      "Jean-Pierre Grossot Chablis",
+      "Schloss Vollrads Riesling",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Our Lady of Guadalupe Acolytes",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Lingua Franca Avni Pinot Noir",
+      "Fisher Unity Pinot Noir",
+      "Cristom Mt Jefferson Cuvée",
+      "Daniel Chotard Sancerre Rouge",
+      "Evening Land Seven Springs",
+      "Marimar Estate Christina",
+      "Jax Calesa Vineyard Pinot Noir",
+      "Macauley Pinot Noir",
+      "Elk Cove Five Mountain",
+      "RAEN Royal St Robert",
+      "Sanford & Benedict Pinot Noir",
+      "J Davies Ferrington Vineyards",
+      "Marc Brédif Chinon",
+      "Domaine Serene Grand Cheval",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Graham's 2017 Vintage Port",
+      "Taylor Fladgate Tawny",
+      "Taylor Fladgate Vintage Bottle",
+      "Casa LBV Port",
+      "Pineau des Charentes",
+      "Vin Santo",
+      "Sauternes Glass",
+      "Blanco Tequila",
+      "London Dry Gin",
+      "Japanese Gin",
+      "White / Light Rum",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Limoncello",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+    ]
   },
   {
     name: "Espresso Old Fashioned",
     category: "cocktail",
-    profile: [
-      "bold",
-      "whiskey",
-      "coffee",
-      "sweet",
-      "rich",
-      "dark"
-    ],
+    profile: ["bold","whiskey","coffee","sweet","rich","dark"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Brussels and Belly",
-      "Lardons",
       "Chocolate Cake",
-      "Chocolate Brownie"
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Mocha Creme",
     ],
     strong: [
       "Kansas City",
       "Filet Mignon",
       "Truffle Fries",
       "Creamed Spinach",
-      "Peanut Butter Brownie",
-      "Mocha Creme"
+      "Prime Tartare",
+      "Carrot Cake",
     ],
     works: [
       "House Wedge",
       "Shrimp Bisque",
-      "Beignets"
+      "Beignets",
     ],
     avoid: [
       "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Crab Cake",
       "Burrata",
-      "Seafood Tower"
-    ],
+      "Seafood Tower",
+      "Lobster Mac",
+      "Sauteed Garlic Spinach",
+    ]
   },
   {
     name: "The Manhattan",
     category: "cocktail",
-    profile: [
-      "bold",
-      "whiskey",
-      "bitter",
-      "sweet",
-      "spirit-forward",
-      "classic"
-    ],
+    profile: ["bold","whiskey","bitter","sweet","spirit-forward","classic"],
     excellent: [
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Truffle Fries",
       "Bone Marrow",
-      "Lobster Mac"
+      "Lobster Mac",
+      "Porterhouse",
+      "Mushrooms",
     ],
     strong: [
       "Cowboy Ribeye",
       "Prime Tartare",
       "Creamed Spinach",
-      "Mushrooms",
       "Au Gratin Potatoes",
-      "Loaded Potato"
+      "Loaded Potato",
     ],
     works: [
       "House Wedge",
       "Brussels and Belly",
-      "French Onion"
+      "French Onion",
     ],
     avoid: [
       "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Crab Cake",
-      "Burrata"
-    ],
+      "Burrata",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
+    ]
   },
   {
     name: "Vieux Carré",
     category: "cocktail",
-    profile: [
-      "bold",
-      "whiskey",
-      "cognac",
-      "herbal",
-      "complex",
-      "spirit-forward"
-    ],
+    profile: ["bold","whiskey","cognac","herbal","complex","spirit-forward"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Bone Marrow",
       "Prime Tartare",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
-      "Mushrooms"
+      "Mushrooms",
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
@@ -2289,39 +4696,32 @@ const PAIRING_MAP = [
       "Creme Brulee",
       "French Onion",
       "Mushroom Bisque",
-      "Loaded Potato"
+      "Loaded Potato",
     ],
     avoid: [
       "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Crab Cake",
-      "Burrata"
-    ],
+      "Burrata",
+    ]
   },
   {
     name: "Sazerac",
     category: "cocktail",
-    profile: [
-      "bold",
-      "rye",
-      "herbal",
-      "anise",
-      "spirit-forward",
-      "classic"
-    ],
+    profile: ["bold","rye","herbal","anise","spirit-forward","classic"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Prime Tartare",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
       "Grilled Caesar",
-      "Mushrooms"
+      "Mushrooms",
     ],
     works: [
       "House Wedge",
@@ -2329,150 +4729,132 @@ const PAIRING_MAP = [
       "Shrimp Bisque",
       "Chocolate Brownie",
       "Cheesecake",
-      "Creme Brulee"
+      "Creme Brulee",
     ],
     avoid: [
       "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti"
-    ],
+      "G.D. Vajra Moscato d'Asti",
+      "Carrot Cake",
+      "Peanut Butter Brownie",
+      "Beignets",
+      "Chocolate Cake",
+      "Mocha Creme",
+    ]
   },
   {
     name: "The BG",
     category: "cocktail",
-    profile: [
-      "whiskey",
-      "grapefruit",
-      "citrus",
-      "honey",
-      "floral",
-      "ginger",
-      "refreshing",
-      "sessionable"
-    ],
+    profile: ["whiskey","grapefruit","citrus","honey","floral","ginger","refreshing","sessionable"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Porterhouse",
       "Brussels and Belly",
       "House Wedge",
       "Grilled Caesar",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
+      "Roast Half Chicken",
     ],
     works: [
       "Filet Mignon",
       "Truffle Fries",
       "Prime Tartare",
-      "Gumbo"
+      "Gumbo",
     ],
     avoid: [
       "Opus One",
       "Seared Scallops",
       "Burrata",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+      "Laurent Perrier Le Cuvée Brut",
+    ]
   },
   {
     name: "French 75",
     category: "cocktail",
-    profile: [
-      "sparkling",
-      "gin",
-      "citrus",
-      "light",
-      "celebratory",
-      "effervescent"
-    ],
+    profile: ["sparkling","gin","citrus","light","celebratory","effervescent"],
     excellent: [
       "Crab Cake",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
       "Escargot",
-      "Seared Scallops"
+      "Seared Scallops",
     ],
     strong: [
       "Prime Tartare",
       "House Wedge",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "Filet Mignon",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
+      "Sauteed Garlic Spinach",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Opus One"
-    ],
+      "Opus One",
+      "Truffle Fries",
+    ]
   },
   {
     name: "Bee's Knees",
     category: "cocktail",
-    profile: [
-      "gin",
-      "honey",
-      "citrus",
-      "light",
-      "sweet",
-      "approachable"
-    ],
+    profile: ["gin","honey","citrus","light","sweet","approachable"],
     excellent: [
       "Crab Cake",
       "Burrata",
       "Escargot",
       "Shrimp Cocktail",
-      "Seared Scallops"
+      "Seared Scallops",
     ],
     strong: [
       "House Wedge",
       "Prime Tartare",
       "Seafood Tower",
-      "Grilled Caesar"
+      "Grilled Caesar",
+      "Sauteed Garlic Spinach",
     ],
     works: [
       "Filet Mignon",
       "Shrimp Bisque",
       "Broccolini",
-      "Asparagus"
+      "Asparagus",
+      "Faroe Island Salmon",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
-      "Opus One"
-    ],
+      "Opus One",
+    ]
   },
   {
     name: "Cucumber Gimlet",
     category: "cocktail",
-    profile: [
-      "gin",
-      "cucumber",
-      "citrus",
-      "fresh",
-      "light",
-      "herbaceous"
-    ],
+    profile: ["gin","cucumber","citrus","fresh","light","herbaceous"],
     excellent: [
       "Crab Cake",
       "Burrata",
       "Seared Scallops",
       "Shrimp Cocktail",
-      "House Wedge"
+      "House Wedge",
     ],
     strong: [
       "Escargot",
       "Seafood Tower",
       "Prime Tartare",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
+      "Faroe Island Salmon",
+      "Sauteed Garlic Spinach",
     ],
     works: [
       "Filet Mignon",
@@ -2481,7 +4863,8 @@ const PAIRING_MAP = [
       "Salt-Cured Halibut",
       "Rainbow Trout",
       "Broccolini",
-      "Asparagus"
+      "Asparagus",
+      "Lobster Mac",
     ],
     avoid: [
       "The Tomahawk",
@@ -2490,144 +4873,117 @@ const PAIRING_MAP = [
       "Scavino Barolo",
       "Bone Marrow",
       "French Onion",
-      "Loaded Potato"
-    ],
+      "Loaded Potato",
+      "Brussels and Belly",
+    ]
   },
   {
     name: "Vesper",
     category: "cocktail",
-    profile: [
-      "gin",
-      "vodka",
-      "citrus",
-      "dry",
-      "spirit-forward",
-      "classic"
-    ],
+    profile: ["gin","vodka","citrus","dry","spirit-forward","classic"],
     excellent: [
       "Seared Scallops",
       "Crab Cake",
       "Seafood Tower",
       "Shrimp Cocktail",
-      "Prime Tartare"
+      "Prime Tartare",
     ],
     strong: [
       "Burrata",
       "House Wedge",
       "Escargot",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Filet Mignon",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "The Tomahawk",
       "Caymus Cabernet Sauvignon",
       "Opus One",
-      "Bone Marrow"
-    ],
+      "Bone Marrow",
+    ]
   },
   {
     name: "Corpse Reviver",
     category: "cocktail",
-    profile: [
-      "gin",
-      "citrus",
-      "absinthe",
-      "dry",
-      "complex",
-      "light"
-    ],
+    profile: ["gin","citrus","absinthe","dry","complex","light"],
     excellent: [
       "Seared Scallops",
       "Crab Cake",
       "Escargot",
       "Shrimp Cocktail",
-      "Burrata"
+      "Burrata",
     ],
     strong: [
       "House Wedge",
       "Prime Tartare",
       "Seafood Tower",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "Filet Mignon",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Opus One"
-    ],
+      "Opus One",
+    ]
   },
   {
     name: "Aviation",
     category: "cocktail",
-    profile: [
-      "gin",
-      "floral",
-      "cherry",
-      "citrus",
-      "light",
-      "unique"
-    ],
+    profile: ["gin","floral","cherry","citrus","light","unique"],
     excellent: [
       "Burrata",
       "Crab Cake",
       "Seared Scallops",
       "Shrimp Cocktail",
-      "Escargot"
+      "Escargot",
     ],
     strong: [
       "House Wedge",
       "Prime Tartare",
       "Seafood Tower",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Filet Mignon",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+    ]
   },
   {
     name: "Paloma",
     category: "cocktail",
-    profile: [
-      "tequila",
-      "grapefruit",
-      "citrus",
-      "light",
-      "refreshing",
-      "approachable"
-    ],
+    profile: ["tequila","grapefruit","citrus","light","refreshing","approachable"],
     excellent: [
       "Crab Cake",
       "Seared Scallops",
       "Shrimp Cocktail",
       "Burrata",
-      "House Wedge"
+      "House Wedge",
     ],
     strong: [
       "Prime Tartare",
       "Seafood Tower",
       "Shrimp Bisque",
-      "Grilled Caesar"
+      "Grilled Caesar",
+      "Roast Half Chicken",
     ],
     works: [
       "Filet Mignon",
       "Faroe Island Salmon",
-      "Roast Half Chicken",
-      "Gumbo"
+      "Gumbo",
     ],
     avoid: [
       "The Tomahawk",
@@ -2636,99 +4992,85 @@ const PAIRING_MAP = [
       "Opus One",
       "Bone Marrow",
       "French Onion",
-      "Loaded Potato"
-    ],
+      "Loaded Potato",
+      "Au Gratin Potatoes",
+      "Creamed Spinach",
+      "Mushrooms",
+    ]
   },
   {
     name: "Pablo Sour",
     category: "cocktail",
-    profile: [
-      "tequila",
-      "citrus",
-      "sour",
-      "egg-white",
-      "balanced",
-      "medium"
-    ],
+    profile: ["tequila","citrus","sour","egg-white","balanced","medium"],
     excellent: [
       "Crab Cake",
       "Seared Scallops",
       "Prime Tartare",
       "House Wedge",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     strong: [
       "Burrata",
       "Seafood Tower",
       "Grilled Caesar",
-      "Filet Mignon"
+      "Filet Mignon",
     ],
     works: [
       "Kansas City",
       "Faroe Island Salmon",
-      "Roast Half Chicken"
+      "Roast Half Chicken",
     ],
     avoid: [
       "The Tomahawk",
       "Caymus Cabernet Sauvignon",
       "Opus One",
-      "Bone Marrow"
-    ],
+      "Bone Marrow",
+    ]
   },
   {
     name: "Margarita",
     category: "cocktail",
-    profile: [
-      "tequila",
-      "citrus",
-      "salt",
-      "bright",
-      "refreshing",
-      "approachable"
-    ],
+    profile: ["tequila","citrus","salt","bright","refreshing","approachable"],
     excellent: [
       "Crab Cake",
       "Shrimp Cocktail",
       "Seared Scallops",
       "House Wedge",
-      "Burrata"
+      "Burrata",
     ],
     strong: [
       "Prime Tartare",
       "Seafood Tower",
       "Shrimp Bisque",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "Filet Mignon",
       "Faroe Island Salmon",
       "Roast Half Chicken",
-      "Gumbo"
+      "Gumbo",
     ],
     avoid: [
       "The Tomahawk",
       "Caymus Cabernet Sauvignon",
       "Opus One",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+      "Creamed Spinach",
+    ]
   },
   {
     name: "Espresso Martini",
     category: "cocktail",
-    profile: [
-      "vodka",
-      "coffee",
-      "rich",
-      "sweet",
-      "bold",
-      "dessert-adjacent"
-    ],
+    profile: ["vodka","coffee","rich","sweet","bold","dessert-adjacent"],
     excellent: [
       "Chocolate Cake",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
       "Mocha Creme",
-      "Cheesecake"
+      "Cheesecake",
+      "Carrot Cake",
+      "Coffee Liqueur",
+      "Licor 43",
     ],
     strong: [
       "Bone Marrow",
@@ -2736,180 +5078,160 @@ const PAIRING_MAP = [
       "Truffle Fries",
       "Creamed Spinach",
       "Beignets",
-      "Carrot Cake"
+      "Creme Brulee",
+      "Nut Liqueur",
+      "Cream Liqueur",
     ],
     works: [
       "Kansas City",
       "Filet Mignon",
-      "Lardons"
+      "Grand Marnier",
+      "Chambord",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Laurent Perrier Le Cuvée Brut",
-      "Seafood Tower"
-    ],
+      "Seafood Tower",
+      "Limoncello",
+      "Fireball Whisky",
+    ]
   },
   {
     name: "The Happy Wife",
     category: "cocktail",
-    profile: [
-      "vodka",
-      "orange",
-      "citrus",
-      "ginger",
-      "light",
-      "approachable",
-      "simple"
-    ],
+    profile: ["vodka","orange","citrus","ginger","light","approachable","simple"],
     excellent: [
       "Shrimp Cocktail",
       "Roast Half Chicken",
-      "Crab Cake"
+      "Crab Cake",
     ],
     strong: [
       "Burrata",
       "House Wedge",
       "Seared Scallops",
       "Faroe Island Salmon",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Filet Mignon",
       "Grilled Caesar",
       "Prime Tartare",
-      "Tuxedo-Crusted Yellowfin Tuna"
+      "Tuxedo-Crusted Yellowfin Tuna",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
       "Opus One",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+    ]
   },
   {
     name: "Transfusion",
     category: "cocktail",
-    profile: [
-      "vodka",
-      "grape",
-      "ginger",
-      "light",
-      "refreshing",
-      "approachable"
-    ],
+    profile: ["vodka","grape","ginger","light","refreshing","approachable"],
     excellent: [
       "House Wedge",
       "Burrata",
       "Shrimp Cocktail",
-      "Crab Cake"
+      "Crab Cake",
     ],
     strong: [
       "Seared Scallops",
       "Prime Tartare",
       "Shrimp Bisque",
-      "Grilled Caesar"
+      "Grilled Caesar",
+      "Faroe Island Salmon",
     ],
     works: [
       "Filet Mignon",
-      "Faroe Island Salmon",
-      "Roast Half Chicken"
+      "Roast Half Chicken",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Opus One"
-    ],
+      "Opus One",
+    ]
   },
   {
     name: "Head Fake",
     category: "cocktail",
-    profile: [
-      "vodka",
-      "lemon",
-      "citrus",
-      "sweet",
-      "limoncello",
-      "bright",
-      "approachable"
-    ],
+    profile: ["vodka","lemon","citrus","sweet","limoncello","bright","approachable"],
     excellent: [
       "Shrimp Cocktail",
       "Seared Scallops",
-      "Burrata"
+      "Burrata",
     ],
     strong: [
       "Crab Cake",
       "House Wedge",
       "Seafood Tower",
       "Shrimp Bisque",
-      "Escargot"
+      "Escargot",
     ],
     works: [
       "Filet Mignon",
       "Prime Tartare",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
       "Opus One",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+      "Truffle Fries",
+      "Au Gratin Potatoes",
+      "Brussels and Belly",
+      "Mushrooms",
+    ]
   },
   {
     name: "Negroni",
     category: "cocktail",
-    profile: [
-      "gin",
-      "bitter",
-      "herbal",
-      "citrus",
-      "spirit-forward",
-      "complex"
-    ],
+    profile: ["gin","bitter","herbal","citrus","spirit-forward","complex"],
     excellent: [
       "Prime Tartare",
       "Bone Marrow",
       "Escargot",
       "Grilled Caesar",
-      "Kansas City"
+      "Kansas City",
     ],
     strong: [
       "Filet Mignon",
       "Cowboy Ribeye",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     works: [
       "House Wedge",
       "Brussels and Belly",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
+      "Lobster Mac",
+      "Creme Brulee",
+      "Cheesecake",
+      "Carrot Cake",
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Beignets",
+      "Chocolate Cake",
+      "Mocha Creme",
     ],
-    offMenu: true,
+    offMenu: true
   },
   {
     name: "Inhibited",
     category: "cocktail",
-    profile: [
-      "vodka",
-      "coffee",
-      "chocolate",
-      "rich",
-      "sweet",
-      "dessert",
-      "indulgent"
-    ],
+    profile: ["vodka","coffee","chocolate","rich","sweet","dessert","indulgent"],
     excellent: [
       "Chocolate Cake",
       "Chocolate Brownie",
@@ -2918,164 +5240,136 @@ const PAIRING_MAP = [
       "Cheesecake",
       "Creme Brulee",
       "Carrot Cake",
-      "Beignets"
+      "Beignets",
     ],
     strong: [
       "Truffle Fries",
       "Lobster Mac",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
-      "Creme Brulee",
       "Brussels and Belly",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Seafood Tower",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    offMenu: true,
+    offMenu: true
   },
   {
     name: "Lemon Lavender Gin Martini",
     category: "cocktail",
-    profile: [
-      "gin",
-      "floral",
-      "citrus",
-      "light",
-      "delicate"
-    ],
+    profile: ["gin","floral","citrus","light","delicate"],
     excellent: [
       "Burrata",
       "Crab Cake",
       "Seared Scallops",
       "Shrimp Cocktail",
-      "Escargot"
+      "Escargot",
     ],
     strong: [
       "House Wedge",
       "Prime Tartare",
       "Seafood Tower",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Filet Mignon",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    offMenu: true,
+    offMenu: true
   },
   {
     name: "New York Sour",
     category: "cocktail",
-    profile: [
-      "whiskey",
-      "citrus",
-      "sour",
-      "wine-float",
-      "medium",
-      "balanced"
-    ],
+    profile: ["whiskey","citrus","sour","wine-float","medium","balanced"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Prime Tartare",
       "House Wedge",
-      "Crab Cake"
+      "Crab Cake",
     ],
     strong: [
       "Porterhouse",
       "Shrimp Bisque",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "Cowboy Ribeye",
       "Brussels and Belly",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     avoid: [
       "The Tomahawk",
       "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
-      "Burrata"
+      "Burrata",
     ],
-    offMenu: true,
+    offMenu: true
   },
   {
     name: "Not a Paper Plane",
     category: "cocktail",
-    profile: [
-      "whiskey",
-      "amaro",
-      "citrus",
-      "herbal",
-      "balanced",
-      "medium"
-    ],
+    profile: ["whiskey","amaro","citrus","herbal","balanced","medium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Prime Tartare",
       "Bone Marrow",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     strong: [
       "Porterhouse",
       "Cowboy Ribeye",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
+      "Truffle Fries",
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
-      "Brussels and Belly",
-      "Truffle Fries"
     ],
     avoid: [
       "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Crab Cake",
-      "Burrata"
+      "Burrata",
     ],
-    offMenu: true,
+    offMenu: true
   },
   {
     name: "G.D. Vajra Moscato d'Asti",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "sweet",
-      "low-alcohol",
-      "peach",
-      "floral",
-      "delicate",
-      "dessert"
-    ],
+    profile: ["sparkling","sweet","low-alcohol","peach","floral","delicate","dessert"],
     excellent: [
       "Creme Brulee",
       "Cheesecake",
       "Beignets",
       "Carrot Cake",
-      "Burrata"
+      "Burrata",
     ],
     strong: [
       "Peanut Butter Brownie",
       "Chocolate Brownie",
       "Shrimp Cocktail",
-      "Crab Cake"
+      "Crab Cake",
+      "Chocolate Cake",
+      "Mocha Creme",
     ],
     works: [
       "House Wedge",
       "Seared Scallops",
-      "Prime Tartare"
+      "Prime Tartare",
     ],
     avoid: [
       "Cowboy Ribeye",
@@ -3086,79 +5380,112 @@ const PAIRING_MAP = [
       "French Onion",
       "Mushroom Bisque",
       "Loaded Potato",
-      "Gumbo"
+      "Gumbo",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Porterhouse",
+      "Grilled Caesar",
+      "Truffle Fries",
+      "Au Gratin Potatoes",
+      "Brussels and Belly",
+      "Creamed Spinach",
+      "Mushrooms",
+      "Sazerac",
+      "Kermit Lynch Côtes du Rhône",
+      "Fattoria Le Pupille Saffredi",
+      "Château Gombaude-Guillot",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Reposado Tequila",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
+      "Bruichladdich",
     ],
-    price: "$12 / $48",
+    price: "$12 / $48"
   },
   {
     name: "Il Colle Prosecco Superiore",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "light",
-      "crisp",
-      "apple",
-      "pear",
-      "approachable"
-    ],
+    profile: ["sparkling","light","crisp","apple","pear","approachable"],
     excellent: [
       "Burrata",
       "Crab Cake",
       "Shrimp Cocktail",
       "Beignets",
-      "Cheesecake"
+      "Cheesecake",
     ],
     strong: [
       "Seared Scallops",
       "House Wedge",
       "Prime Tartare",
       "Seafood Tower",
-      "Escargot"
+      "Escargot",
     ],
     works: [
       "Filet Mignon",
-      "Grilled Caesar"
+      "Grilled Caesar",
+      "Carrot Cake",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Opus One",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
+      "Bone-In Filet",
     ],
-    price: "$13 / $52",
+    price: "$13 / $52"
   },
   {
     name: "Raventós Cava de NIT Rosé Brut",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "rosé",
-      "crisp",
-      "red-fruit",
-      "dry",
-      "versatile"
-    ],
+    profile: ["sparkling","rosé","crisp","red-fruit","dry","versatile"],
     excellent: [
       "Prime Tartare",
       "Crab Cake",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
-      "Beignets"
+      "Beignets",
+      "House Wedge",
     ],
     strong: [
       "Seared Scallops",
-      "House Wedge",
       "Filet Mignon",
       "Grilled Caesar",
       "Escargot",
       "Tomato Basil",
       "Clam Chowder",
-      "Tuxedo-Crusted Yellowfin Tuna"
+      "Tuxedo-Crusted Yellowfin Tuna",
+      "Shrimp Bisque",
+      "Lobster Mac",
+      "Faroe Island Salmon",
     ],
     works: [
-      "Faroe Island Salmon",
       "Roast Half Chicken",
       "Creamy Potato",
       "Roasted Red Pepper Chickpea",
@@ -3169,28 +5496,23 @@ const PAIRING_MAP = [
       "Swordfish",
       "Rainbow Trout",
       "Honey Roasted Carrots",
-      "Asparagus"
+      "Asparagus",
+      "Creme Brulee",
+      "Cheesecake",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Opus One"
+      "Opus One",
     ],
-    price: "$18 / $72",
+    price: "$18 / $72"
   },
   {
     name: "Laurent Perrier Le Cuvée Brut",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "crisp",
-      "citrus",
-      "toasty",
-      "celebratory",
-      "versatile"
-    ],
+    profile: ["sparkling","crisp","citrus","toasty","celebratory","versatile"],
     excellent: [
       "Prime Tartare",
       "Crab Cake",
@@ -3199,14 +5521,15 @@ const PAIRING_MAP = [
       "Shrimp Cocktail",
       "Seared Scallops",
       "Burrata",
-      "Escargot"
+      "Escargot",
+      "Lobster Mac",
+      "Beignets",
     ],
     strong: [
       "Filet Mignon",
       "House Wedge",
       "Grilled Caesar",
       "Bone-In Filet",
-      "Beignets",
       "Mushroom Bisque",
       "Creamy Potato",
       "Loaded Potato",
@@ -3216,273 +5539,283 @@ const PAIRING_MAP = [
       "Tuxedo-Crusted Yellowfin Tuna",
       "Salt-Cured Halibut",
       "Chilean Seabass",
-      "Rainbow Trout"
+      "Rainbow Trout",
+      "Market Fish",
+      "Faroe Island Salmon",
     ],
     works: [
-      "Faroe Island Salmon",
       "Roast Half Chicken",
       "French Onion",
       "Tomato Basil",
-      "Asparagus"
+      "Asparagus",
+      "Creme Brulee",
+      "Cheesecake",
     ],
     avoid: [
       "The Tomahawk",
       "Bowdie's Old Fashioned",
       "Bone Marrow",
-      "Gumbo"
+      "Gumbo",
+      "Truffle Fries",
+      "Au Gratin Potatoes",
+      "Brussels and Belly",
+      "Creamed Spinach",
+      "Mushrooms",
+      "Espresso Old Fashioned",
+      "The Manhattan",
+      "Vieux Carré",
+      "Sazerac",
+      "The BG",
+      "Espresso Martini",
+      "Negroni",
+      "Inhibited",
+      "New York Sour",
+      "Not a Paper Plane",
+      "Lunaria Coste di Moro",
+      "Corazón del Sol Malbec",
+      "Fento Ollo de Sapo Mencía",
+      "Château de Rouillac",
+      "Quilt Cabernet Sauvignon",
+      "Faust Napa Valley Cabernet",
+      "Venge Silencieux",
+      "Braida Montebruna Barbera",
+      "Fattoria Le Pupille Saffredi",
+      "Muga Reserva",
+      "Clos Petit Ona Grenache",
+      "Ghost Block Zinfandel",
+      "Macauley Petite Syrah",
+      "Light / Wheated Bourbon",
+      "Approachable Rye",
+      "Bold / Premium Rye",
+      "Blended Scotch",
+      "Highland Scotch",
+      "Irish Whiskey",
+      "Japanese Whisky",
+      "Canadian Whisky",
+      "American Single Malt / Tennessee",
+      "Reposado Tequila",
+      "Mezcal",
+      "Dark / Aged Rum",
+      "Cognac / Brandy",
+      "Amaro / Bitter Liqueur",
+      "Herbal / Anise Liqueur",
+      "Barrel-Proof Bourbon",
+      "Aged Super-Premium Bourbon",
+      "Craft / Blended Bourbon",
+      "Standard High-Proof Bourbon",
+      "Wine-Finished Bourbon",
+      "Exotic-Cask Finished Bourbon",
+      "Double-Oaked Bourbon",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Barrel-Finished Tequila",
+      "Sherried Speyside",
+      "Bourbon-Cask Speyside",
+      "Peated Islay Scotch",
+      "Bruichladdich",
     ],
-    price: "$25 / $100",
+    price: "$25 / $100"
   },
   {
     name: "Laurent Perrier Brut Rosé",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "rosé",
-      "premium",
-      "strawberry",
-      "elegant",
-      "celebratory"
-    ],
+    profile: ["sparkling","rosé","premium","strawberry","elegant","celebratory"],
     excellent: [
       "Prime Tartare",
       "Crab Cake",
       "Seafood Tower",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
     strong: [
       "Filet Mignon",
       "House Wedge",
       "Escargot",
       "Grilled Caesar",
-      "Beignets"
+      "Beignets",
     ],
     works: [
       "Faroe Island Salmon",
-      "Roast Half Chicken"
+      "Roast Half Chicken",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "$120",
+    price: "$120"
   },
   {
     name: "Veuve Clicquot Brut",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "premium",
-      "toasty",
-      "citrus",
-      "rich",
-      "celebratory"
-    ],
+    profile: ["sparkling","premium","toasty","citrus","rich","celebratory"],
     excellent: [
       "Seafood Tower",
       "Prime Tartare",
       "Crab Cake",
       "Seared Scallops",
       "Shrimp Cocktail",
-      "Burrata"
+      "Burrata",
     ],
     strong: [
       "Filet Mignon",
       "Escargot",
       "House Wedge",
       "Grilled Caesar",
-      "Beignets"
+      "Beignets",
     ],
     works: [
       "Faroe Island Salmon",
       "Roast Half Chicken",
-      "Lobster Mac"
+      "Lobster Mac",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "$120",
+    price: "$120"
   },
   {
     name: "Paul Bara Grand Rosé Brut",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "rosé",
-      "premium",
-      "pinot-driven",
-      "structured",
-      "rich"
-    ],
+    profile: ["sparkling","rosé","premium","pinot-driven","structured","rich"],
     excellent: [
       "Seafood Tower",
       "Prime Tartare",
       "Crab Cake",
       "Seared Scallops",
-      "Filet Mignon"
+      "Filet Mignon",
     ],
     strong: [
       "Shrimp Cocktail",
       "Burrata",
       "Escargot",
       "House Wedge",
-      "Bone-In Filet"
+      "Bone-In Filet",
     ],
     works: [
       "Faroe Island Salmon",
       "Grilled Caesar",
-      "Lobster Mac"
+      "Lobster Mac",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "$150",
+    price: "$150"
   },
   {
     name: "Robert Moncuit Les Grand Blancs",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "blanc-de-blancs",
-      "chardonnay-driven",
-      "mineral",
-      "crisp",
-      "elegant"
-    ],
+    profile: ["sparkling","blanc-de-blancs","chardonnay-driven","mineral","crisp","elegant"],
     excellent: [
       "Seafood Tower",
       "Seared Scallops",
       "Crab Cake",
       "Shrimp Cocktail",
       "Escargot",
-      "Burrata"
+      "Burrata",
     ],
     strong: [
       "Prime Tartare",
       "House Wedge",
       "Filet Mignon",
       "Grilled Caesar",
-      "Faroe Island Salmon"
+      "Faroe Island Salmon",
     ],
     works: [
       "Beignets",
       "Roast Half Chicken",
-      "Lobster Mac"
+      "Lobster Mac",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Opus One"
+      "Opus One",
     ],
-    price: "$160",
+    price: "$160"
   },
   {
     name: "Pierre Gimonnet Special Club Brut",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "blanc-de-blancs",
-      "premium",
-      "mineral",
-      "chardonnay-driven",
-      "complex"
-    ],
+    profile: ["sparkling","blanc-de-blancs","premium","mineral","chardonnay-driven","complex"],
     excellent: [
       "Seafood Tower",
       "Seared Scallops",
       "Crab Cake",
       "Prime Tartare",
       "Filet Mignon",
-      "Escargot"
+      "Escargot",
     ],
     strong: [
       "Shrimp Cocktail",
       "Burrata",
       "House Wedge",
       "Faroe Island Salmon",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "Beignets",
       "Lobster Mac",
-      "Roast Half Chicken"
+      "Roast Half Chicken",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Opus One"
+      "Opus One",
     ],
-    price: "$200",
+    price: "$200"
   },
   {
     name: "Pommery Cuvée Louise",
     category: "wine-sparkling",
-    profile: [
-      "sparkling",
-      "prestige",
-      "complex",
-      "toasty",
-      "mineral",
-      "celebratory",
-      "blanc-de-blancs"
-    ],
+    profile: ["sparkling","prestige","complex","toasty","mineral","celebratory","blanc-de-blancs"],
     excellent: [
       "Seafood Tower",
       "Seared Scallops",
       "Filet Mignon",
       "Crab Cake",
       "Prime Tartare",
-      "Escargot"
+      "Escargot",
     ],
     strong: [
       "Shrimp Cocktail",
       "Burrata",
       "House Wedge",
       "Faroe Island Salmon",
-      "Bone-In Filet"
+      "Bone-In Filet",
     ],
     works: [
       "Lobster Mac",
       "Beignets",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "$300",
+    price: "$300"
   },
   {
     name: "Stoneleigh Sauvignon Blanc",
     category: "wine-white",
-    profile: [
-      "crisp",
-      "citrus",
-      "grassy",
-      "light",
-      "approachable",
-      "New-Zealand"
-    ],
+    profile: ["crisp","citrus","grassy","light","approachable","New-Zealand"],
     excellent: [
       "House Wedge",
       "Burrata",
@@ -3490,7 +5823,7 @@ const PAIRING_MAP = [
       "Shrimp Cocktail",
       "Seared Scallops",
       "Tomato Basil",
-      "Asparagus"
+      "Asparagus",
     ],
     strong: [
       "Grilled Caesar",
@@ -3499,13 +5832,13 @@ const PAIRING_MAP = [
       "Seafood Tower",
       "Sauteed Garlic Spinach",
       "Rainbow Trout",
-      "Broccolini"
+      "Broccolini",
     ],
     works: [
       "Faroe Island Salmon",
       "Shrimp Bisque",
       "Roast Half Chicken",
-      "Vegetable Curry with Chickpeas"
+      "Vegetable Curry with Chickpeas",
     ],
     avoid: [
       "The Tomahawk",
@@ -3519,27 +5852,35 @@ const PAIRING_MAP = [
       "Loaded Potato",
       "Gumbo",
       "Butternut Squash",
-      "Honey Roasted Carrots"
+      "Honey Roasted Carrots",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Kansas City",
+      "Porterhouse",
+      "Truffle Fries",
+      "Au Gratin Potatoes",
+      "Brussels and Belly",
+      "Creamed Spinach",
+      "Mushrooms",
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Chocolate Cake",
+      "Mocha Creme",
+      "Château Gombaude-Guillot",
     ],
-    price: "$10 / $40",
+    price: "$10 / $40"
   },
   {
     name: "Alexander Valley Chardonnay",
     category: "wine-white",
-    profile: [
-      "medium-bodied",
-      "oak",
-      "butter",
-      "apple",
-      "approachable",
-      "California"
-    ],
+    profile: ["medium-bodied","oak","butter","apple","approachable","California"],
     excellent: [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Shrimp Bisque",
       "Lobster Mac",
-      "Chilean Seabass"
+      "Chilean Seabass",
+      "Broccoli Cheddar",
     ],
     strong: [
       "Crab Cake",
@@ -3547,45 +5888,37 @@ const PAIRING_MAP = [
       "House Wedge",
       "Escargot",
       "Burrata",
-      "Broccoli Cheddar",
-      "Swordfish"
-    ],
-    works: [
-      "Filet Mignon",
-      "Grilled Caesar",
-      "Sauteed Garlic Spinach",
+      "Swordfish",
       "Mushroom Bisque",
       "Creamy Potato",
       "Loaded Potato",
       "Clam Chowder",
       "Butternut Squash",
-      "Honey Roasted Carrots"
+      "Honey Roasted Carrots",
+    ],
+    works: [
+      "Filet Mignon",
+      "Grilled Caesar",
+      "Sauteed Garlic Spinach",
     ],
     avoid: [
       "The Tomahawk",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$12 / $48",
+    price: "$12 / $48"
   },
   {
     name: "St Supéry Sauvignon Blanc",
     category: "wine-white",
-    profile: [
-      "crisp",
-      "citrus",
-      "grassy",
-      "grapefruit",
-      "clean",
-      "Napa"
-    ],
+    profile: ["crisp","citrus","grassy","grapefruit","clean","Napa"],
     excellent: [
       "Crab Cake",
       "Shrimp Cocktail",
       "Seared Scallops",
       "House Wedge",
-      "Burrata"
+      "Burrata",
     ],
     strong: [
       "Escargot",
@@ -3595,33 +5928,26 @@ const PAIRING_MAP = [
       "Sauteed Garlic Spinach",
       "Tomato Basil",
       "Rainbow Trout",
-      "Asparagus"
+      "Asparagus",
     ],
     works: [
       "Faroe Island Salmon",
       "Shrimp Bisque",
-      "Roast Half Chicken"
+      "Roast Half Chicken",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "$12 / $48",
+    price: "$12 / $48"
   },
   {
     name: "Elk Cove Pinot Blanc",
     category: "wine-white",
-    profile: [
-      "crisp",
-      "apple",
-      "pear",
-      "mineral",
-      "light",
-      "Oregon"
-    ],
+    profile: ["crisp","apple","pear","mineral","light","Oregon"],
     excellent: [
       "Crab Cake",
       "Seared Scallops",
@@ -3632,13 +5958,13 @@ const PAIRING_MAP = [
       "Clam Chowder",
       "Tuxedo-Crusted Yellowfin Tuna",
       "Salt-Cured Halibut",
-      "Rainbow Trout"
+      "Rainbow Trout",
+      "Faroe Island Salmon",
     ],
     strong: [
       "Prime Tartare",
       "House Wedge",
       "Seafood Tower",
-      "Faroe Island Salmon",
       "Grilled Caesar",
       "Mushroom Bisque",
       "Creamy Potato",
@@ -3647,36 +5973,33 @@ const PAIRING_MAP = [
       "Broccoli Cheddar",
       "Honey Roasted Carrots",
       "Broccolini",
-      "Asparagus"
+      "Asparagus",
+      "Seasonal Soup",
+      "Market Fish",
+      "Lobster Mac",
+      "Seasonal Vegetables",
+      "Sauteed Garlic Spinach",
     ],
     works: [
       "Filet Mignon",
       "Roast Half Chicken",
-      "Sauteed Garlic Spinach",
       "Tomato Basil",
       "Butternut Squash",
-      "Chilean Seabass"
+      "Chilean Seabass",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$13 / $52",
+    price: "$13 / $52"
   },
   {
     name: "Jean-Pierre Grossot Chablis",
     category: "wine-white",
-    profile: [
-      "crisp",
-      "mineral",
-      "citrus",
-      "oyster-shell",
-      "Burgundy",
-      "elegant"
-    ],
+    profile: ["crisp","mineral","citrus","oyster-shell","Burgundy","elegant"],
     excellent: [
       "Seared Scallops",
       "Escargot",
@@ -3692,44 +6015,41 @@ const PAIRING_MAP = [
       "Salt-Cured Halibut",
       "Rainbow Trout",
       "Broccolini",
-      "Asparagus"
-    ],
-    strong: [
+      "Asparagus",
+      "Seafood Tower",
       "Shrimp Cocktail",
-      "House Wedge",
+      "Burrata",
       "Grilled Caesar",
       "Sauteed Garlic Spinach",
-      "Seafood Tower",
+    ],
+    strong: [
+      "House Wedge",
       "Roasted Red Pepper Chickpea",
       "Broccoli Cheddar",
-      "Chilean Seabass"
+      "Chilean Seabass",
+      "Seasonal Soup",
+      "Market Fish",
+      "Lobster Mac",
+      "Seasonal Vegetables",
+      "Roast Half Chicken",
     ],
     works: [
       "Filet Mignon",
-      "Roast Half Chicken",
-      "Burrata",
-      "Swordfish"
+      "Swordfish",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$16 / $64",
+    price: "$16 / $64"
   },
   {
     name: "Schloss Vollrads Riesling",
     category: "wine-white",
-    profile: [
-      "off-dry",
-      "stone-fruit",
-      "mineral",
-      "floral",
-      "German",
-      "delicate"
-    ],
+    profile: ["off-dry","stone-fruit","mineral","floral","German","delicate"],
     excellent: [
       "Shrimp Bisque",
       "Crab Cake",
@@ -3737,41 +6057,36 @@ const PAIRING_MAP = [
       "Shrimp Cocktail",
       "Burrata",
       "Vegetable Curry with Chickpeas",
-      "Butternut Squash"
+      "Butternut Squash",
     ],
     strong: [
       "Escargot",
       "House Wedge",
       "Faroe Island Salmon",
       "Roast Half Chicken",
-      "Beignets"
+      "Beignets",
     ],
     works: [
       "Prime Tartare",
       "Grilled Caesar",
       "Sauteed Garlic Spinach",
-      "Honey Roasted Carrots"
+      "Honey Roasted Carrots",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
+      "Kansas City",
+      "Porterhouse",
     ],
-    price: "$16 / $64",
+    price: "$16 / $64"
   },
   {
     name: "Le Garenne Rosé",
     category: "wine-white",
-    profile: [
-      "rosé",
-      "dry",
-      "fresh",
-      "red-fruit",
-      "light",
-      "Provence-style"
-    ],
+    profile: ["rosé","dry","fresh","red-fruit","light","Provence-style"],
     excellent: [
       "Burrata",
       "House Wedge",
@@ -3782,7 +6097,7 @@ const PAIRING_MAP = [
       "Roasted Red Pepper Chickpea",
       "Vegetable Curry with Chickpeas",
       "Honey Roasted Carrots",
-      "Asparagus"
+      "Asparagus",
     ],
     strong: [
       "Grilled Caesar",
@@ -3792,40 +6107,36 @@ const PAIRING_MAP = [
       "Faroe Island Salmon",
       "Swordfish",
       "Rainbow Trout",
-      "Broccolini"
+      "Broccolini",
+      "Seasonal Soup",
+      "Seasonal Vegetables",
+      "Sauteed Garlic Spinach",
     ],
     works: [
       "Filet Mignon",
       "Roast Half Chicken",
-      "Sauteed Garlic Spinach",
       "Creamy Potato",
       "Clam Chowder",
       "Broccoli Cheddar",
       "Butternut Squash",
       "Tuxedo-Crusted Yellowfin Tuna",
       "Salt-Cured Halibut",
-      "Chilean Seabass"
+      "Chilean Seabass",
+      "Shrimp Bisque",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "$17 / $68",
+    price: "$17 / $68"
   },
   {
     name: "Domaine de Berthiers Pouilly-Fumé",
     category: "wine-white",
-    profile: [
-      "crisp",
-      "mineral",
-      "flint",
-      "citrus",
-      "herbaceous",
-      "Loire"
-    ],
+    profile: ["crisp","mineral","flint","citrus","herbaceous","Loire"],
     excellent: [
       "Seared Scallops",
       "Escargot",
@@ -3835,81 +6146,67 @@ const PAIRING_MAP = [
       "Tomato Basil",
       "Rainbow Trout",
       "Broccolini",
-      "Asparagus"
+      "Asparagus",
+      "Grilled Caesar",
+      "Sauteed Garlic Spinach",
     ],
     strong: [
       "Prime Tartare",
       "Shrimp Cocktail",
       "House Wedge",
-      "Grilled Caesar",
-      "Sauteed Garlic Spinach",
       "Clam Chowder",
-      "Salt-Cured Halibut"
+      "Salt-Cured Halibut",
     ],
     works: [
       "Filet Mignon",
       "Roast Half Chicken",
       "Burrata",
-      "Creamy Potato"
+      "Creamy Potato",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$19 / $76",
+    price: "$19 / $76"
   },
   {
     name: "Our Lady of Guadalupe Acolytes",
     category: "wine-white",
-    profile: [
-      "white-blend",
-      "complex",
-      "Oregon",
-      "herbal",
-      "structured"
-    ],
+    profile: ["white-blend","complex","Oregon","herbal","structured"],
     excellent: [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Seared Scallops",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     strong: [
       "Crab Cake",
       "Escargot",
       "House Wedge",
       "Grilled Caesar",
-      "Burrata"
+      "Burrata",
     ],
     works: [
       "Filet Mignon",
       "Prime Tartare",
-      "Sauteed Garlic Spinach"
+      "Sauteed Garlic Spinach",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$20 / $80",
+    price: "$20 / $80"
   },
   {
     name: "Joseph Mellot Sancerre",
     category: "wine-white",
-    profile: [
-      "crisp",
-      "mineral",
-      "citrus",
-      "grassy",
-      "Loire",
-      "Sauvignon-Blanc",
-      "premium"
-    ],
+    profile: ["crisp","mineral","citrus","grassy","Loire","Sauvignon-Blanc","premium"],
     excellent: [
       "Seared Scallops",
       "Crab Cake",
@@ -3918,7 +6215,7 @@ const PAIRING_MAP = [
       "Escargot",
       "Faroe Island Salmon",
       "Rainbow Trout",
-      "Asparagus"
+      "Asparagus",
     ],
     strong: [
       "House Wedge",
@@ -3928,7 +6225,7 @@ const PAIRING_MAP = [
       "Seafood Tower",
       "Tomato Basil",
       "Salt-Cured Halibut",
-      "Broccolini"
+      "Broccolini",
     ],
     works: [
       "Filet Mignon",
@@ -3938,29 +6235,21 @@ const PAIRING_MAP = [
       "Vegetable Curry with Chickpeas",
       "Broccoli Cheddar",
       "Tuxedo-Crusted Yellowfin Tuna",
-      "Swordfish"
+      "Swordfish",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "$76",
+    price: "$76"
   },
   {
     name: "Keenan Chardonnay",
     category: "wine-white",
-    profile: [
-      "rich",
-      "oak",
-      "butter",
-      "tropical",
-      "full-bodied",
-      "Napa",
-      "premium"
-    ],
+    profile: ["rich","oak","butter","tropical","full-bodied","Napa","premium"],
     excellent: [
       "Faroe Island Salmon",
       "Roast Half Chicken",
@@ -3969,329 +6258,267 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Salt-Cured Halibut",
       "Swordfish",
-      "Chilean Seabass"
-    ],
-    strong: [
-      "Crab Cake",
-      "Escargot",
-      "Grilled Caesar",
-      "Filet Mignon",
-      "Burrata",
+      "Chilean Seabass",
       "Mushroom Bisque",
       "Creamy Potato",
       "Loaded Potato",
       "Clam Chowder",
       "Broccoli Cheddar",
-      "Butternut Squash"
-    ],
-    works: [
-      "House Wedge",
-      "Au Gratin Potatoes",
-      "Creamed Spinach",
-      "French Onion",
-      "Honey Roasted Carrots"
-    ],
-    avoid: [
-      "The Tomahawk",
-      "Cowboy Ribeye",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
-    price: "$120",
-  },
-  {
-    name: "Far Niente Chardonnay",
-    category: "wine-white",
-    profile: [
-      "rich",
-      "oak",
-      "butter",
-      "stone-fruit",
-      "full-bodied",
-      "Napa",
-      "prestige"
-    ],
-    excellent: [
-      "Faroe Island Salmon",
-      "Lobster Mac",
-      "Seared Scallops",
-      "Shrimp Bisque",
-      "Roast Half Chicken",
-      "Salt-Cured Halibut",
-      "Swordfish",
-      "Chilean Seabass"
+      "Butternut Squash",
     ],
     strong: [
       "Crab Cake",
       "Escargot",
-      "Filet Mignon",
       "Grilled Caesar",
+      "Filet Mignon",
       "Burrata",
-      "Mushroom Bisque",
-      "Creamy Potato",
-      "Loaded Potato",
-      "Clam Chowder",
-      "Broccoli Cheddar"
+      "French Onion",
+      "Honey Roasted Carrots",
     ],
     works: [
       "House Wedge",
-      "Creamed Spinach",
       "Au Gratin Potatoes",
-      "French Onion",
-      "Butternut Squash",
-      "Rainbow Trout"
+      "Creamed Spinach",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Scavino Barolo",
       "Bowdie's Old Fashioned",
-      "Gumbo"
     ],
-    price: "$140",
+    price: "$120"
+  },
+  {
+    name: "Far Niente Chardonnay",
+    category: "wine-white",
+    profile: ["rich","oak","butter","stone-fruit","full-bodied","Napa","prestige"],
+    excellent: [
+      "Faroe Island Salmon",
+      "Lobster Mac",
+      "Seared Scallops",
+      "Shrimp Bisque",
+      "Roast Half Chicken",
+      "Salt-Cured Halibut",
+      "Swordfish",
+      "Chilean Seabass",
+      "Mushroom Bisque",
+      "Creamy Potato",
+      "Loaded Potato",
+      "Clam Chowder",
+      "Broccoli Cheddar",
+    ],
+    strong: [
+      "Crab Cake",
+      "Escargot",
+      "Filet Mignon",
+      "Grilled Caesar",
+      "Burrata",
+      "Butternut Squash",
+      "French Onion",
+    ],
+    works: [
+      "House Wedge",
+      "Creamed Spinach",
+      "Au Gratin Potatoes",
+      "Rainbow Trout",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Cowboy Ribeye",
+      "Scavino Barolo",
+      "Bowdie's Old Fashioned",
+      "Gumbo",
+    ],
+    price: "$140"
   },
   {
     name: "Lunaria Coste di Moro",
     category: "wine-red",
-    profile: [
-      "Montepulciano",
-      "medium-bodied",
-      "dark-fruit",
-      "earthy",
-      "Italian",
-      "approachable"
-    ],
+    profile: ["Montepulciano","medium-bodied","dark-fruit","earthy","Italian","approachable"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Mushrooms",
       "Grilled Caesar",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Cowboy Ribeye",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Porterhouse",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    price: "$12 / $48",
+    price: "$12 / $48"
   },
   {
     name: "Kermit Lynch Côtes du Rhône",
     category: "wine-red",
-    profile: [
-      "Grenache-Syrah",
-      "medium-bodied",
-      "spice",
-      "red-fruit",
-      "earthy",
-      "Rhône",
-      "approachable"
-    ],
+    profile: ["Grenache-Syrah","medium-bodied","spice","red-fruit","earthy","Rhône","approachable"],
     excellent: [
       "Roast Half Chicken",
       "Faroe Island Salmon",
       "Mushrooms",
       "Grilled Caesar",
-      "Kansas City"
+      "Kansas City",
     ],
     strong: [
       "Filet Mignon",
       "Brussels and Belly",
       "Creamed Spinach",
       "House Wedge",
-      "Sauteed Garlic Spinach"
+      "Sauteed Garlic Spinach",
     ],
     works: [
       "Cowboy Ribeye",
       "Porterhouse",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti"
+      "G.D. Vajra Moscato d'Asti",
     ],
-    price: "$12 / $48",
+    price: "$12 / $48"
   },
   {
     name: "Alexander Valley Homestead Red",
     category: "wine-red",
-    profile: [
-      "red-blend",
-      "approachable",
-      "medium-bodied",
-      "fruit-forward",
-      "California"
-    ],
+    profile: ["red-blend","approachable","medium-bodied","fruit-forward","California"],
     excellent: [
       "Kansas City",
       "Roast Half Chicken",
       "Mushrooms",
       "Filet Mignon",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     strong: [
       "Cowboy Ribeye",
       "Brussels and Belly",
       "Truffle Fries",
       "House Wedge",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "Porterhouse",
       "Creamed Spinach",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$13 / $52",
+    price: "$13 / $52"
   },
   {
     name: "Scotto Cellars The Lost Chapters",
     category: "wine-red",
-    profile: [
-      "red-blend",
-      "approachable",
-      "fruit-forward",
-      "soft",
-      "California",
-      "easy-drinking"
-    ],
+    profile: ["red-blend","approachable","fruit-forward","soft","California","easy-drinking"],
     excellent: [
       "Kansas City",
       "Roast Half Chicken",
       "Mushrooms",
       "Grilled Caesar",
-      "House Wedge"
+      "House Wedge",
     ],
     strong: [
       "Filet Mignon",
       "Brussels and Belly",
       "Truffle Fries",
       "Creamed Spinach",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "Cowboy Ribeye",
       "Porterhouse",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$13 / $52",
+    price: "$13 / $52"
   },
   {
     name: "Corazón del Sol Malbec",
     category: "wine-red",
-    profile: [
-      "Malbec",
-      "bold",
-      "plum",
-      "dark-fruit",
-      "smooth",
-      "Argentina"
-    ],
+    profile: ["Malbec","bold","plum","dark-fruit","smooth","Argentina"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Mushrooms",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Porterhouse",
       "Filet Mignon",
       "Brussels and Belly",
-      "Lardons",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     works: [
       "Grilled Caesar",
       "Au Gratin Potatoes",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    price: "$15 / $60",
+    price: "$15 / $60"
   },
   {
     name: "Fento Ollo de Sapo Mencía",
     category: "wine-red",
-    profile: [
-      "Mencía",
-      "medium-bodied",
-      "earthy",
-      "floral",
-      "mineral",
-      "Spanish",
-      "unique"
-    ],
+    profile: ["Mencía","medium-bodied","earthy","floral","mineral","Spanish","unique"],
     excellent: [
       "Roast Half Chicken",
       "Faroe Island Salmon",
       "Mushrooms",
       "Grilled Caesar",
-      "House Wedge"
+      "House Wedge",
     ],
     strong: [
       "Filet Mignon",
       "Kansas City",
       "Sauteed Garlic Spinach",
       "Brussels and Belly",
-      "Escargot"
+      "Escargot",
     ],
     works: [
       "Cowboy Ribeye",
       "Shrimp Bisque",
-      "Burrata"
+      "Burrata",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "The Tomahawk",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    price: "$15 / $60",
+    price: "$15 / $60"
   },
   {
     name: "Lingua Franca Avni Pinot Noir",
     category: "wine-red",
-    profile: [
-      "light",
-      "fruity",
-      "cherry",
-      "silky",
-      "approachable",
-      "Oregon"
-    ],
+    profile: ["light","fruity","cherry","silky","approachable","Oregon"],
     excellent: [
       "Filet Mignon",
       "House Wedge",
@@ -4301,59 +6528,64 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Tuxedo-Crusted Yellowfin Tuna",
       "Swordfish",
-      "Chilean Seabass"
-    ],
-    strong: [
-      "Kansas City",
-      "Faroe Island Salmon",
-      "Roast Half Chicken",
-      "Creamed Spinach",
-      "Brussels and Belly",
-      "French Onion",
+      "Chilean Seabass",
+      "Sauteed Garlic Spinach",
+      "Grilled Caesar",
       "Mushroom Bisque",
       "Loaded Potato",
       "Roasted Red Pepper Chickpea",
       "Vegetable Curry with Chickpeas",
       "Butternut Squash",
-      "Salt-Cured Halibut",
+      "French Onion",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
       "Honey Roasted Carrots",
-      "Broccolini"
+      "Broccolini",
+    ],
+    strong: [
+      "Kansas City",
+      "Creamed Spinach",
+      "Brussels and Belly",
+      "Salt-Cured Halibut",
+      "Bone-In Filet",
+      "Seasonal Soup",
+      "Market Fish",
+      "Lobster Mac",
+      "Mushrooms",
+      "Seasonal Vegetables",
+      "Creamy Potato",
+      "Tomato Basil",
+      "Broccoli Cheddar",
+      "Asparagus",
     ],
     works: [
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Grilled Caesar",
-      "Creamy Potato",
-      "Tomato Basil",
       "Clam Chowder",
-      "Broccoli Cheddar",
       "Rainbow Trout",
-      "Asparagus"
+      "Shrimp Cocktail",
+      "Escargot",
+      "Burrata",
+      "Truffle Fries",
+      "Au Gratin Potatoes",
     ],
     avoid: [
       "The Tomahawk",
-      "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$18 / $72",
+    price: "$18 / $72"
   },
   {
     name: "Fisher Unity Pinot Noir",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "medium-bodied",
-      "cherry",
-      "earthy",
-      "Oregon",
-      "approachable"
-    ],
+    profile: ["Pinot-Noir","medium-bodied","cherry","earthy","Oregon","approachable"],
     excellent: [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "House Wedge",
       "Filet Mignon",
-      "Crab Cake"
+      "Crab Cake",
+      "French Onion",
     ],
     strong: [
       "Seared Scallops",
@@ -4361,9 +6593,8 @@ const PAIRING_MAP = [
       "Prime Tartare",
       "Shrimp Bisque",
       "Sauteed Garlic Spinach",
-      "French Onion",
       "Tuxedo-Crusted Yellowfin Tuna",
-      "Swordfish"
+      "Swordfish",
     ],
     works: [
       "Kansas City",
@@ -4372,144 +6603,114 @@ const PAIRING_MAP = [
       "Loaded Potato",
       "Roasted Red Pepper Chickpea",
       "Chilean Seabass",
-      "Honey Roasted Carrots"
+      "Honey Roasted Carrots",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$19 / $76",
+    price: "$19 / $76"
   },
   {
     name: "Château de Rouillac",
     category: "wine-red",
-    profile: [
-      "Bordeaux-blend",
-      "structured",
-      "cedar",
-      "dark-fruit",
-      "medium-full",
-      "French"
-    ],
+    profile: ["Bordeaux-blend","structured","cedar","dark-fruit","medium-full","French"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Mushrooms",
       "Truffle Fries",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Bone Marrow",
-      "Lardons"
+      "Bone-In Filet",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    price: "$20 / $80",
+    price: "$20 / $80"
   },
   {
     name: "St Supéry Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "medium-full",
-      "blackcurrant",
-      "cedar",
-      "approachable",
-      "Napa"
-    ],
+    profile: ["Cab","medium-full","blackcurrant","cedar","approachable","Napa"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Truffle Fries",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Brussels and Belly",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
-    ],
-    works: [
-      "House Wedge",
-      "Bone Marrow",
-      "Lardons"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "Shrimp Cocktail"
-    ],
-    price: "$20 / $80",
-  },
-  {
-    name: "Quilt Cabernet Sauvignon",
-    category: "wine-red",
-    profile: [
-      "Cab",
-      "approachable",
-      "jammy",
-      "smooth",
-      "Napa",
-      "fruit-forward"
-    ],
-    excellent: [
-      "Kansas City",
-      "Filet Mignon",
-      "Truffle Fries",
-      "Mushrooms",
-      "Creamed Spinach"
-    ],
-    strong: [
-      "Cowboy Ribeye",
-      "Porterhouse",
-      "Brussels and Belly",
-      "Bone Marrow",
-      "Au Gratin Potatoes"
-    ],
-    works: [
-      "House Wedge",
       "Grilled Caesar",
-      "Lardons"
+    ],
+    works: [
+      "House Wedge",
+      "Bone Marrow",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
     ],
-    price: "$22 / $88",
+    price: "$20 / $80"
+  },
+  {
+    name: "Quilt Cabernet Sauvignon",
+    category: "wine-red",
+    profile: ["Cab","approachable","jammy","smooth","Napa","fruit-forward"],
+    excellent: [
+      "Kansas City",
+      "Filet Mignon",
+      "Truffle Fries",
+      "Mushrooms",
+      "Creamed Spinach",
+    ],
+    strong: [
+      "Cowboy Ribeye",
+      "Porterhouse",
+      "Brussels and Belly",
+      "Bone Marrow",
+      "Au Gratin Potatoes",
+    ],
+    works: [
+      "House Wedge",
+      "Grilled Caesar",
+      "Bone-In Filet",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+    ],
+    price: "$22 / $88"
   },
   {
     name: "Scavino Barolo",
     category: "wine-red",
-    profile: [
-      "bold",
-      "tannic",
-      "earthy",
-      "cherry",
-      "leather",
-      "structured",
-      "Piedmont"
-    ],
+    profile: ["bold","tannic","earthy","cherry","leather","structured","Piedmont"],
     excellent: [
       "Filet Mignon",
       "Bone-In Filet",
@@ -4517,23 +6718,22 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Truffle Fries",
       "Bone Marrow",
-      "Grilled Caesar"
-    ],
-    strong: [
+      "Grilled Caesar",
       "Cowboy Ribeye",
       "Porterhouse",
       "Brussels and Belly",
-      "Lardons",
+      "Mushrooms",
+    ],
+    strong: [
       "Creamed Spinach",
-      "Mushrooms"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Shrimp Bisque",
-      "Au Gratin Potatoes",
       "Chocolate Brownie",
       "Cheesecake",
-      "Creme Brulee"
+      "Creme Brulee",
     ],
     avoid: [
       "Prime Tartare",
@@ -4553,21 +6753,66 @@ const PAIRING_MAP = [
       "Rainbow Trout",
       "Honey Roasted Carrots",
       "Broccolini",
-      "Asparagus"
+      "Asparagus",
+      "Seafood Tower",
+      "Shrimp Cocktail",
+      "Escargot",
+      "Faroe Island Salmon",
+      "Lobster Mac",
+      "Carrot Cake",
+      "Peanut Butter Brownie",
+      "Beignets",
+      "Chocolate Cake",
+      "Mocha Creme",
+      "Bee's Knees",
+      "Cucumber Gimlet",
+      "Aviation",
+      "Margarita",
+      "The Happy Wife",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Pommery Cuvée Louise",
+      "Stoneleigh Sauvignon Blanc",
+      "Alexander Valley Chardonnay",
+      "St Supéry Sauvignon Blanc",
+      "Elk Cove Pinot Blanc",
+      "Le Garenne Rosé",
+      "Joseph Mellot Sancerre",
+      "Keenan Chardonnay",
+      "Far Niente Chardonnay",
+      "Graham's 10 Year Tawny",
+      "Pineau des Charentes",
+      "Vin Santo",
+      "Sauternes Glass",
+      "Blanco Tequila",
+      "Reposado Tequila",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
+      "Spiced / Flavored Rum",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Limoncello",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
     ],
-    price: "$25 / $100",
+    price: "$25 / $100"
   },
   {
     name: "Caymus Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "bold",
-      "rich",
-      "jammy",
-      "oak",
-      "smooth",
-      "approachable"
-    ],
+    profile: ["bold","rich","jammy","oak","smooth","approachable"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
@@ -4575,23 +6820,24 @@ const PAIRING_MAP = [
       "Truffle Fries",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Bone Marrow"
-    ],
-    strong: [
-      "The Tomahawk",
+      "Bone Marrow",
+      "Bone-In Filet",
       "Porterhouse",
       "Au Gratin Potatoes",
       "Mushrooms",
-      "Lobster Mac"
+    ],
+    strong: [
+      "The Tomahawk",
+      "Lobster Mac",
+      "Bowdie's Old Fashioned",
     ],
     works: [
       "Shrimp Bisque",
-      "Lardons",
       "Grilled Caesar",
       "Chocolate Brownie",
       "Cheesecake",
       "Creme Brulee",
-      "Carrot Cake"
+      "Carrot Cake",
     ],
     avoid: [
       "Prime Tartare",
@@ -4613,29 +6859,75 @@ const PAIRING_MAP = [
       "Rainbow Trout",
       "Honey Roasted Carrots",
       "Broccolini",
-      "Asparagus"
+      "Asparagus",
+      "Seafood Tower",
+      "Escargot",
+      "Burrata",
+      "Faroe Island Salmon",
+      "Sauteed Garlic Spinach",
+      "Peanut Butter Brownie",
+      "Beignets",
+      "Chocolate Cake",
+      "Mocha Creme",
+      "French 75",
+      "Bee's Knees",
+      "Cucumber Gimlet",
+      "Vesper",
+      "Corpse Reviver",
+      "Aviation",
+      "Paloma",
+      "Pablo Sour",
+      "Margarita",
+      "The Happy Wife",
+      "Transfusion",
+      "Head Fake",
+      "Lemon Lavender Gin Martini",
+      "Raventós Cava de NIT Rosé Brut",
+      "Laurent Perrier Brut Rosé",
+      "Veuve Clicquot Brut",
+      "Paul Bara Grand Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Pommery Cuvée Louise",
+      "Stoneleigh Sauvignon Blanc",
+      "Alexander Valley Chardonnay",
+      "St Supéry Sauvignon Blanc",
+      "Elk Cove Pinot Blanc",
+      "Jean-Pierre Grossot Chablis",
+      "Schloss Vollrads Riesling",
+      "Le Garenne Rosé",
+      "Domaine de Berthiers Pouilly-Fumé",
+      "Our Lady of Guadalupe Acolytes",
+      "Joseph Mellot Sancerre",
+      "Daniel Chotard Sancerre Rouge",
+      "Marc Brédif Chinon",
+      "Domaine Serene Grand Cheval",
+      "Blanco Tequila",
+      "London Dry Gin",
+      "Local Michigan Gin",
+      "Japanese Gin",
+      "White / Light Rum",
+      "Hendrick's Family",
+      "Botanical-Forward Craft Gin",
+      "Smooth / Citrus Craft Gin",
+      "Bruichladdich",
     ],
-    price: "$28 / $180",
+    price: "$28 / $180"
   },
   {
     name: "Cristom Mt Jefferson Cuvée",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "earthy",
-      "cherry",
-      "spice",
-      "medium-bodied",
-      "Oregon",
-      "structured"
-    ],
+    profile: ["Pinot-Noir","earthy","cherry","spice","medium-bodied","Oregon","structured"],
     excellent: [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Filet Mignon",
       "Crab Cake",
       "House Wedge",
-      "Tuxedo-Crusted Yellowfin Tuna"
+      "Tuxedo-Crusted Yellowfin Tuna",
+      "Roasted Red Pepper Chickpea",
+      "French Onion",
+      "Honey Roasted Carrots",
     ],
     strong: [
       "Seared Scallops",
@@ -4643,81 +6935,63 @@ const PAIRING_MAP = [
       "Grilled Caesar",
       "Shrimp Bisque",
       "Mushrooms",
-      "French Onion",
-      "Roasted Red Pepper Chickpea",
       "Swordfish",
       "Chilean Seabass",
-      "Honey Roasted Carrots"
+      "Mushroom Bisque",
+      "Vegetable Curry with Chickpeas",
+      "Butternut Squash",
+      "Sauteed Garlic Spinach",
     ],
     works: [
       "Kansas City",
-      "Sauteed Garlic Spinach",
       "Burrata",
-      "Mushroom Bisque",
       "Tomato Basil",
-      "Vegetable Curry with Chickpeas",
-      "Butternut Squash",
-      "Broccolini"
+      "Broccolini",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$75",
+    price: "$75"
   },
   {
     name: "Daniel Chotard Sancerre Rouge",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "Loire",
-      "earthy",
-      "mineral",
-      "light",
-      "French",
-      "unique"
-    ],
+    profile: ["Pinot-Noir","Loire","earthy","mineral","light","French","unique"],
     excellent: [
       "Faroe Island Salmon",
       "Crab Cake",
       "Seared Scallops",
       "House Wedge",
-      "Escargot"
+      "Escargot",
     ],
     strong: [
       "Prime Tartare",
       "Roast Half Chicken",
       "Grilled Caesar",
       "Shrimp Bisque",
-      "Burrata"
+      "Burrata",
     ],
     works: [
       "Filet Mignon",
       "Sauteed Garlic Spinach",
-      "Mushrooms"
+      "Mushrooms",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$90",
+    price: "$90"
   },
   {
     name: "Evening Land Seven Springs",
     category: "wine-red",
-    profile: [
-      "light",
-      "earthy",
-      "cherry",
-      "elegant",
-      "delicate",
-      "Oregon"
-    ],
+    profile: ["light","earthy","cherry","elegant","delicate","Oregon"],
     excellent: [
       "Filet Mignon",
       "Bone-In Filet",
@@ -4726,1472 +7000,1207 @@ const PAIRING_MAP = [
       "House Wedge",
       "Crab Cake",
       "Seared Scallops",
-      "Swordfish"
+      "Swordfish",
+      "Sauteed Garlic Spinach",
+      "French Onion",
+      "Faroe Island Salmon",
     ],
     strong: [
       "Kansas City",
-      "Faroe Island Salmon",
       "Roast Half Chicken",
       "Creamed Spinach",
       "Grilled Caesar",
-      "French Onion",
       "Tuxedo-Crusted Yellowfin Tuna",
-      "Chilean Seabass"
+      "Chilean Seabass",
+      "Roasted Red Pepper Chickpea",
+      "Vegetable Curry with Chickpeas",
+      "Honey Roasted Carrots",
+      "Broccolini",
     ],
     works: [
       "Cowboy Ribeye",
       "Brussels and Belly",
       "Mushroom Bisque",
-      "Roasted Red Pepper Chickpea",
-      "Vegetable Curry with Chickpeas",
       "Butternut Squash",
-      "Honey Roasted Carrots",
-      "Broccolini"
+      "Truffle Fries",
+      "Mushrooms",
     ],
     avoid: [
       "The Tomahawk",
-      "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$100",
+    price: "$100"
   },
   {
     name: "Marimar Estate Christina",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "elegant",
-      "cherry",
-      "earth",
-      "Russian-River",
-      "California",
-      "structured"
-    ],
+    profile: ["Pinot-Noir","elegant","cherry","earth","Russian-River","California","structured"],
     excellent: [
       "Filet Mignon",
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "House Wedge",
-      "Crab Cake"
+      "Crab Cake",
     ],
     strong: [
       "Seared Scallops",
       "Prime Tartare",
       "Grilled Caesar",
       "Shrimp Bisque",
-      "Mushrooms"
+      "Mushrooms",
     ],
     works: [
       "Kansas City",
       "Sauteed Garlic Spinach",
-      "Burrata"
+      "Burrata",
+      "Cowboy Ribeye",
     ],
     avoid: [
       "The Tomahawk",
-      "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$110",
+    price: "$110"
   },
   {
     name: "Jax Calesa Vineyard Pinot Noir",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "fruit-forward",
-      "cherry",
-      "smooth",
-      "California",
-      "approachable"
-    ],
+    profile: ["Pinot-Noir","fruit-forward","cherry","smooth","California","approachable"],
     excellent: [
       "Filet Mignon",
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "House Wedge",
-      "Crab Cake"
+      "Crab Cake",
     ],
     strong: [
       "Seared Scallops",
       "Prime Tartare",
       "Grilled Caesar",
       "Shrimp Bisque",
-      "Mushrooms"
+      "Mushrooms",
     ],
     works: [
       "Kansas City",
       "Sauteed Garlic Spinach",
-      "Burrata"
+      "Burrata",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$120",
+    price: "$120"
   },
   {
     name: "Macauley Pinot Noir",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "rich",
-      "dark-cherry",
-      "structured",
-      "California",
-      "premium"
-    ],
+    profile: ["Pinot-Noir","rich","dark-cherry","structured","California","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Roast Half Chicken",
       "Faroe Island Salmon",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "Crab Cake",
       "House Wedge",
       "Grilled Caesar",
       "Seared Scallops",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "Cowboy Ribeye",
       "Shrimp Bisque",
-      "Prime Tartare"
+      "Prime Tartare",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$120",
+    price: "$120"
   },
   {
     name: "Elk Cove Five Mountain",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "earthy",
-      "cherry",
-      "spice",
-      "Oregon",
-      "structured",
-      "premium"
-    ],
+    profile: ["Pinot-Noir","earthy","cherry","spice","Oregon","structured","premium"],
     excellent: [
       "Filet Mignon",
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Crab Cake",
-      "House Wedge"
+      "House Wedge",
     ],
     strong: [
       "Seared Scallops",
       "Prime Tartare",
       "Grilled Caesar",
       "Shrimp Bisque",
-      "Mushrooms"
+      "Mushrooms",
     ],
     works: [
       "Kansas City",
       "Burrata",
-      "Sauteed Garlic Spinach"
+      "Sauteed Garlic Spinach",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$125",
+    price: "$125"
   },
   {
     name: "RAEN Royal St Robert",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "coastal",
-      "mineral",
-      "elegant",
-      "Sonoma",
-      "complex"
-    ],
+    profile: ["Pinot-Noir","coastal","mineral","elegant","Sonoma","complex"],
     excellent: [
       "Filet Mignon",
       "Faroe Island Salmon",
       "Seared Scallops",
       "Crab Cake",
-      "House Wedge"
+      "House Wedge",
     ],
     strong: [
       "Roast Half Chicken",
       "Prime Tartare",
       "Grilled Caesar",
       "Shrimp Bisque",
-      "Mushrooms"
+      "Mushrooms",
     ],
     works: [
       "Kansas City",
       "Burrata",
-      "Sauteed Garlic Spinach"
+      "Sauteed Garlic Spinach",
+      "Porterhouse",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$125",
+    price: "$125"
   },
   {
     name: "Sanford & Benedict Pinot Noir",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "earthy",
-      "elegant",
-      "Sta-Rita-Hills",
-      "structured",
-      "premium"
-    ],
+    profile: ["Pinot-Noir","earthy","elegant","Sta-Rita-Hills","structured","premium"],
     excellent: [
       "Filet Mignon",
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Crab Cake",
-      "Seared Scallops"
+      "Seared Scallops",
     ],
     strong: [
       "Prime Tartare",
       "House Wedge",
       "Grilled Caesar",
       "Shrimp Bisque",
-      "Mushrooms"
+      "Mushrooms",
     ],
     works: [
       "Kansas City",
       "Burrata",
-      "Sauteed Garlic Spinach"
+      "Sauteed Garlic Spinach",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$130",
+    price: "$130"
   },
   {
     name: "J Davies Ferrington Vineyards",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir",
-      "structured",
-      "dark-cherry",
-      "Sonoma",
-      "premium",
-      "age-worthy"
-    ],
+    profile: ["Pinot-Noir","structured","dark-cherry","Sonoma","premium","age-worthy"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Faroe Island Salmon",
       "Roast Half Chicken",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "Crab Cake",
       "Seared Scallops",
       "House Wedge",
       "Grilled Caesar",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Cowboy Ribeye",
       "Burrata",
-      "Prime Tartare"
+      "Prime Tartare",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "$140",
+    price: "$140"
   },
   {
     name: "1881 Napa Valley",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "approachable",
-      "dark-fruit",
-      "smooth",
-      "Napa",
-      "entry-premium"
-    ],
+    profile: ["Cab","approachable","dark-fruit","smooth","Napa","entry-premium"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Truffle Fries",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Brussels and Belly",
       "Au Gratin Potatoes",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$85",
+    price: "$85"
   },
   {
     name: "Faust Napa Valley Cabernet",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "dark-fruit",
-      "structured",
-      "Napa",
-      "approachable"
-    ],
+    profile: ["Cab","bold","dark-fruit","structured","Napa","approachable"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Truffle Fries",
       "Mushrooms",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons",
       "French Onion",
-      "Loaded Potato"
+      "Loaded Potato",
+      "Bone-In Filet",
+      "Roast Half Chicken",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    price: "$100",
+    price: "$100"
   },
   {
     name: "Gundlach Bundschu Cabernet",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "structured",
-      "dark-fruit",
-      "earth",
-      "Sonoma",
-      "medium-full"
-    ],
+    profile: ["Cab","structured","dark-fruit","earth","Sonoma","medium-full"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Mushrooms",
       "Truffle Fries",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Brussels and Belly",
       "Bone Marrow",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "Shrimp Cocktail"
-    ],
-    price: "$115",
-  },
-  {
-    name: "Venge Silencieux",
-    category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "concentrated",
-      "dark-fruit",
-      "Napa",
-      "structured"
-    ],
-    excellent: [
-      "Cowboy Ribeye",
-      "Kansas City",
-      "Bone Marrow",
-      "Truffle Fries",
-      "Mushrooms"
-    ],
-    strong: [
-      "The Tomahawk",
-      "Filet Mignon",
-      "Porterhouse",
-      "Brussels and Belly",
-      "Creamed Spinach"
-    ],
-    works: [
-      "House Wedge",
-      "Au Gratin Potatoes",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
     ],
-    price: "$120",
+    price: "$115"
   },
   {
-    name: "Austin Hope Cabernet Sauvignon",
+    name: "Venge Silencieux",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "rich",
-      "dark-fruit",
-      "Paso-Robles",
-      "full-bodied"
-    ],
+    profile: ["Cab","bold","concentrated","dark-fruit","Napa","structured"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
       "Truffle Fries",
-      "Brussels and Belly"
+      "Mushrooms",
+    ],
+    strong: [
+      "The Tomahawk",
+      "Filet Mignon",
+      "Porterhouse",
+      "Brussels and Belly",
+      "Creamed Spinach",
+    ],
+    works: [
+      "House Wedge",
+      "Au Gratin Potatoes",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+    ],
+    price: "$120"
+  },
+  {
+    name: "Austin Hope Cabernet Sauvignon",
+    category: "wine-red",
+    profile: ["Cab","bold","rich","dark-fruit","Paso-Robles","full-bodied"],
+    excellent: [
+      "Cowboy Ribeye",
+      "Kansas City",
+      "Bone Marrow",
+      "Truffle Fries",
+      "Brussels and Belly",
     ],
     strong: [
       "The Tomahawk",
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$135",
+    price: "$135"
   },
   {
     name: "Jordan Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "elegant",
-      "balanced",
-      "cedar",
-      "dark-cherry",
-      "smooth",
-      "approachable"
-    ],
+    profile: ["elegant","balanced","cedar","dark-cherry","smooth","approachable"],
     excellent: [
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Truffle Fries",
-      "Creamed Spinach"
+      "Creamed Spinach",
+      "Au Gratin Potatoes",
+      "Porterhouse",
+      "Lobster Mac",
+      "Mushrooms",
     ],
     strong: [
       "Cowboy Ribeye",
-      "Porterhouse",
       "Shrimp Bisque",
       "Brussels and Belly",
-      "Lobster Mac"
+      "Grilled Caesar",
+      "Loaded Potato",
+      "French Onion",
     ],
     works: [
       "House Wedge",
       "Bone Marrow",
-      "Lardons",
-      "Mushrooms",
       "Chocolate Brownie",
       "Cheesecake",
       "Creme Brulee",
       "Carrot Cake",
-      "French Onion",
       "Mushroom Bisque",
-      "Loaded Potato",
       "Gumbo",
       "Swordfish",
       "Chilean Seabass",
-      "Honey Roasted Carrots"
+      "Honey Roasted Carrots",
+      "Roast Half Chicken",
+      "Sauteed Garlic Spinach",
     ],
     avoid: [
       "Prime Tartare",
       "Crab Cake",
-      "Seared Scallops"
+      "Seared Scallops",
     ],
-    price: "$145",
+    price: "$145"
   },
   {
     name: "Peju Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "approachable",
-      "fruit-forward",
-      "smooth",
-      "Napa",
-      "medium-full"
-    ],
+    profile: ["Cab","approachable","fruit-forward","smooth","Napa","medium-full"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Truffle Fries",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Brussels and Belly",
       "Bone Marrow",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$140",
+    price: "$140"
   },
   {
     name: "Teeter Totter Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "structured",
-      "dark-fruit",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Cab","bold","structured","dark-fruit","Napa","premium"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Truffle Fries",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "The Tomahawk",
       "Filet Mignon",
       "Porterhouse",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$150",
+    price: "$150"
   },
   {
     name: "J. Davies Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "structured",
-      "elegant",
-      "dark-cherry",
-      "Napa",
-      "Diamond-Mountain",
-      "premium"
-    ],
+    profile: ["Cab","structured","elegant","dark-cherry","Napa","Diamond-Mountain","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Truffle Fries",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Bone Marrow",
       "Brussels and Belly",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$150",
+    price: "$150"
   },
   {
     name: "Silver Oak Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "bold",
-      "structured",
-      "cedar",
-      "blackberry",
-      "tobacco",
-      "elegant"
-    ],
+    profile: ["bold","structured","cedar","blackberry","tobacco","elegant"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
       "The Tomahawk",
       "Truffle Fries",
       "Creamed Spinach",
-      "Porterhouse"
+      "Porterhouse",
+      "Au Gratin Potatoes",
+      "Brussels and Belly",
+      "Mushrooms",
     ],
     strong: [
       "Filet Mignon",
       "Ghost Block Cabernet Sauvignon",
       "Bone Marrow",
-      "Brussels and Belly",
-      "Mushrooms"
+      "Bone-In Filet",
     ],
     works: [
       "Shrimp Bisque",
       "House Wedge",
-      "Lardons",
-      "Au Gratin Potatoes",
       "Chocolate Brownie",
       "Cheesecake",
-      "Creme Brulee"
+      "Creme Brulee",
+      "Lobster Mac",
     ],
     avoid: [
       "Prime Tartare",
       "Crab Cake",
       "Seared Scallops",
-      "Burrata"
+      "Burrata",
     ],
-    price: "$160",
+    price: "$160"
   },
   {
     name: "Ghost Block Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "dark-fruit",
-      "structured",
-      "Oakville",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Cab","bold","dark-fruit","structured","Oakville","Napa","premium"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
       "The Tomahawk",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
+      "Silver Oak Cabernet Sauvignon",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$160",
+    price: "$160"
   },
   {
     name: "Brandlin Estate Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "volcanic",
-      "structured",
-      "Mt-Veeder",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Cab","bold","volcanic","structured","Mt-Veeder","Napa","premium"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$175",
+    price: "$175"
   },
   {
     name: "Lail Vineyards Blueprint",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "structured",
-      "dark-fruit",
-      "cedar",
-      "elegant",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Cab","structured","dark-fruit","cedar","elegant","Napa","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Truffle Fries",
       "Mushrooms",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "The Tomahawk",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$175",
+    price: "$175"
   },
   {
     name: "Spottswoode Lyndenhurst",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "elegant",
-      "structured",
-      "cedar",
-      "St-Helena",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Cab","elegant","structured","cedar","St-Helena","Napa","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Truffle Fries",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Bone Marrow",
       "Brussels and Belly",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$175",
+    price: "$175"
   },
   {
     name: "Nickel & Nickel Cabernet",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "single-vineyard",
-      "bold",
-      "concentrated",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Cab","single-vineyard","bold","concentrated","Napa","premium"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$195",
+    price: "$195"
   },
   {
     name: "Shafer 1.5",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "Merlot-blended",
-      "rich",
-      "Stags-Leap",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Cab","bold","Merlot-blended","rich","Stags-Leap","Napa","premium"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
       "Truffle Fries",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "The Tomahawk",
       "Filet Mignon",
       "Porterhouse",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$195",
+    price: "$195"
   },
   {
     name: "Cade Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "structured",
-      "Howell-Mountain",
-      "Napa",
-      "premium",
-      "organic"
-    ],
+    profile: ["Cab","bold","structured","Howell-Mountain","Napa","premium","organic"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$210",
+    price: "$210"
   },
   {
     name: "Darioush Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "plush",
-      "Napa",
-      "premium",
-      "structured"
-    ],
+    profile: ["Cab","bold","plush","Napa","premium","structured"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$215",
+    price: "$215"
   },
   {
     name: "Heitz Trailside Vineyard",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "structured",
-      "mint",
-      "cedar",
-      "Rutherford",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Cab","structured","mint","cedar","Rutherford","Napa","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "The Tomahawk",
       "Truffle Fries",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$220",
+    price: "$220"
   },
   {
     name: "Frias Block 5",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "concentrated",
-      "Spring-Mountain",
-      "Napa",
-      "premium",
-      "structured"
-    ],
+    profile: ["Cab","bold","concentrated","Spring-Mountain","Napa","premium","structured"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
+      "Bone-In Filet",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$225",
+    price: "$225"
   },
   {
     name: "Far Niente Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "bold",
-      "rich",
-      "blackcurrant",
-      "vanilla",
-      "structured",
-      "polished"
-    ],
+    profile: ["bold","rich","blackcurrant","vanilla","structured","polished"],
     excellent: [
       "Filet Mignon",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "Truffle Fries",
       "Bone Marrow",
-      "Lobster Mac"
+      "Lobster Mac",
     ],
     strong: [
       "Kansas City",
       "The Tomahawk",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Mushrooms"
+      "Mushrooms",
+      "Porterhouse",
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Shrimp Bisque",
-      "Au Gratin Potatoes",
       "Chocolate Brownie",
       "Cheesecake",
       "Creme Brulee",
-      "Carrot Cake"
+      "Carrot Cake",
     ],
     avoid: [
       "Prime Tartare",
       "Crab Cake",
       "Seared Scallops",
-      "Burrata"
+      "Burrata",
     ],
-    price: "$250",
+    price: "$250"
   },
   {
     name: "Odette Cabernet Sauvignon",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "polished",
-      "dark-fruit",
-      "Stags-Leap",
-      "Napa",
-      "prestige",
-      "elegant"
-    ],
+    profile: ["Cab","polished","dark-fruit","Stags-Leap","Napa","prestige","elegant"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Truffle Fries",
       "Bone Marrow",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Porterhouse",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$275",
+    price: "$275"
   },
   {
     name: "Macauley Stagecoach Vineyard",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "concentrated",
-      "Vaca-Mountains",
-      "Napa",
-      "prestige"
-    ],
+    profile: ["Cab","bold","concentrated","Vaca-Mountains","Napa","prestige"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$295",
+    price: "$295"
   },
   {
     name: "Freemark Abbey Bosché",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "historic",
-      "structured",
-      "Rutherford",
-      "Napa",
-      "prestige",
-      "age-worthy"
-    ],
+    profile: ["Cab","historic","structured","Rutherford","Napa","prestige","age-worthy"],
     excellent: [
       "Filet Mignon",
       "The Tomahawk",
       "Kansas City",
       "Truffle Fries",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$300",
+    price: "$300"
   },
   {
     name: "Venge Family Reserve",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "bold",
-      "concentrated",
-      "Oakville",
-      "Napa",
-      "prestige"
-    ],
+    profile: ["Cab","bold","concentrated","Oakville","Napa","prestige"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$325",
+    price: "$325"
   },
   {
     name: "Lail Vineyards Daniel Cuvée",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "prestige",
-      "complex",
-      "structured",
-      "Napa",
-      "icon"
-    ],
+    profile: ["Cab","prestige","complex","structured","Napa","icon"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Filet Mignon",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Kansas City",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$350",
+    price: "$350"
   },
   {
     name: "Heitz Martha's Vineyard",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "iconic",
-      "mint",
-      "cedar",
-      "Rutherford",
-      "Napa",
-      "legendary"
-    ],
+    profile: ["Cab","iconic","mint","cedar","Rutherford","Napa","legendary"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Bone-In Filet",
       "Porterhouse",
       "Mushrooms",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
+      "Prime Tartare",
+      "Roast Half Chicken",
     ],
-    price: "$400",
+    price: "$400"
   },
   {
     name: "Simon Family Estate Reserve",
     category: "wine-red",
-    profile: [
-      "Cab",
-      "prestige",
-      "bold",
-      "structured",
-      "Napa",
-      "icon"
-    ],
+    profile: ["Cab","prestige","bold","structured","Napa","icon"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$400",
+    price: "$400"
   },
   {
     name: "Shafer Hillside Select",
     category: "wine-red",
-    profile: [
-      "bold",
-      "concentrated",
-      "plum",
-      "mocha",
-      "structured",
-      "prestige"
-    ],
+    profile: ["bold","concentrated","plum","mocha","structured","prestige"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Truffle Fries",
       "Bone Marrow",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     strong: [
       "Kansas City",
       "Filet Mignon",
       "Porterhouse",
       "Creamed Spinach",
-      "Mushrooms"
+      "Mushrooms",
     ],
     works: [
       "House Wedge",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     avoid: [
       "Prime Tartare",
       "Seared Scallops",
       "Burrata",
-      "lighter apps",
       "Roasted Red Pepper Chickpea",
       "Vegetable Curry with Chickpeas",
       "Tuxedo-Crusted Yellowfin Tuna",
       "Swordfish",
       "Chilean Seabass",
-      "Asparagus"
+      "Asparagus",
+      "Crab Cake",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
     ],
-    price: "$450",
+    price: "$450"
   },
   {
     name: "Opus One",
     category: "wine-red",
-    profile: [
-      "bold",
-      "complex",
-      "structured",
-      "dark-fruit",
-      "cedar",
-      "velvety",
-      "prestige"
-    ],
+    profile: ["bold","complex","structured","dark-fruit","cedar","velvety","prestige"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Filet Mignon",
       "Bone-In Filet",
       "Truffle Fries",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Kansas City",
       "Porterhouse",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Lobster Mac"
+      "Lobster Mac",
     ],
     works: [
       "House Wedge",
@@ -6200,7 +8209,7 @@ const PAIRING_MAP = [
       "Chocolate Brownie",
       "Peanut Butter Brownie",
       "Cheesecake",
-      "Creme Brulee"
+      "Creme Brulee",
     ],
     avoid: [
       "Prime Tartare",
@@ -6221,224 +8230,210 @@ const PAIRING_MAP = [
       "Rainbow Trout",
       "Honey Roasted Carrots",
       "Broccolini",
-      "Asparagus"
+      "Asparagus",
+      "Seafood Tower",
+      "Shrimp Cocktail",
+      "Escargot",
+      "Shrimp Bisque",
+      "Grilled Caesar",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
+      "Sauteed Garlic Spinach",
+      "Beignets",
+      "The BG",
+      "French 75",
+      "Bee's Knees",
+      "Vesper",
+      "Corpse Reviver",
+      "Paloma",
+      "Pablo Sour",
+      "Margarita",
+      "The Happy Wife",
+      "Transfusion",
+      "Head Fake",
+      "Il Colle Prosecco Superiore",
+      "Raventós Cava de NIT Rosé Brut",
+      "Robert Moncuit Les Grand Blancs",
+      "Pierre Gimonnet Special Club Brut",
+      "Marc Brédif Chinon",
+      "Blanco Tequila",
+      "Spiced / Flavored Rum",
+      "Cream Liqueur",
+      "Coffee Liqueur",
+      "Nut Liqueur",
+      "Grand Marnier",
+      "Limoncello",
+      "Chambord",
+      "Licor 43",
+      "Fireball Whisky",
     ],
-    price: "$475",
+    price: "$475"
   },
   {
     name: "Jubilation by Colgin",
     category: "wine-red",
-    profile: [
-      "Cab-blend",
-      "icon",
-      "Napa",
-      "prestige",
-      "complex",
-      "structured",
-      "legendary"
-    ],
+    profile: ["Cab-blend","icon","Napa","prestige","complex","structured","legendary"],
     excellent: [
       "The Tomahawk",
       "Filet Mignon",
       "Bone-In Filet",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Cowboy Ribeye",
       "Kansas City",
       "Porterhouse",
       "Mushrooms",
-      "Creamed Spinach"
-    ],
-    works: [
-      "House Wedge",
-      "Brussels and Belly",
-      "Au Gratin Potatoes"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "Shrimp Cocktail"
-    ],
-    price: "$475",
-  },
-  {
-    name: "Marc Brédif Chinon",
-    category: "wine-red",
-    profile: [
-      "Cabernet-Franc",
-      "Loire",
-      "earthy",
-      "red-fruit",
-      "herbaceous",
-      "light-medium"
-    ],
-    excellent: [
-      "Roast Half Chicken",
-      "Faroe Island Salmon",
-      "Mushrooms",
-      "House Wedge",
-      "Grilled Caesar"
-    ],
-    strong: [
-      "Filet Mignon",
-      "Escargot",
-      "Sauteed Garlic Spinach",
-      "Burrata",
-      "Prime Tartare"
-    ],
-    works: [
-      "Kansas City",
-      "Shrimp Bisque",
-      "Crab Cake"
-    ],
-    avoid: [
-      "The Tomahawk",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Bowdie's Old Fashioned"
-    ],
-    price: "$60",
-  },
-  {
-    name: "Braida Montebruna Barbera",
-    category: "wine-red",
-    profile: [
-      "Barbera-d'Asti",
-      "medium-bodied",
-      "cherry",
-      "earthy",
-      "Italian",
-      "food-friendly"
-    ],
-    excellent: [
-      "Roast Half Chicken",
-      "Kansas City",
-      "Mushrooms",
-      "Grilled Caesar",
-      "Truffle Fries"
-    ],
-    strong: [
-      "Filet Mignon",
-      "Faroe Island Salmon",
-      "Brussels and Belly",
       "Creamed Spinach",
-      "House Wedge",
-      "Gumbo"
     ],
     works: [
-      "Cowboy Ribeye",
+      "House Wedge",
+      "Brussels and Belly",
       "Au Gratin Potatoes",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
     ],
-    price: "$70",
+    price: "$475"
+  },
+  {
+    name: "Marc Brédif Chinon",
+    category: "wine-red",
+    profile: ["Cabernet-Franc","Loire","earthy","red-fruit","herbaceous","light-medium"],
+    excellent: [
+      "Roast Half Chicken",
+      "Faroe Island Salmon",
+      "Mushrooms",
+      "House Wedge",
+      "Grilled Caesar",
+    ],
+    strong: [
+      "Filet Mignon",
+      "Escargot",
+      "Sauteed Garlic Spinach",
+      "Burrata",
+      "Prime Tartare",
+    ],
+    works: [
+      "Kansas City",
+      "Shrimp Bisque",
+      "Crab Cake",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Caymus Cabernet Sauvignon",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+    ],
+    price: "$60"
+  },
+  {
+    name: "Braida Montebruna Barbera",
+    category: "wine-red",
+    profile: ["Barbera-d'Asti","medium-bodied","cherry","earthy","Italian","food-friendly"],
+    excellent: [
+      "Roast Half Chicken",
+      "Kansas City",
+      "Mushrooms",
+      "Grilled Caesar",
+      "Truffle Fries",
+    ],
+    strong: [
+      "Filet Mignon",
+      "Faroe Island Salmon",
+      "Brussels and Belly",
+      "Creamed Spinach",
+      "House Wedge",
+      "Gumbo",
+    ],
+    works: [
+      "Cowboy Ribeye",
+      "Au Gratin Potatoes",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+    ],
+    price: "$70"
   },
   {
     name: "Les Pallières Raciné",
     category: "wine-red",
-    profile: [
-      "Gigondas",
-      "Grenache-dominant",
-      "bold",
-      "earthy",
-      "spice",
-      "Rhône",
-      "structured"
-    ],
+    profile: ["Gigondas","Grenache-dominant","bold","earthy","spice","Rhône","structured"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Mushrooms",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Brussels and Belly",
       "Grilled Caesar",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$90",
+    price: "$90"
   },
   {
     name: "Le Volte dell'Ornellaia",
     category: "wine-red",
-    profile: [
-      "Tuscan-blend",
-      "medium-full",
-      "dark-fruit",
-      "Merlot-driven",
-      "Italian",
-      "structured"
-    ],
+    profile: ["Tuscan-blend","medium-full","dark-fruit","Merlot-driven","Italian","structured"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Mushrooms",
       "Truffle Fries",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Brussels and Belly",
       "Grilled Caesar",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Bone Marrow",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$80",
+    price: "$80"
   },
   {
     name: "Fattoria Le Pupille Saffredi",
     category: "wine-red",
-    profile: [
-      "Super-Tuscan",
-      "Maremma",
-      "Cab-Merlot-Petit-Verdot",
-      "firm-tannin",
-      "graphite",
-      "structured",
-      "Italian",
-      "premium"
-    ],
+    profile: ["Super-Tuscan","Maremma","Cab-Merlot-Petit-Verdot","firm-tannin","graphite","structured","Italian","premium"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
       "Kansas City",
       "Porterhouse",
-      "Gumbo"
+      "Gumbo",
     ],
     strong: [
       "Bone-In Filet",
@@ -6446,13 +8441,12 @@ const PAIRING_MAP = [
       "Brussels and Belly",
       "Creamed Spinach",
       "Mushrooms",
-      "Lardons"
     ],
     works: [
       "Truffle Fries",
       "Au Gratin Potatoes",
       "Prime Tartare",
-      "Lobster Mac"
+      "Lobster Mac",
     ],
     avoid: [
       "Crab Cake",
@@ -6460,150 +8454,116 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+      "Laurent Perrier Le Cuvée Brut",
+    ]
   },
   {
     name: "Muga Reserva",
     category: "wine-red",
-    profile: [
-      "Rioja",
-      "Tempranillo",
-      "earthy",
-      "vanilla",
-      "structured",
-      "Spanish"
-    ],
+    profile: ["Rioja","Tempranillo","earthy","vanilla","structured","Spanish"],
     excellent: [
       "Roast Half Chicken",
       "Kansas City",
       "Mushrooms",
       "Grilled Caesar",
       "Truffle Fries",
-      "Gumbo"
+      "Gumbo",
     ],
     strong: [
       "Filet Mignon",
       "Cowboy Ribeye",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Lardons"
+      "Roasted Red Pepper Chickpea",
+      "French Onion",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
       "Faroe Island Salmon",
-      "French Onion",
-      "Roasted Red Pepper Chickpea"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    price: "$80",
+    price: "$80"
   },
   {
     name: "Tenuta di Arceno Chianti Classico",
     category: "wine-red",
-    profile: [
-      "Chianti",
-      "Sangiovese",
-      "earthy",
-      "cherry",
-      "acidic",
-      "Italian",
-      "structured"
-    ],
+    profile: ["Chianti","Sangiovese","earthy","cherry","acidic","Italian","structured"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Mushrooms",
       "Grilled Caesar",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Bone Marrow",
       "Roast Half Chicken",
-      "Roasted Red Pepper Chickpea"
+      "Roasted Red Pepper Chickpea",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$95",
+    price: "$95"
   },
   {
     name: "Château Haut Segottes",
     category: "wine-red",
-    profile: [
-      "Saint-Émilion",
-      "Merlot-dominant",
-      "plush",
-      "dark-fruit",
-      "French",
-      "structured"
-    ],
+    profile: ["Saint-Émilion","Merlot-dominant","plush","dark-fruit","French","structured"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Mushrooms",
       "Truffle Fries",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Brussels and Belly",
       "Bone Marrow",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$100",
+    price: "$100"
   },
   {
     name: "Château Gombaude-Guillot",
     category: "wine-red",
-    profile: [
-      "Pomerol",
-      "Merlot-dominant",
-      "biodynamic",
-      "plush",
-      "truffle",
-      "velvety",
-      "Bordeaux",
-      "premium"
-    ],
+    profile: ["Pomerol","Merlot-dominant","biodynamic","plush","truffle","velvety","Bordeaux","premium"],
     excellent: [
       "Filet Mignon",
       "Bone-In Filet",
       "Mushrooms",
       "Truffle Fries",
       "Lobster Mac",
-      "Escargot Butter",
-      "Gumbo"
+      "Gumbo",
     ],
     strong: [
       "Bone Marrow",
@@ -6611,13 +8571,13 @@ const PAIRING_MAP = [
       "Porterhouse",
       "Creamed Spinach",
       "Au Gratin Potatoes",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Cowboy Ribeye",
       "House Wedge",
       "Grilled Caesar",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     avoid: [
       "Crab Cake",
@@ -6625,451 +8585,355 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Stoneleigh Sauvignon Blanc",
-      "G.D. Vajra Moscato d'Asti"
-    ],
+      "G.D. Vajra Moscato d'Asti",
+    ]
   },
   {
     name: "Clos Petit Ona Grenache",
     category: "wine-red",
-    profile: [
-      "Grenache",
-      "medium-bodied",
-      "red-fruit",
-      "earthy",
-      "Spanish",
-      "approachable"
-    ],
+    profile: ["Grenache","medium-bodied","red-fruit","earthy","Spanish","approachable"],
     excellent: [
       "Roast Half Chicken",
       "Faroe Island Salmon",
       "Mushrooms",
       "House Wedge",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     strong: [
       "Filet Mignon",
       "Kansas City",
       "Brussels and Belly",
       "Sauteed Garlic Spinach",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Cowboy Ribeye",
       "Burrata",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    price: "$105",
+    price: "$105"
   },
   {
     name: "G.D. Vajra Albe Nebbiolo",
     category: "wine-red",
-    profile: [
-      "Nebbiolo",
-      "earthy",
-      "cherry",
-      "floral",
-      "Piedmont",
-      "medium-bodied",
-      "Italian"
-    ],
+    profile: ["Nebbiolo","earthy","cherry","floral","Piedmont","medium-bodied","Italian"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Mushrooms",
       "Grilled Caesar",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Bone Marrow",
-      "Roast Half Chicken"
+      "Roast Half Chicken",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$110",
+    price: "$110"
   },
   {
     name: "Domaine Tempier Bandol",
     category: "wine-red",
-    profile: [
-      "Mourvèdre-dominant",
-      "bold",
-      "earthy",
-      "dark-fruit",
-      "Provence",
-      "structured"
-    ],
+    profile: ["Mourvèdre-dominant","bold","earthy","dark-fruit","Provence","structured"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Mushrooms",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "The Tomahawk",
       "Filet Mignon",
       "Brussels and Belly",
       "Grilled Caesar",
-      "Lardons",
-      "Vegetable Curry with Chickpeas"
+      "Vegetable Curry with Chickpeas",
     ],
     works: [
       "House Wedge",
       "Creamed Spinach",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$120",
+    price: "$120"
   },
   {
     name: "Domaine du Grand Tinel",
     category: "wine-red",
-    profile: [
-      "Châteauneuf-du-Pape",
-      "Grenache-dominant",
-      "bold",
-      "earthy",
-      "spice",
-      "Rhône"
-    ],
+    profile: ["Châteauneuf-du-Pape","Grenache-dominant","bold","earthy","spice","Rhône"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Mushrooms",
       "Bone Marrow",
       "Truffle Fries",
-      "Gumbo"
+      "Gumbo",
     ],
     strong: [
       "The Tomahawk",
       "Filet Mignon",
       "Brussels and Belly",
       "Grilled Caesar",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$125",
+    price: "$125"
   },
   {
     name: "Pio Cesare Barbaresco",
     category: "wine-red",
-    profile: [
-      "Nebbiolo",
-      "Barbaresco",
-      "structured",
-      "earthy",
-      "floral",
-      "Piedmont",
-      "premium"
-    ],
+    profile: ["Nebbiolo","Barbaresco","structured","earthy","floral","Piedmont","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Mushrooms",
       "Truffle Fries",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$130",
+    price: "$130"
   },
   {
     name: "Château Batailley",
     category: "wine-red",
-    profile: [
-      "Pauillac",
-      "Cab-dominant",
-      "structured",
-      "cedar",
-      "classic-Bordeaux",
-      "premium"
-    ],
+    profile: ["Pauillac","Cab-dominant","structured","cedar","classic-Bordeaux","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Truffle Fries",
       "Mushrooms",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$140",
+    price: "$140"
   },
   {
     name: "Château Beaucastel",
     category: "wine-red",
-    profile: [
-      "Châteauneuf-du-Pape",
-      "Mourvèdre-heavy",
-      "bold",
-      "complex",
-      "earthy",
-      "prestige"
-    ],
+    profile: ["Châteauneuf-du-Pape","Mourvèdre-heavy","bold","complex","earthy","prestige"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Truffle Fries",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$175",
+    price: "$175"
   },
   {
     name: "Poderi Aldo Conterno Nebbiolo",
     category: "wine-red",
-    profile: [
-      "Nebbiolo",
-      "Piedmont",
-      "structured",
-      "earthy",
-      "premium",
-      "age-worthy"
-    ],
+    profile: ["Nebbiolo","Piedmont","structured","earthy","premium","age-worthy"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "The Tomahawk",
       "Mushrooms",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Truffle Fries",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$180",
+    price: "$180"
   },
   {
     name: "Le Ragnaie Brunello",
     category: "wine-red",
-    profile: [
-      "Brunello",
-      "Sangiovese-Grosso",
-      "bold",
-      "structured",
-      "earthy",
-      "Tuscany",
-      "prestige"
-    ],
+    profile: ["Brunello","Sangiovese-Grosso","bold","structured","earthy","Tuscany","prestige"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "The Tomahawk",
       "Bone Marrow",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Truffle Fries",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$200",
+    price: "$200"
   },
   {
     name: "Sesti Brunello di Montalcino",
     category: "wine-red",
-    profile: [
-      "Brunello",
-      "Sangiovese",
-      "bold",
-      "earthy",
-      "structured",
-      "Tuscany",
-      "icon"
-    ],
+    profile: ["Brunello","Sangiovese","bold","earthy","structured","Tuscany","icon"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Filet Mignon",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Kansas City",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$250",
+    price: "$250"
   },
   {
     name: "Bodega Noemia A Lisa",
     category: "wine-red",
-    profile: [
-      "Malbec-blend",
-      "Argentina",
-      "medium-full",
-      "dark-fruit",
-      "earthy",
-      "structured"
-    ],
+    profile: ["Malbec-blend","Argentina","medium-full","dark-fruit","earthy","structured"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Mushrooms",
       "Truffle Fries",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$65",
+    price: "$65"
   },
   {
     name: "Ghost Block Zinfandel",
     category: "wine-red",
-    profile: [
-      "Zinfandel",
-      "bold",
-      "jammy",
-      "spice",
-      "Oakville",
-      "Napa",
-      "full-bodied"
-    ],
+    profile: ["Zinfandel","bold","jammy","spice","Oakville","Napa","full-bodied"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
       "Brussels and Belly",
-      "Lardons"
     ],
     strong: [
       "The Tomahawk",
@@ -7077,920 +8941,610 @@ const PAIRING_MAP = [
       "Mushrooms",
       "Truffle Fries",
       "Creamed Spinach",
-      "Gumbo"
+      "Gumbo",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
+      "Laurent Perrier Le Cuvée Brut",
     ],
-    price: "$90",
+    price: "$90"
   },
   {
     name: "The Prisoner Red Blend",
     category: "wine-red",
-    profile: [
-      "red-blend",
-      "Zinfandel-led",
-      "bold",
-      "jammy",
-      "approachable",
-      "California"
-    ],
+    profile: ["red-blend","Zinfandel-led","bold","jammy","approachable","California"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Mushrooms",
       "Bone Marrow",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Lardons",
-      "Gumbo"
+      "Gumbo",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
-    price: "$100",
+    price: "$100"
   },
   {
     name: "Macauley Petite Syrah",
     category: "wine-red",
-    profile: [
-      "Petite-Sirah",
-      "bold",
-      "inky",
-      "dark-fruit",
-      "tannic",
-      "California",
-      "full-bodied"
-    ],
+    profile: ["Petite-Sirah","bold","inky","dark-fruit","tannic","California","full-bodied"],
     excellent: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
       "Kansas City",
-      "Lardons"
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Brussels and Belly",
       "Mushrooms",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+      "Laurent Perrier Le Cuvée Brut",
+    ]
   },
   {
     name: "Venge Scout's Honor",
     category: "wine-red",
-    profile: [
-      "Zin-dominant-blend",
-      "Napa",
-      "bold",
-      "ripe-blackberry",
-      "black-pepper",
-      "full-bodied",
-      "generous"
-    ],
+    profile: ["Zin-dominant-blend","Napa","bold","ripe-blackberry","black-pepper","full-bodied","generous"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
       "Mushrooms",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "The Tomahawk",
       "Porterhouse",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Lardons",
-      "Gumbo"
+      "Gumbo",
     ],
     works: [
       "Filet Mignon",
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Faroe Island Salmon"
-    ],
+      "Faroe Island Salmon",
+    ]
   },
   {
     name: "Alexander Valley Cyrus",
     category: "wine-red",
-    profile: [
-      "Bordeaux-style-blend",
-      "bold",
-      "structured",
-      "dark-fruit",
-      "Alexander-Valley",
-      "premium"
-    ],
+    profile: ["Bordeaux-style-blend","bold","structured","dark-fruit","Alexander-Valley","premium"],
     excellent: [
       "Kansas City",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Truffle Fries",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "The Tomahawk",
       "Filet Mignon",
       "Porterhouse",
       "Brussels and Belly",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
-    ],
+      "Shrimp Cocktail",
+    ]
   },
   {
     name: "Epoch Ingenuity",
     category: "wine-red",
-    profile: [
-      "Rhône-style-blend",
-      "Paso-Robles",
-      "bold",
-      "spice",
-      "dark-fruit",
-      "structured"
-    ],
+    profile: ["Rhône-style-blend","Paso-Robles","bold","spice","dark-fruit","structured"],
     excellent: [
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
       "Mushrooms",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "The Tomahawk",
       "Filet Mignon",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Lardons"
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
-    ],
+      "Shrimp Cocktail",
+    ]
   },
   {
     name: "San Simeon Stormwatch",
     category: "wine-red",
-    profile: [
-      "red-blend",
-      "approachable",
-      "medium-full",
-      "fruit-forward",
-      "Paso-Robles"
-    ],
+    profile: ["red-blend","approachable","medium-full","fruit-forward","Paso-Robles"],
     excellent: [
       "Kansas City",
       "Roast Half Chicken",
       "Mushrooms",
       "Truffle Fries",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     strong: [
       "Filet Mignon",
       "Cowboy Ribeye",
       "Brussels and Belly",
       "Au Gratin Potatoes",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "House Wedge",
       "Porterhouse",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
-    ],
+      "Shrimp Cocktail",
+    ]
   },
   {
     name: "Domaine Serene Grand Cheval",
     category: "wine-red",
-    profile: [
-      "Pinot-Noir-Chardonnay-blend",
-      "Oregon",
-      "elegant",
-      "complex",
-      "premium"
-    ],
+    profile: ["Pinot-Noir-Chardonnay-blend","Oregon","elegant","complex","premium"],
     excellent: [
       "Filet Mignon",
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Seared Scallops",
-      "House Wedge"
+      "House Wedge",
     ],
     strong: [
       "Crab Cake",
       "Shrimp Bisque",
       "Grilled Caesar",
       "Mushrooms",
-      "Prime Tartare"
+      "Prime Tartare",
     ],
     works: [
       "Kansas City",
       "Burrata",
-      "Lobster Mac"
+      "Lobster Mac",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
       "Bowdie's Old Fashioned",
-      "Caymus Cabernet Sauvignon"
-    ],
+      "Caymus Cabernet Sauvignon",
+    ]
   },
   {
     name: "St Supéry Élu Meritage",
     category: "wine-red",
-    profile: [
-      "Bordeaux-blend",
-      "Cab-dominant",
-      "structured",
-      "Napa",
-      "premium"
-    ],
+    profile: ["Bordeaux-blend","Cab-dominant","structured","Napa","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Truffle Fries",
       "Mushrooms",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
-      "Lardons"
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
-    ],
+      "Shrimp Cocktail",
+    ]
   },
   {
     name: "Darioush Cabernet Franc",
     category: "wine-red",
-    profile: [
-      "Cab-Franc",
-      "Napa",
-      "herbaceous",
-      "dark-fruit",
-      "structured",
-      "premium"
-    ],
+    profile: ["Cab-Franc","Napa","herbaceous","dark-fruit","structured","premium"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Mushrooms",
       "Truffle Fries",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "House Wedge",
       "Au Gratin Potatoes",
-      "Roast Half Chicken"
+      "Roast Half Chicken",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
-    ],
+      "Shrimp Cocktail",
+    ]
   },
   {
     name: "Keenan Mernet",
     category: "wine-red",
-    profile: [
-      "Merlot-Cab-Franc-blend",
-      "Napa",
-      "Spring-Mountain",
-      "structured",
-      "earthy",
-      "unique"
-    ],
+    profile: ["Merlot-Cab-Franc-blend","Napa","Spring-Mountain","structured","earthy","unique"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Mushrooms",
       "Truffle Fries",
-      "Bone Marrow"
+      "Bone Marrow",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "House Wedge",
       "Roast Half Chicken",
-      "Au Gratin Potatoes"
+      "Au Gratin Potatoes",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Shrimp Cocktail"
-    ],
+      "Shrimp Cocktail",
+    ]
   },
   {
     name: "Graham's 10 Year Tawny",
     category: "wine-dessert",
-    profile: [
-      "tawny-port",
-      "nutty",
-      "caramel",
-      "dried-fruit",
-      "sweet",
-      "oxidative"
-    ],
+    profile: ["tawny-port","nutty","caramel","dried-fruit","sweet","oxidative"],
     excellent: [
       "Creme Brulee",
       "Cheesecake",
       "Carrot Cake",
       "Peanut Butter Brownie",
-      "Chocolate Brownie"
+      "Chocolate Brownie",
+      "Nut Liqueur",
     ],
     strong: [
       "Beignets",
       "Chocolate Cake",
-      "Mocha Creme"
+      "Mocha Creme",
+      "Coffee Liqueur",
+      "Grand Marnier",
+      "Licor 43",
     ],
     works: [
-      "Frangelico"
+      "Cream Liqueur",
+      "Chambord",
+      "Limoncello",
     ],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
+      "Scavino Barolo",
+      "Fireball Whisky",
     ],
-    price: "Port",
+    price: "Port"
   },
   {
     name: "Graham's 20 Year Tawny",
     category: "wine-dessert",
-    profile: [
-      "tawny-port",
-      "premium",
-      "nutty",
-      "complex",
-      "dried-fruit",
-      "sweet",
-      "oxidative"
-    ],
+    profile: ["tawny-port","premium","nutty","complex","dried-fruit","sweet","oxidative"],
     excellent: [
       "Creme Brulee",
       "Cheesecake",
       "Carrot Cake",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
-      "Chocolate Cake"
+      "Chocolate Cake",
+      "Mocha Creme",
+      "Nut Liqueur",
     ],
     strong: [
       "Beignets",
-      "Mocha Creme"
+      "Coffee Liqueur",
+      "Grand Marnier",
+      "Licor 43",
     ],
     works: [
-      "Frangelico"
+      "Cream Liqueur",
+      "Chambord",
     ],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
+      "Fireball Whisky",
+      "Limoncello",
     ],
-    price: "Port",
+    price: "Port"
   },
   {
     name: "Graham's 2017 Vintage Port",
     category: "wine-dessert",
-    profile: [
-      "vintage-port",
-      "bold",
-      "structured",
-      "dark-fruit",
-      "sweet",
-      "prestige"
-    ],
+    profile: ["vintage-port","bold","structured","dark-fruit","sweet","prestige"],
     excellent: [
       "Chocolate Brownie",
       "Chocolate Cake",
       "Peanut Butter Brownie",
       "Cheesecake",
-      "Mocha Creme"
+      "Mocha Creme",
     ],
     strong: [
       "Creme Brulee",
       "Carrot Cake",
-      "Beignets"
+      "Beignets",
     ],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "Port",
+    price: "Port"
   },
   {
     name: "Taylor Fladgate Tawny",
     category: "wine-dessert",
-    profile: [
-      "tawny-port",
-      "classic",
-      "nutty",
-      "caramel",
-      "sweet"
-    ],
+    profile: ["tawny-port","classic","nutty","caramel","sweet"],
     excellent: [
       "Creme Brulee",
       "Cheesecake",
       "Carrot Cake",
       "Chocolate Brownie",
-      "Beignets"
+      "Beignets",
+      "Nut Liqueur",
     ],
     strong: [
       "Peanut Butter Brownie",
       "Chocolate Cake",
-      "Mocha Creme"
+      "Mocha Creme",
+      "Coffee Liqueur",
+      "Grand Marnier",
+      "Licor 43",
     ],
     works: [
-      "Frangelico"
+      "Cream Liqueur",
+      "Chambord",
     ],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
+      "Fireball Whisky",
+      "Limoncello",
     ],
-    price: "Port",
+    price: "Port"
   },
   {
     name: "Taylor Fladgate Vintage Bottle",
     category: "wine-dessert",
-    profile: [
-      "vintage-port",
-      "structured",
-      "dark-fruit",
-      "bold",
-      "sweet",
-      "prestige"
-    ],
+    profile: ["vintage-port","structured","dark-fruit","bold","sweet","prestige"],
     excellent: [
       "Chocolate Brownie",
       "Chocolate Cake",
       "Cheesecake",
       "Peanut Butter Brownie",
-      "Mocha Creme"
+      "Mocha Creme",
     ],
     strong: [
       "Creme Brulee",
       "Carrot Cake",
-      "Beignets"
+      "Beignets",
     ],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "Port",
+    price: "Port"
   },
   {
     name: "Casa LBV Port",
     category: "wine-dessert",
-    profile: [
-      "late-bottled-vintage",
-      "approachable",
-      "dark-fruit",
-      "sweet",
-      "structured"
-    ],
+    profile: ["late-bottled-vintage","approachable","dark-fruit","sweet","structured"],
     excellent: [
       "Chocolate Brownie",
       "Cheesecake",
       "Peanut Butter Brownie",
       "Carrot Cake",
-      "Creme Brulee"
+      "Creme Brulee",
     ],
     strong: [
       "Beignets",
       "Chocolate Cake",
-      "Mocha Creme"
+      "Mocha Creme",
     ],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
     ],
-    price: "Port",
+    price: "Port"
   },
   {
     name: "Pineau des Charentes",
     category: "wine-dessert",
-    profile: [
-      "fortified",
-      "Cognac-based",
-      "sweet",
-      "grape",
-      "French",
-      "aperitif-or-dessert"
-    ],
+    profile: ["fortified","Cognac-based","sweet","grape","French","aperitif-or-dessert"],
     excellent: [
       "Creme Brulee",
       "Cheesecake",
       "Beignets",
       "Burrata",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
     strong: [
       "Carrot Cake",
       "Seared Scallops",
       "House Wedge",
       "Prime Tartare",
-      "Escargot"
+      "Escargot",
     ],
     works: [
       "Grilled Caesar",
       "Shrimp Bisque",
-      "Crab Cake"
+      "Crab Cake",
     ],
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "Dessert",
+    price: "Dessert"
   },
   {
     name: "Vin Santo",
     category: "wine-dessert",
-    profile: [
-      "dessert-wine",
-      "Italian",
-      "sweet",
-      "dried-fruit",
-      "nutty",
-      "oxidative"
-    ],
+    profile: ["dessert-wine","Italian","sweet","dried-fruit","nutty","oxidative"],
     excellent: [
       "Beignets",
       "Cheesecake",
       "Creme Brulee",
       "Carrot Cake",
-      "Peanut Butter Brownie"
+      "Peanut Butter Brownie",
     ],
     strong: [
       "Chocolate Brownie",
       "Chocolate Cake",
-      "Mocha Creme"
+      "Mocha Creme",
     ],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "Dessert",
+    price: "Dessert"
   },
   {
     name: "Sauternes Glass",
     category: "wine-dessert",
-    profile: [
-      "Sauternes",
-      "sweet",
-      "botrytis",
-      "honey",
-      "stone-fruit",
-      "French",
-      "dessert"
-    ],
+    profile: ["Sauternes","sweet","botrytis","honey","stone-fruit","French","dessert"],
     excellent: [
       "Creme Brulee",
       "Cheesecake",
       "Beignets",
-      "Carrot Cake"
+      "Carrot Cake",
     ],
     strong: [
       "Peanut Butter Brownie",
       "Chocolate Brownie",
       "Burrata",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Chocolate Cake",
-      "Mocha Creme"
+      "Mocha Creme",
     ],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo"
+      "Scavino Barolo",
     ],
-    price: "Dessert",
+    price: "Dessert"
   },
   {
     name: "Light / Wheated Bourbon",
-    spiritCluster: true,
-    members: [
-      "Weller Special Reserve",
-      "Weller 107",
-      "Weller 12 Year",
-      "Weller Millennium",
-      "Maker's Mark",
-      "Maker's Mark Cellar Aged",
-      "Bowdie's Private Select — Maker's Mark",
-      "Larceny Small Batch",
-      "Basil Hayden's",
-      "Basil Hayden's Toast",
-      "Basil Hayden's Red Wine Cask",
-      "Basil Hayden's 10 Year",
-      "Basil Hayden's Malted Rye",
-      "Four Roses Yellow Label",
-      "Jim Beam White Label",
-      "Jim Beam Black Label",
-      "Jefferson's Reserve",
-      "Jefferson's Reserve VR Twin Oak",
-      "Woodford Reserve",
-      "Knob Creek",
-      "Knob Creek Bourbon/Rye",
-      "Willett Pot Still Reserve",
-      "Buffalo Trace",
-      "Russell's Reserve 10 Year",
-      "Heaven Hill Bottled in Bond",
-      "Old Fitzgerald 7 Year",
-      "Old Fitzgerald 9 Year",
-      "Bulleit Bourbon",
-      "Blade & Bow",
-      "Clermont Steep",
-      "1792 Sweet Wheat",
-      "Eagle Rare 10 Year",
-      "Elijah Craig Small Batch",
-      "Never Say Die Small Batch"
-    ],
     category: "bourbon",
-    profile: [
-      "bourbon",
-      "wheated",
-      "caramel",
-      "vanilla",
-      "approachable",
-      "medium-bodied"
-    ],
+    spiritCluster: true,
+    members: ["Weller Special Reserve","Weller 107","Weller 12 Year","Weller Millennium","Maker's Mark","Maker's Mark Cellar Aged","Bowdie's Private Select — Maker's Mark","Larceny Small Batch","Basil Hayden's","Basil Hayden's Toast","Basil Hayden's 10 Year","Basil Hayden's Malted Rye","Four Roses Yellow Label","Jim Beam White Label","Jim Beam Black Label","Jefferson's Reserve","Jefferson's Reserve VR Twin Oak","Woodford Reserve","Knob Creek","Knob Creek Bourbon/Rye","Willett Pot Still Reserve","Buffalo Trace","Russell's Reserve 10 Year","Heaven Hill Bottled in Bond","Old Fitzgerald 7 Year","Old Fitzgerald 9 Year","Bulleit Bourbon","Blade & Bow","Clermont Steep","1792 Sweet Wheat","Eagle Rare 10 Year","Elijah Craig Small Batch","Never Say Die Small Batch"],
+    profile: ["bourbon","wheated","caramel","vanilla","approachable","medium-bodied"],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Bone Marrow",
       "Truffle Fries",
       "Mushrooms",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Creamed Spinach",
       "Au Gratin Potatoes",
-      "Lardons",
-      "Carrot Cake"
-    ],
-    works: [
-      "House Wedge",
-      "Grilled Caesar",
-      "Cheesecake",
-      "Chocolate Brownie",
-      "Shrimp Bisque"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti"
-    ],
-  },
-  {
-    name: "Bold / High-Proof Bourbon",
-    spiritCluster: true,
-    members: [
-      "Booker's",
-      "George T. Stagg",
-      "Stagg Jr. Batch #15",
-      "E.H. Taylor Full Proof",
-      "E.H. Taylor Small Batch",
-      "Elijah Craig 18 Year",
-      "Elijah Craig Single Barrel",
-      "Elijah Craig Private Barrel",
-      "Knob Creek 12 Year",
-      "Knob Creek 15 Year",
-      "Knob Creek 18 Year",
-      "Baker's",
-      "Heaven Hill 20 Year",
-      "Old Grand-Dad 16 Year",
-      "Parker's Heritage Collection 16th Edition",
-      "Blanton's Straight from the Barrel",
-      "I.W. Harper 15 Year",
-      "Michter's 10 Year Bourbon",
-      "Remus 15 Year Gatsby Reserve",
-      "Little Book",
-      "Bardstown Discovery #6",
-      "Bardstown Fusion #7",
-      "Bardstown Founders KBS",
-      "Bardstown Rishi's Single Barrel",
-      "Blood Oath Pact 8",
-      "Blood Oath Pact 9",
-      "Blood Oath Pact 10",
-      "Mister Sam Tribute Whiskey",
-      "Rishi's Old Antique",
-      "Hancock's Reserve Single Barrel",
-      "Elmer T. Lee",
-      "1792 Small Batch"
-    ],
-    category: "bourbon",
-    profile: [
-      "bourbon",
-      "high-proof",
-      "bold",
-      "oak",
-      "spice",
-      "complex",
-      "rich"
-    ],
-    excellent: [
-      "Cowboy Ribeye",
-      "The Tomahawk",
-      "Kansas City",
-      "Bone Marrow",
-      "Brussels and Belly",
-      "Truffle Fries"
-    ],
-    strong: [
-      "Filet Mignon",
-      "Porterhouse",
-      "Mushrooms",
-      "Creamed Spinach",
-      "Lardons",
-      "Au Gratin Potatoes"
-    ],
-    works: [
-      "House Wedge",
-      "Grilled Caesar",
-      "Chocolate Brownie",
-      "Peanut Butter Brownie",
-      "Carrot Cake"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti"
-    ],
-  },
-  {
-    name: "Finished / Special Character Bourbon",
-    spiritCluster: true,
-    members: [
-      "Angel's Envy",
-      "Angel's Envy Cask Strength",
-      "Angel's Envy Triple Cask",
-      "Isaac Bowman Port Finish",
-      "Jefferson's Ocean Voyage 23",
-      "Jefferson's Ocean Marian McLain L.E.",
-      "Basil Hayden's Red Wine Cask",
-      "Bardstown Château Laboude",
-      "Bardstown Foursquare",
-      "Fox & Oden",
-      "Fox & Oden Double Oaked",
-      "Thomas S. Moore Chardonnay Cask",
-      "New Holland Beer Barrel Bourbon",
-      "Ironfish Bourbon in Mezcal Casks",
-      "Old Elk Cigar Cut",
-      "A Midnight's Winter Dram",
-      "Heaven's Door 10 Year",
-      "Blanton's Original",
-      "Blanton's Gold",
-      "Bowman Brothers Small Batch",
-      "Four Roses Small Batch Select",
-      "Henry McKenna 10 Year Bottled in Bond",
-      "Kentucky Owl Confiscated",
-      "Woodford Reserve Double Oaked"
-    ],
-    category: "bourbon",
-    profile: [
-      "bourbon",
-      "finished",
-      "sweet",
-      "complex",
-      "fruit-forward",
-      "wine-influenced",
-      "distinctive"
-    ],
-    excellent: [
-      "Filet Mignon",
-      "Bone-In Filet",
-      "Kansas City",
-      "Bone Marrow",
-      "Truffle Fries",
-      "Chocolate Brownie"
-    ],
-    strong: [
-      "Cowboy Ribeye",
-      "Mushrooms",
-      "Creamed Spinach",
       "Carrot Cake",
-      "Peanut Butter Brownie",
-      "Brussels and Belly"
     ],
     works: [
       "House Wedge",
-      "Cheesecake",
-      "Creme Brulee",
       "Grilled Caesar",
-      "Shrimp Bisque"
+      "Cheesecake",
+      "Chocolate Brownie",
+      "Shrimp Bisque",
     ],
     avoid: [
       "Crab Cake",
@@ -7998,41 +9552,22 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti"
-    ],
+      "G.D. Vajra Moscato d'Asti",
+    ]
   },
   {
     name: "Approachable Rye",
-    spiritCluster: true,
-    members: [
-      "Sazerac Rye",
-      "Michter's US*1 Rye",
-      "Elijah Craig Straight Rye",
-      "Knob Creek Rye",
-      "Woodford Reserve Rye",
-      "Doc Swinson's Alter Ego Rye",
-      "Never Say Die Rye",
-      "Pikesville Rye",
-      "Woodinville Rye",
-      "E.H. Taylor Rye",
-      "WhistlePig PiggyBack 6 Year"
-    ],
     category: "rye",
-    profile: [
-      "rye",
-      "spice",
-      "pepper",
-      "herbal",
-      "medium-bodied",
-      "approachable"
-    ],
+    spiritCluster: true,
+    members: ["Sazerac Rye","Michter's US*1 Rye","Elijah Craig Straight Rye","Knob Creek Rye","Woodford Reserve Rye","Doc Swinson's Alter Ego Rye","Never Say Die Rye","Pikesville Rye","Woodinville Rye","E.H. Taylor Rye","WhistlePig PiggyBack 6 Year"],
+    profile: ["rye","spice","pepper","herbal","medium-bodied","approachable"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Bone Marrow",
       "Prime Tartare",
       "Grilled Caesar",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Cowboy Ribeye",
@@ -8040,13 +9575,12 @@ const PAIRING_MAP = [
       "Mushrooms",
       "Brussels and Belly",
       "Creamed Spinach",
-      "House Wedge"
+      "House Wedge",
     ],
     works: [
       "Shrimp Bisque",
       "Au Gratin Potatoes",
-      "Lardons",
-      "Carrot Cake"
+      "Carrot Cake",
     ],
     avoid: [
       "Crab Cake",
@@ -8054,57 +9588,35 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+      "Laurent Perrier Le Cuvée Brut",
+    ]
   },
   {
     name: "Bold / Premium Rye",
-    spiritCluster: true,
-    members: [
-      "WhistlePig 10 Year Single Barrel Rye",
-      "WhistlePig 12 Year Old World",
-      "WhistlePig 15 Year",
-      "WhistlePig Boss Hog IX 17 Year",
-      "WhistlePig Boss Hog X Commandments",
-      "Thomas H. Handy Sazerac Rye",
-      "Pappy Van Winkle 13 Year Rye",
-      "Kentucky Owl 10 Year Rye",
-      "Mammoth 16 Year Single Barrel Rye",
-      "Lock Stock & Barrel Rye",
-      "Michter's 10 Year Rye",
-      "Never Say Die Rye"
-    ],
     category: "rye",
-    profile: [
-      "rye",
-      "bold",
-      "high-proof",
-      "spice",
-      "complex",
-      "oak",
-      "premium"
-    ],
+    spiritCluster: true,
+    members: ["WhistlePig 10 Year Single Barrel Rye","WhistlePig 12 Year Old World","WhistlePig 15 Year","WhistlePig Boss Hog IX 17 Year","WhistlePig Boss Hog X Commandments","Thomas H. Handy Sazerac Rye","Pappy Van Winkle 13 Year Rye","Kentucky Owl 10 Year Rye","Mammoth 16 Year Single Barrel Rye","Lock Stock & Barrel Rye","Michter's 10 Year Rye"],
+    profile: ["rye","bold","high-proof","spice","complex","oak","premium"],
     excellent: [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Kansas City",
       "Bone Marrow",
       "Brussels and Belly",
-      "Truffle Fries"
+      "Truffle Fries",
     ],
     strong: [
       "Filet Mignon",
       "Porterhouse",
       "Mushrooms",
       "Creamed Spinach",
-      "Lardons",
-      "Prime Tartare"
+      "Prime Tartare",
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
       "Chocolate Brownie",
-      "Peanut Butter Brownie"
+      "Peanut Butter Brownie",
     ],
     avoid: [
       "Crab Cake",
@@ -8112,210 +9624,34 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti"
-    ],
+      "G.D. Vajra Moscato d'Asti",
+    ]
   },
   {
     name: "Blended Scotch",
-    spiritCluster: true,
-    members: [
-      "Dewar's White Label",
-      "Dewar's 15",
-      "Johnnie Walker Red",
-      "Johnnie Walker Black",
-      "Johnnie Walker Blue",
-      "Monkey Shoulder"
-    ],
     category: "scotch",
-    profile: [
-      "scotch",
-      "blended",
-      "approachable",
-      "light-smoke",
-      "grain",
-      "versatile"
-    ],
+    spiritCluster: true,
+    members: ["Dewar's White Label","Dewar's 15","Johnnie Walker Red","Johnnie Walker Black","Johnnie Walker Blue","Monkey Shoulder"],
+    profile: ["scotch","blended","approachable","light-smoke","grain","versatile"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Mushrooms",
       "Grilled Caesar",
-      "House Wedge"
+      "House Wedge",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
       "Truffle Fries",
       "Brussels and Belly",
-      "Creamed Spinach"
+      "Creamed Spinach",
     ],
     works: [
       "Shrimp Bisque",
       "Au Gratin Potatoes",
       "Bone Marrow",
-      "Carrot Cake"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
-  },
-  {
-    name: "Highland Scotch",
-    spiritCluster: true,
-    members: [
-      "Dalmore 12",
-      "Glenmorangie 10",
-      "Glenmorangie 18",
-      "Oban 14",
-      "Oban 18",
-      "Glenglassaugh 12",
-      "Loch Lomond 20 Year"
-    ],
-    category: "scotch",
-    profile: [
-      "scotch",
-      "highland",
-      "honey",
-      "heather",
-      "light-fruit",
-      "medium-bodied",
-      "coastal-or-floral"
-    ],
-    excellent: [
-      "Filet Mignon",
-      "Kansas City",
-      "Mushrooms",
-      "Truffle Fries",
-      "Grilled Caesar"
-    ],
-    strong: [
-      "Cowboy Ribeye",
-      "Porterhouse",
-      "Bone Marrow",
-      "Creamed Spinach",
-      "House Wedge",
-      "Carrot Cake"
-    ],
-    works: [
-      "Shrimp Bisque",
-      "Au Gratin Potatoes",
-      "Brussels and Belly",
-      "Cheesecake"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
-  },
-  {
-    name: "Speyside Scotch",
-    spiritCluster: true,
-    members: [
-      "Glenfiddich 12",
-      "Glenfiddich 14",
-      "Glenfiddich 18",
-      "Glenfiddich Gran Cru 23",
-      "Glenlivet 12",
-      "Macallan 12 Sherry",
-      "Macallan 18",
-      "Macallan Estate",
-      "Balvenie 12 American Oak",
-      "Balvenie 14 Caribbean Cask",
-      "Balvenie 16 Single Barrel",
-      "Balvenie 21 Portwood",
-      "Aberlour 16",
-      "Cragganmore 12"
-    ],
-    category: "scotch",
-    profile: [
-      "scotch",
-      "speyside",
-      "fruit",
-      "sherry",
-      "honey",
-      "elegant",
-      "approachable"
-    ],
-    excellent: [
-      "Filet Mignon",
-      "Bone-In Filet",
-      "Kansas City",
-      "Mushrooms",
-      "Truffle Fries",
-      "Carrot Cake"
-    ],
-    strong: [
-      "Cowboy Ribeye",
-      "Porterhouse",
-      "Bone Marrow",
-      "Creamed Spinach",
-      "Au Gratin Potatoes",
-      "Cheesecake"
-    ],
-    works: [
-      "House Wedge",
-      "Grilled Caesar",
-      "Shrimp Bisque",
-      "Brussels and Belly",
-      "Peanut Butter Brownie"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
-  },
-  {
-    name: "Islay Scotch",
-    spiritCluster: true,
-    members: [
-      "Lagavulin 8",
-      "Laphroaig 10",
-      "Bowmore 12",
-      "Bruichladdich"
-    ],
-    category: "scotch",
-    profile: [
-      "scotch",
-      "islay",
-      "peated",
-      "smoky",
-      "medicinal",
-      "bold",
-      "coastal",
-      "distinctive"
-    ],
-    excellent: [
-      "Bone Marrow",
-      "The Tomahawk",
-      "Cowboy Ribeye",
-      "Lardons",
-      "Brussels and Belly",
-      "Grilled Caesar"
-    ],
-    strong: [
-      "Kansas City",
-      "Porterhouse",
-      "Mushrooms",
-      "Truffle Fries",
-      "Prime Tartare",
-      "Shrimp Bisque"
-    ],
-    works: [
-      "House Wedge",
-      "Creamed Spinach",
-      "Chocolate Brownie"
+      "Carrot Cake",
     ],
     avoid: [
       "Crab Cake",
@@ -8324,82 +9660,88 @@ const PAIRING_MAP = [
       "Shrimp Cocktail",
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
-      "Cheesecake"
+    ]
+  },
+  {
+    name: "Highland Scotch",
+    category: "scotch",
+    spiritCluster: true,
+    members: ["Dalmore 12","Glenmorangie 10","Glenmorangie 18","Oban 14","Oban 18","Glenglassaugh 12","Loch Lomond 20 Year"],
+    profile: ["scotch","highland","honey","heather","light-fruit","medium-bodied","coastal-or-floral"],
+    excellent: [
+      "Filet Mignon",
+      "Kansas City",
+      "Mushrooms",
+      "Truffle Fries",
+      "Grilled Caesar",
     ],
+    strong: [
+      "Cowboy Ribeye",
+      "Porterhouse",
+      "Bone Marrow",
+      "Creamed Spinach",
+      "House Wedge",
+      "Carrot Cake",
+    ],
+    works: [
+      "Shrimp Bisque",
+      "Au Gratin Potatoes",
+      "Brussels and Belly",
+      "Cheesecake",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "G.D. Vajra Moscato d'Asti",
+      "Laurent Perrier Le Cuvée Brut",
+    ]
   },
   {
     name: "Irish Whiskey",
-    spiritCluster: true,
-    members: [
-      "Jameson Irish Whiskey",
-      "Tullamore D.E.W.",
-      "Garavogue Irish Whiskey",
-      "Redbreast 12 Year",
-      "Redbreast 21 Year",
-      "Kentucky Owl St. Patrick's"
-    ],
     category: "irish",
-    profile: [
-      "irish",
-      "smooth",
-      "light",
-      "grain",
-      "approachable",
-      "triple-distilled"
-    ],
+    spiritCluster: true,
+    members: ["Jameson Irish Whiskey","Tullamore D.E.W.","Garavogue Irish Whiskey","Redbreast 12 Year","Redbreast 21 Year","Kentucky Owl St. Patrick's"],
+    profile: ["irish","smooth","light","grain","approachable","triple-distilled"],
     excellent: [
       "Roast Half Chicken",
       "Faroe Island Salmon",
       "House Wedge",
       "Kansas City",
-      "Filet Mignon"
+      "Filet Mignon",
     ],
     strong: [
       "Mushrooms",
       "Grilled Caesar",
       "Truffle Fries",
       "Shrimp Bisque",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     works: [
       "Crab Cake",
       "Seared Scallops",
       "Creamed Spinach",
-      "Carrot Cake"
+      "Carrot Cake",
     ],
     avoid: [
       "The Tomahawk",
       "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+      "Laurent Perrier Le Cuvée Brut",
+    ]
   },
   {
     name: "Japanese Whisky",
-    spiritCluster: true,
-    members: [
-      "Toki Suntory Japanese Whisky",
-      "Hibiki Japanese Harmony",
-      "Hakushu 12 Year",
-      "Yamazaki 12 Year",
-      "Yamazaki 18 Year"
-    ],
     category: "japanese",
-    profile: [
-      "japanese",
-      "delicate",
-      "floral",
-      "fruit",
-      "elegant",
-      "complex",
-      "balanced"
-    ],
+    spiritCluster: true,
+    members: ["Toki Suntory Japanese Whisky","Hibiki Japanese Harmony","Hakushu 12 Year","Yamazaki 12 Year","Yamazaki 18 Year"],
+    profile: ["japanese","delicate","floral","fruit","elegant","complex","balanced"],
     excellent: [
       "Filet Mignon",
       "Bone-In Filet",
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Seared Scallops",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "Kansas City",
@@ -8407,92 +9749,65 @@ const PAIRING_MAP = [
       "Grilled Caesar",
       "Shrimp Bisque",
       "Truffle Fries",
-      "Prime Tartare"
+      "Prime Tartare",
     ],
     works: [
       "Crab Cake",
       "Creamed Spinach",
       "Lobster Mac",
-      "Burrata"
+      "Burrata",
     ],
     avoid: [
       "The Tomahawk",
       "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+      "Laurent Perrier Le Cuvée Brut",
+    ]
   },
   {
     name: "Canadian Whisky",
-    spiritCluster: true,
-    members: [
-      "Crown Royal",
-      "Canadian Club",
-      "Canadian Club 43 Year",
-      "Caribou Crossing"
-    ],
     category: "canadian",
-    profile: [
-      "canadian",
-      "smooth",
-      "light",
-      "grain",
-      "approachable",
-      "versatile"
-    ],
+    spiritCluster: true,
+    members: ["Crown Royal","Canadian Club","Canadian Club 43 Year","Caribou Crossing"],
+    profile: ["canadian","smooth","light","grain","approachable","versatile"],
     excellent: [
       "Roast Half Chicken",
       "House Wedge",
       "Filet Mignon",
       "Kansas City",
-      "Mushrooms"
+      "Mushrooms",
     ],
     strong: [
       "Grilled Caesar",
       "Truffle Fries",
       "Brussels and Belly",
       "Creamed Spinach",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     works: [
       "Crab Cake",
       "Cowboy Ribeye",
       "Au Gratin Potatoes",
-      "Carrot Cake"
+      "Carrot Cake",
     ],
     avoid: [
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
       "Burrata",
-      "Seared Scallops"
-    ],
+      "Seared Scallops",
+    ]
   },
   {
     name: "American Single Malt / Tennessee",
-    spiritCluster: true,
-    members: [
-      "Jack Daniel's Old No. 7",
-      "Jack Daniel's Bonded",
-      "Jack Daniel's 12 Year",
-      "Jack Daniel's Sinatra Select",
-      "Dunville's Single Malt",
-      "Scapegrace Fortuna",
-      "Old Emmer"
-    ],
     category: "singlemalt",
-    profile: [
-      "american-single-malt",
-      "charcoal-filtered",
-      "vanilla",
-      "caramel",
-      "approachable",
-      "medium"
-    ],
+    spiritCluster: true,
+    members: ["Jack Daniel's Old No. 7","Jack Daniel's Bonded","Jack Daniel's 12 Year","Jack Daniel's Sinatra Select","Dunville's Single Malt","Scapegrace Fortuna","Old Emmer"],
+    profile: ["american-single-malt","charcoal-filtered","vanilla","caramel","approachable","medium"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Mushrooms",
       "Truffle Fries",
-      "Brussels and Belly"
+      "Brussels and Belly",
     ],
     strong: [
       "Cowboy Ribeye",
@@ -8500,13 +9815,12 @@ const PAIRING_MAP = [
       "Creamed Spinach",
       "Bone Marrow",
       "House Wedge",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "Au Gratin Potatoes",
-      "Lardons",
       "Carrot Cake",
-      "Shrimp Bisque"
+      "Shrimp Bisque",
     ],
     avoid: [
       "Crab Cake",
@@ -8514,55 +9828,34 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+      "Laurent Perrier Le Cuvée Brut",
+    ]
   },
   {
     name: "Blanco Tequila",
-    spiritCluster: true,
-    members: [
-      "Don Julio Blanco",
-      "Patron Silver",
-      "Avion Silver",
-      "Clase Azul Plata",
-      "Don Fulano Blanco",
-      "G4 Blanco",
-      "Lalo Silver",
-      "Mijenta Blanco",
-      "Gran Patron Platinum",
-      "Siete Leguas Blanco",
-      "Corazon Blanco",
-      "Adictivo Cristalino"
-    ],
     category: "tequila",
-    profile: [
-      "tequila",
-      "blanco",
-      "agave-forward",
-      "citrus",
-      "clean",
-      "crisp",
-      "bright"
-    ],
+    spiritCluster: true,
+    members: ["Don Julio Blanco","Patron Silver","Avion Silver","Clase Azul Plata","Don Fulano Blanco","G4 Blanco","Lalo Silver","Mijenta Blanco","Gran Patron Platinum","Siete Leguas Blanco","Corazon Blanco","Adictivo Cristalino"],
+    profile: ["tequila","blanco","agave-forward","citrus","clean","crisp","bright"],
     excellent: [
       "Crab Cake",
       "Seared Scallops",
       "Shrimp Cocktail",
       "House Wedge",
       "Prime Tartare",
-      "Burrata"
+      "Burrata",
     ],
     strong: [
       "Seafood Tower",
       "Shrimp Bisque",
       "Escargot",
       "Faroe Island Salmon",
-      "Grilled Caesar"
+      "Grilled Caesar",
     ],
     works: [
       "Filet Mignon",
       "Roast Half Chicken",
-      "Market Fish"
+      "Market Fish",
     ],
     avoid: [
       "The Tomahawk",
@@ -8570,45 +9863,22 @@ const PAIRING_MAP = [
       "Caymus Cabernet Sauvignon",
       "Opus One",
       "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
+      "Bowdie's Old Fashioned",
+    ]
   },
   {
     name: "Reposado Tequila",
-    spiritCluster: true,
-    members: [
-      "Don Julio Reposado",
-      "Don Julio 70th",
-      "El Mayor Reposado",
-      "Milagro Reposado",
-      "Siete Leguas Reposado",
-      "Corazon Reposado",
-      "Don Fulano Reposado",
-      "Adictivo Reposado",
-      "El Cabo",
-      "G4 High Proof",
-      "Trombo Cedano Reposado",
-      "Komos Rosa Reposado",
-      "Codigo 1530 Rosa",
-      "Clase Azul Reposado"
-    ],
     category: "tequila",
-    profile: [
-      "tequila",
-      "reposado",
-      "agave",
-      "vanilla",
-      "oak",
-      "medium-bodied",
-      "balanced"
-    ],
+    spiritCluster: true,
+    members: ["Don Julio Reposado","Don Julio 70th","El Mayor Reposado","Milagro Reposado","Siete Leguas Reposado","Corazon Reposado","Don Fulano Reposado","Adictivo Reposado","El Cabo","G4 High Proof","Trombo Cedano Reposado","Komos Rosa Reposado","Codigo 1530 Rosa","Clase Azul Reposado","Camarena Tequila"],
+    profile: ["tequila","reposado","agave","vanilla","oak","medium-bodied","balanced"],
     excellent: [
       "Kansas City",
       "Filet Mignon",
       "Crab Cake",
       "Seared Scallops",
       "House Wedge",
-      "Shrimp Cocktail"
+      "Shrimp Cocktail",
     ],
     strong: [
       "Cowboy Ribeye",
@@ -8616,746 +9886,1336 @@ const PAIRING_MAP = [
       "Shrimp Bisque",
       "Grilled Caesar",
       "Faroe Island Salmon",
-      "Mushrooms"
+      "Mushrooms",
     ],
     works: [
       "Truffle Fries",
       "Roast Half Chicken",
       "Brussels and Belly",
-      "Prime Tartare"
+      "Prime Tartare",
     ],
     avoid: [
       "The Tomahawk",
       "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo"
-    ],
+      "Scavino Barolo",
+    ]
   },
   {
-    name: "Añejo / Extra Añejo Tequila",
+    name: "Mezcal",
+    category: "mezcal",
     spiritCluster: true,
-    members: [
-      "Don Julio 1942",
-      "Clase Azul Anejo",
-      "Clase Azul Durango",
-      "Clase Azul Gold",
-      "Clase Azul Ultra",
-      "Patron Anejo",
-      "Avion 44",
-      "El Mayor Extra Anejo",
-      "Milagro Anejo",
-      "Komos Anejo Reserva",
-      "Komos Crystallino Anejo",
-      "Komos Extra Anejo",
-      "Don Fulano Anejo",
-      "Ocho Anejo",
-      "Rey Sol Anejo",
-      "Corazon Sazerac",
-      "Corazon Stagg",
-      "Corazon Weller"
-    ],
-    category: "tequila",
-    profile: [
-      "tequila",
-      "anejo",
-      "oak",
-      "vanilla",
-      "caramel",
-      "smooth",
-      "spirit-forward",
-      "sipping"
-    ],
+    members: ["Casamigos Mezcal","Clase Azul Guerrero Mezcal","Los Vecinos Mezcal"],
+    profile: ["mezcal","smoky","agave","earthy","bold","distinctive","complex"],
     excellent: [
+      "Bone Marrow",
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Prime Tartare",
+      "Brussels and Belly",
+    ],
+    strong: [
       "Kansas City",
+      "Mushrooms",
+      "Truffle Fries",
+      "Grilled Caesar",
+      "Shrimp Bisque",
+    ],
+    works: [
+      "House Wedge",
+      "Creamed Spinach",
+      "Filet Mignon",
+      "Chocolate Brownie",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "G.D. Vajra Moscato d'Asti",
+      "Laurent Perrier Le Cuvée Brut",
+      "Cheesecake",
+    ]
+  },
+  {
+    name: "Classic Vodka",
+    category: "vodka",
+    spiritCluster: true,
+    members: ["Titos Vodka","Grey Goose Vodka","Ketel One Vodka","Belvedere Vodka","Chopin Vodka","Stoli Elit Vodka","Reyka Vodka","Wheatley Vodka"],
+    profile: ["vodka","neutral","clean","crisp","versatile","minimal-influence"],
+    excellent: [
+      "Crab Cake",
+      "Shrimp Cocktail",
+      "Seared Scallops",
+      "Burrata",
+      "House Wedge",
+      "Seafood Tower",
+    ],
+    strong: [
+      "Prime Tartare",
+      "Shrimp Bisque",
+      "Escargot",
+      "Faroe Island Salmon",
+      "Grilled Caesar",
+    ],
+    works: [
+      "Filet Mignon",
+      "Roast Half Chicken",
+      "Market Fish",
+      "Cheesecake",
+    ]
+  },
+  {
+    name: "Craft Vodka",
+    category: "vodka",
+    spiritCluster: true,
+    members: ["Detroit City Vodka","HDW 100 Vodka","Hangar 1 Vodka"],
+    profile: ["vodka","craft","slight-character","clean","approachable"],
+    excellent: [
+      "Crab Cake",
+      "Shrimp Cocktail",
+      "Seared Scallops",
+      "Burrata",
+      "House Wedge",
+    ],
+    strong: [
+      "Prime Tartare",
+      "Shrimp Bisque",
+      "Escargot",
+      "Faroe Island Salmon",
+      "Grilled Caesar",
+    ],
+    works: [
+      "Filet Mignon",
+      "Roast Half Chicken",
+      "Market Fish",
+    ]
+  },
+  {
+    name: "London Dry Gin",
+    category: "gin",
+    spiritCluster: true,
+    members: ["Tanqueray Gin","Tanq 10 Gin","Beefeater Gin","Bombay Dry Gin","Bombay Sapphire Gin","Plymouth Gin","Nolets Dry Gin","2 James Gin"],
+    profile: ["gin","london-dry","juniper-forward","citrus","herbal","classic","crisp"],
+    excellent: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Shrimp Cocktail",
+      "Burrata",
+      "Escargot",
+      "Seafood Tower",
+    ],
+    strong: [
+      "Prime Tartare",
+      "House Wedge",
+      "Shrimp Bisque",
+      "Faroe Island Salmon",
+      "Grilled Caesar",
+    ],
+    works: [
+      "Filet Mignon",
+      "Roast Half Chicken",
+      "Market Fish",
+      "Beignets",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Bone Marrow",
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Local Michigan Gin",
+    category: "gin",
+    spiritCluster: true,
+    members: ["Detroit City Gin","Eastern Kille Dry Gin","Iron Fish Gin","Knickerbocker Gin","Long Road Gin"],
+    profile: ["gin","local","varied-botanical","approachable","craft"],
+    excellent: [
+      "Burrata",
+      "Crab Cake",
+      "Shrimp Cocktail",
+      "Seared Scallops",
+      "House Wedge",
+    ],
+    strong: [
+      "Prime Tartare",
+      "Escargot",
+      "Seafood Tower",
+      "Shrimp Bisque",
+      "Faroe Island Salmon",
+    ],
+    works: [
+      "Filet Mignon",
+      "Roast Half Chicken",
+      "Grilled Caesar",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Bone Marrow",
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+    ]
+  },
+  {
+    name: "Japanese Gin",
+    category: "gin",
+    spiritCluster: true,
+    members: ["Roku Gin"],
+    profile: ["gin","japanese","floral","yuzu","sakura","delicate","unique"],
+    excellent: [
+      "Seared Scallops",
+      "Crab Cake",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Faroe Island Salmon",
+    ],
+    strong: [
+      "Escargot",
+      "House Wedge",
+      "Prime Tartare",
+      "Shrimp Bisque",
+      "Seafood Tower",
+    ],
+    works: [
+      "Filet Mignon",
+      "Roast Half Chicken",
+      "Market Fish",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Bone Marrow",
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "White / Light Rum",
+    category: "rum",
+    spiritCluster: true,
+    members: ["Bacardi Rum","Mount Gay Rum"],
+    profile: ["rum","white","light","clean","sugarcane","tropical","approachable"],
+    excellent: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Burrata",
+      "House Wedge",
+      "Seared Scallops",
+    ],
+    strong: [
+      "Seafood Tower",
+      "Shrimp Bisque",
+      "Faroe Island Salmon",
+      "Beignets",
+      "Grilled Caesar",
+    ],
+    works: [
+      "Roast Half Chicken",
+      "Market Fish",
+      "Prime Tartare",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Bone Marrow",
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Dark / Aged Rum",
+    category: "rum",
+    spiritCluster: true,
+    members: ["Ron Zacapa Rum","Doctor Bird Jamaica Rum","Jung and Wulff Guyana","Jung and Wulff Trinidad","Myers's Rum"],
+    profile: ["rum","dark","aged","molasses","vanilla","caramel","bold","complex"],
+    excellent: [
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Carrot Cake",
+      "Cheesecake",
+      "Bone Marrow",
+    ],
+    strong: [
+      "Cowboy Ribeye",
+      "Kansas City",
+      "Brussels and Belly",
+      "Truffle Fries",
+      "Mushrooms",
+      "Beignets",
+    ],
+    works: [
+      "House Wedge",
+      "Grilled Caesar",
+      "Creamed Spinach",
+      "Creme Brulee",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "G.D. Vajra Moscato d'Asti",
+      "Laurent Perrier Le Cuvée Brut",
+    ]
+  },
+  {
+    name: "Spiced / Flavored Rum",
+    category: "rum",
+    spiritCluster: true,
+    members: ["Captain Morgan Rum","Malibu Rum"],
+    profile: ["rum","spiced-or-flavored","sweet","approachable","casual"],
+    excellent: [
+      "Beignets",
+      "Cheesecake",
+      "Carrot Cake",
+      "House Wedge",
+    ],
+    strong: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+    ],
+    works: [
+      "Burrata",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Scavino Barolo",
+      "Opus One",
+      "Bone Marrow",
+    ]
+  },
+  {
+    name: "Cognac / Brandy",
+    category: "cognac",
+    spiritCluster: true,
+    members: ["Hennessy Cognac","Courvoisier Cognac","Remy VSOP Cognac","Pierre Ferrand Cognac","Villon Cognac","Christian Bros Brandy","Louis XIII Cognac","Elephant Gin"],
+    profile: ["cognac","brandy","grape-distilled","vanilla","dried-fruit","oak","complex","elegant"],
+    excellent: [
       "Filet Mignon",
       "Bone Marrow",
       "Truffle Fries",
+      "Cheesecake",
+      "Chocolate Brownie",
+      "Carrot Cake",
+    ],
+    strong: [
+      "Kansas City",
       "Mushrooms",
-      "Chocolate Brownie"
+      "Creamed Spinach",
+      "Creme Brulee",
+      "Peanut Butter Brownie",
+      "Lobster Mac",
+    ],
+    works: [
+      "House Wedge",
+      "Grilled Caesar",
+      "Au Gratin Potatoes",
+      "Beignets",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "G.D. Vajra Moscato d'Asti",
+      "Laurent Perrier Le Cuvée Brut",
+    ]
+  },
+  {
+    name: "Amaro / Bitter Liqueur",
+    category: "liqueur",
+    spiritCluster: true,
+    members: ["Amaro Nonino","Averna Amaro","Lucano Amaro","Montenegro Amaro","Fernet Branca","Fernet Menta","Campari","Aperol"],
+    profile: ["amaro","bitter","herbal","digestif","complex","Italian"],
+    excellent: [
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Cheesecake",
+      "Creme Brulee",
+      "Carrot Cake",
+    ],
+    strong: [
+      "Bone Marrow",
+      "Kansas City",
+      "Grilled Caesar",
+      "Mushrooms",
+      "Prime Tartare",
+    ],
+    works: [
+      "House Wedge",
+      "Brussels and Belly",
+      "Truffle Fries",
+      "Beignets",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "G.D. Vajra Moscato d'Asti",
+      "Laurent Perrier Le Cuvée Brut",
+    ]
+  },
+  {
+    name: "Herbal / Anise Liqueur",
+    category: "liqueur",
+    spiritCluster: true,
+    members: ["Green Chartreuse","Yellow Chartreuse","Sambuca","Drambuie","Mata Hari Absinthe","Ancho Reyes","Contratto Vermouth"],
+    profile: ["herbal","anise-or-botanical","sweet-or-bitter","digestif-or-modifier"],
+    excellent: [
+      "Cheesecake",
+      "Creme Brulee",
+      "Chocolate Brownie",
+      "Beignets",
+      "Escargot",
+      "Grilled Caesar",
+    ],
+    strong: [
+      "House Wedge",
+      "Shrimp Bisque",
+      "Prime Tartare",
+      "Mushrooms",
+      "Brussels and Belly",
+    ],
+    works: [
+      "Filet Mignon",
+      "Kansas City",
+      "Carrot Cake",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "G.D. Vajra Moscato d'Asti",
+      "Laurent Perrier Le Cuvée Brut",
+    ]
+  },
+  {
+    name: "Cream Liqueur",
+    category: "liqueur",
+    spiritCluster: true,
+    members: ["Baileys Irish Cream","Buffalo Trace Cream"],
+    profile: "cream,whiskey,vanilla,dessert-sweet,low-ABV,approachable",
+    excellent: [
+      "Creme Brulee",
+      "Cheesecake",
+      "Carrot Cake",
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Mocha Creme",
+    ],
+    strong: [
+      "Chocolate Cake",
+      "Beignets",
+    ],
+    works: [
+      "Espresso Martini",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Taylor Fladgate Tawny",
+    ],
+    avoid: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Seafood Tower",
+      "Seared Scallops",
+      "House Wedge",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Scavino Barolo",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Coffee Liqueur",
+    category: "liqueur",
+    spiritCluster: true,
+    members: ["Kahlua","Patron XO Cafe"],
+    profile: "coffee,roasted,sweet,dessert-sweet,rum-or-tequila-base",
+    excellent: [
+      "Mocha Creme",
+      "Chocolate Brownie",
+      "Chocolate Cake",
+      "Espresso Martini",
+      "Peanut Butter Brownie",
+    ],
+    strong: [
+      "Creme Brulee",
+      "Cheesecake",
+      "Beignets",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Taylor Fladgate Tawny",
+    ],
+    works: [
+      "Carrot Cake",
+    ],
+    avoid: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Seafood Tower",
+      "Seared Scallops",
+      "House Wedge",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Scavino Barolo",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Nut Liqueur",
+    category: "liqueur",
+    spiritCluster: true,
+    members: ["Frangelico","Disaronno"],
+    profile: "nut,hazelnut-or-almond,sweet,baking-spice,dessert-adjacent",
+    excellent: [
+      "Creme Brulee",
+      "Chocolate Brownie",
+      "Mocha Creme",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Taylor Fladgate Tawny",
+    ],
+    strong: [
+      "Cheesecake",
+      "Carrot Cake",
+      "Peanut Butter Brownie",
+      "Chocolate Cake",
+      "Beignets",
+    ],
+    works: [
+      "Espresso Martini",
+    ],
+    avoid: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Seafood Tower",
+      "Seared Scallops",
+      "House Wedge",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Scavino Barolo",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Grand Marnier",
+    category: "liqueur",
+    profile: "orange,cognac-based,citrus-peel,oak,sweet,complex",
+    excellent: [
+      "Chocolate Brownie",
+      "Chocolate Cake",
+      "Mocha Creme",
+      "Beignets",
+    ],
+    strong: [
+      "Carrot Cake",
+      "Creme Brulee",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Taylor Fladgate Tawny",
+    ],
+    works: [
+      "Cheesecake",
+      "Peanut Butter Brownie",
+      "Espresso Martini",
+    ],
+    avoid: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Seafood Tower",
+      "Seared Scallops",
+      "House Wedge",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Scavino Barolo",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Limoncello",
+    category: "liqueur",
+    profile: "lemon,citrus,bright,palate-cleanser,Italian,mid-ABV",
+    excellent: [
+      "Cheesecake",
+      "Beignets",
+    ],
+    strong: [
+      "Creme Brulee",
+      "Carrot Cake",
+    ],
+    works: [
+      "Crab Cake",
+      "Shrimp Cocktail",
+      "Seafood Tower",
+      "Seared Scallops",
+      "Graham's 10 Year Tawny",
+    ],
+    avoid: [
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Chocolate Cake",
+      "Mocha Creme",
+      "Espresso Martini",
+      "House Wedge",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Scavino Barolo",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+      "Graham's 20 Year Tawny",
+      "Taylor Fladgate Tawny",
+    ]
+  },
+  {
+    name: "Chambord",
+    category: "liqueur",
+    profile: "raspberry,black-raspberry,berry,sweet,low-ABV,French",
+    excellent: [
+      "Chocolate Brownie",
+      "Chocolate Cake",
+      "Mocha Creme",
+    ],
+    strong: [
+      "Cheesecake",
+      "Peanut Butter Brownie",
+      "Creme Brulee",
+      "Beignets",
+    ],
+    works: [
+      "Carrot Cake",
+      "Espresso Martini",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Taylor Fladgate Tawny",
+    ],
+    avoid: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Seafood Tower",
+      "Seared Scallops",
+      "House Wedge",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Scavino Barolo",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Licor 43",
+    category: "liqueur",
+    profile: "vanilla,citrus,herbal,43-botanicals,sweet,Spanish",
+    excellent: [
+      "Creme Brulee",
+      "Beignets",
+      "Mocha Creme",
+    ],
+    strong: [
+      "Cheesecake",
+      "Carrot Cake",
+      "Espresso Martini",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Taylor Fladgate Tawny",
+    ],
+    works: [
+      "Chocolate Brownie",
+      "Chocolate Cake",
+      "Peanut Butter Brownie",
+    ],
+    avoid: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Seafood Tower",
+      "Seared Scallops",
+      "House Wedge",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Scavino Barolo",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Fireball Whisky",
+    category: "liqueur",
+    profile: "cinnamon,sweet,whisky-base,shot-forward,divisive,low-ABV",
+    excellent: [
+      "Carrot Cake",
+    ],
+    strong: [
+      "Chocolate Brownie",
+    ],
+    works: [
+      "Chocolate Cake",
+      "Peanut Butter Brownie",
+    ],
+    avoid: [
+      "Shrimp Cocktail",
+      "Crab Cake",
+      "Seafood Tower",
+      "Seared Scallops",
+      "House Wedge",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Creme Brulee",
+      "Cheesecake",
+      "Beignets",
+      "Mocha Creme",
+      "Espresso Martini",
+      "Scavino Barolo",
+      "Opus One",
+      "Bowdie's Old Fashioned",
+      "Graham's 10 Year Tawny",
+      "Graham's 20 Year Tawny",
+      "Taylor Fladgate Tawny",
+    ]
+  },
+  {
+    name: "Barrel-Proof Bourbon",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Booker's","George T. Stagg","Stagg Jr. Batch #15","E.H. Taylor Full Proof","Blanton's Straight from the Barrel","Parker's Heritage Collection 16th Edition","Little Book"],
+    profile: "cask-strength,120-plus-proof,intense,unfiltered,char,oak-forward,chewy,bold",
+    excellent: [
+      "Cowboy Ribeye",
+      "The Tomahawk",
+      "Kansas City",
+      "Bone Marrow",
+      "Brussels and Belly",
+      "Chocolate Brownie",
+    ],
+    strong: [
+      "Porterhouse",
+      "Mushrooms",
+      "Truffle Fries",
+      "Peanut Butter Brownie",
+      "Creamed Spinach",
+    ],
+    works: [
+      "Filet Mignon",
+      "Au Gratin Potatoes",
+      "Grilled Caesar",
+      "Carrot Cake",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Faroe Island Salmon",
+      "Roast Half Chicken",
+      "Cheesecake",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+    ]
+  },
+  {
+    name: "Aged Super-Premium Bourbon",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Elijah Craig 18 Year","Heaven Hill 20 Year","Old Grand-Dad 16 Year","I.W. Harper 15 Year","Michter's 10 Year Bourbon","Remus 15 Year Gatsby Reserve","Knob Creek 15 Year","Knob Creek 18 Year","Mister Sam Tribute Whiskey"],
+    profile: "15yr-plus,refined,polished,luxury-sipping,deep-oak,tobacco,leather,dried-fruit,smooth-despite-proof",
+    excellent: [
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Mushrooms",
+      "Truffle Fries",
+      "Au Gratin Potatoes",
+      "Bone Marrow",
+    ],
+    strong: [
+      "Kansas City",
+      "Cowboy Ribeye",
+      "Creamed Spinach",
+      "Chocolate Brownie",
+      "Carrot Cake",
+    ],
+    works: [
+      "Porterhouse",
+      "Brussels and Belly",
+      "Peanut Butter Brownie",
+      "Cheesecake",
+      "Grilled Caesar",
+      "The Tomahawk",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+    ]
+  },
+  {
+    name: "Craft / Blended Bourbon",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Bardstown Discovery #6","Bardstown Fusion #7","Bardstown Founders KBS","Bardstown Rishi's Single Barrel","Blood Oath Pact 8","Blood Oath Pact 9","Blood Oath Pact 10","Rishi's Old Antique","Kentucky Owl Confiscated","A Midnight's Winter Dram"],
+    profile: "non-traditional,blended,sourced,complex,multi-distillery,layered,discovery-forward",
+    excellent: [
+      "Kansas City",
+      "Cowboy Ribeye",
+      "Bone Marrow",
+      "Brussels and Belly",
+      "Truffle Fries",
+      "Peanut Butter Brownie",
+    ],
+    strong: [
+      "Filet Mignon",
+      "The Tomahawk",
+      "Mushrooms",
+      "Creamed Spinach",
+      "Chocolate Brownie",
+    ],
+    works: [
+      "Porterhouse",
+      "House Wedge",
+      "Au Gratin Potatoes",
+      "Grilled Caesar",
+      "Carrot Cake",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+    ]
+  },
+  {
+    name: "Standard High-Proof Bourbon",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["E.H. Taylor Small Batch","Elijah Craig Single Barrel","Elijah Craig Private Barrel","Knob Creek 12 Year","Baker's","Hancock's Reserve Single Barrel","Elmer T. Lee","1792 Small Batch","Blanton's Original","Blanton's Gold","Bowman Brothers Small Batch","Four Roses Small Batch Select","Henry McKenna 10 Year Bottled in Bond","Heaven's Door 10 Year","Fox & Oden"],
+    profile: "mid-tier-high-proof,bottled-in-bond,single-barrel,versatile,90-110-proof,classic-bourbon-profile",
+    excellent: [
+      "Filet Mignon",
+      "Kansas City",
+      "Cowboy Ribeye",
+      "Mushrooms",
+      "Truffle Fries",
+      "Brussels and Belly",
+    ],
+    strong: [
+      "Porterhouse",
+      "The Tomahawk",
+      "Bone Marrow",
+      "Creamed Spinach",
+      "Au Gratin Potatoes",
+    ],
+    works: [
+      "House Wedge",
+      "Grilled Caesar",
+      "Carrot Cake",
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Cheesecake",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+    ]
+  },
+  {
+    name: "Wine-Finished Bourbon",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Angel's Envy","Angel's Envy Cask Strength","Angel's Envy Triple Cask","Isaac Bowman Port Finish","Basil Hayden's Red Wine Cask","Bardstown Château Laboude","Thomas S. Moore Chardonnay Cask"],
+    profile: "port-finish,red-wine-cask,chardonnay-cask,fruity,jammy,dessert-leaning,softer-oak",
+    excellent: [
+      "Chocolate Brownie",
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Carrot Cake",
+      "Peanut Butter Brownie",
+      "Truffle Fries",
+    ],
+    strong: [
+      "Kansas City",
+      "Cowboy Ribeye",
+      "Mushrooms",
+      "Creme Brulee",
+      "Cheesecake",
+    ],
+    works: [
+      "Creamed Spinach",
+      "Au Gratin Potatoes",
+      "House Wedge",
+      "Grilled Caesar",
+      "Mocha Creme",
+      "Bone Marrow",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Faroe Island Salmon",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+      "Shrimp Bisque",
+    ]
+  },
+  {
+    name: "Exotic-Cask Finished Bourbon",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Bardstown Foursquare","New Holland Beer Barrel Bourbon","Ironfish Bourbon in Mezcal Casks","Jefferson's Ocean Voyage 23","Jefferson's Ocean Marian McLain L.E.","Old Elk Cigar Cut"],
+    profile: "rum-cask,beer-barrel,mezcal-cask,sea-aged,cigar-cut,unusual-finish,character-forward,conversation-starter",
+    excellent: [
+      "Kansas City",
+      "Cowboy Ribeye",
+      "Bone Marrow",
+      "Brussels and Belly",
+      "Truffle Fries",
+      "Chocolate Brownie",
+    ],
+    strong: [
+      "Filet Mignon",
+      "The Tomahawk",
+      "Mushrooms",
+      "Peanut Butter Brownie",
+      "Creamed Spinach",
+    ],
+    works: [
+      "Porterhouse",
+      "Au Gratin Potatoes",
+      "Grilled Caesar",
+      "Carrot Cake",
+      "Cheesecake",
+      "Bone-In Filet",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+      "Shrimp Bisque",
+    ]
+  },
+  {
+    name: "Double-Oaked Bourbon",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Fox & Oden Double Oaked","Woodford Reserve Double Oaked"],
+    profile: "double-oaked,second-char,intensified-vanilla,toasted-oak,heavy-caramel,dessert-forward",
+    excellent: [
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
+      "Filet Mignon",
+      "Kansas City",
+      "Truffle Fries",
+      "Creme Brulee",
+    ],
+    strong: [
+      "Cowboy Ribeye",
+      "Bone Marrow",
+      "Mushrooms",
+      "Creamed Spinach",
+      "Carrot Cake",
+    ],
+    works: [
+      "Porterhouse",
+      "Brussels and Belly",
+      "Au Gratin Potatoes",
+      "Cheesecake",
+      "Mocha Creme",
+      "Bone-In Filet",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+      "Shrimp Bisque",
+    ]
+  },
+  {
+    name: "Añejo Tequila",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Patron Anejo","Clase Azul Anejo","Milagro Anejo","Komos Anejo Reserva","Komos Crystallino Anejo","Don Fulano Anejo","Ocho Anejo"],
+    profile: "1-3yr-aged,balanced,oak-and-agave,versatile,vanilla,cooked-agave",
+    excellent: [
+      "Kansas City",
+      "Filet Mignon",
+      "Truffle Fries",
+      "Mushrooms",
+      "Brussels and Belly",
+      "Chocolate Brownie",
     ],
     strong: [
       "Cowboy Ribeye",
       "Porterhouse",
-      "Brussels and Belly",
+      "Bone Marrow",
       "Creamed Spinach",
       "Carrot Cake",
-      "Peanut Butter Brownie"
     ],
     works: [
       "House Wedge",
       "Grilled Caesar",
       "Au Gratin Potatoes",
-      "Cheesecake"
+      "Cheesecake",
+      "Peanut Butter Brownie",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
-  },
-  {
-    name: "Mezcal",
-    spiritCluster: true,
-    members: [
-      "Casamigos Mezcal",
-      "Clase Azul Guerrero Mezcal",
-      "Los Vecinos Mezcal",
-      "Tears of Llorona",
-      "Camarena Tequila",
-      "Patron XO Cafe"
-    ],
-    category: "mezcal",
-    profile: [
-      "mezcal",
-      "smoky",
-      "agave",
-      "earthy",
-      "bold",
-      "distinctive",
-      "complex"
-    ],
-    excellent: [
-      "Bone Marrow",
-      "Cowboy Ribeye",
-      "The Tomahawk",
-      "Prime Tartare",
-      "Brussels and Belly",
-      "Lardons"
-    ],
-    strong: [
-      "Kansas City",
-      "Mushrooms",
-      "Truffle Fries",
-      "Grilled Caesar",
-      "Shrimp Bisque"
-    ],
-    works: [
-      "House Wedge",
-      "Creamed Spinach",
-      "Filet Mignon",
-      "Chocolate Brownie"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "G.D. Vajra Moscato d'Asti",
       "Laurent Perrier Le Cuvée Brut",
-      "Cheesecake"
-    ],
+      "G.D. Vajra Moscato d'Asti",
+    ]
   },
   {
-    name: "Classic Vodka",
+    name: "Extra Añejo Tequila",
+    category: "spirit",
     spiritCluster: true,
-    members: [
-      "Titos Vodka",
-      "Grey Goose Vodka",
-      "Ketel One Vodka",
-      "Belvedere Vodka",
-      "Chopin Vodka",
-      "Stoli Elit Vodka",
-      "Reyka Vodka",
-      "Wheatley Vodka"
-    ],
-    category: "vodka",
-    profile: [
-      "vodka",
-      "neutral",
-      "clean",
-      "crisp",
-      "versatile",
-      "minimal-influence"
-    ],
+    members: ["Don Julio 1942","Clase Azul Durango","Clase Azul Gold","Clase Azul Ultra","Avion 44","El Mayor Extra Anejo","Komos Extra Anejo","Rey Sol Anejo","Tears of Llorona"],
+    profile: "3yr-plus-aged,deep-oak,whiskey-adjacent,smooth-sipping,dried-fruit,toasted-nut,premium",
     excellent: [
-      "Crab Cake",
-      "Shrimp Cocktail",
-      "Seared Scallops",
-      "Burrata",
-      "House Wedge",
-      "Seafood Tower"
-    ],
-    strong: [
-      "Prime Tartare",
-      "Shrimp Bisque",
-      "Escargot",
-      "Faroe Island Salmon",
-      "Grilled Caesar"
-    ],
-    works: [
       "Filet Mignon",
-      "Roast Half Chicken",
-      "Market Fish",
-      "Cheesecake"
-    ],
-  },
-  {
-    name: "Craft Vodka",
-    spiritCluster: true,
-    members: [
-      "Detroit City Vodka",
-      "HDW 100 Vodka",
-      "Hangar 1 Vodka"
-    ],
-    category: "vodka",
-    profile: [
-      "vodka",
-      "craft",
-      "slight-character",
-      "clean",
-      "approachable"
-    ],
-    excellent: [
-      "Crab Cake",
-      "Shrimp Cocktail",
-      "Seared Scallops",
-      "Burrata",
-      "House Wedge"
-    ],
-    strong: [
-      "Prime Tartare",
-      "Shrimp Bisque",
-      "Escargot",
-      "Faroe Island Salmon",
-      "Grilled Caesar"
-    ],
-    works: [
-      "Filet Mignon",
-      "Roast Half Chicken",
-      "Market Fish"
-    ],
-  },
-  {
-    name: "London Dry Gin",
-    spiritCluster: true,
-    members: [
-      "Tanqueray Gin",
-      "Tanq 10 Gin",
-      "Beefeater Gin",
-      "Bombay Dry Gin",
-      "Bombay Sapphire Gin",
-      "Plymouth Gin",
-      "Nolets Dry Gin",
-      "2 James Gin"
-    ],
-    category: "gin",
-    profile: [
-      "gin",
-      "london-dry",
-      "juniper-forward",
-      "citrus",
-      "herbal",
-      "classic",
-      "crisp"
-    ],
-    excellent: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Shrimp Cocktail",
-      "Burrata",
-      "Escargot",
-      "Seafood Tower"
-    ],
-    strong: [
-      "Prime Tartare",
-      "House Wedge",
-      "Shrimp Bisque",
-      "Faroe Island Salmon",
-      "Grilled Caesar"
-    ],
-    works: [
-      "Filet Mignon",
-      "Roast Half Chicken",
-      "Market Fish",
-      "Beignets"
-    ],
-    avoid: [
-      "The Tomahawk",
+      "Bone-In Filet",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
-  },
-  {
-    name: "Contemporary / Craft Gin",
-    spiritCluster: true,
-    members: [
-      "Hendricks Gin",
-      "Hendricks Flora Adora",
-      "Hendricks Grand Cabaret",
-      "Hendricks Neptunia",
-      "Hendricks Orbium",
-      "Aviation Gin",
-      "Bluecoat Gin",
-      "Botanist Gin",
-      "Empress 1908 Gin",
-      "Gray Whale Gin",
-      "Inverroche Gin",
-      "Liberator Gin",
-      "Mahon Gin",
-      "Monkey 47 Gin"
-    ],
-    category: "gin",
-    profile: [
-      "gin",
-      "contemporary",
-      "floral-or-fruit-forward",
-      "botanical",
-      "unique",
-      "approachable"
-    ],
-    excellent: [
-      "Burrata",
-      "Crab Cake",
-      "Seared Scallops",
-      "Shrimp Cocktail",
-      "Escargot",
-      "Beignets"
-    ],
-    strong: [
-      "Prime Tartare",
-      "House Wedge",
-      "Seafood Tower",
-      "Shrimp Bisque",
-      "Faroe Island Salmon"
-    ],
-    works: [
-      "Filet Mignon",
-      "Roast Half Chicken",
-      "Grilled Caesar",
-      "Cheesecake"
-    ],
-    avoid: [
-      "The Tomahawk",
-      "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
-  },
-  {
-    name: "Local Michigan Gin",
-    spiritCluster: true,
-    members: [
-      "Detroit City Gin",
-      "Eastern Kille Dry Gin",
-      "Iron Fish Gin",
-      "Knickerbocker Gin",
-      "Long Road Gin"
-    ],
-    category: "gin",
-    profile: [
-      "gin",
-      "local",
-      "varied-botanical",
-      "approachable",
-      "craft"
-    ],
-    excellent: [
-      "Burrata",
-      "Crab Cake",
-      "Shrimp Cocktail",
-      "Seared Scallops",
-      "House Wedge"
-    ],
-    strong: [
-      "Prime Tartare",
-      "Escargot",
-      "Seafood Tower",
-      "Shrimp Bisque",
-      "Faroe Island Salmon"
-    ],
-    works: [
-      "Filet Mignon",
-      "Roast Half Chicken",
-      "Grilled Caesar"
-    ],
-    avoid: [
-      "The Tomahawk",
-      "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo"
-    ],
-  },
-  {
-    name: "Japanese Gin",
-    spiritCluster: true,
-    members: [
-      "Roku Gin"
-    ],
-    category: "gin",
-    profile: [
-      "gin",
-      "japanese",
-      "floral",
-      "yuzu",
-      "sakura",
-      "delicate",
-      "unique"
-    ],
-    excellent: [
-      "Seared Scallops",
-      "Crab Cake",
-      "Burrata",
-      "Shrimp Cocktail",
-      "Faroe Island Salmon"
-    ],
-    strong: [
-      "Escargot",
-      "House Wedge",
-      "Prime Tartare",
-      "Shrimp Bisque",
-      "Seafood Tower"
-    ],
-    works: [
-      "Filet Mignon",
-      "Roast Half Chicken",
-      "Market Fish"
-    ],
-    avoid: [
-      "The Tomahawk",
-      "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
-  },
-  {
-    name: "White / Light Rum",
-    spiritCluster: true,
-    members: [
-      "Bacardi Rum",
-      "Mount Gay Rum"
-    ],
-    category: "rum",
-    profile: [
-      "rum",
-      "white",
-      "light",
-      "clean",
-      "sugarcane",
-      "tropical",
-      "approachable"
-    ],
-    excellent: [
-      "Shrimp Cocktail",
-      "Crab Cake",
-      "Burrata",
-      "House Wedge",
-      "Seared Scallops"
-    ],
-    strong: [
-      "Seafood Tower",
-      "Shrimp Bisque",
-      "Faroe Island Salmon",
-      "Beignets",
-      "Grilled Caesar"
-    ],
-    works: [
-      "Roast Half Chicken",
-      "Market Fish",
-      "Prime Tartare"
-    ],
-    avoid: [
-      "The Tomahawk",
-      "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned"
-    ],
-  },
-  {
-    name: "Dark / Aged Rum",
-    spiritCluster: true,
-    members: [
-      "Ron Zacapa Rum",
-      "Doctor Bird Jamaica Rum",
-      "Jung and Wulff Guyana",
-      "Jung and Wulff Trinidad",
-      "Myers's Rum"
-    ],
-    category: "rum",
-    profile: [
-      "rum",
-      "dark",
-      "aged",
-      "molasses",
-      "vanilla",
-      "caramel",
-      "bold",
-      "complex"
-    ],
-    excellent: [
+      "Mushrooms",
       "Chocolate Brownie",
-      "Peanut Butter Brownie",
-      "Carrot Cake",
-      "Cheesecake",
-      "Bone Marrow"
+      "Truffle Fries",
     ],
     strong: [
+      "Kansas City",
       "Cowboy Ribeye",
-      "Kansas City",
-      "Brussels and Belly",
-      "Truffle Fries",
-      "Mushrooms",
-      "Beignets"
+      "Creamed Spinach",
+      "Carrot Cake",
+      "Creme Brulee",
     ],
     works: [
-      "House Wedge",
-      "Grilled Caesar",
-      "Creamed Spinach",
-      "Creme Brulee"
+      "Porterhouse",
+      "Brussels and Belly",
+      "Au Gratin Potatoes",
+      "Cheesecake",
+      "Peanut Butter Brownie",
+      "Mocha Creme",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
       "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+    ]
   },
   {
-    name: "Spiced / Flavored Rum",
+    name: "Barrel-Finished Tequila",
+    category: "spirit",
     spiritCluster: true,
-    members: [
-      "Captain Morgan Rum",
-      "Malibu Rum"
-    ],
-    category: "rum",
-    profile: [
-      "rum",
-      "spiced-or-flavored",
-      "sweet",
-      "approachable",
-      "casual"
-    ],
+    members: ["Corazon Sazerac","Corazon Stagg","Corazon Weller"],
+    profile: "bourbon-cask,rye-cask,wheated-cask,crossover-flavor,Corazon-program,bourbon-adjacent",
     excellent: [
-      "Beignets",
-      "Cheesecake",
-      "Carrot Cake",
-      "House Wedge"
+      "Kansas City",
+      "Cowboy Ribeye",
+      "Bone Marrow",
+      "Truffle Fries",
+      "Chocolate Brownie",
+      "Peanut Butter Brownie",
     ],
     strong: [
-      "Shrimp Cocktail",
-      "Crab Cake",
-      "Chocolate Brownie",
-      "Peanut Butter Brownie"
+      "Filet Mignon",
+      "The Tomahawk",
+      "Mushrooms",
+      "Brussels and Belly",
+      "Creamed Spinach",
     ],
     works: [
-      "Burrata",
-      "Faroe Island Salmon",
-      "Roast Half Chicken"
+      "Porterhouse",
+      "Au Gratin Potatoes",
+      "Grilled Caesar",
+      "Carrot Cake",
+      "Cheesecake",
     ],
     avoid: [
-      "The Tomahawk",
-      "Scavino Barolo",
-      "Opus One",
-      "Bone Marrow"
-    ],
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+    ]
   },
   {
-    name: "Cognac / Brandy",
+    name: "Sherried Speyside",
+    category: "spirit",
     spiritCluster: true,
-    members: [
-      "Hennessy Cognac",
-      "Courvoisier Cognac",
-      "Remy VSOP Cognac",
-      "Pierre Ferrand Cognac",
-      "Villon Cognac",
-      "Christian Bros Brandy",
-      "Louis XIII Cognac",
-      "Elephant Gin"
-    ],
-    category: "cognac",
-    profile: [
-      "cognac",
-      "brandy",
-      "grape-distilled",
-      "vanilla",
-      "dried-fruit",
-      "oak",
-      "complex",
-      "elegant"
-    ],
+    members: ["Macallan 12 Sherry","Macallan 18","Macallan Estate","Balvenie 14 Caribbean Cask","Balvenie 21 Portwood","Aberlour 16"],
+    profile: "sherry-cask,port-cask,rum-cask,dark-fruit,raisin,fig,baking-spice,rich-sweetness",
     excellent: [
       "Filet Mignon",
-      "Bone Marrow",
-      "Truffle Fries",
-      "Cheesecake",
+      "Bone-In Filet",
       "Chocolate Brownie",
-      "Carrot Cake"
+      "Mushrooms",
+      "Truffle Fries",
+      "Carrot Cake",
     ],
     strong: [
       "Kansas City",
-      "Mushrooms",
+      "Cowboy Ribeye",
+      "Bone Marrow",
+      "Peanut Butter Brownie",
+      "Cheesecake",
+      "Creme Brulee",
+    ],
+    works: [
+      "Porterhouse",
       "Creamed Spinach",
-      "Creme Brulee",
-      "Peanut Butter Brownie",
-      "Lobster Mac"
-    ],
-    works: [
-      "House Wedge",
-      "Grilled Caesar",
       "Au Gratin Potatoes",
-      "Beignets"
+      "Mocha Creme",
+      "Brussels and Belly",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
       "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+    ]
   },
   {
-    name: "Amaro / Bitter Liqueur",
+    name: "Bourbon-Cask Speyside",
+    category: "spirit",
     spiritCluster: true,
-    members: [
-      "Amaro Nonino",
-      "Averna Amaro",
-      "Lucano Amaro",
-      "Montenegro Amaro",
-      "Fernet Branca",
-      "Fernet Menta",
-      "Campari",
-      "Aperol"
-    ],
-    category: "liqueur",
-    profile: [
-      "amaro",
-      "bitter",
-      "herbal",
-      "digestif",
-      "complex",
-      "Italian"
-    ],
+    members: ["Glenfiddich 12","Glenfiddich 14","Glenfiddich 18","Glenfiddich Gran Cru 23","Glenlivet 12","Balvenie 12 American Oak","Balvenie 16 Single Barrel","Cragganmore 12"],
+    profile: "ex-bourbon-cask,honey,vanilla,green-apple,pear,lighter,cleaner,Speyside-signature",
     excellent: [
-      "Chocolate Brownie",
-      "Peanut Butter Brownie",
-      "Cheesecake",
-      "Creme Brulee",
-      "Carrot Cake"
+      "Filet Mignon",
+      "Bone-In Filet",
+      "Mushrooms",
+      "Truffle Fries",
+      "Carrot Cake",
+      "Grilled Caesar",
     ],
     strong: [
-      "Bone Marrow",
       "Kansas City",
-      "Grilled Caesar",
-      "Mushrooms",
-      "Prime Tartare"
+      "Cowboy Ribeye",
+      "Porterhouse",
+      "Creamed Spinach",
+      "Au Gratin Potatoes",
+      "Cheesecake",
     ],
     works: [
-      "House Wedge",
-      "Brussels and Belly",
-      "Truffle Fries",
-      "Beignets"
-    ],
-    avoid: [
-      "Crab Cake",
-      "Seared Scallops",
-      "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
-  },
-  {
-    name: "Herbal / Anise Liqueur",
-    spiritCluster: true,
-    members: [
-      "Green Chartreuse",
-      "Yellow Chartreuse",
-      "Sambuca",
-      "Drambuie",
-      "Mata Hari Absinthe",
-      "Ancho Reyes",
-      "Contratto Vermouth"
-    ],
-    category: "liqueur",
-    profile: [
-      "herbal",
-      "anise-or-botanical",
-      "sweet-or-bitter",
-      "digestif-or-modifier"
-    ],
-    excellent: [
-      "Cheesecake",
-      "Creme Brulee",
-      "Chocolate Brownie",
-      "Beignets",
-      "Escargot",
-      "Grilled Caesar"
-    ],
-    strong: [
+      "Bone Marrow",
       "House Wedge",
       "Shrimp Bisque",
-      "Prime Tartare",
-      "Mushrooms",
-      "Brussels and Belly"
-    ],
-    works: [
-      "Filet Mignon",
-      "Kansas City",
-      "Carrot Cake"
+      "Brussels and Belly",
+      "Peanut Butter Brownie",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Laurent Perrier Le Cuvée Brut",
       "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut"
-    ],
+    ]
   },
   {
-    name: "Sweet / Cream Liqueur",
+    name: "Hendrick's Family",
+    category: "spirit",
     spiritCluster: true,
-    members: [
-      "Baileys Irish Cream",
-      "Buffalo Trace Cream",
-      "Frangelico",
-      "Kahlua",
-      "Disaronno",
-      "Grand Marnier",
-      "Chambord",
-      "Licor 43",
-      "Limoncello",
-      "Fireball Whisky",
-      "Patron XO Cafe"
-    ],
-    category: "liqueur",
-    profile: [
-      "sweet",
-      "cream-or-fruit-or-coffee",
-      "dessert-adjacent",
-      "low-ABV",
-      "approachable"
-    ],
+    members: ["Hendricks Gin","Hendricks Flora Adora","Hendricks Grand Cabaret","Hendricks Neptunia","Hendricks Orbium"],
+    profile: "cucumber,rose,floral,signature-botanicals,low-juniper,perfumed,Scottish",
     excellent: [
-      "Creme Brulee",
-      "Cheesecake",
-      "Chocolate Brownie",
-      "Peanut Butter Brownie",
-      "Carrot Cake",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Seafood Tower",
+      "Faroe Island Salmon",
       "Beignets",
-      "Mocha Creme"
     ],
     strong: [
-      "Chocolate Cake",
-      "Espresso Martini"
+      "Crab Cake",
+      "Seared Scallops",
+      "Prime Tartare",
+      "House Wedge",
+      "Shrimp Bisque",
     ],
     works: [
-      "Shrimp Cocktail",
-      "Crab Cake",
-      "House Wedge"
+      "Roast Half Chicken",
+      "Grilled Caesar",
+      "Cheesecake",
+      "Escargot",
+      "Filet Mignon",
     ],
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
+      "Cowboy Ribeye",
+      "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned"
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Botanical-Forward Craft Gin",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Botanist Gin","Monkey 47 Gin","Mahon Gin","Inverroche Gin"],
+    profile: "complex-botanicals,multi-ingredient,herbaceous,layered,juniper-plus,foraged,aromatic",
+    excellent: [
+      "Seafood Tower",
+      "Prime Tartare",
+      "Crab Cake",
+      "Seared Scallops",
+      "Escargot",
     ],
+    strong: [
+      "Burrata",
+      "Shrimp Cocktail",
+      "Faroe Island Salmon",
+      "Shrimp Bisque",
+      "House Wedge",
+    ],
+    works: [
+      "Roast Half Chicken",
+      "Filet Mignon",
+      "Grilled Caesar",
+      "Beignets",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Bone Marrow",
+      "Cowboy Ribeye",
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Smooth / Citrus Craft Gin",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Aviation Gin","Bluecoat Gin","Empress 1908 Gin","Gray Whale Gin","Liberator Gin"],
+    profile: "soft-juniper,citrus-forward,smooth,approachable,neutral-base,American-style,gateway-gin",
+    excellent: [
+      "Crab Cake",
+      "Shrimp Cocktail",
+      "Seared Scallops",
+      "Burrata",
+      "Beignets",
+      "Faroe Island Salmon",
+    ],
+    strong: [
+      "Seafood Tower",
+      "Prime Tartare",
+      "House Wedge",
+      "Shrimp Bisque",
+      "Roast Half Chicken",
+    ],
+    works: [
+      "Filet Mignon",
+      "Grilled Caesar",
+      "Cheesecake",
+      "Escargot",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Bone Marrow",
+      "Cowboy Ribeye",
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+      "Bowdie's Old Fashioned",
+    ]
+  },
+  {
+    name: "Peated Islay Scotch",
+    category: "spirit",
+    spiritCluster: true,
+    members: ["Lagavulin 8","Laphroaig 10","Bowmore 12"],
+    profile: "peat,smoke,maritime,brine,iodine,medicinal,charred,divisive",
+    excellent: [
+      "Bone Marrow",
+      "The Tomahawk",
+      "Cowboy Ribeye",
+      "Brussels and Belly",
+      "Grilled Caesar",
+    ],
+    strong: [
+      "Kansas City",
+      "Porterhouse",
+      "Mushrooms",
+      "Truffle Fries",
+      "Prime Tartare",
+      "Shrimp Bisque",
+    ],
+    works: [
+      "House Wedge",
+      "Creamed Spinach",
+      "Chocolate Brownie",
+      "Filet Mignon",
+    ],
+    avoid: [
+      "Crab Cake",
+      "Seared Scallops",
+      "Burrata",
+      "Shrimp Cocktail",
+      "Cheesecake",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+    ]
+  },
+  {
+    name: "Bruichladdich",
+    category: "spirit",
+    profile: "unpeated,Classic-Laddie,orchard-fruit,floral,barley-forward,approachable,clean",
+    excellent: [
+      "Filet Mignon",
+      "Faroe Island Salmon",
+      "Mushrooms",
+      "Truffle Fries",
+      "Burrata",
+      "Grilled Caesar",
+    ],
+    strong: [
+      "Roast Half Chicken",
+      "Prime Tartare",
+      "House Wedge",
+      "Shrimp Cocktail",
+      "Shrimp Bisque",
+      "Carrot Cake",
+    ],
+    works: [
+      "Kansas City",
+      "Crab Cake",
+      "Seafood Tower",
+      "Cheesecake",
+      "Brussels and Belly",
+    ],
+    avoid: [
+      "The Tomahawk",
+      "Bone Marrow",
+      "Caymus Cabernet Sauvignon",
+      "Scavino Barolo",
+      "Laurent Perrier Le Cuvée Brut",
+      "G.D. Vajra Moscato d'Asti",
+      "Seared Scallops",
+    ]
   }
 ];
 // ── SCORING ENGINE ────────────────────────────────────────────────────────────
