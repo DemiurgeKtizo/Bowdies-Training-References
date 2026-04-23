@@ -283,6 +283,8 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 .pb-item-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--text-primary);margin:6px 0 8px;line-height:1.2}
 .pb-item-cat-row{margin-bottom:12px}
 .pb-item-cat-badge{display:inline-block;font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold-dim);padding:5px 10px;border:1px solid var(--border-soft)}
+.pb-cluster-note{margin:-2px 0 12px;padding:8px 12px;background:var(--surface-2);border-left:2px solid var(--gold-dim);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--text-dim);line-height:1.4}
+.pb-cluster-note strong{font-style:normal;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:3px}
 .pb-item-profile{margin-bottom:22px;display:flex;flex-wrap:wrap;gap:6px}
 .pb-profile-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:var(--text-dim);padding:3px 9px;background:var(--surface-2);border-radius:2px}
 .pb-tier-section{margin-bottom:22px;padding:14px 16px;background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--border)}
@@ -446,6 +448,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     <div class="pb-item-cat-row">
       <span class="pb-item-cat-badge" id="pb-item-cat-badge"></span>
     </div>
+    <div id="pb-cluster-note-slot"></div>
     <div id="pb-oos-banner-slot"></div>
     <div class="pb-item-profile" id="pb-item-profile"></div>
     <div id="pb-tiers"></div>
@@ -462,8 +465,8 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 <!-- Cache-bust convention: increment ?v=N on any edit to the referenced file.
      Deprecated files (pairing-map.js, pairing-map-v2.old.js) are in /archive. -->
 <!-- table-defs.js was retired along with the seating flows (scope-down Apr 2026). -->
-<script src="pairing-map-v2.js?v=3"></script>
-<script src="pairing-notes.js?v=1"></script>
+<script src="pairing-map-v2.js?v=5"></script>
+<script src="pairing-notes.js?v=4"></script>
 <script>
 // ── STATE ──────────────────────────────────────────────────────────────────────
 // Seating + session-library state was removed with the scope-down (Apr 2026).
@@ -547,8 +550,11 @@ function pbSaveRecents() {
 }
 
 function pbRememberRecent(name) {
-  // Only remember items that actually exist in the pairing map (skip spirit-cluster members).
-  if (!PAIRING_MAP.some(e => e.name === name)) return;
+  // Remember anything resolvable — top-level entries OR cluster members.
+  // Staff often re-look-up a specific bottle (e.g. Macallan 18) even though
+  // the pairings come from the Speyside Scotch cluster; the recents chip
+  // should carry the bottle name they searched, not the cluster parent.
+  if (!pbResolveEntry(name)) return;
   pbState.recents = pbState.recents.filter(n => n !== name);
   pbState.recents.unshift(name);
   if (pbState.recents.length > PB_RECENTS_MAX) pbState.recents = pbState.recents.slice(0, PB_RECENTS_MAX);
@@ -603,8 +609,8 @@ function pbRenderRecents() {
   const wrap = document.getElementById('pb-recents-wrap');
   const list = document.getElementById('pb-recents-list');
   if (!wrap || !list) return;
-  // Filter out any stale names that no longer exist.
-  pbState.recents = pbState.recents.filter(n => PAIRING_MAP.some(e => e.name === n));
+  // Filter out any stale names that no longer resolve to a renderable entry.
+  pbState.recents = pbState.recents.filter(n => pbResolveEntry(n));
   if (!pbState.recents.length) { wrap.style.display = 'none'; list.innerHTML = ''; return; }
   list.innerHTML = '';
   pbState.recents.forEach(name => {
@@ -623,9 +629,19 @@ function handlePbSearch(val) {
     const results = document.getElementById('pb-search-results');
     if (!val || val.trim().length < 1) { results.classList.remove('visible'); return; }
     const q = val.toLowerCase();
-    // Only surface items that have a PAIRING_MAP entry we can render (exclude spirit-cluster members).
+    // Surface anything we can resolve to a renderable pairing card — top-level
+    // entries AND spirit-cluster members (they render the cluster's pairings
+    // with a "category-level" indicator). Dedupe by name so a cluster parent
+    // that also appears verbatim as a member doesn't show twice.
+    const seen = new Set();
     const matches = getAllItems()
-      .filter(i => PAIRING_MAP.some(e => e.name === i.name) && i.name.toLowerCase().includes(q))
+      .filter(i => {
+        if (seen.has(i.name)) return false;
+        if (!i.name.toLowerCase().includes(q)) return false;
+        if (!pbResolveEntry(i.name)) return false;
+        seen.add(i.name);
+        return true;
+      })
       .slice(0, 20);
     if (!matches.length) { results.innerHTML = ''; results.classList.remove('visible'); return; }
     results.innerHTML = '';
@@ -647,9 +663,23 @@ function handlePbSearch(val) {
   }, 80);
 }
 
+// Resolve a user-facing name to a renderable PAIRING_MAP entry. If the name
+// matches a top-level entry, return it directly. If it matches a spirit-cluster
+// member (e.g. "Macallan 18" → Speyside Scotch cluster), return the cluster
+// entry so we render its category-level pairings, and expose viaCluster so the
+// detail view can flag that the pairings aren't bottle-specific. This is what
+// surfaces the ~295 cluster members that otherwise have no pairing card.
+function pbResolveEntry(name) {
+  const top = PAIRING_MAP.find(e => e.name === name);
+  if (top) return { entry: top, viaCluster: null };
+  const cluster = PAIRING_MAP.find(e => e.spiritCluster && Array.isArray(e.members) && e.members.includes(name));
+  if (cluster) return { entry: cluster, viaCluster: cluster.name };
+  return null;
+}
+
 function pbNavigate(name) {
-  const entry = PAIRING_MAP.find(e => e.name === name);
-  if (!entry) return; // Spirit-cluster members and unknown names: no pairing card.
+  const resolved = pbResolveEntry(name);
+  if (!resolved) return; // Truly unknown name.
   if (pbState.current && pbState.current !== name) {
     pbState.history.push(pbState.current);
   }
@@ -669,13 +699,28 @@ function pbBack() {
 
 function pbRenderDetail() {
   const name = pbState.current;
-  const entry = PAIRING_MAP.find(e => e.name === name);
-  if (!entry) { pbHome(); return; }
+  const resolved = pbResolveEntry(name);
+  if (!resolved) { pbHome(); return; }
+  const entry = resolved.entry;
   document.getElementById('pb-search-view').style.display = 'none';
   document.getElementById('pb-detail-view').style.display = 'block';
+  // Title is always the user-facing name they searched — cluster members keep
+  // their bottle name (e.g. "Macallan 18") rather than flipping to the parent.
   document.getElementById('pb-item-title').textContent = name;
   document.getElementById('pb-item-cat-badge').textContent = getCategoryForDisplay(entry.category);
   document.getElementById('pb-back-label').textContent = pbState.history.length ? 'Back' : 'Search';
+
+  // Cluster-note: shown when the item we're rendering is a cluster member,
+  // not its own top-level entry. Tells staff the pairings are category-level
+  // — true for the style, but not necessarily tuned to this bottle's quirks.
+  const clusterSlot = document.getElementById('pb-cluster-note-slot');
+  if (clusterSlot) {
+    clusterSlot.innerHTML = resolved.viaCluster
+      ? '<div class="pb-cluster-note"><strong>Category-level pairing</strong>These pairings reflect '
+        + escapeHtml(resolved.viaCluster)
+        + ' as a style. Use them as a starting point \u2014 a specific bottle may lean richer, smokier, or drier than the category average.</div>'
+      : '';
+  }
 
   // OOS banner — rendered only when the item is currently 86'd. The full
   // pairing card stays visible so staff can still read the context, but the
@@ -806,7 +851,12 @@ function pbToggleRecExplain(recName) {
     return;
   }
   const sourceName = pbState.current;
-  const note = typeof getPairingNote === 'function' ? getPairingNote(sourceName, recName) : null;
+  // pairing-notes.js is keyed by top-level entry names. For a cluster member
+  // (e.g. "Macallan 18"), look up the note under the cluster's name so the
+  // category-level reasoning still shows. The header keeps the bottle name.
+  const sourceResolved = pbResolveEntry(sourceName);
+  const noteKey = sourceResolved && sourceResolved.viaCluster ? sourceResolved.viaCluster : sourceName;
+  const note = typeof getPairingNote === 'function' ? getPairingNote(noteKey, recName) : null;
   const targetEntry = PAIRING_MAP.find(e => e.name === recName);
   let body;
   if (note) {
@@ -844,7 +894,9 @@ function pbToggleAvoidExplain(avoidName) {
     return;
   }
   const sourceName = pbState.current;
-  const note = typeof getPairingNote === 'function' ? getPairingNote(sourceName, avoidName) : null;
+  const sourceResolved = pbResolveEntry(sourceName);
+  const noteKey = sourceResolved && sourceResolved.viaCluster ? sourceResolved.viaCluster : sourceName;
+  const note = typeof getPairingNote === 'function' ? getPairingNote(noteKey, avoidName) : null;
   const targetEntry = PAIRING_MAP.find(e => e.name === avoidName);
   let body;
   if (note) {
