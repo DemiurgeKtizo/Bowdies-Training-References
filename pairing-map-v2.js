@@ -15577,7 +15577,7 @@ const PAIRING_MAP = [
   {
     name: "Grand Marnier",
     category: "liqueur",
-    profile: "orange,cognac-based,citrus-peel,oak,sweet,complex",
+    profile: ["orange","cognac-based","citrus-peel","oak","sweet","complex"],
     gold: [
       "Creme Brulee",
     ],
@@ -15615,7 +15615,7 @@ const PAIRING_MAP = [
   {
     name: "Limoncello",
     category: "liqueur",
-    profile: "lemon,citrus,bright,palate-cleanser,Italian,mid-ABV",
+    profile: ["lemon","citrus","bright","palate-cleanser","Italian","mid-ABV"],
     gold: [
       "Cheesecake",
     ],
@@ -15653,7 +15653,7 @@ const PAIRING_MAP = [
   {
     name: "Chambord",
     category: "liqueur",
-    profile: "raspberry,black-raspberry,berry,sweet,low-ABV,French",
+    profile: ["raspberry","black-raspberry","berry","sweet","low-ABV","French"],
     gold: [
       "Cheesecake",
     ],
@@ -15691,7 +15691,7 @@ const PAIRING_MAP = [
   {
     name: "Licor 43",
     category: "liqueur",
-    profile: "vanilla,citrus,herbal,43-botanicals,sweet,Spanish",
+    profile: ["vanilla","citrus","herbal","43-botanicals","sweet","Spanish"],
     gold: [
       "Creme Brulee",
     ],
@@ -15729,7 +15729,7 @@ const PAIRING_MAP = [
   {
     name: "Fireball Whisky",
     category: "liqueur",
-    profile: "cinnamon,sweet,whisky-base,shot-forward,divisive,low-ABV",
+    profile: ["cinnamon","sweet","whisky-base","shot-forward","divisive","low-ABV"],
     gold: [
       "Carrot Cake",
     ],
@@ -15766,7 +15766,7 @@ const PAIRING_MAP = [
   {
     name: "Bruichladdich",
     category: "spirit",
-    profile: "unpeated,Classic-Laddie,orchard-fruit,floral,barley-forward,approachable,clean",
+    profile: ["unpeated","Classic-Laddie","orchard-fruit","floral","barley-forward","approachable","clean"],
     gold: [
       "Bone Marrow",
     ],
@@ -15806,7 +15806,7 @@ const PAIRING_MAP = [
   {
     name: "Lagavulin 8",
     category: "spirit",
-    profile: "peat,smoke,maritime,sea-spray,brine,youthful-vibrancy,bright-phenolics,citrus-oil,iodine,Islay-balanced",
+    profile: ["peat","smoke","maritime","sea-spray","brine","youthful-vibrancy","bright-phenolics","citrus-oil","iodine","Islay-balanced"],
     gold: [
       "Bone Marrow",
       "Mushrooms",
@@ -15845,7 +15845,7 @@ const PAIRING_MAP = [
   {
     name: "Laphroaig 10",
     category: "spirit",
-    profile: "heavy-peat,medicinal,iodine,tar,seaweed,intensely-phenolic,divisive,TCP,band-aid,maritime-brine,smoke-bomb",
+    profile: ["heavy-peat","medicinal","iodine","tar","seaweed","intensely-phenolic","divisive","TCP","band-aid","maritime-brine","smoke-bomb"],
     gold: [
       "Bone Marrow",
     ],
@@ -15883,7 +15883,7 @@ const PAIRING_MAP = [
   {
     name: "Bowmore 12",
     category: "spirit",
-    profile: "balanced-peat,gentle-smoke,honey,orchard-fruit,sherry-touch,approachable-Islay,citrus-peel,maritime-soft,honeyed-malt,dried-fruit",
+    profile: ["balanced-peat","gentle-smoke","honey","orchard-fruit","sherry-touch","approachable-Islay","citrus-peel","maritime-soft","honeyed-malt","dried-fruit"],
     gold: [
       "Bone Marrow",
     ],
@@ -15921,7 +15921,7 @@ const PAIRING_MAP = [
   {
     name: "Weller 12 Year",
     category: "spirit",
-    profile: "wheated-bourbon,aged-12,honey,caramel,oak,vanilla,sophisticated,mature-wheated,90-proof,premium-Weller",
+    profile: ["wheated-bourbon","aged-12","honey","caramel","oak","vanilla","sophisticated","mature-wheated","90-proof","premium-Weller"],
     gold: [
       "Porterhouse",
       "Creamed Spinach",
@@ -15960,7 +15960,7 @@ const PAIRING_MAP = [
   {
     name: "Weller Millennium",
     category: "spirit",
-    profile: "wheated-bourbon,premium-Weller,limited-release,deep-oak,honeyed-complexity,polished,special-occasion,mature-wheated",
+    profile: ["wheated-bourbon","premium-Weller","limited-release","deep-oak","honeyed-complexity","polished","special-occasion","mature-wheated"],
     gold: [
       "Kansas City",
       "Bone-In Filet",
@@ -16000,7 +16000,7 @@ const PAIRING_MAP = [
   {
     name: "Maker's Mark Cellar Aged",
     category: "spirit",
-    profile: "wheated-bourbon,cellar-aged,premium-Maker's,rich-oak,deep-caramel,extended-maturation,sophisticated,wax-and-vanilla",
+    profile: ["wheated-bourbon","cellar-aged","premium-Maker's","rich-oak","deep-caramel","extended-maturation","sophisticated","wax-and-vanilla"],
     gold: [
       "Filet Mignon",
     ],
@@ -16038,7 +16038,7 @@ const PAIRING_MAP = [
   {
     name: "Eagle Rare 10 Year",
     category: "spirit",
-    profile: "Buffalo-Trace,aged-10,90-proof,oak-spice,vanilla,balanced-premium,Eagle-Rare-signature,non-wheated-aged,refined",
+    profile: ["Buffalo-Trace","aged-10","90-proof","oak-spice","vanilla","balanced-premium","Eagle-Rare-signature","non-wheated-aged","refined"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -16076,7 +16076,7 @@ const PAIRING_MAP = [
   {
     name: "Weller Special Reserve",
     category: "spirit",
-    profile: "wheated-bourbon,90-proof,gateway-Weller,caramel,vanilla,honey,soft-sweetness,approachable-wheated,entry-level-Weller",
+    profile: ["wheated-bourbon","90-proof","gateway-Weller","caramel","vanilla","honey","soft-sweetness","approachable-wheated","entry-level-Weller"],
     gold: [
       "Kansas City",
     ],
@@ -16114,7 +16114,7 @@ const PAIRING_MAP = [
   {
     name: "Weller 107",
     category: "spirit",
-    profile: "wheated-bourbon,higher-proof,107-proof,richer-body,caramel-forward,honey-spice,viscous,bold-wheated,heat-forward",
+    profile: ["wheated-bourbon","higher-proof","107-proof","richer-body","caramel-forward","honey-spice","viscous","bold-wheated","heat-forward"],
     gold: [
       "Kansas City",
     ],
@@ -16152,7 +16152,7 @@ const PAIRING_MAP = [
   {
     name: "Maker's Mark",
     category: "spirit",
-    profile: "wheated-bourbon,iconic-Maker's,90-proof,red-wax,caramel,vanilla,approachable,soft-warm,gateway-wheated,signature-Maker's",
+    profile: ["wheated-bourbon","iconic-Maker's","90-proof","red-wax","caramel","vanilla","approachable","soft-warm","gateway-wheated","signature-Maker's"],
     gold: [
       "Cowboy Ribeye",
       "Brussels and Belly",
@@ -16191,7 +16191,7 @@ const PAIRING_MAP = [
   {
     name: "Bowdie's Private Select — Maker's Mark",
     category: "spirit",
-    profile: "wheated-bourbon,house-pick,Maker's-private-select,Bowdie's-signature,tailored-stave-profile,exclusive,Bowdie's-house-pour,distinctive-Maker's",
+    profile: ["wheated-bourbon","house-pick","Maker's-private-select","Bowdie's-signature","tailored-stave-profile","exclusive","Bowdie's-house-pour","distinctive-Maker's"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -16229,7 +16229,7 @@ const PAIRING_MAP = [
   {
     name: "Basil Hayden's",
     category: "spirit",
-    profile: "high-rye-bourbon,80-proof,light-bodied,delicate,rye-spice,pepper,easy-sipping,Basil-Hayden's-signature,gateway-high-rye",
+    profile: ["high-rye-bourbon","80-proof","light-bodied","delicate","rye-spice","pepper","easy-sipping","Basil-Hayden's-signature","gateway-high-rye"],
     gold: [
       "Filet Mignon",
     ],
@@ -16267,7 +16267,7 @@ const PAIRING_MAP = [
   {
     name: "Basil Hayden's Toast",
     category: "spirit",
-    profile: "high-rye-bourbon,toasted-barrel-finish,light-bodied,caramel,vanilla,toast-notes,approachable,marshmallow-toast,distinctive-finish",
+    profile: ["high-rye-bourbon","toasted-barrel-finish","light-bodied","caramel","vanilla","toast-notes","approachable","marshmallow-toast","distinctive-finish"],
     gold: [
       "Filet Mignon",
       "Truffle Fries",
@@ -16306,7 +16306,7 @@ const PAIRING_MAP = [
   {
     name: "Basil Hayden's 10 Year",
     category: "spirit",
-    profile: "high-rye-bourbon,aged-10,light-bodied,oak,vanilla,rye-spice,mature-delicate,80-proof,refined-high-rye",
+    profile: ["high-rye-bourbon","aged-10","light-bodied","oak","vanilla","rye-spice","mature-delicate","80-proof","refined-high-rye"],
     gold: [
       "Filet Mignon",
     ],
@@ -16344,7 +16344,7 @@ const PAIRING_MAP = [
   {
     name: "Basil Hayden's Malted Rye",
     category: "spirit",
-    profile: "high-malted-rye,Basil-Hayden-malted,bready,spicy-sweet,80-proof,distinctive-grain,malted-character,unique-Basil-Hayden's",
+    profile: ["high-malted-rye","Basil-Hayden-malted","bready","spicy-sweet","80-proof","distinctive-grain","malted-character","unique-Basil-Hayden's"],
     gold: [
       "Filet Mignon",
       "Truffle Fries",
@@ -16383,7 +16383,7 @@ const PAIRING_MAP = [
   {
     name: "Larceny Small Batch",
     category: "spirit",
-    profile: "wheated-bourbon,Heaven-Hill-distillery,92-proof,caramel,honey,vanilla,approachable-wheat,small-batch-wheated",
+    profile: ["wheated-bourbon","Heaven-Hill-distillery","92-proof","caramel","honey","vanilla","approachable-wheat","small-batch-wheated"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -16422,7 +16422,7 @@ const PAIRING_MAP = [
   {
     name: "Buffalo Trace",
     category: "spirit",
-    profile: "Buffalo-Trace-flagship,90-proof,caramel,vanilla,oak,approachable-premium,BT-signature,non-wheated-bourbon,versatile",
+    profile: ["Buffalo-Trace-flagship","90-proof","caramel","vanilla","oak","approachable-premium","BT-signature","non-wheated-bourbon","versatile"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -16460,7 +16460,7 @@ const PAIRING_MAP = [
   {
     name: "Woodford Reserve",
     category: "spirit",
-    profile: "small-batch-bourbon,90-proof,fruit-forward,floral,caramel,oak,Woodford-signature,balanced-bourbon,Kentucky-classic",
+    profile: ["small-batch-bourbon","90-proof","fruit-forward","floral","caramel","oak","Woodford-signature","balanced-bourbon","Kentucky-classic"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -16498,7 +16498,7 @@ const PAIRING_MAP = [
   {
     name: "Four Roses Yellow Label",
     category: "spirit",
-    profile: "entry-bourbon,10-recipe-blend,floral,honey,fruit,light-bodied,80-proof,approachable-mixing,Four-Roses-signature",
+    profile: ["entry-bourbon","10-recipe-blend","floral","honey","fruit","light-bodied","80-proof","approachable-mixing","Four-Roses-signature"],
     gold: [
       "Truffle Fries",
       "Mushrooms",
@@ -16537,7 +16537,7 @@ const PAIRING_MAP = [
   {
     name: "Jefferson's Reserve",
     category: "spirit",
-    profile: "blended-bourbon,Jefferson's-signature,elegant,honey,vanilla,smooth,90-proof,blended-finesse,sophisticated-blend",
+    profile: ["blended-bourbon","Jefferson's-signature","elegant","honey","vanilla","smooth","90-proof","blended-finesse","sophisticated-blend"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -16576,7 +16576,7 @@ const PAIRING_MAP = [
   {
     name: "Jefferson's Reserve VR Twin Oak",
     category: "spirit",
-    profile: "blended-bourbon,Twin-Oak-finish,Jefferson's-Very-Rare,complex-oak,deep-vanilla,sophisticated-finish,premium-Jefferson's,double-barrel",
+    profile: ["blended-bourbon","Twin-Oak-finish","Jefferson's-Very-Rare","complex-oak","deep-vanilla","sophisticated-finish","premium-Jefferson's","double-barrel"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -16615,7 +16615,7 @@ const PAIRING_MAP = [
   {
     name: "Knob Creek",
     category: "spirit",
-    profile: "high-rye-bourbon,100-proof,nutty,caramel,oak,Jim-Beam-premium,bold-approachable,full-bodied,Beam-signature",
+    profile: ["high-rye-bourbon","100-proof","nutty","caramel","oak","Jim-Beam-premium","bold-approachable","full-bodied","Beam-signature"],
     gold: [
       "Kansas City",
     ],
@@ -16653,7 +16653,7 @@ const PAIRING_MAP = [
   {
     name: "Russell's Reserve 10 Year",
     category: "spirit",
-    profile: "Wild-Turkey-distillery,aged-10,90-proof,caramel,vanilla,oak,Russell's-signature,sipping-bourbon,classic-Kentucky",
+    profile: ["Wild-Turkey-distillery","aged-10","90-proof","caramel","vanilla","oak","Russell's-signature","sipping-bourbon","classic-Kentucky"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -16692,7 +16692,7 @@ const PAIRING_MAP = [
   {
     name: "Heaven Hill Bottled in Bond",
     category: "spirit",
-    profile: "Heaven-Hill-bourbon,bottled-in-bond,100-proof,caramel,vanilla,oak,traditional-BIB,workhorse-BIB,classic-Kentucky",
+    profile: ["Heaven-Hill-bourbon","bottled-in-bond","100-proof","caramel","vanilla","oak","traditional-BIB","workhorse-BIB","classic-Kentucky"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -16731,7 +16731,7 @@ const PAIRING_MAP = [
   {
     name: "Elijah Craig Small Batch",
     category: "spirit",
-    profile: "Heaven-Hill-bourbon,94-proof,small-batch,caramel,vanilla,oak,spicy-sweet,Elijah-Craig-signature,Father-of-Bourbon",
+    profile: ["Heaven-Hill-bourbon","94-proof","small-batch","caramel","vanilla","oak","spicy-sweet","Elijah-Craig-signature","Father-of-Bourbon"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -16769,7 +16769,7 @@ const PAIRING_MAP = [
   {
     name: "Willett Pot Still Reserve",
     category: "spirit",
-    profile: "Willett-pot-still,high-rye,caramel,vanilla,oak-spice,94-proof,distinctive-bottle,Willett-signature,craft-bourbon",
+    profile: ["Willett-pot-still","high-rye","caramel","vanilla","oak-spice","94-proof","distinctive-bottle","Willett-signature","craft-bourbon"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -16808,7 +16808,7 @@ const PAIRING_MAP = [
   {
     name: "Bulleit Bourbon",
     category: "spirit",
-    profile: "high-rye-bourbon,90-proof,bold-spice,vanilla,rye-forward,distinctive-bottle,approachable,Bulleit-signature",
+    profile: ["high-rye-bourbon","90-proof","bold-spice","vanilla","rye-forward","distinctive-bottle","approachable","Bulleit-signature"],
     gold: [
       "Kansas City",
     ],
@@ -16846,7 +16846,7 @@ const PAIRING_MAP = [
   {
     name: "Knob Creek Bourbon/Rye",
     category: "spirit",
-    profile: "Knob-Creek-blend,bourbon-rye-mix,spicy-sweet,100-proof,unique-blend,layered,Beam-signature",
+    profile: ["Knob-Creek-blend","bourbon-rye-mix","spicy-sweet","100-proof","unique-blend","layered","Beam-signature"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -16885,7 +16885,7 @@ const PAIRING_MAP = [
   {
     name: "Jim Beam White Label",
     category: "spirit",
-    profile: "entry-bourbon,Jim-Beam-signature,80-proof,caramel,vanilla,peanut-like,mixing-bourbon,approachable-entry",
+    profile: ["entry-bourbon","Jim-Beam-signature","80-proof","caramel","vanilla","peanut-like","mixing-bourbon","approachable-entry"],
     gold: [
       "Truffle Fries",
       "Mushrooms",
@@ -16924,7 +16924,7 @@ const PAIRING_MAP = [
   {
     name: "Jim Beam Black Label",
     category: "spirit",
-    profile: "aged-Jim-Beam,86-proof,8-year,oak,caramel,vanilla,more-depth-than-white,sipping-capable,aged-entry",
+    profile: ["aged-Jim-Beam","86-proof","8-year","oak","caramel","vanilla","more-depth-than-white","sipping-capable","aged-entry"],
     gold: [
       "Kansas City",
     ],
@@ -16962,7 +16962,7 @@ const PAIRING_MAP = [
   {
     name: "Old Fitzgerald 7 Year",
     category: "spirit",
-    profile: "wheated-bourbon,Old-Fitz,BIB,7-year,100-proof,caramel,honey,Heaven-Hill-wheated-heritage,traditional-wheated-BIB",
+    profile: ["wheated-bourbon","Old-Fitz","BIB","7-year","100-proof","caramel","honey","Heaven-Hill-wheated-heritage","traditional-wheated-BIB"],
     gold: [
       "Kansas City",
     ],
@@ -17000,7 +17000,7 @@ const PAIRING_MAP = [
   {
     name: "Old Fitzgerald 9 Year",
     category: "spirit",
-    profile: "wheated-bourbon,Old-Fitz,BIB,9-year,100-proof,deeper-oak,mature-honey,Heaven-Hill-wheated-heritage,aged-wheated-BIB",
+    profile: ["wheated-bourbon","Old-Fitz","BIB","9-year","100-proof","deeper-oak","mature-honey","Heaven-Hill-wheated-heritage","aged-wheated-BIB"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17038,7 +17038,7 @@ const PAIRING_MAP = [
   {
     name: "Blade & Bow",
     category: "spirit",
-    profile: "Stitzel-Weller-revival,blended-bourbon,honey,vanilla,caramel,Blade-&-Bow-signature,historical-brand,Diageo-release",
+    profile: ["Stitzel-Weller-revival","blended-bourbon","honey","vanilla","caramel","Blade-&-Bow-signature","historical-brand","Diageo-release"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -17077,7 +17077,7 @@ const PAIRING_MAP = [
   {
     name: "Clermont Steep",
     category: "spirit",
-    profile: "Jim-Beam-wheated,caramel,vanilla,wheated-approachable,Clermont-Steep-signature,Beam-wheated-release,90-proof",
+    profile: ["Jim-Beam-wheated","caramel","vanilla","wheated-approachable","Clermont-Steep-signature","Beam-wheated-release","90-proof"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -17116,7 +17116,7 @@ const PAIRING_MAP = [
   {
     name: "1792 Sweet Wheat",
     category: "spirit",
-    profile: "wheated-bourbon,1792-distillery,sweet-wheat-release,caramel,vanilla,94.2-proof,Barton-signature,sweet-wheat-profile",
+    profile: ["wheated-bourbon","1792-distillery","sweet-wheat-release","caramel","vanilla","94.2-proof","Barton-signature","sweet-wheat-profile"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -17155,7 +17155,7 @@ const PAIRING_MAP = [
   {
     name: "Never Say Die Small Batch",
     category: "spirit",
-    profile: "Kentucky-bourbon,UK-aged,small-batch,Yorkshire-maturation,distinctive-cask-influence,novelty-release,unique-story",
+    profile: ["Kentucky-bourbon","UK-aged","small-batch","Yorkshire-maturation","distinctive-cask-influence","novelty-release","unique-story"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -17194,7 +17194,7 @@ const PAIRING_MAP = [
   {
     name: "Don Julio Reposado",
     category: "spirit",
-    profile: "reposado-tequila,iconic-Don-Julio,80-proof,8-month-aged,balanced-agave,vanilla,caramel,benchmark-reposado,American-oak",
+    profile: ["reposado-tequila","iconic-Don-Julio","80-proof","8-month-aged","balanced-agave","vanilla","caramel","benchmark-reposado","American-oak"],
     gold: [
       "Filet Mignon",
     ],
@@ -17230,7 +17230,7 @@ const PAIRING_MAP = [
   {
     name: "Don Julio 70th",
     category: "spirit",
-    profile: "reposado-tequila,Don-Julio-70th,crystalline-filtered,smooth,clear,vanilla,agave,special-occasion-reposado,charcoal-filtered",
+    profile: ["reposado-tequila","Don-Julio-70th","crystalline-filtered","smooth","clear","vanilla","agave","special-occasion-reposado","charcoal-filtered"],
     gold: [
       "Kansas City",
     ],
@@ -17266,7 +17266,7 @@ const PAIRING_MAP = [
   {
     name: "Clase Azul Reposado",
     category: "spirit",
-    profile: "reposado-tequila,Clase-Azul,ultra-premium,ceramic-bottle,hand-painted,luxury-reposado,ceremonial,8-month-aged,smooth-agave",
+    profile: ["reposado-tequila","Clase-Azul","ultra-premium","ceramic-bottle","hand-painted","luxury-reposado","ceremonial","8-month-aged","smooth-agave"],
     gold: [
       "Kansas City",
     ],
@@ -17302,7 +17302,7 @@ const PAIRING_MAP = [
   {
     name: "Corazon Reposado",
     category: "spirit",
-    profile: "reposado-tequila,Corazon,Sazerac-owned,single-estate-agave,balanced,vanilla,reposado-signature,highland-agave",
+    profile: ["reposado-tequila","Corazon","Sazerac-owned","single-estate-agave","balanced","vanilla","reposado-signature","highland-agave"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17338,7 +17338,7 @@ const PAIRING_MAP = [
   {
     name: "Siete Leguas Reposado",
     category: "spirit",
-    profile: "reposado-tequila,Siete-Leguas,traditional-craft,tahona-crush,rustic,earthy-agave,distinctive,family-distillery,old-school-tequila",
+    profile: ["reposado-tequila","Siete-Leguas","traditional-craft","tahona-crush","rustic","earthy-agave","distinctive","family-distillery","old-school-tequila"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17374,7 +17374,7 @@ const PAIRING_MAP = [
   {
     name: "Don Fulano Reposado",
     category: "spirit",
-    profile: "reposado-tequila,Don-Fulano,highlands-agave,premium,vanilla,honey,oak,refined-reposado,Tamaulipas,highland-Jalisco",
+    profile: ["reposado-tequila","Don-Fulano","highlands-agave","premium","vanilla","honey","oak","refined-reposado","Tamaulipas","highland-Jalisco"],
     gold: [
       "Kansas City",
     ],
@@ -17410,7 +17410,7 @@ const PAIRING_MAP = [
   {
     name: "G4 High Proof",
     category: "spirit",
-    profile: "reposado-tequila,G4-distillery,high-proof,104-proof,bold,concentrated,agave-forward,intense-reposado,Felipe-Camarena",
+    profile: ["reposado-tequila","G4-distillery","high-proof","104-proof","bold","concentrated","agave-forward","intense-reposado","Felipe-Camarena"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -17447,7 +17447,7 @@ const PAIRING_MAP = [
   {
     name: "Adictivo Reposado",
     category: "spirit",
-    profile: "reposado-tequila,Adictivo,long-aged,near-anejo,rich-oak,caramel,vanilla,concentrated-reposado,premium-extended-maturation",
+    profile: ["reposado-tequila","Adictivo","long-aged","near-anejo","rich-oak","caramel","vanilla","concentrated-reposado","premium-extended-maturation"],
     gold: [
       "Kansas City",
     ],
@@ -17483,7 +17483,7 @@ const PAIRING_MAP = [
   {
     name: "Komos Rosa Reposado",
     category: "spirit",
-    profile: "reposado-tequila,Komos-Rosa,wine-cask-finished,pink-tequila,luxury-brand,Riedel-bottle,rosé-finish,French-oak-wine-cask,strawberry-notes",
+    profile: ["reposado-tequila","Komos-Rosa","wine-cask-finished","pink-tequila","luxury-brand","Riedel-bottle","rosé-finish","French-oak-wine-cask","strawberry-notes"],
     gold: [
       "Kansas City",
     ],
@@ -17519,7 +17519,7 @@ const PAIRING_MAP = [
   {
     name: "Codigo 1530 Rosa",
     category: "spirit",
-    profile: "reposado-tequila,Codigo-1530-Rosa,Napa-Cabernet-wine-cask,rosa-tequila,pink-hue,wine-cask-influence,agave-and-wine",
+    profile: ["reposado-tequila","Codigo-1530-Rosa","Napa-Cabernet-wine-cask","rosa-tequila","pink-hue","wine-cask-influence","agave-and-wine"],
     gold: [
       "Kansas City",
     ],
@@ -17555,7 +17555,7 @@ const PAIRING_MAP = [
   {
     name: "Trombo Cedano Reposado",
     category: "spirit",
-    profile: "reposado-tequila,Trombo-Cedano,cedar-wood-aged,distinctive-cedar,unique-finish,agave-with-wood,pine-notes,novelty-cask",
+    profile: ["reposado-tequila","Trombo-Cedano","cedar-wood-aged","distinctive-cedar","unique-finish","agave-with-wood","pine-notes","novelty-cask"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17591,7 +17591,7 @@ const PAIRING_MAP = [
   {
     name: "El Cabo",
     category: "spirit",
-    profile: "reposado-tequila,El-Cabo,craft,small-batch,agave-forward,boutique-tequila,small-production",
+    profile: ["reposado-tequila","El-Cabo","craft","small-batch","agave-forward","boutique-tequila","small-production"],
     gold: [
       "Kansas City",
     ],
@@ -17627,7 +17627,7 @@ const PAIRING_MAP = [
   {
     name: "El Mayor Reposado",
     category: "spirit",
-    profile: "reposado-tequila,El-Mayor,80-proof,agave-forward,light-oak,approachable,value-reposado,everyday-pour",
+    profile: ["reposado-tequila","El-Mayor","80-proof","agave-forward","light-oak","approachable","value-reposado","everyday-pour"],
     gold: [
       "Kansas City",
     ],
@@ -17663,7 +17663,7 @@ const PAIRING_MAP = [
   {
     name: "Milagro Reposado",
     category: "spirit",
-    profile: "reposado-tequila,Milagro,triple-distilled,modern-style,agave-forward,vanilla,80-proof,clean-reposado",
+    profile: ["reposado-tequila","Milagro","triple-distilled","modern-style","agave-forward","vanilla","80-proof","clean-reposado"],
     gold: [
       "Kansas City",
     ],
@@ -17699,7 +17699,7 @@ const PAIRING_MAP = [
   {
     name: "Camarena Tequila",
     category: "spirit",
-    profile: "reposado-tequila,Camarena,Camarena-family,value-brand,80-proof,approachable,entry-reposado",
+    profile: ["reposado-tequila","Camarena","Camarena-family","value-brand","80-proof","approachable","entry-reposado"],
     gold: [
       "Kansas City",
     ],
@@ -17735,7 +17735,7 @@ const PAIRING_MAP = [
   {
     name: "Blanton's Original",
     category: "spirit",
-    profile: "single-barrel-bourbon,Buffalo-Trace,Blantons-Original,93-proof,iconic-horse-topper,caramel,vanilla,honey,benchmark-single-barrel",
+    profile: ["single-barrel-bourbon","Buffalo-Trace","Blantons-Original","93-proof","iconic-horse-topper","caramel","vanilla","honey","benchmark-single-barrel"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17774,7 +17774,7 @@ const PAIRING_MAP = [
   {
     name: "Blanton's Gold",
     category: "spirit",
-    profile: "single-barrel-bourbon,Buffalo-Trace,Blantons-Gold,103-proof,richer-Blantons,export-market,bold-single-barrel,higher-proof-sibling",
+    profile: ["single-barrel-bourbon","Buffalo-Trace","Blantons-Gold","103-proof","richer-Blantons","export-market","bold-single-barrel","higher-proof-sibling"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17813,7 +17813,7 @@ const PAIRING_MAP = [
   {
     name: "Elmer T. Lee",
     category: "spirit",
-    profile: "single-barrel-bourbon,Buffalo-Trace,Elmer-T-Lee,90-proof,legendary-master-distiller,rich,smooth,balanced,namesake-single-barrel",
+    profile: ["single-barrel-bourbon","Buffalo-Trace","Elmer-T-Lee","90-proof","legendary-master-distiller","rich","smooth","balanced","namesake-single-barrel"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17852,7 +17852,7 @@ const PAIRING_MAP = [
   {
     name: "E.H. Taylor Small Batch",
     category: "spirit",
-    profile: "Buffalo-Trace,bottled-in-bond,100-proof,E.H.-Taylor,premium-BIB,rich-caramel,vanilla,oak-forward,historical-brand",
+    profile: ["Buffalo-Trace","bottled-in-bond","100-proof","E.H.-Taylor","premium-BIB","rich-caramel","vanilla","oak-forward","historical-brand"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17891,7 +17891,7 @@ const PAIRING_MAP = [
   {
     name: "Elijah Craig Single Barrel",
     category: "spirit",
-    profile: "Heaven-Hill-bourbon,94-proof,single-barrel,caramel,vanilla,oak-spice,Elijah-Craig-single-barrel,Father-of-Bourbon,concentrated-Elijah-Craig",
+    profile: ["Heaven-Hill-bourbon","94-proof","single-barrel","caramel","vanilla","oak-spice","Elijah-Craig-single-barrel","Father-of-Bourbon","concentrated-Elijah-Craig"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -17930,7 +17930,7 @@ const PAIRING_MAP = [
   {
     name: "Elijah Craig Private Barrel",
     category: "spirit",
-    profile: "Heaven-Hill-bourbon,94-proof,single-barrel,private-barrel-pick,house-selected,exclusive-single-barrel,Bowdies-adjacent",
+    profile: ["Heaven-Hill-bourbon","94-proof","single-barrel","private-barrel-pick","house-selected","exclusive-single-barrel","Bowdies-adjacent"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -17970,7 +17970,7 @@ const PAIRING_MAP = [
   {
     name: "Henry McKenna 10 Year Bottled in Bond",
     category: "spirit",
-    profile: "Heaven-Hill-bourbon,10-year,bottled-in-bond,single-barrel,100-proof,rich-oak,Henry-McKenna,aged-BIB,historic-brand",
+    profile: ["Heaven-Hill-bourbon","10-year","bottled-in-bond","single-barrel","100-proof","rich-oak","Henry-McKenna","aged-BIB","historic-brand"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -18009,7 +18009,7 @@ const PAIRING_MAP = [
   {
     name: "Hancock's Reserve Single Barrel",
     category: "spirit",
-    profile: "single-barrel-bourbon,Buffalo-Trace,Hancocks-Reserve,88.9-proof,rich-complex,premium-single-barrel,BT-same-mash-as-Blantons",
+    profile: ["single-barrel-bourbon","Buffalo-Trace","Hancocks-Reserve","88.9-proof","rich-complex","premium-single-barrel","BT-same-mash-as-Blantons"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -18049,7 +18049,7 @@ const PAIRING_MAP = [
   {
     name: "Knob Creek 12 Year",
     category: "spirit",
-    profile: "high-rye-bourbon,100-proof,12-year-aged,Jim-Beam-premium,nutty-oak,aged-depth,Knob-Creek-premium,aged-Beam",
+    profile: ["high-rye-bourbon","100-proof","12-year-aged","Jim-Beam-premium","nutty-oak","aged-depth","Knob-Creek-premium","aged-Beam"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -18088,7 +18088,7 @@ const PAIRING_MAP = [
   {
     name: "Baker's",
     category: "spirit",
-    profile: "high-rye-bourbon,107-proof,7-year,small-batch,Jim-Beam-premium,Bakers-signature,rich-vanilla,bold-approachable,premium-small-batch-Beam",
+    profile: ["high-rye-bourbon","107-proof","7-year","small-batch","Jim-Beam-premium","Bakers-signature","rich-vanilla","bold-approachable","premium-small-batch-Beam"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -18127,7 +18127,7 @@ const PAIRING_MAP = [
   {
     name: "1792 Small Batch",
     category: "spirit",
-    profile: "small-batch-bourbon,Barton-1792,93.7-proof,spicy-sweet,balanced,1792-signature,Kentucky-flagship,high-rye-forward",
+    profile: ["small-batch-bourbon","Barton-1792","93.7-proof","spicy-sweet","balanced","1792-signature","Kentucky-flagship","high-rye-forward"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -18167,7 +18167,7 @@ const PAIRING_MAP = [
   {
     name: "Four Roses Small Batch Select",
     category: "spirit",
-    profile: "small-batch-bourbon,Four-Roses-Select,104-proof,6-recipe-blend,floral,concentrated-4-Roses,premium-blend,higher-proof-Four-Roses",
+    profile: ["small-batch-bourbon","Four-Roses-Select","104-proof","6-recipe-blend","floral","concentrated-4-Roses","premium-blend","higher-proof-Four-Roses"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -18207,7 +18207,7 @@ const PAIRING_MAP = [
   {
     name: "Bowman Brothers Small Batch",
     category: "spirit",
-    profile: "small-batch-bourbon,A-Smith-Bowman,Virginia-distillery,Sazerac-owned,90-proof,smooth,distinctive-Virginia-aging,family-distillery",
+    profile: ["small-batch-bourbon","A-Smith-Bowman","Virginia-distillery","Sazerac-owned","90-proof","smooth","distinctive-Virginia-aging","family-distillery"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -18247,7 +18247,7 @@ const PAIRING_MAP = [
   {
     name: "Heaven's Door 10 Year",
     category: "spirit",
-    profile: "bourbon,Heavens-Door,Bob-Dylan-brand,10-year,100-proof,Tennessee-sourced,decorative-bottle,celebrity-distillery,ironwork-art-bottle",
+    profile: ["bourbon","Heavens-Door","Bob-Dylan-brand","10-year","100-proof","Tennessee-sourced","decorative-bottle","celebrity-distillery","ironwork-art-bottle"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -18287,7 +18287,7 @@ const PAIRING_MAP = [
   {
     name: "Fox & Oden",
     category: "spirit",
-    profile: "small-batch-bourbon,Fox-and-Oden,craft,boutique,newer-brand,regional-distillery,small-production-bourbon",
+    profile: ["small-batch-bourbon","Fox-and-Oden","craft","boutique","newer-brand","regional-distillery","small-production-bourbon"],
     gold: [
       "Filet Mignon",
       "Kansas City",
@@ -18327,7 +18327,7 @@ const PAIRING_MAP = [
   {
     name: "Don Julio Blanco",
     category: "spirit",
-    profile: "blanco-tequila,Don-Julio,80-proof,iconic-benchmark,fresh-agave,citrus,clean,everyday-premium,industry-standard",
+    profile: ["blanco-tequila","Don-Julio","80-proof","iconic-benchmark","fresh-agave","citrus","clean","everyday-premium","industry-standard"],
     gold: [
       "Crab Cake",
     ],
@@ -18363,7 +18363,7 @@ const PAIRING_MAP = [
   {
     name: "Patron Silver",
     category: "spirit",
-    profile: "blanco-tequila,Patron,80-proof,iconic-bottle,clean,citrus-forward,globally-marketed,highly-accessible,frosted-glass-bottle",
+    profile: ["blanco-tequila","Patron","80-proof","iconic-bottle","clean","citrus-forward","globally-marketed","highly-accessible","frosted-glass-bottle"],
     gold: [
       "Crab Cake",
     ],
@@ -18399,7 +18399,7 @@ const PAIRING_MAP = [
   {
     name: "Clase Azul Plata",
     category: "spirit",
-    profile: "blanco-tequila,Clase-Azul-Plata,ultra-premium,ceramic-bottle,hand-painted,luxury-blanco,ceremonial,smooth-agave,sibling-to-reposado",
+    profile: ["blanco-tequila","Clase-Azul-Plata","ultra-premium","ceramic-bottle","hand-painted","luxury-blanco","ceremonial","smooth-agave","sibling-to-reposado"],
     gold: [
       "Seafood Tower",
     ],
@@ -18435,7 +18435,7 @@ const PAIRING_MAP = [
   {
     name: "Gran Patron Platinum",
     category: "spirit",
-    profile: "blanco-tequila,Gran-Patron-Platinum,triple-distilled,premium-Patron,smooth,concentrated-agave,glass-crystal-bottle,ultra-premium-Patron",
+    profile: ["blanco-tequila","Gran-Patron-Platinum","triple-distilled","premium-Patron","smooth","concentrated-agave","glass-crystal-bottle","ultra-premium-Patron"],
     gold: [
       "Crab Cake",
     ],
@@ -18471,7 +18471,7 @@ const PAIRING_MAP = [
   {
     name: "Don Fulano Blanco",
     category: "spirit",
-    profile: "blanco-tequila,Don-Fulano,highland-agave,premium-blanco,80-proof,refined,Jalisco-highlands,clean-craft,sibling-to-reposado",
+    profile: ["blanco-tequila","Don-Fulano","highland-agave","premium-blanco","80-proof","refined","Jalisco-highlands","clean-craft","sibling-to-reposado"],
     gold: [
       "Seared Scallops",
     ],
@@ -18507,7 +18507,7 @@ const PAIRING_MAP = [
   {
     name: "Siete Leguas Blanco",
     category: "spirit",
-    profile: "blanco-tequila,Siete-Leguas,traditional-craft,tahona-crush,rustic,earthy-agave,family-distillery,old-school-tequila,blanco-sibling",
+    profile: ["blanco-tequila","Siete-Leguas","traditional-craft","tahona-crush","rustic","earthy-agave","family-distillery","old-school-tequila","blanco-sibling"],
     gold: [
       "Crab Cake",
     ],
@@ -18543,7 +18543,7 @@ const PAIRING_MAP = [
   {
     name: "Mijenta Blanco",
     category: "spirit",
-    profile: "blanco-tequila,Mijenta,Jalisco-highlands,premium-craft,additive-free,Maestra-Tequilera,Ana-Maria-Romero,clean-agave,sustainability-focused",
+    profile: ["blanco-tequila","Mijenta","Jalisco-highlands","premium-craft","additive-free","Maestra-Tequilera","Ana-Maria-Romero","clean-agave","sustainability-focused"],
     gold: [
       "Seared Scallops",
     ],
@@ -18579,7 +18579,7 @@ const PAIRING_MAP = [
   {
     name: "G4 Blanco",
     category: "spirit",
-    profile: "blanco-tequila,G4-distillery,80-proof,Felipe-Camarena,agave-forward,craft-blanco,rainwater-process,standard-proof,sibling-to-High-Proof",
+    profile: ["blanco-tequila","G4-distillery","80-proof","Felipe-Camarena","agave-forward","craft-blanco","rainwater-process","standard-proof","sibling-to-High-Proof"],
     gold: [
       "Seared Scallops",
     ],
@@ -18615,7 +18615,7 @@ const PAIRING_MAP = [
   {
     name: "Avion Silver",
     category: "spirit",
-    profile: "blanco-tequila,Avion-Silver,80-proof,Jalisco-highlands,filtered,clean,global-distribution,approachable-craft",
+    profile: ["blanco-tequila","Avion-Silver","80-proof","Jalisco-highlands","filtered","clean","global-distribution","approachable-craft"],
     gold: [
       "Crab Cake",
     ],
@@ -18651,7 +18651,7 @@ const PAIRING_MAP = [
   {
     name: "Lalo Silver",
     category: "spirit",
-    profile: "blanco-tequila,Lalo,craft,Lalo-Gonzalez,Don-Julio-family-descendant,additive-free,clean-highland,newer-craft-brand,80-proof",
+    profile: ["blanco-tequila","Lalo","craft","Lalo-Gonzalez","Don-Julio-family-descendant","additive-free","clean-highland","newer-craft-brand","80-proof"],
     gold: [
       "Crab Cake",
     ],
@@ -18687,7 +18687,7 @@ const PAIRING_MAP = [
   {
     name: "Corazon Blanco",
     category: "spirit",
-    profile: "blanco-tequila,Corazon,Sazerac-owned,single-estate-agave,balanced,highland-agave,sibling-to-reposado",
+    profile: ["blanco-tequila","Corazon","Sazerac-owned","single-estate-agave","balanced","highland-agave","sibling-to-reposado"],
     gold: [
       "Crab Cake",
     ],
@@ -18723,7 +18723,7 @@ const PAIRING_MAP = [
   {
     name: "Adictivo Cristalino",
     category: "spirit",
-    profile: "cristalino-tequila,Adictivo-Cristalino,filtered-aged,clear-liquid-with-age,distinctive-character,aged-but-filtered,Adictivo-signature,premium-cristalino",
+    profile: ["cristalino-tequila","Adictivo-Cristalino","filtered-aged","clear-liquid-with-age","distinctive-character","aged-but-filtered","Adictivo-signature","premium-cristalino"],
     gold: [
       "Filet Mignon",
     ],
@@ -18759,7 +18759,7 @@ const PAIRING_MAP = [
   {
     name: "Sazerac Rye",
     category: "spirit",
-    profile: "rye-whiskey,Buffalo-Trace,Sazerac-Rye,90-proof,iconic-cocktail-benchmark,spicy-sweet,floral,cocktail-workhorse,BT-rye",
+    profile: ["rye-whiskey","Buffalo-Trace","Sazerac-Rye","90-proof","iconic-cocktail-benchmark","spicy-sweet","floral","cocktail-workhorse","BT-rye"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -18796,7 +18796,7 @@ const PAIRING_MAP = [
   {
     name: "Michter's US*1 Rye",
     category: "spirit",
-    profile: "rye-whiskey,Michters,US-Star-One,84.8-proof,small-batch,smooth,pot-still-distilled,approachable-rye,Michters-signature",
+    profile: ["rye-whiskey","Michters","US-Star-One","84.8-proof","small-batch","smooth","pot-still-distilled","approachable-rye","Michters-signature"],
     gold: [
       "Kansas City",
     ],
@@ -18833,7 +18833,7 @@ const PAIRING_MAP = [
   {
     name: "Knob Creek Rye",
     category: "spirit",
-    profile: "rye-whiskey,Beam,Knob-Creek-Rye,100-proof,bold-rye-spice,caramel-vanilla,high-impact,sibling-to-Knob-Creek-Bourbon",
+    profile: ["rye-whiskey","Beam","Knob-Creek-Rye","100-proof","bold-rye-spice","caramel-vanilla","high-impact","sibling-to-Knob-Creek-Bourbon"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -18871,7 +18871,7 @@ const PAIRING_MAP = [
   {
     name: "Woodford Reserve Rye",
     category: "spirit",
-    profile: "rye-whiskey,Woodford-Reserve,small-batch,90-proof,balanced-spicy-floral,fruit-forward,elegant-rye,sibling-to-Woodford-Bourbon",
+    profile: ["rye-whiskey","Woodford-Reserve","small-batch","90-proof","balanced-spicy-floral","fruit-forward","elegant-rye","sibling-to-Woodford-Bourbon"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -18908,7 +18908,7 @@ const PAIRING_MAP = [
   {
     name: "Elijah Craig Straight Rye",
     category: "spirit",
-    profile: "rye-whiskey,Heaven-Hill,94-proof,Elijah-Craig-Straight-Rye,spicy-sweet-rye,HH-character,sibling-to-bourbon-line",
+    profile: ["rye-whiskey","Heaven-Hill","94-proof","Elijah-Craig-Straight-Rye","spicy-sweet-rye","HH-character","sibling-to-bourbon-line"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -18946,7 +18946,7 @@ const PAIRING_MAP = [
   {
     name: "E.H. Taylor Rye",
     category: "spirit",
-    profile: "rye-whiskey,Buffalo-Trace,bottled-in-bond,100-proof,E.H.-Taylor-Rye,premium-BIB-rye,aged-rye,historical-brand,sibling-to-bourbon",
+    profile: ["rye-whiskey","Buffalo-Trace","bottled-in-bond","100-proof","E.H.-Taylor-Rye","premium-BIB-rye","aged-rye","historical-brand","sibling-to-bourbon"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -18984,7 +18984,7 @@ const PAIRING_MAP = [
   {
     name: "Pikesville Rye",
     category: "spirit",
-    profile: "rye-whiskey,Heaven-Hill,Pikesville,110-proof,6-year,Maryland-style-rye,bold-rye-spice,higher-proof-HH-rye",
+    profile: ["rye-whiskey","Heaven-Hill","Pikesville","110-proof","6-year","Maryland-style-rye","bold-rye-spice","higher-proof-HH-rye"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -19022,7 +19022,7 @@ const PAIRING_MAP = [
   {
     name: "WhistlePig PiggyBack 6 Year",
     category: "spirit",
-    profile: "rye-whiskey,WhistlePig,PiggyBack,6-year,100-proof,Canadian-sourced,Vermont-brand,accessible-WhistlePig",
+    profile: ["rye-whiskey","WhistlePig","PiggyBack","6-year","100-proof","Canadian-sourced","Vermont-brand","accessible-WhistlePig"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -19060,7 +19060,7 @@ const PAIRING_MAP = [
   {
     name: "Doc Swinson's Alter Ego Rye",
     category: "spirit",
-    profile: "rye-whiskey,Doc-Swinsons,Alter-Ego-Rye,craft-blend,sourced-rye,craft-finishing,boutique-brand,Pacific-Northwest",
+    profile: ["rye-whiskey","Doc-Swinsons","Alter-Ego-Rye","craft-blend","sourced-rye","craft-finishing","boutique-brand","Pacific-Northwest"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -19098,7 +19098,7 @@ const PAIRING_MAP = [
   {
     name: "Never Say Die Rye",
     category: "spirit",
-    profile: "rye-whiskey,Never-Say-Die,Kentucky-rye,UK-aged,Yorkshire-maturation,distinctive-cask-influence,novelty-release,sibling-to-bourbon",
+    profile: ["rye-whiskey","Never-Say-Die","Kentucky-rye","UK-aged","Yorkshire-maturation","distinctive-cask-influence","novelty-release","sibling-to-bourbon"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -19136,7 +19136,7 @@ const PAIRING_MAP = [
   {
     name: "Woodinville Rye",
     category: "spirit",
-    profile: "rye-whiskey,Woodinville,Washington-State,Pacific-Northwest,small-batch,craft-distillery,local-grain-sourced,non-Kentucky",
+    profile: ["rye-whiskey","Woodinville","Washington-State","Pacific-Northwest","small-batch","craft-distillery","local-grain-sourced","non-Kentucky"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -19174,7 +19174,7 @@ const PAIRING_MAP = [
   {
     name: "WhistlePig 10 Year Single Barrel Rye",
     category: "spirit",
-    profile: "rye-whiskey,WhistlePig-10,single-barrel,100-proof,Canadian-sourced,Vermont-finish,aged-rye,WP-core",
+    profile: ["rye-whiskey","WhistlePig-10","single-barrel","100-proof","Canadian-sourced","Vermont-finish","aged-rye","WP-core"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -19211,7 +19211,7 @@ const PAIRING_MAP = [
   {
     name: "WhistlePig 12 Year Old World",
     category: "spirit",
-    profile: "rye-whiskey,WhistlePig-12,Old-World-finish,12-year,Sauternes-Madeira-Port-cask,fruit-forward,complex,premium-WP",
+    profile: ["rye-whiskey","WhistlePig-12","Old-World-finish","12-year","Sauternes-Madeira-Port-cask","fruit-forward","complex","premium-WP"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -19248,7 +19248,7 @@ const PAIRING_MAP = [
   {
     name: "WhistlePig 15 Year",
     category: "spirit",
-    profile: "rye-whiskey,WhistlePig-15,15-year,92-proof,Vermont-oak-finish,extended-maturation,premium-WP-flagship",
+    profile: ["rye-whiskey","WhistlePig-15","15-year","92-proof","Vermont-oak-finish","extended-maturation","premium-WP-flagship"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -19285,7 +19285,7 @@ const PAIRING_MAP = [
   {
     name: "Michter's 10 Year Rye",
     category: "spirit",
-    profile: "rye-whiskey,Michters-10,10-year,92.8-proof,single-barrel,small-batch,premium-Michters,aged-rye,sibling-to-US-Star-One",
+    profile: ["rye-whiskey","Michters-10","10-year","92.8-proof","single-barrel","small-batch","premium-Michters","aged-rye","sibling-to-US-Star-One"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -19322,7 +19322,7 @@ const PAIRING_MAP = [
   {
     name: "WhistlePig Boss Hog IX 17 Year",
     category: "spirit",
-    profile: "rye-whiskey,WhistlePig-Boss-Hog-IX,allocated-luxury,barrel-proof,annual-limited-release,ultra-premium-WP,Sirens-Song-edition,collector-bottle",
+    profile: ["rye-whiskey","WhistlePig-Boss-Hog-IX","allocated-luxury","barrel-proof","annual-limited-release","ultra-premium-WP","Sirens-Song-edition","collector-bottle"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -19359,7 +19359,7 @@ const PAIRING_MAP = [
   {
     name: "WhistlePig Boss Hog X Commandments",
     category: "spirit",
-    profile: "rye-whiskey,WhistlePig-Boss-Hog-X,10th-edition,Commandments,allocated-luxury,ultra-premium-WP,rare-annual-release,barrel-proof,collector-bottle",
+    profile: ["rye-whiskey","WhistlePig-Boss-Hog-X","10th-edition","Commandments","allocated-luxury","ultra-premium-WP","rare-annual-release","barrel-proof","collector-bottle"],
     gold: [
       "Kansas City",
     ],
@@ -19396,7 +19396,7 @@ const PAIRING_MAP = [
   {
     name: "Thomas H. Handy Sazerac Rye",
     category: "spirit",
-    profile: "rye-whiskey,Buffalo-Trace,BTAC,Thomas-H-Handy,barrel-proof,uncut-unfiltered,annual-limited,collector-rye,allocated-BTAC",
+    profile: ["rye-whiskey","Buffalo-Trace","BTAC","Thomas-H-Handy","barrel-proof","uncut-unfiltered","annual-limited","collector-rye","allocated-BTAC"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -19433,7 +19433,7 @@ const PAIRING_MAP = [
   {
     name: "Pappy Van Winkle 13 Year Rye",
     category: "spirit",
-    profile: "rye-whiskey,Van-Winkle-Family-Reserve,Pappy-Rye-13,13-year,95.6-proof,unicorn-allocation,ultra-rare,Van-Winkle-legacy,Buffalo-Trace-produced",
+    profile: ["rye-whiskey","Van-Winkle-Family-Reserve","Pappy-Rye-13","13-year","95.6-proof","unicorn-allocation","ultra-rare","Van-Winkle-legacy","Buffalo-Trace-produced"],
     gold: [
       "The Tomahawk",
       "Cowboy Ribeye",
@@ -19471,7 +19471,7 @@ const PAIRING_MAP = [
   {
     name: "Kentucky Owl 10 Year Rye",
     category: "spirit",
-    profile: "rye-whiskey,Kentucky-Owl,10-year,allocated-luxury,KO-Rye,premium-KY-rye,unique-branding,collector-bottle",
+    profile: ["rye-whiskey","Kentucky-Owl","10-year","allocated-luxury","KO-Rye","premium-KY-rye","unique-branding","collector-bottle"],
     gold: [
       "The Tomahawk",
       "Cowboy Ribeye",
@@ -19509,7 +19509,7 @@ const PAIRING_MAP = [
   {
     name: "Mammoth 16 Year Single Barrel Rye",
     category: "spirit",
-    profile: "rye-whiskey,Mammoth-Distilling,16-year,single-barrel,Michigan-distillery,distinctive-aged-rye,extended-maturation,local-Michigan-brand,home-state-pride",
+    profile: ["rye-whiskey","Mammoth-Distilling","16-year","single-barrel","Michigan-distillery","distinctive-aged-rye","extended-maturation","local-Michigan-brand","home-state-pride"],
     gold: [
       "The Tomahawk",
       "Cowboy Ribeye",
@@ -19547,7 +19547,7 @@ const PAIRING_MAP = [
   {
     name: "Lock Stock & Barrel Rye",
     category: "spirit",
-    profile: "rye-whiskey,Lock-Stock-and-Barrel,sourced-rye,MGP,blended,boutique-brand,premium-sourced",
+    profile: ["rye-whiskey","Lock-Stock-and-Barrel","sourced-rye","MGP","blended","boutique-brand","premium-sourced"],
     gold: [
       "The Tomahawk",
       "Cowboy Ribeye",
@@ -19585,7 +19585,7 @@ const PAIRING_MAP = [
   {
     name: "Bardstown Discovery #6",
     category: "spirit",
-    profile: "bourbon,Bardstown-Bourbon-Co,Discovery-6,sourced-blend,multi-distillery,complex-blend,craft-blended,release-6",
+    profile: ["bourbon","Bardstown-Bourbon-Co","Discovery-6","sourced-blend","multi-distillery","complex-blend","craft-blended","release-6"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19624,7 +19624,7 @@ const PAIRING_MAP = [
   {
     name: "Bardstown Fusion #7",
     category: "spirit",
-    profile: "bourbon,Bardstown-Bourbon-Co,Fusion-7,in-house-plus-sourced,fusion-blend,own-distilled-plus-sourced,Bardstown-distillery-proud",
+    profile: ["bourbon","Bardstown-Bourbon-Co","Fusion-7","in-house-plus-sourced","fusion-blend","own-distilled-plus-sourced","Bardstown-distillery-proud"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19663,7 +19663,7 @@ const PAIRING_MAP = [
   {
     name: "Bardstown Founders KBS",
     category: "spirit",
-    profile: "bourbon,Bardstown-Founders-KBS,stout-barrel-finished,KBS-finish,coffee-chocolate-stout-notes,beer-barrel-finishing,distinctive-finish,Founders-Brewing-collaboration",
+    profile: ["bourbon","Bardstown-Founders-KBS","stout-barrel-finished","KBS-finish","coffee-chocolate-stout-notes","beer-barrel-finishing","distinctive-finish","Founders-Brewing-collaboration"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19702,7 +19702,7 @@ const PAIRING_MAP = [
   {
     name: "Bardstown Rishi's Single Barrel",
     category: "spirit",
-    profile: "bourbon,Bardstown-Bourbon-Co,Rishis-pick,single-barrel,retailer-pick,exclusive-barrel-selection,Bardstown-craft",
+    profile: ["bourbon","Bardstown-Bourbon-Co","Rishis-pick","single-barrel","retailer-pick","exclusive-barrel-selection","Bardstown-craft"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19741,7 +19741,7 @@ const PAIRING_MAP = [
   {
     name: "Blood Oath Pact 8",
     category: "spirit",
-    profile: "bourbon,Blood-Oath-Pact-8,annual-limited-release,John-Rempe,Lux-Row,blend-of-bourbons,Mizunara-finish,2022-release,master-blender-signature",
+    profile: ["bourbon","Blood-Oath-Pact-8","annual-limited-release","John-Rempe","Lux-Row","blend-of-bourbons","Mizunara-finish","2022-release","master-blender-signature"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19780,7 +19780,7 @@ const PAIRING_MAP = [
   {
     name: "Blood Oath Pact 9",
     category: "spirit",
-    profile: "bourbon,Blood-Oath-Pact-9,annual-limited-release,John-Rempe,Lux-Row,blend-of-bourbons,wine-cask-finish,2023-release,master-blender-signature",
+    profile: ["bourbon","Blood-Oath-Pact-9","annual-limited-release","John-Rempe","Lux-Row","blend-of-bourbons","wine-cask-finish","2023-release","master-blender-signature"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19819,7 +19819,7 @@ const PAIRING_MAP = [
   {
     name: "Blood Oath Pact 10",
     category: "spirit",
-    profile: "bourbon,Blood-Oath-Pact-10,annual-limited-release,John-Rempe,Lux-Row,decennial-10th-release,blend-of-bourbons,distinctive-finish,2024-milestone,master-blender-signature",
+    profile: ["bourbon","Blood-Oath-Pact-10","annual-limited-release","John-Rempe","Lux-Row","decennial-10th-release","blend-of-bourbons","distinctive-finish","2024-milestone","master-blender-signature"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19858,7 +19858,7 @@ const PAIRING_MAP = [
   {
     name: "Rishi's Old Antique",
     category: "spirit",
-    profile: "bourbon,Rishis-Old-Antique,retailer-label,aged-sourced,premium-sourced,boutique-brand,Rishis-selection",
+    profile: ["bourbon","Rishis-Old-Antique","retailer-label","aged-sourced","premium-sourced","boutique-brand","Rishis-selection"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19897,7 +19897,7 @@ const PAIRING_MAP = [
   {
     name: "Kentucky Owl Confiscated",
     category: "spirit",
-    profile: "bourbon,Kentucky-Owl,Confiscated,Prohibition-era-narrative,KO-mainstream,craft-blended,storytelling-brand",
+    profile: ["bourbon","Kentucky-Owl","Confiscated","Prohibition-era-narrative","KO-mainstream","craft-blended","storytelling-brand"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19936,7 +19936,7 @@ const PAIRING_MAP = [
   {
     name: "A Midnight's Winter Dram",
     category: "spirit",
-    profile: "bourbon,A-Midnights-Winter-Dram,rare-limited-release,craft-blended,literary-evocative,distinctive-brand,boutique-release",
+    profile: ["bourbon","A-Midnights-Winter-Dram","rare-limited-release","craft-blended","literary-evocative","distinctive-brand","boutique-release"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -19975,7 +19975,7 @@ const PAIRING_MAP = [
   {
     name: "Don Julio 1942",
     category: "spirit",
-    profile: "extra-anejo-tequila,Don-Julio-1942,benchmark-extra-anejo,iconic-luxury,2.5-year-plus-aged,vanilla,caramel,distinctive-bottle,tall-elongated-bottle",
+    profile: ["extra-anejo-tequila","Don-Julio-1942","benchmark-extra-anejo","iconic-luxury","2.5-year-plus-aged","vanilla","caramel","distinctive-bottle","tall-elongated-bottle"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -20014,7 +20014,7 @@ const PAIRING_MAP = [
   {
     name: "Clase Azul Durango",
     category: "spirit",
-    profile: "extra-anejo-tequila,Clase-Azul-Durango,ultra-premium,ceramic-bottle,Durango-artisanship,luxury-extra-anejo,hand-painted,ceremonial",
+    profile: ["extra-anejo-tequila","Clase-Azul-Durango","ultra-premium","ceramic-bottle","Durango-artisanship","luxury-extra-anejo","hand-painted","ceremonial"],
     gold: [
       "Kansas City",
     ],
@@ -20053,7 +20053,7 @@ const PAIRING_MAP = [
   {
     name: "Clase Azul Gold",
     category: "spirit",
-    profile: "extra-anejo-tequila,Clase-Azul-Gold,joven-blend,24K-gold-flakes,blanco-reposado-anejo-mezcal-blend,ultra-luxury,golden-ceramic-bottle,ceremonial",
+    profile: ["extra-anejo-tequila","Clase-Azul-Gold","joven-blend","24K-gold-flakes","blanco-reposado-anejo-mezcal-blend","ultra-luxury","golden-ceramic-bottle","ceremonial"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -20092,7 +20092,7 @@ const PAIRING_MAP = [
   {
     name: "Clase Azul Ultra",
     category: "spirit",
-    profile: "extra-anejo-tequila,Clase-Azul-Ultra,5-year,top-tier-Clase-Azul,platinum-gold-accents,ultra-premium-top-tier,ceremonial,collector-grade",
+    profile: ["extra-anejo-tequila","Clase-Azul-Ultra","5-year","top-tier-Clase-Azul","platinum-gold-accents","ultra-premium-top-tier","ceremonial","collector-grade"],
     gold: [
       "The Tomahawk",
       "Cowboy Ribeye",
@@ -20133,7 +20133,7 @@ const PAIRING_MAP = [
   {
     name: "Komos Extra Anejo",
     category: "spirit",
-    profile: "extra-anejo-tequila,Komos,Riedel-bottle,luxury-brand,aged-extra-anejo,premium-finishing,collector-packaging",
+    profile: ["extra-anejo-tequila","Komos","Riedel-bottle","luxury-brand","aged-extra-anejo","premium-finishing","collector-packaging"],
     gold: [
       "The Tomahawk",
       "Cowboy Ribeye",
@@ -20174,7 +20174,7 @@ const PAIRING_MAP = [
   {
     name: "Avion 44",
     category: "spirit",
-    profile: "extra-anejo-tequila,Avion-44,44-month-aged,premium-Avion,Jalisco-highlands,extended-aged,sibling-to-Avion-Silver",
+    profile: ["extra-anejo-tequila","Avion-44","44-month-aged","premium-Avion","Jalisco-highlands","extended-aged","sibling-to-Avion-Silver"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -20213,7 +20213,7 @@ const PAIRING_MAP = [
   {
     name: "El Mayor Extra Anejo",
     category: "spirit",
-    profile: "extra-anejo-tequila,El-Mayor,value-adjacent-premium,accessible-extra-anejo,aged-El-Mayor,sibling-to-reposado",
+    profile: ["extra-anejo-tequila","El-Mayor","value-adjacent-premium","accessible-extra-anejo","aged-El-Mayor","sibling-to-reposado"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -20252,7 +20252,7 @@ const PAIRING_MAP = [
   {
     name: "Rey Sol Anejo",
     category: "spirit",
-    profile: "extra-anejo-tequila,Rey-Sol,sun-shaped-bottle,Moorish-inspired,distinctive-packaging,aged-extra-anejo,collectible-bottle",
+    profile: ["extra-anejo-tequila","Rey-Sol","sun-shaped-bottle","Moorish-inspired","distinctive-packaging","aged-extra-anejo","collectible-bottle"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -20291,7 +20291,7 @@ const PAIRING_MAP = [
   {
     name: "Tears of Llorona",
     category: "spirit",
-    profile: "extra-anejo-tequila,Tears-of-Llorona,German-Gonzalez,triple-cask-aged,Scotch-sherry-cognac-casks,legendary-tequila-maker,distinctive-multi-cask,collector-grade",
+    profile: ["extra-anejo-tequila","Tears-of-Llorona","German-Gonzalez","triple-cask-aged","Scotch-sherry-cognac-casks","legendary-tequila-maker","distinctive-multi-cask","collector-grade"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -20330,7 +20330,7 @@ const PAIRING_MAP = [
   {
     name: "Amaro Nonino",
     category: "liqueur",
-    profile: "amaro,Amaro-Nonino,grappa-based,Friulian,orange-peel,botanical,elegant-lighter,digestif,premium-amaro",
+    profile: ["amaro","Amaro-Nonino","grappa-based","Friulian","orange-peel","botanical","elegant-lighter","digestif","premium-amaro"],
     gold: [
       "Creme Brulee",
     ],
@@ -20365,7 +20365,7 @@ const PAIRING_MAP = [
   {
     name: "Averna Amaro",
     category: "liqueur",
-    profile: "amaro,Averna,Sicilian,caramel,orange,herbal,fuller-body,classic-amaro,digestif",
+    profile: ["amaro","Averna","Sicilian","caramel","orange","herbal","fuller-body","classic-amaro","digestif"],
     gold: [
       "Cheesecake",
     ],
@@ -20400,7 +20400,7 @@ const PAIRING_MAP = [
   {
     name: "Lucano Amaro",
     category: "liqueur",
-    profile: "amaro,Lucano,Basilicata,floral,anise-notes,lighter-profile,distinctive-amaro,digestif",
+    profile: ["amaro","Lucano","Basilicata","floral","anise-notes","lighter-profile","distinctive-amaro","digestif"],
     gold: [
       "Cheesecake",
     ],
@@ -20435,7 +20435,7 @@ const PAIRING_MAP = [
   {
     name: "Montenegro Amaro",
     category: "liqueur",
-    profile: "amaro,Montenegro,Bologna,vanilla,orange,approachable,crowd-pleasing-amaro,digestif",
+    profile: ["amaro","Montenegro","Bologna","vanilla","orange","approachable","crowd-pleasing-amaro","digestif"],
     gold: [
       "Carrot Cake",
     ],
@@ -20470,7 +20470,7 @@ const PAIRING_MAP = [
   {
     name: "Fernet Branca",
     category: "liqueur",
-    profile: "fernet,Fernet-Branca,menthol,saffron,nuclear-bitter,digestif,savory-lean,bartenders-handshake,Milan,27-herbs",
+    profile: ["fernet","Fernet-Branca","menthol","saffron","nuclear-bitter","digestif","savory-lean","bartenders-handshake","Milan","27-herbs"],
     gold: [
       "Bone Marrow",
     ],
@@ -20505,7 +20505,7 @@ const PAIRING_MAP = [
   {
     name: "Fernet Menta",
     category: "liqueur",
-    profile: "fernet,Fernet-Menta,mint-forward,cooling,bright-bitter,digestif,Branca-sibling,mentholated",
+    profile: ["fernet","Fernet-Menta","mint-forward","cooling","bright-bitter","digestif","Branca-sibling","mentholated"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -20540,7 +20540,7 @@ const PAIRING_MAP = [
   {
     name: "Campari",
     category: "liqueur",
-    profile: "amaro,Campari,ruby,bitter-orange,rhubarb,aperitivo,Negroni-spine,Milan,24-percent-ABV",
+    profile: ["amaro","Campari","ruby","bitter-orange","rhubarb","aperitivo","Negroni-spine","Milan","24-percent-ABV"],
     gold: [
       "House Wedge",
     ],
@@ -20575,7 +20575,7 @@ const PAIRING_MAP = [
   {
     name: "Aperol",
     category: "liqueur",
-    profile: "amaro,Aperol,soft-bitter,orange,rhubarb,aperitivo,spritz-first,11-percent-ABV,Padua,approachable",
+    profile: ["amaro","Aperol","soft-bitter","orange","rhubarb","aperitivo","spritz-first","11-percent-ABV","Padua","approachable"],
     gold: [
       "Burrata",
     ],
@@ -20610,7 +20610,7 @@ const PAIRING_MAP = [
   {
     name: "Titos Vodka",
     category: "vodka",
-    profile: "vodka,Titos,American-corn,Texas,gluten-free,80-proof,round-mouthfeel,slightly-sweet,default-call",
+    profile: ["vodka","Titos","American-corn","Texas","gluten-free","80-proof","round-mouthfeel","slightly-sweet","default-call"],
     gold: [
       "Shrimp Cocktail",
     ],
@@ -20645,7 +20645,7 @@ const PAIRING_MAP = [
   {
     name: "Grey Goose Vodka",
     category: "vodka",
-    profile: "vodka,Grey-Goose,French-wheat,Picardie,Cognac-region,soft,silky,luxury-default",
+    profile: ["vodka","Grey-Goose","French-wheat","Picardie","Cognac-region","soft","silky","luxury-default"],
     gold: [
       "Shrimp Cocktail",
     ],
@@ -20680,7 +20680,7 @@ const PAIRING_MAP = [
   {
     name: "Ketel One Vodka",
     category: "vodka",
-    profile: "vodka,Ketel-One,Dutch-wheat,Nolet-family,pot-and-column,clean-citrus,floral-finish,balanced",
+    profile: ["vodka","Ketel-One","Dutch-wheat","Nolet-family","pot-and-column","clean-citrus","floral-finish","balanced"],
     gold: [
       "Seared Scallops",
     ],
@@ -20715,7 +20715,7 @@ const PAIRING_MAP = [
   {
     name: "Belvedere Vodka",
     category: "vodka",
-    profile: "vodka,Belvedere,Polish-rye,Dankowskie-Diamond-rye,single-estate,aromatic,slightly-peppery,vanilla,purity-focused",
+    profile: ["vodka","Belvedere","Polish-rye","Dankowskie-Diamond-rye","single-estate","aromatic","slightly-peppery","vanilla","purity-focused"],
     gold: [
       "Prime Tartare",
     ],
@@ -20751,7 +20751,7 @@ const PAIRING_MAP = [
   {
     name: "Chopin Vodka",
     category: "vodka",
-    profile: "vodka,Chopin,Polish-potato,single-ingredient-potato,creamy-mouthfeel,silky-texture,Podlasie,premium-artisanal",
+    profile: ["vodka","Chopin","Polish-potato","single-ingredient-potato","creamy-mouthfeel","silky-texture","Podlasie","premium-artisanal"],
     gold: [
       "Prime Tartare",
     ],
@@ -20786,7 +20786,7 @@ const PAIRING_MAP = [
   {
     name: "Stoli Elit Vodka",
     category: "vodka",
-    profile: "vodka,Stoli-Elit,Russian-wheat,quadruple-filtered,ultra-premium,crystalline,glacial-clean,top-shelf",
+    profile: ["vodka","Stoli-Elit","Russian-wheat","quadruple-filtered","ultra-premium","crystalline","glacial-clean","top-shelf"],
     gold: [
       "Prime Tartare",
     ],
@@ -20821,7 +20821,7 @@ const PAIRING_MAP = [
   {
     name: "Reyka Vodka",
     category: "vodka",
-    profile: "vodka,Reyka,Icelandic,lava-filtered,glacial-water,wheat-and-barley,mineral,small-batch,distinctive",
+    profile: ["vodka","Reyka","Icelandic","lava-filtered","glacial-water","wheat-and-barley","mineral","small-batch","distinctive"],
     gold: [
       "Seared Scallops",
     ],
@@ -20856,7 +20856,7 @@ const PAIRING_MAP = [
   {
     name: "Wheatley Vodka",
     category: "vodka",
-    profile: "vodka,Wheatley,Buffalo-Trace-distillery,wheat-based,house-made,value-premium,clean,10-times-distilled",
+    profile: ["vodka","Wheatley","Buffalo-Trace-distillery","wheat-based","house-made","value-premium","clean","10-times-distilled"],
     gold: [
       "Shrimp Cocktail",
     ],
@@ -20891,7 +20891,7 @@ const PAIRING_MAP = [
   {
     name: "Tanqueray Gin",
     category: "gin",
-    profile: "gin,Tanqueray,London-Dry,47-3-percent-ABV,quadruple-distilled,juniper-forward,angelica,coriander,licorice,iconic,British-benchmark",
+    profile: ["gin","Tanqueray","London-Dry","47-3-percent-ABV","quadruple-distilled","juniper-forward","angelica","coriander","licorice","iconic","British-benchmark"],
     gold: [
       "Crab Cake",
     ],
@@ -20927,7 +20927,7 @@ const PAIRING_MAP = [
   {
     name: "Beefeater Gin",
     category: "gin",
-    profile: "gin,Beefeater,London-Dry,40-percent-ABV,9-botanicals,24-hour-steep,juniper,citrus,balanced,democratic-workhorse",
+    profile: ["gin","Beefeater","London-Dry","40-percent-ABV","9-botanicals","24-hour-steep","juniper","citrus","balanced","democratic-workhorse"],
     gold: [
       "Seafood Tower",
     ],
@@ -20963,7 +20963,7 @@ const PAIRING_MAP = [
   {
     name: "Bombay Dry Gin",
     category: "gin",
-    profile: "gin,Bombay-Dry,London-Dry,original-recipe,8-botanicals,juniper-assertive,angular,traditional",
+    profile: ["gin","Bombay-Dry","London-Dry","original-recipe","8-botanicals","juniper-assertive","angular","traditional"],
     gold: [
       "Seafood Tower",
     ],
@@ -20999,7 +20999,7 @@ const PAIRING_MAP = [
   {
     name: "Plymouth Gin",
     category: "gin",
-    profile: "gin,Plymouth,protected-geographical-indication,single-distillery,softer-English,earthier-juniper,sweet-notes,smooth",
+    profile: ["gin","Plymouth","protected-geographical-indication","single-distillery","softer-English","earthier-juniper","sweet-notes","smooth"],
     gold: [
       "Crab Cake",
     ],
@@ -21035,7 +21035,7 @@ const PAIRING_MAP = [
   {
     name: "Tanq 10 Gin",
     category: "gin",
-    profile: "gin,Tanqueray-Ten,Tanq-10,small-batch-premium,whole-citrus,grapefruit,orange,lime,chamomile,martini-favorite,pot-stilled-Tiny-Ten",
+    profile: ["gin","Tanqueray-Ten","Tanq-10","small-batch-premium","whole-citrus","grapefruit","orange","lime","chamomile","martini-favorite","pot-stilled-Tiny-Ten"],
     gold: [
       "Crab Cake",
     ],
@@ -21071,7 +21071,7 @@ const PAIRING_MAP = [
   {
     name: "Bombay Sapphire Gin",
     category: "gin",
-    profile: "gin,Bombay-Sapphire,10-botanicals,vapor-infused,grains-of-paradise,cubeb-pepper,softer-floral,blue-bottle,accessible",
+    profile: ["gin","Bombay-Sapphire","10-botanicals","vapor-infused","grains-of-paradise","cubeb-pepper","softer-floral","blue-bottle","accessible"],
     gold: [
       "Seafood Tower",
     ],
@@ -21107,7 +21107,7 @@ const PAIRING_MAP = [
   {
     name: "Nolets Dry Gin",
     category: "gin",
-    profile: "gin,Nolets,Dutch,Nolet-distillery,Ketel-One-family,Turkish-rose,peach,raspberry,floral-contemporary,silver-label,fruity-forward",
+    profile: ["gin","Nolets","Dutch","Nolet-distillery","Ketel-One-family","Turkish-rose","peach","raspberry","floral-contemporary","silver-label","fruity-forward"],
     gold: [
       "Crab Cake",
     ],
@@ -21143,7 +21143,7 @@ const PAIRING_MAP = [
   {
     name: "2 James Gin",
     category: "gin",
-    profile: "gin,2-James,Detroit,Michigan-craft,local-distillery,American-interpretation,juniper-forward,hometown",
+    profile: ["gin","2-James","Detroit","Michigan-craft","local-distillery","American-interpretation","juniper-forward","hometown"],
     gold: [
       "Seared Scallops",
     ],
@@ -21179,7 +21179,7 @@ const PAIRING_MAP = [
   {
     name: "Hennessy Cognac",
     category: "cognac",
-    profile: "cognac,Hennessy,VS-VSOP,ubiquitous-benchmark,dried-fruit,vanilla,oak,eaux-de-vie-blend,Charente,default-call",
+    profile: ["cognac","Hennessy","VS-VSOP","ubiquitous-benchmark","dried-fruit","vanilla","oak","eaux-de-vie-blend","Charente","default-call"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21216,7 +21216,7 @@ const PAIRING_MAP = [
   {
     name: "Courvoisier Cognac",
     category: "cognac",
-    profile: "cognac,Courvoisier,Napoleons-cognac,drier,oak-forward,traditional-French,Jarnac,Maison-Courvoisier",
+    profile: ["cognac","Courvoisier","Napoleons-cognac","drier","oak-forward","traditional-French","Jarnac","Maison-Courvoisier"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21253,7 +21253,7 @@ const PAIRING_MAP = [
   {
     name: "Remy VSOP Cognac",
     category: "cognac",
-    profile: "cognac,Remy-Martin,VSOP,Very-Superior-Old-Pale,Grande-Champagne,Petite-Champagne,Fine-Champagne-blend,elegant-premium,refined",
+    profile: ["cognac","Remy-Martin","VSOP","Very-Superior-Old-Pale","Grande-Champagne","Petite-Champagne","Fine-Champagne-blend","elegant-premium","refined"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21290,7 +21290,7 @@ const PAIRING_MAP = [
   {
     name: "Christian Bros Brandy",
     category: "cognac",
-    profile: "brandy,Christian-Brothers,California-American-brandy,sweeter,value-workhorse,not-cognac,oak-aged",
+    profile: ["brandy","Christian-Brothers","California-American-brandy","sweeter","value-workhorse","not-cognac","oak-aged"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21327,7 +21327,7 @@ const PAIRING_MAP = [
   {
     name: "Pierre Ferrand Cognac",
     category: "cognac",
-    profile: "cognac,Pierre-Ferrand,Grande-Champagne,1er-Cru,artisanal-craft,Angeac-Champagne,traditional-methods,floral-honey,unblended-vintage-style,bartender-favorite",
+    profile: ["cognac","Pierre-Ferrand","Grande-Champagne","1er-Cru","artisanal-craft","Angeac-Champagne","traditional-methods","floral-honey","unblended-vintage-style","bartender-favorite"],
     gold: [
       "Creme Brulee",
     ],
@@ -21364,7 +21364,7 @@ const PAIRING_MAP = [
   {
     name: "Villon Cognac",
     category: "cognac",
-    profile: "cognac-based-spirit,Villon,modern,Courvoisier-sibling,cocktail-ready,saffron,elderflower,Voyage-infusion,younger-audience,contemporary-accessible",
+    profile: ["cognac-based-spirit","Villon","modern","Courvoisier-sibling","cocktail-ready","saffron","elderflower","Voyage-infusion","younger-audience","contemporary-accessible"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21401,7 +21401,7 @@ const PAIRING_MAP = [
   {
     name: "Louis XIII Cognac",
     category: "cognac",
-    profile: "cognac,Louis-XIII,Remy-Martin,luxury-icon,Grande-Champagne-only,1200-eaux-de-vie,aged-40-100-years,Baccarat-crystal-decanter,collector-bottle,4000-dollars,save-the-bottle",
+    profile: ["cognac","Louis-XIII","Remy-Martin","luxury-icon","Grande-Champagne-only","1200-eaux-de-vie","aged-40-100-years","Baccarat-crystal-decanter","collector-bottle","4000-dollars","save-the-bottle"],
     gold: [
       "Chocolate Brownie",
       "Creme Brulee",
@@ -21440,7 +21440,7 @@ const PAIRING_MAP = [
   {
     name: "Elephant Gin",
     category: "gin",
-    profile: "gin,Elephant-Gin,German-distillery,African-botanicals,baobab,buchu,lions-tail,devils-claw,African-wormwood,contemporary-craft,London-Dry-style,conservation-charity",
+    profile: ["gin","Elephant-Gin","German-distillery","African-botanicals","baobab","buchu","lions-tail","devils-claw","African-wormwood","contemporary-craft","London-Dry-style","conservation-charity"],
     gold: [
       "Burrata",
     ],
@@ -21476,7 +21476,7 @@ const PAIRING_MAP = [
   {
     name: "Glenfiddich 12",
     category: "spirit",
-    profile: "scotch,Speyside,Glenfiddich-12,entry-benchmark,bourbon-cask,apple-pear,honey,light-vanilla,gateway-Speyside,40-percent-ABV",
+    profile: ["scotch","Speyside","Glenfiddich-12","entry-benchmark","bourbon-cask","apple-pear","honey","light-vanilla","gateway-Speyside","40-percent-ABV"],
     gold: [
       "Cheesecake",
     ],
@@ -21515,7 +21515,7 @@ const PAIRING_MAP = [
   {
     name: "Glenlivet 12",
     category: "spirit",
-    profile: "scotch,Speyside,Glenlivet-12,classic-benchmark,bourbon-cask,honey-floral,softer-entry,pineapple-hint,The-Glenlivet-House-Style",
+    profile: ["scotch","Speyside","Glenlivet-12","classic-benchmark","bourbon-cask","honey-floral","softer-entry","pineapple-hint","The-Glenlivet-House-Style"],
     gold: [
       "Cheesecake",
     ],
@@ -21554,7 +21554,7 @@ const PAIRING_MAP = [
   {
     name: "Balvenie 12 American Oak",
     category: "spirit",
-    profile: "scotch,Speyside,Balvenie-12-American-Oak,first-fill-American-Oak,bourbon-cask-only,vanilla-forward,sweet-oak,smooth-Doublewood-adjacent,handcrafted",
+    profile: ["scotch","Speyside","Balvenie-12-American-Oak","first-fill-American-Oak","bourbon-cask-only","vanilla-forward","sweet-oak","smooth-Doublewood-adjacent","handcrafted"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21594,7 +21594,7 @@ const PAIRING_MAP = [
   {
     name: "Cragganmore 12",
     category: "spirit",
-    profile: "scotch,Speyside,Cragganmore-12,Diageo-Classic-Malt,layered-complex,lighter-profile,subtle-smoke-hint,herbal-notes,meaty-depth",
+    profile: ["scotch","Speyside","Cragganmore-12","Diageo-Classic-Malt","layered-complex","lighter-profile","subtle-smoke-hint","herbal-notes","meaty-depth"],
     gold: [
       "Bone Marrow",
     ],
@@ -21633,7 +21633,7 @@ const PAIRING_MAP = [
   {
     name: "Glenfiddich 14",
     category: "spirit",
-    profile: "scotch,Speyside,Glenfiddich-14,Bourbon-Barrel-Reserve,new-charred-oak-finish,richer-vanilla,baking-spice,upgrade-from-12",
+    profile: ["scotch","Speyside","Glenfiddich-14","Bourbon-Barrel-Reserve","new-charred-oak-finish","richer-vanilla","baking-spice","upgrade-from-12"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21673,7 +21673,7 @@ const PAIRING_MAP = [
   {
     name: "Glenfiddich 18",
     category: "spirit",
-    profile: "scotch,Speyside,Glenfiddich-18,Small-Batch-Reserve,Oloroso-sherry-cask,bourbon-cask-marriage,dried-fruit,cinnamon,nutmeg,oak-spice,premium-aged",
+    profile: ["scotch","Speyside","Glenfiddich-18","Small-Batch-Reserve","Oloroso-sherry-cask","bourbon-cask-marriage","dried-fruit","cinnamon","nutmeg","oak-spice","premium-aged"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21713,7 +21713,7 @@ const PAIRING_MAP = [
   {
     name: "Glenfiddich Gran Cru 23",
     category: "spirit",
-    profile: "scotch,Speyside,Glenfiddich-Gran-Cru-23,French-Cuvee-cask-finish,champagne-style,brioche,pastry,apple-blossom,rare-release,premium-aged-23-years",
+    profile: ["scotch","Speyside","Glenfiddich-Gran-Cru-23","French-Cuvee-cask-finish","champagne-style","brioche","pastry","apple-blossom","rare-release","premium-aged-23-years"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -21753,7 +21753,7 @@ const PAIRING_MAP = [
   {
     name: "Balvenie 16 Single Barrel",
     category: "spirit",
-    profile: "scotch,Speyside,Balvenie-16-Single-Barrel,First-Fill-American-Oak,single-barrel-hand-picked,deeper-vanilla,sub-300-bottles-per-barrel,collector-register",
+    profile: ["scotch","Speyside","Balvenie-16-Single-Barrel","First-Fill-American-Oak","single-barrel-hand-picked","deeper-vanilla","sub-300-bottles-per-barrel","collector-register"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -21792,7 +21792,7 @@ const PAIRING_MAP = [
   {
     name: "Detroit City Vodka",
     category: "vodka",
-    profile: "vodka,Detroit-City-Distillery,Michigan-craft,local-hometown,approachable,Detroit-pride,distillery-direct",
+    profile: ["vodka","Detroit-City-Distillery","Michigan-craft","local-hometown","approachable","Detroit-pride","distillery-direct"],
     gold: [
       "Shrimp Cocktail",
     ],
@@ -21825,7 +21825,7 @@ const PAIRING_MAP = [
   {
     name: "HDW 100 Vodka",
     category: "vodka",
-    profile: "vodka,HDW-100,100-proof,higher-backbone,craft,50-percent-ABV,more-character-than-80-proof,herbal-lift",
+    profile: ["vodka","HDW-100","100-proof","higher-backbone","craft","50-percent-ABV","more-character-than-80-proof","herbal-lift"],
     gold: [
       "Prime Tartare",
     ],
@@ -21858,7 +21858,7 @@ const PAIRING_MAP = [
   {
     name: "Hangar 1 Vodka",
     category: "vodka",
-    profile: "vodka,Hangar-1,California-craft,Alameda,blended-grain-and-grape,floral-lift,distinctive-clean,Viognier-grape-component",
+    profile: ["vodka","Hangar-1","California-craft","Alameda","blended-grain-and-grape","floral-lift","distinctive-clean","Viognier-grape-component"],
     gold: [
       "Seafood Tower",
     ],
@@ -21892,7 +21892,7 @@ const PAIRING_MAP = [
   {
     name: "Detroit City Gin",
     category: "gin",
-    profile: "gin,Detroit-City-Distillery,Detroit-urban-craft,juniper-forward,American-interpretation,sibling-to-Detroit-City-Vodka,hometown-pride",
+    profile: ["gin","Detroit-City-Distillery","Detroit-urban-craft","juniper-forward","American-interpretation","sibling-to-Detroit-City-Vodka","hometown-pride"],
     gold: [
       "Seared Scallops",
     ],
@@ -21926,7 +21926,7 @@ const PAIRING_MAP = [
   {
     name: "Eastern Kille Dry Gin",
     category: "gin",
-    profile: "gin,Eastern-Kille-Distilling,Grand-Rapids,classic-London-Dry-style,juniper-forward,small-batch,family-operated,citrus-hint",
+    profile: ["gin","Eastern-Kille-Distilling","Grand-Rapids","classic-London-Dry-style","juniper-forward","small-batch","family-operated","citrus-hint"],
     gold: [
       "Crab Cake",
     ],
@@ -21960,7 +21960,7 @@ const PAIRING_MAP = [
   {
     name: "Iron Fish Gin",
     category: "gin",
-    profile: "gin,Iron-Fish-Distillery,Thompsonville,Benzie-County,northern-Michigan,farm-to-bottle,Michigan-honey,estate-grown-botanicals,farm-forward",
+    profile: ["gin","Iron-Fish-Distillery","Thompsonville","Benzie-County","northern-Michigan","farm-to-bottle","Michigan-honey","estate-grown-botanicals","farm-forward"],
     gold: [
       "Seared Scallops",
     ],
@@ -21994,7 +21994,7 @@ const PAIRING_MAP = [
   {
     name: "Knickerbocker Gin",
     category: "gin",
-    profile: "gin,Knickerbocker,New-Holland-Artisan-Spirits,Holland-Michigan,hop-influenced,brewers-heritage,bold-juniper,modern-American",
+    profile: ["gin","Knickerbocker","New-Holland-Artisan-Spirits","Holland-Michigan","hop-influenced","brewers-heritage","bold-juniper","modern-American"],
     gold: [
       "Crab Cake",
     ],
@@ -22028,7 +22028,7 @@ const PAIRING_MAP = [
   {
     name: "Long Road Gin",
     category: "gin",
-    profile: "gin,Long-Road-Distillers,Grand-Rapids,ultra-local,Michigan-botanicals,estate-pride,craft-Michigan,hometown-register",
+    profile: ["gin","Long-Road-Distillers","Grand-Rapids","ultra-local","Michigan-botanicals","estate-pride","craft-Michigan","hometown-register"],
     gold: [
       "Crab Cake",
     ],
@@ -22062,7 +22062,7 @@ const PAIRING_MAP = [
   {
     name: "Botanist Gin",
     category: "gin",
-    profile: "gin,Botanist,Bruichladdich-distillery,Islay-Scotland,22-foraged-Islay-botanicals,9-classic-botanicals,wildcrafted-herbal,rare-complex-craft",
+    profile: ["gin","Botanist","Bruichladdich-distillery","Islay-Scotland","22-foraged-Islay-botanicals","9-classic-botanicals","wildcrafted-herbal","rare-complex-craft"],
     gold: [
       "Seared Scallops",
     ],
@@ -22098,7 +22098,7 @@ const PAIRING_MAP = [
   {
     name: "Monkey 47 Gin",
     category: "gin",
-    profile: "gin,Monkey-47,Black-Forest-Germany,47-botanicals,lingonberries,forest-herbal,Schwarzwald,premium-craft,complex-layered",
+    profile: ["gin","Monkey-47","Black-Forest-Germany","47-botanicals","lingonberries","forest-herbal","Schwarzwald","premium-craft","complex-layered"],
     gold: [
       "Burrata",
     ],
@@ -22134,7 +22134,7 @@ const PAIRING_MAP = [
   {
     name: "Mahon Gin",
     category: "gin",
-    profile: "gin,Mahon,Xoriguer-Mahon,Menorca-Balearic-Islands,PDO-protected,juniper-heavy,Mediterranean,sharp-dry,Spanish",
+    profile: ["gin","Mahon","Xoriguer-Mahon","Menorca-Balearic-Islands","PDO-protected","juniper-heavy","Mediterranean","sharp-dry","Spanish"],
     gold: [
       "Seared Scallops",
     ],
@@ -22170,7 +22170,7 @@ const PAIRING_MAP = [
   {
     name: "Inverroche Gin",
     category: "gin",
-    profile: "gin,Inverroche,South-African,fynbos-botanicals,floral-herbal,Western-Cape,distinctive-terroir,Classic-Verdant-Amber-line",
+    profile: ["gin","Inverroche","South-African","fynbos-botanicals","floral-herbal","Western-Cape","distinctive-terroir","Classic-Verdant-Amber-line"],
     gold: [
       "Burrata",
     ],
@@ -22206,7 +22206,7 @@ const PAIRING_MAP = [
   {
     name: "Aviation Gin",
     category: "gin",
-    profile: "gin,Aviation,Portland-Oregon,Ryan-Reynolds-era,soft-juniper,lavender,cardamom,orange-peel,American-style,smooth-balanced,crowd-pleaser-default",
+    profile: ["gin","Aviation","Portland-Oregon","Ryan-Reynolds-era","soft-juniper","lavender","cardamom","orange-peel","American-style","smooth-balanced","crowd-pleaser-default"],
     gold: [
       "Seafood Tower",
     ],
@@ -22243,7 +22243,7 @@ const PAIRING_MAP = [
   {
     name: "Bluecoat Gin",
     category: "gin",
-    profile: "gin,Bluecoat,Philadelphia-Pennsylvania,4-organic-citrus,American-dry,patriotic-artisan,blue-bottle-icon,lemon-orange-grapefruit,citrus-forward",
+    profile: ["gin","Bluecoat","Philadelphia-Pennsylvania","4-organic-citrus","American-dry","patriotic-artisan","blue-bottle-icon","lemon-orange-grapefruit","citrus-forward"],
     gold: [
       "Crab Cake",
     ],
@@ -22280,7 +22280,7 @@ const PAIRING_MAP = [
   {
     name: "Empress 1908 Gin",
     category: "gin",
-    profile: "gin,Empress-1908,Victoria-British-Columbia,color-changing,butterfly-pea-flower,rose,ginger,fennel,grapefruit-peel,visual-distinctive,floral-citrus",
+    profile: ["gin","Empress-1908","Victoria-British-Columbia","color-changing","butterfly-pea-flower","rose","ginger","fennel","grapefruit-peel","visual-distinctive","floral-citrus"],
     gold: [
       "Burrata",
     ],
@@ -22317,7 +22317,7 @@ const PAIRING_MAP = [
   {
     name: "Gray Whale Gin",
     category: "gin",
-    profile: "gin,Gray-Whale,California,6-California-botanicals,Mendocino-kombu,Temecula-limes,Big-Sur-juniper,Central-Valley-almonds,Sonoma-mint,ocean-conservation,Pacific-coast",
+    profile: ["gin","Gray-Whale","California","6-California-botanicals","Mendocino-kombu","Temecula-limes","Big-Sur-juniper","Central-Valley-almonds","Sonoma-mint","ocean-conservation","Pacific-coast"],
     gold: [
       "Crab Cake",
     ],
@@ -22354,7 +22354,7 @@ const PAIRING_MAP = [
   {
     name: "Liberator Gin",
     category: "gin",
-    profile: "gin,Liberator,Valentine-Distilling,Ferndale-Michigan,100-percent-Michigan-grain,hometown-Michigan-craft,smooth-approachable",
+    profile: ["gin","Liberator","Valentine-Distilling","Ferndale-Michigan","100-percent-Michigan-grain","hometown-Michigan-craft","smooth-approachable"],
     gold: [
       "Crab Cake",
     ],
@@ -22391,7 +22391,7 @@ const PAIRING_MAP = [
   {
     name: "Hendricks Gin",
     category: "gin",
-    profile: "gin,Hendricks,flagship,cucumber-rose,Scottish,low-juniper,perfumed,signature-botanicals,crowd-pleasing",
+    profile: ["gin","Hendricks","flagship","cucumber-rose","Scottish","low-juniper","perfumed","signature-botanicals","crowd-pleasing"],
     gold: [
       "Burrata",
     ],
@@ -22428,7 +22428,7 @@ const PAIRING_MAP = [
   {
     name: "Hendricks Flora Adora",
     category: "gin",
-    profile: "gin,Hendricks-Flora-Adora,Spring-release,lavish-floral,honeysuckle,chamomile,primrose,elderflower,hibiscus,meadowsweet,floral-garden",
+    profile: ["gin","Hendricks-Flora-Adora","Spring-release","lavish-floral","honeysuckle","chamomile","primrose","elderflower","hibiscus","meadowsweet","floral-garden"],
     gold: [
       "Burrata",
     ],
@@ -22465,7 +22465,7 @@ const PAIRING_MAP = [
   {
     name: "Hendricks Grand Cabaret",
     category: "gin",
-    profile: "gin,Hendricks-Grand-Cabaret,cocktail-culture-release,black-currant,rhubarb,absinthe-style,fruit-forward,stage-show-inspired",
+    profile: ["gin","Hendricks-Grand-Cabaret","cocktail-culture-release","black-currant","rhubarb","absinthe-style","fruit-forward","stage-show-inspired"],
     gold: [
       "Burrata",
     ],
@@ -22502,7 +22502,7 @@ const PAIRING_MAP = [
   {
     name: "Hendricks Neptunia",
     category: "gin",
-    profile: "gin,Hendricks-Neptunia,coastal-release,bladderwrack-seaweed,Ayrshire-coast-thyme,coastal-flowers,briny,maritime,Scottish-sea",
+    profile: ["gin","Hendricks-Neptunia","coastal-release","bladderwrack-seaweed","Ayrshire-coast-thyme","coastal-flowers","briny","maritime","Scottish-sea"],
     gold: [
       "Seared Scallops",
     ],
@@ -22539,7 +22539,7 @@ const PAIRING_MAP = [
   {
     name: "Hendricks Orbium",
     category: "gin",
-    profile: "gin,Hendricks-Orbium,spherical-release,quinine,wormwood,bitter-tonic-hybrid,blue-lotus,perpetual-gin-and-tonic",
+    profile: ["gin","Hendricks-Orbium","spherical-release","quinine","wormwood","bitter-tonic-hybrid","blue-lotus","perpetual-gin-and-tonic"],
     gold: [
       "Burrata",
     ],
@@ -22576,7 +22576,7 @@ const PAIRING_MAP = [
   {
     name: "Roku Gin",
     category: "gin",
-    profile: "gin,Roku,Suntory,Japanese,6-Japanese-botanicals,sakura-flower,sakura-leaf,yuzu-peel,sencha-tea,gyokuro-tea,sansho-pepper,terroir-distinctive",
+    profile: ["gin","Roku","Suntory","Japanese","6-Japanese-botanicals","sakura-flower","sakura-leaf","yuzu-peel","sencha-tea","gyokuro-tea","sansho-pepper","terroir-distinctive"],
     gold: [
       "Seared Scallops",
     ],
@@ -22610,7 +22610,7 @@ const PAIRING_MAP = [
   {
     name: "Macallan 12 Sherry",
     category: "spirit",
-    profile: "scotch,Speyside,Macallan-12-Sherry,100-percent-sherry-cask,Oloroso-matured,entry-benchmark,dried-fruit,raisin,spice,Highland-Estate,sherried-Speyside-flagship",
+    profile: ["scotch","Speyside","Macallan-12-Sherry","100-percent-sherry-cask","Oloroso-matured","entry-benchmark","dried-fruit","raisin","spice","Highland-Estate","sherried-Speyside-flagship"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -22649,7 +22649,7 @@ const PAIRING_MAP = [
   {
     name: "Macallan 18",
     category: "spirit",
-    profile: "scotch,Speyside,Macallan-18,premium-aged-sherry,100-percent-Oloroso-cask,18-years,deeper-dried-fruit,layered-spice,collector-register,wood-depth",
+    profile: ["scotch","Speyside","Macallan-18","premium-aged-sherry","100-percent-Oloroso-cask","18-years","deeper-dried-fruit","layered-spice","collector-register","wood-depth"],
     gold: [
       "Bone Marrow",
       "Cowboy Ribeye",
@@ -22689,7 +22689,7 @@ const PAIRING_MAP = [
   {
     name: "Macallan Estate",
     category: "spirit",
-    profile: "scotch,Speyside,Macallan-Estate,distillery-estate-story,Easter-Elchies-estate-oak,distinctive-cask-selection,premium,estate-terroir",
+    profile: ["scotch","Speyside","Macallan-Estate","distillery-estate-story","Easter-Elchies-estate-oak","distinctive-cask-selection","premium","estate-terroir"],
     gold: [
       "Bone Marrow",
       "Cowboy Ribeye",
@@ -22729,7 +22729,7 @@ const PAIRING_MAP = [
   {
     name: "Balvenie 14 Caribbean Cask",
     category: "spirit",
-    profile: "scotch,Speyside,Balvenie-14-Caribbean-Cask,14yr,Caribbean-rum-cask-finish,tropical-sweetness,vanilla,caramel,brown-sugar,honey,dried-fruit",
+    profile: ["scotch","Speyside","Balvenie-14-Caribbean-Cask","14yr","Caribbean-rum-cask-finish","tropical-sweetness","vanilla","caramel","brown-sugar","honey","dried-fruit"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -22768,7 +22768,7 @@ const PAIRING_MAP = [
   {
     name: "Balvenie 21 Portwood",
     category: "spirit",
-    profile: "scotch,Speyside,Balvenie-21-Portwood,21yr,port-cask-finish,red-berry-fruit,port-richness,ultra-premium,aged-collector-register",
+    profile: ["scotch","Speyside","Balvenie-21-Portwood","21yr","port-cask-finish","red-berry-fruit","port-richness","ultra-premium","aged-collector-register"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -22807,7 +22807,7 @@ const PAIRING_MAP = [
   {
     name: "Aberlour 16",
     category: "spirit",
-    profile: "scotch,Speyside,Aberlour-16,double-matured,ex-bourbon-cask,Oloroso-sherry-cask,balanced-premium,approachable-16yr",
+    profile: ["scotch","Speyside","Aberlour-16","double-matured","ex-bourbon-cask","Oloroso-sherry-cask","balanced-premium","approachable-16yr"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -22846,7 +22846,7 @@ const PAIRING_MAP = [
   {
     name: "Dalmore 12",
     category: "scotch",
-    profile: "scotch,Highland,Dalmore-12,Matusalem-sherry-cask-finish,luxury-image,orange-marmalade,chocolate,dried-fruit,slightly-oily,premium-benchmark",
+    profile: ["scotch","Highland","Dalmore-12","Matusalem-sherry-cask-finish","luxury-image","orange-marmalade","chocolate","dried-fruit","slightly-oily","premium-benchmark"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -22882,7 +22882,7 @@ const PAIRING_MAP = [
   {
     name: "Glenmorangie 10",
     category: "scotch",
-    profile: "scotch,Highland,Glenmorangie-10-The-Original,tallest-stills-in-Scotland,bourbon-cask,honeysuckle,peach,vanilla,honey-floral,entry-approachable",
+    profile: ["scotch","Highland","Glenmorangie-10-The-Original","tallest-stills-in-Scotland","bourbon-cask","honeysuckle","peach","vanilla","honey-floral","entry-approachable"],
     gold: [
       "Bone Marrow",
     ],
@@ -22918,7 +22918,7 @@ const PAIRING_MAP = [
   {
     name: "Oban 14",
     category: "scotch",
-    profile: "scotch,Highland,West-Highland,Oban-14,coastal-distillery,sea-salt,honey,dried-fruit,subtle-smoke,maritime-character",
+    profile: ["scotch","Highland","West-Highland","Oban-14","coastal-distillery","sea-salt","honey","dried-fruit","subtle-smoke","maritime-character"],
     gold: [
       "Bone Marrow",
     ],
@@ -22954,7 +22954,7 @@ const PAIRING_MAP = [
   {
     name: "Glenglassaugh 12",
     category: "scotch",
-    profile: "scotch,Highland,Sandend-coast,Glenglassaugh-12,recently-reopened-distillery,coastal-tropical,tropical-fruit,honey,distinctive-Highland-coastal",
+    profile: ["scotch","Highland","Sandend-coast","Glenglassaugh-12","recently-reopened-distillery","coastal-tropical","tropical-fruit","honey","distinctive-Highland-coastal"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -22990,7 +22990,7 @@ const PAIRING_MAP = [
   {
     name: "Glenmorangie 18",
     category: "scotch",
-    profile: "scotch,Highland,Glenmorangie-18,18-years,bourbon-cask-matured,Oloroso-sherry-cask-finish-3-years,aged-premium,dried-fruit,oak-spice,layered",
+    profile: ["scotch","Highland","Glenmorangie-18","18-years","bourbon-cask-matured","Oloroso-sherry-cask-finish-3-years","aged-premium","dried-fruit","oak-spice","layered"],
     gold: [
       "Bone Marrow",
     ],
@@ -23026,7 +23026,7 @@ const PAIRING_MAP = [
   {
     name: "Oban 18",
     category: "scotch",
-    profile: "scotch,Highland,West-Highland,Oban-18,premium-aged-maritime,sherry-cask-finish,18-years,sea-salt,honey,dried-fruit,deeper-maritime-depth",
+    profile: ["scotch","Highland","West-Highland","Oban-18","premium-aged-maritime","sherry-cask-finish","18-years","sea-salt","honey","dried-fruit","deeper-maritime-depth"],
     gold: [
       "Bone Marrow",
     ],
@@ -23062,7 +23062,7 @@ const PAIRING_MAP = [
   {
     name: "Loch Lomond 20 Year",
     category: "scotch",
-    profile: "scotch,Highland,Loch-Lomond-20,20-years,varied-still-types,traditional-pot-plus-straight-neck,complex-aged,Highland-premium-20yr,distinctive-cask-program",
+    profile: ["scotch","Highland","Loch-Lomond-20","20-years","varied-still-types","traditional-pot-plus-straight-neck","complex-aged","Highland-premium-20yr","distinctive-cask-program"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -23098,7 +23098,7 @@ const PAIRING_MAP = [
   {
     name: "Dewar's White Label",
     category: "scotch",
-    profile: "scotch,blended,Dewars-White-Label,entry-blended,Aberfeldy-malt-core,40-percent-ABV,honey-vanilla,Highland-blend,approachable-crowd-pleaser",
+    profile: ["scotch","blended","Dewars-White-Label","entry-blended","Aberfeldy-malt-core","40-percent-ABV","honey-vanilla","Highland-blend","approachable-crowd-pleaser"],
     gold: [
       "Kansas City",
     ],
@@ -23134,7 +23134,7 @@ const PAIRING_MAP = [
   {
     name: "Johnnie Walker Red",
     category: "scotch",
-    profile: "scotch,blended,Johnnie-Walker-Red,entry-JW,80-proof,bold-fiery,peat-influenced,Islay-malt-components,value-workhorse,iconic",
+    profile: ["scotch","blended","Johnnie-Walker-Red","entry-JW","80-proof","bold-fiery","peat-influenced","Islay-malt-components","value-workhorse","iconic"],
     gold: [
       "Kansas City",
     ],
@@ -23170,7 +23170,7 @@ const PAIRING_MAP = [
   {
     name: "Monkey Shoulder",
     category: "scotch",
-    profile: "scotch,blended-malt,Monkey-Shoulder,triple-Speyside-malt,Glenfiddich-Balvenie-Kininvie,40-percent-ABV,cocktail-friendly,rich-fruit-vanilla",
+    profile: ["scotch","blended-malt","Monkey-Shoulder","triple-Speyside-malt","Glenfiddich-Balvenie-Kininvie","40-percent-ABV","cocktail-friendly","rich-fruit-vanilla"],
     gold: [
       "Kansas City",
     ],
@@ -23206,7 +23206,7 @@ const PAIRING_MAP = [
   {
     name: "Dewar's 15",
     category: "scotch",
-    profile: "scotch,blended,Dewars-15,The-Monarch,15-years,sherry-cask-finish,aged-Highland-blend,richer-than-White-Label,premium-blended",
+    profile: ["scotch","blended","Dewars-15","The-Monarch","15-years","sherry-cask-finish","aged-Highland-blend","richer-than-White-Label","premium-blended"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -23242,7 +23242,7 @@ const PAIRING_MAP = [
   {
     name: "Johnnie Walker Black",
     category: "scotch",
-    profile: "scotch,blended,Johnnie-Walker-Black,12-years,iconic-premium-blend,balanced-smoke-malt-sherry,benchmark-premium-blended,crowd-pleasing-upgrade",
+    profile: ["scotch","blended","Johnnie-Walker-Black","12-years","iconic-premium-blend","balanced-smoke-malt-sherry","benchmark-premium-blended","crowd-pleasing-upgrade"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -23278,7 +23278,7 @@ const PAIRING_MAP = [
   {
     name: "Johnnie Walker Blue",
     category: "scotch",
-    profile: "scotch,blended,Johnnie-Walker-Blue,ultra-premium-luxury,hand-selected-rare-casks,60-plus-year-old-stocks,silky-complex,collector-bottle,save-the-bottle",
+    profile: ["scotch","blended","Johnnie-Walker-Blue","ultra-premium-luxury","hand-selected-rare-casks","60-plus-year-old-stocks","silky-complex","collector-bottle","save-the-bottle"],
     gold: [
       "Bone Marrow",
       "Cowboy Ribeye",
@@ -23315,7 +23315,7 @@ const PAIRING_MAP = [
   {
     name: "Jameson Irish Whiskey",
     category: "irish",
-    profile: "irish,Jameson,iconic-entry,triple-distilled,grain-plus-pot-still-plus-single-malt,sherry-bourbon-cask,smooth-approachable,call-Irish",
+    profile: ["irish","Jameson","iconic-entry","triple-distilled","grain-plus-pot-still-plus-single-malt","sherry-bourbon-cask","smooth-approachable","call-Irish"],
     gold: [
       "Kansas City",
     ],
@@ -23348,7 +23348,7 @@ const PAIRING_MAP = [
   {
     name: "Tullamore D.E.W.",
     category: "irish",
-    profile: "irish,Tullamore-DEW,Daniel-E-Williams,traditional-heritage-blend,triple-distilled,pot-still-plus-malt-plus-grain,slightly-drier-than-Jameson,3-cask-finish",
+    profile: ["irish","Tullamore-DEW","Daniel-E-Williams","traditional-heritage-blend","triple-distilled","pot-still-plus-malt-plus-grain","slightly-drier-than-Jameson","3-cask-finish"],
     gold: [
       "Kansas City",
     ],
@@ -23381,7 +23381,7 @@ const PAIRING_MAP = [
   {
     name: "Garavogue Irish Whiskey",
     category: "irish",
-    profile: "irish,Garavogue,Sligo-river-named,western-Ireland,craft-Irish,distinctive-regional-character,small-batch",
+    profile: ["irish","Garavogue","Sligo-river-named","western-Ireland","craft-Irish","distinctive-regional-character","small-batch"],
     gold: [
       "Kansas City",
     ],
@@ -23414,7 +23414,7 @@ const PAIRING_MAP = [
   {
     name: "Redbreast 12 Year",
     category: "irish",
-    profile: "irish,Redbreast-12,single-pot-still,distinctive-Irish-style,malted-plus-unmalted-barley,sherry-plus-bourbon-cask,rich-spicy-oily-mouthfeel,premium-pot-still-benchmark",
+    profile: ["irish","Redbreast-12","single-pot-still","distinctive-Irish-style","malted-plus-unmalted-barley","sherry-plus-bourbon-cask","rich-spicy-oily-mouthfeel","premium-pot-still-benchmark"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -23448,7 +23448,7 @@ const PAIRING_MAP = [
   {
     name: "Redbreast 21 Year",
     category: "irish",
-    profile: "irish,Redbreast-21,aged-single-pot-still,21-years,deeper-sherry-cask,collector-register,premium-aged-Irish",
+    profile: ["irish","Redbreast-21","aged-single-pot-still","21-years","deeper-sherry-cask","collector-register","premium-aged-Irish"],
     gold: [
       "Bone Marrow",
     ],
@@ -23482,7 +23482,7 @@ const PAIRING_MAP = [
   {
     name: "Kentucky Owl St. Patrick's",
     category: "irish",
-    profile: "irish,Kentucky-Owl-St-Patricks,American-luxury-distillery,Irish-crossover,limited-edition,bourbon-cask-aged-Irish,collector-luxury,save-the-bottle",
+    profile: ["irish","Kentucky-Owl-St-Patricks","American-luxury-distillery","Irish-crossover","limited-edition","bourbon-cask-aged-Irish","collector-luxury","save-the-bottle"],
     gold: [
       "Cowboy Ribeye",
       "Bone Marrow",
@@ -23518,7 +23518,7 @@ const PAIRING_MAP = [
   {
     name: "Toki Suntory Japanese Whisky",
     category: "japanese",
-    profile: "japanese,Toki-Suntory,entry-blend,Hakushu-plus-Yamazaki-plus-Chita-grain,light-floral,highball-friendly,crowd-pleasing-Japanese-entry",
+    profile: ["japanese","Toki-Suntory","entry-blend","Hakushu-plus-Yamazaki-plus-Chita-grain","light-floral","highball-friendly","crowd-pleasing-Japanese-entry"],
     gold: [
       "Prime Tartare",
     ],
@@ -23553,7 +23553,7 @@ const PAIRING_MAP = [
   {
     name: "Hibiki Japanese Harmony",
     category: "japanese",
-    profile: "japanese,Hibiki-Japanese-Harmony,premium-Suntory-blend,5-plus-cask-types,refined-elegant,iconic-Japanese-blend,no-age-statement",
+    profile: ["japanese","Hibiki-Japanese-Harmony","premium-Suntory-blend","5-plus-cask-types","refined-elegant","iconic-Japanese-blend","no-age-statement"],
     gold: [
       "Prime Tartare",
     ],
@@ -23588,7 +23588,7 @@ const PAIRING_MAP = [
   {
     name: "Hakushu 12 Year",
     category: "japanese",
-    profile: "japanese,Hakushu-12,Suntory-single-malt,Forest-Distillery,Japanese-Alps,lightly-peated,crisp-green,pine-forest,subtle-smoke,12-years",
+    profile: ["japanese","Hakushu-12","Suntory-single-malt","Forest-Distillery","Japanese-Alps","lightly-peated","crisp-green","pine-forest","subtle-smoke","12-years"],
     gold: [
       "Seared Scallops",
     ],
@@ -23623,7 +23623,7 @@ const PAIRING_MAP = [
   {
     name: "Yamazaki 12 Year",
     category: "japanese",
-    profile: "japanese,Yamazaki-12,Suntory-flagship-single-malt,Japans-first-single-malt-distillery,1923,Mizunara-oak-signature,honey-fruit,sandalwood-hint,iconic-Japanese-single-malt",
+    profile: ["japanese","Yamazaki-12","Suntory-flagship-single-malt","Japans-first-single-malt-distillery","1923","Mizunara-oak-signature","honey-fruit","sandalwood-hint","iconic-Japanese-single-malt"],
     gold: [
       "Prime Tartare",
     ],
@@ -23658,7 +23658,7 @@ const PAIRING_MAP = [
   {
     name: "Yamazaki 18 Year",
     category: "japanese",
-    profile: "japanese,Yamazaki-18,aged-Suntory-single-malt,deeper-Mizunara-oak,sandalwood,coconut,dried-fruit,sherry-cask-influence,collector-register-18yr",
+    profile: ["japanese","Yamazaki-18","aged-Suntory-single-malt","deeper-Mizunara-oak","sandalwood","coconut","dried-fruit","sherry-cask-influence","collector-register-18yr"],
     gold: [
       "Bone Marrow",
     ],
@@ -23694,7 +23694,7 @@ const PAIRING_MAP = [
   {
     name: "Crown Royal",
     category: "canadian",
-    profile: "canadian,Crown-Royal,iconic-Canadian-blend,Gimli-Manitoba,purple-velvet-bag,vanilla-honey-fruit,smooth-crowd-pleasing,hand-selected",
+    profile: ["canadian","Crown-Royal","iconic-Canadian-blend","Gimli-Manitoba","purple-velvet-bag","vanilla-honey-fruit","smooth-crowd-pleasing","hand-selected"],
     gold: [
       "Kansas City",
     ],
@@ -23728,7 +23728,7 @@ const PAIRING_MAP = [
   {
     name: "Canadian Club",
     category: "canadian",
-    profile: "canadian,Canadian-Club,CC,1858-Hiram-Walker,traditional-Canadian-blend,grain-forward,easy-drinking,heritage-brand",
+    profile: ["canadian","Canadian-Club","CC","1858-Hiram-Walker","traditional-Canadian-blend","grain-forward","easy-drinking","heritage-brand"],
     gold: [
       "Kansas City",
     ],
@@ -23762,7 +23762,7 @@ const PAIRING_MAP = [
   {
     name: "Canadian Club 43 Year",
     category: "canadian",
-    profile: "canadian,Canadian-Club-43,CC-43,rare-aged-Canadian,43-years,collector-register,ultra-premium-Canadian,unusual-Canadian-age-statement",
+    profile: ["canadian","Canadian-Club-43","CC-43","rare-aged-Canadian","43-years","collector-register","ultra-premium-Canadian","unusual-Canadian-age-statement"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -23796,7 +23796,7 @@ const PAIRING_MAP = [
   {
     name: "Caribou Crossing",
     category: "canadian",
-    profile: "canadian,Caribou-Crossing,Sazerac-owned,single-barrel-Canadian,distinctive-single-barrel,hand-selected,smaller-bottle-format",
+    profile: ["canadian","Caribou-Crossing","Sazerac-owned","single-barrel-Canadian","distinctive-single-barrel","hand-selected","smaller-bottle-format"],
     gold: [
       "Kansas City",
     ],
@@ -23830,7 +23830,7 @@ const PAIRING_MAP = [
   {
     name: "Jack Daniel's Old No. 7",
     category: "singlemalt",
-    profile: "american-singlemalt,Tennessee-whiskey,Jack-Daniels-Old-No-7,iconic,Lincoln-County-Process-charcoal-mellowed,square-bottle,vanilla-caramel,the-call-Tennessee",
+    profile: ["american-singlemalt","Tennessee-whiskey","Jack-Daniels-Old-No-7","iconic","Lincoln-County-Process-charcoal-mellowed","square-bottle","vanilla-caramel","the-call-Tennessee"],
     gold: [
       "Kansas City",
     ],
@@ -23866,7 +23866,7 @@ const PAIRING_MAP = [
   {
     name: "Jack Daniel's Bonded",
     category: "singlemalt",
-    profile: "american-singlemalt,Tennessee-whiskey,Jack-Daniels-Bonded,Bottled-in-Bond,100-proof,more-robust-than-Old-No-7,charcoal-mellowed,premium-entry",
+    profile: ["american-singlemalt","Tennessee-whiskey","Jack-Daniels-Bonded","Bottled-in-Bond","100-proof","more-robust-than-Old-No-7","charcoal-mellowed","premium-entry"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -23902,7 +23902,7 @@ const PAIRING_MAP = [
   {
     name: "Jack Daniel's 12 Year",
     category: "singlemalt",
-    profile: "american-singlemalt,Tennessee-whiskey,Jack-Daniels-12-Year,aged-Tennessee,premium-tier,deeper-vanilla-caramel,charcoal-mellowed-12yr",
+    profile: ["american-singlemalt","Tennessee-whiskey","Jack-Daniels-12-Year","aged-Tennessee","premium-tier","deeper-vanilla-caramel","charcoal-mellowed-12yr"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -23938,7 +23938,7 @@ const PAIRING_MAP = [
   {
     name: "Jack Daniel's Sinatra Select",
     category: "singlemalt",
-    profile: "american-singlemalt,Tennessee-whiskey,Jack-Daniels-Sinatra-Select,Sinatra-Barrels,special-grooved-barrels,Frank-Sinatra-tribute,premium-unique-expression,richer-oakier",
+    profile: ["american-singlemalt","Tennessee-whiskey","Jack-Daniels-Sinatra-Select","Sinatra-Barrels","special-grooved-barrels","Frank-Sinatra-tribute","premium-unique-expression","richer-oakier"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -23974,7 +23974,7 @@ const PAIRING_MAP = [
   {
     name: "Dunville's Single Malt",
     category: "irish",
-    profile: "irish,Dunvilles-Single-Malt,Echlinville-Distillery,Belfast,Northern-Ireland,Irish-single-malt,RECLASSIFIED-from-American-Single-Malt",
+    profile: ["irish","Dunvilles-Single-Malt","Echlinville-Distillery","Belfast","Northern-Ireland","Irish-single-malt","RECLASSIFIED-from-American-Single-Malt"],
     gold: [
       "Bone Marrow",
     ],
@@ -24008,7 +24008,7 @@ const PAIRING_MAP = [
   {
     name: "Scapegrace Fortuna",
     category: "nz-whisky",
-    profile: "nz-whisky,Scapegrace-Fortuna,New-Zealand-single-malt,distinctive-terroir,craft-distillery,southern-hemisphere,NEW-bucket",
+    profile: ["nz-whisky","Scapegrace-Fortuna","New-Zealand-single-malt","distinctive-terroir","craft-distillery","southern-hemisphere","NEW-bucket"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24044,7 +24044,7 @@ const PAIRING_MAP = [
   {
     name: "Old Emmer",
     category: "spirit",
-    profile: "spirit,bourbon,wheated,Old-Emmer,emmer-wheat-ancient-grain,wheated-bourbon,distinctive-wheat-varietal,craft-distinctive",
+    profile: ["spirit","bourbon","wheated","Old-Emmer","emmer-wheat-ancient-grain","wheated-bourbon","distinctive-wheat-varietal","craft-distinctive"],
     gold: [
       "Kansas City",
       "Filet Mignon",
@@ -24082,7 +24082,7 @@ const PAIRING_MAP = [
   {
     name: "Booker's",
     category: "spirit",
-    profile: "spirit,bourbon,barrel-proof,Bookers,Beam-flagship,cask-strength,uncut-unfiltered,120-to-130-proof,Booker-Noe-originated-barrel-proof-category-1992,big-and-bold",
+    profile: ["spirit","bourbon","barrel-proof","Bookers","Beam-flagship","cask-strength","uncut-unfiltered","120-to-130-proof","Booker-Noe-originated-barrel-proof-category-1992","big-and-bold"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24122,7 +24122,7 @@ const PAIRING_MAP = [
   {
     name: "Parker's Heritage Collection 16th Edition",
     category: "spirit",
-    profile: "spirit,bourbon,barrel-proof,Parkers-Heritage-16,Heaven-Hill,annual-limited-release,collector-register,HH-heritage-tribute,cask-strength,allocated",
+    profile: ["spirit","bourbon","barrel-proof","Parkers-Heritage-16","Heaven-Hill","annual-limited-release","collector-register","HH-heritage-tribute","cask-strength","allocated"],
     gold: [
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -24163,7 +24163,7 @@ const PAIRING_MAP = [
   {
     name: "Little Book",
     category: "spirit",
-    profile: "spirit,bourbon,barrel-proof,Little-Book,Jim-Beam-Fred-Noe-annual-blended-whiskey,Chapter-series,artistic-blended-craft,cask-strength,limited-release,Booker-Noes-son",
+    profile: ["spirit","bourbon","barrel-proof","Little-Book","Jim-Beam-Fred-Noe-annual-blended-whiskey","Chapter-series","artistic-blended-craft","cask-strength","limited-release","Booker-Noes-son"],
     gold: [
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -24204,7 +24204,7 @@ const PAIRING_MAP = [
   {
     name: "George T. Stagg",
     category: "spirit",
-    profile: "spirit,bourbon,barrel-proof,George-T-Stagg,BTAC-Buffalo-Trace-Antique-Collection,ultra-premium-collector,130-plus-proof,15-plus-years-aged,holy-grail-BTAC,save-the-bottle",
+    profile: ["spirit","bourbon","barrel-proof","George-T-Stagg","BTAC-Buffalo-Trace-Antique-Collection","ultra-premium-collector","130-plus-proof","15-plus-years-aged","holy-grail-BTAC","save-the-bottle"],
     gold: [
       "The Tomahawk",
       "Cowboy Ribeye",
@@ -24247,7 +24247,7 @@ const PAIRING_MAP = [
   {
     name: "Stagg Jr. Batch #15",
     category: "spirit",
-    profile: "spirit,bourbon,barrel-proof,Stagg-Jr-Batch-15,BT-non-age-statement,premium-cask-strength,little-brother-to-GTS,accessible-Stagg-alternative",
+    profile: ["spirit","bourbon","barrel-proof","Stagg-Jr-Batch-15","BT-non-age-statement","premium-cask-strength","little-brother-to-GTS","accessible-Stagg-alternative"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24287,7 +24287,7 @@ const PAIRING_MAP = [
   {
     name: "E.H. Taylor Full Proof",
     category: "spirit",
-    profile: "spirit,bourbon,barrel-proof,EH-Taylor-Full-Proof,BT-Bottled-in-Bond,100-proof-at-barrel-entry,Col-E-H-Taylor-Jr-tribute,historic-Kentucky-bourbon-tribute",
+    profile: ["spirit","bourbon","barrel-proof","EH-Taylor-Full-Proof","BT-Bottled-in-Bond","100-proof-at-barrel-entry","Col-E-H-Taylor-Jr-tribute","historic-Kentucky-bourbon-tribute"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24327,7 +24327,7 @@ const PAIRING_MAP = [
   {
     name: "Blanton's Straight from the Barrel",
     category: "spirit",
-    profile: "spirit,bourbon,barrel-proof,Blantons-Straight-from-the-Barrel,export-market-cask-strength,130-plus-proof,honey-vanilla-citrus-Blantons-character,horse-jockey-stopper-collector",
+    profile: ["spirit","bourbon","barrel-proof","Blantons-Straight-from-the-Barrel","export-market-cask-strength","130-plus-proof","honey-vanilla-citrus-Blantons-character","horse-jockey-stopper-collector"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24367,7 +24367,7 @@ const PAIRING_MAP = [
   {
     name: "Elijah Craig 18 Year",
     category: "spirit",
-    profile: "spirit,bourbon,aged-super-premium,Elijah-Craig-18,Heaven-Hill-aged-single-barrel,18-years,distinctive-aged-HH-character,leather-tobacco-dried-fruit",
+    profile: ["spirit","bourbon","aged-super-premium","Elijah-Craig-18","Heaven-Hill-aged-single-barrel","18-years","distinctive-aged-HH-character","leather-tobacco-dried-fruit"],
     gold: [
       "Cowboy Ribeye",
       "Chocolate Brownie",
@@ -24407,7 +24407,7 @@ const PAIRING_MAP = [
   {
     name: "Heaven Hill 20 Year",
     category: "spirit",
-    profile: "spirit,bourbon,aged-super-premium,Heaven-Hill-20,HH-20yr-collector,limited-release,deeper-aged-HH-character,collector-register-aged-bourbon",
+    profile: ["spirit","bourbon","aged-super-premium","Heaven-Hill-20","HH-20yr-collector","limited-release","deeper-aged-HH-character","collector-register-aged-bourbon"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24446,7 +24446,7 @@ const PAIRING_MAP = [
   {
     name: "Old Grand-Dad 16 Year",
     category: "spirit",
-    profile: "spirit,bourbon,aged-super-premium,OGD-16,Beam-Old-Grand-Dad,high-rye-mash-bill,16-years,aged-rye-forward-spice,distinctive-OGD-character",
+    profile: ["spirit","bourbon","aged-super-premium","OGD-16","Beam-Old-Grand-Dad","high-rye-mash-bill","16-years","aged-rye-forward-spice","distinctive-OGD-character"],
     gold: [
       "Filet Mignon",
       "Bone-In Filet",
@@ -24486,7 +24486,7 @@ const PAIRING_MAP = [
   {
     name: "Knob Creek 15 Year",
     category: "spirit",
-    profile: "spirit,bourbon,aged-super-premium,Knob-Creek-15,Beam-Suntory-aged-KC,100-proof,single-barrel,deeper-aged-KC-character",
+    profile: ["spirit","bourbon","aged-super-premium","Knob-Creek-15","Beam-Suntory-aged-KC","100-proof","single-barrel","deeper-aged-KC-character"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24525,7 +24525,7 @@ const PAIRING_MAP = [
   {
     name: "Knob Creek 18 Year",
     category: "spirit",
-    profile: "spirit,bourbon,aged-super-premium,Knob-Creek-18,Beam-Suntory-18yr-KC,limited-release,deeper-aged-KC,collector-register",
+    profile: ["spirit","bourbon","aged-super-premium","Knob-Creek-18","Beam-Suntory-18yr-KC","limited-release","deeper-aged-KC","collector-register"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24564,7 +24564,7 @@ const PAIRING_MAP = [
   {
     name: "Mister Sam Tribute Whiskey",
     category: "spirit",
-    profile: "spirit,whiskey,aged-super-premium,Mister-Sam,Sazerac-tribute-to-Sam-Bronfman,blended-American-whiskey,includes-Seagrams-era-stocks,limited-release-premium-blend",
+    profile: ["spirit","whiskey","aged-super-premium","Mister-Sam","Sazerac-tribute-to-Sam-Bronfman","blended-American-whiskey","includes-Seagrams-era-stocks","limited-release-premium-blend"],
     gold: [
       "Filet Mignon",
       "Bone-In Filet",
@@ -24604,7 +24604,7 @@ const PAIRING_MAP = [
   {
     name: "I.W. Harper 15 Year",
     category: "spirit",
-    profile: "spirit,bourbon,aged-super-premium,IW-Harper-15,historic-Kentucky-brand,Diageo-owned,BT-distilled,15yr-limited-release,cherry-oak-aged-character",
+    profile: ["spirit","bourbon","aged-super-premium","IW-Harper-15","historic-Kentucky-brand","Diageo-owned","BT-distilled","15yr-limited-release","cherry-oak-aged-character"],
     gold: [
       "Filet Mignon",
       "Bone-In Filet",
@@ -24644,7 +24644,7 @@ const PAIRING_MAP = [
   {
     name: "Michter's 10 Year Bourbon",
     category: "spirit",
-    profile: "spirit,bourbon,aged-super-premium,Michters-10-Year-Bourbon,Michters-flagship-single-barrel,10-years-aged,allocated-prestigious-independent,collector-pursuit",
+    profile: ["spirit","bourbon","aged-super-premium","Michters-10-Year-Bourbon","Michters-flagship-single-barrel","10-years-aged","allocated-prestigious-independent","collector-pursuit"],
     gold: [
       "Filet Mignon",
       "Bone-In Filet",
@@ -24684,7 +24684,7 @@ const PAIRING_MAP = [
   {
     name: "Remus 15 Year Gatsby Reserve",
     category: "spirit",
-    profile: "spirit,bourbon,aged-super-premium,Remus-15-Gatsby-Reserve,MGP-Ross-and-Squibb,George-Remus-King-of-Bootleggers-tribute,Gatsby-era-15yr-tribute,high-rye-MGP-mash-bill,rye-spice-plus-cherry",
+    profile: ["spirit","bourbon","aged-super-premium","Remus-15-Gatsby-Reserve","MGP-Ross-and-Squibb","George-Remus-King-of-Bootleggers-tribute","Gatsby-era-15yr-tribute","high-rye-MGP-mash-bill","rye-spice-plus-cherry"],
     gold: [
       "Filet Mignon",
       "Bone-In Filet",
@@ -24724,7 +24724,7 @@ const PAIRING_MAP = [
   {
     name: "Angel's Envy",
     category: "spirit",
-    profile: "spirit,bourbon,wine-finished,Angels-Envy,flagship,Louisville-KY,port-finished-Portuguese-port-casks,86-6-proof,fruity-jammy-softer-oak,accessible-port-finish-flagship",
+    profile: ["spirit","bourbon","wine-finished","Angels-Envy","flagship","Louisville-KY","port-finished-Portuguese-port-casks","86-6-proof","fruity-jammy-softer-oak","accessible-port-finish-flagship"],
     gold: [
       "Brussels and Belly",
     ],
@@ -24766,7 +24766,7 @@ const PAIRING_MAP = [
   {
     name: "Angel's Envy Cask Strength",
     category: "spirit",
-    profile: "spirit,bourbon,wine-finished,Angels-Envy-Cask-Strength,annual-limited-release,117-plus-proof,port-finished-cask-strength,more-intense-than-flagship",
+    profile: ["spirit","bourbon","wine-finished","Angels-Envy-Cask-Strength","annual-limited-release","117-plus-proof","port-finished-cask-strength","more-intense-than-flagship"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -24807,7 +24807,7 @@ const PAIRING_MAP = [
   {
     name: "Angel's Envy Triple Cask",
     category: "spirit",
-    profile: "spirit,bourbon,wine-finished,Angels-Envy-Triple-Cask,triple-cask-finished-limited-release,multi-cask-layered-finish,port-plus-other-casks",
+    profile: ["spirit","bourbon","wine-finished","Angels-Envy-Triple-Cask","triple-cask-finished-limited-release","multi-cask-layered-finish","port-plus-other-casks"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -24848,7 +24848,7 @@ const PAIRING_MAP = [
   {
     name: "Isaac Bowman Port Finish",
     category: "spirit",
-    profile: "spirit,bourbon,wine-finished,Isaac-Bowman-Port-Finish,A-Smith-Bowman-Distillery,Fredericksburg-Virginia,Sazerac-owned,port-finished-Virginia-bourbon,BT-adjacent-distillery",
+    profile: ["spirit","bourbon","wine-finished","Isaac-Bowman-Port-Finish","A-Smith-Bowman-Distillery","Fredericksburg-Virginia","Sazerac-owned","port-finished-Virginia-bourbon","BT-adjacent-distillery"],
     gold: [
       "Chocolate Brownie",
       "Filet Mignon",
@@ -24890,7 +24890,7 @@ const PAIRING_MAP = [
   {
     name: "Basil Hayden's Red Wine Cask",
     category: "spirit",
-    profile: "spirit,bourbon,wine-finished,Basil-Haydens-Red-Wine-Cask,Beam-family,high-rye-mash-bill,red-wine-cask-finish,softer-proof-80-proof",
+    profile: ["spirit","bourbon","wine-finished","Basil-Haydens-Red-Wine-Cask","Beam-family","high-rye-mash-bill","red-wine-cask-finish","softer-proof-80-proof"],
     gold: [
       "Chocolate Brownie",
       "Filet Mignon",
@@ -24932,7 +24932,7 @@ const PAIRING_MAP = [
   {
     name: "Bardstown Château Laboude",
     category: "spirit",
-    profile: "spirit,bourbon,wine-finished,Bardstown-Chateau-Laboude,Bardstown-Bourbon-Company,French-wine-cask-finish,Chateau-Laboude-wine-region,contemporary-craft-wine-finish",
+    profile: ["spirit","bourbon","wine-finished","Bardstown-Chateau-Laboude","Bardstown-Bourbon-Company","French-wine-cask-finish","Chateau-Laboude-wine-region","contemporary-craft-wine-finish"],
     gold: [
       "Chocolate Brownie",
       "Filet Mignon",
@@ -24974,7 +24974,7 @@ const PAIRING_MAP = [
   {
     name: "Thomas S. Moore Chardonnay Cask",
     category: "spirit",
-    profile: "spirit,bourbon,wine-finished,Thomas-S-Moore-Chardonnay-Cask,Barton-Distilling,Sazerac,chardonnay-white-wine-cask-finish,DISTINCTIVE-white-wine-finished-bourbon",
+    profile: ["spirit","bourbon","wine-finished","Thomas-S-Moore-Chardonnay-Cask","Barton-Distilling","Sazerac","chardonnay-white-wine-cask-finish","DISTINCTIVE-white-wine-finished-bourbon"],
     gold: [
       "Filet Mignon",
       "Bone-In Filet",
@@ -25016,7 +25016,7 @@ const PAIRING_MAP = [
   {
     name: "Bardstown Foursquare",
     category: "spirit",
-    profile: "spirit,bourbon,exotic-cask-finished,Bardstown-Foursquare,Bardstown-Bourbon-Company,Foursquare-rum-cask-Barbados,tropical-rum-cask-character,distinctive-Caribbean-finish",
+    profile: ["spirit","bourbon","exotic-cask-finished","Bardstown-Foursquare","Bardstown-Bourbon-Company","Foursquare-rum-cask-Barbados","tropical-rum-cask-character","distinctive-Caribbean-finish"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -25057,7 +25057,7 @@ const PAIRING_MAP = [
   {
     name: "New Holland Beer Barrel Bourbon",
     category: "spirit",
-    profile: "spirit,bourbon,exotic-cask-finished,New-Holland-Beer-Barrel,Holland-Michigan,beer-barrel-finish,hometown-Michigan,brewer-heritage-distillery,sibling-to-Knickerbocker-Gin",
+    profile: ["spirit","bourbon","exotic-cask-finished","New-Holland-Beer-Barrel","Holland-Michigan","beer-barrel-finish","hometown-Michigan","brewer-heritage-distillery","sibling-to-Knickerbocker-Gin"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -25098,7 +25098,7 @@ const PAIRING_MAP = [
   {
     name: "Ironfish Bourbon in Mezcal Casks",
     category: "spirit",
-    profile: "spirit,bourbon,exotic-cask-finished,Ironfish-Bourbon-Mezcal-Casks,Iron-Fish-Distillery,Thompsonville-MI-northern-Michigan,mezcal-cask-finish,farm-to-bottle-northern-MI,SIBLING-TO-Iron-Fish-Gin",
+    profile: ["spirit","bourbon","exotic-cask-finished","Ironfish-Bourbon-Mezcal-Casks","Iron-Fish-Distillery","Thompsonville-MI-northern-Michigan","mezcal-cask-finish","farm-to-bottle-northern-MI","SIBLING-TO-Iron-Fish-Gin"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -25139,7 +25139,7 @@ const PAIRING_MAP = [
   {
     name: "Jefferson's Ocean Voyage 23",
     category: "spirit",
-    profile: "spirit,bourbon,exotic-cask-finished,Jeffersons-Ocean-Voyage-23,sea-aged-bourbon,ship-aged-specific-voyage,ocean-motion-salt-character,accelerated-maturation-at-sea,distinctive-story",
+    profile: ["spirit","bourbon","exotic-cask-finished","Jeffersons-Ocean-Voyage-23","sea-aged-bourbon","ship-aged-specific-voyage","ocean-motion-salt-character","accelerated-maturation-at-sea","distinctive-story"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -25180,7 +25180,7 @@ const PAIRING_MAP = [
   {
     name: "Jefferson's Ocean Marian McLain L.E.",
     category: "spirit",
-    profile: "spirit,bourbon,exotic-cask-finished,Jeffersons-Ocean-Marian-McLain,limited-edition,master-blender-tribute,sea-aged-premium-LE",
+    profile: ["spirit","bourbon","exotic-cask-finished","Jeffersons-Ocean-Marian-McLain","limited-edition","master-blender-tribute","sea-aged-premium-LE"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -25221,7 +25221,7 @@ const PAIRING_MAP = [
   {
     name: "Old Elk Cigar Cut",
     category: "spirit",
-    profile: "spirit,bourbon,exotic-cask-finished,Old-Elk-Cigar-Cut,Old-Elk-Distillery,designed-for-cigar-pairing,distinctive-cigar-companion-character,craft-distiller-Colorado-Fort-Collins",
+    profile: ["spirit","bourbon","exotic-cask-finished","Old-Elk-Cigar-Cut","Old-Elk-Distillery","designed-for-cigar-pairing","distinctive-cigar-companion-character","craft-distiller-Colorado-Fort-Collins"],
     gold: [
       "Kansas City",
       "Cowboy Ribeye",
@@ -25262,7 +25262,7 @@ const PAIRING_MAP = [
   {
     name: "Fox & Oden Double Oaked",
     category: "spirit",
-    profile: "spirit,bourbon,double-oaked,Fox-and-Oden-Double-Oaked,Detroit-based-Black-owned-whiskey-brand,second-char-intensified-vanilla,toasted-oak,heavy-caramel,dessert-forward",
+    profile: ["spirit","bourbon","double-oaked","Fox-and-Oden-Double-Oaked","Detroit-based-Black-owned-whiskey-brand","second-char-intensified-vanilla","toasted-oak","heavy-caramel","dessert-forward"],
     gold: [
       "Chocolate Brownie",
       "Peanut Butter Brownie",
@@ -25303,7 +25303,7 @@ const PAIRING_MAP = [
   {
     name: "Woodford Reserve Double Oaked",
     category: "spirit",
-    profile: "spirit,bourbon,double-oaked,Woodford-Reserve-Double-Oaked,Brown-Forman,Kentucky,toasted-then-charred-second-barrel,iconic-Double-Oaked-benchmark,intensified-vanilla-caramel",
+    profile: ["spirit","bourbon","double-oaked","Woodford-Reserve-Double-Oaked","Brown-Forman","Kentucky","toasted-then-charred-second-barrel","iconic-Double-Oaked-benchmark","intensified-vanilla-caramel"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -25343,7 +25343,7 @@ const PAIRING_MAP = [
   {
     name: "Casamigos Mezcal",
     category: "mezcal",
-    profile: "mezcal,Casamigos-Mezcal,Oaxaca,espadin,Clooney-Gerber-brand,Diageo-owned,polished,accessible-gateway-mezcal,softened-smoke,entry-point-to-agave-smoke",
+    profile: ["mezcal","Casamigos-Mezcal","Oaxaca","espadin","Clooney-Gerber-brand","Diageo-owned","polished","accessible-gateway-mezcal","softened-smoke","entry-point-to-agave-smoke"],
     gold: [
       "Bone Marrow",
     ],
@@ -25379,7 +25379,7 @@ const PAIRING_MAP = [
   {
     name: "Clase Azul Guerrero Mezcal",
     category: "mezcal",
-    profile: "mezcal,Clase-Azul-Guerrero-Mezcal,Guerrero-state,espadin,luxury-ceramic-decanter,softer-fruitier-Guerrero-terroir,ultra-premium,ceremonial-pour,fruit-forward-smoke",
+    profile: ["mezcal","Clase-Azul-Guerrero-Mezcal","Guerrero-state","espadin","luxury-ceramic-decanter","softer-fruitier-Guerrero-terroir","ultra-premium","ceremonial-pour","fruit-forward-smoke"],
     gold: [
       "The Tomahawk",
     ],
@@ -25415,7 +25415,7 @@ const PAIRING_MAP = [
   {
     name: "Los Vecinos Mezcal",
     category: "mezcal",
-    profile: "mezcal,Los-Vecinos-Mezcal,Oaxaca,espadin,multiple-mezcaleros,artisanal-traditional-pit-roasting,authentic-smoke-forward,craft-credibility,purist-pour",
+    profile: ["mezcal","Los-Vecinos-Mezcal","Oaxaca","espadin","multiple-mezcaleros","artisanal-traditional-pit-roasting","authentic-smoke-forward","craft-credibility","purist-pour"],
     gold: [
       "Mushrooms",
     ],
@@ -25451,7 +25451,7 @@ const PAIRING_MAP = [
   {
     name: "Bacardi Rum",
     category: "rum",
-    profile: "rum,white,light,Bacardi-Rum,Puerto-Rican-origin,Bermuda-HQ,Carta-Blanca-Superior,world-most-distributed-rum,ultra-clean-cocktail-workhorse,neutral-accessible,gateway-rum",
+    profile: ["rum","white","light","Bacardi-Rum","Puerto-Rican-origin","Bermuda-HQ","Carta-Blanca-Superior","world-most-distributed-rum","ultra-clean-cocktail-workhorse","neutral-accessible","gateway-rum"],
     gold: [
       "Shrimp Cocktail",
     ],
@@ -25485,7 +25485,7 @@ const PAIRING_MAP = [
   {
     name: "Mount Gay Rum",
     category: "rum",
-    profile: "rum,white,light,Mount-Gay-Rum,Barbados,Eclipse,worlds-oldest-continuously-operating-rum-1703,subtle-molasses-hint,tradition-craft-credibility,slightly-more-character-than-Bacardi",
+    profile: ["rum","white","light","Mount-Gay-Rum","Barbados","Eclipse","worlds-oldest-continuously-operating-rum-1703","subtle-molasses-hint","tradition-craft-credibility","slightly-more-character-than-Bacardi"],
     gold: [
       "Crab Cake",
     ],
@@ -25519,7 +25519,7 @@ const PAIRING_MAP = [
   {
     name: "Ron Zacapa Rum",
     category: "rum",
-    profile: "rum,aged,dark,Ron-Zacapa-Rum,Guatemala,Solera-23,fractional-solera-blending,high-altitude-Andean-aging,honey-vanilla-caramel,premium-sipping-rum,luxury-register",
+    profile: ["rum","aged","dark","Ron-Zacapa-Rum","Guatemala","Solera-23","fractional-solera-blending","high-altitude-Andean-aging","honey-vanilla-caramel","premium-sipping-rum","luxury-register"],
     gold: [
       "Chocolate Brownie",
       "Bone Marrow",
@@ -25557,7 +25557,7 @@ const PAIRING_MAP = [
   {
     name: "Doctor Bird Jamaica Rum",
     category: "rum",
-    profile: "rum,aged,dark,Doctor-Bird-Jamaica-Rum,Two-Brothers-Artisan-Spirits,Jamaican-pot-still,intense-Jamaican-funk-hogo,high-ester,tropical-fruit-overdrive,bold-intense,for-bourbon-drinkers-wanting-rum-intensity",
+    profile: ["rum","aged","dark","Doctor-Bird-Jamaica-Rum","Two-Brothers-Artisan-Spirits","Jamaican-pot-still","intense-Jamaican-funk-hogo","high-ester","tropical-fruit-overdrive","bold-intense","for-bourbon-drinkers-wanting-rum-intensity"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -25594,7 +25594,7 @@ const PAIRING_MAP = [
   {
     name: "Myers's Rum",
     category: "rum",
-    profile: "rum,aged,dark,Myerss-Rum,Jamaica,Diageo-owned,pot-and-column-blend,molasses-heavy,workhorse-dark-rum,tiki-classic-staple,Dark-n-Stormy-benchmark,accessible-dark-rum",
+    profile: ["rum","aged","dark","Myerss-Rum","Jamaica","Diageo-owned","pot-and-column-blend","molasses-heavy","workhorse-dark-rum","tiki-classic-staple","Dark-n-Stormy-benchmark","accessible-dark-rum"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -25631,7 +25631,7 @@ const PAIRING_MAP = [
   {
     name: "Jung and Wulff Guyana",
     category: "rum",
-    profile: "rum,aged,dark,Jung-and-Wulff-Guyana,Demerara-style,Diamond-Distillery-Guyana,traditional-wooden-stills,Port-Mourant-double-wooden-pot-still,heavy-molasses-forward,burnt-sugar,earthy-woody-depth,historical-rum-character",
+    profile: ["rum","aged","dark","Jung-and-Wulff-Guyana","Demerara-style","Diamond-Distillery-Guyana","traditional-wooden-stills","Port-Mourant-double-wooden-pot-still","heavy-molasses-forward","burnt-sugar","earthy-woody-depth","historical-rum-character"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -25668,7 +25668,7 @@ const PAIRING_MAP = [
   {
     name: "Jung and Wulff Trinidad",
     category: "rum",
-    profile: "rum,aged,dark,Jung-and-Wulff-Trinidad,Trinidadian-style,Angostura-distillery,column-still,medium-character,refined-caramel,moderate-ester,cleaner-than-Jamaica-lighter-than-Demerara,middle-ground-sibling-to-Guyana-expression",
+    profile: ["rum","aged","dark","Jung-and-Wulff-Trinidad","Trinidadian-style","Angostura-distillery","column-still","medium-character","refined-caramel","moderate-ester","cleaner-than-Jamaica-lighter-than-Demerara","middle-ground-sibling-to-Guyana-expression"],
     gold: [
       "Cheesecake",
     ],
@@ -25705,7 +25705,7 @@ const PAIRING_MAP = [
   {
     name: "Captain Morgan Rum",
     category: "rum",
-    profile: "rum,spiced,Captain-Morgan-Rum,Diageo,Caribbean-origin-blend,Puerto-Rico-Jamaica-Guyana,Original-Spiced,warm-spice-forward,vanilla-cinnamon-clove-molasses,pirate-brand-iconic,cocktail-workhorse,35-percent-ABV",
+    profile: ["rum","spiced","Captain-Morgan-Rum","Diageo","Caribbean-origin-blend","Puerto-Rico-Jamaica-Guyana","Original-Spiced","warm-spice-forward","vanilla-cinnamon-clove-molasses","pirate-brand-iconic","cocktail-workhorse","35-percent-ABV"],
     gold: [
       "Beignets",
     ],
@@ -25736,7 +25736,7 @@ const PAIRING_MAP = [
   {
     name: "Malibu Rum",
     category: "rum",
-    profile: "rum,flavored,Malibu-Rum,Barbados-Caribbean-origin,coconut-flavored-rum-liqueur,21-percent-ABV-liqueur-strength,coconut-forward,sweet-tropical,beach-vibe-brand,pina-colada-cocktail-staple,lowest-alcohol-of-the-rums",
+    profile: ["rum","flavored","Malibu-Rum","Barbados-Caribbean-origin","coconut-flavored-rum-liqueur","21-percent-ABV-liqueur-strength","coconut-forward","sweet-tropical","beach-vibe-brand","pina-colada-cocktail-staple","lowest-alcohol-of-the-rums"],
     gold: [
       "Cheesecake",
     ],
@@ -25767,7 +25767,7 @@ const PAIRING_MAP = [
   {
     name: "Green Chartreuse",
     category: "liqueur",
-    profile: "liqueur,herbal,Green-Chartreuse,55-percent-ABV,130-plus-herbs-botanicals,Carthusian-monks-since-1605,secret-recipe,Voiron-France-origin,high-proof,powerful-herbal-punch,sweet-bitter-complex,Last-Word-Champs-Elysees-classic,digestif-or-modifier",
+    profile: ["liqueur","herbal","Green-Chartreuse","55-percent-ABV","130-plus-herbs-botanicals","Carthusian-monks-since-1605","secret-recipe","Voiron-France-origin","high-proof","powerful-herbal-punch","sweet-bitter-complex","Last-Word-Champs-Elysees-classic","digestif-or-modifier"],
     gold: [
       "Escargot",
     ],
@@ -25801,7 +25801,7 @@ const PAIRING_MAP = [
   {
     name: "Yellow Chartreuse",
     category: "liqueur",
-    profile: "liqueur,herbal,Yellow-Chartreuse,40-percent-ABV,130-plus-herbs-botanicals,Carthusian-monks-sister-to-Green,honey-saffron-notes,sweeter-gentler-register,more-approachable-lower-proof,digestif",
+    profile: ["liqueur","herbal","Yellow-Chartreuse","40-percent-ABV","130-plus-herbs-botanicals","Carthusian-monks-sister-to-Green","honey-saffron-notes","sweeter-gentler-register","more-approachable-lower-proof","digestif"],
     gold: [
       "Escargot",
     ],
@@ -25835,7 +25835,7 @@ const PAIRING_MAP = [
   {
     name: "Drambuie",
     category: "liqueur",
-    profile: "liqueur,herbal,Drambuie,Scotch-whisky-based-honey-herbal-liqueur,Scotland,40-percent-ABV,heather-honey-spiced-herbs,Bonnie-Prince-Charlie-recipe-claimed,Rusty-Nail-benchmark,Scotch-drinkers-digestif",
+    profile: ["liqueur","herbal","Drambuie","Scotch-whisky-based-honey-herbal-liqueur","Scotland","40-percent-ABV","heather-honey-spiced-herbs","Bonnie-Prince-Charlie-recipe-claimed","Rusty-Nail-benchmark","Scotch-drinkers-digestif"],
     gold: [
       "Creme Brulee",
     ],
@@ -25869,7 +25869,7 @@ const PAIRING_MAP = [
   {
     name: "Mata Hari Absinthe",
     category: "liqueur",
-    profile: "liqueur,anise,Mata-Hari-Absinthe,Bohemian-style-absinthe,Austria,60-percent-ABV,wormwood-anise-fennel,traditional-louche-milky-with-water,natural-green,high-proof-classic-absinthe",
+    profile: ["liqueur","anise","Mata-Hari-Absinthe","Bohemian-style-absinthe","Austria","60-percent-ABV","wormwood-anise-fennel","traditional-louche-milky-with-water","natural-green","high-proof-classic-absinthe"],
     gold: [
       "Escargot",
     ],
@@ -25903,7 +25903,7 @@ const PAIRING_MAP = [
   {
     name: "Sambuca",
     category: "liqueur",
-    profile: "liqueur,anise,Sambuca,Italian-anise-liqueur,Molinari-benchmark,38-42-percent-ABV,sweet-star-anise-elderflower-botanicals,traditional-con-la-mosca-3-coffee-beans,Italian-dessert-digestif,sweeter-sibling-to-absinthe-anise-family",
+    profile: ["liqueur","anise","Sambuca","Italian-anise-liqueur","Molinari-benchmark","38-42-percent-ABV","sweet-star-anise-elderflower-botanicals","traditional-con-la-mosca-3-coffee-beans","Italian-dessert-digestif","sweeter-sibling-to-absinthe-anise-family"],
     gold: [
       "Beignets",
     ],
@@ -25937,7 +25937,7 @@ const PAIRING_MAP = [
   {
     name: "Ancho Reyes",
     category: "liqueur",
-    profile: "liqueur,chile-spice,Ancho-Reyes,Mexican-chile-liqueur-from-Puebla,40-percent-ABV,late-harvest-ancho-poblano-chiles,smoky-sweet-spicy,cluster-outlier-not-herbal-or-anise,cocktail-modifier,Mexican-cuisine-companion",
+    profile: ["liqueur","chile-spice","Ancho-Reyes","Mexican-chile-liqueur-from-Puebla","40-percent-ABV","late-harvest-ancho-poblano-chiles","smoky-sweet-spicy","cluster-outlier-not-herbal-or-anise","cocktail-modifier","Mexican-cuisine-companion"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -25971,7 +25971,7 @@ const PAIRING_MAP = [
   {
     name: "Contratto Vermouth",
     category: "liqueur",
-    profile: "vermouth,aromatized-fortified-wine,Contratto-Vermouth,Contratto-house-Asti-Italy,historic-Italian-producer,16-percent-ABV,wine-base-botanical-infusion-fortification,aperitivo-register,functionally-a-vermouth-not-a-liqueur,lower-proof-than-cluster-siblings",
+    profile: ["vermouth","aromatized-fortified-wine","Contratto-Vermouth","Contratto-house-Asti-Italy","historic-Italian-producer","16-percent-ABV","wine-base-botanical-infusion-fortification","aperitivo-register","functionally-a-vermouth-not-a-liqueur","lower-proof-than-cluster-siblings"],
     gold: [
       "Escargot",
     ],
@@ -26005,7 +26005,7 @@ const PAIRING_MAP = [
   {
     name: "Baileys Irish Cream",
     category: "liqueur",
-    profile: "liqueur,cream,Baileys-Irish-Cream,Diageo,Ireland-County-Meath-origin,Irish-whiskey-plus-Irish-cream-base,17-percent-ABV,vanilla-cocoa-cream,original-cream-liqueur-invented-1974,iconic-dessert-bottle,most-recognized-cream-liqueur-globally",
+    profile: ["liqueur","cream","Baileys-Irish-Cream","Diageo","Ireland-County-Meath-origin","Irish-whiskey-plus-Irish-cream-base","17-percent-ABV","vanilla-cocoa-cream","original-cream-liqueur-invented-1974","iconic-dessert-bottle","most-recognized-cream-liqueur-globally"],
     gold: [
       "Chocolate Cake",
       "Mocha Creme",
@@ -26044,7 +26044,7 @@ const PAIRING_MAP = [
   {
     name: "Buffalo Trace Cream",
     category: "liqueur",
-    profile: "liqueur,cream,Buffalo-Trace-Cream,Buffalo-Trace-Distillery-Kentucky,bourbon-base-cream-liqueur,15-17-percent-ABV,vanilla-caramel-cream-with-bourbon-depth,bourbon-drinkers-answer-to-Baileys,richer-register-than-Baileys",
+    profile: ["liqueur","cream","Buffalo-Trace-Cream","Buffalo-Trace-Distillery-Kentucky","bourbon-base-cream-liqueur","15-17-percent-ABV","vanilla-caramel-cream-with-bourbon-depth","bourbon-drinkers-answer-to-Baileys","richer-register-than-Baileys"],
     gold: [
       "Chocolate Brownie",
     ],
@@ -26082,7 +26082,7 @@ const PAIRING_MAP = [
   {
     name: "Kahlua",
     category: "liqueur",
-    profile: "liqueur,coffee,Kahlua,Mexico-1936,Diageo-owned,rum-base-sugar-cane,Arabica-coffee-vanilla-caramel,20-percent-ABV,iconic-cocktail-workhorse,Espresso-Martini-White-Russian-Mudslide-staple,most-known-coffee-liqueur-globally,sweet-accessible-register",
+    profile: ["liqueur","coffee","Kahlua","Mexico-1936","Diageo-owned","rum-base-sugar-cane","Arabica-coffee-vanilla-caramel","20-percent-ABV","iconic-cocktail-workhorse","Espresso-Martini-White-Russian-Mudslide-staple","most-known-coffee-liqueur-globally","sweet-accessible-register"],
     gold: [
       "Mocha Creme",
       "Beignets",
@@ -26121,7 +26121,7 @@ const PAIRING_MAP = [
   {
     name: "Patron XO Cafe",
     category: "liqueur",
-    profile: "liqueur,coffee,Patron-XO-Cafe,Jalisco-Mexico,Patron-Silver-tequila-base-plus-Arabica-coffee-extract,35-percent-ABV-higher-than-Kahlua,drier-less-sweet-tequila-forward,dark-bitter-coffee-liqueur-register,spirit-forward,upscale-coffee-cocktail-modifier",
+    profile: ["liqueur","coffee","Patron-XO-Cafe","Jalisco-Mexico","Patron-Silver-tequila-base-plus-Arabica-coffee-extract","35-percent-ABV-higher-than-Kahlua","drier-less-sweet-tequila-forward","dark-bitter-coffee-liqueur-register","spirit-forward","upscale-coffee-cocktail-modifier"],
     gold: [
       "Mocha Creme",
     ],
@@ -26159,7 +26159,7 @@ const PAIRING_MAP = [
   {
     name: "Frangelico",
     category: "liqueur",
-    profile: "liqueur,nut,hazelnut,Frangelico,Italy-Piedmont-hazelnut-heartland,20-percent-ABV,distinctive-monk-shaped-bottle-Franciscan-friar,hazelnut-vanilla-cocoa-notes,originally-made-by-monks,iconic-after-dinner-digestif,Nutty-Irishman-Frangelico-espresso-classics",
+    profile: ["liqueur","nut","hazelnut","Frangelico","Italy-Piedmont-hazelnut-heartland","20-percent-ABV","distinctive-monk-shaped-bottle-Franciscan-friar","hazelnut-vanilla-cocoa-notes","originally-made-by-monks","iconic-after-dinner-digestif","Nutty-Irishman-Frangelico-espresso-classics"],
     gold: [
       "Chocolate Brownie",
       "Mocha Creme",
@@ -26198,7 +26198,7 @@ const PAIRING_MAP = [
   {
     name: "Disaronno",
     category: "liqueur",
-    profile: "liqueur,nut,almond,amaretto,Disaronno,Saronno-Italy-since-1525-allegedly,28-percent-ABV-higher-than-Frangelico,iconic-square-bottle,vanilla-marzipan-apricot-pit-bitter-almond-flavor,Godmother-Toasted-Almond-cocktail-classics,higher-proof-richer-register",
+    profile: ["liqueur","nut","almond","amaretto","Disaronno","Saronno-Italy-since-1525-allegedly","28-percent-ABV-higher-than-Frangelico","iconic-square-bottle","vanilla-marzipan-apricot-pit-bitter-almond-flavor","Godmother-Toasted-Almond-cocktail-classics","higher-proof-richer-register"],
     gold: [
       "Cheesecake",
     ],
@@ -26236,7 +26236,7 @@ const PAIRING_MAP = [
   {
     name: "Patron Anejo",
     category: "spirit",
-    profile: "spirit,tequila,anejo,Patron-Anejo,Jalisco,100-percent-Blue-Weber-agave,12-plus-months-American-oak,vanilla-caramel-cooked-agave,most-distributed-premium-tequila-globally,iconic-handcrafted-bottle,accessible-premium-gateway-to-aged-tequila,40-percent-ABV",
+    profile: ["spirit","tequila","anejo","Patron-Anejo","Jalisco","100-percent-Blue-Weber-agave","12-plus-months-American-oak","vanilla-caramel-cooked-agave","most-distributed-premium-tequila-globally","iconic-handcrafted-bottle","accessible-premium-gateway-to-aged-tequila","40-percent-ABV"],
     gold: [
       "Kansas City",
     ],
@@ -26274,7 +26274,7 @@ const PAIRING_MAP = [
   {
     name: "Milagro Anejo",
     category: "spirit",
-    profile: "spirit,tequila,anejo,Milagro-Anejo,Highland-Jalisco,100-percent-Blue-Weber-agave,triple-distilled,French-oak-14-plus-months,refined-softer-register,cleaner-finishing,accessible-craft-answer-to-premium-anejo",
+    profile: ["spirit","tequila","anejo","Milagro-Anejo","Highland-Jalisco","100-percent-Blue-Weber-agave","triple-distilled","French-oak-14-plus-months","refined-softer-register","cleaner-finishing","accessible-craft-answer-to-premium-anejo"],
     gold: [
       "Kansas City",
     ],
@@ -26312,7 +26312,7 @@ const PAIRING_MAP = [
   {
     name: "Don Fulano Anejo",
     category: "spirit",
-    profile: "spirit,tequila,anejo,Don-Fulano-Anejo,Tequila-Fabrica-de-Tequilas-Finos-Los-Altos,100-percent-estate-grown-Blue-Weber-agave,traditional-slow-fermentation,3-years-French-oak-extended-aging,sophisticated-Los-Altos-terroir,complex-longer-aged-than-typical-anejo",
+    profile: ["spirit","tequila","anejo","Don-Fulano-Anejo","Tequila-Fabrica-de-Tequilas-Finos-Los-Altos","100-percent-estate-grown-Blue-Weber-agave","traditional-slow-fermentation","3-years-French-oak-extended-aging","sophisticated-Los-Altos-terroir","complex-longer-aged-than-typical-anejo"],
     gold: [
       "Filet Mignon",
     ],
@@ -26350,7 +26350,7 @@ const PAIRING_MAP = [
   {
     name: "Ocho Anejo",
     category: "spirit",
-    profile: "spirit,tequila,anejo,Ocho-Anejo,Los-Alambiques-Arandas-Jalisco-Los-Altos,Carlos-Camarena,single-estate-vintage-dated,100-percent-Blue-Weber-agave,1-year-ex-American-whiskey-casks,terroir-specific-field-named-ranches,transparent-sourcing,craft-focused,mineral-driven-highland-character",
+    profile: ["spirit","tequila","anejo","Ocho-Anejo","Los-Alambiques-Arandas-Jalisco-Los-Altos","Carlos-Camarena","single-estate-vintage-dated","100-percent-Blue-Weber-agave","1-year-ex-American-whiskey-casks","terroir-specific-field-named-ranches","transparent-sourcing","craft-focused","mineral-driven-highland-character"],
     gold: [
       "Kansas City",
     ],
@@ -26388,7 +26388,7 @@ const PAIRING_MAP = [
   {
     name: "Clase Azul Anejo",
     category: "spirit",
-    profile: "spirit,tequila,anejo,luxury-icon,Clase-Azul-Anejo,Los-Altos-Jalisco,100-percent-estate-grown-Blue-Weber-agave,25-months-American-oak-plus-2-months-sherry-butts,hand-painted-ceramic-decanter,Mexican-artisan-craftsmanship,ultra-premium-register,caramel-dried-fruit-maple-butterscotch-profile,sibling-to-Plata-Reposado-Ultra-Guerrero-Mezcal",
+    profile: ["spirit","tequila","anejo","luxury-icon","Clase-Azul-Anejo","Los-Altos-Jalisco","100-percent-estate-grown-Blue-Weber-agave","25-months-American-oak-plus-2-months-sherry-butts","hand-painted-ceramic-decanter","Mexican-artisan-craftsmanship","ultra-premium-register","caramel-dried-fruit-maple-butterscotch-profile","sibling-to-Plata-Reposado-Ultra-Guerrero-Mezcal"],
     gold: [
       "The Tomahawk",
     ],
@@ -26427,7 +26427,7 @@ const PAIRING_MAP = [
   {
     name: "Komos Anejo Reserva",
     category: "spirit",
-    profile: "spirit,tequila,anejo,luxury-icon,Komos-Anejo-Reserva,Los-Altos-Jalisco,ultra-premium-tequila-reserve,12-14-months-French-oak-plus-Hungarian-plus-Moscow-wine-barrels,wine-cask-finish-distinctive,designed-as-luxury-tequila-competing-with-Clase-Azul,craftsman-branded-line,ceremonial-pour-sipping-register",
+    profile: ["spirit","tequila","anejo","luxury-icon","Komos-Anejo-Reserva","Los-Altos-Jalisco","ultra-premium-tequila-reserve","12-14-months-French-oak-plus-Hungarian-plus-Moscow-wine-barrels","wine-cask-finish-distinctive","designed-as-luxury-tequila-competing-with-Clase-Azul","craftsman-branded-line","ceremonial-pour-sipping-register"],
     gold: [
       "Kansas City",
     ],
@@ -26465,7 +26465,7 @@ const PAIRING_MAP = [
   {
     name: "Komos Crystallino Anejo",
     category: "spirit",
-    profile: "spirit,tequila,anejo,luxury-icon,Komos-Crystallino-Anejo,Los-Altos-Jalisco,filtered-clear-crystallino-category,charcoal-filtered-to-remove-color-while-retaining-flavor-complexity,bridges-anejo-depth-with-blanco-like-presentation,trendy-luxury-positioning,sibling-to-Komos-Anejo-Reserva,perfect-for-guests-wanting-anejo-flavor-without-oak-color",
+    profile: ["spirit","tequila","anejo","luxury-icon","Komos-Crystallino-Anejo","Los-Altos-Jalisco","filtered-clear-crystallino-category","charcoal-filtered-to-remove-color-while-retaining-flavor-complexity","bridges-anejo-depth-with-blanco-like-presentation","trendy-luxury-positioning","sibling-to-Komos-Anejo-Reserva","perfect-for-guests-wanting-anejo-flavor-without-oak-color"],
     gold: [
       "Filet Mignon",
     ],
@@ -26503,7 +26503,7 @@ const PAIRING_MAP = [
   {
     name: "Corazon Sazerac",
     category: "spirit",
-    profile: "spirit,tequila,anejo,barrel-finished,Expresiones-del-Corazon,Corazon-Sazerac,finished-in-ex-Sazerac-Rye-barrels-Buffalo-Trace,rye-spice-meets-aged-agave,Corazon-BT-collaboration,crossover-unique-category,sibling-to-Corazon-Stagg-and-Corazon-Weller,for-rye-drinkers-curious-about-tequila",
+    profile: ["spirit","tequila","anejo","barrel-finished","Expresiones-del-Corazon","Corazon-Sazerac","finished-in-ex-Sazerac-Rye-barrels-Buffalo-Trace","rye-spice-meets-aged-agave","Corazon-BT-collaboration","crossover-unique-category","sibling-to-Corazon-Stagg-and-Corazon-Weller","for-rye-drinkers-curious-about-tequila"],
     gold: [
       "Cowboy Ribeye",
     ],
@@ -26541,7 +26541,7 @@ const PAIRING_MAP = [
   {
     name: "Corazon Stagg",
     category: "spirit",
-    profile: "spirit,tequila,anejo,barrel-finished,Expresiones-del-Corazon,Corazon-Stagg,finished-in-ex-George-T-Stagg-barrels-BT-uncut-unfiltered,high-proof-BT-bourbon-character,heavy-caramel-oak-bold-sweetness,most-intense-Expresiones-expression,crossover-unique-category,for-GTS-drinkers-curious-about-tequila",
+    profile: ["spirit","tequila","anejo","barrel-finished","Expresiones-del-Corazon","Corazon-Stagg","finished-in-ex-George-T-Stagg-barrels-BT-uncut-unfiltered","high-proof-BT-bourbon-character","heavy-caramel-oak-bold-sweetness","most-intense-Expresiones-expression","crossover-unique-category","for-GTS-drinkers-curious-about-tequila"],
     gold: [
       "The Tomahawk",
     ],
@@ -26579,7 +26579,7 @@ const PAIRING_MAP = [
   {
     name: "Corazon Weller",
     category: "spirit",
-    profile: "spirit,tequila,anejo,barrel-finished,Expresiones-del-Corazon,Corazon-Weller,finished-in-ex-Weller-wheated-bourbon-barrels-BT,wheated-soft-sweet-bourbon-character,softer-rounder-sweeter-than-Stagg,gentler-Expresiones-expression,crossover-unique-category,for-Weller-drinkers-curious-about-tequila",
+    profile: ["spirit","tequila","anejo","barrel-finished","Expresiones-del-Corazon","Corazon-Weller","finished-in-ex-Weller-wheated-bourbon-barrels-BT","wheated-soft-sweet-bourbon-character","softer-rounder-sweeter-than-Stagg","gentler-Expresiones-expression","crossover-unique-category","for-Weller-drinkers-curious-about-tequila"],
     gold: [
       "Brussels and Belly",
     ],
