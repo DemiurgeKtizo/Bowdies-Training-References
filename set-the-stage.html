@@ -12,7 +12,7 @@
   --charcoal:#111010;--surface:#171513;--surface-2:#1E1B18;--surface-3:#242018;
   --border:rgba(201,168,76,0.18);--border-soft:rgba(201,168,76,0.10);
   --text-primary:#F0E8D8;--text-muted:#8A8070;--text-dim:#5A5248;
-  --tier-excellent:#C9A84C;--tier-strong:#7BA8C4;--tier-works:#7A9A8A;
+  --tier-gold:#E6B944;--tier-excellent:#C9A84C;--tier-strong:#7BA8C4;--tier-works:#7A9A8A;
   --warning:#B86949;--warning-dim:#7A3E28;
 }
 html{background:#111010}
@@ -105,6 +105,8 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .rec-explain-body.rec-explain-pending{font-style:italic;color:var(--text-muted)}
 .rec-explain-body.rec-explain-pending strong{color:var(--text-primary);font-style:normal}
 .tier-pip{width:auto;height:auto;min-width:10px;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:10px;line-height:1;font-family:'Josefin Sans',sans-serif;font-weight:400}
+.tier-pip.gold{color:var(--tier-gold)}
+.tier-pip.gold::before{content:'\2605'} /* ★ filled star */
 .tier-pip.excellent{color:var(--tier-excellent)}
 .tier-pip.excellent::before{content:'\25C6'} /* ◆ filled diamond */
 .tier-pip.strong{color:var(--tier-strong)}
@@ -115,6 +117,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .rec-name{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text-primary);line-height:1.2}
 .rec-meta{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);margin-top:3px}
 .tier-badge{font-family:'Josefin Sans',sans-serif;font-size:7.5px;letter-spacing:0.2em;text-transform:uppercase;flex-shrink:0}
+.tier-badge.gold{color:var(--tier-gold)}
 .tier-badge.excellent{color:var(--tier-excellent)}
 .tier-badge.strong{color:var(--tier-strong)}
 .tier-badge.works{color:var(--tier-works)}
@@ -288,6 +291,10 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 .pb-item-profile{margin-bottom:22px;display:flex;flex-wrap:wrap;gap:6px}
 .pb-profile-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:var(--text-dim);padding:3px 9px;background:var(--surface-2);border-radius:2px}
 .pb-tier-section{margin-bottom:22px;padding:14px 16px;background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--border)}
+.pb-tier-section:has(.tier-pip.gold){border-left-width:4px;border-left-color:var(--tier-gold);background:linear-gradient(to right, rgba(230,185,68,0.07), var(--surface-2) 35%)}
+.pb-tier-section:has(.tier-pip.gold) .pb-tier-label{border-bottom-color:rgba(230,185,68,0.25);padding-bottom:12px}
+.pb-tier-section:has(.tier-pip.gold) .pb-tier-name{color:var(--tier-gold);font-size:10px;letter-spacing:0.32em}
+.pb-tier-section:has(.tier-pip.gold) .tier-pip{min-width:13px;font-size:13px}
 .pb-tier-section:has(.tier-pip.excellent){border-left-color:var(--tier-excellent)}
 .pb-tier-section:has(.tier-pip.strong){border-left-color:var(--tier-strong)}
 .pb-tier-section:has(.tier-pip.works){border-left-color:var(--tier-works)}
@@ -428,7 +435,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
       <div class="pb-section-label">Recent Look-ups</div>
       <div id="pb-recents-list" class="pb-recents-list"></div>
     </div>
-    <div class="pb-hint">Type any menu item above — the reference opens a pairing card with Excellent / Strong / Works options and an Avoid list. Tap any recommendation to see the reasoning behind the pairing.</div>
+    <div class="pb-hint">Type any menu item above — the reference opens a pairing card with <span style="color:var(--tier-gold);letter-spacing:0.04em;">★ Gold Standard</span> at the top, plus Excellent / Strong / Works options and an Avoid list. Tap any recommendation to see the reasoning behind the pairing.</div>
 
     <div class="pb-modes" id="pb-modes-block">
       <div class="pb-modes-label">Or step into a workflow</div>
@@ -465,8 +472,8 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 <!-- Cache-bust convention: increment ?v=N on any edit to the referenced file.
      Deprecated files (pairing-map.js, pairing-map-v2.old.js) are in /archive. -->
 <!-- table-defs.js was retired along with the seating flows (scope-down Apr 2026). -->
-<script src="pairing-map-v2.js?v=27"></script>
-<script src="pairing-notes.js?v=27"></script>
+<script src="pairing-map-v2.js?v=91"></script>
+<script src="pairing-notes.js?v=91"></script>
 <script>
 // ── STATE ──────────────────────────────────────────────────────────────────────
 // Seating + session-library state was removed with the scope-down (Apr 2026).
@@ -740,16 +747,17 @@ function pbRenderDetail() {
   const tiers = document.getElementById('pb-tiers');
   tiers.innerHTML = '';
   let anyTier = false;
-  ['excellent','strong','works'].forEach(tier => {
+  ['gold','excellent','strong','works'].forEach(tier => {
     const names = entry[tier] || [];
     if (!names.length) return;
     anyTier = true;
     const section = document.createElement('div');
     section.className = 'pb-tier-section';
+    const displayLabel = tier === 'gold' ? 'GOLD STANDARD' : tier.toUpperCase();
     section.innerHTML =
       '<div class="pb-tier-label">'
       + '<span class="tier-pip ' + tier + '"></span>'
-      + '<span class="pb-tier-name">' + tier.toUpperCase() + '</span>'
+      + '<span class="pb-tier-name">' + displayLabel + '</span>'
       + '<span class="pb-tier-count">' + names.length + '</span>'
       + '</div>';
     const list = document.createElement('div');
