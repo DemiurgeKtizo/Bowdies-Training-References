@@ -340,6 +340,37 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 .pb-mode-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--text-dim);line-height:1.45}
 .mode-choice-cancel{display:block;width:100%;margin-top:10px;padding:12px;background:transparent;border:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0}
 .mode-choice-cancel:hover{border-color:var(--border);color:var(--text-muted)}
+/* ── COMPARE TWO ITEMS ───────────────────────────────────────────────────── */
+#screen-compare{padding:20px 24px 80px;max-width:600px;margin:0 auto}
+.cmp-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text-dim);line-height:1.45;margin-bottom:24px}
+.cmp-input-wrap{margin-bottom:18px}
+.cmp-input-label{display:block;font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.cmp-search-wrap{position:relative}
+.cmp-actions{display:flex;gap:10px;margin-top:18px;margin-bottom:8px}
+.cmp-actions button{flex:1;padding:10px;background:transparent;border:1px solid var(--border-soft);color:var(--text-dim);font-family:'Josefin Sans',sans-serif;font-size:9px;letter-spacing:0.22em;text-transform:uppercase;cursor:pointer;transition:all 0.15s;min-height:38px;border-radius:0}
+.cmp-actions button:hover{border-color:var(--gold-dim);color:var(--gold-light)}
+.cmp-verdict-card{padding:18px 16px;background:var(--surface-2);border:1px solid var(--border-soft);border-left:2px solid var(--border);margin-bottom:18px}
+.cmp-verdict-card.cmp-tier-gold{border-left-width:4px;border-left-color:var(--tier-gold);background:linear-gradient(to right, rgba(230,185,68,0.07), var(--surface-2) 35%)}
+.cmp-verdict-card.cmp-tier-excellent{border-left-color:var(--tier-excellent)}
+.cmp-verdict-card.cmp-tier-strong{border-left-color:var(--tier-strong)}
+.cmp-verdict-card.cmp-tier-works{border-left-color:var(--tier-works)}
+.cmp-verdict-card.cmp-tier-avoid{border-left-color:var(--warning)}
+.cmp-verdict-card.cmp-no-guidance{border-left-color:var(--border)}
+.cmp-tier-row{display:flex;align-items:center;gap:12px}
+.cmp-tier-row .tier-pip{min-width:13px;font-size:13px}
+.cmp-verdict-card.cmp-tier-avoid .cmp-tier-row::before{content:'\26A0';color:var(--warning);font-size:13px;margin-right:-4px}
+.cmp-tier-label{font-family:'Josefin Sans',sans-serif;font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--text-primary)}
+.cmp-verdict-card.cmp-tier-gold .cmp-tier-label{color:var(--tier-gold);font-size:12px;letter-spacing:0.34em}
+.cmp-verdict-card.cmp-tier-excellent .cmp-tier-label{color:var(--tier-excellent)}
+.cmp-verdict-card.cmp-tier-strong .cmp-tier-label{color:var(--tier-strong)}
+.cmp-verdict-card.cmp-tier-works .cmp-tier-label{color:var(--tier-works)}
+.cmp-verdict-card.cmp-tier-avoid .cmp-tier-label{color:var(--warning)}
+.cmp-no-guidance-body{margin-top:10px;color:var(--text-muted);font-family:'Cormorant Garamond',serif;font-size:14px;line-height:1.5;font-style:italic}
+.cmp-notes-block{margin-top:6px}
+.cmp-note{margin-bottom:12px;padding:12px 14px;background:var(--surface-2);border:1px solid var(--border-soft)}
+.cmp-note-label{font-family:'Josefin Sans',sans-serif;font-size:8px;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
+.cmp-note-body{color:var(--text-primary);font-family:'Cormorant Garamond',serif;font-size:14.5px;line-height:1.55}
+.cmp-error{padding:12px 14px;background:rgba(204,84,84,0.08);border-left:2px solid var(--warning);color:var(--warning);font-family:'Cormorant Garamond',serif;font-size:14px;font-style:italic}
 /* ── SESSIONS SCREEN (save/load layouts) ── */
 #screen-sessions{max-width:600px;margin:0 auto;padding:20px 24px 80px}
 .ss-title-block{margin-bottom:18px}
@@ -394,6 +425,35 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     <button class="top-bar-btn" onclick="goBack()">← Reference</button>
   </div>
 </div>
+<!-- ── COMPARE TWO ITEMS SCREEN ── -->
+<div id="screen-compare" class="screen">
+  <div class="section-heading" style="margin-bottom:4px">Compare Two Items</div>
+  <div class="cmp-subtitle">Pick any two items — the verdict tier and both perspectives appear below.</div>
+  <div class="cmp-input-wrap">
+    <label class="cmp-input-label">Item A</label>
+    <div class="cmp-search-wrap search-wrap">
+      <input type="text" class="search-input" id="cmp-input-a"
+             placeholder="Search — first item…"
+             oninput="handleCmpSearch('a', this.value)" autocomplete="off">
+      <div class="search-results" id="cmp-results-a"></div>
+    </div>
+  </div>
+  <div class="cmp-input-wrap">
+    <label class="cmp-input-label">Item B</label>
+    <div class="cmp-search-wrap search-wrap">
+      <input type="text" class="search-input" id="cmp-input-b"
+             placeholder="Search — second item…"
+             oninput="handleCmpSearch('b', this.value)" autocomplete="off">
+      <div class="search-results" id="cmp-results-b"></div>
+    </div>
+  </div>
+  <div class="cmp-actions">
+    <button type="button" onclick="pbCompareSwap()">Swap A ↔ B</button>
+    <button type="button" onclick="pbCompareReset()">Reset</button>
+  </div>
+  <div id="cmp-verdict" style="margin-top:24px"></div>
+  <button class="btn-secondary" onclick="backFromCompare()" style="margin-top:24px">← Back</button>
+</div>
 <!-- ── FIRST TIMER SCREEN ── -->
 <div id="screen-firsttimer" class="screen">
   <div class="section-heading">First-Timer Questions</div>
@@ -443,6 +503,10 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
         <div class="pb-mode-title">First-timer Questions</div>
         <div class="pb-mode-sub">Run the guest-preference flow — useful for training or prep.</div>
       </button>
+      <button type="button" class="pb-mode-btn" onclick="startCompareStandalone()">
+        <div class="pb-mode-title">Compare Two Items</div>
+        <div class="pb-mode-sub">Check whether two items pair well together — verdict tier plus both perspectives.</div>
+      </button>
     </div>
   </div>
 
@@ -472,8 +536,8 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 <!-- Cache-bust convention: increment ?v=N on any edit to the referenced file.
      Deprecated files (pairing-map.js, pairing-map-v2.old.js) are in /archive. -->
 <!-- table-defs.js was retired along with the seating flows (scope-down Apr 2026). -->
-<script src="pairing-map-v2.js?v=92"></script>
-<script src="pairing-notes.js?v=92"></script>
+<script src="pairing-map-v2.js?v=99"></script>
+<script src="pairing-notes.js?v=99"></script>
 <script>
 // ── STATE ──────────────────────────────────────────────────────────────────────
 // Seating + session-library state was removed with the scope-down (Apr 2026).
@@ -509,7 +573,7 @@ function updateTopBar(screen) {
   // Admin + profile chip moved to index.html (Apr 2026 migration). All that's
   // left here is the Reference link home and, on the first-timer flow, a
   // ← Pairings back action to the PB home.
-  if (screen === 'screen-firsttimer') {
+  if (screen === 'screen-firsttimer' || screen === 'screen-compare') {
     actions.innerHTML = '<button class="top-bar-btn" onclick="pbOpen(null)">← Pairings</button>'
       + '<button class="top-bar-btn" onclick="goBack()">← Reference</button>';
   } else {
@@ -931,6 +995,158 @@ function pbToggleAvoidExplain(avoidName) {
 // Post-scope-down: first-timer is always standalone. The "Back" affordance
 // lives in the top bar (← Pairings) and in the ft-nav row (backFromFT below).
 function backFromFT() {
+  if (typeof pbOpen === 'function') { pbOpen(); return; }
+  showScreen('screen-pairings');
+  updateTopBar('screen-pairings');
+}
+
+// ── COMPARE TWO ITEMS ────────────────────────────────────────────────────────
+// Standalone screen: user picks two items, we render a verdict tier + the two
+// notes (forward + reverse). Lookup is direct against PAIRING_MAP.
+const cmpState = { a: null, b: null, debA: null, debB: null };
+const CMP_TIERS = ['gold', 'excellent', 'strong', 'works', 'avoid'];
+
+function startCompareStandalone() {
+  cmpState.a = null;
+  cmpState.b = null;
+  ['a','b'].forEach(side => {
+    const inp = document.getElementById('cmp-input-' + side);
+    const res = document.getElementById('cmp-results-' + side);
+    if (inp) inp.value = '';
+    if (res) { res.innerHTML = ''; res.classList.remove('visible'); }
+  });
+  const verdict = document.getElementById('cmp-verdict');
+  if (verdict) verdict.innerHTML = '';
+  showScreen('screen-compare');
+  updateTopBar('screen-compare');
+}
+
+function handleCmpSearch(side, val) {
+  const debKey = side === 'a' ? 'debA' : 'debB';
+  clearTimeout(cmpState[debKey]);
+  cmpState[debKey] = setTimeout(() => {
+    const results = document.getElementById('cmp-results-' + side);
+    if (!val || val.trim().length < 1) { results.classList.remove('visible'); return; }
+    const q = val.toLowerCase();
+    const seen = new Set();
+    const matches = getAllItems()
+      .filter(i => {
+        if (seen.has(i.name)) return false;
+        if (!i.name.toLowerCase().includes(q)) return false;
+        if (!pbResolveEntry(i.name)) return false;
+        seen.add(i.name);
+        return true;
+      })
+      .slice(0, 20);
+    if (!matches.length) { results.innerHTML = ''; results.classList.remove('visible'); return; }
+    results.innerHTML = '';
+    matches.forEach(item => {
+      const oos = isItemOos(item.name);
+      const div = document.createElement('div');
+      div.className = 'search-result-item' + (oos ? ' oos' : '');
+      div.innerHTML = '<span class="press-fill"></span><span class="result-name">'
+        + item.name + '</span>'
+        + (oos ? '<span class="result-86">86</span>' : '')
+        + '<span class="result-cat">'
+        + getCategoryForDisplay(item.category) + '</span>';
+      div.onclick = () => pbCompareSelect(side, item.name);
+      results.appendChild(div);
+    });
+    results.classList.add('visible');
+  }, 80);
+}
+
+function pbCompareSelect(side, name) {
+  cmpState[side] = name;
+  const input = document.getElementById('cmp-input-' + side);
+  const results = document.getElementById('cmp-results-' + side);
+  if (input) input.value = name;
+  if (results) results.classList.remove('visible');
+  pbCompareRender();
+}
+
+function pbCompareSwap() {
+  const oldA = cmpState.a, oldB = cmpState.b;
+  cmpState.a = oldB;
+  cmpState.b = oldA;
+  document.getElementById('cmp-input-a').value = oldB || '';
+  document.getElementById('cmp-input-b').value = oldA || '';
+  pbCompareRender();
+}
+
+function pbCompareReset() {
+  startCompareStandalone();
+}
+
+function pbCompareRender() {
+  const verdict = document.getElementById('cmp-verdict');
+  if (!verdict) return;
+  verdict.innerHTML = '';
+  if (!cmpState.a || !cmpState.b) return;
+
+  if (cmpState.a === cmpState.b) {
+    verdict.innerHTML = '<div class="cmp-error">Pick two different items.</div>';
+    return;
+  }
+
+  const a = pbResolveEntry(cmpState.a);
+  const b = pbResolveEntry(cmpState.b);
+  if (!a || !b) {
+    verdict.innerHTML = '<div class="cmp-error">One or both items not found.</div>';
+    return;
+  }
+
+  // Tier lookup: A's perspective first, then B's defensively.
+  let tier = null;
+  for (const t of CMP_TIERS) {
+    if ((a.entry[t] || []).includes(cmpState.b)) { tier = t; break; }
+  }
+  if (!tier) {
+    for (const t of CMP_TIERS) {
+      if ((b.entry[t] || []).includes(cmpState.a)) { tier = t; break; }
+    }
+  }
+
+  const fwdNote = (typeof PAIRING_NOTES !== 'undefined') && PAIRING_NOTES[cmpState.a + '|' + cmpState.b];
+  const revNote = (typeof PAIRING_NOTES !== 'undefined') && PAIRING_NOTES[cmpState.b + '|' + cmpState.a];
+
+  let html = '';
+  if (tier) {
+    const tierLabel = tier === 'gold' ? 'GOLD STANDARD' : tier.toUpperCase();
+    html += '<div class="cmp-verdict-card cmp-tier-' + tier + '">';
+    html += '<div class="cmp-tier-row">';
+    if (tier !== 'avoid') html += '<span class="tier-pip ' + tier + '"></span>';
+    html += '<span class="cmp-tier-label">' + tierLabel + '</span>';
+    html += '</div>';
+    html += '</div>';
+  } else {
+    html += '<div class="cmp-verdict-card cmp-no-guidance">';
+    html += '<div class="cmp-tier-label">NO SPECIFIC GUIDANCE</div>';
+    html += '<div class="cmp-no-guidance-body">No specific tier relationship between these two. Both are good on their own — order what sounds best.</div>';
+    html += '</div>';
+  }
+
+  if (fwdNote || revNote) {
+    html += '<div class="cmp-notes-block">';
+    if (fwdNote) {
+      html += '<div class="cmp-note">';
+      html += '<div class="cmp-note-label">' + escapeHtml(cmpState.a) + ' on ' + escapeHtml(cmpState.b) + '</div>';
+      html += '<div class="cmp-note-body">' + escapeHtml(fwdNote) + '</div>';
+      html += '</div>';
+    }
+    if (revNote) {
+      html += '<div class="cmp-note">';
+      html += '<div class="cmp-note-label">' + escapeHtml(cmpState.b) + ' on ' + escapeHtml(cmpState.a) + '</div>';
+      html += '<div class="cmp-note-body">' + escapeHtml(revNote) + '</div>';
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+
+  verdict.innerHTML = html;
+}
+
+function backFromCompare() {
   if (typeof pbOpen === 'function') { pbOpen(); return; }
   showScreen('screen-pairings');
   updateTopBar('screen-pairings');
