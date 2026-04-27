@@ -49,7 +49,7 @@ const PAIRING_MAP = [
       "Yamazaki 18 Year",
     ],
     excellent: [
-      "Caymus Cabernet Sauvignon",
+      "Mushroom Bisque", "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
       "Far Niente Cabernet Sauvignon",
       "Evening Land Seven Springs",
@@ -276,7 +276,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     strong: [
-      "Asparagus", "Sauteed Garlic Spinach", "Château Beaucastel", "Silver Oak Cabernet Sauvignon",
+      "Grilled Caesar", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Asparagus", "Sauteed Garlic Spinach", "Château Beaucastel", "Silver Oak Cabernet Sauvignon",
       "Creamed Spinach",
       "Shrimp Bisque",
       "Frias Block 5",
@@ -360,7 +360,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
+      "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Seasonal Soup", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
       "Au Gratin Potatoes",
       "Mushrooms",
       "Creme Brulee",
@@ -515,7 +515,7 @@ const PAIRING_MAP = [
       "Knob Creek 15 Year",
     ],
     excellent: [
-      "Caymus Cabernet Sauvignon",
+      "Mushroom Bisque", "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
       "Far Niente Cabernet Sauvignon",
       "Evening Land Seven Springs",
@@ -572,7 +572,7 @@ const PAIRING_MAP = [
       "Weller Millennium",
     ],
     strong: [
-      "Asparagus", "Sauteed Garlic Spinach", "Château Gombaude-Guillot", "Silver Oak Cabernet Sauvignon",
+      "Grilled Caesar", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Asparagus", "Sauteed Garlic Spinach", "Château Gombaude-Guillot", "Silver Oak Cabernet Sauvignon",
       "Lingua Franca Avni Pinot Noir",
       "Creamed Spinach",
       "Shrimp Bisque",
@@ -786,7 +786,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Quilt Cabernet Sauvignon",
+      "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Seasonal Soup", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Quilt Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
       "House Wedge",
       "Château de Rouillac",
@@ -1209,7 +1209,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     strong: [
-      "Sauteed Garlic Spinach", "Venge Scout's Honor", "Shafer Hillside Select", "Lingua Franca Avni Pinot Noir",
+      "Grilled Caesar", "French Onion", "Burrata", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Sauteed Garlic Spinach", "Venge Scout's Honor", "Shafer Hillside Select", "Lingua Franca Avni Pinot Noir",
       "Creamed Spinach",
       "Truffle Fries",
       "Château Gombaude-Guillot",
@@ -1290,7 +1290,7 @@ const PAIRING_MAP = [
       "Gran Patron Platinum",
     ],
     works: [
-      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
+      "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Escargot", "Prime Tartare", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
       "Chocolate Brownie",
@@ -1591,7 +1591,7 @@ const PAIRING_MAP = [
       "Redbreast 12 Year",
     ],
     strong: [
-      "Mushrooms", "Sauteed Garlic Spinach", "Scavino Barolo", "Vieux Carré", "Sazerac", "Creamed Spinach",
+      "Grilled Caesar", "French Onion", "Shrimp Cocktail", "Seafood Tower", "Bone Marrow", "Mushrooms", "Sauteed Garlic Spinach", "Scavino Barolo", "Vieux Carré", "Sazerac", "Creamed Spinach",
       "Brussels and Belly",
       "Negroni",
       "Not a Paper Plane",
@@ -1720,7 +1720,7 @@ const PAIRING_MAP = [
       "Villon Cognac",
     ],
     works: [
-      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
+      "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Burrata", "Escargot", "Prime Tartare", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
       "Marimar Estate Christina",
       "Truffle Fries",
       "Chocolate Brownie",
@@ -1966,7 +1966,7 @@ const PAIRING_MAP = [
       "Corazon Stagg",
     ],
     strong: [
-      "Sauteed Garlic Spinach", "Fattoria Le Pupille Saffredi", "Caymus Cabernet Sauvignon", "Lail Vineyards Blueprint",
+      "Grilled Caesar", "House Wedge", "French Onion", "Shrimp Cocktail", "Seafood Tower", "Sauteed Garlic Spinach", "Fattoria Le Pupille Saffredi", "Caymus Cabernet Sauvignon", "Lail Vineyards Blueprint",
       "Creamed Spinach",
       "Brussels and Belly",
       "Venge Scout's Honor",
@@ -2147,7 +2147,7 @@ const PAIRING_MAP = [
       "Komos Anejo Reserva",
     ],
     works: [
-      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Truffle Fries",
+      "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Escargot", "Prime Tartare", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Truffle Fries",
       "Mushrooms",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
@@ -2386,7 +2386,7 @@ const PAIRING_MAP = [
       "Domaine du Grand Tinel",
     ],
     strong: [
-      "Sauteed Garlic Spinach", "Scavino Barolo", "Jordan Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Ghost Block Cabernet Sauvignon",
+      "Grilled Caesar", "French Onion", "Shrimp Cocktail", "Seafood Tower", "Sauteed Garlic Spinach", "Scavino Barolo", "Jordan Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Ghost Block Cabernet Sauvignon",
       "Lail Vineyards Blueprint",
       "Far Niente Cabernet Sauvignon",
       "Brussels and Belly",
@@ -2615,7 +2615,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Maker's Mark", "Basil Hayden's Toast", "House Wedge",
+      "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Burrata", "Escargot", "Bone Marrow", "Prime Tartare", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Maker's Mark", "Basil Hayden's Toast", "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
       "Chocolate Brownie",
@@ -2896,7 +2896,7 @@ const PAIRING_MAP = [
       "Yamazaki 12 Year",
     ],
     strong: [
-      "French 75", "Elk Cove Pinot Blanc",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Bone-In Filet", "Filet Mignon", "French 75", "Elk Cove Pinot Blanc",
       "St Supéry Sauvignon Blanc",
       "Domaine de Berthiers Pouilly-Fumé",
       "Espresso Old Fashioned",
@@ -3204,7 +3204,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "House Wedge",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "House Wedge",
       "The BG",
       "The Happy Wife",
       "Head Fake",
@@ -3479,7 +3479,7 @@ const PAIRING_MAP = [
       "Dunville's Single Malt",
     ],
     strong: [
-      "Venge Scout's Honor", "Fattoria Le Pupille Saffredi", "Silver Oak Cabernet Sauvignon",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Venge Scout's Honor", "Fattoria Le Pupille Saffredi", "Silver Oak Cabernet Sauvignon",
       "Brussels and Belly",
       "Creamed Spinach",
       "Espresso Martini",
@@ -3565,7 +3565,7 @@ const PAIRING_MAP = [
       "Green Chartreuse",
     ],
     works: [
-      "Johnnie Walker Blue", "Jordan Cabernet Sauvignon",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Carrot Cake", "Creme Brulee", "Porterhouse", "Johnnie Walker Blue", "Jordan Cabernet Sauvignon",
       "House Wedge",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
@@ -3854,7 +3854,7 @@ const PAIRING_MAP = [
       "Mount Gay Rum",
     ],
     strong: [
-      "Head Fake",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Kansas City", "Bone-In Filet", "Filet Mignon", "Head Fake",
       "G.D. Vajra Moscato d'Asti",
       "Alexander Valley Chardonnay",
       "Our Lady of Guadalupe Acolytes",
@@ -3873,7 +3873,7 @@ const PAIRING_MAP = [
       "Malibu Rum",
     ],
     works: [
-      "Marc Brédif Chinon",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Faroe Island Salmon", "Marc Brédif Chinon",
       "Pineau des Charentes",
       "Limoncello",
       "Bruichladdich",
@@ -4250,7 +4250,7 @@ const PAIRING_MAP = [
       "Hangar 1 Vodka",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis", "Margarita", "Elk Cove Pinot Blanc",
+      "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jean-Pierre Grossot Chablis", "Margarita", "Elk Cove Pinot Blanc",
       "Joseph Mellot Sancerre",
       "St Supéry Sauvignon Blanc",
       "Corpse Reviver",
@@ -4296,7 +4296,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Limoncello",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Limoncello",
       "Bruichladdich",
       "Schloss Vollrads Riesling",
       "Don Julio Reposado",
@@ -4748,7 +4748,7 @@ const PAIRING_MAP = [
       "Mount Gay Rum",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis", "G.D. Vajra Moscato d'Asti",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jean-Pierre Grossot Chablis", "G.D. Vajra Moscato d'Asti",
       "Paul Bara Grand Rosé Brut",
       "Pierre Gimonnet Special Club Brut",
       "Pommery Cuvée Louise",
@@ -4769,7 +4769,7 @@ const PAIRING_MAP = [
       "Far Niente Chardonnay",
     ],
     works: [
-      "Lingua Franca Avni Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Lingua Franca Avni Pinot Noir",
       "Limoncello",
       "Fernet Branca",
       "Fernet Menta",
@@ -5212,7 +5212,7 @@ const PAIRING_MAP = [
       "Mount Gay Rum",
     ],
     strong: [
-      "The Happy Wife",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mushrooms", "Lobster Mac", "Asparagus", "Broccolini", "Seasonal Vegetables", "Sauteed Garlic Spinach", "The Happy Wife",
       "Transfusion",
       "Il Colle Prosecco Superiore",
       "Raventós Cava de NIT Rosé Brut",
@@ -5235,7 +5235,7 @@ const PAIRING_MAP = [
       "Yamazaki 18 Year",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "G.D. Vajra Moscato d'Asti",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Honey Roasted Carrots", "Creamed Spinach", "Au Gratin Potatoes", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "G.D. Vajra Moscato d'Asti",
       "Limoncello",
       "Jameson Irish Whiskey",
       "Tullamore D.E.W.",
@@ -5601,7 +5601,7 @@ const PAIRING_MAP = [
       "Contratto Vermouth",
     ],
     strong: [
-      "Keenan Chardonnay",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Bone-In Filet", "Filet Mignon", "Keenan Chardonnay",
       "Vesper",
       "Head Fake",
       "Il Colle Prosecco Superiore",
@@ -5939,7 +5939,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Lingua Franca Avni Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Lingua Franca Avni Pinot Noir",
       "Aviation Gin",
       "Bluecoat Gin",
       "Empress 1908 Gin",
@@ -6095,7 +6095,7 @@ const PAIRING_MAP = [
       "Mount Gay Rum",
     ],
     strong: [
-      "Vesper",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Kansas City", "Bone-In Filet", "Filet Mignon", "Vesper",
       "Pablo Sour",
       "The Happy Wife",
       "Paul Bara Grand Rosé Brut",
@@ -6116,7 +6116,7 @@ const PAIRING_MAP = [
       "Mahon Gin",
     ],
     works: [
-      "Lingua Franca Avni Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "Cowboy Ribeye", "Lingua Franca Avni Pinot Noir",
       "Domaine de Berthiers Pouilly-Fumé",
       "Fento Ollo de Sapo Mencía",
       "Fisher Unity Pinot Noir",
@@ -6612,7 +6612,7 @@ const PAIRING_MAP = [
       "Contratto Vermouth",
     ],
     works: [
-      "Le Garenne Rosé",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Le Garenne Rosé",
       "Espresso Old Fashioned",
       "Sazerac",
       "French 75",
@@ -7012,7 +7012,7 @@ const PAIRING_MAP = [
       "Negroni",
     ],
     strong: [
-      "Laurent Perrier Le Cuvée Brut",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "The Tomahawk", "Laurent Perrier Le Cuvée Brut",
       "Elk Cove Pinot Blanc",
       "The BG",
       "Bee's Knees",
@@ -7110,7 +7110,7 @@ const PAIRING_MAP = [
       "Contratto Vermouth",
     ],
     works: [
-      "Fisher Unity Pinot Noir", "Jordan Cabernet Sauvignon",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Fisher Unity Pinot Noir", "Jordan Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
       "Filet Mignon",
       "Bone-In Filet",
@@ -7457,7 +7457,7 @@ const PAIRING_MAP = [
       "Tanqueray Gin",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis", "Keenan Chardonnay",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jean-Pierre Grossot Chablis", "Keenan Chardonnay",
       "Jordan Cabernet Sauvignon",
       "Raventós Cava de NIT Rosé Brut",
       "Corpse Reviver",
@@ -7597,7 +7597,7 @@ const PAIRING_MAP = [
       "Mount Gay Rum",
     ],
     works: [
-      "Faust Napa Valley Cabernet",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Faust Napa Valley Cabernet",
       "Vieux Carré",
       "Cucumber Gimlet",
       "Vesper",
@@ -7836,13 +7836,13 @@ const PAIRING_MAP = [
       "Far Niente Chardonnay",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Seared Scallops", "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
       "Le Garenne Rosé",
       "Elk Cove Pinot Blanc",
     ],
     works: [
-      "Bowdie's Old Fashioned",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Bowdie's Old Fashioned",
       "The Manhattan",
       "Vieux Carré",
       "Sazerac",
@@ -8283,7 +8283,7 @@ const PAIRING_MAP = [
     gold: [
     ],
     excellent: [
-      "Far Niente Chardonnay",
+      "Bone-In Filet", "Filet Mignon", "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
@@ -8294,7 +8294,7 @@ const PAIRING_MAP = [
       "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
-      "Evening Land Seven Springs",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Evening Land Seven Springs",
       "Jordan Cabernet Sauvignon",
       "Vieux Carré",
       "Bowdie's Old Fashioned",
@@ -8738,13 +8738,13 @@ const PAIRING_MAP = [
       "Jean-Pierre Grossot Chablis",
     ],
     strong: [
-      "Elk Cove Pinot Blanc",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Seared Scallops", "Elk Cove Pinot Blanc",
       "Alexander Valley Chardonnay",
       "Laurent Perrier Le Cuvée Brut",
       "Lingua Franca Avni Pinot Noir",
     ],
     works: [
-      "Raventós Cava de NIT Rosé Brut",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
       "Domaine de Berthiers Pouilly-Fumé",
       "The Manhattan",
@@ -9195,7 +9195,7 @@ const PAIRING_MAP = [
       "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
-      "Fisher Unity Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
       "Faust Napa Valley Cabernet",
       "Vieux Carré",
       "Bowdie's Old Fashioned",
@@ -9640,12 +9640,12 @@ const PAIRING_MAP = [
       "Domaine de Berthiers Pouilly-Fumé",
     ],
     strong: [
-      "St Supéry Sauvignon Blanc", "Joseph Mellot Sancerre",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Seared Scallops", "St Supéry Sauvignon Blanc", "Joseph Mellot Sancerre",
       "Raventós Cava de NIT Rosé Brut",
       "Lingua Franca Avni Pinot Noir",
     ],
     works: [
-      "Elk Cove Pinot Blanc",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Elk Cove Pinot Blanc",
       "Laurent Perrier Le Cuvée Brut",
       "Cristom Mt Jefferson Cuvée",
       "The Manhattan",
@@ -10097,7 +10097,7 @@ const PAIRING_MAP = [
       "Braida Montebruna Barbera",
     ],
     works: [
-      "Jordan Cabernet Sauvignon",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jordan Cabernet Sauvignon",
       "The BG",
       "Paloma",
       "Margarita",
@@ -10541,13 +10541,13 @@ const PAIRING_MAP = [
       "St Supéry Sauvignon Blanc",
     ],
     strong: [
-      "Evening Land Seven Springs",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Seared Scallops", "Evening Land Seven Springs",
       "Muga Reserva",
       "Jean-Pierre Grossot Chablis",
       "Elk Cove Pinot Blanc",
     ],
     works: [
-      "Fisher Unity Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
       "Tenuta di Arceno Chianti Classico",
       "Bowdie's Old Fashioned",
@@ -10998,7 +10998,7 @@ const PAIRING_MAP = [
       "Alexander Valley Chardonnay",
     ],
     works: [
-      "Le Garenne Rosé",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Le Garenne Rosé",
       "Lingua Franca Avni Pinot Noir",
       "Joseph Mellot Sancerre",
       "The Manhattan",
@@ -11442,13 +11442,13 @@ const PAIRING_MAP = [
       "Le Garenne Rosé",
     ],
     strong: [
-      "Elk Cove Pinot Blanc",
+      "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mushrooms", "Honey Roasted Carrots", "Sauteed Garlic Spinach", "Elk Cove Pinot Blanc",
       "Cristom Mt Jefferson Cuvée",
       "Domaine Tempier Bandol",
       "Evening Land Seven Springs",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Raventós Cava de NIT Rosé Brut",
+      "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Asparagus", "Broccolini", "Seasonal Vegetables", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Raventós Cava de NIT Rosé Brut",
       "Joseph Mellot Sancerre",
       "Stoneleigh Sauvignon Blanc",
       "The Manhattan",
@@ -11893,13 +11893,13 @@ const PAIRING_MAP = [
       "Alexander Valley Chardonnay",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Seared Scallops", "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
       "Elk Cove Pinot Blanc",
       "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
-      "Raventós Cava de NIT Rosé Brut",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
       "Joseph Mellot Sancerre",
       "The Manhattan",
@@ -12344,13 +12344,13 @@ const PAIRING_MAP = [
       "Lingua Franca Avni Pinot Noir",
     ],
     strong: [
-      "Far Niente Chardonnay",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Seared Scallops", "Far Niente Chardonnay",
       "Cristom Mt Jefferson Cuvée",
       "Alexander Valley Chardonnay",
       "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
-      "Elk Cove Pinot Blanc",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Elk Cove Pinot Blanc",
       "Le Garenne Rosé",
       "Evening Land Seven Springs",
       "Raventós Cava de NIT Rosé Brut",
@@ -12797,13 +12797,13 @@ const PAIRING_MAP = [
       "Daniel Chotard Sancerre Rouge",
     ],
     strong: [
-      "Keenan Chardonnay",
+      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Keenan Chardonnay",
       "Far Niente Chardonnay",
       "Jordan Cabernet Sauvignon",
       "Muga Reserva",
     ],
     works: [
-      "Faust Napa Valley Cabernet",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Bone-In Filet", "Filet Mignon", "Faust Napa Valley Cabernet",
       "Laurent Perrier Le Cuvée Brut",
       "Vieux Carré",
       "The Manhattan",
@@ -13243,7 +13243,7 @@ const PAIRING_MAP = [
       "Elk Cove Five Mountain",
     ],
     excellent: [
-      "Far Niente Chardonnay",
+      "Asparagus", "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
@@ -13299,7 +13299,7 @@ const PAIRING_MAP = [
       "Dunville's Single Malt",
     ],
     strong: [
-      "Elk Cove Pinot Blanc", "Laurent Perrier Le Cuvée Brut",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Bone Marrow", "Prime Tartare", "Mushrooms", "Broccolini", "Honey Roasted Carrots", "Sauteed Garlic Spinach", "Elk Cove Pinot Blanc", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
       "The Happy Wife",
@@ -13374,7 +13374,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Le Garenne Rosé", "Bee's Knees",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Crab Cake", "Seasonal Vegetables", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Le Garenne Rosé", "Bee's Knees",
       "Paloma",
       "Creme Brulee",
       "Beignets",
@@ -13702,7 +13702,7 @@ const PAIRING_MAP = [
       "Jean-Pierre Grossot Chablis",
     ],
     strong: [
-      "Laurent Perrier Le Cuvée Brut",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Crab Cake", "Bone Marrow", "Prime Tartare", "Asparagus", "Broccolini", "Seasonal Vegetables", "Sauteed Garlic Spinach", "Laurent Perrier Le Cuvée Brut",
       "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
       "French 75",
@@ -13758,7 +13758,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Don Julio Blanco",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Seafood Tower", "Honey Roasted Carrots", "Mushrooms", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Don Julio Blanco",
       "Patron Silver",
       "Clase Azul Plata",
       "Gran Patron Platinum",
@@ -14157,7 +14157,7 @@ const PAIRING_MAP = [
       "Pommery Cuvée Louise",
     ],
     strong: [
-      "Evening Land Seven Springs",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Bone Marrow", "Prime Tartare", "Asparagus", "Broccolini", "Seasonal Vegetables", "Sauteed Garlic Spinach", "Evening Land Seven Springs",
       "Fisher Unity Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
       "Laurent Perrier Le Cuvée Brut",
@@ -14244,7 +14244,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Le Garenne Rosé",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Seafood Tower", "Crab Cake", "Honey Roasted Carrots", "Mushrooms", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Le Garenne Rosé",
       "Joseph Mellot Sancerre",
       "Cucumber Gimlet",
       "The Happy Wife",
@@ -14609,7 +14609,7 @@ const PAIRING_MAP = [
       "St Supéry Sauvignon Blanc",
     ],
     strong: [
-      "Domaine de Berthiers Pouilly-Fumé",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Bone Marrow", "Prime Tartare", "Au Gratin Potatoes", "Asparagus", "Broccolini", "Seasonal Vegetables", "Sauteed Garlic Spinach", "Domaine de Berthiers Pouilly-Fumé",
       "Joseph Mellot Sancerre",
       "Laurent Perrier Le Cuvée Brut",
       "Lingua Franca Avni Pinot Noir",
@@ -14693,7 +14693,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Raventós Cava de NIT Rosé Brut",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Seafood Tower", "Crab Cake", "Honey Roasted Carrots", "Mushrooms", "Creamed Spinach", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
       "Cucumber Gimlet",
       "Fisher Unity Pinot Noir",
@@ -15061,7 +15061,7 @@ const PAIRING_MAP = [
       "Schloss Vollrads Riesling",
     ],
     strong: [
-      "Cristom Mt Jefferson Cuvée",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Au Gratin Potatoes", "Mushrooms", "Asparagus", "Broccolini", "Seasonal Vegetables", "Sauteed Garlic Spinach", "Cristom Mt Jefferson Cuvée",
       "Fisher Unity Pinot Noir",
       "Alexander Valley Chardonnay",
       "Le Garenne Rosé",
@@ -15148,7 +15148,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Jean-Pierre Grossot Chablis",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Honey Roasted Carrots", "Creamed Spinach", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Jean-Pierre Grossot Chablis",
       "Joseph Mellot Sancerre",
       "Raventós Cava de NIT Rosé Brut",
       "Jordan Cabernet Sauvignon",
@@ -15514,7 +15514,7 @@ const PAIRING_MAP = [
       "Pommery Cuvée Louise",
     ],
     strong: [
-      "Evening Land Seven Springs",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mushrooms", "Asparagus", "Broccolini", "Seasonal Vegetables", "Sauteed Garlic Spinach", "Evening Land Seven Springs",
       "Laurent Perrier Le Cuvée Brut",
       "Jean-Pierre Grossot Chablis",
       "Cristom Mt Jefferson Cuvée",
@@ -15601,7 +15601,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Elk Cove Pinot Blanc",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Honey Roasted Carrots", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Elk Cove Pinot Blanc",
       "Jordan Cabernet Sauvignon",
       "Fisher Unity Pinot Noir",
       "Le Garenne Rosé",
@@ -15965,7 +15965,7 @@ const PAIRING_MAP = [
       "Elk Cove Pinot Blanc",
     ],
     strong: [
-      "Stoneleigh Sauvignon Blanc",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Crab Cake", "Bone Marrow", "Prime Tartare", "Asparagus", "Broccolini", "Seasonal Vegetables", "Sauteed Garlic Spinach", "Stoneleigh Sauvignon Blanc",
       "St Supéry Sauvignon Blanc",
       "Le Garenne Rosé",
       "Laurent Perrier Le Cuvée Brut",
@@ -16049,7 +16049,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Lingua Franca Avni Pinot Noir",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Seafood Tower", "Honey Roasted Carrots", "Mushrooms", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Lingua Franca Avni Pinot Noir",
       "Far Niente Chardonnay",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
@@ -16412,7 +16412,7 @@ const PAIRING_MAP = [
       "Alexander Valley Chardonnay",
     ],
     excellent: [
-      "Keenan Chardonnay",
+      "Mushrooms", "Keenan Chardonnay",
       "Far Niente Chardonnay",
       "Cristom Mt Jefferson Cuvée",
       "Muga Reserva",
@@ -16452,7 +16452,7 @@ const PAIRING_MAP = [
       "Dunville's Single Malt",
     ],
     strong: [
-      "Lingua Franca Avni Pinot Noir", "Jean-Pierre Grossot Chablis",
+      "Grilled Caesar", "House Wedge", "Butternut Squash", "Broccoli Cheddar", "Roasted Red Pepper Chickpea", "Tomato Basil", "Creamy Potato", "Seasonal Soup", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Seasonal Vegetables", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Creamed Spinach", "Au Gratin Potatoes", "Lingua Franca Avni Pinot Noir", "Jean-Pierre Grossot Chablis",
       "Evening Land Seven Springs",
       "Paloma",
       "The BG",
@@ -16468,7 +16468,7 @@ const PAIRING_MAP = [
       "Hakushu 12 Year",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Peanut Butter Brownie", "Chocolate Brownie", "Jordan Cabernet Sauvignon",
+      "French Onion", "Clam Chowder", "Gumbo", "Loaded Potato", "Mushroom Bisque", "Shrimp Bisque", "Lobster Mac", "Truffle Fries", "Mocha Creme", "Chocolate Cake", "Peanut Butter Brownie", "Chocolate Brownie", "Jordan Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
       "Le Garenne Rosé",
       "Raventós Cava de NIT Rosé Brut",
@@ -17152,7 +17152,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "Lingua Franca Avni Pinot Noir",
+      "Vegetable Curry with Chickpeas", "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Lingua Franca Avni Pinot Noir",
       "Evening Land Seven Springs",
       "Fattoria Le Pupille Saffredi",
       "Cowboy Ribeye",
@@ -17338,7 +17338,7 @@ const PAIRING_MAP = [
       "Château Gombaude-Guillot",
     ],
     strong: [
-      "Jordan Cabernet Sauvignon", "Jean-Pierre Grossot Chablis",
+      "Seared Scallops", "Jordan Cabernet Sauvignon", "Jean-Pierre Grossot Chablis",
       "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
@@ -17353,7 +17353,7 @@ const PAIRING_MAP = [
       "Villon Cognac",
     ],
     works: [
-      "Silver Oak Cabernet Sauvignon",
+      "Vegetable Curry with Chickpeas", "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Silver Oak Cabernet Sauvignon",
       "Cucumber Gimlet",
       "Veuve Clicquot Brut",
       "Paul Bara Grand Rosé Brut",
@@ -17791,7 +17791,7 @@ const PAIRING_MAP = [
       "Keenan Chardonnay",
     ],
     strong: [
-      "Caymus Cabernet Sauvignon", "Far Niente Cabernet Sauvignon",
+      "Roast Half Chicken", "Swordfish", "Salt-Cured Halibut", "Caymus Cabernet Sauvignon", "Far Niente Cabernet Sauvignon",
       "Scavino Barolo",
       "The Manhattan",
       "Vieux Carré",
@@ -17880,7 +17880,7 @@ const PAIRING_MAP = [
       "Remus 15 Year Gatsby Reserve",
     ],
     works: [
-      "Lingua Franca Avni Pinot Noir",
+      "Vegetable Curry with Chickpeas", "Chilean Seabass", "Faroe Island Salmon", "Rainbow Trout", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Lingua Franca Avni Pinot Noir",
       "Truffle Fries",
       "Filet Mignon",
       "Bone-In Filet",
@@ -18343,7 +18343,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     strong: [
-      "Silver Oak Cabernet Sauvignon", "Scavino Barolo", "Jordan Cabernet Sauvignon",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Bone-In Filet", "Filet Mignon", "Silver Oak Cabernet Sauvignon", "Scavino Barolo", "Jordan Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "The BG",
       "Not a Paper Plane",
@@ -18464,7 +18464,7 @@ const PAIRING_MAP = [
       "Corazon Stagg",
     ],
     works: [
-      "Negroni",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Kansas City", "Negroni",
       "Vieux Carré",
       "The Manhattan",
       "Sazerac",
@@ -18711,7 +18711,7 @@ const PAIRING_MAP = [
       "Weller 12 Year",
     ],
     strong: [
-      "Far Niente Cabernet Sauvignon",
+      "Roast Half Chicken", "Far Niente Cabernet Sauvignon",
       "Scavino Barolo",
       "The Manhattan",
       "Bowdie's Old Fashioned",
@@ -18936,7 +18936,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Alexander Valley Homestead Red",
+      "Vegetable Curry with Chickpeas", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Alexander Valley Homestead Red",
       "Domaine Tempier Bandol",
       "Lagavulin 8",
       "Laphroaig 10",
@@ -19154,7 +19154,7 @@ const PAIRING_MAP = [
       "Keenan Chardonnay",
     ],
     strong: [
-      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jean-Pierre Grossot Chablis", "Domaine de Berthiers Pouilly-Fumé", "Elk Cove Pinot Blanc",
+      "Vegetable Curry with Chickpeas", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jean-Pierre Grossot Chablis", "Domaine de Berthiers Pouilly-Fumé", "Elk Cove Pinot Blanc",
       "Le Garenne Rosé",
       "Cristom Mt Jefferson Cuvée",
       "Cucumber Gimlet",
@@ -19601,7 +19601,7 @@ const PAIRING_MAP = [
       "Los Vecinos Mezcal",
     ],
     excellent: [
-      "Jordan Cabernet Sauvignon",
+      "Roast Half Chicken", "Jordan Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
       "The Manhattan",
       "Lunaria Coste di Moro",
@@ -19774,7 +19774,7 @@ const PAIRING_MAP = [
       "Los Vecinos Mezcal",
     ],
     strong: [
-      "Cowboy Ribeye", "Silver Oak Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Scavino Barolo", "Lagavulin 8", "Far Niente Cabernet Sauvignon",
+      "Vegetable Curry with Chickpeas", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Seared Scallops", "Cowboy Ribeye", "Silver Oak Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Scavino Barolo", "Lagavulin 8", "Far Niente Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "Lingua Franca Avni Pinot Noir",
       "Not a Paper Plane",
@@ -19916,7 +19916,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Faust Napa Valley Cabernet", "Evening Land Seven Springs",
+      "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faust Napa Valley Cabernet", "Evening Land Seven Springs",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -20056,13 +20056,13 @@ const PAIRING_MAP = [
       "St Supéry Sauvignon Blanc",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis",
+      "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
       "Le Garenne Rosé",
       "Elk Cove Pinot Blanc",
     ],
     works: [
-      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Bowdie's Old Fashioned",
+      "Vegetable Curry with Chickpeas", "Faroe Island Salmon", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Bowdie's Old Fashioned",
       "The Manhattan",
       "Vieux Carré",
       "Sazerac",
@@ -20510,13 +20510,13 @@ const PAIRING_MAP = [
       "Schloss Vollrads Riesling",
     ],
     strong: [
-      "Keenan Chardonnay",
+      "Vegetable Curry with Chickpeas", "Roast Half Chicken", "Faroe Island Salmon", "Keenan Chardonnay",
       "Evening Land Seven Springs",
       "Elk Cove Pinot Blanc",
       "Alexander Valley Chardonnay",
     ],
     works: [
-      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
+      "Chilean Seabass", "Swordfish", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
       "Jordan Cabernet Sauvignon",
       "Raventós Cava de NIT Rosé Brut",
       "Bowdie's Old Fashioned",
@@ -20961,14 +20961,14 @@ const PAIRING_MAP = [
       "St Supéry Sauvignon Blanc",
     ],
     strong: [
-      "Joseph Mellot Sancerre",
+      "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Joseph Mellot Sancerre",
       "Stoneleigh Sauvignon Blanc",
       "Evening Land Seven Springs",
       "Elk Cove Pinot Blanc",
       "Le Garenne Rosé",
     ],
     works: [
-      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Cristom Mt Jefferson Cuvée",
+      "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Cristom Mt Jefferson Cuvée",
       "Cucumber Gimlet",
       "Bee's Knees",
       "The Manhattan",
@@ -21405,17 +21405,17 @@ const PAIRING_MAP = [
     gold: [
     ],
     excellent: [
-      "Stoneleigh Sauvignon Blanc",
+      "Faroe Island Salmon", "Stoneleigh Sauvignon Blanc",
       "Joseph Mellot Sancerre",
       "Domaine de Berthiers Pouilly-Fumé",
       "Jean-Pierre Grossot Chablis",
     ],
     strong: [
-      "Bone-In Filet", "Filet Mignon", "Le Garenne Rosé", "St Supéry Sauvignon Blanc", "Elk Cove Pinot Blanc",
+      "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Bone-In Filet", "Filet Mignon", "Le Garenne Rosé", "St Supéry Sauvignon Blanc", "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
     ],
     works: [
-      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Laurent Perrier Le Cuvée Brut",
+      "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
       "Bee's Knees",
@@ -21930,7 +21930,7 @@ const PAIRING_MAP = [
       "Malibu Rum",
     ],
     works: [
-      "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
+      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Beignets",
       "Filet Mignon",
@@ -22402,7 +22402,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
+      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Filet Mignon",
       "Bone-In Filet",
@@ -22925,7 +22925,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Beignets",
+      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Beignets",
       "Il Colle Prosecco Superiore",
       "Filet Mignon",
       "Bone-In Filet",
@@ -23372,7 +23372,7 @@ const PAIRING_MAP = [
       "Pineau des Charentes",
     ],
     works: [
-      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
+      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -23791,7 +23791,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
+      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -24215,7 +24215,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
+      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -24666,7 +24666,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
+      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
       "Licor 43",
       "Fireball Whisky",
       "Bowdie's Old Fashioned",
@@ -25122,7 +25122,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
+      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
       "Don Julio 1942",
       "Clase Azul Durango",
       "Clase Azul Gold",
