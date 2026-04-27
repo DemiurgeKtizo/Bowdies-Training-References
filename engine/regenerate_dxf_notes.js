@@ -168,7 +168,18 @@ const header = '// Pairing notes — drink × food only.\n' +
                '// Same-kind pairs (drink × drink, food × food) removed: not in engine data model.\n' +
                '// See CLAUDE.md for the editorial preservation rule.\n' +
                'const PAIRING_NOTES = {\n';
-const footer = '};\n';
+// IMPORTANT: pairing-notes.js is loaded by the browser AND by Node. The
+// frontend (set-the-stage.html, index.html) calls getPairingNote(item, pair)
+// to render explanation panels — without it, the UI shows
+// "Detailed pairing notes coming soon" instead of the actual note. Always
+// re-emit the helper + module.exports tail.
+const footer = '};\n\n' +
+  'function getPairingNote(itemName, pairingName) {\n' +
+  '  return PAIRING_NOTES[itemName + \'|\' + pairingName] || null;\n' +
+  '}\n\n' +
+  'if (typeof module !== \'undefined\' && module.exports) {\n' +
+  '  module.exports = { PAIRING_NOTES, getPairingNote };\n' +
+  '}\n';
 const sortedKeys = Object.keys(merged).sort();
 const body = sortedKeys.map(k => {
   // Use double-quoted JSON encoding so embedded quotes/newlines are safe
@@ -180,3 +191,5 @@ console.log('');
 console.log('Next:');
 console.log('  node engine/engine_snapshot_test.js   # verify anchors');
 console.log('  node engine/engine_health_check.js    # verify structural integrity');
+S, getPairingNote };\n' +
+  '}\n';

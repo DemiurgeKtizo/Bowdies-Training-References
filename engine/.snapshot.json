@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T18:59:20.169Z",
+  "generatedAt": "2026-04-27T20:08:26.202Z",
   "anchorCount": 250,
   "anchors": [
     {
@@ -41,14 +41,6 @@
       "foodClass": "DESSERT_CHOCOLATE",
       "drinkClass": "APERITIVO_BITTER",
       "hash": "022759fc89e8881d"
-    },
-    {
-      "food": "Chocolate Brownie",
-      "drink": "Fernet Menta",
-      "tier": "gold",
-      "foodClass": "DESSERT_CHOCOLATE",
-      "drinkClass": "APERITIVO_BITTER",
-      "hash": "8d9c8f73b37e25b4"
     },
     {
       "food": "Chocolate Brownie",
@@ -172,11 +164,11 @@
     },
     {
       "food": "Escargot",
-      "drink": "Contratto Vermouth",
+      "drink": "Green Chartreuse",
       "tier": "gold",
       "foodClass": "HEARTY_STARTER",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "1a9a6fd7ad6b97cb"
+      "hash": "0369718b36860441"
     },
     {
       "food": "Bone Marrow",
@@ -420,11 +412,11 @@
     },
     {
       "food": "Au Gratin Potatoes",
-      "drink": "Caymus Cabernet Sauvignon",
+      "drink": "Jordan Cabernet Sauvignon",
       "tier": "excellent",
       "foodClass": "CREAMY_SIDE",
       "drinkClass": "BIG_RED",
-      "hash": "6d35dd913a284882"
+      "hash": "c87c3bd693df55d9"
     },
     {
       "food": "Au Gratin Potatoes",
@@ -612,14 +604,6 @@
     },
     {
       "food": "Mushrooms",
-      "drink": "Scavino Barolo",
-      "tier": "gold",
-      "foodClass": "RICH_SIDE",
-      "drinkClass": "BIG_RED",
-      "hash": "6aae4f981e30b7d2"
-    },
-    {
-      "food": "Mushrooms",
       "drink": "Austin Hope Cabernet Sauvignon",
       "tier": "strong",
       "foodClass": "RICH_SIDE",
@@ -628,11 +612,11 @@
     },
     {
       "food": "Mushrooms",
-      "drink": "Opus One",
+      "drink": "Faust Napa Valley Cabernet",
       "tier": "works",
       "foodClass": "RICH_SIDE",
       "drinkClass": "BIG_RED",
-      "hash": "9152045b6729922c"
+      "hash": "b3f0e1ec198c40a3"
     },
     {
       "food": "Grilled Caesar",
@@ -708,11 +692,11 @@
     },
     {
       "food": "Bone-In Filet",
-      "drink": "Château Gombaude-Guillot",
+      "drink": "Far Niente Cabernet Sauvignon",
       "tier": "gold",
       "foodClass": "STEAK_LEAN",
       "drinkClass": "BIG_RED",
-      "hash": "49fc05a57d79dd3f"
+      "hash": "ecf98f107dabf3d5"
     },
     {
       "food": "Bone-In Filet",
@@ -1588,11 +1572,11 @@
     },
     {
       "food": "Cowboy Ribeye",
-      "drink": "Sazerac",
+      "drink": "The Manhattan",
       "tier": "gold",
       "foodClass": "STEAK_BOLD",
       "drinkClass": "COCKTAIL_BOLD",
-      "hash": "369ec8138ea0fbf0"
+      "hash": "dd478ae3a6e8af30"
     },
     {
       "food": "Cowboy Ribeye",
@@ -2001,6 +1985,22 @@
       "foodClass": "SALAD",
       "drinkClass": "COCKTAIL_LIGHT",
       "hash": "a6df1bbf04a9918e"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Aviation",
+      "tier": "avoid",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "e13703909e1e0947"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "The BG",
+      "tier": "excellent",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "7d44a8eb58d5efdc"
     }
   ]
 }

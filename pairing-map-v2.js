@@ -44,7 +44,6 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["lean","tender","mild","buttery","delicate"],
     gold: [
-      "Château Beaucastel",
       "Cristom Mt Jefferson Cuvée",
       "Maker's Mark Cellar Aged",
       "Yamazaki 18 Year",
@@ -275,10 +274,9 @@ const PAIRING_MAP = [
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
       "Komos Crystallino Anejo",
-      "Château Beaucastel",
     ],
     strong: [
-      "Silver Oak Cabernet Sauvignon",
+      "Château Beaucastel", "Silver Oak Cabernet Sauvignon",
       "Creamed Spinach",
       "Shrimp Bisque",
       "Frias Block 5",
@@ -515,7 +513,6 @@ const PAIRING_MAP = [
       "Opus One",
       "Jordan Cabernet Sauvignon",
       "Knob Creek 15 Year",
-      "Weller Millennium",
     ],
     excellent: [
       "Caymus Cabernet Sauvignon",
@@ -528,7 +525,6 @@ const PAIRING_MAP = [
       "Opus One",
       "Jubilation by Colgin",
       "The Manhattan",
-      "Château Gombaude-Guillot",
       "Don Julio 1942",
       "Clase Azul Durango",
       "Clase Azul Gold",
@@ -576,7 +572,7 @@ const PAIRING_MAP = [
       "Weller Millennium",
     ],
     strong: [
-      "Silver Oak Cabernet Sauvignon",
+      "Château Gombaude-Guillot", "Silver Oak Cabernet Sauvignon",
       "Lingua Franca Avni Pinot Noir",
       "Creamed Spinach",
       "Shrimp Bisque",
@@ -980,7 +976,6 @@ const PAIRING_MAP = [
     profile: ["lean","bold","beefy","firm","savory","well-marbled"],
     gold: [
       "Jordan Cabernet Sauvignon",
-      "Shafer Hillside Select",
       "Pio Cesare Barbaresco",
       "Pappy Van Winkle 13 Year Rye",
       "Weller Millennium",
@@ -1053,7 +1048,6 @@ const PAIRING_MAP = [
       "Ghost Block Cabernet Sauvignon",
       "Austin Hope Cabernet Sauvignon",
       "Peju Cabernet Sauvignon",
-      "Venge Scout's Honor",
       "Fattoria Le Pupille Saffredi",
       "Quilt Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
@@ -1213,10 +1207,9 @@ const PAIRING_MAP = [
       "Corazon Sazerac",
       "Corazon Stagg",
       "Corazon Weller",
-      "Shafer Hillside Select",
     ],
     strong: [
-      "Lingua Franca Avni Pinot Noir",
+      "Venge Scout's Honor", "Shafer Hillside Select", "Lingua Franca Avni Pinot Noir",
       "Creamed Spinach",
       "Truffle Fries",
       "Château Gombaude-Guillot",
@@ -1444,7 +1437,7 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["fatty","rich","bold","marbled","beefy","bone-in"],
     gold: [
-      "Caymus Cabernet Sauvignon",
+      "Macallan 18", "Caymus Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Shafer Hillside Select",
       "Heaven Hill 20 Year",
@@ -1454,7 +1447,6 @@ const PAIRING_MAP = [
       "Silver Oak Cabernet Sauvignon",
       "Shafer Hillside Select",
       "Opus One",
-      "Scavino Barolo",
       "Darioush Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
       "Espresso Old Fashioned",
@@ -1590,8 +1582,6 @@ const PAIRING_MAP = [
       "Komos Extra Anejo",
       "Macallan Estate",
       "The Manhattan",
-      "Sazerac",
-      "Vieux Carré",
       "Le Ragnaie Brunello",
       "Maker's Mark",
       "Knob Creek 15 Year",
@@ -1601,7 +1591,7 @@ const PAIRING_MAP = [
       "Redbreast 12 Year",
     ],
     strong: [
-      "Creamed Spinach",
+      "Scavino Barolo", "Vieux Carré", "Sazerac", "Creamed Spinach",
       "Brussels and Belly",
       "Negroni",
       "Not a Paper Plane",
@@ -1911,8 +1901,7 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["fatty","rich","bold","marbled","smoky","beefy","theatrical"],
     gold: [
-      "Opus One",
-      "Caymus Cabernet Sauvignon",
+      "Corazon Stagg", "Opus One",
       "George T. Stagg",
       "Scavino Barolo",
       "Clase Azul Ultra",
@@ -1942,7 +1931,6 @@ const PAIRING_MAP = [
       "Darioush Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Venge Family Reserve",
-      "Fattoria Le Pupille Saffredi",
       "Ghost Block Cabernet Sauvignon",
       "Nickel & Nickel Cabernet",
       "Lagavulin 8",
@@ -1972,14 +1960,13 @@ const PAIRING_MAP = [
       "Casamigos Mezcal",
       "Clase Azul Guerrero Mezcal",
       "Los Vecinos Mezcal",
-      "Caymus Cabernet Sauvignon",
       "Clase Azul Ultra",
       "Komos Extra Anejo",
       "Clase Azul Anejo",
       "Corazon Stagg",
     ],
     strong: [
-      "Lail Vineyards Blueprint",
+      "Fattoria Le Pupille Saffredi", "Caymus Cabernet Sauvignon", "Lail Vineyards Blueprint",
       "Creamed Spinach",
       "Brussels and Belly",
       "Venge Scout's Honor",
@@ -2386,9 +2373,6 @@ const PAIRING_MAP = [
     ],
     excellent: [
       "Silver Oak Cabernet Sauvignon",
-      "Caymus Cabernet Sauvignon",
-      "Jordan Cabernet Sauvignon",
-      "Scavino Barolo",
       "The Manhattan",
       "Truffle Fries",
       "Creamed Spinach",
@@ -2402,7 +2386,7 @@ const PAIRING_MAP = [
       "Domaine du Grand Tinel",
     ],
     strong: [
-      "Ghost Block Cabernet Sauvignon",
+      "Scavino Barolo", "Jordan Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Ghost Block Cabernet Sauvignon",
       "Lail Vineyards Blueprint",
       "Far Niente Cabernet Sauvignon",
       "Brussels and Belly",
@@ -2468,10 +2452,8 @@ const PAIRING_MAP = [
       "Maker's Mark Cellar Aged",
       "Weller Special Reserve",
       "Weller 107",
-      "Maker's Mark",
       "Bowdie's Private Select — Maker's Mark",
       "Basil Hayden's",
-      "Basil Hayden's Toast",
       "Basil Hayden's 10 Year",
       "Basil Hayden's Malted Rye",
       "Larceny Small Batch",
@@ -2633,7 +2615,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "House Wedge",
+      "Maker's Mark", "Basil Hayden's Toast", "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
       "Chocolate Brownie",
@@ -2909,13 +2891,12 @@ const PAIRING_MAP = [
       "Clase Azul Guerrero Mezcal",
       "Los Vecinos Mezcal",
       "Stoli Elit Vodka",
-      "French 75",
       "Corpse Reviver",
       "Chopin Vodka",
       "Yamazaki 12 Year",
     ],
     strong: [
-      "Elk Cove Pinot Blanc",
+      "French 75", "Elk Cove Pinot Blanc",
       "St Supéry Sauvignon Blanc",
       "Domaine de Berthiers Pouilly-Fumé",
       "Espresso Old Fashioned",
@@ -3362,8 +3343,6 @@ const PAIRING_MAP = [
       "Keenan Mernet",
       "Ghost Block Cabernet Sauvignon",
       "Venge Silencieux",
-      "Fattoria Le Pupille Saffredi",
-      "Venge Scout's Honor",
       "Faust Napa Valley Cabernet",
       "Lagavulin 8",
       "Laphroaig 10",
@@ -3491,7 +3470,6 @@ const PAIRING_MAP = [
       "Corazon Weller",
       "Macallan 18",
       "Kentucky Owl St. Patrick's",
-      "Johnnie Walker Blue",
       "Macallan Estate",
       "Yamazaki 18 Year",
       "Glenmorangie 10",
@@ -3501,7 +3479,7 @@ const PAIRING_MAP = [
       "Dunville's Single Malt",
     ],
     strong: [
-      "Silver Oak Cabernet Sauvignon",
+      "Venge Scout's Honor", "Fattoria Le Pupille Saffredi", "Silver Oak Cabernet Sauvignon",
       "Brussels and Belly",
       "Creamed Spinach",
       "Espresso Martini",
@@ -3587,7 +3565,7 @@ const PAIRING_MAP = [
       "Green Chartreuse",
     ],
     works: [
-      "Jordan Cabernet Sauvignon",
+      "Johnnie Walker Blue", "Jordan Cabernet Sauvignon",
       "House Wedge",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
@@ -4230,7 +4208,6 @@ const PAIRING_MAP = [
       "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Paul Bara Grand Rosé Brut",
-      "Jean-Pierre Grossot Chablis",
       "French 75",
       "Vesper",
       "Laurent Perrier Brut Rosé",
@@ -4267,14 +4244,13 @@ const PAIRING_MAP = [
       "Hendricks Neptunia",
       "Hendricks Orbium",
       "Bacardi Rum",
-      "Margarita",
       "Paloma",
       "Aviation",
       "Transfusion",
       "Hangar 1 Vodka",
     ],
     strong: [
-      "Elk Cove Pinot Blanc",
+      "Jean-Pierre Grossot Chablis", "Margarita", "Elk Cove Pinot Blanc",
       "Joseph Mellot Sancerre",
       "St Supéry Sauvignon Blanc",
       "Corpse Reviver",
@@ -4676,13 +4652,11 @@ const PAIRING_MAP = [
     profile: ["seafood","delicate","briny","chilled","classic"],
     gold: [
       "Bacardi Rum",
-      "Mount Gay Rum",
       "Grey Goose Vodka",
       "Laurent Perrier Le Cuvée Brut",
     ],
     excellent: [
       "Laurent Perrier Le Cuvée Brut",
-      "Jean-Pierre Grossot Chablis",
       "St Supéry Sauvignon Blanc",
       "Raventós Cava de NIT Rosé Brut",
       "Vesper",
@@ -4774,7 +4748,7 @@ const PAIRING_MAP = [
       "Mount Gay Rum",
     ],
     strong: [
-      "G.D. Vajra Moscato d'Asti",
+      "Jean-Pierre Grossot Chablis", "G.D. Vajra Moscato d'Asti",
       "Paul Bara Grand Rosé Brut",
       "Pierre Gimonnet Special Club Brut",
       "Pommery Cuvée Louise",
@@ -5587,7 +5561,6 @@ const PAIRING_MAP = [
     profile: ["rich","buttery","herbaceous","garlic","French","indulgent"],
     gold: [
       "Green Chartreuse",
-      "Yellow Chartreuse",
       "Mata Hari Absinthe",
       "Daniel Chotard Sancerre Rouge",
     ],
@@ -6975,7 +6948,6 @@ const PAIRING_MAP = [
       "Domaine Serene Grand Cheval",
       "Stoneleigh Sauvignon Blanc",
       "Cucumber Gimlet",
-      "Fisher Unity Pinot Noir",
       "Don Julio Reposado",
       "Don Julio 70th",
       "Clase Azul Reposado",
@@ -7138,7 +7110,7 @@ const PAIRING_MAP = [
       "Contratto Vermouth",
     ],
     works: [
-      "Jordan Cabernet Sauvignon",
+      "Fisher Unity Pinot Noir", "Jordan Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
       "Filet Mignon",
       "Bone-In Filet",
@@ -7411,7 +7383,6 @@ const PAIRING_MAP = [
       "Tanqueray Gin",
     ],
     excellent: [
-      "Jean-Pierre Grossot Chablis",
       "Scavino Barolo",
       "Domaine de Berthiers Pouilly-Fumé",
       "Lingua Franca Avni Pinot Noir",
@@ -7486,7 +7457,7 @@ const PAIRING_MAP = [
       "Tanqueray Gin",
     ],
     strong: [
-      "Keenan Chardonnay",
+      "Jean-Pierre Grossot Chablis", "Keenan Chardonnay",
       "Jordan Cabernet Sauvignon",
       "Raventós Cava de NIT Rosé Brut",
       "Corpse Reviver",
@@ -8310,17 +8281,15 @@ const PAIRING_MAP = [
     category: "soup-salad",
     profile: ["rich","creamy","earthy","umami","dairy-rich","savory"],
     gold: [
-      "Cristom Mt Jefferson Cuvée",
     ],
     excellent: [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
       "Lingua Franca Avni Pinot Noir",
-      "Cristom Mt Jefferson Cuvée",
     ],
     strong: [
-      "Elk Cove Pinot Blanc",
+      "Cristom Mt Jefferson Cuvée", "Elk Cove Pinot Blanc",
       "Alexander Valley Chardonnay",
       "Laurent Perrier Le Cuvée Brut",
     ],
@@ -9663,17 +9632,15 @@ const PAIRING_MAP = [
     category: "soup-salad",
     profile: ["acidic","herbal","bright","tomato","vegetable","light"],
     gold: [
-      "St Supéry Sauvignon Blanc",
     ],
     excellent: [
       "Stoneleigh Sauvignon Blanc",
       "Jean-Pierre Grossot Chablis",
       "Le Garenne Rosé",
       "Domaine de Berthiers Pouilly-Fumé",
-      "St Supéry Sauvignon Blanc",
     ],
     strong: [
-      "Joseph Mellot Sancerre",
+      "St Supéry Sauvignon Blanc", "Joseph Mellot Sancerre",
       "Raventós Cava de NIT Rosé Brut",
       "Lingua Franca Avni Pinot Noir",
     ],
@@ -13279,7 +13246,6 @@ const PAIRING_MAP = [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Jean-Pierre Grossot Chablis",
-      "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
       "Evening Land Seven Springs",
       "Alexander Valley Chardonnay",
@@ -13333,7 +13299,7 @@ const PAIRING_MAP = [
       "Dunville's Single Malt",
     ],
     strong: [
-      "Laurent Perrier Le Cuvée Brut",
+      "Elk Cove Pinot Blanc", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
       "The Happy Wife",
@@ -13343,7 +13309,6 @@ const PAIRING_MAP = [
       "Pommery Cuvée Louise",
       "Schloss Vollrads Riesling",
       "Braida Montebruna Barbera",
-      "Le Garenne Rosé",
       "Don Julio Reposado",
       "Corazon Reposado",
       "Siete Leguas Reposado",
@@ -13409,7 +13374,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Bee's Knees",
+      "Le Garenne Rosé", "Bee's Knees",
       "Paloma",
       "Creme Brulee",
       "Beignets",
@@ -16449,7 +16414,6 @@ const PAIRING_MAP = [
     excellent: [
       "Keenan Chardonnay",
       "Far Niente Chardonnay",
-      "Lingua Franca Avni Pinot Noir",
       "Cristom Mt Jefferson Cuvée",
       "Muga Reserva",
       "Our Lady of Guadalupe Acolytes",
@@ -16488,7 +16452,7 @@ const PAIRING_MAP = [
       "Dunville's Single Malt",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis",
+      "Lingua Franca Avni Pinot Noir", "Jean-Pierre Grossot Chablis",
       "Evening Land Seven Springs",
       "Paloma",
       "The BG",
@@ -16970,7 +16934,6 @@ const PAIRING_MAP = [
       "Far Niente Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "Vieux Carré",
-      "Château Gombaude-Guillot",
       "Venge Scout's Honor",
       "Bruichladdich",
       "Weller 12 Year",
@@ -17126,7 +17089,7 @@ const PAIRING_MAP = [
       "Belvedere Vodka",
     ],
     strong: [
-      "Not a Paper Plane",
+      "Château Gombaude-Guillot", "Not a Paper Plane",
       "Mushrooms",
       "Kansas City",
       "Espresso Martini",
@@ -17367,7 +17330,6 @@ const PAIRING_MAP = [
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Laurent Perrier Le Cuvée Brut",
-      "Jordan Cabernet Sauvignon",
       "Filet Mignon",
       "Bone-In Filet",
       "Alexander Valley Chardonnay",
@@ -17376,7 +17338,7 @@ const PAIRING_MAP = [
       "Château Gombaude-Guillot",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis",
+      "Jordan Cabernet Sauvignon", "Jean-Pierre Grossot Chablis",
       "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
@@ -17819,7 +17781,6 @@ const PAIRING_MAP = [
       "Keenan Chardonnay",
     ],
     excellent: [
-      "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Elijah Craig 18 Year",
@@ -17830,7 +17791,7 @@ const PAIRING_MAP = [
       "Keenan Chardonnay",
     ],
     strong: [
-      "Far Niente Cabernet Sauvignon",
+      "Caymus Cabernet Sauvignon", "Far Niente Cabernet Sauvignon",
       "Scavino Barolo",
       "The Manhattan",
       "Vieux Carré",
@@ -18270,16 +18231,14 @@ const PAIRING_MAP = [
     category: "side",
     profile: ["smoky","sweet","bitter","pork","rich","umami","bold"],
     gold: [
-      "Angel's Envy",
+      "Corazon Weller", "Angel's Envy",
       "Maker's Mark",
       "Weller 12 Year",
     ],
     excellent: [
       "Caymus Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
-      "Scavino Barolo",
       "Espresso Old Fashioned",
-      "Silver Oak Cabernet Sauvignon",
       "Austin Hope Cabernet Sauvignon",
       "Shafer Hillside Select",
       "Ghost Block Zinfandel",
@@ -18384,7 +18343,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     strong: [
-      "Jordan Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon", "Scavino Barolo", "Jordan Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "The BG",
       "Not a Paper Plane",
@@ -19190,14 +19149,12 @@ const PAIRING_MAP = [
       "Keenan Chardonnay",
     ],
     excellent: [
-      "Jean-Pierre Grossot Chablis",
-      "Domaine de Berthiers Pouilly-Fumé",
       "Lingua Franca Avni Pinot Noir",
       "Evening Land Seven Springs",
       "Keenan Chardonnay",
     ],
     strong: [
-      "Elk Cove Pinot Blanc",
+      "Jean-Pierre Grossot Chablis", "Domaine de Berthiers Pouilly-Fumé", "Elk Cove Pinot Blanc",
       "Le Garenne Rosé",
       "Cristom Mt Jefferson Cuvée",
       "Cucumber Gimlet",
@@ -19641,15 +19598,10 @@ const PAIRING_MAP = [
     profile: ["umami","earthy","savory","rich","meaty"],
     gold: [
       "Cristom Mt Jefferson Cuvée",
-      "Scavino Barolo",
-      "Lagavulin 8",
       "Los Vecinos Mezcal",
     ],
     excellent: [
-      "Scavino Barolo",
-      "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
-      "Silver Oak Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
       "The Manhattan",
       "Lunaria Coste di Moro",
@@ -19697,7 +19649,6 @@ const PAIRING_MAP = [
       "St Supéry Élu Meritage",
       "Darioush Cabernet Franc",
       "Keenan Mernet",
-      "Faust Napa Valley Cabernet",
       "Château Gombaude-Guillot",
       "Venge Scout's Honor",
       "Bruichladdich",
@@ -19820,11 +19771,10 @@ const PAIRING_MAP = [
       "Komos Anejo Reserva",
       "Komos Crystallino Anejo",
       "Cristom Mt Jefferson Cuvée",
-      "Lagavulin 8",
       "Los Vecinos Mezcal",
     ],
     strong: [
-      "Far Niente Cabernet Sauvignon",
+      "Silver Oak Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Scavino Barolo", "Lagavulin 8", "Far Niente Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "Lingua Franca Avni Pinot Noir",
       "Not a Paper Plane",
@@ -19966,7 +19916,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Evening Land Seven Springs",
+      "Faust Napa Valley Cabernet", "Evening Land Seven Springs",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -21453,18 +21403,15 @@ const PAIRING_MAP = [
     category: "side",
     profile: ["grassy","green","vegetal","spring","light","herbal"],
     gold: [
-      "St Supéry Sauvignon Blanc",
     ],
     excellent: [
       "Stoneleigh Sauvignon Blanc",
       "Joseph Mellot Sancerre",
       "Domaine de Berthiers Pouilly-Fumé",
       "Jean-Pierre Grossot Chablis",
-      "Le Garenne Rosé",
-      "St Supéry Sauvignon Blanc",
     ],
     strong: [
-      "Elk Cove Pinot Blanc",
+      "Le Garenne Rosé", "St Supéry Sauvignon Blanc", "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
     ],
     works: [
@@ -21907,7 +21854,6 @@ const PAIRING_MAP = [
       "Sauternes Glass",
       "Vin Santo",
       "Ron Zacapa Rum",
-      "Louis XIII Cognac",
     ],
     excellent: [
       "G.D. Vajra Moscato d'Asti",
@@ -21944,7 +21890,6 @@ const PAIRING_MAP = [
       "Frangelico",
       "Disaronno",
       "Ron Zacapa Rum",
-      "Louis XIII Cognac",
       "Grand Marnier",
     ],
     strong: [
@@ -21985,7 +21930,7 @@ const PAIRING_MAP = [
       "Malibu Rum",
     ],
     works: [
-      "Laurent Perrier Le Cuvée Brut",
+      "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Beignets",
       "Filet Mignon",
@@ -22418,7 +22363,6 @@ const PAIRING_MAP = [
       "Baileys Irish Cream",
       "Buffalo Trace Cream",
       "Disaronno",
-      "Louis XIII Cognac",
       "Chambord",
     ],
     strong: [
@@ -22458,7 +22402,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Laurent Perrier Le Cuvée Brut",
+      "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Filet Mignon",
       "Bone-In Filet",
@@ -22832,7 +22776,6 @@ const PAIRING_MAP = [
     gold: [
       "Vin Santo",
       "Disaronno",
-      "Pineau des Charentes",
     ],
     excellent: [
       "Graham's 10 Year Tawny",
@@ -22901,10 +22844,9 @@ const PAIRING_MAP = [
       "Baileys Irish Cream",
       "Buffalo Trace Cream",
       "Disaronno",
-      "Pineau des Charentes",
     ],
     strong: [
-      "Espresso Old Fashioned",
+      "Pineau des Charentes", "Espresso Old Fashioned",
       "Graham's 2017 Vintage Port",
       "Taylor Fladgate Vintage Bottle",
       "Grand Marnier",
@@ -24213,7 +24155,6 @@ const PAIRING_MAP = [
     profile: ["sweet","light","fried","powdered-sugar","airy","approachable"],
     gold: [
       "Kahlua",
-      "Sambuca",
       "Ron Zacapa Rum",
     ],
     excellent: [
@@ -25136,7 +25077,6 @@ const PAIRING_MAP = [
       "Espresso Martini",
       "Inhibited",
       "Espresso Old Fashioned",
-      "Graham's 20 Year Tawny",
       "Graham's 2017 Vintage Port",
       "Taylor Fladgate Vintage Bottle",
       "Grand Marnier",
@@ -25151,7 +25091,7 @@ const PAIRING_MAP = [
       "Disaronno",
     ],
     strong: [
-      "G.D. Vajra Moscato d'Asti",
+      "Graham's 20 Year Tawny", "G.D. Vajra Moscato d'Asti",
       "Vin Santo",
       "Graham's 10 Year Tawny",
       "Taylor Fladgate Tawny",
@@ -25799,7 +25739,6 @@ const PAIRING_MAP = [
     category: "cocktail",
     profile: ["bold","whiskey","cognac","herbal","complex","spirit-forward"],
     gold: [
-      "Cowboy Ribeye",
     ],
     excellent: [
       "Filet Mignon",
@@ -25807,10 +25746,9 @@ const PAIRING_MAP = [
       "Bone Marrow",
       "Prime Tartare",
       "Truffle Fries",
-      "Cowboy Ribeye",
     ],
     strong: [
-      "Porterhouse",
+      "Cowboy Ribeye", "Porterhouse",
       "Creamed Spinach",
       "Mushrooms",
       "Au Gratin Potatoes",
@@ -25871,7 +25809,6 @@ const PAIRING_MAP = [
     category: "cocktail",
     profile: ["bold","rye","herbal","anise","spirit-forward","classic"],
     gold: [
-      "Cowboy Ribeye",
     ],
     excellent: [
       "Filet Mignon",
@@ -25879,10 +25816,9 @@ const PAIRING_MAP = [
       "Prime Tartare",
       "Bone Marrow",
       "Truffle Fries",
-      "Cowboy Ribeye",
     ],
     strong: [
-      "Porterhouse",
+      "Cowboy Ribeye", "Porterhouse",
       "Creamed Spinach",
       "Grilled Caesar",
       "Mushrooms",
@@ -26016,7 +25952,6 @@ const PAIRING_MAP = [
     profile: ["sparkling","gin","citrus","light","celebratory","effervescent"],
     gold: [
       "Seared Scallops",
-      "Prime Tartare",
     ],
     excellent: [
       "Crab Cake",
@@ -26025,10 +25960,9 @@ const PAIRING_MAP = [
       "Burrata",
       "Escargot",
       "Seared Scallops",
-      "Prime Tartare",
     ],
     strong: [
-      "House Wedge",
+      "Prime Tartare", "House Wedge",
       "Grilled Caesar",
       "Faroe Island Salmon",
       "Market Fish",
@@ -26593,7 +26527,6 @@ const PAIRING_MAP = [
     profile: ["tequila","citrus","salt","bright","refreshing","approachable"],
     gold: [
       "Crab Cake",
-      "Seafood Tower",
     ],
     excellent: [
       "Crab Cake",
@@ -26601,10 +26534,9 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "House Wedge",
       "Burrata",
-      "Seafood Tower",
     ],
     strong: [
-      "Prime Tartare",
+      "Seafood Tower", "Prime Tartare",
       "Shrimp Bisque",
       "Grilled Caesar",
       "Market Fish",
@@ -26810,7 +26742,6 @@ const PAIRING_MAP = [
     category: "cocktail",
     profile: ["vodka","grape","ginger","light","refreshing","approachable"],
     gold: [
-      "Seafood Tower",
     ],
     excellent: [
       "House Wedge",
@@ -26882,16 +26813,14 @@ const PAIRING_MAP = [
     category: "cocktail",
     profile: ["vodka","lemon","citrus","sweet","limoncello","bright","approachable"],
     gold: [
-      "Crab Cake",
     ],
     excellent: [
       "Shrimp Cocktail",
       "Seared Scallops",
       "Burrata",
-      "Crab Cake",
     ],
     strong: [
-      "House Wedge",
+      "Crab Cake", "House Wedge",
       "Seafood Tower",
       "Shrimp Bisque",
       "Escargot",
@@ -28272,10 +28201,9 @@ const PAIRING_MAP = [
       "Tuxedo-Crusted Yellowfin Tuna",
       "Salt-Cured Halibut",
       "Rainbow Trout",
-      "Faroe Island Salmon",
     ],
     strong: [
-      "Prime Tartare",
+      "Faroe Island Salmon", "Prime Tartare",
       "House Wedge",
       "Seafood Tower",
       "Grilled Caesar",
@@ -28350,15 +28278,11 @@ const PAIRING_MAP = [
       "Rainbow Trout",
       "Broccolini",
       "Asparagus",
-      "Seafood Tower",
-      "Shrimp Cocktail",
       "Burrata",
-      "Grilled Caesar",
-      "Sauteed Garlic Spinach",
       "Market Fish",
     ],
     strong: [
-      "House Wedge",
+      "Shrimp Cocktail", "Seafood Tower", "Sauteed Garlic Spinach", "Grilled Caesar", "House Wedge",
       "Roasted Red Pepper Chickpea",
       "Broccoli Cheddar",
       "Chilean Seabass",
@@ -28489,14 +28413,12 @@ const PAIRING_MAP = [
       "Roasted Red Pepper Chickpea",
       "Vegetable Curry with Chickpeas",
       "Honey Roasted Carrots",
-      "Asparagus",
     ],
     strong: [
-      "Grilled Caesar",
+      "Asparagus", "Grilled Caesar",
       "Escargot",
       "Prime Tartare",
       "Seafood Tower",
-      "Faroe Island Salmon",
       "Swordfish",
       "Rainbow Trout",
       "Broccolini",
@@ -28506,7 +28428,7 @@ const PAIRING_MAP = [
       "Market Fish",
     ],
     works: [
-      "Filet Mignon",
+      "Faroe Island Salmon", "Filet Mignon",
       "Roast Half Chicken",
       "Creamy Potato",
       "Clam Chowder",
@@ -28562,10 +28484,9 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
       "Grilled Caesar",
-      "Sauteed Garlic Spinach",
     ],
     strong: [
-      "Prime Tartare",
+      "Sauteed Garlic Spinach", "Prime Tartare",
       "Shrimp Cocktail",
       "House Wedge",
       "Clam Chowder",
@@ -29374,12 +29295,11 @@ const PAIRING_MAP = [
       "Butternut Squash",
       "French Onion",
       "Faroe Island Salmon",
-      "Roast Half Chicken",
       "Honey Roasted Carrots",
       "Broccolini",
     ],
     strong: [
-      "Kansas City",
+      "Roast Half Chicken", "Kansas City",
       "Creamed Spinach",
       "Brussels and Belly",
       "Salt-Cured Halibut",
@@ -29431,7 +29351,6 @@ const PAIRING_MAP = [
     excellent: [
       "Faroe Island Salmon",
       "Roast Half Chicken",
-      "House Wedge",
       "Filet Mignon",
       "Crab Cake",
       "French Onion",
@@ -29448,7 +29367,7 @@ const PAIRING_MAP = [
       "Porterhouse",
     ],
     works: [
-      "Kansas City",
+      "House Wedge", "Kansas City",
       "Lobster Mac",
       "Burrata",
       "Loaded Potato",
@@ -29718,7 +29637,6 @@ const PAIRING_MAP = [
     profile: ["bold","tannic","earthy","cherry","leather","structured","Piedmont"],
     gold: [
       "The Tomahawk",
-      "Mushrooms",
     ],
     excellent: [
       "Filet Mignon",
@@ -29728,13 +29646,9 @@ const PAIRING_MAP = [
       "Truffle Fries",
       "Bone Marrow",
       "Grilled Caesar",
-      "Cowboy Ribeye",
-      "Porterhouse",
-      "Brussels and Belly",
-      "Mushrooms",
     ],
     strong: [
-      "Creamed Spinach",
+      "Porterhouse", "Cowboy Ribeye", "Brussels and Belly", "Mushrooms", "Creamed Spinach",
       "Au Gratin Potatoes",
     ],
     works: [
@@ -29790,7 +29704,6 @@ const PAIRING_MAP = [
     category: "wine-red",
     profile: ["bold","rich","jammy","oak","smooth","approachable"],
     gold: [
-      "The Tomahawk",
       "Cowboy Ribeye",
     ],
     excellent: [
@@ -29802,13 +29715,9 @@ const PAIRING_MAP = [
       "Brussels and Belly",
       "Bone Marrow",
       "Bone-In Filet",
-      "Porterhouse",
-      "Au Gratin Potatoes",
-      "Mushrooms",
-      "The Tomahawk",
     ],
     strong: [
-      "Lobster Mac",
+      "Porterhouse", "Mushrooms", "Au Gratin Potatoes", "The Tomahawk", "Lobster Mac",
     ],
     works: [
       "Shrimp Bisque",
@@ -29878,10 +29787,9 @@ const PAIRING_MAP = [
       "French Onion",
       "Honey Roasted Carrots",
       "Mushrooms",
-      "Mushroom Bisque",
     ],
     strong: [
-      "Seared Scallops",
+      "Mushroom Bisque", "Seared Scallops",
       "Prime Tartare",
       "Grilled Caesar",
       "Shrimp Bisque",
@@ -30673,7 +30581,6 @@ const PAIRING_MAP = [
       "Kansas City",
       "Cowboy Ribeye",
       "Truffle Fries",
-      "Mushrooms",
       "Bone Marrow",
     ],
     strong: [
@@ -30687,7 +30594,7 @@ const PAIRING_MAP = [
       "Escargot",
     ],
     works: [
-      "House Wedge",
+      "Mushrooms", "House Wedge",
       "Grilled Caesar",
       "French Onion",
       "Loaded Potato",
@@ -30968,12 +30875,10 @@ const PAIRING_MAP = [
       "Truffle Fries",
       "Creamed Spinach",
       "Au Gratin Potatoes",
-      "Porterhouse",
-      "Lobster Mac",
       "Mushrooms",
     ],
     strong: [
-      "Cowboy Ribeye",
+      "Porterhouse", "Lobster Mac", "Cowboy Ribeye",
       "Shrimp Bisque",
       "Brussels and Belly",
       "Grilled Caesar",
@@ -31260,11 +31165,9 @@ const PAIRING_MAP = [
       "Creamed Spinach",
       "Porterhouse",
       "Au Gratin Potatoes",
-      "Brussels and Belly",
-      "Mushrooms",
     ],
     strong: [
-      "Filet Mignon",
+      "Mushrooms", "Brussels and Belly", "Filet Mignon",
       "Bone Marrow",
       "Bone-In Filet",
       "Escargot",
@@ -32632,7 +32535,6 @@ const PAIRING_MAP = [
     profile: ["bold","concentrated","plum","mocha","structured","prestige"],
     gold: [
       "Cowboy Ribeye",
-      "Kansas City",
     ],
     excellent: [
       "The Tomahawk",
@@ -32640,10 +32542,9 @@ const PAIRING_MAP = [
       "Truffle Fries",
       "Bone Marrow",
       "Brussels and Belly",
-      "Kansas City",
     ],
     strong: [
-      "Filet Mignon",
+      "Kansas City", "Filet Mignon",
       "Porterhouse",
       "Creamed Spinach",
       "Mushrooms",
@@ -33143,18 +33044,15 @@ const PAIRING_MAP = [
     profile: ["Super-Tuscan","Maremma","Cab-Merlot-Petit-Verdot","firm-tannin","graphite","structured","Italian","premium"],
     gold: [
       "Cowboy Ribeye",
-      "The Tomahawk",
     ],
     excellent: [
       "Cowboy Ribeye",
-      "The Tomahawk",
-      "Bone Marrow",
       "Kansas City",
       "Porterhouse",
       "Gumbo",
     ],
     strong: [
-      "Bone-In Filet",
+      "Bone Marrow", "The Tomahawk", "Bone-In Filet",
       "Filet Mignon",
       "Brussels and Belly",
       "Creamed Spinach",
@@ -33435,18 +33333,15 @@ const PAIRING_MAP = [
     profile: ["Pomerol","Merlot-dominant","biodynamic","plush","truffle","velvety","Bordeaux","premium"],
     gold: [
       "Filet Mignon",
-      "Bone-In Filet",
     ],
     excellent: [
       "Filet Mignon",
-      "Bone-In Filet",
       "Mushrooms",
-      "Truffle Fries",
       "Lobster Mac",
       "Gumbo",
     ],
     strong: [
-      "Bone Marrow",
+      "Truffle Fries", "Bone-In Filet", "Bone Marrow",
       "Kansas City",
       "Porterhouse",
       "Creamed Spinach",
@@ -33942,7 +33837,6 @@ const PAIRING_MAP = [
     category: "wine-red",
     profile: ["Châteauneuf-du-Pape","Mourvèdre-heavy","bold","complex","earthy","prestige"],
     gold: [
-      "Filet Mignon",
     ],
     excellent: [
       "The Tomahawk",
@@ -33950,10 +33844,9 @@ const PAIRING_MAP = [
       "Kansas City",
       "Bone Marrow",
       "Mushrooms",
-      "Filet Mignon",
     ],
     strong: [
-      "Porterhouse",
+      "Filet Mignon", "Porterhouse",
       "Truffle Fries",
       "Creamed Spinach",
       "Brussels and Belly",
@@ -34524,17 +34417,14 @@ const PAIRING_MAP = [
     profile: ["Zin-dominant-blend","Napa","bold","ripe-blackberry","black-pepper","full-bodied","generous"],
     gold: [
       "Cowboy Ribeye",
-      "Kansas City",
     ],
     excellent: [
       "Cowboy Ribeye",
-      "Kansas City",
-      "Bone Marrow",
       "Mushrooms",
       "Truffle Fries",
     ],
     strong: [
-      "The Tomahawk",
+      "Bone Marrow", "Kansas City", "The Tomahawk",
       "Porterhouse",
       "Brussels and Belly",
       "Creamed Spinach",
@@ -35186,10 +35076,9 @@ const PAIRING_MAP = [
       "Chocolate Brownie",
       "Peanut Butter Brownie",
       "Chocolate Cake",
-      "Mocha Creme",
     ],
     strong: [
-      "Beignets",
+      "Mocha Creme", "Beignets",
     ],
     works: [],
     avoid: [
@@ -35532,7 +35421,6 @@ const PAIRING_MAP = [
     category: "wine-dessert",
     profile: ["fortified","Cognac-based","sweet","grape","French","aperitif-or-dessert"],
     gold: [
-      "Carrot Cake",
     ],
     excellent: [
       "Creme Brulee",
@@ -35540,10 +35428,9 @@ const PAIRING_MAP = [
       "Beignets",
       "Burrata",
       "Shrimp Cocktail",
-      "Carrot Cake",
     ],
     strong: [
-      "Seared Scallops",
+      "Carrot Cake", "Seared Scallops",
       "House Wedge",
       "Prime Tartare",
       "Escargot",
@@ -36181,7 +36068,6 @@ const PAIRING_MAP = [
     profile: ["peat","smoke","maritime","sea-spray","brine","youthful-vibrancy","bright-phenolics","citrus-oil","iodine","Islay-balanced"],
     gold: [
       "Bone Marrow",
-      "Mushrooms",
     ],
     excellent: [
       "Bone Marrow",
@@ -36189,10 +36075,9 @@ const PAIRING_MAP = [
       "Cowboy Ribeye",
       "Brussels and Belly",
       "Grilled Caesar",
-      "Mushrooms",
     ],
     strong: [
-      "Kansas City",
+      "Mushrooms", "Kansas City",
       "Porterhouse",
       "Truffle Fries",
       "Prime Tartare",
@@ -36471,7 +36356,6 @@ const PAIRING_MAP = [
     profile: ["wheated-bourbon","premium-Weller","limited-release","deep-oak","honeyed-complexity","polished","special-occasion","mature-wheated"],
     gold: [
       "Kansas City",
-      "Bone-In Filet",
     ],
     excellent: [
       "Filet Mignon",
@@ -36844,7 +36728,6 @@ const PAIRING_MAP = [
       "Cowboy Ribeye",
     ],
     strong: [
-      "Porterhouse",
       "Creamed Spinach",
       "Au Gratin Potatoes",
       "Carrot Cake",
@@ -36854,7 +36737,7 @@ const PAIRING_MAP = [
       "Escargot",
     ],
     works: [
-      "House Wedge",
+      "Porterhouse", "House Wedge",
       "Grilled Caesar",
       "Cheesecake",
       "Chocolate Brownie",
@@ -37062,7 +36945,6 @@ const PAIRING_MAP = [
       "Kansas City",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Porterhouse",
       "Creamed Spinach",
       "Au Gratin Potatoes",
       "Carrot Cake",
@@ -37072,7 +36954,7 @@ const PAIRING_MAP = [
       "Escargot",
     ],
     works: [
-      "House Wedge",
+      "Porterhouse", "House Wedge",
       "Grilled Caesar",
       "Cheesecake",
       "Shrimp Bisque",
@@ -45159,7 +45041,6 @@ const PAIRING_MAP = [
     category: "liqueur",
     profile: ["fernet","Fernet-Menta","mint-forward","cooling","bright-bitter","digestif","Branca-sibling","mentholated"],
     gold: [
-      "Chocolate Brownie",
     ],
     excellent: [
       "Chocolate Brownie",
@@ -45879,7 +45760,6 @@ const PAIRING_MAP = [
     category: "vodka",
     profile: ["vodka","Wheatley","Buffalo-Trace-distillery","wheat-based","house-made","value-premium","clean","10-times-distilled"],
     gold: [
-      "Shrimp Cocktail",
     ],
     excellent: [
       "Crab Cake",
@@ -46023,7 +45903,6 @@ const PAIRING_MAP = [
     category: "gin",
     profile: ["gin","Beefeater","London-Dry","40-percent-ABV","9-botanicals","24-hour-steep","juniper","citrus","balanced","democratic-workhorse"],
     gold: [
-      "Seafood Tower",
     ],
     excellent: [
       "Crab Cake",
@@ -46167,7 +46046,6 @@ const PAIRING_MAP = [
     category: "gin",
     profile: ["gin","Plymouth","protected-geographical-indication","single-distillery","softer-English","earthier-juniper","sweet-notes","smooth"],
     gold: [
-      "Crab Cake",
     ],
     excellent: [
       "Burrata",
@@ -46311,7 +46189,6 @@ const PAIRING_MAP = [
     category: "gin",
     profile: ["gin","Bombay-Sapphire","10-botanicals","vapor-infused","grains-of-paradise","cubeb-pepper","softer-floral","blue-bottle","accessible"],
     gold: [
-      "Seafood Tower",
     ],
     excellent: [
       "Burrata",
@@ -46743,7 +46620,6 @@ const PAIRING_MAP = [
     category: "cognac",
     profile: ["brandy","Christian-Brothers","California-American-brandy","sweeter","value-workhorse","not-cognac","oak-aged"],
     gold: [
-      "Chocolate Brownie",
     ],
     excellent: [
       "Cheesecake",
@@ -46887,7 +46763,6 @@ const PAIRING_MAP = [
     category: "cognac",
     profile: ["cognac-based-spirit","Villon","modern","Courvoisier-sibling","cocktail-ready","saffron","elderflower","Voyage-infusion","younger-audience","contemporary-accessible"],
     gold: [
-      "Chocolate Brownie",
     ],
     excellent: [
       "Filet Mignon",
@@ -46960,16 +46835,12 @@ const PAIRING_MAP = [
     profile: ["cognac","Louis-XIII","Remy-Martin","luxury-icon","Grande-Champagne-only","1200-eaux-de-vie","aged-40-100-years","Baccarat-crystal-decanter","collector-bottle","4000-dollars","save-the-bottle"],
     gold: [
       "Chocolate Brownie",
-      "Creme Brulee",
-      "Cheesecake",
     ],
     excellent: [
       "Filet Mignon",
       "Bone Marrow",
       "Truffle Fries",
       "Chocolate Brownie",
-      "Creme Brulee",
-      "Cheesecake",
     ],
     strong: [
       "Kansas City",
@@ -46977,7 +46848,7 @@ const PAIRING_MAP = [
       "Mushrooms",
     ],
     works: [
-      "Creamed Spinach",
+      "Cheesecake", "Creme Brulee", "Creamed Spinach",
       "Peanut Butter Brownie",
       "Lobster Mac",
       "House Wedge",
@@ -47033,7 +46904,6 @@ const PAIRING_MAP = [
     category: "gin",
     profile: ["gin","Elephant-Gin","German-distillery","African-botanicals","baobab","buchu","lions-tail","devils-claw","African-wormwood","contemporary-craft","London-Dry-style","conservation-charity"],
     gold: [
-      "Burrata",
     ],
     excellent: [
       "Crab Cake",
@@ -47321,7 +47191,6 @@ const PAIRING_MAP = [
     category: "spirit",
     profile: ["scotch","Speyside","Cragganmore-12","Diageo-Classic-Malt","layered-complex","lighter-profile","subtle-smoke-hint","herbal-notes","meaty-depth"],
     gold: [
-      "Bone Marrow",
     ],
     excellent: [
       "Filet Mignon",
@@ -47330,7 +47199,6 @@ const PAIRING_MAP = [
       "Grilled Caesar",
       "Truffle Fries",
       "Carrot Cake",
-      "Bone Marrow",
     ],
     strong: [
       "Kansas City",
@@ -47344,7 +47212,7 @@ const PAIRING_MAP = [
       "Escargot",
     ],
     works: [
-      "Brussels and Belly",
+      "Bone Marrow", "Brussels and Belly",
       "House Wedge",
       "Shrimp Bisque",
       "Peanut Butter Brownie",
@@ -48905,7 +48773,6 @@ const PAIRING_MAP = [
     category: "gin",
     profile: ["gin","Hendricks","flagship","cucumber-rose","Scottish","low-juniper","perfumed","signature-botanicals","crowd-pleasing"],
     gold: [
-      "Burrata",
     ],
     excellent: [
       "Burrata",
@@ -50203,7 +50070,6 @@ const PAIRING_MAP = [
     category: "scotch",
     profile: ["scotch","Highland","Loch-Lomond-20","20-years","varied-still-types","traditional-pot-plus-straight-neck","complex-aged","Highland-premium-20yr","distinctive-cask-program"],
     gold: [
-      "Cowboy Ribeye",
     ],
     excellent: [
       "Filet Mignon",
@@ -50275,7 +50141,6 @@ const PAIRING_MAP = [
     category: "scotch",
     profile: ["scotch","blended","Dewars-White-Label","entry-blended","Aberfeldy-malt-core","40-percent-ABV","honey-vanilla","Highland-blend","approachable-crowd-pleaser"],
     gold: [
-      "Kansas City",
     ],
     excellent: [
       "Kansas City",
@@ -50635,14 +50500,12 @@ const PAIRING_MAP = [
     category: "scotch",
     profile: ["scotch","blended","Johnnie-Walker-Blue","ultra-premium-luxury","hand-selected-rare-casks","60-plus-year-old-stocks","silky-complex","collector-bottle","save-the-bottle"],
     gold: [
-      "Bone Marrow",
       "Cowboy Ribeye",
     ],
     excellent: [
       "Filet Mignon",
       "Kansas City",
       "Mushrooms",
-      "Bone Marrow",
       "Cowboy Ribeye",
     ],
     strong: [
@@ -50654,7 +50517,7 @@ const PAIRING_MAP = [
       "Escargot",
     ],
     works: [
-      "Brussels and Belly",
+      "Bone Marrow", "Brussels and Belly",
       "Creamed Spinach",
       "House Wedge",
       "Shrimp Bisque",
@@ -50708,7 +50571,6 @@ const PAIRING_MAP = [
     category: "irish",
     profile: ["irish","Jameson","iconic-entry","triple-distilled","grain-plus-pot-still-plus-single-malt","sherry-bourbon-cask","smooth-approachable","call-Irish"],
     gold: [
-      "Kansas City",
     ],
     excellent: [
       "Roast Half Chicken",
@@ -51068,7 +50930,6 @@ const PAIRING_MAP = [
     category: "irish",
     profile: ["irish","Kentucky-Owl-St-Patricks","American-luxury-distillery","Irish-crossover","limited-edition","bourbon-cask-aged-Irish","collector-luxury","save-the-bottle"],
     gold: [
-      "Cowboy Ribeye",
       "Bone Marrow",
     ],
     excellent: [
@@ -51429,7 +51290,6 @@ const PAIRING_MAP = [
     category: "japanese",
     profile: ["japanese","Yamazaki-18","aged-Suntory-single-malt","deeper-Mizunara-oak","sandalwood","coconut","dried-fruit","sherry-cask-influence","collector-register-18yr"],
     gold: [
-      "Bone Marrow",
     ],
     excellent: [
       "Filet Mignon",
@@ -51501,7 +51361,6 @@ const PAIRING_MAP = [
     category: "canadian",
     profile: ["canadian","Crown-Royal","iconic-Canadian-blend","Gimli-Manitoba","purple-velvet-bag","vanilla-honey-fruit","smooth-crowd-pleasing","hand-selected"],
     gold: [
-      "Kansas City",
     ],
     excellent: [
       "Roast Half Chicken",
@@ -51933,7 +51792,6 @@ const PAIRING_MAP = [
     category: "singlemalt",
     profile: ["american-singlemalt","Tennessee-whiskey","Jack-Daniels-12-Year","aged-Tennessee","premium-tier","deeper-vanilla-caramel","charcoal-mellowed-12yr"],
     gold: [
-      "Cowboy Ribeye",
     ],
     excellent: [
       "Kansas City",
@@ -54548,7 +54406,6 @@ const PAIRING_MAP = [
     category: "mezcal",
     profile: ["mezcal","Casamigos-Mezcal","Oaxaca","espadin","Clooney-Gerber-brand","Diageo-owned","polished","accessible-gateway-mezcal","softened-smoke","entry-point-to-agave-smoke"],
     gold: [
-      "Bone Marrow",
     ],
     excellent: [
       "Bone Marrow",
@@ -54764,7 +54621,7 @@ const PAIRING_MAP = [
     category: "rum",
     profile: ["rum","white","light","Bacardi-Rum","Puerto-Rican-origin","Bermuda-HQ","Carta-Blanca-Superior","world-most-distributed-rum","ultra-clean-cocktail-workhorse","neutral-accessible","gateway-rum"],
     gold: [
-      "Shrimp Cocktail",
+      "Shrimp Bisque", "Shrimp Cocktail",
     ],
     excellent: [
       "Shrimp Cocktail",
@@ -55053,7 +54910,6 @@ const PAIRING_MAP = [
     category: "rum",
     profile: ["rum","aged","dark","Myerss-Rum","Jamaica","Diageo-owned","pot-and-column-blend","molasses-heavy","workhorse-dark-rum","tiki-classic-staple","Dark-n-Stormy-benchmark","accessible-dark-rum"],
     gold: [
-      "Chocolate Brownie",
     ],
     excellent: [
       "Chocolate Brownie",
@@ -55197,7 +55053,6 @@ const PAIRING_MAP = [
     category: "rum",
     profile: ["rum","aged","dark","Jung-and-Wulff-Trinidad","Trinidadian-style","Angostura-distillery","column-still","medium-character","refined-caramel","moderate-ester","cleaner-than-Jamaica-lighter-than-Demerara","middle-ground-sibling-to-Guyana-expression"],
     gold: [
-      "Cheesecake",
     ],
     excellent: [
       "Chocolate Brownie",
@@ -55269,7 +55124,6 @@ const PAIRING_MAP = [
     category: "rum",
     profile: ["rum","spiced","Captain-Morgan-Rum","Diageo","Caribbean-origin-blend","Puerto-Rico-Jamaica-Guyana","Original-Spiced","warm-spice-forward","vanilla-cinnamon-clove-molasses","pirate-brand-iconic","cocktail-workhorse","35-percent-ABV"],
     gold: [
-      "Beignets",
     ],
     excellent: [
       "Beignets",
@@ -55485,7 +55339,6 @@ const PAIRING_MAP = [
     category: "liqueur",
     profile: ["liqueur","herbal","Yellow-Chartreuse","40-percent-ABV","130-plus-herbs-botanicals","Carthusian-monks-sister-to-Green","honey-saffron-notes","sweeter-gentler-register","more-approachable-lower-proof","digestif"],
     gold: [
-      "Escargot",
     ],
     excellent: [
       "Cheesecake",
@@ -55701,7 +55554,6 @@ const PAIRING_MAP = [
     category: "liqueur",
     profile: ["liqueur","anise","Sambuca","Italian-anise-liqueur","Molinari-benchmark","38-42-percent-ABV","sweet-star-anise-elderflower-botanicals","traditional-con-la-mosca-3-coffee-beans","Italian-dessert-digestif","sweeter-sibling-to-absinthe-anise-family"],
     gold: [
-      "Beignets",
     ],
     excellent: [
       "Cheesecake",
@@ -55845,7 +55697,6 @@ const PAIRING_MAP = [
     category: "liqueur",
     profile: ["vermouth","aromatized-fortified-wine","Contratto-Vermouth","Contratto-house-Asti-Italy","historic-Italian-producer","16-percent-ABV","wine-base-botanical-infusion-fortification","aperitivo-register","functionally-a-vermouth-not-a-liqueur","lower-proof-than-cluster-siblings"],
     gold: [
-      "Escargot",
     ],
     excellent: [
       "Cheesecake",
@@ -56205,7 +56056,7 @@ const PAIRING_MAP = [
     category: "liqueur",
     profile: ["liqueur","nut","hazelnut","Frangelico","Italy-Piedmont-hazelnut-heartland","20-percent-ABV","distinctive-monk-shaped-bottle-Franciscan-friar","hazelnut-vanilla-cocoa-notes","originally-made-by-monks","iconic-after-dinner-digestif","Nutty-Irishman-Frangelico-espresso-classics"],
     gold: [
-      "Chocolate Brownie",
+      "Peanut Butter Brownie", "Chocolate Brownie",
       "Mocha Creme",
     ],
     excellent: [
@@ -56277,7 +56128,7 @@ const PAIRING_MAP = [
     category: "liqueur",
     profile: ["liqueur","nut","almond","amaretto","Disaronno","Saronno-Italy-since-1525-allegedly","28-percent-ABV-higher-than-Frangelico","iconic-square-bottle","vanilla-marzipan-apricot-pit-bitter-almond-flavor","Godmother-Toasted-Almond-cocktail-classics","higher-proof-richer-register"],
     gold: [
-      "Cheesecake",
+      "Peanut Butter Brownie", "Cheesecake",
     ],
     excellent: [
       "Creme Brulee",
@@ -56420,7 +56271,6 @@ const PAIRING_MAP = [
     category: "spirit",
     profile: ["spirit","tequila","anejo","Milagro-Anejo","Highland-Jalisco","100-percent-Blue-Weber-agave","triple-distilled","French-oak-14-plus-months","refined-softer-register","cleaner-finishing","accessible-craft-answer-to-premium-anejo"],
     gold: [
-      "Kansas City",
     ],
     excellent: [
       "Kansas City",
@@ -56564,7 +56414,6 @@ const PAIRING_MAP = [
     category: "spirit",
     profile: ["spirit","tequila","anejo","Ocho-Anejo","Los-Alambiques-Arandas-Jalisco-Los-Altos","Carlos-Camarena","single-estate-vintage-dated","100-percent-Blue-Weber-agave","1-year-ex-American-whiskey-casks","terroir-specific-field-named-ranches","transparent-sourcing","craft-focused","mineral-driven-highland-character"],
     gold: [
-      "Kansas City",
     ],
     excellent: [
       "Kansas City",
@@ -56708,7 +56557,6 @@ const PAIRING_MAP = [
     category: "spirit",
     profile: ["spirit","tequila","anejo","luxury-icon","Komos-Anejo-Reserva","Los-Altos-Jalisco","ultra-premium-tequila-reserve","12-14-months-French-oak-plus-Hungarian-plus-Moscow-wine-barrels","wine-cask-finish-distinctive","designed-as-luxury-tequila-competing-with-Clase-Azul","craftsman-branded-line","ceremonial-pour-sipping-register"],
     gold: [
-      "Kansas City",
     ],
     excellent: [
       "Kansas City",
@@ -56852,7 +56700,6 @@ const PAIRING_MAP = [
     category: "spirit",
     profile: ["spirit","tequila","anejo","barrel-finished","Expresiones-del-Corazon","Corazon-Sazerac","finished-in-ex-Sazerac-Rye-barrels-Buffalo-Trace","rye-spice-meets-aged-agave","Corazon-BT-collaboration","crossover-unique-category","sibling-to-Corazon-Stagg-and-Corazon-Weller","for-rye-drinkers-curious-about-tequila"],
     gold: [
-      "Cowboy Ribeye",
     ],
     excellent: [
       "Kansas City",
