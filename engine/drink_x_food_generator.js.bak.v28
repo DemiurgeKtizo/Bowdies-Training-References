@@ -341,43 +341,6 @@ const WHISKEY_VOICE_DEFAULTS = {
   RYE:      { character: 'rye-spice character',               bridge1: 'the rye spice cuts {foodTarget}',              bridge2: 'the rye edge frames {foodSubj}',     verdictHook: 'rye whiskey',     avoidLabel: 'rye whiskey' },
 };
 
-// ── ELEGANT_RED VOICE SUBCLASS ─────────────────────────────────────────────
-// ELEGANT_RED is a broad bucket containing Pinot Noir, Cabernet, Nebbiolo,
-// Sangiovese, Rhone, Tempranillo, Malbec, Zinfandel — each reading distinctly
-// at the table. This splits the voice the same way whiskey is split.
-
-function elegantRedVoiceSubclass(drink) {
-  const profile = (drink.profile || []).map(p => p.toLowerCase()).join(' ');
-  const name = drink.name.toLowerCase();
-  const all = profile + ' ' + name;
-
-  if (/\bpinot[- ]noir\b/.test(all) || /pinot/.test(name)) return 'PINOT';
-  if (/\bnebbiolo\b|\bbarolo\b|\bbarbaresco\b/.test(all)) return 'NEBBIOLO';
-  if (/\bsangiovese\b|\bchianti\b|\bbarbera\b|tuscan-blend|super-tuscan/.test(all)) return 'CHIANTI';
-  if (/\bgrenache\b|\bsyrah\b|\bmourv|\brhone\b|\brh\u00f4ne\b|gigondas|bandol|rhone-style/.test(all)) return 'RHONE';
-  if (/\btempranillo\b|\brioja\b|\bmencia\b|\bmenc\u00eda\b/.test(all)) return 'SPANISH';
-  if (/\bmalbec\b/.test(all)) return 'MALBEC';
-  if (/\bzinfandel\b|\bzin\b|petite-sirah|petite syrah|zin-led|zin-dominant/.test(all)) return 'ZIN';
-  if (/cab-franc|cabernet-franc|chinon/.test(all)) return 'CAB_FRANC';
-  if (/saint-\u00e9milion|pomerol|bordeaux-blend|bordeaux blend|merlot-dominant/.test(all)) return 'BORDEAUX';
-  if (/\bcab\b|\bcabernet\b|napa cab|cab-dominant|meritage/.test(all)) return 'CAB';
-  return 'GENERIC_ELEGANT_RED';
-}
-
-const ELEGANT_RED_VOICE_DEFAULTS = {
-  PINOT:     { character: 'silky Pinot Noir with cherry-and-forest-floor lift', bridge1: 'the Pinot body brightens {foodTarget}',         bridge2: 'the cherry-and-earth note frames {foodSubj}', verdictHook: 'Pinot Noir' },
-  NEBBIOLO:  { character: 'high-acid Nebbiolo with rose-and-tar grip',           bridge1: 'the Nebbiolo grip cuts {foodTarget}',           bridge2: 'the tar-and-rose edge frames {foodSubj}',     verdictHook: 'Piedmont Nebbiolo' },
-  CHIANTI:   { character: 'Sangiovese-driven Tuscan acidity',                    bridge1: 'the bright Sangiovese body lifts {foodTarget}', bridge2: 'the cherry-leather edge frames {foodSubj}',   verdictHook: 'Tuscan Sangiovese' },
-  RHONE:     { character: 'spice-and-dark-fruit Rhone register',                 bridge1: 'the Rhone-blend body wraps {foodTarget}',       bridge2: 'the peppery edge frames {foodSubj}',          verdictHook: 'Rhone red' },
-  SPANISH:   { character: 'Tempranillo with vanilla-and-leather depth',          bridge1: 'the Tempranillo body wraps {foodTarget}',       bridge2: 'the vanilla-leather edge frames {foodSubj}',  verdictHook: 'Spanish red' },
-  MALBEC:    { character: 'plush Malbec with plum-and-violet weight',            bridge1: 'the Malbec body wraps {foodTarget}',            bridge2: 'the plum-and-violet edge frames {foodSubj}',  verdictHook: 'Argentine Malbec' },
-  ZIN:       { character: 'jammy Zinfandel with bramble-and-pepper lift',        bridge1: 'the Zin body wraps {foodTarget}',               bridge2: 'the bramble-and-pepper edge frames {foodSubj}', verdictHook: 'Zinfandel' },
-  CAB_FRANC: { character: 'herbaceous Cab Franc with red-fruit and bell-pepper', bridge1: 'the Cab Franc body lifts {foodTarget}',         bridge2: 'the bell-pepper-and-cherry note frames {foodSubj}', verdictHook: 'Cab Franc' },
-  BORDEAUX:  { character: 'Merlot-led Bordeaux blend with plush dark-fruit',     bridge1: 'the Bordeaux body wraps {foodTarget}',          bridge2: 'the cassis-and-tobacco edge frames {foodSubj}', verdictHook: 'Bordeaux blend' },
-  CAB:       { character: 'structured Cabernet with cassis-and-cedar depth',     bridge1: 'the Cabernet body wraps {foodTarget}',          bridge2: 'the cassis-and-cedar edge frames {foodSubj}', verdictHook: 'Cabernet Sauvignon' },
-  GENERIC_ELEGANT_RED: { character: 'red-fruit-and-spice elegance',              bridge1: 'the silky body carries {foodTarget}',           bridge2: 'the cherry-pepper note frames {foodSubj}',  verdictHook: 'elegant red' },
-};
-
 // Try to load mined profiles (auto-generated). Optional dependency.
 let MINED_PROFILES = {};
 let CURATED_PROFILES = {};
@@ -401,9 +364,6 @@ function profileFor(drink) {
   if (dc === 'BOURBON_BOLD') {
     const sub = whiskeyVoiceSubclass(drink);
     base = WHISKEY_VOICE_DEFAULTS[sub] || WHISKEY_VOICE_DEFAULTS.BOURBON;
-  } else if (dc === 'ELEGANT_RED') {
-    const sub = elegantRedVoiceSubclass(drink);
-    base = ELEGANT_RED_VOICE_DEFAULTS[sub] || ELEGANT_RED_VOICE_DEFAULTS.GENERIC_ELEGANT_RED;
   } else {
     base = DRINK_CLASS_DEFAULT[dc] || DRINK_CLASS_DEFAULT.BOURBON_BOLD;
   }
@@ -754,35 +714,6 @@ function _loadEditorialPhrases() {
   } catch (e) {
     _editorialPhrases = {};
   }
-  // Merge mined gold corpus (keyed as 'dc|fc' using engine's class names directly)
-  try {
-    const gold = require('./gold_corpus_mined').GOLD_CORPUS_MINED || {};
-    if (!_editorialPhrases.verdict) _editorialPhrases.verdict = {};
-    if (!_editorialPhrases.verdict.gold) _editorialPhrases.verdict.gold = {};
-    for (const ck of Object.keys(gold)) {
-      const [dc, fc] = ck.split('|');
-      if (!_editorialPhrases.verdict.gold[dc]) _editorialPhrases.verdict.gold[dc] = {};
-      _editorialPhrases.verdict.gold[dc][fc] = gold[ck];
-    }
-  } catch (e) { /* gold corpus optional */ }
-  // Merge mined corpus for excellent/strong/works (4,770+ entries, 371 buckets)
-  try {
-    const all = require('./corpus_mined_all_tiers').CORPUS_MINED || {};
-    if (!_editorialPhrases.verdict) _editorialPhrases.verdict = {};
-    for (const tier of Object.keys(all)) {
-      if (!_editorialPhrases.verdict[tier]) _editorialPhrases.verdict[tier] = {};
-      for (const ck of Object.keys(all[tier])) {
-        const [dc, fc] = ck.split('|');
-        if (!_editorialPhrases.verdict[tier][dc]) _editorialPhrases.verdict[tier][dc] = {};
-        const existing = _editorialPhrases.verdict[tier][dc][fc] || [];
-        const seen = new Set(existing.map(e => e.template));
-        for (const e of all[tier][ck]) {
-          if (!seen.has(e.template)) { existing.push(e); seen.add(e.template); }
-        }
-        _editorialPhrases.verdict[tier][dc][fc] = existing;
-      }
-    }
-  } catch (e) { /* corpus optional */ }
   return _editorialPhrases;
 }
 const REPO_ROOT_PATH = path.resolve(__dirname, '..');
@@ -801,25 +732,12 @@ function _editorialVerdict(tier, drink, food, profile) {
   const v9fc = FC_TO_V9[fc];
   if (!v9fc) return null;
 
-  // Always merge: specific (dc × fc) + (v9dc × v9fc) + DEFAULT × v9fc + cross-food (tier × dc × *)
-  // The 12-gate filter stack below rejects mismatches. More candidates = higher corpus hit rate.
-  let entries = [];
-  const _seenT = new Set();
-  function _add(arr) {
-    if (!Array.isArray(arr)) return;
-    for (const e of arr) { if (!_seenT.has(e.template)) { entries.push(e); _seenT.add(e.template); } }
+  let entries = (tierBucket[v9dc] || {})[v9fc];
+  if (!entries || !entries.length) {
+    // Try DEFAULT drink class as fallback
+    entries = (tierBucket.DEFAULT || {})[v9fc];
   }
-  _add((tierBucket[dc] || {})[fc]);
-  _add((tierBucket[v9dc] || {})[v9fc]);
-  _add((tierBucket.DEFAULT || {})[v9fc]);
-  // Cross-food: any (tier × dc × *) entries — food-noun filter rejects mismatches
-  const _dcBucket = tierBucket[dc] || {};
-  for (const fk of Object.keys(_dcBucket)) { if (fk !== fc) _add(_dcBucket[fk]); }
-  if (v9dc !== dc) {
-    const _v9dcBucket = tierBucket[v9dc] || {};
-    for (const fk of Object.keys(_v9dcBucket)) { if (fk !== v9fc) _add(_v9dcBucket[fk]); }
-  }
-  if (!entries.length) return null;
+  if (!entries || !entries.length) return null;
 
   // Reject standalone tier-word templates (e.g. "Strong.", "Excellent.") — they
   // produce notes ending with a bare verdict word and no closer phrase.
@@ -839,7 +757,7 @@ function _editorialVerdict(tier, drink, food, profile) {
   const foodNameLower = food.name.toLowerCase();
   const foodProfile = (food.profile || []).join(' ').toLowerCase();
   const allowedFoodContext = foodCharText + ' ' + foodNameLower + ' ' + foodProfile;
-  const FOOD_NOUN_RX = /\b(marrow|crab|cream|potato|shellfish|brulee|cake|fries|fish|chicken|halibut|tuna|trout|salmon|seabass|burrata|escargot|tartare|asparagus|broccoli|spinach|carrot|brownie|cheesecake|beignets|wedge|caesar|gumbo|chowder|bisque|ribeye|filet|steak|tomahawk|pork|belly|sprouts|mushroom|shrimp|cocoa|chocolate|custard|raisin|umami|broth|cheddar|gruyere|honey-glazed|sugar|scallops|scallop|swordfish|squash|au gratin|gratin|broccolini|peanut|mac|mocha)\b/gi;
+  const FOOD_NOUN_RX = /\b(marrow|crab|cream|potato|shellfish|brulee|cake|fries|fish|chicken|halibut|tuna|trout|salmon|seabass|burrata|escargot|tartare|asparagus|broccoli|spinach|carrot|brownie|cheesecake|beignets|wedge|caesar|gumbo|chowder|bisque|ribeye|filet|steak|tomahawk|pork|belly|sprouts|mushroom|shrimp|cocoa|chocolate|custard|raisin|umami|broth|cheddar|gruyere|honey-glazed|sugar)\b/gi;
   pool = pool.filter(e => {
     const t = e.template.toLowerCase();
     let m;
@@ -874,21 +792,10 @@ function _editorialVerdict(tier, drink, food, profile) {
     COCKTAIL_LIGHT:  ['gimlet','french 75','margarita'],
     HEAVY_SPIRIT:    [],
   };
-  // Compatible classes — share keyword spaces (BIG_RED ↔ ELEGANT_RED both use
-  // varietal terms like Cab/Pinot/Bordeaux that overlap in real wine speak).
-  // Subclass filter (below) handles intra-bucket varietal precision.
-  const COMPATIBLE_CLASSES = {
-    BIG_RED:     ['ELEGANT_RED'],
-    ELEGANT_RED: ['BIG_RED'],
-  };
   const myClassKeywords = new Set(DRINK_CLASS_KEYWORDS[dc] || []);
-  for (const compat of COMPATIBLE_CLASSES[dc] || []) {
-    for (const kw of (DRINK_CLASS_KEYWORDS[compat] || [])) myClassKeywords.add(kw);
-  }
   const foreignKeywords = [];
   for (const klass of Object.keys(DRINK_CLASS_KEYWORDS)) {
     if (klass === dc) continue;
-    if ((COMPATIBLE_CLASSES[dc] || []).includes(klass)) continue;
     for (const kw of DRINK_CLASS_KEYWORDS[klass]) {
       if (!myClassKeywords.has(kw)) foreignKeywords.push(kw);
     }
@@ -901,32 +808,6 @@ function _editorialVerdict(tier, drink, food, profile) {
     }
     return true;
   });
-
-  // Sub-class filter for ELEGANT_RED (Pinot vs Cab vs Nebbiolo vs Spanish, etc.)
-  if (dc === 'ELEGANT_RED' || dc === 'BIG_RED') {
-    const sub = (dc === 'ELEGANT_RED') ? elegantRedVoiceSubclass(drink) : 'CAB';
-    const ELEGANT_SUBCLASS_FOREIGN = {
-      PINOT:     ['cab','cabernet','bordeaux','barolo','barbaresco','nebbiolo','malbec','zinfandel','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','ch\u00e2teauneuf','chateauneuf','brunello','gigondas','bandol','grenache','syrah','mourv'],
-      CAB:       ['pinot','willamette','barolo','barbaresco','nebbiolo','malbec','zinfandel','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','ch\u00e2teauneuf','chateauneuf','brunello','gigondas','bandol'],
-      NEBBIOLO:  ['cab','cabernet','bordeaux','pinot','malbec','zinfandel','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','ch\u00e2teauneuf','chateauneuf','brunello','gigondas','bandol'],
-      CHIANTI:   ['cab','cabernet','bordeaux','pinot','malbec','zinfandel','barolo','barbaresco','nebbiolo','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','ch\u00e2teauneuf','chateauneuf','gigondas','bandol'],
-      RHONE:     ['cab','cabernet','bordeaux','pinot','malbec','zinfandel','barolo','barbaresco','nebbiolo','chianti','sangiovese','tempranillo','rioja','menc\u00eda','mencia','brunello'],
-      SPANISH:   ['cab','cabernet','bordeaux','pinot','malbec','zinfandel','barolo','barbaresco','nebbiolo','chianti','sangiovese','rhone','rh\u00f4ne','beaucastel','ch\u00e2teauneuf','chateauneuf','brunello','gigondas','bandol'],
-      MALBEC:    ['cab','cabernet','bordeaux','pinot','zinfandel','barolo','barbaresco','nebbiolo','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','brunello'],
-      ZIN:       ['cab','cabernet','bordeaux','pinot','malbec','barolo','barbaresco','nebbiolo','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','ch\u00e2teauneuf','chateauneuf','brunello'],
-      CAB_FRANC: ['cab','cabernet','bordeaux','pinot','malbec','zinfandel','barolo','barbaresco','nebbiolo','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia'],
-      BORDEAUX:  ['pinot','malbec','zinfandel','barolo','barbaresco','nebbiolo','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','brunello','gigondas','bandol'],
-      GENERIC_ELEGANT_RED: [],
-    };
-    const subForeign = ELEGANT_SUBCLASS_FOREIGN[sub] || [];
-    pool = pool.filter(e => {
-      const lower = e.template.toLowerCase();
-      for (const kw of subForeign) {
-        if (new RegExp('\\b' + kw + '\\b', 'i').test(lower)) return false;
-      }
-      return true;
-    });
-  }
 
   // Sub-class filter for whiskey-family (BOURBON_BOLD splits into BOURBON / SCOTCH / IRISH / etc.)
   if (dc === 'BOURBON_BOLD') {
@@ -1216,8 +1097,6 @@ function pickAction(tier, drink, food) {
 module.exports = {
   generate, profileFor, buildBody, pickVerdict, pickAction,
   drinkFlavorsFor, findChemistryClause, clauseFitsDrinkClass,
-  whiskeyVoiceSubclass, elegantRedVoiceSubclass,
-  BOTTLE_PROFILE, DRINK_CLASS_DEFAULT, VERDICT_PATTERNS, WHISKEY_VOICE_DEFAULTS, ELEGANT_RED_VOICE_DEFAULTS,
-};
-SS_DEFAULT, VERDICT_PATTERNS, WHISKEY_VOICE_DEFAULTS, ELEGANT_RED_VOICE_DEFAULTS,
+  whiskeyVoiceSubclass,
+  BOTTLE_PROFILE, DRINK_CLASS_DEFAULT, VERDICT_PATTERNS, WHISKEY_VOICE_DEFAULTS,
 };

@@ -1,0 +1,908 @@
+=== 300-PAIR STRATIFIED SAMPLE (seed 20260427) ===
+  gold: 60
+  excellent: 60
+  strong: 60
+  works: 60
+  avoid: 60
+
+--- #1 [gold     ][dxf] Adictivo Reposado x Kansas City ---
+* Adictivo Reposado's aged-agave character runs straight into the KC's lean-bold strip with savory grain: the barrel-rested body handles the strip steak, and the oak threads the cut. Gold standard; pour Adictivo Reposado on the KC, that's the play.
+
+--- #2 [gold     ][dxf] Scavino Barolo x The Tomahawk ---
+* Scavino Barolo's concentrated dark-fruit and tannin runs straight into the Tomahawk's theatrical bone-in marbling and smoky char: the structured body wraps the 40oz showpiece, and the cassis frames the cut. Gold standard; if a guest asks what to drink with the Tomahawk, the answer is Scavino Barolo.
+
+--- #3 [gold     ][dxf] Avion 44 x Cowboy Ribeye ---
+* Avion 44's aged-agave character runs straight into the cowboy ribeye's marbled char-and-fat richness: the barrel-rested body handles the cap-fat ribeye, and the oak threads the cut. Gold standard; recommend the añejo-on-bone-in-ribeye pairing without hesitation.
+
+--- #4 [gold     ][dxf] Bone-In Filet x Weller Millennium ---
+* Weller Millennium -- 20-year wheated bourbon, heavily allocated, the white-whale of the Weller family. The bourbon depth settles into the bone-enhanced filet, and the vanilla softens the cut. Gold standard; Weller Millennium into the bone-in filet -- textbook.
+
+--- #5 [gold     ][dxf] Jung and Wulff Trinidad x Cheesecake ---
+* Jung and Wulff Trinidad's dense-spirit weight meets head-on the cheesecake's dense tangy dairy custard: the heavy body handles the cheesecake, and the deep backbone frames the dessert. Gold standard; heavy pour on the cheesecake -- pour it and step back.
+
+--- #6 [gold     ][dxf] Quilt Cabernet Sauvignon x Kansas City ---
+* Quilt Cabernet Sauvignon -- Napa Cab with ripe blackberry, dark chocolate, toasted vanilla, soft polished tannin. The structured body wraps the strip steak, and the cassis frames the cut. Gold standard; Napa Cab on the KC -- pour it and step back.
+
+--- #7 [gold     ][dxf] Pappy Van Winkle 13 Year Rye x The Tomahawk ---
+* Pappy Van Winkle 13 Year Rye -- allocated, aged rye, caramel-spice. The allocated rye depth threads the 40oz showpiece, and the caramel-spice softens the cut. Gold standard; Pappy Van Winkle 13 Year Rye on the Tomahawk -- the call you don't second-guess.
+
+--- #8 [gold     ][dxf] Venge Family Reserve x The Tomahawk ---
+* Venge Family Reserve's concentrated dark-fruit and tannin runs straight into the Tomahawk's theatrical bone-in marbling and smoky char: the structured body wraps the 40oz showpiece, and the cassis frames the cut. Gold standard; for the Tomahawk, Venge Family Reserve is the answer, full stop.
+
+--- #9 [gold     ][dxf] Tuxedo-Crusted Yellowfin Tuna x Jean-Pierre Grossot Chablis ---
+* Jean-Pierre Grossot Chablis -- Burgundy Chablis, flint, lemon. The Chablis flint frames the tuna, and the citrus cuts the plate. Peak Chablis for tuxedo tuna — Burgundian precision on the crusted classic.
+
+--- #10 [gold     ][dxf] Glenlivet 12 x Cheesecake ---
+* Glenlivet 12 -- entry Speyside, pear, honey. The bourbon-cask pear lifts the cheesecake, and the oak rounds the cream. Gold standard; Glenlivet 12 on the cheesecake -- the call you don't second-guess.
+
+--- #11 [gold     ][dxf] Ghost Block Cabernet Sauvignon x Cowboy Ribeye ---
+* Ghost Block Cabernet Sauvignon -- Oakville Cab with dense blackcurrant, dark cherry, graphite, toasted oak. The structured body wraps the cap-fat ribeye, and the cassis frames the cut. Gold standard; the Napa Cab that defines the cowboy ribeye.
+
+--- #12 [gold     ][dxf] Thomas S. Moore Chardonnay Cask x Bone-In Filet ---
+* Thomas S. Moore Chardonnay Cask's oak-and-vanilla bourbon depth runs straight into the bone-in filet's bone-enhanced buttery tenderness: the bourbon depth settles into the bone-enhanced filet, and the vanilla softens the cut. Gold standard; pour Thomas S. Moore Chardonnay Cask on the bone-in filet, that's the play.
+
+--- #13 [gold     ][dxf] Bone Marrow x Fernet Branca ---
+* Fernet Branca -- cask-strength, menthol, nuclear bitter. The nuclear-bitter edge cuts the rich marrow, and the menthol frames the starter. Gold standard; for the bone marrow, Fernet Branca is the answer, full stop.
+
+--- #14 [gold     ][dxf] Jax Calesa Vineyard Pinot Noir x Filet Mignon ---
+* Jax Calesa Vineyard Pinot Noir's silky Pinot Noir with cherry-and-forest-floor lift meets head-on the filet's lean buttery tenderness: the Pinot body brightens the lean buttery filet, and the cherry-and-earth note frames the cut. Peak Pomerol for filet — plush Merlot on the delicate cut.
+
+--- #15 [gold     ][dxf] Old Grand-Dad 16 Year x Filet Mignon ---
+* Old Grand-Dad 16 Year's 16yr OGD high-rye bourbon meets head-on the filet's lean buttery tenderness: the bourbon depth settles into the lean buttery filet, and the vanilla softens the cut. Gold standard; for the filet, Old Grand-Dad 16 Year is the answer, full stop.
+
+--- #16 [gold     ][dxf] Corazon Weller x Brussels and Belly ---
+* Corazon Weller's aged-agave character meets head-on Brussels + Belly's maple-pork-belly glaze over charred sprouts: the barrel-rested body handles the pork-belly plate, and the oak threads the side. Gold standard; the unskippable añejo-on-rich-side pour.
+
+--- #17 [gold     ][dxf] Seasonal Vegetables x St Supéry Sauvignon Blanc ---
+* St Supéry Sauvignon Blanc -- Napa Dollarhide Sauv Blanc with lemon, grapefruit, gooseberry, clean lively. The bright acid lifts the seasonal vegetables, and the citrus cuts the side. Peak pour.
+
+--- #18 [gold     ][dxf] Porterhouse x Domaine du Grand Tinel ---
+* Domaine du Grand Tinel's concentrated dark-fruit and tannin runs straight into the porterhouse's dual strip-and-filet character: the structured body wraps the dual-cut steak, and the cassis frames the cut. Gold standard; for the porterhouse, Domaine du Grand Tinel is the answer, full stop.
+
+--- #19 [gold     ][dxf] Macauley Petite Syrah x Cowboy Ribeye ---
+* Macauley Petite Syrah's concentrated dark-fruit and tannin runs straight into the cowboy ribeye's marbled char-and-fat richness: the structured body wraps the cap-fat ribeye, and the cassis frames the cut. Gold standard; big-red Cab on the cowboy ribeye -- pour it and step back.
+
+--- #20 [gold     ][dxf] J Davies Ferrington Vineyards x Filet Mignon ---
+* J Davies Ferrington Vineyards' silky Pinot Noir with cherry-and-forest-floor lift runs straight into the filet's lean buttery tenderness: the Pinot body brightens the lean buttery filet, and the cherry-and-earth note frames the cut. Peak benchmark Pinot for filet — Willamette terroir frames the delicate cut.
+
+--- #21 [gold     ][dxf] Elijah Craig Private Barrel x Kansas City ---
+* Elijah Craig Private Barrel's oak-and-vanilla bourbon depth meets head-on the KC's lean-bold strip with savory grain: the bourbon depth settles into the strip steak, and the vanilla softens the grilled char. Gold standard; the bourbon that defines the KC.
+
+--- #22 [gold     ][dxf] Peanut Butter Brownie x Graham's 20 Year Tawny ---
+* Graham's 20 Year Tawny -- aged tawny port, nutty-caramel, Douro classic. The tawny depth wraps the PB brownie, and the walnut-caramel edge threads the dessert. Peak LBV for chocolate brownie — approachable port lineup on the dense bake.
+
+--- #23 [gold     ][dxf] Four Roses Yellow Label x Mushrooms ---
+* Four Roses Yellow Label -- floral, light-bodied entry bourbon. The bourbon depth settles into the mushrooms, and the oak frames the umami. Gold standard; for the mushrooms, Four Roses Yellow Label is the answer, full stop.
+
+--- #24 [gold     ][dxf] Blood Oath Pact 9 x Kansas City ---
+* Blood Oath Pact 9's oak-and-vanilla bourbon depth meets head-on the KC's lean-bold strip with savory grain: the bourbon depth settles into the strip steak, and the vanilla softens the grilled char. Gold standard; the bourbon that defines the KC.
+
+--- #25 [gold     ][dxf] Blade & Bow x Filet Mignon ---
+* Blade & Bow's oak-and-vanilla bourbon depth runs straight into the filet's lean buttery tenderness: the bourbon depth settles into the lean buttery filet, and the vanilla softens the cut. Gold standard; pour Blade & Bow on the filet, that's the play.
+
+--- #26 [gold     ][dxf] Austin Hope Cabernet Sauvignon x Cowboy Ribeye ---
+* Austin Hope Cabernet Sauvignon -- Paso Robles Cab with ripe plum, dark cherry, mocha, warm spice. The structured body wraps the cap-fat ribeye, and the cassis frames the cut. Gold standard; Austin Hope Cabernet Sauvignon on the cowboy ribeye -- the call you don't second-guess.
+
+--- #27 [gold     ][dxf] Mushrooms x Scavino Barolo ---
+* Scavino Barolo's concentrated dark-fruit and tannin runs straight into the mushrooms' earthy umami weight: the structured body wraps the mushrooms, and the cassis frames the side. Gold standard; if a guest asks what to drink with the mushrooms, the answer is Scavino Barolo.
+
+--- #28 [gold     ][dxf] RAEN Royal St Robert x Filet Mignon ---
+* RAEN Royal St Robert's silky Pinot Noir with cherry-and-forest-floor lift meets head-on the filet's lean buttery tenderness: the Pinot body brightens the lean buttery filet, and the cherry-and-earth note frames the cut. Peak food-friendly Pinot for filet — reliable Russian River on the delicate cut.
+
+--- #29 [gold     ][dxf] Empress 1908 Gin x Burrata ---
+* Empress 1908 Gin's botanical-driven lift meets head-on the burrata's fresh basil-tomato-cream delicacy: the floral edge frames the burrata, and the juniper threads the starter. Gold standard; for the burrata, Empress 1908 Gin is the answer, full stop.
+
+--- #30 [gold     ][dxf] The BG x Cowboy Ribeye ---
+* The BG's citrus-and-bright cocktail lift meets head-on the cowboy ribeye's marbled char-and-fat richness: the bright build frames the cap-fat ribeye, and the citrus cuts the cut. Peak starter pairing — both lean into garden-fresh, clean profiles.
+
+--- #31 [gold     ][dxf] Dewar's White Label x Kansas City ---
+* Dewar's White Label's Highland blend with Aberfeldy-malt core runs straight into the KC's lean-bold strip with savory grain: the scotch depth settles into the strip steak, and the smoke meets the char. Gold standard; if a guest asks what to drink with the KC, the answer is Dewar's White Label.
+
+--- #32 [gold     ][dxf] Schloss Vollrads Riesling x Swordfish ---
+* Schloss Vollrads Riesling -- Rheingau Riesling, off-dry German classic, lime-and-petrol. The off-dry body brightens the swordfish, and the lime-petrol note threads the plate. Peak special-occasion Chardonnay for swordfish — Napa opulence on the grilled classic.
+
+--- #33 [gold     ][dxf] Corazon Reposado x Cowboy Ribeye ---
+* Corazon Reposado -- Sazerac's tequila brand, single-estate highland agave. The barrel-rested body handles the cap-fat ribeye, and the oak threads the cut. Gold standard; recommend the añejo-on-bone-in-ribeye pairing without hesitation.
+
+--- #34 [gold     ][dxf] Don Fulano Blanco x Seared Scallops ---
+* Don Fulano Blanco -- premium highland blanco, 80 proof, refined craft. The unaged body brightens the scallops, and the agave-citrus thread frames the starter. Gold standard; the light-spirit-on-hearty-soup lock that sells itself.
+
+--- #35 [gold     ][dxf] Roast Half Chicken x Cristom Mt Jefferson Cuvée ---
+* Cristom Mt Jefferson Cuvée -- Willamette Pinot, red cherry, silky tannins. The silky red-fruit body wraps the roast chicken, and the cherry-fruit frames the plate. Peak Italian-food-wine for chicken across most seasonal preparations.
+
+--- #36 [gold     ][dxf] Cowboy Ribeye x Elijah Craig 18 Year ---
+* Elijah Craig 18 Year -- Heaven Hill aged single-barrel, tobacco, dried fruit). The bourbon depth settles into the cap-fat ribeye, and the vanilla softens the grilled char. Gold standard; the bourbon-on-bone-in-ribeye match that closes the table.
+
+--- #37 [gold     ][dxf] Chocolate Cake x Graham's 2017 Vintage Port ---
+* Graham's 2017 Vintage Port -- vintage port, structured dark-fruit, cellar-worthy. The vintage-port depth wraps the chocolate cake, and the dark-fruit-and-spice edge threads the dessert. Gold standard; vintage port on the chocolate cake -- pour it and step back.
+
+--- #38 [gold     ][dxf] Baileys Irish Cream x Chocolate Cake ---
+* Baileys Irish Cream's sweet liqueur character runs straight into the chocolate cake's layered chocolate body: the digestif body mirrors the chocolate cake, and the spice threads the dessert. Gold standard; this is the digestif-on-dessert call you put in front of every table.
+
+--- #39 [gold     ][dxf] Old Elk Cigar Cut x Cowboy Ribeye ---
+* Old Elk Cigar Cut's oak-and-vanilla bourbon depth runs straight into the cowboy ribeye's marbled char-and-fat richness: the bourbon depth settles into the cap-fat ribeye, and the vanilla softens the grilled char. Gold standard; the bourbon-on-bone-in-ribeye match that closes the table.
+
+--- #40 [gold     ][dxf] Doctor Bird Jamaica Rum x Chocolate Brownie ---
+* Doctor Bird Jamaica Rum's dense-spirit weight runs straight into the brownie's fudgy cocoa-and-chocolate weight: the heavy body handles the brownie, and the deep backbone frames the dessert. Gold standard; for the brownie, Doctor Bird Jamaica Rum is the answer, full stop.
+
+--- #41 [gold     ][dxf] Glenfiddich 18 x Chocolate Brownie ---
+* Glenfiddich 18 -- aged 18yr Speyside, sherry-finish, oak. The aged-Speyside depth wraps the brownie, and the sherry-finish frames the dessert. Gold standard; Glenfiddich 18 into the brownie -- textbook.
+
+--- #42 [gold     ][dxf] Clermont Steep x Filet Mignon ---
+* Clermont Steep's Jim Beam's wheated expression meets head-on the filet's lean buttery tenderness: the bourbon depth settles into the lean buttery filet, and the vanilla softens the cut. Gold standard; bourbon on the filet -- pour it and step back.
+
+--- #43 [gold     ][dxf] Iron Fish Gin x Seared Scallops ---
+* Iron Fish Gin's botanical-driven lift runs straight into the scallops' caramelized sear-and-sweet richness: the floral edge frames the scallops, and the juniper threads the starter. Gold standard; if a guest asks what to drink with the scallops, the answer is Iron Fish Gin.
+
+--- #44 [gold     ][dxf] St Supéry Sauvignon Blanc x Burrata ---
+* St Supéry Sauvignon Blanc -- Napa Dollarhide Sauv Blanc with lemon, grapefruit, gooseberry, clean lively. The bright acid lifts the burrata, and the citrus cuts the starter. Peak accessible NZ Sauv Blanc for burrata — reliable by-the-glass pairing.
+
+--- #45 [gold     ][dxf] Hendricks Orbium x Burrata ---
+* Hendricks Orbium's botanical-driven lift runs straight into the burrata's fresh basil-tomato-cream delicacy: the floral edge frames the burrata, and the juniper threads the starter. Gold standard; pour Hendricks Orbium on the burrata, that's the play.
+
+--- #46 [gold     ][dxf] Four Roses Small Batch Select x Kansas City ---
+* Four Roses Small Batch Select's oak-and-vanilla bourbon depth meets head-on the KC's lean-bold strip with savory grain: the bourbon depth settles into the strip steak, and the vanilla softens the grilled char. Gold standard; Four Roses Small Batch Select into the KC -- textbook.
+
+--- #47 [gold     ][dxf] Peanut Butter Brownie x Frangelico ---
+* Frangelico's Piedmont hazelnut depth to mocha at after-dinner register runs straight into the PB brownie's peanut-butter-and-chocolate fudge: the digestif body mirrors the PB brownie, and the spice threads the dessert. Gold standard; recommend the digestif-on-dessert pairing without hesitation.
+
+--- #48 [gold     ][dxf] Clase Azul Plata x Seafood Tower ---
+* Clase Azul Plata -- hand-crafted ceramic decanter, silky Jalisco blanco, slow-cooked agave. The silky-blanco lift brightens the seafood tower, and the Jalisco terroir threads the starter. Gold standard; the light-spirit-on-hearty-soup lock that sells itself.
+
+--- #49 [gold     ][dxf] Don Julio 70th x Kansas City ---
+* Don Julio 70th's aged-agave character meets head-on the KC's lean-bold strip with savory grain: the barrel-rested body handles the strip steak, and the oak threads the cut. Gold standard; the añejo tequila that defines the KC.
+
+--- #50 [gold     ][dxf] Wheatley Vodka x Shrimp Cocktail ---
+* Wheatley Vodka's crystalline neutrality meets head-on the shrimp cocktail's cool brine-and-citrus shellfish: the unflavored body sits with the chilled shrimp, and the crisp profile carries the starter. Gold standard; the vodka that defines the shrimp cocktail.
+
+--- #51 [gold     ][dxf] Blanton's Gold x Cowboy Ribeye ---
+* Blanton's Gold's oak-and-vanilla bourbon depth runs straight into the cowboy ribeye's marbled char-and-fat richness: the bourbon depth settles into the cap-fat ribeye, and the vanilla softens the grilled char. Gold standard; this is the bourbon-on-bone-in-ribeye pour the table writes home about.
+
+--- #52 [gold     ][dxf] Schloss Vollrads Riesling x Honey Roasted Carrots ---
+* Schloss Vollrads Riesling -- Rheingau Riesling, off-dry German classic, lime-and-petrol. The off-dry body brightens the honey carrots, and the lime-petrol note threads the side. Peak pour.
+
+--- #53 [gold     ][dxf] Basil Hayden's Red Wine Cask x Chocolate Brownie ---
+* Basil Hayden's Red Wine Cask -- high-rye mash bill base, 80-proof softer approach. The bourbon depth settles into the brownie, and the spice threads the dessert. Gold standard; bourbon on the brownie -- pour it and step back.
+
+--- #54 [gold     ][dxf] Shrimp Bisque x Far Niente Chardonnay ---
+* Far Niente Chardonnay -- Napa Chardonnay, tropical fruit, oak. The Chardonnay weight matches the shrimp bisque, and the tropical fruit lifts the bowl. Peak special-occasion Chardonnay for bisque — Napa opulence on the cream starter.
+
+--- #55 [gold     ][dxf] Clam Chowder x Keenan Chardonnay ---
+* Keenan Chardonnay -- Spring Mountain Chardonnay, oaked Napa, tropical-fruit and toast. The toasted-Chard body lifts the chowder, and the tropical-fruit edge frames the bowl. Peak balanced Chardonnay for clam chowder — Napa structure on the creamy classic.
+
+--- #56 [gold     ][dxf] Escargot x Mata Hari Absinthe ---
+* Mata Hari Absinthe's bitter-herb aperitivo edge runs straight into the escargot's garlic-herb-butter savory weight: the herbal cut works the buttered escargot, and the amaro backbone frames the starter. Gold standard; pour Mata Hari Absinthe on the escargot, that's the play.
+
+--- #57 [gold     ][dxf] Heitz Trailside Vineyard x Filet Mignon ---
+* Heitz Trailside Vineyard -- Napa Cab icon, eucalyptus, graphite. The icon-Cab body handles the lean buttery filet, and the graphite-and-mint plays against the cut. Gold standard; Heitz Trailside Vineyard into the filet -- textbook.
+
+--- #58 [gold     ][dxf] Pierre Ferrand Cognac x Creme Brulee ---
+* Pierre Ferrand Cognac -- artisan cognac, orange peel, oak. The artisan-cognac depth wraps the brulee, and the orange-peel frames the dessert. Gold standard; if a guest asks what to drink with the brulee, the answer is Pierre Ferrand Cognac.
+
+--- #59 [gold     ][dxf] Malibu Rum x Cheesecake ---
+* Malibu Rum's silver-spirit lift with agave-citrus edge runs straight into the cheesecake's dense tangy dairy custard: the unaged body brightens the cheesecake, and the agave-citrus thread frames the dessert. Gold standard; the light-spirit-on-hearty-soup lock that sells itself.
+
+--- #60 [gold     ][dxf] Frangelico x Chocolate Brownie ---
+* Frangelico's Piedmont hazelnut depth to mocha at after-dinner register runs straight into the brownie's fudgy cocoa-and-chocolate weight: the digestif body mirrors the brownie, and the spice threads the dessert. Gold standard; this is the digestif-on-dessert call you put in front of every table.
+
+--- #61 [excellent][dxf] El Mayor Extra Anejo x Filet Mignon ---
+El Mayor Extra Anejo's aged-agave character lifts the filet's lean buttery tenderness: the barrel-rested body handles the lean buttery filet, and the oak threads the cut. Excellent; extra añejo tequila on the filet -- the kind of pour that earns a regular.
+
+--- #62 [excellent][dxf] Never Say Die Rye x Filet Mignon ---
+Never Say Die Rye's rye-spice character lifts the filet's lean buttery tenderness: the rye spice cuts the lean buttery filet, and the rye edge frames the cut. Excellent; Old No.
+
+--- #63 [excellent][dxf] WhistlePig PiggyBack 6 Year x Grilled Caesar ---
+WhistlePig PiggyBack 6 Year's rye-spice character meets at register with the Caesar's charred-romaine and anchovy edge: the rye spice cuts the grilled Caesar, and the rye edge frames the bowl. Excellent; CC 43 Year's 43yr character engages the bleu at collector register.
+
+--- #64 [excellent][dxf] Kansas City x Basil Hayden's 10 Year ---
+Basil Hayden's 10 Year's aged oak and rye spice lifts the KC's lean-bold strip with savory grain: the bourbon depth settles into the strip steak, and the vanilla softens the grilled char. Excellent; CC 43 Year's aged depth handles strip marbling at collector register — where CC handles it at heritage register, the 43 closes with rare-aged gravity.
+
+--- #65 [excellent][dxf] Yamazaki 18 Year x Prime Tartare ---
+Yamazaki 18 Year -- aged Suntory, mizunara cask, silky. The mizunara-cask depth wraps the tartare, and the oak frames the umami. Excellent; JD Bonded's backbone cuts the glaze harder than Old No; Fernet Branca still cuts it harder.
+
+--- #66 [excellent][dxf] Vin Santo x Creme Brulee ---
+Vin Santo -- Tuscan dessert wine, dried-fruit and honey, biscotti pour. The dried-fruit body mirrors the brulee, and the honey threads the cream. Excellent; Vin Santo dials in cleanly on the brulee.
+
+--- #67 [excellent][dxf] Glenfiddich 18 x Cowboy Ribeye ---
+Glenfiddich 18 -- aged 18yr Speyside, sherry-finish, oak. The aged-Speyside depth wraps the cap-fat ribeye, and the smoke meets the char. Excellent; Fortuna's New Zealand craft-distillery character handles strip marbling at distinctive-terroir register.
+
+--- #68 [excellent][dxf] Oban 18 x Kansas City ---
+Oban 18 -- aged maritime Highland, spice, honey. The coastal-Highland weight wraps the strip steak, and the smoke meets the char. Excellent; CC 43 Year's aged depth handles strip marbling at collector register — where CC handles it at heritage register, the 43 closes with rare-aged gravity.
+
+--- #69 [excellent][dxf] Crab Cake x Codigo 1530 Rosa ---
+Codigo 1530 Rosa's reposado aged in uncharred Napa Cabernet wine barrels meets at register with the crab cake's delicate sweet crab in a crisp crust: the barrel-rested body handles the delicate crab cake, and the oak threads the starter. Excellent; the crystallino-filtered-anejo character plays the maple glaze at trendy register — unexpected pairing through filtered-depth.
+
+--- #70 [excellent][dxf] Crab Cake x Long Road Gin ---
+Long Road Gin's botanical-driven lift meets at register with the crab cake's delicate sweet crab in a crisp crust: the floral edge frames the delicate crab cake, and the juniper threads the starter. Excellent; Hendrick's cucumber-rose profile is the crowd-pleasing Hendrick's-tower pairing; Neptunia's coastal-maritime expression is the more thematic Hendrick's tower choice.
+
+--- #71 [excellent][dxf] Crab Cake x Detroit City Gin ---
+Detroit City Gin -- Detroit Distillery, hometown craft, urban juniper. The city-distilled juniper frames the delicate crab cake, and the local-spirit character meets the starter. Excellent; Hendrick's cucumber-rose profile is the crowd-pleasing Hendrick's-tower pairing; Neptunia's coastal-maritime expression is the more thematic Hendrick's tower choice.
+
+--- #72 [excellent][dxf] Brussels and Belly x Michter's 10 Year Rye ---
+Michter's 10 Year Rye's rye-spice character carries cleanly into Brussels + Belly's maple-pork-belly glaze over charred sprouts: the rye spice cuts the pork-belly plate, and the rye edge frames the side. Excellent; EHT Full Proof meets the glaze at historic Kentucky register; Fernet Branca still cuts it harder.
+
+--- #73 [excellent][dxf] G4 Blanco x Prime Tartare ---
+G4 Blanco's silver-spirit lift with agave-citrus edge lifts the tartare's raw beef-and-brine umami: the unaged body brightens the tartare, and the agave-citrus thread frames the starter. Excellent; the starter sets up the cut at full register.
+
+--- #74 [excellent][dxf] Clase Azul Plata x Seafood Tower ---
+Clase Azul Plata -- hand-crafted ceramic decanter, silky Jalisco blanco, slow-cooked agave. The silky-blanco lift brightens the seafood tower, and the Jalisco terroir threads the starter. Excellent; Clase Azul Plata sits in the pocket on the seafood tower.
+
+--- #75 [excellent][dxf] Mushrooms x Bulleit Bourbon ---
+Bulleit Bourbon -- high-rye mash bill, spice-forward, oak. The rye-spice edge cuts the mushrooms, and the oak frames the umami. Excellent; Fortuna's southern-hemisphere terroir threads mushroom earthiness with NZ-whisky distinction.
+
+--- #76 [excellent][dxf] Glenmorangie 18 x Carrot Cake ---
+Glenmorangie 18 -- aged Highland, Oloroso finish, dried-fruit depth. The Oloroso-cask depth wraps the carrot cake, and the aged-Highland weight frames the dessert. Excellent; aged Highland Scotch when a guest asks what works on the carrot cake.
+
+--- #77 [excellent][dxf] Milagro Reposado x House Wedge ---
+Milagro Reposado's aged-agave character lifts the wedge's iceberg-and-bleu cool crunch: the barrel-rested body handles the wedge, and the oak threads the bowl. Excellent; the añejo tequila pour for the wedge.
+
+--- #78 [excellent][dxf] Glenglassaugh 12 x Kansas City ---
+Glenglassaugh 12's Highland-scotch character carries cleanly into the KC's lean-bold strip with savory grain: the scotch depth settles into the strip steak, and the smoke meets the char. Excellent; Kentucky Owl St.
+
+--- #79 [excellent][dxf] Never Say Die Small Batch x Carrot Cake ---
+Never Say Die Small Batch's oak-and-vanilla bourbon depth carries cleanly into the carrot cake's cream-cheese-frosted spice cake: the bourbon depth settles into the carrot cake, and the spice threads the dessert. Excellent; bourbon when a guest asks what works on the carrot cake.
+
+--- #80 [excellent][dxf] Chocolate Brownie x Glenfiddich Gran Cru 23 ---
+Glenfiddich Gran Cru 23's Cuvée-finished 23-year Speyside luxury lifts the brownie's fudgy cocoa-and-chocolate weight: the scotch depth settles into the brownie, and the malt edge frames the dessert. Excellent; Old Elk Cigar Cut's distinctive character meets cocoa at cigar-companion register — chocolate and cigars share a palate vocabulary.
+
+--- #81 [excellent][dxf] Caymus Cabernet Sauvignon x The Tomahawk ---
+Caymus Cabernet Sauvignon -- cocoa, mocha, velvety tannins. The opulent body cuts the 40oz showpiece, and the cocoa-mocha plays against the cut. Excellent; the starter sets up the cut at full register.
+
+--- #82 [excellent][dxf] Shrimp Bisque x Evening Land Seven Springs ---
+Evening Land Seven Springs' red-fruit-and-spice elegance lifts the shrimp bisque's creamy shellfish soup: the silky body carries the shrimp bisque, and the cherry-pepper note frames the bowl. Excellent; the starter sets up the cut at full register.
+
+--- #83 [excellent][dxf] Oban 18 x Cowboy Ribeye ---
+Oban 18 -- aged maritime Highland, spice, honey. The coastal-Highland weight wraps the cap-fat ribeye, and the smoke meets the char. Excellent; Kentucky Owl St.
+
+--- #84 [excellent][dxf] Bluecoat Gin x Faroe Island Salmon ---
+Bluecoat Gin's botanical-driven lift carries cleanly into the salmon's rich oily flesh: the floral edge frames the salmon, and the juniper threads the plate. Excellent; gin carries the salmon without overshooting.
+
+--- #85 [excellent][dxf] Bardstown Foursquare x Cowboy Ribeye ---
+Bardstown Foursquare's rum-cask + cocoa is textbook — tropical-rum + chocolate lifts the cowboy ribeye's marbled char-and-fat richness: the bourbon depth settles into the cap-fat ribeye, and the vanilla softens the grilled char. Excellent; JD Bonded's 100-proof backbone is the featured JD-KC upgrade — the extra proof handles strip marbling more structurally than Old No.
+
+--- #86 [excellent][dxf] Dewar's White Label x Kansas City ---
+Dewar's White Label's Highland blend with Aberfeldy-malt core meets at register with the KC's lean-bold strip with savory grain: the scotch depth settles into the strip steak, and the smoke meets the char. Excellent; CC 43 Year's aged depth handles strip marbling at collector register — where CC handles it at heritage register, the 43 closes with rare-aged gravity.
+
+--- #87 [excellent][dxf] Hendricks Grand Cabaret x Beignets ---
+Hendricks Grand Cabaret's botanical-driven lift lifts the beignets' warm sugar-dusted pastry: the floral edge frames the beignets, and the juniper threads the dessert. Excellent; gin carries the beignets without overshooting.
+
+--- #88 [excellent][dxf] Mushrooms x Weller 12 Year ---
+Weller 12 Year -- aged wheated, honey, vanilla. The wheated weight wraps the mushrooms, and the oak frames the umami. Excellent; CC 43 Year's aged character threads mushroom earthiness at collector register.
+
+--- #89 [excellent][dxf] Chocolate Brownie x Rey Sol Anejo ---
+Rey Sol Anejo's aged-agave character carries cleanly into the brownie's fudgy cocoa-and-chocolate weight: the barrel-rested body handles the brownie, and the oak threads the dessert. Excellent; añejo tequila on the brownie -- the call servers pour without second-guessing.
+
+--- #90 [excellent][dxf] Don Julio Blanco x Seared Scallops ---
+Don Julio Blanco -- workhorse blanco, agave-forward, restaurant standard. The agave-forward body brightens the scallops, and the citrus snap threads the starter. Excellent; the Barbados-tradition character frames scallops at heritage register — the character-forward option vs.
+
+--- #91 [excellent][dxf] Weller Special Reserve x Brussels and Belly ---
+Weller Special Reserve -- wheated, soft vanilla, gentle oak. The wheated softness matches the pork-belly plate, and the vanilla softens the grilled char. Excellent; Parker's Heritage 16th meets the glaze with collector-register intensity; Fernet Branca still cuts it harder.
+
+--- #92 [excellent][dxf] Beignets x Vin Santo ---
+Vin Santo -- Tuscan dessert wine, dried-fruit and honey, biscotti pour. The dried-fruit body mirrors the beignets, and the honey-nut edge threads the dessert. Excellent; Tuscan Vin Santo on the beignets -- the kind of pour that earns a regular.
+
+--- #93 [excellent][dxf] Kermit Lynch Côtes du Rhône x Kansas City ---
+Kermit Lynch Côtes du Rhône's spice-and-dark-fruit Rhone register meets at register with the KC's lean-bold strip with savory grain: the Rhone-blend body wraps the strip steak, and the peppery edge frames the cut. Excellent; the starter sets up the cut at full register.
+
+--- #94 [excellent][dxf] Bone Marrow x El Mayor Extra Anejo ---
+El Mayor Extra Anejo's aged-agave character carries cleanly into the bone marrow's unctuous rendered-marrow richness: the barrel-rested body handles the rich marrow, and the oak threads the starter. Excellent; the crystallino-filtered-anejo character plays the maple glaze at trendy register — unexpected pairing through filtered-depth.
+
+--- #95 [excellent][dxf] Fento Ollo de Sapo Mencía x Mushrooms ---
+Fento Ollo de Sapo Mencía's Tempranillo with vanilla-and-leather depth carries cleanly into the mushrooms' earthy umami weight: the Tempranillo body wraps the mushrooms, and the vanilla-leather edge frames the side. Excellent; Spanish red on the mushrooms -- the call servers pour without second-guessing.
+
+--- #96 [excellent][dxf] Woodford Reserve Double Oaked x Truffle Fries ---
+Woodford Reserve Double Oaked's oak-and-vanilla bourbon depth carries cleanly into the truffle fries' parmesan-and-truffle fry weight: the bourbon depth settles into the truffle fries, and the oak frames the umami. Excellent; Voyage 23's salt + ocean-character threads mushrooms with distinctive ocean-finish resonance.
+
+--- #97 [excellent][dxf] Shrimp Cocktail x Detroit City Gin ---
+Detroit City Gin -- Detroit Distillery, hometown craft, urban juniper. The city-distilled juniper frames the chilled shrimp, and the local-spirit character meets the starter. Excellent; Neptunia's maritime character elevates the classic cold app with Scottish-sea terroir distinction.
+
+--- #98 [excellent][dxf] Far Niente Chardonnay x Loaded Potato ---
+Far Niente Chardonnay -- Napa Chardonnay, tropical fruit, oak. The Chardonnay weight matches the loaded potato soup, and the tropical fruit lifts the bowl. Excellent; estate Napa Chardonnay on the loaded potato -- the call servers pour without second-guessing.
+
+--- #99 [excellent][dxf] Cowboy Ribeye x Elijah Craig Small Batch ---
+Elijah Craig Small Batch's oak-and-vanilla bourbon depth carries cleanly into the cowboy ribeye's marbled char-and-fat richness: the bourbon depth settles into the cap-fat ribeye, and the vanilla softens the grilled char. Excellent; JD Bonded's 100-proof backbone is the featured JD-KC upgrade — the extra proof handles strip marbling more structurally than Old No.
+
+--- #100 [excellent][dxf] Filet Mignon x Angel's Envy ---
+Angel's Envy's oak-and-vanilla bourbon depth carries cleanly into the filet's lean buttery tenderness: the bourbon depth settles into the lean buttery filet, and the vanilla softens the cut. Excellent; KC 18 is the featured aged-Beam-KC-filet pairing — where KC 15 opens aged-Beam at collector register, the 18 closes with additional aging depth.
+
+--- #101 [excellent][dxf] Clos Petit Ona Grenache x Mushrooms ---
+Clos Petit Ona Grenache's spice-and-dark-fruit Rhone register meets at register with the mushrooms' earthy umami weight: the Rhone-blend body wraps the mushrooms, and the peppery edge frames the side. Excellent; Rhone red when a guest asks what works on the mushrooms.
+
+--- #102 [excellent][dxf] Asparagus x St Supéry Sauvignon Blanc ---
+St Supéry Sauvignon Blanc -- Napa Dollarhide Sauv Blanc with lemon, grapefruit, gooseberry, clean lively. The bright acid lifts the asparagus, and the citrus cuts the side. Excellent; this is the white-on-light-side pairing servers reach for.
+
+--- #103 [excellent][dxf] Chocolate Cake x Espresso Old Fashioned ---
+Espresso Old Fashioned's spirit-forward cocktail register carries cleanly into the chocolate cake's layered chocolate body: the bold-mix depth handles the chocolate cake, and the spice threads the dessert. Excellent; spirit-forward cocktail on the chocolate cake -- the kind of pour that earns a regular.
+
+--- #104 [excellent][dxf] Laphroaig 10 x Cowboy Ribeye ---
+Laphroaig 10 -- Islay, peat-smoke, iodine. The peat-smoke meets the cap-fat ribeye, and the smoke meets the char. Excellent; Fortuna's New Zealand craft-distillery character handles strip marbling at distinctive-terroir register.
+
+--- #105 [excellent][dxf] Pio Cesare Barbaresco x Bone Marrow ---
+Pio Cesare Barbaresco's firm-tannin tar structure buries the delicate shellfish meets at register with the bone marrow's unctuous rendered-marrow richness: the structured body wraps the rich marrow, and the cassis frames the starter. Excellent; the starter sets up the cut at full register.
+
+--- #106 [excellent][dxf] Isaac Bowman Port Finish x Carrot Cake ---
+Isaac Bowman Port Finish's oak-and-vanilla bourbon depth meets at register with the carrot cake's cream-cheese-frosted spice cake: the bourbon depth settles into the carrot cake, and the spice threads the dessert. Excellent; bourbon on the carrot cake -- the kind of pour that earns a regular.
+
+--- #107 [excellent][dxf] Maker's Mark x Bone Marrow ---
+Maker's Mark -- wheated, red-rope, caramel. The wheated softness matches the rich marrow, and the red-rope caramel rounds the starter. Excellent; EC 18's 18yr depth engages marrow at aged-premium register; Fernet Branca still cuts it harder.
+
+--- #108 [excellent][dxf] Faroe Island Salmon x Kentucky Owl St. Patrick's ---
+Kentucky Owl St. Patrick's' Irish whiskey smoothness carries cleanly into the salmon's rich oily flesh: the Irish whiskey body sits with the salmon, and the soft malt rounds the plate. Excellent; Kentucky Owl St.
+
+--- #109 [excellent][dxf] Stagg Jr. Batch #15 x Brussels and Belly ---
+Stagg Jr. Batch #15 -- BT non-age-statement cask-strength, premium batch. The bourbon depth settles into the pork-belly plate, and the vanilla softens the grilled char. Excellent; JD Bonded's backbone cuts the glaze harder than Old No; Fernet Branca still cuts it harder.
+
+--- #110 [excellent][dxf] Hennessy Cognac x Filet Mignon ---
+Hennessy Cognac -- VS/VSOP cognac, dried-fruit, vanilla. The cognac depth wraps the lean buttery filet, and the dried-fruit-and-vanilla rounds the cut. Excellent; Hennessy Cognac sits in the pocket on the filet.
+
+--- #111 [excellent][dxf] Truffle Fries x Domaine du Grand Tinel ---
+Domaine du Grand Tinel's concentrated dark-fruit and tannin meets at register with the truffle fries' parmesan-and-truffle fry weight: the structured body wraps the truffle fries, and the cassis frames the side. Excellent; big-red Cab on the truffle fries -- the call servers pour without second-guessing.
+
+--- #112 [excellent][dxf] Faroe Island Salmon x Bluecoat Gin ---
+Bluecoat Gin's botanical-driven lift carries cleanly into the salmon's rich oily flesh: the floral edge frames the salmon, and the juniper threads the plate. Excellent; gin carries the salmon without overshooting.
+
+--- #113 [excellent][dxf] Christian Bros Brandy x Carrot Cake ---
+Christian Bros Brandy's barrel-aged cognac character carries cleanly into the carrot cake's cream-cheese-frosted spice cake: the brandy depth wraps the carrot cake, and the caramel rounds the dessert. Excellent; Christian Bros's sweetness meets the raisins and spice at value-workhorse register.
+
+--- #114 [excellent][dxf] Elijah Craig Private Barrel x Mushrooms ---
+Elijah Craig Private Barrel's oak-and-vanilla bourbon depth lifts the mushrooms' earthy umami weight: the bourbon depth settles into the mushrooms, and the oak frames the umami. Excellent; KC 15's aged character threads mushroom earthiness at aged-Beam register.
+
+--- #115 [excellent][dxf] Grilled Caesar x Glenglassaugh 12 ---
+Glenglassaugh 12's Highland-scotch character lifts the Caesar's charred-romaine and anchovy edge: the scotch depth settles into the grilled Caesar, and the smoke meets the char. Excellent; Fortuna's distinctive NZ-whisky character meets the char at terroir-driven register.
+
+--- #116 [excellent][dxf] Truffle Fries x WhistlePig 12 Year Old World ---
+WhistlePig 12 Year Old World -- 12-year WP finished in Sauternes, Madeira, and Port casks. The rye spice cuts the truffle fries, and the oak frames the umami. Excellent; KC 18's aged depth meets the earthy-rich at collector register.
+
+--- #117 [excellent][dxf] Prime Tartare x Laurent Perrier Le Cuvée Brut ---
+Laurent Perrier Le Cuvée Brut -- non-vintage Champagne, citrus, fine bubbles. The bright bubbles lift the tartare, and the citrus frames the starter. Excellent; the starter sets up the cut at full register.
+
+--- #118 [excellent][dxf] Gumbo x Muga Reserva ---
+Muga Reserva's Tempranillo with vanilla-and-leather depth carries cleanly into the gumbo's spiced creole stew: the Tempranillo body wraps the gumbo, and the medium-body red meets the light soup. Excellent; the starter sets up the cut at full register.
+
+--- #119 [excellent][dxf] Cristom Mt Jefferson Cuvée x Honey Roasted Carrots ---
+Cristom Mt Jefferson Cuvée -- Willamette Pinot, red cherry, silky tannins. The silky red-fruit body wraps the honey carrots, and the cherry-fruit frames the side. Excellent; the starter sets up the cut at full register.
+
+--- #120 [excellent][dxf] Mushrooms x Woodford Reserve ---
+Woodford Reserve's small-batch fruit and floral lifts the mushrooms' earthy umami weight: the bourbon depth settles into the mushrooms, and the oak frames the umami. Excellent; Fortuna's southern-hemisphere terroir threads mushroom earthiness with NZ-whisky distinction.
+
+--- #121 [strong   ][dxf] Rainbow Trout x Hendricks Orbium ---
+Hendricks Orbium's botanical-driven lift sits alongside the trout's delicate flesh: the floral edge frames the trout, and the juniper threads the plate. Strong; gin keeps pace with the trout.
+
+--- #122 [strong   ][dxf] Bruichladdich x Shrimp Bisque ---
+Bruichladdich -- unpeated Islay, progressive, malt. The unpeated Islay body sits with the shrimp bisque, and the oak rounds the cream. Strong; Caribou Crossing's hand-selected character rides the bisque at craft register.
+
+--- #123 [strong   ][dxf] Never Say Die Small Batch x Prime Tartare ---
+Never Say Die Small Batch's oak-and-vanilla bourbon depth meets at register with the tartare's raw beef-and-brine umami: the bourbon depth settles into the tartare, and the oak frames the umami. Strong; the high-proof boldness cuts the glaze with serious authority; Fernet Branca still cuts it harder.
+
+--- #124 [strong   ][dxf] Oban 14 x Porterhouse ---
+Oban 14 -- Highland-coastal, maritime saltiness, honey. The coastal salinity meets the dual-cut steak, and the smoke meets the char. Strong; premium character covers both cuts with collector-register authority.
+
+--- #125 [strong   ][dxf] Château de Rouillac x Porterhouse ---
+Château de Rouillac's Merlot-led Bordeaux blend with plush dark-fruit leans against the porterhouse's dual strip-and-filet character: the Bordeaux body wraps the dual-cut steak, and the cassis-and-tobacco edge frames the cut. Strong; the elegant-red-on-strip-or-filet pairing servers pour without second-guessing.
+
+--- #126 [strong   ][dxf] Seasonal Soup x Lingua Franca Avni Pinot Noir ---
+Lingua Franca Avni Pinot Noir -- Willamette Pinot, red plum, forest floor. The layered Pinot body matches the seasonal soup, and the medium-body red meets the light soup. Strong; the elegant-red-on-hearty-starter pairing holds without overshooting.
+
+--- #127 [strong   ][dxf] Courvoisier Cognac x Creme Brulee ---
+Courvoisier Cognac -- VS cognac, caramel, oak. The cognac depth wraps the brulee, and the caramel rounds the dessert. Strong; Courvoisier's drier finish contrasts the caramel where Rémy VSOP's elegance harmonizes.
+
+--- #128 [strong   ][dxf] Swordfish x Pommery Cuvée Louise ---
+Pommery Cuvée Louise -- prestige Champagne, brioche, fine mousse. The fine bubbles lift the swordfish, and the brioche edge frames the plate. Strong; the server-confident Champagne-on-fish-main call.
+
+--- #129 [strong   ][dxf] Au Gratin Potatoes x Blade & Bow ---
+Blade & Bow's oak-and-vanilla bourbon depth meets at register with the au gratin's cheese-and-cream golden crust: the bourbon depth settles into the au gratin, and the vanilla layers into the cream. Strong; oak-aged depth sits with richness at premium register.
+
+--- #130 [strong   ][dxf] Cowboy Ribeye x Fox & Oden Double Oaked ---
+Fox & Oden Double Oaked's oak-and-vanilla bourbon depth sits alongside the cowboy ribeye's marbled char-and-fat richness: the bourbon depth settles into the cap-fat ribeye, and the vanilla softens the grilled char. Strong; covers both cuts cleanly.
+
+--- #131 [strong   ][dxf] Pablo Sour x Mocha Creme ---
+Pablo Sour's citrus-and-bright cocktail lift meets at register with the mocha creme's coffee-chocolate richness: the bright build frames the mocha creme, and the citrus cuts the dessert. Strong; reliable light-cocktail-on-dessert recommendation.
+
+--- #132 [strong   ][dxf] Swordfish x Bee's Knees ---
+Bee's Knees' citrus-and-bright cocktail lift leans against the swordfish's meaty swordfish steak: the bright build frames the swordfish, and the botanical lift frames the fish cleanly. Strong; the digestif-on-fish-main call lands without effort.
+
+--- #133 [strong   ][dxf] The Tomahawk x Spottswoode Lyndenhurst ---
+Spottswoode Lyndenhurst -- Napa estate Cab, cassis-and-dark-fruit, structured. The structured-Cab depth wraps the 40oz showpiece, and the cassis frames the cut. Strong; the side carries its register against the cut.
+
+--- #134 [strong   ][dxf] Filet Mignon x Nickel & Nickel Cabernet ---
+Nickel & Nickel Cabernet -- single-vineyard Napa Cab, concentrated dark-fruit, sister to Far Niente. The concentrated body wraps the lean buttery filet, and the cassis-and-oak edge frames the cut. Strong; reliable opener for the cut.
+
+--- #135 [strong   ][dxf] Porterhouse x Komos Anejo Reserva ---
+Komos Anejo Reserva's aged-agave character leans against the porterhouse's dual strip-and-filet character: the barrel-rested body handles the dual-cut steak, and the oak threads the cut. Strong; value-adjacent premium covers the strip at accessible register.
+
+--- #136 [strong   ][dxf] Escargot x Plymouth Gin ---
+Plymouth Gin's botanical-driven lift sits alongside the escargot's garlic-herb-butter savory weight: the floral edge frames the buttered escargot, and the juniper threads the starter. Strong; Plymouth Gin on the escargot -- workhorse pairing, no surprises.
+
+--- #137 [strong   ][dxf] The Prisoner Red Blend x Gumbo ---
+The Prisoner Red Blend's concentrated dark-fruit and tannin leans against the gumbo's spiced creole stew: the structured body wraps the gumbo, and the medium-body red meets the light soup. Strong; the side composes cleanly with the cut.
+
+--- #138 [strong   ][dxf] Green Chartreuse x Mushrooms ---
+Green Chartreuse's bitter-herb aperitivo edge leans against the mushrooms' earthy umami weight: the herbal cut works the mushrooms, and the amaro backbone frames the side. Strong; capable digestif-on-rich-side pour for guests who want a confident pairing.
+
+--- #139 [strong   ][dxf] Bowdie's Private Select — Maker's Mark x Au Gratin Potatoes ---
+Bowdie's Private Select — Maker's Mark's oak-and-vanilla bourbon depth leans against the au gratin's cheese-and-cream golden crust: the bourbon depth settles into the au gratin, and the vanilla layers into the cream. Strong; entry tier clean match.
+
+--- #140 [strong   ][dxf] Creamed Spinach x 1792 Small Batch ---
+1792 Small Batch -- caramel, spice, 93.7 proof Barton. The bourbon depth settles into the creamed spinach, and the vanilla layers into the cream. Strong; KC 18's aged character rides the cream at collector register.
+
+--- #141 [strong   ][dxf] Brussels and Belly x G.D. Vajra Albe Nebbiolo ---
+G.D. Vajra Albe Nebbiolo's concentrated dark-fruit and tannin meets at register with Brussels + Belly's maple-pork-belly glaze over charred sprouts: the structured body wraps the pork-belly plate, and the cassis frames the side. Strong; reliable match across the courses.
+
+--- #142 [strong   ][dxf] Shrimp Bisque x Dunville's Single Malt ---
+Dunville's Single Malt's Irish whiskey smoothness sits alongside the shrimp bisque's creamy shellfish soup: the Irish whiskey body sits with the shrimp bisque, and the oak rounds the cream. Strong; Caribou Crossing's hand-selected character rides the bisque at craft register.
+
+--- #143 [strong   ][dxf] Blood Oath Pact 10 x Bone-In Filet ---
+Blood Oath Pact 10's oak-and-vanilla bourbon depth leans against the bone-in filet's bone-enhanced buttery tenderness: the bourbon depth settles into the bone-enhanced filet, and the vanilla softens the cut. Strong; the curated single-barrel is capable but single-distillery aged bourbons bring more traditional focused character.
+
+--- #144 [strong   ][dxf] Elijah Craig Straight Rye x House Wedge ---
+Elijah Craig Straight Rye -- Heaven Hill's 94-proof rye, sister to the Elijah Craig bourbon line. The rye spice cuts the wedge, and the rye edge frames the bowl. Strong; distinctive cask character cuts the bleu with Yorkshire-influence voice.
+
+--- #145 [strong   ][dxf] Corazon Weller x Prime Tartare ---
+Corazon Weller's aged-agave character sits alongside the tartare's raw beef-and-brine umami: the barrel-rested body handles the tartare, and the oak threads the starter. Strong; cristalino depth cuts the garlic-butter with craft-theatrical distinctiveness.
+
+--- #146 [strong   ][dxf] Market Fish x Laurent Perrier Le Cuvée Brut ---
+Laurent Perrier Le Cuvée Brut -- non-vintage Champagne, citrus, fine bubbles. The bright bubbles lift the market fish, and the citrus frames the plate. Strong; the Champagne-on-fish-main call lands without effort.
+
+--- #147 [strong   ][dxf] Bone-In Filet x WhistlePig PiggyBack 6 Year ---
+WhistlePig PiggyBack 6 Year's rye-spice character meets at register with the bone-in filet's bone-enhanced buttery tenderness: the rye spice cuts the bone-enhanced filet, and the rye edge frames the cut. Strong; Old Elk Cigar Cut frames tenderloin at distinctive cigar-companion register.
+
+--- #148 [strong   ][dxf] Shrimp Bisque x Monkey 47 Gin ---
+Monkey 47 Gin's botanical-driven lift leans against the shrimp bisque's creamy shellfish soup: the floral edge frames the shrimp bisque, and the juniper threads the bowl. Strong; Hendrick's perfumed signature rides the bisque at crowd-pleasing register.
+
+--- #149 [strong   ][dxf] Prime Tartare x Lunaria Coste di Moro ---
+Lunaria Coste di Moro's red-fruit-and-spice elegance sits alongside the tartare's raw beef-and-brine umami: the silky body carries the tartare, and the cherry-pepper note frames the starter. Strong; recommend with confidence — solid Cab-on-hearty-starter match.
+
+--- #150 [strong   ][dxf] Doctor Bird Jamaica Rum x Filet Mignon ---
+Doctor Bird Jamaica Rum's dense-spirit weight meets at register with the filet's lean buttery tenderness: the heavy body handles the lean buttery filet, and the deep backbone frames the cut. Strong; capable light-spirit-on-strip-or-filet pour for guests who want a confident pairing.
+
+--- #151 [strong   ][dxf] Shafer Hillside Select x Creamed Spinach ---
+Shafer Hillside Select -- Stags Leap allocated icon, cassis, graphite. The allocated-Cab depth wraps the creamed spinach, and the graphite frames the side. Strong; Shafer Hillside Select earns its place next to the creamed spinach.
+
+--- #152 [strong   ][dxf] Christian Bros Brandy x Mushrooms ---
+Christian Bros Brandy's barrel-aged cognac character leans against the mushrooms' earthy umami weight: the brandy depth wraps the mushrooms, and the caramel rounds the umami plate. Strong; Christian Bros's sweetness meets the earthy-rich at value register.
+
+--- #153 [strong   ][dxf] Tuxedo-Crusted Yellowfin Tuna x Roku Gin ---
+Roku Gin's botanical-driven lift meets at register with the tuna's seared-rare flesh with sesame crust: the floral edge frames the tuna, and the juniper threads the plate. Strong; reliable gin for the tuna.
+
+--- #154 [strong   ][dxf] Our Lady of Guadalupe Acolytes x Rainbow Trout ---
+Our Lady of Guadalupe Acolytes -- butterscotch, toasted oak, rich layered. The bright acid lifts the trout, and the citrus cuts the plate. Strong; white wine on the trout reads cleanly at the table.
+
+--- #155 [strong   ][dxf] Mushrooms x WhistlePig 10 Year Single Barrel Rye ---
+WhistlePig 10 Year Single Barrel Rye's rye-spice character sits alongside the mushrooms' earthy umami weight: the rye spice cuts the mushrooms, and the oak frames the umami. Strong; Boss Hog intensity layers into mushroom depth at collector register.
+
+--- #156 [strong   ][dxf] Elmer T. Lee x The Tomahawk ---
+Elmer T. Lee -- Buffalo Trace single-barrel, 90 proof. The bourbon depth settles into the 40oz showpiece, and the vanilla softens the grilled char. Strong; the aging helps vs.
+
+--- #157 [strong   ][dxf] I.W. Harper 15 Year x Prime Tartare ---
+I.W. Harper 15 Year's oak-and-vanilla bourbon depth leans against the tartare's raw beef-and-brine umami: the bourbon depth settles into the tartare, and the oak frames the umami. Strong; boutique character cuts the glaze with craft distinctiveness; Fernet Branca still cuts it harder.
+
+--- #158 [strong   ][dxf] Nolets Dry Gin x Tuxedo-Crusted Yellowfin Tuna ---
+Nolets Dry Gin's botanical-driven lift sits alongside the tuna's seared-rare flesh with sesame crust: the floral edge frames the tuna, and the juniper threads the plate. Strong; gin keeps pace with the tuna.
+
+--- #159 [strong   ][dxf] Carrot Cake x Don Julio 1942 ---
+Don Julio 1942 -- extra añejo, caramel, oak vanilla. The extra-añejo depth wraps the carrot cake, and the caramel-vanilla rounds the dessert. Strong; Durango-ceremony extra añejo meets the cake at luxury register.
+
+--- #160 [strong   ][dxf] Heaven Hill 20 Year x Creamed Spinach ---
+Heaven Hill 20 Year's oak-and-vanilla bourbon depth meets at register with the creamed spinach's rich bechamel-laced greens: the bourbon depth settles into the creamed spinach, and the vanilla layers into the cream. Strong; composed premium match.
+
+--- #161 [strong   ][dxf] Komos Rosa Reposado x Cowboy Ribeye ---
+Komos Rosa Reposado's aged-agave character meets at register with the cowboy ribeye's marbled char-and-fat richness: the barrel-rested body handles the cap-fat ribeye, and the oak threads the cut. Strong; distinctive packaging ceremony covers the strip.
+
+--- #162 [strong   ][dxf] Bone Marrow x Lunaria Coste di Moro ---
+Lunaria Coste di Moro's red-fruit-and-spice elegance leans against the bone marrow's unctuous rendered-marrow richness: the silky body carries the rich marrow, and the cherry-pepper note frames the starter. Strong; the Cab-on-hearty-starter pairing servers pour without second-guessing.
+
+--- #163 [strong   ][dxf] Pommery Cuvée Louise x House Wedge ---
+Pommery Cuvée Louise -- prestige Champagne, brioche, fine mousse. The fine bubbles lift the wedge, and the brioche edge frames the bowl. Strong; Pommery Cuvée Louise on the wedge -- workhorse pairing, no surprises.
+
+--- #164 [strong   ][dxf] Jim Beam White Label x Carrot Cake ---
+Jim Beam White Label's oak-and-vanilla bourbon depth leans against the carrot cake's cream-cheese-frosted spice cake: the bourbon depth settles into the carrot cake, and the spice threads the dessert. Strong; Caribou Crossing's craft character meets the cake at single-barrel register.
+
+--- #165 [strong   ][dxf] Glenfiddich 12 x Porterhouse ---
+Glenfiddich 12 -- entry Speyside, apple-pear, ex-bourbon-cask. The bourbon-cask apple lifts the dual-cut steak, and the smoke meets the char. Strong; handles both cuts cleanly at approachable wheated register.
+
+--- #166 [strong   ][dxf] Escargot x San Simeon Stormwatch ---
+San Simeon Stormwatch's concentrated dark-fruit and tannin meets at register with the escargot's garlic-herb-butter savory weight: the structured body wraps the buttered escargot, and the cassis frames the starter. Strong; the side composes cleanly with the cut.
+
+--- #167 [strong   ][dxf] Corpse Reviver x Chilean Seabass ---
+Corpse Reviver's citrus-and-bright cocktail lift sits alongside the seabass' buttery seabass flesh: the bright build frames the seabass, and the botanical lift frames the fish cleanly. Strong; the light cocktail option when the gold call is spoken for.
+
+--- #168 [strong   ][dxf] Creamed Spinach x Don Julio 1942 ---
+Don Julio 1942 -- extra añejo, caramel, oak vanilla. The extra-añejo depth wraps the creamed spinach, and the caramel-vanilla rounds the side. Strong; the añejo-on-light-side pairing holds without overshooting.
+
+--- #169 [strong   ][dxf] Don Julio 70th x Bone-In Filet ---
+Don Julio 70th's aged-agave character sits alongside the bone-in filet's bone-enhanced buttery tenderness: the barrel-rested body handles the bone-enhanced filet, and the oak threads the cut. Strong; the añejo-on-strip-or-filet match that holds its register.
+
+--- #170 [strong   ][dxf] Johnnie Walker Red x Brussels and Belly ---
+Johnnie Walker Red's Highland-scotch character meets at register with Brussels + Belly's maple-pork-belly glaze over charred sprouts: the scotch depth settles into the pork-belly plate, and the smoke meets the char. Strong; the digestif-on-hearty-starter pairing servers pour without second-guessing; Fernet Branca still cuts it harder.
+
+--- #171 [strong   ][dxf] Marimar Estate Christina x Porterhouse ---
+Marimar Estate Christina's silky Pinot Noir with cherry-and-forest-floor lift leans against the porterhouse's dual strip-and-filet character: the Pinot body brightens the dual-cut steak, and the cherry-and-earth note frames the cut. Strong; the elegant-red-on-strip-or-filet pairing servers pour without second-guessing.
+
+--- #172 [strong   ][dxf] Faroe Island Salmon x Siete Leguas Blanco ---
+Siete Leguas Blanco's silver-spirit lift with agave-citrus edge meets at register with the salmon's rich oily flesh: the unaged body brightens the salmon, and the agave-citrus thread frames the plate. Strong; reliable silver spirit for the salmon.
+
+--- #173 [strong   ][dxf] Prime Tartare x WhistlePig 15 Year ---
+WhistlePig 15 Year -- WP's 15-year premium flagship, 92 proof, Vermont oak barrel finish. The rye spice cuts the tartare, and the oak frames the umami. Strong; the polished aged character is a refined premium counterpoint distinct from WP's Vermont-finished approach; Fernet Branca still cuts it harder.
+
+--- #174 [strong   ][dxf] Lagavulin 8 x Shrimp Bisque ---
+Lagavulin 8 -- Islay peat, younger-bottling, salt. The peat-smoke meets the shrimp bisque, and the oak rounds the cream. Strong; Caribou Crossing's hand-selected character rides the bisque at craft register.
+
+--- #175 [strong   ][dxf] Escargot x Venge Silencieux ---
+Venge Silencieux's concentrated dark-fruit and tannin sits alongside the escargot's garlic-herb-butter savory weight: the structured body wraps the buttered escargot, and the cassis frames the starter. Strong; the side composes cleanly with the cut.
+
+--- #176 [strong   ][dxf] Seared Scallops x Yamazaki 12 Year ---
+Yamazaki 12 Year -- Suntory, Japanese flagship, silky. The Japanese-whisky precision frames the scallops, and the silky body rounds the starter. Strong; the Japanese flagship option when the gold call is spoken for.
+
+--- #177 [strong   ][dxf] Bacardi Rum x Swordfish ---
+Bacardi Rum -- Carta Blanca, workhorse light rum, clean. The crisp body lifts the swordfish, and the clean profile carries the plate. Strong; the clean additive-free character frames the fish at craft heritage register.
+
+--- #178 [strong   ][dxf] Alexander Valley Homestead Red x Bone Marrow ---
+Alexander Valley Homestead Red's red-fruit-and-spice elegance meets at register with the bone marrow's unctuous rendered-marrow richness: the silky body carries the rich marrow, and the cherry-pepper note frames the starter. Strong; reliable elegant-red-on-hearty-starter recommendation.
+
+--- #179 [strong   ][dxf] Escargot x Camarena Tequila ---
+Camarena Tequila's aged-agave character meets at register with the escargot's garlic-herb-butter savory weight: the barrel-rested body handles the buttered escargot, and the oak threads the starter. Strong; capable añejo-on-hearty-starter pour for guests who want a confident pairing.
+
+--- #180 [strong   ][dxf] Swordfish x Long Road Gin ---
+Long Road Gin's botanical-driven lift sits alongside the swordfish's meaty swordfish steak: the floral edge frames the swordfish, and the juniper threads the plate. Strong; reliable gin-on-fish-main recommendation.
+
+--- #181 [works    ][dxf] Loaded Potato x Nolets Dry Gin ---
+Nolets Dry Gin's botanical-driven lift reads alongside the loaded potato's rich loaded-potato soup: the floral edge frames the loaded potato soup, and the juniper threads the bowl. Works; the gin-on-light-soup pairing sits at neutral register without clash.
+
+--- #182 [works    ][dxf] Pikesville Rye x Asparagus ---
+Pikesville Rye's rye-spice character leans against the asparagus' green-vegetal edge: the rye spice cuts the asparagus, and the rye edge frames the side. Works; the digestif-on-light-side pairing holds at neutral.
+
+--- #183 [works    ][dxf] Codigo 1530 Rosa x Gumbo ---
+Codigo 1530 Rosa's reposado aged in uncharred Napa Cabernet wine barrels leans against the gumbo's spiced creole stew: the barrel-rested body handles the gumbo, and the oak threads the bowl. Works; the añejo-on-light-soup call holds — neither soars nor fights.
+
+--- #184 [works    ][dxf] Grey Goose Vodka x Seasonal Vegetables ---
+Grey Goose Vodka's crystalline neutrality sits alongside the seasonal vegetables' seasonal garden plate: the unflavored body sits with the seasonal vegetables, and the crisp profile carries the side. Works; capable vodka-on-light-side match, not the recommendation.
+
+--- #185 [works    ][dxf] Creamy Potato x Rey Sol Anejo ---
+Rey Sol Anejo's aged-agave character reads alongside the potato soup's silky-bodied cream: the barrel-rested body handles the potato soup, and the oak threads the bowl. Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.
+
+--- #186 [works    ][dxf] The Tomahawk x Crown Royal ---
+Crown Royal's classic Canadian blend smoothness sits alongside the Tomahawk's theatrical bone-in marbling and smoky char: the Canadian-whisky body sits with the 40oz showpiece, and the caramel rounds the cut. Works; Old Elk Cigar Cut frames the two-cut plate at cigar-companion register.
+
+--- #187 [works    ][dxf] Brussels and Belly x Wheatley Vodka ---
+Wheatley Vodka's crystalline neutrality leans against Brussels + Belly's maple-pork-belly glaze over charred sprouts: the unflavored body sits with the pork-belly plate, and the crisp profile carries the side. Works; safe vodka-on-rich-side alongside, but not the headline call.
+
+--- #188 [works    ][dxf] Butternut Squash x Tullamore D.E.W. ---
+Tullamore D.E.W.'s gentle Irish blend finds neutral with the butternut squash's silky sweet squash cream: the gentle Irish body sits with the squash bisque, and the oak rounds the cream. Works; the digestif-on-light-soup pairing sits at neutral register without clash.
+
+--- #189 [works    ][dxf] The Prisoner Red Blend x Butternut Squash ---
+The Prisoner Red Blend's concentrated dark-fruit and tannin reads alongside the butternut squash's silky sweet squash cream: the structured body wraps the squash bisque, and the medium-body red meets the light soup. Works; the two sides share the meal without competing.
+
+--- #190 [works    ][dxf] Seasonal Soup x Fox & Oden ---
+Fox & Oden's oak-and-vanilla bourbon depth reads alongside the seasonal soup's house seasonal build: the bourbon depth settles into the seasonal soup, and the vanilla softens the bowl. Works; the bourbon-on-light-soup call holds — neither soars nor fights.
+
+--- #191 [works    ][dxf] Burrata x Hakushu 12 Year ---
+Hakushu 12 Year's lightly-peated Hakushu character finds neutral with the burrata's fresh basil-tomato-cream delicacy: the lightly-peated Hakushu meets the burrata, and the oak rounds the cream. Works; Hakushu's crisp-green and subtle peat can sit with burrata at edge-of-category register; not featured but distinctive.
+
+--- #192 [works    ][dxf] Marimar Estate Christina x Asparagus ---
+Marimar Estate Christina's silky Pinot Noir with cherry-and-forest-floor lift leans against the asparagus' green-vegetal edge: the Pinot body brightens the asparagus, and the cherry-and-earth note frames the side. Works; the elegant-red-on-light-side call lands as a measured alongside.
+
+--- #193 [works    ][dxf] Asparagus x Gray Whale Gin ---
+Gray Whale Gin's botanical-driven lift leans against the asparagus' green-vegetal edge: the floral edge frames the asparagus, and the juniper threads the side. Works; the gin-on-light-side pairing holds at neutral.
+
+--- #194 [works    ][dxf] Butternut Squash x Don Fulano Reposado ---
+Don Fulano Reposado's aged-agave character sits alongside the butternut squash's silky sweet squash cream: the barrel-rested body handles the squash bisque, and the oak threads the bowl. Works; the añejo-on-light-soup call holds — neither soars nor fights.
+
+--- #195 [works    ][dxf] El Cabo x Rainbow Trout ---
+El Cabo's aged-agave character finds neutral with the trout's delicate flesh: the barrel-rested body handles the trout, and the oak threads the plate. Works; El Cabo is fine on the trout -- fine, not memorable.
+
+--- #196 [works    ][dxf] Broccolini x Jack Daniel's Bonded ---
+Jack Daniel's Bonded's oak-and-vanilla bourbon depth finds neutral with the broccolini's tender green stalks: the bourbon depth settles into the broccolini, and the vanilla softens the side. Works; the bourbon-on-light-side pairing sits at neutral register without clash.
+
+--- #197 [works    ][dxf] Vegetable Curry with Chickpeas x Siete Leguas Reposado ---
+Siete Leguas Reposado's aged-agave character reads alongside the curry's spiced chickpea-curry warmth: the barrel-rested body handles the curry, and the oak threads the bowl. Works; the añejo-on-light-soup pairing sits at neutral register without clash.
+
+--- #198 [works    ][dxf] Stoli Elit Vodka x Lobster Mac ---
+Stoli Elit Vodka's crystalline neutrality sits alongside the lobster mac's shellfish-in-cream indulgence: the unflavored body sits with the lobster mac, and the crisp profile carries the side. Works; the vodka-on-rich-side call lands as a measured alongside.
+
+--- #199 [works    ][dxf] Angel's Envy x Mocha Creme ---
+Angel's Envy's oak-and-vanilla bourbon depth sits alongside the mocha creme's coffee-chocolate richness: the bourbon depth settles into the mocha creme, and the vanilla layers into the cream. Works; the bourbon-on-dessert pairing sits at neutral register without clash.
+
+--- #200 [works    ][dxf] Mushroom Bisque x Bruichladdich ---
+Bruichladdich's progressive unpeated Islay reads alongside the mushroom bisque's silky earthy mushroom cream: the unpeated Islay body sits with the mushroom bisque, and the oak frames the umami. Works; the digestif-on-hearty-soup pairing holds at neutral.
+
+--- #201 [works    ][fxf] The Tomahawk x Beignets ---
+The Tomahawk closes with the beignets -- the marbled char holds against the choux-and-sugar dessert, and the smoky bone-in weight sits beside the beignets. Works; the close holds, neither soars nor fights.
+
+--- #202 [works    ][dxf] Fattoria Le Pupille Saffredi x House Wedge ---
+Fattoria Le Pupille Saffredi's concentrated dark-fruit and tannin finds neutral with the wedge's iceberg-and-bleu cool crunch: the structured body wraps the wedge, and the cassis frames the bowl. Works; the side-salad call holds.
+
+--- #203 [works    ][dxf] Negroni x Vegetable Curry with Chickpeas ---
+Negroni's spirit-forward cocktail register sits alongside the curry's spiced chickpea-curry warmth: the bold-mix depth handles the curry, and the bitters edge frames the bowl. Works; the light-cocktail-on-light-soup pairing reads as a quiet alongside.
+
+--- #204 [works    ][dxf] Creme Brulee x Trombo Cedano Reposado ---
+Trombo Cedano Reposado's aged in cedar-wood barrels finds neutral with the brulee's burnt-sugar custard: the barrel-rested body handles the brulee, and the oak threads the dessert. Works; aged depth is refined but not a standout.
+
+--- #205 [works    ][dxf] Cucumber Gimlet x Creamed Spinach ---
+Cucumber Gimlet's citrus-and-bright cocktail lift finds neutral with the creamed spinach's rich bechamel-laced greens: the bright build frames the creamed spinach, and the citrus cuts the side. Works; the light-cocktail-on-rich-side pairing holds at neutral.
+
+--- #206 [works    ][dxf] Rey Sol Anejo x Seasonal Vegetables ---
+Rey Sol Anejo's aged-agave character leans against the seasonal vegetables' seasonal garden plate: the barrel-rested body handles the seasonal vegetables, and the oak threads the side. Works; safe añejo-on-light-side alongside, but not the headline call.
+
+--- #207 [works    ][dxf] Aviation Gin x Seasonal Soup ---
+Aviation Gin's botanical-driven lift finds neutral with the seasonal soup's house seasonal build: the floral edge frames the seasonal soup, and the juniper threads the bowl. Works; capable gin-on-light-soup match, not the recommendation.
+
+--- #208 [works    ][dxf] Creamy Potato x Our Lady of Guadalupe Acolytes ---
+Our Lady of Guadalupe Acolytes' crisp white-wine character reads alongside the potato soup's silky-bodied cream: the bright acid lifts the potato soup, and the citrus cuts the bowl. Works; the white-on-light-soup call sits without pulling focus.
+
+--- #209 [works    ][dxf] Sauteed Garlic Spinach x Le Volte dell'Ornellaia ---
+Le Volte dell'Ornellaia's Sangiovese-driven Tuscan acidity reads alongside the garlic spinach's garlic-buttered greens: the bright Sangiovese body lifts the garlic spinach, and the cherry-leather edge frames the side. Works; the elegant-red-on-light-side pairing reads as a quiet alongside.
+
+--- #210 [works    ][dxf] Shrimp Bisque x Aberlour 16 ---
+Aberlour 16's double-matured Speyside balance leans against the shrimp bisque's creamy shellfish soup: the bourbon-plus-sherry depth wraps the shrimp bisque, and the oak rounds the cream. Works; Old No.
+
+--- #211 [works    ][dxf] Beignets x Balvenie 14 Caribbean Cask ---
+Balvenie 14 Caribbean Cask's rum-finished Speyside character finds neutral with the beignets' warm sugar-dusted pastry: the rum-cask depth meets the beignets, and the caramel rounds the dessert. Works; the single-barrel depth is slightly over-specified for the dessert.
+
+--- #212 [works    ][dxf] Mushroom Bisque x Shafer Hillside Select ---
+Shafer Hillside Select's Stags Leap allocated Cab power reads alongside the mushroom bisque's silky earthy mushroom cream: the allocated-Cab depth wraps the mushroom bisque, and the graphite frames the bowl. Works; the dessert closes without crowding.
+
+--- #213 [works    ][dxf] Tears of Llorona x Vegetable Curry with Chickpeas ---
+Tears of Llorona's aged-agave character leans against the curry's spiced chickpea-curry warmth: the barrel-rested body handles the curry, and the oak threads the bowl. Works; the añejo-on-light-soup call lands as a measured alongside.
+
+--- #214 [works    ][dxf] Daniel Chotard Sancerre Rouge x Au Gratin Potatoes ---
+Daniel Chotard Sancerre Rouge's Loire Valley Pinot Noir finds neutral with the au gratin's cheese-and-cream golden crust: the Pinot body brightens the au gratin, and the cherry-and-earth note frames the side. Works; the elegant-red-on-rich-side call lands as a measured alongside.
+
+--- #215 [works    ][dxf] Vesper x Filet Mignon ---
+Vesper's citrus-and-bright cocktail lift sits alongside the filet's lean buttery tenderness: the bright build frames the lean buttery filet, and the citrus cuts the cut. Works; capable light-cocktail-on-strip-or-filet match, not the recommendation.
+
+--- #216 [works    ][dxf] Macauley Stagecoach Vineyard x Creamy Potato ---
+Macauley Stagecoach Vineyard's concentrated dark-fruit and tannin sits alongside the potato soup's silky-bodied cream: the structured body wraps the potato soup, and the medium-body red meets the light soup. Works; the dessert sits cleanly against the meal's register.
+
+--- #217 [works    ][dxf] Peanut Butter Brownie x Milagro Anejo ---
+Milagro Anejo's aged-agave character finds neutral with the PB brownie's peanut-butter-and-chocolate fudge: the barrel-rested body handles the PB brownie, and the oak threads the dessert. Works; accessible aged composed with dessert.
+
+--- #218 [works    ][dxf] Sauteed Garlic Spinach x Heaven Hill 20 Year ---
+Heaven Hill 20 Year's oak-and-vanilla bourbon depth reads alongside the garlic spinach's garlic-buttered greens: the bourbon depth settles into the garlic spinach, and the vanilla softens the side. Works; the digestif-on-light-side call holds — neither soars nor fights.
+
+--- #219 [works    ][dxf] Scapegrace Fortuna x Mocha Creme ---
+Scapegrace Fortuna's NZ craft single malt leans against the mocha creme's coffee-chocolate richness: the bourbon depth settles into the mocha creme, and the vanilla layers into the cream. Works; the bourbon-on-dessert call sits without pulling focus.
+
+--- #220 [works    ][dxf] Stoneleigh Sauvignon Blanc x Faroe Island Salmon ---
+Stoneleigh Sauvignon Blanc's crisp NZ Sauvignon Blanc leans against the salmon's rich oily flesh: the bright acid lifts the salmon, and the grapefruit edge cuts the plate. Works; the white-on-rich-side pairing reads as a quiet alongside.
+
+--- #221 [works    ][dxf] Grilled Caesar x Lail Vineyards Daniel Cuvée ---
+Lail Vineyards Daniel Cuvée's concentrated dark-fruit and tannin leans against the Caesar's charred-romaine and anchovy edge: the structured body wraps the grilled Caesar, and the cassis frames the bowl. Works; the courses share the table without crowding.
+
+--- #222 [works    ][dxf] Seasonal Soup x Hancock's Reserve Single Barrel ---
+Hancock's Reserve Single Barrel's oak-and-vanilla bourbon depth leans against the seasonal soup's house seasonal build: the bourbon depth settles into the seasonal soup, and the vanilla softens the bowl. Works; the bourbon-on-light-soup pairing sits at neutral register without clash.
+
+--- #223 [works    ][dxf] Weller 107 x Chocolate Cake ---
+Weller 107's bigger-body wheated buries scallop sweetness reads alongside the chocolate cake's layered chocolate body: the bourbon depth settles into the chocolate cake, and the spice threads the dessert. Works; extended maturation gives the dessert home-state aged character.
+
+--- #224 [works    ][dxf] French Onion x Faust Napa Valley Cabernet ---
+Faust Napa Valley Cabernet's structured Napa Cab with cassis depth sits alongside the French onion's beef-broth-and-gruyere depth: the structured-Cab body wraps the French onion, and the cassis-and-cedar edge frames the bowl. Works; the opener sits without competing.
+
+--- #225 [works    ][dxf] Creme Brulee x Elijah Craig Straight Rye ---
+Elijah Craig Straight Rye's rye-spice character finds neutral with the brulee's burnt-sugar custard: the rye spice cuts the brulee, and the oak rounds the cream. Works; the complex profile is slightly over-specified for the dessert.
+
+--- #226 [works    ][dxf] Lobster Mac x Glenlivet 12 ---
+Glenlivet 12's entry Speyside character reads alongside the lobster mac's shellfish-in-cream indulgence: the bourbon-cask pear lifts the lobster mac, and the oak rounds the cream. Works; BH Red Wine Cask handles the richness at distinctive register.
+
+--- #227 [works    ][dxf] Alexander Valley Cyrus x Shrimp Bisque ---
+Alexander Valley Cyrus' concentrated dark-fruit and tannin leans against the shrimp bisque's creamy shellfish soup: the structured body wraps the shrimp bisque, and the cassis frames the bowl. Works; the side sits without pulling focus.
+
+--- #228 [works    ][dxf] Lobster Mac x Canadian Club 43 Year ---
+Canadian Club 43 Year's Canadian whisky character leans against the lobster mac's shellfish-in-cream indulgence: the Canadian whisky weight matches the lobster mac, and the oak rounds the cream. Works; own-plus-sourced over-specified.
+
+--- #229 [works    ][dxf] Cheesecake x Basil Hayden's Malted Rye ---
+Basil Hayden's Malted Rye's rye-spice character leans against the cheesecake's dense tangy dairy custard: the rye spice cuts the cheesecake, and the oak rounds the cream. Works; aged character overshoots delicacy.
+
+--- #230 [works    ][dxf] Fento Ollo de Sapo Mencía x Roasted Red Pepper Chickpea ---
+Fento Ollo de Sapo Mencía's Tempranillo with vanilla-and-leather depth leans against the chickpea soup's roasted-pepper chickpea warmth: the Tempranillo body wraps the chickpea soup, and the medium-body red meets the light soup. Works; the elegant-red-on-light-soup call holds — neither soars nor fights.
+
+--- #231 [works    ][dxf] Siete Leguas Blanco x Market Fish ---
+Siete Leguas Blanco's silver-spirit lift with agave-citrus edge sits alongside the market fish's clean white-fish flesh: the unaged body brightens the market fish, and the agave-citrus thread frames the plate. Works; ceremonial pairing depends on preparation.
+
+--- #232 [works    ][dxf] Jefferson's Ocean Voyage 23 x Lobster Mac ---
+Jefferson's Ocean Voyage 23's oak-and-vanilla bourbon depth reads alongside the lobster mac's shellfish-in-cream indulgence: the bourbon depth settles into the lobster mac, and the vanilla layers into the cream. Works; distinctive finish over-specified.
+
+--- #233 [works    ][dxf] Bluecoat Gin x French Onion ---
+Bluecoat Gin's botanical-driven lift sits alongside the French onion's beef-broth-and-gruyere depth: the floral edge frames the French onion, and the juniper threads the bowl. Works; the gin-on-light-soup call sits without pulling focus.
+
+--- #234 [works    ][dxf] Poderi Aldo Conterno Nebbiolo x Roast Half Chicken ---
+Poderi Aldo Conterno Nebbiolo's concentrated dark-fruit and tannin sits alongside the chicken's herbed crisp-skin roast: the structured body wraps the roast chicken, and the cassis frames the plate. Works; the side call holds at neutral register.
+
+--- #235 [works    ][dxf] Mister Sam Tribute Whiskey x Beignets ---
+Mister Sam Tribute Whiskey's oak-and-vanilla bourbon depth reads alongside the beignets' warm sugar-dusted pastry: the bourbon depth settles into the beignets, and the spice threads the dessert. Works; a gentle composed match.
+
+--- #236 [works    ][dxf] French Onion x Jim Beam White Label ---
+Jim Beam White Label's oak-and-vanilla bourbon depth reads alongside the French onion's beef-broth-and-gruyere depth: the bourbon depth settles into the French onion, and the vanilla softens the bowl. Works; CC 43 Year is over-specified for a soup; save the rare bottle.
+
+--- #237 [works    ][dxf] Fernet Branca x Creme Brulee ---
+Fernet Branca's cask-strength nuclear-bitter-menthol edge leans against the brulee's burnt-sugar custard: the nuclear-bitter edge cuts the brulee, and the spice threads the dessert. Works; Branca is too intense to feature with casual sugared dessert but can land as digestif.
+
+--- #238 [works    ][dxf] Elmer T. Lee x Gumbo ---
+Elmer T. Lee's oak-and-vanilla bourbon depth leans against the gumbo's spiced creole stew: the bourbon depth settles into the gumbo, and the vanilla softens the bowl. Works; Vermont-brand character doesn't drive.
+
+--- #239 [works    ][dxf] Vegetable Curry with Chickpeas x Komos Anejo Reserva ---
+Komos Anejo Reserva's aged-agave character sits alongside the curry's spiced chickpea-curry warmth: the barrel-rested body handles the curry, and the oak threads the bowl. Works; safe añejo-on-light-soup alongside, but not the headline call.
+
+--- #240 [works    ][dxf] Seasonal Soup x Blanton's Straight from the Barrel ---
+Blanton's Straight from the Barrel's oak-and-vanilla bourbon depth leans against the seasonal soup's house seasonal build: the bourbon depth settles into the seasonal soup, and the vanilla softens the bowl. Works; the digestif-on-light-soup call lands as a measured alongside.
+
+--- #241 [avoid    ][dxf] Tanqueray Gin x Kansas City ---
+Tanqueray Gin's botanical-driven lift overpowers the KC's lean-bold strip with savory grain -- the plate deserves Jordan Cabernet Sauvignon, Shafer Hillside Select, or Pio Cesare Barbaresco, not a gin. Avoid; reach for any of those instead. Save the Tanqueray Gin for another course.
+
+--- #242 [avoid    ][dxf] Seared Scallops x Jack Daniel's 12 Year ---
+Jack Daniel's 12 Year's oak-and-vanilla bourbon depth overpowers the scallops' caramelized sear-and-sweet richness -- the plate deserves Jean-Pierre Grossot Chablis, Pierre Gimonnet Special Club Brut, or Joseph Mellot Sancerre, not a bourbon. Avoid; steer the table to the alternatives. Hold the Jack Daniel's 12 Year for the steak course.
+
+--- #243 [avoid    ][dxf] J. Davies Cabernet Sauvignon x Seafood Tower ---
+J. Davies Cabernet Sauvignon's Diamond Mountain Cab character overpowers the seafood tower's chilled shellfish lineup -- the plate deserves Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut, not a big red. Avoid; pick from the alternatives. J. Davies Cabernet Sauvignon belongs on the steak course.
+
+--- #244 [avoid    ][dxf] Canadian Club x Burrata ---
+Canadian Club's workhorse Canadian blend overpowers the burrata's fresh basil-tomato-cream delicacy -- the plate deserves Il Colle Prosecco Superiore, St Supéry Sauvignon Blanc, or Stoneleigh Sauvignon Blanc, not a Canadian whisky. Avoid; reach for any of those instead. Hold the Canadian Club for the steak course.
+
+--- #245 [avoid    ][dxf] Rainbow Trout x Jung and Wulff Trinidad ---
+Jung and Wulff Trinidad's dense-spirit weight overpowers the trout's delicate flesh -- the plate deserves Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé, not a heavy spirit. Avoid; pick from the alternatives. Jung and Wulff Trinidad belongs on the steak course.
+
+--- #246 [avoid    ][dxf] Louis XIII Cognac x Bone-In Filet ---
+Louis XIII Cognac's luxury-icon cognac depth overpowers the bone-in filet's bone-enhanced buttery tenderness -- the plate deserves Opus One, Jordan Cabernet Sauvignon, or Knob Creek 15 Year, not an icon cognac. Avoid; steer the table to the alternatives. Save the Louis XIII Cognac for another course.
+
+--- #247 [avoid    ][dxf] Tuxedo-Crusted Yellowfin Tuna x Bowdie's Private Select — Maker's Mark ---
+Bowdie's Private Select — Maker's Mark's oak-and-vanilla bourbon depth overpowers the tuna's seared-rare flesh with sesame crust -- the plate deserves Pommery Cuvée Louise, Jean-Pierre Grossot Chablis, or Elk Cove Pinot Blanc, not a bourbon. Avoid; reach for any of those instead. Bowdie's Private Select — Maker's Mark belongs on the steak course.
+
+--- #248 [avoid    ][dxf] Chilean Seabass x Jubilation by Colgin ---
+Jubilation by Colgin's concentrated dark-fruit and tannin overpowers the seabass' buttery seabass flesh -- the plate deserves Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay, not a big red. Avoid; reach for any of those instead. Jubilation by Colgin belongs on the steak course.
+
+--- #249 [avoid    ][dxf] Balvenie 16 Single Barrel x Crab Cake ---
+Balvenie 16 Single Barrel's First Fill American Oak overpowers the crab cake's delicate sweet crab in a crisp crust -- the plate deserves Joseph Mellot Sancerre, Domaine de Berthiers Pouilly-Fumé, or Tanqueray Gin, not a scotch. Avoid; reach for any of those instead. Balvenie 16 Single Barrel belongs on the steak course.
+
+--- #250 [avoid    ][dxf] Burrata x Jefferson's Ocean Voyage 23 ---
+Jefferson's Ocean Voyage 23's oak-and-vanilla bourbon depth overpowers the burrata's fresh basil-tomato-cream delicacy -- the plate deserves Il Colle Prosecco Superiore, St Supéry Sauvignon Blanc, or Stoneleigh Sauvignon Blanc, not a bourbon. Avoid; reach for any of those instead. Save the Jefferson's Ocean Voyage 23 for the steak course.
+
+--- #251 [avoid    ][dxf] Rainbow Trout x Ocho Anejo ---
+Ocho Anejo's aged-agave character overpowers the trout's delicate flesh -- the plate deserves Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé, not an añejo tequila. Avoid; reach for any of those instead. Hold the Ocho Anejo for the steak course.
+
+--- #252 [avoid    ][dxf] Creme Brulee x Negroni ---
+Negroni's spirit-forward cocktail register overpowers the brulee's burnt-sugar custard -- the plate deserves Sauternes Glass, Vin Santo, or Ron Zacapa Rum, not a spirit-forward cocktail. Avoid; one of those is the move. Hold the Negroni for the steak course.
+
+--- #253 [avoid    ][dxf] Komos Extra Anejo x Seafood Tower ---
+Komos Extra Anejo's aged-agave character overpowers the seafood tower's chilled shellfish lineup -- the plate deserves Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut, not an añejo tequila. Avoid; steer the table to the alternatives. Komos Extra Anejo belongs on the steak course.
+
+--- #254 [avoid    ][dxf] Cowboy Ribeye x Hendricks Grand Cabaret ---
+Hendricks Grand Cabaret's botanical-driven lift overpowers the cowboy ribeye's marbled char-and-fat richness -- the plate deserves Caymus Cabernet Sauvignon, Silver Oak Cabernet Sauvignon, or Shafer Hillside Select, not a gin. Avoid; pick from the alternatives. Save the Hendricks Grand Cabaret for another course.
+
+--- #255 [avoid    ][dxf] Crab Cake x Muga Reserva ---
+Muga Reserva's Tempranillo with vanilla-and-leather depth overpowers the crab cake's delicate sweet crab in a crisp crust -- the plate deserves Joseph Mellot Sancerre, Domaine de Berthiers Pouilly-Fumé, or Tanqueray Gin, not an elegant red. Avoid; reach for any of those instead. Save the Muga Reserva for the steak course.
+
+--- #256 [avoid    ][dxf] Seared Scallops x Kentucky Owl 10 Year Rye ---
+Kentucky Owl 10 Year Rye's rye-spice character overpowers the scallops' caramelized sear-and-sweet richness -- the plate deserves Jean-Pierre Grossot Chablis, Pierre Gimonnet Special Club Brut, or Joseph Mellot Sancerre, not a rye whiskey. Avoid; pick from the alternatives. Save the Kentucky Owl 10 Year Rye for the steak course.
+
+--- #257 [avoid    ][dxf] Cheesecake x Keenan Chardonnay ---
+Keenan Chardonnay's oaked Spring Mountain Chardonnay overpowers the cheesecake's dense tangy dairy custard -- the plate deserves Sauternes Glass, Vin Santo, or Disaronno, not a white wine. Avoid; pick from the alternatives. Keenan Chardonnay belongs on the steak course.
+
+--- #258 [avoid    ][dxf] Burrata x Ron Zacapa Rum ---
+Ron Zacapa Rum's Solera-honey premium-sipping rum overpowers the burrata's fresh basil-tomato-cream delicacy -- the plate deserves Il Colle Prosecco Superiore, St Supéry Sauvignon Blanc, or Stoneleigh Sauvignon Blanc, not a heavy spirit. Avoid; the alts above are the call. Ron Zacapa Rum belongs on the steak course.
+
+--- #259 [avoid    ][dxf] Creme Brulee x Château Beaucastel ---
+Château Beaucastel's old-world Châteauneuf-du-Pape gravitas overpowers the brulee's burnt-sugar custard -- the plate deserves Sauternes Glass, Vin Santo, or Ron Zacapa Rum, not a big red. Avoid; steer the table to the alternatives. Save the Château Beaucastel for the steak course.
+
+--- #260 [avoid    ][dxf] Taylor Fladgate Tawny x Broccoli Cheddar ---
+Taylor Fladgate Tawny's classic tawny with caramel-nut sweetness overpowers the broccoli cheddar's cheddar-and-broccoli cream -- the plate deserves Keenan Chardonnay, Far Niente Chardonnay, or Alexander Valley Chardonnay, not a dessert wine. Avoid; one of those is the move. Hold the Taylor Fladgate Tawny for the steak course.
+
+--- #261 [avoid    ][dxf] Seafood Tower x Heitz Martha's Vineyard ---
+Heitz Martha's Vineyard's concentrated dark-fruit and tannin overpowers the seafood tower's chilled shellfish lineup -- the plate deserves Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut, not a big red. Avoid; steer the table to the alternatives. Save the Heitz Martha's Vineyard for the steak course.
+
+--- #262 [avoid    ][dxf] Crab Cake x Woodford Reserve ---
+Woodford Reserve's small-batch fruit and floral overpowers the crab cake's delicate sweet crab in a crisp crust -- the plate deserves Joseph Mellot Sancerre, Domaine de Berthiers Pouilly-Fumé, or Tanqueray Gin, not a bourbon. Avoid; the alts above are the call. Hold the Woodford Reserve for the steak course.
+
+--- #263 [avoid    ][dxf] Crab Cake x Glenfiddich 12 ---
+Glenfiddich 12's entry Speyside benchmark overpowers the crab cake's delicate sweet crab in a crisp crust -- the plate deserves Joseph Mellot Sancerre, Domaine de Berthiers Pouilly-Fumé, or Tanqueray Gin, not a scotch. Avoid; the alts above are the call. Save the Glenfiddich 12 for the steak course.
+
+--- #264 [avoid    ][dxf] Market Fish x Elijah Craig Single Barrel ---
+Elijah Craig Single Barrel's oak-and-vanilla bourbon depth overpowers the market fish's clean white-fish flesh -- the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a bourbon. Avoid; reach for any of those instead. Save the Elijah Craig Single Barrel for the steak course.
+
+--- #265 [avoid    ][dxf] Limoncello x Peanut Butter Brownie ---
+Limoncello's sweet liqueur character overpowers the PB brownie's peanut-butter-and-chocolate fudge -- the plate deserves Frangelico, Disaronno, or Graham's 20 Year Tawny, not a digestif. Avoid; the alts above are the call. Hold the Limoncello for the steak course.
+
+--- #266 [avoid    ][dxf] Seasonal Vegetables x Château Batailley ---
+Château Batailley's concentrated dark-fruit and tannin overpowers the seasonal vegetables' seasonal garden plate -- the plate deserves St Supéry Sauvignon Blanc, not a big red. Avoid; the alts above are the call. Château Batailley belongs on the steak course.
+
+--- #267 [avoid    ][dxf] Carrot Cake x Keenan Mernet ---
+Keenan Mernet's concentrated dark-fruit and tannin overpowers the carrot cake's cream-cheese-frosted spice cake -- the plate deserves Vin Santo, Disaronno, or Pineau des Charentes, not a big red. Avoid; reach for any of those instead. Hold the Keenan Mernet for the steak course.
+
+--- #268 [avoid    ][dxf] Knob Creek x Market Fish ---
+Knob Creek's oak-and-vanilla 100-proof depth overpowers the market fish's clean white-fish flesh -- the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a bourbon. Avoid; the alts above are the call. Hold the Knob Creek for the steak course.
+
+--- #269 [avoid    ][dxf] Rainbow Trout x WhistlePig PiggyBack 6 Year ---
+WhistlePig PiggyBack 6 Year's rye-spice character overpowers the trout's delicate flesh -- the plate deserves Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé, not a rye whiskey. Avoid; pick from the alternatives. Save the WhistlePig PiggyBack 6 Year for the steak course.
+
+--- #270 [avoid    ][dxf] Long Road Gin x Bone-In Filet ---
+Long Road Gin's botanical-driven lift overpowers the bone-in filet's bone-enhanced buttery tenderness -- the plate deserves Opus One, Jordan Cabernet Sauvignon, or Knob Creek 15 Year, not a gin. Avoid; pick from the alternatives. Save the Long Road Gin for another course.
+
+--- #271 [avoid    ][dxf] J. Davies Cabernet Sauvignon x Chilean Seabass ---
+J. Davies Cabernet Sauvignon's Diamond Mountain Cab character overpowers the seabass' buttery seabass flesh -- the plate deserves Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay, not a big red. Avoid; the alts above are the call. Hold the J. Davies Cabernet Sauvignon for the steak course.
+
+--- #272 [avoid    ][dxf] Far Niente Chardonnay x Porterhouse ---
+Far Niente Chardonnay's estate Napa Chardonnay character overpowers the porterhouse's dual strip-and-filet character -- the plate deserves Odette Cabernet Sauvignon, Weller 12 Year, or Domaine du Grand Tinel, not a white wine. Avoid; reach for any of those instead. Far Niente Chardonnay belongs on another course.
+
+--- #273 [avoid    ][dxf] Chilean Seabass x Jack Daniel's Sinatra Select ---
+Jack Daniel's Sinatra Select's oak-and-vanilla bourbon depth overpowers the seabass' buttery seabass flesh -- the plate deserves Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay, not a bourbon. Avoid; one of those is the move. Hold the Jack Daniel's Sinatra Select for the steak course.
+
+--- #274 [avoid    ][dxf] Kansas City x Laurent Perrier Le Cuvée Brut ---
+Laurent Perrier Le Cuvée Brut's classic non-vintage Champagne brightness overpowers the KC's lean-bold strip with savory grain -- the plate deserves Jordan Cabernet Sauvignon, Shafer Hillside Select, or Pio Cesare Barbaresco, not a sparkling. Avoid; steer the table to the alternatives. Laurent Perrier Le Cuvée Brut belongs on another course.
+
+--- #275 [avoid    ][dxf] Hendricks Grand Cabaret x The Tomahawk ---
+Hendricks Grand Cabaret's botanical-driven lift overpowers the Tomahawk's theatrical bone-in marbling and smoky char -- the plate deserves Opus One, Caymus Cabernet Sauvignon, or George T. Stagg, not a gin. Avoid; steer the table to the alternatives. Save the Hendricks Grand Cabaret for another course.
+
+--- #276 [avoid    ][dxf] Chocolate Cake x Venge Silencieux ---
+Venge Silencieux's concentrated dark-fruit and tannin overpowers the chocolate cake's layered chocolate body -- the plate deserves Taylor Fladgate Vintage Bottle, Graham's 2017 Vintage Port, or Baileys Irish Cream, not a big red. Avoid; steer the table to the alternatives. Hold the Venge Silencieux for the steak course.
+
+--- #277 [avoid    ][dxf] 1881 Napa Valley x Salt-Cured Halibut ---
+1881 Napa Valley's concentrated dark-fruit and tannin overpowers the halibut's salt-cured flesh -- the plate deserves Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay, not a big red. Avoid; reach for any of those instead. 1881 Napa Valley belongs on the steak course.
+
+--- #278 [avoid    ][dxf] Dunville's Single Malt x Burrata ---
+Dunville's Single Malt's Irish whiskey smoothness overpowers the burrata's fresh basil-tomato-cream delicacy -- the plate deserves Il Colle Prosecco Superiore, St Supéry Sauvignon Blanc, or Stoneleigh Sauvignon Blanc, not an Irish whiskey. Avoid; steer the table to the alternatives. Dunville's Single Malt belongs on the steak course.
+
+--- #279 [avoid    ][dxf] Adictivo Cristalino x Mocha Creme ---
+Adictivo Cristalino's aged-agave character overpowers the mocha creme's coffee-chocolate richness -- the plate deserves Kahlua, Patron XO Cafe, or Frangelico, not an añejo tequila. Avoid; one of those is the move. Adictivo Cristalino belongs on the steak course.
+
+--- #280 [avoid    ][dxf] Aperol x Shrimp Cocktail ---
+Aperol's crisp bitter-orange-aperitivo edge overpowers the shrimp cocktail's cool brine-and-citrus shellfish -- the plate deserves Bacardi Rum, Mount Gay Rum, or Grey Goose Vodka, not a bitter aperitivo. Avoid; pick from the alternatives. Aperol belongs on the steak course.
+
+--- #281 [avoid    ][dxf] Gundlach Bundschu Cabernet x Chocolate Cake ---
+Gundlach Bundschu Cabernet's concentrated dark-fruit and tannin overpowers the chocolate cake's layered chocolate body -- the plate deserves Taylor Fladgate Vintage Bottle, Graham's 2017 Vintage Port, or Baileys Irish Cream, not a big red. Avoid; the alts above are the call. Save the Gundlach Bundschu Cabernet for the steak course.
+
+--- #282 [avoid    ][dxf] Limoncello x Bone Marrow ---
+Limoncello's sweet liqueur character overpowers the bone marrow's unctuous rendered-marrow richness -- the plate deserves Fernet Branca, Lagavulin 8, or George T. Stagg, not a digestif. Avoid; the alts above are the call. Limoncello belongs on the steak course.
+
+--- #283 [avoid    ][dxf] 1792 Sweet Wheat x Rainbow Trout ---
+1792 Sweet Wheat's oak-and-vanilla bourbon depth overpowers the trout's delicate flesh -- the plate deserves Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé, not a bourbon. Avoid; one of those is the move. 1792 Sweet Wheat belongs on the steak course.
+
+--- #284 [avoid    ][dxf] Shrimp Cocktail x Sesti Brunello di Montalcino ---
+Sesti Brunello di Montalcino's concentrated dark-fruit and tannin overpowers the shrimp cocktail's cool brine-and-citrus shellfish -- the plate deserves Bacardi Rum, Mount Gay Rum, or Grey Goose Vodka, not a big red. Avoid; the alts above are the call. Save the Sesti Brunello di Montalcino for the steak course.
+
+--- #285 [avoid    ][dxf] Cucumber Gimlet x Cowboy Ribeye ---
+Cucumber Gimlet's citrus-and-bright cocktail lift overpowers the cowboy ribeye's marbled char-and-fat richness -- the plate deserves Caymus Cabernet Sauvignon, Silver Oak Cabernet Sauvignon, or Shafer Hillside Select, not a light cocktail. Avoid; one of those is the move. Save the Cucumber Gimlet for another course.
+
+--- #286 [avoid    ][dxf] Sesti Brunello di Montalcino x Chocolate Brownie ---
+Sesti Brunello di Montalcino's concentrated dark-fruit and tannin overpowers the brownie's fudgy cocoa-and-chocolate weight -- the plate deserves Taylor Fladgate Vintage Bottle, Graham's 2017 Vintage Port, or Louis XIII Cognac, not a big red. Avoid; pick from the alternatives. Save the Sesti Brunello di Montalcino for the steak course.
+
+--- #287 [avoid    ][dxf] Clase Azul Ultra x Rainbow Trout ---
+Clase Azul Ultra's aged-agave character overpowers the trout's delicate flesh -- the plate deserves Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé, not an añejo tequila. Avoid; steer the table to the alternatives. Clase Azul Ultra belongs on the steak course.
+
+--- #288 [avoid    ][dxf] Faroe Island Salmon x Old Emmer ---
+Old Emmer's oak-and-vanilla bourbon depth overpowers the salmon's rich oily flesh -- the plate deserves Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain, not a bourbon. Avoid; the alts above are the call. Save the Old Emmer for the steak course.
+
+--- #289 [avoid    ][dxf] Clase Azul Guerrero Mezcal x Swordfish ---
+Clase Azul Guerrero Mezcal's smoky agave character overpowers the swordfish's meaty swordfish steak -- the plate deserves Far Niente Chardonnay, Schloss Vollrads Riesling, or Keenan Chardonnay, not a mezcal. Avoid; pick from the alternatives. Save the Clase Azul Guerrero Mezcal for the steak course.
+
+--- #290 [avoid    ][dxf] Market Fish x Ghost Block Zinfandel ---
+Ghost Block Zinfandel's concentrated dark-fruit and tannin overpowers the market fish's clean white-fish flesh -- the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a big red. Avoid; steer the table to the alternatives. Hold the Ghost Block Zinfandel for the steak course.
+
+--- #291 [avoid    ][dxf] Faust Napa Valley Cabernet x Seasonal Vegetables ---
+Faust Napa Valley Cabernet's structured Napa Cab with cassis depth overpowers the seasonal vegetables' seasonal garden plate -- the plate deserves St Supéry Sauvignon Blanc, not a big red. Avoid; reach for any of those instead. Save the Faust Napa Valley Cabernet for the steak course.
+
+--- #292 [avoid    ][dxf] Heitz Martha's Vineyard x Asparagus ---
+Heitz Martha's Vineyard's concentrated dark-fruit and tannin overpowers the asparagus' green-vegetal edge -- the plate deserves St Supéry Sauvignon Blanc, Stoneleigh Sauvignon Blanc, or Joseph Mellot Sancerre, not a big red. Avoid; reach for any of those instead. Hold the Heitz Martha's Vineyard for the steak course.
+
+--- #293 [avoid    ][dxf] Faroe Island Salmon x 1792 Small Batch ---
+1792 Small Batch's caramel-spice character overpowers the salmon's rich oily flesh -- the plate deserves Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain, not a bourbon. Avoid; reach for any of those instead. Hold the 1792 Small Batch for the steak course.
+
+--- #294 [avoid    ][dxf] The Tomahawk x Tanqueray Gin ---
+Tanqueray Gin's botanical-driven lift overpowers the Tomahawk's theatrical bone-in marbling and smoky char -- the plate deserves Opus One, Caymus Cabernet Sauvignon, or George T. Stagg, not a gin. Avoid; one of those is the move. Hold the Tanqueray Gin for another course.
+
+--- #295 [avoid    ][dxf] Alexander Valley Cyrus x Faroe Island Salmon ---
+Alexander Valley Cyrus' concentrated dark-fruit and tannin overpowers the salmon's rich oily flesh -- the plate deserves Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain, not a big red. Avoid; reach for any of those instead. Hold the Alexander Valley Cyrus for the steak course.
+
+--- #296 [avoid    ][dxf] Jubilation by Colgin x Seared Scallops ---
+Jubilation by Colgin's concentrated dark-fruit and tannin overpowers the scallops' caramelized sear-and-sweet richness -- the plate deserves Jean-Pierre Grossot Chablis, Pierre Gimonnet Special Club Brut, or Joseph Mellot Sancerre, not a big red. Avoid; the alts above are the call. Hold the Jubilation by Colgin for the steak course.
+
+--- #297 [avoid    ][dxf] Salt-Cured Halibut x E.H. Taylor Full Proof ---
+E.H. Taylor Full Proof's oak-and-vanilla bourbon depth overpowers the halibut's salt-cured flesh -- the plate deserves Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay, not a bourbon. Avoid; one of those is the move. E.H. Taylor Full Proof belongs on the steak course.
+
+--- #298 [avoid    ][dxf] Oban 14 x Salt-Cured Halibut ---
+Oban 14's maritime-Highland coastal character overpowers the halibut's salt-cured flesh -- the plate deserves Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay, not a scotch. Avoid; steer the table to the alternatives. Hold the Oban 14 for the steak course.
+
+--- #299 [avoid    ][dxf] Fento Ollo de Sapo Mencía x Tuxedo-Crusted Yellowfin Tuna ---
+Fento Ollo de Sapo Mencía's Tempranillo with vanilla-and-leather depth overpowers the tuna's seared-rare flesh with sesame crust -- the plate deserves Pommery Cuvée Louise, Jean-Pierre Grossot Chablis, or Elk Cove Pinot Blanc, not an elegant red. Avoid; one of those is the move. Fento Ollo de Sapo Mencía belongs on the steak course.
+
+--- #300 [avoid    ][dxf] Salt-Cured Halibut x E.H. Taylor Rye ---
+E.H. Taylor Rye's rye-spice character overpowers the halibut's salt-cured flesh -- the plate deserves Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay, not a rye whiskey. Avoid; pick from the alternatives. Hold the E.H. Taylor Rye for the steak course.
+
+=== STATS === dxf:299 fxf:1 err:0
