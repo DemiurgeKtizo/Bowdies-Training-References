@@ -360,7 +360,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "House Wedge",
+      "Mocha Creme", "Chocolate Cake", "House Wedge",
       "Au Gratin Potatoes",
       "Mushrooms",
       "Creme Brulee",
@@ -786,7 +786,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Quilt Cabernet Sauvignon",
+      "Mocha Creme", "Chocolate Cake", "Quilt Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
       "House Wedge",
       "Château de Rouillac",
@@ -1290,7 +1290,7 @@ const PAIRING_MAP = [
       "Gran Patron Platinum",
     ],
     works: [
-      "House Wedge",
+      "Mocha Creme", "Chocolate Cake", "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
       "Chocolate Brownie",
@@ -1720,7 +1720,7 @@ const PAIRING_MAP = [
       "Villon Cognac",
     ],
     works: [
-      "House Wedge",
+      "Mocha Creme", "Chocolate Cake", "House Wedge",
       "Marimar Estate Christina",
       "Truffle Fries",
       "Chocolate Brownie",
@@ -2147,7 +2147,7 @@ const PAIRING_MAP = [
       "Komos Anejo Reserva",
     ],
     works: [
-      "Truffle Fries",
+      "Mocha Creme", "Chocolate Cake", "Truffle Fries",
       "Mushrooms",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
@@ -2615,7 +2615,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "Maker's Mark", "Basil Hayden's Toast", "House Wedge",
+      "Mocha Creme", "Chocolate Cake", "Maker's Mark", "Basil Hayden's Toast", "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
       "Chocolate Brownie",
@@ -5235,7 +5235,7 @@ const PAIRING_MAP = [
       "Yamazaki 18 Year",
     ],
     works: [
-      "G.D. Vajra Moscato d'Asti",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "G.D. Vajra Moscato d'Asti",
       "Limoncello",
       "Jameson Irish Whiskey",
       "Tullamore D.E.W.",
@@ -11448,7 +11448,7 @@ const PAIRING_MAP = [
       "Evening Land Seven Springs",
     ],
     works: [
-      "Raventós Cava de NIT Rosé Brut",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Raventós Cava de NIT Rosé Brut",
       "Joseph Mellot Sancerre",
       "Stoneleigh Sauvignon Blanc",
       "The Manhattan",
@@ -13374,7 +13374,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Le Garenne Rosé", "Bee's Knees",
+      "Mocha Creme", "Chocolate Cake", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Le Garenne Rosé", "Bee's Knees",
       "Paloma",
       "Creme Brulee",
       "Beignets",
@@ -13758,7 +13758,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Don Julio Blanco",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Don Julio Blanco",
       "Patron Silver",
       "Clase Azul Plata",
       "Gran Patron Platinum",
@@ -14244,7 +14244,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Le Garenne Rosé",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Le Garenne Rosé",
       "Joseph Mellot Sancerre",
       "Cucumber Gimlet",
       "The Happy Wife",
@@ -14693,7 +14693,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Raventós Cava de NIT Rosé Brut",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
       "Cucumber Gimlet",
       "Fisher Unity Pinot Noir",
@@ -15148,7 +15148,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Jean-Pierre Grossot Chablis",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Jean-Pierre Grossot Chablis",
       "Joseph Mellot Sancerre",
       "Raventós Cava de NIT Rosé Brut",
       "Jordan Cabernet Sauvignon",
@@ -15601,7 +15601,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Elk Cove Pinot Blanc",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Elk Cove Pinot Blanc",
       "Jordan Cabernet Sauvignon",
       "Fisher Unity Pinot Noir",
       "Le Garenne Rosé",
@@ -16049,7 +16049,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Lingua Franca Avni Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Lingua Franca Avni Pinot Noir",
       "Far Niente Chardonnay",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
@@ -16468,7 +16468,7 @@ const PAIRING_MAP = [
       "Hakushu 12 Year",
     ],
     works: [
-      "Jordan Cabernet Sauvignon",
+      "Mocha Creme", "Chocolate Cake", "Peanut Butter Brownie", "Chocolate Brownie", "Jordan Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
       "Le Garenne Rosé",
       "Raventós Cava de NIT Rosé Brut",
@@ -21930,7 +21930,7 @@ const PAIRING_MAP = [
       "Malibu Rum",
     ],
     works: [
-      "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
+      "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Beignets",
       "Filet Mignon",
@@ -22402,7 +22402,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
+      "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Filet Mignon",
       "Bone-In Filet",
@@ -22925,7 +22925,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Beignets",
+      "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Beignets",
       "Il Colle Prosecco Superiore",
       "Filet Mignon",
       "Bone-In Filet",
@@ -23372,7 +23372,7 @@ const PAIRING_MAP = [
       "Pineau des Charentes",
     ],
     works: [
-      "Filet Mignon",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -23791,7 +23791,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Filet Mignon",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -24215,7 +24215,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Filet Mignon",
+      "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -24666,7 +24666,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Sauternes Glass",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
       "Licor 43",
       "Fireball Whisky",
       "Bowdie's Old Fashioned",
@@ -25122,7 +25122,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Sauternes Glass",
+      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
       "Don Julio 1942",
       "Clase Azul Durango",
       "Clase Azul Gold",

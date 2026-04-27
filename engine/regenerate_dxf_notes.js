@@ -191,5 +191,3 @@ console.log('');
 console.log('Next:');
 console.log('  node engine/engine_snapshot_test.js   # verify anchors');
 console.log('  node engine/engine_health_check.js    # verify structural integrity');
-S, getPairingNote };\n' +
-  '}\n';

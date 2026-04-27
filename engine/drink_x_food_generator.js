@@ -855,7 +855,7 @@ function _editorialVerdict(tier, drink, food, profile) {
   const foodNameLower = food.name.toLowerCase();
   const foodProfile = (food.profile || []).join(' ').toLowerCase();
   const allowedFoodContext = foodCharText + ' ' + foodNameLower + ' ' + foodProfile;
-  const FOOD_NOUN_RX = /\b(marrow|crab|cream|potato|shellfish|brulee|cake|fries|fish|chicken|halibut|tuna|trout|salmon|seabass|burrata|escargot|tartare|asparagus|broccoli|spinach|carrot|brownie|cheesecake|beignets|wedge|caesar|gumbo|chowder|bisque|ribeye|filet|steak|tomahawk|cowboy|porterhouse|kc|kansas city|strip|tenderloin|pork|belly|sprouts|mushroom|shrimp|cocoa|chocolate|custard|raisin|umami|broth|cheddar|gruyere|honey-glazed|sugar|scallops|scallop|swordfish|squash|au gratin|gratin|broccolini|peanut|mac|mocha)\b/gi;
+  const FOOD_NOUN_RX = /\b(marrow|crab|cream|potato|shellfish|brulee|cake|fries|fish|chicken|halibut|tuna|trout|salmon|seabass|burrata|escargot|tartare|asparagus|broccoli|spinach|carrot|brownie|cheesecake|beignets|wedge|caesar|gumbo|chowder|bisque|ribeye|filet|steak|tomahawk|cowboy|porterhouse|kc|kansas city|strip|tenderloin|pork|belly|sprouts|mushroom|shrimp|cocoa|chocolate|custard|raisin|umami|broth|cheddar|gruyere|honey-glazed|sugar|scallops|scallop|swordfish|squash|au gratin|gratin|broccolini|peanut|mac|mocha|bacon|bleu|lardon|lardons|anchovy|romaine|iceberg)\b/gi;
   pool = pool.filter(e => {
     const t = e.template.toLowerCase();
     let m;
