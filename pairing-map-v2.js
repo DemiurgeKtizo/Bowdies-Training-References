@@ -505,7 +505,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Bone-In Filet",
@@ -972,7 +972,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Kansas City",
@@ -1437,7 +1437,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Cowboy Ribeye",
@@ -1904,7 +1904,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "The Tomahawk",
@@ -2373,7 +2373,7 @@ const PAIRING_MAP = [
       "Sambuca",
       "Ancho Reyes",
       "Komos Crystallino Anejo",
-    ]
+    ],
   },
   {
     name: "Porterhouse",
@@ -2840,7 +2840,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Prime Tartare",
@@ -3295,7 +3295,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Bone Marrow",
@@ -3757,7 +3757,7 @@ const PAIRING_MAP = [
       "Mata Hari Absinthe",
       "Sambuca",
       "Ancho Reyes",
-    ]
+    ],
   },
   {
     name: "Crab Cake",
@@ -4214,7 +4214,7 @@ const PAIRING_MAP = [
       "Casa LBV Port",
       "Vin Santo",
       "Sauternes Glass",
-    ]
+    ],
   },
   {
     name: "Seafood Tower",
@@ -4668,7 +4668,7 @@ const PAIRING_MAP = [
       "Ocho Anejo",
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
-    ]
+    ],
   },
   {
     name: "Shrimp Cocktail",
@@ -5122,7 +5122,7 @@ const PAIRING_MAP = [
       "Mata Hari Absinthe",
       "Sambuca",
       "Ancho Reyes",
-    ]
+    ],
   },
   {
     name: "Seared Scallops",
@@ -5579,7 +5579,7 @@ const PAIRING_MAP = [
       "Sauternes Glass",
       "Captain Morgan Rum",
       "Malibu Rum",
-    ]
+    ],
   },
   {
     name: "Escargot",
@@ -6033,7 +6033,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Burrata",
@@ -6487,7 +6487,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Shrimp Bisque",
@@ -6941,7 +6941,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "House Wedge",
@@ -7400,7 +7400,7 @@ const PAIRING_MAP = [
       "Casa LBV Port",
       "Vin Santo",
       "Sauternes Glass",
-    ]
+    ],
   },
   {
     name: "Grilled Caesar",
@@ -7852,12 +7852,11 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Seasonal Soup",
     category: "soup-salad",
-    variable: true,
     profile: ["variable","seasonal"],
     gold: [
       "Far Niente Chardonnay",
@@ -8305,7 +8304,6 @@ const PAIRING_MAP = [
       "Frangelico",
       "Disaronno",
     ],
-    variablePrompt: "What is today's soup? (e.g. French onion, butternut squash, tomato basil)"
   },
   {
     name: "Mushroom Bisque",
@@ -8756,7 +8754,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Creamy Potato",
@@ -9207,7 +9205,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Loaded Potato",
@@ -9658,7 +9656,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Tomato Basil",
@@ -10109,7 +10107,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Gumbo",
@@ -10560,7 +10558,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Roasted Red Pepper Chickpea",
@@ -11011,7 +11009,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Clam Chowder",
@@ -11462,7 +11460,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Vegetable Curry with Chickpeas",
@@ -11913,7 +11911,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Broccoli Cheddar",
@@ -12364,7 +12362,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Butternut Squash",
@@ -12815,7 +12813,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "French Onion",
@@ -13266,7 +13264,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Faroe Island Salmon",
@@ -13724,12 +13722,11 @@ const PAIRING_MAP = [
       "Ocho Anejo",
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
-    ]
+    ],
   },
   {
     name: "Market Fish",
     category: "main",
-    variable: true,
     profile: ["seafood","variable","delicate","seasonal"],
     gold: [
       "Joseph Mellot Sancerre",
@@ -14178,7 +14175,6 @@ const PAIRING_MAP = [
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
     ],
-    variablePrompt: "What is today's market fish and preparation?"
   },
   {
     name: "Tuxedo-Crusted Yellowfin Tuna",
@@ -14630,7 +14626,7 @@ const PAIRING_MAP = [
       "Ocho Anejo",
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
-    ]
+    ],
   },
   {
     name: "Salt-Cured Halibut",
@@ -15082,7 +15078,7 @@ const PAIRING_MAP = [
       "Ocho Anejo",
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
-    ]
+    ],
   },
   {
     name: "Swordfish",
@@ -15534,7 +15530,7 @@ const PAIRING_MAP = [
       "Ocho Anejo",
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
-    ]
+    ],
   },
   {
     name: "Chilean Seabass",
@@ -15987,7 +15983,7 @@ const PAIRING_MAP = [
       "Ocho Anejo",
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
-    ]
+    ],
   },
   {
     name: "Rainbow Trout",
@@ -16439,7 +16435,7 @@ const PAIRING_MAP = [
       "Ocho Anejo",
       "Clase Azul Anejo",
       "Komos Anejo Reserva",
-    ]
+    ],
   },
   {
     name: "Roast Half Chicken",
@@ -16897,7 +16893,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Truffle Fries",
@@ -17358,7 +17354,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Lobster Mac",
@@ -17812,7 +17808,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Au Gratin Potatoes",
@@ -18267,7 +18263,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Brussels and Belly",
@@ -18724,7 +18720,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Creamed Spinach",
@@ -19184,7 +19180,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Sauteed Garlic Spinach",
@@ -19637,7 +19633,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Mushrooms",
@@ -20097,12 +20093,11 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Seasonal Vegetables",
     category: "side",
-    variable: true,
     profile: ["variable","light","vegetable","seasonal"],
     gold: [
       "St Supéry Sauvignon Blanc",
@@ -20550,7 +20545,6 @@ const PAIRING_MAP = [
       "Frangelico",
       "Disaronno",
     ],
-    variablePrompt: "What are today's seasonal vegetables?"
   },
   {
     name: "Honey Roasted Carrots",
@@ -21001,7 +20995,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Broccolini",
@@ -21452,7 +21446,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Asparagus",
@@ -21903,7 +21897,7 @@ const PAIRING_MAP = [
       "Patron XO Cafe",
       "Frangelico",
       "Disaronno",
-    ]
+    ],
   },
   {
     name: "Creme Brulee",
@@ -22366,7 +22360,7 @@ const PAIRING_MAP = [
       "Hendricks Orbium",
       "Roku Gin",
       "Komos Crystallino Anejo",
-    ]
+    ],
   },
   {
     name: "Cheesecake",
@@ -22829,7 +22823,7 @@ const PAIRING_MAP = [
       "Mahon Gin",
       "Inverroche Gin",
       "Roku Gin",
-    ]
+    ],
   },
   {
     name: "Carrot Cake",
@@ -23290,7 +23284,7 @@ const PAIRING_MAP = [
       "Hendricks Neptunia",
       "Hendricks Orbium",
       "Roku Gin",
-    ]
+    ],
   },
   {
     name: "Chocolate Brownie",
@@ -23751,7 +23745,7 @@ const PAIRING_MAP = [
       "Hendricks Neptunia",
       "Hendricks Orbium",
       "Roku Gin",
-    ]
+    ],
   },
   {
     name: "Peanut Butter Brownie",
@@ -24211,7 +24205,7 @@ const PAIRING_MAP = [
       "Hendricks Neptunia",
       "Hendricks Orbium",
       "Roku Gin",
-    ]
+    ],
   },
   {
     name: "Beignets",
@@ -24674,12 +24668,11 @@ const PAIRING_MAP = [
       "Long Road Gin",
       "Roku Gin",
       "Komos Crystallino Anejo",
-    ]
+    ],
   },
   {
     name: "Chocolate Cake",
     category: "dessert",
-    oos: true,
     profile: ["sweet","rich","chocolate","layered","indulgent","bold"],
     gold: [
       "Taylor Fladgate Vintage Bottle",
@@ -25128,12 +25121,11 @@ const PAIRING_MAP = [
       "Hendricks Orbium",
       "Roku Gin",
       "Komos Crystallino Anejo",
-    ]
+    ],
   },
   {
     name: "Mocha Creme",
     category: "dessert",
-    oos: true,
     profile: ["sweet","coffee","chocolate","creamy","rich","dessert"],
     gold: [
       "Kahlua",
@@ -25582,7 +25574,7 @@ const PAIRING_MAP = [
       "Hendricks Orbium",
       "Roku Gin",
       "Komos Crystallino Anejo",
-    ]
+    ],
   },
   {
     name: "Bowdie's Old Fashioned",
@@ -25604,7 +25596,6 @@ const PAIRING_MAP = [
     strong: [
       "Kansas City",
       "Filet Mignon",
-      "Caymus Cabernet Sauvignon",
       "Bone-In Filet",
       "Porterhouse",
       "Creamed Spinach",
@@ -25631,7 +25622,6 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Crab Cake",
       "Burrata",
@@ -25655,108 +25645,9 @@ const PAIRING_MAP = [
       "Sauteed Garlic Spinach",
       "Carrot Cake",
       "Beignets",
-      "G.D. Vajra Moscato d'Asti",
-      "Il Colle Prosecco Superiore",
-      "Stoneleigh Sauvignon Blanc",
-      "Alexander Valley Chardonnay",
-      "Elk Cove Pinot Blanc",
-      "Jean-Pierre Grossot Chablis",
-      "Schloss Vollrads Riesling",
-      "Domaine de Berthiers Pouilly-Fumé",
-      "Our Lady of Guadalupe Acolytes",
-      "Keenan Chardonnay",
-      "Far Niente Chardonnay",
-      "Lingua Franca Avni Pinot Noir",
-      "Fisher Unity Pinot Noir",
-      "Cristom Mt Jefferson Cuvée",
-      "Daniel Chotard Sancerre Rouge",
-      "Evening Land Seven Springs",
-      "Marimar Estate Christina",
-      "Jax Calesa Vineyard Pinot Noir",
-      "Macauley Pinot Noir",
-      "Elk Cove Five Mountain",
-      "RAEN Royal St Robert",
-      "Sanford & Benedict Pinot Noir",
-      "J Davies Ferrington Vineyards",
-      "Marc Brédif Chinon",
-      "Domaine Serene Grand Cheval",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Graham's 2017 Vintage Port",
-      "Taylor Fladgate Tawny",
-      "Taylor Fladgate Vintage Bottle",
-      "Casa LBV Port",
-      "Pineau des Charentes",
-      "Vin Santo",
-      "Sauternes Glass",
-      "Grand Marnier",
-      "Limoncello",
-      "Chambord",
-      "Licor 43",
-      "Fireball Whisky",
-      "Don Julio Blanco",
-      "Patron Silver",
-      "Clase Azul Plata",
-      "Gran Patron Platinum",
-      "Don Fulano Blanco",
-      "Siete Leguas Blanco",
-      "Mijenta Blanco",
-      "G4 Blanco",
-      "Avion Silver",
-      "Lalo Silver",
-      "Corazon Blanco",
-      "Adictivo Cristalino",
-      "Titos Vodka",
-      "Grey Goose Vodka",
-      "Ketel One Vodka",
-      "Belvedere Vodka",
-      "Chopin Vodka",
-      "Stoli Elit Vodka",
-      "Reyka Vodka",
-      "Wheatley Vodka",
-      "Tanqueray Gin",
-      "Beefeater Gin",
-      "Bombay Dry Gin",
-      "Plymouth Gin",
-      "Tanq 10 Gin",
-      "Bombay Sapphire Gin",
-      "Nolets Dry Gin",
-      "2 James Gin",
-      "Elephant Gin",
-      "Detroit City Vodka",
-      "HDW 100 Vodka",
-      "Hangar 1 Vodka",
-      "Detroit City Gin",
-      "Eastern Kille Dry Gin",
-      "Iron Fish Gin",
-      "Knickerbocker Gin",
-      "Long Road Gin",
-      "Botanist Gin",
-      "Monkey 47 Gin",
-      "Mahon Gin",
-      "Inverroche Gin",
-      "Aviation Gin",
-      "Bluecoat Gin",
-      "Empress 1908 Gin",
-      "Gray Whale Gin",
-      "Liberator Gin",
-      "Hendricks Gin",
-      "Hendricks Flora Adora",
-      "Hendricks Grand Cabaret",
-      "Hendricks Neptunia",
-      "Hendricks Orbium",
-      "Roku Gin",
-      "Bacardi Rum",
-      "Mount Gay Rum",
-      "Baileys Irish Cream",
-      "Buffalo Trace Cream",
-      "Kahlua",
-      "Patron XO Cafe",
-      "Frangelico",
-      "Disaronno",
       "Market Fish",
       "Swordfish",
-    ]
+    ],
   },
   {
     name: "Espresso Old Fashioned",
@@ -25791,7 +25682,6 @@ const PAIRING_MAP = [
       "Beignets",
     ],
     avoid: [
-      "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Crab Cake",
       "Burrata",
@@ -25829,7 +25719,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "The Manhattan",
@@ -25889,7 +25779,6 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Crab Cake",
       "Burrata",
@@ -25903,7 +25792,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Vieux Carré",
@@ -25963,7 +25852,6 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Crab Cake",
       "Burrata",
@@ -25976,7 +25864,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Sazerac",
@@ -26031,10 +25919,8 @@ const PAIRING_MAP = [
       "Asparagus",
     ],
     avoid: [
-      "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
       "Carrot Cake",
       "Peanut Butter Brownie",
       "Beignets",
@@ -26050,7 +25936,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "The BG",
@@ -26110,10 +25996,8 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "Opus One",
       "Seared Scallops",
       "Burrata",
-      "Laurent Perrier Le Cuvée Brut",
       "Crab Cake",
       "Seafood Tower",
       "Shrimp Cocktail",
@@ -26124,7 +26008,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "French 75",
@@ -26185,8 +26069,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Truffle Fries",
       "Bone-In Filet",
       "Kansas City",
@@ -26199,7 +26081,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Bee's Knees",
@@ -26260,9 +26142,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Opus One",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -26274,7 +26153,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Cucumber Gimlet",
@@ -26331,8 +26210,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Bone Marrow",
       "French Onion",
       "Loaded Potato",
@@ -26348,7 +26225,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Vesper",
@@ -26418,11 +26295,9 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Bone Marrow",
       "Cowboy Ribeye",
-    ]
+    ],
   },
   {
     name: "Corpse Reviver",
@@ -26483,8 +26358,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -26496,7 +26369,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Aviation",
@@ -26556,8 +26429,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -26570,7 +26441,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Paloma",
@@ -26628,8 +26499,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Bone Marrow",
       "French Onion",
       "Loaded Potato",
@@ -26644,7 +26513,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Pablo Sour",
@@ -26681,8 +26550,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Bone Marrow",
       "Bone-In Filet",
       "Cowboy Ribeye",
@@ -26718,7 +26585,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Margarita",
@@ -26781,9 +26648,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
       "Creamed Spinach",
       "Cowboy Ribeye",
       "Creme Brulee",
@@ -26794,7 +26658,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Espresso Martini",
@@ -26811,9 +26675,6 @@ const PAIRING_MAP = [
       "Mocha Creme",
       "Cheesecake",
       "Carrot Cake",
-      "Licor 43",
-      "Kahlua",
-      "Patron XO Cafe",
     ],
     strong: [
       "Bone Marrow",
@@ -26826,21 +26687,12 @@ const PAIRING_MAP = [
     works: [
       "Kansas City",
       "Filet Mignon",
-      "Grand Marnier",
-      "Chambord",
-      "Baileys Irish Cream",
-      "Buffalo Trace Cream",
-      "Frangelico",
-      "Disaronno",
     ],
     avoid: [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
-      "Limoncello",
-      "Fireball Whisky",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -26879,7 +26731,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "The Happy Wife",
@@ -26945,16 +26797,13 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Opus One",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Seafood Tower",
       "Market Fish",
       "Salt-Cured Halibut",
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Transfusion",
@@ -27025,10 +26874,8 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Cowboy Ribeye",
-    ]
+    ],
   },
   {
     name: "Head Fake",
@@ -27095,15 +26942,12 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
       "Truffle Fries",
       "Au Gratin Potatoes",
       "Brussels and Belly",
       "Mushrooms",
       "Cowboy Ribeye",
-    ]
+    ],
   },
   {
     name: "Negroni",
@@ -27163,7 +27007,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "Laurent Perrier Le Cuvée Brut",
       "Lobster Mac",
       "Creme Brulee",
       "Cheesecake",
@@ -27177,7 +27020,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Porterhouse",
     ],
-    offMenu: true
   },
   {
     name: "Inhibited",
@@ -27242,7 +27084,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Seafood Tower",
-      "Laurent Perrier Le Cuvée Brut",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -27250,7 +27091,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Porterhouse",
     ],
-    offMenu: true
   },
   {
     name: "Lemon Lavender Gin Martini",
@@ -27310,8 +27150,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -27325,7 +27163,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    offMenu: true
   },
   {
     name: "New York Sour",
@@ -27361,7 +27198,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Laurent Perrier Le Cuvée Brut",
       "Seared Scallops",
       "Burrata",
       "Bone-In Filet",
@@ -27399,7 +27235,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    offMenu: true
   },
   {
     name: "Not a Paper Plane",
@@ -27467,12 +27302,10 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "Laurent Perrier Le Cuvée Brut",
       "Crab Cake",
       "Burrata",
       "The Tomahawk",
     ],
-    offMenu: true
   },
   {
     name: "G.D. Vajra Moscato d'Asti",
@@ -27506,8 +27339,6 @@ const PAIRING_MAP = [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
-      "Scavino Barolo",
       "French Onion",
       "Mushroom Bisque",
       "Loaded Potato",
@@ -27522,249 +27353,6 @@ const PAIRING_MAP = [
       "Brussels and Belly",
       "Creamed Spinach",
       "Mushrooms",
-      "Sazerac",
-      "Kermit Lynch Côtes du Rhône",
-      "Fattoria Le Pupille Saffredi",
-      "Château Gombaude-Guillot",
-      "Bruichladdich",
-      "Lagavulin 8",
-      "Laphroaig 10",
-      "Bowmore 12",
-      "Weller 12 Year",
-      "Weller Millennium",
-      "Maker's Mark Cellar Aged",
-      "Eagle Rare 10 Year",
-      "Weller Special Reserve",
-      "Weller 107",
-      "Maker's Mark",
-      "Bowdie's Private Select — Maker's Mark",
-      "Basil Hayden's",
-      "Basil Hayden's Toast",
-      "Basil Hayden's 10 Year",
-      "Basil Hayden's Malted Rye",
-      "Larceny Small Batch",
-      "Buffalo Trace",
-      "Woodford Reserve",
-      "Four Roses Yellow Label",
-      "Jefferson's Reserve",
-      "Jefferson's Reserve VR Twin Oak",
-      "Knob Creek",
-      "Russell's Reserve 10 Year",
-      "Heaven Hill Bottled in Bond",
-      "Elijah Craig Small Batch",
-      "Willett Pot Still Reserve",
-      "Bulleit Bourbon",
-      "Knob Creek Bourbon/Rye",
-      "Jim Beam White Label",
-      "Jim Beam Black Label",
-      "Old Fitzgerald 7 Year",
-      "Old Fitzgerald 9 Year",
-      "Blade & Bow",
-      "Clermont Steep",
-      "1792 Sweet Wheat",
-      "Never Say Die Small Batch",
-      "Don Julio Reposado",
-      "Don Julio 70th",
-      "Clase Azul Reposado",
-      "Corazon Reposado",
-      "Siete Leguas Reposado",
-      "Don Fulano Reposado",
-      "G4 High Proof",
-      "Adictivo Reposado",
-      "Komos Rosa Reposado",
-      "Codigo 1530 Rosa",
-      "Trombo Cedano Reposado",
-      "El Cabo",
-      "El Mayor Reposado",
-      "Milagro Reposado",
-      "Camarena Tequila",
-      "Blanton's Original",
-      "Blanton's Gold",
-      "Elmer T. Lee",
-      "E.H. Taylor Small Batch",
-      "Elijah Craig Single Barrel",
-      "Elijah Craig Private Barrel",
-      "Henry McKenna 10 Year Bottled in Bond",
-      "Hancock's Reserve Single Barrel",
-      "Knob Creek 12 Year",
-      "Baker's",
-      "1792 Small Batch",
-      "Four Roses Small Batch Select",
-      "Bowman Brothers Small Batch",
-      "Heaven's Door 10 Year",
-      "Fox & Oden",
-      "Sazerac Rye",
-      "Michter's US*1 Rye",
-      "Knob Creek Rye",
-      "Woodford Reserve Rye",
-      "Elijah Craig Straight Rye",
-      "E.H. Taylor Rye",
-      "Pikesville Rye",
-      "WhistlePig PiggyBack 6 Year",
-      "Doc Swinson's Alter Ego Rye",
-      "Never Say Die Rye",
-      "Woodinville Rye",
-      "WhistlePig 10 Year Single Barrel Rye",
-      "WhistlePig 12 Year Old World",
-      "WhistlePig 15 Year",
-      "Michter's 10 Year Rye",
-      "WhistlePig Boss Hog IX 17 Year",
-      "WhistlePig Boss Hog X Commandments",
-      "Thomas H. Handy Sazerac Rye",
-      "Pappy Van Winkle 13 Year Rye",
-      "Kentucky Owl 10 Year Rye",
-      "Mammoth 16 Year Single Barrel Rye",
-      "Lock Stock & Barrel Rye",
-      "Bardstown Discovery #6",
-      "Bardstown Fusion #7",
-      "Bardstown Founders KBS",
-      "Bardstown Rishi's Single Barrel",
-      "Blood Oath Pact 8",
-      "Blood Oath Pact 9",
-      "Blood Oath Pact 10",
-      "Rishi's Old Antique",
-      "Kentucky Owl Confiscated",
-      "A Midnight's Winter Dram",
-      "Don Julio 1942",
-      "Clase Azul Durango",
-      "Clase Azul Gold",
-      "Clase Azul Ultra",
-      "Komos Extra Anejo",
-      "Avion 44",
-      "El Mayor Extra Anejo",
-      "Rey Sol Anejo",
-      "Tears of Llorona",
-      "Amaro Nonino",
-      "Averna Amaro",
-      "Lucano Amaro",
-      "Montenegro Amaro",
-      "Fernet Branca",
-      "Fernet Menta",
-      "Campari",
-      "Aperol",
-      "Titos Vodka",
-      "Grey Goose Vodka",
-      "Ketel One Vodka",
-      "Belvedere Vodka",
-      "Chopin Vodka",
-      "Stoli Elit Vodka",
-      "Reyka Vodka",
-      "Wheatley Vodka",
-      "Hennessy Cognac",
-      "Courvoisier Cognac",
-      "Remy VSOP Cognac",
-      "Christian Bros Brandy",
-      "Pierre Ferrand Cognac",
-      "Villon Cognac",
-      "Louis XIII Cognac",
-      "Glenfiddich 12",
-      "Glenlivet 12",
-      "Balvenie 12 American Oak",
-      "Cragganmore 12",
-      "Glenfiddich 14",
-      "Glenfiddich 18",
-      "Glenfiddich Gran Cru 23",
-      "Balvenie 16 Single Barrel",
-      "Detroit City Vodka",
-      "HDW 100 Vodka",
-      "Hangar 1 Vodka",
-      "Macallan 12 Sherry",
-      "Macallan 18",
-      "Macallan Estate",
-      "Balvenie 14 Caribbean Cask",
-      "Balvenie 21 Portwood",
-      "Aberlour 16",
-      "Dalmore 12",
-      "Glenmorangie 10",
-      "Oban 14",
-      "Glenglassaugh 12",
-      "Glenmorangie 18",
-      "Oban 18",
-      "Loch Lomond 20 Year",
-      "Dewar's White Label",
-      "Johnnie Walker Red",
-      "Monkey Shoulder",
-      "Dewar's 15",
-      "Johnnie Walker Black",
-      "Johnnie Walker Blue",
-      "Jameson Irish Whiskey",
-      "Tullamore D.E.W.",
-      "Garavogue Irish Whiskey",
-      "Redbreast 12 Year",
-      "Redbreast 21 Year",
-      "Kentucky Owl St. Patrick's",
-      "Toki Suntory Japanese Whisky",
-      "Hibiki Japanese Harmony",
-      "Hakushu 12 Year",
-      "Yamazaki 12 Year",
-      "Yamazaki 18 Year",
-      "Crown Royal",
-      "Canadian Club",
-      "Canadian Club 43 Year",
-      "Caribou Crossing",
-      "Jack Daniel's Old No. 7",
-      "Jack Daniel's Bonded",
-      "Jack Daniel's 12 Year",
-      "Jack Daniel's Sinatra Select",
-      "Dunville's Single Malt",
-      "Scapegrace Fortuna",
-      "Old Emmer",
-      "Booker's",
-      "Parker's Heritage Collection 16th Edition",
-      "Little Book",
-      "George T. Stagg",
-      "Stagg Jr. Batch #15",
-      "E.H. Taylor Full Proof",
-      "Blanton's Straight from the Barrel",
-      "Elijah Craig 18 Year",
-      "Heaven Hill 20 Year",
-      "Old Grand-Dad 16 Year",
-      "Knob Creek 15 Year",
-      "Knob Creek 18 Year",
-      "Mister Sam Tribute Whiskey",
-      "I.W. Harper 15 Year",
-      "Michter's 10 Year Bourbon",
-      "Remus 15 Year Gatsby Reserve",
-      "Angel's Envy",
-      "Angel's Envy Cask Strength",
-      "Angel's Envy Triple Cask",
-      "Isaac Bowman Port Finish",
-      "Basil Hayden's Red Wine Cask",
-      "Bardstown Château Laboude",
-      "Thomas S. Moore Chardonnay Cask",
-      "Bardstown Foursquare",
-      "New Holland Beer Barrel Bourbon",
-      "Ironfish Bourbon in Mezcal Casks",
-      "Jefferson's Ocean Voyage 23",
-      "Jefferson's Ocean Marian McLain L.E.",
-      "Old Elk Cigar Cut",
-      "Fox & Oden Double Oaked",
-      "Woodford Reserve Double Oaked",
-      "Casamigos Mezcal",
-      "Clase Azul Guerrero Mezcal",
-      "Los Vecinos Mezcal",
-      "Ron Zacapa Rum",
-      "Doctor Bird Jamaica Rum",
-      "Myers's Rum",
-      "Jung and Wulff Guyana",
-      "Jung and Wulff Trinidad",
-      "Green Chartreuse",
-      "Yellow Chartreuse",
-      "Drambuie",
-      "Mata Hari Absinthe",
-      "Sambuca",
-      "Ancho Reyes",
-      "Contratto Vermouth",
-      "Patron Anejo",
-      "Milagro Anejo",
-      "Don Fulano Anejo",
-      "Ocho Anejo",
-      "Clase Azul Anejo",
-      "Komos Anejo Reserva",
-      "Komos Crystallino Anejo",
-      "Corazon Sazerac",
-      "Corazon Stagg",
-      "Corazon Weller",
       "Seafood Tower",
       "Escargot",
       "Shrimp Bisque",
@@ -27791,7 +27379,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "$12 / $48"
   },
   {
     name: "Il Colle Prosecco Superiore",
@@ -27855,8 +27442,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -27866,7 +27451,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$13 / $52"
   },
   {
     name: "Raventós Cava de NIT Rosé Brut",
@@ -27931,8 +27515,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -27942,7 +27524,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$18 / $72"
   },
   {
     name: "Laurent Perrier Le Cuvée Brut",
@@ -28001,7 +27582,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Bowdie's Old Fashioned",
       "Bone Marrow",
       "Gumbo",
       "Truffle Fries",
@@ -28009,268 +27589,6 @@ const PAIRING_MAP = [
       "Brussels and Belly",
       "Creamed Spinach",
       "Mushrooms",
-      "Espresso Old Fashioned",
-      "The Manhattan",
-      "Vieux Carré",
-      "Sazerac",
-      "The BG",
-      "Espresso Martini",
-      "Negroni",
-      "Inhibited",
-      "New York Sour",
-      "Not a Paper Plane",
-      "Lunaria Coste di Moro",
-      "Corazón del Sol Malbec",
-      "Fento Ollo de Sapo Mencía",
-      "Château de Rouillac",
-      "Quilt Cabernet Sauvignon",
-      "Faust Napa Valley Cabernet",
-      "Venge Silencieux",
-      "Braida Montebruna Barbera",
-      "Fattoria Le Pupille Saffredi",
-      "Muga Reserva",
-      "Clos Petit Ona Grenache",
-      "Ghost Block Zinfandel",
-      "Macauley Petite Syrah",
-      "Bruichladdich",
-      "Lagavulin 8",
-      "Laphroaig 10",
-      "Bowmore 12",
-      "Weller 12 Year",
-      "Weller Millennium",
-      "Maker's Mark Cellar Aged",
-      "Eagle Rare 10 Year",
-      "Weller Special Reserve",
-      "Weller 107",
-      "Maker's Mark",
-      "Bowdie's Private Select — Maker's Mark",
-      "Basil Hayden's",
-      "Basil Hayden's Toast",
-      "Basil Hayden's 10 Year",
-      "Basil Hayden's Malted Rye",
-      "Larceny Small Batch",
-      "Buffalo Trace",
-      "Woodford Reserve",
-      "Four Roses Yellow Label",
-      "Jefferson's Reserve",
-      "Jefferson's Reserve VR Twin Oak",
-      "Knob Creek",
-      "Russell's Reserve 10 Year",
-      "Heaven Hill Bottled in Bond",
-      "Elijah Craig Small Batch",
-      "Willett Pot Still Reserve",
-      "Bulleit Bourbon",
-      "Knob Creek Bourbon/Rye",
-      "Jim Beam White Label",
-      "Jim Beam Black Label",
-      "Old Fitzgerald 7 Year",
-      "Old Fitzgerald 9 Year",
-      "Blade & Bow",
-      "Clermont Steep",
-      "1792 Sweet Wheat",
-      "Never Say Die Small Batch",
-      "Don Julio Reposado",
-      "Don Julio 70th",
-      "Clase Azul Reposado",
-      "Corazon Reposado",
-      "Siete Leguas Reposado",
-      "Don Fulano Reposado",
-      "G4 High Proof",
-      "Adictivo Reposado",
-      "Komos Rosa Reposado",
-      "Codigo 1530 Rosa",
-      "Trombo Cedano Reposado",
-      "El Cabo",
-      "El Mayor Reposado",
-      "Milagro Reposado",
-      "Camarena Tequila",
-      "Blanton's Original",
-      "Blanton's Gold",
-      "Elmer T. Lee",
-      "E.H. Taylor Small Batch",
-      "Elijah Craig Single Barrel",
-      "Elijah Craig Private Barrel",
-      "Henry McKenna 10 Year Bottled in Bond",
-      "Hancock's Reserve Single Barrel",
-      "Knob Creek 12 Year",
-      "Baker's",
-      "1792 Small Batch",
-      "Four Roses Small Batch Select",
-      "Bowman Brothers Small Batch",
-      "Heaven's Door 10 Year",
-      "Fox & Oden",
-      "Sazerac Rye",
-      "Michter's US*1 Rye",
-      "Knob Creek Rye",
-      "Woodford Reserve Rye",
-      "Elijah Craig Straight Rye",
-      "E.H. Taylor Rye",
-      "Pikesville Rye",
-      "WhistlePig PiggyBack 6 Year",
-      "Doc Swinson's Alter Ego Rye",
-      "Never Say Die Rye",
-      "Woodinville Rye",
-      "WhistlePig 10 Year Single Barrel Rye",
-      "WhistlePig 12 Year Old World",
-      "WhistlePig 15 Year",
-      "Michter's 10 Year Rye",
-      "WhistlePig Boss Hog IX 17 Year",
-      "WhistlePig Boss Hog X Commandments",
-      "Thomas H. Handy Sazerac Rye",
-      "Pappy Van Winkle 13 Year Rye",
-      "Kentucky Owl 10 Year Rye",
-      "Mammoth 16 Year Single Barrel Rye",
-      "Lock Stock & Barrel Rye",
-      "Bardstown Discovery #6",
-      "Bardstown Fusion #7",
-      "Bardstown Founders KBS",
-      "Bardstown Rishi's Single Barrel",
-      "Blood Oath Pact 8",
-      "Blood Oath Pact 9",
-      "Blood Oath Pact 10",
-      "Rishi's Old Antique",
-      "Kentucky Owl Confiscated",
-      "A Midnight's Winter Dram",
-      "Don Julio 1942",
-      "Clase Azul Durango",
-      "Clase Azul Gold",
-      "Clase Azul Ultra",
-      "Komos Extra Anejo",
-      "Avion 44",
-      "El Mayor Extra Anejo",
-      "Rey Sol Anejo",
-      "Tears of Llorona",
-      "Amaro Nonino",
-      "Averna Amaro",
-      "Lucano Amaro",
-      "Montenegro Amaro",
-      "Fernet Branca",
-      "Fernet Menta",
-      "Campari",
-      "Aperol",
-      "Titos Vodka",
-      "Grey Goose Vodka",
-      "Ketel One Vodka",
-      "Belvedere Vodka",
-      "Chopin Vodka",
-      "Stoli Elit Vodka",
-      "Reyka Vodka",
-      "Wheatley Vodka",
-      "Hennessy Cognac",
-      "Courvoisier Cognac",
-      "Remy VSOP Cognac",
-      "Christian Bros Brandy",
-      "Pierre Ferrand Cognac",
-      "Villon Cognac",
-      "Louis XIII Cognac",
-      "Glenfiddich 12",
-      "Glenlivet 12",
-      "Balvenie 12 American Oak",
-      "Cragganmore 12",
-      "Glenfiddich 14",
-      "Glenfiddich 18",
-      "Glenfiddich Gran Cru 23",
-      "Balvenie 16 Single Barrel",
-      "Detroit City Vodka",
-      "HDW 100 Vodka",
-      "Hangar 1 Vodka",
-      "Macallan 12 Sherry",
-      "Macallan 18",
-      "Macallan Estate",
-      "Balvenie 14 Caribbean Cask",
-      "Balvenie 21 Portwood",
-      "Aberlour 16",
-      "Dalmore 12",
-      "Glenmorangie 10",
-      "Oban 14",
-      "Glenglassaugh 12",
-      "Glenmorangie 18",
-      "Oban 18",
-      "Loch Lomond 20 Year",
-      "Dewar's White Label",
-      "Johnnie Walker Red",
-      "Monkey Shoulder",
-      "Dewar's 15",
-      "Johnnie Walker Black",
-      "Johnnie Walker Blue",
-      "Jameson Irish Whiskey",
-      "Tullamore D.E.W.",
-      "Garavogue Irish Whiskey",
-      "Redbreast 12 Year",
-      "Redbreast 21 Year",
-      "Kentucky Owl St. Patrick's",
-      "Toki Suntory Japanese Whisky",
-      "Hibiki Japanese Harmony",
-      "Hakushu 12 Year",
-      "Yamazaki 12 Year",
-      "Yamazaki 18 Year",
-      "Crown Royal",
-      "Canadian Club",
-      "Canadian Club 43 Year",
-      "Caribou Crossing",
-      "Jack Daniel's Old No. 7",
-      "Jack Daniel's Bonded",
-      "Jack Daniel's 12 Year",
-      "Jack Daniel's Sinatra Select",
-      "Dunville's Single Malt",
-      "Scapegrace Fortuna",
-      "Old Emmer",
-      "Booker's",
-      "Parker's Heritage Collection 16th Edition",
-      "Little Book",
-      "George T. Stagg",
-      "Stagg Jr. Batch #15",
-      "E.H. Taylor Full Proof",
-      "Blanton's Straight from the Barrel",
-      "Elijah Craig 18 Year",
-      "Heaven Hill 20 Year",
-      "Old Grand-Dad 16 Year",
-      "Knob Creek 15 Year",
-      "Knob Creek 18 Year",
-      "Mister Sam Tribute Whiskey",
-      "I.W. Harper 15 Year",
-      "Michter's 10 Year Bourbon",
-      "Remus 15 Year Gatsby Reserve",
-      "Angel's Envy",
-      "Angel's Envy Cask Strength",
-      "Angel's Envy Triple Cask",
-      "Isaac Bowman Port Finish",
-      "Basil Hayden's Red Wine Cask",
-      "Bardstown Château Laboude",
-      "Thomas S. Moore Chardonnay Cask",
-      "Bardstown Foursquare",
-      "New Holland Beer Barrel Bourbon",
-      "Ironfish Bourbon in Mezcal Casks",
-      "Jefferson's Ocean Voyage 23",
-      "Jefferson's Ocean Marian McLain L.E.",
-      "Old Elk Cigar Cut",
-      "Fox & Oden Double Oaked",
-      "Woodford Reserve Double Oaked",
-      "Casamigos Mezcal",
-      "Clase Azul Guerrero Mezcal",
-      "Los Vecinos Mezcal",
-      "Ron Zacapa Rum",
-      "Doctor Bird Jamaica Rum",
-      "Myers's Rum",
-      "Jung and Wulff Guyana",
-      "Jung and Wulff Trinidad",
-      "Green Chartreuse",
-      "Yellow Chartreuse",
-      "Drambuie",
-      "Mata Hari Absinthe",
-      "Sambuca",
-      "Ancho Reyes",
-      "Contratto Vermouth",
-      "Patron Anejo",
-      "Milagro Anejo",
-      "Don Fulano Anejo",
-      "Ocho Anejo",
-      "Clase Azul Anejo",
-      "Komos Anejo Reserva",
-      "Komos Crystallino Anejo",
-      "Corazon Sazerac",
-      "Corazon Stagg",
-      "Corazon Weller",
       "Kansas City",
       "Cowboy Ribeye",
       "Porterhouse",
@@ -28280,7 +27598,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$25 / $100"
   },
   {
     name: "Laurent Perrier Brut Rosé",
@@ -28342,8 +27659,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -28355,7 +27670,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$120"
   },
   {
     name: "Veuve Clicquot Brut",
@@ -28418,8 +27732,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -28431,7 +27743,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$120"
   },
   {
     name: "Paul Bara Grand Rosé Brut",
@@ -28493,8 +27804,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Kansas City",
       "Porterhouse",
       "Creme Brulee",
@@ -28506,7 +27815,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$150"
   },
   {
     name: "Robert Moncuit Les Grand Blancs",
@@ -28568,8 +27876,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -28581,7 +27887,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$160"
   },
   {
     name: "Pierre Gimonnet Special Club Brut",
@@ -28645,8 +27950,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -28658,7 +27961,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$200"
   },
   {
     name: "Pommery Cuvée Louise",
@@ -28723,8 +28025,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Kansas City",
       "Porterhouse",
       "Creme Brulee",
@@ -28735,7 +28035,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$300"
   },
   {
     name: "Stoneleigh Sauvignon Blanc",
@@ -28784,9 +28083,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "French Onion",
       "Mushroom Bisque",
       "Loaded Potato",
@@ -28806,13 +28102,11 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-      "Château Gombaude-Guillot",
       "Creme Brulee",
       "Cheesecake",
       "Carrot Cake",
       "Beignets",
     ],
-    price: "$10 / $40"
   },
   {
     name: "Alexander Valley Chardonnay",
@@ -28872,9 +28166,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -28888,7 +28179,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$12 / $48"
   },
   {
     name: "St Supéry Sauvignon Blanc",
@@ -28950,8 +28240,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -28965,7 +28253,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$12 / $48"
   },
   {
     name: "Elk Cove Pinot Blanc",
@@ -29026,9 +28313,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -29041,7 +28325,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$13 / $52"
   },
   {
     name: "Jean-Pierre Grossot Chablis",
@@ -29103,8 +28386,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -29117,7 +28398,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$16 / $64"
   },
   {
     name: "Schloss Vollrads Riesling",
@@ -29186,14 +28466,11 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned",
       "Kansas City",
       "Porterhouse",
       "Filet Mignon",
       "Bone-In Filet",
     ],
-    price: "$16 / $64"
   },
   {
     name: "Le Garenne Rosé",
@@ -29257,8 +28534,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Creme Brulee",
       "Cheesecake",
       "Carrot Cake",
@@ -29268,7 +28543,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$17 / $68"
   },
   {
     name: "Domaine de Berthiers Pouilly-Fumé",
@@ -29329,8 +28603,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -29343,7 +28615,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$19 / $76"
   },
   {
     name: "Our Lady of Guadalupe Acolytes",
@@ -29405,8 +28676,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -29419,7 +28688,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$20 / $80"
   },
   {
     name: "Joseph Mellot Sancerre",
@@ -29482,8 +28750,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -29496,7 +28762,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$76"
   },
   {
     name: "Keenan Chardonnay",
@@ -29558,8 +28823,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -29572,7 +28835,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$120"
   },
   {
     name: "Far Niente Chardonnay",
@@ -29634,8 +28896,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Cowboy Ribeye",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Gumbo",
       "Bone-In Filet",
       "Kansas City",
@@ -29649,7 +28909,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$140"
   },
   {
     name: "Lunaria Coste di Moro",
@@ -29706,7 +28965,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -29724,7 +28982,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$12 / $48"
   },
   {
     name: "Kermit Lynch Côtes du Rhône",
@@ -29782,7 +29039,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -29799,7 +29055,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$12 / $48"
   },
   {
     name: "Alexander Valley Homestead Red",
@@ -29873,7 +29128,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$13 / $52"
   },
   {
     name: "Scotto Cellars The Lost Chapters",
@@ -29947,7 +29201,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$13 / $52"
   },
   {
     name: "Corazón del Sol Malbec",
@@ -30004,7 +29257,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -30022,7 +29274,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$15 / $60"
   },
   {
     name: "Fento Ollo de Sapo Mencía",
@@ -30079,7 +29330,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "The Tomahawk",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Market Fish",
@@ -30097,7 +29347,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$15 / $60"
   },
   {
     name: "Lingua Franca Avni Pinot Noir",
@@ -30160,7 +29409,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Creme Brulee",
       "Cheesecake",
@@ -30171,7 +29419,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$18 / $72"
   },
   {
     name: "Fisher Unity Pinot Noir",
@@ -30234,7 +29481,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Creme Brulee",
@@ -30246,7 +29492,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$19 / $76"
   },
   {
     name: "Château de Rouillac",
@@ -30289,7 +29534,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Seasonal Soup",
       "Creamy Potato",
@@ -30321,7 +29565,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$20 / $80"
   },
   {
     name: "St Supéry Cabernet Sauvignon",
@@ -30395,7 +29638,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$20 / $80"
   },
   {
     name: "Quilt Cabernet Sauvignon",
@@ -30438,7 +29680,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Seasonal Soup",
       "Creamy Potato",
@@ -30470,7 +29711,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$22 / $88"
   },
   {
     name: "Scavino Barolo",
@@ -30512,7 +29752,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
       "Mushroom Bisque",
       "Creamy Potato",
       "Tomato Basil",
@@ -30536,101 +29775,6 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-      "Bee's Knees",
-      "Cucumber Gimlet",
-      "Aviation",
-      "Margarita",
-      "The Happy Wife",
-      "Head Fake",
-      "Lemon Lavender Gin Martini",
-      "Laurent Perrier Brut Rosé",
-      "Veuve Clicquot Brut",
-      "Paul Bara Grand Rosé Brut",
-      "Pommery Cuvée Louise",
-      "Stoneleigh Sauvignon Blanc",
-      "Alexander Valley Chardonnay",
-      "St Supéry Sauvignon Blanc",
-      "Elk Cove Pinot Blanc",
-      "Le Garenne Rosé",
-      "Joseph Mellot Sancerre",
-      "Keenan Chardonnay",
-      "Far Niente Chardonnay",
-      "Graham's 10 Year Tawny",
-      "Pineau des Charentes",
-      "Vin Santo",
-      "Sauternes Glass",
-      "Grand Marnier",
-      "Limoncello",
-      "Chambord",
-      "Licor 43",
-      "Fireball Whisky",
-      "Bruichladdich",
-      "Don Julio Reposado",
-      "Don Julio 70th",
-      "Clase Azul Reposado",
-      "Corazon Reposado",
-      "Siete Leguas Reposado",
-      "Don Fulano Reposado",
-      "G4 High Proof",
-      "Adictivo Reposado",
-      "Komos Rosa Reposado",
-      "Codigo 1530 Rosa",
-      "Trombo Cedano Reposado",
-      "El Cabo",
-      "El Mayor Reposado",
-      "Milagro Reposado",
-      "Camarena Tequila",
-      "Don Julio Blanco",
-      "Patron Silver",
-      "Clase Azul Plata",
-      "Gran Patron Platinum",
-      "Don Fulano Blanco",
-      "Siete Leguas Blanco",
-      "Mijenta Blanco",
-      "G4 Blanco",
-      "Avion Silver",
-      "Lalo Silver",
-      "Corazon Blanco",
-      "Adictivo Cristalino",
-      "Tanqueray Gin",
-      "Beefeater Gin",
-      "Bombay Dry Gin",
-      "Plymouth Gin",
-      "Tanq 10 Gin",
-      "Bombay Sapphire Gin",
-      "Nolets Dry Gin",
-      "2 James Gin",
-      "Elephant Gin",
-      "Detroit City Gin",
-      "Eastern Kille Dry Gin",
-      "Iron Fish Gin",
-      "Knickerbocker Gin",
-      "Long Road Gin",
-      "Botanist Gin",
-      "Monkey 47 Gin",
-      "Mahon Gin",
-      "Inverroche Gin",
-      "Aviation Gin",
-      "Bluecoat Gin",
-      "Empress 1908 Gin",
-      "Gray Whale Gin",
-      "Liberator Gin",
-      "Hendricks Gin",
-      "Hendricks Flora Adora",
-      "Hendricks Grand Cabaret",
-      "Hendricks Neptunia",
-      "Hendricks Orbium",
-      "Roku Gin",
-      "Bacardi Rum",
-      "Mount Gay Rum",
-      "Captain Morgan Rum",
-      "Malibu Rum",
-      "Baileys Irish Cream",
-      "Buffalo Trace Cream",
-      "Kahlua",
-      "Patron XO Cafe",
-      "Frangelico",
-      "Disaronno",
       "Seasonal Soup",
       "Gumbo",
       "Vegetable Curry with Chickpeas",
@@ -30640,7 +29784,6 @@ const PAIRING_MAP = [
       "Sauteed Garlic Spinach",
       "Seasonal Vegetables",
     ],
-    price: "$25 / $100"
   },
   {
     name: "Caymus Cabernet Sauvignon",
@@ -30666,7 +29809,6 @@ const PAIRING_MAP = [
     ],
     strong: [
       "Lobster Mac",
-      "Bowdie's Old Fashioned",
     ],
     works: [
       "Shrimp Bisque",
@@ -30710,89 +29852,11 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-      "French 75",
-      "Bee's Knees",
-      "Cucumber Gimlet",
-      "Vesper",
-      "Corpse Reviver",
-      "Aviation",
-      "Paloma",
-      "Pablo Sour",
-      "Margarita",
-      "The Happy Wife",
-      "Transfusion",
-      "Head Fake",
-      "Lemon Lavender Gin Martini",
-      "Raventós Cava de NIT Rosé Brut",
-      "Laurent Perrier Brut Rosé",
-      "Veuve Clicquot Brut",
-      "Paul Bara Grand Rosé Brut",
-      "Robert Moncuit Les Grand Blancs",
-      "Pierre Gimonnet Special Club Brut",
-      "Pommery Cuvée Louise",
-      "Stoneleigh Sauvignon Blanc",
-      "Alexander Valley Chardonnay",
-      "St Supéry Sauvignon Blanc",
-      "Elk Cove Pinot Blanc",
-      "Jean-Pierre Grossot Chablis",
-      "Schloss Vollrads Riesling",
-      "Le Garenne Rosé",
-      "Domaine de Berthiers Pouilly-Fumé",
-      "Our Lady of Guadalupe Acolytes",
-      "Joseph Mellot Sancerre",
-      "Daniel Chotard Sancerre Rouge",
-      "Marc Brédif Chinon",
-      "Domaine Serene Grand Cheval",
-      "Bruichladdich",
-      "Don Julio Blanco",
-      "Patron Silver",
-      "Clase Azul Plata",
-      "Gran Patron Platinum",
-      "Don Fulano Blanco",
-      "Siete Leguas Blanco",
-      "Mijenta Blanco",
-      "G4 Blanco",
-      "Avion Silver",
-      "Lalo Silver",
-      "Corazon Blanco",
-      "Adictivo Cristalino",
-      "Tanqueray Gin",
-      "Beefeater Gin",
-      "Bombay Dry Gin",
-      "Plymouth Gin",
-      "Tanq 10 Gin",
-      "Bombay Sapphire Gin",
-      "Nolets Dry Gin",
-      "2 James Gin",
-      "Elephant Gin",
-      "Detroit City Gin",
-      "Eastern Kille Dry Gin",
-      "Iron Fish Gin",
-      "Knickerbocker Gin",
-      "Long Road Gin",
-      "Botanist Gin",
-      "Monkey 47 Gin",
-      "Mahon Gin",
-      "Inverroche Gin",
-      "Aviation Gin",
-      "Bluecoat Gin",
-      "Empress 1908 Gin",
-      "Gray Whale Gin",
-      "Liberator Gin",
-      "Hendricks Gin",
-      "Hendricks Flora Adora",
-      "Hendricks Grand Cabaret",
-      "Hendricks Neptunia",
-      "Hendricks Orbium",
-      "Roku Gin",
-      "Bacardi Rum",
-      "Mount Gay Rum",
       "Seasonal Soup",
       "Gumbo",
       "Market Fish",
       "Seasonal Vegetables",
     ],
-    price: "$28 / $180"
   },
   {
     name: "Cristom Mt Jefferson Cuvée",
@@ -30853,7 +29917,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Market Fish",
@@ -30868,7 +29931,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$75"
   },
   {
     name: "Daniel Chotard Sancerre Rouge",
@@ -30931,8 +29993,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Creme Brulee",
@@ -30944,7 +30004,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$90"
   },
   {
     name: "Evening Land Seven Springs",
@@ -31003,7 +30062,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -31019,7 +30077,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$100"
   },
   {
     name: "Marimar Estate Christina",
@@ -31076,7 +30133,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Market Fish",
@@ -31094,7 +30150,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$110"
   },
   {
     name: "Jax Calesa Vineyard Pinot Noir",
@@ -31157,7 +30212,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Creme Brulee",
@@ -31169,7 +30223,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$120"
   },
   {
     name: "Macauley Pinot Noir",
@@ -31231,7 +30284,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -31244,7 +30296,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$120"
   },
   {
     name: "Elk Cove Five Mountain",
@@ -31300,7 +30351,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Market Fish",
@@ -31318,7 +30368,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$125"
   },
   {
     name: "RAEN Royal St Robert",
@@ -31375,7 +30424,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Market Fish",
@@ -31393,7 +30441,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$125"
   },
   {
     name: "Sanford & Benedict Pinot Noir",
@@ -31456,7 +30503,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Creme Brulee",
@@ -31468,7 +30514,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$130"
   },
   {
     name: "J Davies Ferrington Vineyards",
@@ -31525,7 +30570,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Market Fish",
@@ -31543,7 +30587,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$140"
   },
   {
     name: "1881 Napa Valley",
@@ -31617,7 +30660,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$85"
   },
   {
     name: "Faust Napa Valley Cabernet",
@@ -31660,7 +30702,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Seasonal Soup",
       "Creamy Potato",
@@ -31692,7 +30733,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$100"
   },
   {
     name: "Gundlach Bundschu Cabernet",
@@ -31766,7 +30806,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$115"
   },
   {
     name: "Venge Silencieux",
@@ -31823,7 +30862,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -31841,7 +30879,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$120"
   },
   {
     name: "Austin Hope Cabernet Sauvignon",
@@ -31915,7 +30952,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$135"
   },
   {
     name: "Jordan Cabernet Sauvignon",
@@ -31989,7 +31025,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$145"
   },
   {
     name: "Peju Cabernet Sauvignon",
@@ -32063,7 +31098,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$140"
   },
   {
     name: "Teeter Totter Cabernet Sauvignon",
@@ -32137,7 +31171,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$150"
   },
   {
     name: "J. Davies Cabernet Sauvignon",
@@ -32211,7 +31244,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$150"
   },
   {
     name: "Silver Oak Cabernet Sauvignon",
@@ -32233,7 +31265,6 @@ const PAIRING_MAP = [
     ],
     strong: [
       "Filet Mignon",
-      "Ghost Block Cabernet Sauvignon",
       "Bone Marrow",
       "Bone-In Filet",
       "Escargot",
@@ -32285,7 +31316,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$160"
   },
   {
     name: "Ghost Block Cabernet Sauvignon",
@@ -32308,7 +31338,6 @@ const PAIRING_MAP = [
       "Mushrooms",
       "Creamed Spinach",
       "Brussels and Belly",
-      "Silver Oak Cabernet Sauvignon",
       "Bone-In Filet",
       "Prime Tartare",
       "Escargot",
@@ -32360,7 +31389,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$160"
   },
   {
     name: "Brandlin Estate Cabernet Sauvignon",
@@ -32434,7 +31462,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$175"
   },
   {
     name: "Lail Vineyards Blueprint",
@@ -32508,7 +31535,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$175"
   },
   {
     name: "Spottswoode Lyndenhurst",
@@ -32582,7 +31608,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$175"
   },
   {
     name: "Nickel & Nickel Cabernet",
@@ -32656,7 +31681,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$195"
   },
   {
     name: "Shafer 1.5",
@@ -32730,7 +31754,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$195"
   },
   {
     name: "Cade Cabernet Sauvignon",
@@ -32804,7 +31827,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$210"
   },
   {
     name: "Darioush Cabernet Sauvignon",
@@ -32877,7 +31899,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$215"
   },
   {
     name: "Heitz Trailside Vineyard",
@@ -32951,7 +31972,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$220"
   },
   {
     name: "Frias Block 5",
@@ -33024,7 +32044,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$225"
   },
   {
     name: "Far Niente Cabernet Sauvignon",
@@ -33098,7 +32117,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$250"
   },
   {
     name: "Odette Cabernet Sauvignon",
@@ -33171,7 +32189,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$275"
   },
   {
     name: "Macauley Stagecoach Vineyard",
@@ -33245,7 +32262,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$295"
   },
   {
     name: "Freemark Abbey Bosché",
@@ -33318,7 +32334,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$300"
   },
   {
     name: "Venge Family Reserve",
@@ -33392,7 +32407,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$325"
   },
   {
     name: "Lail Vineyards Daniel Cuvée",
@@ -33466,7 +32480,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$350"
   },
   {
     name: "Heitz Martha's Vineyard",
@@ -33539,7 +32552,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$400"
   },
   {
     name: "Simon Family Estate Reserve",
@@ -33613,7 +32625,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$400"
   },
   {
     name: "Shafer Hillside Select",
@@ -33687,7 +32698,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$450"
   },
   {
     name: "Opus One",
@@ -33754,47 +32764,6 @@ const PAIRING_MAP = [
       "Roast Half Chicken",
       "Sauteed Garlic Spinach",
       "Beignets",
-      "The BG",
-      "French 75",
-      "Bee's Knees",
-      "Vesper",
-      "Corpse Reviver",
-      "Paloma",
-      "Pablo Sour",
-      "Margarita",
-      "The Happy Wife",
-      "Transfusion",
-      "Head Fake",
-      "Il Colle Prosecco Superiore",
-      "Raventós Cava de NIT Rosé Brut",
-      "Robert Moncuit Les Grand Blancs",
-      "Pierre Gimonnet Special Club Brut",
-      "Marc Brédif Chinon",
-      "Grand Marnier",
-      "Limoncello",
-      "Chambord",
-      "Licor 43",
-      "Fireball Whisky",
-      "Don Julio Blanco",
-      "Patron Silver",
-      "Clase Azul Plata",
-      "Gran Patron Platinum",
-      "Don Fulano Blanco",
-      "Siete Leguas Blanco",
-      "Mijenta Blanco",
-      "G4 Blanco",
-      "Avion Silver",
-      "Lalo Silver",
-      "Corazon Blanco",
-      "Adictivo Cristalino",
-      "Captain Morgan Rum",
-      "Malibu Rum",
-      "Baileys Irish Cream",
-      "Buffalo Trace Cream",
-      "Kahlua",
-      "Patron XO Cafe",
-      "Frangelico",
-      "Disaronno",
       "Seasonal Soup",
       "Gumbo",
       "Market Fish",
@@ -33803,7 +32772,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$475"
   },
   {
     name: "Jubilation by Colgin",
@@ -33876,7 +32844,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$475"
   },
   {
     name: "Marc Brédif Chinon",
@@ -33938,9 +32905,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Seared Scallops",
@@ -33953,7 +32917,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$60"
   },
   {
     name: "Braida Montebruna Barbera",
@@ -34017,7 +32980,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Creme Brulee",
       "Cheesecake",
@@ -34028,7 +32990,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$70"
   },
   {
     name: "Les Pallières Raciné",
@@ -34102,7 +33063,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$90"
   },
   {
     name: "Le Volte dell'Ornellaia",
@@ -34176,7 +33136,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$80"
   },
   {
     name: "Fattoria Le Pupille Saffredi",
@@ -34233,8 +33192,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -34251,7 +33208,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Muga Reserva",
@@ -34309,7 +33266,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -34326,7 +33282,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$80"
   },
   {
     name: "Tenuta di Arceno Chianti Classico",
@@ -34400,7 +33355,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$95"
   },
   {
     name: "Château Haut Segottes",
@@ -34474,7 +33428,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$100"
   },
   {
     name: "Château Gombaude-Guillot",
@@ -34518,8 +33471,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Stoneleigh Sauvignon Blanc",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Seasonal Soup",
       "Creamy Potato",
@@ -34549,7 +33500,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Clos Petit Ona Grenache",
@@ -34607,7 +33558,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -34624,7 +33574,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$105"
   },
   {
     name: "G.D. Vajra Albe Nebbiolo",
@@ -34698,7 +33647,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$110"
   },
   {
     name: "Domaine Tempier Bandol",
@@ -34772,7 +33720,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$120"
   },
   {
     name: "Domaine du Grand Tinel",
@@ -34845,7 +33792,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$125"
   },
   {
     name: "Pio Cesare Barbaresco",
@@ -34918,7 +33864,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$130"
   },
   {
     name: "Château Batailley",
@@ -34991,7 +33936,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$140"
   },
   {
     name: "Château Beaucastel",
@@ -35064,7 +34008,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$175"
   },
   {
     name: "Poderi Aldo Conterno Nebbiolo",
@@ -35138,7 +34081,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$180"
   },
   {
     name: "Le Ragnaie Brunello",
@@ -35211,7 +34153,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$200"
   },
   {
     name: "Sesti Brunello di Montalcino",
@@ -35284,7 +34225,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$250"
   },
   {
     name: "Bodega Noemia A Lisa",
@@ -35358,7 +34298,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$65"
   },
   {
     name: "Ghost Block Zinfandel",
@@ -35402,7 +34341,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Seasonal Soup",
       "Creamy Potato",
@@ -35433,7 +34371,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$90"
   },
   {
     name: "The Prisoner Red Blend",
@@ -35507,7 +34444,6 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Mocha Creme",
     ],
-    price: "$100"
   },
   {
     name: "Macauley Petite Syrah",
@@ -35564,7 +34500,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -35581,7 +34516,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Venge Scout's Honor",
@@ -35654,7 +34589,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Alexander Valley Cyrus",
@@ -35726,7 +34661,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Epoch Ingenuity",
@@ -35799,7 +34734,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "San Simeon Stormwatch",
@@ -35872,7 +34807,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Domaine Serene Grand Cheval",
@@ -35928,8 +34863,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
-      "Caymus Cabernet Sauvignon",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Market Fish",
@@ -35946,7 +34879,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "St Supéry Élu Meritage",
@@ -36019,7 +34952,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Darioush Cabernet Franc",
@@ -36092,7 +35025,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Keenan Mernet",
@@ -36165,7 +35098,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Graham's 10 Year Tawny",
@@ -36180,31 +35113,17 @@ const PAIRING_MAP = [
       "Carrot Cake",
       "Peanut Butter Brownie",
       "Chocolate Brownie",
-      "Frangelico",
-      "Disaronno",
     ],
     strong: [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-      "Grand Marnier",
-      "Licor 43",
-      "Kahlua",
-      "Patron XO Cafe",
     ],
-    works: [
-      "Chambord",
-      "Limoncello",
-      "Baileys Irish Cream",
-      "Buffalo Trace Cream",
-    ],
+    works: [],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
-      "Scavino Barolo",
-      "Fireball Whisky",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36251,7 +35170,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Port"
   },
   {
     name: "Graham's 20 Year Tawny",
@@ -36269,28 +35187,15 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-      "Frangelico",
-      "Disaronno",
     ],
     strong: [
       "Beignets",
-      "Grand Marnier",
-      "Licor 43",
-      "Kahlua",
-      "Patron XO Cafe",
     ],
-    works: [
-      "Chambord",
-      "Baileys Irish Cream",
-      "Buffalo Trace Cream",
-    ],
+    works: [],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
-      "Fireball Whisky",
-      "Limoncello",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36337,7 +35242,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Port"
   },
   {
     name: "Graham's 2017 Vintage Port",
@@ -36363,7 +35267,6 @@ const PAIRING_MAP = [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36410,7 +35313,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Port"
   },
   {
     name: "Taylor Fladgate Tawny",
@@ -36426,30 +35328,17 @@ const PAIRING_MAP = [
       "Carrot Cake",
       "Chocolate Brownie",
       "Beignets",
-      "Frangelico",
-      "Disaronno",
     ],
     strong: [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-      "Grand Marnier",
-      "Licor 43",
-      "Kahlua",
-      "Patron XO Cafe",
     ],
-    works: [
-      "Chambord",
-      "Baileys Irish Cream",
-      "Buffalo Trace Cream",
-    ],
+    works: [],
     avoid: [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
-      "Fireball Whisky",
-      "Limoncello",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36496,7 +35385,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Port"
   },
   {
     name: "Taylor Fladgate Vintage Bottle",
@@ -36522,7 +35410,6 @@ const PAIRING_MAP = [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36569,7 +35456,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Port"
   },
   {
     name: "Casa LBV Port",
@@ -36594,7 +35480,6 @@ const PAIRING_MAP = [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36641,7 +35526,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Port"
   },
   {
     name: "Pineau des Charentes",
@@ -36677,8 +35561,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Cowboy Ribeye",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
-      "Scavino Barolo",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36716,7 +35598,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Dessert"
   },
   {
     name: "Vin Santo",
@@ -36743,8 +35624,6 @@ const PAIRING_MAP = [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
-      "Scavino Barolo",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36791,7 +35670,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Dessert"
   },
   {
     name: "Sauternes Glass",
@@ -36821,8 +35699,6 @@ const PAIRING_MAP = [
       "Cowboy Ribeye",
       "The Tomahawk",
       "Bone Marrow",
-      "Bowdie's Old Fashioned",
-      "Scavino Barolo",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36867,7 +35743,6 @@ const PAIRING_MAP = [
       "Broccolini",
       "Asparagus",
     ],
-    price: "Dessert"
   },
   {
     name: "Grand Marnier",
@@ -36885,14 +35760,10 @@ const PAIRING_MAP = [
     ],
     strong: [
       "Carrot Cake",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
     ],
     works: [
       "Cheesecake",
       "Peanut Butter Brownie",
-      "Espresso Martini",
     ],
     avoid: [
       "Shrimp Cocktail",
@@ -36902,9 +35773,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -36946,7 +35814,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Limoncello",
@@ -36968,22 +35836,15 @@ const PAIRING_MAP = [
       "Shrimp Cocktail",
       "Seafood Tower",
       "Seared Scallops",
-      "Graham's 10 Year Tawny",
     ],
     avoid: [
       "Chocolate Brownie",
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-      "Espresso Martini",
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -37025,7 +35886,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Chambord",
@@ -37047,10 +35908,6 @@ const PAIRING_MAP = [
     ],
     works: [
       "Carrot Cake",
-      "Espresso Martini",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
     ],
     avoid: [
       "Shrimp Cocktail",
@@ -37060,9 +35917,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -37104,7 +35958,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Licor 43",
@@ -37121,10 +35975,6 @@ const PAIRING_MAP = [
     strong: [
       "Cheesecake",
       "Carrot Cake",
-      "Espresso Martini",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
     ],
     works: [
       "Chocolate Brownie",
@@ -37139,9 +35989,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -37183,7 +36030,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Fireball Whisky",
@@ -37213,13 +36060,6 @@ const PAIRING_MAP = [
       "Creme Brulee",
       "Beignets",
       "Mocha Creme",
-      "Espresso Martini",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -37261,7 +36101,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Bruichladdich",
@@ -37326,10 +36166,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seared Scallops",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -37337,7 +36173,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Lagavulin 8",
@@ -37402,8 +36238,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -37412,7 +36246,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Laphroaig 10",
@@ -37476,8 +36310,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -37486,7 +36318,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bowmore 12",
@@ -37550,8 +36382,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -37560,7 +36390,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Weller 12 Year",
@@ -37625,8 +36455,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -37635,7 +36463,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Weller Millennium",
@@ -37700,8 +36528,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -37710,7 +36536,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Maker's Mark Cellar Aged",
@@ -37774,8 +36600,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -37784,7 +36608,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Eagle Rare 10 Year",
@@ -37848,8 +36672,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -37858,7 +36680,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Weller Special Reserve",
@@ -37922,8 +36744,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -37932,7 +36752,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Weller 107",
@@ -37996,8 +36816,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38006,7 +36824,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Maker's Mark",
@@ -38071,8 +36889,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38081,7 +36897,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bowdie's Private Select — Maker's Mark",
@@ -38145,8 +36961,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38155,7 +36969,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Basil Hayden's",
@@ -38219,8 +37033,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38229,7 +37041,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Basil Hayden's Toast",
@@ -38294,8 +37106,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38304,7 +37114,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Basil Hayden's 10 Year",
@@ -38368,8 +37178,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38378,7 +37186,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Basil Hayden's Malted Rye",
@@ -38443,8 +37251,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38453,7 +37259,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Larceny Small Batch",
@@ -38518,8 +37324,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38528,7 +37332,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Buffalo Trace",
@@ -38592,8 +37396,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38602,7 +37404,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Woodford Reserve",
@@ -38666,8 +37468,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38676,7 +37476,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Four Roses Yellow Label",
@@ -38741,8 +37541,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38751,7 +37549,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jefferson's Reserve",
@@ -38816,8 +37614,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38826,7 +37622,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jefferson's Reserve VR Twin Oak",
@@ -38891,8 +37687,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38901,7 +37695,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Knob Creek",
@@ -38965,8 +37759,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -38975,7 +37767,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Russell's Reserve 10 Year",
@@ -39040,8 +37832,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39050,7 +37840,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Heaven Hill Bottled in Bond",
@@ -39115,8 +37905,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39125,7 +37913,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Elijah Craig Small Batch",
@@ -39189,8 +37977,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39199,7 +37985,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Willett Pot Still Reserve",
@@ -39264,8 +38050,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39274,7 +38058,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bulleit Bourbon",
@@ -39338,8 +38122,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39348,7 +38130,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Knob Creek Bourbon/Rye",
@@ -39413,8 +38195,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39423,7 +38203,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jim Beam White Label",
@@ -39488,8 +38268,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39498,7 +38276,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jim Beam Black Label",
@@ -39562,8 +38340,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39572,7 +38348,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Old Fitzgerald 7 Year",
@@ -39636,8 +38412,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39646,7 +38420,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Old Fitzgerald 9 Year",
@@ -39710,8 +38484,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39720,7 +38492,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Blade & Bow",
@@ -39785,8 +38557,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39795,7 +38565,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Clermont Steep",
@@ -39860,8 +38630,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39870,7 +38638,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "1792 Sweet Wheat",
@@ -39935,8 +38703,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -39945,7 +38711,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Never Say Die Small Batch",
@@ -40010,8 +38776,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -40020,7 +38784,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Don Julio Reposado",
@@ -40092,10 +38856,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Don Julio 70th",
@@ -40167,10 +38928,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Clase Azul Reposado",
@@ -40242,10 +39000,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Corazon Reposado",
@@ -40317,10 +39072,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Siete Leguas Reposado",
@@ -40392,10 +39144,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Don Fulano Reposado",
@@ -40467,10 +39216,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "G4 High Proof",
@@ -40543,10 +39289,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Adictivo Reposado",
@@ -40618,10 +39361,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Komos Rosa Reposado",
@@ -40693,10 +39433,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Codigo 1530 Rosa",
@@ -40768,10 +39505,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Trombo Cedano Reposado",
@@ -40843,10 +39577,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "El Cabo",
@@ -40918,10 +39649,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "El Mayor Reposado",
@@ -40993,10 +39721,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Milagro Reposado",
@@ -41068,10 +39793,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Camarena Tequila",
@@ -41143,10 +39865,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-      "Scavino Barolo",
-    ]
+    ],
   },
   {
     name: "Blanton's Original",
@@ -41210,8 +39929,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41220,7 +39937,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Blanton's Gold",
@@ -41284,8 +40001,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41294,7 +40009,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Elmer T. Lee",
@@ -41358,8 +40073,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41368,7 +40081,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "E.H. Taylor Small Batch",
@@ -41432,8 +40145,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41442,7 +40153,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Elijah Craig Single Barrel",
@@ -41506,8 +40217,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41516,7 +40225,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Elijah Craig Private Barrel",
@@ -41581,8 +40290,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41591,7 +40298,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Henry McKenna 10 Year Bottled in Bond",
@@ -41655,8 +40362,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41665,7 +40370,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Hancock's Reserve Single Barrel",
@@ -41730,8 +40435,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41740,7 +40443,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Knob Creek 12 Year",
@@ -41804,8 +40507,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41814,7 +40515,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Baker's",
@@ -41878,8 +40579,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41888,7 +40587,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "1792 Small Batch",
@@ -41953,8 +40652,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -41963,7 +40660,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Four Roses Small Batch Select",
@@ -42028,8 +40725,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -42038,7 +40733,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bowman Brothers Small Batch",
@@ -42103,8 +40798,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -42113,7 +40806,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Heaven's Door 10 Year",
@@ -42178,8 +40871,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -42188,7 +40879,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Fox & Oden",
@@ -42253,8 +40944,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -42263,7 +40952,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Don Julio Blanco",
@@ -42326,10 +41015,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -42339,7 +41024,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Patron Silver",
@@ -42402,10 +41087,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -42415,7 +41096,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Clase Azul Plata",
@@ -42478,10 +41159,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -42491,7 +41168,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Gran Patron Platinum",
@@ -42563,11 +41240,7 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
-    ]
+    ],
   },
   {
     name: "Don Fulano Blanco",
@@ -42630,10 +41303,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -42643,7 +41312,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Siete Leguas Blanco",
@@ -42706,10 +41375,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -42719,7 +41384,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Mijenta Blanco",
@@ -42782,10 +41447,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -42795,7 +41456,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "G4 Blanco",
@@ -42858,10 +41519,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -42871,7 +41528,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Avion Silver",
@@ -42934,10 +41591,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -42947,7 +41600,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Lalo Silver",
@@ -43010,10 +41663,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -43023,7 +41672,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Corazon Blanco",
@@ -43086,10 +41735,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -43099,7 +41744,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Adictivo Cristalino",
@@ -43162,10 +41807,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Opus One",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Cowboy Ribeye",
       "Creme Brulee",
       "Cheesecake",
@@ -43175,7 +41816,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Sazerac Rye",
@@ -43239,8 +41880,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43249,7 +41888,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Michter's US*1 Rye",
@@ -43313,8 +41952,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43323,7 +41960,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Knob Creek Rye",
@@ -43388,8 +42025,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43398,7 +42033,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Woodford Reserve Rye",
@@ -43462,8 +42097,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43472,7 +42105,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Elijah Craig Straight Rye",
@@ -43537,8 +42170,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43547,7 +42178,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "E.H. Taylor Rye",
@@ -43612,8 +42243,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43622,7 +42251,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Pikesville Rye",
@@ -43687,8 +42316,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43697,7 +42324,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "WhistlePig PiggyBack 6 Year",
@@ -43762,8 +42389,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43772,7 +42397,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Doc Swinson's Alter Ego Rye",
@@ -43837,8 +42462,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43847,7 +42470,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Never Say Die Rye",
@@ -43912,8 +42535,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43922,7 +42543,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Woodinville Rye",
@@ -43987,8 +42608,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -43997,7 +42616,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "WhistlePig 10 Year Single Barrel Rye",
@@ -44061,8 +42680,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44071,7 +42688,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "WhistlePig 12 Year Old World",
@@ -44135,8 +42752,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44145,7 +42760,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "WhistlePig 15 Year",
@@ -44209,8 +42824,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44219,7 +42832,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Michter's 10 Year Rye",
@@ -44283,8 +42896,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44293,7 +42904,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "WhistlePig Boss Hog IX 17 Year",
@@ -44357,8 +42968,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44367,7 +42976,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "WhistlePig Boss Hog X Commandments",
@@ -44431,8 +43040,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44441,7 +43048,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Thomas H. Handy Sazerac Rye",
@@ -44505,8 +43112,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44515,7 +43120,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Pappy Van Winkle 13 Year Rye",
@@ -44580,8 +43185,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44590,7 +43193,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Kentucky Owl 10 Year Rye",
@@ -44655,8 +43258,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44665,7 +43266,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Mammoth 16 Year Single Barrel Rye",
@@ -44730,8 +43331,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44740,7 +43339,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Lock Stock & Barrel Rye",
@@ -44805,8 +43404,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44815,7 +43412,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bardstown Discovery #6",
@@ -44880,8 +43477,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44890,7 +43485,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bardstown Fusion #7",
@@ -44955,8 +43550,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -44965,7 +43558,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bardstown Founders KBS",
@@ -45030,8 +43623,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45040,7 +43631,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bardstown Rishi's Single Barrel",
@@ -45105,8 +43696,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45115,7 +43704,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Blood Oath Pact 8",
@@ -45180,8 +43769,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45190,7 +43777,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Blood Oath Pact 9",
@@ -45255,8 +43842,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45265,7 +43850,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Blood Oath Pact 10",
@@ -45330,8 +43915,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45340,7 +43923,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Rishi's Old Antique",
@@ -45405,8 +43988,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45415,7 +43996,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Kentucky Owl Confiscated",
@@ -45480,8 +44061,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45490,7 +44069,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "A Midnight's Winter Dram",
@@ -45555,8 +44134,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45565,7 +44142,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Don Julio 1942",
@@ -45637,9 +44214,7 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
-    ]
+    ],
   },
   {
     name: "Clase Azul Durango",
@@ -45711,9 +44286,7 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
-    ]
+    ],
   },
   {
     name: "Clase Azul Gold",
@@ -45777,8 +44350,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45787,7 +44358,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Clase Azul Ultra",
@@ -45852,8 +44423,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45862,7 +44431,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Komos Extra Anejo",
@@ -45927,8 +44496,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -45937,7 +44504,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Avion 44",
@@ -46009,9 +44576,7 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
-    ]
+    ],
   },
   {
     name: "El Mayor Extra Anejo",
@@ -46075,8 +44640,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -46085,7 +44648,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Rey Sol Anejo",
@@ -46149,8 +44712,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -46159,7 +44720,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Tears of Llorona",
@@ -46231,9 +44792,7 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
-    ]
+    ],
   },
   {
     name: "Amaro Nonino",
@@ -46268,8 +44827,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Filet Mignon",
       "Bone-In Filet",
       "Cowboy Ribeye",
@@ -46307,7 +44864,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Averna Amaro",
@@ -46342,8 +44899,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Filet Mignon",
       "Bone-In Filet",
       "Cowboy Ribeye",
@@ -46381,7 +44936,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Lucano Amaro",
@@ -46416,8 +44971,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Filet Mignon",
       "Bone-In Filet",
       "Cowboy Ribeye",
@@ -46455,7 +45008,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Montenegro Amaro",
@@ -46490,8 +45043,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Filet Mignon",
       "Bone-In Filet",
       "Cowboy Ribeye",
@@ -46529,7 +45080,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Fernet Branca",
@@ -46601,9 +45152,7 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-    ]
+    ],
   },
   {
     name: "Fernet Menta",
@@ -46675,9 +45224,7 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-    ]
+    ],
   },
   {
     name: "Campari",
@@ -46712,8 +45259,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Filet Mignon",
       "Bone-In Filet",
       "Cowboy Ribeye",
@@ -46751,7 +45296,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Aperol",
@@ -46786,8 +45331,6 @@ const PAIRING_MAP = [
       "Bone Marrow",
       "Kansas City",
       "Seared Scallops",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Filet Mignon",
       "Bone-In Filet",
       "Cowboy Ribeye",
@@ -46825,7 +45368,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Titos Vodka",
@@ -46886,9 +45429,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -46900,7 +45440,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Grey Goose Vodka",
@@ -46961,9 +45501,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -46975,7 +45512,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Ketel One Vodka",
@@ -47036,9 +45573,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -47050,7 +45584,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Belvedere Vodka",
@@ -47111,9 +45645,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -47125,7 +45656,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Chopin Vodka",
@@ -47186,9 +45717,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -47200,7 +45728,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Stoli Elit Vodka",
@@ -47261,9 +45789,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -47275,7 +45800,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Reyka Vodka",
@@ -47336,9 +45861,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -47350,7 +45872,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Wheatley Vodka",
@@ -47411,9 +45933,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -47425,7 +45944,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Tanqueray Gin",
@@ -47486,9 +46005,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -47500,7 +46016,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Beefeater Gin",
@@ -47561,9 +46077,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -47575,7 +46088,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Bombay Dry Gin",
@@ -47636,9 +46149,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -47650,7 +46160,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Plymouth Gin",
@@ -47711,9 +46221,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -47725,7 +46232,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Tanq 10 Gin",
@@ -47786,9 +46293,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -47800,7 +46304,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Bombay Sapphire Gin",
@@ -47861,9 +46365,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -47875,7 +46376,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Nolets Dry Gin",
@@ -47936,9 +46437,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -47950,7 +46448,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "2 James Gin",
@@ -48011,9 +46509,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -48025,7 +46520,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Hennessy Cognac",
@@ -48083,8 +46578,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -48099,7 +46592,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Courvoisier Cognac",
@@ -48157,8 +46650,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -48173,7 +46664,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Remy VSOP Cognac",
@@ -48231,8 +46722,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -48247,7 +46736,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Christian Bros Brandy",
@@ -48305,8 +46794,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -48321,7 +46808,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Pierre Ferrand Cognac",
@@ -48379,8 +46866,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -48395,7 +46880,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Villon Cognac",
@@ -48453,8 +46938,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -48469,7 +46952,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Louis XIII Cognac",
@@ -48508,8 +46991,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -48545,7 +47026,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Elephant Gin",
@@ -48606,9 +47087,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -48620,7 +47098,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Glenfiddich 12",
@@ -48684,8 +47162,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -48694,7 +47170,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Glenlivet 12",
@@ -48758,8 +47234,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -48768,7 +47242,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Balvenie 12 American Oak",
@@ -48832,8 +47306,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -48842,7 +47314,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Cragganmore 12",
@@ -48906,8 +47378,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -48916,7 +47386,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Glenfiddich 14",
@@ -48980,8 +47450,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -48990,7 +47458,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Glenfiddich 18",
@@ -49054,8 +47522,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -49064,7 +47530,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Glenfiddich Gran Cru 23",
@@ -49128,8 +47594,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -49138,7 +47602,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Balvenie 16 Single Barrel",
@@ -49202,8 +47666,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -49212,7 +47674,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Detroit City Vodka",
@@ -49272,9 +47734,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -49287,7 +47746,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "HDW 100 Vodka",
@@ -49347,9 +47806,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -49362,7 +47818,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Hangar 1 Vodka",
@@ -49422,9 +47878,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "Kansas City",
-      "Bowdie's Old Fashioned",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -49437,7 +47890,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Detroit City Gin",
@@ -49497,9 +47950,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -49512,7 +47962,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Eastern Kille Dry Gin",
@@ -49572,9 +48022,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -49587,7 +48034,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Iron Fish Gin",
@@ -49647,9 +48094,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -49662,7 +48106,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Knickerbocker Gin",
@@ -49722,9 +48166,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -49737,7 +48178,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Long Road Gin",
@@ -49797,9 +48238,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -49812,7 +48250,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Botanist Gin",
@@ -49874,9 +48312,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -49887,7 +48322,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Monkey 47 Gin",
@@ -49949,9 +48384,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -49962,7 +48394,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Mahon Gin",
@@ -50024,9 +48456,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50037,7 +48466,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Inverroche Gin",
@@ -50099,9 +48528,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50112,7 +48538,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Aviation Gin",
@@ -50175,9 +48601,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50187,7 +48610,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Bluecoat Gin",
@@ -50250,9 +48673,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50262,7 +48682,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Empress 1908 Gin",
@@ -50325,9 +48745,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50337,7 +48754,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Gray Whale Gin",
@@ -50400,9 +48817,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50412,7 +48826,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Liberator Gin",
@@ -50475,9 +48889,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50487,7 +48898,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Hendricks Gin",
@@ -50550,9 +48961,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50562,7 +48970,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Hendricks Flora Adora",
@@ -50625,9 +49033,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50637,7 +49042,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Hendricks Grand Cabaret",
@@ -50700,9 +49105,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50712,7 +49114,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Hendricks Neptunia",
@@ -50775,9 +49177,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50787,7 +49186,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Hendricks Orbium",
@@ -50850,9 +49249,6 @@ const PAIRING_MAP = [
       "The Tomahawk",
       "Bone Marrow",
       "Cowboy Ribeye",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Porterhouse",
@@ -50862,7 +49258,7 @@ const PAIRING_MAP = [
       "Peanut Butter Brownie",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Roku Gin",
@@ -50922,9 +49318,6 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -50937,7 +49330,7 @@ const PAIRING_MAP = [
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Macallan 12 Sherry",
@@ -51001,8 +49394,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -51011,7 +49402,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Macallan 18",
@@ -51076,8 +49467,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -51086,7 +49475,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Macallan Estate",
@@ -51151,8 +49540,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -51161,7 +49548,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Balvenie 14 Caribbean Cask",
@@ -51225,8 +49612,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -51235,7 +49620,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Balvenie 21 Portwood",
@@ -51299,8 +49684,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -51309,7 +49692,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Aberlour 16",
@@ -51373,8 +49756,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -51383,7 +49764,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Dalmore 12",
@@ -51446,8 +49827,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -51457,7 +49836,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Glenmorangie 10",
@@ -51520,8 +49899,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -51531,7 +49908,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Oban 14",
@@ -51594,8 +49971,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -51605,7 +49980,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Glenglassaugh 12",
@@ -51668,8 +50043,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -51679,7 +50052,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Glenmorangie 18",
@@ -51742,8 +50115,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -51753,7 +50124,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Oban 18",
@@ -51816,8 +50187,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -51827,7 +50196,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Loch Lomond 20 Year",
@@ -51890,8 +50259,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -51901,7 +50268,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Dewar's White Label",
@@ -51965,8 +50332,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -51975,7 +50340,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Johnnie Walker Red",
@@ -52039,8 +50404,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -52049,7 +50412,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Monkey Shoulder",
@@ -52113,8 +50476,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -52123,7 +50484,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Dewar's 15",
@@ -52187,8 +50548,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -52197,7 +50556,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Johnnie Walker Black",
@@ -52261,8 +50620,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -52271,7 +50628,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Johnnie Walker Blue",
@@ -52336,8 +50693,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -52346,7 +50701,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jameson Irish Whiskey",
@@ -52409,8 +50764,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -52420,7 +50773,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Tullamore D.E.W.",
@@ -52483,8 +50836,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -52494,7 +50845,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Garavogue Irish Whiskey",
@@ -52557,8 +50908,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -52568,7 +50917,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Redbreast 12 Year",
@@ -52631,8 +50980,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -52642,7 +50989,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Redbreast 21 Year",
@@ -52705,8 +51052,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -52716,7 +51061,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Kentucky Owl St. Patrick's",
@@ -52766,8 +51111,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -52791,7 +51134,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Toki Suntory Japanese Whisky",
@@ -52863,9 +51206,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-    ]
+    ],
   },
   {
     name: "Hibiki Japanese Harmony",
@@ -52937,9 +51278,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-    ]
+    ],
   },
   {
     name: "Hakushu 12 Year",
@@ -53011,9 +51350,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-    ]
+    ],
   },
   {
     name: "Yamazaki 12 Year",
@@ -53085,9 +51422,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-    ]
+    ],
   },
   {
     name: "Yamazaki 18 Year",
@@ -53159,9 +51494,7 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-    ]
+    ],
   },
   {
     name: "Crown Royal",
@@ -53222,8 +51555,6 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Burrata",
       "Seared Scallops",
       "Seafood Tower",
@@ -53235,7 +51566,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Canadian Club",
@@ -53296,8 +51627,6 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Burrata",
       "Seared Scallops",
       "Seafood Tower",
@@ -53309,7 +51638,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Canadian Club 43 Year",
@@ -53370,8 +51699,6 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Burrata",
       "Seared Scallops",
       "Seafood Tower",
@@ -53383,7 +51710,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Caribou Crossing",
@@ -53444,8 +51771,6 @@ const PAIRING_MAP = [
       "Mocha Creme",
     ],
     avoid: [
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Burrata",
       "Seared Scallops",
       "Seafood Tower",
@@ -53457,7 +51782,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jack Daniel's Old No. 7",
@@ -53521,8 +51846,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -53531,7 +51854,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jack Daniel's Bonded",
@@ -53595,8 +51918,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -53605,7 +51926,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jack Daniel's 12 Year",
@@ -53669,8 +51990,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -53679,7 +51998,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jack Daniel's Sinatra Select",
@@ -53743,8 +52062,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -53753,7 +52070,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Dunville's Single Malt",
@@ -53816,8 +52133,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -53827,7 +52142,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Scapegrace Fortuna",
@@ -53890,8 +52205,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -53901,7 +52214,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Old Emmer",
@@ -53965,8 +52278,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
@@ -53976,7 +52287,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Booker's",
@@ -54036,8 +52347,6 @@ const PAIRING_MAP = [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -54050,7 +52359,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Parker's Heritage Collection 16th Edition",
@@ -54111,8 +52420,6 @@ const PAIRING_MAP = [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -54125,7 +52432,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Little Book",
@@ -54186,8 +52493,6 @@ const PAIRING_MAP = [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -54200,7 +52505,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "George T. Stagg",
@@ -54263,8 +52568,6 @@ const PAIRING_MAP = [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -54277,7 +52580,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Stagg Jr. Batch #15",
@@ -54337,8 +52640,6 @@ const PAIRING_MAP = [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -54351,7 +52652,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "E.H. Taylor Full Proof",
@@ -54411,8 +52712,6 @@ const PAIRING_MAP = [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -54425,7 +52724,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Blanton's Straight from the Barrel",
@@ -54485,8 +52784,6 @@ const PAIRING_MAP = [
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "Cheesecake",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Market Fish",
       "Tuxedo-Crusted Yellowfin Tuna",
@@ -54499,7 +52796,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Elijah Craig 18 Year",
@@ -54564,8 +52861,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -54574,7 +52869,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Heaven Hill 20 Year",
@@ -54638,8 +52933,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -54648,7 +52941,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Old Grand-Dad 16 Year",
@@ -54713,8 +53006,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -54723,7 +53014,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Knob Creek 15 Year",
@@ -54787,8 +53078,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -54797,7 +53086,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Knob Creek 18 Year",
@@ -54861,8 +53150,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -54871,7 +53158,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Mister Sam Tribute Whiskey",
@@ -54936,8 +53223,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -54946,7 +53231,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "I.W. Harper 15 Year",
@@ -55011,8 +53296,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -55021,7 +53304,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Michter's 10 Year Bourbon",
@@ -55086,8 +53369,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -55096,7 +53377,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Remus 15 Year Gatsby Reserve",
@@ -55161,8 +53442,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -55171,7 +53450,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Angel's Envy",
@@ -55235,8 +53514,6 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Market Fish",
@@ -55245,7 +53522,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Angel's Envy Cask Strength",
@@ -55304,8 +53581,6 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Market Fish",
@@ -55319,7 +53594,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Angel's Envy Triple Cask",
@@ -55383,8 +53658,6 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Market Fish",
@@ -55393,7 +53666,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Isaac Bowman Port Finish",
@@ -55458,8 +53731,6 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Market Fish",
@@ -55468,7 +53739,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Basil Hayden's Red Wine Cask",
@@ -55533,8 +53804,6 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Market Fish",
@@ -55543,7 +53812,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bardstown Château Laboude",
@@ -55608,8 +53877,6 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Market Fish",
@@ -55618,7 +53885,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Thomas S. Moore Chardonnay Cask",
@@ -55683,8 +53950,6 @@ const PAIRING_MAP = [
       "Burrata",
       "Shrimp Cocktail",
       "Faroe Island Salmon",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Market Fish",
@@ -55693,7 +53958,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bardstown Foursquare",
@@ -55757,8 +54022,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Faroe Island Salmon",
@@ -55768,7 +54031,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "New Holland Beer Barrel Bourbon",
@@ -55832,8 +54095,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Faroe Island Salmon",
@@ -55843,7 +54104,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Ironfish Bourbon in Mezcal Casks",
@@ -55907,8 +54168,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Faroe Island Salmon",
@@ -55918,7 +54177,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jefferson's Ocean Voyage 23",
@@ -55982,8 +54241,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Faroe Island Salmon",
@@ -55993,7 +54250,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jefferson's Ocean Marian McLain L.E.",
@@ -56057,8 +54314,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Faroe Island Salmon",
@@ -56068,7 +54323,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Old Elk Cigar Cut",
@@ -56132,8 +54387,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Faroe Island Salmon",
@@ -56143,7 +54396,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Fox & Oden Double Oaked",
@@ -56207,8 +54460,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Faroe Island Salmon",
@@ -56218,7 +54469,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Woodford Reserve Double Oaked",
@@ -56281,8 +54532,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Shrimp Bisque",
       "Seafood Tower",
       "Faroe Island Salmon",
@@ -56292,7 +54541,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Casamigos Mezcal",
@@ -56345,8 +54594,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Cheesecake",
       "Seafood Tower",
       "Shrimp Cocktail",
@@ -56366,7 +54613,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Clase Azul Guerrero Mezcal",
@@ -56419,8 +54666,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Cheesecake",
       "Seafood Tower",
       "Shrimp Cocktail",
@@ -56440,7 +54685,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Los Vecinos Mezcal",
@@ -56493,8 +54738,6 @@ const PAIRING_MAP = [
       "Crab Cake",
       "Seared Scallops",
       "Burrata",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Cheesecake",
       "Seafood Tower",
       "Shrimp Cocktail",
@@ -56514,7 +54757,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Bacardi Rum",
@@ -56580,16 +54823,13 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
       "Porterhouse",
       "Escargot",
-    ]
+    ],
   },
   {
     name: "Mount Gay Rum",
@@ -56655,16 +54895,13 @@ const PAIRING_MAP = [
     avoid: [
       "The Tomahawk",
       "Bone Marrow",
-      "Caymus Cabernet Sauvignon",
-      "Scavino Barolo",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
       "Porterhouse",
       "Escargot",
-    ]
+    ],
   },
   {
     name: "Ron Zacapa Rum",
@@ -56729,8 +54966,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -56739,7 +54974,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Doctor Bird Jamaica Rum",
@@ -56803,8 +55038,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -56813,7 +55046,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Myers's Rum",
@@ -56877,8 +55110,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -56887,7 +55118,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jung and Wulff Guyana",
@@ -56951,8 +55182,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -56961,7 +55190,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Jung and Wulff Trinidad",
@@ -57025,8 +55254,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -57035,7 +55262,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Captain Morgan Rum",
@@ -57076,8 +55303,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Scavino Barolo",
-      "Opus One",
       "Bone Marrow",
       "Filet Mignon",
       "Bone-In Filet",
@@ -57109,7 +55334,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Malibu Rum",
@@ -57150,8 +55375,6 @@ const PAIRING_MAP = [
     ],
     avoid: [
       "The Tomahawk",
-      "Scavino Barolo",
-      "Opus One",
       "Bone Marrow",
       "Filet Mignon",
       "Bone-In Filet",
@@ -57183,7 +55406,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Green Chartreuse",
@@ -57245,8 +55468,6 @@ const PAIRING_MAP = [
     avoid: [
       "Crab Cake",
       "Seared Scallops",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Seafood Tower",
       "Shrimp Cocktail",
       "Burrata",
@@ -57257,7 +55478,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Yellow Chartreuse",
@@ -57292,8 +55513,6 @@ const PAIRING_MAP = [
     avoid: [
       "Crab Cake",
       "Seared Scallops",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -57331,7 +55550,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Drambuie",
@@ -57366,8 +55585,6 @@ const PAIRING_MAP = [
     avoid: [
       "Crab Cake",
       "Seared Scallops",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -57405,7 +55622,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Mata Hari Absinthe",
@@ -57440,8 +55657,6 @@ const PAIRING_MAP = [
     avoid: [
       "Crab Cake",
       "Seared Scallops",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -57479,7 +55694,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Sambuca",
@@ -57514,8 +55729,6 @@ const PAIRING_MAP = [
     avoid: [
       "Crab Cake",
       "Seared Scallops",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -57553,7 +55766,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Ancho Reyes",
@@ -57588,8 +55801,6 @@ const PAIRING_MAP = [
     avoid: [
       "Crab Cake",
       "Seared Scallops",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
       "Bone-In Filet",
       "Cowboy Ribeye",
       "The Tomahawk",
@@ -57627,7 +55838,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Contratto Vermouth",
@@ -57699,9 +55910,7 @@ const PAIRING_MAP = [
     avoid: [
       "Crab Cake",
       "Seared Scallops",
-      "G.D. Vajra Moscato d'Asti",
-      "Laurent Perrier Le Cuvée Brut",
-    ]
+    ],
   },
   {
     name: "Baileys Irish Cream",
@@ -57723,12 +55932,7 @@ const PAIRING_MAP = [
     strong: [
       "Beignets",
     ],
-    works: [
-      "Espresso Martini",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
-    ],
+    works: [],
     avoid: [
       "Shrimp Cocktail",
       "Crab Cake",
@@ -57737,9 +55941,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -57781,7 +55982,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Buffalo Trace Cream",
@@ -57802,12 +56003,7 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Beignets",
     ],
-    works: [
-      "Espresso Martini",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
-    ],
+    works: [],
     avoid: [
       "Shrimp Cocktail",
       "Crab Cake",
@@ -57816,9 +56012,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -57860,7 +56053,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Kahlua",
@@ -57874,16 +56067,12 @@ const PAIRING_MAP = [
       "Mocha Creme",
       "Chocolate Brownie",
       "Chocolate Cake",
-      "Espresso Martini",
       "Peanut Butter Brownie",
       "Beignets",
     ],
     strong: [
       "Creme Brulee",
       "Cheesecake",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
     ],
     works: [
       "Carrot Cake",
@@ -57896,9 +56085,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -57940,7 +56126,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Patron XO Cafe",
@@ -57953,16 +56139,12 @@ const PAIRING_MAP = [
       "Mocha Creme",
       "Chocolate Brownie",
       "Chocolate Cake",
-      "Espresso Martini",
       "Peanut Butter Brownie",
     ],
     strong: [
       "Creme Brulee",
       "Cheesecake",
       "Beignets",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
     ],
     works: [
       "Carrot Cake",
@@ -57975,9 +56157,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -58019,7 +56198,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Frangelico",
@@ -58033,9 +56212,6 @@ const PAIRING_MAP = [
       "Creme Brulee",
       "Chocolate Brownie",
       "Mocha Creme",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
       "Peanut Butter Brownie",
     ],
     strong: [
@@ -58044,9 +56220,7 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Beignets",
     ],
-    works: [
-      "Espresso Martini",
-    ],
+    works: [],
     avoid: [
       "Shrimp Cocktail",
       "Crab Cake",
@@ -58055,9 +56229,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -58099,7 +56270,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Disaronno",
@@ -58112,9 +56283,6 @@ const PAIRING_MAP = [
       "Creme Brulee",
       "Chocolate Brownie",
       "Mocha Creme",
-      "Graham's 10 Year Tawny",
-      "Graham's 20 Year Tawny",
-      "Taylor Fladgate Tawny",
       "Peanut Butter Brownie",
       "Cheesecake",
       "Carrot Cake",
@@ -58123,9 +56291,7 @@ const PAIRING_MAP = [
       "Chocolate Cake",
       "Beignets",
     ],
-    works: [
-      "Espresso Martini",
-    ],
+    works: [],
     avoid: [
       "Shrimp Cocktail",
       "Crab Cake",
@@ -58134,9 +56300,6 @@ const PAIRING_MAP = [
       "House Wedge",
       "The Tomahawk",
       "Bone Marrow",
-      "Scavino Barolo",
-      "Opus One",
-      "Bowdie's Old Fashioned",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -58178,7 +56341,7 @@ const PAIRING_MAP = [
       "Honey Roasted Carrots",
       "Broccolini",
       "Asparagus",
-    ]
+    ],
   },
   {
     name: "Patron Anejo",
@@ -58242,8 +56405,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -58252,7 +56413,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Milagro Anejo",
@@ -58316,8 +56477,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -58326,7 +56485,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Don Fulano Anejo",
@@ -58390,8 +56549,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -58400,7 +56557,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Ocho Anejo",
@@ -58464,8 +56621,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -58474,7 +56629,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Clase Azul Anejo",
@@ -58538,8 +56693,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -58548,7 +56701,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Komos Anejo Reserva",
@@ -58612,8 +56765,6 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "Seafood Tower",
       "Faroe Island Salmon",
       "Market Fish",
@@ -58622,7 +56773,7 @@ const PAIRING_MAP = [
       "Swordfish",
       "Chilean Seabass",
       "Rainbow Trout",
-    ]
+    ],
   },
   {
     name: "Komos Crystallino Anejo",
@@ -58689,14 +56840,12 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
       "The Tomahawk",
       "Creme Brulee",
       "Beignets",
       "Chocolate Cake",
       "Mocha Creme",
-    ]
+    ],
   },
   {
     name: "Corazon Sazerac",
@@ -58768,9 +56917,7 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
-    ]
+    ],
   },
   {
     name: "Corazon Stagg",
@@ -58842,9 +56989,7 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
-    ]
+    ],
   },
   {
     name: "Corazon Weller",
@@ -58916,10 +57061,8 @@ const PAIRING_MAP = [
       "Seared Scallops",
       "Burrata",
       "Shrimp Cocktail",
-      "Laurent Perrier Le Cuvée Brut",
-      "G.D. Vajra Moscato d'Asti",
-    ]
-  }
+    ],
+  },
 ];
 // ── SCORING ENGINE ────────────────────────────────────────────────────────────
 // Takes an array of selected item names, returns ranked recommendations
