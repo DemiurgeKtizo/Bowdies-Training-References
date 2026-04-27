@@ -1,0 +1,348 @@
+candidates: 12904
+sampling: 69
+
+=== [gold     ] [BOURBON_BOLD    ] Glenmorangie 10 x Bone Marrow ===
+  V9: Glenmorangie 10 with bone marrow — tallest-stills Highland bourbon-cask against umami fat. Strong; Glenmorangie 10's honeysuckle-vanilla sits alongside marrow at entry-Highland register; Fernet Branca still cuts it harder.
+
+  V2: * Glenmorangie 10's Highland bourbon-cask entry meets head-on the bone marrow's unctuous rendered-marrow richness: the scotch depth settles into the rich marrow, and the malt edge frames the unctuous marrow. Gold standard; Glenmorangie 10 on the bone marrow — the call you don't second-guess.
+
+=== [gold     ] [BOURBON_BOLD    ] Glenmorangie 18 x Bone Marrow ===
+  V9: Glenmorangie 18 with bone marrow — aged Highland with Oloroso finish against umami fat. Strong; Glenmorangie 18's Oloroso-cask depth sits alongside marrow at premium register; Oban 14's maritime character still leads the Highland-marrow pairings.
+
+  V2: * Glenmorangie 18's aged bourbon-plus-sherry depth runs straight into the bone marrow's unctuous rendered-marrow richness: the scotch depth settles into the rich marrow, and the malt edge frames the unctuous marrow. Gold standard; the Highland scotch that defines the bone marrow.
+
+=== [gold     ] [BOURBON_BOLD    ] Johnnie Walker Blue x Bone Marrow ===
+  V9: JW Blue with bone marrow — hand-selected rare-cask JW against umami fat. Works; JW Blue's silky-complex character sits alongside marrow at collector register but doesn't cut it; save the bottle for filet or KC — reach for Fernet Branca if the guest wants the marrow-cutting experience.
+
+  V2: * Johnnie Walker Blue's Highland-scotch character runs straight into the bone marrow's unctuous rendered-marrow richness: the scotch depth settles into the rich marrow, and the malt edge frames the unctuous marrow. Gold standard; Johnnie Walker Blue on the bone marrow — the call you don't second-guess.
+
+=== [excellent] [LIGHT_SPIRIT    ] Bacardi Rum x Seafood Tower ===
+  V9: ★ Bacardi Rum's crisp workhorse-clean character runs straight into the tower's chilled shellfish — the crisp body lifts the shellfish without overwhelming, and the clean profile carries the herb butter. Gold standard; the light-spirit-on-delicate-shellfish pairing the menu was built around.
+
+  V2: Bacardi Rum -- world's most-distributed light rum, Puerto Rican origin, ultra-clean Carta Blanca register. The clean spirit sits with the seafood tower, and the light body lifts the chilled shellfish. Peak light rum for the seafood tower -- Bacardi Rum elegance meets the plate.
+
+=== [excellent] [VODKA           ] Detroit City Vodka x Burrata ===
+  V9: Detroit City with burrata — Detroit City Distillery against fresh dairy. Excellent; hometown craft vodka sits alongside cream at Michigan-pride register.
+
+  V2: Detroit City Vodka's clean vodka neutrality lifts the burrata's fresh basil-tomato-cream delicacy: the vodka neutrality sits with the burrata, and the clean profile carries the fresh cream. Peak vodka for the burrata -- Detroit City Vodka elegance meets the plate.
+
+=== [excellent] [BOURBON_BOLD    ] Old Emmer x Bone Marrow ===
+  V9: Old Emmer with bone marrow — wheated bourbon from emmer wheat against umami fat. Excellent; Old Emmer's wheated softness sits alongside marrow with craft distinction; Fernet Branca still cuts it harder.
+
+  V2: Old Emmer's wheated bourbon lifts the bone marrow's unctuous rendered-marrow richness: the bourbon depth settles into the rich marrow, and the vanilla softens the unctuous marrow. Peak bourbon for the bone marrow -- Old Emmer elegance meets the plate.
+
+=== [excellent] [HEAVY_SPIRIT    ] Ron Zacapa Rum x Beignets ===
+  V9: ★ Ron Zacapa Rum's Solera-honey character runs straight into the beignet's warm sugar-dusted pastry — the crisp body underclubs the dessert. Gold standard; recommend the light-spirit-on-dessert pairing without hesitation.
+
+  V2: Ron Zacapa Rum -- Guatemalan Solera 23, high-altitude Andean aging. The spirit weight handles the beignets, and the depth frames the warm pastry. Peak heavy spirit for the beignets -- Ron Zacapa Rum elegance meets the plate.
+
+=== [excellent] [HEAVY_SPIRIT    ] Ron Zacapa Rum x Creme Brulee ===
+  V9: ★ Ron Zacapa Rum's Solera-honey character runs straight into the brulee's burnt-sugar custard — the crisp body underclubs the dessert, and the honey threads the cream. Gold standard; the light-spirit-on-dessert lock that sells itself.
+
+  V2: Ron Zacapa Rum -- Guatemalan Solera 23, high-altitude Andean aging. The spirit weight handles the brulee, and the depth frames the burnt-sugar crust. Excellent; heavy spirit on the brulee -- the call servers pour without second-guessing.
+
+=== [excellent] [VODKA           ] Titos Vodka x Burrata ===
+  V9: Tito's with burrata — slightly-sweet American vodka against fresh dairy. Excellent; round mouthfeel sits alongside the cream without friction.
+
+  V2: Titos Vodka's clean vodka neutrality lifts the burrata's fresh basil-tomato-cream delicacy: the vodka neutrality sits with the burrata, and the clean profile carries the fresh cream. Peak vodka for the burrata -- Titos Vodka elegance meets the plate.
+
+=== [strong   ] [BOURBON_BOLD    ] 1792 Small Batch x Bone-In Filet ===
+  V9: 1792 Small Batch's caramel-spice character frames the bone-in filet's marrow-edged tenderness — the bourbon weight grips the lean cut, and the vanilla softens the grilled char. Strong; reliable bourbon-on-strip-or-filet recommendation.
+
+  V2: 1792 Small Batch -- caramel, spice, 93.7 proof Barton. The bourbon depth settles into the bone-enhanced filet, and the rounded sweetness softens the bone-enhanced cut. Strong; reliable small-batch Barton bourbon for the bone-in filet.
+
+=== [strong   ] [BOURBON_BOLD    ] 1792 Small Batch x Escargot ===
+  V9: 1792 Small Batch's caramel-spice character lifts the escargot's garlic-herb butter — the bourbon weight grips the savory plate, and the caramel rounds the umami plate. Strong; the bourbon-on-hearty-starter match that holds its register.
+
+  V2: 1792 Small Batch -- caramel, spice, 93.7 proof Barton. The bourbon depth settles into the buttered escargot, and the caramel rounds the herb butter. Strong; reliable small-batch Barton bourbon for the escargot.
+
+=== [strong   ] [BOURBON_BOLD    ] 1792 Small Batch x Prime Tartare ===
+  V9: 1792 Small Batch's caramel-spice character reads alongside the tartare's raw beef and brine — the bourbon depth cuts the umami fat, and the caramel rounds the umami plate. Strong; reliable bourbon-on-hearty-starter recommendation.
+
+  V2: 1792 Small Batch -- caramel, spice, 93.7 proof Barton. The bourbon depth settles into the tartare, and the oak frames the umami. Strong; reliable small-batch Barton bourbon for the tartare.
+
+=== [strong   ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Escargot ===
+  V9: 1792 Sweet Wheat's butter-caramel character reads alongside the escargot's garlic-herb butter — the caramel-oak depth threads the savory plate, and the caramel rounds the umami plate. Strong; the bourbon-on-hearty-starter pairing servers pour without second-guessing.
+
+  V2: 1792 Sweet Wheat's sweet-wheat sits alongside the escargot's garlic-herb-butter savory weight: the bourbon depth settles into the buttered escargot, and the caramel rounds the herb butter. Strong; wheated bourbon on the escargot reads cleanly at the table.
+
+=== [strong   ] [BIG_RED         ] 1881 Napa Valley x The Tomahawk ===
+  V9: 1881 Napa Valley's bold cherry-coffee cassis reads alongside the Tomahawk's char-and-fat — the velvet-on-fat coherence runs through the plate, and the cassis plays against the grilled char. Strong; capable Cab-on-bone-in-ribeye pour for guests who want a confident pairing.
+
+  V2: 1881 Napa Valley -- blackcurrant, mocha, smooth medium tannin. The bold red body wraps the 40oz showpiece, and the cassis frames the marbled char. Strong; big red on the Tomahawk reads cleanly at the table.
+
+=== [strong   ] [GIN             ] 2 James Gin x Chilean Seabass ===
+  V9: 2 James Gin's crisp char-juniper botanicals reads alongside the seabass's buttery flesh — the botanical lift frames the fish cleanly, and the botanicals lift the herb butter. Strong; recommend with confidence — solid gin-on-fish-main match.
+
+  V2: 2 James Gin's botanical lift sits alongside the seabass' buttery seabass flesh: the botanical lift frames the seabass, and the juniper threads the buttery flesh. Strong; gin on the seabass reads cleanly at the table.
+
+=== [strong   ] [GIN             ] 2 James Gin x Salt-Cured Halibut ===
+  V9: 2 James Gin's crisp char-juniper botanicals meets at register with the halibut's salt-cured flesh — the botanical lift frames the fish cleanly, and the botanicals lift the herb butter. Strong; the gin-on-fish-main pairing reads cleanly at the table.
+
+  V2: 2 James Gin's botanical lift meets at register with the halibut's salt-cured flesh: the botanical lift frames the halibut, and the juniper threads the salt-cured flesh. Strong; reliable gin for the halibut.
+
+=== [strong   ] [BOURBON_BOLD    ] A Midnight's Winter Dram x Escargot ===
+  V9: A Midnight's Winter Dram's oak-spice character reads alongside the escargot's garlic-herb butter — the caramel-oak depth threads the savory plate, and the oak frames the umami. Strong; capable bourbon-on-hearty-starter pour for guests who want a confident pairing.
+
+  V2: A Midnight's Winter Dram's fresh dairy meets at register with the escargot's garlic-herb-butter savory weight: the scotch depth settles into the buttered escargot, and the malt edge frames the garlic-herb butter. Strong; scotch on the escargot reads cleanly at the table.
+
+=== [strong   ] [BOURBON_BOLD    ] Aberlour 16 x Bone Marrow ===
+  V9: Aberlour 16 with bone marrow — double-matured Speyside against umami fat. Strong; Aberlour 16's balanced bourbon-plus-sherry character sits alongside marrow; Fernet Branca still cuts it harder.
+
+  V2: Aberlour 16's bourbon-plus-sherry balance leans against the bone marrow's unctuous rendered-marrow richness: the scotch depth settles into the rich marrow, and the malt edge frames the unctuous marrow. Strong; reliable Speyside scotch for the bone marrow.
+
+=== [strong   ] [BOURBON_BOLD    ] Aberlour 16 x Escargot ===
+  V9: Aberlour 16's chocolate-cocoa character meets at register with the escargot's garlic-herb butter — the bourbon weight grips the savory plate, and the oak frames the umami. Strong; the server-confident bourbon-on-hearty-starter call.
+
+  V2: Aberlour 16's bourbon-plus-sherry balance meets at register with the escargot's garlic-herb-butter savory weight: the scotch depth settles into the buttered escargot, and the malt edge frames the garlic-herb butter. Strong; reliable Speyside scotch for the escargot.
+
+=== [strong   ] [TEQUILA_BOLD    ] Adictivo Cristalino x Chilean Seabass ===
+  V9: Adictivo Cristalino's caramel-char character meets at register with the seabass's buttery flesh — the crisp body frames the fish cleanly, and the caramel rounds the herb butter. Strong; recommend with confidence — solid light-spirit-on-fish-main match.
+
+  V2: Adictivo Cristalino's filtered aged sits alongside the seabass' buttery seabass flesh: the aged-agave depth handles the seabass, and the oak frames the buttery flesh. Strong; reliable aged tequila for the seabass.
+
+=== [strong   ] [TEQUILA_BOLD    ] Adictivo Cristalino x Swordfish ===
+  V9: Adictivo Cristalino's caramel-char character reads alongside the swordfish's meaty flesh — the crisp body frames the fish cleanly, and the caramel rounds the umami plate. Strong; recommend with confidence — solid light-spirit-on-fish-main match.
+
+  V2: Adictivo Cristalino's filtered aged meets at register with the swordfish's meaty swordfish steak: the aged-agave depth handles the swordfish, and the oak frames the meaty steak. Strong; aged tequila on the swordfish reads cleanly at the table.
+
+=== [strong   ] [TEQUILA_BOLD    ] Adictivo Cristalino x Tuxedo-Crusted Yellowfin Tuna ===
+  V9: Adictivo Cristalino's caramel-char character reads alongside the tuna's seared rare crust — the crisp body frames the fish cleanly, and the vanilla softens the grilled char. Strong; the server-confident light-spirit-on-fish-main call.
+
+  V2: Adictivo Cristalino's filtered aged leans against the tuna's seared-rare flesh with sesame crust: the aged-agave depth handles the tuna, and the oak frames the seared-rare flesh. Strong; aged tequila on the tuna reads cleanly at the table.
+
+=== [strong   ] [TEQUILA_BOLD    ] Adictivo Reposado x Bone-In Filet ===
+  V9: Adictivo Reposado's crisp agave-caramel character reads alongside the bone-in filet's marrow-edged tenderness — the aged-tequila depth carries the cut, and the vanilla softens the grilled char. Strong; the añejo-on-strip-or-filet match that holds its register.
+
+  V2: Adictivo Reposado's aged reposado leans against the bone-in filet's bone-enhanced buttery tenderness: the aged-agave depth handles the bone-enhanced filet, and the oak frames the bone-enhanced cut. Strong; reposado tequila on the bone-in filet reads cleanly at the table.
+
+=== [strong   ] [TEQUILA_BOLD    ] Adictivo Reposado x Porterhouse ===
+  V9: Adictivo Reposado's crisp agave-caramel character reads alongside the porterhouse's two-cut character — the añejo weight matches the cap-fat, and the vanilla softens the grilled char. Strong; reliable añejo-on-bone-in-ribeye recommendation.
+
+  V2: Adictivo Reposado's aged reposado meets at register with the porterhouse's dual strip-and-filet character: the aged-agave depth handles the dual-cut steak, and the oak frames the dual strip-and-filet. Strong; reposado tequila on the porterhouse reads cleanly at the table.
+
+=== [strong   ] [WHITE_WINE      ] Alexander Valley Chardonnay x Market Fish ===
+  V9: Alexander Valley Chardonnay's apple-butter acidity reads alongside the fish's clean flesh — the crisp acidity frames the fish cleanly, and the caramel rounds the herb butter. Strong; capable white-on-fish-main pour for guests who want a confident pairing.
+
+  V2: Alexander Valley Chardonnay -- Sonoma with ripe apple, pear, warm vanilla oak, smooth texture. The bright acid lifts the market fish, and the citrus cuts the clean flesh. Strong; Chardonnay on the market fish reads cleanly at the table.
+
+=== [strong   ] [WHITE_WINE      ] Alexander Valley Chardonnay x Seafood Tower ===
+  V9: Alexander Valley Chardonnay's apple-butter acidity reads alongside the tower's chilled shellfish — the crisp acidity lifts the shellfish without weight, and the juniper carries the shellfish. Strong; the white-on-delicate-shellfish pairing reads cleanly at the table.
+
+  V2: Alexander Valley Chardonnay -- Sonoma with ripe apple, pear, warm vanilla oak, smooth texture. The bright acid lifts the seafood tower, and the citrus cuts the chilled shellfish. Strong; Chardonnay on the seafood tower reads cleanly at the table.
+
+=== [strong   ] [WHITE_WINE      ] Alexander Valley Chardonnay x Tuxedo-Crusted Yellowfin Tuna ===
+  V9: Alexander Valley Chardonnay's apple-butter acidity meets at register with the tuna's seared rare crust — the crisp acidity frames the fish cleanly, and the vanilla softens the grilled char. Strong; reliable white-on-fish-main recommendation.
+
+  V2: Alexander Valley Chardonnay -- Sonoma with ripe apple, pear, warm vanilla oak, smooth texture. The bright acid lifts the tuna, and the citrus cuts the seared-rare flesh. Strong; Chardonnay on the tuna reads cleanly at the table.
+
+=== [strong   ] [BIG_RED         ] Alexander Valley Cyrus x Escargot ===
+  V9: Alexander Valley Cyrus's bold chocolate-cocoa cassis meets at register with the escargot's garlic-herb butter — the Cab structure meets the savory depth, and the cassis grips the umami plate. Strong; the Cab-on-hearty-starter match that holds its register.
+
+  V2: Alexander Valley Cyrus's concentrated dark-fruit and tannin leans against the escargot's garlic-herb-butter savory weight: the bold red body wraps the buttered escargot, and the cassis frames the garlic-herb butter. Strong; reliable big-red Cab for the escargot.
+
+=== [strong   ] [APERITIVO_BITTER] Amaro Nonino x Chocolate Cake ===
+  V9: Amaro Nonino's crisp orange-peel-grappa sweetness meets at register with the cake's layered chocolate — the bitter herb edge cuts dessert sweetness, and the orange peel echoes the chocolate. Strong; the aperitivo-on-dessert pairing reads cleanly at the table.
+
+  V2: Amaro Nonino -- orange peel, grappa-base, bitter herb. The bitter herb edge cuts the chocolate cake, and the spice threads the dessert. Strong; aperitivo amaro on the chocolate cake reads cleanly at the table.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Asparagus ===
+  V9: 1792 Small Batch's caramel-spice character meets at register with the asparagus's green-vegetal edge — the bourbon depth settles on the plate, and the rounded sweetness softens the green edge. Works; safe bourbon-on-light-side alongside, but not the headline call.
+
+  V2: 1792 Small Batch's caramel-spice character sits alongside the asparagus' green-vegetal edge: the bourbon depth settles into the asparagus, and the rounded sweetness softens the green spear. Works; the small-batch Barton bourbon call sits at neutral register against the asparagus.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Beignets ===
+  V9: 1792 Small Batch's caramel-spice character finds neutral with the beignet's warm sugar-dusted pastry — the bourbon character meets the dessert at digestif register, and the vanilla amplifies the dessert sugar. Works; the bourbon-on-dessert pairing holds at neutral.
+
+  V2: 1792 Small Batch's caramel-spice character finds neutral with the beignets' warm sugar-dusted pastry: the bourbon depth settles into the beignets, and the spice threads the dessert. Works; the small-batch Barton bourbon pairing holds without pulling focus.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Broccoli Cheddar ===
+  V9: 1792 Small Batch's caramel-spice character leans against the broccoli cheddar's cream — the bourbon depth settles on the plate, and the vanilla layers into the cream. Works; safe bourbon-on-light-soup alongside, but not the headline call.
+
+  V2: 1792 Small Batch's caramel-spice character finds neutral with the broccoli cheddar's cheddar-and-broccoli cream: the bourbon depth settles into the broccoli cheddar, and the vanilla layers into the cream. Works; the small-batch Barton bourbon pairing holds without pulling focus.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Broccolini ===
+  V9: 1792 Small Batch's caramel-spice character sits alongside the broccolini's tender green — the bourbon depth settles on the plate, and the rounded sweetness softens the green edge. Works; the bourbon-on-light-side call sits without pulling focus.
+
+  V2: 1792 Small Batch's caramel-spice character reads alongside the broccolini's tender green broccolini: the bourbon depth settles into the broccolini, and the rounded sweetness softens the tender green. Works; capable small-batch Barton bourbon for the broccolini, but not the headline pour.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Butternut Squash ===
+  V9: 1792 Small Batch's caramel-spice character leans against the squash soup's silky sweet — the bourbon depth settles on the plate, and the vanilla layers into the cream. Works; capable bourbon-on-light-soup match, not the recommendation.
+
+  V2: 1792 Small Batch's caramel-spice character finds neutral with the butternut squash's silky sweet squash cream: the bourbon depth settles into the squash bisque, and the vanilla layers into the cream. Works; capable small-batch Barton bourbon for the butternut squash, but not the headline pour.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Chocolate Cake ===
+  V9: 1792 Small Batch's caramel-spice character leans against the cake's layered chocolate — the aged-oak depth threads the dessert, and the vanilla amplifies the dessert sugar. Works; safe bourbon-on-dessert alongside, but not the headline call.
+
+  V2: 1792 Small Batch's caramel-spice character finds neutral with the chocolate cake's layered chocolate body: the bourbon depth settles into the chocolate cake, and the spice threads the dessert. Works; the small-batch Barton bourbon call sits at neutral register against the chocolate cake.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Clam Chowder ===
+  V9: 1792 Small Batch's caramel-spice character holds with the chowder's creamy clam-and-potato — the bourbon depth settles on the plate, and the vanilla layers into the cream. Works; the bourbon-on-light-soup call lands as a measured alongside.
+
+  V2: 1792 Small Batch's caramel-spice character sits alongside the chowder's creamy clam-and-potato chowder: the bourbon depth settles into the chowder, and the vanilla layers into the cream. Works; the small-batch Barton bourbon call sits at neutral register against the chowder.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Creamy Potato ===
+  V9: 1792 Small Batch's caramel-spice character leans against the potato soup's silky body — the bourbon depth settles on the plate, and the vanilla layers into the cream. Works; the bourbon-on-light-soup call lands as a measured alongside.
+
+  V2: 1792 Small Batch's caramel-spice character leans against the potato soup's silky-bodied potato soup: the bourbon depth settles into the potato soup, and the vanilla layers into the cream. Works; the small-batch Barton bourbon call sits at neutral register against the potato soup.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Creme Brulee ===
+  V9: 1792 Small Batch's caramel-spice character reads alongside the brulee's burnt-sugar custard — the bourbon character meets the dessert at digestif register, and the vanilla layers into the cream. Works; the bourbon-on-dessert pairing holds at neutral.
+
+  V2: 1792 Small Batch's caramel-spice character sits alongside the brulee's burnt-sugar custard: the bourbon depth settles into the brulee, and the vanilla layers into the cream. Works; capable small-batch Barton bourbon for the brulee, but not the headline pour.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x French Onion ===
+  V9: 1792 Small Batch's caramel-spice character meets at register with the French onion's beef-broth-and-gruyere — the bourbon depth settles on the plate, and the vanilla amplifies the dessert sugar. Works; capable bourbon-on-hearty-soup match, not the recommendation.
+
+  V2: 1792 Small Batch's caramel-spice character finds neutral with the French onion's beef-broth-and-gruyere depth: the bourbon depth settles into the French onion, and the rounded sweetness softens the beef-broth depth. Works; the small-batch Barton bourbon call sits at neutral register against the French onion.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Gumbo ===
+  V9: 1792 Small Batch's caramel-spice character sits alongside the gumbo's spiced Creole stew — the bourbon depth settles on the plate, and the caramel rounds the umami plate. Works; safe bourbon-on-light-soup alongside, but not the headline call.
+
+  V2: 1792 Small Batch's caramel-spice character leans against the gumbo's spiced creole stew: the bourbon depth settles into the gumbo, and the rounded sweetness softens the spiced stew. Works; the small-batch Barton bourbon pairing holds without pulling focus.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Honey Roasted Carrots ===
+  V9: 1792 Small Batch's caramel-spice character meets at register with the carrots' honeyed sweetness — the bourbon depth settles on the plate, and the vanilla amplifies the dessert sugar. Works; the bourbon-on-light-side call holds — neither soars nor fights.
+
+  V2: 1792 Small Batch's caramel-spice character sits alongside the honey carrots' honey-glazed carrot sweetness: the bourbon depth settles into the honey carrots, and the oak frames the caramelized sugar. Works; capable small-batch Barton bourbon for the honey carrots, but not the headline pour.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Loaded Potato ===
+  V9: 1792 Small Batch's caramel-spice character meets at register with the loaded potato's richness — the bourbon depth settles on the plate, and the vanilla layers into the cream. Works alongside; nothing fights in this bourbon-on-hearty-soup pairing.
+
+  V2: 1792 Small Batch's caramel-spice character sits alongside the loaded potato's rich loaded-potato soup: the bourbon depth settles into the loaded potato soup, and the vanilla layers into the cream. Works; the small-batch Barton bourbon pairing holds without pulling focus.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Lobster Mac ===
+  V9: 1792 Small Batch's caramel-spice character finds neutral with the lobster mac's shellfish cream — the bourbon weight settles into the rich side, and the vanilla layers into the cream. Works; the bourbon-on-rich-side call sits without pulling focus.
+
+  V2: 1792 Small Batch's caramel-spice character reads alongside the lobster mac's shellfish-in-cream indulgence: the bourbon depth settles into the lobster mac, and the vanilla layers into the cream. Works; the small-batch Barton bourbon call sits at neutral register against the lobster mac.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Mocha Creme ===
+  V9: 1792 Small Batch's caramel-spice character reads alongside the mocha creme's coffee-chocolate dessert — the aged-oak depth threads the dessert, and the vanilla layers into the cream. Works; the bourbon-on-dessert pairing reads as a quiet alongside.
+
+  V2: 1792 Small Batch's caramel-spice character reads alongside the mocha creme's coffee-chocolate richness: the bourbon depth settles into the mocha creme, and the vanilla layers into the cream. Works; the small-batch Barton bourbon pairing holds without pulling focus.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Mushroom Bisque ===
+  V9: 1792 Small Batch's caramel-spice character meets at register with the mushroom bisque's earthy cream — the bourbon depth settles on the plate, and the vanilla layers into the cream. Works; the bourbon-on-hearty-soup pairing sits at neutral register without clash.
+
+  V2: 1792 Small Batch's caramel-spice character leans against the mushroom bisque's silky earthy mushroom cream: the bourbon depth settles into the mushroom bisque, and the vanilla layers into the cream. Works; the small-batch Barton bourbon call sits at neutral register against the mushroom bisque.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Roast Half Chicken ===
+  V9: 1792 Small Batch's caramel-spice character sits beside the chicken's herbed crisp skin — the bourbon depth carries the herb-crisped bird, and the vanilla softens the grilled char. Works; the bourbon-on-chicken-main call holds — neither soars nor fights.
+
+  V2: 1792 Small Batch's caramel-spice character finds neutral with the chicken's herbed crisp-skin roast chicken: the bourbon depth settles into the roast chicken, and the rounded sweetness softens the herbed crisp skin. Works; capable small-batch Barton bourbon for the chicken, but not the headline pour.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Roasted Red Pepper Chickpea ===
+  V9: 1792 Small Batch's caramel-spice character sits alongside the chickpea soup's roasted-pepper warmth — the bourbon depth settles on the plate, and the caramel rounds the earthy plate. Works; safe bourbon-on-light-soup alongside, but not the headline call.
+
+  V2: 1792 Small Batch's caramel-spice character finds neutral with the chickpea soup's roasted-pepper chickpea warmth: the bourbon depth settles into the chickpea soup, and the rounded sweetness softens the roasted pepper. Works; the small-batch Barton bourbon call sits at neutral register against the chickpea soup.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Sauteed Garlic Spinach ===
+  V9: 1792 Small Batch's caramel-spice character leans against the garlic-spinach's buttered greens — the bourbon depth settles on the plate, and the vanilla layers into the cream. Works; the bourbon-on-light-side call sits without pulling focus.
+
+  V2: 1792 Small Batch's caramel-spice character finds neutral with the garlic spinach's garlic-buttered greens: the bourbon depth settles into the garlic spinach, and the rounded sweetness softens the buttered greens. Works; the small-batch Barton bourbon pairing holds without pulling focus.
+
+=== [works    ] [BOURBON_BOLD    ] 1792 Small Batch x Seasonal Soup ===
+  V9: 1792 Small Batch's caramel-spice character meets at register with the seasonal soup's house build — the bourbon depth settles on the plate. Works; the bourbon-on-light-soup call sits without pulling focus.
+
+  V2: 1792 Small Batch's caramel-spice character reads alongside the seasonal soup's house seasonal build: the bourbon depth settles into the seasonal soup, and the rounded sweetness softens the house build. Works; the small-batch Barton bourbon pairing holds without pulling focus.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Small Batch x Chilean Seabass ===
+  V9: 1792 Small Batch's caramel-spice character drowns out the seabass's buttery flesh — the rich white-fish deserves Far Niente or Pommery Cuvée Louise, not a bold bourbon. Avoid; Reach for Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay. Save the 1792 Small Batch for the steak.
+
+  V2: 1792 Small Batch's caramel-spice character overpowers the seabass' buttery seabass flesh -- the plate deserves Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay, not a bourbon. Avoid; Reach for Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay. Save the 1792 Small Batch for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Small Batch x Faroe Island Salmon ===
+  V9: 1792 Small Batch's caramel-spice character drowns out the salmon's rich oily flesh — the salmon plate deserves Cristom Mt Jefferson Cuvée or Lingua Franca Avni, not a bold bourbon. Avoid; Reach for Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain. Save the 1792 Small Batch for the steak.
+
+  V2: 1792 Small Batch's caramel-spice character overpowers the salmon's rich oily flesh -- the plate deserves Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain, not a bourbon. Avoid; Reach for Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain. Save the 1792 Small Batch for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Small Batch x Market Fish ===
+  V9: 1792 Small Batch's caramel-spice character drowns out the fish's clean flesh — the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a bold bourbon. Avoid; Reach for Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis. Save the 1792 Small Batch for the steak.
+
+  V2: 1792 Small Batch's caramel-spice character overpowers the market fish's clean white-fish flesh -- the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a bourbon. Avoid; Reach for Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis. Save the 1792 Small Batch for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Small Batch x Rainbow Trout ===
+  V9: 1792 Small Batch's caramel-spice character drowns out the trout's delicate flesh — the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a bold bourbon. Avoid; Reach for Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé. Save the 1792 Small Batch for the steak.
+
+  V2: 1792 Small Batch's caramel-spice character overpowers the trout's delicate flesh -- the plate deserves Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé, not a bourbon. Avoid; Reach for Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé. Save the 1792 Small Batch for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Small Batch x Salt-Cured Halibut ===
+  V9: 1792 Small Batch's caramel-spice character overpowers the halibut's salt-cured flesh — the plate deserves Jean-Pierre Grossot Chablis or St Supéry, not a bold bourbon. Avoid; Reach for Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay. Save the 1792 Small Batch for the steak.
+
+  V2: 1792 Small Batch's caramel-spice character overpowers the halibut's salt-cured flesh -- the plate deserves Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay, not a bourbon. Avoid; Reach for Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay. Save the 1792 Small Batch for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Small Batch x Seafood Tower ===
+  V9: 1792 Small Batch's caramel-spice character bulldozes the tower's chilled shellfish — the shellfish lineup deserves Laurent Perrier Le Cuvée Brut or Veuve Clicquot Brut, not a bold bourbon. Avoid; Reach for Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut. Save the 1792 Small Batch for the steak.
+
+  V2: 1792 Small Batch's caramel-spice character overpowers the seafood tower's chilled shellfish lineup -- the plate deserves Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut, not a bourbon. Avoid; Reach for Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut. Save the 1792 Small Batch for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Small Batch x Swordfish ===
+  V9: 1792 Small Batch's caramel-spice character overpowers the swordfish's meaty flesh — the plate deserves Far Niente or Schloss Vollrads, not a bold bourbon. Avoid; Reach for Far Niente Chardonnay, Schloss Vollrads Riesling, or Keenan Chardonnay. Save the 1792 Small Batch for the steak.
+
+  V2: 1792 Small Batch's caramel-spice character overpowers the swordfish's meaty swordfish steak -- the plate deserves Far Niente Chardonnay, Schloss Vollrads Riesling, or Keenan Chardonnay, not a bourbon. Avoid; Reach for Far Niente Chardonnay, Schloss Vollrads Riesling, or Keenan Chardonnay. Save the 1792 Small Batch for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Small Batch x Tuxedo-Crusted Yellowfin Tuna ===
+  V9: 1792 Small Batch's caramel-spice character overpowers the tuna's seared rare crust — the plate deserves Pommery Cuvée Louise or Jean-Pierre Grossot Chablis, not a bold bourbon. Avoid; Reach for Pommery Cuvée Louise, Jean-Pierre Grossot Chablis, or Elk Cove Pinot Blanc. Save the 1792 Small Batch for the steak.
+
+  V2: 1792 Small Batch's caramel-spice character overpowers the tuna's seared-rare flesh with sesame crust -- the plate deserves Pommery Cuvée Louise, Jean-Pierre Grossot Chablis, or Elk Cove Pinot Blanc, not a bourbon. Avoid; Reach for Pommery Cuvée Louise, Jean-Pierre Grossot Chablis, or Elk Cove Pinot Blanc. Save the 1792 Small Batch for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Chilean Seabass ===
+  V9: 1792 Sweet Wheat's butter-caramel character drowns out the seabass's buttery flesh — the rich white-fish deserves Far Niente or Pommery Cuvée Louise, not a bold bourbon. Avoid; Reach for Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay. Save the 1792 Sweet Wheat for the steak.
+
+  V2: 1792 Sweet Wheat's sweet-wheat overpowers the seabass' buttery seabass flesh -- the plate deserves Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay, not a bourbon. Avoid; Reach for Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay. Save the 1792 Sweet Wheat for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Faroe Island Salmon ===
+  V9: 1792 Sweet Wheat's butter-caramel character drowns out the salmon's rich oily flesh — the salmon plate deserves Cristom Mt Jefferson Cuvée or Lingua Franca Avni, not a bold bourbon. Avoid; Reach for Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain. Save the 1792 Sweet Wheat for the steak.
+
+  V2: 1792 Sweet Wheat's sweet-wheat overpowers the salmon's rich oily flesh -- the plate deserves Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain, not a bourbon. Avoid; Reach for Cristom Mt Jefferson Cuvée, Lingua Franca Avni Pinot Noir, or Elk Cove Five Mountain. Save the 1792 Sweet Wheat for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Market Fish ===
+  V9: 1792 Sweet Wheat's butter-caramel character drowns out the fish's clean flesh — the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a bold bourbon. Avoid; Reach for Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis. Save the 1792 Sweet Wheat for the steak.
+
+  V2: 1792 Sweet Wheat's sweet-wheat overpowers the market fish's clean white-fish flesh -- the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a bourbon. Avoid; Reach for Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis. Save the 1792 Sweet Wheat for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Rainbow Trout ===
+  V9: 1792 Sweet Wheat's butter-caramel character drowns out the trout's delicate flesh — the plate deserves Joseph Mellot Sancerre or Jean-Pierre Grossot Chablis, not a bold bourbon. Avoid; Reach for Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé. Save the 1792 Sweet Wheat for the steak.
+
+  V2: 1792 Sweet Wheat's sweet-wheat overpowers the trout's delicate flesh -- the plate deserves Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé, not a bourbon. Avoid; Reach for Joseph Mellot Sancerre, Jean-Pierre Grossot Chablis, or Domaine de Berthiers Pouilly-Fumé. Save the 1792 Sweet Wheat for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Salt-Cured Halibut ===
+  V9: 1792 Sweet Wheat's butter-caramel character overpowers the halibut's salt-cured flesh — the plate deserves Jean-Pierre Grossot Chablis or St Supéry, not a bold bourbon. Avoid; Reach for Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay. Save the 1792 Sweet Wheat for the steak.
+
+  V2: 1792 Sweet Wheat's sweet-wheat overpowers the halibut's salt-cured flesh -- the plate deserves Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay, not a bourbon. Avoid; Reach for Jean-Pierre Grossot Chablis, St Supéry Sauvignon Blanc, or Far Niente Chardonnay. Save the 1792 Sweet Wheat for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Seafood Tower ===
+  V9: 1792 Sweet Wheat's butter-caramel character bulldozes the tower's chilled shellfish — the shellfish lineup deserves Laurent Perrier Le Cuvée Brut or Veuve Clicquot Brut, not a bold bourbon. Avoid; Reach for Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut. Save the 1792 Sweet Wheat for the steak.
+
+  V2: 1792 Sweet Wheat's sweet-wheat overpowers the seafood tower's chilled shellfish lineup -- the plate deserves Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut, not a bourbon. Avoid; Reach for Laurent Perrier Le Cuvée Brut, Veuve Clicquot Brut, or Pierre Gimonnet Special Club Brut. Save the 1792 Sweet Wheat for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Swordfish ===
+  V9: 1792 Sweet Wheat's butter-caramel character overpowers the swordfish's meaty flesh — the plate deserves Far Niente or Schloss Vollrads, not a bold bourbon. Avoid; Reach for Far Niente Chardonnay, Schloss Vollrads Riesling, or Keenan Chardonnay. Save the 1792 Sweet Wheat for the steak.
+
+  V2: 1792 Sweet Wheat's sweet-wheat overpowers the swordfish's meaty swordfish steak -- the plate deserves Far Niente Chardonnay, Schloss Vollrads Riesling, or Keenan Chardonnay, not a bourbon. Avoid; Reach for Far Niente Chardonnay, Schloss Vollrads Riesling, or Keenan Chardonnay. Save the 1792 Sweet Wheat for the steak.
+
+=== [avoid    ] [BOURBON_BOLD    ] 1792 Sweet Wheat x Tuxedo-Crusted Yellowfin Tuna ===
+  V9: 1792 Sweet Wheat's butter-caramel character overpowers the tuna's seared rare crust — the plate deserves Pommery Cuvée Louise or Jean-Pierre Grossot Chablis, not a bold bourbon. Avoid; Reach for Pommery Cuvée Louise, Jean-Pierre Grossot Chablis, or Elk Cove Pinot Blanc. Save the 1792 Sweet Wheat for the steak.
+
+  V2: 1792 Sweet Wheat's sweet-wheat overpowers the tuna's seared-rare flesh with sesame crust -- the plate deserves Pommery Cuvée Louise, Jean-Pierre Grossot Chablis, or Elk Cove Pinot Blanc, not a bourbon. Avoid; Reach for Pommery Cuvée Louise, Jean-Pierre Grossot Chablis, or Elk Cove Pinot Blanc. Save the 1792 Sweet Wheat for the steak.
+
+=== [avoid    ] [BIG_RED         ] 1881 Napa Valley x Beignets ===
+  V9: 1881 Napa Valley's bold cherry-coffee cassis overpowers the beignet's warm sugar-dusted pastry — the fried-pastry dessert deserves Kahlua or Sambuca, not a big red. Avoid; Reach for Kahlua, Sambuca, or Ron Zacapa Rum. Save the 1881 Napa Valley for the steak.
+
+  V2: 1881 Napa Valley's concentrated dark-fruit and tannin overpowers the beignets' warm sugar-dusted pastry -- the plate deserves Kahlua, Sambuca, or Ron Zacapa Rum, not a big red. Avoid; Reach for Kahlua, Sambuca, or Ron Zacapa Rum. Save the 1881 Napa Valley for the steak.
+
+=== [avoid    ] [BIG_RED         ] 1881 Napa Valley x Carrot Cake ===
+  V9: 1881 Napa Valley's bold cherry-coffee cassis is too tannic for the carrot cake's spiced cream cheese — the spiced cream-cheese dessert deserves Vin Santo or Disaronno, not a big red. Avoid; Reach for Vin Santo, Disaronno, or Pineau des Charentes. Save the 1881 Napa Valley for the steak.
+
+  V2: 1881 Napa Valley's concentrated dark-fruit and tannin overpowers the carrot cake's cream-cheese-frosted spice cake -- the plate deserves Vin Santo, Disaronno, or Pineau des Charentes, not a big red. Avoid; Reach for Vin Santo, Disaronno, or Pineau des Charentes. Save the 1881 Napa Valley for the steak.
+
+=== [avoid    ] [BIG_RED         ] 1881 Napa Valley x Cheesecake ===
+  V9: 1881 Napa Valley's bold cherry-coffee cassis is too tannic for the cheesecake's custard cream — the custard dessert deserves Sauternes Glass or Vin Santo, not a big red. Avoid; Reach for Sauternes Glass, Vin Santo, or Disaronno. Save the 1881 Napa Valley for the steak.
+
+  V2: 1881 Napa Valley's concentrated dark-fruit and tannin overpowers the cheesecake's dense tangy dairy custard -- the plate deserves Sauternes Glass, Vin Santo, or Disaronno, not a big red. Avoid; Reach for Sauternes Glass, Vin Santo, or Disaronno. Save the 1881 Napa Valley for the steak.
+
+=== [avoid    ] [BIG_RED         ] 1881 Napa Valley x Chilean Seabass ===
+  V9: 1881 Napa Valley's bold cherry-coffee cassis crushes the seabass's buttery flesh — the rich white-fish deserves Far Niente or Pommery Cuvée Louise, not a big red. Avoid; Reach for Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay.
+
+  V2: 1881 Napa Valley's concentrated dark-fruit and tannin overpowers the seabass' buttery seabass flesh -- the plate deserves Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay, not a big red. Avoid; Reach for Far Niente Chardonnay, Pommery Cuvée Louise, or Keenan Chardonnay. Save the 1881 Napa Valley for the steak.
+

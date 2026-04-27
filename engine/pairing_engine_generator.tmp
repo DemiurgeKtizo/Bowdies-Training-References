@@ -183,28 +183,121 @@ const FOOD_CHARACTER = {
   'Honey Roasted Carrots':  'honey-glazed carrot sweetness',
   'Seasonal Vegetables':  'seasonal garden plate',
   'Truffle Fries':        'parmesan-and-truffle fry weight',
-  'Mushrooms':            'earthy umami mushroom side',
+  'Mushrooms':            'earthy umami weight',
   // Mains
   'Roast Half Chicken':   'herbed crisp-skin roast chicken',
-  'Faroe Island Salmon':  'rich oily salmon flesh',
+  'Faroe Island Salmon':  'rich oily flesh',
   'Swordfish':            'meaty swordfish steak',
   'Chilean Seabass':      'buttery seabass flesh',
-  'Tuxedo-Crusted Yellowfin Tuna': 'seared-rare tuna with sesame crust',
-  'Rainbow Trout':        'delicate trout flesh',
-  'Market Fish':          'clean market-fish flesh',
-  'Salt-Cured Halibut':   'salt-cured halibut',
-  'Vegetable Curry with Chickpeas': 'spiced chickpea curry',
-  'Seared Scallops':      'caramelized seared scallop sweetness',
+  'Tuxedo-Crusted Yellowfin Tuna': 'seared-rare flesh with sesame crust',
+  'Rainbow Trout':        'delicate flesh',
+  'Market Fish':          'clean white-fish flesh',
+  'Salt-Cured Halibut':   'salt-cured flesh',
+  'Vegetable Curry with Chickpeas': 'spiced chickpea-curry warmth',
+  'Seared Scallops':      'caramelized sear-and-sweet richness',
   // Desserts
-  'Chocolate Cake':       'layered chocolate cake',
-  'Chocolate Brownie':    'fudgy chocolate brownie',
-  'Peanut Butter Brownie':'peanut-butter-and-chocolate brownie',
-  'Mocha Creme':          'coffee-chocolate mocha creme',
+  'Chocolate Cake':       'layered chocolate body',
+  'Chocolate Brownie':    'fudgy cocoa-and-chocolate weight',
+  'Peanut Butter Brownie':'peanut-butter-and-chocolate fudge',
+  'Mocha Creme':          'coffee-chocolate richness',
   'Creme Brulee':         'burnt-sugar custard',
   'Cheesecake':           'dense tangy dairy custard',
   'Beignets':             'warm sugar-dusted pastry',
-  'Carrot Cake':          'cream-cheese-frosted carrot cake',
+  'Carrot Cake':          'cream-cheese-frosted spice cake',
 };
+
+// ── BRIDGE PARTS — for two-clause body sentences ───────────────────────────
+//
+// Per-food short phrases used as the SUBJECT of body-bridge clauses. The
+// goal: produce sentences like
+//
+//    "the lean cut handles the parmesan-and-truffle weight, and the buttery
+//     beef frames the savory umami depth."
+//
+// where the two clauses each pull a different "subject" + "target" pair.
+// Each food gets:
+//   subjects: 2 short noun phrases describing what the food brings to a
+//             bridge clause (its texture/cut/structure side AND its flavor
+//             side).
+//   targets:  2 short noun phrases for what the food looks like as the
+//             OBJECT of a bridge -- "the parmesan-and-truffle weight",
+//             "the savory umami depth", "the rich greens".
+//
+// Where a food doesn't have an explicit entry, we fall back to character +
+// short name; less specific but readable.
+
+const BRIDGE_PARTS = {
+  // Steaks
+  'Filet Mignon':         { subjects: ['the lean cut', 'the buttery beef'],         targets: ['the lean buttery filet', 'the delicate restraint of the cut'] },
+  'Bone-In Filet':        { subjects: ['the bone-enhanced cut', 'the buttery beef'], targets: ['the bone-enhanced filet', 'the marrow-edged tenderness'] },
+  'Kansas City':          { subjects: ['the lean-bold strip', 'the savory grain'],   targets: ['the strip steak', 'the firm savory cut'] },
+  'Cowboy Ribeye':        { subjects: ['the marbled char', 'the rendered fat'],      targets: ['the cap-fat ribeye', 'the bold marbled cut'] },
+  'The Tomahawk':         { subjects: ['the marbled char', 'the smoky bone-in weight'], targets: ['the 40oz showpiece', 'the theatrical bone-in cut'] },
+  'Porterhouse':          { subjects: ['the dual strip-and-filet', 'the bold beefy character'], targets: ['the dual-cut steak', 'the strip-and-tender pairing'] },
+  // Starters
+  'Bone Marrow':          { subjects: ['the unctuous marrow', 'the rendered fat'],   targets: ['the rich marrow', 'the bone-enhanced richness'] },
+  'Escargot':             { subjects: ['the garlic-herb butter', 'the savory weight'], targets: ['the buttered escargot', 'the garlic-and-parsley plate'] },
+  'Prime Tartare':        { subjects: ['the raw beef', 'the briny umami'],            targets: ['the tartare', 'the raw-beef plate'] },
+  'Brussels and Belly':   { subjects: ['the maple-glazed belly', 'the charred sprouts'], targets: ['the pork-belly plate', 'the sweet-savory build'] },
+  'Crab Cake':            { subjects: ['the sweet crab', 'the crisp crust'],           targets: ['the delicate crab cake', 'the sweet shellfish plate'] },
+  'Shrimp Cocktail':      { subjects: ['the cool brine', 'the cocktail citrus'],       targets: ['the chilled shrimp', 'the cocktail-citrus plate'] },
+  'Burrata':              { subjects: ['the fresh cream', 'the basil-tomato edge'],    targets: ['the burrata', 'the milky cheese plate'] },
+  'Seafood Tower':        { subjects: ['the chilled shellfish', 'the cool brine'],     targets: ['the seafood tower', 'the chilled shellfish lineup'] },
+  // Soup / Salad
+  'French Onion':         { subjects: ['the beef-broth depth', 'the gruyere crust'],   targets: ['the French onion', 'the broth-and-cheese soup'] },
+  'Mushroom Bisque':      { subjects: ['the silky cream', 'the earthy mushroom'],      targets: ['the mushroom bisque', 'the earthy cream'] },
+  'Gumbo':                { subjects: ['the spiced stew', 'the creole heat'],          targets: ['the gumbo', 'the spiced creole bowl'] },
+  'Shrimp Bisque':        { subjects: ['the creamy shellfish', 'the silky body'],      targets: ['the shrimp bisque', 'the rich shellfish soup'] },
+  'Loaded Potato':        { subjects: ['the rich potato', 'the loaded toppings'],      targets: ['the loaded potato soup', 'the indulgent potato bowl'] },
+  'Clam Chowder':         { subjects: ['the creamy clam', 'the silky chowder'],        targets: ['the chowder', 'the clam-and-potato cream'] },
+  'Tomato Basil':         { subjects: ['the bright acid', 'the herbed tomato'],        targets: ['the tomato basil', 'the bright soup'] },
+  'Butternut Squash':     { subjects: ['the silky cream', 'the sweet squash'],         targets: ['the squash bisque', 'the silky sweet bowl'] },
+  'Seasonal Soup':        { subjects: ['the house build', 'the seasonal body'],        targets: ['the seasonal soup', 'the house bowl'] },
+  'Creamy Potato':        { subjects: ['the silky body', 'the potato cream'],          targets: ['the potato soup', 'the silky bowl'] },
+  'Broccoli Cheddar':     { subjects: ['the cheddar cream', 'the broccoli weight'],    targets: ['the broccoli cheddar', 'the cheese-and-broccoli soup'] },
+  'Roasted Red Pepper Chickpea': { subjects: ['the roasted pepper', 'the chickpea warmth'], targets: ['the chickpea soup', 'the pepper-and-chickpea bowl'] },
+  'Grilled Caesar':       { subjects: ['the charred romaine', 'the anchovy edge'],     targets: ['the grilled Caesar', 'the charred-and-anchovy salad'] },
+  'House Wedge':          { subjects: ['the cool crunch', 'the bleu dressing'],        targets: ['the wedge', 'the iceberg-and-bleu salad'] },
+  // Sides
+  'Au Gratin Potatoes':   { subjects: ['the cheese cream', 'the golden crust'],        targets: ['the au gratin', 'the cheese-and-cream side'] },
+  'Creamed Spinach':      { subjects: ['the rich bechamel', 'the laced greens'],       targets: ['the creamed spinach', 'the rich greens'] },
+  'Lobster Mac':          { subjects: ['the shellfish cream', 'the dairy weight'],     targets: ['the lobster mac', 'the indulgent shellfish-and-cream side'] },
+  'Asparagus':            { subjects: ['the green spear', 'the vegetal edge'],         targets: ['the asparagus', 'the bright green side'] },
+  'Broccolini':           { subjects: ['the tender green', 'the bright stem'],         targets: ['the broccolini', 'the tender green side'] },
+  'Sauteed Garlic Spinach': { subjects: ['the buttered greens', 'the garlic edge'],    targets: ['the garlic spinach', 'the green-and-garlic side'] },
+  'Honey Roasted Carrots':{ subjects: ['the honey glaze', 'the roasted sweetness'],    targets: ['the honey carrots', 'the glazed carrot side'] },
+  'Seasonal Vegetables':  { subjects: ['the garden plate', 'the seasonal mix'],        targets: ['the seasonal vegetables', 'the garden side'] },
+  'Truffle Fries':        { subjects: ['the parmesan-and-truffle weight', 'the savory fry'], targets: ['the truffle fries', 'the parmesan-and-truffle side'] },
+  'Mushrooms':            { subjects: ['the earthy mushroom', 'the umami depth'],      targets: ['the mushrooms', 'the earthy umami side'] },
+  // Mains
+  'Roast Half Chicken':   { subjects: ['the herbed crisp skin', 'the roast bird'],      targets: ['the roast chicken', 'the herbed bird'] },
+  'Faroe Island Salmon':  { subjects: ['the rich oily flesh', 'the buttery salmon'],    targets: ['the salmon', 'the oily-rich fish'] },
+  'Swordfish':            { subjects: ['the meaty steak', 'the firm-fish flesh'],       targets: ['the swordfish', 'the meaty fish'] },
+  'Chilean Seabass':      { subjects: ['the buttery flesh', 'the rich seabass'],        targets: ['the seabass', 'the rich-buttered fish'] },
+  'Tuxedo-Crusted Yellowfin Tuna': { subjects: ['the seared-rare flesh', 'the sesame crust'], targets: ['the tuna', 'the seared-rare tuna plate'] },
+  'Rainbow Trout':        { subjects: ['the delicate flesh', 'the trout body'],         targets: ['the trout', 'the delicate fish'] },
+  'Market Fish':          { subjects: ['the clean flesh', 'the white-fish body'],       targets: ['the market fish', 'the clean white-fish'] },
+  'Salt-Cured Halibut':   { subjects: ['the salt-cured flesh', 'the firm halibut'],     targets: ['the halibut', 'the salt-cured fish'] },
+  'Vegetable Curry with Chickpeas': { subjects: ['the spiced curry', 'the chickpea warmth'], targets: ['the curry', 'the spiced vegetable plate'] },
+  'Seared Scallops':      { subjects: ['the caramelized sear', 'the scallop sweetness'], targets: ['the scallops', 'the seared-rare scallop plate'] },
+  // Desserts
+  'Chocolate Cake':       { subjects: ['the layered chocolate', 'the cocoa weight'],    targets: ['the chocolate cake', 'the layered cocoa dessert'] },
+  'Chocolate Brownie':    { subjects: ['the fudgy cocoa', 'the brownie weight'],        targets: ['the brownie', 'the cocoa-fudge dessert'] },
+  'Peanut Butter Brownie':{ subjects: ['the peanut-butter fudge', 'the cocoa stack'],   targets: ['the PB brownie', 'the peanut-cocoa dessert'] },
+  'Mocha Creme':          { subjects: ['the coffee-chocolate cream', 'the mocha depth'], targets: ['the mocha creme', 'the coffee-chocolate dessert'] },
+  'Creme Brulee':         { subjects: ['the burnt-sugar crust', 'the silky custard'],   targets: ['the brulee', 'the burnt-sugar dessert'] },
+  'Cheesecake':           { subjects: ['the tangy custard', 'the dairy weight'],        targets: ['the cheesecake', 'the dense dairy dessert'] },
+  'Beignets':             { subjects: ['the warm pastry', 'the sugar dust'],            targets: ['the beignets', 'the choux-and-sugar dessert'] },
+  'Carrot Cake':          { subjects: ['the spice cake', 'the cream-cheese frosting'],  targets: ['the carrot cake', 'the spice-and-cream dessert'] },
+};
+
+// Helper: get a (subject, target) bridge fragment deterministically per pair
+function _bridgeParts(food) {
+  return BRIDGE_PARTS[food.name] || {
+    subjects: [characterFor(food, null) ? 'the ' + characterFor(food, null) : 'the plate'],
+    targets:  [characterFor(food, null) ? 'the ' + characterFor(food, null) : 'the plate'],
+  };
+}
 
 // Pull a character phrase for a food entity. Prefers the curated table;
 // falls back to a 2-tag profile descriptor for any unmapped food.
@@ -316,261 +409,66 @@ function possessiveFor(food) {
 const TEMPLATES = {
   // ── STEAK x SIDE ───────────────────────────────────────────────────────
   'STEAK_SIDE.gold': [
-    "{A} alongside {b} -- {aPos} {charA} carries cleanly into {bPos} {charB}. Gold standard; the side that frames the cut without overshadowing it."
+    "* {A} alongside {b} -- {aPos} {charA} carries cleanly into {bPos} {charB}: {body}. Gold standard; the side-on-steak pairing the menu was built around.",
+    "* {aCap} with {b} -- {aPos} {charA} frames {bPos} {charB}: {body}. Gold standard; the side that defines the steak course."
   ],
   'STEAK_SIDE.excellent': [
-    "{A} alongside {b} -- {aPos} {charA} carries cleanly into {bPos} {charB}. The side frames the cut at full register. Excellent; the headline side pairing for {a}.",
-    "{aCap} into {b} -- {aPos} {charA} meets {bPos} {charB}. The plate composes cleanly. Excellent; reliable headline side for the steak course."
+    "{A} alongside {b} -- {aPos} {charA} carries cleanly into {bPos} {charB}: {body}. Excellent; the headline side pairing for {a}.",
+    "{aCap} into {b} -- {aPos} {charA} meets {bPos} {charB}: {body}. Excellent; reliable headline side for the steak course.",
+    "{A} with {b} -- {body}. Excellent; the side that completes the steak plate.",
+    "{aCap} alongside {b} -- {aPos} {charA} frames {bPos} {charB}: {body}. Excellent; the side-on-steak call lands at full register."
   ],
   'STEAK_SIDE.strong': [
-    "{A} alongside {b} -- {aPos} {charA} sits with {bPos} {charB}. The side handles the steak's weight without competing. Strong; reliable side-on-steak match.",
-    "{aCap} with {b} -- {aPos} {charA} meets {bPos} {charB} cleanly. Strong; the side carries its register against the cut."
+    "{A} alongside {b} -- {body}. Strong; reliable side-on-steak match.",
+    "{aCap} with {b} -- {aPos} {charA} meets {bPos} {charB} cleanly: {body}. Strong; the side carries its register against the cut.",
+    "{A} into {b} -- {body}. Strong; the side composes cleanly with the cut.",
+    "{aCap} and {b} on the plate -- {body}. Strong; the side holds the steak's weight without competing."
   ],
   'STEAK_SIDE.works': [
-    "{A} with {b} -- {aPos} {charA} sits alongside {bPos} {charB} without pulling focus. Works; the side call holds at neutral register.",
-    "{aCap} into {b} -- {bPos} {charB} reads quietly against {aPos} {charA}. Works; safe alongside, but not the headline pick."
+    "{A} with {b} -- {body}. Works; the side call holds at neutral register.",
+    "{aCap} into {b} -- {body}. Works; safe alongside, but not the headline pick.",
+    "{A} alongside {b} -- {body}. Works; the side reads as a measured plate companion.",
+    "{aCap} with {b} -- {body}. Works; the side sits without pulling focus."
   ],
   'STEAK_SIDE.avoid': [
-    "{aPosCap} {charA} crowds out {bPos} {charB}. Avoid; the cut overshadows the side. Save {b} for a lighter cut."
+    "{aPosCap} {charA} overshadows {bPos} {charB}: {body}. Avoid; the cut overshadows the side. Pair {b} with a lighter cut, and pour {altsA} for {a}."
   ],
 
   // ── COURSE -> DESSERT (steak/main into dessert) ────────────────────────
   'COURSE_TO_DESSERT.gold': [
-    "After {a}, {b} -- {aPos} {charA} gives way to {bPos} {charB}. Gold standard; the textbook close to a steak meal."
+    "* After {a}, {b} -- {aPos} {charA} gives way to {bPos} {charB}: {body}. Gold standard; the textbook close to a steak meal.",
+    "* {aCap} into {b} -- {body}. Gold standard; the dessert that defines the close after {a}."
   ],
   'COURSE_TO_DESSERT.excellent': [
-    "After {a}, {b} -- {aPos} {charA} gives way to {bPos} {charB}. The dessert closes the meal cleanly. Excellent; classic steak-house transition into {b}.",
-    "{A} into a closing {b} -- {aPos} {charA} resolves into {bPos} {charB}. Excellent; the dessert picks up where the cut leaves off."
+    "After {a}, {b} -- {body}. Excellent; classic steak-house transition into {b}.",
+    "{aCap} closes with {b} -- {body}. Excellent; the dessert picks up where the cut leaves off.",
+    "{A} into a closing {b} -- {body}. Excellent; the meal resolves into the dessert at full register.",
+    "After {a}, {b} -- {aPos} {charA} resolves into {bPos} {charB}: {body}. Excellent; reliable headline close for the steak course."
   ],
   'COURSE_TO_DESSERT.strong': [
-    "After {a}, {b} -- {aPos} {charA} settles into {bPos} {charB}. The closer composes cleanly. Strong; reliable steak-house finish.",
-    "{A} into a closing {b} -- {bPos} {charB} lands without competing with {aPos} {charA}. Strong; the dessert carries the close at full register."
+    "After {a}, {b} -- {body}. Strong; reliable steak-house finish.",
+    "{aCap} closes with {b} -- {body}. Strong; the dessert carries the close at full register.",
+    "{A} into a closing {b} -- {body}. Strong; the close composes without strain.",
+    "After {a}, {b} -- {aPos} {charA} settles into {bPos} {charB}: {body}. Strong; the dessert lands without competing with the cut."
   ],
   'COURSE_TO_DESSERT.works': [
-    "After {a}, {b} -- {aPos} {charA} gives way to {bPos} {charB} without competing. Works; a measured close to the meal.",
-    "{A} into a closing {b} -- {bPos} {charB} sits cleanly against {aPos} {charA}. Works; the close holds, neither soars nor fights."
+    "After {a}, {b} -- {body}. Works; a measured close to the meal.",
+    "{aCap} closes with {b} -- {body}. Works; the close holds, neither soars nor fights.",
+    "{A} into a closing {b} -- {body}. Works; the dessert sits cleanly against the meal's register.",
+    "After {a}, {b} -- the close composes neutrally: {body}. Works; the dessert closes without crowding."
   ],
   'COURSE_TO_DESSERT.avoid': [
-    "{aPosCap} {charA} doesn't resolve into {bPos} {charB}. Avoid; the close clashes with the meal. Reach for a lighter dessert."
+    "{aPosCap} {charA} doesn't resolve into {bPos} {charB}: {body}. Avoid; the close clashes with the meal. After {a}, reach for a lighter dessert -- pour {altsA} alongside {a} and route {b} to a different night."
   ],
 
   // ── STEAK x STARTER (mostly avoids) ────────────────────────────────────
   'STEAK_STARTER.gold': [
-    "{A} preceded by {b} -- {bPos} {charB} sets up {aPos} {charA} cleanly. Gold standard; the starter that primes the cut."
+    "* {A} preceded by {b} -- {bPos} {charB} sets up {aPos} {charA} cleanly: {body}. Gold standard; the starter that primes the cut."
   ],
   'STEAK_STARTER.excellent': [
-    "{A} preceded by {b} -- {bPos} {charB} primes the palate for {aPos} {charA}. Excellent; the starter sets up the cut at full register."
+    "{A} preceded by {b} -- {body}. Excellent; the starter sets up the cut at full register.",
+    "{aCap} after {b} -- {bPos} {charB} primes the palate for {aPos} {charA}: {body}. Excellent; reliable opener for the steak course."
   ],
   'STEAK_STARTER.strong': [
-    "{A} preceded by {b} -- {bPos} {charB} composes cleanly before {aPos} {charA}. Strong; reliable opener for the steak course."
-  ],
-  'STEAK_STARTER.works': [
-    "{A} preceded by {b} -- {bPos} {charB} sits without crowding {aPos} {charA}. Works; the call holds, neither soars nor fights."
-  ],
-  'STEAK_STARTER.avoid': [
-    "{aPosCap} {charA} obliterates {bPos} {charB}. Avoid; the cut is too bold for the delicate starter -- stand {b} on its own course or pair with a lighter cut.",
-    "{aPosCap} {charA} overwhelms {bPos} {charB}. Avoid; the courses can't share a meal cleanly. Save {b} for a starter on a different visit."
-  ],
-
-  // ── STEAK x SOUP/SALAD ─────────────────────────────────────────────────
-  'STEAK_SOUP_SALAD.excellent': [
-    "{A} preceded by {b} -- {bPos} {charB} sets the table for {aPos} {charA}. Excellent; the soup-or-salad frames the steak course cleanly."
-  ],
-  'STEAK_SOUP_SALAD.strong': [
-    "{A} into {b} -- {bPos} {charB} composes cleanly before {aPos} {charA}. Strong; reliable opener for the cut."
-  ],
-  'STEAK_SOUP_SALAD.works': [
-    "{A} preceded by {b} -- {bPos} {charB} reads as a measured opener before {aPos} {charA}. Works; the call holds at neutral register.",
-    "{A} with {b} alongside -- {bPos} {charB} sits without competing with {aPos} {charA}. Works; the side-salad call holds."
-  ],
-  'STEAK_SOUP_SALAD.avoid': [
-    "{aPosCap} {charA} crowds out {bPos} {charB}. Avoid; the courses don't compose together. Save {b} for a lighter cut."
-  ],
-
-  // ── MAIN x SIDE ────────────────────────────────────────────────────────
-  'MAIN_SIDE.excellent': [
-    "{A} alongside {b} -- {aPos} {charA} carries cleanly into {bPos} {charB}. Excellent; the headline side pairing for {a}."
-  ],
-  'MAIN_SIDE.strong': [
-    "{A} with {b} -- {aPos} {charA} meets {bPos} {charB} without competing. Strong; reliable side for the main."
-  ],
-  'MAIN_SIDE.works': [
-    "{A} alongside {b} -- {bPos} {charB} sits quietly against {aPos} {charA}. Works; the call holds at neutral register."
-  ],
-  'MAIN_SIDE.avoid': [
-    "{aPosCap} {charA} overwhelms {bPos} {charB}. Avoid; the side can't hold its register against the main."
-  ],
-
-  // ── MAIN x STEAK (rare) ────────────────────────────────────────────────
-  'MAIN_STEAK.works': [
-    "{A} alongside {b} -- two protein courses on one table. {aPosCap} {charA} sits with {bPos} {charB} without competing. Works; the meal carries two cuts cleanly."
-  ],
-  'MAIN_STEAK.avoid': [
-    "{aPosCap} {charA} clashes with {bPos} {charB}. Avoid; the two protein courses pull in different directions. Order one or the other."
-  ],
-
-  // ── DESSERT x DESSERT ──────────────────────────────────────────────────
-  'DESSERT_PAIR.works': [
-    "{A} and {b} together -- {aPos} {charA} alongside {bPos} {charB}. Works; the two desserts share the close without crowding."
-  ],
-  'DESSERT_PAIR.avoid': [
-    "{A} and {b} together overlap on the close -- {aPos} {charA} crowds out {bPos} {charB}. Avoid; pick one or the other."
-  ],
-
-  // ── STARTER -> DESSERT (rare) ──────────────────────────────────────────
-  'STARTER_TO_DESSERT.works': [
-    "{A} into a closing {b} -- {aPos} {charA} gives way to {bPos} {charB} after the meal. Works; the close composes without strain."
-  ],
-  'STARTER_TO_DESSERT.avoid': [
-    "{aPosCap} {charA} doesn't carry into {bPos} {charB}. Avoid; the meal's bookends don't compose."
-  ],
-
-  // ── STARTER x SOUP/SALAD ──────────────────────────────────────────────
-  'STARTER_SOUP_SALAD.works': [
-    "{A} alongside {b} -- {aPos} {charA} sits with {bPos} {charB} as an opening pair. Works; the courses share the table without crowding."
-  ],
-  'STARTER_SOUP_SALAD.avoid': [
-    "{aPosCap} {charA} clashes with {bPos} {charB}. Avoid; the opening courses don't compose together."
-  ],
-
-  // ── STARTER x SIDE ──────────────────────────────────────────────────────
-  'STARTER_SIDE.works': [
-    "{A} alongside {b} -- {aPos} {charA} sits with {bPos} {charB} on the same plate. Works; the call holds at neutral register."
-  ],
-  'STARTER_SIDE.avoid': [
-    "{aPosCap} {charA} overwhelms {bPos} {charB}. Avoid; the courses can't share register."
-  ],
-
-  // ── SIDE x SIDE ────────────────────────────────────────────────────────
-  'SIDE_PAIR.works': [
-    "{A} and {b} together -- {aPos} {charA} sits with {bPos} {charB} on the table. Works; the two sides share the meal without competing."
-  ],
-  'SIDE_PAIR.avoid': [
-    "{A} and {b} together overlap -- {aPos} {charA} crowds out {bPos} {charB}. Avoid; pick one side or the other."
-  ],
-
-  // ── GENERIC FOOD PAIR (catch-all) ──────────────────────────────────────
-  'GENERIC_FOOD_PAIR.gold': [
-    "{A} with {b} -- {aPos} {charA} carries into {bPos} {charB}. Gold standard; the pairing that defines the meal."
-  ],
-  'GENERIC_FOOD_PAIR.excellent': [
-    "{A} with {b} -- {aPos} {charA} carries into {bPos} {charB} cleanly. Excellent; the headline call."
-  ],
-  'GENERIC_FOOD_PAIR.strong': [
-    "{A} with {b} -- {aPos} {charA} meets {bPos} {charB}. Strong; reliable match across the courses."
-  ],
-  'GENERIC_FOOD_PAIR.works': [
-    "{A} with {b} -- {aPos} {charA} sits alongside {bPos} {charB}. Works; the call holds at neutral register."
-  ],
-  'GENERIC_FOOD_PAIR.avoid': [
-    "{aPosCap} {charA} clashes with {bPos} {charB}. Avoid; the courses don't share register."
-  ],
-};
-
-// ── DETERMINISTIC TEMPLATE PICKER ──────────────────────────────────────────
-
-function pickTemplate(archetype, tier, foodA, foodB) {
-  const key = archetype + '.' + tier;
-  let variants = TEMPLATES[key];
-  if (\!variants || variants.length === 0) {
-    variants = TEMPLATES['GENERIC_FOOD_PAIR.' + tier];
-  }
-  if (\!variants || variants.length === 0) {
-    throw new Error('No template for archetype ' + archetype + ' tier ' + tier);
-  }
-  const sig = foodA.name + '|' + foodB.name + '|' + tier;
-  const h = crypto.createHash('md5').update(sig).digest();
-  const idx = h.readUInt32BE(0) % variants.length;
-  return variants[idx];
-}
-
-// ── TEMPLATE FILLER ────────────────────────────────────────────────────────
-
-function render(template, foodA, foodB, charA, charB) {
-  const a = shortNameFor(foodA);
-  const b = shortNameFor(foodB);
-  const aPos = possessiveFor(foodA);
-  const bPos = possessiveFor(foodB);
-  const aCap = a.charAt(0).toUpperCase() + a.slice(1);
-  const aPosCap = aPos.charAt(0).toUpperCase() + aPos.slice(1);
-
-  return template
-    .replace(/\{A\}/g, foodA.name)
-    .replace(/\{B\}/g, foodB.name)
-    .replace(/\{aCap\}/g, aCap)
-    .replace(/\{aPosCap\}/g, aPosCap)
-    .replace(/\{aPos\}/g, aPos)
-    .replace(/\{bPos\}/g, bPos)
-    .replace(/\{a\}/g, a)
-    .replace(/\{b\}/g, b)
-    .replace(/\{charA\}/g, charA)
-    .replace(/\{charB\}/g, charB);
-}
-
-// ── MAIN ENTRY ─────────────────────────────────────────────────────────────
-
-function generate(foodA, foodB, tier, ctx) {
-  if (\!foodA || \!foodB) throw new Error('generate: foodA and foodB required');
-  if (\!taxonomy.FOOD_CATS.has(foodA.category)) throw new Error('generate: foodA must be a food (got ' + foodA.category + ')');
-  if (\!taxonomy.FOOD_CATS.has(foodB.category)) throw new Error('generate: foodB must be a food (got ' + foodB.category + ')');
-  if (\!['gold','excellent','strong','works','avoid'].includes(tier)) throw new Error('generate: invalid tier ' + tier);
-
-  const [a, b] = canonicalize(foodA, foodB);
-  const archetype = archetypeFor(a, b);
-  const charA = characterFor(a, ctx.EDITORIAL_SNIPPETS);
-  const charB = characterFor(b, ctx.EDITORIAL_SNIPPETS);
-  const template = pickTemplate(archetype, tier, a, b);
-  return render(template, a, b, charA, charB);
-}
-
-module.exports = {
-  generate: generate,
-  archetypeFor: archetypeFor,
-  characterFor: characterFor,
-  canonicalize: canonicalize,
-  TEMPLATES: TEMPLATES,
-  FOOD_CHARACTER: FOOD_CHARACTER,
-};
-
-if (require.main === module) {
-  const repoRoot = path.resolve(__dirname, '..');
-  const ctx = {};
-  vm.createContext(ctx);
-  const load = (f, n) => vm.runInContext(fs.readFileSync(path.join(repoRoot, f), 'utf8') + '\nthis.' + n + ' = ' + n + ';', ctx);
-  load('pairing-map-v2.js',     'PAIRING_MAP');
-  load('enriched-profiles.js',  'ENRICHED_PROFILES');
-  load('editorial-snippets.js', 'EDITORIAL_SNIPPETS');
-  const byName = {};
-  for (const e of ctx.PAIRING_MAP) byName[e.name] = e;
-
-  const samples = [
-    ['Filet Mignon', 'Truffle Fries', 'excellent'],
-    ['Filet Mignon', 'Lobster Mac', 'excellent'],
-    ['Filet Mignon', 'Creamed Spinach', 'strong'],
-    ['Filet Mignon', 'House Wedge', 'works'],
-    ['Filet Mignon', 'Cheesecake', 'works'],
-    ['Filet Mignon', 'Beignets', 'works'],
-    ['Filet Mignon', 'Chocolate Brownie', 'works'],
-    ['The Tomahawk', 'Burrata', 'avoid'],
-    ['The Tomahawk', 'Crab Cake', 'avoid'],
-    ['Cowboy Ribeye', 'Seared Scallops', 'avoid'],
-    ['Filet Mignon', 'Faroe Island Salmon', 'avoid'],
-    ['Porterhouse', 'Truffle Fries', 'excellent'],
-    ['Porterhouse', 'Brussels and Belly', 'strong'],
-    ['Bone Marrow', 'The Tomahawk', 'excellent'],
-    ['Filet Mignon', 'Beignets', 'works'],
-    ['Bone-In Filet', 'Lobster Mac', 'excellent'],
-    ['Kansas City', 'Truffle Fries', 'strong'],
-    ['Filet Mignon', 'Shrimp Bisque', 'strong'],
-  ];
-  console.log('=== SAMPLE GENERATIONS ===');
-  for (const [aName, bName, tier] of samples) {
-    const a = byName[aName], b = byName[bName];
-    if (\!a || \!b) { console.log('  ?? missing entity: ' + aName + ' or ' + bName); continue; }
-    const note = generate(a, b, tier, ctx);
-    const arch = archetypeFor.apply(null, canonicalize(a, b));
-    console.log('');
-    console.log('[' + tier.padEnd(9) + '][' + arch.padEnd(20) + '] ' + aName + ' x ' + bName);
-    console.log('  ' + note);
-  }
-}
+    "{A} preceded by {b} -- {body}. Strong; reliable opener for the steak course.",
+    "{aCap} after {
