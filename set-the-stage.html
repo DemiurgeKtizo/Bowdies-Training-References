@@ -427,7 +427,7 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 </div>
 <!-- ── COMPARE TWO ITEMS SCREEN ── -->
 <div id="screen-compare" class="screen">
-  <div class="section-heading" style="margin-bottom:4px">Compare Two Items</div>
+  <div class="section-heading" style="margin-bottom:4px">Pick a Pair</div>
   <div class="cmp-subtitle">Pick any two items — the verdict tier and both perspectives appear below.</div>
   <div class="cmp-input-wrap">
     <label class="cmp-input-label">Item A</label>
@@ -448,7 +448,6 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
     </div>
   </div>
   <div class="cmp-actions">
-    <button type="button" onclick="pbCompareSwap()">Swap A ↔ B</button>
     <button type="button" onclick="pbCompareReset()">Reset</button>
   </div>
   <div id="cmp-verdict" style="margin-top:24px"></div>
@@ -504,8 +503,8 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
         <div class="pb-mode-sub">Run the guest-preference flow — useful for training or prep.</div>
       </button>
       <button type="button" class="pb-mode-btn" onclick="startCompareStandalone()">
-        <div class="pb-mode-title">Compare Two Items</div>
-        <div class="pb-mode-sub">Check whether two items pair well together — verdict tier plus both perspectives.</div>
+        <div class="pb-mode-title">Pick a Pair</div>
+        <div class="pb-mode-sub">Pick any two items and see the verdict tier plus the pairing note.</div>
       </button>
     </div>
   </div>
@@ -1062,15 +1061,6 @@ function pbCompareSelect(side, name) {
   const results = document.getElementById('cmp-results-' + side);
   if (input) input.value = name;
   if (results) results.classList.remove('visible');
-  pbCompareRender();
-}
-
-function pbCompareSwap() {
-  const oldA = cmpState.a, oldB = cmpState.b;
-  cmpState.a = oldB;
-  cmpState.b = oldA;
-  document.getElementById('cmp-input-a').value = oldB || '';
-  document.getElementById('cmp-input-b').value = oldA || '';
   pbCompareRender();
 }
 
