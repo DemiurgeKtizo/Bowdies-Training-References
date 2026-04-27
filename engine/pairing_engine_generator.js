@@ -158,7 +158,7 @@ const BRIDGE_PARTS = {
   'Bone-In Filet':{subjects:['the bone-enhanced cut','the buttery beef'],targets:['the bone-enhanced filet','the marrow-edged tenderness']},
   'Kansas City':{subjects:['the lean-bold strip','the savory grain'],targets:['the strip steak','the firm savory cut']},
   'Cowboy Ribeye':{subjects:['the marbled char','the rendered fat'],targets:['the cap-fat ribeye','the bold marbled cut']},
-  'The Tomahawk':{subjects:['the marbled char','the smoky bone-in weight'],targets:['the 40oz showpiece','the theatrical bone-in cut']},
+  'The Tomahawk':{subjects:['the marbled char','the smoky bone-in weight'],targets:['the 36oz showpiece','the theatrical bone-in cut']},
   'Porterhouse':{subjects:['the dual strip-and-filet','the bold beefy character'],targets:['the dual-cut steak','the strip-and-tender pairing']},
   'Bone Marrow':{subjects:['the unctuous marrow','the rendered fat'],targets:['the rich marrow','the bone-enhanced richness']},
   'Escargot':{subjects:['the garlic-herb butter','the savory weight'],targets:['the buttered escargot','the garlic-and-parsley plate']},

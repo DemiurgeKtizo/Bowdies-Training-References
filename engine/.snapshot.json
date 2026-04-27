@@ -1,382 +1,294 @@
 {
-  "generatedAt": "2026-04-27T04:39:09.621Z",
-  "anchorCount": 81,
+  "generatedAt": "2026-04-27T18:24:44.866Z",
+  "anchorCount": 250,
   "anchors": [
     {
-      "food": "Filet Mignon",
-      "drink": "Château Beaucastel",
-      "tier": "gold",
-      "foodClass": "STEAK_LEAN",
-      "drinkClass": "BIG_RED",
-      "hash": "48ebb90ea0c6dc1a"
-    },
-    {
-      "food": "Filet Mignon",
-      "drink": "Caymus Cabernet Sauvignon",
-      "tier": "excellent",
-      "foodClass": "STEAK_LEAN",
-      "drinkClass": "BIG_RED",
-      "hash": "94bfa4768f78abdd"
-    },
-    {
-      "food": "Filet Mignon",
-      "drink": "Silver Oak Cabernet Sauvignon",
-      "tier": "strong",
-      "foodClass": "STEAK_LEAN",
-      "drinkClass": "BIG_RED",
-      "hash": "4140b754ca7b2ec6"
-    },
-    {
-      "food": "Filet Mignon",
-      "drink": "Venge Scout's Honor",
-      "tier": "works",
-      "foodClass": "STEAK_LEAN",
-      "drinkClass": "BIG_RED",
-      "hash": "e08b6ba0b0d07fbc"
-    },
-    {
-      "food": "Filet Mignon",
-      "drink": "Stoneleigh Sauvignon Blanc",
+      "food": "Roast Half Chicken",
+      "drink": "Amaro Nonino",
       "tier": "avoid",
-      "foodClass": "STEAK_LEAN",
-      "drinkClass": "WHITE_WINE",
-      "hash": "e505782f4f38ecd1"
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "0fc8e172546aef19"
     },
     {
-      "food": "Bone-In Filet",
-      "drink": "Opus One",
-      "tier": "gold",
-      "foodClass": "STEAK_LEAN",
-      "drinkClass": "BIG_RED",
-      "hash": "fe7aec111a1db904"
-    },
-    {
-      "food": "Bone-In Filet",
-      "drink": "Caymus Cabernet Sauvignon",
-      "tier": "excellent",
-      "foodClass": "STEAK_LEAN",
-      "drinkClass": "BIG_RED",
-      "hash": "88a59832f511b035"
-    },
-    {
-      "food": "Bone-In Filet",
-      "drink": "Lingua Franca Avni Pinot Noir",
-      "tier": "strong",
-      "foodClass": "STEAK_LEAN",
-      "drinkClass": "ELEGANT_RED",
-      "hash": "bbb96715f30b471c"
-    },
-    {
-      "food": "Kansas City",
-      "drink": "Pappy Van Winkle 13 Year Rye",
-      "tier": "gold",
-      "foodClass": "STEAK_BOLD",
-      "drinkClass": "BOURBON_BOLD",
-      "hash": "054dd2996f988332"
-    },
-    {
-      "food": "Kansas City",
-      "drink": "The Manhattan",
-      "tier": "excellent",
-      "foodClass": "STEAK_BOLD",
-      "drinkClass": "COCKTAIL_BOLD",
-      "hash": "fe9800f3ea5d7bc5"
-    },
-    {
-      "food": "Kansas City",
-      "drink": "Lingua Franca Avni Pinot Noir",
-      "tier": "strong",
-      "foodClass": "STEAK_BOLD",
-      "drinkClass": "ELEGANT_RED",
-      "hash": "1a821e571a5a15fe"
-    },
-    {
-      "food": "Kansas City",
-      "drink": "RAEN Royal St Robert",
+      "food": "Roast Half Chicken",
+      "drink": "Contratto Vermouth",
       "tier": "works",
-      "foodClass": "STEAK_BOLD",
-      "drinkClass": "ELEGANT_RED",
-      "hash": "a2d3f22dea31c97c"
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "7d3e0eb92f2e9435"
     },
     {
-      "food": "Kansas City",
-      "drink": "G.D. Vajra Moscato d'Asti",
+      "food": "Au Gratin Potatoes",
+      "drink": "Amaro Nonino",
       "tier": "avoid",
-      "foodClass": "STEAK_BOLD",
-      "drinkClass": "SPARKLING",
-      "hash": "e6940be7eecbd51e"
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "4216ed0fb351d021"
     },
     {
-      "food": "Cowboy Ribeye",
-      "drink": "Heaven Hill 20 Year",
-      "tier": "gold",
-      "foodClass": "STEAK_BOLD",
-      "drinkClass": "BOURBON_BOLD",
-      "hash": "03fee7ce75d3fe14"
-    },
-    {
-      "food": "Cowboy Ribeye",
-      "drink": "Bowdie's Old Fashioned",
-      "tier": "excellent",
-      "foodClass": "STEAK_BOLD",
-      "drinkClass": "COCKTAIL_BOLD",
-      "hash": "0934754cd8438968"
-    },
-    {
-      "food": "Cowboy Ribeye",
-      "drink": "Negroni",
-      "tier": "strong",
-      "foodClass": "STEAK_BOLD",
-      "drinkClass": "COCKTAIL_BOLD",
-      "hash": "ba4fb9e0bf6a2dd3"
-    },
-    {
-      "food": "Prime Tartare",
-      "drink": "Pierre Gimonnet Special Club Brut",
-      "tier": "gold",
-      "foodClass": "HEARTY_STARTER",
-      "drinkClass": "SPARKLING",
-      "hash": "7cd1f0c8134c55b4"
-    },
-    {
-      "food": "Prime Tartare",
-      "drink": "Laurent Perrier Le Cuvée Brut",
-      "tier": "excellent",
-      "foodClass": "HEARTY_STARTER",
-      "drinkClass": "SPARKLING",
-      "hash": "ba195500b7af20ed"
-    },
-    {
-      "food": "Prime Tartare",
-      "drink": "Elk Cove Pinot Blanc",
-      "tier": "strong",
-      "foodClass": "HEARTY_STARTER",
-      "drinkClass": "WHITE_WINE",
-      "hash": "9010d4d502bf5b8a"
-    },
-    {
-      "food": "Prime Tartare",
-      "drink": "The BG",
+      "food": "Au Gratin Potatoes",
+      "drink": "Contratto Vermouth",
       "tier": "works",
-      "foodClass": "HEARTY_STARTER",
-      "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "70f438e0b220019d"
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "8369eac244d3b2b1"
     },
     {
-      "food": "Prime Tartare",
-      "drink": "Espresso Martini",
+      "food": "Chocolate Brownie",
+      "drink": "Amaro Nonino",
+      "tier": "excellent",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "022759fc89e8881d"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Fernet Menta",
+      "tier": "gold",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "8d9c8f73b37e25b4"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Campari",
+      "tier": "strong",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "c2979a342e9f8578"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Aperol",
+      "tier": "works",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "be6dd9b4c1004b32"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Contratto Vermouth",
+      "tier": "excellent",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "57929fe448545c70"
+    },
+    {
+      "food": "Carrot Cake",
+      "drink": "Montenegro Amaro",
+      "tier": "gold",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "aa3398ca5e526e85"
+    },
+    {
+      "food": "Carrot Cake",
+      "drink": "Fernet Branca",
+      "tier": "strong",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "55c748e8f678ae9f"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Amaro Nonino",
+      "tier": "works",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "efc8b09d1a950149"
+    },
+    {
+      "food": "Market Fish",
+      "drink": "Amaro Nonino",
+      "tier": "avoid",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "1941a6c251b69156"
+    },
+    {
+      "food": "Market Fish",
+      "drink": "Contratto Vermouth",
+      "tier": "works",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "cb5f17eec044c9f1"
+    },
+    {
+      "food": "Chilean Seabass",
+      "drink": "Amaro Nonino",
+      "tier": "avoid",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "09648a4036d4c6ee"
+    },
+    {
+      "food": "Chilean Seabass",
+      "drink": "Contratto Vermouth",
+      "tier": "works",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "5a48ecfef707cd14"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "Amaro Nonino",
+      "tier": "avoid",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "66340bf5156738fd"
+    },
+    {
+      "food": "Shrimp Bisque",
+      "drink": "Contratto Vermouth",
+      "tier": "strong",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "c74841f198efa59c"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "Contratto Vermouth",
+      "tier": "works",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "73a44fbac543f22f"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Aperol",
       "tier": "avoid",
       "foodClass": "HEARTY_STARTER",
-      "drinkClass": "COCKTAIL_BOLD",
-      "hash": "28c6e3f5d5ee87fd"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "98f5683d29dc8f05"
     },
     {
       "food": "Bone Marrow",
       "drink": "Fernet Branca",
-      "tier": "gold",
+      "tier": "excellent",
       "foodClass": "HEARTY_STARTER",
       "drinkClass": "APERITIVO_BITTER",
       "hash": "a6a8620db8a35c31"
     },
     {
-      "food": "Bone Marrow",
-      "drink": "Bowdie's Old Fashioned",
-      "tier": "excellent",
+      "food": "Escargot",
+      "drink": "Contratto Vermouth",
+      "tier": "gold",
       "foodClass": "HEARTY_STARTER",
-      "drinkClass": "COCKTAIL_BOLD",
-      "hash": "b5822dc5a7e80f54"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "1a9a6fd7ad6b97cb"
     },
     {
       "food": "Bone Marrow",
-      "drink": "Espresso Martini",
+      "drink": "Amaro Nonino",
       "tier": "strong",
       "foodClass": "HEARTY_STARTER",
-      "drinkClass": "COCKTAIL_BOLD",
-      "hash": "c92f73874c194234"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "ce6f7214b5f68c5f"
     },
     {
-      "food": "Crab Cake",
-      "drink": "Joseph Mellot Sancerre",
-      "tier": "gold",
-      "foodClass": "LIGHT_STARTER",
-      "drinkClass": "WHITE_WINE",
-      "hash": "223940b262e46293"
-    },
-    {
-      "food": "Crab Cake",
-      "drink": "Laurent Perrier Le Cuvée Brut",
-      "tier": "excellent",
-      "foodClass": "LIGHT_STARTER",
-      "drinkClass": "SPARKLING",
-      "hash": "5cb8f8776a42e367"
-    },
-    {
-      "food": "Crab Cake",
-      "drink": "Head Fake",
-      "tier": "strong",
-      "foodClass": "LIGHT_STARTER",
-      "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "b6ea4fe404b7d912"
-    },
-    {
-      "food": "Crab Cake",
-      "drink": "Marc Brédif Chinon",
+      "food": "Bone Marrow",
+      "drink": "Contratto Vermouth",
       "tier": "works",
-      "foodClass": "LIGHT_STARTER",
-      "drinkClass": "ELEGANT_RED",
-      "hash": "3e6ea2ca7dc6b585"
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "b7769b15ed083aa5"
     },
     {
-      "food": "Crab Cake",
-      "drink": "Lunaria Coste di Moro",
+      "food": "Asparagus",
+      "drink": "Amaro Nonino",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "4996778dfcfca725"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "Contratto Vermouth",
+      "tier": "works",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "cb9f2bbd81cebacd"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "Amaro Nonino",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "253abbedad2f9a48"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "Contratto Vermouth",
+      "tier": "works",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "7d3052d6cb52feed"
+    },
+    {
+      "food": "Burrata",
+      "drink": "Amaro Nonino",
       "tier": "avoid",
       "foodClass": "LIGHT_STARTER",
-      "drinkClass": "ELEGANT_RED",
-      "hash": "716c6d10269b512c"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "275e6fdabc3e368f"
     },
     {
-      "food": "Seafood Tower",
-      "drink": "Laurent Perrier Le Cuvée Brut",
-      "tier": "gold",
-      "foodClass": "LIGHT_STARTER",
-      "drinkClass": "SPARKLING",
-      "hash": "62c9af97419f5986"
-    },
-    {
-      "food": "Seafood Tower",
-      "drink": "Raventós Cava de NIT Rosé Brut",
+      "food": "Burrata",
+      "drink": "Aperol",
       "tier": "excellent",
       "foodClass": "LIGHT_STARTER",
-      "drinkClass": "SPARKLING",
-      "hash": "be795382b4190dad"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "8a2e2b982274fdbc"
     },
     {
-      "food": "Seafood Tower",
-      "drink": "Elk Cove Pinot Blanc",
-      "tier": "strong",
+      "food": "Burrata",
+      "drink": "Contratto Vermouth",
+      "tier": "works",
       "foodClass": "LIGHT_STARTER",
-      "drinkClass": "WHITE_WINE",
-      "hash": "08a90a0022559c3d"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "28aecc818f353948"
     },
     {
-      "food": "Seared Scallops",
-      "drink": "Jean-Pierre Grossot Chablis",
-      "tier": "gold",
-      "foodClass": "FISH_MAIN_DELICATE",
-      "drinkClass": "WHITE_WINE",
-      "hash": "202d1c35f8f2f0f7"
-    },
-    {
-      "food": "Seared Scallops",
-      "drink": "Far Niente Chardonnay",
-      "tier": "excellent",
-      "foodClass": "FISH_MAIN_DELICATE",
-      "drinkClass": "WHITE_WINE",
-      "hash": "5ac242e3964647c3"
-    },
-    {
-      "food": "Seared Scallops",
-      "drink": "The Happy Wife",
-      "tier": "strong",
-      "foodClass": "FISH_MAIN_DELICATE",
-      "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "481ade90248b4277"
-    },
-    {
-      "food": "Seared Scallops",
-      "drink": "Limoncello",
-      "tier": "works",
-      "foodClass": "FISH_MAIN_DELICATE",
-      "drinkClass": "SWEET_LIQUEUR",
-      "hash": "9a89a81c725ceaf1"
-    },
-    {
-      "food": "Seared Scallops",
-      "drink": "The BG",
+      "food": "Truffle Fries",
+      "drink": "Mata Hari Absinthe",
       "tier": "avoid",
-      "foodClass": "FISH_MAIN_DELICATE",
-      "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "898f8da864141049"
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "7c8a6cbb5916bcdd"
     },
     {
-      "food": "Shrimp Bisque",
-      "drink": "Bacardi Rum",
-      "tier": "gold",
-      "foodClass": "HEARTY_SOUP",
-      "drinkClass": "LIGHT_SPIRIT",
-      "hash": "2fcfe3f5f9534d35"
-    },
-    {
-      "food": "Shrimp Bisque",
-      "drink": "Pablo Sour",
+      "food": "Mushrooms",
+      "drink": "Fernet Branca",
       "tier": "excellent",
-      "foodClass": "HEARTY_SOUP",
-      "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "e1d5faae7cbd5e35"
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "b30494dfece27260"
     },
     {
-      "food": "Shrimp Bisque",
-      "drink": "The BG",
+      "food": "Mushrooms",
+      "drink": "Amaro Nonino",
       "tier": "strong",
-      "foodClass": "HEARTY_SOUP",
-      "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "e2b2dec085aca709"
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "5c372e04e34e2e3b"
     },
     {
-      "food": "Shrimp Bisque",
-      "drink": "Fento Ollo de Sapo Mencía",
+      "food": "Truffle Fries",
+      "drink": "Amaro Nonino",
       "tier": "works",
-      "foodClass": "HEARTY_SOUP",
-      "drinkClass": "ELEGANT_RED",
-      "hash": "127f9d8179e29a5a"
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "45a47b0ba416c9ff"
     },
     {
-      "food": "Shrimp Bisque",
-      "drink": "Angel's Envy",
-      "tier": "avoid",
-      "foodClass": "HEARTY_SOUP",
-      "drinkClass": "BOURBON_BOLD",
-      "hash": "993c5dac897b3f19"
-    },
-    {
-      "food": "House Wedge",
-      "drink": "Weller 12 Year",
-      "tier": "gold",
-      "foodClass": "SALAD",
-      "drinkClass": "BOURBON_BOLD",
-      "hash": "9669f17bd98441a5"
-    },
-    {
-      "food": "House Wedge",
-      "drink": "Don Julio Reposado",
+      "food": "Grilled Caesar",
+      "drink": "Aperol",
       "tier": "excellent",
       "foodClass": "SALAD",
-      "drinkClass": "TEQUILA_BOLD",
-      "hash": "437f9afdb1fd4b73"
-    },
-    {
-      "food": "House Wedge",
-      "drink": "Pineau des Charentes",
-      "tier": "strong",
-      "foodClass": "SALAD",
-      "drinkClass": "SWEET_LIQUEUR",
-      "hash": "bd3d4161eef6359f"
-    },
-    {
-      "food": "House Wedge",
-      "drink": "Lagavulin 8",
-      "tier": "works",
-      "foodClass": "SALAD",
-      "drinkClass": "BOURBON_BOLD",
-      "hash": "f433a6989128afa5"
-    },
-    {
-      "food": "House Wedge",
-      "drink": "Grand Marnier",
-      "tier": "avoid",
-      "foodClass": "SALAD",
-      "drinkClass": "SWEET_LIQUEUR",
-      "hash": "30172d6e2a72dc34"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "29391d4e2628cf03"
     },
     {
       "food": "Grilled Caesar",
@@ -388,267 +300,1707 @@
     },
     {
       "food": "Grilled Caesar",
-      "drink": "Bruichladdich",
-      "tier": "excellent",
-      "foodClass": "SALAD",
-      "drinkClass": "BOURBON_BOLD",
-      "hash": "e40afe8e1abbdac5"
-    },
-    {
-      "food": "Grilled Caesar",
-      "drink": "Don Julio Reposado",
+      "drink": "Amaro Nonino",
       "tier": "strong",
       "foodClass": "SALAD",
-      "drinkClass": "TEQUILA_BOLD",
-      "hash": "dee7b2aebe0eca46"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "3ba9fefe9b587821"
     },
     {
-      "food": "Seasonal Soup",
-      "drink": "Don Julio Reposado",
+      "food": "House Wedge",
+      "drink": "Amaro Nonino",
       "tier": "works",
-      "foodClass": "LIGHT_SOUP",
-      "drinkClass": "TEQUILA_BOLD",
-      "hash": "18a179db7e1636d9"
+      "foodClass": "SALAD",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "1e7ec4c9cfadb508"
     },
     {
-      "food": "Seasonal Soup",
-      "drink": "Graham's 10 Year Tawny",
+      "food": "Cowboy Ribeye",
+      "drink": "Amaro Nonino",
       "tier": "avoid",
-      "foodClass": "LIGHT_SOUP",
-      "drinkClass": "SWEET_WINE",
-      "hash": "f10a056288e864c1"
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "7a111a1945f6ff85"
     },
     {
-      "food": "Mushroom Bisque",
-      "drink": "Don Julio Reposado",
+      "food": "Kansas City",
+      "drink": "Fernet Branca",
+      "tier": "excellent",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "a413409e75895ebe"
+    },
+    {
+      "food": "Kansas City",
+      "drink": "Amaro Nonino",
+      "tier": "strong",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "f43e20e07d4b7c07"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Contratto Vermouth",
       "tier": "works",
-      "foodClass": "HEARTY_SOUP",
-      "drinkClass": "TEQUILA_BOLD",
-      "hash": "d824aba6d9f70121"
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "1a3f73a862394faa"
     },
     {
-      "food": "Mushroom Bisque",
-      "drink": "Graham's 10 Year Tawny",
+      "food": "Bone-In Filet",
+      "drink": "Amaro Nonino",
       "tier": "avoid",
-      "foodClass": "HEARTY_SOUP",
-      "drinkClass": "SWEET_WINE",
-      "hash": "e1447b88c098a9b6"
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "07ba12e7a2653baf"
     },
     {
-      "food": "Creamy Potato",
-      "drink": "Don Julio Reposado",
+      "food": "Bone-In Filet",
+      "drink": "Contratto Vermouth",
       "tier": "works",
-      "foodClass": "LIGHT_SOUP",
-      "drinkClass": "TEQUILA_BOLD",
-      "hash": "1d0fb05d08601a68"
-    },
-    {
-      "food": "Creamy Potato",
-      "drink": "Graham's 10 Year Tawny",
-      "tier": "avoid",
-      "foodClass": "LIGHT_SOUP",
-      "drinkClass": "SWEET_WINE",
-      "hash": "ae35202ea2d8d9c0"
-    },
-    {
-      "food": "Loaded Potato",
-      "drink": "Don Julio Reposado",
-      "tier": "works",
-      "foodClass": "HEARTY_SOUP",
-      "drinkClass": "TEQUILA_BOLD",
-      "hash": "03803ec8ce85d0b1"
-    },
-    {
-      "food": "Tomato Basil",
-      "drink": "Don Julio Blanco",
-      "tier": "works",
-      "foodClass": "LIGHT_SOUP",
-      "drinkClass": "LIGHT_SPIRIT",
-      "hash": "2096205a2437dea6"
-    },
-    {
-      "food": "Tomato Basil",
-      "drink": "Graham's 10 Year Tawny",
-      "tier": "avoid",
-      "foodClass": "LIGHT_SOUP",
-      "drinkClass": "SWEET_WINE",
-      "hash": "dd227b70308837b0"
-    },
-    {
-      "food": "Roasted Red Pepper Chickpea",
-      "drink": "Don Julio Blanco",
-      "tier": "works",
-      "foodClass": "LIGHT_SOUP",
-      "drinkClass": "LIGHT_SPIRIT",
-      "hash": "fe45322591beb359"
-    },
-    {
-      "food": "Roasted Red Pepper Chickpea",
-      "drink": "Graham's 10 Year Tawny",
-      "tier": "avoid",
-      "foodClass": "LIGHT_SOUP",
-      "drinkClass": "SWEET_WINE",
-      "hash": "c6de58ae1cbb296f"
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "c2de0aebb84615f8"
     },
     {
       "food": "Vegetable Curry with Chickpeas",
-      "drink": "Don Julio Blanco",
-      "tier": "works",
+      "drink": "Amaro Nonino",
+      "tier": "avoid",
       "foodClass": "VEG_MAIN",
-      "drinkClass": "LIGHT_SPIRIT",
-      "hash": "5696cc5a100b2406"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "872364d8ea892345"
     },
     {
       "food": "Vegetable Curry with Chickpeas",
-      "drink": "Graham's 10 Year Tawny",
-      "tier": "avoid",
+      "drink": "Contratto Vermouth",
+      "tier": "works",
       "foodClass": "VEG_MAIN",
-      "drinkClass": "SWEET_WINE",
-      "hash": "ec6bd7d3536f2e51"
+      "drinkClass": "APERITIVO_BITTER",
+      "hash": "ba743db4ebfe633b"
     },
     {
-      "food": "Faroe Island Salmon",
-      "drink": "Don Fulano Blanco",
+      "food": "Roast Half Chicken",
+      "drink": "Heitz Martha's Vineyard",
+      "tier": "avoid",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "BIG_RED",
+      "hash": "22e5a0d15f36af92"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "San Simeon Stormwatch",
       "tier": "excellent",
-      "foodClass": "FISH_MAIN_RICH",
-      "drinkClass": "LIGHT_SPIRIT",
-      "hash": "04073cfb2066f6b7"
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "BIG_RED",
+      "hash": "3be01acf9267d767"
     },
     {
-      "food": "Faroe Island Salmon",
-      "drink": "Don Julio Blanco",
-      "tier": "strong",
-      "foodClass": "FISH_MAIN_RICH",
-      "drinkClass": "LIGHT_SPIRIT",
-      "hash": "db58d62397e83bfc"
+      "food": "Roast Half Chicken",
+      "drink": "Scotto Cellars The Lost Chapters",
+      "tier": "gold",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "BIG_RED",
+      "hash": "96386a861a6d71b4"
     },
     {
-      "food": "Faroe Island Salmon",
-      "drink": "Fernet Branca",
+      "food": "Roast Half Chicken",
+      "drink": "1881 Napa Valley",
       "tier": "works",
-      "foodClass": "FISH_MAIN_RICH",
-      "drinkClass": "APERITIVO_BITTER",
-      "hash": "ac0c9a49df2b3a96"
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "BIG_RED",
+      "hash": "60368d542b1fc264"
     },
     {
-      "food": "Faroe Island Salmon",
-      "drink": "Pineau des Charentes",
+      "food": "Lobster Mac",
+      "drink": "Scavino Barolo",
       "tier": "avoid",
-      "foodClass": "FISH_MAIN_RICH",
-      "drinkClass": "SWEET_LIQUEUR",
-      "hash": "5771a4fd647b46d3"
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "BIG_RED",
+      "hash": "c3f1832375c79a13"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "Caymus Cabernet Sauvignon",
+      "tier": "excellent",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "BIG_RED",
+      "hash": "6d35dd913a284882"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "1881 Napa Valley",
+      "tier": "strong",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "BIG_RED",
+      "hash": "737cb2262e5c8d45"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "Alexander Valley Cyrus",
+      "tier": "works",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "BIG_RED",
+      "hash": "4f72ff091b414910"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "1881 Napa Valley",
+      "tier": "avoid",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "BIG_RED",
+      "hash": "74c3c459d3946fea"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Caymus Cabernet Sauvignon",
+      "tier": "works",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "BIG_RED",
+      "hash": "4c492f289b3dcec8"
+    },
+    {
+      "food": "Beignets",
+      "drink": "1881 Napa Valley",
+      "tier": "avoid",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "BIG_RED",
+      "hash": "454e5dbc0d690eaa"
+    },
+    {
+      "food": "Carrot Cake",
+      "drink": "Caymus Cabernet Sauvignon",
+      "tier": "works",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "BIG_RED",
+      "hash": "1203ddb9d20fd912"
     },
     {
       "food": "Market Fish",
-      "drink": "Detroit City Gin",
-      "tier": "strong",
-      "foodClass": "FISH_MAIN_DELICATE",
-      "drinkClass": "GIN",
-      "hash": "2e9b76fae77bef2e"
-    },
-    {
-      "food": "Market Fish",
-      "drink": "Titos Vodka",
-      "tier": "works",
-      "foodClass": "FISH_MAIN_DELICATE",
-      "drinkClass": "VODKA",
-      "hash": "078520cd732c3e1d"
-    },
-    {
-      "food": "Market Fish",
-      "drink": "Pineau des Charentes",
+      "drink": "1881 Napa Valley",
       "tier": "avoid",
       "foodClass": "FISH_MAIN_DELICATE",
-      "drinkClass": "SWEET_LIQUEUR",
-      "hash": "9abd1ae8a1e9e56f"
-    },
-    {
-      "food": "Swordfish",
-      "drink": "Titos Vodka",
-      "tier": "strong",
-      "foodClass": "FISH_MAIN_RICH",
-      "drinkClass": "VODKA",
-      "hash": "de28f4bf408f506e"
-    },
-    {
-      "food": "Swordfish",
-      "drink": "Fernet Branca",
-      "tier": "works",
-      "foodClass": "FISH_MAIN_RICH",
-      "drinkClass": "APERITIVO_BITTER",
-      "hash": "0f46226687e33063"
-    },
-    {
-      "food": "Swordfish",
-      "drink": "Pineau des Charentes",
-      "tier": "avoid",
-      "foodClass": "FISH_MAIN_RICH",
-      "drinkClass": "SWEET_LIQUEUR",
-      "hash": "b7be297cfadbf471"
+      "drinkClass": "BIG_RED",
+      "hash": "0aabb31ac9149752"
     },
     {
       "food": "Chilean Seabass",
-      "drink": "Titos Vodka",
-      "tier": "strong",
-      "foodClass": "FISH_MAIN_RICH",
-      "drinkClass": "VODKA",
-      "hash": "1acbaa8e356bb087"
-    },
-    {
-      "food": "Roast Half Chicken",
-      "drink": "Aviation Gin",
-      "tier": "strong",
-      "foodClass": "CHICKEN_MAIN",
-      "drinkClass": "GIN",
-      "hash": "23528c62ea1aac4f"
-    },
-    {
-      "food": "Roast Half Chicken",
-      "drink": "Titos Vodka",
-      "tier": "works",
-      "foodClass": "CHICKEN_MAIN",
-      "drinkClass": "VODKA",
-      "hash": "5cb988adc26f1bf7"
-    },
-    {
-      "food": "Roast Half Chicken",
-      "drink": "Amaro Nonino",
+      "drink": "1881 Napa Valley",
       "tier": "avoid",
-      "foodClass": "CHICKEN_MAIN",
-      "drinkClass": "APERITIVO_BITTER",
-      "hash": "0fc8e172546aef19"
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "BIG_RED",
+      "hash": "3592a5e0f6759f20"
     },
     {
-      "food": "Truffle Fries",
-      "drink": "Belvedere Vodka",
-      "tier": "gold",
-      "foodClass": "RICH_SIDE",
-      "drinkClass": "VODKA",
-      "hash": "80b34a4701f8ea75"
+      "food": "Chilean Seabass",
+      "drink": "Jordan Cabernet Sauvignon",
+      "tier": "works",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "BIG_RED",
+      "hash": "740d7e7eb4fa5639"
     },
     {
-      "food": "Truffle Fries",
-      "drink": "Campari",
+      "food": "Clam Chowder",
+      "drink": "Austin Hope Cabernet Sauvignon",
+      "tier": "avoid",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "BIG_RED",
+      "hash": "4cf258a5c7e74b5b"
+    },
+    {
+      "food": "Gumbo",
+      "drink": "Château Gombaude-Guillot",
+      "tier": "excellent",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "BIG_RED",
+      "hash": "904a55441e7f2cf0"
+    },
+    {
+      "food": "French Onion",
+      "drink": "Jordan Cabernet Sauvignon",
+      "tier": "strong",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "BIG_RED",
+      "hash": "265223e26c19efd8"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "1881 Napa Valley",
+      "tier": "works",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "BIG_RED",
+      "hash": "cb86127ed5cc8d97"
+    },
+    {
+      "food": "Escargot",
+      "drink": "Caymus Cabernet Sauvignon",
+      "tier": "avoid",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "BIG_RED",
+      "hash": "da2e2ee115e5ae2a"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Alexander Valley Cyrus",
+      "tier": "excellent",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "BIG_RED",
+      "hash": "53a9e5bc3efbf7b9"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "1881 Napa Valley",
+      "tier": "strong",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "BIG_RED",
+      "hash": "059059732326ddf5"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "G.D. Vajra Albe Nebbiolo",
+      "tier": "works",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "BIG_RED",
+      "hash": "24f1deabbd4fbb9c"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "Austin Hope Cabernet Sauvignon",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "BIG_RED",
+      "hash": "415d80efe185400d"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "1881 Napa Valley",
+      "tier": "works",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "BIG_RED",
+      "hash": "cd9266cb1ae94dc4"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "Austin Hope Cabernet Sauvignon",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "BIG_RED",
+      "hash": "018330b555f625a6"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "1881 Napa Valley",
+      "tier": "works",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "BIG_RED",
+      "hash": "91a49d25202612f4"
+    },
+    {
+      "food": "Burrata",
+      "drink": "1881 Napa Valley",
+      "tier": "avoid",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "BIG_RED",
+      "hash": "69500f48934c5619"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "1881 Napa Valley",
       "tier": "excellent",
       "foodClass": "RICH_SIDE",
-      "drinkClass": "APERITIVO_BITTER",
-      "hash": "0225fa9ff2e1c589"
+      "drinkClass": "BIG_RED",
+      "hash": "0a2dfda2cf4a9da1"
     },
     {
-      "food": "Truffle Fries",
-      "drink": "Christian Bros Brandy",
+      "food": "Mushrooms",
+      "drink": "Scavino Barolo",
+      "tier": "gold",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "BIG_RED",
+      "hash": "6aae4f981e30b7d2"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Austin Hope Cabernet Sauvignon",
       "tier": "strong",
       "foodClass": "RICH_SIDE",
-      "drinkClass": "COGNAC",
-      "hash": "f64c6347c23abc77"
+      "drinkClass": "BIG_RED",
+      "hash": "da3578ae3dacdc38"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Opus One",
+      "tier": "works",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "BIG_RED",
+      "hash": "9152045b6729922c"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Opus One",
+      "tier": "avoid",
+      "foodClass": "SALAD",
+      "drinkClass": "BIG_RED",
+      "hash": "322ca4fd174a366c"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "G.D. Vajra Albe Nebbiolo",
+      "tier": "excellent",
+      "foodClass": "SALAD",
+      "drinkClass": "BIG_RED",
+      "hash": "c5bbe9f3ef4caccc"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Domaine du Grand Tinel",
+      "tier": "strong",
+      "foodClass": "SALAD",
+      "drinkClass": "BIG_RED",
+      "hash": "b3ad2cc8c7e9c59f"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "1881 Napa Valley",
+      "tier": "works",
+      "foodClass": "SALAD",
+      "drinkClass": "BIG_RED",
+      "hash": "41b1b988030adc9f"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Alexander Valley Cyrus",
+      "tier": "excellent",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BIG_RED",
+      "hash": "fe897a34fd54ad23"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Austin Hope Cabernet Sauvignon",
+      "tier": "gold",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BIG_RED",
+      "hash": "62711289f4042273"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "1881 Napa Valley",
+      "tier": "strong",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BIG_RED",
+      "hash": "cd6df775a2d494e1"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Château Gombaude-Guillot",
+      "tier": "works",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BIG_RED",
+      "hash": "85aa266c110f9296"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "Caymus Cabernet Sauvignon",
+      "tier": "excellent",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "BIG_RED",
+      "hash": "88a59832f511b035"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "Château Gombaude-Guillot",
+      "tier": "gold",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "BIG_RED",
+      "hash": "49fc05a57d79dd3f"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "1881 Napa Valley",
+      "tier": "strong",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "BIG_RED",
+      "hash": "995cdce072377642"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "Faust Napa Valley Cabernet",
+      "tier": "works",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "BIG_RED",
+      "hash": "ff2ace4ee592ab6c"
+    },
+    {
+      "food": "Vegetable Curry with Chickpeas",
+      "drink": "Austin Hope Cabernet Sauvignon",
+      "tier": "avoid",
+      "foodClass": "VEG_MAIN",
+      "drinkClass": "BIG_RED",
+      "hash": "ab72385925dd8751"
+    },
+    {
+      "food": "Vegetable Curry with Chickpeas",
+      "drink": "Domaine Tempier Bandol",
+      "tier": "strong",
+      "foodClass": "VEG_MAIN",
+      "drinkClass": "BIG_RED",
+      "hash": "7787dea72897531c"
+    },
+    {
+      "food": "Vegetable Curry with Chickpeas",
+      "drink": "1881 Napa Valley",
+      "tier": "works",
+      "foodClass": "VEG_MAIN",
+      "drinkClass": "BIG_RED",
+      "hash": "75e4a33728bb69e3"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "Blanton's Straight from the Barrel",
+      "tier": "avoid",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "ef204168d8ace71b"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "Canadian Club",
+      "tier": "excellent",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "e5e65e433750c510"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "Bruichladdich",
+      "tier": "strong",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "ef6cb519c24ba275"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "1792 Small Batch",
+      "tier": "works",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "02b54baddf1ba431"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "Elijah Craig 18 Year",
+      "tier": "excellent",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "f8295e5e43fb2419"
+    },
+    {
+      "food": "Creamed Spinach",
+      "drink": "Weller 12 Year",
+      "tier": "gold",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "204bfc3096fd318f"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "1792 Small Batch",
+      "tier": "strong",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "a19b9266e0b44f02"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "A Midnight's Winter Dram",
+      "tier": "works",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "0b7a0450f7bcfe64"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Aberlour 16",
+      "tier": "excellent",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "34be72295fa4fabb"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Angel's Envy Triple Cask",
+      "tier": "gold",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "4a292e5816ed730a"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "A Midnight's Winter Dram",
+      "tier": "strong",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "efbff96f459fe7a3"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "1792 Small Batch",
+      "tier": "works",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "dc901ce59cb08675"
+    },
+    {
+      "food": "Cheesecake",
+      "drink": "Blanton's Straight from the Barrel",
+      "tier": "avoid",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "757a6bcdad643e27"
+    },
+    {
+      "food": "Carrot Cake",
+      "drink": "1792 Sweet Wheat",
+      "tier": "excellent",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "1be96865c5d8aa8f"
+    },
+    {
+      "food": "Cheesecake",
+      "drink": "Glenfiddich 12",
+      "tier": "gold",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "03c86fb19414ce27"
+    },
+    {
+      "food": "Carrot Cake",
+      "drink": "Angel's Envy Cask Strength",
+      "tier": "strong",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "7461b367facc1b30"
+    },
+    {
+      "food": "Beignets",
+      "drink": "1792 Small Batch",
+      "tier": "works",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "47e4cb2430b86d08"
+    },
+    {
+      "food": "Market Fish",
+      "drink": "1792 Small Batch",
+      "tier": "avoid",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "0b9a20ce89e2c31c"
+    },
+    {
+      "food": "Seared Scallops",
+      "drink": "Hakushu 12 Year",
+      "tier": "excellent",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "cbd9a1ce4c4456f5"
+    },
+    {
+      "food": "Seared Scallops",
+      "drink": "Yamazaki 12 Year",
+      "tier": "strong",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "81289bd3a42d384b"
+    },
+    {
+      "food": "Market Fish",
+      "drink": "Hakushu 12 Year",
+      "tier": "works",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "a590e16c66f1c4dc"
+    },
+    {
+      "food": "Chilean Seabass",
+      "drink": "1792 Small Batch",
+      "tier": "avoid",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "f6a5870ab310351d"
+    },
+    {
+      "food": "Faroe Island Salmon",
+      "drink": "Bruichladdich",
+      "tier": "excellent",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "75aad7bb9b26e42a"
+    },
+    {
+      "food": "Faroe Island Salmon",
+      "drink": "Yamazaki 18 Year",
+      "tier": "strong",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "80b69476c2d37199"
+    },
+    {
+      "food": "Chilean Seabass",
+      "drink": "Hakushu 12 Year",
+      "tier": "works",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "d05a2be3ecff053d"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "Kentucky Owl St. Patrick's",
+      "tier": "avoid",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "533575495c4af69b"
+    },
+    {
+      "food": "Shrimp Bisque",
+      "drink": "Bowmore 12",
+      "tier": "strong",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "f44673197ee60d1c"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "1792 Small Batch",
+      "tier": "works",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "7da5d3d6b6bf8fdb"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "1792 Sweet Wheat",
+      "tier": "excellent",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "5d6d134541c19ceb"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Bowmore 12",
+      "tier": "gold",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "c42c2236b341e947"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "1792 Small Batch",
+      "tier": "strong",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "931cb86643b886fe"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Angel's Envy",
+      "tier": "works",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "95787bae438a63ae"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "Angel's Envy Cask Strength",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "d79e7967900496f6"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "1792 Small Batch",
+      "tier": "works",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "5e5a836c9a70cc57"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "Kentucky Owl St. Patrick's",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "f318c76c65f7e98d"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "1792 Small Batch",
+      "tier": "works",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "e11f81907eb9d8af"
+    },
+    {
+      "food": "Burrata",
+      "drink": "1792 Small Batch",
+      "tier": "avoid",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "ee7b36f746943ea8"
+    },
+    {
+      "food": "Burrata",
+      "drink": "Bruichladdich",
+      "tier": "excellent",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "db2df346540819cb"
+    },
+    {
+      "food": "Crab Cake",
+      "drink": "Garavogue Irish Whiskey",
+      "tier": "strong",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "4cf990b861c8fa20"
+    },
+    {
+      "food": "Burrata",
+      "drink": "Hakushu 12 Year",
+      "tier": "works",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "972b173901d3a197"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "1792 Small Batch",
+      "tier": "excellent",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "bc9394cd6ea72430"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Four Roses Yellow Label",
+      "tier": "gold",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "35c5f3d8a14d46bd"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "A Midnight's Winter Dram",
+      "tier": "strong",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "aee46b88d7536918"
     },
     {
       "food": "Truffle Fries",
-      "drink": "Titos Vodka",
+      "drink": "Balvenie 14 Caribbean Cask",
       "tier": "works",
       "foodClass": "RICH_SIDE",
-      "drinkClass": "VODKA",
-      "hash": "073da68d8d11cdc9"
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "d6c5448060547e8e"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Bowmore 12",
+      "tier": "excellent",
+      "foodClass": "SALAD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "6b4d69f6af9c07f5"
+    },
+    {
+      "food": "House Wedge",
+      "drink": "Weller 12 Year",
+      "tier": "gold",
+      "foodClass": "SALAD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "9669f17bd98441a5"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Baker's",
+      "tier": "strong",
+      "foodClass": "SALAD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "de3c3589dc97715c"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "1792 Small Batch",
+      "tier": "works",
+      "foodClass": "SALAD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "142f1ec5e3872236"
+    },
+    {
+      "food": "The Tomahawk",
+      "drink": "Bruichladdich",
+      "tier": "avoid",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "44594e1c7d403d1a"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "1792 Small Batch",
+      "tier": "excellent",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "b4bf1e7edbc4adf8"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "A Midnight's Winter Dram",
+      "tier": "gold",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "7fd31d86a2cb3821"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "1792 Sweet Wheat",
+      "tier": "strong",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "e357f573f736b912"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Canadian Club",
+      "tier": "works",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "3dc09eac0dcaa896"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "Aberlour 16",
+      "tier": "excellent",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "9edc9852d9d16e76"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "I.W. Harper 15 Year",
+      "tier": "gold",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "ea7bb111ad9f459f"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "1792 Small Batch",
+      "tier": "strong",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "54eab5bacbb11574"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "Bardstown Foursquare",
+      "tier": "works",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "741feeb8fcff8476"
+    },
+    {
+      "food": "Vegetable Curry with Chickpeas",
+      "drink": "Kentucky Owl St. Patrick's",
+      "tier": "avoid",
+      "foodClass": "VEG_MAIN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "910e53f0f3cb8e69"
+    },
+    {
+      "food": "Vegetable Curry with Chickpeas",
+      "drink": "1792 Small Batch",
+      "tier": "works",
+      "foodClass": "VEG_MAIN",
+      "drinkClass": "BOURBON_BOLD",
+      "hash": "cb19e50a0d0aa9af"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "fc0d8197e4a5cd5c"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "Inhibited",
+      "tier": "works",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "eca09fe78a3cba50"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "Espresso Martini",
+      "tier": "avoid",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "6a3a7c63c4d4a001"
+    },
+    {
+      "food": "Lobster Mac",
+      "drink": "The Manhattan",
+      "tier": "excellent",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "a3702966b9bed93f"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "Inhibited",
+      "tier": "strong",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "89c33e5d68a4f4f6"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "works",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "cdbe3808be0c3a34"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Negroni",
+      "tier": "avoid",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "4ce8aa48f247f353"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Espresso Martini",
+      "tier": "excellent",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "b72d9dd94b50ba0c"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Espresso Old Fashioned",
+      "tier": "gold",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "a22182102a55ff9a"
+    },
+    {
+      "food": "Chocolate Cake",
+      "drink": "New York Sour",
+      "tier": "strong",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "2e32da1a7ad68813"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "works",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "39532d36f524f581"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "73c9dbbf84744161"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Inhibited",
+      "tier": "excellent",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "77dad573d2c07dce"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Espresso Martini",
+      "tier": "strong",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "3debf09b144b1c1f"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Espresso Old Fashioned",
+      "tier": "works",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "3214087e0910e3b9"
+    },
+    {
+      "food": "Market Fish",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "3cc03ba00b6ffef2"
+    },
+    {
+      "food": "Market Fish",
+      "drink": "Inhibited",
+      "tier": "strong",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "489fa279d757059b"
+    },
+    {
+      "food": "Chilean Seabass",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "45a36a6a7f8a1f94"
+    },
+    {
+      "food": "Chilean Seabass",
+      "drink": "Inhibited",
+      "tier": "strong",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "6bb067a42d362d71"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "3d509b058e0d75d3"
+    },
+    {
+      "food": "Loaded Potato",
+      "drink": "The Manhattan",
+      "tier": "strong",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "50fad0121d1d8f81"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "Inhibited",
+      "tier": "works",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "3b9f13bb6b21b093"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "New York Sour",
+      "tier": "avoid",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "f2b77d1e4f88ebe2"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "excellent",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "b5822dc5a7e80f54"
+    },
+    {
+      "food": "Prime Tartare",
+      "drink": "Not a Paper Plane",
+      "tier": "gold",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "407ad2fd8f9f1085"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Espresso Martini",
+      "tier": "strong",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "c92f73874c194234"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Inhibited",
+      "tier": "works",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "ab07ffb45c97fbb4"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "a8843f7214912728"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "Inhibited",
+      "tier": "works",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "a3fc9cf528ffa037"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "72d225ca670307fc"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "Inhibited",
+      "tier": "works",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "feffeed21c66f667"
+    },
+    {
+      "food": "Burrata",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "7a76ff455b68e791"
+    },
+    {
+      "food": "Crab Cake",
+      "drink": "New York Sour",
+      "tier": "excellent",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "3fda2104bc18cedc"
+    },
+    {
+      "food": "Seafood Tower",
+      "drink": "Negroni",
+      "tier": "strong",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "4e30a5ea8a31dfc8"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Espresso Martini",
+      "tier": "avoid",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "a8dbb7f4fdf6c064"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "excellent",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "d3577c59bd1e04ee"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Negroni",
+      "tier": "strong",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "d4e14c9f9181df0c"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Inhibited",
+      "tier": "works",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "adb8f8959b573301"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Espresso Martini",
+      "tier": "avoid",
+      "foodClass": "SALAD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "3cd58df0ae1c3873"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Negroni",
+      "tier": "excellent",
+      "foodClass": "SALAD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "8edc07aee3104ef3"
+    },
+    {
+      "food": "House Wedge",
+      "drink": "Negroni",
+      "tier": "gold",
+      "foodClass": "SALAD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "e34ddfb5bb696ec8"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "New York Sour",
+      "tier": "strong",
+      "foodClass": "SALAD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "8264cea2b1cbb404"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "works",
+      "foodClass": "SALAD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "6cc6054b236c961b"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Espresso Martini",
+      "tier": "avoid",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "cd344d3e8e5a82a5"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "excellent",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "0934754cd8438968"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Sazerac",
+      "tier": "gold",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "369ec8138ea0fbf0"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "Negroni",
+      "tier": "strong",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "ba4fb9e0bf6a2dd3"
+    },
+    {
+      "food": "Cowboy Ribeye",
+      "drink": "New York Sour",
+      "tier": "works",
+      "foodClass": "STEAK_BOLD",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "59b423e330bd66a8"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "Espresso Martini",
+      "tier": "avoid",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "c1099492496335e6"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "The Manhattan",
+      "tier": "excellent",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "11fcee4f51593d1c"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "strong",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "4acf6b79419f3434"
+    },
+    {
+      "food": "Bone-In Filet",
+      "drink": "Not a Paper Plane",
+      "tier": "works",
+      "foodClass": "STEAK_LEAN",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "902d7c4aaa13c4ed"
+    },
+    {
+      "food": "Vegetable Curry with Chickpeas",
+      "drink": "Bowdie's Old Fashioned",
+      "tier": "avoid",
+      "foodClass": "VEG_MAIN",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "faa6a75f09da1b3a"
+    },
+    {
+      "food": "Vegetable Curry with Chickpeas",
+      "drink": "Inhibited",
+      "tier": "works",
+      "foodClass": "VEG_MAIN",
+      "drinkClass": "COCKTAIL_BOLD",
+      "hash": "2e8ec171cf76276c"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "The Happy Wife",
+      "tier": "excellent",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "263aa6de485a43a9"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "Paloma",
+      "tier": "strong",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "8e10485f778a7d82"
+    },
+    {
+      "food": "Roast Half Chicken",
+      "drink": "Aviation",
+      "tier": "works",
+      "foodClass": "CHICKEN_MAIN",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "524ef44bcb415aa4"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "Head Fake",
+      "tier": "avoid",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "c1d7e0feb2bb1d14"
+    },
+    {
+      "food": "Au Gratin Potatoes",
+      "drink": "Aviation",
+      "tier": "works",
+      "foodClass": "CREAMY_SIDE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "483d946ff12f7cff"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Aviation",
+      "tier": "avoid",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "a26ea701ec75fe09"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Pablo Sour",
+      "tier": "excellent",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "1677dd536675fd48"
+    },
+    {
+      "food": "Chocolate Cake",
+      "drink": "Pablo Sour",
+      "tier": "strong",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "807c59d4c292be55"
+    },
+    {
+      "food": "Chocolate Brownie",
+      "drink": "Head Fake",
+      "tier": "works",
+      "foodClass": "DESSERT_CHOCOLATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "d85a87c2c6989eef"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Aviation",
+      "tier": "avoid",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "06abd3bbaa47df35"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Pablo Sour",
+      "tier": "strong",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "b206563aeef68145"
+    },
+    {
+      "food": "Beignets",
+      "drink": "Head Fake",
+      "tier": "works",
+      "foodClass": "DESSERT_LIGHT",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "548e1ca7b382bccb"
+    },
+    {
+      "food": "Market Fish",
+      "drink": "Pablo Sour",
+      "tier": "avoid",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "6b56fc9d0e7e86a6"
+    },
+    {
+      "food": "Seared Scallops",
+      "drink": "Aviation",
+      "tier": "excellent",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "78ec879b15fd160e"
+    },
+    {
+      "food": "Seared Scallops",
+      "drink": "French 75",
+      "tier": "gold",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "916ab3f940d3d0b8"
+    },
+    {
+      "food": "Market Fish",
+      "drink": "Aviation",
+      "tier": "strong",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "26b616cc8f3b6fb3"
+    },
+    {
+      "food": "Rainbow Trout",
+      "drink": "Cucumber Gimlet",
+      "tier": "works",
+      "foodClass": "FISH_MAIN_DELICATE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "72dbff20f8c155a6"
+    },
+    {
+      "food": "Chilean Seabass",
+      "drink": "Pablo Sour",
+      "tier": "avoid",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "e82a51b46b4379ac"
+    },
+    {
+      "food": "Chilean Seabass",
+      "drink": "Aviation",
+      "tier": "strong",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "2a17c63baa87285c"
+    },
+    {
+      "food": "Faroe Island Salmon",
+      "drink": "Bee's Knees",
+      "tier": "works",
+      "foodClass": "FISH_MAIN_RICH",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "f4e7194d6e5943d7"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "Pablo Sour",
+      "tier": "avoid",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "9073b9616bccf880"
+    },
+    {
+      "food": "Shrimp Bisque",
+      "drink": "Pablo Sour",
+      "tier": "excellent",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "e1d5faae7cbd5e35"
+    },
+    {
+      "food": "Shrimp Bisque",
+      "drink": "Aviation",
+      "tier": "strong",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "0fd6db11890ced37"
+    },
+    {
+      "food": "Clam Chowder",
+      "drink": "Aviation",
+      "tier": "works",
+      "foodClass": "HEARTY_SOUP",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "8937d409454c793d"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Aviation",
+      "tier": "avoid",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "47fdb943cfe59e67"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "The BG",
+      "tier": "excellent",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "c87f47f2f347fd98"
+    },
+    {
+      "food": "Prime Tartare",
+      "drink": "Corpse Reviver",
+      "tier": "gold",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "9c23c7841d566959"
+    },
+    {
+      "food": "Brussels and Belly",
+      "drink": "The BG",
+      "tier": "strong",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "4ab7d9afd844185c"
+    },
+    {
+      "food": "Bone Marrow",
+      "drink": "Bee's Knees",
+      "tier": "works",
+      "foodClass": "HEARTY_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "80d0533b2597f168"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "Pablo Sour",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "89cae22337c098d6"
+    },
+    {
+      "food": "Sauteed Garlic Spinach",
+      "drink": "Bee's Knees",
+      "tier": "strong",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "127bedb17c983f69"
+    },
+    {
+      "food": "Asparagus",
+      "drink": "Aviation",
+      "tier": "works",
+      "foodClass": "LIGHT_SIDE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "22fcf1886a129772"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "Pablo Sour",
+      "tier": "avoid",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "c09ba8ba8268e173"
+    },
+    {
+      "food": "Broccoli Cheddar",
+      "drink": "Aviation",
+      "tier": "works",
+      "foodClass": "LIGHT_SOUP",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "653dca0eede247ef"
+    },
+    {
+      "food": "Burrata",
+      "drink": "The BG",
+      "tier": "avoid",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "ec59eb7c53ae6128"
+    },
+    {
+      "food": "Burrata",
+      "drink": "Aviation",
+      "tier": "excellent",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "04c7952874148147"
+    },
+    {
+      "food": "Burrata",
+      "drink": "Bee's Knees",
+      "tier": "gold",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "4aa14208569b7177"
+    },
+    {
+      "food": "Burrata",
+      "drink": "Pablo Sour",
+      "tier": "strong",
+      "foodClass": "LIGHT_STARTER",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "f3553ab83626b21f"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Head Fake",
+      "tier": "avoid",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "277ba40fda868f30"
+    },
+    {
+      "food": "Mushrooms",
+      "drink": "Aviation",
+      "tier": "works",
+      "foodClass": "RICH_SIDE",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "93f41fb764c833b5"
+    },
+    {
+      "food": "House Wedge",
+      "drink": "Cucumber Gimlet",
+      "tier": "excellent",
+      "foodClass": "SALAD",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "5bd89f164a877b83"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Bee's Knees",
+      "tier": "strong",
+      "foodClass": "SALAD",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "24dba4e9602535fa"
+    },
+    {
+      "food": "Grilled Caesar",
+      "drink": "Aviation",
+      "tier": "works",
+      "foodClass": "SALAD",
+      "drinkClass": "COCKTAIL_LIGHT",
+      "hash": "a6df1bbf04a9918e"
     }
   ]
 }

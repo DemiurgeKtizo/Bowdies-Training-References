@@ -16507,7 +16507,7 @@ const CORPUS_MINED = {
         "source": "Blood Oath Pact 9|Kansas City"
       },
       {
-        "template": "Booker's uncut-unfiltered intensity is the featured barrel-proof-ribeye pairing — the 125+ proof handles 22oz cap-fat with the original-barrel-proof gravitas that started the whole category.",
+        "template": "Booker's uncut-unfiltered intensity is the featured barrel-proof-ribeye pairing — the 125+ proof handles 26oz cap-fat with the original-barrel-proof gravitas that started the whole category.",
         "source": "Booker's|Cowboy Ribeye"
       },
       {
@@ -16699,7 +16699,7 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Pappy Van Winkle 13 Year Rye"
       },
       {
-        "template": "Parker's Heritage brings HH's heritage collector-register craft to 22oz cap-fat — the annual-release provenance makes every pour a conversation about which edition you're serving.",
+        "template": "Parker's Heritage brings HH's heritage collector-register craft to 26oz cap-fat — the annual-release provenance makes every pour a conversation about which edition you're serving.",
         "source": "Cowboy Ribeye|Parker's Heritage Collection 16th Edition"
       },
       {
@@ -16719,7 +16719,7 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Scapegrace Fortuna"
       },
       {
-        "template": "Stagg Jr.'s cask-strength handles 22oz cap-fat with BT premium-barrel-proof character — the way to get GTS-adjacent intensity without holy-grail allocation.",
+        "template": "Stagg Jr.'s cask-strength handles 26oz cap-fat with BT premium-barrel-proof character — the way to get GTS-adjacent intensity without holy-grail allocation.",
         "source": "Cowboy Ribeye|Stagg Jr. Batch #15"
       },
       {
@@ -17099,7 +17099,7 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Epoch Ingenuity"
       },
       {
-        "template": "Peak Super Tuscan for the 22oz bone-in — Maremma Bordeaux-style structure lives for this cut.",
+        "template": "Peak Super Tuscan for the 26oz bone-in — Maremma Bordeaux-style structure lives for this cut.",
         "source": "Cowboy Ribeye|Fattoria Le Pupille Saffredi"
       },
       {
@@ -17175,7 +17175,7 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Venge Family Reserve"
       },
       {
-        "template": "Peak for the 22oz bone-in — bold Californian fruit handles ribeye intensity.",
+        "template": "Peak for the 26oz bone-in — bold Californian fruit handles ribeye intensity.",
         "source": "Cowboy Ribeye|Venge Scout's Honor"
       },
       {

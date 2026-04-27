@@ -120,7 +120,7 @@ const GOLD_CORPUS_MINED = {
       "source": "Cowboy Ribeye|Epoch Ingenuity"
     },
     {
-      "template": "Peak Super Tuscan for the 22oz bone-in — Maremma Bordeaux-style structure lives for this cut.",
+      "template": "Peak Super Tuscan for the 26oz bone-in — Maremma Bordeaux-style structure lives for this cut.",
       "source": "Cowboy Ribeye|Fattoria Le Pupille Saffredi"
     },
     {
@@ -192,7 +192,7 @@ const GOLD_CORPUS_MINED = {
       "source": "Cowboy Ribeye|Venge Family Reserve"
     },
     {
-      "template": "Peak for the 22oz bone-in — bold Californian fruit handles ribeye intensity.",
+      "template": "Peak for the 26oz bone-in — bold Californian fruit handles ribeye intensity.",
       "source": "Cowboy Ribeye|Venge Scout's Honor"
     },
     {

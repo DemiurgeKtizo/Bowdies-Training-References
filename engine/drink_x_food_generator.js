@@ -855,7 +855,7 @@ function _editorialVerdict(tier, drink, food, profile) {
   const foodNameLower = food.name.toLowerCase();
   const foodProfile = (food.profile || []).join(' ').toLowerCase();
   const allowedFoodContext = foodCharText + ' ' + foodNameLower + ' ' + foodProfile;
-  const FOOD_NOUN_RX = /\b(marrow|crab|cream|potato|shellfish|brulee|cake|fries|fish|chicken|halibut|tuna|trout|salmon|seabass|burrata|escargot|tartare|asparagus|broccoli|spinach|carrot|brownie|cheesecake|beignets|wedge|caesar|gumbo|chowder|bisque|ribeye|filet|steak|tomahawk|pork|belly|sprouts|mushroom|shrimp|cocoa|chocolate|custard|raisin|umami|broth|cheddar|gruyere|honey-glazed|sugar|scallops|scallop|swordfish|squash|au gratin|gratin|broccolini|peanut|mac|mocha)\b/gi;
+  const FOOD_NOUN_RX = /\b(marrow|crab|cream|potato|shellfish|brulee|cake|fries|fish|chicken|halibut|tuna|trout|salmon|seabass|burrata|escargot|tartare|asparagus|broccoli|spinach|carrot|brownie|cheesecake|beignets|wedge|caesar|gumbo|chowder|bisque|ribeye|filet|steak|tomahawk|cowboy|porterhouse|kc|kansas city|strip|tenderloin|pork|belly|sprouts|mushroom|shrimp|cocoa|chocolate|custard|raisin|umami|broth|cheddar|gruyere|honey-glazed|sugar|scallops|scallop|swordfish|squash|au gratin|gratin|broccolini|peanut|mac|mocha)\b/gi;
   pool = pool.filter(e => {
     const t = e.template.toLowerCase();
     let m;
@@ -920,7 +920,7 @@ function _editorialVerdict(tier, drink, food, profile) {
 
   // Sub-class filter for ELEGANT_RED (Pinot vs Cab vs Nebbiolo vs Spanish, etc.)
   if (dc === 'ELEGANT_RED' || dc === 'BIG_RED') {
-    const sub = (dc === 'ELEGANT_RED') ? elegantRedVoiceSubclass(drink) : 'CAB';
+    const sub = elegantRedVoiceSubclass(drink);
     const ELEGANT_SUBCLASS_FOREIGN = {
       PINOT:     ['cab','cabernet','bordeaux','barolo','barbaresco','nebbiolo','malbec','zinfandel','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','ch\u00e2teauneuf','chateauneuf','brunello','gigondas','bandol','grenache','syrah','mourv'],
       CAB:       ['pinot','willamette','barolo','barbaresco','nebbiolo','malbec','zinfandel','chianti','sangiovese','rhone','rh\u00f4ne','tempranillo','rioja','menc\u00eda','mencia','beaucastel','ch\u00e2teauneuf','chateauneuf','brunello','gigondas','bandol'],
@@ -1000,7 +1000,7 @@ function _editorialVerdict(tier, drink, food, profile) {
     'whistlepig','mister sam','sazerac','pikesville','mammoth','old emmer',
     'never say die','bardstown','bowman',
     // Wines
-    'caymus','opus one','silver oak','jordan','far niente','heitz','shafer',
+    'caymus','opus one','silver oak','jordan','far niente','heitz','shafer','hillside select','lyndenhurst','martha\'s vineyard','jubilation','colgin','meritage',
     'cristom','lingua franca','domaine serene','elk cove','raen','spottswoode',
     'château beaucastel','beaucastel','peju','quilt','nickel & nickel',
     'venge','prisoner','muga','marimar','château','barolo','scavino',
@@ -1123,14 +1123,56 @@ function _editorialVerdict(tier, drink, food, profile) {
   return filled;
 }
 
+// Price-tier-aware extras for VERDICT_PATTERNS.
+// PREMIUM bottles unlock collector/luxury closers ("the staff fights over").
+// BTG bottles unlock everyday/workhorse closers ("the table's first pour").
+// MID bottles use only the base pool.
+const VERDICT_PATTERNS_PREMIUM = {
+  gold: [
+    "Gold standard; {drink} on {food} -- the call you save for the regulars.",
+    "Gold standard; {drink} on {food} -- the bottle the staff talks about.",
+    "Gold standard; for {food}, this is the special-occasion call.",
+    "Gold standard; {drink} into {food} -- the once-a-month-pour move.",
+  ],
+  excellent: [
+    "Excellent; {drink} on {food} -- the upsell move when the table looks ready.",
+    "Excellent; {hook} on {food} -- step up from the everyday call.",
+  ],
+  strong: [],
+  works: [],
+};
+const VERDICT_PATTERNS_BTG = {
+  gold: [],
+  excellent: [
+    "Excellent; the workhorse {hook} for {food}.",
+    "Excellent; {drink} on {food} -- the table's first pour.",
+  ],
+  strong: [
+    "Strong; reliable BTG {hook} for {food}.",
+    "Strong; {drink} on {food} -- the everyday call.",
+    "Strong; pour {drink} on {food} when the table just wants something solid.",
+  ],
+  works: [
+    "Works; {drink} for {food} -- the value-pour fit.",
+    "Works; everyday {hook} doesn't fight {food}.",
+  ],
+};
+
 function pickVerdict(tier, drink, food, profile) {
   // Try EDITORIAL_PHRASES first (real v9 corpus phrases)
   const editorial = _editorialVerdict(tier, drink, food, profile);
   if (editorial) return editorial;
 
-  // Fallback: hand-written templates
-  const variants = VERDICT_PATTERNS[tier];
-  if (!variants || !variants.length) return null;
+  // Fallback: hand-written templates, mixed with price-tier-eligible extras
+  const baseVariants = VERDICT_PATTERNS[tier] || [];
+  let priceTier = 'MID';
+  try { priceTier = require('./price_tiers').priceTierFor(drink); } catch (e) { /* optional */ }
+  let extras = [];
+  if (priceTier === 'PREMIUM') extras = VERDICT_PATTERNS_PREMIUM[tier] || [];
+  else if (priceTier === 'BTG') extras = VERDICT_PATTERNS_BTG[tier] || [];
+  const variants = baseVariants.concat(extras);
+  if (!variants.length) return null;
+
   const sig = drink.name + '|' + food.name + '|' + tier;
   const h = crypto.createHash('md5').update(sig).digest();
   const pat = variants[h.readUInt32BE(0) % variants.length];

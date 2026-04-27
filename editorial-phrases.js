@@ -249,7 +249,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} 12 Am Oak with the {FOOD} — first-fill American Oak Speyside against 22oz bone-in cap-fat.",
+            "template": "{DRINK} 12 Am Oak with the {FOOD} — first-fill American Oak Speyside against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -2050,7 +2050,7 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_BOLD": [
           {
-            "template": "{DRINK} with the {FOOD} — Oloroso + bourbon cask marriage against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — Oloroso + bourbon cask marriage against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -2070,7 +2070,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — premium aged coastal Highland against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — premium aged coastal Highland against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -2989,7 +2989,7 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_BOLD": [
           {
-            "template": "{FOOD}: 22oz bone-in cap-fat meets {DRINK}.",
+            "template": "{FOOD}: 26oz bone-in cap-fat meets {DRINK}.",
             "count": 4,
             "global": 6
           }
@@ -3768,17 +3768,17 @@ const EDITORIAL_PHRASES = {
       "MEZCAL": {
         "STEAK_BOLD": [
           {
-            "template": "{FOOD}: 40oz bone-on showpiece meets {DRINK}.",
+            "template": "{FOOD}: 36oz bone-on showpiece meets {DRINK}.",
             "count": 2,
             "global": 4
           },
           {
-            "template": "{FOOD}: 22oz bone-in cap-fat meets {DRINK}'s luxury-mezcal polish.",
+            "template": "{FOOD}: 26oz bone-in cap-fat meets {DRINK}'s luxury-mezcal polish.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{FOOD}: 22oz bone-in cap-fat meets {DRINK} traditional-pit-smoke.",
+            "template": "{FOOD}: 26oz bone-in cap-fat meets {DRINK} traditional-pit-smoke.",
             "count": 2,
             "global": 2
           }
@@ -4210,7 +4210,7 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_BOLD": [
           {
-            "template": "{DRINK} with the {FOOD} — Portland craft gin against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — Portland craft gin against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -4225,7 +4225,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — Philly patriotic-artisan against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — Philly patriotic-artisan against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -4245,7 +4245,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — Hebridean craft gin against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — Hebridean craft gin against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -4255,27 +4255,27 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — butterfly-pea-flower craft against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — butterfly-pea-flower craft against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — flagship {DRINK} against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — flagship {DRINK} against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — Western Cape craft gin against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — Western Cape craft gin against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — 100% Michigan-grain craft against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — 100% Michigan-grain craft against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — Schwarzwald craft gin against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — Schwarzwald craft gin against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -5187,7 +5187,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — heritage {DRINK} against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — heritage {DRINK} against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -6667,27 +6667,27 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_BOLD": [
           {
-            "template": "{DRINK} with the {FOOD} — hand-picked American Oak against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — hand-picked American Oak against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — Matusalem-cask Highland against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — Matusalem-cask Highland against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — coastal-tropical Highland against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — coastal-tropical Highland against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — benchmark sherried Speyside against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — benchmark sherried Speyside against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — Colorado craft bourbon designed for cigar pairing against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — Colorado craft bourbon designed for cigar pairing against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -6702,7 +6702,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with the {FOOD} — New Zealand single malt against 22oz bone-in cap-fat.",
+            "template": "{DRINK} with the {FOOD} — New Zealand single malt against 26oz bone-in cap-fat.",
             "count": 2,
             "global": 2
           },
@@ -6969,7 +6969,7 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_BOLD": [
           {
-            "template": "{FOOD}: 22oz bone-in cap-fat meets {DRINK}.",
+            "template": "{FOOD}: 26oz bone-in cap-fat meets {DRINK}.",
             "count": 2,
             "global": 6
           },
@@ -7190,7 +7190,7 @@ const EDITORIAL_PHRASES = {
       "MEZCAL": {
         "STEAK_BOLD": [
           {
-            "template": "{FOOD}: 40oz bone-on showpiece meets {DRINK}.",
+            "template": "{FOOD}: 36oz bone-on showpiece meets {DRINK}.",
             "count": 2,
             "global": 4
           }
@@ -19951,7 +19951,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "Peak Super Tuscan for the 22oz bone-in — Maremma Bordeaux-style structure lives for this cut.",
+            "template": "Peak Super Tuscan for the 26oz bone-in — Maremma Bordeaux-style structure lives for this cut.",
             "count": 2,
             "global": 2
           },

@@ -22,9 +22,10 @@ const crypto = require('crypto');
 const taxonomy = require('./pairing_engine_taxonomy');
 
 const SNAPSHOT_FILE = path.join(__dirname, '.snapshot.json');
-const ANCHOR_TARGET = 81;
-const PER_DRINK_CLASS_CAP = 6;
-const PER_FOOD_CLASS_CAP = 8;
+const ANCHOR_TARGET = 250;
+// Soft caps — per-class diversification once we've covered every cell once.
+const PER_DRINK_CLASS_CAP = 30;
+const PER_FOOD_CLASS_CAP = 30;
 
 // ── DATA LOADER ───────────────────────────────────────────────────────────
 
@@ -51,59 +52,99 @@ function selectAnchors(data) {
 
   const byName = {};
   for (const e of data.PAIRING_MAP) byName[e.name] = e;
-
-  const foods = data.PAIRING_MAP.filter(e => taxonomy.FOOD_CATS.has(e.category));
-  const drinkClassCounts = {};
-  const foodClassCounts = {};
-  const anchors = [];
-  const seenPairs = new Set();
   const TIERS = ['gold', 'excellent', 'strong', 'works', 'avoid'];
 
-  for (const food of foods) {
-    if (anchors.length >= ANCHOR_TARGET) break;
-    const fc = taxonomy.foodClassFor(enrich(food));
-    if (!fc) continue;
-    if ((foodClassCounts[fc] || 0) >= PER_FOOD_CLASS_CAP) continue;
-
+  // Collect every (drink × food × tier) candidate and bucket them by cell.
+  // Cell = (drinkClass × foodClass × tier).
+  const cells = new Map();
+  for (const e of data.PAIRING_MAP) {
+    const isEFood = taxonomy.FOOD_CATS.has(e.category);
     for (const tier of TIERS) {
-      if (anchors.length >= ANCHOR_TARGET) break;
-      if ((foodClassCounts[fc] || 0) >= PER_FOOD_CLASS_CAP) break;
-      const list = food[tier];
+      const list = e[tier];
       if (!Array.isArray(list)) continue;
-
       for (const targetName of list) {
         const target = byName[targetName];
         if (!target) continue;
-        const dc = taxonomy.drinkClassFor(enrich(target));
-        if (!dc) continue;
-        if ((drinkClassCounts[dc] || 0) >= PER_DRINK_CLASS_CAP) continue;
-
-        const pairSig = [food.name, targetName].sort().join('|');
-        if (seenPairs.has(pairSig)) continue;
-
-        const fwdKey = food.name + '|' + targetName;
-        const revKey = targetName + '|' + food.name;
+        const isTFood = taxonomy.FOOD_CATS.has(target.category);
+        if (isEFood === isTFood) continue;  // skip drink×drink and food×food
+        const drink = isEFood ? target : e;
+        const food  = isEFood ? e : target;
+        const dc = taxonomy.drinkClassFor(enrich(drink));
+        const fc = taxonomy.foodClassFor(enrich(food));
+        if (!dc || !fc) continue;
+        const fwdKey = food.name + '|' + drink.name;
+        const revKey = drink.name + '|' + food.name;
         const note = data.PAIRING_NOTES[fwdKey] || data.PAIRING_NOTES[revKey];
         if (!note) continue;
-
-        seenPairs.add(pairSig);
-        anchors.push({
-          food: food.name,
-          drink: targetName,
-          foodClass: fc,
-          drinkClass: dc,
-          tier: tier,
-          key: fwdKey,
-          hash: hashNote(note),
+        const cellKey = dc + '|' + fc + '|' + tier;
+        if (!cells.has(cellKey)) cells.set(cellKey, []);
+        cells.get(cellKey).push({
+          food: food.name, drink: drink.name,
+          foodClass: fc, drinkClass: dc, tier,
+          key: fwdKey, note,
         });
-        drinkClassCounts[dc] = (drinkClassCounts[dc] || 0) + 1;
-        foodClassCounts[fc] = (foodClassCounts[fc] || 0) + 1;
-        break;
       }
     }
   }
 
-  return { anchors: anchors, drinkClassCounts: drinkClassCounts, foodClassCounts: foodClassCounts };
+  // Deterministically sort each cell's candidates by pair-name signature so
+  // we always pick the same anchor per cell across runs.
+  for (const arr of cells.values()) arr.sort((a, b) => (a.food + '|' + a.drink).localeCompare(b.food + '|' + b.drink));
+
+  // Phase 1: take ONE anchor per cell — full coverage of every (dc × fc × tier)
+  // combination that has notes. This is the regression net.
+  const drinkClassCounts = {};
+  const foodClassCounts = {};
+  const anchors = [];
+  const seenPairs = new Set();
+  const cellKeysSorted = Array.from(cells.keys()).sort();  // deterministic order
+  for (const cellKey of cellKeysSorted) {
+    if (anchors.length >= ANCHOR_TARGET) break;
+    const candidates = cells.get(cellKey);
+    for (const c of candidates) {
+      const sig = [c.food, c.drink].sort().join('|');
+      if (seenPairs.has(sig)) continue;
+      anchors.push({
+        food: c.food, drink: c.drink,
+        foodClass: c.foodClass, drinkClass: c.drinkClass, tier: c.tier,
+        key: c.key, hash: hashNote(c.note),
+      });
+      seenPairs.add(sig);
+      drinkClassCounts[c.drinkClass] = (drinkClassCounts[c.drinkClass] || 0) + 1;
+      foodClassCounts[c.foodClass] = (foodClassCounts[c.foodClass] || 0) + 1;
+      break;
+    }
+  }
+
+  // Phase 2: top up to ANCHOR_TARGET with extras, respecting soft per-class caps.
+  if (anchors.length < ANCHOR_TARGET) {
+    for (const cellKey of cellKeysSorted) {
+      if (anchors.length >= ANCHOR_TARGET) break;
+      const candidates = cells.get(cellKey);
+      for (const c of candidates) {
+        if (anchors.length >= ANCHOR_TARGET) break;
+        const sig = [c.food, c.drink].sort().join('|');
+        if (seenPairs.has(sig)) continue;
+        if ((drinkClassCounts[c.drinkClass] || 0) >= PER_DRINK_CLASS_CAP) continue;
+        if ((foodClassCounts[c.foodClass] || 0) >= PER_FOOD_CLASS_CAP) continue;
+        anchors.push({
+          food: c.food, drink: c.drink,
+          foodClass: c.foodClass, drinkClass: c.drinkClass, tier: c.tier,
+          key: c.key, hash: hashNote(c.note),
+        });
+        seenPairs.add(sig);
+        drinkClassCounts[c.drinkClass] = (drinkClassCounts[c.drinkClass] || 0) + 1;
+        foodClassCounts[c.foodClass] = (foodClassCounts[c.foodClass] || 0) + 1;
+      }
+    }
+  }
+
+  return {
+    anchors: anchors,
+    drinkClassCounts: drinkClassCounts,
+    foodClassCounts: foodClassCounts,
+    cellsCovered: cellKeysSorted.length,
+  };
 }
 
 function hashNote(text) {
@@ -218,3 +259,52 @@ if (require.main === module) {
 }
 
 module.exports = { selectAnchors: selectAnchors, hashNote: hashNote, loadData: loadData };
+];
+    if (\!note) { missing.push(a); continue; }
+    const currentHash = hashNote(note);
+    if (currentHash \!== a.hash) drift.push(Object.assign({}, a, { currentHash: currentHash }));
+    else same.push(a);
+  }
+
+  console.log('=== ENGINE SNAPSHOT TEST ===');
+  console.log('');
+  console.log('baseline anchors: ' + stored.anchorCount + '  (generated ' + stored.generatedAt + ')');
+  console.log('unchanged: ' + same.length);
+  console.log('drifted:   ' + drift.length);
+  console.log('missing:   ' + missing.length);
+
+  if (drift.length) {
+    console.log('');
+    console.log('Drifted anchors:');
+    for (const d of drift.slice(0, 12)) {
+      console.log('  [' + d.tier.padEnd(9) + '] ' + d.food + ' x ' + d.drink);
+      console.log('     was   ' + d.hash + '  (' + d.foodClass + '/' + d.drinkClass + ')');
+      console.log('     now   ' + d.currentHash);
+      const note = data.PAIRING_NOTES[d.food + '|' + d.drink] || data.PAIRING_NOTES[d.drink + '|' + d.food];
+      console.log('     text  ' + note.slice(0, 100) + (note.length > 100 ? '...' : ''));
+    }
+    if (drift.length > 12) console.log('  ... +' + (drift.length - 12) + ' more drifted');
+  }
+  if (missing.length) {
+    console.log('');
+    console.log('Missing anchors (note no longer exists):');
+    for (const m of missing.slice(0, 12)) console.log('  [' + m.tier.padEnd(9) + '] ' + m.food + ' x ' + m.drink);
+    if (missing.length > 12) console.log('  ... +' + (missing.length - 12) + ' more missing');
+  }
+
+  const ok = drift.length === 0 && missing.length === 0;
+  console.log('');
+  console.log(ok ? '[OK] Snapshot clean.' : '[FAIL] Snapshot drift detected -- run with --update to accept, or fix the regression.');
+  process.exit(ok ? 0 : 1);
+}
+
+if (require.main === module) {
+  const repoRoot = path.resolve(__dirname, '..');
+  const args = process.argv.slice(2);
+  if (args.indexOf('--update') \!== -1) cmdUpdate(repoRoot);
+  else if (args.indexOf('--show') \!== -1) cmdShow(repoRoot);
+  else cmdVerify(repoRoot);
+}
+
+module.exports = { selectAnchors: selectAnchors, hashNote: hashNote, loadData: loadData };
+Data: loadData };
