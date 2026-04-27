@@ -276,7 +276,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     strong: [
-      "Château Beaucastel", "Silver Oak Cabernet Sauvignon",
+      "Asparagus", "Sauteed Garlic Spinach", "Château Beaucastel", "Silver Oak Cabernet Sauvignon",
       "Creamed Spinach",
       "Shrimp Bisque",
       "Frias Block 5",
@@ -360,7 +360,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "House Wedge",
+      "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
       "Au Gratin Potatoes",
       "Mushrooms",
       "Creme Brulee",
@@ -572,7 +572,7 @@ const PAIRING_MAP = [
       "Weller Millennium",
     ],
     strong: [
-      "Château Gombaude-Guillot", "Silver Oak Cabernet Sauvignon",
+      "Asparagus", "Sauteed Garlic Spinach", "Château Gombaude-Guillot", "Silver Oak Cabernet Sauvignon",
       "Lingua Franca Avni Pinot Noir",
       "Creamed Spinach",
       "Shrimp Bisque",
@@ -786,7 +786,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Quilt Cabernet Sauvignon",
+      "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Quilt Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
       "House Wedge",
       "Château de Rouillac",
@@ -981,7 +981,7 @@ const PAIRING_MAP = [
       "Weller Millennium",
     ],
     excellent: [
-      "Jordan Cabernet Sauvignon",
+      "Au Gratin Potatoes", "Lobster Mac", "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
@@ -1209,7 +1209,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     strong: [
-      "Venge Scout's Honor", "Shafer Hillside Select", "Lingua Franca Avni Pinot Noir",
+      "Sauteed Garlic Spinach", "Venge Scout's Honor", "Shafer Hillside Select", "Lingua Franca Avni Pinot Noir",
       "Creamed Spinach",
       "Truffle Fries",
       "Château Gombaude-Guillot",
@@ -1290,7 +1290,7 @@ const PAIRING_MAP = [
       "Gran Patron Platinum",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "House Wedge",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
       "Chocolate Brownie",
@@ -1444,7 +1444,7 @@ const PAIRING_MAP = [
       "Elijah Craig 18 Year",
     ],
     excellent: [
-      "Silver Oak Cabernet Sauvignon",
+      "Au Gratin Potatoes", "Lobster Mac", "Silver Oak Cabernet Sauvignon",
       "Shafer Hillside Select",
       "Opus One",
       "Darioush Cabernet Sauvignon",
@@ -1591,7 +1591,7 @@ const PAIRING_MAP = [
       "Redbreast 12 Year",
     ],
     strong: [
-      "Scavino Barolo", "Vieux Carré", "Sazerac", "Creamed Spinach",
+      "Mushrooms", "Sauteed Garlic Spinach", "Scavino Barolo", "Vieux Carré", "Sazerac", "Creamed Spinach",
       "Brussels and Belly",
       "Negroni",
       "Not a Paper Plane",
@@ -1720,7 +1720,7 @@ const PAIRING_MAP = [
       "Villon Cognac",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "House Wedge",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
       "Marimar Estate Christina",
       "Truffle Fries",
       "Chocolate Brownie",
@@ -1907,7 +1907,7 @@ const PAIRING_MAP = [
       "Clase Azul Ultra",
     ],
     excellent: [
-      "Opus One",
+      "Au Gratin Potatoes", "Lobster Mac", "Opus One",
       "Shafer Hillside Select",
       "Heitz Martha's Vineyard",
       "Scavino Barolo",
@@ -1966,7 +1966,7 @@ const PAIRING_MAP = [
       "Corazon Stagg",
     ],
     strong: [
-      "Fattoria Le Pupille Saffredi", "Caymus Cabernet Sauvignon", "Lail Vineyards Blueprint",
+      "Sauteed Garlic Spinach", "Fattoria Le Pupille Saffredi", "Caymus Cabernet Sauvignon", "Lail Vineyards Blueprint",
       "Creamed Spinach",
       "Brussels and Belly",
       "Venge Scout's Honor",
@@ -2147,7 +2147,7 @@ const PAIRING_MAP = [
       "Komos Anejo Reserva",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Truffle Fries",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Truffle Fries",
       "Mushrooms",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
@@ -2372,7 +2372,7 @@ const PAIRING_MAP = [
       "Domaine du Grand Tinel",
     ],
     excellent: [
-      "Silver Oak Cabernet Sauvignon",
+      "Au Gratin Potatoes", "Silver Oak Cabernet Sauvignon",
       "The Manhattan",
       "Truffle Fries",
       "Creamed Spinach",
@@ -2386,7 +2386,7 @@ const PAIRING_MAP = [
       "Domaine du Grand Tinel",
     ],
     strong: [
-      "Scavino Barolo", "Jordan Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Ghost Block Cabernet Sauvignon",
+      "Sauteed Garlic Spinach", "Scavino Barolo", "Jordan Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Ghost Block Cabernet Sauvignon",
       "Lail Vineyards Blueprint",
       "Far Niente Cabernet Sauvignon",
       "Brussels and Belly",
@@ -2615,7 +2615,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Maker's Mark", "Basil Hayden's Toast", "House Wedge",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Maker's Mark", "Basil Hayden's Toast", "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
       "Chocolate Brownie",
@@ -17327,7 +17327,7 @@ const PAIRING_MAP = [
       "Far Niente Chardonnay",
     ],
     excellent: [
-      "Far Niente Chardonnay",
+      "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Far Niente Chardonnay",
       "Keenan Chardonnay",
       "Laurent Perrier Le Cuvée Brut",
       "Filet Mignon",
@@ -17781,7 +17781,7 @@ const PAIRING_MAP = [
       "Keenan Chardonnay",
     ],
     excellent: [
-      "Jordan Cabernet Sauvignon",
+      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Elijah Craig 18 Year",
       "Knob Creek 15 Year",
@@ -19154,7 +19154,7 @@ const PAIRING_MAP = [
       "Keenan Chardonnay",
     ],
     strong: [
-      "Jean-Pierre Grossot Chablis", "Domaine de Berthiers Pouilly-Fumé", "Elk Cove Pinot Blanc",
+      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jean-Pierre Grossot Chablis", "Domaine de Berthiers Pouilly-Fumé", "Elk Cove Pinot Blanc",
       "Le Garenne Rosé",
       "Cristom Mt Jefferson Cuvée",
       "Cucumber Gimlet",
@@ -19774,7 +19774,7 @@ const PAIRING_MAP = [
       "Los Vecinos Mezcal",
     ],
     strong: [
-      "Silver Oak Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Scavino Barolo", "Lagavulin 8", "Far Niente Cabernet Sauvignon",
+      "Cowboy Ribeye", "Silver Oak Cabernet Sauvignon", "Caymus Cabernet Sauvignon", "Scavino Barolo", "Lagavulin 8", "Far Niente Cabernet Sauvignon",
       "Ghost Block Cabernet Sauvignon",
       "Lingua Franca Avni Pinot Noir",
       "Not a Paper Plane",
@@ -20062,7 +20062,7 @@ const PAIRING_MAP = [
       "Elk Cove Pinot Blanc",
     ],
     works: [
-      "Bowdie's Old Fashioned",
+      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Bowdie's Old Fashioned",
       "The Manhattan",
       "Vieux Carré",
       "Sazerac",
@@ -20516,7 +20516,7 @@ const PAIRING_MAP = [
       "Alexander Valley Chardonnay",
     ],
     works: [
-      "Fisher Unity Pinot Noir",
+      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
       "Jordan Cabernet Sauvignon",
       "Raventós Cava de NIT Rosé Brut",
       "Bowdie's Old Fashioned",
@@ -20968,7 +20968,7 @@ const PAIRING_MAP = [
       "Le Garenne Rosé",
     ],
     works: [
-      "Cristom Mt Jefferson Cuvée",
+      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Cristom Mt Jefferson Cuvée",
       "Cucumber Gimlet",
       "Bee's Knees",
       "The Manhattan",
@@ -21411,11 +21411,11 @@ const PAIRING_MAP = [
       "Jean-Pierre Grossot Chablis",
     ],
     strong: [
-      "Le Garenne Rosé", "St Supéry Sauvignon Blanc", "Elk Cove Pinot Blanc",
+      "Bone-In Filet", "Filet Mignon", "Le Garenne Rosé", "St Supéry Sauvignon Blanc", "Elk Cove Pinot Blanc",
       "Lingua Franca Avni Pinot Noir",
     ],
     works: [
-      "Laurent Perrier Le Cuvée Brut",
+      "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
       "Bee's Knees",
