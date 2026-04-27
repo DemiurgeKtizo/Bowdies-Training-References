@@ -3204,7 +3204,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "House Wedge",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "House Wedge",
       "The BG",
       "The Happy Wife",
       "Head Fake",
@@ -3479,7 +3479,7 @@ const PAIRING_MAP = [
       "Dunville's Single Malt",
     ],
     strong: [
-      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Venge Scout's Honor", "Fattoria Le Pupille Saffredi", "Silver Oak Cabernet Sauvignon",
+      "Au Gratin Potatoes", "Truffle Fries", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Venge Scout's Honor", "Fattoria Le Pupille Saffredi", "Silver Oak Cabernet Sauvignon",
       "Brussels and Belly",
       "Creamed Spinach",
       "Espresso Martini",
@@ -3565,7 +3565,7 @@ const PAIRING_MAP = [
       "Green Chartreuse",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Carrot Cake", "Creme Brulee", "Porterhouse", "Johnnie Walker Blue", "Jordan Cabernet Sauvignon",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Lobster Mac", "Grilled Caesar", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Carrot Cake", "Creme Brulee", "Porterhouse", "Johnnie Walker Blue", "Jordan Cabernet Sauvignon",
       "House Wedge",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
@@ -3873,7 +3873,7 @@ const PAIRING_MAP = [
       "Malibu Rum",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Faroe Island Salmon", "Marc Brédif Chinon",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Faroe Island Salmon", "Marc Brédif Chinon",
       "Pineau des Charentes",
       "Limoncello",
       "Bruichladdich",
@@ -4296,7 +4296,7 @@ const PAIRING_MAP = [
       "Komos Crystallino Anejo",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Limoncello",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Limoncello",
       "Bruichladdich",
       "Schloss Vollrads Riesling",
       "Don Julio Reposado",
@@ -4769,7 +4769,7 @@ const PAIRING_MAP = [
       "Far Niente Chardonnay",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Lingua Franca Avni Pinot Noir",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Lingua Franca Avni Pinot Noir",
       "Limoncello",
       "Fernet Branca",
       "Fernet Menta",
@@ -5939,7 +5939,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Lingua Franca Avni Pinot Noir",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Lingua Franca Avni Pinot Noir",
       "Aviation Gin",
       "Bluecoat Gin",
       "Empress 1908 Gin",
@@ -6116,7 +6116,7 @@ const PAIRING_MAP = [
       "Mahon Gin",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "Cowboy Ribeye", "Lingua Franca Avni Pinot Noir",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Porterhouse", "Cowboy Ribeye", "Lingua Franca Avni Pinot Noir",
       "Domaine de Berthiers Pouilly-Fumé",
       "Fento Ollo de Sapo Mencía",
       "Fisher Unity Pinot Noir",
@@ -6612,7 +6612,7 @@ const PAIRING_MAP = [
       "Contratto Vermouth",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Le Garenne Rosé",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Le Garenne Rosé",
       "Espresso Old Fashioned",
       "Sazerac",
       "French 75",
@@ -7012,7 +7012,7 @@ const PAIRING_MAP = [
       "Negroni",
     ],
     strong: [
-      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "The Tomahawk", "Laurent Perrier Le Cuvée Brut",
+      "Truffle Fries", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "The Tomahawk", "Laurent Perrier Le Cuvée Brut",
       "Elk Cove Pinot Blanc",
       "The BG",
       "Bee's Knees",
@@ -7110,7 +7110,7 @@ const PAIRING_MAP = [
       "Contratto Vermouth",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Fisher Unity Pinot Noir", "Jordan Cabernet Sauvignon",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Fisher Unity Pinot Noir", "Jordan Cabernet Sauvignon",
       "Faust Napa Valley Cabernet",
       "Filet Mignon",
       "Bone-In Filet",
@@ -7457,7 +7457,7 @@ const PAIRING_MAP = [
       "Tanqueray Gin",
     ],
     strong: [
-      "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jean-Pierre Grossot Chablis", "Keenan Chardonnay",
+      "Truffle Fries", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jean-Pierre Grossot Chablis", "Keenan Chardonnay",
       "Jordan Cabernet Sauvignon",
       "Raventós Cava de NIT Rosé Brut",
       "Corpse Reviver",
@@ -7597,7 +7597,7 @@ const PAIRING_MAP = [
       "Mount Gay Rum",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Faust Napa Valley Cabernet",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Faust Napa Valley Cabernet",
       "Vieux Carré",
       "Cucumber Gimlet",
       "Vesper",
@@ -7842,7 +7842,7 @@ const PAIRING_MAP = [
       "Elk Cove Pinot Blanc",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Bowdie's Old Fashioned",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Bowdie's Old Fashioned",
       "The Manhattan",
       "Vieux Carré",
       "Sazerac",
@@ -8294,7 +8294,7 @@ const PAIRING_MAP = [
       "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Evening Land Seven Springs",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Evening Land Seven Springs",
       "Jordan Cabernet Sauvignon",
       "Vieux Carré",
       "Bowdie's Old Fashioned",
@@ -8744,7 +8744,7 @@ const PAIRING_MAP = [
       "Lingua Franca Avni Pinot Noir",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Raventós Cava de NIT Rosé Brut",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
       "Domaine de Berthiers Pouilly-Fumé",
       "The Manhattan",
@@ -9195,7 +9195,7 @@ const PAIRING_MAP = [
       "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
       "Faust Napa Valley Cabernet",
       "Vieux Carré",
       "Bowdie's Old Fashioned",
@@ -9645,7 +9645,7 @@ const PAIRING_MAP = [
       "Lingua Franca Avni Pinot Noir",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Elk Cove Pinot Blanc",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Elk Cove Pinot Blanc",
       "Laurent Perrier Le Cuvée Brut",
       "Cristom Mt Jefferson Cuvée",
       "The Manhattan",
@@ -10097,7 +10097,7 @@ const PAIRING_MAP = [
       "Braida Montebruna Barbera",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jordan Cabernet Sauvignon",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Jordan Cabernet Sauvignon",
       "The BG",
       "Paloma",
       "Margarita",
@@ -10547,7 +10547,7 @@ const PAIRING_MAP = [
       "Elk Cove Pinot Blanc",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
       "Raventós Cava de NIT Rosé Brut",
       "Tenuta di Arceno Chianti Classico",
       "Bowdie's Old Fashioned",
@@ -10998,7 +10998,7 @@ const PAIRING_MAP = [
       "Alexander Valley Chardonnay",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Le Garenne Rosé",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Le Garenne Rosé",
       "Lingua Franca Avni Pinot Noir",
       "Joseph Mellot Sancerre",
       "The Manhattan",
@@ -11899,7 +11899,7 @@ const PAIRING_MAP = [
       "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Raventós Cava de NIT Rosé Brut",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Raventós Cava de NIT Rosé Brut",
       "Le Garenne Rosé",
       "Joseph Mellot Sancerre",
       "The Manhattan",
@@ -12350,7 +12350,7 @@ const PAIRING_MAP = [
       "Laurent Perrier Le Cuvée Brut",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Elk Cove Pinot Blanc",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Elk Cove Pinot Blanc",
       "Le Garenne Rosé",
       "Evening Land Seven Springs",
       "Raventós Cava de NIT Rosé Brut",
@@ -12803,7 +12803,7 @@ const PAIRING_MAP = [
       "Muga Reserva",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Bone-In Filet", "Filet Mignon", "Faust Napa Valley Cabernet",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Bone-In Filet", "Filet Mignon", "Faust Napa Valley Cabernet",
       "Laurent Perrier Le Cuvée Brut",
       "Vieux Carré",
       "The Manhattan",
@@ -17089,7 +17089,7 @@ const PAIRING_MAP = [
       "Belvedere Vodka",
     ],
     strong: [
-      "Château Gombaude-Guillot", "Not a Paper Plane",
+      "Grilled Caesar", "House Wedge", "Bone Marrow", "Château Gombaude-Guillot", "Not a Paper Plane",
       "Mushrooms",
       "Kansas City",
       "Espresso Martini",
@@ -17152,7 +17152,7 @@ const PAIRING_MAP = [
       "Jung and Wulff Trinidad",
     ],
     works: [
-      "Vegetable Curry with Chickpeas", "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Lingua Franca Avni Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Vegetable Curry with Chickpeas", "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Lingua Franca Avni Pinot Noir",
       "Evening Land Seven Springs",
       "Fattoria Le Pupille Saffredi",
       "Cowboy Ribeye",
@@ -17353,7 +17353,7 @@ const PAIRING_MAP = [
       "Villon Cognac",
     ],
     works: [
-      "Vegetable Curry with Chickpeas", "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Silver Oak Cabernet Sauvignon",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Vegetable Curry with Chickpeas", "Roast Half Chicken", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Silver Oak Cabernet Sauvignon",
       "Cucumber Gimlet",
       "Veuve Clicquot Brut",
       "Paul Bara Grand Rosé Brut",
@@ -17791,7 +17791,7 @@ const PAIRING_MAP = [
       "Keenan Chardonnay",
     ],
     strong: [
-      "Roast Half Chicken", "Swordfish", "Salt-Cured Halibut", "Caymus Cabernet Sauvignon", "Far Niente Cabernet Sauvignon",
+      "Bone Marrow", "Roast Half Chicken", "Swordfish", "Salt-Cured Halibut", "Caymus Cabernet Sauvignon", "Far Niente Cabernet Sauvignon",
       "Scavino Barolo",
       "The Manhattan",
       "Vieux Carré",
@@ -17880,7 +17880,7 @@ const PAIRING_MAP = [
       "Remus 15 Year Gatsby Reserve",
     ],
     works: [
-      "Vegetable Curry with Chickpeas", "Chilean Seabass", "Faroe Island Salmon", "Rainbow Trout", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Lingua Franca Avni Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Vegetable Curry with Chickpeas", "Chilean Seabass", "Faroe Island Salmon", "Rainbow Trout", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Lingua Franca Avni Pinot Noir",
       "Truffle Fries",
       "Filet Mignon",
       "Bone-In Filet",
@@ -18464,7 +18464,7 @@ const PAIRING_MAP = [
       "Corazon Stagg",
     ],
     works: [
-      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Kansas City", "Negroni",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Kansas City", "Negroni",
       "Vieux Carré",
       "The Manhattan",
       "Sazerac",
@@ -18936,7 +18936,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Vegetable Curry with Chickpeas", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Alexander Valley Homestead Red",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Vegetable Curry with Chickpeas", "Chilean Seabass", "Swordfish", "Faroe Island Salmon", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Alexander Valley Homestead Red",
       "Domaine Tempier Bandol",
       "Lagavulin 8",
       "Laphroaig 10",
@@ -19168,7 +19168,7 @@ const PAIRING_MAP = [
       "Clos Petit Ona Grenache",
     ],
     works: [
-      "Jordan Cabernet Sauvignon",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Jordan Cabernet Sauvignon",
       "Faroe Island Salmon",
       "Roast Half Chicken",
       "French 75",
@@ -19916,7 +19916,7 @@ const PAIRING_MAP = [
       "Corazon Weller",
     ],
     works: [
-      "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faust Napa Valley Cabernet", "Evening Land Seven Springs",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faust Napa Valley Cabernet", "Evening Land Seven Springs",
       "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
@@ -20062,7 +20062,7 @@ const PAIRING_MAP = [
       "Elk Cove Pinot Blanc",
     ],
     works: [
-      "Vegetable Curry with Chickpeas", "Faroe Island Salmon", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Bowdie's Old Fashioned",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Vegetable Curry with Chickpeas", "Faroe Island Salmon", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Bowdie's Old Fashioned",
       "The Manhattan",
       "Vieux Carré",
       "Sazerac",
@@ -20516,7 +20516,7 @@ const PAIRING_MAP = [
       "Alexander Valley Chardonnay",
     ],
     works: [
-      "Chilean Seabass", "Swordfish", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Chilean Seabass", "Swordfish", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Fisher Unity Pinot Noir",
       "Jordan Cabernet Sauvignon",
       "Raventós Cava de NIT Rosé Brut",
       "Bowdie's Old Fashioned",
@@ -20968,7 +20968,7 @@ const PAIRING_MAP = [
       "Le Garenne Rosé",
     ],
     works: [
-      "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Cristom Mt Jefferson Cuvée",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Cristom Mt Jefferson Cuvée",
       "Cucumber Gimlet",
       "Bee's Knees",
       "The Manhattan",
@@ -21415,7 +21415,7 @@ const PAIRING_MAP = [
       "Lingua Franca Avni Pinot Noir",
     ],
     works: [
-      "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Laurent Perrier Le Cuvée Brut",
+      "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Vegetable Curry with Chickpeas", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Cucumber Gimlet",
       "Bee's Knees",
@@ -21930,7 +21930,7 @@ const PAIRING_MAP = [
       "Malibu Rum",
     ],
     works: [
-      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Beignets",
       "Filet Mignon",
@@ -22402,7 +22402,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Louis XIII Cognac", "Laurent Perrier Le Cuvée Brut",
       "Raventós Cava de NIT Rosé Brut",
       "Filet Mignon",
       "Bone-In Filet",
@@ -22925,7 +22925,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Beignets",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Beignets",
       "Il Colle Prosecco Superiore",
       "Filet Mignon",
       "Bone-In Filet",
@@ -23372,7 +23372,7 @@ const PAIRING_MAP = [
       "Pineau des Charentes",
     ],
     works: [
-      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -23791,7 +23791,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -24215,7 +24215,7 @@ const PAIRING_MAP = [
       "New York Sour",
     ],
     works: [
-      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Vegetable Curry with Chickpeas", "Seared Scallops", "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "Cowboy Ribeye",
@@ -24666,7 +24666,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
       "Licor 43",
       "Fireball Whisky",
       "Bowdie's Old Fashioned",
@@ -25122,7 +25122,7 @@ const PAIRING_MAP = [
       "Ancho Reyes",
     ],
     works: [
-      "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Roast Half Chicken", "Rainbow Trout", "Chilean Seabass", "Swordfish", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faroe Island Salmon", "Vegetable Curry with Chickpeas", "Seared Scallops", "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Bone-In Filet", "Filet Mignon", "Sauternes Glass",
       "Don Julio 1942",
       "Clase Azul Durango",
       "Clase Azul Gold",
