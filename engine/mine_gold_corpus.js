@@ -11,6 +11,14 @@ const ctx = {}; vm.createContext(ctx);
 const load = (f, n) => vm.runInContext(fs.readFileSync(path.join(repo, f), 'utf8') + '\nthis.' + n + ' = ' + n + ';', ctx);
 load('pairing-map-v2.js','PAIRING_MAP');
 load('pairing-notes.js','PAIRING_NOTES');
+load('enriched-profiles.js','ENRICHED_PROFILES');
+
+function _enrich(entity) {
+  if (!ctx.ENRICHED_PROFILES) return entity;
+  const ep = ctx.ENRICHED_PROFILES[entity.name];
+  if (!ep || !ep.axes) return entity;
+  return Object.assign({}, entity, { axes: ep.axes });
+}
 
 // Build gold-pairs lookup
 const goldPairs = new Set();
@@ -87,8 +95,8 @@ for (const key of Object.keys(notes)) {
   stats.goldVerdictExtracted++;
   const [a, b] = key.split('|');
   const A = byName[a], B = byName[b]; if (!A || !B) continue;
-  const drink = taxonomy.FOOD_CATS.has(A.category) ? B : A;
-  const food  = taxonomy.FOOD_CATS.has(A.category) ? A : B;
+  const drink = _enrich(taxonomy.FOOD_CATS.has(A.category) ? B : A);
+  const food  = _enrich(taxonomy.FOOD_CATS.has(A.category) ? A : B);
   const dc = taxonomy.drinkClassFor(drink) || 'DEFAULT';
   const fc = taxonomy.foodClassFor(food)   || 'DEFAULT';
   const ck = dc + '|' + fc;

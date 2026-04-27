@@ -1853,7 +1853,7 @@ const CORPUS_MINED = {
         "source": "Rishi's Old Antique|The Tomahawk"
       }
     ],
-    "ELEGANT_RED|STEAK_LEAN": [
+    "BIG_RED|STEAK_LEAN": [
       {
         "template": "Strong; the server-confident Cab-on-strip-or-filet call.",
         "source": "1881 Napa Valley|Bone-In Filet"
@@ -1861,10 +1861,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the Cab-on-strip-or-filet call lands without effort.",
         "source": "Alexander Valley Cyrus|Bone-In Filet"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid elegant-red-on-strip-or-filet match.",
-        "source": "Alexander Valley Homestead Red|Bone-In Filet"
       },
       {
         "template": "Strong; reliable Cab-on-strip-or-filet recommendation.",
@@ -1875,32 +1871,8 @@ const CORPUS_MINED = {
         "source": "Bodega Noemia A Lisa|Bone-In Filet"
       },
       {
-        "template": "Strong; the elegant-red-on-strip-or-filet pairing servers pour without second-guessing.",
-        "source": "Bone-In Filet|Braida Montebruna Barbera"
-      },
-      {
         "template": "Strong; recommend with confidence — solid Cab-on-strip-or-filet match.",
         "source": "Bone-In Filet|Brandlin Estate Cabernet Sauvignon"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet match that holds its register.",
-        "source": "Bone-In Filet|Château Haut Segottes"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet pairing holds without overshooting.",
-        "source": "Bone-In Filet|Clos Petit Ona Grenache"
-      },
-      {
-        "template": "Strong; the server-confident elegant-red-on-strip-or-filet call.",
-        "source": "Bone-In Filet|Darioush Cabernet Franc"
-      },
-      {
-        "template": "Strong; reliable elegant-red-on-strip-or-filet recommendation.",
-        "source": "Bone-In Filet|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Strong; capable elegant-red-on-strip-or-filet pour for guests who want a confident pairing.",
-        "source": "Bone-In Filet|Fisher Unity Pinot Noir"
       },
       {
         "template": "Strong; the Cab-on-strip-or-filet pairing holds without overshooting.",
@@ -1913,13 +1885,9 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the Cab-on-strip-or-filet pairing servers pour without second-guessing.",
         "source": "Bone-In Filet|Les Pallières Raciné"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet call lands without effort.",
-        "source": "Bone-In Filet|Macauley Pinot Noir"
       }
     ],
-    "ELEGANT_RED|HEARTY_STARTER": [
+    "BIG_RED|HEARTY_STARTER": [
       {
         "template": "Strong; the server-confident Cab-on-hearty-starter call.",
         "source": "1881 Napa Valley|Escargot"
@@ -1927,14 +1895,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the Cab-on-hearty-starter call lands without effort.",
         "source": "1881 Napa Valley|Prime Tartare"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter call lands without effort.",
-        "source": "Alexander Valley Homestead Red|Escargot"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Alexander Valley Homestead Red|Prime Tartare"
       },
       {
         "template": "Strong; the Cab-on-hearty-starter pairing holds without overshooting.",
@@ -1949,18 +1909,6 @@ const CORPUS_MINED = {
         "source": "Bodega Noemia A Lisa|Escargot"
       },
       {
-        "template": "Strong; the elegant-red-on-hearty-starter pairing holds without overshooting.",
-        "source": "Bone Marrow|Clos Petit Ona Grenache"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid elegant-red-on-hearty-starter match.",
-        "source": "Bone Marrow|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter match that holds its register.",
-        "source": "Bone Marrow|Lunaria Coste di Moro"
-      },
-      {
         "template": "Strong; recommend with confidence — solid Cab-on-hearty-starter match.",
         "source": "Brandlin Estate Cabernet Sauvignon|Escargot"
       },
@@ -1969,34 +1917,18 @@ const CORPUS_MINED = {
         "source": "Brandlin Estate Cabernet Sauvignon|Prime Tartare"
       },
       {
-        "template": "Strong; the server-confident elegant-red-on-hearty-starter call.",
-        "source": "Château de Rouillac|Escargot"
-      },
-      {
-        "template": "Strong; reliable elegant-red-on-hearty-starter recommendation.",
-        "source": "Château de Rouillac|Prime Tartare"
-      },
-      {
         "template": "Strong; the Cab-on-hearty-starter match that holds its register.",
         "source": "Escargot|Ghost Block Cabernet Sauvignon"
       }
     ],
-    "ELEGANT_RED|STEAK_BOLD": [
+    "BIG_RED|STEAK_BOLD": [
       {
         "template": "Strong; capable Cab-on-bone-in-ribeye pour for guests who want a confident pairing.",
         "source": "1881 Napa Valley|The Tomahawk"
       },
       {
-        "template": "Strong; the elegant-red-on-bone-in-ribeye pairing servers pour without second-guessing.",
-        "source": "Alexander Valley Homestead Red|The Tomahawk"
-      },
-      {
         "template": "Strong; the server-confident Cab-on-bone-in-ribeye call.",
         "source": "Bodega Noemia A Lisa|The Tomahawk"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid elegant-red-on-bone-in-ribeye match.",
-        "source": "Braida Montebruna Barbera|Porterhouse"
       },
       {
         "template": "Strong; the Cab-on-bone-in-ribeye call lands without effort.",
@@ -2005,26 +1937,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the Cab-on-bone-in-ribeye pairing servers pour without second-guessing.",
         "source": "Château Gombaude-Guillot|The Tomahawk"
-      },
-      {
-        "template": "Strong; the elegant-red-on-bone-in-ribeye call lands without effort.",
-        "source": "Château Haut Segottes|The Tomahawk"
-      },
-      {
-        "template": "Strong; the elegant-red-on-bone-in-ribeye pairing holds without overshooting.",
-        "source": "Château de Rouillac|The Tomahawk"
-      },
-      {
-        "template": "Strong; capable elegant-red-on-bone-in-ribeye pour for guests who want a confident pairing.",
-        "source": "Clos Petit Ona Grenache|The Tomahawk"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet pairing servers pour without second-guessing.",
-        "source": "Daniel Chotard Sancerre Rouge|Kansas City"
-      },
-      {
-        "template": "Strong; the elegant-red-on-bone-in-ribeye match that holds its register.",
-        "source": "Elk Cove Five Mountain|Porterhouse"
       },
       {
         "template": "Strong; recommend with confidence — solid Cab-on-bone-in-ribeye match.",
@@ -3969,6 +3881,100 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the white-on-delicate-shellfish match that holds its register.",
         "source": "Our Lady of Guadalupe Acolytes|Shrimp Cocktail"
+      }
+    ],
+    "ELEGANT_RED|STEAK_LEAN": [
+      {
+        "template": "Strong; recommend with confidence — solid elegant-red-on-strip-or-filet match.",
+        "source": "Alexander Valley Homestead Red|Bone-In Filet"
+      },
+      {
+        "template": "Strong; the elegant-red-on-strip-or-filet pairing servers pour without second-guessing.",
+        "source": "Bone-In Filet|Braida Montebruna Barbera"
+      },
+      {
+        "template": "Strong; the elegant-red-on-strip-or-filet match that holds its register.",
+        "source": "Bone-In Filet|Château Haut Segottes"
+      },
+      {
+        "template": "Strong; the elegant-red-on-strip-or-filet pairing holds without overshooting.",
+        "source": "Bone-In Filet|Clos Petit Ona Grenache"
+      },
+      {
+        "template": "Strong; the server-confident elegant-red-on-strip-or-filet call.",
+        "source": "Bone-In Filet|Darioush Cabernet Franc"
+      },
+      {
+        "template": "Strong; reliable elegant-red-on-strip-or-filet recommendation.",
+        "source": "Bone-In Filet|Fento Ollo de Sapo Mencía"
+      },
+      {
+        "template": "Strong; capable elegant-red-on-strip-or-filet pour for guests who want a confident pairing.",
+        "source": "Bone-In Filet|Fisher Unity Pinot Noir"
+      },
+      {
+        "template": "Strong; the elegant-red-on-strip-or-filet call lands without effort.",
+        "source": "Bone-In Filet|Macauley Pinot Noir"
+      }
+    ],
+    "ELEGANT_RED|HEARTY_STARTER": [
+      {
+        "template": "Strong; the elegant-red-on-hearty-starter call lands without effort.",
+        "source": "Alexander Valley Homestead Red|Escargot"
+      },
+      {
+        "template": "Strong; the elegant-red-on-hearty-starter pairing servers pour without second-guessing.",
+        "source": "Alexander Valley Homestead Red|Prime Tartare"
+      },
+      {
+        "template": "Strong; the elegant-red-on-hearty-starter pairing holds without overshooting.",
+        "source": "Bone Marrow|Clos Petit Ona Grenache"
+      },
+      {
+        "template": "Strong; recommend with confidence — solid elegant-red-on-hearty-starter match.",
+        "source": "Bone Marrow|Fento Ollo de Sapo Mencía"
+      },
+      {
+        "template": "Strong; the elegant-red-on-hearty-starter match that holds its register.",
+        "source": "Bone Marrow|Lunaria Coste di Moro"
+      },
+      {
+        "template": "Strong; the server-confident elegant-red-on-hearty-starter call.",
+        "source": "Château de Rouillac|Escargot"
+      },
+      {
+        "template": "Strong; reliable elegant-red-on-hearty-starter recommendation.",
+        "source": "Château de Rouillac|Prime Tartare"
+      }
+    ],
+    "ELEGANT_RED|STEAK_BOLD": [
+      {
+        "template": "Strong; the elegant-red-on-bone-in-ribeye pairing servers pour without second-guessing.",
+        "source": "Alexander Valley Homestead Red|The Tomahawk"
+      },
+      {
+        "template": "Strong; recommend with confidence — solid elegant-red-on-bone-in-ribeye match.",
+        "source": "Braida Montebruna Barbera|Porterhouse"
+      },
+      {
+        "template": "Strong; the elegant-red-on-bone-in-ribeye call lands without effort.",
+        "source": "Château Haut Segottes|The Tomahawk"
+      },
+      {
+        "template": "Strong; the elegant-red-on-bone-in-ribeye pairing holds without overshooting.",
+        "source": "Château de Rouillac|The Tomahawk"
+      },
+      {
+        "template": "Strong; capable elegant-red-on-bone-in-ribeye pour for guests who want a confident pairing.",
+        "source": "Clos Petit Ona Grenache|The Tomahawk"
+      },
+      {
+        "template": "Strong; the elegant-red-on-strip-or-filet pairing servers pour without second-guessing.",
+        "source": "Daniel Chotard Sancerre Rouge|Kansas City"
+      },
+      {
+        "template": "Strong; the elegant-red-on-bone-in-ribeye match that holds its register.",
+        "source": "Elk Cove Five Mountain|Porterhouse"
       }
     ],
     "APERITIVO_BITTER|HEARTY_STARTER": [
@@ -9063,7 +9069,7 @@ const CORPUS_MINED = {
         "source": "Vegetable Curry with Chickpeas|WhistlePig 12 Year Old World"
       }
     ],
-    "ELEGANT_RED|LIGHT_SIDE": [
+    "BIG_RED|LIGHT_SIDE": [
       {
         "template": "Works; the Cab-on-light-side call lands as a measured alongside.",
         "source": "1881 Napa Valley|Asparagus"
@@ -9093,43 +9099,11 @@ const CORPUS_MINED = {
         "source": "Alexander Valley Cyrus|Seasonal Vegetables"
       },
       {
-        "template": "Works; the elegant-red-on-light-side pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Homestead Red|Asparagus"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call holds — neither soars nor fights.",
-        "source": "Alexander Valley Homestead Red|Broccolini"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call sits without pulling focus.",
-        "source": "Alexander Valley Homestead Red|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing reads as a quiet alongside.",
-        "source": "Alexander Valley Homestead Red|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-side match, not the recommendation.",
-        "source": "Alexander Valley Homestead Red|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
-        "source": "Asparagus|Clos Petit Ona Grenache"
-      },
-      {
         "template": "Works; the Cab-on-light-side call sits without pulling focus.",
         "source": "Asparagus|Domaine Tempier Bandol"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call lands as a measured alongside.",
-        "source": "Asparagus|Elk Cove Five Mountain"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Evening Land Seven Springs"
       }
     ],
-    "ELEGANT_RED|HEARTY_SOUP": [
+    "BIG_RED|HEARTY_SOUP": [
       {
         "template": "Works; the Cab-on-light-soup pairing reads as a quiet alongside.",
         "source": "1881 Napa Valley|Clam Chowder"
@@ -9167,36 +9141,8 @@ const CORPUS_MINED = {
         "source": "Alexander Valley Cyrus|Shrimp Bisque"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
-        "source": "Alexander Valley Homestead Red|Gumbo"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup call lands as a measured alongside.",
-        "source": "Alexander Valley Homestead Red|Loaded Potato"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup pairing holds at neutral.",
-        "source": "Alexander Valley Homestead Red|Mushroom Bisque"
-      },
-      {
-        "template": "Works; safe elegant-red-on-hearty-soup alongside, but not the headline call.",
-        "source": "Alexander Valley Homestead Red|Shrimp Bisque"
-      },
-      {
         "template": "Works; the Cab-on-hearty-soup call holds — neither soars nor fights.",
         "source": "Austin Hope Cabernet Sauvignon|Mushroom Bisque"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
-        "source": "Braida Montebruna Barbera|Clam Chowder"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Braida Montebruna Barbera|French Onion"
-      },
-      {
-        "template": "Works; capable elegant-red-on-hearty-soup match, not the recommendation.",
-        "source": "Braida Montebruna Barbera|Loaded Potato"
       },
       {
         "template": "Works; safe Cab-on-hearty-soup alongside, but not the headline call.",
@@ -9207,10 +9153,6 @@ const CORPUS_MINED = {
         "source": "Clam Chowder|Corazón del Sol Malbec"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Clam Chowder|Cristom Mt Jefferson Cuvée"
-      },
-      {
         "template": "Works; the Cab-on-light-soup pairing sits at neutral register without clash.",
         "source": "Clam Chowder|Epoch Ingenuity"
       },
@@ -9219,44 +9161,12 @@ const CORPUS_MINED = {
         "source": "Clam Chowder|Fattoria Le Pupille Saffredi"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
-        "source": "Clam Chowder|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
-        "source": "Clam Chowder|Fisher Unity Pinot Noir"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Jax Calesa Vineyard Pinot Noir"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Clam Chowder|Macauley Pinot Noir"
-      },
-      {
         "template": "Works; the Cab-on-light-soup call lands as a measured alongside.",
         "source": "Clam Chowder|Venge Family Reserve"
       },
       {
-        "template": "Works; the elegant-red-on-hearty-soup call sits without pulling focus.",
-        "source": "Clos Petit Ona Grenache|French Onion"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Clos Petit Ona Grenache|Loaded Potato"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Darioush Cabernet Franc|French Onion"
-      },
-      {
         "template": "Works; the Cab-on-light-soup pairing holds at neutral.",
         "source": "Domaine Tempier Bandol|Gumbo"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
-        "source": "Fisher Unity Pinot Noir|Gumbo"
       },
       {
         "template": "Works; the digestif-on-hearty-soup pairing reads as a quiet alongside.",
@@ -9271,7 +9181,7 @@ const CORPUS_MINED = {
         "source": "G.D. Vajra Albe Nebbiolo|Shrimp Bisque"
       }
     ],
-    "ELEGANT_RED|LIGHT_SOUP": [
+    "BIG_RED|LIGHT_SOUP": [
       {
         "template": "Works; the Cab-on-light-soup call sits without pulling focus.",
         "source": "1881 Napa Valley|Creamy Potato"
@@ -9293,22 +9203,6 @@ const CORPUS_MINED = {
         "source": "Alexander Valley Cyrus|Seasonal Soup"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Homestead Red|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Alexander Valley Homestead Red|Butternut Squash"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
-        "source": "Alexander Valley Homestead Red|Creamy Potato"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
-        "source": "Alexander Valley Homestead Red|Roasted Red Pepper Chickpea"
-      },
-      {
         "template": "Works; safe Cab-on-light-soup alongside, but not the headline call.",
         "source": "Bodega Noemia A Lisa|Roasted Red Pepper Chickpea"
       },
@@ -9317,62 +9211,14 @@ const CORPUS_MINED = {
         "source": "Bodega Noemia A Lisa|Tomato Basil"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
-        "source": "Braida Montebruna Barbera|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
-        "source": "Braida Montebruna Barbera|Butternut Squash"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
-        "source": "Broccoli Cheddar|Cristom Mt Jefferson Cuvée"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Evening Land Seven Springs"
-      },
-      {
         "template": "Works; the Cab-on-light-soup pairing sits at neutral register without clash.",
         "source": "Creamy Potato|Simon Family Estate Reserve"
       }
     ],
-    "ELEGANT_RED|CREAMY_SIDE": [
+    "BIG_RED|CREAMY_SIDE": [
       {
         "template": "Works; safe Cab-on-rich-side alongside, but not the headline call.",
         "source": "1881 Napa Valley|Lobster Mac"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Homestead Red|Lobster Mac"
-      },
-      {
-        "template": "Works; safe elegant-red-on-rich-side alongside, but not the headline call.",
-        "source": "Au Gratin Potatoes|Clos Petit Ona Grenache"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|Cristom Mt Jefferson Cuvée"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Elk Cove Five Mountain"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Evening Land Seven Springs"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|J Davies Ferrington Vineyards"
-      },
-      {
-        "template": "Works; capable elegant-red-on-rich-side match, not the recommendation.",
-        "source": "Au Gratin Potatoes|RAEN Royal St Robert"
       },
       {
         "template": "Works; the Cab-on-rich-side call lands as a measured alongside.",
@@ -9391,30 +9237,6 @@ const CORPUS_MINED = {
         "source": "Château Beaucastel|Lobster Mac"
       },
       {
-        "template": "Works; capable elegant-red-on-light-side match, not the recommendation.",
-        "source": "Clos Petit Ona Grenache|Creamed Spinach"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
-        "source": "Creamed Spinach|Daniel Chotard Sancerre Rouge"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call sits without pulling focus.",
-        "source": "Creamed Spinach|Domaine Serene Grand Cheval"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing reads as a quiet alongside.",
-        "source": "Creamed Spinach|Elk Cove Five Mountain"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call holds — neither soars nor fights.",
-        "source": "Creamed Spinach|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing sits at neutral register without clash.",
-        "source": "Creamed Spinach|Marimar Estate Christina"
-      },
-      {
         "template": "Works; the Cab-on-rich-side pairing holds at neutral.",
         "source": "Epoch Ingenuity|Lobster Mac"
       },
@@ -9427,7 +9249,7 @@ const CORPUS_MINED = {
         "source": "Lobster Mac|Macauley Petite Syrah"
       }
     ],
-    "ELEGANT_RED|CHICKEN_MAIN": [
+    "BIG_RED|CHICKEN_MAIN": [
       {
         "template": "Works; the Cab-on-chicken-main pairing reads as a quiet alongside.",
         "source": "1881 Napa Valley|Roast Half Chicken"
@@ -9449,70 +9271,38 @@ const CORPUS_MINED = {
         "source": "Château Gombaude-Guillot|Roast Half Chicken"
       },
       {
-        "template": "Works; the elegant-red-on-chicken-main call lands as a measured alongside.",
-        "source": "Château de Rouillac|Roast Half Chicken"
-      },
-      {
         "template": "Works; the Cab-on-chicken-main call holds — neither soars nor fights.",
         "source": "Darioush Cabernet Sauvignon|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe elegant-red-on-chicken-main alongside, but not the headline call.",
-        "source": "Le Volte dell'Ornellaia|Roast Half Chicken"
       },
       {
         "template": "Works; capable Cab-on-chicken-main match, not the recommendation.",
         "source": "Les Pallières Raciné|Roast Half Chicken"
       }
     ],
-    "ELEGANT_RED|VEG_MAIN": [
+    "BIG_RED|VEG_MAIN": [
       {
         "template": "Works; the Cab-on-light-soup pairing reads as a quiet alongside.",
         "source": "1881 Napa Valley|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
-        "source": "Alexander Valley Homestead Red|Vegetable Curry with Chickpeas"
       },
       {
         "template": "Works; the Cab-on-light-soup pairing holds at neutral.",
         "source": "Bodega Noemia A Lisa|Vegetable Curry with Chickpeas"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
-        "source": "Clos Petit Ona Grenache|Vegetable Curry with Chickpeas"
-      },
-      {
         "template": "Works; safe Cab-on-light-soup alongside, but not the headline call.",
         "source": "Corazón del Sol Malbec|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Daniel Chotard Sancerre Rouge|Vegetable Curry with Chickpeas"
       },
       {
         "template": "Works; capable Cab-on-light-soup match, not the recommendation.",
         "source": "Domaine du Grand Tinel|Vegetable Curry with Chickpeas"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
-        "source": "Elk Cove Five Mountain|Vegetable Curry with Chickpeas"
-      },
-      {
         "template": "Works; the Cab-on-light-soup call lands as a measured alongside.",
         "source": "Fattoria Le Pupille Saffredi|Vegetable Curry with Chickpeas"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Fisher Unity Pinot Noir|Vegetable Curry with Chickpeas"
-      },
-      {
         "template": "Works; the Cab-on-light-soup call sits without pulling focus.",
         "source": "Freemark Abbey Bosché|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
-        "source": "Kermit Lynch Côtes du Rhône|Vegetable Curry with Chickpeas"
       },
       {
         "template": "Works; the Cab-on-light-soup pairing sits at neutral register without clash.",
@@ -9521,14 +9311,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; the Cab-on-light-soup call holds — neither soars nor fights.",
         "source": "Lail Vineyards Daniel Cuvée|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
-        "source": "Marimar Estate Christina|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
-        "source": "RAEN Royal St Robert|Vegetable Curry with Chickpeas"
       }
     ],
     "GIN|LIGHT_SIDE": [
@@ -11951,6 +11733,232 @@ const CORPUS_MINED = {
       {
         "template": "Works; the white-on-light-soup pairing holds at neutral.",
         "source": "St Supéry Sauvignon Blanc|Vegetable Curry with Chickpeas"
+      }
+    ],
+    "ELEGANT_RED|LIGHT_SIDE": [
+      {
+        "template": "Works; the elegant-red-on-light-side pairing sits at neutral register without clash.",
+        "source": "Alexander Valley Homestead Red|Asparagus"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side call holds — neither soars nor fights.",
+        "source": "Alexander Valley Homestead Red|Broccolini"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side call sits without pulling focus.",
+        "source": "Alexander Valley Homestead Red|Honey Roasted Carrots"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side pairing reads as a quiet alongside.",
+        "source": "Alexander Valley Homestead Red|Sauteed Garlic Spinach"
+      },
+      {
+        "template": "Works; capable elegant-red-on-light-side match, not the recommendation.",
+        "source": "Alexander Valley Homestead Red|Seasonal Vegetables"
+      },
+      {
+        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
+        "source": "Asparagus|Clos Petit Ona Grenache"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side call lands as a measured alongside.",
+        "source": "Asparagus|Elk Cove Five Mountain"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side pairing holds at neutral.",
+        "source": "Asparagus|Evening Land Seven Springs"
+      }
+    ],
+    "ELEGANT_RED|LIGHT_SOUP": [
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
+        "source": "Alexander Valley Homestead Red|Broccoli Cheddar"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
+        "source": "Alexander Valley Homestead Red|Butternut Squash"
+      },
+      {
+        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
+        "source": "Alexander Valley Homestead Red|Creamy Potato"
+      },
+      {
+        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
+        "source": "Alexander Valley Homestead Red|Roasted Red Pepper Chickpea"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
+        "source": "Braida Montebruna Barbera|Broccoli Cheddar"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
+        "source": "Braida Montebruna Barbera|Butternut Squash"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
+        "source": "Broccoli Cheddar|Cristom Mt Jefferson Cuvée"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
+        "source": "Broccoli Cheddar|Evening Land Seven Springs"
+      }
+    ],
+    "ELEGANT_RED|HEARTY_SOUP": [
+      {
+        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
+        "source": "Alexander Valley Homestead Red|Gumbo"
+      },
+      {
+        "template": "Works; the elegant-red-on-hearty-soup call lands as a measured alongside.",
+        "source": "Alexander Valley Homestead Red|Loaded Potato"
+      },
+      {
+        "template": "Works; the elegant-red-on-hearty-soup pairing holds at neutral.",
+        "source": "Alexander Valley Homestead Red|Mushroom Bisque"
+      },
+      {
+        "template": "Works; safe elegant-red-on-hearty-soup alongside, but not the headline call.",
+        "source": "Alexander Valley Homestead Red|Shrimp Bisque"
+      },
+      {
+        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
+        "source": "Braida Montebruna Barbera|Clam Chowder"
+      },
+      {
+        "template": "Works; the elegant-red-on-hearty-soup pairing reads as a quiet alongside.",
+        "source": "Braida Montebruna Barbera|French Onion"
+      },
+      {
+        "template": "Works; capable elegant-red-on-hearty-soup match, not the recommendation.",
+        "source": "Braida Montebruna Barbera|Loaded Potato"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
+        "source": "Clam Chowder|Cristom Mt Jefferson Cuvée"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
+        "source": "Clam Chowder|Fento Ollo de Sapo Mencía"
+      },
+      {
+        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
+        "source": "Clam Chowder|Fisher Unity Pinot Noir"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
+        "source": "Clam Chowder|Jax Calesa Vineyard Pinot Noir"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
+        "source": "Clam Chowder|Macauley Pinot Noir"
+      },
+      {
+        "template": "Works; the elegant-red-on-hearty-soup call sits without pulling focus.",
+        "source": "Clos Petit Ona Grenache|French Onion"
+      },
+      {
+        "template": "Works; the elegant-red-on-hearty-soup pairing sits at neutral register without clash.",
+        "source": "Clos Petit Ona Grenache|Loaded Potato"
+      },
+      {
+        "template": "Works; the elegant-red-on-hearty-soup call holds — neither soars nor fights.",
+        "source": "Darioush Cabernet Franc|French Onion"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
+        "source": "Fisher Unity Pinot Noir|Gumbo"
+      }
+    ],
+    "ELEGANT_RED|CREAMY_SIDE": [
+      {
+        "template": "Works; the elegant-red-on-rich-side pairing sits at neutral register without clash.",
+        "source": "Alexander Valley Homestead Red|Lobster Mac"
+      },
+      {
+        "template": "Works; safe elegant-red-on-rich-side alongside, but not the headline call.",
+        "source": "Au Gratin Potatoes|Clos Petit Ona Grenache"
+      },
+      {
+        "template": "Works; the elegant-red-on-rich-side pairing reads as a quiet alongside.",
+        "source": "Au Gratin Potatoes|Cristom Mt Jefferson Cuvée"
+      },
+      {
+        "template": "Works; the elegant-red-on-rich-side call holds — neither soars nor fights.",
+        "source": "Au Gratin Potatoes|Elk Cove Five Mountain"
+      },
+      {
+        "template": "Works; the elegant-red-on-rich-side pairing holds at neutral.",
+        "source": "Au Gratin Potatoes|Evening Land Seven Springs"
+      },
+      {
+        "template": "Works; the elegant-red-on-rich-side call lands as a measured alongside.",
+        "source": "Au Gratin Potatoes|Fento Ollo de Sapo Mencía"
+      },
+      {
+        "template": "Works; the elegant-red-on-rich-side call sits without pulling focus.",
+        "source": "Au Gratin Potatoes|J Davies Ferrington Vineyards"
+      },
+      {
+        "template": "Works; capable elegant-red-on-rich-side match, not the recommendation.",
+        "source": "Au Gratin Potatoes|RAEN Royal St Robert"
+      },
+      {
+        "template": "Works; capable elegant-red-on-light-side match, not the recommendation.",
+        "source": "Clos Petit Ona Grenache|Creamed Spinach"
+      },
+      {
+        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
+        "source": "Creamed Spinach|Daniel Chotard Sancerre Rouge"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side call sits without pulling focus.",
+        "source": "Creamed Spinach|Domaine Serene Grand Cheval"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side pairing reads as a quiet alongside.",
+        "source": "Creamed Spinach|Elk Cove Five Mountain"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side call holds — neither soars nor fights.",
+        "source": "Creamed Spinach|Fento Ollo de Sapo Mencía"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-side pairing sits at neutral register without clash.",
+        "source": "Creamed Spinach|Marimar Estate Christina"
+      }
+    ],
+    "ELEGANT_RED|VEG_MAIN": [
+      {
+        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
+        "source": "Alexander Valley Homestead Red|Vegetable Curry with Chickpeas"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
+        "source": "Clos Petit Ona Grenache|Vegetable Curry with Chickpeas"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
+        "source": "Daniel Chotard Sancerre Rouge|Vegetable Curry with Chickpeas"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
+        "source": "Elk Cove Five Mountain|Vegetable Curry with Chickpeas"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
+        "source": "Fisher Unity Pinot Noir|Vegetable Curry with Chickpeas"
+      },
+      {
+        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
+        "source": "Kermit Lynch Côtes du Rhône|Vegetable Curry with Chickpeas"
+      },
+      {
+        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
+        "source": "Marimar Estate Christina|Vegetable Curry with Chickpeas"
+      },
+      {
+        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
+        "source": "RAEN Royal St Robert|Vegetable Curry with Chickpeas"
       }
     ],
     "APERITIVO_BITTER|DESSERT_LIGHT": [
@@ -15017,7 +15025,7 @@ const CORPUS_MINED = {
         "source": "Los Vecinos Mezcal|Roast Half Chicken"
       }
     ],
-    "ELEGANT_RED|SALAD": [
+    "BIG_RED|SALAD": [
       {
         "template": "Works; safe Cab-on-salad alongside, but not the headline call.",
         "source": "Caymus Cabernet Sauvignon|House Wedge"
@@ -15287,6 +15295,16 @@ const CORPUS_MINED = {
       {
         "template": "Works; the cognac-on-chicken-main call sits without pulling focus.",
         "source": "Remy VSOP Cognac|Roast Half Chicken"
+      }
+    ],
+    "ELEGANT_RED|CHICKEN_MAIN": [
+      {
+        "template": "Works; the elegant-red-on-chicken-main call lands as a measured alongside.",
+        "source": "Château de Rouillac|Roast Half Chicken"
+      },
+      {
+        "template": "Works; safe elegant-red-on-chicken-main alongside, but not the headline call.",
+        "source": "Le Volte dell'Ornellaia|Roast Half Chicken"
       }
     ],
     "APERITIVO_BITTER|HEARTY_SOUP": [
@@ -16195,12 +16213,20 @@ const CORPUS_MINED = {
         "source": "1792 Sweet Wheat|Filet Mignon"
       },
       {
+        "template": "Bardstown Château Laboude's French-wine character frames tenderloin with contemporary-craft wine-finish distinction.",
+        "source": "Bardstown Château Laboude|Filet Mignon"
+      },
+      {
         "template": "More refined than standard Basil Hayden's; the aged high-rye pour for filet.",
         "source": "Basil Hayden's 10 Year|Filet Mignon"
       },
       {
         "template": "A distinctive, unexpected filet pour.",
         "source": "Basil Hayden's Malted Rye|Filet Mignon"
+      },
+      {
+        "template": "BH Red Wine Cask's rye-forward + red-wine-fruit frames tenderloin with distinctive wine-finish character.",
+        "source": "Basil Hayden's Red Wine Cask|Filet Mignon"
       },
       {
         "template": "A light filet pour with signature character.",
@@ -16213,6 +16239,34 @@ const CORPUS_MINED = {
       {
         "template": "A storytelling pour for the filet.",
         "source": "Blade & Bow|Filet Mignon"
+      },
+      {
+        "template": "IW Harper 15's cherry-oak character frames the cut at aged-KY-heritage register.",
+        "source": "Bone-In Filet|I.W. Harper 15 Year"
+      },
+      {
+        "template": "Michter's 10's single-barrel depth frames the cut at allocated-prestigious register.",
+        "source": "Bone-In Filet|Michter's 10 Year Bourbon"
+      },
+      {
+        "template": "Mister Sam's blended-heritage character frames the cut at Seagram's-tribute register.",
+        "source": "Bone-In Filet|Mister Sam Tribute Whiskey"
+      },
+      {
+        "template": "OGD 16's rye-forward aged character frames the cut with distinctive spice at aged-Beam register.",
+        "source": "Bone-In Filet|Old Grand-Dad 16 Year"
+      },
+      {
+        "template": "Remus 15's aged rye-spice frames the cut at Gatsby-tribute register.",
+        "source": "Bone-In Filet|Remus 15 Year Gatsby Reserve"
+      },
+      {
+        "template": "TSM Chardonnay Cask's white-wine-finish crisp-apple character frames the cut distinctively.",
+        "source": "Bone-In Filet|Thomas S. Moore Chardonnay Cask"
+      },
+      {
+        "template": "Excellent on bone-in filet; wheated softness frames the marrow-adjacent cut at luxury register — save the bottle for guests who know the family.",
+        "source": "Bone-In Filet|Weller Millennium"
       },
       {
         "template": "A non-Kentucky small-batch voice for the filet.",
@@ -16259,6 +16313,14 @@ const CORPUS_MINED = {
         "source": "Filet Mignon|Heaven's Door 10 Year"
       },
       {
+        "template": "IW Harper 15's cherry-oak 15yr character frames tenderloin with distinctive aged-KY-heritage gravitas — a BT-distilled bourbon wearing a historic Kentucky name.",
+        "source": "Filet Mignon|I.W. Harper 15 Year"
+      },
+      {
+        "template": "Isaac Bowman's port-finish character frames tenderloin with Virginia-heritage distinction.",
+        "source": "Filet Mignon|Isaac Bowman Port Finish"
+      },
+      {
         "template": "A refined everyday-premium call for filet.",
         "source": "Filet Mignon|Jefferson's Reserve"
       },
@@ -16287,6 +16349,10 @@ const CORPUS_MINED = {
         "source": "Filet Mignon|Michter's 10 Year Bourbon"
       },
       {
+        "template": "Mister Sam's blended-Seagram's-era character frames tenderloin with collector-register Seagram's nostalgia — where Beam family brings Beam aged, Mister Sam brings Seagram's heritage preserved in blend form.",
+        "source": "Filet Mignon|Mister Sam Tribute Whiskey"
+      },
+      {
         "template": "The Yorkshire cask influence gives the filet a singular character; a conversation pour with real substance behind the story.",
         "source": "Filet Mignon|Never Say Die Rye"
       },
@@ -16299,6 +16365,10 @@ const CORPUS_MINED = {
         "source": "Filet Mignon|Old Emmer"
       },
       {
+        "template": "OGD 16's aged rye-forward spice is the distinctive aged-bourbon-filet pairing — where HH-family brings dried-fruit-aged character, OGD brings aged-rye-spice distinction.",
+        "source": "Filet Mignon|Old Grand-Dad 16 Year"
+      },
+      {
         "template": "The high proof gives the filet bold rye grip distinct from 90-proof benchmarks; for guests who want high-impact rye.",
         "source": "Filet Mignon|Pikesville Rye"
       },
@@ -16309,6 +16379,10 @@ const CORPUS_MINED = {
       {
         "template": "A non-wheated premium alternate for filet.",
         "source": "Filet Mignon|Russell's Reserve 10 Year"
+      },
+      {
+        "template": "TSM Chardonnay Cask's white-wine-finish character is the distinctive-white-wine-finished-bourbon-filet pairing — where every other wine-finish in this cluster brings red/port jammy-fruit, TSM brings chardonnay's crisp-apple-butter notes for a completely different wine-bourbon story.",
+        "source": "Filet Mignon|Thomas S. Moore Chardonnay Cask"
       },
       {
         "template": "The Vermont-brand approach gives the filet a Canadian-rye-sourced character distinct from Kentucky rye profiles.",
@@ -16341,8 +16415,16 @@ const CORPUS_MINED = {
         "source": "A Midnight's Winter Dram|Kansas City"
       },
       {
+        "template": "AE CS is the featured wine-finished-ribeye pairing — cask-strength port-finish is built for cap-fat intensity.",
+        "source": "Angel's Envy Cask Strength|Cowboy Ribeye"
+      },
+      {
         "template": "The higher proof and bold high-rye character earn the ribeye with Beam small-batch authority.",
         "source": "Baker's|Cowboy Ribeye"
+      },
+      {
+        "template": "Balvenie 16 handles the ribeye with single-barrel vanilla depth; Fiddich 18's Oloroso is better for heaviest cuts.",
+        "source": "Balvenie 16 Single Barrel|Cowboy Ribeye"
       },
       {
         "template": "The multi-distillery complexity gives the ribeye layered craft-blender depth.",
@@ -16397,6 +16479,10 @@ const CORPUS_MINED = {
         "source": "Blanton's Original|Cowboy Ribeye"
       },
       {
+        "template": "Blanton's SfB's distinctive Blanton's-character-at-full-proof is the featured conversation-piece barrel-proof-ribeye pairing — where the Staggs are BT-traditional, SfB is Blanton's-distinctive with the collector stopper.",
+        "source": "Blanton's Straight from the Barrel|Cowboy Ribeye"
+      },
+      {
         "template": "The milestone-release character gives the ribeye collector-level annual-Pact depth.",
         "source": "Blood Oath Pact 10|Cowboy Ribeye"
       },
@@ -16441,8 +16527,28 @@ const CORPUS_MINED = {
         "source": "Bulleit Bourbon|Kansas City"
       },
       {
+        "template": "CC 43 Year's aged depth handles the ribeye at collector register — where Crown Royal and CC feel underspecified, the 43 gives the cut proper weight.",
+        "source": "Canadian Club 43 Year|Cowboy Ribeye"
+      },
+      {
+        "template": "Canadian Club's heritage character handles strip marbling at traditional register.",
+        "source": "Canadian Club|Kansas City"
+      },
+      {
+        "template": "Caribou Crossing's hand-selected single-barrel character handles strip marbling at craft register.",
+        "source": "Caribou Crossing|Kansas City"
+      },
+      {
         "template": "90-proof wheated with caramel and vanilla; distinct from Jim Beam Black's non-wheated take on this cut.",
         "source": "Clermont Steep|Kansas City"
+      },
+      {
+        "template": "Dalmore's sherry-finish luxury handles the ribeye; Dalmore-family or Oban 18 reach higher registers.",
+        "source": "Cowboy Ribeye|Dalmore 12"
+      },
+      {
+        "template": "Dewar's 15's aged sherry-finish frames the ribeye at premium-blend register.",
+        "source": "Cowboy Ribeye|Dewar's 15"
       },
       {
         "template": "EHT Full Proof's BiB 100-proof character is the historic-Kentucky-tribute-ribeye pairing — less intensity than 130-proof Staggs, more traditional Kentucky register.",
@@ -16455,6 +16561,10 @@ const CORPUS_MINED = {
       {
         "template": "A premium non-wheated choice; more structure than the Wellers here.",
         "source": "Cowboy Ribeye|Eagle Rare 10 Year"
+      },
+      {
+        "template": "EC 18 frames the ribeye at aged-HH register.",
+        "source": "Cowboy Ribeye|Elijah Craig 18 Year"
       },
       {
         "template": "The concentrated 94-proof single-barrel profile earns the ribeye with Heaven Hill's oak-forward character.",
@@ -16473,8 +16583,44 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|George T. Stagg"
       },
       {
+        "template": "Glenglassaugh 12's fresh-fruit character frames the ribeye at distinctive coastal-Highland register.",
+        "source": "Cowboy Ribeye|Glenglassaugh 12"
+      },
+      {
+        "template": "HH 20's aged depth frames the ribeye at collector register.",
+        "source": "Cowboy Ribeye|Heaven Hill 20 Year"
+      },
+      {
         "template": "The 10-year bonded depth handles the ribeye with authority; the premium HH BIB for this cut.",
         "source": "Cowboy Ribeye|Henry McKenna 10 Year Bottled in Bond"
+      },
+      {
+        "template": "Ironfish Mezcal's smoky-agave character frames cap-fat with distinctive Michigan-farm-to-bottle + mezcal-cask resonance.",
+        "source": "Cowboy Ribeye|Ironfish Bourbon in Mezcal Casks"
+      },
+      {
+        "template": "JD 12's aged depth handles the ribeye at premium register; JD Bonded's 100-proof is tied here with more backbone approach.",
+        "source": "Cowboy Ribeye|Jack Daniel's 12 Year"
+      },
+      {
+        "template": "Sinatra Select's extra-oak grooved-barrel character is the featured JD-ribeye pairing — the unique barrel treatment gives it backbone for cap-fat the entry JDs can't match.",
+        "source": "Cowboy Ribeye|Jack Daniel's Sinatra Select"
+      },
+      {
+        "template": "Marian McLain L.E.'s premium ocean-finish frames cap-fat at collector register.",
+        "source": "Cowboy Ribeye|Jefferson's Ocean Marian McLain L.E."
+      },
+      {
+        "template": "Voyage 23's ocean-motion + salt character frames cap-fat with distinctive ocean-finish register.",
+        "source": "Cowboy Ribeye|Jefferson's Ocean Voyage 23"
+      },
+      {
+        "template": "JW Black's aged balanced-smoke handles the ribeye at premium-blend register — the 12-year depth gives it more dimension than JW Red for heavier cuts.",
+        "source": "Cowboy Ribeye|Johnnie Walker Black"
+      },
+      {
+        "template": "JW Blue handles the ribeye with collector-register silkiness, though the bottle is better spent on the filet (the refined cut that matches Blue's silky-smooth character).",
+        "source": "Cowboy Ribeye|Johnnie Walker Blue"
       },
       {
         "template": "The premium KY rye character handles the ribeye with allocated authority at the collector tier.",
@@ -16485,16 +16631,44 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Kentucky Owl Confiscated"
       },
       {
+        "template": "Excellent on Cowboy Ribeye; the sherry-cask depth meets fatty bone-in cap-fat at ceremonial register — save the bottle for the guest who appreciates Irish at allocation level.",
+        "source": "Cowboy Ribeye|Kentucky Owl St. Patrick's"
+      },
+      {
         "template": "The 12 years of aging and 100-proof weight earn the ribeye with Beam's signature nutty-oak character at premium depth.",
         "source": "Cowboy Ribeye|Knob Creek 12 Year"
+      },
+      {
+        "template": "KC 15 frames the ribeye at aged-Beam register.",
+        "source": "Cowboy Ribeye|Knob Creek 15 Year"
+      },
+      {
+        "template": "KC 18's aged depth frames the ribeye at collector register.",
+        "source": "Cowboy Ribeye|Knob Creek 18 Year"
+      },
+      {
+        "template": "Little Book's chapter-series craft is the featured conversation-piece barrel-proof-ribeye pairing — every pour is a story about which chapter you're serving.",
+        "source": "Cowboy Ribeye|Little Book"
+      },
+      {
+        "template": "Loch Lomond 20's aged depth frames the ribeye at collector register; Oban 18's maritime + sherry-finish is the featured Highland-ribeye match.",
+        "source": "Cowboy Ribeye|Loch Lomond 20 Year"
       },
       {
         "template": "The boutique-blend character handles the ribeye at premium-sourced register.",
         "source": "Cowboy Ribeye|Lock Stock & Barrel Rye"
       },
       {
+        "template": "Macallan 12 frames the ribeye with sherried depth; Macallan 18 or Balvenie 21 Portwood are the featured ribeye pairings.",
+        "source": "Cowboy Ribeye|Macallan 12 Sherry"
+      },
+      {
         "template": "Gold standard; this is the bourbon-on-bone-in-ribeye pour the table writes home about.",
         "source": "Cowboy Ribeye|Macallan 18"
+      },
+      {
+        "template": "Macallan Estate's distinctive cask character frames the ribeye; Macallan 18 and Balvenie 21 Portwood are the featured sherried-ribeye matches.",
+        "source": "Cowboy Ribeye|Macallan Estate"
       },
       {
         "template": "Capable but not marquee; reach for Maker's Mark Cellar Aged or Weller 12 for true ribeye alignment.",
@@ -16509,6 +16683,14 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Michter's 10 Year Rye"
       },
       {
+        "template": "NH Beer Barrel's hop-influenced character frames cap-fat with Michigan-hometown-brewer-heritage distinction.",
+        "source": "Cowboy Ribeye|New Holland Beer Barrel Bourbon"
+      },
+      {
+        "template": "Old Elk Cigar Cut's cigar-companion character frames cap-fat with distinctive purpose-built register.",
+        "source": "Cowboy Ribeye|Old Elk Cigar Cut"
+      },
+      {
         "template": "The 9-year's depth handles the cut with more grace than Old Fitz 7; the mature wheated-BIB for the biggest cuts.",
         "source": "Cowboy Ribeye|Old Fitzgerald 9 Year"
       },
@@ -16521,12 +16703,24 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Parker's Heritage Collection 16th Edition"
       },
       {
+        "template": "single-pot-still Irish character frames cap fat at Redbreast's flagship register — Irish-pot-still depth on the most forgiving steak cut.",
+        "source": "Cowboy Ribeye|Redbreast 12 Year"
+      },
+      {
         "template": "The boutique-label aged character handles the ribeye at premium-sourced register.",
         "source": "Cowboy Ribeye|Rishi's Old Antique"
       },
       {
         "template": "Taylor Rye bring more grip for the ribeye's scale.",
         "source": "Cowboy Ribeye|Sazerac Rye"
+      },
+      {
+        "template": "Fortuna's NZ terroir frames the ribeye at distinctive register.",
+        "source": "Cowboy Ribeye|Scapegrace Fortuna"
+      },
+      {
+        "template": "Stagg Jr.'s cask-strength handles 22oz cap-fat with BT premium-barrel-proof character — the way to get GTS-adjacent intensity without holy-grail allocation.",
+        "source": "Cowboy Ribeye|Stagg Jr. Batch #15"
       },
       {
         "template": "The uncut unfiltered Sazerac intensity handles the ribeye with BT-allocated authority; an annual-release marquee pour.",
@@ -16549,8 +16743,20 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|WhistlePig Boss Hog IX 17 Year"
       },
       {
+        "template": "Woodford's elegance is slightly underserved by the ribeye's scale — BT or Weller 12 are firmer calls for max-impact cuts.",
+        "source": "Cowboy Ribeye|Woodford Reserve"
+      },
+      {
         "template": "Taylor Rye bring more grip.",
         "source": "Cowboy Ribeye|Woodford Reserve Rye"
+      },
+      {
+        "template": "Crown Royal's vanilla-honey-fruit character handles strip marbling at crowd-pleasing Canadian register.",
+        "source": "Crown Royal|Kansas City"
+      },
+      {
+        "template": "Dewar's White is the democratic blended-Scotch-KC pairing — honey-vanilla handles strip marbling at entry register, where Monkey Shoulder goes Speyside-malt-fruit and JW Red goes smoky-bold.",
+        "source": "Dewar's White Label|Kansas City"
       },
       {
         "template": "Distinct from Kentucky ryes (Sazerac, Michter's, HH ryes) by craft-blender approach; a boutique-craft rye for strip orders.",
@@ -16577,6 +16783,10 @@ const CORPUS_MINED = {
         "source": "Fox & Oden|Kansas City"
       },
       {
+        "template": "Garavogue handles the strip with craft-Irish character at distinctive register.",
+        "source": "Garavogue Irish Whiskey|Kansas City"
+      },
+      {
         "template": "Gold standard; the bourbon-on-bone-in-ribeye match that closes the table.",
         "source": "George T. Stagg|The Tomahawk"
       },
@@ -16601,8 +16811,16 @@ const CORPUS_MINED = {
         "source": "Jack Daniel's Old No. 7|Kansas City"
       },
       {
+        "template": "Jameson handles the strip at crowd-pleasing register — lighter than Scotch but with enough sherry+bourbon-cask depth for marbling.",
+        "source": "Jameson Irish Whiskey|Kansas City"
+      },
+      {
         "template": "brings the sea-aged character of Voyage 23 at limited-edition register — collector-grade ocean-finish + strip marbling.",
         "source": "Jefferson's Ocean Marian McLain L.E.|Kansas City"
+      },
+      {
+        "template": "Jefferson's Ocean Voyage 23's sea-aged character is the featured ocean-finish-bourbon-KC pairing — the ocean-motion + salt character cuts strip marbling with a distinctive story no other bourbon on the menu can tell.",
+        "source": "Jefferson's Ocean Voyage 23|Kansas City"
       },
       {
         "template": "The complex oak gives the cut more dimension than standard Jefferson's; a premium strip pour.",
@@ -16615,6 +16833,10 @@ const CORPUS_MINED = {
       {
         "template": "Distinct from White Label (too light for the strip); the aged Beam for everyday strip orders.",
         "source": "Jim Beam Black Label|Kansas City"
+      },
+      {
+        "template": "JW Red's bold-smoke character is the distinctive blended-Scotch-KC pairing — the Islay-malt peat influence handles strip marbling with smoke + intensity Dewar's honey-vanilla can't match.",
+        "source": "Johnnie Walker Red|Kansas City"
       },
       {
         "template": "Distinct from KO 10 Year Rye by being a bourbon and more available.",
@@ -16641,12 +16863,28 @@ const CORPUS_MINED = {
         "source": "Kansas City|Michter's US*1 Rye"
       },
       {
+        "template": "Monkey Shoulder handles the strip with Speyside-malt fruit-and-vanilla character; JW Red's bold-smoke is still the featured blended-Scotch-KC pairing.",
+        "source": "Kansas City|Monkey Shoulder"
+      },
+      {
         "template": "The story is the draw; Yorkshire cask influence gives the strip a genuinely unique frame no other rye on the list brings.",
         "source": "Kansas City|Never Say Die Rye"
       },
       {
         "template": "The Yorkshire maturation gives the pour distinctive cask influence; a novelty strip pour.",
         "source": "Kansas City|Never Say Die Small Batch"
+      },
+      {
+        "template": "NH Beer Barrel's hop-influenced beer-barrel finish is the featured Michigan-hometown-exotic-finish-KC pairing — beer-barrel character cuts strip marbling with distinctive brewer-heritage register.",
+        "source": "Kansas City|New Holland Beer Barrel Bourbon"
+      },
+      {
+        "template": "Old Elk Cigar Cut's cigar-designed character is the featured distinctive-finish-bourbon-KC pairing — purpose-built to accompany rich flavors, which makes strip marbling its native territory.",
+        "source": "Kansas City|Old Elk Cigar Cut"
+      },
+      {
+        "template": "Old Emmer's emmer-wheat-derived softness is the distinctive wheated-bourbon-KC pairing — where Weller and Maker's use modern soft red winter wheat, Old Emmer uses the ancient-grain variant for distinctive craft character.",
+        "source": "Kansas City|Old Emmer"
       },
       {
         "template": "The bonded weight from Heaven Hill's wheated heritage carries the cut cleanly; distinct from Heaven Hill BIB (non-wheated) — honey-softer, still 100-proof.",
@@ -16663,6 +16901,10 @@ const CORPUS_MINED = {
       {
         "template": "The age gives the pour enough oak depth to carry the char cleanly; distinct from Eagle Rare 10's Buffalo Trace-style elegance — more classic Kentucky vocabulary.",
         "source": "Kansas City|Russell's Reserve 10 Year"
+      },
+      {
+        "template": "Tullamore's drier heritage handles the strip — slightly more structural than Jameson's smoother approach.",
+        "source": "Kansas City|Tullamore D.E.W."
       },
       {
         "template": "The bolder wheated call for strip orders.",
@@ -16697,6 +16939,10 @@ const CORPUS_MINED = {
         "source": "Kentucky Owl 10 Year Rye|The Tomahawk"
       },
       {
+        "template": "Little Book's cask-strength blended character handles Tomahawk intensity with Fred-Noe-artistic-blend distinction.",
+        "source": "Little Book|The Tomahawk"
+      },
+      {
         "template": "The Tomahawk gets a premium-blended rye frame.",
         "source": "Lock Stock & Barrel Rye|The Tomahawk"
       },
@@ -16709,18 +16955,22 @@ const CORPUS_MINED = {
         "source": "Pappy Van Winkle 13 Year Rye|The Tomahawk"
       },
       {
+        "template": "Parker's Heritage 16th's collector cask-strength character handles Tomahawk intensity with HH-annual-release gravitas.",
+        "source": "Parker's Heritage Collection 16th Edition|The Tomahawk"
+      },
+      {
         "template": "Weller Special Reserve is the more versatile call across both sides.",
         "source": "Porterhouse|Weller 12 Year"
       }
     ],
-    "ELEGANT_RED|STEAK_LEAN": [
+    "BIG_RED|STEAK_LEAN": [
       {
         "template": "Peak entry Napa Cab for filet — reliable Rutherford-style character for guests building confidence in the bottle pour.",
         "source": "1881 Napa Valley|Filet Mignon"
       },
       {
-        "template": "Peak serious Willamette Pinot for bone-in filet — structured enough for the elevated filet.",
-        "source": "Bone-In Filet|Evening Land Seven Springs"
+        "template": "Strong Pomerol for bone-in filet — plush Bordeaux on the elevated cut.",
+        "source": "Bone-In Filet|Château Gombaude-Guillot"
       },
       {
         "template": "Peak luxurious Cab for bone-in filet — Far Niente's long finish aligns with the premium tenderloin cut.",
@@ -16739,32 +16989,12 @@ const CORPUS_MINED = {
         "source": "Château Batailley|Filet Mignon"
       },
       {
+        "template": "Strong bucket-list Châteauneuf for filet — celebrated estate on the delicate cut.",
+        "source": "Château Beaucastel|Filet Mignon"
+      },
+      {
         "template": "Peak Pomerol for filet — plush Merlot on the delicate cut.",
         "source": "Château Gombaude-Guillot|Filet Mignon"
-      },
-      {
-        "template": "Peak right-bank Bordeaux for filet — Grand Cru Merlot on the delicate cut.",
-        "source": "Château Haut Segottes|Filet Mignon"
-      },
-      {
-        "template": "Peak left-bank Bordeaux for filet — classified French classic for the delicate cut.",
-        "source": "Château de Rouillac|Filet Mignon"
-      },
-      {
-        "template": "Peak benchmark Pinot for filet — Willamette terroir frames the delicate cut.",
-        "source": "Cristom Mt Jefferson Cuvée|Filet Mignon"
-      },
-      {
-        "template": "Peak rare-Napa CF for filet — Persian-influenced estate story worth telling on the delicate cut.",
-        "source": "Darioush Cabernet Franc|Filet Mignon"
-      },
-      {
-        "template": "Peak flagship Willamette Pinot for filet — Domaine Serene elegance.",
-        "source": "Domaine Serene Grand Cheval|Filet Mignon"
-      },
-      {
-        "template": "Peak savory Willamette Pinot for filet — age-worthy Oregon serious red.",
-        "source": "Evening Land Seven Springs|Filet Mignon"
       },
       {
         "template": "Peak luxurious Oakville Cab for filet — pair with the best cuts.",
@@ -16779,16 +17009,8 @@ const CORPUS_MINED = {
         "source": "Filet Mignon|Heitz Trailside Vineyard"
       },
       {
-        "template": "Peak Anderson Valley Pinot for filet — concentrated Mendocino red on the delicate cut.",
-        "source": "Filet Mignon|J Davies Ferrington Vineyards"
-      },
-      {
         "template": "Peak mountain Cab for filet — Schramsberg provenance hook.",
         "source": "Filet Mignon|J. Davies Cabernet Sauvignon"
-      },
-      {
-        "template": "Peak food-friendly Pinot for filet — reliable Russian River on the delicate cut.",
-        "source": "Filet Mignon|Jax Calesa Vineyard Pinot Noir"
       },
       {
         "template": "Peak mountain Merlot-Cab for filet — worth explaining Mernet to curious guests.",
@@ -16797,22 +17019,6 @@ const CORPUS_MINED = {
       {
         "template": "Peak historically-pedigreed Napa Cab for filet — Lail family story on the delicate cut.",
         "source": "Filet Mignon|Lail Vineyards Blueprint"
-      },
-      {
-        "template": "Pour when the guest wants the bold-red experience.",
-        "source": "Filet Mignon|Le Volte dell'Ornellaia"
-      },
-      {
-        "template": "Peak Italian-approachable red for filet — great value on the delicate cut, Italian alternative to Cab.",
-        "source": "Filet Mignon|Lunaria Coste di Moro"
-      },
-      {
-        "template": "Peak accessible Pinot for filet — Macauley light body on the delicate cut at mid-tier price.",
-        "source": "Filet Mignon|Macauley Pinot Noir"
-      },
-      {
-        "template": "Peak plush California Pinot for filet — opulent Russian River style for the delicate cut.",
-        "source": "Filet Mignon|Marimar Estate Christina"
       },
       {
         "template": "Peak elegant Napa Cab for filet — family-estate restraint on the classic tenderloin cut.",
@@ -16827,14 +17033,6 @@ const CORPUS_MINED = {
         "source": "Filet Mignon|Quilt Cabernet Sauvignon"
       },
       {
-        "template": "Peak Burgundian-style California Pinot for filet — one of California's finest.",
-        "source": "Filet Mignon|RAEN Royal St Robert"
-      },
-      {
-        "template": "Peak legendary-vineyard Pinot for filet — California Pinot history on the cut.",
-        "source": "Filet Mignon|Sanford & Benedict Pinot Noir"
-      },
-      {
         "template": "Peak organic Napa Cab for filet — estate story on the delicate cut.",
         "source": "Filet Mignon|Spottswoode Lyndenhurst"
       },
@@ -16845,13 +17043,9 @@ const CORPUS_MINED = {
       {
         "template": "Peak estate Meritage for filet — age-integrated Napa.",
         "source": "Filet Mignon|St Supéry Élu Meritage"
-      },
-      {
-        "template": "Peak Tuscan Sangiovese for filet — Italian table wine on the delicate cut.",
-        "source": "Filet Mignon|Tenuta di Arceno Chianti Classico"
       }
     ],
-    "ELEGANT_RED|STEAK_BOLD": [
+    "BIG_RED|STEAK_BOLD": [
       {
         "template": "Peak entry Napa Cab for Kansas City — reliable step-up from by-the-glass for guests ready to commit.",
         "source": "1881 Napa Valley|Kansas City"
@@ -16859,10 +17053,6 @@ const CORPUS_MINED = {
       {
         "template": "A headliner steakhouse pour.",
         "source": "Alexander Valley Cyrus|Cowboy Ribeye"
-      },
-      {
-        "template": "Peak crowd-pleaser Bordeaux blend for the strip — accessible Sonoma red on the American cut.",
-        "source": "Alexander Valley Homestead Red|Kansas City"
       },
       {
         "template": "Peak Paso Cab for Cowboy — maximum richness for the big ribeye.",
@@ -16875,10 +17065,6 @@ const CORPUS_MINED = {
       {
         "template": "Peak Patagonian-Malbec for ribeye — silky elegance on the marbled cut.",
         "source": "Bodega Noemia A Lisa|Cowboy Ribeye"
-      },
-      {
-        "template": "Peak benchmark Barbera for the strip — Italian alternative to Barolo on the American cut.",
-        "source": "Braida Montebruna Barbera|Kansas City"
       },
       {
         "template": "Peak mountain Cab for Cowboy — serious food-driven structure.",
@@ -16897,12 +17083,8 @@ const CORPUS_MINED = {
         "source": "Caymus Cabernet Sauvignon|Cowboy Ribeye"
       },
       {
-        "template": "Peak right-bank Bordeaux for the strip — Grand Cru Merlot-led on the American steakhouse cut.",
-        "source": "Château Haut Segottes|Kansas City"
-      },
-      {
-        "template": "Peak left-bank Bordeaux for the strip — French classic on the American steakhouse cut.",
-        "source": "Château de Rouillac|Kansas City"
+        "template": "Strong Caymus for Tomahawk — Opus, Shafer, or Heitz Martha's peak higher for theatrical bone-in.",
+        "source": "Caymus Cabernet Sauvignon|The Tomahawk"
       },
       {
         "template": "Peak Mendoza for ribeye — plush Malbec built for grilled marbling.",
@@ -17001,16 +17183,20 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Venge Silencieux"
       },
       {
-        "template": "Peak rare-Napa CF for the strip — Darioush Persian-influenced estate on the American cut.",
-        "source": "Darioush Cabernet Franc|Kansas City"
-      },
-      {
         "template": "Peak opulent Napa Cab for Kansas City — Persian-inspired estate story on the classic strip.",
         "source": "Darioush Cabernet Sauvignon|Kansas City"
       },
       {
+        "template": "the Châteauneuf-du-Pape Rhône blend's earth-and-fruit balance handles both the strip's char and the filet's refinement at a single register.",
+        "source": "Domaine du Grand Tinel|Porterhouse"
+      },
+      {
         "template": "Peak Paso-Rhône for the strip — European-inspired winemaking.",
         "source": "Epoch Ingenuity|Kansas City"
+      },
+      {
+        "template": "Strong Super Tuscan for Tomahawk — Bordeaux-style Italian on the theatrical presentation.",
+        "source": "Fattoria Le Pupille Saffredi|The Tomahawk"
       },
       {
         "template": "Peak value Napa Cab for Kansas City — structure plus layered complexity at this price tier.",
@@ -17033,10 +17219,6 @@ const CORPUS_MINED = {
         "source": "Ghost Block Zinfandel|Kansas City"
       },
       {
-        "template": "Peak Anderson Valley Pinot for the strip — concentrated Mendocino red structured enough for the marbled cut.",
-        "source": "J Davies Ferrington Vineyards|Kansas City"
-      },
-      {
         "template": "Peak mountain Cab for Kansas City — Schramsberg provenance story plus high-elevation concentration on the strip.",
         "source": "J. Davies Cabernet Sauvignon|Kansas City"
       },
@@ -17051,18 +17233,6 @@ const CORPUS_MINED = {
       {
         "template": "Peak historically-pedigreed Napa Cab for the strip — Robin Lail's Mondavi-Inglenook pedigree on the American cut.",
         "source": "Kansas City|Lail Vineyards Blueprint"
-      },
-      {
-        "template": "Peak Italian-approachable red for the strip — great value on the American cut.",
-        "source": "Kansas City|Lunaria Coste di Moro"
-      },
-      {
-        "template": "Peak accessible Pinot for the strip when guest wants lighter red pick.",
-        "source": "Kansas City|Macauley Pinot Noir"
-      },
-      {
-        "template": "Peak Rioja for the strip — oak-driven Tempranillo match.",
-        "source": "Kansas City|Muga Reserva"
       },
       {
         "template": "Peak elegant Napa Cab for Kansas City.",
@@ -17089,6 +17259,10 @@ const CORPUS_MINED = {
         "source": "Kansas City|Shafer 1.5"
       },
       {
+        "template": "Strong collector's Napa Cab for the strip — Hillside Select on the American cut.",
+        "source": "Kansas City|Shafer Hillside Select"
+      },
+      {
         "template": "Peak organic Napa Cab for the strip — Spottswoode family story on the American cut.",
         "source": "Kansas City|Spottswoode Lyndenhurst"
       },
@@ -17107,6 +17281,10 @@ const CORPUS_MINED = {
       {
         "template": "Peak Prisoner for the strip — one of the country's most recognized labels.",
         "source": "Kansas City|The Prisoner Red Blend"
+      },
+      {
+        "template": "Strong Zin-led for KC — Californian fruit-forward weight handles the well-marbled cut.",
+        "source": "Kansas City|Venge Scout's Honor"
       },
       {
         "template": "Peak winemaker's Napa Cab for the strip — Venge precision on the American cut.",
@@ -17145,22 +17323,200 @@ const CORPUS_MINED = {
         "source": "The Tomahawk|Venge Family Reserve"
       }
     ],
+    "GIN|FISH_MAIN_DELICATE": [
+      {
+        "template": "2 James's American interpretation frames scallops with Midwest-craft character — less refined than Tanq 10's citrus-chamomile, more hometown than any British London Dry.",
+        "source": "2 James Gin|Seared Scallops"
+      },
+      {
+        "template": "the 22 wildcrafted Hebridean botanicals frame scallops with oceanic-island terroir — coastal Scotland meets the scallop's marine origin.",
+        "source": "Botanist Gin|Seared Scallops"
+      },
+      {
+        "template": "Detroit City's American interpretation frames scallops with hometown character.",
+        "source": "Detroit City Gin|Seared Scallops"
+      },
+      {
+        "template": "Neptunia's bladderwrack-seaweed profile mirrors scallop's marine origin distinctively.",
+        "source": "Hendricks Neptunia|Seared Scallops"
+      },
+      {
+        "template": "Iron Fish's Michigan-honey-and-estate-botanical profile frames scallops with distinctive farm-forward character.",
+        "source": "Iron Fish Gin|Seared Scallops"
+      },
+      {
+        "template": "Mahón's Spanish-island terroir frames scallops with Mediterranean sharpness.",
+        "source": "Mahon Gin|Seared Scallops"
+      },
+      {
+        "template": "Roku's yuzu-and-sansho profile is the featured Japanese-gin-scallop pairing — yuzu lifts scallop sweetness like the classic sashimi move, and sansho pepper adds distinctive finish no Western gin replicates.",
+        "source": "Roku Gin|Seared Scallops"
+      }
+    ],
+    "BOURBON_BOLD|DESSERT_CHOCOLATE": [
+      {
+        "template": "Aberlour 16's sherry-side dried-fruit marries cocoa at balanced-premium register.",
+        "source": "Aberlour 16|Chocolate Brownie"
+      },
+      {
+        "template": "AE Triple Cask's layered multi-cask character is the featured distinctive-wine-finished-chocolate pairing — the additional cask layers add complexity to port-and-chocolate no other AE expression matches.",
+        "source": "Angel's Envy Triple Cask|Chocolate Brownie"
+      },
+      {
+        "template": "Excellent on chocolate brownie; vanilla-honey-sweet Speyside frames cocoa at American-oak register.",
+        "source": "Balvenie 12 American Oak|Chocolate Brownie"
+      },
+      {
+        "template": "Caribbean Cask's rum-cask-derived brown sugar marries cocoa; Balvenie 21 Portwood's port-cask is the featured Sherried Speyside-chocolate match.",
+        "source": "Balvenie 14 Caribbean Cask|Chocolate Brownie"
+      },
+      {
+        "template": "port-and-chocolate is a famous pairing — Portwood's port-derived red-berry fruit is the featured Sherried Speyside-chocolate-brownie match across the cluster.",
+        "source": "Balvenie 21 Portwood|Chocolate Brownie"
+      },
+      {
+        "template": "Bardstown Château Laboude's French-wine-cask character is the distinctive craft-wine-finished-chocolate pairing — the French-wine provenance distinguishes it from AE's Portuguese port approach.",
+        "source": "Bardstown Château Laboude|Chocolate Brownie"
+      },
+      {
+        "template": "BH Red Wine Cask's high-rye + red-wine-finish is the featured rye-forward wine-finished-chocolate pairing — the high-rye base + red-wine fruit adds dimension where AE's wheated-style port-finish doesn't reach.",
+        "source": "Basil Hayden's Red Wine Cask|Chocolate Brownie"
+      },
+      {
+        "template": "EC 18's leather-tobacco character meets cocoa at aged-premium register.",
+        "source": "Chocolate Brownie|Elijah Craig 18 Year"
+      },
+      {
+        "template": "Fox & Oden Double Oaked's intensified-caramel + cocoa is the featured Double-Oaked-chocolate pairing at distinctive-brand register — the second-char caramel amplifies cocoa with Detroit-brand distinction.",
+        "source": "Chocolate Brownie|Fox & Oden Double Oaked"
+      },
+      {
+        "template": "delivers this pairing at accessible BT register.",
+        "source": "Chocolate Brownie|George T. Stagg"
+      },
+      {
+        "template": "Excellent on chocolate brownie; vanilla-sweet bourbon-finish frames cocoa at Speyside register.",
+        "source": "Chocolate Brownie|Glenfiddich 14"
+      },
+      {
+        "template": "aged sherry-bourbon-cask Speyside brings dried-fruit-cocoa depth to the brownie at aged-Speyside register.",
+        "source": "Chocolate Brownie|Glenfiddich 18"
+      },
+      {
+        "template": "Excellent on chocolate brownie; champagne-cask depth frames cocoa at Speyside-luxury register.",
+        "source": "Chocolate Brownie|Glenfiddich Gran Cru 23"
+      },
+      {
+        "template": "Isaac Bowman's Virginia-heritage port-finish meets cocoa with BT-adjacent-distillery character — parallel to AE's Louisville port-finish approach, with Virginia-distillery distinction.",
+        "source": "Chocolate Brownie|Isaac Bowman Port Finish"
+      },
+      {
+        "template": "Woodford Double Oaked's iconic benchmark intensified-caramel is the featured Double-Oaked-chocolate pairing — the most recognizable Double-Oaked on the menu delivering the textbook bourbon-and-chocolate pairing.",
+        "source": "Chocolate Brownie|Woodford Reserve Double Oaked"
+      },
+      {
+        "template": "Fox & Oden's Double Oaked caramel handles dessert density with intensified-vanilla character.",
+        "source": "Fox & Oden Double Oaked|Peanut Butter Brownie"
+      }
+    ],
+    "TEQUILA_BOLD|STEAK_LEAN": [
+      {
+        "template": "the cristalino's aged-but-clear depth gives the filet more than standard blancos can — where Don Julio Blanco works at best, Adictivo Cristalino earns Strong.",
+        "source": "Adictivo Cristalino|Filet Mignon"
+      },
+      {
+        "template": "the Los Altos estate-terroir with extended French-oak aging frames filet at sophisticated register — more complex than Patron or Milagro.",
+        "source": "Don Fulano Anejo|Filet Mignon"
+      },
+      {
+        "template": "Vanilla and light oak frame the filet without overpowering; the everyday reposado call.",
+        "source": "Don Julio Reposado|Filet Mignon"
+      },
+      {
+        "template": "The concentrated agave is slightly ambitious for the filet's restraint; capable but Don Fulano or Don Julio 70th sit with the cut more cleanly.",
+        "source": "Filet Mignon|G4 High Proof"
+      },
+      {
+        "template": "the filtered-clear añejo (color-removed-flavor-retained) frames filet at bridge-luxury register — distinctive category move on a refined plate.",
+        "source": "Filet Mignon|Komos Crystallino Anejo"
+      }
+    ],
     "TEQUILA_BOLD|STEAK_BOLD": [
       {
         "template": "Rich oak, caramel, concentrated; extended maturation gives the strip a fuller-bodied frame than everyday 8-month-aged pours.",
         "source": "Adictivo Reposado|Kansas City"
       },
       {
+        "template": "extended maturation handles the ribeye with premium Avion authority.",
+        "source": "Avion 44|Cowboy Ribeye"
+      },
+      {
         "template": "Distinct from G4 High Proof (their premium): Camarena is the accessible entry call for strip orders.",
         "source": "Camarena Tequila|Kansas City"
+      },
+      {
+        "template": "Excellent on the Tomahawk; luxury-icon character matches showpiece cut at ceremonial register — save the bottle.",
+        "source": "Clase Azul Anejo|The Tomahawk"
+      },
+      {
+        "template": "Clase Azul Durango handles the strip with ceremonial presentation.",
+        "source": "Clase Azul Durango|Kansas City"
+      },
+      {
+        "template": "mezcal-touch blend covers the ribeye with distinctive Clase Azul character.",
+        "source": "Clase Azul Gold|Cowboy Ribeye"
+      },
+      {
+        "template": "Ultra covers the ribeye with absolute-top Clase Azul authority.",
+        "source": "Clase Azul Ultra|Cowboy Ribeye"
+      },
+      {
+        "template": "Excellent on the Tomahawk; ceremonial agave meets ceremonial beef at luxury-icon register — save the bottle.",
+        "source": "Clase Azul Ultra|The Tomahawk"
       },
       {
         "template": "A wine-country strip pour.",
         "source": "Codigo 1530 Rosa|Kansas City"
       },
       {
+        "template": "the highland agave gives the ribeye dimension but 80-proof is the ceiling here; G4 High Proof or Adictivo are stronger.",
+        "source": "Corazon Reposado|Cowboy Ribeye"
+      },
+      {
+        "template": "the ex-rye-barrel spice character frames the fatty cut at crossover register — rye-tequila on ribeye is a conversation starter.",
+        "source": "Corazon Sazerac|Cowboy Ribeye"
+      },
+      {
         "template": "Gold standard; recommend the añejo-on-bone-in-ribeye pairing without hesitation.",
         "source": "Corazon Stagg|The Tomahawk"
+      },
+      {
+        "template": "iconic extra añejo covers the ribeye with benchmark character.",
+        "source": "Cowboy Ribeye|Don Julio 1942"
+      },
+      {
+        "template": "accessible premium covers the ribeye.",
+        "source": "Cowboy Ribeye|El Mayor Extra Anejo"
+      },
+      {
+        "template": "extra añejo depth covers the ribeye with luxury-brand authority.",
+        "source": "Cowboy Ribeye|Komos Extra Anejo"
+      },
+      {
+        "template": "distinctive-bottle extra añejo covers the ribeye.",
+        "source": "Cowboy Ribeye|Rey Sol Anejo"
+      },
+      {
+        "template": "the rustic craft character is more at home than polished reposados here, though G4 High Proof brings more grip.",
+        "source": "Cowboy Ribeye|Siete Leguas Reposado"
+      },
+      {
+        "template": "multi-cask depth covers the ribeye with González's legendary craft authority.",
+        "source": "Cowboy Ribeye|Tears of Llorona"
+      },
+      {
+        "template": "the cedar gives the ribeye a unique frame.",
+        "source": "Cowboy Ribeye|Trombo Cedano Reposado"
       },
       {
         "template": "A sophisticated strip pour.",
@@ -17183,12 +17539,32 @@ const CORPUS_MINED = {
         "source": "G4 High Proof|Kansas City"
       },
       {
+        "template": "Excellent on KC strip; the wine-cask-finished character frames the lean cut at ceremonial-luxury register — save the bottle for the guest who wants the wine-cask-distinctive añejo expression.",
+        "source": "Kansas City|Komos Anejo Reserva"
+      },
+      {
         "template": "Riedel-designed bottle is part of the presentation; a luxury pour that brings theatrics to the strip.",
         "source": "Kansas City|Komos Rosa Reposado"
       },
       {
+        "template": "Excellent on KC strip; the French-oak-aged refined character frames the lean cut at accessible-craft register — Milagro is the softer-finishing accessible craft answer to Patron.",
+        "source": "Kansas City|Milagro Anejo"
+      },
+      {
         "template": "A contemporary everyday strip call.",
         "source": "Kansas City|Milagro Reposado"
+      },
+      {
+        "template": "Excellent on KC strip; the mineral-driven highland character with whiskey-cask aging frames the lean cut at craft-transparency register — Ocho is the connoisseur añejo.",
+        "source": "Kansas City|Ocho Anejo"
+      },
+      {
+        "template": "Excellent on KC strip; vanilla-caramel-cooked-agave frames the lean cut at premium-workhorse register — the iconic-bottle pour on the steak guest every room knows.",
+        "source": "Kansas City|Patron Anejo"
+      },
+      {
+        "template": "the Komos luxury-icon line's extra-añejo expression matches the tomahawk at ceremonial register — save the bottle.",
+        "source": "Komos Extra Anejo|The Tomahawk"
       }
     ],
     "WHITE_WINE|CHICKEN_MAIN": [
@@ -17203,6 +17579,48 @@ const CORPUS_MINED = {
       {
         "template": "Peak provenance-forward Chardonnay for chicken across most seasonal builds.",
         "source": "Our Lady of Guadalupe Acolytes|Roast Half Chicken"
+      }
+    ],
+    "ELEGANT_RED|STEAK_BOLD": [
+      {
+        "template": "Peak crowd-pleaser Bordeaux blend for the strip — accessible Sonoma red on the American cut.",
+        "source": "Alexander Valley Homestead Red|Kansas City"
+      },
+      {
+        "template": "Peak benchmark Barbera for the strip — Italian alternative to Barolo on the American cut.",
+        "source": "Braida Montebruna Barbera|Kansas City"
+      },
+      {
+        "template": "Peak right-bank Bordeaux for the strip — Grand Cru Merlot-led on the American steakhouse cut.",
+        "source": "Château Haut Segottes|Kansas City"
+      },
+      {
+        "template": "Peak left-bank Bordeaux for the strip — French classic on the American steakhouse cut.",
+        "source": "Château de Rouillac|Kansas City"
+      },
+      {
+        "template": "Peak rare-Napa CF for the strip — Darioush Persian-influenced estate on the American cut.",
+        "source": "Darioush Cabernet Franc|Kansas City"
+      },
+      {
+        "template": "Peak Anderson Valley Pinot for the strip — concentrated Mendocino red structured enough for the marbled cut.",
+        "source": "J Davies Ferrington Vineyards|Kansas City"
+      },
+      {
+        "template": "A headliner steakhouse pour.",
+        "source": "Kansas City|Le Volte dell'Ornellaia"
+      },
+      {
+        "template": "Peak Italian-approachable red for the strip — great value on the American cut.",
+        "source": "Kansas City|Lunaria Coste di Moro"
+      },
+      {
+        "template": "Peak accessible Pinot for the strip when guest wants lighter red pick.",
+        "source": "Kansas City|Macauley Pinot Noir"
+      },
+      {
+        "template": "Peak Rioja for the strip — oak-driven Tempranillo match.",
+        "source": "Kansas City|Muga Reserva"
       }
     ],
     "ELEGANT_RED|CHICKEN_MAIN": [
@@ -17233,14 +17651,6 @@ const CORPUS_MINED = {
       {
         "template": "Peak Rioja for the bird — preparation changes seasonally, check with kitchen for today's build.",
         "source": "Muga Reserva|Roast Half Chicken"
-      },
-      {
-        "template": "Peak Paso value Bordeaux blend for chicken across most preparations.",
-        "source": "Roast Half Chicken|San Simeon Stormwatch"
-      },
-      {
-        "template": "Peak by-the-glass Cab for chicken across most seasonal preparations.",
-        "source": "Roast Half Chicken|Scotto Cellars The Lost Chapters"
       }
     ],
     "APERITIVO_BITTER|DESSERT_LIGHT": [
@@ -17261,36 +17671,272 @@ const CORPUS_MINED = {
         "source": "Cheesecake|Lucano Amaro"
       }
     ],
-    "BOURBON_BOLD|DESSERT_CHOCOLATE": [
+    "SWEET_LIQUEUR|DESSERT_CHOCOLATE": [
       {
-        "template": "AE Triple Cask's layered multi-cask character is the featured distinctive-wine-finished-chocolate pairing — the additional cask layers add complexity to port-and-chocolate no other AE expression matches.",
-        "source": "Angel's Envy Triple Cask|Chocolate Brownie"
+        "template": "chile-and-chocolate is a textbook Mexican pairing — Ancho Reyes brings ancho-poblano smoky-sweet-spice to the brownie at 40% register.",
+        "source": "Ancho Reyes|Chocolate Brownie"
       },
       {
-        "template": "Bardstown Château Laboude's French-wine-cask character is the distinctive craft-wine-finished-chocolate pairing — the French-wine provenance distinguishes it from AE's Portuguese port approach.",
-        "source": "Bardstown Château Laboude|Chocolate Brownie"
+        "template": "Gold standard; recommend the digestif-on-dessert pairing without hesitation.",
+        "source": "Baileys Irish Cream|Chocolate Cake"
       },
       {
-        "template": "Fox & Oden Double Oaked's intensified-caramel + cocoa is the featured Double-Oaked-chocolate pairing at distinctive-brand register — the second-char caramel amplifies cocoa with Detroit-brand distinction.",
-        "source": "Chocolate Brownie|Fox & Oden Double Oaked"
+        "template": "Baileys and coffee is the textbook pairing — the Irish-whiskey-cream meets mocha at iconic register.",
+        "source": "Baileys Irish Cream|Mocha Creme"
       },
       {
-        "template": "delivers this pairing at accessible BT register.",
-        "source": "Chocolate Brownie|George T. Stagg"
+        "template": "bourbon-caramel-cream threads chocolate at deeper register than Baileys — bourbon depth meets cocoa warmth.",
+        "source": "Buffalo Trace Cream|Chocolate Brownie"
       },
       {
-        "template": "Isaac Bowman's Virginia-heritage port-finish meets cocoa with BT-adjacent-distillery character — parallel to AE's Louisville port-finish approach, with Virginia-distillery distinction.",
-        "source": "Chocolate Brownie|Isaac Bowman Port Finish"
+        "template": "the hazelnut-cocoa profile runs directly into chocolate — this is Nutella in liquid form, at Piedmont-liqueur register.",
+        "source": "Chocolate Brownie|Frangelico"
       },
       {
-        "template": "Fox & Oden's Double Oaked caramel handles dessert density with intensified-vanilla character.",
-        "source": "Fox & Oden Double Oaked|Peanut Butter Brownie"
+        "template": "hazelnut-coffee-chocolate is a textbook Italian pairing — Frangelico brings Piedmont hazelnut depth to mocha at after-dinner register.",
+        "source": "Frangelico|Mocha Creme"
+      },
+      {
+        "template": "Excellent on mocha creme; the iconic sweet-coffee-rum profile threads coffee-chocolate at workhorse register — Kahlua-on-mocha is textbook.",
+        "source": "Kahlua|Mocha Creme"
+      },
+      {
+        "template": "Excellent on mocha creme; the tequila-base-Arabica profile brings spirit-forward-coffee register to coffee-chocolate — less sweet, more assertive than the Kahlua approach.",
+        "source": "Mocha Creme|Patron XO Cafe"
+      }
+    ],
+    "BOURBON_BOLD|HEARTY_STARTER": [
+      {
+        "template": "Excellent on Brussels and Belly; port-finish-sweetness amplifies maple-glaze at flagship register — textbook AE-on-Brussels.",
+        "source": "Angel's Envy|Brussels and Belly"
+      },
+      {
+        "template": "Still peated, but less brawling than Lagavulin 8 or Laphroaig 10.",
+        "source": "Bone Marrow|Bowmore 12"
+      },
+      {
+        "template": "Whiskey depth meets the starter's fat and umami — both land heavy.",
+        "source": "Bone Marrow|Bruichladdich"
+      },
+      {
+        "template": "Cragganmore's subtle smoke meets marrow better than the lighter siblings, but Fernet Branca is still the featured marrow pairing.",
+        "source": "Bone Marrow|Cragganmore 12"
+      },
+      {
+        "template": "revived Belfast Irish single-malt brings craft-heritage character to the marrow plate at Irish-single-malt register.",
+        "source": "Bone Marrow|Dunville's Single Malt"
+      },
+      {
+        "template": "GTS's 15+yr cask-strength is one of the few spirits on the menu that meets marrow as an equal — the featured BTAC-marrow pairing at collector register.",
+        "source": "Bone Marrow|George T. Stagg"
+      },
+      {
+        "template": "Glenmorangie 10's honeysuckle-vanilla sits alongside marrow at entry-Highland register; Fernet Branca still cuts it harder.",
+        "source": "Bone Marrow|Glenmorangie 10"
+      },
+      {
+        "template": "Glenmorangie 18's Oloroso-cask depth sits alongside marrow at premium register; Oban 14's maritime character still leads the Highland-marrow pairings.",
+        "source": "Bone Marrow|Glenmorangie 18"
+      },
+      {
+        "template": "JW Blue's silky-complex character sits alongside marrow at collector register but doesn't cut it; save the bottle for filet or KC — reach for Fernet Branca if the guest wants the marrow-cutting experience.",
+        "source": "Bone Marrow|Johnnie Walker Blue"
+      },
+      {
+        "template": "Excellent on bone marrow; sherry-cask Irish depth handles umami-fat at allocation-luxury register — save the bottle.",
+        "source": "Bone Marrow|Kentucky Owl St. Patrick's"
+      },
+      {
+        "template": "The balanced Islay pour for marrow — hits hard without Laphroaig's medicinal wall, and more aligned with the cut than Bowmore 12's gentler peat.",
+        "source": "Bone Marrow|Lagavulin 8"
+      },
+      {
+        "template": "Pour for guests who know what they're asking for; the most decisive peated-Islay-and-fat pairing on the menu.",
+        "source": "Bone Marrow|Laphroaig 10"
+      },
+      {
+        "template": "Macallan 18's aged-sherry depth frames marrow at collector register; Fernet Branca still cuts it harder.",
+        "source": "Bone Marrow|Macallan 18"
+      },
+      {
+        "template": "Macallan Estate's distinctive depth frames marrow; Fernet Branca still cuts it harder.",
+        "source": "Bone Marrow|Macallan Estate"
+      },
+      {
+        "template": "Oban's sea-salt-and-honey character is the featured Highland-marrow pairing — the maritime-umami resonance is distinctive, more lively than the sherry-forward or honey-floral alternatives.",
+        "source": "Bone Marrow|Oban 14"
+      },
+      {
+        "template": "Oban 18's aged maritime character is the featured Highland-marrow pairing at premium register — the coastal-umami + sherry-depth combination is richer than Oban 14's simpler maritime approach.",
+        "source": "Bone Marrow|Oban 18"
+      },
+      {
+        "template": "extended-aged single-pot-still Irish character handles marrow at Redbreast-luxury register — the Irish flagship on the umami plate.",
+        "source": "Bone Marrow|Redbreast 21 Year"
+      },
+      {
+        "template": "Excellent on marrow; the sherry-cask-driven profile meets umami fat at refined register — save the bottle for the guest who treats whisky like art.",
+        "source": "Bone Marrow|Yamazaki 18 Year"
+      },
+      {
+        "template": "A clean, crowd-pleasing match; the gateway Maker's alongside Weller Special Reserve.",
+        "source": "Brussels and Belly|Maker's Mark"
+      },
+      {
+        "template": "Hibiki's elegant harmony of 5+ cask types is the featured Japanese-whisky-tartare pairing — the refinement lifts tartare's minerality at premium register.",
+        "source": "Hibiki Japanese Harmony|Prime Tartare"
+      },
+      {
+        "template": "Toki's light-floral character supports tartare at crowd-pleasing register; Hibiki Harmony's refined-elegant premium is the featured Japanese-tartare match.",
+        "source": "Prime Tartare|Toki Suntory Japanese Whisky"
+      },
+      {
+        "template": "Yamazaki 12's Mizunara-oak character supports tartare at flagship register; Yamazaki 18's aged Mizunara depth is the featured Yamazaki-tartare match.",
+        "source": "Prime Tartare|Yamazaki 12 Year"
+      }
+    ],
+    "WHITE_WINE|CREAMY_SIDE": [
+      {
+        "template": "Works — a capable side pour.",
+        "source": "Au Gratin Potatoes|Far Niente Chardonnay"
+      },
+      {
+        "template": "Works well as Chardonnay for creamed spinach — cream-on-cream, oak-on-butter.",
+        "source": "Creamed Spinach|Far Niente Chardonnay"
+      }
+    ],
+    "GIN|LIGHT_STARTER": [
+      {
+        "template": "Aviation handles the tower at crowd-pleasing register; Gray Whale's ocean-conservation-California-botanicals is the featured craft-tower match.",
+        "source": "Aviation Gin|Seafood Tower"
+      },
+      {
+        "template": "Beefeater is the approachable tower-gin pairing when Tanq feels too heavy and Plymouth too soft.",
+        "source": "Beefeater Gin|Seafood Tower"
+      },
+      {
+        "template": "Bluecoat's citrus-forward patriotic-artisan profile frames delicate crab with bright American-citrus character — more lifting than Aviation's lavender softness.",
+        "source": "Bluecoat Gin|Crab Cake"
+      },
+      {
+        "template": "Bombay Dry's traditional character delivers the raw bar classic-gin experience.",
+        "source": "Bombay Dry Gin|Seafood Tower"
+      },
+      {
+        "template": "Sapphire's softer floral character is the accessible luxury pairing — where Tanq is serious and Plymouth is English-traditional, Sapphire is approachable.",
+        "source": "Bombay Sapphire Gin|Seafood Tower"
+      },
+      {
+        "template": "the baobab and lion's tail botanicals complement cream with distinctive contemporary character — distinct from Plymouth's sweetness or Nolet's rose-peach approach.",
+        "source": "Burrata|Elephant Gin"
+      },
+      {
+        "template": "Empress's rose-and-floral profile is the featured Smooth/Citrus Craft Gin-burrata pairing — rose-with-cream is classically beautiful, and the indigo-to-pink color change makes this a visual conversation-starter at the table.",
+        "source": "Burrata|Empress 1908 Gin"
+      },
+      {
+        "template": "Flora Adora's intensified floral character is the featured Hendrick's Family-burrata pairing — floral-on-cream at its most explicit, more overtly floral than flagship Hendrick's.",
+        "source": "Burrata|Hendricks Flora Adora"
+      },
+      {
+        "template": "Hendrick's rose-cucumber signature complements cream at the crowd-pleasing register — the default Hendrick's-burrata pairing, where Flora Adora floralizes harder and Grand Cabaret brings fruit.",
+        "source": "Burrata|Hendricks Gin"
+      },
+      {
+        "template": "Grand Cabaret's fruit-forward black-currant profile complements cream at distinctive register — fruit-on-cream no other Hendrick's expression offers.",
+        "source": "Burrata|Hendricks Grand Cabaret"
+      },
+      {
+        "template": "Orbium's wormwood-quinine provides a distinctive bitter-on-cream contrast the floral siblings don't offer.",
+        "source": "Burrata|Hendricks Orbium"
+      },
+      {
+        "template": "Inverroche's fynbos-floral profile is the featured craft-gin-burrata pairing in the cluster — the Cape-floral character meets cream with a register no other gin on the menu can touch.",
+        "source": "Burrata|Inverroche Gin"
+      },
+      {
+        "template": "Monkey 47's lingonberry-and-forest-herbal complements cream with distinctive Schwarzwald character — tied with Inverroche's fynbos-floral as the featured craft-gin-burrata match.",
+        "source": "Burrata|Monkey 47 Gin"
+      },
+      {
+        "template": "Eastern Kille's juniper-forward character lifts crab with Grand Rapids hometown pride — the local-pride pick parallel to Long Road in the GR program.",
+        "source": "Crab Cake|Eastern Kille Dry Gin"
+      },
+      {
+        "template": "Gray Whale's ocean-conservation-mission with actual sea-kelp botanical is the thematic-perfect craft-gin-crab pairing — ocean gin meets ocean seafood with story-driven precision.",
+        "source": "Crab Cake|Gray Whale Gin"
+      },
+      {
+        "template": "Knickerbocker's brewer's-heritage character adds distinctive herbal-hop dimension to crab.",
+        "source": "Crab Cake|Knickerbocker Gin"
+      },
+      {
+        "template": "Liberator is the Michigan-hometown craft-gin pairing for crab — sibling to Long Road, Eastern Kille, 2 James, Detroit City, and Iron Fish in the Michigan gin program, the Valentine Distilling answer.",
+        "source": "Crab Cake|Liberator Gin"
+      },
+      {
+        "template": "Long Road's estate-pride Michigan-botanical profile frames crab with Grand Rapids distinction.",
+        "source": "Crab Cake|Long Road Gin"
+      },
+      {
+        "template": "Nolet's rose-peach-raspberry frames crab with contemporary character British London Drys don't offer.",
+        "source": "Crab Cake|Nolets Dry Gin"
+      },
+      {
+        "template": "Plymouth's earthier juniper is gentle enough to frame crab without overpowering — Tanq lifts harder, Plymouth complements.",
+        "source": "Crab Cake|Plymouth Gin"
+      },
+      {
+        "template": "the chamomile-softened citrus frames crab with refinement flagship Tanq's juniper-heavy profile doesn't bring.",
+        "source": "Crab Cake|Tanq 10 Gin"
+      },
+      {
+        "template": "The default Tanq-seafood pairing.",
+        "source": "Crab Cake|Tanqueray Gin"
+      }
+    ],
+    "COCKTAIL_LIGHT|LIGHT_STARTER": [
+      {
+        "template": "Strong tower cocktail when guest wants visual spectacle alongside the shellfish.",
+        "source": "Aviation|Seafood Tower"
+      },
+      {
+        "template": "The honey works seasonally with whatever fruit the kitchen has on the plate; the Indigo's butterfly-pea color-shift is a detail to mention alongside a vegetarian starter.",
+        "source": "Bee's Knees|Burrata"
+      },
+      {
+        "template": "Peak starter pairing — both lean into garden-fresh, clean profiles.",
+        "source": "Burrata|Cucumber Gimlet"
+      },
+      {
+        "template": "Strong bright-cocktail pairing for crab cake — sophisticated lemon-drop structure.",
+        "source": "Crab Cake|Head Fake"
+      },
+      {
+        "template": "Peak classic cocktail for crab cake when guest wants citrus-forward agave.",
+        "source": "Crab Cake|Margarita"
+      },
+      {
+        "template": "Strong tower cocktail when guest wants a classic Margarita rather than Champagne for the full spread.",
+        "source": "Margarita|Seafood Tower"
+      },
+      {
+        "template": "Strong tower cocktail when guest wants agave rather than bubbles.",
+        "source": "Paloma|Seafood Tower"
+      },
+      {
+        "template": "Concord-grape + ginger-ale + vodka cocktail's bright-fruit-ginger character cuts through the salty lineup at approachable register.",
+        "source": "Seafood Tower|Transfusion"
       }
     ],
     "LIGHT_SPIRIT|LIGHT_STARTER": [
       {
         "template": "The clean filtered agave lifts the crab at the globally-familiar register.",
         "source": "Avion Silver|Crab Cake"
+      },
+      {
+        "template": "Excellent on shrimp cocktail; Bacardi's neutral-clean profile is the textbook light-rum move on cold shellfish — the workhorse answer when guest wants something light with seafood.",
+        "source": "Bacardi Rum|Shrimp Cocktail"
       },
       {
         "template": "The premium presentation elevates the whole tower; pour when the table wants the full experience.",
@@ -17313,18 +17959,16 @@ const CORPUS_MINED = {
         "source": "Crab Cake|Lalo Silver"
       },
       {
+        "template": "the Barbados-rum character with slight molasses warmth frames lump crab at craft-heritage register — more character than the neutral pour.",
+        "source": "Crab Cake|Mount Gay Rum"
+      },
+      {
         "template": "Clean citrus-forward agave against lump crab; less distinctive than Don Julio Blanco's benchmark character, more globally familiar.",
         "source": "Crab Cake|Patron Silver"
       },
       {
         "template": "Rustic, earthier agave than Don Julio's polished benchmark; the traditional character gives the crab more texture than globally-marketed blancos bring.",
         "source": "Crab Cake|Siete Leguas Blanco"
-      }
-    ],
-    "SWEET_LIQUEUR|DESSERT_CHOCOLATE": [
-      {
-        "template": "Gold standard; recommend the digestif-on-dessert pairing without hesitation.",
-        "source": "Baileys Irish Cream|Chocolate Cake"
       }
     ],
     "BOURBON_BOLD|RICH_SIDE": [
@@ -17351,20 +17995,20 @@ const CORPUS_MINED = {
       {
         "template": "The approachable lightness lets truffle lead; this is the entry-level mixing bourbon at its best with a side.",
         "source": "Jim Beam White Label|Truffle Fries"
+      },
+      {
+        "template": "Strong without being the marquee Islay call for this side.",
+        "source": "Lagavulin 8|Mushrooms"
       }
     ],
-    "COCKTAIL_LIGHT|LIGHT_STARTER": [
+    "LIGHT_SPIRIT|DESSERT_LIGHT": [
       {
-        "template": "The honey works seasonally with whatever fruit the kitchen has on the plate; the Indigo's butterfly-pea color-shift is a detail to mention alongside a vegetarian starter.",
-        "source": "Bee's Knees|Burrata"
+        "template": "Excellent on beignets; the warm-spice character plays directly into the fresh sugar-dust and pastry warmth at cocktail-workhorse register — spice meets sugar textbook.",
+        "source": "Beignets|Captain Morgan Rum"
       },
       {
-        "template": "Peak starter pairing — both lean into garden-fresh, clean profiles.",
-        "source": "Burrata|Cucumber Gimlet"
-      },
-      {
-        "template": "Peak classic cocktail for crab cake when guest wants citrus-forward agave.",
-        "source": "Crab Cake|Margarita"
+        "template": "the coconut liqueur sweetness plays tropical dimension on cheesecake — piña-colada-energy on dessert at liqueur register.",
+        "source": "Cheesecake|Malibu Rum"
       }
     ],
     "SWEET_LIQUEUR|DESSERT_LIGHT": [
@@ -17373,8 +18017,20 @@ const CORPUS_MINED = {
         "source": "Beignets|Kahlua"
       },
       {
+        "template": "the sweet-anise character plays with fresh sugar-dust at Italian-digestif register — sweeter pairing than Mata Hari's 60% punch.",
+        "source": "Beignets|Sambuca"
+      },
+      {
         "template": "This is the Fireball pairing that actually earns its place on the dessert list.",
         "source": "Carrot Cake|Fireball Whisky"
+      },
+      {
+        "template": "Strong Pineau for carrot cake — Tawny's toffee fits the spice-on-spice match harder.",
+        "source": "Carrot Cake|Pineau des Charentes"
+      },
+      {
+        "template": "Strong when the dessert is restrained.",
+        "source": "Chambord|Cheesecake"
       },
       {
         "template": "Gold standard; the unskippable digestif-on-dessert pour.",
@@ -17383,6 +18039,28 @@ const CORPUS_MINED = {
       {
         "template": "A headliner match — context-driven peak.",
         "source": "Cheesecake|Limoncello"
+      },
+      {
+        "template": "heather-honey-scotch base meets burnt-sugar-cream at honey-on-honey register — one of the best scotch-adjacent desserts pairings.",
+        "source": "Creme Brulee|Drambuie"
+      }
+    ],
+    "VODKA|HEARTY_STARTER": [
+      {
+        "template": "Belvedere's aromatic rye pepper and vanilla lift tartare's minerality in a way no wheat or corn vodka can — the distinctive vodka-tartare pairing.",
+        "source": "Belvedere Vodka|Prime Tartare"
+      },
+      {
+        "template": "Chopin's softness rides tartare's minerality, though Belvedere's Polish sibling lifts it with rye-pepper dimension.",
+        "source": "Chopin Vodka|Prime Tartare"
+      },
+      {
+        "template": "HDW 100's extra proof and herbal lift are the featured craft-vodka-tartare pairing — where Detroit City sits with the tartare and Hangar 1 floralizes it, HDW 100 lifts it hard.",
+        "source": "HDW 100 Vodka|Prime Tartare"
+      },
+      {
+        "template": "Elit's clarity supports the tartare cleanly, though Belvedere's rye pepper is the more distinctive vodka-tartare match.",
+        "source": "Prime Tartare|Stoli Elit Vodka"
       }
     ],
     "COCKTAIL_BOLD|HEARTY_STARTER": [
@@ -17395,32 +18073,122 @@ const CORPUS_MINED = {
         "source": "Not a Paper Plane|Prime Tartare"
       }
     ],
-    "BOURBON_BOLD|HEARTY_STARTER": [
+    "MEZCAL|HEARTY_STARTER": [
       {
-        "template": "Still peated, but less brawling than Lagavulin 8 or Laphroaig 10.",
-        "source": "Bone Marrow|Bowmore 12"
+        "template": "Excellent on marrow; Casamigos Mezcal's softened-smoke character meets the umami fat without overwhelming — the entry point for a guest who wants mezcal but dialed back.",
+        "source": "Bone Marrow|Casamigos Mezcal"
+      }
+    ],
+    "APERITIVO_BITTER|HEARTY_STARTER": [
+      {
+        "template": "the 27-herb digestif cuts marrow richness harder than any sipping amaro in the family, and the bartender's-handshake reputation is earned exactly here.",
+        "source": "Bone Marrow|Fernet Branca"
       },
       {
-        "template": "Whiskey depth meets the starter's fat and umami — both land heavy.",
-        "source": "Bone Marrow|Bruichladdich"
+        "template": "the botanical-infusion wine character engages herb butter at Italian-vermouth register — softer partner to escargot than Chartreuse.",
+        "source": "Contratto Vermouth|Escargot"
       },
       {
-        "template": "The balanced Islay pour for marrow — hits hard without Laphroaig's medicinal wall, and more aligned with the cut than Bowmore 12's gentler peat.",
-        "source": "Bone Marrow|Lagavulin 8"
+        "template": "the 130-botanical herbal profile ties directly to the herb butter at Carthusian register — the French digestif on the French classic.",
+        "source": "Escargot|Green Chartreuse"
       },
       {
-        "template": "Pour for guests who know what they're asking for; the most decisive peated-Islay-and-fat pairing on the menu.",
-        "source": "Bone Marrow|Laphroaig 10"
+        "template": "the wormwood-anise-fennel ties directly to French herbal traditions — absinthe was built for this plate at 60% register.",
+        "source": "Escargot|Mata Hari Absinthe"
       },
       {
-        "template": "A clean, crowd-pleasing match; the gateway Maker's alongside Weller Special Reserve.",
-        "source": "Brussels and Belly|Maker's Mark"
+        "template": "the 130-botanical profile ties to herb butter at honey-sweetened register — softer than Green, still hits the French-classic mark.",
+        "source": "Escargot|Yellow Chartreuse"
+      }
+    ],
+    "HEAVY_SPIRIT|HEARTY_STARTER": [
+      {
+        "template": "the aged-solera character with its depth meets the marrow at luxury register — one of the few rums that earns its place against bourbon on this plate.",
+        "source": "Bone Marrow|Ron Zacapa Rum"
+      }
+    ],
+    "ELEGANT_RED|STEAK_LEAN": [
+      {
+        "template": "Peak serious Willamette Pinot for bone-in filet — structured enough for the elevated filet.",
+        "source": "Bone-In Filet|Evening Land Seven Springs"
+      },
+      {
+        "template": "Peak right-bank Bordeaux for filet — Grand Cru Merlot on the delicate cut.",
+        "source": "Château Haut Segottes|Filet Mignon"
+      },
+      {
+        "template": "Peak left-bank Bordeaux for filet — classified French classic for the delicate cut.",
+        "source": "Château de Rouillac|Filet Mignon"
+      },
+      {
+        "template": "Peak benchmark Pinot for filet — Willamette terroir frames the delicate cut.",
+        "source": "Cristom Mt Jefferson Cuvée|Filet Mignon"
+      },
+      {
+        "template": "Peak rare-Napa CF for filet — Persian-influenced estate story worth telling on the delicate cut.",
+        "source": "Darioush Cabernet Franc|Filet Mignon"
+      },
+      {
+        "template": "Peak flagship Willamette Pinot for filet — Domaine Serene elegance.",
+        "source": "Domaine Serene Grand Cheval|Filet Mignon"
+      },
+      {
+        "template": "Peak savory Willamette Pinot for filet — age-worthy Oregon serious red.",
+        "source": "Evening Land Seven Springs|Filet Mignon"
+      },
+      {
+        "template": "Peak Anderson Valley Pinot for filet — concentrated Mendocino red on the delicate cut.",
+        "source": "Filet Mignon|J Davies Ferrington Vineyards"
+      },
+      {
+        "template": "Peak food-friendly Pinot for filet — reliable Russian River on the delicate cut.",
+        "source": "Filet Mignon|Jax Calesa Vineyard Pinot Noir"
+      },
+      {
+        "template": "Pour when the guest wants the bold-red experience.",
+        "source": "Filet Mignon|Le Volte dell'Ornellaia"
+      },
+      {
+        "template": "Peak Italian-approachable red for filet — great value on the delicate cut, Italian alternative to Cab.",
+        "source": "Filet Mignon|Lunaria Coste di Moro"
+      },
+      {
+        "template": "Peak accessible Pinot for filet — Macauley light body on the delicate cut at mid-tier price.",
+        "source": "Filet Mignon|Macauley Pinot Noir"
+      },
+      {
+        "template": "Peak plush California Pinot for filet — opulent Russian River style for the delicate cut.",
+        "source": "Filet Mignon|Marimar Estate Christina"
+      },
+      {
+        "template": "Peak Burgundian-style California Pinot for filet — one of California's finest.",
+        "source": "Filet Mignon|RAEN Royal St Robert"
+      },
+      {
+        "template": "Peak legendary-vineyard Pinot for filet — California Pinot history on the cut.",
+        "source": "Filet Mignon|Sanford & Benedict Pinot Noir"
+      },
+      {
+        "template": "Peak Tuscan Sangiovese for filet — Italian table wine on the delicate cut.",
+        "source": "Filet Mignon|Tenuta di Arceno Chianti Classico"
       }
     ],
     "COCKTAIL_BOLD|STEAK_BOLD": [
       {
         "template": "Peak spirit-forward pour for the fattiest cut on the menu.",
         "source": "Bowdie's Old Fashioned|Cowboy Ribeye"
+      },
+      {
+        "template": "Strong spirit-forward pour for the fattiest cut.",
+        "source": "Cowboy Ribeye|Sazerac"
+      },
+      {
+        "template": "Strong alternative spirit pour.",
+        "source": "Cowboy Ribeye|The Manhattan"
+      },
+      {
+        "template": "Strong alternative to Cab-forward or Old Fashioned options for the fatty cut.",
+        "source": "Cowboy Ribeye|Vieux Carré"
       },
       {
         "template": "Peak Manhattan pairing for the most approachable bold cut — weight-matches well.",
@@ -17491,6 +18259,12 @@ const CORPUS_MINED = {
       {
         "template": "Peak benchmark Sauv Blanc for crab cake — Loire precision on the classic starter.",
         "source": "Crab Cake|Joseph Mellot Sancerre"
+      }
+    ],
+    "APERITIVO_BITTER|SALAD": [
+      {
+        "template": "this is aperitivo country — Campari's ruby bitter was built for crisp greens and blue cheese bite, where the sipping amari would feel heavy.",
+        "source": "Campari|House Wedge"
       }
     ],
     "SWEET_WINE|DESSERT_LIGHT": [
@@ -17567,6 +18341,22 @@ const CORPUS_MINED = {
         "source": "Creme Brulee|G.D. Vajra Moscato d'Asti"
       }
     ],
+    "BOURBON_BOLD|DESSERT_LIGHT": [
+      {
+        "template": "Fiddich rides the cheesecake with gateway character; Balvenie 12's vanilla-forward profile edges this pairing.",
+        "source": "Cheesecake|Glenfiddich 12"
+      },
+      {
+        "template": "Glenlivet rides the cheesecake with pineapple-hint distinction; Balvenie 12's vanilla is still the featured Speyside-cheesecake match.",
+        "source": "Cheesecake|Glenlivet 12"
+      }
+    ],
+    "HEAVY_SPIRIT|DESSERT_LIGHT": [
+      {
+        "template": "the Trinidad column-still polish meets cheesecake cream at refined-medium register — the lighter Jung and Wulff option.",
+        "source": "Cheesecake|Jung and Wulff Trinidad"
+      }
+    ],
     "COGNAC_LUXURY|DESSERT_LIGHT": [
       {
         "template": "Save the Louis XIII bottle for the protein course.",
@@ -17581,6 +18371,56 @@ const CORPUS_MINED = {
       {
         "template": "Peak Oregon Chardonnay for salmon across most seasonal builds.",
         "source": "Faroe Island Salmon|Our Lady of Guadalupe Acolytes"
+      },
+      {
+        "template": "Excellent on swordfish; off-dry residual-sugar-and-acid balances the meaty fish at German-white register.",
+        "source": "Schloss Vollrads Riesling|Swordfish"
+      }
+    ],
+    "SPARKLING|FISH_MAIN_RICH": [
+      {
+        "template": "Excellent on Chilean seabass; tête-de-cuvée depth meets buttery white-fish at prestige register.",
+        "source": "Chilean Seabass|Pommery Cuvée Louise"
+      }
+    ],
+    "COGNAC|DESSERT_CHOCOLATE": [
+      {
+        "template": "Christian Bros's value-sweet profile finds chocolate naturally — the democratic brandy-cocoa pairing when Hennessy feels over-specified.",
+        "source": "Chocolate Brownie|Christian Bros Brandy"
+      },
+      {
+        "template": "Courvoisier's drier finish lets cocoa lead rather than blending with it — distinct from Hennessy's sweeter-marriage approach.",
+        "source": "Chocolate Brownie|Courvoisier Cognac"
+      },
+      {
+        "template": "Hennessy's vanilla-and-oak marries cocoa cleanly; the dried-fruit notes build a bridge to chocolate dessert that doesn't overpower.",
+        "source": "Chocolate Brownie|Hennessy Cognac"
+      },
+      {
+        "template": "Rémy's elegance layers into cocoa with refined character.",
+        "source": "Chocolate Brownie|Remy VSOP Cognac"
+      },
+      {
+        "template": "Villon's accessible-sweet profile and saffron notes find chocolate naturally — more dessert-forward than Hennessy's benchmark.",
+        "source": "Chocolate Brownie|Villon Cognac"
+      }
+    ],
+    "HEAVY_SPIRIT|DESSERT_CHOCOLATE": [
+      {
+        "template": "Excellent on brownie; the Jamaican funk meets warm chocolate with tropical-fruit intensity — Doctor Bird is the dark-rum answer for bourbon drinkers wanting something wild.",
+        "source": "Chocolate Brownie|Doctor Bird Jamaica Rum"
+      },
+      {
+        "template": "Excellent on brownie; the heavy-molasses burnt-sugar character with earthy-woody depth threads chocolate at historical-rum register — this is the wooden-still story in a glass.",
+        "source": "Chocolate Brownie|Jung and Wulff Guyana"
+      },
+      {
+        "template": "Excellent on brownie; the molasses-forward profile threads chocolate at cocktail-staple register — this is the dark-rum-on-dessert classic without the Zacapa luxury or Doctor Bird funk.",
+        "source": "Chocolate Brownie|Myers's Rum"
+      },
+      {
+        "template": "Excellent on brownie; the solera's honey-caramel thread meets warm chocolate at luxury register — this is the sipping-rum-on-dessert move.",
+        "source": "Chocolate Brownie|Ron Zacapa Rum"
       }
     ],
     "COCKTAIL_BOLD|DESSERT_CHOCOLATE": [
@@ -17591,6 +18431,10 @@ const CORPUS_MINED = {
       {
         "template": "Peak dessert-cocktail pour — built for chocolate desserts.",
         "source": "Chocolate Brownie|Espresso Old Fashioned"
+      },
+      {
+        "template": "bourbon-base with red-wine float brings fruit-meets-cocoa dimension to the brownie at cocktail register.",
+        "source": "Chocolate Brownie|New York Sour"
       },
       {
         "template": "Peak dessert cocktail when the cake returns; currently unavailable.",
@@ -17605,6 +18449,24 @@ const CORPUS_MINED = {
       {
         "template": "The one amaro where this dessert jumps tier.",
         "source": "Chocolate Brownie|Fernet Menta"
+      }
+    ],
+    "COGNAC_LUXURY|DESSERT_CHOCOLATE": [
+      {
+        "template": "warm cocoa is dense enough to engage Louis XIII without being overshadowed — the featured dessert for the bottle if the guest wants one.",
+        "source": "Chocolate Brownie|Louis XIII Cognac"
+      }
+    ],
+    "COCKTAIL_LIGHT|DESSERT_CHOCOLATE": [
+      {
+        "template": "Excellent on chocolate brownie; the build-character threads chocolate at cocktail register.",
+        "source": "Chocolate Brownie|Pablo Sour"
+      }
+    ],
+    "MEZCAL|STEAK_BOLD": [
+      {
+        "template": "the ceramic-decanter ceremony matches the dramatic cut — both are occasions, both are plated visually, both are built to be noticed.",
+        "source": "Clase Azul Guerrero Mezcal|The Tomahawk"
       }
     ],
     "ELEGANT_RED|FISH_MAIN_RICH": [
@@ -17647,22 +18509,56 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|The BG"
       }
     ],
-    "GIN|LIGHT_STARTER": [
-      {
-        "template": "The default Tanq-seafood pairing.",
-        "source": "Crab Cake|Tanqueray Gin"
-      }
-    ],
     "BOURBON_BOLD|CREAMY_SIDE": [
       {
         "template": "More refined than Weller Special Reserve here; the oak gives the side a backbone the younger Wellers don't.",
         "source": "Creamed Spinach|Weller 12 Year"
       }
     ],
+    "COGNAC|DESSERT_LIGHT": [
+      {
+        "template": "Ferrand's floral-honey finds the caramel with artisanal elegance — alongside Rémy VSOP's Fine Champagne approach in the featured-pairing register.",
+        "source": "Creme Brulee|Pierre Ferrand Cognac"
+      }
+    ],
+    "ELEGANT_RED|RICH_SIDE": [
+      {
+        "template": "Strong — the wine refreshes the side's richness.",
+        "source": "Cristom Mt Jefferson Cuvée|Mushrooms"
+      }
+    ],
     "ELEGANT_RED|HEARTY_STARTER": [
       {
         "template": "Peak Loire red for escargot — French Pinot on the French classic.",
         "source": "Daniel Chotard Sancerre Rouge|Escargot"
+      }
+    ],
+    "ELEGANT_RED|HEARTY_SOUP": [
+      {
+        "template": "Excellent on French Onion; earth-fruit-light-red frames beef-broth-and-gruyere at Loire register — the French answer to the French classic.",
+        "source": "Daniel Chotard Sancerre Rouge|French Onion"
+      }
+    ],
+    "VODKA|LIGHT_STARTER": [
+      {
+        "template": "hometown craft character delivers the classic cold-app pairing with Michigan-pride distinction.",
+        "source": "Detroit City Vodka|Shrimp Cocktail"
+      },
+      {
+        "template": "Goose's silky finish elevates the classic cold app to a tasting pairing.",
+        "source": "Grey Goose Vodka|Shrimp Cocktail"
+      },
+      {
+        "template": "Excellent on seafood tower; neutral-clean profile frames shellfish at California-craft register.",
+        "source": "Hangar 1 Vodka|Seafood Tower"
+      },
+      {
+        "template": "clean slightly-sweet neutral frames the shrimp without competing, classic American seafood pairing.",
+        "source": "Shrimp Cocktail|Titos Vodka"
+      },
+      {
+        "template": "Wheatley's clean finish is the value-premium option for the classic cold app.",
+        "source": "Shrimp Cocktail|Wheatley Vodka"
       }
     ],
     "LIGHT_SPIRIT|FISH_MAIN_DELICATE": [
@@ -17679,16 +18575,6 @@ const CORPUS_MINED = {
         "source": "Mijenta Blanco|Seared Scallops"
       }
     ],
-    "TEQUILA_BOLD|STEAK_LEAN": [
-      {
-        "template": "Vanilla and light oak frame the filet without overpowering; the everyday reposado call.",
-        "source": "Don Julio Reposado|Filet Mignon"
-      },
-      {
-        "template": "The concentrated agave is slightly ambitious for the filet's restraint; capable but Don Fulano or Don Julio 70th sit with the cut more cleanly.",
-        "source": "Filet Mignon|G4 High Proof"
-      }
-    ],
     "WHITE_WINE|FISH_MAIN_DELICATE": [
       {
         "template": "Peak Pinot Blanc for rainbow trout — Oregon white on the delicate classic.",
@@ -17703,8 +18589,30 @@ const CORPUS_MINED = {
         "source": "Jean-Pierre Grossot Chablis|Seared Scallops"
       },
       {
+        "template": "Loire Sauv Blanc's mineral-citrus profile frames any light white-fish at Sancerre register.",
+        "source": "Joseph Mellot Sancerre|Market Fish"
+      },
+      {
         "template": "Peak Sancerre for scallops — textbook French-on-French pairing.",
         "source": "Joseph Mellot Sancerre|Seared Scallops"
+      },
+      {
+        "template": "Napa Sauv Blanc's citrus-herb-brightness matches the fish's curing-forward profile at flagship-white register.",
+        "source": "Salt-Cured Halibut|St Supéry Sauvignon Blanc"
+      }
+    ],
+    "COCKTAIL_LIGHT|HEARTY_STARTER": [
+      {
+        "template": "Strong opener cocktail — unconventional for tartare but lightness makes room for the course.",
+        "source": "French 75|Prime Tartare"
+      },
+      {
+        "template": "Light cocktail's citrus lift mirrors a delicate starter's brightness.",
+        "source": "Prime Tartare|The Happy Wife"
+      },
+      {
+        "template": "Peak martini pairing for the hand-cut beef — sophistication matched.",
+        "source": "Prime Tartare|Vesper"
       }
     ],
     "COCKTAIL_LIGHT|FISH_MAIN_DELICATE": [
@@ -17717,16 +18625,44 @@ const CORPUS_MINED = {
         "source": "Lemon Lavender Gin Martini|Seared Scallops"
       }
     ],
+    "BOURBON_BOLD|FISH_MAIN_DELICATE": [
+      {
+        "template": "Hakushu's crisp-green + subtle peat is delicate enough to sit with scallops where most peated whiskies can't — Forest-Distillery lightness is the category advantage here.",
+        "source": "Hakushu 12 Year|Seared Scallops"
+      }
+    ],
+    "COCKTAIL_BOLD|SALAD": [
+      {
+        "template": "Works as an opener for bitter-cocktail fans — Negroni's structure meets the wedge's layered components.",
+        "source": "House Wedge|Negroni"
+      }
+    ],
     "WHITE_WINE|SALAD": [
       {
         "template": "Peak Napa Sauv Blanc for the wedge — rounded body reframes the classic, brightness keeps it fresh.",
         "source": "House Wedge|St Supéry Sauvignon Blanc"
       }
     ],
+    "VODKA|FISH_MAIN_DELICATE": [
+      {
+        "template": "Ketel's crispness frames the scallop cleanly — neither rounded nor silky, just precise.",
+        "source": "Ketel One Vodka|Seared Scallops"
+      },
+      {
+        "template": "Reyka's mineral character is the distinctive match for scallops — the oceanic pairing where the glacial profile echoes the fish's origin.",
+        "source": "Reyka Vodka|Seared Scallops"
+      }
+    ],
     "MEZCAL|RICH_SIDE": [
       {
         "template": "Gold standard; the mezcal-on-rich-side lock that sells itself.",
         "source": "Los Vecinos Mezcal|Mushrooms"
+      }
+    ],
+    "BIG_RED|RICH_SIDE": [
+      {
+        "template": "Strong King-of-Italian for mushrooms — Scavino's earth-on-earth match.",
+        "source": "Mushrooms|Scavino Barolo"
       }
     ],
     "SPARKLING|HEARTY_STARTER": [
@@ -17753,14 +18689,20 @@ const CORPUS_MINED = {
         "source": "Robert Moncuit Les Grand Blancs|Seared Scallops"
       }
     ],
-    "COCKTAIL_LIGHT|HEARTY_STARTER": [
+    "SPARKLING|RICH_SIDE": [
       {
-        "template": "Light cocktail's citrus lift mirrors a delicate starter's brightness.",
-        "source": "Prime Tartare|The Happy Wife"
+        "template": "prestige champagne's truffle-affinity is textbook — mineral-lean bubbles cut the fat, champagne-truffle synergy peaks here.",
+        "source": "Pommery Cuvée Louise|Truffle Fries"
+      }
+    ],
+    "BIG_RED|CHICKEN_MAIN": [
+      {
+        "template": "Peak Paso value Bordeaux blend for chicken across most preparations.",
+        "source": "Roast Half Chicken|San Simeon Stormwatch"
       },
       {
-        "template": "Peak martini pairing for the hand-cut beef — sophistication matched.",
-        "source": "Prime Tartare|Vesper"
+        "template": "Peak by-the-glass Cab for chicken across most seasonal preparations.",
+        "source": "Roast Half Chicken|Scotto Cellars The Lost Chapters"
       }
     ]
   },

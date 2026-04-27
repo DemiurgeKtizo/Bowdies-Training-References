@@ -11,6 +11,14 @@ const ctx = {}; vm.createContext(ctx);
 const load = (f, n) => vm.runInContext(fs.readFileSync(path.join(repo, f), 'utf8') + '\nthis.' + n + ' = ' + n + ';', ctx);
 load('pairing-map-v2.js','PAIRING_MAP');
 load('pairing-notes.js','PAIRING_NOTES');
+load('enriched-profiles.js','ENRICHED_PROFILES');
+
+function _enrich(entity) {
+  if (!ctx.ENRICHED_PROFILES) return entity;
+  const ep = ctx.ENRICHED_PROFILES[entity.name];
+  if (!ep || !ep.axes) return entity;
+  return Object.assign({}, entity, { axes: ep.axes });
+}
 
 // Build tier lookup: pair-key -> tier
 const tierByKey = new Map();
@@ -60,15 +68,15 @@ function extractVerdict(note, tier) {
       if (head.test(s)) return s;
     }
   }
-  // Gold fallback: editorial gold notes often close with a quotable summary
-  // ("the absolute top-shelf rye for strip when it's the table's special occasion.").
-  // Take the last sentence if it looks summary-like.
+  // Gold fallback: editorial gold notes often close with a quotable summary.
+  // Pair-map tier is the authority — if it says gold, the verdict applies even
+  // if the editorial author used a softer prefix ("Excellent;" / "Strong;").
   if (tier === 'gold' && sents.length >= 2) {
     const last = sents[sents.length - 1];
-    if (last.length >= 25 && last.length <= 280
-        && !/^(See|Note|Also|And|However|But)\b/i.test(last)
-        && !/^(Excellent|Strong|Works|Avoid)/i.test(last)) {
-      return last;
+    if (last.length >= 25 && last.length <= 320
+        && !/^(See|Note|Also|And|However|But)\b/i.test(last)) {
+      // Strip any leading verdict-prefix to keep the substance
+      return last.replace(/^(Gold standard|Peak [^;]+|Excellent|Strong|Works|Avoid)\s*[;:]\s*/i, '');
     }
   }
   return null;
@@ -94,8 +102,8 @@ for (const key of Object.keys(notes)) {
   stats.extracted[tier] = (stats.extracted[tier] || 0) + 1;
   const [a, b] = key.split('|');
   const A = byName[a], B = byName[b]; if (!A || !B) continue;
-  const drink = taxonomy.FOOD_CATS.has(A.category) ? B : A;
-  const food  = taxonomy.FOOD_CATS.has(A.category) ? A : B;
+  const drink = _enrich(taxonomy.FOOD_CATS.has(A.category) ? B : A);
+  const food  = _enrich(taxonomy.FOOD_CATS.has(A.category) ? A : B);
   const dc = taxonomy.drinkClassFor(drink) || 'DEFAULT';
   const fc = taxonomy.foodClassFor(food)   || 'DEFAULT';
   const ck = dc + '|' + fc;

@@ -783,22 +783,6 @@ function _loadEditorialPhrases() {
       }
     }
   } catch (e) { /* corpus optional */ }
-  // Merge hand-written gold supplements (sparse-bucket fallbacks)
-  try {
-    const supp = require('./gold_corpus_supplement').GOLD_CORPUS_SUPPLEMENT || {};
-    if (!_editorialPhrases.verdict) _editorialPhrases.verdict = {};
-    if (!_editorialPhrases.verdict.gold) _editorialPhrases.verdict.gold = {};
-    for (const ck of Object.keys(supp)) {
-      const [dc, fc] = ck.split('|');
-      if (!_editorialPhrases.verdict.gold[dc]) _editorialPhrases.verdict.gold[dc] = {};
-      const existing = _editorialPhrases.verdict.gold[dc][fc] || [];
-      const seen = new Set(existing.map(e => e.template));
-      for (const e of supp[ck]) {
-        if (!seen.has(e.template)) { existing.push(e); seen.add(e.template); }
-      }
-      _editorialPhrases.verdict.gold[dc][fc] = existing;
-    }
-  } catch (e) { /* supplement optional */ }
   return _editorialPhrases;
 }
 const REPO_ROOT_PATH = path.resolve(__dirname, '..');
