@@ -121,11 +121,11 @@ const BOTTLE_PROFILE = {
     verdictHook:  'workhorse Sazerac-house bourbon',
   },
   'Bulleit Bourbon': {
-    tastingNotes: ['high-rye mash bill', 'spice-forward', 'oak'],
+    tastingNotes: ['high-rye', 'spice-forward', 'oak'],
     character:    'high-rye spice-forward depth',
-    bridge1:      'the rye-spice edge cuts {foodTarget}',
+    bridge1:      'the high-rye spice cuts {foodTarget}',
     bridge2:      'the oak underlines {foodSubj}',
-    verdictHook:  'spice-forward bourbon',
+    verdictHook:  'high-rye bourbon',
   },
   'Knob Creek': {
     tastingNotes: ['100-proof', 'oak', 'vanilla'],
@@ -223,9 +223,9 @@ const BOTTLE_PROFILE = {
   'Pommery Cuvée Louise': {
     tastingNotes: ['prestige Champagne', 'brioche', 'fine mousse'],
     character:    'prestige cuvée Champagne elegance',
-    bridge1:      'the fine bubbles lift {foodTarget}',
+    bridge1:      'the prestige bubbles lift {foodTarget}',
     bridge2:      'the brioche edge frames {foodSubj}',
-    verdictHook:  'tête de cuvée Champagne',
+    verdictHook:  'prestige cuvée Champagne',
   },
   // ── Sparkling ───────────────────────────────────────────────────────────
   'Laurent Perrier Le Cuvée Brut': {
@@ -257,57 +257,28 @@ const BOTTLE_PROFILE = {
     bridge2:      'the menthol frames {foodSubj}',
     verdictHook:  'Italian digestivo bitter',
   },
-  'Clase Azul Plata': {
-    tastingNotes: ['hand-crafted ceramic decanter', 'silky Jalisco blanco', 'slow-cooked agave'],
-    character:    'silky Jalisco blanco with ceramic-decanter presentation',
-    bridge1:      'the silky-blanco lift brightens {foodTarget}',
-    bridge2:      'the Jalisco terroir threads {foodSubj}',
-    verdictHook:  'ceramic-decanter blanco',
-  },
-  'Casa Dragones Blanco': {
-    tastingNotes: ['joven blanco', 'estate Jalisco', 'restaurant-pour standard'],
-    character:    'estate-Jalisco joven blanco',
-    bridge1:      'the joven-blanco lift brightens {foodTarget}',
-    bridge2:      'the estate agave note threads {foodSubj}',
-    verdictHook:  'joven blanco',
-  },
-  'Don Julio Blanco': {
-    tastingNotes: ['workhorse blanco', 'agave-forward', 'restaurant standard'],
-    character:    'workhorse blanco with clean agave snap',
-    bridge1:      'the agave-forward body brightens {foodTarget}',
-    bridge2:      'the citrus snap threads {foodSubj}',
-    verdictHook:  'workhorse blanco',
-  },
-  'Patron Silver': {
-    tastingNotes: ['polished silver tequila', 'restaurant call', 'agave-forward'],
-    character:    'polished silver tequila with agave-forward lift',
-    bridge1:      'the silver-tequila body brightens {foodTarget}',
-    bridge2:      'the polished agave note threads {foodSubj}',
-    verdictHook:  'polished silver tequila',
-  },
 };
-
 
 // ── DEFAULT (CLASS-LEVEL) FALLBACK PROFILES ────────────────────────────────
 const DRINK_CLASS_DEFAULT = {
-  BIG_RED:          { character: 'concentrated dark-fruit and tannin',     bridge1: 'the structured body wraps {foodTarget}',          bridge2: 'the cassis frames {foodSubj}',           verdictHook: 'big-red Cab' },
-  ELEGANT_RED:      { character: 'red-fruit-and-spice elegance',           bridge1: 'the silky body carries {foodTarget}',             bridge2: 'the cherry-pepper note frames {foodSubj}', verdictHook: 'elegant red' },
-  BOURBON_BOLD:     { character: 'oak-and-vanilla bourbon depth',          bridge1: 'the brown-spirit body settles into {foodTarget}', bridge2: 'the toffee-vanilla edge softens {foodSubj}', verdictHook: 'bourbon' },
-  TEQUILA_BOLD:     { character: 'aged-agave character',                   bridge1: 'the barrel-rested body handles {foodTarget}',     bridge2: 'the oak threads {foodSubj}',             verdictHook: 'a\u00f1ejo tequila' },
-  MEZCAL:           { character: 'smoky agave character',                  bridge1: 'the wood-fire body meets {foodTarget}',           bridge2: 'the earthy backbone threads {foodSubj}', verdictHook: 'smoky mezcal' },
-  COGNAC:           { character: 'barrel-aged cognac character',           bridge1: 'the brandy depth wraps {foodTarget}',             bridge2: 'the caramel rounds {foodSubj}',          verdictHook: 'classic cognac' },
-  COGNAC_LUXURY:    { character: 'luxury-icon cognac depth',               bridge1: 'the heritage-blend body wraps {foodTarget}',      bridge2: 'the caramel rounds {foodSubj}',          verdictHook: 'luxury cognac' },
-  SPARKLING:        { character: 'bright sparkling effervescence',         bridge1: 'the fine bubbles lift {foodTarget}',              bridge2: 'the citrus frames {foodSubj}',           verdictHook: 'Champagne' },
-  WHITE_WINE:       { character: 'crisp white-wine character',             bridge1: 'the bright acid lifts {foodTarget}',              bridge2: 'the citrus cuts {foodSubj}',             verdictHook: 'white wine' },
-  GIN:              { character: 'botanical-driven lift',                  bridge1: 'the floral edge frames {foodTarget}',             bridge2: 'the juniper threads {foodSubj}',         verdictHook: 'gin' },
-  VODKA:            { character: 'crystalline neutrality',                 bridge1: 'the unflavored body sits with {foodTarget}',      bridge2: 'the crisp profile carries {foodSubj}',   verdictHook: 'vodka' },
-  LIGHT_SPIRIT:     { character: 'silver-spirit lift with agave-citrus edge', bridge1: 'the unaged body brightens {foodTarget}',       bridge2: 'the agave-citrus thread frames {foodSubj}', verdictHook: 'silver spirit' },
-  HEAVY_SPIRIT:     { character: 'dense-spirit weight',                    bridge1: 'the heavy body handles {foodTarget}',             bridge2: 'the deep backbone frames {foodSubj}',    verdictHook: 'heavy pour' },
-  COCKTAIL_BOLD:    { character: 'spirit-forward cocktail register',       bridge1: 'the bold-mix depth handles {foodTarget}',         bridge2: 'the bitters edge frames {foodSubj}',     verdictHook: 'spirit-forward cocktail' },
-  COCKTAIL_LIGHT:   { character: 'citrus-and-bright cocktail lift',        bridge1: 'the bright build frames {foodTarget}',            bridge2: 'the citrus cuts {foodSubj}',             verdictHook: 'light cocktail' },
-  SWEET_LIQUEUR:    { character: 'sweet liqueur character',                bridge1: 'the digestif body mirrors {foodTarget}',          bridge2: 'the herbal-sugar edge threads {foodSubj}', verdictHook: 'digestif liqueur' },
-  APERITIVO_BITTER: { character: 'bitter-herb aperitivo edge',             bridge1: 'the herbal cut works {foodTarget}',               bridge2: 'the amaro backbone frames {foodSubj}',   verdictHook: 'aperitivo' },
-  SWEET_WINE:       { character: 'dessert-wine sweetness',                 bridge1: 'the late-harvest body mirrors {foodTarget}',      bridge2: 'the honey threads {foodSubj}',           verdictHook: 'dessert wine' },
+  BIG_RED:          { character: 'concentrated dark-fruit and tannin',  bridge1: 'the bold red body wraps {foodTarget}',  bridge2: 'the cassis frames {foodSubj}', verdictHook: 'big-red Cab' },
+  ELEGANT_RED:      { character: 'red-fruit-and-spice elegance',         bridge1: 'the silky red-fruit body wraps {foodTarget}', bridge2: 'the cherry-fruit frames {foodSubj}', verdictHook: 'elegant red' },
+  BOURBON_BOLD:     { character: 'oak-and-vanilla bourbon depth',        bridge1: 'the bourbon depth settles into {foodTarget}', bridge2: 'the vanilla softens {foodSubj}', verdictHook: 'bourbon' },
+  TEQUILA_BOLD:     { character: 'aged-agave character',                 bridge1: 'the aged-agave depth handles {foodTarget}', bridge2: 'the oak frames {foodSubj}', verdictHook: 'añejo tequila' },
+  MEZCAL:           { character: 'smoky agave character',                bridge1: 'the mezcal smoke meets {foodTarget}', bridge2: 'the agave threads {foodSubj}', verdictHook: 'smoky mezcal' },
+  COGNAC:           { character: 'barrel-aged cognac character',         bridge1: 'the cognac depth wraps {foodTarget}', bridge2: 'the caramel rounds {foodSubj}', verdictHook: 'classic cognac' },
+  COGNAC_LUXURY:    { character: 'luxury-icon cognac depth',             bridge1: 'the icon-cognac depth wraps {foodTarget}', bridge2: 'the caramel rounds {foodSubj}', verdictHook: 'luxury cognac' },
+  SPARKLING:        { character: 'bright sparkling effervescence',       bridge1: 'the bubbles lift {foodTarget}', bridge2: 'the citrus frames {foodSubj}', verdictHook: 'sparkling' },
+  WHITE_WINE:       { character: 'crisp white-wine character',           bridge1: 'the bright acid lifts {foodTarget}', bridge2: 'the citrus cuts {foodSubj}', verdictHook: 'white wine' },
+  GIN:              { character: 'botanical lift',                       bridge1: 'the botanical lift frames {foodTarget}', bridge2: 'the juniper threads {foodSubj}', verdictHook: 'gin' },
+  VODKA:            { character: 'clean vodka neutrality',               bridge1: 'the vodka neutrality sits with {foodTarget}', bridge2: 'the clean profile carries {foodSubj}', verdictHook: 'vodka' },
+  LIGHT_SPIRIT:     { character: 'clean light-spirit character',         bridge1: 'the clean spirit sits with {foodTarget}', bridge2: 'the light body lifts {foodSubj}', verdictHook: 'light spirit' },
+  HEAVY_SPIRIT:     { character: 'heavy-spirit weight',                  bridge1: 'the spirit weight handles {foodTarget}', bridge2: 'the depth frames {foodSubj}', verdictHook: 'heavy spirit' },
+  COCKTAIL_BOLD:    { character: 'spirit-forward cocktail register',     bridge1: 'the spirit-forward depth handles {foodTarget}', bridge2: 'the cocktail spice frames {foodSubj}', verdictHook: 'spirit-forward cocktail' },
+  COCKTAIL_LIGHT:   { character: 'citrus-and-bright cocktail lift',      bridge1: 'the cocktail lift frames {foodTarget}', bridge2: 'the citrus cuts {foodSubj}', verdictHook: 'light cocktail' },
+  SWEET_LIQUEUR:    { character: 'sweet liqueur character',              bridge1: 'the sweet character mirrors {foodTarget}', bridge2: 'the liqueur depth threads {foodSubj}', verdictHook: 'digestif liqueur' },
+  APERITIVO_BITTER: { character: 'bitter-herb aperitivo edge',           bridge1: 'the bitter herb edge cuts {foodTarget}', bridge2: 'the aperitivo character frames {foodSubj}', verdictHook: 'aperitivo' },
+  SWEET_WINE:       { character: 'dessert-wine sweetness',               bridge1: 'the dessert-wine sweetness mirrors {foodTarget}', bridge2: 'the honey threads {foodSubj}', verdictHook: 'dessert wine' },
 };
 
 // ── WHISKEY VOICE SUBCLASS ─────────────────────────────────────────────────
@@ -639,41 +610,21 @@ function buildBody(drink, food, tier, ctx) {
 const VERDICT_PATTERNS = {
   gold: [
     "Gold standard; the {hook} that defines {food}.",
-    "Gold standard; {drink} on {food} -- the call you don't second-guess.",
-    "Gold standard; for {food}, {drink} is the answer, full stop.",
-    "Gold standard; {hook} on {food} -- pour it and step back.",
-    "Gold standard; if a guest asks what to drink with {food}, the answer is {drink}.",
-    "Gold standard; pour {drink} on {food}, that's the play.",
-    "Gold standard; {drink} into {food} -- textbook.",
+    "Gold standard; {drink} on {food} — the call you don't second-guess.",
   ],
   excellent: [
     "Excellent; {hook} on {food} -- the call servers pour without second-guessing.",
     "Excellent; the {hook} pour for {food}.",
     "Peak {hook} for {food} -- {drink} elegance meets the plate.",
-    "Excellent; {hook} carries {food} without overshooting.",
-    "Excellent; {drink} dials in cleanly on {food}.",
-    "Excellent; {hook} when a guest asks what works on {food}.",
-    "Excellent; {drink} sits in the pocket on {food}.",
-    "Excellent; {hook} on {food} -- the kind of pour that earns a regular.",
   ],
   strong: [
     "Strong; {hook} on {food} reads cleanly at the table.",
     "Strong; reliable {hook} for {food}.",
-    "Strong; {drink} earns its place next to {food}.",
-    "Strong; {hook} keeps pace with {food}.",
-    "Strong; {drink} on {food} -- workhorse pairing, no surprises.",
-    "Strong; the {hook} option when the gold call is spoken for.",
-    "Strong; {hook} settles in alongside {food} without asking for attention.",
   ],
   works: [
     "Works; the {hook} call sits at neutral register against {food}.",
     "Works; capable {hook} for {food}, but not the headline pour.",
     "Works; the {hook} pairing holds without pulling focus.",
-    "Works; {drink} is fine on {food} -- fine, not memorable.",
-    "Works; {hook} doesn't fight {food}, but doesn't lift it either.",
-    "Works; {drink} pulls neither way against {food}.",
-    "Works; the {hook} backup when the strong calls are weeded.",
-    "Works; functional pour for {food} -- save the storytelling for another bottle.",
   ],
   avoid: [
     // avoid is handled separately (needs alternatives)
@@ -1031,27 +982,7 @@ function generate(drink, food, tier, ctx) {
     if (dc === 'BOURBON_BOLD' && profile.avoidLabel) dcLabel = profile.avoidLabel;
     const article = /^[aeiouAEIOU]/.test(dcLabel) ? 'an' : 'a';
     const avoidChar = stripLeadingPossessive(drink.name, profile.character || '');
-    // Determine "save for" target — avoid contradiction when food IS a steak
-    const isFoodSteak = fc === 'STEAK_LEAN' || fc === 'STEAK_BOLD';
-    const saveFor = isFoodSteak ? 'another course' : 'the steak course';
-    // Deterministic pick: 5 closer × 3 save-phrase variants
-    const closers = [
-      'Avoid; reach for any of those instead.',
-      'Avoid; the alts above are the call.',
-      'Avoid; pick from the alternatives.',
-      'Avoid; one of those is the move.',
-      'Avoid; steer the table to the alternatives.',
-    ];
-    const savePhrases = [
-      'Save the ' + drink.name + ' for ' + saveFor + '.',
-      drink.name + ' belongs on ' + saveFor + '.',
-      'Hold the ' + drink.name + ' for ' + saveFor + '.',
-    ];
-    const sig = drink.name + '|' + food.name + '|avoid';
-    const h = crypto.createHash('md5').update(sig).digest();
-    const closer = closers[h.readUInt32BE(0) % closers.length];
-    const saveClause = savePhrases[h.readUInt32BE(4) % savePhrases.length];
-    return drinkPossessive(drink.name) + ' ' + avoidChar + ' overpowers ' + foodPossessive(food) + ' ' + foodCharacter(food) + ' -- the plate deserves ' + altsList + ', not ' + article + ' ' + dcLabel + '. ' + closer + ' ' + saveClause;
+    return drinkPossessive(drink.name) + ' ' + avoidChar + " overpowers " + foodPossessive(food) + ' ' + foodCharacter(food) + ' -- the plate deserves ' + altsList + ', not ' + article + ' ' + dcLabel + '. Avoid; Reach for ' + altsList + '. Save the ' + drink.name + ' for the steak.';
   }
 
   const action = pickAction(tier, drink, food);

@@ -703,7 +703,7 @@ function _editorialVerdict(tier, drink, food, profile) {
   const foodNameLower = food.name.toLowerCase();
   const foodProfile = (food.profile || []).join(' ').toLowerCase();
   const allowedFoodContext = foodCharText + ' ' + foodNameLower + ' ' + foodProfile;
-  const FOOD_NOUN_RX = /\b(marrow|crab|cream|potato|shellfish|brulee|cake|fries|fish|chicken|halibut|tuna|trout|salmon|seabass|burrata|escargot|tartare|asparagus|broccoli|spinach|carrot|brownie|cheesecake|beignets|wedge|caesar|gumbo|chowder|bisque|ribeye|filet|steak|tomahawk|pork|belly|sprouts|mushroom|shrimp)\b/gi;
+  const FOOD_NOUN_RX = /\b(marrow|crab|cream|potato|shellfish|brulee|cake|fries|fish|chicken|halibut|tuna|trout|salmon|seabass|burrata|escargot|tartare|asparagus|broccoli|spinach|carrot|brownie|cheesecake|beignets|wedge|caesar|gumbo|chowder|bisque|ribeye|filet|steak|tomahawk|pork|belly|sprouts|mushroom|shrimp|cocoa|chocolate|custard|raisin|umami|broth|cheddar|gruyere|honey-glazed|sugar)\b/gi;
   pool = pool.filter(e => {
     const t = e.template.toLowerCase();
     let m;
@@ -789,19 +789,68 @@ function _editorialVerdict(tier, drink, food, profile) {
   }
 
   // Bottle-name catalog filter: reject phrases mentioning a different bottle
-  // by a name fragment that's not the current drink.
+  // by a name fragment that's not the current drink. Expanded with every
+  // distillery / brand name observable in the corpus.
   const otherBottlePatterns = [
+    // Scotch distilleries
     'fiddich','glenfiddich','macallan','oban','lagavulin','laphroaig',
-    'bowmore','glenmorangie','glenlivet','aberlour','cragganmore',
-    'jameson','redbreast','tullamore','bushmills','crown royal',
-    'jack daniel','yamazaki','hibiki','hakushu','pappy','stagg',
-    'blanton',"booker",'eagle rare','weller','caymus','opus one',
-    'silver oak','jordan','far niente','fernet','aperol','campari',
-    'amaro nonino','green chartreuse','inverroche','mahón','mahon',
-    'long road','bacardi','ron zacapa','don julio','patron','clase azul',
-    'cape-floral','gr-pride','michigan-pride',
+    'bowmore','glenmorangie','glenlivet','aberlour','cragganmore','dalmore',
+    'bruichladdich','glenglassaugh','loch lomond','monkey shoulder',
+    'johnnie walker','dewar','chivas','balvenie',
+    // Irish distilleries
+    'jameson','redbreast','tullamore','bushmills','garavogue','dunville',
+    'midleton','echlinville','teeling','kilbeggan','powers',
+    // Japanese
+    'yamazaki','hibiki','hakushu','suntory','nikka','toki',
+    // American/bourbon
+    'pappy','stagg','blanton',"booker",'eagle rare','weller','maker','knob creek',
+    'jack daniel','gentleman jack','george dickel','old grand-dad','old fitzgerald',
+    'bulleit','elijah craig','heaven hill','henry mckenna','jim beam','larceny',
+    '1792','1881','michter','woodford','wild turkey','angel\u0027s envy','basil hayden',
+    'four roses','jefferson','blade & bow','clermont','i.w. harper','little book',
+    'whistlepig','mister sam','sazerac','pikesville','mammoth','old emmer',
+    'never say die','bardstown','bowman',
+    // Wines
+    'caymus','opus one','silver oak','jordan','far niente','heitz','shafer',
+    'cristom','lingua franca','domaine serene','elk cove','raen','spottswoode',
+    'château beaucastel','beaucastel','peju','quilt','nickel & nickel',
+    'venge','prisoner','muga','marimar','château','barolo','scavino',
+    'pio cesare','le pupille','barbaresco','brunello',
+    // Aperitivo / liqueur
+    'fernet','aperol','campari','amaro nonino','green chartreuse','yellow chartreuse',
+    'mata hari','sambuca','frangelico','disaronno','grand marnier','chambord',
+    'baileys','kahlua','licor 43','drambuie','limoncello','averna','lucano','montenegro',
+    'contratto','ancho reyes','fireball',
+    // Gin
+    'inverroche','mahón','mahon','long road','tanqueray','bombay','beefeater',
+    'plymouth','hendricks','aviation','botanist','roku','monkey 47','elephant',
+    'gray whale','iron fish','bluecoat','knickerbocker','nolets','liberator',
+    'eastern kille','detroit city','empress','2 james','scapegrace','mahon',
+    'sansho',
+    // Vodka
+    'belvedere','grey goose','ketel','stoli','tito','reyka','wheatley','chopin',
+    'hangar','hdw','hangar 1','smirnoff',
+    // Rum
+    'bacardi','ron zacapa','captain morgan','myers','mount gay','malibu',
+    'doctor bird','jung and wulff',
+    // Tequila
+    'don julio','patron','clase azul','don fulano','adictivo','corazon',
+    'el mayor','komos','milagro','ocho','rey sol','siete leguas','tears of llorona',
+    'trombo','el cabo','gran patron','lalo','mijenta','avion','codigo','camarena','g4',
+    // Cognac/brandy
+    'hennessy','courvoisier','remy','louis xiii','pierre ferrand','christian bros',
+    'villon',
+    // Champagne / wine
+    'laurent perrier','veuve','pommery','pierre gimonnet','paul bara','il colle',
+    'raventós','daniel chotard','schloss vollrads',
+    // Region/style descriptors that act as bottle-specific touches
+    'cape-floral','gr-pride','michigan-pride','hometown','grand rapids',
   ];
   const myNameLower = drink.name.toLowerCase();
+  // Reject compound-word substitution templates where {DRINK}- becomes "{Bottle}-X"
+  pool = pool.filter(e => !/\{DRINK\}-/.test(e.template));
+  if (!pool.length) return null;
+
   pool = pool.filter(e => {
     const lower = e.template.toLowerCase();
     for (const pat of otherBottlePatterns) {
@@ -813,15 +862,76 @@ function _editorialVerdict(tier, drink, food, profile) {
   });
   if (!pool.length) return null;
 
+  // Reject phrases mentioning an age-statement variant of the current brand.
+  // E.g. "Bruichladdich 21" in a plain Bruichladdich note, or "Glenfiddich 14"
+  // in a Glenfiddich 12 note. The corpus stores templates like
+  //     "{DRINK} 21 rides {FOOD} at collector register"
+  // where the age statement is baked into the template before {DRINK}
+  // substitutes. We catch this in two passes:
+  //   1. Reject templates with "{DRINK} <number>" — the post-substitution
+  //      will be "{Bottle} <number>", which only fits if the current bottle
+  //      already has that age in its name.
+  //   2. Reject post-substitution age variants of the brand stem.
+  pool = pool.filter(e => {
+    const m = e.template.match(/\{DRINK\}\s+(\d+\w*)/);
+    if (!m) return true;
+    const ageStr = m[1].toLowerCase();
+    return myNameLower.includes(ageStr);
+  });
+  if (!pool.length) return null;
+  const brandStem = drink.name.split(/\s+/)[0].toLowerCase();
+  if (brandStem && brandStem.length > 3) {
+    const escStem = brandStem.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const ageVariantRx = new RegExp('\\b' + escStem + '\\s+\\d+\\w*', 'gi');
+    pool = pool.filter(e => {
+      const matches = e.template.match(ageVariantRx) || [];
+      for (const m of matches) {
+        if (!myNameLower.includes(m.toLowerCase())) return false;
+      }
+      return true;
+    });
+    if (!pool.length) return null;
+  }
+
+  // Flavor-word validation: every flavor noun mentioned in the corpus phrase
+  // must appear in the drink's character/tasting-notes/name OR the food's
+  // character/profile/name OR the chemistry-claim keys. Catches "mint
+  // threads through spice" appearing on a Pablo Sour x Mocha Creme pair
+  // where neither has mint or spice.
+  const FLAVOR_NOUNS = ['mint','basil','lavender','rosemary','sage','thyme',
+    'caramel','vanilla','oak','spice','honey','smoke','peat','fruit','cherry',
+    'cassis','tannin','cocoa','mocha','chocolate','coffee','citrus','orange',
+    'lemon','grapefruit','mineral','flint','earth','herb','botanical','floral',
+    'toffee','almond','hazelnut','sherry','rye','malt','juniper','anise',
+    'apple','pear','peach','cherry','plum','currant','raisin','nut','sesame'];
+  // Build allowed-flavor context from drink + food
+  const drinkProfile = profile.character + ' ' + (profile.tastingNotes || []).join(' ') + ' ' + drink.name + ' ' + (profile.verdictHook || '');
+  const foodCtx = (fxfGen.FOOD_CHARACTER[food.name] || '') + ' ' + food.name + ' ' + (food.profile || []).join(' ');
+  const allowedFlavorContext = (drinkProfile + ' ' + foodCtx).toLowerCase();
+  pool = pool.filter(e => {
+    const lower = e.template.toLowerCase();
+    for (const fn of FLAVOR_NOUNS) {
+      const escFn = fn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      if (new RegExp('\\b' + escFn + '\\b', 'i').test(lower)) {
+        if (!allowedFlavorContext.includes(fn)) return false;
+      }
+    }
+    return true;
+  });
+  if (!pool.length) return null;
+
   // Deterministic pick by pair signature
   const sig = drink.name + '|' + food.name + '|' + tier;
   const h = crypto.createHash('md5').update(sig).digest();
   const pick = pool[h.readUInt32BE(0) % pool.length];
 
   // Fill slots if present
-  return pick.template
+  let filled = pick.template
     .replace(/\{DRINK\}/g, drink.name)
     .replace(/\{FOOD\}/g, foodShortName(food));
+  // Capitalize lowercase verdict-tier word at start (corpus formatting artifact)
+  filled = filled.replace(/^(excellent|strong|works|gold|avoid)\b/, (m) => m.charAt(0).toUpperCase() + m.slice(1));
+  return filled;
 }
 
 function pickVerdict(tier, drink, food, profile) {
@@ -841,7 +951,13 @@ function pickVerdict(tier, drink, food, profile) {
     .replace(/\{food\}/g, foodShortName(food));
 }
 
-// ── MAIN ENTRY ─────────────────────────────────────────────────────────────
+// ── MAIN ENTRY ───────────────────────────
+function _enrich(entity, ctx) {
+  if (!ctx || !ctx.ENRICHED_PROFILES) return entity;
+  const ep = ctx.ENRICHED_PROFILES[entity.name];
+  if (!ep || !ep.axes) return entity;
+  return Object.assign({}, entity, { axes: ep.axes });
+}
 
 function generate(drink, food, tier, ctx) {
   if (!drink || !food) throw new Error('generate: drink and food required');
@@ -850,18 +966,50 @@ function generate(drink, food, tier, ctx) {
 
   drink = _enrich(drink, ctx);
   food  = _enrich(food, ctx);
-  // Tier correction: v9 sometimes overrides the pair-map tier with the actual
-  // verdict word (e.g. JW Blue x Bone Marrow is in the gold list but v9 wrote
-  // "Works"). Apply mined corrections.
   const _tcKey = drink.name + "|" + food.name;
   if (TIER_CORRECTIONS[_tcKey]) tier = TIER_CORRECTIONS[_tcKey];
 
   const profile = profileFor(drink);
 
-  // ── AVOID PATH ─────────────────────────────────────────────────────────
   if (tier === 'avoid') {
     const fc = taxonomy.foodClassFor(food);
     const dc = taxonomy.drinkClassFor(drink);
     const altsFood = fxfGen.alternativesFor(food, ctx.PAIRING_MAP, 3);
     const altsList = altsFood.length
-      ? (altsFood.length === 1 ? altsFood[0] : altsFood.length ==
+      ? (altsFood.length === 1 ? altsFood[0] : altsFood.length === 2 ? altsFood[0] + ' or ' + altsFood[1] : altsFood.slice(0,-1).join(', ') + ', or ' + altsFood[altsFood.length-1])
+      : 'a wine that fits the plate';
+    let dcLabel = ({BIG_RED:'big red',ELEGANT_RED:'elegant red',BOURBON_BOLD:'bourbon',TEQUILA_BOLD:'añejo tequila',MEZCAL:'mezcal',COGNAC:'cognac',COGNAC_LUXURY:'icon cognac',SPARKLING:'sparkling',WHITE_WINE:'white wine',GIN:'gin',VODKA:'vodka',LIGHT_SPIRIT:'light spirit',HEAVY_SPIRIT:'heavy spirit',COCKTAIL_BOLD:'spirit-forward cocktail',COCKTAIL_LIGHT:'light cocktail',SWEET_LIQUEUR:'digestif',APERITIVO_BITTER:'bitter aperitivo',SWEET_WINE:'dessert wine'})[dc] || 'pour';
+    if (dc === 'BOURBON_BOLD' && profile.avoidLabel) dcLabel = profile.avoidLabel;
+    const article = /^[aeiouAEIOU]/.test(dcLabel) ? 'an' : 'a';
+    const avoidChar = stripLeadingPossessive(drink.name, profile.character || '');
+    return drinkPossessive(drink.name) + ' ' + avoidChar + " overpowers " + foodPossessive(food) + ' ' + foodCharacter(food) + ' -- the plate deserves ' + altsList + ', not ' + article + ' ' + dcLabel + '. Avoid; Reach for ' + altsList + '. Save the ' + drink.name + ' for the steak.';
+  }
+
+  const action = pickAction(tier, drink, food);
+  const body = buildBody(drink, food, tier, ctx);
+  let verdict = pickVerdict(tier, drink, food, profile);
+  const _fc = taxonomy.foodClassFor(food);
+  const _dc = taxonomy.drinkClassFor(drink);
+  if (_fc && _dc && COMPETITOR_REFS[_fc] && COMPETITOR_REFS[_fc][_dc]) {
+    const ref = COMPETITOR_REFS[_fc][_dc];
+    if (ref.bottle && ref.bottle !== drink.name && tier !== "avoid") {
+      verdict = verdict.replace(/\.\s*$/, "") + "; " + ref.bottle + " still cuts it harder.";
+    }
+  }
+
+  let setup;
+  if (profile.tastingNotes && tier !== 'works') {
+    setup = drink.name + ' -- ' + profile.tastingNotes.join(', ') + '. ' + body.charAt(0).toUpperCase() + body.slice(1) + '. ' + verdict;
+  } else {
+    const charText = stripLeadingPossessive(drink.name, profile.character || '');
+    setup = drinkPossessive(drink.name) + ' ' + charText + ' ' + action + ' ' + foodPossessive(food) + ' ' + foodCharacter(food) + ': ' + body + '. ' + verdict;
+  }
+  const prefix = (tier === 'gold') ? '* ' : '';
+  return prefix + setup;
+}
+
+function pickAction(tier, drink, food) {
+  const opts = ({
+    gold:      ['runs straight into', 'meets head-on'],
+    excellent: ['carries cleanly into', 'meets at register with', 'lifts'],
+    strong:    ['meets at 

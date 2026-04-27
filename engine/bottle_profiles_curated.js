@@ -34,9 +34,9 @@ const BOTTLE_PROFILES_CURATED = {
   'Oban 18': {
     tastingNotes: ['aged maritime Highland', 'spice', 'honey'],
     character:    'aged maritime Highland depth',
-    bridge1:      'the aged maritime depth wraps {foodTarget}',
-    bridge2:      'the spice softens {foodSubj}',
-    verdictHook:  'aged maritime Highland Scotch',
+    bridge1:      'the coastal-Highland weight wraps {foodTarget}',
+    bridge2:      'the honey-spice edge softens {foodSubj}',
+    verdictHook:  'flagship maritime Highland Scotch',
   },
   'Dalmore 12': {
     tastingNotes: ['sherry-cask Highland', 'orange', 'chocolate'],
@@ -325,9 +325,9 @@ const BOTTLE_PROFILES_CURATED = {
   'Detroit City Gin': {
     tastingNotes: ['Detroit Distillery', 'hometown craft', 'urban juniper'],
     character:    'Detroit urban-craft gin',
-    bridge1:      'the urban-juniper lift frames {foodTarget}',
-    bridge2:      'the hometown character meets {foodSubj}',
-    verdictHook:  'hometown craft gin',
+    bridge1:      'the city-distilled juniper frames {foodTarget}',
+    bridge2:      'the local-spirit character meets {foodSubj}',
+    verdictHook:  'Michigan-pride gin',
   },
 
   // ── Light spirit / Rum (additions) ────────────────────────────────────
