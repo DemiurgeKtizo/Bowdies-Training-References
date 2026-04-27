@@ -2,6 +2,41 @@
 // Per-entry character snippets mined from the 18K editorial pairing notes.
 // Re-run mine_editorial_corpus.js after editorial note edits.
 const EDITORIAL_SNIPPETS = {
+  "1792 Small Batch": [
+    "Barton 1792's flagship small-batch",
+    "Barton 1792 across strip and filet",
+    "Barton spicy-sweet small-batch",
+    "Barton spicy-sweet",
+    "Barton's spicy-sweet",
+    "spicy-sweet Barton",
+    "1792's spicy-sweet",
+    "Barton 1792 small-batch"
+  ],
+  "1792 Sweet Wheat": [
+    "Barton's wheated release from the 1792 distillery",
+    "sweet-wheat across strip and filet",
+    "sweet-wheat bourbon",
+    "Barton's sweet-wheat expression",
+    "Barton's sweet-wheat",
+    "1792's sweet-wheat",
+    "sweet-wheat",
+    "iceberg and bleu"
+  ],
+  "Brussels and Belly": [
+    "the Brussels and Belly's smoky, sweet pork richness over bitter-char sprouts",
+    "maple-glazed Brussels and crispy pork belly",
+    "maple-glazed Brussels and pork belly",
+    "maple-glazed"
+  ],
+  "Carrot Cake": [
+    "the cake's raisins, cream cheese frosting, and cinnamon warmth",
+    "spice-and-cream-cheese and the cocoa",
+    "the carrot cake's warm-spice, cream-cheese indulgence",
+    "cream cheese and cinnamon spice",
+    "the cake's cream cheese and cinnamon",
+    "cream cheese and cinnamon",
+    "warm-spice"
+  ],
   "Crab Cake": [
     "delicate sweet shellfish — firm-tannin graphite-oak body",
     "delicate sweet meat — Arceno's medium-tannin cherry-earth structure buries the shellfish",
@@ -14,116 +49,190 @@ const EDITORIAL_SNIPPETS = {
   ],
   "Creamed Spinach": [
     "dairy weight and the hazelnut adds depth",
-    "dairy weight and the subtle oak",
-    "dairy weight and the warm-spice",
-    "dairy weight and the graphite-earth",
     "dairy weight and the cocoa",
     "dairy weight and the mocha-spice",
-    "dairy weight and the iron-herbal",
-    "dairy weight and the graphite-oak"
+    "dairy weight and the vanilla-dill",
+    "this rich, creamy side's dairy-driven indulgence",
+    "roux-built with roasted and fresh garlic",
+    "dairy weight and the mocha",
+    "dairy weight and the chocolate-espresso"
+  ],
+  "1881 Napa Valley": [
+    "entry-point Napa Cab with dark cherry, blackcurrant, mocha, smooth medium tannin"
   ],
   "Kansas City": [
     "lean-bold strip char and the dense tannin handles grilled beef",
     "lean-bold strip char and the layered dark fruit",
-    "lean-bold strip char and the graphite echoes grilled-iron depth",
-    "lean-bold strip char and the jammy fruit",
     "this bold, beefy strip's firm texture and savory char",
+    "lean-bold strip char and the jammy fruit",
     "lean-bold strip char and the leather echoes grilled-beef depth",
     "lean-bold strip though low tannin falls short of bolder Cabs",
-    "lean-bold strip though the low tannin falls short of bolder Cabs' char-requirement"
+    "lean-bold strip though the low tannin falls short of bolder Cabs' char-requirement",
+    "lean-bold strip though medium tannin falls short of bolder Cabs"
   ],
   "Porterhouse": [
     "this bold, beefy strip's firm texture and savory char",
-    "dual strip-and-filet though rustic tannin reads rounder than firm-tannin Cabs on the",
-    "dual-cut heft and the iron echoes both filet and strip char",
     "dual-cut nature — rye spice",
     "dual strip-and-filet though the smooth profile reads rounder than firm-tannin Napa on the",
-    "dual-cut nature (strip + filet) elegantly — rye for the strip",
     "dual strip-and-filet though the medium body reads leaner on the",
-    "dual-cut heft and the soft tannin"
+    "dual-cut heft and the black pepper",
+    "dual-cut heft and the integrated tannin",
+    "dual-texture strip-and-filet and the cocoa",
+    "dual-texture strip-and-filet and the mocha-spice"
+  ],
+  "A Midnight's Winter Dram": [
+    "rare craft release across strip and filet",
+    "rare craft release",
+    "rare limited-release",
+    "fresh dairy",
+    "rare release",
+    "scallop delicacy",
+    "cold shrimp"
   ],
   "Aberlour 16": [
+    "16yr Speyside double-matured in ex-bourbon and Oloroso sherry casks, balanced premium approachable-16yr character",
     "sherry-cask raisin-and-spice marries the cake naturally",
+    "ex-bourbon + Oloroso sherry Speyside",
     "sherry-side dried-fruit marries cocoa",
+    "16yr ex-bourbon + Oloroso Speyside",
     "balanced bourbon-plus-sherry character",
-    "bourbon-plus-sherry balance",
-    "bourbon-side vanilla",
-    "sherry-and-bourbon balance",
-    "balance handles the richness",
-    "balance supports the brulee"
+    "ex-bourbon + Oloroso Speyside",
+    "bourbon-plus-sherry balance"
+  ],
+  "Peanut Butter Brownie": [
+    "this dense chocolate dessert's deep cocoa richness",
+    "peanut butter and cocoa",
+    "peanut-chocolate stack",
+    "peanut-and-chocolate stack",
+    "peanut-chocolate"
+  ],
+  "Adictivo Cristalino": [
+    "filtered aged across raw oysters, shrimp, lobster",
+    "filtered aged tequila",
+    "filtered aged",
+    "filtered cristalino"
+  ],
+  "Adictivo Reposado": [
+    "long-aged reposado",
+    "extended-aged reposado",
+    "near-añejo reposado",
+    "extended-maturation reposado",
+    "aged reposado"
   ],
   "Burrata": [
     "cream and the blanco's agave-forward character adds dimension",
     "creamy-delicate center — Arceno's medium-tannin cherry-earth structure overwhelms the starter",
     "creamy-delicate center — full-body Bordeaux-style structure overwhelms the starter",
-    "fresh dairy can't carry aged rye spice",
     "delicacy and the seasonal fruit disappears under the weight",
     "creamy-delicate center — firm-tannin graphite-cedar structure overwhelms the starter",
     "creamy-delicate center — firm-tannin graphite-tobacco structure overwhelms the starter",
-    "creamy-delicate center — Opus One's firm-tannin Bordeaux-blend structure overwhelms the starter"
+    "creamy-delicate center — Opus One's firm-tannin Bordeaux-blend structure overwhelms the starter",
+    "creamy-delicate center — firm-tannin five-varietal structure overwhelms the starter"
+  ],
+  "Alexander Valley Chardonnay": [
+    "Sonoma with ripe apple, pear, vanilla oak, smooth texture",
+    "Sonoma, ripe apple, pear, vanilla oak, smooth texture",
+    "Sonoma with ripe apple, pear, warm vanilla oak, smooth texture",
+    "ripe apple, pear, warm vanilla oak, smooth texture",
+    "Sonoma with ripe apple, pear, vanilla oak",
+    "ripe apple, pear, warm vanilla oak"
   ],
   "Escargot": [
     "this rich, umami-forward starter's bold fat and concentrated savory depth",
     "garlic-parsley butter and the dried-herbs echo the Burgundy-classic preparation",
-    "garlic-parsley butter and the apricot-peach fruit adds dimension",
-    "richness without fighting the delicate snails or the butter",
     "garlic-parsley butter and the apple-pear fruit",
     "garlic-parsley butter and the pear-peach fruit",
     "garlic-parsley butter and the toasted oak",
-    "garlic-parsley butter richness and the red-fruit"
+    "garlic-parsley butter richness and the red-fruit",
+    "garlic-parsley butter and the chalk-mineral echoes French terroir tradition directly",
+    "buttered-bread French tradition directly and the creamy body"
   ],
   "Swordfish": [
     "meaty firm flesh and the forest-floor earth",
-    "this meaty, firm swordfish's substantial, grilled character",
-    "density without fighting its fattier profile — German-Riesling-on-fish textbook",
     "meaty firm flesh and the hazelnut",
     "meaty flesh and the baking spice",
     "meaty flesh but Loire precision reads lighter than the grilled",
     "meaty flesh and the subtle oak",
-    "meaty flesh and the fresh fruit"
+    "meaty flesh and the fresh fruit",
+    "oceanic character and the bright acid",
+    "meaty flesh and the spice"
+  ],
+  "Au Gratin Potatoes": [
+    "this rich, creamy side's dairy-driven indulgence",
+    "cheese and cream richness",
+    "cheese-and-cream potatoes"
+  ],
+  "Bone Marrow": [
+    "this rich, umami-forward starter's bold fat and concentrated savory depth",
+    "pure collagen fat needing tannin to",
+    "the rich umami fat",
+    "umami fat"
+  ],
+  "Cowboy Ribeye": [
+    "cap fat and char",
+    "this marbled ribeye's fatty richness, smoky crust, and bold beef expression",
+    "22oz bone-in cap-fat",
+    "fatty bone-in"
+  ],
+  "House Wedge": [
+    "the House Wedge's crisp iceberg",
+    "iceberg with bacon and bleu",
+    "iceberg with bleu dressing",
+    "iceberg and bleu",
+    "crisp iceberg"
+  ],
+  "Mushrooms": [
+    "this earthy, umami-packed side's mushroom-and-truffle depth",
+    "the earthy, umami-forward side",
+    "earthy umami"
+  ],
+  "The Tomahawk": [
+    "char and marbled fat",
+    "rendered fat and char",
+    "this marbled ribeye's fatty richness, smoky crust, and bold beef expression",
+    "built for GTS — the intensity meeting is everything the bottle promises",
+    "smoke and heavy marble",
+    "bone-in ribeye",
+    "size and marbled weight",
+    "size and marbling"
+  ],
+  "Truffle Fries": [
+    "this earthy, umami-packed side's mushroom-and-truffle depth",
+    "earthy truffle-parmesan",
+    "Parmesan-and-truffle-oil fries",
+    "Parmesan-and-truffle"
+  ],
+  "Amaro Nonino": [
+    "grappa-based Friulian amaro, elegant and lighter than Averna",
+    "elegant amaro as post-steak digestif",
+    "elegant Friulian amaro",
+    "Friulian amaro",
+    "grappa-based amaro",
+    "elegant amaro"
   ],
   "Cheesecake": [
-    "the custard's clean register doesn't pick up peat",
-    "the clean dairy-custard register isn't built for peat",
     "dense cream and the cocoa",
-    "custard clean and cellar-aged vanilla",
     "cream with Jamaican intensity — not subtle",
     "dense cream and the vanilla",
     "the cheesecake's dense, tangy dairy richness",
-    "the clean custard register"
+    "cream-cheese richness and the mocha",
+    "the featured value-brandy pairing",
+    "cream-cheese density and bubbles",
+    "lighter than Louis XIII"
   ],
   "Beignets": [
     "the beignets' light, airy, powdered-sugar sweetness",
     "fried dough and powdered sugar",
     "warm sugar-dusted pastry",
-    "fried dough",
     "sugar-dusted pastry"
   ],
-  "Brussels and Belly": [
-    "the Brussels and Belly's smoky, sweet pork richness over bitter-char sprouts",
-    "the dish's maple-sweet, savory profile",
-    "maple-glazed Brussels and crispy pork belly",
-    "maple-glazed Brussels and pork belly",
-    "maple-glazed"
-  ],
-  "Carrot Cake": [
-    "allspice-cinnamon warm-spice profile and vanilla syrup ties into the bean-paste frosting",
-    "the cake's raisins, cream cheese frosting, and cinnamon warmth",
-    "the carrot cake's warm-spice, cream-cheese indulgence",
-    "spice-and-cream-cheese and the cocoa",
-    "the cake's cream cheese, raisins, and cinnamon",
-    "the cake's raisins, cream cheese, and cinnamon",
-    "cream cheese and cinnamon spice",
-    "the cake's cream cheese and cinnamon"
-  ],
   "Ancho Reyes": [
+    "ancho-poblano smoky-sweet-spice to the brownie at 40% register",
     "Mexican chile liqueur from Puebla, 40% ABV, late-harvest ancho poblano chiles — smoky-sweet-spicy"
   ],
   "Chocolate Brownie": [
     "the warm, espresso-deep cocoa and dense fudge texture",
     "this dense chocolate dessert's deep cocoa richness",
-    "dense cocoa and warm fudge",
-    "warm cocoa and fudge density",
     "warm cocoa and fudge",
     "warm cocoa",
     "warm dark chocolate",
@@ -132,48 +241,23 @@ const EDITORIAL_SNIPPETS = {
   "Creme Brulee": [
     "this delicate custard's creamy, vanilla sweetness",
     "vanilla custard and caramelized sugar",
-    "vanilla custard",
     "caramelized custard"
   ],
-  "Filet Mignon": [
-    "the filet's lean, buttery tenderness and delicate mineral edge",
-    "the restraint and clean beef purity of the 8oz center-cut",
-    "the 8oz center-cut's clean beef purity and restraint",
-    "the 8oz center-cut's clean beef purity",
-    "the restraint of the 8oz center-cut",
-    "the 8oz center-cut's clean restraint",
-    "the 8oz center-cut's restraint",
-    "the 8oz center-cut"
-  ],
   "G.D. Vajra Moscato d'Asti": [
-    "frizzante peach-honey and Islay peat are on different planets",
-    "medicinal peat and peach-honey frizzante are on opposite planets",
-    "the Moscato's peach-and-honey sweetness with delicate effervescence",
-    "the Moscato's peach-and-honey sweetness with delicate effervescence, considered as a bridge into this structured red's cassis-and-dark-fruit",
     "peach-and-honey frizzante sweetness cannot",
     "frizzante peach-honey",
     "the Moscato's peach-and-honey sweetness with delicate effervescence, considered as a bridge into this Islay Scotch's intense peat smoke, medicinal phenol, and bold weight",
-    "the Moscato's peach-and-honey sweetness with delicate effervescence, considered as a bridge into this bold whiskey-forward cocktail's oak, spice, and spirit depth"
+    "frizzante"
   ],
   "Grilled Caesar": [
     "the Grilled Caesar's charred romaine, anchovy umami, and bold creamy dressing",
     "the charred romaine and anchovy-forward dressing",
     "char-romaine with anchovy-parmesan",
     "charred romaine and anchovy dressing",
-    "flame-kissed romaine with anchovy-parmesan",
     "charred romaine and anchovy",
-    "char-romaine",
-    "charred romaine"
-  ],
-  "House Wedge": [
-    "iceberg and bleu can't carry Maker's Mark Cellar Aged's depth",
-    "the wedge's simplicity can't carry Weller Millennium's depth",
-    "crisp iceberg with creamy bleu dressing",
-    "iceberg with bacon and bleu",
-    "the House Wedge's crisp iceberg",
-    "iceberg with bleu dressing",
-    "crisp iceberg and bleu",
-    "iceberg and bleu"
+    "flame-kissed romaine with anchovy-parmesan",
+    "charred romaine",
+    "layered weight"
   ],
   "Laurent Perrier Le Cuvée Brut": [
     "the sparkling's freshness and Bowmore 12's peat don't bridge",
@@ -181,73 +265,283 @@ const EDITORIAL_SNIPPETS = {
     "bright acidity and cleansing bubbles don't bridge into Lagavulin 8's peat and sea-spray brine",
     "sparkling acidity and bubbles",
     "the sparkling's delicate acidity",
-    "sparkling acidity",
-    "this versatile sparkling's bright acidity, toasty lees character, and cleansing bubbles, considered as a bridge into this structured red's cassis-and-dark-fruit",
     "sparkling"
   ],
-  "Mushrooms": [
-    "this earthy, umami-packed side's mushroom-and-truffle depth",
-    "the earthy, umami-forward side",
-    "the earthy, umami-driven side",
-    "the earthy umami side",
-    "earthy umami"
-  ],
   "Seared Scallops": [
-    "scallops' sweet delicacy gets buried by any peat, Bowmore's gentleness included",
-    "seared seafood's delicate sweetness gets buried by peat",
-    "scallop sweetness buried by bigger-body wheated",
-    "caramelized scallop doesn't need added toast sweetness",
     "this delicate seafood starter's briny-fresh sweetness",
-    "the clean caramelized sweetness of the scallop cannot survive Laphroaig's phenolic wall",
-    "clean caramelized scallop",
-    "scallop delicacy"
-  ],
-  "Shrimp Bisque": [
-    "this rich, creamy seafood soup's sweet-briny depth over dairy-rich base",
-    "cream-sherry weight and the red cherry",
-    "cream-sherry weight and the tar",
-    "the bisque's sea-driven cream",
-    "creamy shellfish soup",
-    "creamy shrimp soup",
-    "the cream-base bisque",
-    "rich cream-shrimp soup"
+    "scallop delicacy",
+    "caramelized scallop",
+    "scallop sweetness",
+    "scallops"
   ],
   "Angel's Envy": [
-    "port-finished Kentucky bourbon, the flagship"
+    "flagship Angel's Envy port-finished bourbon, Louisville KY, 86",
+    "port-finished Kentucky bourbon, the flagship",
+    "flagship port-finished bourbon",
+    "flagship AE port-finish",
+    "port-finished Louisville bourbon",
+    "flagship AE",
+    "port-finished bourbon",
+    "port-finished Louisville"
   ],
   "Aperol": [
     "gentle character doesn't overwhelm the casual sweet but doesn't feature",
+    "too light to feature vs cocoa where the sipping amari shine",
+    "no business closing a heavy steak",
+    "soft orange-rhubarb at 11% ABV",
+    "far too light to",
     "orange marries the cinnamon",
-    "gentle bitter",
-    "orange-rhubarb"
+    "brunch-register bitter",
+    "11% soft bitter"
   ],
   "Asparagus": [
     "vegetal character directly and the citrus",
-    "this light, green vegetable's clean herbal edge",
     "sulfur notes and the fresh fruit",
     "mineral-vegetal character and the bright acid",
     "vegetal char and the lemon",
     "sulfur notes and the citrus",
     "sulfur notes and the stone-fruit",
-    "notorious sulfur notes and the grassy mineral"
+    "notorious sulfur notes and the grassy mineral",
+    "sulfur notes and the high acid"
   ],
-  "Au Gratin Potatoes": [
-    "this rich, creamy side's dairy-driven indulgence",
-    "cheese and cream richness",
-    "cheese and cream depth",
-    "cheese and cream",
-    "cheese-and-cream potatoes",
-    "cheese-and-cream"
+  "Avion 44": [
+    "44-month aged across strip and filet",
+    "Avion's 44-month aged extra añejo",
+    "44-month aged Avion",
+    "Avion 44 aged",
+    "44-month aged",
+    "fresh dairy",
+    "aged Avion",
+    "scallop delicacy"
+  ],
+  "Baker's": [
+    "Jim Beam's 107-proof 7-year small-batch premium",
+    "107-proof high-rye across strip and filet",
+    "107-proof 7-year Beam premium",
+    "bold high-rye 107-proof",
+    "107-proof high-rye",
+    "107-proof Beam small-batch",
+    "younger but higher-proof",
+    "107-proof small-batch"
+  ],
+  "Balvenie 14 Caribbean Cask": [
+    "14yr Speyside finished in Caribbean rum casks, tropical-sweetness with vanilla-caramel-brown-sugar layers",
+    "tropical-sweet rum-cask Speyside",
+    "Caribbean rum-cask-finished Speyside",
+    "rum-cask-finished 14yr Speyside",
+    "14yr rum-cask-finished Speyside",
+    "Caribbean-rum-cask Speyside",
+    "rum-cask-finished Speyside",
+    "tropical-sweet Speyside"
+  ],
+  "Balvenie 21 Portwood": [
+    "21yr Speyside finished in port casks, red-berry-fruit and port-richness, ultra-premium collector-register",
+    "ultra-premium 21yr port-cask Speyside",
+    "port-cask ultra-premium Speyside",
+    "ultra-premium port-cask Speyside",
+    "21yr port-cask Speyside",
+    "21yr port-cask-finished Speyside",
+    "21yr port-finished Speyside"
+  ],
+  "Bardstown Discovery #6": [
+    "multi-distillery Discovery across strip and filet",
+    "Bardstown Bourbon Co",
+    "multi-distillery blend",
+    "multi-distillery Discovery",
+    "6th Discovery release",
+    "craft-blender",
+    "sourced Discovery blend",
+    "sourced-blend Discovery"
+  ],
+  "Bardstown Founders KBS": [
+    "Bardstown's collab release finished in Founders Brewing's KBS (Kentucky Breakfast Stout) barrels",
+    "stout-barrel-finished across strip and filet",
+    "stout-barrel-finished bourbon",
+    "stout-barrel bourbon",
+    "KBS stout-barrel finish",
+    "stout-barrel finish",
+    "KBS coffee-chocolate",
+    "stout-barrel"
+  ],
+  "Bardstown Fusion #7": [
+    "Bardstown's Fusion series combining their own distilled bourbon with sourced whiskey",
+    "Fusion blend across strip and filet",
+    "Fusion blend",
+    "fresh dairy",
+    "Bardstown own-plus-sourced",
+    "scallop delicacy",
+    "cold shrimp",
+    "7th Fusion"
+  ],
+  "Bardstown Rishi's Single Barrel": [
+    "retailer-pick Bardstown across strip and filet",
+    "curated Bardstown single-barrel",
+    "retailer-pick Bardstown single-barrel",
+    "Bardstown Bourbon Co",
+    "Rishi's-picked single-barrel",
+    "retailer-picked Bardstown",
+    "Rishi's-picked Bardstown",
+    "fresh dairy"
+  ],
+  "Basil Hayden's": [
+    "light high-rye and cocoa",
+    "the 80-proof gateway high-rye",
+    "even light high-rye overshoots crab delicacy",
+    "rye spice",
+    "rye pepper",
+    "light high-rye",
+    "light-bodied rye",
+    "light-bodied high-rye"
+  ],
+  "Basil Hayden's 10 Year": [
+    "fresh dairy can't carry aged rye spice",
+    "aged oak and rye spice",
+    "cold shrimp and aged bourbon don't bridge",
+    "aged depth gives the pour the weight the starter demands",
+    "aged rye spice",
+    "aged high-rye handles both strip and filet sides more evenly than standard Basil Hayden's",
+    "aged light high-rye",
+    "aged high-rye"
+  ],
+  "Basil Hayden's Malted Rye": [
+    "spicy-sweet malted rye",
+    "malted bready character across both",
+    "malted rye mash gives this pour a bready, distinctive grain character that nothing else on the menu",
+    "malted grain character",
+    "malted character",
+    "malted rye",
+    "malted grain bread notes",
+    "bready malted grain"
+  ],
+  "Basil Hayden's Red Wine Cask": [
+    "BH high-rye with red-wine finish",
+    "BH high-rye red-wine finish",
+    "high-rye BH red-wine finish",
+    "Beam high-rye red-wine finish",
+    "Beam's Basil Hayden finished in red wine casks, high-rye mash bill base, 80-proof softer approach",
+    "Beam's BH red-wine finish",
+    "80-proof BH red-wine finish",
+    "Beam BH red-wine finish"
+  ],
+  "Basil Hayden's Toast": [
+    "toasted-barrel caramel and marshmallow notes over the 80-proof base",
+    "toast-barrel caramel and light high-rye",
+    "toast-barrel caramel and marshmallow notes",
+    "caramelized scallop doesn't need the pour's added toast sweetness",
+    "toasted caramel across the strip-and-filet split",
+    "toast-barrel caramel",
+    "toast-barrel character",
+    "toasted caramel notes"
+  ],
+  "Blade & Bow": [
+    "blended bourbon's honey",
+    "blended bourbon with Stitzel-Weller heritage",
+    "heritage blend across strip and filet",
+    "blend's honey",
+    "blended bourbon",
+    "Diageo's Stitzel-Weller revival brand",
+    "heritage-blend honey",
+    "Stitzel-Weller revival blend"
+  ],
+  "Blanton's Gold": [
+    "103-proof across strip and filet",
+    "richer single-barrel",
+    "103-proof single-barrel",
+    "the 103-proof export-market Blanton's",
+    "103-proof richer Blanton's",
+    "103-proof export Blanton's",
+    "103-proof Blanton's",
+    "fresh dairy"
+  ],
+  "Blanton's Original": [
+    "the benchmark premium single-barrel from Buffalo Trace",
+    "single-barrel caramel-vanilla",
+    "iconic 93-proof single-barrel",
+    "single-barrel across strip and filet",
+    "iconic single-barrel",
+    "premium single-barrel",
+    "93-proof single-barrel",
+    "single-barrel depth"
+  ],
+  "Blood Oath Pact 10": [
+    "decennial Pact 10 across strip and filet",
+    "the decennial 10th Pact, 2024 milestone release from master blender John Rempe",
+    "decennial Pact 10",
+    "decennial 10th Pact",
+    "decennial milestone Pact",
+    "milestone Pact 10",
+    "10th-Pact milestone",
+    "fresh dairy"
+  ],
+  "Blood Oath Pact 8": [
+    "Pact 8 blend across strip and filet",
+    "master blender John Rempe's 8th annual limited Blood Oath, from Lux Row Distillers",
+    "Pact 8 annual release",
+    "Pact 8 blend",
+    "Pact 8 annual-release",
+    "Pact 8 Mizunara-finished",
+    "Pact 8",
+    "fresh dairy"
+  ],
+  "Blood Oath Pact 9": [
+    "Pact 9 wine-cask-finished blend",
+    "Pact 9 wine-cask blend",
+    "Pact 9 across strip and filet",
+    "Pact 9 wine-cask",
+    "master blender John Rempe's 9th annual Blood Oath, 2023 release from Lux Row",
+    "Pact 9 blend",
+    "Pact 9",
+    "fresh dairy"
+  ],
+  "Booker's": [
+    "Beam flagship cask-strength",
+    "Beam cask-strength 125-130 proof",
+    "uncut/unfiltered Beam cask-strength",
+    "uncut Beam cask-strength",
+    "Beam cask-strength",
+    "cask-strength Beam",
+    "Beam barrel-proof",
+    "120-130 proof Beam"
+  ],
+  "Bowman Brothers Small Batch": [
+    "Virginia 90-proof small-batch across strip and filet",
+    "90-proof Virginia small-batch",
+    "Virginia smooth small-batch",
+    "fresh dairy",
+    "Virginia small-batch",
+    "Virginia-aged small-batch",
+    "scallop delicacy",
+    "cold shrimp"
+  ],
+  "Buffalo Trace": [
+    "the flagship of the distillery, 90 proof, non-wheated mash #1",
+    "flagship versatility across both strip and filet sides",
+    "BT caramel and vanilla",
+    "BT's oak and vanilla",
+    "flagship bourbon",
+    "flagship oak",
+    "90-proof flagship",
+    "BT flagship"
+  ],
+  "Bulleit Bourbon": [
+    "high-rye spice across strip and filet sides",
+    "90-proof high-rye with distinctive bold spice",
+    "90-proof high-rye spice",
+    "bold high-rye spice",
+    "high-rye spice",
+    "90-proof high-rye",
+    "bold spice",
+    "high-rye"
   ],
   "Canadian Club": [
     "grain-forward character is wrong for burrata",
+    "traditional Canadian blend, 1858-founded Hiram Walker, grain-forward easy-drinking heritage brand",
     "grain-forward character handles the richness",
     "heritage character handles strip marbling",
     "grain-forward profile is wrong for scallops",
     "grain-forward easy-drinking character",
     "grain-forward traditional character",
-    "grain-forward heritage character",
-    "traditional character"
+    "1858 Hiram Walker heritage Canadian"
   ],
   "Caribou Crossing": [
     "craft character is wrong for burrata",
@@ -255,222 +549,1035 @@ const EDITORIAL_SNIPPETS = {
     "single-barrel distinction is the featured Canadian-filet pairing",
     "craft profile is wrong for scallops",
     "distinctive craft character",
-    "craft character"
+    "craft character",
+    "Sazerac single-barrel Canadian",
+    "Sazerac-owned single-barrel Canadian"
+  ],
+  "Clase Azul Durango": [
+    "ceremonial extra añejo",
+    "Durango-edition ceramic luxury",
+    "Clase Azul's Durango edition featuring",
+    "Durango across strip and filet",
+    "ceramic-bottle luxury",
+    "ceremonial Durango",
+    "Durango ceremonial",
+    "Durango-artisanship extra añejo"
+  ],
+  "Clase Azul Gold": [
+    "ceremonial blend across strip and filet",
+    "24K gold ceremonial blend",
+    "joven-plus-mezcal blend with 24K gold",
+    "ceremonial joven blend",
+    "golden ceremonial blend",
+    "joven blend with mezcal accent",
+    "golden ceremonial",
+    "ceremonial blend"
+  ],
+  "Clase Azul Ultra": [
+    "5-year extra añejo, the top-tier Clase Azul with platinum/gold accents on",
+    "top-tier Clase Azul across strip and filet",
+    "ultra-premium 5-year extra añejo,",
+    "top-tier ceremonial",
+    "5-year top-tier Clase Azul",
+    "top-tier 5-year Clase Azul",
+    "5-year platinum-gold ceramic",
+    "5-year top-tier"
+  ],
+  "Clermont Steep": [
+    "Jim Beam's wheated release from Clermont",
+    "Beam wheated across strip and filet",
+    "Jim Beam's wheated expression",
+    "Jim Beam wheated",
+    "90-proof Beam wheated",
+    "Beam wheated",
+    "iceberg and bleu",
+    "fresh dairy"
+  ],
+  "Courvoisier Cognac": [
+    "oak is less comfortable than Hennessy for casual dessert",
+    "drier finish contrasts the caramel where Rémy VSOP's elegance harmonizes",
+    "\"Napoleon's cognac,\" drier and oak-forward, traditional Jarnac producer",
+    "oak backbone handles the dessert density",
+    "oak is over-specified but functional",
+    "oak supports the cheesecake",
+    "drier oak cognac",
+    "drier oak-forward cognac"
+  ],
+  "Cragganmore 12": [
+    "Diageo Classic Malt, lighter layered Speyside with subtle smoke hint and meaty depth",
+    "Classic Malt Speyside",
+    "Diageo Classic Malt",
+    "distinctive Speyside",
+    "layered Speyside",
+    "Speyside"
   ],
   "Crown Royal": [
+    "iconic Canadian blended whisky, Gimli Manitoba, purple velvet bag, vanilla-honey-fruit smooth crowd-pleaser",
     "vanilla-honey-fruit character handles strip marbling",
     "vanilla-honey character",
     "vanilla-sweetness is wrong for scallops",
+    "vanilla-honey Canadian",
+    "Gimli Manitoba iconic Canadian",
     "vanilla-honey",
-    "smoothness handles the richness",
-    "smooth character",
-    "smoothness"
+    "iconic smooth Canadian"
+  ],
+  "Dalmore 12": [
+    "Highland luxury sherry-finish",
+    "sherry-finish Highland luxury",
+    "Matusalem sherry-cask Highland",
+    "Matusalem-cask Highland luxury",
+    "Highland luxury",
+    "sherry-finish Highland",
+    "Matusalem-cask Highland"
   ],
   "Dewar's 15": [
+    "aged Highland blend with sherry-finish",
     "sherry-finish dried-fruit and aged depth",
     "aged character handles the richness",
+    "sherry-finish Highland blend",
     "sherry-finish dried-fruit",
-    "aged + sherry-finish",
-    "aged sherry-finish",
-    "aged character",
-    "sherry-finish"
+    "15yr aged Highland blend",
+    "aged Highland blend",
+    "aged sherry-finish Dewar's"
+  ],
+  "Dewar's White Label": [
+    "entry blended Scotch with Aberfeldy-malt core, honey-vanilla Highland-blend approachable crowd-pleaser",
+    "Highland blend with Aberfeldy-malt core",
+    "honey-vanilla blend",
+    "entry Highland blend",
+    "Highland entry blend",
+    "Highland blend",
+    "entry blended Scotch",
+    "approachable blended Scotch"
+  ],
+  "Doc Swinson's Alter Ego Rye": [
+    "craft sourced rye, Pacific Northwest boutique brand",
+    "craft blended rye across strip and filet",
+    "craft sourced rye",
+    "craft blended rye",
+    "craft rye",
+    "Pacific Northwest craft brand",
+    "craft sourced",
+    "fresh dairy"
+  ],
+  "Don Julio 1942": [
+    "1942 aged vanilla-caramel",
+    "iconic extra añejo",
+    "1942 across strip and filet",
+    "the benchmark extra añejo",
+    "benchmark extra añejo",
+    "benchmark aged tequila",
+    "fresh dairy",
+    "1942 benchmark"
+  ],
+  "E.H. Taylor Full Proof": [
+    "over-specified for an app",
+    "BT BiB 100-proof",
+    "BT Bottled-in-Bond",
+    "BT BiB"
+  ],
+  "E.H. Taylor Rye": [
+    "premium BIB BT rye",
+    "100-proof BIB BT rye",
+    "100-proof BIB across strip and filet",
+    "bonded BT rye",
+    "100-proof BIB rye",
+    "BT's bonded rye",
+    "fresh dairy",
+    "100-proof BIB"
+  ],
+  "E.H. Taylor Small Batch": [
+    "Buffalo Trace's bottled-in-bond honoring Edmund Haynes Taylor Jr",
+    "100-proof BIB across strip and filet",
+    "100-proof BIB",
+    "bonded 100-proof",
+    "fresh dairy",
+    "bonded BT",
+    "scallop delicacy",
+    "cold shrimp"
   ],
   "Eagle Rare 10 Year": [
     "balanced oak and ten years of Buffalo Trace aging",
-    "aged Buffalo Trace barrel character",
+    "fresh dairy can't carry Buffalo Trace's aged oak",
     "aged oak and vanilla",
+    "the 10-year's oak and balance handle both strip and filet sides cleanly",
+    "the 10-year's oak buries scallop delicacy",
     "oak and spice",
-    "aged Buffalo Trace oak",
-    "oak and balance",
-    "refined oak",
-    "structured oak"
+    "ten years of Buffalo Trace aging",
+    "aged bourbon weight"
+  ],
+  "El Mayor Extra Anejo": [
+    "accessible premium extra añejo",
+    "accessible aged across strip and filet",
+    "accessible aged El Mayor",
+    "aged El Mayor",
+    "fresh dairy",
+    "scallop delicacy",
+    "cold shrimp"
+  ],
+  "Elijah Craig 18 Year": [
+    "Heaven Hill aged single-barrel, 18-year premium with distinctive aged HH character (leather, tobacco, dried fruit)",
+    "aged character is under-specified for Tomahawk intensity",
+    "HH aged single-barrel",
+    "aged HH single-barrel",
+    "18yr HH single-barrel",
+    "HH 18yr single-barrel",
+    "aged character",
+    "aged dried-fruit"
+  ],
+  "Elijah Craig Private Barrel": [
+    "house-picked single-barrel across strip and filet",
+    "private-barrel single-barrel",
+    "Heaven Hill's house-picked single-barrel",
+    "house-picked Heaven Hill single-barrel",
+    "private-barrel Heaven Hill",
+    "private-selection single-barrel",
+    "house-pick single-barrel",
+    "curated single-barrel"
+  ],
+  "Elijah Craig Single Barrel": [
+    "Heaven Hill single-barrel across strip and filet",
+    "single-barrel Heaven Hill",
+    "Heaven Hill single-barrel",
+    "94-proof single-barrel",
+    "concentrated single-barrel",
+    "fresh dairy",
+    "scallop delicacy",
+    "cold shrimp"
+  ],
+  "Elijah Craig Small Batch": [
+    "Heaven Hill's 94-proof small-batch, named for the 'Father of Bourbon",
+    "small-batch character across strip and filet",
+    "small-batch caramel-vanilla",
+    "spicy-sweet small-batch",
+    "spicy-sweet 94-proof",
+    "iceberg and bleu",
+    "fresh dairy",
+    "94-proof small-batch"
+  ],
+  "Elijah Craig Straight Rye": [
+    "Heaven Hill's 94-proof rye, sister to the Elijah Craig bourbon line",
+    "94-proof HH across strip and filet",
+    "94-proof HH rye",
+    "HH 94-proof rye",
+    "Heaven Hill rye",
+    "HH straight rye",
+    "HH rye",
+    "fresh dairy"
+  ],
+  "Elmer T. Lee": [
+    "namesake single-barrel across strip and filet",
+    "Buffalo Trace single-barrel, 90 proof, named for the legendary master distiller who championed the single-barrel approach",
+    "Buffalo Trace single-barrel",
+    "90-proof namesake single-barrel",
+    "smooth namesake single-barrel",
+    "90-proof single-barrel",
+    "smooth single-barrel",
+    "namesake single-barrel"
+  ],
+  "Four Roses Small Batch Select": [
+    "104-proof premium across strip and filet",
+    "104-proof premium Four Roses",
+    "higher-end Four Roses using 6 of their 10 recipes, 104 proof non-chill-filtered",
+    "104-proof premium 4R",
+    "104-proof premium",
+    "premium 4R",
+    "premium 104-proof",
+    "104-proof 6-recipe blend"
+  ],
+  "Four Roses Yellow Label": [
+    "entry bourbon across strip and filet sides",
+    "floral-and-honey entry bourbon",
+    "floral-honey bourbon",
+    "floral, light-bodied entry bourbon",
+    "the 10-recipe blend at entry level",
+    "80-proof entry bourbon",
+    "entry-level 80-proof bourbon",
+    "entry-level bourbon"
+  ],
+  "Fox & Oden": [
+    "craft small-batch bourbon, a newer boutique brand with small-production character",
+    "craft bourbon across strip and filet",
+    "craft boutique bourbon",
+    "craft bourbon",
+    "craft boutique",
+    "craft small-batch",
+    "fresh dairy",
+    "scallop delicacy"
+  ],
+  "Glenfiddich 12": [
+    "entry Speyside benchmark, ex-bourbon-cask, apple/pear/honey gateway profile",
+    "apple/pear ex-bourbon-cask Speyside",
+    "bourbon-cask apple/pear Speyside",
+    "ex-bourbon-cask Speyside",
+    "bourbon-cask Speyside",
+    "gateway Speyside",
+    "entry Speyside",
+    "apple/pear Speyside"
+  ],
+  "Glenfiddich 14": [
+    "new-charred-oak-finished bourbon-cask Speyside",
+    "Bourbon Barrel Reserve, finished in new charred oak for richer vanilla and baking spice depth beyond the 12",
+    "bourbon-barrel-reserve Speyside",
+    "Bourbon Barrel Reserve",
+    "new-charred-oak Speyside",
+    "new-charred-oak-finished Speyside",
+    "aged Speyside"
+  ],
+  "Glenfiddich 18": [
+    "Small Batch Reserve, Oloroso sherry cask + bourbon cask marriage, dried fruit + cinnamon + nutmeg + oak-spice depth",
+    "Oloroso sherry + bourbon cask marriage",
+    "Oloroso sherry-cask Speyside",
+    "Oloroso + bourbon cask marriage",
+    "sherry-cask Speyside",
+    "Oloroso + bourbon cask",
+    "premium aged Speyside",
+    "Oloroso-cask Speyside"
+  ],
+  "Glenfiddich Gran Cru 23": [
+    "Cuvée-finished 23-year Speyside luxury",
+    "23yr Cuvée-cask Speyside",
+    "Cuvée-cask-finished 23yr Speyside",
+    "23yr champagne-cask Speyside",
+    "champagne-style Cuvée-cask Speyside",
+    "French Cuvée-cask Speyside",
+    "Cuvée-cask 23yr Speyside",
+    "Cuvée-cask Speyside"
+  ],
+  "Glenglassaugh 12": [
+    "tropical-fruit-and-honey marries the cake's raisins and spice with distinctive coastal",
+    "tropical-fruit character handles the strip with distinctive coastal-Highland",
+    "Sandend coast Highland single malt, recently reopened distillery with coastal-tropical character (tropical fruit + honey)",
+    "fresh-fruit character",
+    "tropical-fruit character",
+    "fresh-fruit-and-honey profile",
+    "tropical-fruit-and-honey",
+    "recently-reopened Sandend Highland"
+  ],
+  "Glenlivet 12": [
+    "honey-floral Speyside",
+    "honey-pineapple Speyside",
+    "softer Speyside",
+    "benchmark Speyside",
+    "\"The Glenlivet house style\"",
+    "Speyside"
   ],
   "Glenmorangie 10": [
+    "Highland entry benchmark, tallest stills in Scotland, bourbon-cask matured with honeysuckle-peach-vanilla honey-floral profile",
     "bourbon-cask vanilla-and-honey handles the strip",
+    "honey-floral Highland bourbon-cask",
     "honey-vanilla is a soft dessert finisher",
-    "vanilla-honey handles the richness",
-    "delicate-refined bourbon-cask approach",
-    "vanilla-peach character",
-    "vanilla-honey",
-    "honeysuckle-vanilla",
-    "honey-floral"
+    "tallest-stills Highland bourbon-cask",
+    "Highland bourbon-cask entry",
+    "bourbon-cask Highland entry",
+    "vanilla-honey handles the richness"
+  ],
+  "Glenmorangie 18": [
+    "18yr bourbon + sherry-finish Highland",
+    "18yr Highland with Oloroso sherry finish",
+    "aged bourbon + Oloroso Highland",
+    "18yr bourbon + Oloroso-finish Highland",
+    "aged + sherry-finished character",
+    "aged Highland with Oloroso finish",
+    "18yr Highland with Oloroso finish",
+    "aged bourbon-plus-sherry depth"
+  ],
+  "Heaven Hill 20 Year": [
+    "collector-register depth is the featured aged-HH-filet pairing — where EC 18",
+    "aged character is under-specified for Tomahawk intensity",
+    "HH 20yr collector limited release, deeper aged HH character beyond EC 18",
+    "the featured aged-HH-KC pairing — the 20-year depth handles marbling at collector register",
+    "aged-HH character",
+    "aged character",
+    "aged dried-fruit",
+    "over-specified for an app"
+  ],
+  "Heaven Hill Bottled in Bond": [
+    "100-proof across strip and filet sides",
+    "100-proof traditional bourbon",
+    "100 proof, traditional BIB",
+    "charred romaine and anchovy",
+    "100 proof BIB",
+    "iceberg and bleu",
+    "100-proof BIB",
+    "100-proof bond"
+  ],
+  "Heaven's Door 10 Year": [
+    "aged premium bourbon",
+    "premium aged bourbon",
+    "Bob Dylan's bourbon brand",
+    "100-proof 10-year Dylan-brand bourbon",
+    "aged 10-year Dylan bourbon",
+    "aged 100-proof across strip and filet",
+    "aged Dylan bourbon",
+    "aged 10-year 100-proof"
+  ],
+  "Hennessy Cognac": [
+    "vanilla-and-oak marries cocoa cleanly",
+    "oak is over-specified for the wedge but functional",
+    "dried-fruit-vanilla is a comfortable finisher",
+    "ubiquitous VS/VSOP cognac, dried-fruit-and-vanilla benchmark",
+    "dried-fruit and vanilla",
+    "oak handles the dessert density",
+    "oak handles the richness",
+    "vanilla-and-oak depth"
+  ],
+  "Henry McKenna 10 Year Bottled in Bond": [
+    "Heaven Hill's 10-year bottled-in-bond single-barrel",
+    "100-proof 10-year BIB across strip and filet",
+    "aged 100-proof bonded single-barrel",
+    "100-proof 10-year bonded single-barrel",
+    "bonded 10-year Heaven Hill",
+    "bonded 10-year HH",
+    "aged bonded HH",
+    "aged 100-proof BIB"
+  ],
+  "Isaac Bowman Port Finish": [
+    "Virginia port-finished bourbon",
+    "Sazerac-owned Virginia port-finish",
+    "Sazerac-owned port-finish",
+    "Virginia port-finish"
+  ],
+  "Jack Daniel's 12 Year": [
+    "aged Tennessee whiskey, 12yr premium tier, deeper vanilla-caramel depth",
+    "12yr aged Tennessee",
+    "aged charcoal-mellowed Tennessee",
+    "aged Tennessee"
+  ],
+  "Jack Daniel's Old No. 7": [
+    "iconic Tennessee whiskey, Lincoln County Process charcoal-mellowed, square-bottle vanilla-caramel the-call Tennessee",
+    "iconic Tennessee whiskey",
+    "iconic Tennessee",
+    "Lincoln County-Process Tennessee",
+    "charcoal-mellowed Tennessee",
+    "Tennessee whiskey"
+  ],
+  "Jefferson's Ocean Marian McLain L.E.": [
+    "salt-sea character",
+    "premium ocean-finish",
+    "limited-edition character",
+    "Jefferson's Ocean L",
+    "master-blender tribute sea-aged",
+    "sea-aged L",
+    "limited-edition ocean-finish",
+    "limited-edition sea-aged"
+  ],
+  "Jefferson's Ocean Voyage 23": [
+    "sea-aged bourbon, specific Voyage #23, distinctive ocean-motion + salt-tinged character from ship-based maturation",
+    "sea-aged character handles dessert density",
+    "ocean-motion + salt character",
+    "salt-tinged sea-aged character",
+    "salt + ocean-character",
+    "sea-aged bourbon",
+    "ocean-motion character",
+    "salt-tinged character"
+  ],
+  "Jefferson's Reserve": [
+    "the blended elegance of Jefferson's signature profile",
+    "blended honey and vanilla",
+    "blended elegance across both strip and filet sides",
+    "blended honey-vanilla",
+    "blended bourbon's elegance",
+    "blended bourbon",
+    "charred romaine and anchovy",
+    "iceberg and bleu"
+  ],
+  "Jefferson's Reserve VR Twin Oak": [
+    "double-barrel oak and deep vanilla",
+    "the Very Rare line's double-barrel finish through two custom-toasted oak barrels",
+    "double-barrel finish handles both strip and filet sides cleanly",
+    "Twin Oak's double-barrel weight",
+    "Twin Oak's double-barrel depth",
+    "complexity is slightly over-ambitious for the side",
+    "over-specified for the soup's register",
+    "complex oak-finished bourbon"
+  ],
+  "Jim Beam Black Label": [
+    "aged Jim Beam, 8 years in the barrel, 86 proof",
+    "aged Beam's oak and vanilla",
+    "aged Beam across strip and filet",
+    "86-proof aged Beam",
+    "iceberg and bleu",
+    "aged Beam",
+    "fresh dairy",
+    "charred romaine"
+  ],
+  "Jim Beam White Label": [
+    "entry caramel-vanilla",
+    "80-proof entry across strip and filet",
+    "80-proof entry bourbon",
+    "entry bourbon",
+    "entry-level bourbon",
+    "iceberg and bleu",
+    "80-proof entry Beam",
+    "80-proof Beam"
+  ],
+  "Jordan Cabernet Sauvignon": [
+    "Sonoma Cab with cassis, plum, cedar, mint, fine tannin",
+    "Alexander Valley Cab, cassis, plum, cedar, mint, fine tannin",
+    "Sonoma Cab, cassis, plum, cedar, mint, fine tannin",
+    "Alexander Valley Cab with cassis, plum, cedar, mint, fine tannin",
+    "fine tannin makes this the most fish-friendly Cab",
+    "decades of consistency and balance align perfectly with the premium tenderloin",
+    "fine tannin makes it the fish-friendliest Cab",
+    "this elegant red's cherry-bright, silky-tannin"
+  ],
+  "Keenan Chardonnay": [
+    "Spring Mountain Napa with green apple, lemon curd, subtle oak",
+    "Spring Mountain Napa, green apple, lemon curd, subtle oak, bright acid",
+    "Spring Mountain, green apple, lemon curd, subtle oak",
+    "Spring Mountain Napa with green apple, lemon curd, subtle oak, bright acidity",
+    "Spring Mountain with green apple, lemon curd, subtle oak, bright acid",
+    "Spring Mountain oak-forward Napa Chardonnay"
+  ],
+  "Kentucky Owl Confiscated": [
+    "KO Confiscated across strip and filet",
+    "Kentucky Owl's 'Confiscated' release, named for the Prohibition-era story of Charles Mortimer Dedman's bourbon confiscated during Prohibition",
+    "KO Confiscated",
+    "fresh dairy",
+    "scallop delicacy",
+    "cold shrimp"
+  ],
+  "Knob Creek": [
+    "nutty oak and high-rye spice",
+    "100-proof high-rye across strip and filet",
+    "100-proof high-rye spice",
+    "100 proof, high-rye, nutty, full-bodied",
+    "100-proof high-rye and nutty depth",
+    "high-rye bourbon",
+    "100-proof nutty bourbon",
+    "100-proof nutty high-rye"
+  ],
+  "Knob Creek 12 Year": [
+    "12-year aged high-rye at 100 proof",
+    "aged high-rye across strip and filet",
+    "aged 12 years at 100 proof",
+    "12-year aged high-rye",
+    "aged 100-proof high-rye",
+    "aged nutty-oak Beam",
+    "premium aged Beam",
+    "12-year high-rye"
+  ],
+  "Knob Creek Bourbon/Rye": [
+    "blend covers both strip and filet sides",
+    "blended bourbon-and-rye",
+    "bourbon-and-rye blend",
+    "blended bourbon-rye",
+    "the blend's layered spicy-sweet",
+    "the blend's spicy-sweet",
+    "spicy-sweet blend",
+    "iceberg and bleu"
+  ],
+  "Knob Creek Rye": [
+    "Beam's 100-proof bold rye, sibling to Knob Creek Bourbon",
+    "100-proof bold rye across strip and filet",
+    "100-proof bold rye",
+    "100-proof Beam rye",
+    "100-proof rye",
+    "fresh dairy",
+    "scallop delicacy",
+    "cold shrimp"
+  ],
+  "Larceny Small Batch": [
+    "wheated honey across both strip and filet sides",
+    "Heaven Hill's wheated answer to the Weller family",
+    "Heaven Hill wheated caramel",
+    "wheated caramel-honey",
+    "wheated honey",
+    "wheated caramel",
+    "wheated bourbon",
+    "Heaven Hill wheated"
+  ],
+  "Lingua Franca Avni Pinot Noir": [
+    "this elegant red's cherry-bright, silky-tannin"
+  ],
+  "Little Book": [
+    "cask-strength blended character handles Tomahawk intensity with Fred-Noe-artistic-blend distinction",
+    "Jim Beam Fred Noe blended cask-strength",
+    "Jim Beam Little Book cask-strength",
+    "Beam Fred Noe annual cask-strength",
+    "cask-strength annual-blend handles strip marbling",
+    "Beam Little Book cask-strength",
+    "cask-strength character",
+    "cask-strength handles dessert density"
+  ],
+  "Loch Lomond 20 Year": [
+    "20yr aged varied-still Highland",
+    "complex 20yr aged Highland",
+    "complex 20yr Highland",
+    "20yr complex Highland",
+    "20yr varied-still Highland",
+    "20yr aged Highland",
+    "20yr Highland single malt, distinctive for varied still types (traditional pot + straight-neck) giving complex aged character",
+    "20yr complex-aged Highland"
+  ],
+  "Louis XIII Cognac": [
+    "complexity is wasted on caramel-sugar the Fine Champagne-level sibling handles perfectly",
+    "aged depth is wasted on the accompaniment",
+    "Grande Champagne luxury icon",
+    "finesse — a Pierre Ferrand or Hennessy is the right cognac here",
+    "40-100 year aged Grande Champagne",
+    "luxury-icon Grande Champagne",
+    "40-100 year aged cognac",
+    "luxury icon"
+  ],
+  "Macallan 12 Sherry": [
+    "sherry-cask handles the dessert density with raisin-and-spice character",
+    "sherry-cask depth handles the strip",
+    "dried-fruit-and-spice character",
+    "sherry depth handles the richness",
+    "100% Oloroso-cask Speyside",
+    "Oloroso-cask Speyside",
+    "sherry-cask depth",
+    "sherry-derived spice"
   ],
   "Macallan 18": [
+    "premium aged 18yr 100% Oloroso sherry-cask Speyside, collector-register",
     "deeper sherry-derived raisin-and-spice layers into cocoa with aged-premium depth",
     "aged sherry-cask dried-fruit marries the cake's raisins and spice with deeper-than-12 gravitas",
     "aged dried-fruit-and-spice handles the dessert density",
-    "aged sherry handles the richness",
-    "deeper sherry-cask depth",
-    "aged sherry-derived spice",
-    "aged-sherry character",
-    "aged-sherry depth"
+    "premium aged 18yr Oloroso Speyside",
+    "18yr premium Oloroso Speyside",
+    "premium aged sherried Speyside",
+    "premium aged 18yr Speyside"
+  ],
+  "Maker's Mark": [
+    "iconic wheated caramel-vanilla",
+    "the iconic red-wax 90-proof wheated",
+    "soft caramel and vanilla",
+    "the iconic red-wax wheated",
+    "iconic wheated sweetness",
+    "iconic wheated softness",
+    "iconic wheated",
+    "soft wheated sweetness"
   ],
   "Maker's Mark Cellar Aged": [
-    "extended-maturation oak and deeper caramel",
+    "extended maturation gives standard Maker's a richer oak backbone and deeper caramel",
+    "the bourbon's honeyed caramel depth",
+    "the bourbon's deeper wax-caramel",
     "deeper caramel and vanilla",
+    "iceberg's crispness and bleu can't carry the Cellar Aged's depth",
     "aged caramel and vanilla",
-    "mature caramel",
-    "deep wax-caramel",
-    "aged vanilla",
-    "honeyed caramel",
-    "deep vanilla"
+    "cold shrimp and aged bourbon don't",
+    "fresh dairy and cellar-aged depth don't bridge"
+  ],
+  "Michter's US*1 Rye": [
+    "smooth small-batch rye across strip and filet",
+    "Michter's small-batch smooth rye",
+    "small-batch smooth rye, 84",
+    "smooth Michter's rye",
+    "smooth pot-still rye",
+    "smooth small-batch rye",
+    "smooth rye",
+    "smooth small-batch"
   ],
   "Monkey Shoulder": [
+    "triple-Speyside-malt blend (Glenfiddich + Balvenie + Kininvie), 40% ABV, cocktail-friendly rich-fruit-and-vanilla",
     "Speyside-malt fruit handles the richness",
     "Speyside-malt rich-fruit-and-vanilla",
     "Speyside-malt fruit",
     "Speyside-malt character",
     "Speyside-derived fruit",
     "fruit-and-vanilla",
-    "rich-fruit-and-vanilla",
-    "Speyside-malt derived profile"
+    "rich-fruit-and-vanilla"
+  ],
+  "Never Say Die Rye": [
+    "Kentucky rye aged in Yorkshire, UK",
+    "UK-aged rye across strip and filet",
+    "UK-aged Kentucky rye",
+    "novelty UK-aged rye",
+    "novelty UK-matured rye",
+    "Yorkshire-aged rye",
+    "UK-matured rye",
+    "UK-aged rye"
+  ],
+  "Never Say Die Small Batch": [
+    "Kentucky bourbon aged in Yorkshire, UK",
+    "Yorkshire-aged Kentucky bourbon",
+    "UK-matured Kentucky bourbon",
+    "UK-aged Kentucky bourbon",
+    "novelty UK-aged across strip and filet",
+    "Yorkshire-aged bourbon",
+    "novelty bourbon",
+    "UK-aged Kentucky"
+  ],
+  "New Holland Beer Barrel Bourbon": [
+    "Michigan beer-barrel bourbon",
+    "MI beer-barrel bourbon",
+    "beer-barrel-finished MI bourbon",
+    "Holland MI hop-influenced bourbon",
+    "Holland MI beer-barrel finish",
+    "beer-barrel-finished bourbon",
+    "Holland MI beer-barrel",
+    "MI beer-barrel finish"
+  ],
+  "Oban 14": [
+    "West Highland tiny-distillery single malt, coastal-influenced with sea-salt and honey, dried fruit + subtle smoke hint",
+    "tiny-distillery coastal Highland",
+    "West Highland coastal single malt",
+    "West Highland single malt",
+    "maritime Highland single malt",
+    "coastal West Highland",
+    "West Highland coastal",
+    "West Highland"
   ],
   "Oban 18": [
+    "premium aged West Highland Oban, 18yr with sherry-cask finish, deeper maritime-plus-sherry character",
     "aged maritime character is the featured Highland-marrow pairing",
     "sherry-finish dried-fruit marries the cake's spice",
-    "aged character and sherry-finish",
-    "aged sherry-finish handles the richness",
-    "aged maritime + sherry-finish depth",
-    "aged maritime + sherry-finish",
-    "aged coastal + sherry-finish",
-    "aged coastal character"
+    "aged coastal Highland with sherry-finish",
+    "aged maritime Highland with sherry-finish",
+    "18yr maritime Highland with sherry-finish",
+    "premium 18yr coastal Highland",
+    "premium aged maritime Highland"
+  ],
+  "Old Elk Cigar Cut": [
+    "Fort Collins craft bourbon designed for cigar pairing",
+    "Colorado craft bourbon designed for cigar pairing",
+    "Old Elk distillery cigar-paired bourbon",
+    "Old Elk Distillery (Colorado Fort Collins) bourbon designed specifically for cigar pairing, distinctive cigar-companion character",
+    "Colorado distillery cigar-paired bourbon",
+    "Fort Collins craft bourbon",
+    "purpose-built character handles dessert density",
+    "Old Elk Colorado craft"
+  ],
+  "Old Emmer": [
+    "ancient-grain softness + wheated depth handles cap-fat intensity",
+    "wheated bourbon from emmer wheat",
+    "craft-wheated character",
+    "ancient-grain wheated bourbon",
+    "emmer-wheat wheated bourbon",
+    "it with ancient-grain craft distinction",
+    "ancient-grain wheated character",
+    "wheated bourbon"
+  ],
+  "Old Fitzgerald 7 Year": [
+    "wheated BIB across strip and filet",
+    "wheated BIB's honey",
+    "Heaven Hill's wheated heritage bond",
+    "100-proof wheated BIB",
+    "100-proof wheated bond",
+    "100-proof wheated",
+    "wheated BIB",
+    "iceberg and bleu"
+  ],
+  "Old Fitzgerald 9 Year": [
+    "aged wheated BIB's mature honey",
+    "the older Old Fitz, 100-proof BIB, 9 years aged",
+    "aged wheated BIB across strip and filet",
+    "aged wheated BIB",
+    "9-year wheated BIB",
+    "100-proof aged wheated",
+    "aged wheated bond",
+    "9-year wheated"
+  ],
+  "Old Grand-Dad 16 Year": [
+    "Old Grand-Dad 16yr, Beam Suntory's aged OGD with high-rye mash bill for rye-forward spice character",
+    "rye-spice is under-specified for Tomahawk intensity",
+    "rye-spice handles the richness",
+    "16yr OGD high-rye bourbon",
+    "rye-forward aged spice",
+    "rye-forward aged character",
+    "aged rye-spice",
+    "16yr OGD high-rye"
+  ],
+  "Opus One": [
+    "Oakville Bordeaux blend, dark fruit, mocha, cedar, dried violet, firm tannin",
+    "Oakville Bordeaux blend, dark fruit, mocha, cedar, dried violet",
+    "Oakville Mondavi-Rothschild flagship, dark fruit, mocha, cedar, dried violet, firm tannin",
+    "Oakville Bordeaux blend, dark fruit, mocha, cedar, dried violet, firm tannin, impeccably balanced",
+    "Bordeaux-style weight obliterates Head Fake's sweet-bright profile",
+    "Bordeaux-style weight obliterates Glera's delicate structure on every axis",
+    "Bordeaux-style weight obliterates the Margarita's citrus structure",
+    "firm-tannin full-body Bordeaux-blend structure buries raw-beef delicacy"
+  ],
+  "Pierre Ferrand Cognac": [
+    "artisanal Grande Champagne 1er Cru cognac, unblended vintage-style, traditional methods",
+    "craft-premium cognac",
+    "craft Grande Champagne",
+    "Grande Champagne 1er Cru",
+    "artisanal Grande Champagne",
+    "unblended vintage-style cognac",
+    "Angeac-Champagne artisanal cognac",
+    "artisanal cognac"
+  ],
+  "Pikesville Rye": [
+    "Heaven Hill's 110-proof 6-year Maryland-style rye",
+    "110-proof bold Maryland-style rye",
+    "110-proof HH Maryland-style rye",
+    "110-proof Maryland-style rye",
+    "110-proof HH rye",
+    "110-proof bold rye",
+    "110-proof across strip and filet",
+    "110-proof Maryland-style"
+  ],
+  "Rey Sol Anejo": [
+    "distinctive Moorish-inspired sun-shaped ceramic bottle",
+    "sun-bottle across strip and filet",
+    "Moorish-inspired aged tequila",
+    "sun-shaped Moorish bottle",
+    "distinctive-bottle aged tequila",
+    "sun-bottle aged tequila",
+    "sun-bottle aged",
+    "Moorish-inspired aged"
+  ],
+  "Rishi's Old Antique": [
+    "retailer-label aged across strip and filet",
+    "retailer-label aged bourbon",
+    "aged retailer-label",
+    "Rishi's label",
+    "fresh dairy",
+    "Rishi's retailer-label",
+    "retailer-label aged",
+    "scallop delicacy"
+  ],
+  "Russell's Reserve 10 Year": [
+    "aged Kentucky bourbon",
+    "Wild Turkey's aged sipping bourbon",
+    "aged bourbon oak",
+    "aged Wild Turkey across strip and filet",
+    "aged caramel-vanilla",
+    "aged Wild Turkey oak",
+    "aged bourbon depth",
+    "Wild Turkey's 10-year aged profile"
+  ],
+  "Sazerac Rye": [
+    "the iconic rye cocktail benchmark, 90 proof, Buffalo Trace",
+    "iconic rye across strip and filet",
+    "90-proof iconic rye",
+    "BT's iconic rye",
+    "iconic rye",
+    "BT rye",
+    "BT's rye",
+    "90-proof rye"
+  ],
+  "Scapegrace Fortuna": [
+    "New Zealand craft single malt",
+    "NZ craft single malt",
+    "New Zealand single malt",
+    "NZ single malt",
+    "New Zealand single malt (reclassified from American Single Malt / Tennessee — Scapegrace is a New Zealand craft distillery)"
+  ],
+  "Silver Oak Cabernet Sauvignon": [
+    "American-oak vanilla-dill signature versus Ghost Block's tighter Oakville graphite-structure",
+    "Alexander Valley Cab, American-oak vanilla, coconut, dill, ripe cassis",
+    "distinctive American-oak signature on the classic strip",
+    "Alexander Valley Cab, American-oak vanilla, coconut, dill, ripe cassis, plum",
+    "American-oak signature on the dual-cut classic",
+    "Alexander Valley Cab with American-oak vanilla, coconut, dill, ripe cassis, plum",
+    "Alexander Valley Cab with American-oak vanilla, coconut, dill, ripe cassis, plum, soft tannin",
+    "Alexander Valley Cab, American-oak vanilla, coconut, dill"
+  ],
+  "St Supéry Cabernet Sauvignon": [
+    "Napa Rutherford Cab with blackberry, cassis, mocha, firm tannin",
+    "Napa Cab, blackberry, cassis, mocha, full body, firm tannin",
+    "Napa Cab with blackberry, cassis, mocha, firm tannin",
+    "Napa Cab with blackberry, cassis, mocha, full body",
+    "Napa Cab, blackberry, cassis, mocha, full body"
+  ],
+  "Stagg Jr. Batch #15": [
+    "BT non-age-statement cask-strength, premium batch, the \"little brother to GTS\" at accessible BT register",
+    "GTS-adjacent barrel-proof intensity at accessible register",
+    "intensity is over-specified for filet — save for the ribeye/Tomahawk",
+    "BT premium cask-strength",
+    "cask-strength handles strip marbling",
+    "BT cask-strength batch #15",
+    "BT non-age-statement cask-strength",
+    "BT cask-strength"
+  ],
+  "Tears of Llorona": [
+    "triple-cask aged (Scotch/sherry/cognac)",
+    "Germán González's extra añejo aged in three different casks: Scotch, sherry, and cognac",
+    "triple-cask across strip and filet",
+    "triple-cask Scotch/sherry/cognac",
+    "multi-cask aged tequila",
+    "triple-cask aged",
+    "multi-cask aged",
+    "triple-cask"
+  ],
+  "Thomas S. Moore Chardonnay Cask": [
+    "Barton chardonnay-cask bourbon",
+    "chardonnay-cask Barton bourbon",
+    "chardonnay-cask bourbon",
+    "white-wine-finished Barton bourbon",
+    "Barton Distilling chardonnay-cask",
+    "Barton white-wine-finished bourbon",
+    "Barton chardonnay-cask",
+    "white-wine-finished bourbon"
+  ],
+  "Villon Cognac": [
+    "modern profile and soft elderflower edge",
+    "contemporary accessibility and light spice",
+    "approachable sweetness is a casual-dessert finisher",
+    "Courvoisier's modern spirit aimed at younger drinkers, Cognac with saffron + elderflower \"Voyage\" infusion",
+    "infusion is over-specified for the wedge",
+    "saffron notes have a natural seafood-adjacent affinity the other cognacs can't claim",
+    "saffron/elderflower Courvoisier-sibling",
+    "saffron/elderflower cognac"
   ],
   "Weller 107": [
-    "higher-proof heat and richer body",
-    "bolder wheated body",
+    "higher-proof wheat and cocoa in a bigger-body dessert pairing",
+    "cold shrimp and higher-proof wheated don't bridge",
+    "the extra proof gives the pour weight",
+    "bigger-body wheated buries scallop sweetness",
+    "fresh dairy cannot carry 107-proof wheat",
+    "bigger-body wheated",
     "higher-proof caramel",
-    "heat and body",
-    "bigger body",
-    "higher-proof wheat",
-    "extra-proof weight"
+    "bolder wheated"
   ],
   "Weller 12 Year": [
-    "aged oak and wheated sweetness",
+    "cold poached shrimp and aged wheated bourbon don't",
+    "the 12-year's aged oak and wheated sweetness",
+    "twelve years of oak and vanilla",
+    "aged bourbon's weight overwhelms the crab's delicacy",
+    "aged oak and scallop delicacy don't bridge",
     "aged oak and vanilla",
-    "twelve years of oak-softened wheat",
-    "aged wheated oak",
-    "honeyed oak and aged wheat",
-    "twelve years of oak",
-    "aged wheated depth",
-    "aged oak weight"
+    "aged honey and oak",
+    "oak and caramel"
   ],
   "Weller Millennium": [
     "20-year wheated bourbon, heavily allocated, the white-whale of the Weller family",
-    "deep wheated honey and oak",
-    "extended oak and deep honey",
-    "premium wheated depth",
-    "aged wheated honey",
-    "premium oak",
-    "polished deep oak",
-    "aged oak"
+    "deep wheated honey and the Millennium's oak",
+    "the Millennium's extended oak and deep honey",
+    "the Millennium's aged honey and oak",
+    "the Millennium's complexity handles both strip and filet sides",
+    "the wedge's simplicity can't carry the Millennium's depth",
+    "the strip's char and marbling",
+    "ultra-premium wheated"
   ],
   "Weller Special Reserve": [
-    "soft caramel and vanilla",
-    "entry-level caramel and honey",
+    "cold shrimp and soft wheated don't bridge",
     "caramel and vanilla",
     "soft wheated caramel",
     "approachable wheated honey",
+    "soft caramel-vanilla",
+    "caramel-vanilla wheat",
     "soft wheated sweetness",
-    "gateway wheat",
-    "approachable wheat"
+    "iceberg's crispness and bleu's tang"
+  ],
+  "WhistlePig PiggyBack 6 Year": [
+    "100-proof 6-year WP rye",
+    "WP 100-proof across strip and filet",
+    "100-proof Canadian-sourced rye",
+    "WP accessible rye",
+    "100-proof WP rye",
+    "Canadian-sourced rye",
+    "accessible WP 100-proof",
+    "WP 100-proof"
+  ],
+  "Willett Pot Still Reserve": [
+    "craft high-rye oak spice",
+    "Willett's signature craft pour, distinctive pot-still-shaped bottle",
+    "craft high-rye across strip and filet",
+    "craft high-rye spice",
+    "high-rye oak spice",
+    "craft oak-spice",
+    "craft 94-proof high-rye",
+    "craft high-rye"
+  ],
+  "Woodford Reserve": [
+    "small-batch character across strip and filet sides",
+    "Kentucky's small-batch classic",
+    "small-batch fruit-forward bourbon",
+    "fruit-forward bourbon",
+    "small-batch fruit and floral",
+    "small-batch fruit notes",
+    "fruit-forward small-batch",
+    "small-batch character"
+  ],
+  "Woodford Reserve Rye": [
+    "small-batch rye across strip and filet",
+    "Woodford fruit-forward rye",
+    "fruit-forward rye",
+    "elegant small-batch rye",
+    "balanced small-batch rye",
+    "elegant rye",
+    "small-batch rye",
+    "elegant small-batch"
+  ],
+  "Woodinville Rye": [
+    "Washington State craft rye from Woodinville Whiskey Co",
+    "PNW craft rye across strip and filet",
+    "PNW craft rye",
+    "Washington craft rye",
+    "Washington State small-batch rye",
+    "Pacific Northwest craft",
+    "Washington State craft",
+    "local-grain rye"
+  ],
+  "Austin Hope Cabernet Sauvignon": [
+    "Paso Cab, ripe plum, dark cherry, mocha, warm spice",
+    "Paso Cab with ripe plum, dark cherry, mocha, warm spice, plush",
+    "Paso Robles Cab with ripe plum, dark cherry, mocha, warm spice, plush full finish"
   ],
   "Aviation": [
     "visual appeal adds table interest alongside the bisque",
     "delicacy is crushed by marbled Tomahawk weight",
     "botanical complexity"
   ],
-  "Bone Marrow": [
+  "Prime Tartare": [
     "this rich, umami-forward starter's bold fat and concentrated savory depth",
-    "the rich umami fat cap",
-    "the rich umami fat",
-    "umami roasted fat",
-    "umami fat",
-    "roasted-fat umami"
+    "raw-iron richness — opulent cocoa-mocha obliterates the delicate seasoned beef",
+    "delicate beef with capers and shallot and the bell pepper",
+    "the tartare's mineral depth and raw beef purity",
+    "raw-iron richness — fine-tannin cedar-mint",
+    "raw-iron richness — lush vanilla-dill",
+    "raw-iron richness — opulent chocolate-espresso"
+  ],
+  "Bone-In Filet": [
+    "the filet's lean, buttery tenderness and delicate mineral edge",
+    "enough richness from the bone and bold marble for the firmer tannin to grab",
+    "intensified beefy edge and the smoked-meat",
+    "intensified beefy edge and the espresso",
+    "intensified beefy edge and the cedar",
+    "bone-deep beef flavor and the tar-leather",
+    "added depth and the chocolate-espresso",
+    "added depth and the cedar-mint"
+  ],
+  "Avion Silver": [
+    "80-proof Jalisco-highlands blanco, filtered and clean",
+    "globally-distributed blanco across raw oysters, shrimp, lobster",
+    "filtered highland blanco",
+    "80-proof Jalisco-highlands",
+    "Jalisco-highlands blanco",
+    "filtered highland",
+    "Jalisco-highlands",
+    "filtered blanco"
   ],
   "Bowdie's Old Fashioned": [
     "this bold whiskey-forward cocktail's oak, spice, and spirit depth",
+    "weight and vanilla-caramel depth",
     "bourbon-and-bitters classic",
-    "bourbon classic",
-    "this bold whiskey-forward cocktail's oak, spice, and spirit depth, considered as a bridge into this elegant red's cherry-bright, silky-tannin",
-    "this bold whiskey-forward cocktail's oak, spice, and spirit depth, considered as a bridge into this tawny port's oxidative caramel, nut, and dried-fruit complexity",
     "bourbon cocktail",
-    "this bold whiskey-forward cocktail's oak, spice, and spirit depth, considered as a bridge into this sweet cream liqueur's dessert-adjacent lushness",
-    "this bold whiskey-forward cocktail's oak, spice, and spirit depth, considered as a bridge into the Pineau's grape-sweet, cognac-warmed aperitif profile"
+    "this bold whiskey-forward cocktail's oak, spice, and spirit depth, considered as a bridge into this sweet cream liqueur's dessert-adjacent lushness"
   ],
   "Caymus Cabernet Sauvignon": [
-    "this structured red's cassis-and-dark-fruit",
-    "bold Napa Cab",
-    "Napa cab",
-    "Napa Cab",
-    "big California cab",
-    "big cab"
-  ],
-  "Faroe Island Salmon": [
-    "this rich, fatty seafood's buttery flesh and delicate-yet-substantial texture",
-    "pristine cold-water salmon",
-    "North Atlantic fish",
-    "cold-water salmon",
-    "oily salmon",
-    "salmon richness"
-  ],
-  "Market Fish": [
-    "catch of the day",
-    "daily white-fish selection",
-    "featured fish",
-    "daily white-fish",
-    "whatever's featured"
-  ],
-  "Roast Half Chicken": [
-    "this roasted chicken's savory, rich poultry-skin flavor",
-    "poultry with herbs",
-    "herbed poultry",
-    "roasted poultry",
-    "roasted chicken"
+    "Napa Cab, concentrated black fruit, cocoa, mocha, velvety tannin",
+    "Napa Rutherford Cab, concentrated black fruit, cocoa, mocha, velvety tannin",
+    "Napa Cab with concentrated black fruit, cocoa, mocha, velvety tannin",
+    "Napa Cab with concentrated black fruit, cocoa, mocha, velvety tannins",
+    "iconic Napa Rutherford Cab with concentrated black fruit, cocoa, mocha, velvety tannins, long warming finish",
+    "rich opulent-Napa weight is incoherent as a flight",
+    "cocoa-mocha-tannin weight is incoherent",
+    "cocoa, mocha, velvety tannins"
   ],
   "Scavino Barolo": [
+    "powerful firm-tannin tar-leather structure buries the delicate shellfish",
+    "powerful firm-tannin tar-leather structure buries the shellfish",
+    "firm-tannin tar-leather weight overwhelms the starter",
+    "powerful firm tannin and tar-leather structure overwhelms the delicate raw beef with capers",
     "this structured red's cassis-and-dark-fruit",
-    "bold red wine",
-    "bold Barolo",
-    "Nebbiolo",
-    "Barolo"
-  ],
-  "Seafood Tower": [
-    "this delicate seafood starter's briny-fresh sweetness",
-    "raw oysters, shrimp, and lobster",
-    "raw oysters, shrimp, lobster",
-    "chilled shellfish assortment",
-    "chilled shellfish lineup",
-    "chilled shellfish",
-    "raw bar"
+    "food-demanding structure on the layered salad",
+    "food-demanding acid on the rich soup",
+    "powerful tar-leather structure"
   ],
   "Bacardi Rum": [
     "world's most-distributed light rum, Puerto Rican origin, ultra-clean Carta Blanca register"
-  ],
-  "The Tomahawk": [
-    "char and marbled fat",
-    "rendered fat and char",
-    "this marbled ribeye's fatty richness, smoky crust, and bold beef expression",
-    "32oz bone-in cap-fat",
-    "heavy marbling without overpowering the table presentation",
-    "the bone-in ribeye's massive scale",
-    "smoke and fat",
-    "the bone-in ribeye's scale"
-  ],
-  "Chocolate Cake": [
-    "this dense chocolate dessert's deep cocoa richness",
-    "cocoa depth and sweet",
-    "cocoa-and-frosting directly — designed-together pairing",
-    "cocoa density directly",
-    "cocoa depth directly",
-    "layered chocolate dessert",
-    "layered chocolate"
   ],
   "Baileys Irish Cream": [
     "the original cream liqueur (Ireland, 1974), Irish whiskey + Irish cream base, 17% ABV, vanilla-cocoa-cream profile"
   ],
   "Espresso Martini": [
-    "this coffee-driven cocktail's bitter roast, rich texture, and dessert-adjacent sweetness",
-    "weight is heavier than the beignets strictly need",
     "cocktail",
     "this coffee-driven cocktail's bitter roast, rich texture, and dessert-adjacent sweetness, considered as a bridge into this sweet cream liqueur's dessert-adjacent lushness",
     "weight"
@@ -485,43 +1592,38 @@ const EDITORIAL_SNIPPETS = {
   ],
   "Mocha Creme": [
     "this dense chocolate dessert's deep cocoa richness",
-    "coffee-chocolate dessert",
-    "coffee-chocolate"
-  ],
-  "Opus One": [
-    "Bordeaux-style weight obliterates Head Fake's sweet-bright profile",
-    "Bordeaux-style weight obliterates Glera's delicate structure on every axis",
-    "Bordeaux-style weight obliterates the Margarita's citrus structure",
-    "firm-tannin full-body Bordeaux-blend structure buries raw-beef delicacy",
-    "firm-tannin Bordeaux blend buries the delicate shellfish",
-    "structured Bordeaux-blend pedigree is incoherent as a flight",
-    "firm-tannin Bordeaux-blend structure overwhelms the starter",
-    "firm-tannin Bordeaux blend buries the shellfish"
-  ],
-  "Peanut Butter Brownie": [
-    "this dense chocolate dessert's deep cocoa richness",
-    "peanut butter and cocoa",
-    "peanut-chocolate stack",
-    "peanut-and-chocolate stack",
-    "peanut-chocolate"
-  ],
-  "Shrimp Cocktail": [
-    "cold shrimp and cocktail sauce don't bridge into any Islay",
-    "cold shrimp and aged bourbon don't bridge",
-    "this delicate seafood starter's briny-fresh sweetness",
-    "cold poached shrimp and cocktail sauce",
-    "iodine-on-iodine isn't the echo it sounds like — it's just too much",
-    "cold shrimp and cocktail sauce",
-    "cold shrimp",
-    "cold shellfish"
+    "coffee-chocolate dessert"
   ],
   "Balvenie 12 American Oak": [
     "bourbon-barrel Speyside"
   ],
+  "Balvenie 16 Single Barrel": [
+    "single-barrel American Oak Speyside",
+    "single-barrel First Fill American Oak",
+    "American Oak Speyside",
+    "single-barrel Speyside",
+    "collector-register Speyside",
+    "First Fill American Oak"
+  ],
+  "Filet Mignon": [
+    "the filet's lean, buttery tenderness and delicate mineral edge",
+    "the restraint and clean beef purity of the 8oz center-cut",
+    "the 8oz center-cut's clean beef purity and restraint",
+    "the restraint of the 8oz center-cut",
+    "the 8oz center-cut's clean beef purity",
+    "the 8oz center-cut's clean restraint",
+    "the 8oz center-cut",
+    "tender lean"
+  ],
   "Bardstown Château Laboude": [
     "French-wine character handles dessert density",
+    "Bardstown French-wine-cask finish",
+    "Bardstown Bourbon Co",
     "French-wine character",
-    "French-wine-fruit"
+    "French-wine-cask Bardstown",
+    "Bardstown French-wine-cask",
+    "French-wine-fruit",
+    "Bardstown French-wine finish"
   ],
   "Bardstown Foursquare": [
     "rum-cask + cocoa is textbook — tropical-rum + chocolate",
@@ -529,127 +1631,602 @@ const EDITORIAL_SNIPPETS = {
     "tropical-rum-cask character handles dessert density",
     "tropical rum-cask character",
     "tropical character handles the Tomahawk",
-    "tropical character",
-    "tropical-rum-cask"
-  ],
-  "Bee's Knees": [
-    "this gin cocktail's citrus brightness and botanical"
+    "Barbados rum-cask Bardstown",
+    "Foursquare rum-cask Bardstown",
+    "tropical rum-cask Bardstown"
   ],
   "Broccolini": [
-    "vegetal char and the medium tannin",
     "vegetal character directly and the citrus",
-    "this light, green vegetable's clean herbal edge",
+    "vegetal char and the medium tannin",
     "char weight and the spice",
     "vegetal char and the citrus",
     "char weight and the stone-fruit",
     "vegetal character directly and the high acid",
+    "vegetal char and the high acid",
     "tender stem and the fresh fruit"
   ],
+  "Bee's Knees": [
+    "no weight to handle marbled tomahawk fat"
+  ],
+  "Campari": [
+    "bitterness is still too heavy for burrata",
+    "lighter on dessert than the sipping amari",
+    "ruby bitter was built for crisp greens and blue cheese bite",
+    "lighter than sipping amari want to be",
+    "aperitivo at its most textbook",
+    "meant to open the meal",
+    "over-specified for casual dessert",
+    "ruby bitter orange-rhubarb"
+  ],
+  "Captain Morgan Rum": [
+    "Diageo's iconic Original Spiced rum, Caribbean-origin blend with warm-spice profile — vanilla, cinnamon, clove, molasses"
+  ],
+  "Chambord": [
+    "this sweet cream liqueur's dessert-adjacent lushness",
+    "the raspberry-chocolate pairing is a dessert menu standard for a reason",
+    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit"
+  ],
+  "Elephant Gin": [
+    "German craft distillery, African botanicals (baobab, buchu, lion's tail, devil's claw, African wormwood)",
+    "German craft African-botanical gin",
+    "African craft gin",
+    "craft African-botanical gin",
+    "German craft gin",
+    "conservation-charity craft gin",
+    "African-botanical craft gin",
+    "craft gin"
+  ],
+  "Fernet Branca": [
+    "40% ABV menthol-saffron bitter as post-strip digestif",
+    "40% menthol bitter",
+    "nuclear menthol-saffron bitter",
+    "nuclear bitter",
+    "27-herb bitter",
+    "nuclear menthol-saffron",
+    "saffron-menthol intensity",
+    "saffron-menthol"
+  ],
+  "Fernet Menta": [
+    "mint-forward Fernet as post-strip digestif",
+    "cooling mint bitter",
+    "cooling mint Fernet",
+    "mint-forward Fernet cousin",
+    "mint Fernet",
+    "mint bitter",
+    "cooling mint",
+    "Fernet"
+  ],
+  "Malibu Rum": [
+    "coconut-flavored rum liqueur from Barbados, 21% ABV, sweet-tropical register"
+  ],
   "Negroni": [
-    "this dry, spirit-forward gin cocktail's bitter-herbal complexity",
     "structure handles cream where sweeter cocktails would compound the weight",
     "savory-bitter profile belongs with mushrooms or marrow",
     "structure"
   ],
+  "Robert Moncuit Les Grand Blancs": [
+    "Le Mesnil Grand Cru blanc de blancs",
+    "Le Mesnil Grand Cru Chardonnay",
+    "Le Mesnil Grand Cru Chardonnay with chalk, lemon curd, green apple, no dosage",
+    "Le Mesnil Grand Cru blanc de blancs with chalky minerality, lemon curd, green apple, no dosage",
+    "Le Mesnil Grand Cru blanc de blancs with chalky minerality, lemon curd, green apple, and no dosage"
+  ],
+  "Sauternes Glass": [
+    "Sémillon-Sauvignon Blanc with noble rot (botrytis cinerea), apricot, honey, orange marmalade, luscious unctuous, bright acid",
+    "a dessert or cheese-course pour",
+    "a finishing pour"
+  ],
+  "Schloss Vollrads Riesling": [
+    "Rheingau Riesling, apricot, white peach, petrol, lively acid, off-dry",
+    "Rheingau Riesling with apricot, peach, petrol, lively acid, off-dry",
+    "Rheingau Riesling with apricot, white peach, petrol, lively acid, off-dry",
+    "Rheingau Riesling, apricot, peach, petrol, off-dry",
+    "historic German Riesling estate"
+  ],
+  "Veuve Clicquot Brut": [
+    "iconic yellow label, Reims Champagne",
+    "Reims Champagne, ripe apple, white peach, biscuit, creamy mousse, lively acidity",
+    "yellow label, Pinot Noir-dominant Reims Champagne",
+    "yellow label Champagne, Pinot Noir-dominant",
+    "iconic yellow label",
+    "yellow label Champagne",
+    "iconic yellow label Champagne from Reims, Pinot Noir-dominant blend with ripe apple, white peach, biscuit, creamy mousse, lively acidity"
+  ],
   "Belvedere Vodka": [
     "Polish rye-based vodka, premium clean-slightly-sweet profile"
   ],
+  "Blanton's Straight from the Barrel": [
+    "export-market cask-strength Blanton's, 130+ proof, distinctive horse-and-jockey stopper design, honey-vanilla-citrus Blanton's character at cask-strength intensity",
+    "intensity is over-specified for filet — save for the ribeye/Tomahawk",
+    "export cask-strength Blanton's",
+    "cask-strength Blanton's",
+    "distinctive character",
+    "over-specified for an app"
+  ],
   "Bowmore 12": [
-    "sherry cask finish — dried fruit depth",
-    "honeyed sherry finish and gentle peat in the one peated-Islay pairing that actually",
+    "the custard's clean dairy register doesn't pick up peat",
+    "the sherry cask finish gives the dram a dried-fruit depth that",
+    "scallops' sweet delicacy gets buried by any peat, Bowmore's gentleness included",
     "honeyed peat and sherry notes",
+    "honeyed peat and orchard-fruit notes",
+    "cold poached shrimp and Islay peat don't bridge regardless of how gentle the peat is",
     "gentle peat and honey",
-    "sherry-finished honeyed peat",
-    "sherry-touched gentle peat",
-    "honeyed sherry-touched peat",
-    "gentler sherry-touched peat"
+    "honey and sherry notes"
   ],
-  "Glenglassaugh 12": [
-    "tropical-fruit-and-honey marries the cake's raisins and spice with distinctive coastal",
-    "tropical-fruit character handles the strip with distinctive coastal-Highland",
-    "fresh-fruit character",
-    "tropical-fruit character",
-    "fresh-fruit-and-honey profile",
-    "tropical-fruit-and-honey",
-    "tropical-coastal profile is distinctive",
-    "tropical-coastal character"
+  "Bruichladdich": [
+    "this Islay Scotch's intense peat smoke, medicinal phenol, and bold weight",
+    "clean barley notes and soft citrus",
+    "this Islay Scotch's intense peat smoke, medicinal phenol, and bold weight, considered as a bridge into this structured red's cassis-and-dark-fruit"
   ],
-  "Glenmorangie 18": [
-    "aged + sherry-finished character",
-    "aged bourbon-plus-sherry depth",
-    "aged-sherry character",
-    "Oloroso-cask depth",
-    "Oloroso dried-fruit",
-    "aged character",
-    "deeper character",
-    "layered character"
+  "Camarena Tequila": [
+    "Camarena family's value brand",
+    "80-proof value reposado",
+    "value Camarena-family reposado",
+    "Camarena-family value reposado",
+    "value reposado",
+    "entry reposado"
+  ],
+  "Casamigos Mezcal": [
+    "the Clooney-Gerber gateway to agave smoke",
+    "softened-smoke character",
+    "gateway-smoke energy",
+    "polished-smoke",
+    "polished-agave"
+  ],
+  "Clase Azul Guerrero Mezcal": [
+    "Guerrero-state terroir in a ceramic decanter"
+  ],
+  "Clase Azul Plata": [
+    "ceramic-bottle luxury blanco across raw oysters, shrimp, and lobster",
+    "ultra-premium ceremonial blanco in",
+    "ceremonial ceramic blanco",
+    "luxury blanco",
+    "ultra-premium blanco",
+    "ceremonial blanco",
+    "ceramic-bottle luxury"
+  ],
+  "Clase Azul Reposado": [
+    "ultra-premium in a",
+    "luxury reposado",
+    "premium reposado",
+    "ultra-premium reposado",
+    "ceramic-bottle luxury",
+    "ultra-premium",
+    "ceramic-bottle reposado"
+  ],
+  "Codigo 1530 Rosa": [
+    "reposado aged in uncharred Napa Cabernet wine barrels",
+    "Napa Cab-cask reposado",
+    "Napa Cab-cask-aged reposado",
+    "Napa Cab-cask rosé",
+    "Napa Cabernet-aged reposado",
+    "Cabernet-cask rosé",
+    "Cabernet-cask reposado"
+  ],
+  "Corazon Blanco": [
+    "single-estate highland across raw oysters, shrimp, lobster",
+    "highland agave",
+    "highland-agave",
+    "single-estate highland blanco",
+    "single-estate highland",
+    "single-estate Sazerac blanco",
+    "Sazerac single-estate",
+    "single-estate blanco"
+  ],
+  "Corazon Reposado": [
+    "Sazerac's tequila brand, single-estate highland agave",
+    "highland agave brightness",
+    "highland agave",
+    "80-proof highland reposado",
+    "single-estate agave",
+    "single-estate Sazerac-owned reposado",
+    "single-estate reposado",
+    "Sazerac-owned reposado"
+  ],
+  "Detroit City Gin": [
+    "Detroit City Distillery urban craft, juniper-forward American interpretation",
+    "Detroit urban craft gin",
+    "Detroit City Distillery",
+    "urban craft juniper",
+    "Detroit urban craft",
+    "hometown Detroit craft",
+    "Detroit craft gin",
+    "Detroit craft juniper"
+  ],
+  "Don Fulano Blanco": [
+    "premium highland blanco, 80 proof, refined craft",
+    "highland craft across raw oysters, shrimp, lobster",
+    "premium highland craft",
+    "highland craft blanco",
+    "premium highland blanco",
+    "highland craft",
+    "highland-craft blanco",
+    "premium highland"
+  ],
+  "Don Fulano Reposado": [
+    "premium highland reposado from Tamaulipas-adjacent Jalisco highlands",
+    "premium highland agave",
+    "premium highland reposado",
+    "premium highland",
+    "refined highland reposado",
+    "80-proof highland reposado",
+    "highland reposado",
+    "highland refinement"
+  ],
+  "Don Julio 70th": [
+    "the crystalline reposado's filtered clarity",
+    "crystalline filtered reposado",
+    "the crystalline expression",
+    "filtered reposado",
+    "crystalline reposado",
+    "filtered clarity"
+  ],
+  "Don Julio Blanco": [
+    "benchmark blanco across raw oysters, shrimp, and lobster",
+    "the benchmark premium blanco",
+    "iconic 80-proof blanco",
+    "iconic blanco",
+    "iconic 80-proof",
+    "bright blanco",
+    "benchmark blanco",
+    "80-proof blanco"
+  ],
+  "Don Julio Reposado": [
+    "the reposado's bright agave and light oak",
+    "reposado's vanilla and oak",
+    "reposado's agave and oak",
+    "citrus-forward agave",
+    "reposado agave",
+    "8-month-aged agave",
+    "the benchmark everyday reposado",
+    "bright agave"
+  ],
+  "El Cabo": [
+    "craft small-batch reposado, agave-forward character",
+    "craft small-batch reposado",
+    "craft boutique reposado",
+    "craft reposado",
+    "boutique reposado"
+  ],
+  "El Mayor Reposado": [
+    "value 80-proof reposado, agave-forward with light oak",
+    "value agave-forward reposado",
+    "80-proof value reposado",
+    "value reposado",
+    "accessible reposado"
+  ],
+  "Fox & Oden Double Oaked": [
+    "intensified-caramel + cocoa is the featured Double-Oaked-chocolate pairing",
+    "Fox & Oden Detroit Double Oaked",
+    "Fox & Oden Double Oaked",
+    "Double Oaked Fox & Oden",
+    "Fox & Oden Detroit",
+    "Detroit-brand Double Oaked",
+    "Detroit Double Oaked",
+    "Double Oaked"
+  ],
+  "G4 Blanco": [
+    "craft 80-proof across raw oysters, shrimp, lobster",
+    "80-proof from Felipe Camarena's G4 distillery",
+    "Felipe Camarena's craft blanco",
+    "80-proof craft blanco",
+    "craft blanco",
+    "Camarena craft",
+    "craft 80-proof",
+    "the standard-proof sibling"
+  ],
+  "G4 High Proof": [
+    "104-proof reposado from Felipe Camarena's G4 distillery",
+    "104-proof agave",
+    "bold agave",
+    "concentrated agave",
+    "104-proof concentrated reposado",
+    "bold concentrated reposado",
+    "high-proof reposado",
+    "104-proof reposado"
+  ],
+  "George T. Stagg": [
+    "over-specified for a side — save the collector bottle",
+    "over-specified for dessert — save the collector bottle for the ribeye/Tomahawk",
+    "BTAC 15+yr cask-strength",
+    "BTAC ultra-premium",
+    "over-specified for an app",
+    "130+ proof BTAC collector",
+    "BTAC holy-grail collector",
+    "130+ proof BTAC"
+  ],
+  "Gran Patron Platinum": [
+    "ultra-premium Patron across raw oysters, shrimp, and lobster",
+    "triple-distilled premium Patron in glass crystal",
+    "triple-distilled premium Patron",
+    "premium Patron",
+    "ultra-premium Patron",
+    "refined blanco",
+    "triple-distilled Patron"
+  ],
+  "Hancock's Reserve Single Barrel": [
+    "Buffalo Trace single-barrel using the same mash bill as Blanton's",
+    "BT single-barrel across strip and filet",
+    "Blanton's-mash BT single-barrel",
+    "BT single-barrel",
+    "fresh dairy",
+    "Blanton's-mash BT",
+    "scallop delicacy",
+    "cold shrimp"
+  ],
+  "Jack Daniel's Bonded": [
+    "Bottled-in-Bond Jack Daniel's, 100-proof, more robust than Old No",
+    "100-proof Bottled-in-Bond Tennessee",
+    "Bottled-in-Bond Tennessee",
+    "100-proof Tennessee",
+    "100-proof Bottled-in-Bond",
+    "Bonded Tennessee"
+  ],
+  "Kentucky Owl 10 Year Rye": [
+    "Kentucky Owl's allocated 10-year premium rye",
+    "10-year allocated KO across strip and filet",
+    "premium allocated KO",
+    "allocated premium KO",
+    "KO allocated premium",
+    "10-year allocated KO",
+    "allocated KO 10-year",
+    "allocated KO"
+  ],
+  "Kentucky Owl St. Patrick's": [
+    "Kentucky Owl luxury Irish",
+    "limited-release Irish luxury icon",
+    "$150+ luxury Irish crossover",
+    "Kentucky Owl's Irish-American crossover",
+    "luxury American-distiller Irish crossover",
+    "Irish-luxury-icon limited release",
+    "luxury Irish crossover",
+    "luxury crossover Irish"
+  ],
+  "Komos Rosa Reposado": [
+    "luxury brand, wine-cask-finished (pink hue from French oak + wine cask)",
+    "wine-cask pink reposado",
+    "luxury pink reposado",
+    "wine-cask-finished pink reposado",
+    "wine-cask-finished reposado",
+    "wine-cask rosé",
+    "rosé-finished reposado"
   ],
   "Lagavulin 8": [
+    "cheesecake's clean dairy-custard register isn't built for peat",
+    "seared seafood's delicate sweetness gets buried by peat",
     "vibrant peat and sea-spray brine",
+    "sea-spray and peat steamroll the crab's sweetness",
     "bright peat and sea-spray brine",
     "balanced peat and sea-spray brine",
-    "maritime brine and vibrant peat",
-    "citrus-oil brightness and balanced peat",
-    "vibrant peat in a clean back-and-forth",
-    "peat and sea-spray brine",
-    "balanced Islay peat"
+    "maritime brine in the dram picks up the bisque's sea-driven base",
+    "peat smoke in the dram"
+  ],
+  "Lalo Silver": [
+    "additive-free craft across raw oysters, shrimp, lobster",
+    "Lalo González's additive-free craft",
+    "family-heritage craft blanco",
+    "Lalo González craft",
+    "additive-free craft blanco",
+    "family-heritage craft",
+    "DJ-family-descendant craft",
+    "additive-free craft"
   ],
   "Laphroaig 10": [
-    "medicinal iodine is a complete mismatch",
+    "the tartare's delicacy can't carry Laphroaig's full phenolic weight",
+    "the medicinal intensity risks overrunning the Caesar's finesse",
+    "seared seafood's clean caramelized sweetness cannot survive Laphroaig's phenolic wall",
+    "iodine-on-iodine isn't the echo it sounds like",
+    "medicinal iodine, tar, and band-aid TCP",
     "medicinal intensity — an impossible bridge",
-    "medicinal peat and tar",
-    "medicinal iodine and phenolic weight",
-    "medicinal punch head-on",
-    "full phenolic weight",
-    "full phenolic punch",
-    "medicinal intensity"
+    "the medicinal edge slices through the pork belly's maple-glazed fat like nothing else on the spirit list",
+    "the wedge's crisp iceberg and bleu dressing are completely overwhelmed by Laphroaig's intensity"
+  ],
+  "Lock Stock & Barrel Rye": [
+    "sourced rye, often MGP-blended at premium age",
+    "premium sourced rye",
+    "sourced premium rye",
+    "sourced boutique across strip and filet",
+    "sourced boutique rye",
+    "premium sourced blend",
+    "sourced rye",
+    "premium sourced"
+  ],
+  "Los Vecinos Mezcal": [
+    "'The Neighbors' — Oaxacan artisanal pit-roasted expressions from multiple mezcaleros"
   ],
   "Macallan Estate": [
+    "distinctive premium Macallan expression featuring Easter Elchies Estate-grown oak, distillery-estate-story-driven",
     "distinctive cask character handles the dessert density",
     "distinctive oak-derived depth layers into cocoa",
     "estate-oak character is distinctive",
     "distinctive cask character",
     "terroir-specific estate-oak character",
     "distinctive oak character",
-    "estate-oak character",
-    "distinctive cask selection"
+    "Estate-oak premium Macallan"
   ],
-  "Maker's Mark": [
-    "soft caramel and vanilla",
-    "iconic wheated sweetness",
-    "iconic wheated softness",
-    "caramel and vanilla",
-    "iconic 90-proof softness",
-    "soft wheat",
-    "red-wax wheat"
+  "Mammoth 16 Year Single Barrel Rye": [
+    "16-year aged single-barrel from Mammoth Distilling, Michigan",
+    "16-year aged Michigan rye",
+    "16-year aged Michigan single-barrel",
+    "16-year Michigan across strip and filet",
+    "extended-aged Michigan rye",
+    "16-year home-state rye",
+    "16-year Michigan rye",
+    "aged Michigan rye"
   ],
-  "Old Elk Cigar Cut": [
-    "purpose-built character handles dessert density",
-    "cigar-companion character",
-    "purpose-built character",
-    "distinctive character",
-    "cigar-paired character"
+  "Michter's 10 Year Rye": [
+    "aged premium Michter's across strip and filet",
+    "10-year aged Michter's single-barrel",
+    "premium aged Michter's",
+    "aged premium Michter's",
+    "10-year premium Michter's",
+    "aged Michter's",
+    "fresh dairy",
+    "10-year Michter's"
   ],
-  "Old Emmer": [
-    "ancient-grain softness + wheated depth handles cap-fat intensity",
-    "craft-wheated character",
-    "ancient-grain wheated character",
-    "wheated character",
-    "wheated softness",
-    "emmer-wheat character"
+  "Mijenta Blanco": [
+    "premium craft blanco across raw oysters, shrimp, and lobster",
+    "premium craft brand, Jalisco highlands, additive-free",
+    "craft premium blanco",
+    "premium craft blanco",
+    "craft premium",
+    "premium craft",
+    "additive-free craft blanco",
+    "additive-free craft"
+  ],
+  "Milagro Reposado": [
+    "modern 80-proof reposado",
+    "triple-distilled modern reposado",
+    "modern-style triple-distilled reposado",
+    "modern clean reposado",
+    "triple-distilled reposado",
+    "modern reposado",
+    "modern-style reposado"
+  ],
+  "Pappy Van Winkle 13 Year Rye": [
+    "the Van Winkle Family Reserve Rye, 13 years, 95",
+    "Van Winkle Family Reserve across strip and filet",
+    "unicorn Van Winkle rye",
+    "allocation story is wasted on salad",
+    "unicorn Pappy Rye",
+    "Van Winkle Family Reserve",
+    "Pappy Rye",
+    "unicorn Van Winkle"
+  ],
+  "Patron Silver": [
+    "80-proof iconic blanco, globally the most recognized brand",
+    "80-proof iconic Patron",
+    "Patron's iconic silver",
+    "iconic 80-proof Patron",
+    "iconic blanco",
+    "iconic Patron",
+    "Patron's clean profile",
+    "80-proof Patron"
+  ],
+  "Peju Cabernet Sauvignon": [
+    "Rutherford Cab, dark cherry, cassis, dusty cocoa, refined tannin",
+    "Rutherford Cab with dark cherry, cassis, dusty cocoa, refined tannin",
+    "family-owned Rutherford Cab with dark cherry, cassis, dusty cocoa, balanced acidity, refined tannin"
+  ],
+  "Quilt Cabernet Sauvignon": [
+    "Napa Cab, blackberry, dark chocolate, toasted vanilla, soft tannin",
+    "Napa Cab with blackberry, dark chocolate, toasted vanilla, soft tannin",
+    "polished Napa Cab with blackberry, dark chocolate, toasted vanilla",
+    "Napa Cab with ripe blackberry, dark chocolate, toasted vanilla, soft polished tannin",
+    "Napa Cab, blackberry, dark chocolate, toasted vanilla"
+  ],
+  "Siete Leguas Blanco": [
+    "traditional tahona-crushed blanco, family-distillery craft",
+    "traditional craft across raw oysters, shrimp, lobster",
+    "traditional craft blanco",
+    "rustic craft",
+    "traditional craft",
+    "rustic traditional blanco",
+    "traditional blanco",
+    "tahona-crushed traditional"
+  ],
+  "Siete Leguas Reposado": [
+    "traditional tahona-crushed agave, family-distillery craft",
+    "traditional agave's earthier character",
+    "tahona-crushed traditional character",
+    "traditional agave",
+    "rustic agave",
+    "tahona-crushed reposado",
+    "tahona-crushed traditional",
+    "rustic reposado"
+  ],
+  "Teeter Totter Cabernet Sauvignon": [
+    "Napa Cab, rich dark fruit, mocha, smooth polished finish",
+    "Napa Cab with rich dark fruit, mocha, smooth lingering finish",
+    "Napa Cab, rich dark fruit, mocha, smooth finish",
+    "polished Napa Cab with rich dark fruit, mocha, smooth lingering finish, approachable concentration"
+  ],
+  "Thomas H. Handy Sazerac Rye": [
+    "BTAC annual barrel-proof rye, uncut and unfiltered, from Buffalo Trace Antique Collection",
+    "BTAC barrel-proof across strip and filet",
+    "BTAC unfiltered rye",
+    "uncut BT rye",
+    "BTAC barrel-proof",
+    "BTAC allocated",
+    "fresh dairy",
+    "BTAC uncut"
+  ],
+  "Trombo Cedano Reposado": [
+    "aged in cedar-wood barrels",
+    "cedar-aged reposado",
+    "cedar-wood reposado",
+    "cedar-wood-aged reposado",
+    "cedar-wood notes",
+    "cedar-wood-aged"
   ],
   "Vin Santo": [
-    "oxidative nut"
+    "a Tuscan finishing pour",
+    "a finishing pour"
   ],
-  "Bone-In Filet": [
-    "the filet's lean, buttery tenderness and delicate mineral edge",
-    "added marble gives the bourbon more to",
-    "intensified beefy edge and the smoked-meat",
-    "intensified beefy edge and the espresso",
-    "intensified beefy edge and the cedar",
-    "bone-deep beef flavor and the tar-leather",
-    "added depth and the chocolate-espresso",
-    "added depth and the cedar-mint"
+  "WhistlePig 12 Year Old World": [
+    "12-year Old World rye across strip and filet",
+    "12-year fruit-cask-finished rye",
+    "12-year WP finished in Sauternes, Madeira, and Port casks",
+    "Old World fruit-rye",
+    "fruit-cask WP",
+    "fruit-cask-finished 12-year",
+    "wine-cask-finished WP",
+    "Sauternes/Madeira/Port-finished rye"
+  ],
+  "WhistlePig 15 Year": [
+    "WP's 15-year premium flagship, 92 proof, Vermont oak barrel finish",
+    "premium 15-year WP flagship",
+    "15-year flagship across strip and filet",
+    "15-year Vermont-oak-finished rye",
+    "15-year flagship WP",
+    "extended-aged WP flagship",
+    "extended-aged 15-year flagship",
+    "15-year premium WP"
+  ],
+  "Woodford Reserve Double Oaked": [
+    "Brown-Forman KY bourbon with toasted-then-charred second barrel, iconic Double-Oaked benchmark",
+    "iconic KY Double Oaked",
+    "iconic Double-Oaked benchmark",
+    "Brown-Forman KY Double Oaked",
+    "iconic Double-Oaked",
+    "Brown-Forman Double Oaked"
+  ],
+  "Yamazaki 18 Year": [
+    "Suntory's Japanese flagship"
+  ],
+  "Far Niente Cabernet Sauvignon": [
+    "long finish aligns with the premium tenderloin",
+    "Oakville Cab, blackcurrant, dark chocolate, espresso, violet, smooth powerful",
+    "Oakville Cab with blackcurrant, dark chocolate, espresso, violet, smooth powerful",
+    "this structured red's cassis-and-dark-fruit",
+    "Oakville Cab, lush luxurious with blackcurrant, dark chocolate, espresso, violet, smooth powerful structure, extraordinarily long finish",
+    "long finish"
+  ],
+  "Faust Napa Valley Cabernet": [
+    "this structured red's cassis-and-dark-fruit"
+  ],
+  "Frias Block 5": [
+    "this structured red's cassis-and-dark-fruit"
+  ],
+  "Lobster Mac": [
+    "this rich, creamy side's dairy-driven indulgence",
+    "dairy richness",
+    "cream-and-shellfish richness"
+  ],
+  "Shrimp Bisque": [
+    "this rich, creamy seafood soup's sweet-briny depth over dairy-rich base",
+    "cream-sherry weight and the red cherry",
+    "cream-sherry weight and the tar",
+    "the cream-base bisque",
+    "cream-shrimp soup"
+  ],
+  "The Manhattan": [
+    "vanilla-softened structure"
+  ],
+  "Tomato Basil": [
+    "fresh-acidity classic — bourbon vanilla-caramel has no hook into a bright herb-and-tomato soup",
+    "fresh-herb-and-acidity classic — concentrated cocoa-mocha body",
+    "this bright, vegetal soup's acidic herbal"
   ],
   "Gumbo": [
     "Cajun spice and the tequila's agave adds dimension",
@@ -661,111 +2238,145 @@ const EDITORIAL_SNIPPETS = {
     "the Gumbo's smoky, spiced heartiness with tomato and bold seasoning",
     "bay-and-file aromatics directly and the full body handles the stew's weight"
   ],
-  "Broccoli Cheddar": [
-    "this rich, creamy soup's dairy-driven warmth"
+  "Seafood Tower": [
+    "this delicate seafood starter's briny-fresh sweetness",
+    "chilled shellfish lineup"
   ],
-  "Bruichladdich": [
-    "this Islay Scotch's intense peat smoke, medicinal phenol, and bold weight",
-    "this Islay Scotch's intense peat smoke, medicinal phenol, and bold weight, considered as a bridge into this structured red's cassis-and-dark-fruit",
-    "this Islay Scotch's intense peat smoke, medicinal phenol, and bold weight, considered as a bridge into the Moscato's peach-and-honey sweetness with delicate effervescence"
+  "Dunville's Single Malt": [
+    "Echlinville Distillery Belfast single malt",
+    "Belfast Irish single malt",
+    "Northern Ireland single malt",
+    "Irish single malt",
+    "Northern Ireland single malt from Echlinville Distillery (Belfast), a genuine Irish single malt (reclassified from American Single Malt / Tennessee — Dunville's is Belfast-based)"
+  ],
+  "J. Davies Cabernet Sauvignon": [
+    "Diamond Mountain Cab, dark fruit, graphite, mineral, firm tannin",
+    "Diamond Mountain Cab with dark fruit, graphite, mineral, firm tannin",
+    "Diamond Mountain Cab with volcanic dark fruit, graphite, mineral backbone, firm tannin",
+    "Diamond Mountain Cab from the Schramsberg estate with volcanic-soil intensity, dark fruit, graphite, mineral backbone, firm tannin, real aging potential"
+  ],
+  "Tullamore D.E.W.": [
+    "traditional heritage triple-distilled Irish",
+    "drier traditional Irish blend",
+    "heritage Irish blend",
+    "drier traditional Irish",
+    "traditional triple-distilled Irish",
+    "traditional heritage Irish",
+    "heritage triple-distilled Irish",
+    "drier Irish blend"
   ],
   "Buffalo Trace Cream": [
-    "bourbon-base cream liqueur from Buffalo Trace Distillery (Kentucky), vanilla-caramel-cream with bourbon depth"
+    "bourbon-base cream liqueur from Buffalo Trace Distillery (Kentucky), vanilla-caramel-cream with bourbon depth",
+    "caramel depth"
   ],
-  "Campari": [
-    "bitterness is still too heavy for burrata",
-    "ruby bitter was built for crisp greens and blue cheese bite",
-    "bitterness is still too heavy"
+  "Far Niente Chardonnay": [
+    "Napa Oakville Chardonnay, buttered citrus, toasted hazelnut, crème brûlée, lush texture",
+    "Napa Oakville Chardonnay with buttered citrus, toasted hazelnut, crème brûlée, lush texture",
+    "Oakville Chardonnay, buttered citrus, toasted hazelnut, crème brûlée, lush velvety",
+    "Oakville Chardonnay with buttered citrus, toasted hazelnut, crème brûlée, lush texture",
+    "Oakville Chardonnay, buttered citrus, toasted hazelnut, crème brûlée, lush velvety texture",
+    "Oakville Chardonnay with buttered citrus, toasted hazelnut, crème brûlée, lush velvety texture",
+    "Napa flagship oak-cream-apple Chardonnay"
   ],
-  "Butternut Squash": [
-    "this sweet-earthy soup's mellow vegetable warmth"
+  "Jean-Pierre Grossot Chablis": [
+    "this crisp white's citrus-driven acidity and mineral edge",
+    "Burgundy unoaked Chard with flint-chalk minerality, lemon, green apple",
+    "unoaked Burgundy Chard, flint, chalk, lemon, green apple",
+    "Burgundy unoaked Chardonnay, flint, chalk, lemon, green apple",
+    "unoaked Burgundy Chardonnay, flinty chalky minerality, lemon, green apple, lean precise",
+    "flint, chalk, lemon, green apple, lean precise"
   ],
-  "Captain Morgan Rum": [
-    "Diageo's iconic Original Spiced rum, Caribbean-origin blend with warm-spice profile — vanilla, cinnamon, clove, molasses"
+  "Joseph Mellot Sancerre": [
+    "Loire Sauv Blanc, grapefruit, chalk, fresh herbs, tension",
+    "Loire Sauv Blanc with grapefruit, chalk, fresh herbs, tension finish",
+    "Loire Sauv Blanc benchmark, grapefruit, chalk, fresh herbs, tension finish",
+    "Loire Sauv Blanc with grapefruit, chalk, fresh herbs",
+    "Loire Sauv Blanc with white grapefruit, chalk, fresh herbs, tension-filled finish",
+    "Loire Sauv Blanc, grapefruit, chalk, herbs, tension-filled",
+    "Loire benchmark Sauv Blanc, grapefruit, chalk, herbs"
   ],
-  "Casamigos Mezcal": [
-    "the Clooney-Gerber gateway to agave smoke",
-    "softened-smoke character",
-    "gateway character",
-    "gateway-smoke energy",
-    "polished-smoke",
-    "polished-agave"
+  "Pio Cesare Barbaresco": [
+    "firm-tannin tar structure buries the shellfish despite elegant profile",
+    "firm-tannin tar structure buries the delicate shellfish",
+    "firm-tannin tar weight overwhelms the starter"
   ],
-  "Cowboy Ribeye": [
-    "the ribeye's cap fat and bold beef char",
-    "cap fat and bold char",
-    "cap fat and char",
-    "22oz bone-in cap-fat",
-    "this marbled ribeye's fatty richness, smoky crust, and bold beef expression",
-    "cap fat",
-    "fatty bone-in",
-    "rich marbling"
+  "Stoneleigh Sauvignon Blanc": [
+    "Marlborough NZ Sauv Blanc, passionfruit, grapefruit, grass, zesty",
+    "Marlborough Sauv Blanc with passionfruit, grapefruit, fresh-cut grass",
+    "Marlborough Sauv Blanc with passionfruit, grapefruit, grass, zesty",
+    "Marlborough Sauv Blanc, passionfruit, grapefruit, grass, zesty"
   ],
-  "Truffle Fries": [
-    "this earthy, umami-packed side's mushroom-and-truffle depth",
-    "Parmesan-truffle-salt-fat",
-    "earthy truffle-parmesan depth",
-    "earthy truffle-parmesan",
-    "truffle-parmesan richness",
-    "truffle-parmesan depth",
-    "Parmesan-and-truffle-oil fries",
-    "Parmesan-and-truffle"
+  "Cade Cabernet Sauvignon": [
+    "Howell Mountain Cab from one of Napa's first LEED-certified wineries",
+    "LEED-certified Howell Mountain character"
   ],
-  "Prime Tartare": [
-    "this rich, umami-forward starter's bold fat and concentrated savory depth",
-    "raw-iron richness — opulent cocoa-mocha obliterates the delicate seasoned beef",
-    "delicate beef with capers and shallot and the bell pepper",
-    "the tartare's mineral depth and raw beef purity",
-    "the tartare's delicacy cannot carry Laphroaig 10's full phenolic weight",
-    "raw-iron richness — fine-tannin cedar-mint",
-    "raw-iron richness — lush vanilla-dill",
-    "raw-iron richness — opulent chocolate-espresso"
+  "Chocolate Cake": [
+    "this dense chocolate dessert's deep cocoa richness",
+    "cocoa depth and sweet",
+    "cocoa depth directly",
+    "cocoa density directly",
+    "layered chocolate dessert",
+    "currently unavailable",
+    "incoherent"
   ],
-  "Chambord": [
+  "Taylor Fladgate Tawny": [
+    "this tawny port's oxidative caramel, nut, and dried-fruit complexity, considered as a bridge into this sweet cream liqueur's dessert-adjacent lushness"
+  ],
+  "Contratto Vermouth": [
+    "historic Asti house vermouth (aromatized fortified wine, 16% ABV) — functionally a vermouth not a liqueur, wine-base botanical infusion"
+  ],
+  "Drambuie": [
+    "Scotch whisky-based honey-herbal liqueur from Scotland, 40% ABV, heather-honey and spiced herbs on a scotch base"
+  ],
+  "Grand Marnier": [
     "this sweet cream liqueur's dessert-adjacent lushness",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this tawny port's oxidative caramel, nut, and dried-fruit complexity",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this bold whiskey-forward cocktail's oak, spice, and spirit depth",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this coffee-driven cocktail's bitter roast, rich texture, and dessert-adjacent sweetness"
+    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit"
   ],
-  "Chilean Seabass": [
-    "this rich, fatty seafood's buttery flesh and delicate-yet-substantial texture",
-    "rich white-fish"
+  "Green Chartreuse": [
+    "55% ABV, 130+ herbs/botanicals, Carthusian monks since 1605"
   ],
-  "Basil Hayden's Toast": [
-    "toasted-barrel caramel and marshmallow notes over the 80-proof base",
-    "marshmallow and toasted caramel"
+  "Mata Hari Absinthe": [
+    "Bohemian-style absinthe from Austria, 60% ABV, wormwood-anise-fennel, traditional louche"
   ],
-  "Fox & Oden Double Oaked": [
-    "intensified-caramel + cocoa is the featured Double-Oaked-chocolate pairing"
+  "Sambuca": [
+    "Italian anise liqueur (Molinari benchmark), star anise + elderflower + botanicals, traditionally served con la mosca (with 3 coffee beans)"
   ],
-  "Little Book": [
-    "cask-strength blended character handles Tomahawk intensity with Fred-Noe-artistic-blend distinction",
-    "cask-strength annual-blend handles strip marbling",
-    "cask-strength character",
-    "cask-strength handles dessert density",
-    "intensity is over-specified for filet — save the chapter-series bottle for the ribeye/Tomahawk",
-    "cask-strength",
-    "chapter-series intensity"
+  "Yellow Chartreuse": [
+    "40% ABV, 130+ herbs/botanicals with honey-saffron notes, sister to Green but gentler and sweeter"
   ],
-  "Château de Rouillac": [
-    "this structured red's cassis-and-dark-fruit"
+  "Pommery Cuvée Louise": [
+    "prestige champagne"
   ],
-  "Clam Chowder": [
-    "this rich, creamy seafood soup's sweet-briny depth over dairy-rich base"
+  "Doctor Bird Jamaica Rum": [
+    "pot-still Jamaican rum with intense hogo funk and high-ester tropical-fruit overdrive"
+  ],
+  "Jung and Wulff Guyana": [
+    "Demerara-style rum from Guyana's Diamond Distillery, distilled through traditional wooden stills (Port Mourant and Enmore)"
+  ],
+  "Jung and Wulff Trinidad": [
+    "Trinidadian rum from Angostura's column stills, refined medium-character with caramel notes and moderate ester"
+  ],
+  "Myers's Rum": [
+    "Jamaican dark rum, Diageo-owned, molasses-heavy workhorse"
+  ],
+  "Pablo Sour": [
+    "Bowdie's signature cocktail"
+  ],
+  "Ron Zacapa Rum": [
+    "Guatemalan Solera 23, high-altitude Andean aging, premium-sipping rum with honey-vanilla-caramel register"
+  ],
+  "Fireball Whisky": [
+    "this sweet cream liqueur's dessert-adjacent lushness",
+    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit"
+  ],
+  "Kahlua": [
+    "Mexican rum-base coffee liqueur (since 1936, Diageo-owned), Arabica-coffee-vanilla-caramel at 20% ABV",
+    "the classic espresso-martini base — this is the liqueur's natural habitat",
+    "the quintessential chocolate-dessert liqueur"
   ],
   "Clase Azul Anejo": [
     "ultra-premium Los Altos tequila, 25 months American oak + 2 months sherry butts,",
     "ceramic-decanter añejo, 25 months American oak + 2 months sherry butts"
-  ],
-  "Clase Azul Guerrero Mezcal": [
-    "Guerrero-state terroir in a ceramic decanter"
-  ],
-  "Clase Azul Ultra": [
-    "ultra-premium 5-year extra añejo,"
-  ],
-  "Contratto Vermouth": [
-    "historic Asti house vermouth (aromatized fortified wine, 16% ABV) — functionally a vermouth not a liqueur, wine-base botanical infusion"
   ],
   "Corazon Stagg": [
     "añejo tequila finished in ex-George-T"
@@ -776,141 +2387,146 @@ const EDITORIAL_SNIPPETS = {
   "Corpse Reviver": [
     "delicate elegance is obliterated by marbled Tomahawk weight"
   ],
-  "Don Julio Reposado": [
-    "bright agave and light oak",
-    "citrus-forward agave",
-    "bright agave"
+  "Darioush Cabernet Sauvignon": [
+    "Silverado Trail Cab with blackcurrant, dark plum, mocha, spice",
+    "Silverado Trail Cab, blackcurrant, dark plum, mocha, spice",
+    "Silverado Trail Cab, blackcurrant, dark plum, mocha, spice, rich plush",
+    "Silverado Trail Cab with blackcurrant, dark plum, mocha, spice, rich plush",
+    "Silverado Trail Cab from one of Napa's most architecturally striking Persian-inspired estates"
   ],
-  "Creamy Potato": [
-    "this rich, creamy soup's dairy-driven warmth"
+  "Ghost Block Cabernet Sauvignon": [
+    "Oakville Cab, blackcurrant, dark cherry, graphite, toasted oak, firm tannin",
+    "Oakville Cab with blackcurrant, dark cherry, graphite, toasted oak",
+    "Oakville Cab with dense blackcurrant, dark cherry, graphite, toasted oak, firm tannin",
+    "Oakville Cab with dense blackcurrant, dark cherry, graphite, toasted oak",
+    "tighter Oakville graphite-structure"
   ],
-  "Cristom Mt Jefferson Cuvée": [
-    "this elegant red's cherry-bright, silky-tannin"
+  "Disaronno": [
+    "Italian amaretto (bitter-almond/apricot-pit flavor) from Saronno, 28% ABV, iconic square bottle"
+  ],
+  "Frangelico": [
+    "Piedmont hazelnut depth to mocha at after-dinner register",
+    "Italian hazelnut liqueur from Piedmont (the hazelnut heartland), 20% ABV, monk-shaped bottle nodding to its Franciscan friar origins"
   ],
   "French Onion": [
-    "the French Onion's caramelized umami, beef broth, and crusty-cheese finish",
     "cheese-and-broth weight but firm tobacco-chocolate reads bolder than the classic demands",
     "caramelized beef-broth weight and the forest-floor earth",
     "caramelized onion sweetness and Contratto's herbal edge",
     "deep beef-broth savoriness and Bénédictine's herbal edge",
     "long-cooked beef broth and the spice-cherry",
     "gruyère-crust richness and the baking spice",
-    "gruyère-cream weight and the subtle oak"
+    "gruyère-cream weight and the subtle oak",
+    "caramelized onion depth and the savory edge"
   ],
-  "Cucumber Gimlet": [
-    "this gin cocktail's citrus brightness and botanical"
+  "Tuxedo-Crusted Yellowfin Tuna": [
+    "this lean, seared tuna's sesame-sweet crust and rare-pink center",
+    "sesame-crusted rare tuna"
   ],
   "Loaded Potato": [
-    "this rich, creamy soup's dairy-driven warmth",
     "cheddar-bacon-sour-cream depth"
+  ],
+  "Cucumber Gimlet": [
+    "this gin cocktail's citrus brightness and botanical",
+    "no weight to handle marbled tomahawk fat"
   ],
   "Daniel Chotard Sancerre Rouge": [
     "Loire Valley Pinot Noir"
   ],
-  "Disaronno": [
-    "Italian amaretto (bitter-almond/apricot-pit flavor) from Saronno, 28% ABV, iconic square bottle"
-  ],
-  "Doctor Bird Jamaica Rum": [
-    "pot-still Jamaican rum with intense hogo funk and high-ester tropical-fruit overdrive"
-  ],
-  "Domaine du Grand Tinel": [
-    "classic Châteauneuf-du-Pape Grenache-led blend"
-  ],
   "Don Fulano Anejo": [
     "Los Altos highland tequila, 100% estate-grown Blue Weber, 3 years in French oak — extended aging for añejo category"
   ],
-  "Drambuie": [
-    "Scotch whisky-based honey-herbal liqueur from Scotland, 40% ABV, heather-honey and spiced herbs on a scotch base"
+  "Shrimp Cocktail": [
+    "this delicate seafood starter's briny-fresh sweetness",
+    "cold shrimp and cocktail sauce"
   ],
-  "Dunville's Single Malt": [
-    "heritage-revived Belfast single malt"
+  "Faroe Island Salmon": [
+    "this rich, fatty seafood's buttery flesh and delicate-yet-substantial texture",
+    "oily salmon"
   ],
   "Elk Cove Pinot Blanc": [
-    "this crisp white's citrus-driven acidity and mineral edge"
+    "this crisp white's citrus-driven acidity and mineral edge",
+    "Willamette Oregon, soft pear, white peach, floral, refreshing acidity",
+    "Willamette Oregon with soft pear, white peach, floral",
+    "Willamette with pear, peach, floral, medium body",
+    "Willamette with pear, peach, floral, refreshing acidity",
+    "Willamette with soft pear, white peach, floral",
+    "Willamette, pear, peach, floral, medium body"
   ],
-  "Espresso Old Fashioned": [
-    "this coffee-driven cocktail's bitter roast, rich texture, and dessert-adjacent sweetness"
+  "Our Lady of Guadalupe Acolytes": [
+    "Willamette Trappist Chard with pear, butterscotch, oak, rich layered",
+    "Willamette Trappist Chard, pear, butterscotch, oak, rich",
+    "Willamette Trappist Chardonnay with ripe pear, butterscotch, toasted oak, rich layered",
+    "Trappist Monastery Chardonnay from Willamette with pear, butterscotch, toasted oak, rich layered"
+  ],
+  "St Supéry Sauvignon Blanc": [
+    "Napa Dollarhide Sauv Blanc, lemon, grapefruit, gooseberry, lively finish",
+    "Napa Sauv Blanc with lemon, grapefruit, gooseberry, clean lively",
+    "Napa Sauv Blanc with lemon, grapefruit, gooseberry, lively finish",
+    "Napa Dollarhide Sauv Blanc with lemon, grapefruit, gooseberry, clean lively",
+    "Napa Sauv Blanc, lemon, grapefruit, gooseberry, lively",
+    "Napa Sauv Blanc"
+  ],
+  "Licor 43": [
+    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit",
+    "this is the carajillo DNA talking"
+  ],
+  "Patron XO Cafe": [
+    "the upscale tequila-alternative for espresso martinis — drier",
+    "100% Patron Silver tequila + Arabica coffee extract at 35% ABV — drier, more spirit-forward than Kahlua"
   ],
   "Evening Land Seven Springs": [
     "this elegant red's cherry-bright, silky-tannin"
   ],
-  "Far Niente Cabernet Sauvignon": [
+  "Salt-Cured Halibut": [
+    "this delicate seafood's mild, flaky flesh",
+    "delicate cured-fish starter"
+  ],
+  "Shafer Hillside Select": [
     "this structured red's cassis-and-dark-fruit"
   ],
-  "Far Niente Chardonnay": [
-    "Napa flagship oak-cream-apple Chardonnay"
+  "Odette Cabernet Sauvignon": [
+    "Stags Leap Cab, dark fruit, sage, cedar, graphite, refined tannin",
+    "Stags Leap Cab with iron-fist-in-a-velvet-glove quality"
   ],
-  "Faust Napa Valley Cabernet": [
-    "this structured red's cassis-and-dark-fruit"
-  ],
-  "Basil Hayden's 10 Year": [
-    "aged 80-proof depth"
-  ],
-  "Don Julio 70th": [
-    "crystalline filtration"
-  ],
-  "Jefferson's Reserve": [
-    "blended elegance"
-  ],
-  "Jefferson's Reserve VR Twin Oak": [
-    "double-barrel depth and complex oak"
-  ],
-  "Old Fitzgerald 7 Year": [
-    "Heaven Hill wheated heritage"
-  ],
-  "Russell's Reserve 10 Year": [
-    "aged Wild Turkey"
-  ],
-  "Willett Pot Still Reserve": [
-    "craft high-rye"
-  ],
-  "Woodford Reserve": [
-    "Kentucky small-batch classic"
-  ],
-  "Fireball Whisky": [
-    "this sweet cream liqueur's dessert-adjacent lushness",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this tawny port's oxidative caramel, nut, and dried-fruit complexity",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this bold whiskey-forward cocktail's oak, spice, and spirit depth",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this coffee-driven cocktail's bitter roast, rich texture, and dessert-adjacent sweetness"
-  ],
-  "Frangelico": [
-    "Italian hazelnut liqueur from Piedmont (the hazelnut heartland), 20% ABV, monk-shaped bottle nodding to its Franciscan friar origins"
+  "WhistlePig Boss Hog IX 17 Year": [
+    "allocation story is wasted on the salad",
+    "barrel-proof depth"
   ],
   "French 75": [
-    "this gin cocktail's citrus brightness and botanical"
+    "a flute cocktail"
   ],
-  "Frias Block 5": [
-    "single-block concentration and Spring Mountain structure handle the rich starter",
-    "this structured red's cassis-and-dark-fruit"
+  "Mushroom Bisque": [
+    "savory-umami cream base — dessert-sugar is the wrong axis for a mushroom soup"
   ],
-  "Ghost Block Cabernet Sauvignon": [
-    "this structured red's cassis-and-dark-fruit"
+  "Le Garenne Rosé": [
+    "this dry Provence-style rosé's red-fruit freshness and light weight",
+    "Loire Pinot Noir with strawberry, watermelon, floral, crisp dry",
+    "Loire Pinot Noir with strawberry, watermelon, light floral, dry crisp",
+    "Loire Pinot Noir with strawberry, watermelon, light floral, crisp dry"
   ],
-  "Glenfiddich 14": [
-    "bourbon-barrel-reserve Speyside"
+  "Margarita": [
+    "citrus structure",
+    "brightness"
   ],
-  "Glenfiddich 18": [
-    "aged Speyside, sherry-and-bourbon cask"
+  "Paloma": [
+    "delicacy is crushed by marbled Tomahawk weight",
+    "brightness",
+    "simplicity"
   ],
-  "Glenfiddich Gran Cru 23": [
-    "Cuvée-finished 23-year Speyside luxury"
+  "Sazerac": [
+    "rye weight and anise-edge",
+    "structure and nose handles mushroom depth well",
+    "herbal edge"
   ],
-  "Grand Marnier": [
-    "this sweet cream liqueur's dessert-adjacent lushness",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this tawny port's oxidative caramel, nut, and dried-fruit complexity",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this bold whiskey-forward cocktail's oak, spice, and spirit depth",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this coffee-driven cocktail's bitter roast, rich texture, and dessert-adjacent sweetness"
-  ],
-  "Green Chartreuse": [
-    "55% ABV, 130+ herbs/botanicals, Carthusian monks since 1605"
+  "Transfusion": [
+    "fruit adds contrast",
+    "fruit-led refreshment",
+    "sessionability"
   ],
   "Hangar 1 Vodka": [
     "clean craft vodka from Alameda, CA"
   ],
   "Head Fake": [
-    "this vodka cocktail's clean citrus",
     "delicacy is crushed by marbled Tomahawk weight",
     "sweet-bright profile"
   ],
@@ -920,42 +2536,11 @@ const EDITORIAL_SNIPPETS = {
   "Honey Roasted Carrots": [
     "these honey-roasted carrots' caramelized sweetness and earthy warmth"
   ],
-  "Il Colle Prosecco Superiore": [
-    "this versatile sparkling's bright acidity, toasty lees character, and cleansing bubbles"
-  ],
   "Inhibited": [
     "weight and chocolate drizzle"
   ],
-  "Lobster Mac": [
-    "this rich, creamy side's dairy-driven indulgence",
-    "dairy richness",
-    "pasta-and-lobster richness",
-    "cream-and-shellfish richness"
-  ],
-  "Jean-Pierre Grossot Chablis": [
-    "this crisp white's citrus-driven acidity and mineral edge"
-  ],
-  "Jordan Cabernet Sauvignon": [
-    "this elegant red's cherry-bright, silky-tannin"
-  ],
-  "Joseph Mellot Sancerre": [
-    "textbook Loire Sauv Blanc"
-  ],
-  "Jung and Wulff Guyana": [
-    "Demerara-style rum from Guyana's Diamond Distillery, distilled through traditional wooden stills (Port Mourant and Enmore)"
-  ],
-  "Jung and Wulff Trinidad": [
-    "Trinidadian rum from Angostura's column stills, refined medium-character with caramel notes and moderate ester"
-  ],
-  "Kahlua": [
-    "Mexican rum-base coffee liqueur (since 1936, Diageo-owned), Arabica-coffee-vanilla-caramel at 20% ABV"
-  ],
-  "Keenan Chardonnay": [
-    "Spring Mountain oak-forward Napa Chardonnay"
-  ],
-  "Kentucky Owl St. Patrick's": [
-    "limited-release Irish luxury icon",
-    "Irish-luxury-icon limited release"
+  "Market Fish": [
+    "daily white-fish selection"
   ],
   "Komos Anejo Reserva": [
     "ultra-premium Los Altos tequila, 12-14 months in French oak + Hungarian + ex-Moscow wine barrels — wine-cask-finish distinctive among luxury añejos"
@@ -963,201 +2548,58 @@ const EDITORIAL_SNIPPETS = {
   "Komos Crystallino Anejo": [
     "charcoal-filtered to remove color while retaining flavor complexity — the filtered-clear crystallino expression of Komos's luxury añejo"
   ],
-  "Komos Extra Anejo": [
-    "multi-cask-finished luxury tequila icon"
-  ],
-  "Le Garenne Rosé": [
-    "this dry Provence-style rosé's red-fruit freshness and light weight"
-  ],
-  "Licor 43": [
-    "this sweet cream liqueur's dessert-adjacent lushness",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this tawny port's oxidative caramel, nut, and dried-fruit complexity",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this bold whiskey-forward cocktail's oak, spice, and spirit depth"
-  ],
-  "Limoncello": [
-    "this sweet cream liqueur's dessert-adjacent lushness",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this tawny port's oxidative caramel, nut, and dried-fruit complexity",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this bold whiskey-forward cocktail's oak, spice, and spirit depth",
-    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this coffee-driven cocktail's bitter roast, rich texture, and dessert-adjacent sweetness"
-  ],
-  "Lingua Franca Avni Pinot Noir": [
-    "this elegant red's cherry-bright, silky-tannin"
-  ],
-  "Los Vecinos Mezcal": [
-    "'The Neighbors' — Oaxacan artisanal pit-roasted expressions from multiple mezcaleros"
-  ],
-  "Malibu Rum": [
-    "coconut-flavored rum liqueur from Barbados, 21% ABV, sweet-tropical register"
-  ],
-  "Margarita": [
-    "this bright tequila cocktail's citrus",
-    "brightness makes room for the",
-    "citrus structure",
-    "brightness"
-  ],
-  "Mata Hari Absinthe": [
-    "Bohemian-style absinthe from Austria, 60% ABV, wormwood-anise-fennel, traditional louche"
-  ],
   "Milagro Anejo": [
     "Highland Jalisco 100% Blue Weber, triple-distilled, 14+ months French oak — softer and cleaner than Patron"
-  ],
-  "Mount Gay Rum": [
-    "world's oldest continuously-operating rum distillery, Barbados since 1703"
-  ],
-  "Mushroom Bisque": [
-    "savory-umami cream base — dessert-sugar is the wrong axis for a mushroom soup",
-    "this rich, creamy soup's dairy-driven warmth"
-  ],
-  "Myers's Rum": [
-    "Jamaican dark rum, Diageo-owned, molasses-heavy workhorse"
-  ],
-  "New York Sour": [
-    "bourbon sour topped with red-wine float"
-  ],
-  "Not a Paper Plane": [
-    "weight and Nonino-Aperol structure"
   ],
   "Ocho Anejo": [
     "Los Altos Arandas single-estate vintage-dated tequila from Carlos Camarena — each bottle field-specific, transparent sourcing, 1 year in ex-American-whiskey casks"
   ],
-  "Pablo Sour": [
-    "Bowdie's signature cocktail"
-  ],
-  "Paloma": [
-    "this bright tequila cocktail's citrus",
-    "lightness makes room for the course's weight",
-    "delicacy is crushed by marbled Tomahawk weight",
-    "brightness",
-    "simplicity"
-  ],
   "Patron Anejo": [
     "Jalisco 100% Blue Weber, 12+ months American oak — the most-distributed premium añejo globally, the accessible gateway to aged tequila"
   ],
-  "Patron XO Cafe": [
-    "100% Patron Silver tequila + Arabica coffee extract at 35% ABV — drier, more spirit-forward than Kahlua"
-  ],
-  "Pommery Cuvée Louise": [
-    "Pommery's prestige tête-de-cuvée",
-    "prestige champagne",
-    "tête-de-cuvée champagne"
-  ],
-  "Quilt Cabernet Sauvignon": [
-    "this medium-bodied red's approachable fruit and food-friendly acidity"
-  ],
-  "RAEN Royal St Robert": [
-    "this elegant red's cherry-bright, silky-tannin"
-  ],
-  "Rainbow Trout": [
-    "this delicate seafood's mild, flaky flesh"
-  ],
-  "Raventós Cava de NIT Rosé Brut": [
-    "this sparkling rosé's strawberry-and-brioche charm with crisp acidity"
-  ],
-  "Redbreast 12 Year": [
-    "pot-still Irish benchmark"
-  ],
-  "Redbreast 21 Year": [
-    "aged single-pot-still Irish luxury"
-  ],
-  "Roasted Red Pepper Chickpea": [
-    "this sweet-earthy soup's mellow vegetable warmth",
-    "vegetarian soup"
-  ],
-  "Ron Zacapa Rum": [
-    "Guatemalan Solera 23, high-altitude Andean aging, premium-sipping rum with honey-vanilla-caramel register"
-  ],
-  "Salt-Cured Halibut": [
-    "this delicate seafood's mild, flaky flesh",
-    "delicate cured-fish starter"
-  ],
-  "Sambuca": [
-    "Italian anise liqueur (Molinari benchmark), star anise + elderflower + botanicals, traditionally served con la mosca (with 3 coffee beans)"
-  ],
-  "Sauteed Garlic Spinach": [
-    "this light, green vegetable's clean herbal edge",
-    "garlic-buttered greens"
-  ],
-  "Sazerac": [
-    "this bold whiskey-forward cocktail's oak, spice, and spirit depth",
-    "rye weight and anise-edge",
-    "structure and nose handles mushroom depth well",
-    "herbal edge"
-  ],
-  "Schloss Vollrads Riesling": [
-    "this off-dry Riesling's stone-fruit sweetness and mineral backbone",
-    "historic German estate Riesling",
-    "historic German Riesling estate"
-  ],
-  "Seasonal Soup": [
-    "rotating cream-or-broth-based soup"
-  ],
-  "Seasonal Vegetables": [
-    "rotating garden plate"
-  ],
-  "Shafer Hillside Select": [
-    "this structured red's cassis-and-dark-fruit"
-  ],
-  "Silver Oak Cabernet Sauvignon": [
-    "this structured red's cassis-and-dark-fruit"
-  ],
-  "St Supéry Sauvignon Blanc": [
-    "Napa flagship Sauv Blanc",
-    "Napa Sauv Blanc"
-  ],
-  "Stoneleigh Sauvignon Blanc": [
-    "this crisp white's citrus-driven acidity and mineral edge",
-    "this crisp white's citrus-driven acidity and mineral edge, considered as a bridge into this structured red's cassis-and-dark-fruit"
-  ],
-  "Taylor Fladgate Tawny": [
-    "this tawny port's oxidative caramel, nut, and dried-fruit complexity, considered as a bridge into this sweet cream liqueur's dessert-adjacent lushness"
+  "Not a Paper Plane": [
+    "weight and Nonino-Aperol structure"
   ],
   "The BG": [
     "this bold whiskey-forward cocktail's oak, spice, and spirit depth",
     "bourbon weight",
     "refreshing profile"
   ],
+  "Vieux Carré": [
+    "weight and complexity"
+  ],
+  "Rainbow Trout": [
+    "this delicate seafood's mild, flaky flesh"
+  ],
+  "Vegetable Curry with Chickpeas": [
+    "this spiced vegetable curry's warm, complex aromatic"
+  ],
+  "Limoncello": [
+    "this sweet cream liqueur's dessert-adjacent lushness, considered as a bridge into this structured red's cassis-and-dark-fruit"
+  ],
+  "Mount Gay Rum": [
+    "world's oldest continuously-operating rum distillery, Barbados since 1703"
+  ],
   "The Happy Wife": [
     "simple profile has no weight for marbled Tomahawk fat",
     "simplicity handles the bisque well",
     "simplicity"
   ],
-  "The Manhattan": [
-    "this bold whiskey-forward cocktail's oak, spice, and spirit depth",
-    "vanilla-softened structure"
-  ],
-  "Tomato Basil": [
-    "fresh-acidity classic — bourbon vanilla-caramel has no hook into a bright herb-and-tomato soup",
-    "fresh-herb-and-acidity classic — concentrated cocoa-mocha body",
-    "this bright, vegetal soup's acidic herbal"
-  ],
-  "Transfusion": [
-    "bright Concord-grape-and-ginger vodka cocktail, the country-club classic",
-    "fruit adds contrast",
-    "fruit-led refreshment",
-    "sessionability"
-  ],
-  "Tuxedo-Crusted Yellowfin Tuna": [
-    "this lean, seared tuna's sesame-sweet crust and rare-pink center",
-    "sesame-crusted rare tuna"
-  ],
-  "Vegetable Curry with Chickpeas": [
-    "this spiced vegetable curry's warm, complex aromatic"
-  ],
   "Vesper": [
     "clean-dry profile is obliterated by marbled Tomahawk weight",
     "elegance"
   ],
-  "Vieux Carré": [
-    "this bold whiskey-forward cocktail's oak, spice, and spirit depth",
-    "weight and complexity"
+  "RAEN Royal St Robert": [
+    "this elegant red's cherry-bright, silky-tannin"
   ],
-  "Yamazaki 18 Year": [
-    "Suntory's Japanese flagship"
+  "Raventós Cava de NIT Rosé Brut": [
+    "this sparkling rosé's strawberry-and-brioche charm with crisp acidity"
   ],
-  "Yellow Chartreuse": [
-    "40% ABV, 130+ herbs/botanicals with honey-saffron notes, sister to Green but gentler and sweeter"
+  "Roast Half Chicken": [
+    "roasted poultry"
+  ],
+  "Roasted Red Pepper Chickpea": [
+    "vegetarian soup"
   ]
 };
 

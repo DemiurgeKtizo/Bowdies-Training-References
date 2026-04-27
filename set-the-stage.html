@@ -536,8 +536,8 @@ footer p{font-family:'Josefin Sans',sans-serif;font-size:10px;letter-spacing:0.2
 <!-- Cache-bust convention: increment ?v=N on any edit to the referenced file.
      Deprecated files (pairing-map.js, pairing-map-v2.old.js) are in /archive. -->
 <!-- table-defs.js was retired along with the seating flows (scope-down Apr 2026). -->
-<script src="pairing-map-v2.js?v=99"></script>
-<script src="pairing-notes.js?v=99"></script>
+<script src="pairing-map-v2.js?v=100"></script>
+<script src="pairing-notes.js?v=100"></script>
 <script>
 // ── STATE ──────────────────────────────────────────────────────────────────────
 // Seating + session-library state was removed with the scope-down (Apr 2026).
@@ -1126,20 +1126,16 @@ function pbCompareRender() {
     html += '</div>';
   }
 
-  if (fwdNote || revNote) {
+  // Post-canonicalization: forward and reverse notes are the same content.
+  // Show ONE note per pair instead of two redundant blocks. If they happen to
+  // differ (e.g., a stale state), prefer fwdNote.
+  const note = fwdNote || revNote;
+  if (note) {
     html += '<div class="cmp-notes-block">';
-    if (fwdNote) {
-      html += '<div class="cmp-note">';
-      html += '<div class="cmp-note-label">' + escapeHtml(cmpState.a) + ' on ' + escapeHtml(cmpState.b) + '</div>';
-      html += '<div class="cmp-note-body">' + escapeHtml(fwdNote) + '</div>';
-      html += '</div>';
-    }
-    if (revNote) {
-      html += '<div class="cmp-note">';
-      html += '<div class="cmp-note-label">' + escapeHtml(cmpState.b) + ' on ' + escapeHtml(cmpState.a) + '</div>';
-      html += '<div class="cmp-note-body">' + escapeHtml(revNote) + '</div>';
-      html += '</div>';
-    }
+    html += '<div class="cmp-note">';
+    html += '<div class="cmp-note-label">' + escapeHtml(cmpState.a) + '  ↔  ' + escapeHtml(cmpState.b) + '</div>';
+    html += '<div class="cmp-note-body">' + escapeHtml(note) + '</div>';
+    html += '</div>';
     html += '</div>';
   }
 
