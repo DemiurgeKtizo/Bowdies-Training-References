@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T18:24:44.866Z",
+  "generatedAt": "2026-04-27T18:59:20.169Z",
   "anchorCount": 250,
   "anchors": [
     {
@@ -192,7 +192,7 @@
       "tier": "works",
       "foodClass": "HEARTY_STARTER",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "b7769b15ed083aa5"
+      "hash": "d65649e39d2d65ad"
     },
     {
       "food": "Asparagus",
@@ -224,7 +224,7 @@
       "tier": "works",
       "foodClass": "LIGHT_SOUP",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "7d3052d6cb52feed"
+      "hash": "02c9706fe46d3872"
     },
     {
       "food": "Burrata",
@@ -360,7 +360,7 @@
       "tier": "works",
       "foodClass": "STEAK_LEAN",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "c2de0aebb84615f8"
+      "hash": "8c2a800d67e87dea"
     },
     {
       "food": "Vegetable Curry with Chickpeas",
@@ -448,7 +448,7 @@
       "tier": "avoid",
       "foodClass": "DESSERT_CHOCOLATE",
       "drinkClass": "BIG_RED",
-      "hash": "74c3c459d3946fea"
+      "hash": "f427ca620e2f36ce"
     },
     {
       "food": "Chocolate Brownie",
@@ -464,7 +464,7 @@
       "tier": "avoid",
       "foodClass": "DESSERT_LIGHT",
       "drinkClass": "BIG_RED",
-      "hash": "454e5dbc0d690eaa"
+      "hash": "6f9e7dff3a970db7"
     },
     {
       "food": "Carrot Cake",
@@ -896,7 +896,7 @@
       "tier": "avoid",
       "foodClass": "FISH_MAIN_DELICATE",
       "drinkClass": "BOURBON_BOLD",
-      "hash": "0b9a20ce89e2c31c"
+      "hash": "e3e883727f81f2c8"
     },
     {
       "food": "Seared Scallops",
@@ -920,7 +920,7 @@
       "tier": "works",
       "foodClass": "FISH_MAIN_DELICATE",
       "drinkClass": "BOURBON_BOLD",
-      "hash": "a590e16c66f1c4dc"
+      "hash": "d712ba3632449147"
     },
     {
       "food": "Chilean Seabass",
@@ -928,7 +928,7 @@
       "tier": "avoid",
       "foodClass": "FISH_MAIN_RICH",
       "drinkClass": "BOURBON_BOLD",
-      "hash": "f6a5870ab310351d"
+      "hash": "e754cb91f84e6d38"
     },
     {
       "food": "Faroe Island Salmon",
@@ -1024,7 +1024,7 @@
       "tier": "works",
       "foodClass": "LIGHT_SIDE",
       "drinkClass": "BOURBON_BOLD",
-      "hash": "5e5a836c9a70cc57"
+      "hash": "27a97323a0eeead4"
     },
     {
       "food": "Broccoli Cheddar",
@@ -1472,7 +1472,7 @@
       "tier": "works",
       "foodClass": "LIGHT_SOUP",
       "drinkClass": "COCKTAIL_BOLD",
-      "hash": "feffeed21c66f667"
+      "hash": "24b8f48cfe391a84"
     },
     {
       "food": "Burrata",
@@ -1496,7 +1496,7 @@
       "tier": "strong",
       "foodClass": "LIGHT_STARTER",
       "drinkClass": "COCKTAIL_BOLD",
-      "hash": "4e30a5ea8a31dfc8"
+      "hash": "011d9f0a0ece0da0"
     },
     {
       "food": "Mushrooms",
@@ -1744,7 +1744,7 @@
       "tier": "strong",
       "foodClass": "DESSERT_LIGHT",
       "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "b206563aeef68145"
+      "hash": "29666d498b417b5d"
     },
     {
       "food": "Beignets",
