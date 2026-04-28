@@ -55,8 +55,9 @@ Single source of truth: `/sessions/nice-quirky-clarke/pairing_engine_taxonomy.js
 5. `node mine_food_corpus.js` — re-mine FxF editorial corpus (idempotent)
 6. `node regenerate_food_x_food.js` — rewrite FxF templated notes
 7. `node sync_mirrors_v2.js` — close any FxF A|B vs B|A mismatches (post-regen)
-8. (If editorial needs factual correction) write a `fix_*_in_editorial.js` script, run it
-9. `node engine_snapshot_test.js --update` and `node engine_fxf_snapshot.js --update` to lock in intended changes
+8. `node audit_tier_note_mismatches.js` — verify the verdict label in each note ("Strong;", "Excellent;", etc.) matches the tier the pairing-map assigns. Mismatches are usually a sign that the map needs to bump (note tier higher) or that the note needs regen (note tier lower / duplication-driven AVOID).
+9. (If editorial needs factual correction) write a `fix_*_in_editorial.js` script, run it
+10. `node engine_snapshot_test.js --update` and `node engine_fxf_snapshot.js --update` to lock in intended changes
 
 ## FxF generator architecture (v6, 2026-04-27)
 
