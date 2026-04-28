@@ -1,9 +1,19 @@
-// engine/pairing_engine_generator.js (v3 — chemistry-wired)
+// engine/pairing_engine_generator.js (v6 — profile + corpus wired)
 //
 // Templated pair-note generator -- food x food only.
-// Now consults CHEMISTRY_CLAIMS for flavor-pair-specific bridge clauses
-// when a match exists for the pair under construction. Otherwise falls back
-// to the verb-template body bridges from v2.
+//
+// v6 (2026-04-27): added the food profile layer (food_profiles_curated.js)
+// and the mined editorial corpus (food_corpus_mined.js). The generator now:
+//   - Pulls subjects/targets from FOOD_PROFILES (4-6 each) when available,
+//     falling back to BRIDGE_PARTS (2 each) for legacy compatibility.
+//   - Substitutes verdict tails with mined editorial snippets when the
+//     archetype.tier slot has 3+ mined entries.
+//   - flavor_relationships.flavorPattern() now returns 4-6 variants per
+//     pattern kind (deterministic per pair), so patternReading stops
+//     repeating across hundreds of pairs.
+//
+// v3 (legacy): consults CHEMISTRY_CLAIMS for flavor-pair-specific bridge
+// clauses when a match exists for the pair under construction.
 
 'use strict';
 
@@ -13,29 +23,34 @@ const path = require('path');
 const crypto = require('crypto');
 
 const taxonomy = require('./pairing_engine_taxonomy');
+const flavorRel = require('./flavor_relationships');
+const foodProfiles = require('./food_profiles_curated');
+
+let MINED_CORPUS = null;
+try { MINED_CORPUS = require('./food_corpus_mined'); } catch (e) { /* not yet mined */ }
 
 // ── COURSE WEIGHT ──────────────────────────────────────────────────────────
 const CATEGORY_WEIGHT = { 'steak':1, 'main':2, 'starter':3, 'soup-salad':4, 'side':5, 'dessert':6 };
 function canonicalize(foodA, foodB) {
   const wA = CATEGORY_WEIGHT[foodA.category] || 99;
   const wB = CATEGORY_WEIGHT[foodB.category] || 99;
-  return wA <= wB ? [foodA, foodB] : [foodB, foodA];
+  if (wA < wB) return [foodA, foodB];
+  if (wA > wB) return [foodB, foodA];
+  // v6: same-category pairs (steak×steak, side×side, etc.) — sort by name
+  // alphabetically so canonical form is direction-independent. This guarantees
+  // A|B and B|A render to the same templated note (mirror integrity).
+  return foodA.name < foodB.name ? [foodA, foodB] : [foodB, foodA];
 }
 
 // ── ARCHETYPE ──────────────────────────────────────────────────────────────
-// canonicalize() ensures a is the lighter-weight category (steak < main <
-// starter < soup-salad < side < dessert), so archetype mappings are
-// directional (a → b is always lighter → heavier).
 function archetypeFor(foodA, foodB) {
   const a = foodA.category, b = foodB.category;
-  // Same-class pairs (alternatives within a course)
   if (a === 'steak'      && b === 'steak')      return 'STEAK_PAIR';
   if (a === 'main'       && b === 'main')       return 'MAIN_PAIR';
   if (a === 'starter'    && b === 'starter')    return 'STARTER_PAIR';
   if (a === 'soup-salad' && b === 'soup-salad') return 'SOUP_SALAD_PAIR';
   if (a === 'side'       && b === 'side')       return 'SIDE_PAIR';
   if (a === 'dessert'    && b === 'dessert')    return 'DESSERT_PAIR';
-  // Cross-course relationships, ordered light → heavy by canonicalize()
   if (a === 'steak'      && b === 'main')       return 'STEAK_MAIN';
   if (a === 'steak'      && b === 'starter')    return 'STEAK_STARTER';
   if (a === 'steak'      && b === 'soup-salad') return 'STEAK_SOUP_SALAD';
@@ -54,7 +69,7 @@ function archetypeFor(foodA, foodB) {
   return 'GENERIC_FOOD_PAIR';
 }
 
-// ── FOOD CHARACTER (for setup/avoid clauses) ───────────────────────────────
+// ── FOOD CHARACTER ─────────────────────────────────────────────────────────
 const FOOD_CHARACTER = {
   'Filet Mignon':'lean buttery tenderness','Bone-In Filet':'bone-enhanced buttery tenderness',
   'Kansas City':'lean-bold strip with savory grain','Cowboy Ribeye':'marbled char-and-fat richness',
@@ -93,22 +108,13 @@ function characterFor(food) {
   return food.name.toLowerCase();
 }
 
-// ── FOOD FLAVORS (chemistry-claims index keys per food) ────────────────────
-//
-// Each food maps to flavor head-words that may match keys in CHEMISTRY_CLAIMS.
-// Order matters: leftmost flavors are tried first when looking for a match.
-// Includes both "drink-side" flavors (smoke, char, vanilla-like notes the
-// kitchen produces) and "food-side" flavors (butter, cream, fat, umami).
-
 const FOOD_FLAVORS = {
-  // Steaks
   'Filet Mignon':         ['butter','fat','beef','tenderloin','meat'],
   'Bone-In Filet':        ['butter','fat','beef','tenderloin','meat'],
   'Kansas City':          ['char','fat','savory','strip','meat'],
   'Cowboy Ribeye':        ['char','smoke','fat','cap-fat','meat','marbled'],
   'The Tomahawk':         ['smoke','char','fat','cap-fat','meat','marbled'],
   'Porterhouse':          ['char','fat','strip','meat','beef'],
-  // Starters
   'Bone Marrow':          ['fat','butter','meat','marrow','richness'],
   'Escargot':             ['butter','herbs','savory'],
   'Prime Tartare':        ['meat','umami','savory','brine'],
@@ -117,7 +123,6 @@ const FOOD_FLAVORS = {
   'Shrimp Cocktail':      ['shellfish','citrus','brine'],
   'Burrata':              ['cream','butter','herbs'],
   'Seafood Tower':        ['shellfish','brine'],
-  // Soup / Salad
   'French Onion':         ['broth','cheese','sauce'],
   'Mushroom Bisque':      ['cream','earthy','bisque','umami'],
   'Gumbo':                ['spice','sauce','soup'],
@@ -132,7 +137,6 @@ const FOOD_FLAVORS = {
   'Roasted Red Pepper Chickpea': ['soup','spice'],
   'Grilled Caesar':       ['char','green','herbs'],
   'House Wedge':          ['cheese','green'],
-  // Sides
   'Au Gratin Potatoes':   ['cream','cheese','crust'],
   'Creamed Spinach':      ['cream','butter','green'],
   'Lobster Mac':          ['shellfish','cream','cheese'],
@@ -143,7 +147,6 @@ const FOOD_FLAVORS = {
   'Seasonal Vegetables':  ['green'],
   'Truffle Fries':        ['fat','umami','earthy','savory'],
   'Mushrooms':            ['earthy','umami'],
-  // Mains
   'Roast Half Chicken':   ['bird','herbs','crust'],
   'Faroe Island Salmon':  ['fish','fat','oil'],
   'Swordfish':            ['fish','meat'],
@@ -154,7 +157,6 @@ const FOOD_FLAVORS = {
   'Salt-Cured Halibut':   ['fish'],
   'Vegetable Curry with Chickpeas': ['spice','sauce'],
   'Seared Scallops':      ['shellfish','char','sweet'],
-  // Desserts
   'Chocolate Cake':       ['chocolate','cocoa','sugar','dessert'],
   'Chocolate Brownie':    ['chocolate','cocoa','sugar','dessert'],
   'Peanut Butter Brownie':['chocolate','cocoa','sugar','dessert'],
@@ -167,7 +169,7 @@ const FOOD_FLAVORS = {
 
 function flavorsFor(food) { return FOOD_FLAVORS[food.name] || []; }
 
-// ── BRIDGE PARTS (for fallback verb-template body) ─────────────────────────
+// ── BRIDGE PARTS (legacy fallback; v6 prefers food_profiles_curated) ───────
 const BRIDGE_PARTS = {
   'Filet Mignon':{subjects:['the lean cut','the buttery beef'],targets:['the lean buttery filet','the delicate restraint of the cut']},
   'Bone-In Filet':{subjects:['the bone-enhanced cut','the buttery beef'],targets:['the bone-enhanced filet','the marrow-edged tenderness']},
@@ -228,13 +230,16 @@ const BRIDGE_PARTS = {
 };
 
 function _bridgeParts(food) {
+  const prof = foodProfiles.getProfile(food);
+  if (prof && prof.subjects && prof.targets) {
+    return { subjects: prof.subjects, targets: prof.targets };
+  }
   return BRIDGE_PARTS[food.name] || {
     subjects: ['the ' + characterFor(food)],
     targets:  ['the ' + characterFor(food)],
   };
 }
 
-// ── SHORT NAME / POSSESSIVE ────────────────────────────────────────────────
 const SHORT_NAME = {
   'Filet Mignon':'the filet','Bone-In Filet':'the bone-in filet','Kansas City':'the KC',
   'Cowboy Ribeye':'the cowboy ribeye','The Tomahawk':'the Tomahawk','Porterhouse':'the porterhouse',
@@ -263,43 +268,36 @@ function possessiveFor(food) {
   return sn.endsWith('s') ? sn + "'" : sn + "'s";
 }
 
-// ── BODY BRIDGE COMPOSER (chemistry-aware) ─────────────────────────────────
-
+// ── BODY BRIDGE COMPOSER ───────────────────────────────────────────────────
+// v6 expanded: 8-12 verbs per tier (was 3-4), and subjects/targets are 4-6
+// each (was 2 each) when the food has a curated profile.
 const BRIDGE_VERBS = {
-  gold:['handles cleanly','carries cleanly into','frames'],
-  excellent:['handles','carries into','frames','lifts'],
-  strong:['meets','holds with','matches'],
-  works:['sits with','reads alongside','holds against'],
-  avoid:['obliterates','overwhelms','crowds out','overshadows'],
+  gold:['handles cleanly','carries cleanly into','frames','lifts','anchors','pairs into','locks against','plays with','wraps around','peaks against'],
+  excellent:['handles','carries into','frames','lifts','plays with','anchors','wraps around','meets cleanly','primes','threads into'],
+  strong:['meets','holds with','matches','wraps','frames','plays against','threads','sits cleanly with','carries into','anchors against'],
+  works:['sits with','reads alongside','holds against','meets quietly','rests against','reads beside','composes with','sits cleanly beside','runs alongside','holds beside'],
+  avoid:['obliterates','overwhelms','crowds out','overshadows','flattens','steamrolls','drowns','runs over'],
 };
 const BRIDGE_VERBS_2 = {
-  gold:['threads','softens','underlines','rounds'],
-  excellent:['threads','softens','underlines','rounds'],
-  strong:['sits with','frames','underlines'],
-  works:['reads quietly against','composes against','sits beside'],
-  avoid:['drowns out','fights','crowds out'],
+  gold:['threads','softens','underlines','rounds','lifts','anchors','frames'],
+  excellent:['threads','softens','underlines','rounds','plays with','frames','wraps','anchors'],
+  strong:['sits with','frames','underlines','plays against','threads','wraps','holds with','anchors'],
+  works:['reads quietly against','composes against','sits beside','reads alongside','holds against','rests beside','sits cleanly with','runs alongside'],
+  avoid:['drowns out','fights','crowds out','flattens','overrides','runs over'],
 };
 
-// Look up a chemistry clause matching foodA's flavors x foodB's flavors.
-// Returns the FIRST best match (by chemistry-claims count) or null. Tries
-// both directions: (foodA-flavor as drink-side, foodB-flavor as food-side)
-// AND the reverse, since for food x food either food can occupy either
-// slot of the chemistry library.
 function findChemistryClause(foodA, foodB, claims) {
   if (!claims) return null;
   const flavA = flavorsFor(foodA);
   const flavB = flavorsFor(foodB);
-
   let bestClause = null;
   let bestCount = 0;
   for (const fa of flavA) {
     for (const fb of flavB) {
-      // Direction 1: A as drink-side, B as food-side
       if (claims[fa] && claims[fa][fb] && claims[fa][fb].count > bestCount) {
         bestClause = claims[fa][fb].clause;
         bestCount  = claims[fa][fb].count;
       }
-      // Direction 2: B as drink-side, A as food-side
       if (claims[fb] && claims[fb][fa] && claims[fb][fa].count > bestCount) {
         bestClause = claims[fb][fa].clause;
         bestCount  = claims[fb][fa].count;
@@ -319,8 +317,8 @@ function bodyBridge(foodA, foodB, tier, ctx) {
   const i1 = h.readUInt8(0) % partsA.subjects.length;
   const j1 = h.readUInt8(1) % partsB.targets.length;
   const v1 = h.readUInt8(2) % verbs1.length;
-  const i2 = (i1 + 1) % partsA.subjects.length;
-  const j2 = (j1 + 1) % partsB.targets.length;
+  const i2 = (i1 + Math.max(1, Math.floor(partsA.subjects.length / 2))) % partsA.subjects.length;
+  const j2 = (j1 + Math.max(1, Math.floor(partsB.targets.length / 2))) % partsB.targets.length;
   const v2 = h.readUInt8(3) % verbs2.length;
   const subA1 = partsA.subjects[i1], tgtB1 = partsB.targets[j1];
   const subA2 = partsA.subjects[i2], tgtB2 = partsB.targets[j2];
@@ -328,17 +326,10 @@ function bodyBridge(foodA, foodB, tier, ctx) {
   const templateClause1 = subA1 + ' ' + verbs1[v1] + ' ' + tgtB1;
   const templateClause2 = subA2 + ' ' + verbs2[v2] + ' ' + tgtB2;
 
-  // For non-avoid tiers, try to use a real chemistry clause as the
-  // SECOND clause (the first stays as the per-food-bridge template, which
-  // names the foods specifically; the chemistry clause adds genuine
-  // flavor-pair detail).
   const claims = ctx && ctx.CHEMISTRY_CLAIMS;
   if (claims && tier !== 'avoid') {
     const chemClause = findChemistryClause(foodA, foodB, claims);
     if (chemClause) {
-      // Only use chemistry if the second template clause would be a near-
-      // duplicate (same subject+target as first), to keep the clause
-      // pulling its weight instead of being flavor decoration.
       return templateClause1 + ', and ' + chemClause;
     }
   }
@@ -347,7 +338,17 @@ function bodyBridge(foodA, foodB, tier, ctx) {
   return templateClause1 + ', and ' + templateClause2;
 }
 
-// ── AVOID ALTERNATIVES ─────────────────────────────────────────────────────
+// ── MINED VERDICT RESOLVER (v6) ────────────────────────────────────────────
+function pickMinedVerdict(archetype, tier, foodA, foodB) {
+  if (!MINED_CORPUS || !MINED_CORPUS.verdicts) return null;
+  const slot = archetype + '.' + tier;
+  const pool = MINED_CORPUS.verdicts[slot];
+  if (!pool || pool.length < 3) return null;
+  const sig = foodA.name + '|' + foodB.name + '|verdict|' + slot;
+  const h = crypto.createHash('md5').update(sig).digest();
+  return pool[h.readUInt32BE(0) % pool.length];
+}
+
 function alternativesFor(food, pairingMap, n) {
   if (!pairingMap) return [];
   const entry = pairingMap.find(e => e.name === food.name);
@@ -380,10 +381,10 @@ const TEMPLATES = {
     "{aCap} and {b} on the plate -- {body}. Strong; the side holds the steak's weight without competing."
   ],
   'STEAK_SIDE.works':[
-    "{A} with {b} -- {body}. Works; the side call holds at neutral register.",
-    "{aCap} into {b} -- {body}. Works; safe alongside, but not the headline pick.",
-    "{A} alongside {b} -- {body}. Works; the side reads as a measured plate companion.",
-    "{aCap} with {b} -- {body}. Works; the side sits without pulling focus."
+    "{A} with {b} -- {patternReading}. Works; the side carries cleanly with the cut.",
+    "{aCap} into {b} -- {patternReading}. Works; safe alongside, but not the headline pick.",
+    "{A} alongside {b} -- {aPos} {charA} meets {bPos} {charB}: {patternReading}. Works; the side reads as a measured plate companion.",
+    "{aCap} with {b} -- {patternReading}. Works; the side sits without pulling focus."
   ],
   'STEAK_SIDE.avoid':[
     "{aPosCap} {charA} overshadows {bPos} {charB}: {body}. Avoid; the cut overshadows the side. Pair {b} with a lighter cut, and pour {altsA} for {a}."
@@ -405,10 +406,10 @@ const TEMPLATES = {
     "After {a}, {b} -- {aPos} {charA} settles into {bPos} {charB}: {body}. Strong; the dessert lands without competing with the cut."
   ],
   'COURSE_TO_DESSERT.works':[
-    "After {a}, {b} -- {body}. Works; a measured close to the meal.",
-    "{aCap} closes with {b} -- {body}. Works; the close holds, neither soars nor fights.",
-    "{aCap} closes with {b} -- {body}. Works; the dessert sits cleanly against the meal's register.",
-    "After {a}, {b} -- the close composes neutrally: {body}. Works; the dessert closes without crowding."
+    "After {a}, {b} -- {patternReading}. Works; a measured close to the meal.",
+    "{aCap} closes with {b} -- {patternReading}. Works; the close holds without strain.",
+    "{aCap} closes with {b} -- {aPos} {charA} resolves into {bPos} {charB}: {patternReading}. Works; the dessert lands cleanly.",
+    "After {a}, {b} -- {patternReading}. Works; the dessert closes the meal without crowding."
   ],
   'COURSE_TO_DESSERT.avoid':[
     "{aPosCap} {charA} doesn't resolve into {bPos} {charB}: {body}. Avoid; the close clashes with the meal. After {a}, reach for a lighter dessert -- pour {altsA} alongside {a} and route {b} to a different night."
@@ -425,8 +426,10 @@ const TEMPLATES = {
     "{aCap} after {b} -- {body}. Strong; the starter composes cleanly before the cut."
   ],
   'STEAK_STARTER.works':[
-    "{A} preceded by {b} -- {body}. Works; the call holds, neither soars nor fights.",
-    "{aCap} after {b} -- {body}. Works; the starter sits without crowding the cut."
+    "{A} preceded by {b} -- {patternReading}. Works; the call holds, the starter primes the cut without strain.",
+    "{aCap} after {b} -- {bPos} {charB} sets up {aPos} {charA}: {patternReading}. Works; the starter composes before the cut.",
+    "{A} after {b} -- {patternReading}. Works; the opener sits cleanly before the steak.",
+    "{aCap} preceded by {b} -- {patternReading}. Works; safe opener, the meal builds without crowding the cut."
   ],
   'STEAK_STARTER.avoid':[
     "{aPosCap} {charA} obliterates {bPos} {charB}: {body}. Avoid; the cut is too bold for the delicate starter. Stand {b} on its own course -- pair {b} with {altsB} -- and pour {altsA} for {a}.",
@@ -448,10 +451,10 @@ const TEMPLATES = {
     "{aCap} with {b} alongside -- {body}. Strong; the opener carries its register against the cut."
   ],
   'STEAK_SOUP_SALAD.works':[
-    "{A} preceded by {b} -- {body}. Works; the call holds at neutral register.",
-    "{A} with {b} alongside -- {body}. Works; the side-salad call holds.",
-    "{aCap} after {b} -- {body}. Works; the opener sits without competing.",
-    "{A} into {b} -- {body}. Works; safe opener, but not the headline pick."
+    "{A} preceded by {b} -- {patternReading}. Works; the opener primes the cut without strain.",
+    "{A} with {b} alongside -- {patternReading}. Works; the soup-or-salad call holds, the meal builds cleanly.",
+    "{aCap} after {b} -- {bPos} {charB} sets the table for {aPos} {charA}: {patternReading}. Works; the opener carries before the cut.",
+    "{A} into {b} -- {patternReading}. Works; safe opener, the meal builds without crowding."
   ],
   'STEAK_SOUP_SALAD.avoid':[
     "{aPosCap} {charA} crowds out {bPos} {charB}: {body}. Avoid; the courses don't compose together. Pair {b} with {altsB}; pour {altsA} for {a}."
@@ -472,10 +475,10 @@ const TEMPLATES = {
     "{aCap} and {b} on the plate -- {body}. Strong; the side holds the {a}'s weight without competing."
   ],
   'MAIN_SIDE.works':[
-    "{A} alongside {b} -- {body}. Works; the call holds at neutral register.",
-    "{aCap} into {b} -- {body}. Works; safe alongside, but not the headline pick.",
-    "{A} with {b} -- {body}. Works; the side reads as a measured plate companion.",
-    "{aCap} alongside {b} -- {body}. Works; the side sits without pulling focus."
+    "{A} alongside {b} -- {patternReading}. Works; the side carries cleanly with the {a}.",
+    "{aCap} into {b} -- {patternReading}. Works; safe alongside, but not the headline pick.",
+    "{A} with {b} -- {aPos} {charA} meets {bPos} {charB}: {patternReading}. Works; the side reads as a measured plate companion.",
+    "{aCap} alongside {b} -- {patternReading}. Works; the side sits without pulling focus."
   ],
   'MAIN_SIDE.avoid':[
     "{aPosCap} {charA} overwhelms {bPos} {charB}: {body}. Avoid; the side can't hold its register against the main. Pair {b} with {altsB}; pour {altsA} for {a}."
@@ -561,28 +564,28 @@ const TEMPLATES = {
     "{A} and {b} together -- {body}. Strong; both openers earn their place on the meal."
   ],
   'STARTER_SOUP_SALAD.works':[
-    "{A} alongside {b} -- {body}. Works; the courses share the table without crowding.",
-    "{aCap} with {b} -- {body}. Works; the opening courses hold at neutral register.",
-    "{A} and {b} together -- {body}. Works; both openers sit cleanly without pulling focus.",
-    "{aCap} preceded by {b} -- {body}. Works; safe alongside, but neither course defines the meal."
+    "{A} alongside {b} -- {patternReading}. Works; the openers share the table cleanly, sequence or share.",
+    "{aCap} with {b} -- {aPos} {charA} meets {bPos} {charB}: {patternReading}. Works; both opening courses earn their place.",
+    "{A} and {b} together -- {patternReading}. Works; the table opens with both, no clash either way.",
+    "{aCap} preceded by {b} -- {patternReading}. Works; safe opening pair, the meal builds without strain."
   ],
   'STARTER_SOUP_SALAD.avoid':[
     "{aPosCap} {charA} clashes with {bPos} {charB}: {body}. Avoid; the opening courses don't compose together. Pair {a} with {altsA}; pair {b} with {altsB}."
   ],
   'STARTER_SIDE.excellent':[
-    "{aCap} opens the meal, {b} with the entrée -- {aPos} {charA} sets up cleanly for {bPos} {charB}: {body}. Excellent; the starter primes the table at full register before the side lands.",
+    "{aCap} opens the meal, {b} with the entree -- {aPos} {charA} sets up cleanly for {bPos} {charB}: {body}. Excellent; the starter primes the table at full register before the side lands.",
     "{A} early, {b} on the steak plate -- {body}. Excellent; both items earn their place on a thoughtful build."
   ],
   'STARTER_SIDE.strong':[
-    "{aCap} opens the meal, {b} with the entrée -- {body}. Strong; both items hold their weight on the build.",
+    "{aCap} opens the meal, {b} with the entree -- {body}. Strong; both items hold their weight on the build.",
     "{A} early, {b} later with the main -- {aPos} {charA} primes the table for {bPos} {charB}. Strong; the starter sets the table before the side lands.",
-    "{aCap} and {b} on different courses -- the starter opens, the side rides with the entrée. Strong; the meal builds cleanly."
+    "{aCap} and {b} on different courses -- the starter opens, the side rides with the entree. Strong; the meal builds cleanly."
   ],
   'STARTER_SIDE.works':[
-    "{aCap} opens; {b} with the entrée later. Works; different courses, both belong on the meal.",
-    "{aCap} and {b} on different courses -- starter clears before the side reaches the table. Works; the table carries both cleanly.",
-    "{A} early, {b} with the main course. Works; no interaction at the table, no conflict.",
-    "Different courses: {a} opens, {b} with the entrée. Works; both earn their place without crossing paths."
+    "{aCap} and {b} -- {patternReading}. Works; sequence them or share the table, no concern either way.",
+    "{A} alongside {b} -- {aPos} {charA} meets {bPos} {charB}: {patternReading}. Works; no conflict, the meal builds.",
+    "{aCap} and {b} -- {patternReading}. Works; the call holds whether the table sequences them or shares.",
+    "{A} and {b} -- {patternReading}. Works; both items hold their register, no clash."
   ],
   'STARTER_SIDE.avoid':[
     "{aPosCap} {charA} overwhelms {bPos} {charB}: {body}. Avoid; the courses can't share register. Pair {b} with {altsB}; pair {a} with {altsA}."
@@ -597,10 +600,10 @@ const TEMPLATES = {
     "{aCap} as the opener, {b} as the close. Strong; the bookends carry the meal cleanly."
   ],
   'STARTER_TO_DESSERT.works':[
-    "{aCap} opens the meal, {b} closes. Works; the bookends compose without interaction at the table.",
-    "{A} early, {b} for the close. Works; different courses, both belong on the meal.",
-    "{aCap} as the opener, {b} as the close. Works; the meal's bookends share the table without crossing paths.",
-    "{A} and {b} bookend the meal. Works; clean arc from open to close, no interaction between."
+    "{aCap} and {b} -- {aPos} {charA} bookends {bPos} {charB}: {patternReading}. Works; no conflict across the meal, either as opener-close or together.",
+    "{A} and {b} -- {patternReading}. Works; sequence them as opener and close or share the table, no clash.",
+    "{aCap} alongside {b} -- {patternReading}. Works; both bookends earn their place, the meal arc holds.",
+    "{A} and {b} -- {patternReading}. Works; sequence or together, the meal carries cleanly."
   ],
   'STARTER_TO_DESSERT.avoid':[
     "{aPosCap} {charA} doesn't carry into {bPos} {charB}: {body}. Avoid; the meal's bookends don't compose. Pair {a} with {altsA}; pair {b} with {altsB}."
@@ -620,14 +623,14 @@ const TEMPLATES = {
     "{A} and {b} overlap on the opening course -- {body}. Avoid; pick one or the other. Pair {a} with {altsA}, or {b} with {altsB}."
   ],
   'SOUP_SALAD_SIDE.strong':[
-    "{aCap} opens the meal, {b} with the entrée -- {aPos} {charA} sets up cleanly for {bPos} {charB}: {body}. Strong; the build reads thoughtful across the courses.",
+    "{aCap} opens the meal, {b} with the entree -- {aPos} {charA} sets up cleanly for {bPos} {charB}: {body}. Strong; the build reads thoughtful across the courses.",
     "{A} early, {b} on the steak plate -- {body}. Strong; both items earn their weight when the table builds the full meal."
   ],
   'SOUP_SALAD_SIDE.works':[
-    "{aCap} opens; {b} with the main course. Works; both belong on the meal without interacting at the table.",
-    "{aCap} and {b} on different courses -- soup-or-salad clears before the side reaches the entrée plate. Works; the table carries both cleanly.",
-    "{A} early, {b} with the entrée. Works; no interaction at the table, no conflict.",
-    "Different courses: {a} opens, {b} on the entrée plate. Works; both earn their place without crossing paths."
+    "{aCap} and {b} -- {patternReading}. Works; sequence them or share the table, the call holds either way.",
+    "{aCap} alongside {b} -- {patternReading}. Works; the table can build them in order or together.",
+    "{A} and {b} -- {aPos} {charA} meets {bPos} {charB}: {patternReading}. Works; no conflict however the table orders them.",
+    "{aCap} and {b} on the same meal -- {patternReading}. Works; sequence or share, the build holds."
   ],
   'SOUP_SALAD_SIDE.avoid':[
     "{aPosCap} {charA} clashes with {bPos} {charB}: {body}. Avoid; the opener and the side can't share register. Pair {b} with {altsB}; pair {a} with {altsA}."
@@ -637,23 +640,23 @@ const TEMPLATES = {
     "{A} as the opener, {b} as the close. Strong; the bookends earn their place across the courses."
   ],
   'SOUP_SALAD_TO_DESSERT.works':[
-    "{aCap} opens, {b} closes. Works; the bookends compose without interaction at the table.",
-    "{A} early, {b} for the close. Works; different courses, both belong on the meal.",
-    "{aCap} as the opener, {b} as the close. Works; the bookends share the table without crossing paths.",
-    "{A} and {b} bookend the meal. Works; clean arc from open to close, no interaction between."
+    "{aCap} and {b} -- {aPos} {charA} bookends {bPos} {charB}: {patternReading}. Works; no conflict across the meal, either as opener-close or together.",
+    "{A} and {b} -- {patternReading}. Works; sequence them as opener and close or share the table, no clash.",
+    "{aCap} alongside {b} -- {patternReading}. Works; both bookends earn their place, the meal arc holds.",
+    "{A} and {b} -- {patternReading}. Works; either timing holds, the table builds either way."
   ],
   'SOUP_SALAD_TO_DESSERT.avoid':[
     "{aPosCap} {charA} doesn't carry into {bPos} {charB}: {body}. Avoid; the meal's bookends don't compose. Pair {a} with {altsA}; pair {b} with {altsB}."
   ],
   'SIDE_TO_DESSERT.strong':[
-    "{aCap} with the entrée; {b} for the close. Strong; the side gives way cleanly to the dessert.",
-    "{A} on the entrée plate, {b} for the close. Strong; the meal transitions cleanly from side to dessert."
+    "{aCap} with the entree; {b} for the close. Strong; the side gives way cleanly to the dessert.",
+    "{A} on the entree plate, {b} for the close. Strong; the meal transitions cleanly from side to dessert."
   ],
   'SIDE_TO_DESSERT.works':[
-    "{aCap} cleared before {b} reaches the table. Works; the close lands without carryover from the side.",
-    "{aCap} with the entrée, {b} for the close. Works; nothing crosses from the side to the dessert.",
-    "By the time {b} reaches the table, {a} is gone. Works; clean transition into the close.",
-    "{A} on the steak plate, {b} for the dessert course. Works; the close opens fresh."
+    "{aCap} and {b} -- {aPos} {charA} hands off cleanly to {bPos} {charB}: {patternReading}. Works; sequence them or share the table, no clash.",
+    "{A} and {b} -- {patternReading}. Works; clean transition or together if the table wants.",
+    "{aCap} alongside {b} -- {patternReading}. Works; the contrast holds, neither course overshadows the other.",
+    "{A} and {b} -- {patternReading}. Works; the meal closes cleanly from the side."
   ],
   'SIDE_TO_DESSERT.avoid':[
     "{aPosCap} {charA} doesn't carry into {bPos} {charB}: {body}. Avoid; the side and the close don't compose. Pair {a} with {altsA}; pair {b} with {altsB}."
@@ -701,9 +704,14 @@ const TEMPLATES = {
   'GENERIC_FOOD_PAIR.avoid':[
     "{aPosCap} {charA} clashes with {bPos} {charB}: {body}. Avoid; the courses don't share register. Pair {a} with {altsA}; pair {b} with {altsB}."
   ],
+  'DUPLICATION.avoid':[
+    "{aCap} and {b} -- both {dupLabel}-forward, the table doubles up on {dupLabel}. Avoid; pick one or the other. Pair {a} with {altsA}; pair {b} with {altsB}.",
+    "{aCap} and {b} -- {dupLabel}-on-{dupLabel}, the meal goes redundant. Avoid; the table reads heavy without payoff. Suggest {altsA} for {a}, or {altsB} for {b}.",
+    "{aCap} alongside {b} -- both bring {dupLabel} as the headline. Avoid; one is enough. Pair {a} with {altsA}; pair {b} with {altsB}.",
+    "{aCap} and {b} share {dupLabel} as the primary character. Avoid; the meal doubles down without contrast. Route {a} with {altsA} or {b} with {altsB} instead."
+  ],
 };
 
-// ── PICKER ─────────────────────────────────────────────────────────────────
 function pickTemplate(archetype, tier, foodA, foodB) {
   const key = archetype + '.' + tier;
   let variants = TEMPLATES[key];
@@ -714,8 +722,7 @@ function pickTemplate(archetype, tier, foodA, foodB) {
   return variants[h.readUInt32BE(0) % variants.length];
 }
 
-// ── RENDER ─────────────────────────────────────────────────────────────────
-function render(template, foodA, foodB, charA, charB, body, altsA, altsB) {
+function render(template, foodA, foodB, charA, charB, body, altsA, altsB, patternReading) {
   const a = shortNameFor(foodA), b = shortNameFor(foodB);
   const aPos = possessiveFor(foodA), bPos = possessiveFor(foodB);
   const aCap = a.charAt(0).toUpperCase() + a.slice(1);
@@ -734,35 +741,114 @@ function render(template, foodA, foodB, charA, charB, body, altsA, altsB) {
     .replace(/\{a\}/g, a).replace(/\{b\}/g, b)
     .replace(/\{charA\}/g, charA).replace(/\{charB\}/g, charB)
     .replace(/\{body\}/g, body || '')
-    .replace(/\{altsA\}/g, formatList(altsA)).replace(/\{altsB\}/g, formatList(altsB));
+    .replace(/\{patternReading\}/g, patternReading || '')
+    .replace(/\{altsA\}/g, formatList(altsA)).replace(/\{altsB\}/g, formatList(altsB))
+    // v6: collapse "the the" doubled-article from templates that say "the {a}"
+    // when {a} already contains a leading "the" via SHORT_NAME ("the chicken",
+    // "the salmon", etc.). Catches "the the chicken" -> "the chicken" and
+    // capitalized variants. Idempotent — never collapses a legitimate "the
+    // The Tomahawk" because SHORT_NAME maps it to "the Tomahawk".
+    .replace(/\bthe the\b/g, 'the')
+    .replace(/\bThe the\b/g, 'The');
 }
 
-// ── MAIN ENTRY ─────────────────────────────────────────────────────────────
 function generate(foodA, foodB, tier, ctx) {
   if (!foodA || !foodB) throw new Error('generate: foodA and foodB required');
   if (!taxonomy.FOOD_CATS.has(foodA.category)) throw new Error('generate: foodA must be a food (got ' + foodA.category + ')');
   if (!taxonomy.FOOD_CATS.has(foodB.category)) throw new Error('generate: foodB must be a food (got ' + foodB.category + ')');
   if (!['gold','excellent','strong','works','avoid'].includes(tier)) throw new Error('generate: invalid tier ' + tier);
   const [a, b] = canonicalize(foodA, foodB);
+
+  const dup = flavorRel.duplicationKindFor(a, b);
+  if (dup && dup.severity === 'severe') {
+    tier = 'avoid';
+    const charA = characterFor(a), charB = characterFor(b);
+    const altsA = alternativesFor(a, ctx.PAIRING_MAP, 3);
+    const altsB = alternativesFor(b, ctx.PAIRING_MAP, 3);
+    const template = pickTemplate('DUPLICATION', 'avoid', a, b);
+    return render(template, a, b, charA, charB, '', altsA, altsB).replace(/\{dupLabel\}/g, dup.label);
+  }
+
   const archetype = archetypeFor(a, b);
   const charA = characterFor(a), charB = characterFor(b);
   const body  = bodyBridge(a, b, tier, ctx);
   const altsA = alternativesFor(a, ctx.PAIRING_MAP, 3);
   const altsB = alternativesFor(b, ctx.PAIRING_MAP, 3);
   const template = pickTemplate(archetype, tier, a, b);
-  return render(template, a, b, charA, charB, body, altsA, altsB);
+  let patternReading = '';
+  if (tier === 'works') {
+    const pat = flavorRel.flavorPattern(a, b);
+    if (pat) patternReading = pat.reading;
+  }
+  let rendered = render(template, a, b, charA, charB, body, altsA, altsB, patternReading);
+
+  // v6: substitute templated verdict tail with mined editorial verdict
+  // when the corpus has 3+ entries for this archetype.tier slot.
+  if (tier !== 'avoid') {
+    const minedVerdict = pickMinedVerdict(archetype, tier, a, b);
+    if (minedVerdict) {
+      const tierLabel = tier.charAt(0).toUpperCase() + tier.slice(1);
+      rendered = rendered.replace(
+        new RegExp('\\b' + tierLabel + ';[^.]+(\\.\\s*$|\\.$)'),
+        tierLabel + '; ' + minedVerdict + '.'
+      );
+    }
+  }
+
+  return rendered;
 }
 
 module.exports = {
   generate, archetypeFor, characterFor, canonicalize, bodyBridge,
   alternativesFor, findChemistryClause, flavorsFor,
+  pickMinedVerdict,
+  TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
+}; tier.charAt(0).toUpperCase() + tier.slice(1);
+      rendered = rendered.replace(
+        new RegExp('\\b' + tierLabel + ';[^.]+(\\.\\s*$|\\.$)'),
+        tierLabel + '; ' + minedVerdict + '.'
+      );
+    }
+  }
+
+  return rendered;
+}
+
+module.exports = {
+  generate, archetypeFor, characterFor, canonicalize, bodyBridge,
+  alternativesFor, findChemistryClause, flavorsFor,
+  pickMinedVerdict,
   TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
 };
-A, altsB);
+ tier.charAt(0).toUpperCase() + tier.slice(1);
+      rendered = rendered.replace(
+        new RegExp('\\b' + tierLabel + ';[^.]+(\\.\\s*$|\\.$)'),
+        tierLabel + '; ' + minedVerdict + '.'
+      );
+    }
+  }
+
+  return rendered;
 }
 
 module.exports = {
   generate, archetypeFor, characterFor, canonicalize, bodyBridge,
   alternativesFor, findChemistryClause, flavorsFor,
+  pickMinedVerdict,
+  TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
+};
+.\\s*$|\\.$)'),
+        tierLabel + '; ' + minedVerdict + '.'
+      );
+    }
+  }
+
+  return rendered;
+}
+
+module.exports = {
+  generate, archetypeFor, characterFor, canonicalize, bodyBridge,
+  alternativesFor, findChemistryClause, flavorsFor,
+  pickMinedVerdict,
   TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
 };

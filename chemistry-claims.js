@@ -203,16 +203,16 @@ const CHEMISTRY_CLAIMS = {
     "soup": { "clause": "the low-tannin silk lifts the soup", "count": 5 }
   },
   "smoke": {
-    "broth": { "clause": "the agave smoke threads the broth", "count": 3 },
-    "butter": { "clause": "the agave smoke frames the herb butter", "count": 12 },
+    "broth": { "clause": "the smoke threads the broth", "count": 3 },
+    "butter": { "clause": "the smoke frames the herb butter", "count": 12 },
     "char": { "clause": "the smoke meets the char", "count": 60 },
-    "cut": { "clause": "the agave smoke frames the lean cut", "count": 6 },
+    "cut": { "clause": "the smoke frames the lean cut", "count": 6 },
     "depth": { "clause": "the smoke meets the umami depth", "count": 48 },
-    "fat": { "clause": "the agave smoke cuts the umami fat", "count": 4 },
-    "plate": { "clause": "the agave smoke meets the plate", "count": 10 },
-    "richness": { "clause": "the agave smoke meets the cheese richness", "count": 7 },
+    "fat": { "clause": "the smoke cuts the umami fat", "count": 4 },
+    "plate": { "clause": "the smoke meets the plate", "count": 10 },
+    "richness": { "clause": "the smoke meets the cheese richness", "count": 7 },
     "shellfish": { "clause": "the smoke wraps the briny shellfish", "count": 9 },
-    "side": { "clause": "the agave smoke layers into the rich side", "count": 4 }
+    "side": { "clause": "the smoke layers into the rich side", "count": 4 }
   },
   "spice": {
     "butter": { "clause": "the spice meets the herb butter", "count": 6 },

@@ -9,6 +9,7 @@ const path = require('path');
 const repo = path.resolve(__dirname, '..');
 const taxonomy = require('./pairing_engine_taxonomy');
 const fxfGen = require('./pairing_engine_generator');
+const flavorRel = require('./flavor_relationships');
 
 const ctx = {}; vm.createContext(ctx);
 const load = (f, n) => vm.runInContext(fs.readFileSync(path.join(repo, f), 'utf8') + '\nthis.' + n + ' = ' + n + ';', ctx);
@@ -132,6 +133,88 @@ const TEMPLATED_SIGS = [
   /reliable opener for the steak course/,
   /the soup-or-salad sets the table/,
   /the call holds at neutral register/,
+  // v4.1 closers (timing-implicit) -- need to regen to v4.2 timing-agnostic
+  /no interaction at the table, no conflict/,
+  /both belong on the meal without interacting at the table/,
+  /the table carries both cleanly/,
+  /both earn their place without crossing paths/,
+  /different courses, both belong on the meal/,
+  /no flavor clash either way/,
+  /nothing crosses from the side to the dessert/,
+  /the close lands without carryover from the side/,
+  /clean transition into the close/,
+  /the close opens fresh/,
+  /the bookends compose without interaction at the table/,
+  /the bookends share the table without crossing paths/,
+  /clean arc from open to close, no interaction between/,
+  // v4.2 timing-agnostic closers
+  /no flavor conflict, sequence them or share the table/,
+  /the table can build them together or in order/,
+  /no conflict however the table orders them/,
+  /sequence them or share, neither reads off/,
+  /no flavor conflict, sequence or share the table/,
+  /the table builds either way/,
+  /either timing holds/,
+  /clean transition or together if the table wants/,
+  /sequence them or share, neither overshadows/,
+  /the meal closes without strain from the side/,
+  /sequence them as opener and close or share the table/,
+  /no clash/,
+  /no conflict across the meal/,
+  /both bookends earn their place without conflict/,
+  /share the meal without strain/,
+  // v5 duplication closers (must regen if engine logic changes)
+  /the table doubles up on/,
+  /the meal goes redundant/,
+  /both bring \w+ as the headline/,
+  /share \w+ as the primary character/,
+  /the meal doubles down without contrast/,
+  // v3 old empty closers — must regen to v5.1 patternReading
+  /the side call holds at neutral register/,
+  /the opener sits without competing/,
+  /both belong on the meal, no flavor clash/,
+  /safe alongside, but not the headline pick/,
+  /safe opener, but not the headline pick/,
+  /safe alongside, but neither course defines the meal/,
+  /the side sits without pulling focus/,
+  /the call holds, neither soars nor fights/,
+  /the starter composes cleanly before the cut/,
+  /the starter sits without crowding/,
+  /the side-salad call holds/,
+  /the call holds at neutral register/,
+  /the opening courses hold at neutral register/,
+  /both openers sit cleanly without pulling focus/,
+  // v6 — recycled flavor-pattern readings. These appear in BODIES of
+  // templated notes that the engine emits via flavorPattern(). Adding them
+  // as signatures lets old pairs regenerate to the v6 multi-variant pool.
+  /savory gives way to sweet, the close lands cleanly/,
+  /cream meets protein, the meal builds with weight/,
+  /the bright cuts the rich cleanly/,
+  /protein meets umami, the table builds substance/,
+  /different registers compose without clash/,
+  /both umami-savory, the meal builds with depth/,
+  /both substantial, the table reads weighty/,
+  /both bright, the meal stays light and clean/,
+  /both delicate, the meal stays composed/,
+  /both spice-forward, the meal builds heat/,
+  /both cream-forward, the meal goes heavy/,
+  /both sweet, the close goes saccharine/,
+  /a clean call, no friction either way/,
+  /the bright cuts the savory weight/,
+  /bright meets sweet, the contrast stays light/,
+  /the bright cuts through the spice cleanly/,
+  /rich cream gives way to sweet/,
+  /sweet contrast lifts the savory/,
+  /sweet meets spice, the contrast holds/,
+  /the delicate plate gives way to bold/,
+  /the delicate plate yields to rich/,
+  /delicate yields to savory weight cleanly/,
+  /delicate gives way to sweet/,
+  /spice plays against the delicate/,
+  /cream meets umami, the table goes deep/,
+  /spice cuts cream cleanly/,
+  /spice plays against rich protein/,
+  /protein meets umami, the table builds substance/,
 ];
 
 function isTemplatedFoodNote(note) {
@@ -152,7 +235,12 @@ for (const a of allFoods) {
     const fwd = a.name + '|' + b.name;
     const note = ctx.PAIRING_NOTES[fwd];
     if (!note) { missing++; continue; }
-    if (!isTemplatedFoodNote(note)) { skipped++; continue; }
+    // v5: severe duplication ALWAYS regens regardless of signature match,
+    // because the engine's avoid override should always win over preserved
+    // editorial language that mis-classifies the pair.
+    const isDup = flavorRel.duplicationKindFor(a, b);
+    const isDupSevere = isDup && isDup.severity === 'severe';
+    if (!isDupSevere && !isTemplatedFoodNote(note)) { skipped++; continue; }
     const tier = tierByKey.get(fwd);
     if (!tier) { errors++; continue; }
     let newNote;
@@ -188,21 +276,6 @@ console.log('[OK] backup: ' + path.relative(repo, backup));
 const header = '// Pairing notes — drink × food only.\n' +
                '// Same-kind pairs (drink × drink, food × food) removed: not in engine data model.\n' +
                '// See CLAUDE.md for the editorial preservation rule.\n' +
-               'const PAIRING_NOTES = {\n';
-const body = sortedKeys.map(k => '  ' + JSON.stringify(k) + ': ' + JSON.stringify(merged[k]) + ',\n').join('');
-const footer = '};\n\n' +
-  'function getPairingNote(itemName, pairingName) {\n' +
-  '  return PAIRING_NOTES[itemName + \'|\' + pairingName] || null;\n' +
-  '}\n\n' +
-  'if (typeof module !== \'undefined\' && module.exports) {\n' +
-  '  module.exports = { PAIRING_NOTES, getPairingNote };\n' +
-  '}\n';
-
-const tmp = path.join(repo, 'pairing-notes.js.tmp');
-fs.writeFileSync(tmp, header + body + footer);
-fs.renameSync(tmp, path.join(repo, 'pairing-notes.js'));
-console.log('[OK] wrote ' + sortedKeys.length + ' keys to pairing-notes.js');
-e CLAUDE.md for the editorial preservation rule.\n' +
                'const PAIRING_NOTES = {\n';
 const body = sortedKeys.map(k => '  ' + JSON.stringify(k) + ': ' + JSON.stringify(merged[k]) + ',\n').join('');
 const footer = '};\n\n' +

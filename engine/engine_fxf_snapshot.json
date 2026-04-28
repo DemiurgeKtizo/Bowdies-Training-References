@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-04-28T03:04:34.763Z",
+  "description": "FxF snapshot anchors — gold pairs, hand-curated AVOIDs, and curated examples.",
+  "anchors": [
+    {
+      "tier": "gold",
+      "a": "The Tomahawk",
+      "b": "Truffle Fries",
+      "key": "The Tomahawk|Truffle Fries",
+      "hash": "45bdea7e277c4fea"
+    },
+    {
+      "tier": "gold",
+      "a": "Cowboy Ribeye",
+      "b": "Lobster Mac",
+      "key": "Cowboy Ribeye|Lobster Mac",
+      "hash": "bc243a04380b2d42"
+    },
+    {
+      "tier": "gold",
+      "a": "Bone-In Filet",
+      "b": "Au Gratin Potatoes",
+      "key": "Bone-In Filet|Au Gratin Potatoes",
+      "hash": "c3e818d1aebae193"
+    },
+    {
+      "tier": "gold",
+      "a": "Porterhouse",
+      "b": "Creamed Spinach",
+      "key": "Porterhouse|Creamed Spinach",
+      "hash": "340ede61700ff3b1"
+    },
+    {
+      "tier": "gold",
+      "a": "Filet Mignon",
+      "b": "Mushrooms",
+      "key": "Filet Mignon|Mushrooms",
+      "hash": "06f7bcde53058ffc"
+    },
+    {
+      "tier": "gold",
+      "a": "Kansas City",
+      "b": "Brussels and Belly",
+      "key": "Kansas City|Brussels and Belly",
+      "hash": "1919d0186973a1c5"
+    },
+    {
+      "tier": "avoid",
+      "a": "Cowboy Ribeye",
+      "b": "Crab Cake",
+      "key": "Cowboy Ribeye|Crab Cake",
+      "hash": "8ba14014e1417a5b"
+    },
+    {
+      "tier": "avoid",
+      "a": "Cowboy Ribeye",
+      "b": "Seared Scallops",
+      "key": "Cowboy Ribeye|Seared Scallops",
+      "hash": "4e3b7197ee410530"
+    },
+    {
+      "tier": "avoid",
+      "a": "Filet Mignon",
+      "b": "Faroe Island Salmon",
+      "key": "Filet Mignon|Faroe Island Salmon",
+      "hash": "b65abc6281c45d48"
+    },
+    {
+      "tier": "avoid",
+      "a": "Filet Mignon",
+      "b": "Crab Cake",
+      "key": "Filet Mignon|Crab Cake",
+      "hash": "23a2f32439018c71"
+    },
+    {
+      "tier": "avoid",
+      "a": "The Tomahawk",
+      "b": "Crab Cake",
+      "key": "The Tomahawk|Crab Cake",
+      "hash": "8c1b057f982af5f5"
+    },
+    {
+      "tier": "avoid",
+      "a": "The Tomahawk",
+      "b": "Burrata",
+      "key": "The Tomahawk|Burrata",
+      "hash": "8b75dcb9b0e6bc72"
+    },
+    {
+      "tier": "works",
+      "a": "Cowboy Ribeye",
+      "b": "Burrata",
+      "key": "Cowboy Ribeye|Burrata",
+      "hash": "4f9f71557ffdd4ff"
+    },
+    {
+      "tier": "avoid",
+      "a": "Bone-In Filet",
+      "b": "Crab Cake",
+      "key": "Bone-In Filet|Crab Cake",
+      "hash": "1673dfc924d683f4"
+    },
+    {
+      "tier": "excellent",
+      "a": "Filet Mignon",
+      "b": "Truffle Fries",
+      "key": "Filet Mignon|Truffle Fries",
+      "hash": "fed5cfdbf5840708"
+    },
+    {
+      "tier": "excellent",
+      "a": "Bone-In Filet",
+      "b": "Lobster Mac",
+      "key": "Bone-In Filet|Lobster Mac",
+      "hash": "158ec37ee81289d0"
+    },
+    {
+      "tier": "excellent",
+      "a": "Cowboy Ribeye",
+      "b": "Au Gratin Potatoes",
+      "key": "Cowboy Ribeye|Au Gratin Potatoes",
+      "hash": "55ca23f6493388c4"
+    },
+    {
+      "tier": "strong",
+      "a": "Filet Mignon",
+      "b": "Burrata",
+      "key": "Filet Mignon|Burrata",
+      "hash": "405c1a3fe76f7f2d"
+    },
+    {
+      "tier": "strong",
+      "a": "Filet Mignon",
+      "b": "Escargot",
+      "key": "Filet Mignon|Escargot",
+      "hash": "f5d27f54731a6cbc"
+    },
+    {
+      "tier": "strong",
+      "a": "Porterhouse",
+      "b": "Mushroom Bisque",
+      "key": "Porterhouse|Mushroom Bisque",
+      "hash": "e688a67d6f40f561"
+    },
+    {
+      "tier": "strong",
+      "a": "Roast Half Chicken",
+      "b": "Honey Roasted Carrots",
+      "key": "Roast Half Chicken|Honey Roasted Carrots",
+      "hash": "87d6e05a900ad4d4"
+    },
+    {
+      "tier": "strong",
+      "a": "Faroe Island Salmon",
+      "b": "Asparagus",
+      "key": "Faroe Island Salmon|Asparagus",
+      "hash": "acee471b5dbb5417"
+    },
+    {
+      "tier": "works",
+      "a": "Filet Mignon",
+      "b": "Chocolate Cake",
+      "key": "Filet Mignon|Chocolate Cake",
+      "hash": "94887f5e528dd7fe"
+    },
+    {
+      "tier": "works",
+      "a": "Beignets",
+      "b": "Carrot Cake",
+      "key": "Beignets|Carrot Cake",
+      "hash": "bc84e772494f1f7c"
+    }
+  ]
+}

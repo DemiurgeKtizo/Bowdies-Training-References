@@ -44,11 +44,13 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["lean","tender","mild","buttery","delicate"],
     gold: [
+      "Mushrooms",
       "Cristom Mt Jefferson Cuvée",
       "Maker's Mark Cellar Aged",
       "Yamazaki 18 Year",
     ],
     excellent: [
+      "Mushrooms",
       "Mushroom Bisque", "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
       "Far Niente Cabernet Sauvignon",
@@ -362,7 +364,6 @@ const PAIRING_MAP = [
     works: [
       "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Seasonal Soup", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
       "Au Gratin Potatoes",
-      "Mushrooms",
       "Creme Brulee",
       "Cheesecake",
       "Beignets",
@@ -510,11 +511,13 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["lean","tender","mild","buttery","delicate","bone-enhanced"],
     gold: [
+      "Au Gratin Potatoes",
       "Opus One",
       "Jordan Cabernet Sauvignon",
       "Knob Creek 15 Year",
     ],
     excellent: [
+      "Au Gratin Potatoes",
       "Mushroom Bisque", "Caymus Cabernet Sauvignon",
       "Jordan Cabernet Sauvignon",
       "Far Niente Cabernet Sauvignon",
@@ -790,7 +793,6 @@ const PAIRING_MAP = [
       "Faust Napa Valley Cabernet",
       "House Wedge",
       "Château de Rouillac",
-      "Au Gratin Potatoes",
       "Mushrooms",
       "Creme Brulee",
       "Cheesecake",
@@ -975,12 +977,14 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["lean","bold","beefy","firm","savory","well-marbled"],
     gold: [
+      "Brussels and Belly",
       "Jordan Cabernet Sauvignon",
       "Pio Cesare Barbaresco",
       "Pappy Van Winkle 13 Year Rye",
       "Weller Millennium",
     ],
     excellent: [
+      "Brussels and Belly",
       "Au Gratin Potatoes", "Lobster Mac", "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Caymus Cabernet Sauvignon",
@@ -1290,7 +1294,7 @@ const PAIRING_MAP = [
       "Gran Patron Platinum",
     ],
     works: [
-      "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Escargot", "Prime Tartare", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
+      "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Escargot", "Prime Tartare", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "House Wedge",
       "RAEN Royal St Robert",
       "Mushrooms",
       "Chocolate Brownie",
@@ -1437,6 +1441,7 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["fatty","rich","bold","marbled","beefy","bone-in"],
     gold: [
+      "Lobster Mac",
       "Macallan 18", "Caymus Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Shafer Hillside Select",
@@ -1901,12 +1906,14 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["fatty","rich","bold","marbled","smoky","beefy","theatrical"],
     gold: [
+      "Truffle Fries",
       "Corazon Stagg", "Opus One",
       "George T. Stagg",
       "Scavino Barolo",
       "Clase Azul Ultra",
     ],
     excellent: [
+      "Truffle Fries",
       "Au Gratin Potatoes", "Lobster Mac", "Opus One",
       "Shafer Hillside Select",
       "Heitz Martha's Vineyard",
@@ -2147,7 +2154,7 @@ const PAIRING_MAP = [
       "Komos Anejo Reserva",
     ],
     works: [
-      "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Escargot", "Prime Tartare", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake", "Truffle Fries",
+      "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Escargot", "Prime Tartare", "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mocha Creme", "Chocolate Cake",
       "Mushrooms",
       "Chocolate Brownie",
       "Peanut Butter Brownie",
@@ -2367,15 +2374,16 @@ const PAIRING_MAP = [
     category: "steak",
     profile: ["lean","fatty","bold","beefy","dual-texture","rich"],
     gold: [
+      "Creamed Spinach",
       "Odette Cabernet Sauvignon",
       "Weller 12 Year",
       "Domaine du Grand Tinel",
     ],
     excellent: [
+      "Creamed Spinach",
       "Au Gratin Potatoes", "Silver Oak Cabernet Sauvignon",
       "The Manhattan",
       "Truffle Fries",
-      "Creamed Spinach",
       "Fattoria Le Pupille Saffredi",
       "Weller Millennium",
       "Eagle Rare 10 Year",
@@ -13379,7 +13387,6 @@ const PAIRING_MAP = [
       "Creme Brulee",
       "Beignets",
       "Cheesecake",
-      "Sauteed Garlic Spinach",
       "Pablo Sour",
       "Margarita",
       "Laurent Perrier Brut Rosé",
@@ -16864,11 +16871,13 @@ const PAIRING_MAP = [
     category: "side",
     profile: ["rich","umami","earthy","indulgent","fatty","savory"],
     gold: [
+      "The Tomahawk",
       "Pommery Cuvée Louise",
       "Belvedere Vodka",
       "Maker's Mark",
     ],
     excellent: [
+      "The Tomahawk",
       "Caymus Cabernet Sauvignon",
       "Scavino Barolo",
       "Jordan Cabernet Sauvignon",
@@ -17156,7 +17165,6 @@ const PAIRING_MAP = [
       "Evening Land Seven Springs",
       "Fattoria Le Pupille Saffredi",
       "Cowboy Ribeye",
-      "The Tomahawk",
       "Au Gratin Potatoes",
       "The BG",
       "Negroni",
@@ -17324,6 +17332,7 @@ const PAIRING_MAP = [
     category: "side",
     profile: ["rich","creamy","seafood","indulgent","umami","dairy-rich"],
     gold: [
+      "Cowboy Ribeye",
       "Far Niente Chardonnay",
     ],
     excellent: [
@@ -17777,10 +17786,12 @@ const PAIRING_MAP = [
     category: "side",
     profile: ["rich","creamy","dairy-rich","savory","manchego","indulgent"],
     gold: [
+      "Bone-In Filet",
       "Far Niente Chardonnay",
       "Keenan Chardonnay",
     ],
     excellent: [
+      "Bone-In Filet",
       "Porterhouse", "The Tomahawk", "Cowboy Ribeye", "Kansas City", "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Elijah Craig 18 Year",
@@ -17883,7 +17894,6 @@ const PAIRING_MAP = [
       "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Prime Tartare", "Vegetable Curry with Chickpeas", "Chilean Seabass", "Faroe Island Salmon", "Rainbow Trout", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Seared Scallops", "Lingua Franca Avni Pinot Noir",
       "Truffle Fries",
       "Filet Mignon",
-      "Bone-In Filet",
       "Kermit Lynch Côtes du Rhône",
       "Corazón del Sol Malbec",
       "Venge Silencieux",
@@ -18231,11 +18241,13 @@ const PAIRING_MAP = [
     category: "side",
     profile: ["smoky","sweet","bitter","pork","rich","umami","bold"],
     gold: [
+      "Kansas City",
       "Corazon Weller", "Angel's Envy",
       "Maker's Mark",
       "Weller 12 Year",
     ],
     excellent: [
+      "Kansas City",
       "Caymus Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
       "Espresso Old Fashioned",
@@ -18464,7 +18476,7 @@ const PAIRING_MAP = [
       "Corazon Stagg",
     ],
     works: [
-      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Kansas City", "Negroni",
+      "Asparagus", "Broccolini", "Honey Roasted Carrots", "Seasonal Vegetables", "Mushrooms", "Sauteed Garlic Spinach", "Creamed Spinach", "Au Gratin Potatoes", "Lobster Mac", "Truffle Fries", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Negroni",
       "Vieux Carré",
       "The Manhattan",
       "Sazerac",
@@ -18686,15 +18698,16 @@ const PAIRING_MAP = [
     category: "side",
     profile: ["rich","creamy","dairy-rich","savory","garlic","indulgent"],
     gold: [
+      "Porterhouse",
       "Keenan Chardonnay",
       "Far Niente Chardonnay",
       "Weller 12 Year",
     ],
     excellent: [
+      "Porterhouse",
       "Jordan Cabernet Sauvignon",
       "Silver Oak Cabernet Sauvignon",
       "Caymus Cabernet Sauvignon",
-      "Porterhouse",
       "St Supéry Cabernet Sauvignon",
       "Quilt Cabernet Sauvignon",
       "1881 Napa Valley",
@@ -19169,7 +19182,6 @@ const PAIRING_MAP = [
     ],
     works: [
       "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Jordan Cabernet Sauvignon",
-      "Faroe Island Salmon",
       "Roast Half Chicken",
       "French 75",
       "Alexander Valley Chardonnay",
@@ -19597,10 +19609,12 @@ const PAIRING_MAP = [
     category: "side",
     profile: ["umami","earthy","savory","rich","meaty"],
     gold: [
+      "Filet Mignon",
       "Cristom Mt Jefferson Cuvée",
       "Los Vecinos Mezcal",
     ],
     excellent: [
+      "Filet Mignon",
       "Roast Half Chicken", "Jordan Cabernet Sauvignon",
       "Bowdie's Old Fashioned",
       "The Manhattan",
@@ -19917,7 +19931,6 @@ const PAIRING_MAP = [
     ],
     works: [
       "Mocha Creme", "Chocolate Cake", "Beignets", "Peanut Butter Brownie", "Chocolate Brownie", "Carrot Cake", "Cheesecake", "Creme Brulee", "Grilled Caesar", "House Wedge", "French Onion", "Butternut Squash", "Broccoli Cheddar", "Clam Chowder", "Roasted Red Pepper Chickpea", "Gumbo", "Tomato Basil", "Loaded Potato", "Creamy Potato", "Mushroom Bisque", "Seasonal Soup", "Shrimp Bisque", "Brussels and Belly", "Burrata", "Escargot", "Shrimp Cocktail", "Seafood Tower", "Crab Cake", "Bone Marrow", "Prime Tartare", "Rainbow Trout", "Salt-Cured Halibut", "Tuxedo-Crusted Yellowfin Tuna", "Market Fish", "Faust Napa Valley Cabernet", "Evening Land Seven Springs",
-      "Filet Mignon",
       "Bone-In Filet",
       "Kansas City",
       "The Tomahawk",
