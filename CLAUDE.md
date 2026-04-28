@@ -27,6 +27,14 @@ Edits should be applied via a script (e.g., `fix_cooking_method_in_editorial.js`
 Bowdie's prep methods (use these terms when writing notes):
 
 - **Steaks** (Tomahawk, Cowboy Ribeye, Kansas City, Filet, Porterhouse, Bone-In Filet) — flame-grilled, rested, oven-finished. Use language like "flame-grilled char", "grilled crust", "char-and-fat", "rendered fat". **Never** "seared crust", "seared fat", "pan-seared".
+  - **Cut weights** (canon, confirmed 2026-04-27 — never invent or substitute):
+    - Filet Mignon — 10oz
+    - Bone-In Filet — 14oz
+    - Kansas City — 18oz
+    - Cowboy Ribeye — 26oz
+    - Tomahawk — 36oz
+    - Porterhouse — 40oz
+  - When weight needs correcting in editorial, run `engine/fix_steak_weights_in_editorial.js` rather than blanket find-and-replace — it preserves Porterhouse's legitimate 40oz references while fixing Tomahawk-context 40oz drift.
 - **Scallops** — seared. "Caramelized sear" is correct.
 - **Yellowfin Tuna (Tuxedo-Crusted)** — seared rare. "Seared rare crust" is correct.
 - **Salmon (Faroe Island)** — pan-finished. "Rich oily flesh" is the texture anchor.

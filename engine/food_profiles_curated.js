@@ -37,7 +37,7 @@ const FOOD_PROFILES = {
     category: 'steak',
     shortName: 'the filet',
     character: 'lean buttery tenderness',
-    prepNotes: 'flame-grilled 6oz center-cut tenderloin, rested and oven-finished, butter-basted to plate',
+    prepNotes: 'flame-grilled 10oz center-cut tenderloin, rested and oven-finished, butter-basted to plate',
     tastingStyle: 'lean butter-tender beef, mild grilled char, restrained finish',
     weight: 'medium',
     register: 'restrained-rich',
@@ -46,7 +46,7 @@ const FOOD_PROFILES = {
       'the lean cut',
       'the buttery beef',
       'the butter-tender filet',
-      'the 6oz tenderloin',
+      'the 10oz tenderloin',
       'the restrained center-cut'
     ],
     targets: [
@@ -54,7 +54,7 @@ const FOOD_PROFILES = {
       'the delicate restraint of the cut',
       'the butter-tender center cut',
       'the steakhouse benchmark filet',
-      'the 6oz lean-tender plate'
+      'the 10oz lean-tender plate'
     ],
     verdictHooks: {
       gold:      'the filet pairing the steak course is built around',
@@ -130,7 +130,7 @@ const FOOD_PROFILES = {
     category: 'steak',
     shortName: 'the cowboy ribeye',
     character: 'marbled char-and-fat richness',
-    prepNotes: 'flame-grilled 22oz bone-in ribeye, rested and oven-finished, cap-fat rendered against the flame',
+    prepNotes: 'flame-grilled 26oz bone-in ribeye, rested and oven-finished, cap-fat rendered against the flame',
     tastingStyle: 'heavy marbled beef, charred crust, rendered cap-fat, full-throated finish',
     weight: 'heavy',
     register: 'bold-rich',
@@ -140,12 +140,12 @@ const FOOD_PROFILES = {
       'the rendered fat',
       'the bone-in ribeye',
       'the cap-fat ribeye',
-      'the 22oz cut'
+      'the 26oz cut'
     ],
     targets: [
       'the cap-fat ribeye',
       'the bold marbled cut',
-      'the 22oz bone-in',
+      'the 26oz bone-in',
       'the char-and-fat cowboy',
       'the heavy ribeye plate'
     ],
@@ -161,7 +161,7 @@ const FOOD_PROFILES = {
     category: 'steak',
     shortName: 'the Tomahawk',
     character: 'theatrical bone-in marbling and smoky char',
-    prepNotes: 'flame-grilled 40oz long-bone tomahawk, rested and oven-finished, plated tableside as the showpiece',
+    prepNotes: 'flame-grilled 36oz long-bone tomahawk, rested and oven-finished, plated tableside as the showpiece',
     tastingStyle: 'heavy smoky beef, charred crust, deep marbling, theatrical presentation',
     weight: 'heaviest',
     register: 'showpiece-bold',
@@ -169,12 +169,12 @@ const FOOD_PROFILES = {
     subjects: [
       'the marbled char',
       'the smoky bone-in weight',
-      'the 40oz showpiece',
+      'the 36oz showpiece',
       'the long-bone Tomahawk',
       'the rendered fat'
     ],
     targets: [
-      'the 40oz showpiece',
+      'the 36oz showpiece',
       'the theatrical bone-in cut',
       'the long-bone Tomahawk',
       'the smoky char-and-fat plate',
@@ -182,7 +182,7 @@ const FOOD_PROFILES = {
     ],
     verdictHooks: {
       gold:      'the Tomahawk at full theatrical register',
-      excellent: 'a headline call for the 40oz',
+      excellent: 'a headline call for the 36oz',
       strong:    'reliable on the Tomahawk',
       works:     'sits with the Tomahawk plate'
     }

@@ -31,6 +31,9 @@ const REPLACEMENTS = [
   ['22oz cowboy',           '26oz cowboy'],
   ['22-oz cap-fat',         '26-oz cap-fat'],
   ['22 oz cap-fat',         '26 oz cap-fat'],
+  // v6.2 additions: backfills introduced "22oz cut" / "the 22oz" patterns
+  ['the 22oz cut',          'the 26oz cut'],
+  ['the 22oz',              'the 26oz'],
   // Tomahawk was 40oz in old editorial, now 36oz. But porterhouse IS 40oz, so
   // we have to be careful — only replace 40oz when context is Tomahawk.
   ['40oz showpiece',        '36oz showpiece'],
@@ -41,6 +44,28 @@ const REPLACEMENTS = [
   ['40oz Tomahawk',         '36oz Tomahawk'],
   ['40oz tomahawk',         '36oz tomahawk'],
   ['40oz theatrical',       '36oz theatrical'],
+  // v6.2 additions: backfills introduced these Tomahawk patterns
+  ['40oz long-bone',        '36oz long-bone'],
+  ['the 40oz cut',          'the 36oz cut'],
+  // v6.2 second sweep: Tomahawk-context 40oz refs in DxF editorial.
+  // These all unambiguously identify Tomahawk (ribeye / smoky-char / massive
+  // bone-in are all Tomahawk-only descriptors). Porterhouse's 40oz refs use
+  // "marbled beef" / "porterhouse's 40oz" wording and are NOT matched here.
+  ['massive 40oz bone-in',        'massive 36oz bone-in'],
+  ['40oz bone-in ribeye',         '36oz bone-in ribeye'],
+  ["40oz bone-in's smoky-char",   "36oz bone-in's smoky-char"],
+  ["Tomahawk's 40oz",             "Tomahawk's 36oz"],
+  // Filet was 6oz in earlier copy, now 10oz.
+  ['butter-tender 6oz',     'butter-tender 10oz'],
+  ['lean butter-tender 6oz','lean butter-tender 10oz'],
+  ['the 6oz tenderloin',    'the 10oz tenderloin'],
+  ['the 6oz lean',          'the 10oz lean'],
+  ['the lean 6oz',          'the lean 10oz'],
+  ['the 6oz center-cut',    'the 10oz center-cut'],
+  ['the restrained 6oz',    'the restrained 10oz'],
+  ['the 6oz lean-tender',   'the 10oz lean-tender'],
+  ['flame-grilled 6oz',     'flame-grilled 10oz'],
+  ['6oz center-cut tenderloin', '10oz center-cut tenderloin'],
 ];
 
 const TARGETS = [
@@ -48,6 +73,11 @@ const TARGETS = [
   'editorial-phrases.js',
   'engine/gold_corpus_mined.js',
   'engine/corpus_mined_all_tiers.js',
+  // v6.2: also sweep FxF profile, corpus, and backfill source scripts
+  'engine/food_corpus_mined.js',
+  'engine/food_profiles_curated.js',
+  'engine/backfill_steak_dessert_notes.js',
+  'engine/backfill_main_dessert_notes.js',
 ];
 
 let totalReplacements = 0;
@@ -73,4 +103,4 @@ for (const rel of TARGETS) {
 console.log('=== STEAK WEIGHT CORRECTION ===');
 console.log('Replacements applied:');
 for (const [k, v] of Object.entries(fileStats)) console.log('  ' + k.padEnd(45) + v);
-console.log('  TOTAL:                                       ' + totalReplacements);
+console.log('  TOTAL: ' + totalReplacements);

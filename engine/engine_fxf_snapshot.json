@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T03:04:34.763Z",
+  "generatedAt": "2026-04-28T03:31:27.372Z",
   "description": "FxF snapshot anchors — gold pairs, hand-curated AVOIDs, and curated examples.",
   "anchors": [
     {
@@ -7,14 +7,14 @@
       "a": "The Tomahawk",
       "b": "Truffle Fries",
       "key": "The Tomahawk|Truffle Fries",
-      "hash": "45bdea7e277c4fea"
+      "hash": "9fd3953a70d2d022"
     },
     {
       "tier": "gold",
       "a": "Cowboy Ribeye",
       "b": "Lobster Mac",
       "key": "Cowboy Ribeye|Lobster Mac",
-      "hash": "bc243a04380b2d42"
+      "hash": "df06d48eeef8aef1"
     },
     {
       "tier": "gold",
@@ -35,7 +35,7 @@
       "a": "Filet Mignon",
       "b": "Mushrooms",
       "key": "Filet Mignon|Mushrooms",
-      "hash": "06f7bcde53058ffc"
+      "hash": "44e69059c67e8dad"
     },
     {
       "tier": "gold",
@@ -119,14 +119,14 @@
       "a": "Cowboy Ribeye",
       "b": "Au Gratin Potatoes",
       "key": "Cowboy Ribeye|Au Gratin Potatoes",
-      "hash": "55ca23f6493388c4"
+      "hash": "0c9315fbea11ce26"
     },
     {
       "tier": "strong",
       "a": "Filet Mignon",
       "b": "Burrata",
       "key": "Filet Mignon|Burrata",
-      "hash": "405c1a3fe76f7f2d"
+      "hash": "2c9d4aad2fd288fb"
     },
     {
       "tier": "strong",
@@ -161,7 +161,7 @@
       "a": "Filet Mignon",
       "b": "Chocolate Cake",
       "key": "Filet Mignon|Chocolate Cake",
-      "hash": "94887f5e528dd7fe"
+      "hash": "e4598c7d69117928"
     },
     {
       "tier": "works",

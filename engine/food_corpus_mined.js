@@ -3,15 +3,15 @@
 // Regenerate: node engine/mine_food_corpus.js
 //
 // Sources: 1738 editorial FxF notes scanned.
-// Generated: 2026-04-28T03:14:13.817Z
+// Generated: 2026-04-28T03:31:26.447Z
 
 'use strict';
 
 const FOOD_CORPUS = {
   "meta": {
-    "generatedAt": "2026-04-28T03:14:13.817Z",
+    "generatedAt": "2026-04-28T03:31:26.447Z",
     "sourceCount": 1738,
-    "extractedCount": 4582,
+    "extractedCount": 4584,
     "templatedSeen": 784
   },
   "verdicts": {
@@ -124,8 +124,8 @@ const FOOD_CORPUS = {
       "the opening courses share the table at full register"
     ],
     "STEAK_SOUP_SALAD.works": [
-      "the soup-or-salad call holds, the meal builds cleanly",
       "safe opener, the meal builds without crowding",
+      "the soup-or-salad call holds, the meal builds cleanly",
       "the opener carries before the cut"
     ],
     "STEAK_SOUP_SALAD.strong": [
