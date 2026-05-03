@@ -280,6 +280,11 @@ function pbRenderDetail() {
   const resolved = pbResolveEntry(name);
   if (!resolved) { pbHome(); return; }
   const entry = resolved.entry;
+  // Every fresh item render resets tier expansion to defaults — Gold open,
+  // the rest closed. Without this, expansion state leaks across navigation
+  // (e.g. expand Excellent on Filet, navigate to Bone-In Filet, Excellent
+  // would still be open from the previous item).
+  state.expandedTiers = { gold: true, excellent: false, strong: false, works: false, avoid: false };
   document.getElementById('pb-search-view').style.display = 'none';
   document.getElementById('pb-detail-view').style.display = 'block';
   // Title is always the user-facing name they searched — cluster members keep

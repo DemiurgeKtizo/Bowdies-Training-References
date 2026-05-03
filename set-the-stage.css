@@ -387,3 +387,15 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
    ════════════════════════════════════════════════════════════ */
 #panel-stage .rec-explain-source { line-height: 1.6; }
 
+/* ════════════════════════════════════════════════════════════
+   PAIRING-ITEM EXPANDED STATE (May 2026)
+   The original .pb-rec-item.expanded rule painted the row in
+   --surface-3 (brown). On mobile that became visible the moment
+   the user tapped elsewhere (releasing the :hover override that
+   was masking it). The chevron rotation already conveys the
+   expanded state — no fill needed. Override the existing rule
+   so the row stays its base background regardless of expansion.
+   ════════════════════════════════════════════════════════════ */
+#panel-stage .pb-rec-item.expanded {
+  background: transparent;
+}

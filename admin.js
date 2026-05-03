@@ -197,6 +197,11 @@ function openAdmin() {
   admin.style.display = 'block';
   setChipVisible(false);
   window.scrollTo(0, 0);
+  // Admin opens over home; home is scroll-locked. Admin has a long
+  // scrollable list (every menu item to flip 86 status), so unlock
+  // body scrolling. closeAdmin() restores the lock if we go back to home.
+  document.documentElement.classList.remove('scroll-locked');
+  document.body.classList.remove('scroll-locked');
 }
 
 function openAdminFromMenu() {
@@ -215,10 +220,15 @@ function closeAdmin() {
     // Main-content has its own back button, leave chip hidden to avoid
     // overlapping the "← Home" control in the top bar.
     setChipVisible(false);
+    // Sections need scroll, so leave body unlocked.
   } else {
     const home = document.getElementById('home-screen');
     if (home) home.style.display = 'flex';
     setChipVisible(true);
+    // Returning to home — re-lock body scroll. (Admin had unlocked it.)
+    window.scrollTo(0, 0);
+    document.documentElement.classList.add('scroll-locked');
+    document.body.classList.add('scroll-locked');
   }
 }
 
