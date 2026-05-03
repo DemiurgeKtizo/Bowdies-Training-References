@@ -328,21 +328,16 @@ function applyFilters() {
     }
   });
 
-  // Zero results with at least one tag-typed token: retry, but selectively.
-  // The previous version degraded ALL tag tokens to text wordBoundary
-  // matches, which produced false positives like "refreshing gin" returning
-  // cocktails whose descriptions happened to mention "ginger" in passing.
-  // New rules:
-  //   - Pure tag-AND queries (every token is a tag) don't fall back at all.
-  //     If no card has all those tags, "no items found" is the right answer.
-  //   - Mixed queries (tag + word, e.g. "gin aperol") DO fall back, but tag
-  //     tokens still require strict tag presence — only word tokens get
-  //     loose wordBoundary text matching.
-  //   - Allergen-free tokens already require strict tag presence and stay
-  //     that way.
-  const hasWordToken = searchTerm.some(t => t.type === 'word');
-  const hasTagToken = searchTerm.some(t => t.type === 'tag' && !t.allergenFree);
-  if (visible === 0 && hasTagToken && hasWordToken) {
+  // Zero results when any non-allergen-free tag token is present: retry as
+  // a text-content AND match. This covers cases like "refreshing gin" where
+  // no card carries BOTH tags but the user wants gin items described as
+  // refreshing (and refreshing-tagged cocktails that use gin).
+  // Allergen-free tokens always require strict tag presence — they're a
+  // safety filter, not a search hint.
+  // The wordBoundary function above is tightened: short query words (≤4
+  // chars) require exact match against text words, so "gin" doesn't latch
+  // onto "ginger", "red" doesn't latch onto "redder", etc.
+  if (visible === 0 && searchTerm.some(t => t.type === 'tag' && !t.allergenFree)) {
     cards.forEach(card => {
       const cat = card.dataset.category || '';
       if (filter !== 'all' && !cat.split(' ').includes(filter)) return;
@@ -351,7 +346,6 @@ function applyFilters() {
       const cardTagsFallback = cardTags(card);
       const matches = searchTerm.every(t => {
         if (t.allergenFree) return cardTagsFallback.includes(t.value);
-        if (t.type === 'tag') return cardTagsFallback.includes(t.value);
         const syn = SYNONYMS[t.value];
         return wordBoundary(text, t.value) || (syn && exactWordBoundary(text, syn));
       });
@@ -362,9 +356,6 @@ function applyFilters() {
         card.classList.add('hidden');
       }
     });
-  } else if (visible === 0 && !hasTagToken && hasWordToken) {
-    // All-word query that returned zero: previous behavior (already loose
-    // text match in primary), no further fallback needed.
   }
 
   if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
