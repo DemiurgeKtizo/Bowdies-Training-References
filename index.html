@@ -6,16 +6,13 @@
 <title>Bowdie's Chophouse — Staff Training Reference</title>
 
 <!-- ════════════════════════════════════════════════════════════
-     REFRESH-LOOP CIRCUIT BREAKER (May 2026, v2)
-     Must be the first thing in <head>. v1 rendered a "Clear &
-     Continue" button, but if the page is reloading faster than
-     a user can tap, that button never gets pressed. v2 acts
-     automatically: detects a loop, halts the page with
-     window.stop(), wipes localStorage AND sessionStorage,
-     rewrites the URL so Safari treats the next load as a new
-     page (breaks any URL-keyed cache state), then renders a
-     static no-script halt screen that the user can tap to
-     reload manually only when *they* choose to.
+     REFRESH-LOOP CIRCUIT BREAKER (May 2026, v3)
+     Must be the first thing in <head>. v2 tried to render a
+     halt page in-place via document.documentElement.outerHTML
+     but iOS Safari left a blank screen after the swap. v3
+     just redirects to a separate static loop-recovery.html
+     file — most reliable cross-browser primitive there is.
+     The recovery page has no dependencies and can't loop.
      ════════════════════════════════════════════════════════════ -->
 <script>
 (function loopGuard() {
@@ -24,8 +21,7 @@
   var LOOP_MAX = 5;
   var now = Date.now();
 
-  // If we already recovered on this page load (the ?recovered=1 URL marker),
-  // reset the counter and let the page boot normally — we got out of the loop.
+  // If the URL already carries the recovered marker, reset and proceed.
   if (window.location.search.indexOf('recovered=1') !== -1) {
     try { localStorage.removeItem(LOOP_KEY); } catch (e) {}
     return;
@@ -45,66 +41,14 @@
 
   if (loads.length <= LOOP_MAX) return;
 
-  // ── Loop detected. Aggressive halt sequence. ──
-  // 1) Stop further loading immediately. This prevents fonts, stylesheets,
-  //    images, and most importantly any other scripts from loading. It
-  //    also tends to make Safari's "page didn't load in time" auto-reload
-  //    behavior treat the page as intentionally halted, not stuck.
-  try { window.stop(); } catch (e) {}
-
-  // 2) Wipe all client storage. Whatever bad state was triggering the
-  //    loop is most likely keyed in localStorage (auth profile, cached
-  //    state, scroll-lock flags). Clear it all.
+  // Loop detected. Wipe storage and bounce to the standalone recovery
+  // page. window.stop() halts further loading on this page; the redirect
+  // takes over before anything else can trigger another reload.
   try { localStorage.clear(); } catch (e) {}
   try { sessionStorage.clear(); } catch (e) {}
-
-  // 3) Rewrite the URL with ?recovered=1 so the next load takes a
-  //    different code path (this guard skips itself when it sees the
-  //    marker) AND so the browser treats it as a different URL for any
-  //    URL-keyed caching it might be doing.
-  try {
-    history.replaceState({}, '', window.location.pathname + '?recovered=1');
-  } catch (e) {}
-
-  // 4) Replace document.documentElement with a minimal halt page. No
-  //    external resources, no scripts, no meta-refresh, just a tappable
-  //    link the user can use when they're ready to reload.
-  var halt =
-    '<!DOCTYPE html>' +
-    '<html><head>' +
-      '<meta charset="UTF-8">' +
-      '<meta name="viewport" content="width=device-width, initial-scale=1.0">' +
-      '<title>Recovery — Bowdie&apos;s</title>' +
-      '<style>' +
-        'html,body{margin:0;padding:0;height:100%;background:#171513;color:#F0E8D8;font-family:Georgia,serif;}' +
-        'main{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100%;padding:32px;text-align:center;box-sizing:border-box;}' +
-        '.eyebrow{font-family:sans-serif;font-size:9px;letter-spacing:0.4em;text-transform:uppercase;color:#C9A84C;margin-bottom:14px;}' +
-        '.title{font-size:22px;font-weight:600;line-height:1.3;margin-bottom:16px;max-width:420px;}' +
-        '.body{font-size:15px;line-height:1.5;color:#8A8070;max-width:380px;margin-bottom:28px;}' +
-        '.cta{display:inline-block;color:#C9A84C;border:1px solid #8A6B2A;padding:14px 28px;font-family:sans-serif;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;text-decoration:none;}' +
-      '</style>' +
-    '</head><body>' +
-      '<main>' +
-        '<div class="eyebrow">Recovery Mode</div>' +
-        '<div class="title">Reload loop detected.</div>' +
-        '<div class="body">Local data cleared. Tap below when you&apos;re ready &mdash; the site will boot fresh on the next load.</div>' +
-        '<a class="cta" href="' + window.location.pathname + '?recovered=1">Continue</a>' +
-      '</main>' +
-    '</body></html>';
-  try {
-    // documentElement.outerHTML is the most reliable cross-browser way to
-    // wholesale-replace the document this early in parse.
-    document.documentElement.outerHTML = halt;
-  } catch (e) {
-    // Last-resort fallback: just write the body once it exists.
-    document.addEventListener('DOMContentLoaded', function () {
-      document.documentElement.innerHTML = halt;
-    });
-  }
-
-  // Throwing halts the rest of *this* inline script. Other scripts on the
-  // page are blocked by window.stop() above.
-  throw new Error('LoopGuard: refresh loop halted.');
+  try { window.stop(); } catch (e) {}
+  window.location.replace('loop-recovery.html');
+  throw new Error('LoopGuard: refresh loop halted, redirecting to recovery.');
 })();
 </script>
 
