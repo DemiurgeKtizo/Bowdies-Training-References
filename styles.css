@@ -1225,3 +1225,34 @@ body::before {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* ════════════════════════════════════════════════════════════
+   MOBILE HOVER SUPPRESSION (May 2026)
+   On touch devices, :hover fires on touch and sticks until the
+   user taps elsewhere. That makes drag-while-scrolling
+   accidentally highlight whatever button passed under the
+   touch. This block disables the visual effect for all the
+   hover rules in this stylesheet on devices with no real
+   pointer (touch-only). Click handlers still fire normally
+   on tap; it's only the :hover-driven background/border
+   transitions that are suppressed.
+   ════════════════════════════════════════════════════════════ */
+@media (hover: none) {
+  /* Cards in Spirits/Wine/Prime & Plate */
+  .card:hover, .card:hover::before { background: var(--surface); opacity: 0; }
+  .card:hover .card-name, .card.expanded .card-name { color: inherit; }
+  /* Filter buttons */
+  .filter-btn:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
+  /* Stage workflow rows */
+  #panel-stage .pb-mode-btn:hover { background: transparent; padding-left: 4px; }
+  /* Stage tier-section content */
+  #panel-stage .pb-rec-item:hover { background: transparent; }
+  #panel-stage .pb-avoid-item:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
+  #panel-stage .pb-back-btn:hover { color: var(--text-muted); border-color: var(--border-soft); }
+  #panel-stage .pb-rec-explain-nav:hover { background: transparent; border-color: var(--gold-dim); color: var(--gold); }
+  /* Search-results dropdown */
+  .global-search-wrap .search-result-item:hover { background: transparent; }
+  /* Modal + admin buttons that have hover transitions */
+  .modal-btn-confirm:hover, .modal-btn-cancel:hover { background: transparent; border-color: var(--border-soft); }
+  .btn-primary:hover { background: transparent; border-color: var(--gold-dim); }
+}

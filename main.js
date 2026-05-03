@@ -673,6 +673,11 @@ function switchGuide(guide) {
 }
 
 function selectSection(guide) {
+  // Reset scroll. Without this, if the user scrolled deep into a previous
+  // section and came back via Home, the new section opens scrolled to the
+  // same Y as the prior one — and on mobile that locks the user in a
+  // dead-zone where tabs at the top aren't reachable.
+  window.scrollTo(0, 0);
   switchGuide(guide);
   searchInput.value = '';
   searchTerm = [];
@@ -751,6 +756,10 @@ function selectSection(guide) {
 }
 
 function returnHome() {
+  // Same reason as selectSection — clear scroll so the home screen renders
+  // at the viewport top instead of wherever the user left off in the
+  // previous section.
+  window.scrollTo(0, 0);
   searchInput.value = '';
   searchTerm = [];
   activeFilters = { cocktails: 'all', wine: 'all', food: 'all' };
@@ -914,6 +923,19 @@ document.querySelectorAll('.card').forEach(card => {
     if (grid) grid.querySelectorAll('.card').forEach(c => c.classList.remove('expanded'));
     if (!wasExpanded) card.classList.add('expanded');
   });
+});
+
+// Click-off: clicking outside any card closes whatever's expanded. The card
+// click handler above stops at "expand this one, collapse the rest in the
+// grid" — but if a user reads a card and wants to scroll on without picking
+// another, they had no way to dismiss it. Now any tap outside a .card
+// closes the expansion. Also ignores clicks on the sticky-nav / guide-tabs
+// chrome so a tab switch or filter tap doesn't get double-counted as a
+// click-off (those have their own handlers).
+document.addEventListener('click', (e) => {
+  if (e.target.closest('.card')) return;
+  if (e.target.closest('.sticky-nav, .guide-tabs, #top-bar')) return;
+  document.querySelectorAll('.card.expanded').forEach(c => c.classList.remove('expanded'));
 });
 
 // ── DEVICE GATE + OOS OVERLAY BOOT ──

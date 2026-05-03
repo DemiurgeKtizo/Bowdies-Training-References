@@ -74,7 +74,7 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
 .global-search-wrap { position: relative; }
 .global-search-wrap #pb-search-results {
   position: absolute; top: 100%; left: 0; right: 0;
-  background: var(--surface-3); border: 1px solid var(--border);
+  background: var(--surface); border: 1px solid var(--border);
   border-top: none; max-height: 280px; overflow-y: auto;
   z-index: 250; display: none;
 }
@@ -85,7 +85,7 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
   display: flex; align-items: center; justify-content: space-between;
   gap: 12px; transition: background 0.15s; user-select: none;
 }
-.global-search-wrap .search-result-item:hover { background: var(--surface-2); }
+.global-search-wrap .search-result-item:hover { background: rgba(201,168,76,0.06); }
 .global-search-wrap .search-result-item:last-child { border-bottom: none; }
 .global-search-wrap .search-result-item.oos .result-name {
   color: var(--text-dim); text-decoration: line-through;
@@ -205,7 +205,7 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
 }
 #panel-stage .pb-explainer-title {
   font-family: 'Playfair Display', serif;
-  font-size: 22px; font-weight: 600;
+  font-size: 21px; font-weight: 500;
   color: var(--text-primary);
   line-height: 1.3;
   margin-bottom: 18px;
@@ -271,7 +271,7 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
 }
 #panel-stage .pb-mode-title {
   font-family: 'Playfair Display', serif;
-  font-size: 16px; font-weight: 600;
+  font-size: 16px; font-weight: 500;
   color: var(--text-primary);
   margin-bottom: 4px;
 }
@@ -314,3 +314,33 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
 #panel-stage .pb-tier-section.tier-works .pb-tier-name { color: var(--tier-works); }
 #panel-stage .pb-tier-section.tier-avoid .pb-tier-name { color: var(--warning); }
 
+/* ════════════════════════════════════════════════════════════
+   MOBILE HOVER SUPPRESSION (May 2026)
+   On touch devices, :hover fires on touch and sticks until the
+   user taps elsewhere. That makes drag-while-scrolling
+   accidentally highlight whatever button passed under the
+   touch. This block disables the visual effect for all the
+   hover rules in this stylesheet on devices with no real
+   pointer (touch-only). Click handlers still fire normally
+   on tap; it's only the :hover-driven background/border
+   transitions that are suppressed.
+   ════════════════════════════════════════════════════════════ */
+@media (hover: none) {
+  /* Cards in Spirits/Wine/Prime & Plate */
+  .card:hover, .card:hover::before { background: var(--surface); opacity: 0; }
+  .card:hover .card-name, .card.expanded .card-name { color: inherit; }
+  /* Filter buttons */
+  .filter-btn:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
+  /* Stage workflow rows */
+  #panel-stage .pb-mode-btn:hover { background: transparent; padding-left: 4px; }
+  /* Stage tier-section content */
+  #panel-stage .pb-rec-item:hover { background: transparent; }
+  #panel-stage .pb-avoid-item:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
+  #panel-stage .pb-back-btn:hover { color: var(--text-muted); border-color: var(--border-soft); }
+  #panel-stage .pb-rec-explain-nav:hover { background: transparent; border-color: var(--gold-dim); color: var(--gold); }
+  /* Search-results dropdown */
+  .global-search-wrap .search-result-item:hover { background: transparent; }
+  /* Modal + admin buttons that have hover transitions */
+  .modal-btn-confirm:hover, .modal-btn-cancel:hover { background: transparent; border-color: var(--border-soft); }
+  .btn-primary:hover { background: transparent; border-color: var(--gold-dim); }
+}
