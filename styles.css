@@ -1268,7 +1268,8 @@ body::before {
    + overscroll-behavior:none. main.js toggles this class on
    body when the home screen is up; sections remove it.
    ════════════════════════════════════════════════════════════ */
-html.scroll-locked, body.scroll-locked {
+html.scroll-locked { overscroll-behavior: none; }
+body.scroll-locked {
   position: fixed;
   top: 0;
   left: 0;

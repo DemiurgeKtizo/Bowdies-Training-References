@@ -693,7 +693,6 @@ function selectSection(guide) {
   // dead-zone where tabs at the top aren't reachable.
   window.scrollTo(0, 0);
   // Unlock body scrolling — sections have content beyond the viewport.
-  document.documentElement.classList.remove('scroll-locked');
   document.body.classList.remove('scroll-locked');
   switchGuide(guide);
   searchInput.value = '';
@@ -778,9 +777,7 @@ function returnHome() {
   // previous section.
   window.scrollTo(0, 0);
   // Lock body scroll while on home. position-fixed + overscroll-behavior
-  // on the .scroll-locked class kills iOS bounce-scrolling that the bare
-  // `overflow: hidden` doesn't catch.
-  document.documentElement.classList.add('scroll-locked');
+  // kills iOS bounce-scrolling that bare `overflow: hidden` doesn't catch.
   document.body.classList.add('scroll-locked');
   searchInput.value = '';
   searchTerm = [];
@@ -966,15 +963,19 @@ document.addEventListener('click', (e) => {
 // badges, but the first PAIRING_MAP mutation happens here too so rec-filtering
 // logic stays consistent even if a downstream script boots later.
 (function bootIndex() {
+  let profileExists = false;
   if (typeof authBoot === 'function') {
-    // No special handler needed — the home-screen lives under the gate, so
-    // hiding the gate reveals it. authBoot returns true when already set up.
-    authBoot();
+    // authBoot returns true when a profile already exists (no gate shown),
+    // false when it just rendered the welcome / name-input gate.
+    profileExists = authBoot();
   }
-  // admin.js runs adminBoot() on its own; no re-call here.
-  // Lock body scroll on initial load — home is the default screen and has
-  // nothing to scroll. selectSection() removes the lock when the user
-  // enters a section.
-  document.documentElement.classList.add('scroll-locked');
-  document.body.classList.add('scroll-locked');
+  // Lock body scroll on initial load — but ONLY when the home screen is
+  // what the user will see. When the auth gate is up, leave scroll alone.
+  // The gate is position:fixed with its own overflow-y:auto; layering our
+  // scroll-lock on top of it caused iOS Safari to thrash and refresh-loop.
+  // Also: we lock body only, not html. position:fixed on html had no extra
+  // benefit and was contributing to the same thrash.
+  if (profileExists) {
+    document.body.classList.add('scroll-locked');
+  }
 })();

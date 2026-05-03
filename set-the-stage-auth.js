@@ -97,6 +97,9 @@ async function authHandleSetup() {
   document.getElementById('setup-code').value = '';
 
   authHideGate();
+  // Now the user lands on the home screen — apply the scroll lock that
+  // bootIndex skipped while the gate was up.
+  document.body.classList.add('scroll-locked');
   if (typeof window.authOnLoginComplete === 'function') window.authOnLoginComplete();
 }
 
