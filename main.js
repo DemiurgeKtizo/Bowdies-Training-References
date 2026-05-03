@@ -844,10 +844,13 @@ alignLogo();
 
 // Auto-switch to tab based on URL hash (e.g. #wine, #spirits, #food, #stage).
 // #stage is the redirect target for any saved bookmarks of the old set-the-stage.html.
+// We use selectSection (not switchGuide) so the home screen is dismissed —
+// otherwise the panel activates underneath the home overlay and the user just
+// sees the home screen.
 const hash = window.location.hash.replace('#', '');
 const HASH_TO_GUIDE = { wine: 'wine', spirits: 'cocktails', food: 'food', stage: 'stage' };
 if (HASH_TO_GUIDE[hash]) {
-  switchGuide(HASH_TO_GUIDE[hash]);
+  selectSection(HASH_TO_GUIDE[hash]);
 }
 window.addEventListener('resize', alignLogo);
 
