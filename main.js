@@ -603,10 +603,27 @@ function tokenizeQuery(raw) {
   return tokens;
 }
 
-// Shared search
+// Shared search. On Spirits/Wine/Prime & Plate the input filters the card
+// grid via applyFilters(). On Set the Stage it drives the pairing-browser's
+// dropdown (search results below the input, click to load tier accordion).
 searchInput.addEventListener('input', e => {
+  if (activeGuide === 'stage') {
+    if (typeof handlePbSearch === 'function') handlePbSearch(e.target.value);
+    return;
+  }
   searchTerm = tokenizeQuery(e.target.value.toLowerCase().trim());
   applyFilters();
+});
+
+// Stage filter buttons (All / Wines / Cocktails / Spirits / Dishes). The
+// active filter is held in a stage-local state and drives which rec items
+// appear inside the tier accordion. set-the-stage.js owns applyStageFilter.
+document.addEventListener('click', e => {
+  const btn = e.target.closest('#filters-stage .filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('#filters-stage .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  if (typeof applyStageFilter === 'function') applyStageFilter(btn.dataset.filter);
 });
 
 
@@ -622,18 +639,34 @@ function switchGuide(guide) {
   document.querySelectorAll('.guide-panel').forEach(p => p.classList.remove('active'));
   document.querySelector('[data-guide="' + guide + '"]').classList.add('active');
   document.getElementById('panel-' + guide).classList.add('active');
+  // Restore the sticky-nav. set-the-stage.js hides it while the user is in
+  // a workflow screen (First-Timer / Pick a Pair); without this reset, a tab
+  // switch from inside a workflow would leave the search bar hidden on the
+  // tab they jumped to.
+  const stickyNav = document.querySelector('.sticky-nav');
+  if (stickyNav) stickyNav.style.display = '';
   document.getElementById('filters-cocktails').style.display = guide === 'cocktails' ? 'flex' : 'none';
   document.getElementById('filters-wine').style.display = guide === 'wine' ? 'flex' : 'none';
   document.getElementById('filters-food').style.display = guide === 'food' ? 'flex' : 'none';
-  // Set the Stage owns its own search inputs inside the panel (Pairing Browser,
-  // Compare, First-Timer). Hide the global sticky-nav search bar and tip line
-  // when stage is active so they don't shadow the panel's own controls.
-  const stickyNav = document.querySelector('.sticky-nav');
-  if (stickyNav) stickyNav.style.display = guide === 'stage' ? 'none' : '';
-  activeGuide = guide;
-  searchInput.placeholder = guide === 'wine' ? 'Search wines, varietals, or tasting notes…' : guide === 'food' ? 'Search dishes, ingredients, or dietary needs…' : 'Search cocktails, spirits, or ingredients…';
+  // Set the Stage now uses the same global sticky-nav (search + filter bar)
+  // as every other tab. The dedicated filters-stage row drops into the same
+  // position as filters-food / filters-wine, only visible when stage is up.
+  const filtersStage = document.getElementById('filters-stage');
+  if (filtersStage) filtersStage.style.display = guide === 'stage' ? 'flex' : 'none';
+  // Hide the search-tip line when stage is active — the dropdown does the
+  // disclosure work and the tip would shadow the result list.
   const tipEl = document.getElementById('search-tip-text');
-  if (tipEl) tipEl.textContent = SEARCH_TIPS[guide] || SEARCH_TIPS.cocktails;
+  if (tipEl) tipEl.style.display = guide === 'stage' ? 'none' : '';
+  // Hide any pb-search-results dropdown when leaving stage; it's owned by stage.
+  const pbResults = document.getElementById('pb-search-results');
+  if (pbResults && guide !== 'stage') pbResults.classList.remove('visible');
+  activeGuide = guide;
+  if (guide === 'stage') {
+    searchInput.placeholder = 'Search dishes, wines, cocktails, or spirits…';
+  } else {
+    searchInput.placeholder = guide === 'wine' ? 'Search wines, varietals, or tasting notes…' : guide === 'food' ? 'Search dishes, ingredients, or dietary needs…' : 'Search cocktails, spirits, or ingredients…';
+  }
+  if (tipEl && guide !== 'stage') tipEl.textContent = SEARCH_TIPS[guide] || SEARCH_TIPS.cocktails;
   // First-time activation of Set the Stage: bootstrap the pairing browser into
   // its default view. pbOpen() is defined in set-the-stage.js.
   if (guide === 'stage' && typeof pbOpen === 'function') pbOpen();
@@ -878,7 +911,7 @@ document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('click', () => {
     const wasExpanded = card.classList.contains('expanded');
     const grid = card.closest('.grid');
-    grid.querySelectorAll('.card').forEach(c => c.classList.remove('expanded'));
+    if (grid) grid.querySelectorAll('.card').forEach(c => c.classList.remove('expanded'));
     if (!wasExpanded) card.classList.add('expanded');
   });
 });
@@ -894,7 +927,5 @@ document.querySelectorAll('.card').forEach(card => {
     // hiding the gate reveals it. authBoot returns true when already set up.
     authBoot();
   }
-  // admin.js runs adminBoot() on its own; no re-call here. If pairing-map-v2.js
-  // loaded successfully, it'll have already flipped entry.oos on any 86'd items
-  // before adminBoot ran the home-card overlay.
+  // admin.js runs adminBoot() on its own; no re-call here.
 })();

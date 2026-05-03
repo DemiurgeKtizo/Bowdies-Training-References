@@ -1,7 +1,9 @@
 // ── STATE ──────────────────────────────────────────────────────────────────────
 // Seating + session-library state was removed with the scope-down (Apr 2026).
 // All that's left is the first-timer flow + an empty specials array that
-// getAllItems() still iterates defensively.
+// getAllItems() still iterates defensively. The unified-layout pass (May 2026)
+// added stageFilter — drives which kind of recommendation appears in each
+// tier section ('all' | 'wines' | 'cocktails' | 'spirits' | 'dishes').
 const state = {
   specials: [],
   ftDepth: 'short',
@@ -9,7 +11,41 @@ const state = {
   ftCurrentQ: 0,
   ftForSeat: null,   // always null post-scope-down; retained for completion.js compatibility
   ftForTable: null,  // same
+  stageFilter: 'all',
+  expandedTiers: { gold: true, excellent: false, strong: false, works: false, avoid: false },
 };
+
+// Category buckets used by the stage filter. Keys are filter names from the
+// filters-stage filter-bar; values are sets of pairing-map category slugs
+// — matching the actual category values in pairing-map-v2.js (verified by
+// scanning every entry's `category` field). My earlier guess at these slugs
+// was wrong on every bucket and the filter silently returned zero matches.
+const STAGE_CATEGORY_BUCKETS = {
+  wines: new Set([
+    'wine-red', 'wine-white', 'wine-sparkling', 'wine-dessert',
+  ]),
+  cocktails: new Set(['cocktail']),
+  spirits: new Set([
+    'spirit', 'scotch', 'singlemalt', 'cognac', 'liqueur', 'gin', 'vodka',
+    'rum', 'mezcal', 'irish', 'japanese', 'canadian', 'nz-whisky',
+  ]),
+  dishes: new Set([
+    'starter', 'soup-salad', 'main', 'steak', 'side', 'dessert',
+  ]),
+};
+
+function stageMatchesFilter(category, filter) {
+  if (filter === 'all') return true;
+  const bucket = STAGE_CATEGORY_BUCKETS[filter];
+  return bucket ? bucket.has(category) : false;
+}
+
+// Called by main.js when a filters-stage button is clicked. Just refresh the
+// detail view so each tier section re-filters its rec list.
+function applyStageFilter(filter) {
+  state.stageFilter = filter || 'all';
+  if (pbState.current) pbRenderDetail();
+}
 
 // ── NAV ────────────────────────────────────────────────────────────────────────
 // Post-unification (May 2026): Set the Stage lives inside index.html as the
@@ -23,6 +59,16 @@ function goBack() {
 function showScreen(id) {
   document.querySelectorAll('#panel-stage .screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
+  // Hide the global sticky-nav (search bar + filter row) while a workflow
+  // screen is up. First-Timer Questions and Pick a Pair both have their own
+  // inputs; the global search would just be dead chrome there. The pairing
+  // browser (screen-pairings) keeps the sticky-nav visible because that's
+  // exactly where it drives the experience.
+  const stickyNav = document.querySelector('.sticky-nav');
+  if (stickyNav) {
+    stickyNav.style.display =
+      (id === 'screen-firsttimer' || id === 'screen-compare') ? 'none' : '';
+  }
   window.scrollTo(0, 0);
 }
 function updateTopBar(screen) {
@@ -119,8 +165,11 @@ function pbHome() {
 function pbShowSearch() {
   document.getElementById('pb-search-view').style.display = 'block';
   document.getElementById('pb-detail-view').style.display = 'none';
-  const input = document.getElementById('pb-search-input');
-  if (input) input.value = '';
+  // Post-unification (May 2026) the search input lives in the global sticky
+  // nav (#search-active). Clear it and the dropdown when re-entering the
+  // home view, so a previous query doesn't carry over.
+  const input = document.getElementById('search-active');
+  if (input && activeGuide === 'stage') input.value = '';
   const results = document.getElementById('pb-search-results');
   if (results) results.classList.remove('visible');
   pbRenderRecents();
@@ -207,6 +256,13 @@ function pbNavigate(name) {
   }
   pbState.current = name;
   pbRememberRecent(name);
+  // Close the search dropdown and clear the input — once an item is loaded
+  // the user is in the detail view, the dropdown is no longer relevant.
+  // (Was sticking open before; users had to tap elsewhere to dismiss.)
+  const results = document.getElementById('pb-search-results');
+  if (results) results.classList.remove('visible');
+  const input = document.getElementById('search-active');
+  if (input) input.value = '';
   pbRenderDetail();
 }
 
@@ -232,9 +288,6 @@ function pbRenderDetail() {
   document.getElementById('pb-item-cat-badge').textContent = getCategoryForDisplay(entry.category);
   document.getElementById('pb-back-label').textContent = pbState.history.length ? 'Back' : 'Search';
 
-  // Cluster-note: shown when the item we're rendering is a cluster member,
-  // not its own top-level entry. Tells staff the pairings are category-level
-  // — true for the style, but not necessarily tuned to this bottle's quirks.
   const clusterSlot = document.getElementById('pb-cluster-note-slot');
   if (clusterSlot) {
     clusterSlot.innerHTML = resolved.viaCluster
@@ -244,9 +297,6 @@ function pbRenderDetail() {
       : '';
   }
 
-  // OOS banner — rendered only when the item is currently 86'd. The full
-  // pairing card stays visible so staff can still read the context, but the
-  // banner makes it unmistakable that this isn't a sellable item right now.
   const bannerSlot = document.getElementById('pb-oos-banner-slot');
   if (bannerSlot) {
     bannerSlot.innerHTML = entry.oos
@@ -259,88 +309,120 @@ function pbRenderDetail() {
   profileEl.innerHTML = profile.slice(0, 10)
     .map(p => '<span class="pb-profile-tag">'+escapeHtml(p)+'</span>').join('');
 
-  const tiers = document.getElementById('pb-tiers');
-  tiers.innerHTML = '';
-  let anyTier = false;
-  ['gold','excellent','strong','works'].forEach(tier => {
-    const names = entry[tier] || [];
-    if (!names.length) return;
-    anyTier = true;
-    const section = document.createElement('div');
-    section.className = 'pb-tier-section';
-    const displayLabel = tier === 'gold' ? 'GOLD STANDARD' : tier.toUpperCase();
-    section.innerHTML =
-      '<div class="pb-tier-label">'
-      + '<span class="tier-pip ' + tier + '"></span>'
-      + '<span class="pb-tier-name">' + displayLabel + '</span>'
-      + '<span class="pb-tier-count">' + names.length + '</span>'
-      + '</div>';
-    const list = document.createElement('div');
-    list.className = 'pb-rec-list';
-    names.forEach(recName => {
-      const recEntry = PAIRING_MAP.find(e => e.name === recName);
-      const cat = recEntry && recEntry.category;
-      const oos = recEntry && recEntry.oos;
-      const row = document.createElement('div');
-      row.className = 'pb-rec-row';
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'pb-rec-item' + (oos ? ' oos' : '');
-      btn.innerHTML = '<div class="pb-rec-info">'
-        + '<div class="pb-rec-name">' + escapeHtml(recName) + '</div>'
-        + (cat ? '<div class="pb-rec-cat">' + escapeHtml(getCategoryForDisplay(cat)) + '</div>' : '')
-        + (oos ? '<div class="pb-rec-oos">Currently Unavailable</div>' : '')
-        + '</div><span class="pb-rec-arrow">›</span>';
-      // Primary action: expand the pairing reasoning inline (same pattern as seating panel).
-      // Navigation lives inside the expanded panel as an explicit secondary action.
-      btn.onclick = () => pbToggleRecExplain(recName);
-      row.appendChild(btn);
-      const explain = document.createElement('div');
-      explain.className = 'pb-rec-explain';
-      explain.id = 'pb-explain-' + encodeURIComponent(recName);
-      explain.hidden = true;
-      row.appendChild(explain);
-      list.appendChild(row);
-    });
-    section.appendChild(list);
-    tiers.appendChild(section);
-  });
-  if (!anyTier) {
-    tiers.innerHTML = '<div class="pb-empty">No tiered pairings for this item.</div>';
-  }
+  // Unified five-tier accordion (May 2026). Each tier renders as a collapsible
+  // section. Default expansion is held in state.expandedTiers — Gold open, the
+  // rest closed. Rec items inside each section are filtered by state.stageFilter:
+  // 'all' shows every rec, 'wines'/'cocktails'/'spirits'/'dishes' restrict to
+  // their category bucket. A tier with zero recs after filtering renders a
+  // small placeholder so the structure stays predictable.
+  const tiersEl = document.getElementById('pb-tiers');
+  tiersEl.innerHTML = '';
+  // Avoid lives in pb-avoid in the markup; keep that container empty since
+  // the accordion now includes Avoid as its 5th section.
+  const legacyAvoidEl = document.getElementById('pb-avoid');
+  if (legacyAvoidEl) legacyAvoidEl.innerHTML = '';
 
-  const avoidEl = document.getElementById('pb-avoid');
-  const avoid = entry.avoid || [];
-  if (avoid.length) {
-    let avoidHtml = '<div class="pb-tier-section pb-avoid-section">'
-      + '<div class="pb-tier-label pb-avoid-label">'
-      + '<span class="pb-avoid-glyph">⚠</span>'
-      + '<span class="pb-tier-name">AVOID WITH</span>'
-      + '<span class="pb-tier-count">' + avoid.length + '</span>'
-      + '</div><div class="pb-avoid-list"></div></div>';
-    avoidEl.innerHTML = avoidHtml;
-    const listNode = avoidEl.querySelector('.pb-avoid-list');
-    avoid.forEach(n => {
-      const row = document.createElement('div');
-      row.className = 'pb-avoid-row';
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'pb-avoid-item';
-      btn.innerHTML = '<span>' + escapeHtml(n) + '</span><span class="pb-avoid-arrow">›</span>';
-      // Primary action on avoid rows: expand the "never pair with" reasoning inline.
-      // If no note exists we still show an informational placeholder.
-      btn.onclick = () => pbToggleAvoidExplain(n);
-      row.appendChild(btn);
-      const explain = document.createElement('div');
-      explain.className = 'pb-avoid-explain';
-      explain.id = 'pb-avoid-explain-' + encodeURIComponent(n);
-      explain.hidden = true;
-      row.appendChild(explain);
-      listNode.appendChild(row);
+  const TIERS = [
+    { key: 'gold',      label: 'GOLD STANDARD', isAvoid: false },
+    { key: 'excellent', label: 'EXCELLENT',     isAvoid: false },
+    { key: 'strong',    label: 'STRONG',        isAvoid: false },
+    { key: 'works',     label: 'WORKS',         isAvoid: false },
+    { key: 'avoid',     label: 'AVOID WITH',    isAvoid: true  },
+  ];
+
+  TIERS.forEach(({ key, label, isAvoid }) => {
+    const allNames = entry[key] || [];
+    // Filter recs by the current stage filter. We always include unknown
+    // (no PAIRING_MAP entry) recs only when the filter is 'all', since we
+    // can't classify them otherwise.
+    const filteredNames = allNames.filter(recName => {
+      const recEntry = PAIRING_MAP.find(e => e.name === recName);
+      if (!recEntry) return state.stageFilter === 'all';
+      return stageMatchesFilter(recEntry.category, state.stageFilter);
     });
-  } else {
-    avoidEl.innerHTML = '';
-  }
+
+    const section = document.createElement('div');
+    // tier-{key} class lets the stylesheet color the section directly
+    // without relying on :has(.tier-pip.X), which older mobile Safari
+    // builds don't support reliably.
+    section.className = 'pb-tier-section tier-' + key + (isAvoid ? ' pb-avoid-section' : '');
+    if (state.expandedTiers[key]) section.classList.add('open');
+    section.dataset.tier = key;
+
+    // Tier header — clicking toggles `.open`. Header always shows the *full*
+    // pre-filter count so the user sees the headline number; the body shows
+    // the filtered subset (or empty placeholder if filter excluded everything).
+    const header = document.createElement('div');
+    header.className = 'pb-tier-label' + (isAvoid ? ' pb-avoid-label' : '');
+    header.innerHTML = (isAvoid
+        ? '<span class="pb-avoid-glyph">⚠</span>'
+        : '<span class="tier-pip ' + key + '"></span>')
+      + '<span class="pb-tier-name">' + label + '</span>'
+      + '<span class="pb-tier-count">' + allNames.length + '</span>';
+    header.onclick = () => {
+      state.expandedTiers[key] = !state.expandedTiers[key];
+      section.classList.toggle('open');
+    };
+    section.appendChild(header);
+
+    // List body. For non-avoid tiers, recs render as pb-rec-* rows; for the
+    // avoid section, as pb-avoid-* rows (warning visual treatment retained).
+    const list = document.createElement('div');
+    list.className = isAvoid ? 'pb-avoid-list' : 'pb-rec-list';
+
+    if (!filteredNames.length) {
+      const empty = document.createElement('div');
+      empty.className = 'pb-tier-empty';
+      empty.textContent = allNames.length === 0
+        ? (isAvoid ? 'No items to flag.' : 'No pairings at this tier.')
+        : 'No matches for the active filter.';
+      list.appendChild(empty);
+    } else if (isAvoid) {
+      filteredNames.forEach(n => {
+        const row = document.createElement('div');
+        row.className = 'pb-avoid-row';
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'pb-avoid-item';
+        btn.innerHTML = '<span>' + escapeHtml(n) + '</span><span class="pb-avoid-arrow">›</span>';
+        btn.onclick = () => pbToggleAvoidExplain(n);
+        row.appendChild(btn);
+        const explain = document.createElement('div');
+        explain.className = 'pb-avoid-explain';
+        explain.id = 'pb-avoid-explain-' + encodeURIComponent(n);
+        explain.hidden = true;
+        row.appendChild(explain);
+        list.appendChild(row);
+      });
+    } else {
+      filteredNames.forEach(recName => {
+        const recEntry = PAIRING_MAP.find(e => e.name === recName);
+        const cat = recEntry && recEntry.category;
+        const oos = recEntry && recEntry.oos;
+        const row = document.createElement('div');
+        row.className = 'pb-rec-row';
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'pb-rec-item' + (oos ? ' oos' : '');
+        btn.innerHTML = '<div class="pb-rec-info">'
+          + '<div class="pb-rec-name">' + escapeHtml(recName) + '</div>'
+          + (cat ? '<div class="pb-rec-cat">' + escapeHtml(getCategoryForDisplay(cat)) + '</div>' : '')
+          + (oos ? '<div class="pb-rec-oos">Currently Unavailable</div>' : '')
+          + '</div><span class="pb-rec-arrow">›</span>';
+        btn.onclick = () => pbToggleRecExplain(recName);
+        row.appendChild(btn);
+        const explain = document.createElement('div');
+        explain.className = 'pb-rec-explain';
+        explain.id = 'pb-explain-' + encodeURIComponent(recName);
+        explain.hidden = true;
+        row.appendChild(explain);
+        list.appendChild(row);
+      });
+    }
+
+    section.appendChild(list);
+    tiersEl.appendChild(section);
+  });
 
   window.scrollTo(0, 0);
 }
@@ -671,11 +753,8 @@ function selectFTAnswer(value, btn) {
   btn.classList.add('selected');
 }
 
-// ── EVENT DELEGATION ──────────────────────────────────────────────────────────
-// Only the first-timer answer buttons are delegated from here now — the admin
-// OOS toggle handler moved to admin.js along with the admin screen itself.
-// The PB's rec/avoid expansions wire up their own direct onclicks during
-// render, so we don't touch them here.
+// First-timer answer button delegation. Same one-handler pattern from the
+// original set-the-stage.html (the only delegation needed here).
 document.addEventListener('click', e => {
   const ftBtn = e.target.closest('[data-ftval]');
   if (ftBtn) { selectFTAnswer(ftBtn.dataset.ftval, ftBtn); return; }

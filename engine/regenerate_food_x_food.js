@@ -21,12 +21,21 @@ load('pairing-notes.js', 'PAIRING_NOTES');
 
 const byName = {}; for (const e of ctx.PAIRING_MAP) byName[e.name] = e;
 const tierByKey = new Map();
+// Tier resolution: a pair can intentionally appear in multiple tier lists
+// (engine_health_check confirms ~720 gold-subset-of-excellent overlaps where
+// every gold pair is also listed in excellent). We iterate tiers in priority
+// order and SKIP overwrites — so a pair in both gold and excellent resolves
+// to gold. Without this, the regen rendered Excellent prose for ~6 canonical
+// Gold pairs (Filet × Mushrooms, Bone-In Filet × Au Gratin, Cowboy Ribeye ×
+// Lobster Mac, etc.), which audit_tier_note_mismatches surfaced as drift.
 for (const e of ctx.PAIRING_MAP) {
   for (const tier of ['gold','excellent','strong','works','avoid']) {
     if (!Array.isArray(e[tier])) continue;
     for (const target of e[tier]) {
-      tierByKey.set(e.name + '|' + target, tier);
-      tierByKey.set(target + '|' + e.name, tier);
+      const k1 = e.name + '|' + target;
+      const k2 = target + '|' + e.name;
+      if (!tierByKey.has(k1)) tierByKey.set(k1, tier);
+      if (!tierByKey.has(k2)) tierByKey.set(k2, tier);
     }
   }
 }
@@ -184,37 +193,75 @@ const TEMPLATED_SIGS = [
   /the call holds at neutral register/,
   /the opening courses hold at neutral register/,
   /both openers sit cleanly without pulling focus/,
-  // v6 — recycled flavor-pattern readings. These appear in BODIES of
-  // templated notes that the engine emits via flavorPattern(). Adding them
-  // as signatures lets old pairs regenerate to the v6 multi-variant pool.
-  /savory gives way to sweet, the close lands cleanly/,
-  /cream meets protein, the meal builds with weight/,
-  /the bright cuts the rich cleanly/,
-  /protein meets umami, the table builds substance/,
-  /different registers compose without clash/,
-  /both umami-savory, the meal builds with depth/,
-  /both substantial, the table reads weighty/,
-  /both bright, the meal stays light and clean/,
-  /both delicate, the meal stays composed/,
-  /both spice-forward, the meal builds heat/,
-  /both cream-forward, the meal goes heavy/,
-  /both sweet, the close goes saccharine/,
-  /a clean call, no friction either way/,
-  /the bright cuts the savory weight/,
-  /bright meets sweet, the contrast stays light/,
-  /the bright cuts through the spice cleanly/,
-  /rich cream gives way to sweet/,
-  /sweet contrast lifts the savory/,
-  /sweet meets spice, the contrast holds/,
-  /the delicate plate gives way to bold/,
-  /the delicate plate yields to rich/,
-  /delicate yields to savory weight cleanly/,
-  /delicate gives way to sweet/,
-  /spice plays against the delicate/,
-  /cream meets umami, the table goes deep/,
-  /spice cuts cream cleanly/,
-  /spice plays against rich protein/,
-  /protein meets umami, the table builds substance/,
+  // Retired verdict hooks from earlier engine versions (added May 2026 with the
+  // single-clause bodyBridge change). Notes ending in these hooks looked
+  // editorial to the regen script but were actually templated, so they were
+  // being preserved instead of regenerated. Adding them here pulls them back
+  // into the templated pool so they pick up the cleaner single-clause body.
+  /both courses share the opening without crowding/,
+  /both opening courses earn their place/,
+  /no conflict, the meal builds/,
+  /safe opener, the meal builds without crowding/,
+  /safe opener, the meal builds without crowding the cut/,
+  /safe opening/,
+  /sequence or share, the build holds/,
+  /sequence them or share the table, no concern either way/,
+  /sequence them or share the table, the call holds either way/,
+  /the build reads thoughtful across the courses/,
+  /the call holds whether the table sequences them or shares/,
+  /the canonical filet plate/,
+  /the opener carries before the cut/,
+  /the opener sits cleanly before the steak/,
+  /the openers share the table cleanly, sequence or share/,
+  /the opening courses share the table at full register/,
+  /the side carries its register against the main/,
+  /the side that defines the bone-in ribeye plate/,
+  /the side the table pairs with the Tomahawk every time/,
+  /the soup-or-salad call holds, the meal builds cleanly/,
+  /the starter composes before the cut/,
+  /the steakhouse-classic side on the elevated cut/,
+  /the strip-and-belly call the kitchen built for the bold tables/,
+  /the table can build them in/,
+  /the table-share Porterhouse meets the steakhouse-canon green/,
+  // Current STEAK_SIDE.gold template hooks (not retired — but missing from
+  // TEMPLATED_SIGS, so notes using them as verdicts were classified as
+  // editorial and skipped on regen. With these added, the regen catches
+  // every gold steak-side note.
+  /the side that defines the steak course/,
+  /the side-on-steak pairing the menu was built around/,
+  // More retired hooks discovered after the broader two-clause sweep — these
+  // include both legitimate prose verdicts ("the bookends sit cleanly without
+  // pulling focus") and a buggy "the the X" double-article generation pattern
+  // from an older engine version. Catching them lets the regen rewrite all of
+  // those notes to the new single-clause body.
+  /the bookends sit cleanly without pulling focus/,
+  /the close holds at neutral register/,
+  /the opener composes cleanly before the main/,
+  /the opener carries its register against the main/,
+  /the bookends compose neutrally/,
+  /the starter composes cleanly before the main/,
+  /the opener carries its register before the main/,
+  /the two sides share the meal without competing/,
+  /the side composes cleanly with the main/,
+  /both items hold their weight on the build/,
+  /the opener composes cleanly before the cut/,
+  /the side holds the steak's weight without competing/,
+  /the opener composes at neutral register/,
+  /the starter sets the table for the the \w+/,
+  /reliable side for the the \w+/,
+  /the side holds the the \w+'s weight without competing/,
+  // Broader patterns for templated stragglers — same structural class as the
+  // hand-added hooks above but covering whole families (any food name in the
+  // possessive slot). These were generated by a v3 template that varied the
+  // food name into the verdict.
+  /the side holds the \w+'s? weight without competing/,
+  /a substantial finish to a restrained main/,
+  /clean transition from the meal's lighter steak into the richer close/,
+  // Final stragglers: multi-word food names in possessive slot, plus two more
+  // distinct verdict hooks.
+  /the side holds the (?:the )?(?:\w+ ){0,2}\w+'s? weight without competing/,
+  /the opener carries its register against the cut/,
+  /both items earn their weight when the table builds the full meal/,
 ];
 
 function isTemplatedFoodNote(note) {

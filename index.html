@@ -6,7 +6,7 @@
 <title>Bowdie's Chophouse — Staff Training Reference</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css?v=16">
-<link rel="stylesheet" href="./set-the-stage.css?v=1">
+<link rel="stylesheet" href="./set-the-stage.css?v=12">
 </head>
 <body>
 
@@ -111,6 +111,9 @@
 <div class="sticky-nav">
   <div class="global-search-wrap">
     <input class="search-input" type="text" placeholder="Search cocktails, spirits, or ingredients…" id="search-active">
+    <!-- Set the Stage pairing-browser results dropdown. Hidden on other tabs;
+         main.js shows/hides based on activeGuide. -->
+    <div id="pb-search-results" class="search-results"></div>
   </div>
   <div id="filters-cocktails" class="filter-bar">
     <button class="filter-btn active" data-filter="all">All</button>
@@ -204,6 +207,13 @@
     <button class="filter-btn" data-filter="food-sharing">For Sharing</button>
     <button class="filter-btn" data-filter="food-dessert">Desserts</button>
     <button class="filter-btn" data-filter="food-addons">Add Ons &amp; More</button>
+  </div>
+  <div id="filters-stage" class="filter-bar" style="display:none;">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="wines">Wines</button>
+    <button class="filter-btn" data-filter="cocktails">Cocktails</button>
+    <button class="filter-btn" data-filter="spirits">Spirits</button>
+    <button class="filter-btn" data-filter="dishes">Dishes</button>
   </div>
   <p class="search-tip" id="search-tip-text">*tip — avoid filler words &nbsp;(good searches: "campari cocktail", "stirred strained martini")</p>
 </div>
@@ -9759,34 +9769,33 @@
 
   <!-- ── PAIRING BROWSER SCREEN (default for the panel) ── -->
   <div id="screen-pairings" class="screen active">
-    <div class="pb-title-block">
-      <div class="section-heading" style="margin-bottom:4px">Pairing Reference</div>
-      <div class="pb-subtitle">Look up pairings for any item.</div>
-    </div>
-
-    <!-- SEARCH / HOME VIEW -->
+    <!-- SEARCH / HOME VIEW. Search input lives in the global sticky-nav
+         above; results dropdown is also up there. Recents intentionally
+         removed — the explainer is the dominant element instead. -->
     <div id="pb-search-view">
-      <div class="pb-search-wrap search-wrap">
-        <input type="text" class="search-input" id="pb-search-input"
-               placeholder="Search — dish, wine, cocktail, spirit…"
-               oninput="handlePbSearch(this.value)" autocomplete="off">
-        <div class="search-results" id="pb-search-results"></div>
+      <!-- Pairing simulator rundown. Numbered steps so a server can scan
+           it once and know what the tool does. Tier order, filter scope,
+           and the why-behind-it reasoning all called out. -->
+      <div class="pb-explainer">
+        <div class="pb-explainer-eyebrow">Pairing Simulator</div>
+        <div class="pb-explainer-title">Search any item. See what pairs with it.</div>
+        <ol class="pb-explainer-steps">
+          <li><strong>Search</strong> — wine, cocktail, spirit, or dish. Results appear below the bar.</li>
+          <li><strong>Tier</strong> — Gold Standard opens by default. Tap Excellent, Strong, Works, or Avoid to expand those.</li>
+          <li><strong>Filter</strong> — narrow recommendations to Wines, Cocktails, Spirits, or Dishes without leaving the tier view.</li>
+          <li><strong>Tap any pairing</strong> for the reasoning behind it — the note tells you why it works (or doesn't).</li>
+        </ol>
       </div>
-      <div id="pb-recents-wrap" style="display:none">
-        <div class="pb-section-label">Recent Look-ups</div>
-        <div id="pb-recents-list" class="pb-recents-list"></div>
-      </div>
-      <div class="pb-hint">Type any menu item above — the reference opens a pairing card with <span style="color:var(--tier-gold);letter-spacing:0.04em;">★ Gold Standard</span> at the top, plus Excellent / Strong / Works options and an Avoid list. Tap any recommendation to see the reasoning behind the pairing.</div>
 
       <div class="pb-modes" id="pb-modes-block">
         <div class="pb-modes-label">Or step into a workflow</div>
         <button type="button" class="pb-mode-btn" onclick="startFirstTimerStandalone()">
-          <div class="pb-mode-title">First-timer Questions</div>
-          <div class="pb-mode-sub">Run the guest-preference flow — useful for training or prep.</div>
+          <div class="pb-mode-title">First-Timer Questions</div>
+          <div class="pb-mode-sub">Walk a guest through quick preference questions and land on a recommendation.</div>
         </button>
         <button type="button" class="pb-mode-btn" onclick="startCompareStandalone()">
           <div class="pb-mode-title">Pick a Pair</div>
-          <div class="pb-mode-sub">Pick any two items and see the verdict tier plus the pairing note.</div>
+          <div class="pb-mode-sub">Compare any two items head-to-head and see the verdict tier plus the pairing note.</div>
         </button>
       </div>
     </div>
@@ -9849,8 +9858,8 @@
 <script src="set-the-stage-auth.js?v=4"></script>
 <script src="admin.js?v=2"></script>
 <script src="set-the-stage-completion.js?v=30"></script>
-<script src="set-the-stage.js?v=1"></script>
-<script src="./main.js?v=19"></script>
+<script src="set-the-stage.js?v=7"></script>
+<script src="./main.js?v=22"></script>
 <script>
 document.addEventListener('touchmove', e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
 document.addEventListener('gesturestart', e => e.preventDefault(), { passive: false });

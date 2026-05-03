@@ -308,23 +308,27 @@ function findChemistryClause(foodA, foodB, claims) {
 }
 
 function bodyBridge(foodA, foodB, tier, ctx) {
+  // Single-clause body (May 2026): the previous template emitted two
+  // syntactically parallel clauses joined by ", and " — both subject+verb+target
+  // shapes pulling from the same pools, which read as restatement rather than
+  // additional information. We dropped the parallel-restate clause across all
+  // tiers; the verdict hook + the wrapping template already do the framing
+  // work the second clause was supposed to do. The chemistry-clause path is
+  // preserved because those clauses carry pair-specific facts (e.g. cream-
+  // doubling, umami-stack) that genuinely add to the first clause rather than
+  // restate it. BRIDGE_VERBS_2 stays declared at module top in case the
+  // chemistry path or a future contrast/qualifier path wants its own pool.
   const partsA = _bridgeParts(foodA);
   const partsB = _bridgeParts(foodB);
   const verbs1 = BRIDGE_VERBS[tier] || BRIDGE_VERBS.works;
-  const verbs2 = BRIDGE_VERBS_2[tier] || BRIDGE_VERBS_2.works;
   const sig = foodA.name + '|' + foodB.name + '|' + tier;
   const h = crypto.createHash('md5').update(sig).digest();
   const i1 = h.readUInt8(0) % partsA.subjects.length;
   const j1 = h.readUInt8(1) % partsB.targets.length;
   const v1 = h.readUInt8(2) % verbs1.length;
-  const i2 = (i1 + Math.max(1, Math.floor(partsA.subjects.length / 2))) % partsA.subjects.length;
-  const j2 = (j1 + Math.max(1, Math.floor(partsB.targets.length / 2))) % partsB.targets.length;
-  const v2 = h.readUInt8(3) % verbs2.length;
   const subA1 = partsA.subjects[i1], tgtB1 = partsB.targets[j1];
-  const subA2 = partsA.subjects[i2], tgtB2 = partsB.targets[j2];
 
   const templateClause1 = subA1 + ' ' + verbs1[v1] + ' ' + tgtB1;
-  const templateClause2 = subA2 + ' ' + verbs2[v2] + ' ' + tgtB2;
 
   const claims = ctx && ctx.CHEMISTRY_CLAIMS;
   if (claims && tier !== 'avoid') {
@@ -334,8 +338,7 @@ function bodyBridge(foodA, foodB, tier, ctx) {
     }
   }
 
-  if (subA1 === subA2 && tgtB1 === tgtB2) return templateClause1;
-  return templateClause1 + ', and ' + templateClause2;
+  return templateClause1;
 }
 
 // ── MINED VERDICT RESOLVER (v6) ────────────────────────────────────────────
@@ -790,54 +793,6 @@ function generate(foodA, foodB, tier, ctx) {
       const tierLabel = tier.charAt(0).toUpperCase() + tier.slice(1);
       rendered = rendered.replace(
         new RegExp('\\b' + tierLabel + ';[^.]+(\\.\\s*$|\\.$)'),
-        tierLabel + '; ' + minedVerdict + '.'
-      );
-    }
-  }
-
-  return rendered;
-}
-
-module.exports = {
-  generate, archetypeFor, characterFor, canonicalize, bodyBridge,
-  alternativesFor, findChemistryClause, flavorsFor,
-  pickMinedVerdict,
-  TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
-}; tier.charAt(0).toUpperCase() + tier.slice(1);
-      rendered = rendered.replace(
-        new RegExp('\\b' + tierLabel + ';[^.]+(\\.\\s*$|\\.$)'),
-        tierLabel + '; ' + minedVerdict + '.'
-      );
-    }
-  }
-
-  return rendered;
-}
-
-module.exports = {
-  generate, archetypeFor, characterFor, canonicalize, bodyBridge,
-  alternativesFor, findChemistryClause, flavorsFor,
-  pickMinedVerdict,
-  TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
-};
- tier.charAt(0).toUpperCase() + tier.slice(1);
-      rendered = rendered.replace(
-        new RegExp('\\b' + tierLabel + ';[^.]+(\\.\\s*$|\\.$)'),
-        tierLabel + '; ' + minedVerdict + '.'
-      );
-    }
-  }
-
-  return rendered;
-}
-
-module.exports = {
-  generate, archetypeFor, characterFor, canonicalize, bodyBridge,
-  alternativesFor, findChemistryClause, flavorsFor,
-  pickMinedVerdict,
-  TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
-};
-.\\s*$|\\.$)'),
         tierLabel + '; ' + minedVerdict + '.'
       );
     }
