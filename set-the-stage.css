@@ -193,9 +193,8 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
 /* ── Empty-state explainer: transparent, gold left accent ── */
 #panel-stage .pb-explainer {
   margin: 0 0 32px;
-  padding: 4px 0 4px 18px;
+  padding: 4px 0;
   background: transparent;
-  border-left: 2px solid var(--gold-dim);
 }
 #panel-stage .pb-explainer-eyebrow {
   font-family: 'Josefin Sans', sans-serif;
@@ -234,8 +233,9 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
   display: flex; align-items: center; justify-content: center;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 9px; color: var(--gold);
-  border: 1px solid var(--gold-dim);
+  background: rgba(201,168,76,0.1);
   border-radius: 50%;
+  letter-spacing: 0;
 }
 #panel-stage .pb-explainer-steps strong {
   color: var(--text-primary);
