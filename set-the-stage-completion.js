@@ -105,15 +105,17 @@ function bootStage() {
     }
   } catch (e) {}
 
-  // Device identity check — redirect to the gate on index.html if unset.
-  // authLoadProfile hydrates authState.profile from localStorage without
-  // touching the DOM; authIsConfigured reads that flag.
+  // Device identity is hydrated for downstream consumers. We used to also
+  // redirect unconfigured devices to index.html — that made sense when Set
+  // the Stage was its own page (sts.html). After the May 2026 migration the
+  // pairing browser lives inside index.html, so `replace('index.html')`
+  // from index.html is just a reload — and on DOMContentLoaded it became
+  // an infinite loop. The auth gate is now shown by main.js's bootIndex
+  // when no profile exists; this script doesn't need to redirect.
   if (typeof authLoadProfile === 'function') authLoadProfile();
   if (typeof authIsConfigured === 'function' && !authIsConfigured()) {
-    // `replace` so we don't leave an unconfigured sts.html entry in the
-    // browser history — back from index.html should go to whatever was
-    // before, not bounce-redirect us right back here.
-    window.location.replace('index.html');
+    // No-op. Wait for the user to complete setup in the gate that main.js
+    // is already showing. Don't initialize the pairing browser yet.
     return;
   }
 
