@@ -1239,8 +1239,8 @@ body::before {
    ════════════════════════════════════════════════════════════ */
 @media (hover: none) {
   /* Cards in Spirits/Wine/Prime & Plate */
-  .card:hover { background: var(--surface); }
-  .card:hover::before { opacity: 0; }
+  .card:hover:not(.expanded) { background: var(--surface); }
+  .card:hover:not(.expanded)::before { opacity: 0; }
   .card:hover .card-name, .card.expanded .card-name { color: inherit; }
   /* Filter buttons */
   .filter-btn:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
@@ -1256,4 +1256,23 @@ body::before {
   /* Modal + admin buttons that have hover transitions */
   .modal-btn-confirm:hover, .modal-btn-cancel:hover { background: transparent; border-color: var(--border-soft); }
   .btn-primary:hover { background: transparent; border-color: var(--gold-dim); }
+}
+
+/* ════════════════════════════════════════════════════════════
+   HOME-SCREEN SCROLL LOCK (May 2026)
+   `overflow: hidden` on body is unreliable on iOS Safari —
+   it still permits bounce-scrolling and the rubber-band
+   effect. The reliable pattern is position:fixed + width:100%
+   + overscroll-behavior:none. main.js toggles this class on
+   body when the home screen is up; sections remove it.
+   ════════════════════════════════════════════════════════════ */
+html.scroll-locked, body.scroll-locked {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
 }

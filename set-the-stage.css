@@ -327,8 +327,8 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
    ════════════════════════════════════════════════════════════ */
 @media (hover: none) {
   /* Cards in Spirits/Wine/Prime & Plate */
-  .card:hover { background: var(--surface); }
-  .card:hover::before { opacity: 0; }
+  .card:hover:not(.expanded) { background: var(--surface); }
+  .card:hover:not(.expanded)::before { opacity: 0; }
   .card:hover .card-name, .card.expanded .card-name { color: inherit; }
   /* Filter buttons */
   .filter-btn:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
@@ -345,3 +345,35 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
   .modal-btn-confirm:hover, .modal-btn-cancel:hover { background: transparent; border-color: var(--border-soft); }
   .btn-primary:hover { background: transparent; border-color: var(--gold-dim); }
 }
+
+/* ════════════════════════════════════════════════════════════
+   EXPLAIN PANEL TIER COLORS (May 2026)
+   The explain panel that opens under a tapped pairing was hard
+   coded to gold (border + bold item name). Now it inherits the
+   tier color of the section it lives in, set via a tier-{key}
+   class added in pbRenderDetail / pbToggleAvoidExplain.
+   ════════════════════════════════════════════════════════════ */
+#panel-stage .pb-rec-explain.tier-gold,
+#panel-stage .pb-avoid-explain.tier-gold { border-left-color: var(--tier-gold); }
+#panel-stage .pb-rec-explain.tier-excellent,
+#panel-stage .pb-avoid-explain.tier-excellent { border-left-color: var(--tier-excellent); }
+#panel-stage .pb-rec-explain.tier-strong,
+#panel-stage .pb-avoid-explain.tier-strong { border-left-color: var(--tier-strong); }
+#panel-stage .pb-rec-explain.tier-works,
+#panel-stage .pb-avoid-explain.tier-works { border-left-color: var(--tier-works); }
+#panel-stage .pb-rec-explain.tier-avoid,
+#panel-stage .pb-avoid-explain.tier-avoid { border-left-color: var(--warning); }
+
+/* The bold item name inside the explain note ("Why this pairs
+   with **Item**:") matches the tier border instead of the
+   universal gold. */
+#panel-stage .pb-rec-explain.tier-gold .rec-explain-source strong,
+#panel-stage .pb-avoid-explain.tier-gold .rec-explain-source strong { color: var(--tier-gold); }
+#panel-stage .pb-rec-explain.tier-excellent .rec-explain-source strong,
+#panel-stage .pb-avoid-explain.tier-excellent .rec-explain-source strong { color: var(--tier-excellent); }
+#panel-stage .pb-rec-explain.tier-strong .rec-explain-source strong,
+#panel-stage .pb-avoid-explain.tier-strong .rec-explain-source strong { color: var(--tier-strong); }
+#panel-stage .pb-rec-explain.tier-works .rec-explain-source strong,
+#panel-stage .pb-avoid-explain.tier-works .rec-explain-source strong { color: var(--tier-works); }
+#panel-stage .pb-rec-explain.tier-avoid .rec-explain-source strong,
+#panel-stage .pb-avoid-explain.tier-avoid .rec-explain-source strong { color: var(--warning); }

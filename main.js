@@ -678,9 +678,9 @@ function selectSection(guide) {
   // same Y as the prior one — and on mobile that locks the user in a
   // dead-zone where tabs at the top aren't reachable.
   window.scrollTo(0, 0);
-  // Restore body scrolling — sections have content beyond the viewport.
-  // (The home screen suppresses scroll; we re-enable here.)
-  document.body.style.overflow = '';
+  // Unlock body scrolling — sections have content beyond the viewport.
+  document.documentElement.classList.remove('scroll-locked');
+  document.body.classList.remove('scroll-locked');
   switchGuide(guide);
   searchInput.value = '';
   searchTerm = [];
@@ -763,10 +763,11 @@ function returnHome() {
   // at the viewport top instead of wherever the user left off in the
   // previous section.
   window.scrollTo(0, 0);
-  // Lock body scroll while on home — there's nothing below the viewport
-  // to reach, and an unintended scroll gesture can trap the user in
-  // empty space.
-  document.body.style.overflow = 'hidden';
+  // Lock body scroll while on home. position-fixed + overscroll-behavior
+  // on the .scroll-locked class kills iOS bounce-scrolling that the bare
+  // `overflow: hidden` doesn't catch.
+  document.documentElement.classList.add('scroll-locked');
+  document.body.classList.add('scroll-locked');
   searchInput.value = '';
   searchTerm = [];
   activeFilters = { cocktails: 'all', wine: 'all', food: 'all' };
@@ -958,7 +959,8 @@ document.addEventListener('click', (e) => {
   }
   // admin.js runs adminBoot() on its own; no re-call here.
   // Lock body scroll on initial load — home is the default screen and has
-  // nothing to scroll. selectSection() restores scrolling when the user
+  // nothing to scroll. selectSection() removes the lock when the user
   // enters a section.
-  document.body.style.overflow = 'hidden';
+  document.documentElement.classList.add('scroll-locked');
+  document.body.classList.add('scroll-locked');
 })();

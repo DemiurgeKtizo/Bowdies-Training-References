@@ -388,7 +388,9 @@ function pbRenderDetail() {
         btn.onclick = () => pbToggleAvoidExplain(n);
         row.appendChild(btn);
         const explain = document.createElement('div');
-        explain.className = 'pb-avoid-explain';
+        // Tag with tier-avoid so the explain panel's border + accent text
+        // take the warning color instead of the default gold.
+        explain.className = 'pb-avoid-explain tier-' + key;
         explain.id = 'pb-avoid-explain-' + encodeURIComponent(n);
         explain.hidden = true;
         row.appendChild(explain);
@@ -412,7 +414,10 @@ function pbRenderDetail() {
         btn.onclick = () => pbToggleRecExplain(recName);
         row.appendChild(btn);
         const explain = document.createElement('div');
-        explain.className = 'pb-rec-explain';
+        // Tag with tier-{key} so the explain panel's border-left and the
+        // bold item name inside the note take the tier's color instead of
+        // the default gold.
+        explain.className = 'pb-rec-explain tier-' + key;
         explain.id = 'pb-explain-' + encodeURIComponent(recName);
         explain.hidden = true;
         row.appendChild(explain);
