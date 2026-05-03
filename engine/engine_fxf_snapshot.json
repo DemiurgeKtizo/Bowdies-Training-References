@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T08:04:08.442Z",
+  "generatedAt": "2026-05-03T10:19:41.299Z",
   "description": "FxF snapshot anchors — gold pairs, hand-curated AVOIDs, and curated examples.",
   "anchors": [
     {
@@ -7,42 +7,42 @@
       "a": "The Tomahawk",
       "b": "Truffle Fries",
       "key": "The Tomahawk|Truffle Fries",
-      "hash": "847772cb7491686b"
+      "hash": "9e57e8c5d6d55803"
     },
     {
       "tier": "gold",
       "a": "Cowboy Ribeye",
       "b": "Lobster Mac",
       "key": "Cowboy Ribeye|Lobster Mac",
-      "hash": "9c8ffd1dbb83aba4"
+      "hash": "6f305bcfa9813058"
     },
     {
       "tier": "gold",
       "a": "Bone-In Filet",
       "b": "Au Gratin Potatoes",
       "key": "Bone-In Filet|Au Gratin Potatoes",
-      "hash": "bcc74a3fd8e78fb6"
+      "hash": "8c4e80c21fa1426e"
     },
     {
       "tier": "gold",
       "a": "Porterhouse",
       "b": "Creamed Spinach",
       "key": "Porterhouse|Creamed Spinach",
-      "hash": "64bb6ad26b596ca3"
+      "hash": "9b8a96db1a510b68"
     },
     {
       "tier": "gold",
       "a": "Filet Mignon",
       "b": "Mushrooms",
       "key": "Filet Mignon|Mushrooms",
-      "hash": "d68d0613a5ac02f8"
+      "hash": "604e6278bd525091"
     },
     {
       "tier": "gold",
       "a": "Kansas City",
       "b": "Brussels and Belly",
       "key": "Kansas City|Brussels and Belly",
-      "hash": "1bff39f601a98b0d"
+      "hash": "75e00388c3aaa4fa"
     },
     {
       "tier": "avoid",
@@ -105,14 +105,14 @@
       "a": "Filet Mignon",
       "b": "Truffle Fries",
       "key": "Filet Mignon|Truffle Fries",
-      "hash": "7c935a793c6fc931"
+      "hash": "a7752635160d78a5"
     },
     {
       "tier": "excellent",
       "a": "Bone-In Filet",
       "b": "Lobster Mac",
       "key": "Bone-In Filet|Lobster Mac",
-      "hash": "e57ee8283daa91e7"
+      "hash": "7bc575900431a524"
     },
     {
       "tier": "excellent",
@@ -147,14 +147,14 @@
       "a": "Roast Half Chicken",
       "b": "Honey Roasted Carrots",
       "key": "Roast Half Chicken|Honey Roasted Carrots",
-      "hash": "9743915f65ed88b1"
+      "hash": "584f6b4d5ab45a79"
     },
     {
       "tier": "strong",
       "a": "Faroe Island Salmon",
       "b": "Asparagus",
       "key": "Faroe Island Salmon|Asparagus",
-      "hash": "acee471b5dbb5417"
+      "hash": "35eafaacac049573"
     },
     {
       "tier": "works",
