@@ -254,20 +254,23 @@ function applyFilters() {
   const EXACT_MATCH_WORDS = new Set(['yellowfin']);
 
   const wordBoundary = (text, word) => {
-    // Match each word in the card text against the search input:
-    // - Card words of 7+ letters: search input must share first 5 letters
-    // - Card words of 5-6 letters: search input must share first 4 letters
-    // - Card words of 4 or fewer letters: exact match required
-    // Find any word in text that starts with the right prefix of the search word
-    const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    // Extract all words from text and check each
+    // Prefix-match between query word and text word, with a guard that
+    // short query words can't latch onto longer text words. Specifically:
+    //   - Query word must be at least 5 chars to use the (0..5) prefix
+    //     against 7+ char text words.
+    //   - Query word must be at least 4 chars to use the (0..4) prefix
+    //     against 5-6 char text words.
+    //   - Otherwise, exact match required.
+    // Pre-fix behavior: "gin" (3) hit "ginger" (6) because slice(0,4) of
+    // "gin" is still "gin" and "ginger".startsWith("gin") was true.
     const textWords = text.match(/\b[a-zÀ-ÿ']+\b/gi) || [];
     return textWords.some(tw => {
       if (EXACT_MATCH_WORDS.has(word)) return tw.toLowerCase() === word;
+      const twl = tw.toLowerCase();
       const tl = tw.length;
-      if (tl >= 7) return tw.toLowerCase().startsWith(word.slice(0, 5));
-      if (tl >= 5) return tw.toLowerCase().startsWith(word.slice(0, 4));
-      return tw.toLowerCase() === word;
+      if (tl >= 7 && word.length >= 5) return twl.startsWith(word.slice(0, 5));
+      if (tl >= 5 && word.length >= 4) return twl.startsWith(word.slice(0, 4));
+      return twl === word;
     });
   };
 
@@ -325,9 +328,21 @@ function applyFilters() {
     }
   });
 
-  // Zero results with tag tokens: retry as plain word search with synonyms
-  // Exception: allergen-free tokens (e.g. "garlic free") are never retried as text
-  if (visible === 0 && searchTerm.some(t => t.type === 'tag' && !t.allergenFree)) {
+  // Zero results with at least one tag-typed token: retry, but selectively.
+  // The previous version degraded ALL tag tokens to text wordBoundary
+  // matches, which produced false positives like "refreshing gin" returning
+  // cocktails whose descriptions happened to mention "ginger" in passing.
+  // New rules:
+  //   - Pure tag-AND queries (every token is a tag) don't fall back at all.
+  //     If no card has all those tags, "no items found" is the right answer.
+  //   - Mixed queries (tag + word, e.g. "gin aperol") DO fall back, but tag
+  //     tokens still require strict tag presence — only word tokens get
+  //     loose wordBoundary text matching.
+  //   - Allergen-free tokens already require strict tag presence and stay
+  //     that way.
+  const hasWordToken = searchTerm.some(t => t.type === 'word');
+  const hasTagToken = searchTerm.some(t => t.type === 'tag' && !t.allergenFree);
+  if (visible === 0 && hasTagToken && hasWordToken) {
     cards.forEach(card => {
       const cat = card.dataset.category || '';
       if (filter !== 'all' && !cat.split(' ').includes(filter)) return;
@@ -335,7 +350,8 @@ function applyFilters() {
       const text = (card.dataset.name || '').toLowerCase() + ' ' + (detailEl ? detailEl.textContent : card.textContent).toLowerCase();
       const cardTagsFallback = cardTags(card);
       const matches = searchTerm.every(t => {
-        if (t.allergenFree) return cardTagsFallback.includes(t.value); // allergen-free: tags only, always
+        if (t.allergenFree) return cardTagsFallback.includes(t.value);
+        if (t.type === 'tag') return cardTagsFallback.includes(t.value);
         const syn = SYNONYMS[t.value];
         return wordBoundary(text, t.value) || (syn && exactWordBoundary(text, syn));
       });
@@ -346,6 +362,9 @@ function applyFilters() {
         card.classList.add('hidden');
       }
     });
+  } else if (visible === 0 && !hasTagToken && hasWordToken) {
+    // All-word query that returned zero: previous behavior (already loose
+    // text match in primary), no further fallback needed.
   }
 
   if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';

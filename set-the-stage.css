@@ -399,3 +399,14 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
 #panel-stage .pb-rec-item.expanded {
   background: transparent;
 }
+
+/* ════════════════════════════════════════════════════════════
+   PICK A PAIR DROPDOWN BG (May 2026)
+   The Pick a Pair screen has two .search-results dropdowns
+   (cmp-results-a / cmp-results-b) inside the panel. They
+   inherit #panel-stage .search-results which still uses
+   --surface-3 (the brown). Override to --surface so they
+   match the global search dropdown above.
+   ════════════════════════════════════════════════════════════ */
+#panel-stage #screen-compare .search-results { background: var(--surface); }
+#panel-stage #screen-compare .search-result-item:hover { background: rgba(201,168,76,0.06); }

@@ -1243,7 +1243,7 @@ body::before {
   .card:hover:not(.expanded)::before { opacity: 0; }
   .card:hover .card-name, .card.expanded .card-name { color: inherit; }
   /* Home buttons */
-  .home-btn:hover:not(:active) { border-color: var(--border); color: inherit; background: transparent; }
+  .home-btn:hover:not(:active) { border-color: var(--border); color: var(--text-muted); background: transparent; }
   /* Filter buttons */
   .filter-btn:hover:not(.active) { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
   /* Stage workflow rows */
