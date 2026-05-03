@@ -1243,7 +1243,7 @@ body::before {
   .card:hover:not(.expanded)::before { opacity: 0; }
   .card:hover .card-name, .card.expanded .card-name { color: inherit; }
   /* Filter buttons */
-  .filter-btn:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
+  .filter-btn:hover:not(.active) { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
   /* Stage workflow rows */
   #panel-stage .pb-mode-btn:hover { background: transparent; padding-left: 4px; }
   /* Stage tier-section content */
@@ -1267,12 +1267,7 @@ body::before {
    body when the home screen is up; sections remove it.
    ════════════════════════════════════════════════════════════ */
 html.scroll-locked, body.scroll-locked {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
   overscroll-behavior: none;
+  height: 100%;
 }

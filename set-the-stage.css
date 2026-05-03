@@ -331,7 +331,7 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
   .card:hover:not(.expanded)::before { opacity: 0; }
   .card:hover .card-name, .card.expanded .card-name { color: inherit; }
   /* Filter buttons */
-  .filter-btn:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
+  .filter-btn:hover:not(.active) { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
   /* Stage workflow rows */
   #panel-stage .pb-mode-btn:hover { background: transparent; padding-left: 4px; }
   /* Stage tier-section content */
