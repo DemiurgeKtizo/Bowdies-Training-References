@@ -1,0 +1,682 @@
+// ── STATE ──────────────────────────────────────────────────────────────────────
+// Seating + session-library state was removed with the scope-down (Apr 2026).
+// All that's left is the first-timer flow + an empty specials array that
+// getAllItems() still iterates defensively.
+const state = {
+  specials: [],
+  ftDepth: 'short',
+  ftAnswers: [],
+  ftCurrentQ: 0,
+  ftForSeat: null,   // always null post-scope-down; retained for completion.js compatibility
+  ftForTable: null,  // same
+};
+
+// ── NAV ────────────────────────────────────────────────────────────────────────
+// Post-unification (May 2026): Set the Stage lives inside index.html as the
+// fourth top-level tab. "← Reference" is no longer meaningful from inside
+// the panel — the user is already on the reference. goBack() now bounces to
+// the home screen, mirroring the home/return affordance shared with the
+// Spirits, Wine, and Prime & Plate panels.
+function goBack() {
+  if (typeof returnHome === 'function') returnHome();
+}
+function showScreen(id) {
+  document.querySelectorAll('#panel-stage .screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+function updateTopBar(screen) {
+  // No-op post-unification. The top bar is owned by index.html's main.js.
+  // In-flow back navigation (Compare → Pairings, First-Timer → Pairings)
+  // is handled by the in-screen "← Back" buttons (backFromCompare,
+  // backFromFT) which both call pbOpen() to return to the pairing browser.
+}
+
+
+// ── SEARCH ────────────────────────────────────────────────────────────────────
+function getAllItems() {
+  const items = [];
+  PAIRING_MAP.forEach(e => {
+    if (e.spiritCluster) {
+      items.push({ name:e.name, category:e.category, variable:false });
+      (e.members||[]).forEach(m => items.push({ name:m, category:e.category, variable:false }));
+    } else {
+      items.push({ name:e.name, category:e.category, variable:e.variable||false });
+    }
+  });
+  state.specials.forEach(s => items.push({ name:s.name, category:s.category, variable:false }));
+  return items;
+}
+
+// Display label for a category slug. The canonical source of truth is
+// CATEGORY_LABELS in pairing-map-v2.js — we look there first so adding a new
+// category only requires touching the pairing data. If a slug isn't mapped
+// (e.g. a special or a brand-new category), fall back to a title-case
+// prettifier so it renders legibly instead of as a raw slug.
+// ── PAIRING BROWSER (decoupled reference screen) ─────────────────────────────
+// Post-scope-down: this is the only real screen on the page besides the
+// first-timer flow and the admin sheet. Look up pairings for any item;
+// tap any rec to pivot the browser to that item's pairings.
+let pbState = { current: null, history: [], recents: [], searchDebounce: null };
+const PB_RECENTS_KEY = 'bc_sts_pb_recents_v1';
+const PB_RECENTS_MAX = 6;
+
+function pbLoadRecents() {
+  try { pbState.recents = JSON.parse(localStorage.getItem(PB_RECENTS_KEY) || '[]'); }
+  catch(e) { pbState.recents = []; }
+  if (!Array.isArray(pbState.recents)) pbState.recents = [];
+}
+
+function pbSaveRecents() {
+  try { localStorage.setItem(PB_RECENTS_KEY, JSON.stringify(pbState.recents)); } catch(e){}
+}
+
+function pbRememberRecent(name) {
+  // Remember anything resolvable — top-level entries OR cluster members.
+  // Staff often re-look-up a specific bottle (e.g. Macallan 18) even though
+  // the pairings come from the Speyside Scotch cluster; the recents chip
+  // should carry the bottle name they searched, not the cluster parent.
+  if (!pbResolveEntry(name)) return;
+  pbState.recents = pbState.recents.filter(n => n !== name);
+  pbState.recents.unshift(name);
+  if (pbState.recents.length > PB_RECENTS_MAX) pbState.recents = pbState.recents.slice(0, PB_RECENTS_MAX);
+  pbSaveRecents();
+}
+
+function pbOpen() {
+  // The pairing browser is always home now — no concept of being routed in
+  // from another screen. Admin + first-timer are the only places that route
+  // back here, and both call pbOpen() with no arguments.
+  pbLoadRecents();
+  pbState.current = null;
+  pbState.history = [];
+  pbShowSearch();
+  showScreen('screen-pairings');
+  updateTopBar('screen-pairings');
+}
+
+// Launch first-timer as a standalone training flow — the only remaining
+// "mode" on this page. ftForSeat/ftForTable stay null so completion.js's
+// renderFTRecs treats this as a standalone run.
+function startFirstTimerStandalone() {
+  state.ftForSeat = null;
+  state.ftForTable = null;
+  state.ftAnswers = [];
+  state.ftCurrentQ = 0;
+  state.ftDepth = state.ftDepth || 'short';
+  if (typeof renderFTQuestion === 'function') renderFTQuestion();
+  document.getElementById('ft-recs-area').style.display = 'none';
+  showScreen('screen-firsttimer');
+  updateTopBar('screen-firsttimer');
+}
+
+function pbHome() {
+  pbState.current = null;
+  pbState.history = [];
+  pbShowSearch();
+}
+
+function pbShowSearch() {
+  document.getElementById('pb-search-view').style.display = 'block';
+  document.getElementById('pb-detail-view').style.display = 'none';
+  const input = document.getElementById('pb-search-input');
+  if (input) input.value = '';
+  const results = document.getElementById('pb-search-results');
+  if (results) results.classList.remove('visible');
+  pbRenderRecents();
+  window.scrollTo(0, 0);
+}
+
+function pbRenderRecents() {
+  const wrap = document.getElementById('pb-recents-wrap');
+  const list = document.getElementById('pb-recents-list');
+  if (!wrap || !list) return;
+  // Filter out any stale names that no longer resolve to a renderable entry.
+  pbState.recents = pbState.recents.filter(n => pbResolveEntry(n));
+  if (!pbState.recents.length) { wrap.style.display = 'none'; list.innerHTML = ''; return; }
+  list.innerHTML = '';
+  pbState.recents.forEach(name => {
+    const btn = document.createElement('button');
+    btn.className = 'pb-recent-chip';
+    btn.textContent = name;
+    btn.onclick = () => pbNavigate(name);
+    list.appendChild(btn);
+  });
+  wrap.style.display = 'block';
+}
+
+function handlePbSearch(val) {
+  clearTimeout(pbState.searchDebounce);
+  pbState.searchDebounce = setTimeout(() => {
+    const results = document.getElementById('pb-search-results');
+    if (!val || val.trim().length < 1) { results.classList.remove('visible'); return; }
+    const q = val.toLowerCase();
+    // Surface anything we can resolve to a renderable pairing card — top-level
+    // entries AND spirit-cluster members (they render the cluster's pairings
+    // with a "category-level" indicator). Dedupe by name so a cluster parent
+    // that also appears verbatim as a member doesn't show twice.
+    const seen = new Set();
+    const matches = getAllItems()
+      .filter(i => {
+        if (seen.has(i.name)) return false;
+        if (!i.name.toLowerCase().includes(q)) return false;
+        if (!pbResolveEntry(i.name)) return false;
+        seen.add(i.name);
+        return true;
+      })
+      .slice(0, 20);
+    if (!matches.length) { results.innerHTML = ''; results.classList.remove('visible'); return; }
+    results.innerHTML = '';
+    matches.forEach(item => {
+      // OOS items stay surfaced and tappable — staff still need the context,
+      // they just need to see it's 86'd before they pitch it.
+      const oos = isItemOos(item.name);
+      const div = document.createElement('div');
+      div.className = 'search-result-item' + (oos ? ' oos' : '');
+      div.innerHTML = '<span class="press-fill"></span><span class="result-name">'
+        + item.name + '</span>'
+        + (oos ? '<span class="result-86">86</span>' : '')
+        + '<span class="result-cat">'
+        + getCategoryForDisplay(item.category) + '</span>';
+      div.onclick = () => pbNavigate(item.name);
+      results.appendChild(div);
+    });
+    results.classList.add('visible');
+  }, 80);
+}
+
+// Resolve a user-facing name to a renderable PAIRING_MAP entry. If the name
+// matches a top-level entry, return it directly. If it matches a spirit-cluster
+// member (e.g. "Macallan 18" → Speyside Scotch cluster), return the cluster
+// entry so we render its category-level pairings, and expose viaCluster so the
+// detail view can flag that the pairings aren't bottle-specific. This is what
+// surfaces the ~295 cluster members that otherwise have no pairing card.
+function pbResolveEntry(name) {
+  const top = PAIRING_MAP.find(e => e.name === name);
+  if (top) return { entry: top, viaCluster: null };
+  const cluster = PAIRING_MAP.find(e => e.spiritCluster && Array.isArray(e.members) && e.members.includes(name));
+  if (cluster) return { entry: cluster, viaCluster: cluster.name };
+  return null;
+}
+
+function pbNavigate(name) {
+  const resolved = pbResolveEntry(name);
+  if (!resolved) return; // Truly unknown name.
+  if (pbState.current && pbState.current !== name) {
+    pbState.history.push(pbState.current);
+  }
+  pbState.current = name;
+  pbRememberRecent(name);
+  pbRenderDetail();
+}
+
+function pbBack() {
+  if (pbState.history.length) {
+    pbState.current = pbState.history.pop();
+    pbRenderDetail();
+  } else {
+    pbHome();
+  }
+}
+
+function pbRenderDetail() {
+  const name = pbState.current;
+  const resolved = pbResolveEntry(name);
+  if (!resolved) { pbHome(); return; }
+  const entry = resolved.entry;
+  document.getElementById('pb-search-view').style.display = 'none';
+  document.getElementById('pb-detail-view').style.display = 'block';
+  // Title is always the user-facing name they searched — cluster members keep
+  // their bottle name (e.g. "Macallan 18") rather than flipping to the parent.
+  document.getElementById('pb-item-title').textContent = name;
+  document.getElementById('pb-item-cat-badge').textContent = getCategoryForDisplay(entry.category);
+  document.getElementById('pb-back-label').textContent = pbState.history.length ? 'Back' : 'Search';
+
+  // Cluster-note: shown when the item we're rendering is a cluster member,
+  // not its own top-level entry. Tells staff the pairings are category-level
+  // — true for the style, but not necessarily tuned to this bottle's quirks.
+  const clusterSlot = document.getElementById('pb-cluster-note-slot');
+  if (clusterSlot) {
+    clusterSlot.innerHTML = resolved.viaCluster
+      ? '<div class="pb-cluster-note"><strong>Category-level pairing</strong>These pairings reflect '
+        + escapeHtml(resolved.viaCluster)
+        + ' as a style. Use them as a starting point — a specific bottle may lean richer, smokier, or drier than the category average.</div>'
+      : '';
+  }
+
+  // OOS banner — rendered only when the item is currently 86'd. The full
+  // pairing card stays visible so staff can still read the context, but the
+  // banner makes it unmistakable that this isn't a sellable item right now.
+  const bannerSlot = document.getElementById('pb-oos-banner-slot');
+  if (bannerSlot) {
+    bannerSlot.innerHTML = entry.oos
+      ? '<div class="pb-oos-banner"><strong>86’d</strong>Currently out of stock — do not offer. Check with management before pitching.</div>'
+      : '';
+  }
+
+  const profileEl = document.getElementById('pb-item-profile');
+  const profile = entry.profile || [];
+  profileEl.innerHTML = profile.slice(0, 10)
+    .map(p => '<span class="pb-profile-tag">'+escapeHtml(p)+'</span>').join('');
+
+  const tiers = document.getElementById('pb-tiers');
+  tiers.innerHTML = '';
+  let anyTier = false;
+  ['gold','excellent','strong','works'].forEach(tier => {
+    const names = entry[tier] || [];
+    if (!names.length) return;
+    anyTier = true;
+    const section = document.createElement('div');
+    section.className = 'pb-tier-section';
+    const displayLabel = tier === 'gold' ? 'GOLD STANDARD' : tier.toUpperCase();
+    section.innerHTML =
+      '<div class="pb-tier-label">'
+      + '<span class="tier-pip ' + tier + '"></span>'
+      + '<span class="pb-tier-name">' + displayLabel + '</span>'
+      + '<span class="pb-tier-count">' + names.length + '</span>'
+      + '</div>';
+    const list = document.createElement('div');
+    list.className = 'pb-rec-list';
+    names.forEach(recName => {
+      const recEntry = PAIRING_MAP.find(e => e.name === recName);
+      const cat = recEntry && recEntry.category;
+      const oos = recEntry && recEntry.oos;
+      const row = document.createElement('div');
+      row.className = 'pb-rec-row';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'pb-rec-item' + (oos ? ' oos' : '');
+      btn.innerHTML = '<div class="pb-rec-info">'
+        + '<div class="pb-rec-name">' + escapeHtml(recName) + '</div>'
+        + (cat ? '<div class="pb-rec-cat">' + escapeHtml(getCategoryForDisplay(cat)) + '</div>' : '')
+        + (oos ? '<div class="pb-rec-oos">Currently Unavailable</div>' : '')
+        + '</div><span class="pb-rec-arrow">›</span>';
+      // Primary action: expand the pairing reasoning inline (same pattern as seating panel).
+      // Navigation lives inside the expanded panel as an explicit secondary action.
+      btn.onclick = () => pbToggleRecExplain(recName);
+      row.appendChild(btn);
+      const explain = document.createElement('div');
+      explain.className = 'pb-rec-explain';
+      explain.id = 'pb-explain-' + encodeURIComponent(recName);
+      explain.hidden = true;
+      row.appendChild(explain);
+      list.appendChild(row);
+    });
+    section.appendChild(list);
+    tiers.appendChild(section);
+  });
+  if (!anyTier) {
+    tiers.innerHTML = '<div class="pb-empty">No tiered pairings for this item.</div>';
+  }
+
+  const avoidEl = document.getElementById('pb-avoid');
+  const avoid = entry.avoid || [];
+  if (avoid.length) {
+    let avoidHtml = '<div class="pb-tier-section pb-avoid-section">'
+      + '<div class="pb-tier-label pb-avoid-label">'
+      + '<span class="pb-avoid-glyph">⚠</span>'
+      + '<span class="pb-tier-name">AVOID WITH</span>'
+      + '<span class="pb-tier-count">' + avoid.length + '</span>'
+      + '</div><div class="pb-avoid-list"></div></div>';
+    avoidEl.innerHTML = avoidHtml;
+    const listNode = avoidEl.querySelector('.pb-avoid-list');
+    avoid.forEach(n => {
+      const row = document.createElement('div');
+      row.className = 'pb-avoid-row';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'pb-avoid-item';
+      btn.innerHTML = '<span>' + escapeHtml(n) + '</span><span class="pb-avoid-arrow">›</span>';
+      // Primary action on avoid rows: expand the "never pair with" reasoning inline.
+      // If no note exists we still show an informational placeholder.
+      btn.onclick = () => pbToggleAvoidExplain(n);
+      row.appendChild(btn);
+      const explain = document.createElement('div');
+      explain.className = 'pb-avoid-explain';
+      explain.id = 'pb-avoid-explain-' + encodeURIComponent(n);
+      explain.hidden = true;
+      row.appendChild(explain);
+      listNode.appendChild(row);
+    });
+  } else {
+    avoidEl.innerHTML = '';
+  }
+
+  window.scrollTo(0, 0);
+}
+
+// Close every open explain panel inside the pairing browser (tier + avoid).
+// Used when toggling a new panel (one-open-at-a-time) and when navigating away.
+function pbCloseAllExplainPanels(except) {
+  document.querySelectorAll('#screen-pairings .pb-rec-explain.open, #screen-pairings .pb-avoid-explain.open').forEach(p => {
+    if (p !== except) { p.classList.remove('open'); p.hidden = true; }
+  });
+  document.querySelectorAll('#screen-pairings .pb-rec-item.expanded, #screen-pairings .pb-avoid-item.expanded').forEach(b => {
+    if (!except || !b.parentElement || b.parentElement.querySelector('.pb-rec-explain, .pb-avoid-explain') !== except) {
+      b.classList.remove('expanded');
+    }
+  });
+}
+
+// Expand the pairing reasoning for a recommended item inline. The "source" is
+// the item currently being browsed (pbState.current) — i.e. the reason shown
+// answers "why does THIS item pair with that rec", not the other way around.
+function pbToggleRecExplain(recName) {
+  const panel = document.getElementById('pb-explain-' + encodeURIComponent(recName));
+  if (!panel) return;
+  const btn = panel.parentElement && panel.parentElement.querySelector('.pb-rec-item');
+  const wasOpen = panel.classList.contains('open');
+  pbCloseAllExplainPanels(panel);
+  if (wasOpen) {
+    panel.classList.remove('open');
+    panel.hidden = true;
+    if (btn) btn.classList.remove('expanded');
+    return;
+  }
+  const sourceName = pbState.current;
+  // pairing-notes.js is keyed by top-level entry names. For a cluster member
+  // (e.g. "Macallan 18"), look up the note under the cluster's name so the
+  // category-level reasoning still shows. The header keeps the bottle name.
+  const sourceResolved = pbResolveEntry(sourceName);
+  const noteKey = sourceResolved && sourceResolved.viaCluster ? sourceResolved.viaCluster : sourceName;
+  const note = typeof getPairingNote === 'function' ? getPairingNote(noteKey, recName) : null;
+  const targetEntry = PAIRING_MAP.find(e => e.name === recName);
+  let body;
+  if (note) {
+    body = '<div class="rec-explain-source">Why this pairs with <strong>' + escapeHtml(sourceName) + '</strong>:</div>'
+         + '<div class="rec-explain-body">' + escapeHtml(note) + '</div>';
+  } else {
+    body = '<div class="rec-explain-source">Paired with <strong>' + escapeHtml(sourceName) + '</strong></div>'
+         + '<div class="rec-explain-body rec-explain-pending">Detailed pairing notes coming soon.</div>';
+  }
+  panel.innerHTML = body;
+  if (targetEntry) {
+    const navBtn = document.createElement('button');
+    navBtn.type = 'button';
+    navBtn.className = 'pb-rec-explain-nav';
+    navBtn.textContent = 'View ' + recName + '’s pairings →';
+    navBtn.onclick = (e) => { e.stopPropagation(); pbCloseAllExplainPanels(null); pbNavigate(recName); };
+    panel.appendChild(navBtn);
+  }
+  panel.hidden = false;
+  if (btn) btn.classList.add('expanded');
+  requestAnimationFrame(() => panel.classList.add('open'));
+}
+
+// Avoid-list analog: expand the "never pair with" reasoning inline.
+function pbToggleAvoidExplain(avoidName) {
+  const panel = document.getElementById('pb-avoid-explain-' + encodeURIComponent(avoidName));
+  if (!panel) return;
+  const btn = panel.parentElement && panel.parentElement.querySelector('.pb-avoid-item');
+  const wasOpen = panel.classList.contains('open');
+  pbCloseAllExplainPanels(panel);
+  if (wasOpen) {
+    panel.classList.remove('open');
+    panel.hidden = true;
+    if (btn) btn.classList.remove('expanded');
+    return;
+  }
+  const sourceName = pbState.current;
+  const sourceResolved = pbResolveEntry(sourceName);
+  const noteKey = sourceResolved && sourceResolved.viaCluster ? sourceResolved.viaCluster : sourceName;
+  const note = typeof getPairingNote === 'function' ? getPairingNote(noteKey, avoidName) : null;
+  const targetEntry = PAIRING_MAP.find(e => e.name === avoidName);
+  let body;
+  if (note) {
+    body = '<div class="rec-explain-source">Why <strong>' + escapeHtml(sourceName) + '</strong> + <strong>' + escapeHtml(avoidName) + '</strong> doesn’t work:</div>'
+         + '<div class="rec-explain-body">' + escapeHtml(note) + '</div>';
+  } else {
+    body = '<div class="rec-explain-source">Avoid pairing <strong>' + escapeHtml(sourceName) + '</strong> with <strong>' + escapeHtml(avoidName) + '</strong></div>'
+         + '<div class="rec-explain-body rec-explain-pending">Detailed conflict notes coming soon.</div>';
+  }
+  panel.innerHTML = body;
+  if (targetEntry) {
+    const navBtn = document.createElement('button');
+    navBtn.type = 'button';
+    navBtn.className = 'pb-rec-explain-nav';
+    navBtn.textContent = 'View ' + avoidName + '’s pairings →';
+    navBtn.onclick = (e) => { e.stopPropagation(); pbCloseAllExplainPanels(null); pbNavigate(avoidName); };
+    panel.appendChild(navBtn);
+  }
+  panel.hidden = false;
+  if (btn) btn.classList.add('expanded');
+  requestAnimationFrame(() => panel.classList.add('open'));
+}
+// ── FIRST TIMER ───────────────────────────────────────────────────────────────
+// Post-scope-down: first-timer is always standalone. The "Back" affordance
+// lives in the top bar (← Pairings) and in the ft-nav row (backFromFT below).
+function backFromFT() {
+  if (typeof pbOpen === 'function') { pbOpen(); return; }
+  showScreen('screen-pairings');
+  updateTopBar('screen-pairings');
+}
+
+// ── COMPARE TWO ITEMS ────────────────────────────────────────────────────────
+// Standalone screen: user picks two items, we render a verdict tier + the two
+// notes (forward + reverse). Lookup is direct against PAIRING_MAP.
+const cmpState = { a: null, b: null, debA: null, debB: null };
+const CMP_TIERS = ['gold', 'excellent', 'strong', 'works', 'avoid'];
+
+function startCompareStandalone() {
+  cmpState.a = null;
+  cmpState.b = null;
+  ['a','b'].forEach(side => {
+    const inp = document.getElementById('cmp-input-' + side);
+    const res = document.getElementById('cmp-results-' + side);
+    if (inp) inp.value = '';
+    if (res) { res.innerHTML = ''; res.classList.remove('visible'); }
+  });
+  const verdict = document.getElementById('cmp-verdict');
+  if (verdict) verdict.innerHTML = '';
+  showScreen('screen-compare');
+  updateTopBar('screen-compare');
+}
+
+function handleCmpSearch(side, val) {
+  const debKey = side === 'a' ? 'debA' : 'debB';
+  clearTimeout(cmpState[debKey]);
+  cmpState[debKey] = setTimeout(() => {
+    const results = document.getElementById('cmp-results-' + side);
+    if (!val || val.trim().length < 1) { results.classList.remove('visible'); return; }
+    const q = val.toLowerCase();
+    const seen = new Set();
+    const matches = getAllItems()
+      .filter(i => {
+        if (seen.has(i.name)) return false;
+        if (!i.name.toLowerCase().includes(q)) return false;
+        if (!pbResolveEntry(i.name)) return false;
+        seen.add(i.name);
+        return true;
+      })
+      .slice(0, 20);
+    if (!matches.length) { results.innerHTML = ''; results.classList.remove('visible'); return; }
+    results.innerHTML = '';
+    matches.forEach(item => {
+      const oos = isItemOos(item.name);
+      const div = document.createElement('div');
+      div.className = 'search-result-item' + (oos ? ' oos' : '');
+      div.innerHTML = '<span class="press-fill"></span><span class="result-name">'
+        + item.name + '</span>'
+        + (oos ? '<span class="result-86">86</span>' : '')
+        + '<span class="result-cat">'
+        + getCategoryForDisplay(item.category) + '</span>';
+      div.onclick = () => pbCompareSelect(side, item.name);
+      results.appendChild(div);
+    });
+    results.classList.add('visible');
+  }, 80);
+}
+
+function pbCompareSelect(side, name) {
+  cmpState[side] = name;
+  const input = document.getElementById('cmp-input-' + side);
+  const results = document.getElementById('cmp-results-' + side);
+  if (input) input.value = name;
+  if (results) results.classList.remove('visible');
+  pbCompareRender();
+}
+
+function pbCompareReset() {
+  startCompareStandalone();
+}
+
+function pbCompareRender() {
+  const verdict = document.getElementById('cmp-verdict');
+  if (!verdict) return;
+  verdict.innerHTML = '';
+  if (!cmpState.a || !cmpState.b) return;
+
+  if (cmpState.a === cmpState.b) {
+    verdict.innerHTML = '<div class="cmp-error">Pick two different items.</div>';
+    return;
+  }
+
+  const a = pbResolveEntry(cmpState.a);
+  const b = pbResolveEntry(cmpState.b);
+  if (!a || !b) {
+    verdict.innerHTML = '<div class="cmp-error">One or both items not found.</div>';
+    return;
+  }
+
+  // Tier lookup: A's perspective first, then B's defensively.
+  let tier = null;
+  for (const t of CMP_TIERS) {
+    if ((a.entry[t] || []).includes(cmpState.b)) { tier = t; break; }
+  }
+  if (!tier) {
+    for (const t of CMP_TIERS) {
+      if ((b.entry[t] || []).includes(cmpState.a)) { tier = t; break; }
+    }
+  }
+
+  const fwdNote = (typeof PAIRING_NOTES !== 'undefined') && PAIRING_NOTES[cmpState.a + '|' + cmpState.b];
+  const revNote = (typeof PAIRING_NOTES !== 'undefined') && PAIRING_NOTES[cmpState.b + '|' + cmpState.a];
+
+  let html = '';
+  if (tier) {
+    const tierLabel = tier === 'gold' ? 'GOLD STANDARD' : tier.toUpperCase();
+    html += '<div class="cmp-verdict-card cmp-tier-' + tier + '">';
+    html += '<div class="cmp-tier-row">';
+    if (tier !== 'avoid') html += '<span class="tier-pip ' + tier + '"></span>';
+    html += '<span class="cmp-tier-label">' + tierLabel + '</span>';
+    html += '</div>';
+    html += '</div>';
+  } else {
+    html += '<div class="cmp-verdict-card cmp-no-guidance">';
+    html += '<div class="cmp-tier-label">NO SPECIFIC GUIDANCE</div>';
+    html += '<div class="cmp-no-guidance-body">No specific tier relationship between these two. Both are good on their own — order what sounds best.</div>';
+    html += '</div>';
+  }
+
+  // Post-canonicalization: forward and reverse notes are the same content.
+  // Show ONE note per pair instead of two redundant blocks. If they happen to
+  // differ (e.g., a stale state), prefer fwdNote.
+  const note = fwdNote || revNote;
+  if (note) {
+    html += '<div class="cmp-notes-block">';
+    html += '<div class="cmp-note">';
+    html += '<div class="cmp-note-label">' + escapeHtml(cmpState.a) + '  ↔  ' + escapeHtml(cmpState.b) + '</div>';
+    html += '<div class="cmp-note-body">' + escapeHtml(note) + '</div>';
+    html += '</div>';
+    html += '</div>';
+  }
+
+  verdict.innerHTML = html;
+}
+
+function backFromCompare() {
+  if (typeof pbOpen === 'function') { pbOpen(); return; }
+  showScreen('screen-pairings');
+  updateTopBar('screen-pairings');
+}
+
+const FT_QUESTIONS_SHORT = [
+  { q:"Is your guest drinking tonight?", options:[
+    {label:"Yes — open to everything",value:'drinkingYes'},
+    {label:"Wine only",value:'drinkingWineOnly'},
+    {label:"Cocktails only",value:'drinkingCocktailsOnly'},
+    {label:"No — non-alcoholic evening",value:'drinkingNo'}
+  ]},
+  { q:"How do they typically take their protein?", options:[
+    {label:"Rare to medium-rare — they want it red",value:'proteinRareMR'},
+    {label:"Medium — right down the middle",value:'proteinMedium'},
+    {label:"Medium-well to well — no pink",value:'proteinMWWell'},
+    {label:"No red meat tonight",value:'proteinNoRed'}
+  ]},
+  { q:"How do they tend to eat and drink?", options:[
+    {label:"Bold and rich — the more the better",value:'boldAndRich'},
+    {label:"Somewhere in the middle",value:'middle'},
+    {label:"Light and fresh — clean flavors",value:'lightAndFresh'}
+  ]},
+  { q:"Any dietary restrictions or allergies?", options:[
+    {label:"None",value:'none'},{label:"Dairy-free",value:'none'},
+    {label:"Gluten-free",value:'none'},{label:"Shellfish allergy",value:'none'},
+    {label:"Vegetarian / pescatarian",value:'proteinNoRed'}
+  ]}
+];
+const FT_QUESTIONS_DEEP = [
+  ...FT_QUESTIONS_SHORT,
+  { q:"Do they gravitate toward sweet, savory, or both?", options:[
+    {label:"Mostly sweet",value:'sweetFlavor'},{label:"Mostly savory",value:'savoryFlavor'},
+    {label:"Both — they appreciate the full spectrum",value:'bothFlavors'}
+  ]},
+  { q:"How familiar are they with wine?", options:[
+    {label:"Knowledgeable — they know what they like",value:'wineExpert'},
+    {label:"Curious — they'd appreciate a recommendation",value:'wineGuided'},
+    {label:"Not their focus tonight",value:'none'}
+  ]},
+  { q:"Are they celebrating something?", options:[
+    {label:"Yes — special occasion",value:'celebrating'},{label:"Just a great dinner",value:'none'}
+  ]},
+  { q:"What's their comfort level on spend?", options:[
+    {label:"Approachable — keep it reasonable",value:'budgetApproachable'},
+    {label:"Mid-range — they're here to enjoy themselves",value:'budgetMid'},
+    {label:"The sky's the limit",value:'budgetSky'}
+  ]}
+];
+let ftQuestions = FT_QUESTIONS_SHORT;
+
+function setFTDepth(depth) {
+  state.ftDepth = depth;
+  state.ftAnswers = []; state.ftCurrentQ = 0;
+  ftQuestions = depth === 'deep' ? FT_QUESTIONS_DEEP : FT_QUESTIONS_SHORT;
+  document.getElementById('ft-short-btn').classList.toggle('active', depth==='short');
+  document.getElementById('ft-deep-btn').classList.toggle('active', depth==='deep');
+  document.getElementById('ft-recs-area').style.display = 'none';
+  initFirstTimer();
+}
+function initFirstTimer() {
+  state.ftAnswers = []; state.ftCurrentQ = 0;
+  ftQuestions = state.ftDepth === 'deep' ? FT_QUESTIONS_DEEP : FT_QUESTIONS_SHORT;
+  renderFTQuestion();
+}
+function renderFTQuestion() {
+  const q = ftQuestions[state.ftCurrentQ];
+  const total = ftQuestions.length;
+  document.getElementById('ft-progress').innerHTML = Array.from({length:total},(_,i) =>
+    '<div class="ft-progress-pip '+(i<state.ftCurrentQ?'done':i===state.ftCurrentQ?'active':'')+'"></div>'
+  ).join('');
+  document.getElementById('ft-question-area').innerHTML =
+    '<div class="ft-question"><div class="ft-question-label">'+q.q+'</div><div class="ft-options">'
+    +q.options.map(opt =>
+      '<button class="ft-option'+(state.ftAnswers[state.ftCurrentQ]===opt.value?' selected':'')+'" data-ftval="'+opt.value+'">'+opt.label+'</button>'
+    ).join('')+'</div></div>';
+  document.getElementById('ft-prev-btn').style.display = state.ftCurrentQ>0?'block':'none';
+  document.getElementById('ft-next-btn').textContent = state.ftCurrentQ===total-1?'See Recommendations':'Next →';
+  document.getElementById('ft-next-btn').onclick = ftNext;
+}
+function selectFTAnswer(value, btn) {
+  state.ftAnswers[state.ftCurrentQ] = value;
+  btn.closest('.ft-options').querySelectorAll('.ft-option').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+}
+
+// ── EVENT DELEGATION ──────────────────────────────────────────────────────────
+// Only the first-timer answer buttons are delegated from here now — the admin
+// OOS toggle handler moved to admin.js along with the admin screen itself.
+// The PB's rec/avoid expansions wire up their own direct onclicks during
+// render, so we don't touch them here.
+document.addEventListener('click', e => {
+  const ftBtn = e.target.closest('[data-ftval]');
+  if (ftBtn) { selectFTAnswer(ftBtn.dataset.ftval, ftBtn); return; }
+});

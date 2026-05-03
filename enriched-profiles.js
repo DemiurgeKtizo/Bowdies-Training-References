@@ -1447,10 +1447,12 @@ const ENRICHED_PROFILES = {
       "register": "workhorse"
     },
     "flavors": [
+      "butter",
       "nut",
       "smoke",
       "spice",
-      "umami"
+      "umami",
+      "vinegar"
     ],
     "provenance": {
       "kind": "$20",
@@ -1459,7 +1461,7 @@ const ENRICHED_PROFILES = {
       "abv": null,
       "distillery": null
     },
-    "signature": "Brussels sprouts with lardons and parmesan",
+    "signature": "Brussels sprouts with lardons, simple syrup, red wine vinegar, parmesan, and escargot butter",
     "rawTags": [
       "smoky",
       "sweet",
@@ -1468,6 +1470,9 @@ const ENRICHED_PROFILES = {
       "rich",
       "umami",
       "bold",
+      "tangy",
+      "buttery",
+      "garlic",
       "Shareable",
       "Pork",
       "Rich",
@@ -1574,10 +1579,13 @@ const ENRICHED_PROFILES = {
       "register": "workhorse"
     },
     "flavors": [
+      "butter",
       "earth",
       "mushroom",
       "nut",
-      "umami"
+      "pepper",
+      "umami",
+      "vinegar"
     ],
     "provenance": {
       "kind": "$17",
@@ -1586,17 +1594,24 @@ const ENRICHED_PROFILES = {
       "abv": null,
       "distillery": null
     },
-    "signature": "Sautéed mushrooms",
+    "signature": "Sautéed mushrooms with escargot butter, red wine vinegar, and black pepper",
     "rawTags": [
       "umami",
       "earthy",
       "savory",
       "rich",
       "meaty",
+      "buttery",
+      "garlic",
+      "tangy",
+      "peppery",
       "Shareable",
       "Vegetarian",
       "Rich",
       "Gluten Free",
+      "Egg Free",
+      "Shellfish Free",
+      "Fish Free",
       "Peanut Free",
       "Tree Nut Free"
     ],

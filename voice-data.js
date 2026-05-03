@@ -12234,18 +12234,19 @@ const VOICE_DATA = {
       "Peanut Free",
       "Tree Nut Free"
     ],
-    "sellIt": "Brussels sprouts with lardons and parmesan — house pork belly seasoned with cumin, smoked paprika, cayenne, and brown sugar. The lardons are the same preparation as in the House Wedge: rendered pork belly that adds smoky-sweet depth to the vegetables.",
-    "staffNotes": "Contains pork (lardons), dairy (parmesan), garlic (garlic powder in lardon rub), onion powder (lardon rub). Gluten free as prepared — pork belly and spice rub contain no gluten. Serves 3–4 as a side. A strong pairing with any of the steaks — the bitterness of the brussels and the richness of the pork belly both hold up to the beef.",
+    "sellIt": "Brussels sprouts with lardons, simple syrup, red wine vinegar, parmesan, and escargot butter — house pork belly (the same lardon preparation as in the House Wedge: rendered pork belly seasoned with cumin, smoked paprika, cayenne, and brown sugar) adds smoky-sweet depth, while simple syrup and red wine vinegar build a sweet-tart glaze, finished with parmesan and the escargot butter from the escargot starter (unsalted butter, chives, garlic, shallot). A bigger, richer build than guests expect from a brussels side.",
+    "staffNotes": "Contains pork (lardons), dairy (parmesan, escargot butter), garlic (escargot butter, garlic powder in lardon rub), shallot (escargot butter), onion powder (lardon rub). Gluten free as prepared — lardons, simple syrup, red wine vinegar, parmesan, and escargot butter contain no gluten. Serves 3–4 as a side. A strong pairing with any of the steaks — the bitterness of the brussels, the sweet-tart glaze, and the richness of the pork belly all hold up to the beef.",
     "pairsWith": "",
-    "ingredients": "",
+    "ingredients": "Brussels sprouts; Lardons (house pork belly with cumin, smoked paprika, cayenne, brown sugar, garlic powder, onion powder); Simple syrup; Red wine vinegar; Parmesan; Escargot butter (unsalted butter, chives, garlic, shallot)",
     "method": "",
     "origin": "",
     "varietal": "",
     "vintage": "",
     "region": "",
     "raw": {
-      "Description": "Brussels sprouts with lardons and parmesan — house pork belly seasoned with cumin, smoked paprika, cayenne, and brown sugar. The lardons are the same preparation as in the House Wedge: rendered pork belly that adds smoky-sweet depth to the vegetables.",
-      "Kitchen Notes": "Contains pork (lardons), dairy (parmesan), garlic (garlic powder in lardon rub), onion powder (lardon rub). Gluten free as prepared — pork belly and spice rub contain no gluten. Serves 3–4 as a side. A strong pairing with any of the steaks — the bitterness of the brussels and the richness of the pork belly both hold up to the beef."
+      "Description": "Brussels sprouts with lardons, simple syrup, red wine vinegar, parmesan, and escargot butter — house pork belly (the same lardon preparation as in the House Wedge: rendered pork belly seasoned with cumin, smoked paprika, cayenne, and brown sugar) adds smoky-sweet depth, while simple syrup and red wine vinegar build a sweet-tart glaze, finished with parmesan and the escargot butter from the escargot starter (unsalted butter, chives, garlic, shallot). A bigger, richer build than guests expect from a brussels side.",
+      "Kitchen Notes": "Contains pork (lardons), dairy (parmesan, escargot butter), garlic (escargot butter, garlic powder in lardon rub), shallot (escargot butter), onion powder (lardon rub). Gluten free as prepared — lardons, simple syrup, red wine vinegar, parmesan, and escargot butter contain no gluten. Serves 3–4 as a side. A strong pairing with any of the steaks — the bitterness of the brussels, the sweet-tart glaze, and the richness of the pork belly all hold up to the beef.",
+      "Ingredients": "Brussels sprouts; Lardons (house pork belly with cumin, smoked paprika, cayenne, brown sugar, garlic powder, onion powder); Simple syrup; Red wine vinegar; Parmesan; Escargot butter (unsalted butter, chives, garlic, shallot)"
     }
   },
   "Au Gratin Potatoes": {
@@ -12369,21 +12370,25 @@ const VOICE_DATA = {
       "Vegetarian",
       "Rich",
       "Gluten Free",
+      "Egg Free",
+      "Shellfish Free",
+      "Fish Free",
       "Peanut Free",
       "Tree Nut Free"
     ],
-    "sellIt": "Sautéed mushrooms — preparation details vary by service. Check with the kitchen. One of the most spirit-friendly sides on the menu: earthy, umami-rich, and a natural pairing with aged whiskey, Scotch, and bold reds.",
-    "staffNotes": "Vegetarian. Allergen content varies by preparation — confirm with the kitchen. Do not represent as gluten free without checking. Strong recommendation for guests ordering aged spirits.",
+    "sellIt": "Sautéed mushrooms with escargot butter, red wine vinegar, and black pepper — the same escargot butter used in the escargot starter (unsalted butter, chives, garlic, and shallot) gives the mushrooms a deep savory base, the red wine vinegar adds a sharp acidic lift, and black pepper rounds the finish. One of the most spirit-friendly sides on the menu: earthy, umami-rich, and a natural pairing with aged whiskey, Scotch, and bold reds.",
+    "staffNotes": "Contains dairy (escargot butter), garlic (escargot butter), shallot (escargot butter). Vegetarian. Gluten free as prepared — escargot butter, red wine vinegar, and black pepper contain no gluten. The escargot butter connection is worth noting to guests who enjoyed the escargot starter. Strong recommendation for guests ordering aged spirits.",
     "pairsWith": "",
-    "ingredients": "",
+    "ingredients": "Mushrooms; Escargot butter (unsalted butter, chives, garlic, shallot); Red wine vinegar; Black pepper",
     "method": "",
     "origin": "",
     "varietal": "",
     "vintage": "",
     "region": "",
     "raw": {
-      "Description": "Sautéed mushrooms — preparation details vary by service. Check with the kitchen. One of the most spirit-friendly sides on the menu: earthy, umami-rich, and a natural pairing with aged whiskey, Scotch, and bold reds.",
-      "Kitchen Notes": "Vegetarian. Allergen content varies by preparation — confirm with the kitchen. Do not represent as gluten free without checking. Strong recommendation for guests ordering aged spirits."
+      "Description": "Sautéed mushrooms with escargot butter, red wine vinegar, and black pepper — the same escargot butter used in the escargot starter (unsalted butter, chives, garlic, and shallot) gives the mushrooms a deep savory base, the red wine vinegar adds a sharp acidic lift, and black pepper rounds the finish. One of the most spirit-friendly sides on the menu: earthy, umami-rich, and a natural pairing with aged whiskey, Scotch, and bold reds.",
+      "Kitchen Notes": "Contains dairy (escargot butter), garlic (escargot butter), shallot (escargot butter). Vegetarian. Gluten free as prepared — escargot butter, red wine vinegar, and black pepper contain no gluten. The escargot butter connection is worth noting to guests who enjoyed the escargot starter. Strong recommendation for guests ordering aged spirits.",
+      "Ingredients": "Mushrooms; Escargot butter (unsalted butter, chives, garlic, shallot); Red wine vinegar; Black pepper"
     }
   },
   "Truffle Fries": {

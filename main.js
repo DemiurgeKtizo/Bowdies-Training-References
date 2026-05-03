@@ -636,10 +636,18 @@ function switchGuide(guide) {
   document.getElementById('filters-cocktails').style.display = guide === 'cocktails' ? 'flex' : 'none';
   document.getElementById('filters-wine').style.display = guide === 'wine' ? 'flex' : 'none';
   document.getElementById('filters-food').style.display = guide === 'food' ? 'flex' : 'none';
+  // Set the Stage owns its own search inputs inside the panel (Pairing Browser,
+  // Compare, First-Timer). Hide the global sticky-nav search bar and tip line
+  // when stage is active so they don't shadow the panel's own controls.
+  const stickyNav = document.querySelector('.sticky-nav');
+  if (stickyNav) stickyNav.style.display = guide === 'stage' ? 'none' : '';
   activeGuide = guide;
   searchInput.placeholder = guide === 'wine' ? 'Search wines, varietals, or tasting notes…' : guide === 'food' ? 'Search dishes, ingredients, or dietary needs…' : 'Search cocktails, spirits, or ingredients…';
   const tipEl = document.getElementById('search-tip-text');
   if (tipEl) tipEl.textContent = SEARCH_TIPS[guide] || SEARCH_TIPS.cocktails;
+  // First-time activation of Set the Stage: bootstrap the pairing browser into
+  // its default view. pbOpen() is defined in set-the-stage.js.
+  if (guide === 'stage' && typeof pbOpen === 'function') pbOpen();
 }
 
 function selectSection(guide) {
@@ -657,7 +665,7 @@ function selectSection(guide) {
   document.getElementById('subfilters-port').style.display = 'none';
   document.getElementById('subfilters-rum').style.display = 'none';
   applyFilters();
-  const label = guide === 'wine' ? 'Wine' : guide === 'food' ? 'Prime & Plate' : 'Spirits';
+  const label = guide === 'wine' ? 'Wine' : guide === 'food' ? 'Prime & Plate' : guide === 'stage' ? 'Set the Stage' : 'Spirits';
   document.getElementById('home-section-label').textContent = label;
   document.getElementById('home-select').classList.add('hidden');
   document.getElementById('home-active').classList.add('visible');
@@ -769,9 +777,7 @@ document.getElementById('home-prime').addEventListener('click', () => selectSect
 document.getElementById('home-return').addEventListener('click', returnHome);
 document.getElementById('top-bar-return').addEventListener('click', returnHome);
 
-document.getElementById('home-wheel').addEventListener('click', function() {
-  window.location.href = 'set-the-stage.html';
-});
+document.getElementById('home-wheel').addEventListener('click', () => selectSection('stage'));
 
 
 
@@ -836,18 +842,12 @@ function alignLogo() {
 
 alignLogo();
 
-// Auto-switch to tab based on URL hash (e.g. #wine or #spirits)
+// Auto-switch to tab based on URL hash (e.g. #wine, #spirits, #food, #stage).
+// #stage is the redirect target for any saved bookmarks of the old set-the-stage.html.
 const hash = window.location.hash.replace('#', '');
-if (hash === 'wine' || hash === 'spirits') {
-  const target = hash === 'wine' ? 'wine' : 'cocktails';
-  document.querySelectorAll('.guide-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.guide-panel').forEach(p => p.classList.remove('active'));
-  document.querySelector('[data-guide="' + target + '"]').classList.add('active');
-  document.getElementById('panel-' + target).classList.add('active');
-  document.getElementById('filters-cocktails').style.display = target === 'cocktails' ? 'flex' : 'none';
-  document.getElementById('filters-wine').style.display = target === 'wine' ? 'flex' : 'none';
-  activeGuide = target;
-  searchInput.placeholder = target === 'wine' ? 'Search wines, varietals, or tasting notes…' : 'Search cocktails, spirits, or ingredients…';
+const HASH_TO_GUIDE = { wine: 'wine', spirits: 'cocktails', food: 'food', stage: 'stage' };
+if (HASH_TO_GUIDE[hash]) {
+  switchGuide(HASH_TO_GUIDE[hash]);
 }
 window.addEventListener('resize', alignLogo);
 
