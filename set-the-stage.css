@@ -133,7 +133,12 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
 }
 #panel-stage .pb-tier-section.open .pb-rec-list,
 #panel-stage .pb-tier-section.open .pb-avoid-list {
-  max-height: 4000px;
+  /* Filet's Excellent list has 220+ items; the previous 4000px ceiling clipped
+     the tail (Quilt, RAEN, etc. fell off the bottom). 30000px comfortably fits
+     the worst-case tier. The transition runs against this ceiling rather than
+     the actual height, so the open animation finishes early — fine here, since
+     the perceived behavior is "section opens". */
+  max-height: 30000px;
   margin-top: 4px;
 }
 
