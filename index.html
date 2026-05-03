@@ -4,6 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Bowdie's Chophouse — Staff Training Reference</title>
+
+<!-- ════════════════════════════════════════════════════════════
+     REFRESH-LOOP CIRCUIT BREAKER (May 2026)
+     Must be the first thing in <head> so it runs before any
+     other script. If the page reloads more than LOOP_MAX times
+     within LOOP_WINDOW_MS, we halt and render a recovery screen
+     that gives the user a "Clear & Continue" button. That button
+     wipes localStorage (likely source of bad state) and reloads
+     once with a clean slate. After a successful escape, the
+     loop counter resets — normal usage is unaffected.
+     ════════════════════════════════════════════════════════════ -->
+<script>
+(function loopGuard() {
+  var LOOP_KEY = 'bc_loop_guard_v1';
+  var LOOP_WINDOW_MS = 5000;   // count loads inside this window
+  var LOOP_MAX = 5;            // more than this = loop
+  var now = Date.now();
+  var loads = [];
+  try {
+    var stored = localStorage.getItem(LOOP_KEY);
+    if (stored) {
+      var parsed = JSON.parse(stored);
+      if (Array.isArray(parsed)) loads = parsed;
+    }
+  } catch (e) { loads = []; }
+  loads = loads.filter(function (t) { return now - t < LOOP_WINDOW_MS; });
+  loads.push(now);
+  try { localStorage.setItem(LOOP_KEY, JSON.stringify(loads)); } catch (e) {}
+
+  if (loads.length <= LOOP_MAX) return;
+
+  // Loop detected — kill normal page boot, render recovery UI.
+  // We can't blow away the rest of <head>, so we wait for DOMContentLoaded
+  // and replace document.body. Then we stop further script execution by
+  // throwing — most subsequent inline/onload code won't run.
+  document.addEventListener('DOMContentLoaded', function () {
+    document.body.innerHTML = [
+      '<div id="loop-recovery" style="position:fixed;inset:0;background:#171513;color:#F0E8D8;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center;font-family:Georgia,serif;z-index:99999;">',
+        '<div style="font-family:sans-serif;font-size:9px;letter-spacing:0.4em;text-transform:uppercase;color:#C9A84C;margin-bottom:14px;">Recovery</div>',
+        '<div style="font-family:Georgia,serif;font-size:22px;font-weight:600;line-height:1.3;margin-bottom:16px;max-width:420px;">The site got stuck in a reload loop.</div>',
+        '<div style="font-size:15px;line-height:1.5;color:#8A8070;max-width:380px;margin-bottom:28px;">Tap below to clear this device&apos;s saved settings and start fresh. You&apos;ll re-enter your name on the next load.</div>',
+        '<button id="loop-clear-btn" style="background:transparent;color:#C9A84C;border:1px solid #8A6B2A;padding:14px 28px;font-family:sans-serif;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;cursor:pointer;border-radius:0;">Clear &amp; Continue</button>',
+      '</div>'
+    ].join('');
+    var btn = document.getElementById('loop-clear-btn');
+    if (btn) btn.addEventListener('click', function () {
+      try { localStorage.clear(); } catch (e) {}
+      try { sessionStorage.clear(); } catch (e) {}
+      // Replace history so back-button can't bounce us back into the loop.
+      window.location.replace(window.location.pathname);
+    });
+  });
+  // Halt the rest of inline-script boot — error message is suppressed by browsers.
+  throw new Error('LoopGuard: refresh loop detected — recovery UI rendered.');
+})();
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css?v=25">
 <link rel="stylesheet" href="./set-the-stage.css?v=21">
