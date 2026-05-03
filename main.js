@@ -342,8 +342,14 @@ function applyFilters() {
       const cat = card.dataset.category || '';
       if (filter !== 'all' && !cat.split(' ').includes(filter)) return;
       const detailEl = card.querySelector('.card-detail');
-      const text = (card.dataset.name || '').toLowerCase() + ' ' + (detailEl ? detailEl.textContent : card.textContent).toLowerCase();
       const cardTagsFallback = cardTags(card);
+      // Tags live in the .tag-row OUTSIDE .card-detail, so detail.textContent
+      // doesn't see them. The fallback needs to find tag-words as text too —
+      // e.g., "refreshing" for Cucumber Gimlet whose Refreshing tag is the
+      // only place that word appears. Concatenate tags into the search text.
+      const text = (card.dataset.name || '').toLowerCase()
+        + ' ' + cardTagsFallback.join(' ')
+        + ' ' + (detailEl ? detailEl.textContent : card.textContent).toLowerCase();
       const matches = searchTerm.every(t => {
         if (t.allergenFree) return cardTagsFallback.includes(t.value);
         const syn = SYNONYMS[t.value];
