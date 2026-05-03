@@ -30,6 +30,10 @@ let searchTerm = [];
 // stage-panel bootstrap). Adding a new tab only requires updating switchGuide.
 guideTabs.forEach(tab => {
   tab.addEventListener('click', () => {
+    // Scroll to top — without this, switching from a deep-scrolled section
+    // left the new section opened at the same Y, hiding the top of its
+    // content under the sticky-nav.
+    window.scrollTo(0, 0);
     switchGuide(tab.dataset.guide);
     searchInput.value = '';
     searchTerm = [];

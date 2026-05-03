@@ -377,3 +377,13 @@ footer{text-align:center;padding:40px;background:var(--surface)}footer p{font-fa
 #panel-stage .pb-avoid-explain.tier-works .rec-explain-source strong { color: var(--tier-works); }
 #panel-stage .pb-rec-explain.tier-avoid .rec-explain-source strong,
 #panel-stage .pb-avoid-explain.tier-avoid .rec-explain-source strong { color: var(--warning); }
+
+/* ════════════════════════════════════════════════════════════
+   EXPLAIN-PANEL LINE SPACING (May 2026)
+   Item names that wrap to a second line ("Why this pairs with
+   Cristom Mt Jefferson Cuvée") were crashing into each other
+   because the rule had no line-height set — uppercase + 0.25em
+   letter-spacing + default 1.2 line-height = collisions.
+   ════════════════════════════════════════════════════════════ */
+#panel-stage .rec-explain-source { line-height: 1.6; }
+
