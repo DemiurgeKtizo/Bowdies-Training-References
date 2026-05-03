@@ -25,23 +25,12 @@ function updateSubFilters(primary) {
 }
 let searchTerm = [];
 
+// Tab clicks delegate to switchGuide() — single source of truth for tab
+// activation logic (filter visibility, search placeholder, sticky-nav,
+// stage-panel bootstrap). Adding a new tab only requires updating switchGuide.
 guideTabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    activeGuide = tab.dataset.guide;
-    guideTabs.forEach(t => t.classList.remove('active'));
-    guidePanels.forEach(p => p.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById('panel-' + activeGuide).classList.add('active');
-
-    // Show correct filter bar
-    Object.keys(filterBarsAll).forEach(g => {
-      filterBarsAll[g].style.display = g === activeGuide ? 'flex' : 'none';
-    });
-
-    // Update search placeholder
-    searchInput.placeholder = activeGuide === 'cocktails' ? 'Search cocktails, spirits, or ingredients…' : 'Search wines, varietals, or tasting notes…';
-
-    // Clear search on tab switch
+    switchGuide(tab.dataset.guide);
     searchInput.value = '';
     searchTerm = [];
     applyFilters();
@@ -842,16 +831,11 @@ function alignLogo() {
 
 alignLogo();
 
-// Auto-switch to tab based on URL hash (e.g. #wine, #spirits, #food, #stage).
-// #stage is the redirect target for any saved bookmarks of the old set-the-stage.html.
-// We use selectSection (not switchGuide) so the home screen is dismissed —
-// otherwise the panel activates underneath the home overlay and the user just
-// sees the home screen.
-const hash = window.location.hash.replace('#', '');
-const HASH_TO_GUIDE = { wine: 'wine', spirits: 'cocktails', food: 'food', stage: 'stage' };
-if (HASH_TO_GUIDE[hash]) {
-  selectSection(HASH_TO_GUIDE[hash]);
-}
+// Page always opens at the home screen. Set the Stage and the other sections
+// are entered exclusively via the home buttons or the top guide-tabs — no
+// URL-hash deep linking. (Earlier versions auto-switched on #wine/#stage and
+// it kept hijacking ordinary loads when the hash carried over from a prior
+// visit, so it's removed.)
 window.addEventListener('resize', alignLogo);
 
 // ── WINE PRICES ──
