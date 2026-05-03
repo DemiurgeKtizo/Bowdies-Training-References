@@ -1239,7 +1239,8 @@ body::before {
    ════════════════════════════════════════════════════════════ */
 @media (hover: none) {
   /* Cards in Spirits/Wine/Prime & Plate */
-  .card:hover, .card:hover::before { background: var(--surface); opacity: 0; }
+  .card:hover { background: var(--surface); }
+  .card:hover::before { opacity: 0; }
   .card:hover .card-name, .card.expanded .card-name { color: inherit; }
   /* Filter buttons */
   .filter-btn:hover { background: transparent; border-color: var(--border-soft); color: var(--text-muted); }
