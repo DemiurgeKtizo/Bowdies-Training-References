@@ -335,8 +335,17 @@ function pbRenderDetail() {
     { key: 'avoid',     label: 'AVOID WITH',    isAvoid: true  },
   ];
 
+  // Backend keeps gold as a subset of excellent (every gold pair is also
+  // listed in excellent). For the UI we want each item to appear only in
+  // its highest tier — so when rendering excellent, drop anything that's
+  // already in gold. Per CLAUDE.md this is the only tier overlap.
+  const goldSet = new Set(entry.gold || []);
+
   TIERS.forEach(({ key, label, isAvoid }) => {
-    const allNames = entry[key] || [];
+    let allNames = entry[key] || [];
+    if (key === 'excellent') {
+      allNames = allNames.filter(n => !goldSet.has(n));
+    }
     // Filter recs by the current stage filter. We always include unknown
     // (no PAIRING_MAP entry) recs only when the filter is 'all', since we
     // can't classify them otherwise.
@@ -344,7 +353,11 @@ function pbRenderDetail() {
       const recEntry = PAIRING_MAP.find(e => e.name === recName);
       if (!recEntry) return state.stageFilter === 'all';
       return stageMatchesFilter(recEntry.category, state.stageFilter);
-    });
+    })
+    // Alphabetize within each tier — pairing-map order is roughly insertion
+    // order, which feels random when scanning a long list. Locale-aware,
+    // case-insensitive sort keeps "Macallan 18" next to "macallan 25" etc.
+    .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
     const section = document.createElement('div');
     // tier-{key} class lets the stylesheet color the section directly
