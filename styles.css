@@ -1072,6 +1072,14 @@ body::before {
   z-index: 400;
 }
 .admin-title-block { margin-bottom: 18px; }
+/* Drop the border-bottom that .section-heading paints by default — inside
+   the admin block the subtitle sits flush below it and the line was
+   crashing right into the subtitle text. */
+.admin-title-block .section-heading {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.admin-title-block .admin-subtitle { margin-top: 8px; }
 .admin-topbar {
   display: flex; gap: 10px;
   margin-bottom: 18px; padding-bottom: 16px;
