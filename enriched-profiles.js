@@ -511,7 +511,7 @@ const ENRICHED_PROFILES = {
     ],
     "provenance": {
       "kind": "$18",
-      "region": "Garlic Herb Butter, Crostini",
+      "region": "Garlic Herb Butter, French Baguette",
       "age": null,
       "abv": null,
       "distillery": null

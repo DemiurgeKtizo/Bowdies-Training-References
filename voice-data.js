@@ -11685,7 +11685,7 @@ const VOICE_DATA = {
   "Escargot": {
     "name": "Escargot",
     "dataCategory": "food food-start",
-    "sub": "$18 · Garlic Herb Butter, Crostini",
+    "sub": "$18 · Garlic Herb Butter, French Baguette",
     "tags": [
       "Starter",
       "Classic",
@@ -11693,8 +11693,8 @@ const VOICE_DATA = {
       "Peanut Free",
       "Tree Nut Free"
     ],
-    "sellIt": "Helix snails sautéed in escargot butter with Herbs de Provence and a finish of absinthe — the alcohol cooks out over 2–3 minutes, leaving a subtle anise note. Served with house crostini.",
-    "staffNotes": "Contains dairy (butter), gluten (crostini), molluscs (snails), garlic (minced in recipe and in escargot butter), shallot (minced in recipe and in escargot butter). Escargot butter is house-made: unsalted butter with chives, garlic, shallot, and salt. The absinthe finish is a defining detail worth mentioning to guests. Crostini are baked in escargot butter with cayenne, garlic powder, and onion powder.",
+    "sellIt": "Helix snails sautéed in escargot butter with Herbs de Provence and a finish of absinthe — the alcohol cooks out over 2–3 minutes, leaving a subtle anise note. Served with French baguette.",
+    "staffNotes": "Contains dairy (butter), gluten (baguette), molluscs (snails), garlic (minced in recipe and in escargot butter), shallot (minced in recipe and in escargot butter). Escargot butter is house-made: unsalted butter with chives, garlic, shallot, and salt. The absinthe finish is a defining detail worth mentioning to guests.",
     "pairsWith": "",
     "ingredients": "2 cans Helix snails; 1 Tbsp Salt; 3 Tbsp Minced garlic; 2 Tbsp Minced shallot; 2 Tbsp Herbes de Provence; 2 Tbsp Absinthe; 2 Tbsp Butter",
     "method": "Rinse snails in cold water. In large sauté pan, add everything except absinthe. / Cook on low until herbs and garlic are soft. / Add absinthe, simmer 2–3 minutes to cook off alcohol. / Spread on half sheet tray and cool.",
@@ -11703,8 +11703,8 @@ const VOICE_DATA = {
     "vintage": "",
     "region": "",
     "raw": {
-      "Description": "Helix snails sautéed in escargot butter with Herbs de Provence and a finish of absinthe — the alcohol cooks out over 2–3 minutes, leaving a subtle anise note. Served with house crostini.",
-      "Kitchen Notes": "Contains dairy (butter), gluten (crostini), molluscs (snails), garlic (minced in recipe and in escargot butter), shallot (minced in recipe and in escargot butter). Escargot butter is house-made: unsalted butter with chives, garlic, shallot, and salt. The absinthe finish is a defining detail worth mentioning to guests. Crostini are baked in escargot butter with cayenne, garlic powder, and onion powder.",
+      "Description": "Helix snails sautéed in escargot butter with Herbs de Provence and a finish of absinthe — the alcohol cooks out over 2–3 minutes, leaving a subtle anise note. Served with French baguette.",
+      "Kitchen Notes": "Contains dairy (butter), gluten (baguette), molluscs (snails), garlic (minced in recipe and in escargot butter), shallot (minced in recipe and in escargot butter). Escargot butter is house-made: unsalted butter with chives, garlic, shallot, and salt. The absinthe finish is a defining detail worth mentioning to guests.",
       "Ingredients": "2 cans Helix snails; 1 Tbsp Salt; 3 Tbsp Minced garlic; 2 Tbsp Minced shallot; 2 Tbsp Herbes de Provence; 2 Tbsp Absinthe; 2 Tbsp Butter",
       "Method": "Rinse snails in cold water. In large sauté pan, add everything except absinthe. / Cook on low until herbs and garlic are soft. / Add absinthe, simmer 2–3 minutes to cook off alcohol. / Spread on half sheet tray and cool."
     }
