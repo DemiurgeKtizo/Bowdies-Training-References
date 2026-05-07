@@ -352,15 +352,33 @@ function pickMinedVerdict(archetype, tier, foodA, foodB) {
   return pool[h.readUInt32BE(0) % pool.length];
 }
 
-function alternativesFor(food, pairingMap, n) {
+function alternativesFor(food, pairingMap, n, opts) {
   if (!pairingMap) return [];
   const entry = pairingMap.find(e => e.name === food.name);
   if (!entry) return [];
+  // opts.kind: 'drink' returns only drink-category alternatives (used by DxF
+  // avoid templates so "the plate deserves X, Y, or Z" never recommends a
+  // food when the guest needs a different beverage). 'food' returns only foods.
+  // Default (undefined): returns any category — same as legacy behavior.
+  const kind = opts && opts.kind;
+  const FOOD_CATS = new Set(['steak','starter','soup-salad','main','side','dessert']);
+  const byName = {};
+  for (const e of pairingMap) byName[e.name] = e;
   const out = [];
   for (const tier of ['gold','excellent']) {
     const list = entry[tier];
     if (!Array.isArray(list)) continue;
-    for (const name of list) if (!out.includes(name)) out.push(name);
+    for (const name of list) {
+      if (out.includes(name)) continue;
+      if (kind) {
+        const ent = byName[name];
+        if (!ent) continue;
+        const isFood = FOOD_CATS.has(ent.category);
+        if (kind === 'drink' && isFood) continue;
+        if (kind === 'food' && !isFood) continue;
+      }
+      out.push(name);
+    }
   }
   return out.slice(0, n || 3);
 }
@@ -806,4 +824,29 @@ module.exports = {
   alternativesFor, findChemistryClause, flavorsFor,
   pickMinedVerdict,
   TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
+};
+A, charB, body, altsA, altsB, patternReading);
+
+  // v6: substitute templated verdict tail with mined editorial verdict
+  // when the corpus has 3+ entries for this archetype.tier slot.
+  if (tier !== 'avoid') {
+    const minedVerdict = pickMinedVerdict(archetype, tier, a, b);
+    if (minedVerdict) {
+      const tierLabel = tier.charAt(0).toUpperCase() + tier.slice(1);
+      rendered = rendered.replace(
+        new RegExp('\\b' + tierLabel + ';[^.]+(\\.\\s*$|\\.$)'),
+        tierLabel + '; ' + minedVerdict + '.'
+      );
+    }
+  }
+
+  return rendered;
+}
+
+module.exports = {
+  generate, archetypeFor, characterFor, canonicalize, bodyBridge,
+  alternativesFor, findChemistryClause, flavorsFor,
+  TEMPLATES, FOOD_CHARACTER, BRIDGE_PARTS, FOOD_FLAVORS,
+};
+S, FOOD_FLAVORS,
 };

@@ -2057,7 +2057,7 @@ function generate(drink, food, tier, ctx) {
   if (tier === 'avoid') {
     const fc = taxonomy.foodClassFor(food);
     const dc = taxonomy.drinkClassFor(drink);
-    const altsFood = fxfGen.alternativesFor(food, ctx.PAIRING_MAP, 3);
+    const altsFood = fxfGen.alternativesFor(food, ctx.PAIRING_MAP, 3, { kind: 'drink' });
     const altsList = altsFood.length
       ? (altsFood.length === 1 ? altsFood[0] : altsFood.length === 2 ? altsFood[0] + ' or ' + altsFood[1] : altsFood.slice(0,-1).join(', ') + ', or ' + altsFood[altsFood.length-1])
       : 'a wine that fits the plate';
@@ -2141,4 +2141,6 @@ module.exports = {
   drinkFlavorsFor, findChemistryClause, clauseFitsDrinkClass,
   whiskeyVoiceSubclass, elegantRedVoiceSubclass,
   BOTTLE_PROFILE, DRINK_CLASS_DEFAULT, VERDICT_PATTERNS, WHISKEY_VOICE_DEFAULTS, ELEGANT_RED_VOICE_DEFAULTS,
+};
+VOICE_DEFAULTS,
 };

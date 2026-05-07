@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T01:45:10.787Z",
+  "generatedAt": "2026-05-07T02:24:32.833Z",
   "anchorCount": 250,
   "anchors": [
     {
@@ -24,7 +24,7 @@
       "tier": "avoid",
       "foodClass": "CREAMY_SIDE",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "2a977f8f6b8b9ff4"
+      "hash": "f7d2f03a309aa4b4"
     },
     {
       "food": "Au Gratin Potatoes",
@@ -192,7 +192,7 @@
       "tier": "avoid",
       "foodClass": "LIGHT_SIDE",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "d4e01883dd34462b"
+      "hash": "573509008e69ed7d"
     },
     {
       "food": "Asparagus",
@@ -248,7 +248,7 @@
       "tier": "avoid",
       "foodClass": "RICH_SIDE",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "8ebbef75d794be95"
+      "hash": "305cd7c727333c9e"
     },
     {
       "food": "Mushrooms",
@@ -312,7 +312,7 @@
       "tier": "avoid",
       "foodClass": "STEAK_BOLD",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "d56e7b731e8283fd"
+      "hash": "2cf65028d75005cf"
     },
     {
       "food": "Kansas City",
@@ -344,7 +344,7 @@
       "tier": "avoid",
       "foodClass": "STEAK_LEAN",
       "drinkClass": "APERITIVO_BITTER",
-      "hash": "520611235d2c68ec"
+      "hash": "542b385be3575172"
     },
     {
       "food": "Bone-In Filet",
@@ -560,7 +560,7 @@
       "tier": "avoid",
       "foodClass": "LIGHT_SIDE",
       "drinkClass": "BIG_RED",
-      "hash": "1d1d2d7561552ac3"
+      "hash": "3ff0d49a7e0e83a2"
     },
     {
       "food": "Asparagus",
@@ -1000,7 +1000,7 @@
       "tier": "avoid",
       "foodClass": "LIGHT_SIDE",
       "drinkClass": "BOURBON_BOLD",
-      "hash": "1ecaac73629d32f6"
+      "hash": "f5dd106aa1948056"
     },
     {
       "food": "Asparagus",
@@ -1128,7 +1128,7 @@
       "tier": "avoid",
       "foodClass": "STEAK_BOLD",
       "drinkClass": "BOURBON_BOLD",
-      "hash": "79e5bee29766b62f"
+      "hash": "4d2d8a6288efbede"
     },
     {
       "food": "Cowboy Ribeye",
@@ -1232,7 +1232,7 @@
       "tier": "avoid",
       "foodClass": "CREAMY_SIDE",
       "drinkClass": "COCKTAIL_BOLD",
-      "hash": "249754bba3d816a5"
+      "hash": "5fddcd1f84270726"
     },
     {
       "food": "Lobster Mac",
@@ -1488,7 +1488,7 @@
       "tier": "avoid",
       "foodClass": "RICH_SIDE",
       "drinkClass": "COCKTAIL_BOLD",
-      "hash": "2a6c721a6a32ee99"
+      "hash": "3b50c8cb53363075"
     },
     {
       "food": "Mushrooms",
@@ -1560,7 +1560,7 @@
       "tier": "avoid",
       "foodClass": "STEAK_BOLD",
       "drinkClass": "COCKTAIL_BOLD",
-      "hash": "aeca21802406c739"
+      "hash": "707c9a7df3f8be4e"
     },
     {
       "food": "Cowboy Ribeye",
@@ -1600,7 +1600,7 @@
       "tier": "avoid",
       "foodClass": "STEAK_LEAN",
       "drinkClass": "COCKTAIL_BOLD",
-      "hash": "7f46849292d4d2fd"
+      "hash": "702a5f2fcfbf9629"
     },
     {
       "food": "Bone-In Filet",
@@ -1880,7 +1880,7 @@
       "tier": "avoid",
       "foodClass": "LIGHT_SIDE",
       "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "f634b4588c44db8f"
+      "hash": "5e7722e846651c0a"
     },
     {
       "food": "Sauteed Garlic Spinach",
@@ -1992,7 +1992,7 @@
       "tier": "avoid",
       "foodClass": "STEAK_BOLD",
       "drinkClass": "COCKTAIL_LIGHT",
-      "hash": "5d0ed8cb931405c7"
+      "hash": "6f0a6f4d7b69df75"
     },
     {
       "food": "Cowboy Ribeye",
