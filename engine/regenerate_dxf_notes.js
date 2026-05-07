@@ -47,27 +47,8 @@ load('pairing-notes.js', 'PAIRING_NOTES');
 const byName = {};
 for (const e of ctx.PAIRING_MAP) byName[e.name] = e;
 
-// ── isTemplatedNote — same signatures used by miners
-function isTemplatedNote(note) {
-  if (!note) return true;
-  const sig = [
-    /runs straight into/, /meets at register with/, / that defines /,
-    /the call you don't second-guess/, /the call servers pour without second-guessing/,
-    /reads cleanly at the table/, /reach for any of those/, /pick from the alternatives/,
-    /elegance meets the plate/, /sits in the pocket on/, /earns a regular/,
-    /dials in cleanly/, /workhorse pairing/, /keeps pace with/,
-    /Save the .+ for the steak/, /Save the .+ for another course/,
-    /belongs on (the steak|another) course/, /Hold the .+ for /,
-    /that's the play/, /-- textbook\./, /the answer is /, /pour it and step back/,
-    /if a guest asks what to drink with/, /is fine on .+ -- fine, not memorable/,
-    /doesn't fight .+, but doesn't lift it either/, /pulls neither way against/,
-    /backup when the strong calls/, /save the storytelling/, /spoken for/,
-    /without asking for attention/, /is the answer, full stop/,
-    /when a guest asks what works/, /-- the kind of pour that earns a regular/,
-    /carries .+ without overshooting/,
-  ];
-  return sig.some(r => r.test(note));
-}
+// ── isTemplatedNote — canonical detector (engine/templated_detection.js)
+const { isTemplatedNote } = require('./templated_detection.js');
 
 // ── tier lookup by pair key
 const tierByKey = new Map();

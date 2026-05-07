@@ -42,7 +42,13 @@ const CHEMISTRY_CLAIMS = {
     "cap-fat": { "clause": "the opulent body meets the cap-fat", "count": 5 },
     "cut": { "clause": "the velvety body lifts the lean cut", "count": 8 },
     "fish": { "clause": "the crisp body frames the fish cleanly", "count": 55 },
-    "plate": { "clause": "the crisp body sits with the plate", "count": 102 },
+    "plate": { "clauses": [
+      "the crisp body sits with the plate",
+      "the crisp body matches the plate",
+      "the crisp body carries the plate",
+      "the crisp body wraps the plate",
+      "the crisp body rests against the plate"
+    ], "count": 102 },
     "side": { "clause": "the crisp body sits with the light side", "count": 27 },
     "strip": { "clause": "the concentrated body carries the strip", "count": 8 }
   },
@@ -51,7 +57,13 @@ const CHEMISTRY_CLAIMS = {
     "char": { "clause": "the caramel echoes the grilled char", "count": 29 },
     "character": { "clause": "the caramel meets the nut character", "count": 11 },
     "earthy": { "clause": "the caramel rounds the earthy plate", "count": 28 },
-    "umami": { "clause": "the caramel rounds the umami plate", "count": 98 }
+    "umami": { "clauses": [
+      "the caramel rounds the umami plate",
+      "the caramel softens the umami weight",
+      "the caramel underlines the umami plate",
+      "the caramel threads the umami register",
+      "the caramel balances the umami plate"
+    ], "count": 98 }
   },
   "cassis": {
     "butter": { "clause": "the cassis frames the herb butter", "count": 7 },
@@ -68,7 +80,13 @@ const CHEMISTRY_CLAIMS = {
     "digestif": { "clause": "the sweet character meets the savory plate at digestif", "count": 8 },
     "distinctiveness": { "clause": "the agave-forward camarena character lifts the burrata with craft distinctiveness", "count": 11 },
     "fat": { "clause": "the bourbon character meets the rendered fat", "count": 12 },
-    "register": { "clause": "the bourbon character meets the dessert at digestif register", "count": 127 },
+    "register": { "clauses": [
+      "the bourbon character meets the dessert at digestif register",
+      "the bourbon depth folds into the dessert at digestif weight",
+      "the bourbon body sits with the dessert at digestif register",
+      "the bourbon register rests against the dessert close",
+      "the bourbon weight settles into the dessert close"
+    ], "count": 127 },
     "sugar": { "clause": "the sweet character mirrors the dessert sugar", "count": 37 }
   },
   "cherry-fruit": {
@@ -119,7 +137,7 @@ const CHEMISTRY_CLAIMS = {
     "fish": { "clause": "the mineral edge lifts the fish", "count": 53 },
     "green": { "clause": "the mineral edge frames the green plate", "count": 4 },
     "meat": { "clause": "the mineral edge mirrors the briny meat", "count": 52 },
-    "richness": { "clause": "the mineral edge cuts the cheese richness", "count": 4 },
+    "richness": { "clause": "the mineral edge cuts the rich plate", "count": 4 },
     "shellfish": { "clause": "the floral edge frames the shellfish", "count": 4 },
     "side": { "clause": "the botanical edge sits with the light side", "count": 77 },
     "soup": { "clause": "the bitter herb edge frames the light soup", "count": 20 }
@@ -148,7 +166,13 @@ const CHEMISTRY_CLAIMS = {
     "depth": { "clause": "the leather plays against the smoky mineral depth", "count": 3 }
   },
   "lift": {
-    "fish": { "clause": "the botanical lift frames the fish cleanly", "count": 176 },
+    "fish": { "clauses": [
+      "the botanical lift frames the fish cleanly",
+      "the botanical lift carries the fish cleanly",
+      "the botanical lift brightens the fish",
+      "the bright lift threads the fish",
+      "the botanical lift underlines the fish"
+    ], "count": 176 },
     "side": { "clause": "the cocktail lift sits with the light side", "count": 20 },
     "soup": { "clause": "the cocktail lift sits with the light soup", "count": 43 },
     "weight": { "clause": "the cocktail lift carries the shellfish without weight", "count": 4 }
@@ -171,9 +195,27 @@ const CHEMISTRY_CLAIMS = {
   },
   "oak": {
     "char": { "clause": "the oak underlines the char", "count": 48 },
-    "cream": { "clause": "the oak rounds the cream", "count": 107 },
-    "sugar": { "clause": "the oak frames the caramelized sugar", "count": 100 },
-    "umami": { "clause": "the oak frames the umami", "count": 158 }
+    "cream": { "clauses": [
+      "the oak rounds the cream",
+      "the oak threads the cream",
+      "the oak frames the rich cream",
+      "the oak depth lays under the cream",
+      "the oak softens the cream"
+    ], "count": 107 },
+    "sugar": { "clauses": [
+      "the oak frames the caramelized sugar",
+      "the oak underlines the burnt sugar",
+      "the oak threads the caramelized sugar",
+      "the oak balances the burnt-sugar edge",
+      "the oak softens the caramelized sugar"
+    ], "count": 100 },
+    "umami": { "clauses": [
+      "the oak frames the umami",
+      "the oak threads the umami plate",
+      "the oak underlines the umami weight",
+      "the oak depth meets the umami",
+      "the oak balances the umami register"
+    ], "count": 158 }
   },
   "orange": {
     "cream": { "clause": "the orange lifts the cream", "count": 5 },
@@ -197,7 +239,13 @@ const CHEMISTRY_CLAIMS = {
     "register": { "clause": "the medium-body red meets the cap-fat at lighter register", "count": 24 },
     "savory": { "clause": "the medium-body red meets the savory plate", "count": 30 },
     "side": { "clause": "the medium-body red sits with the rich side", "count": 22 },
-    "soup": { "clause": "the medium-body red meets the light soup", "count": 99 }
+    "soup": { "clauses": [
+      "the medium-body red meets the light soup",
+      "the medium-body red sits with the light soup",
+      "the medium-body red threads the light soup",
+      "the medium-body red brightens the light soup",
+      "the medium-body red rests against the light soup"
+    ], "count": 99 }
   },
   "silk": {
     "soup": { "clause": "the low-tannin silk lifts the soup", "count": 5 }
@@ -220,7 +268,7 @@ const CHEMISTRY_CLAIMS = {
     "depth": { "clause": "the spice frames the umami depth", "count": 29 },
     "dessert": { "clause": "the spice threads the dessert", "count": 55 },
     "green": { "clause": "the spice lifts the green plate", "count": 27 },
-    "richness": { "clause": "the rye spice cuts the cheese richness", "count": 10 }
+    "richness": { "clause": "the rye spice cuts the rich plate", "count": 10 }
   },
   "structure": {
     "cut": { "clause": "the cab structure carries the bone-in cut", "count": 3 },
@@ -239,8 +287,20 @@ const CHEMISTRY_CLAIMS = {
     "starter": { "clause": "the firm tannin cuts the rich starter", "count": 22 }
   },
   "vanilla": {
-    "char": { "clause": "the vanilla softens the grilled char", "count": 123 },
-    "cream": { "clause": "the vanilla layers into the cream", "count": 247 }
+    "char": { "clauses": [
+      "the vanilla softens the grilled char",
+      "the vanilla rounds the flame-grilled char",
+      "the vanilla balances the char-and-fat",
+      "the vanilla brightens the grilled char-edge",
+      "the vanilla underlines the rendered char"
+    ], "count": 123 },
+    "cream": { "clauses": [
+      "the vanilla rounds the cream",
+      "the vanilla folds into the cream",
+      "the vanilla brightens the cream",
+      "the vanilla underlines the rich cream",
+      "the vanilla lifts the cream"
+    ], "count": 247 }
   },
   "violet": {
     "depth": { "clause": "the violet plays against the earth depth", "count": 4 }

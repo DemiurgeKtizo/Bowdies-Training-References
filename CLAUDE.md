@@ -77,7 +77,7 @@ See `engine/AUDIT_FxF_v1.md` for the v6 baseline and next milestones.
 
 ## Class taxonomy (drinks)
 
-13 classes in current vocabulary:
+18 classes in current vocabulary (canonical list — see `engine/pairing_engine_taxonomy.js` `CLASS_DRINKS`):
 
 - `BIG_RED` — heavy/big red wines (Caymus, Opus, Silver Oak)
 - `ELEGANT_RED` — medium-bodied reds, Pinots, Chianti, Bordeaux blends

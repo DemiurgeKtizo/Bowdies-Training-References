@@ -1,28 +1,10 @@
-// Factual correction script per CLAUDE.md "Editorial CAN be edited when it
-// contains a factual error about menu preparation, ingredients, or plating."
-//
-// Bowdie's actual cut weights (confirmed by GM 2026-04-27):
-//   Filet Mignon:   10oz
-//   Bone-In Filet:  14oz
-//   Kansas City:    18oz
-//   Cowboy Ribeye:  26oz
-//   Tomahawk:       36oz
-//   Porterhouse:    40oz
-//
-// Old preserved editorial used outdated weights — primarily 22oz for Cowboy and
-// 40oz for Tomahawk. This script repairs them across pairing-notes.js plus the
-// templated reference files (editorial-phrases.js, mined corpora).
-
 'use strict';
 const fs = require('fs');
 const path = require('path');
 
 const repo = path.resolve(__dirname, '..');
 
-// Targeted replacements. Order matters — most-specific first.
 const REPLACEMENTS = [
-  // Cowboy was 22oz, now 26oz. Phrases reference "22oz cap-fat" / "22oz bone-in
-  // cap-fat" / "22oz bone-in" almost always for Cowboy in the corpus.
   ['22oz cap-fat',          '26oz cap-fat'],
   ['22oz bone-in cap-fat',  '26oz bone-in cap-fat'],
   ['22oz bone-in',          '26oz bone-in'],
@@ -31,11 +13,8 @@ const REPLACEMENTS = [
   ['22oz cowboy',           '26oz cowboy'],
   ['22-oz cap-fat',         '26-oz cap-fat'],
   ['22 oz cap-fat',         '26 oz cap-fat'],
-  // v6.2 additions: backfills introduced "22oz cut" / "the 22oz" patterns
   ['the 22oz cut',          'the 26oz cut'],
   ['the 22oz',              'the 26oz'],
-  // Tomahawk was 40oz in old editorial, now 36oz. But porterhouse IS 40oz, so
-  // we have to be careful — only replace 40oz when context is Tomahawk.
   ['40oz showpiece',        '36oz showpiece'],
   ['40oz bone-on showpiece','36oz bone-on showpiece'],
   ['40oz bone-on',          '36oz bone-on'],
@@ -44,18 +23,12 @@ const REPLACEMENTS = [
   ['40oz Tomahawk',         '36oz Tomahawk'],
   ['40oz tomahawk',         '36oz tomahawk'],
   ['40oz theatrical',       '36oz theatrical'],
-  // v6.2 additions: backfills introduced these Tomahawk patterns
   ['40oz long-bone',        '36oz long-bone'],
   ['the 40oz cut',          'the 36oz cut'],
-  // v6.2 second sweep: Tomahawk-context 40oz refs in DxF editorial.
-  // These all unambiguously identify Tomahawk (ribeye / smoky-char / massive
-  // bone-in are all Tomahawk-only descriptors). Porterhouse's 40oz refs use
-  // "marbled beef" / "porterhouse's 40oz" wording and are NOT matched here.
-  ['massive 40oz bone-in',        'massive 36oz bone-in'],
-  ['40oz bone-in ribeye',         '36oz bone-in ribeye'],
-  ["40oz bone-in's smoky-char",   "36oz bone-in's smoky-char"],
-  ["Tomahawk's 40oz",             "Tomahawk's 36oz"],
-  // Filet was 6oz in earlier copy, now 10oz.
+  ['massive 40oz bone-in',  'massive 36oz bone-in'],
+  ['40oz bone-in ribeye',   '36oz bone-in ribeye'],
+  ["40oz bone-in's smoky-char", "36oz bone-in's smoky-char"],
+  ["Tomahawk's 40oz",       "Tomahawk's 36oz"],
   ['butter-tender 6oz',     'butter-tender 10oz'],
   ['lean butter-tender 6oz','lean butter-tender 10oz'],
   ['the 6oz tenderloin',    'the 10oz tenderloin'],
@@ -66,6 +39,25 @@ const REPLACEMENTS = [
   ['the 6oz lean-tender',   'the 10oz lean-tender'],
   ['flame-grilled 6oz',     'flame-grilled 10oz'],
   ['6oz center-cut tenderloin', '10oz center-cut tenderloin'],
+  ['against the 8oz cut',   'against the 10oz cut'],
+  ['the 8oz center-cut',    'the 10oz center-cut'],
+  ['the 8oz cut meets',     'the 10oz cut meets'],
+  ['the 8oz cut',           'the 10oz cut'],
+  ['8oz center-cut tenderloin', '10oz center-cut tenderloin'],
+  ['the 8oz tenderloin',    'the 10oz tenderloin'],
+  ['8oz lean-tender',       '10oz lean-tender'],
+  ['butter-tender 8oz',     'butter-tender 10oz'],
+  ['lean butter-tender 8oz','lean butter-tender 10oz'],
+  ['flame-grilled 8oz',     'flame-grilled 10oz'],
+  ['against a 16oz strip',  'against an 18oz strip'],
+  ['against the 16oz strip','against the 18oz strip'],
+  ['the 16oz strip',        'the 18oz strip'],
+  ['16oz strip steak',      '18oz strip steak'],
+  ['a 16oz strip',          'an 18oz strip'],
+  ['16-oz strip',           '18-oz strip'],
+  ['16 oz strip',           '18 oz strip'],
+  ['the 16oz KC',           'the 18oz KC'],
+  ['the 16oz Kansas',       'the 18oz Kansas'],
 ];
 
 const TARGETS = [
@@ -73,7 +65,6 @@ const TARGETS = [
   'editorial-phrases.js',
   'engine/gold_corpus_mined.js',
   'engine/corpus_mined_all_tiers.js',
-  // v6.2: also sweep FxF profile, corpus, and backfill source scripts
   'engine/food_corpus_mined.js',
   'engine/food_profiles_curated.js',
   'engine/backfill_steak_dessert_notes.js',
@@ -96,7 +87,9 @@ for (const rel of TARGETS) {
   fileStats[rel] = count;
   totalReplacements += count;
   if (count > 0) {
-    fs.writeFileSync(full, src);
+    const tmp = full + '.tmp.' + process.pid;
+    fs.writeFileSync(tmp, src);
+    fs.renameSync(tmp, full);
   }
 }
 

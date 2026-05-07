@@ -393,7 +393,7 @@ const EDITORIAL_PHRASES = {
             "global": 14
           },
           {
-            "template": "{DRINK} 12 Am Oak with {FOOD} — vanilla-forward Speyside against a 16oz strip.",
+            "template": "{DRINK} 12 Am Oak with {FOOD} — vanilla-forward Speyside against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -403,7 +403,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — First Fill American Oak against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — First Fill American Oak against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -413,12 +413,12 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — retailer-pick {DRINK} against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — retailer-pick {DRINK} against the 10oz cut.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — distinctive Speyside against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — distinctive Speyside against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -428,17 +428,17 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — retailer-label aged bourbon against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — retailer-label aged bourbon against the 10oz cut.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — entry Speyside against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — entry Speyside against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — honey-floral Speyside against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — honey-floral Speyside against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -453,12 +453,12 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — Oloroso Speyside against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — Oloroso Speyside against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} Sam with {FOOD} — {DRINK} Sam Bronfman tribute against a 16oz strip.",
+            "template": "{DRINK} Sam with {FOOD} — {DRINK} Sam Bronfman tribute against an 18oz strip.",
             "count": 2,
             "global": 2
           }
@@ -1857,17 +1857,17 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_LEAN": [
           {
-            "template": "{DRINK} with {FOOD} — ubiquitous cognac against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — ubiquitous cognac against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — artisanal cognac against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — artisanal cognac against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — contemporary cognac spirit against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — contemporary cognac spirit against an 18oz strip.",
             "count": 2,
             "global": 2
           }
@@ -1946,7 +1946,7 @@ const EDITORIAL_PHRASES = {
       "COGNAC_LUXURY": {
         "STEAK_LEAN": [
           {
-            "template": "{DRINK} with {FOOD} — luxury-icon Grande Champagne against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — luxury-icon Grande Champagne against an 18oz strip.",
             "count": 2,
             "global": 2
           }
@@ -2316,7 +2316,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — Irish single malt against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — Irish single malt against an 18oz strip.",
             "count": 2,
             "global": 2
           }
@@ -3078,7 +3078,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — ultra-premium hand-painted ceramic against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — ultra-premium hand-painted ceramic against the 10oz cut.",
             "count": 2,
             "global": 2
           },
@@ -3506,7 +3506,7 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_LEAN": [
           {
-            "template": "{DRINK} with {FOOD} — drier Napoleon-era cognac against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — drier Napoleon-era cognac against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -4040,12 +4040,12 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} Oakville Cab against {FOOD}'s delicate sweet shellfish — opulent chocolate-espresso crushes remoulade-and-crab.",
+            "template": "{DRINK} Oakville Cab against {FOOD}'s delicate sweet shellfish — opulent chocolate-espresso crushes romesco-and-crab.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "Rutherford {DRINK} Cab against {FOOD}'s delicate sweet shellfish — firm refined mint-cedar body crushes remoulade-and-crab.",
+            "template": "Rutherford {DRINK} Cab against {FOOD}'s delicate sweet shellfish — firm refined mint-cedar body crushes romesco-and-crab.",
             "count": 2,
             "global": 2
           },
@@ -4642,12 +4642,12 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_LEAN": [
           {
-            "template": "{DRINK} with {FOOD} — brunch-register bitter against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — brunch-register bitter against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — aperitivo bitter against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — aperitivo bitter against an 18oz strip.",
             "count": 2,
             "global": 2
           }
@@ -4694,42 +4694,42 @@ const EDITORIAL_PHRASES = {
       "VODKA": {
         "STEAK_LEAN": [
           {
-            "template": "{DRINK} with {FOOD} — Polish rye against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — Polish rye against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — silky potato vodka against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — silky potato vodka against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — craft Michigan vodka against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — craft Michigan vodka against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — French wheat against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — French wheat against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — California craft against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — California craft against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — Dutch wheat against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — Dutch wheat against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — Icelandic vodka against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — Icelandic vodka against an 18oz strip.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — Russian wheat against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — Russian wheat against an 18oz strip.",
             "count": 2,
             "global": 2
           }
@@ -5358,12 +5358,12 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_LEAN": [
           {
-            "template": "{FOOD}: the restraint and clean beef purity of the 8oz center-cut meets {DRINK}'s vibrant peat.",
+            "template": "{FOOD}: the restraint and clean beef purity of the 10oz center-cut meets {DRINK}'s vibrant peat.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{FOOD}: the restraint of the 8oz center-cut meets {DRINK}'s medicinal intensity.",
+            "template": "{FOOD}: the restraint of the 10oz center-cut meets {DRINK}'s medicinal intensity.",
             "count": 2,
             "global": 2
           },
@@ -5877,32 +5877,32 @@ const EDITORIAL_PHRASES = {
         ],
         "STEAK_LEAN": [
           {
-            "template": "{DRINK} with {FOOD} — luxury blanco against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — luxury blanco against the 10oz cut.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — single-estate blanco against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — single-estate blanco against the 10oz cut.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — refined highland blanco against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — refined highland blanco against the 10oz cut.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — family-heritage craft blanco against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — family-heritage craft blanco against the 10oz cut.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — craft premium blanco against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — craft premium blanco against the 10oz cut.",
             "count": 2,
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — traditional craft blanco against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — traditional craft blanco against the 10oz cut.",
             "count": 2,
             "global": 2
           }
@@ -6600,7 +6600,7 @@ const EDITORIAL_PHRASES = {
             "global": 10
           },
           {
-            "template": "{DRINK} with {FOOD} — traditional grain-forward {DRINK} against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — traditional grain-forward {DRINK} against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -6610,7 +6610,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — UK-aged Kentucky rye against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — UK-aged Kentucky rye against the 10oz cut.",
             "count": 2,
             "global": 2
           },
@@ -6625,7 +6625,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — craft Irish against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — craft Irish against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -6635,7 +6635,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — triple-distilled iconic Irish against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — triple-distilled iconic Irish against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -6645,7 +6645,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} with {FOOD} — Speyside-malt blend against a 16oz strip.",
+            "template": "{DRINK} with {FOOD} — Speyside-malt blend against an 18oz strip.",
             "count": 2,
             "global": 2
           },
@@ -6660,7 +6660,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{DRINK} D.E.W. with {FOOD} — drier traditional Irish blend against a 16oz strip.",
+            "template": "{DRINK} D.E.W. with {FOOD} — drier traditional Irish blend against an 18oz strip.",
             "count": 2,
             "global": 2
           }
@@ -6897,7 +6897,7 @@ const EDITORIAL_PHRASES = {
       "LIGHT_SPIRIT": {
         "STEAK_LEAN": [
           {
-            "template": "{DRINK} with {FOOD} — filtered aged tequila against the 8oz cut.",
+            "template": "{DRINK} with {FOOD} — filtered aged tequila against the 10oz cut.",
             "count": 2,
             "global": 2
           }
@@ -6962,7 +6962,7 @@ const EDITORIAL_PHRASES = {
             "global": 2
           },
           {
-            "template": "{FOOD}: the 8oz cut meets {DRINK}'s 8-month-aged balance.",
+            "template": "{FOOD}: the 10oz cut meets {DRINK}'s 8-month-aged balance.",
             "count": 2,
             "global": 2
           }

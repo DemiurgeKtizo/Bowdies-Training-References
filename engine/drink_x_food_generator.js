@@ -290,24 +290,371 @@ const BOTTLE_PROFILE = {
 
 // ── DEFAULT (CLASS-LEVEL) FALLBACK PROFILES ────────────────────────────────
 const DRINK_CLASS_DEFAULT = {
-  BIG_RED:          { character: 'concentrated dark-fruit and tannin',     bridge1: 'the structured body wraps {foodTarget}',          bridge2: 'the cassis frames {foodSubj}',           verdictHook: 'big-red Cab' },
-  ELEGANT_RED:      { character: 'red-fruit-and-spice elegance',           bridge1: 'the silky body carries {foodTarget}',             bridge2: 'the cherry-pepper note frames {foodSubj}', verdictHook: 'elegant red' },
-  BOURBON_BOLD:     { character: 'oak-and-vanilla bourbon depth',          bridge1: 'the brown-spirit body settles into {foodTarget}', bridge2: 'the toffee-vanilla edge softens {foodSubj}', verdictHook: 'bourbon' },
-  TEQUILA_BOLD:     { character: 'aged-agave character',                   bridge1: 'the barrel-rested body handles {foodTarget}',     bridge2: 'the oak threads {foodSubj}',             verdictHook: 'a\u00f1ejo tequila' },
-  MEZCAL:           { character: 'smoky agave character',                  bridge1: 'the wood-fire body meets {foodTarget}',           bridge2: 'the earthy backbone threads {foodSubj}', verdictHook: 'smoky mezcal' },
-  COGNAC:           { character: 'barrel-aged cognac character',           bridge1: 'the brandy depth wraps {foodTarget}',             bridge2: 'the caramel rounds {foodSubj}',          verdictHook: 'classic cognac' },
-  COGNAC_LUXURY:    { character: 'luxury-icon cognac depth',               bridge1: 'the heritage-blend body wraps {foodTarget}',      bridge2: 'the caramel rounds {foodSubj}',          verdictHook: 'luxury cognac' },
-  SPARKLING:        { character: 'bright sparkling effervescence',         bridge1: 'the fine bubbles lift {foodTarget}',              bridge2: 'the citrus frames {foodSubj}',           verdictHook: 'Champagne' },
-  WHITE_WINE:       { character: 'crisp white-wine character',             bridge1: 'the bright acid lifts {foodTarget}',              bridge2: 'the citrus cuts {foodSubj}',             verdictHook: 'white wine' },
-  GIN:              { character: 'botanical-driven lift',                  bridge1: 'the floral edge frames {foodTarget}',             bridge2: 'the juniper threads {foodSubj}',         verdictHook: 'gin' },
-  VODKA:            { character: 'crystalline neutrality',                 bridge1: 'the unflavored body sits with {foodTarget}',      bridge2: 'the crisp profile carries {foodSubj}',   verdictHook: 'vodka' },
-  LIGHT_SPIRIT:     { character: 'silver-spirit lift with agave-citrus edge', bridge1: 'the unaged body brightens {foodTarget}',       bridge2: 'the agave-citrus thread frames {foodSubj}', verdictHook: 'silver spirit' },
-  HEAVY_SPIRIT:     { character: 'dense-spirit weight',                    bridge1: 'the heavy body handles {foodTarget}',             bridge2: 'the deep backbone frames {foodSubj}',    verdictHook: 'heavy pour' },
-  COCKTAIL_BOLD:    { character: 'spirit-forward cocktail register',       bridge1: 'the bold-mix depth handles {foodTarget}',         bridge2: 'the bitters edge frames {foodSubj}',     verdictHook: 'spirit-forward cocktail' },
-  COCKTAIL_LIGHT:   { character: 'citrus-and-bright cocktail lift',        bridge1: 'the bright build frames {foodTarget}',            bridge2: 'the citrus cuts {foodSubj}',             verdictHook: 'light cocktail' },
-  SWEET_LIQUEUR:    { character: 'sweet liqueur character',                bridge1: 'the digestif body mirrors {foodTarget}',          bridge2: 'the herbal-sugar edge threads {foodSubj}', verdictHook: 'digestif liqueur' },
-  APERITIVO_BITTER: { character: 'bitter-herb aperitivo edge',             bridge1: 'the herbal cut works {foodTarget}',               bridge2: 'the amaro backbone frames {foodSubj}',   verdictHook: 'aperitivo' },
-  SWEET_WINE:       { character: 'dessert-wine sweetness',                 bridge1: 'the late-harvest body mirrors {foodTarget}',      bridge2: 'the honey threads {foodSubj}',           verdictHook: 'dessert wine' },
+  BIG_RED: {
+    character: 'concentrated dark-fruit and tannin',
+    bridge1: 'the structured body wraps {foodTarget}',
+    bridge1Variants: [
+      'the structured body wraps {foodTarget}',
+      'the concentrated dark-fruit weight handles {foodTarget}',
+      'the firm tannin grips {foodTarget}',
+      'the powerful body carries {foodTarget}',
+      'the bold Cab register matches {foodTarget}',
+      'the dark-fruit body sits with {foodTarget}',
+    ],
+    bridge2: 'the cassis frames {foodSubj}',
+    bridge2Variants: [
+      'the cassis frames {foodSubj}',
+      'the blackberry edge underlines {foodSubj}',
+      'the espresso-cocoa note rounds {foodSubj}',
+      'the iron-mineral plays against {foodSubj}',
+      'the tannin grips {foodSubj}',
+    ],
+    verdictHook: 'big-red Cab'
+  },
+  ELEGANT_RED: {
+    character: 'red-fruit-and-spice elegance',
+    bridge1: 'the silky body carries {foodTarget}',
+    bridge1Variants: [
+      'the silky body carries {foodTarget}',
+      'the elegant tannin frames {foodTarget}',
+      'the red-fruit-and-spice register sits with {foodTarget}',
+      'the medium body wraps {foodTarget}',
+      'the polished red-fruit weight matches {foodTarget}',
+    ],
+    bridge2: 'the cherry-pepper note frames {foodSubj}',
+    bridge2Variants: [
+      'the cherry-pepper note frames {foodSubj}',
+      'the red-fruit edge brightens {foodSubj}',
+      'the silky tannin rounds {foodSubj}',
+      'the spice underlines {foodSubj}',
+      'the cherry-and-earth register softens {foodSubj}',
+    ],
+    verdictHook: 'elegant red'
+  },
+  BOURBON_BOLD: {
+    character: 'oak-and-vanilla bourbon depth',
+    bridge1: 'the brown-spirit body settles into {foodTarget}',
+    bridge1Variants: [
+      'the brown-spirit body settles into {foodTarget}',
+      'the oak-and-vanilla weight wraps {foodTarget}',
+      'the whiskey-family backbone carries {foodTarget}',
+      'the brown-spirit register matches {foodTarget}',
+      'the dark-spirit weight handles {foodTarget}',
+      'the oak depth threads {foodTarget}',
+    ],
+    bridge2: 'the toffee-vanilla edge softens {foodSubj}',
+    bridge2Variants: [
+      'the toffee-vanilla edge softens {foodSubj}',
+      'the caramel rounds {foodSubj}',
+      'the oak frames {foodSubj}',
+      'the spice-and-vanilla brightens {foodSubj}',
+      'the rounded sweetness underlines {foodSubj}',
+    ],
+    verdictHook: 'bourbon'
+  },
+  TEQUILA_BOLD: {
+    character: 'aged-agave character',
+    bridge1: 'the barrel-rested body handles {foodTarget}',
+    bridge1Variants: [
+      'the barrel-rested body handles {foodTarget}',
+      'the a\u00f1ejo register carries {foodTarget}',
+      'the aged-agave weight wraps {foodTarget}',
+      'the cooked-agave-and-oak body matches {foodTarget}',
+      'the rested-agave depth sits with {foodTarget}',
+      'the oak-aged tequila body threads {foodTarget}',
+    ],
+    bridge2: 'the oak threads {foodSubj}',
+    bridge2Variants: [
+      'the oak threads {foodSubj}',
+      'the cooked-agave note underlines {foodSubj}',
+      'the caramel-agave register brightens {foodSubj}',
+      'the vanilla-and-pepper edge frames {foodSubj}',
+      'the soft-spice note softens {foodSubj}',
+    ],
+    verdictHook: 'a\u00f1ejo tequila'
+  },
+  MEZCAL: {
+    character: 'smoky agave character',
+    bridge1: 'the wood-fire body meets {foodTarget}',
+    bridge1Variants: [
+      'the wood-fire body meets {foodTarget}',
+      'the smoky agave register handles {foodTarget}',
+      'the earthen-pit smoke carries {foodTarget}',
+      'the espadín-and-smoke body wraps {foodTarget}',
+      'the rustic mezcal weight sits with {foodTarget}',
+    ],
+    bridge2: 'the earthy backbone threads {foodSubj}',
+    bridge2Variants: [
+      'the earthy backbone threads {foodSubj}',
+      'the wood-smoke note underlines {foodSubj}',
+      'the green-agave edge brightens {foodSubj}',
+      'the campfire register frames {foodSubj}',
+      'the mineral smoke plays against {foodSubj}',
+    ],
+    verdictHook: 'smoky mezcal'
+  },
+  COGNAC: {
+    character: 'barrel-aged cognac character',
+    bridge1: 'the brandy depth wraps {foodTarget}',
+    bridge1Variants: [
+      'the brandy depth wraps {foodTarget}',
+      'the cognac register matches {foodTarget}',
+      'the eau-de-vie body carries {foodTarget}',
+      'the Limousin-oak weight handles {foodTarget}',
+      'the aged-grape brandy body sits with {foodTarget}',
+    ],
+    bridge2: 'the caramel rounds {foodSubj}',
+    bridge2Variants: [
+      'the caramel rounds {foodSubj}',
+      'the dried-fruit note underlines {foodSubj}',
+      'the oak-and-vanilla edge brightens {foodSubj}',
+      'the rancio register softens {foodSubj}',
+      'the orchard-fruit thread frames {foodSubj}',
+    ],
+    verdictHook: 'classic cognac'
+  },
+  COGNAC_LUXURY: {
+    character: 'luxury-icon cognac depth',
+    bridge1: 'the heritage-blend body wraps {foodTarget}',
+    bridge1Variants: [
+      'the heritage-blend body wraps {foodTarget}',
+      'the icon-cognac register elevates {foodTarget}',
+      'the prestige-blend weight carries {foodTarget}',
+      'the multi-decade aged body matches {foodTarget}',
+      'the heritage-cognac depth handles {foodTarget}',
+    ],
+    bridge2: 'the caramel rounds {foodSubj}',
+    bridge2Variants: [
+      'the caramel rounds {foodSubj}',
+      'the rancio-and-walnut note underlines {foodSubj}',
+      'the icon-prestige edge brightens {foodSubj}',
+      'the layered eau-de-vie register frames {foodSubj}',
+      'the polished oak softens {foodSubj}',
+    ],
+    verdictHook: 'luxury cognac'
+  },
+  SPARKLING: {
+    character: 'bright sparkling effervescence',
+    bridge1: 'the fine bubbles lift {foodTarget}',
+    bridge1Variants: [
+      'the fine bubbles lift {foodTarget}',
+      'the autolytic toast register matches {foodTarget}',
+      'the mineral-driven sparkling body cuts {foodTarget}',
+      'the bright effervescence carries {foodTarget}',
+      'the Champagne acidity matches {foodTarget}',
+      'the toasty méthode register sits with {foodTarget}',
+    ],
+    bridge2: 'the citrus frames {foodSubj}',
+    bridge2Variants: [
+      'the citrus frames {foodSubj}',
+      'the brioche-and-toast note underlines {foodSubj}',
+      'the chalky minerality brightens {foodSubj}',
+      'the bright acidity cuts {foodSubj}',
+      'the apple-pear edge plays against {foodSubj}',
+    ],
+    verdictHook: 'Champagne'
+  },
+  WHITE_WINE: {
+    character: 'crisp white-wine character',
+    bridge1: 'the bright acid lifts {foodTarget}',
+    bridge1Variants: [
+      'the bright acid lifts {foodTarget}',
+      'the crisp white-wine body matches {foodTarget}',
+      'the cool-climate register carries {foodTarget}',
+      'the mineral-driven body cuts {foodTarget}',
+      'the citrus-and-stone-fruit weight sits with {foodTarget}',
+    ],
+    bridge2: 'the citrus cuts {foodSubj}',
+    bridge2Variants: [
+      'the citrus cuts {foodSubj}',
+      'the green-apple edge brightens {foodSubj}',
+      'the stone-fruit note underlines {foodSubj}',
+      'the chalky minerality plays against {foodSubj}',
+      'the white-flower thread softens {foodSubj}',
+    ],
+    verdictHook: 'white wine'
+  },
+  GIN: {
+    character: 'botanical-driven lift',
+    bridge1: 'the floral edge frames {foodTarget}',
+    bridge1Variants: [
+      'the floral edge frames {foodTarget}',
+      'the juniper-led botanicals carry {foodTarget}',
+      'the gin lift cuts {foodTarget}',
+      'the botanical-citrus register matches {foodTarget}',
+      'the herbal gin body sits with {foodTarget}',
+      'the bright botanical edge handles {foodTarget}',
+    ],
+    bridge2: 'the juniper threads {foodSubj}',
+    bridge2Variants: [
+      'the juniper threads {foodSubj}',
+      'the citrus-peel note underlines {foodSubj}',
+      'the floral-and-herb register brightens {foodSubj}',
+      'the coriander-and-cardamom edge frames {foodSubj}',
+      'the dry gin lift plays against {foodSubj}',
+    ],
+    verdictHook: 'gin'
+  },
+  VODKA: {
+    character: 'crystalline neutrality',
+    bridge1: 'the unflavored body sits with {foodTarget}',
+    bridge1Variants: [
+      'the unflavored body sits with {foodTarget}',
+      'the clean vodka register matches {foodTarget}',
+      'the crystalline body carries {foodTarget}',
+      'the neutral-spirit weight handles {foodTarget}',
+      'the cold-distilled body wraps {foodTarget}',
+    ],
+    bridge2: 'the crisp profile carries {foodSubj}',
+    bridge2Variants: [
+      'the crisp profile carries {foodSubj}',
+      'the clean register frames {foodSubj}',
+      'the bright vodka edge brightens {foodSubj}',
+      'the unobtrusive backbone supports {foodSubj}',
+      'the silky neutrality lifts {foodSubj}',
+    ],
+    verdictHook: 'vodka'
+  },
+  LIGHT_SPIRIT: {
+    character: 'silver-spirit lift with agave-citrus edge',
+    bridge1: 'the unaged body brightens {foodTarget}',
+    bridge1Variants: [
+      'the unaged body brightens {foodTarget}',
+      'the silver-spirit register lifts {foodTarget}',
+      'the blanco-tequila body matches {foodTarget}',
+      'the bright agave-citrus weight carries {foodTarget}',
+      'the light-rum body cuts {foodTarget}',
+    ],
+    bridge2: 'the agave-citrus thread frames {foodSubj}',
+    bridge2Variants: [
+      'the agave-citrus thread frames {foodSubj}',
+      'the green-agave edge brightens {foodSubj}',
+      'the bright blanco register underlines {foodSubj}',
+      'the unaged-cane note plays against {foodSubj}',
+      'the lime-and-pepper thread softens {foodSubj}',
+    ],
+    verdictHook: 'silver spirit'
+  },
+  HEAVY_SPIRIT: {
+    character: 'dense-spirit weight',
+    bridge1: 'the heavy body handles {foodTarget}',
+    bridge1Variants: [
+      'the heavy body handles {foodTarget}',
+      'the dense-spirit weight carries {foodTarget}',
+      'the high-proof register matches {foodTarget}',
+      'the rich pour wraps {foodTarget}',
+      'the layered spirit body sits with {foodTarget}',
+    ],
+    bridge2: 'the deep backbone frames {foodSubj}',
+    bridge2Variants: [
+      'the deep backbone frames {foodSubj}',
+      'the heavy-pour register grips {foodSubj}',
+      'the dense weight underlines {foodSubj}',
+      'the layered body brightens {foodSubj}',
+      'the rich character softens {foodSubj}',
+    ],
+    verdictHook: 'heavy pour'
+  },
+  COCKTAIL_BOLD: {
+    character: 'spirit-forward cocktail register',
+    bridge1: 'the bold-mix depth handles {foodTarget}',
+    bridge1Variants: [
+      'the bold-mix depth handles {foodTarget}',
+      'the spirit-forward register carries {foodTarget}',
+      'the whiskey-led build matches {foodTarget}',
+      'the stirred-cocktail body wraps {foodTarget}',
+      'the bitters-and-spirit weight sits with {foodTarget}',
+    ],
+    bridge2: 'the bitters edge frames {foodSubj}',
+    bridge2Variants: [
+      'the bitters edge frames {foodSubj}',
+      'the stirred-cocktail register underlines {foodSubj}',
+      'the spirit-driven note plays against {foodSubj}',
+      'the aromatic-bitters thread softens {foodSubj}',
+      'the cherry-and-orange edge brightens {foodSubj}',
+    ],
+    verdictHook: 'spirit-forward cocktail'
+  },
+  COCKTAIL_LIGHT: {
+    character: 'citrus-and-bright cocktail lift',
+    bridge1: 'the bright build frames {foodTarget}',
+    bridge1Variants: [
+      'the bright build frames {foodTarget}',
+      'the citrus-driven lift cuts {foodTarget}',
+      'the shaken-cocktail register carries {foodTarget}',
+      'the gin-or-tequila build matches {foodTarget}',
+      'the high-acid cocktail body sits with {foodTarget}',
+    ],
+    bridge2: 'the citrus cuts {foodSubj}',
+    bridge2Variants: [
+      'the citrus cuts {foodSubj}',
+      'the bright lemon-lime edge brightens {foodSubj}',
+      'the herbal-citrus thread underlines {foodSubj}',
+      'the egg-white silk softens {foodSubj}',
+      'the bubble-or-tonic top lifts {foodSubj}',
+    ],
+    verdictHook: 'light cocktail'
+  },
+  SWEET_LIQUEUR: {
+    character: 'sweet liqueur character',
+    bridge1: 'the digestif body mirrors {foodTarget}',
+    bridge1Variants: [
+      'the digestif body mirrors {foodTarget}',
+      'the sweet-liqueur register carries {foodTarget}',
+      'the herbal-sweet weight matches {foodTarget}',
+      'the after-dinner pour body sits with {foodTarget}',
+      'the syrupy liqueur weight wraps {foodTarget}',
+    ],
+    bridge2: 'the herbal-sugar edge threads {foodSubj}',
+    bridge2Variants: [
+      'the herbal-sugar edge threads {foodSubj}',
+      'the digestif sweetness softens {foodSubj}',
+      'the orange-or-anise note underlines {foodSubj}',
+      'the soft-spice register brightens {foodSubj}',
+      'the candied-fruit edge plays against {foodSubj}',
+    ],
+    verdictHook: 'digestif liqueur'
+  },
+  APERITIVO_BITTER: {
+    character: 'bitter-herb aperitivo edge',
+    bridge1: 'the herbal cut works {foodTarget}',
+    bridge1Variants: [
+      'the herbal cut works {foodTarget}',
+      'the amaro-bitter register cuts {foodTarget}',
+      'the gentian-driven edge sharpens {foodTarget}',
+      'the bittersweet aperitivo body matches {foodTarget}',
+      'the rhubarb-and-orange aperitivo carries {foodTarget}',
+    ],
+    bridge2: 'the amaro backbone frames {foodSubj}',
+    bridge2Variants: [
+      'the amaro backbone frames {foodSubj}',
+      'the herbal-bitter edge underlines {foodSubj}',
+      'the bittersweet thread cuts {foodSubj}',
+      'the orange-rind register brightens {foodSubj}',
+      'the gentian bite plays against {foodSubj}',
+    ],
+    verdictHook: 'aperitivo'
+  },
+  SWEET_WINE: {
+    character: 'dessert-wine sweetness',
+    bridge1: 'the late-harvest body mirrors {foodTarget}',
+    bridge1Variants: [
+      'the late-harvest body mirrors {foodTarget}',
+      'the dessert-wine register matches {foodTarget}',
+      'the botrytis-honey weight wraps {foodTarget}',
+      'the Sauternes-or-Port body carries {foodTarget}',
+      'the sticky-sweet pour sits with {foodTarget}',
+    ],
+    bridge2: 'the honey threads {foodSubj}',
+    bridge2Variants: [
+      'the honey threads {foodSubj}',
+      'the apricot-and-marmalade note underlines {foodSubj}',
+      'the late-harvest sugar rounds {foodSubj}',
+      'the noble-rot register brightens {foodSubj}',
+      'the dessert-wine acid balances {foodSubj}',
+    ],
+    verdictHook: 'dessert wine'
+  },
 };
 
 // ── WHISKEY VOICE SUBCLASS ─────────────────────────────────────────────────
@@ -333,12 +680,134 @@ function whiskeyVoiceSubclass(drink) {
 }
 
 const WHISKEY_VOICE_DEFAULTS = {
-  BOURBON:  { character: 'oak-and-vanilla bourbon depth',     bridge1: 'the bourbon depth settles into {foodTarget}',  bridge2: 'the vanilla softens {foodSubj}',     verdictHook: 'bourbon',         avoidLabel: 'bourbon' },
-  SCOTCH:   { character: 'Highland-scotch character',         bridge1: 'the scotch depth settles into {foodTarget}',   bridge2: 'the malt edge frames {foodSubj}',    verdictHook: 'scotch',          avoidLabel: 'scotch' },
-  IRISH:    { character: 'Irish whiskey smoothness',          bridge1: 'the Irish whiskey body sits with {foodTarget}', bridge2: 'the soft malt rounds {foodSubj}',   verdictHook: 'Irish whiskey',   avoidLabel: 'Irish whiskey' },
-  JAPANESE: { character: 'Japanese whisky precision',         bridge1: 'the Japanese whisky balance frames {foodTarget}', bridge2: 'the precision rounds {foodSubj}',  verdictHook: 'Japanese whisky', avoidLabel: 'Japanese whisky' },
-  CANADIAN: { character: 'Canadian whisky character',         bridge1: 'the Canadian whisky weight matches {foodTarget}', bridge2: 'the soft profile rounds {foodSubj}', verdictHook: 'Canadian whisky', avoidLabel: 'Canadian whisky' },
-  RYE:      { character: 'rye-spice character',               bridge1: 'the rye spice cuts {foodTarget}',              bridge2: 'the rye edge frames {foodSubj}',     verdictHook: 'rye whiskey',     avoidLabel: 'rye whiskey' },
+  BOURBON:  {
+    character: 'oak-and-vanilla bourbon depth',
+    bridge1: 'the bourbon depth settles into {foodTarget}',
+    bridge1Variants: [
+      'the bourbon depth settles into {foodTarget}',
+      'the oak-and-vanilla weight wraps {foodTarget}',
+      'the bourbon body sits with {foodTarget}',
+      'the brown-spirit warmth threads {foodTarget}',
+      'the caramel-spice register matches {foodTarget}',
+      'the bourbon backbone carries {foodTarget}',
+      'the oak depth lays under {foodTarget}',
+      'the bourbon weight handles {foodTarget}',
+    ],
+    bridge2: 'the vanilla softens {foodSubj}',
+    bridge2Variants: [
+      'the vanilla softens {foodSubj}',
+      'the caramel rounds {foodSubj}',
+      'the oak frames {foodSubj}',
+      'the rounded sweetness brightens {foodSubj}',
+      'the toffee-vanilla edge underlines {foodSubj}',
+      'the oak-and-spice register settles {foodSubj}',
+    ],
+    verdictHook: 'bourbon', avoidLabel: 'bourbon'
+  },
+  SCOTCH:   {
+    character: 'Highland-scotch character',
+    bridge1: 'the scotch depth settles into {foodTarget}',
+    bridge1Variants: [
+      'the scotch depth settles into {foodTarget}',
+      'the malt-driven body wraps {foodTarget}',
+      'the Highland register carries {foodTarget}',
+      'the heather-and-honey weight sits with {foodTarget}',
+      'the malt-and-oak threads {foodTarget}',
+      'the scotch backbone matches {foodTarget}',
+    ],
+    bridge2: 'the malt edge frames {foodSubj}',
+    bridge2Variants: [
+      'the malt edge frames {foodSubj}',
+      'the smoke threads {foodSubj}',
+      'the heather brightens {foodSubj}',
+      'the honey rounds {foodSubj}',
+      'the oak-and-smoke underlines {foodSubj}',
+      'the malt-driven sweetness softens {foodSubj}',
+    ],
+    verdictHook: 'scotch', avoidLabel: 'scotch'
+  },
+  IRISH: {
+    character: 'Irish whiskey smoothness',
+    bridge1: 'the Irish whiskey body sits with {foodTarget}',
+    bridge1Variants: [
+      'the Irish whiskey body sits with {foodTarget}',
+      'the smooth triple-distilled register matches {foodTarget}',
+      'the soft malt-and-grain weight wraps {foodTarget}',
+      'the approachable Irish character carries {foodTarget}',
+      'the gentle Irish body threads {foodTarget}',
+      'the malt-grain blend handles {foodTarget}',
+    ],
+    bridge2: 'the soft malt rounds {foodSubj}',
+    bridge2Variants: [
+      'the soft malt rounds {foodSubj}',
+      'the gentle barley note frames {foodSubj}',
+      'the triple-distilled smoothness brightens {foodSubj}',
+      'the orchard-fruit edge underlines {foodSubj}',
+      'the grain register softens {foodSubj}',
+    ],
+    verdictHook: 'Irish whiskey', avoidLabel: 'Irish whiskey'
+  },
+  JAPANESE: {
+    character: 'Japanese whisky precision',
+    bridge1: 'the Japanese whisky balance frames {foodTarget}',
+    bridge1Variants: [
+      'the Japanese whisky balance frames {foodTarget}',
+      'the Mizunara-influenced register sits with {foodTarget}',
+      'the precise Japanese craft body wraps {foodTarget}',
+      'the elegant Suntory/Nikka register matches {foodTarget}',
+      'the restrained whisky body threads {foodTarget}',
+    ],
+    bridge2: 'the precision rounds {foodSubj}',
+    bridge2Variants: [
+      'the precision rounds {foodSubj}',
+      'the umami-tinged finish frames {foodSubj}',
+      'the Japanese-craft balance underlines {foodSubj}',
+      'the green-fruit edge brightens {foodSubj}',
+      'the sandalwood-and-honey register softens {foodSubj}',
+    ],
+    verdictHook: 'Japanese whisky', avoidLabel: 'Japanese whisky'
+  },
+  CANADIAN: {
+    character: 'Canadian whisky character',
+    bridge1: 'the Canadian whisky weight matches {foodTarget}',
+    bridge1Variants: [
+      'the Canadian whisky weight matches {foodTarget}',
+      'the rye-blended Canadian body sits with {foodTarget}',
+      'the smooth Canadian register carries {foodTarget}',
+      'the easygoing Canadian character handles {foodTarget}',
+      'the blended whisky body wraps {foodTarget}',
+    ],
+    bridge2: 'the soft profile rounds {foodSubj}',
+    bridge2Variants: [
+      'the soft profile rounds {foodSubj}',
+      'the light caramel edge frames {foodSubj}',
+      'the gentle rye thread underlines {foodSubj}',
+      'the easy Canadian register softens {foodSubj}',
+      'the light-grain note brightens {foodSubj}',
+    ],
+    verdictHook: 'Canadian whisky', avoidLabel: 'Canadian whisky'
+  },
+  RYE: {
+    character: 'rye-spice character',
+    bridge1: 'the rye spice cuts {foodTarget}',
+    bridge1Variants: [
+      'the rye spice cuts {foodTarget}',
+      'the rye-pepper edge sharpens {foodTarget}',
+      'the rye backbone drives {foodTarget}',
+      'the high-rye spice register matches {foodTarget}',
+      'the dry rye body wraps {foodTarget}',
+      'the rye-and-oak weight handles {foodTarget}',
+    ],
+    bridge2: 'the rye edge frames {foodSubj}',
+    bridge2Variants: [
+      'the rye edge frames {foodSubj}',
+      'the rye-pepper note underlines {foodSubj}',
+      'the dry-spice register brightens {foodSubj}',
+      'the rye-grain bite cuts {foodSubj}',
+      'the spice-and-vanilla thread softens {foodSubj}',
+    ],
+    verdictHook: 'rye whiskey', avoidLabel: 'rye whiskey'
+  },
 };
 
 // ── ELEGANT_RED VOICE SUBCLASS ─────────────────────────────────────────────
@@ -365,17 +834,228 @@ function elegantRedVoiceSubclass(drink) {
 }
 
 const ELEGANT_RED_VOICE_DEFAULTS = {
-  PINOT:     { character: 'silky Pinot Noir with cherry-and-forest-floor lift', bridge1: 'the Pinot body brightens {foodTarget}',         bridge2: 'the cherry-and-earth note frames {foodSubj}', verdictHook: 'Pinot Noir' },
-  NEBBIOLO:  { character: 'high-acid Nebbiolo with rose-and-tar grip',           bridge1: 'the Nebbiolo grip cuts {foodTarget}',           bridge2: 'the tar-and-rose edge frames {foodSubj}',     verdictHook: 'Piedmont Nebbiolo' },
-  CHIANTI:   { character: 'Sangiovese-driven Tuscan acidity',                    bridge1: 'the bright Sangiovese body lifts {foodTarget}', bridge2: 'the cherry-leather edge frames {foodSubj}',   verdictHook: 'Tuscan Sangiovese' },
-  RHONE:     { character: 'spice-and-dark-fruit Rhone register',                 bridge1: 'the Rhone-blend body wraps {foodTarget}',       bridge2: 'the peppery edge frames {foodSubj}',          verdictHook: 'Rhone red' },
-  SPANISH:   { character: 'Tempranillo with vanilla-and-leather depth',          bridge1: 'the Tempranillo body wraps {foodTarget}',       bridge2: 'the vanilla-leather edge frames {foodSubj}',  verdictHook: 'Spanish red' },
-  MALBEC:    { character: 'plush Malbec with plum-and-violet weight',            bridge1: 'the Malbec body wraps {foodTarget}',            bridge2: 'the plum-and-violet edge frames {foodSubj}',  verdictHook: 'Argentine Malbec' },
-  ZIN:       { character: 'jammy Zinfandel with bramble-and-pepper lift',        bridge1: 'the Zin body wraps {foodTarget}',               bridge2: 'the bramble-and-pepper edge frames {foodSubj}', verdictHook: 'Zinfandel' },
-  CAB_FRANC: { character: 'herbaceous Cab Franc with red-fruit and bell-pepper', bridge1: 'the Cab Franc body lifts {foodTarget}',         bridge2: 'the bell-pepper-and-cherry note frames {foodSubj}', verdictHook: 'Cab Franc' },
-  BORDEAUX:  { character: 'Merlot-led Bordeaux blend with plush dark-fruit',     bridge1: 'the Bordeaux body wraps {foodTarget}',          bridge2: 'the cassis-and-tobacco edge frames {foodSubj}', verdictHook: 'Bordeaux blend' },
-  CAB:       { character: 'structured Cabernet with cassis-and-cedar depth',     bridge1: 'the Cabernet body wraps {foodTarget}',          bridge2: 'the cassis-and-cedar edge frames {foodSubj}', verdictHook: 'Cabernet Sauvignon' },
-  GENERIC_ELEGANT_RED: { character: 'red-fruit-and-spice elegance',              bridge1: 'the silky body carries {foodTarget}',           bridge2: 'the cherry-pepper note frames {foodSubj}',  verdictHook: 'elegant red' },
+  PINOT: {
+    character: 'silky Pinot Noir with cherry-and-forest-floor lift',
+    bridge1: 'the Pinot body brightens {foodTarget}',
+    bridge1Variants: [
+      'the Pinot body brightens {foodTarget}',
+      'the silky red-fruit lift carries {foodTarget}',
+      'the cool-climate Pinot register sits with {foodTarget}',
+      'the cherry-bright Pinot weight wraps {foodTarget}',
+      'the supple Pinot body matches {foodTarget}',
+      'the Pinot finesse threads {foodTarget}',
+    ],
+    bridge2: 'the cherry-and-earth note frames {foodSubj}',
+    bridge2Variants: [
+      'the cherry-and-earth note frames {foodSubj}',
+      'the forest-floor edge underlines {foodSubj}',
+      'the red-cherry register brightens {foodSubj}',
+      'the silky tannin softens {foodSubj}',
+      'the cool red-fruit note plays against {foodSubj}',
+    ],
+    verdictHook: 'Pinot Noir'
+  },
+  NEBBIOLO: {
+    character: 'high-acid Nebbiolo with rose-and-tar grip',
+    bridge1: 'the Nebbiolo grip cuts {foodTarget}',
+    bridge1Variants: [
+      'the Nebbiolo grip cuts {foodTarget}',
+      'the Piedmont tannin grips {foodTarget}',
+      'the high-acid Nebbiolo register matches {foodTarget}',
+      'the rose-and-tar body wraps {foodTarget}',
+      'the dried-cherry Nebbiolo weight handles {foodTarget}',
+    ],
+    bridge2: 'the tar-and-rose edge frames {foodSubj}',
+    bridge2Variants: [
+      'the tar-and-rose edge frames {foodSubj}',
+      'the dried-fruit note underlines {foodSubj}',
+      'the firm Piedmont tannin grips {foodSubj}',
+      'the orange-peel-and-leather edge brightens {foodSubj}',
+      'the savory dried-cherry register plays against {foodSubj}',
+    ],
+    verdictHook: 'Piedmont Nebbiolo'
+  },
+  CHIANTI: {
+    character: 'Sangiovese-driven Tuscan acidity',
+    bridge1: 'the bright Sangiovese body lifts {foodTarget}',
+    bridge1Variants: [
+      'the bright Sangiovese body lifts {foodTarget}',
+      'the high-acid Tuscan register cuts {foodTarget}',
+      'the cherry-leather Sangiovese body matches {foodTarget}',
+      'the savory Tuscan red carries {foodTarget}',
+      'the dusty Sangiovese tannin wraps {foodTarget}',
+    ],
+    bridge2: 'the cherry-leather edge frames {foodSubj}',
+    bridge2Variants: [
+      'the cherry-leather edge frames {foodSubj}',
+      'the dried-herb note underlines {foodSubj}',
+      'the Sangiovese acid brightens {foodSubj}',
+      'the dusty tannin grips {foodSubj}',
+      'the savory red register plays against {foodSubj}',
+    ],
+    verdictHook: 'Tuscan Sangiovese'
+  },
+  RHONE: {
+    character: 'spice-and-dark-fruit Rhone register',
+    bridge1: 'the Rhone-blend body wraps {foodTarget}',
+    bridge1Variants: [
+      'the Rhone-blend body wraps {foodTarget}',
+      'the GSM-spice weight handles {foodTarget}',
+      'the peppery Rhone register sits with {foodTarget}',
+      'the dark-fruit-and-garrigue body matches {foodTarget}',
+      'the Syrah-led blend carries {foodTarget}',
+    ],
+    bridge2: 'the peppery edge frames {foodSubj}',
+    bridge2Variants: [
+      'the peppery edge frames {foodSubj}',
+      'the garrigue-herb note underlines {foodSubj}',
+      'the dark-plum register brightens {foodSubj}',
+      'the white-pepper edge plays against {foodSubj}',
+      'the smoke-and-violet thread softens {foodSubj}',
+    ],
+    verdictHook: 'Rhone red'
+  },
+  SPANISH: {
+    character: 'Tempranillo with vanilla-and-leather depth',
+    bridge1: 'the Tempranillo body wraps {foodTarget}',
+    bridge1Variants: [
+      'the Tempranillo body wraps {foodTarget}',
+      'the Rioja American-oak register matches {foodTarget}',
+      'the vanilla-and-leather weight carries {foodTarget}',
+      'the dried-cherry Tempranillo handles {foodTarget}',
+      'the Spanish-red body sits with {foodTarget}',
+    ],
+    bridge2: 'the vanilla-leather edge frames {foodSubj}',
+    bridge2Variants: [
+      'the vanilla-leather edge frames {foodSubj}',
+      'the dried-fig note underlines {foodSubj}',
+      'the American-oak vanilla brightens {foodSubj}',
+      'the leather-and-tobacco register softens {foodSubj}',
+      'the Tempranillo tannin grips {foodSubj}',
+    ],
+    verdictHook: 'Spanish red'
+  },
+  MALBEC: {
+    character: 'plush Malbec with plum-and-violet weight',
+    bridge1: 'the Malbec body wraps {foodTarget}',
+    bridge1Variants: [
+      'the Malbec body wraps {foodTarget}',
+      'the plush plum register handles {foodTarget}',
+      'the Argentine Malbec weight carries {foodTarget}',
+      'the plum-and-violet body matches {foodTarget}',
+      'the high-altitude Malbec register sits with {foodTarget}',
+    ],
+    bridge2: 'the plum-and-violet edge frames {foodSubj}',
+    bridge2Variants: [
+      'the plum-and-violet edge frames {foodSubj}',
+      'the inky body underlines {foodSubj}',
+      'the violet-and-mocha note brightens {foodSubj}',
+      'the soft-tannin register plays against {foodSubj}',
+      'the dark-plum thread softens {foodSubj}',
+    ],
+    verdictHook: 'Argentine Malbec'
+  },
+  ZIN: {
+    character: 'jammy Zinfandel with bramble-and-pepper lift',
+    bridge1: 'the Zin body wraps {foodTarget}',
+    bridge1Variants: [
+      'the Zin body wraps {foodTarget}',
+      'the jammy Zinfandel register handles {foodTarget}',
+      'the bramble-fruit weight carries {foodTarget}',
+      'the high-octane Zin body matches {foodTarget}',
+      'the warm Zinfandel register sits with {foodTarget}',
+    ],
+    bridge2: 'the bramble-and-pepper edge frames {foodSubj}',
+    bridge2Variants: [
+      'the bramble-and-pepper edge frames {foodSubj}',
+      'the wild-fruit note underlines {foodSubj}',
+      'the briary edge brightens {foodSubj}',
+      'the warm-spice register plays against {foodSubj}',
+      'the high-extract sweetness rounds {foodSubj}',
+    ],
+    verdictHook: 'Zinfandel'
+  },
+  CAB_FRANC: {
+    character: 'herbaceous Cab Franc with red-fruit and bell-pepper',
+    bridge1: 'the Cab Franc body lifts {foodTarget}',
+    bridge1Variants: [
+      'the Cab Franc body lifts {foodTarget}',
+      'the herbaceous Loire Cab Franc register matches {foodTarget}',
+      'the red-fruit-and-pepper weight carries {foodTarget}',
+      'the bright Cab Franc body wraps {foodTarget}',
+      'the Chinon-style register sits with {foodTarget}',
+    ],
+    bridge2: 'the bell-pepper-and-cherry note frames {foodSubj}',
+    bridge2Variants: [
+      'the bell-pepper-and-cherry note frames {foodSubj}',
+      'the green-herb register underlines {foodSubj}',
+      'the bright red-fruit edge brightens {foodSubj}',
+      'the Loire pepper note plays against {foodSubj}',
+      'the herbaceous thread softens {foodSubj}',
+    ],
+    verdictHook: 'Cab Franc'
+  },
+  BORDEAUX: {
+    character: 'Merlot-led Bordeaux blend with plush dark-fruit',
+    bridge1: 'the Bordeaux body wraps {foodTarget}',
+    bridge1Variants: [
+      'the Bordeaux body wraps {foodTarget}',
+      'the Merlot-led blend register handles {foodTarget}',
+      'the right-bank weight carries {foodTarget}',
+      'the cedar-and-cassis Bordeaux body matches {foodTarget}',
+      'the structured Bordeaux register sits with {foodTarget}',
+    ],
+    bridge2: 'the cassis-and-tobacco edge frames {foodSubj}',
+    bridge2Variants: [
+      'the cassis-and-tobacco edge frames {foodSubj}',
+      'the cedar note underlines {foodSubj}',
+      'the dark-plum register brightens {foodSubj}',
+      'the leather-and-graphite edge plays against {foodSubj}',
+      'the Bordeaux tannin grips {foodSubj}',
+    ],
+    verdictHook: 'Bordeaux blend'
+  },
+  CAB: {
+    character: 'structured Cabernet with cassis-and-cedar depth',
+    bridge1: 'the Cabernet body wraps {foodTarget}',
+    bridge1Variants: [
+      'the Cabernet body wraps {foodTarget}',
+      'the structured Cab tannin grips {foodTarget}',
+      'the cassis-and-cedar register handles {foodTarget}',
+      'the Napa Cab body carries {foodTarget}',
+      'the polished Cab weight matches {foodTarget}',
+      'the dark-fruit Cab register sits with {foodTarget}',
+    ],
+    bridge2: 'the cassis-and-cedar edge frames {foodSubj}',
+    bridge2Variants: [
+      'the cassis-and-cedar edge frames {foodSubj}',
+      'the blackcurrant register underlines {foodSubj}',
+      'the firm Cab tannin grips {foodSubj}',
+      'the dark-plum edge plays against {foodSubj}',
+      'the cedar-tobacco note brightens {foodSubj}',
+    ],
+    verdictHook: 'Cabernet Sauvignon'
+  },
+  GENERIC_ELEGANT_RED: {
+    character: 'red-fruit-and-spice elegance',
+    bridge1: 'the silky body carries {foodTarget}',
+    bridge1Variants: [
+      'the silky body carries {foodTarget}',
+      'the elegant red-fruit register matches {foodTarget}',
+      'the polished tannin wraps {foodTarget}',
+      'the medium-body red sits with {foodTarget}',
+      'the red-fruit-and-spice weight handles {foodTarget}',
+    ],
+    bridge2: 'the cherry-pepper note frames {foodSubj}',
+    bridge2Variants: [
+      'the cherry-pepper note frames {foodSubj}',
+      'the red-fruit edge brightens {foodSubj}',
+      'the silky tannin softens {foodSubj}',
+      'the spice register underlines {foodSubj}',
+      'the elegant red note plays against {foodSubj}',
+    ],
+    verdictHook: 'elegant red'
+  },
 };
 
 // Try to load mined profiles (auto-generated). Optional dependency.
@@ -392,8 +1072,145 @@ catch (e) { TIER_CORRECTIONS = {}; }
 try { COMPETITOR_REFS = require('./competitor_refs').COMPETITOR_REFS || {}; }
 catch (e) { COMPETITOR_REFS = {}; }
 
+// LIGHT_SPIRIT subclass: distinguish blanco tequila from light rum.
+function lightSpiritVoiceSubclass(drink) {
+  const name = drink.name.toLowerCase();
+  if (/\brum\b|bacardi|mount gay|captain morgan|malibu/.test(name)) return 'RUM_LIGHT';
+  return 'TEQUILA_BLANCO';
+}
+
+const LIGHT_SPIRIT_VOICE_DEFAULTS = {
+  TEQUILA_BLANCO: {
+    character: 'unaged blanco-tequila lift with agave-citrus snap',
+    bridge1: 'the unaged body brightens {foodTarget}',
+    bridge1Variants: [
+      'the unaged body brightens {foodTarget}',
+      'the silver-tequila register lifts {foodTarget}',
+      'the blanco-tequila body matches {foodTarget}',
+      'the bright agave-citrus weight carries {foodTarget}',
+      'the unaged blanco body cuts {foodTarget}',
+    ],
+    bridge2: 'the agave-citrus thread frames {foodSubj}',
+    bridge2Variants: [
+      'the agave-citrus thread frames {foodSubj}',
+      'the green-agave edge brightens {foodSubj}',
+      'the bright blanco register underlines {foodSubj}',
+      'the unaged-agave note plays against {foodSubj}',
+      'the lime-and-pepper thread softens {foodSubj}',
+    ],
+    verdictHook: 'blanco tequila',
+  },
+  RUM_LIGHT: {
+    character: 'light-rum register with cane and citrus lift',
+    bridge1: 'the light-rum body lifts {foodTarget}',
+    bridge1Variants: [
+      'the light-rum body lifts {foodTarget}',
+      'the unaged-cane register matches {foodTarget}',
+      'the Caribbean-rum body carries {foodTarget}',
+      'the bright cane-and-citrus weight wraps {foodTarget}',
+      'the silver-rum body cuts {foodTarget}',
+      'the molasses-light register sits with {foodTarget}',
+    ],
+    bridge2: 'the cane-and-citrus thread frames {foodSubj}',
+    bridge2Variants: [
+      'the cane-and-citrus thread frames {foodSubj}',
+      'the bright sugarcane edge underlines {foodSubj}',
+      'the Caribbean register brightens {foodSubj}',
+      'the light-rum lift plays against {foodSubj}',
+      'the rum-and-lime thread softens {foodSubj}',
+    ],
+    verdictHook: 'light rum',
+  },
+};
+
+// HEAVY_SPIRIT subclass: most are aged/dark rums (Doctor Bird, Myers's, Jung & Wulff, Ron Zacapa).
+function heavySpiritVoiceSubclass(drink) {
+  const name = drink.name.toLowerCase();
+  if (/\brum\b|jung and wulff|doctor bird|ron zacapa|myers/.test(name)) return 'RUM_AGED';
+  return 'GENERIC_HEAVY';
+}
+
+const HEAVY_SPIRIT_VOICE_DEFAULTS = {
+  RUM_AGED: {
+    character: 'aged-rum register with molasses and oak depth',
+    bridge1: 'the aged-rum body wraps {foodTarget}',
+    bridge1Variants: [
+      'the aged-rum body wraps {foodTarget}',
+      'the molasses-and-oak weight carries {foodTarget}',
+      'the dark-rum register matches {foodTarget}',
+      'the aged-cane body sits with {foodTarget}',
+      'the Caribbean-aged depth handles {foodTarget}',
+      'the molasses-rum weight threads {foodTarget}',
+    ],
+    bridge2: 'the molasses-and-oak edge frames {foodSubj}',
+    bridge2Variants: [
+      'the molasses-and-oak edge frames {foodSubj}',
+      'the dark-cane note underlines {foodSubj}',
+      'the aged-cane sweetness brightens {foodSubj}',
+      'the rum-oak register softens {foodSubj}',
+      'the molasses-and-spice thread plays against {foodSubj}',
+    ],
+    verdictHook: 'aged rum',
+  },
+  GENERIC_HEAVY: {
+    character: 'dense-spirit weight',
+    bridge1: 'the heavy body handles {foodTarget}',
+    bridge1Variants: [
+      'the heavy body handles {foodTarget}',
+      'the dense-spirit weight carries {foodTarget}',
+      'the high-proof register matches {foodTarget}',
+      'the rich pour wraps {foodTarget}',
+      'the layered spirit body sits with {foodTarget}',
+    ],
+    bridge2: 'the deep backbone frames {foodSubj}',
+    bridge2Variants: [
+      'the deep backbone frames {foodSubj}',
+      'the heavy-pour register grips {foodSubj}',
+      'the dense weight underlines {foodSubj}',
+      'the layered body brightens {foodSubj}',
+      'the rich character softens {foodSubj}',
+    ],
+    verdictHook: 'heavy pour',
+  },
+};
+
+function classDefaultFor(drink) {
+  const dc = taxonomy.drinkClassFor(drink) || 'BOURBON_BOLD';
+  if (dc === 'BOURBON_BOLD') {
+    const sub = whiskeyVoiceSubclass(drink);
+    return WHISKEY_VOICE_DEFAULTS[sub] || WHISKEY_VOICE_DEFAULTS.BOURBON;
+  }
+  if (dc === 'ELEGANT_RED') {
+    const sub = elegantRedVoiceSubclass(drink);
+    return ELEGANT_RED_VOICE_DEFAULTS[sub] || ELEGANT_RED_VOICE_DEFAULTS.GENERIC_ELEGANT_RED;
+  }
+  if (dc === 'LIGHT_SPIRIT') {
+    const sub = lightSpiritVoiceSubclass(drink);
+    return LIGHT_SPIRIT_VOICE_DEFAULTS[sub] || LIGHT_SPIRIT_VOICE_DEFAULTS.TEQUILA_BLANCO;
+  }
+  if (dc === 'HEAVY_SPIRIT') {
+    const sub = heavySpiritVoiceSubclass(drink);
+    return HEAVY_SPIRIT_VOICE_DEFAULTS[sub] || HEAVY_SPIRIT_VOICE_DEFAULTS.GENERIC_HEAVY;
+  }
+  return DRINK_CLASS_DEFAULT[dc] || DRINK_CLASS_DEFAULT.BOURBON_BOLD;
+}
+
 function profileFor(drink) {
-  if (BOTTLE_PROFILE[drink.name]) return BOTTLE_PROFILE[drink.name];
+  if (BOTTLE_PROFILE[drink.name]) {
+    // Merge variants from class default if the curated bottle lacks them.
+    // This lets per-bottle profiles inherit the variant pool for variety
+    // while keeping their own character / verdictHook / single-bridge fallback.
+    const inline = BOTTLE_PROFILE[drink.name];
+    if (inline.bridge1Variants || inline.bridge2Variants) return inline;
+    const cd = classDefaultFor(drink);
+    if (cd && (cd.bridge1Variants || cd.bridge2Variants)) {
+      return Object.assign({}, inline, {
+        bridge1Variants: cd.bridge1Variants,
+        bridge2Variants: cd.bridge2Variants,
+      });
+    }
+    return inline;
+  }
 
   const dc = taxonomy.drinkClassFor(drink) || 'BOURBON_BOLD';
   // Class-default base
@@ -404,6 +1221,12 @@ function profileFor(drink) {
   } else if (dc === 'ELEGANT_RED') {
     const sub = elegantRedVoiceSubclass(drink);
     base = ELEGANT_RED_VOICE_DEFAULTS[sub] || ELEGANT_RED_VOICE_DEFAULTS.GENERIC_ELEGANT_RED;
+  } else if (dc === 'LIGHT_SPIRIT') {
+    const sub = lightSpiritVoiceSubclass(drink);
+    base = LIGHT_SPIRIT_VOICE_DEFAULTS[sub] || LIGHT_SPIRIT_VOICE_DEFAULTS.TEQUILA_BLANCO;
+  } else if (dc === 'HEAVY_SPIRIT') {
+    const sub = heavySpiritVoiceSubclass(drink);
+    base = HEAVY_SPIRIT_VOICE_DEFAULTS[sub] || HEAVY_SPIRIT_VOICE_DEFAULTS.GENERIC_HEAVY;
   } else {
     base = DRINK_CLASS_DEFAULT[dc] || DRINK_CLASS_DEFAULT.BOURBON_BOLD;
   }
@@ -498,9 +1321,10 @@ function findChemistryClause(drink, food, ctx) {
       const entry = claims[df][ff];
       if (!entry) continue;
       if (entry.count < MIN_COUNT) continue;
-      if (!clauseFitsDrinkClass(entry.clause, dc)) continue;
+      const checkClause = entry.clause || (Array.isArray(entry.clauses) && entry.clauses[0]) || '';
+      if (!clauseFitsDrinkClass(checkClause, dc)) continue;
       // Check food-side modifier match
-      const lower = entry.clause.toLowerCase();
+      const lower = (entry.clause || (Array.isArray(entry.clauses) && entry.clauses[0]) || '').toLowerCase();
       let modifierOk = true;
       for (const mod of FOOD_MODIFIERS) {
         if (lower.includes(mod) && !foodCharText.includes(mod)) {
@@ -510,7 +1334,17 @@ function findChemistryClause(drink, food, ctx) {
       }
       if (!modifierOk) continue;
       if (entry.count > bestCount) {
-        bestClause = entry.clause;
+        // Variant pool support: entry may be { clauses: [...], count } for hot
+        // chemistry pairs that would otherwise recycle one clause across many
+        // bottles.
+        if (Array.isArray(entry.clauses) && entry.clauses.length > 0) {
+          const seed = drink.name + '|' + food.name;
+          let h = 0;
+          for (let i = 0; i < seed.length; i++) h = ((h << 5) - h + seed.charCodeAt(i)) | 0;
+          bestClause = entry.clauses[Math.abs(h) % entry.clauses.length];
+        } else {
+          bestClause = entry.clause;
+        }
         bestCount = entry.count;
       }
     }
@@ -596,7 +1430,13 @@ function foodPossessive(food) {
 // Drink-side possessive: handles names ending in 's' (Vineyards', Booker's
 // already has 's), avoiding double-possessive output.
 function drinkPossessive(name) {
-  return name.endsWith('s') ? name + "'" : name + "'s";
+  // Names ending in 's' (e.g., "Booker's", "Basil Hayden's") are themselves
+  // possessive — don't double-apostrophize. Names ending in 's' but NOT
+  // already possessive (rare — "Pernod Ricard 70s" etc.) get the trailing
+  // apostrophe per English style.
+  if (name.endsWith("'s")) return name;          // already possessive
+  if (name.endsWith('s')) return name + "'";     // trailing apostrophe
+  return name + "'s";
 }
 
 // Strip a leading bottle-name possessive OR generic "this X's" prefix from
@@ -648,22 +1488,34 @@ function foodGenericShort(food) {
   return FOOD_GENERIC_SHORT[food.category] || ('the ' + (food.profile && food.profile[0] || 'plate'));
 }
 
+// pickBridgeVariant — deterministic hash-based variant selector.
+// Same (drink, food) pair always returns the same variant index, so the
+// regenerated note text is stable across re-runs. Distributes across the
+// pool, breaking the "bourbon depth settles on the plate" mono-skeleton.
+function pickBridgeVariant(variants, drinkName, foodName) {
+  if (!Array.isArray(variants) || variants.length === 0) return null;
+  const seed = drinkName + '|' + foodName;
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = ((h << 5) - h + seed.charCodeAt(i)) | 0;
+  return variants[Math.abs(h) % variants.length];
+}
+
 function buildBody(drink, food, tier, ctx) {
   const profile = profileFor(drink);
   const tgt  = foodBridgeTarget(food);
   const subj = foodBridgeSubject(food);
   const generic = foodGenericShort(food);
 
-  // Clause 1: from bottle's bridge1 — uses the FULL bridge target/subject.
-  const clause1 = profile.bridge1
+  // Clause 1: from bottle's bridge1Variants pool (preferred) or bridge1 fallback.
+  const b1tpl = pickBridgeVariant(profile.bridge1Variants, drink.name, food.name) || profile.bridge1;
+  const clause1 = b1tpl
     .replace('{foodTarget}', tgt)
     .replace('{foodSubj}', subj);
 
-  // Clause 2: prefer chemistry, else use bottle's bridge2 with the GENERIC
-  // short form for the food (avoids modifier repetition like
-  // "bone-enhanced filet ... bone-enhanced cut").
+  // Clause 2: prefer chemistry, else bottle's bridge2Variants pool / bridge2 fallback.
   const chem = (tier !== 'avoid') ? findChemistryClause(drink, food, ctx) : null;
-  const clause2 = chem || profile.bridge2
+  const b2tpl = pickBridgeVariant(profile.bridge2Variants, drink.name, food.name + '~b2') || profile.bridge2;
+  const clause2 = chem || b2tpl
     .replace('{foodTarget}', generic)
     .replace('{foodSubj}', generic);
 
@@ -998,7 +1850,7 @@ function _editorialVerdict(tier, drink, food, profile) {
     '1792','1881','michter','woodford','wild turkey','angel\u0027s envy','basil hayden',
     'four roses','jefferson','blade & bow','clermont','i.w. harper','little book',
     'whistlepig','mister sam','sazerac','pikesville','mammoth','old emmer',
-    'never say die','bardstown','bowman',
+    'never say die','bardstown','bowman','old elk','fox & oden','fox and oden','caribou crossing','caribou','foursquare',
     // Wines
     'caymus','opus one','silver oak','jordan','far niente','heitz','shafer','hillside select','lyndenhurst','martha\'s vineyard','jubilation','colgin','meritage',
     'cristom','lingua franca','domaine serene','elk cove','raen','spottswoode',
@@ -1223,11 +2075,24 @@ function generate(drink, food, tier, ctx) {
       'Avoid; pick from the alternatives.',
       'Avoid; one of those is the move.',
       'Avoid; steer the table to the alternatives.',
+      'Avoid; route the table to a better-fit pour.',
+      'Avoid; redirect the order — the alternatives carry it.',
+      'Avoid; lead with the alternatives instead.',
+      'Avoid; the better calls are above.',
+      'Avoid; the listed alts pair where this does not.',
+      'Avoid; recommend one of the alternatives.',
+      'Avoid; offer the alts at the table — they fit.',
     ];
+    // Drink names starting with "The" already include the article — don't double it.
+    const _hasThe = /^The\s/.test(drink.name);
+    const _verbed = (verb) => _hasThe ? verb + ' ' + drink.name : verb + ' the ' + drink.name;
     const savePhrases = [
-      'Save the ' + drink.name + ' for ' + saveFor + '.',
+      _verbed('Save') + ' for ' + saveFor + '.',
       drink.name + ' belongs on ' + saveFor + '.',
-      'Hold the ' + drink.name + ' for ' + saveFor + '.',
+      _verbed('Hold') + ' for ' + saveFor + '.',
+      _verbed('Pour') + ' on ' + saveFor + ' instead.',
+      _verbed('Reserve') + ' for ' + saveFor + '.',
+      drink.name + ' lands on ' + saveFor + ' — not here.',
     ];
     const sig = drink.name + '|' + food.name + '|avoid';
     const h = crypto.createHash('md5').update(sig).digest();

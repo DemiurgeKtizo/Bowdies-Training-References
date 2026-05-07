@@ -411,34 +411,10 @@ const GOLD_CORPUS_MINED = {
     }
   ],
   "LIGHT_SPIRIT|HEARTY_SOUP": [
-    {
-      "template": "Gold standard; the light-spirit-on-hearty-soup lock that sells itself.",
-      "source": "Bacardi Rum|Shrimp Bisque"
-    }
   ],
   "SWEET_LIQUEUR|DESSERT_CHOCOLATE": [
-    {
-      "template": "Gold standard; recommend the digestif-on-dessert pairing without hesitation.",
-      "source": "Baileys Irish Cream|Chocolate Cake"
-    },
-    {
-      "template": "Gold standard; this is the digestif-on-dessert call you put in front of every table.",
-      "source": "Disaronno|Peanut Butter Brownie"
-    },
-    {
-      "template": "Gold standard; the digestif-on-dessert pairing the menu was built around.",
-      "source": "Frangelico|Peanut Butter Brownie"
-    }
   ],
   "SWEET_LIQUEUR|DESSERT_LIGHT": [
-    {
-      "template": "Gold standard; this is the digestif-on-dessert match guests remember.",
-      "source": "Beignets|Kahlua"
-    },
-    {
-      "template": "Gold standard; the unskippable digestif-on-dessert pour.",
-      "source": "Cheesecake|Disaronno"
-    }
   ],
   "ELEGANT_RED|STEAK_LEAN": [
     {
@@ -516,21 +492,8 @@ const GOLD_CORPUS_MINED = {
     {
       "template": "Peak balanced Chardonnay for broccoli cheddar — Napa structure on the classic.",
       "source": "Broccoli Cheddar|Keenan Chardonnay"
-    },
-    {
-      "template": "Peak Riesling for butternut squash — textbook off-dry-on-sweet-vegetable pairing.",
-      "source": "Butternut Squash|Schloss Vollrads Riesling"
-    },
-    {
-      "template": "Peak special-occasion Chardonnay for creamy potato — Napa opulence on cream-on-cream.",
-      "source": "Creamy Potato|Far Niente Chardonnay"
-    }
-  ],
+    }],
   "TEQUILA_BOLD|HEARTY_STARTER": [
-    {
-      "template": "Gold standard; the unskippable añejo-on-rich-side pour.",
-      "source": "Brussels and Belly|Corazon Weller"
-    }
   ],
   "COCKTAIL_LIGHT|LIGHT_STARTER": [
     {
@@ -632,20 +595,7 @@ const GOLD_CORPUS_MINED = {
     {
       "template": "Peak flagship-Vintage for chocolate brownie — Taylor's celebrated bottle on the dense bake.",
       "source": "Chocolate Brownie|Taylor Fladgate Vintage Bottle"
-    },
-    {
-      "template": "Peak Vintage Port for chocolate cake — cocoa-on-cocoa with bottle-aged depth.",
-      "source": "Chocolate Cake|Graham's 2017 Vintage Port"
-    },
-    {
-      "template": "Peak flagship-Vintage for chocolate cake — cocoa-on-cocoa with evolving intensity.",
-      "source": "Chocolate Cake|Taylor Fladgate Vintage Bottle"
-    },
-    {
-      "template": "Peak step-up Tawny for peanut butter brownie — nut-on-nut complexity.",
-      "source": "Graham's 20 Year Tawny|Peanut Butter Brownie"
-    }
-  ],
+    }],
   "SPARKLING|DESSERT_LIGHT": [
     {
       "template": "Peak dessert-sparkling for our water-bath cheesecake's density.",
@@ -729,20 +679,8 @@ const GOLD_CORPUS_MINED = {
     }
   ],
   "TEQUILA_BOLD|STEAK_BOLD": [
-    {
-      "template": "Gold standard; recommend the añejo-on-bone-in-ribeye pairing without hesitation.",
-      "source": "Corazon Stagg|The Tomahawk"
-    }
   ],
   "BOURBON_BOLD|STEAK_BOLD": [
-    {
-      "template": "Gold standard; this is the bourbon-on-bone-in-ribeye pour the table writes home about.",
-      "source": "Cowboy Ribeye|Macallan 18"
-    },
-    {
-      "template": "Gold standard; the bourbon-on-bone-in-ribeye match that closes the table.",
-      "source": "George T. Stagg|The Tomahawk"
-    }
   ],
   "ELEGANT_RED|HEARTY_STARTER": [
     {
@@ -754,10 +692,6 @@ const GOLD_CORPUS_MINED = {
     {
       "template": "Peak Pinot Blanc for rainbow trout — Oregon white on the delicate classic.",
       "source": "Elk Cove Pinot Blanc|Rainbow Trout"
-    },
-    {
-      "template": "Peak Chablis for rainbow trout — textbook Burgundian-on-freshwater-fish pairing.",
-      "source": "Jean-Pierre Grossot Chablis|Rainbow Trout"
     },
     {
       "template": "Peak Chablis for salt-cured halibut — Burgundian precision on the cured classic.",
@@ -781,10 +715,6 @@ const GOLD_CORPUS_MINED = {
     }
   ],
   "WHITE_WINE|CREAMY_SIDE": [
-    {
-      "template": "Peak special-occasion Chardonnay for the lobster mac side — indulgence-on-indulgence.",
-      "source": "Far Niente Chardonnay|Lobster Mac"
-    }
   ],
   "COCKTAIL_LIGHT|FISH_MAIN_DELICATE": [
     {
@@ -803,10 +733,6 @@ const GOLD_CORPUS_MINED = {
     }
   ],
   "MEZCAL|RICH_SIDE": [
-    {
-      "template": "Gold standard; the mezcal-on-rich-side lock that sells itself.",
-      "source": "Los Vecinos Mezcal|Mushrooms"
-    }
   ],
   "COCKTAIL_BOLD|HEARTY_STARTER": [
     {

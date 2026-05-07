@@ -7,56 +7,16 @@ const CORPUS_MINED = {
         "source": "1792 Small Batch|Asparagus"
       },
       {
-        "template": "Works; the bourbon-on-light-side call sits without pulling focus.",
-        "source": "1792 Small Batch|Broccolini"
-      },
-      {
         "template": "Works; the distinctive character is underused by the salad's simplicity.",
         "source": "1792 Small Batch|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing reads as a quiet alongside.",
-        "source": "1792 Small Batch|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; capable bourbon-on-light-side match, not the recommendation.",
-        "source": "1792 Sweet Wheat|Asparagus"
       },
       {
         "template": "Works; AE Triple Cask handles the richness at distinctive register.",
         "source": "1792 Sweet Wheat|Broccolini"
       },
       {
-        "template": "Works; the bourbon-on-rich-side pairing sits at neutral register without clash.",
-        "source": "1792 Sweet Wheat|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; safe bourbon-on-light-side alongside, but not the headline call.",
-        "source": "1792 Sweet Wheat|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing holds at neutral.",
-        "source": "1792 Sweet Wheat|Seasonal Vegetables"
-      },
-      {
         "template": "Works; GTS is over-specified for an app; save the collector bottle for the main course.",
         "source": "A Midnight's Winter Dram|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side call holds — neither soars nor fights.",
-        "source": "A Midnight's Winter Dram|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; capable bourbon-on-dessert match, not the recommendation.",
-        "source": "Angel's Envy Triple Cask|Broccolini"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side call lands as a measured alongside.",
-        "source": "Angel's Envy Triple Cask|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing sits at neutral register without clash.",
-        "source": "Angel's Envy|Sauteed Garlic Spinach"
       },
       {
         "template": "Works; BH Red Wine Cask handles the richness at distinctive register.",
@@ -77,10 +37,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; IW Harper 15 frames the two-cut plate at aged-KY-heritage register.",
         "source": "Asparagus|Glenfiddich 14"
-      },
-      {
-        "template": "Works; safe bourbon-on-light-soup alongside, but not the headline call.",
-        "source": "Asparagus|Heaven Hill Bottled in Bond"
       },
       {
         "template": "Works; annual-release complexity over-specified.",
@@ -111,10 +67,6 @@ const CORPUS_MINED = {
         "source": "Asparagus|Thomas S. Moore Chardonnay Cask"
       },
       {
-        "template": "Works; the digestif-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|WhistlePig 12 Year Old World"
-      },
-      {
         "template": "Works; milestone-edition over-specified.",
         "source": "Balvenie 14 Caribbean Cask|Honey Roasted Carrots"
       },
@@ -135,10 +87,6 @@ const CORPUS_MINED = {
         "source": "Bardstown Rishi's Single Barrel|Sauteed Garlic Spinach"
       },
       {
-        "template": "Works; the bourbon-on-salad call sits without pulling focus.",
-        "source": "Basil Hayden's 10 Year|Broccolini"
-      },
-      {
         "template": "Works; boutique-sourced wasted on salad.",
         "source": "Basil Hayden's Malted Rye|Honey Roasted Carrots"
       },
@@ -147,16 +95,8 @@ const CORPUS_MINED = {
         "source": "Blanton's Original|Broccolini"
       },
       {
-        "template": "Works; safe bourbon-on-hearty-soup alongside, but not the headline call.",
-        "source": "Blood Oath Pact 10|Honey Roasted Carrots"
-      },
-      {
         "template": "Works; BTAC story wasted on salad.",
         "source": "Blood Oath Pact 8|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side pairing holds at neutral.",
-        "source": "Blood Oath Pact 9|Honey Roasted Carrots"
       },
       {
         "template": "Works; X Commandments story wasted on salad.",
@@ -169,10 +109,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; gentle match at matched registers.",
         "source": "Broccolini|Elijah Craig Single Barrel"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup pairing holds at neutral.",
-        "source": "Broccolini|Elmer T. Lee"
       },
       {
         "template": "Works; AE's fruity-jammy character engages the bleu at wine-finish register.",
@@ -195,14 +131,6 @@ const CORPUS_MINED = {
         "source": "Broccolini|Jack Daniel's Sinatra Select"
       },
       {
-        "template": "Works; the digestif-on-light-soup call lands as a measured alongside.",
-        "source": "Broccolini|Jefferson's Ocean Voyage 23"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert call lands as a measured alongside.",
-        "source": "Broccolini|Knob Creek 18 Year"
-      },
-      {
         "template": "Works; pour slightly over-specified for the salad.",
         "source": "Broccolini|Michter's US*1 Rye"
       },
@@ -213,10 +141,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; rare-release wasted on salad.",
         "source": "Broccolini|Rishi's Old Antique"
-      },
-      {
-        "template": "Works; the digestif-on-light-side call holds — neither soars nor fights.",
-        "source": "Broccolini|WhistlePig 12 Year Old World"
       },
       {
         "template": "Works; JW Blue is over-specified for a side — save the bottle for the main course.",
@@ -267,20 +191,8 @@ const CORPUS_MINED = {
         "source": "Honey Roasted Carrots|Knob Creek Bourbon/Rye"
       },
       {
-        "template": "Works; the bourbon-on-salad call holds — neither soars nor fights.",
-        "source": "Honey Roasted Carrots|Old Fitzgerald 7 Year"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side call holds — neither soars nor fights.",
-        "source": "Honey Roasted Carrots|Russell's Reserve 10 Year"
-      },
-      {
         "template": "Works; bonded weight overpowers the salad.",
         "source": "Honey Roasted Carrots|Scapegrace Fortuna"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert call holds — neither soars nor fights.",
-        "source": "Honey Roasted Carrots|Weller Special Reserve"
       },
       {
         "template": "Works; boutique-blend depth gives composed dessert character.",
@@ -301,10 +213,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; pour is a touch over-specified for the dessert.",
         "source": "Kentucky Owl Confiscated|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; safe digestif-on-light-side alongside, but not the headline call.",
-        "source": "Knob Creek 15 Year|Seasonal Vegetables"
       },
       {
         "template": "Works; Voyage 23 handles the richness at ocean-finish register.",
@@ -341,20 +249,12 @@ const CORPUS_MINED = {
     ],
     "BOURBON_BOLD|DESSERT_LIGHT": [
       {
-        "template": "Works; the bourbon-on-dessert pairing holds at neutral.",
-        "source": "1792 Small Batch|Beignets"
-      },
-      {
         "template": "Works; the rye spice and cake spice find each other.",
         "source": "1792 Small Batch|Carrot Cake"
       },
       {
         "template": "Works; gentle composed match.",
         "source": "1792 Small Batch|Cheesecake"
-      },
-      {
-        "template": "Works; safe bourbon-on-dessert alongside, but not the headline call.",
-        "source": "1792 Sweet Wheat|Beignets"
       },
       {
         "template": "Works; the pour's sweetness meets the dessert without pushing past.",
@@ -365,24 +265,8 @@ const CORPUS_MINED = {
         "source": "A Midnight's Winter Dram|Carrot Cake"
       },
       {
-        "template": "Works; the bourbon-on-dessert call sits without pulling focus.",
-        "source": "A Midnight's Winter Dram|Cheesecake"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert call holds — neither soars nor fights.",
-        "source": "A Midnight's Winter Dram|Creme Brulee"
-      },
-      {
         "template": "Works; Old Elk Cigar Cut meets the char at cigar-companion register.",
         "source": "Aberlour 16|Beignets"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert pairing reads as a quiet alongside.",
-        "source": "Angel's Envy Cask Strength|Beignets"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert pairing sits at neutral register without clash.",
-        "source": "Angel's Envy Triple Cask|Beignets"
       },
       {
         "template": "Works; bold intensity slightly over-specified.",
@@ -397,20 +281,12 @@ const CORPUS_MINED = {
         "source": "Baker's|Creme Brulee"
       },
       {
-        "template": "Works; capable bourbon-on-dessert match, not the recommendation.",
-        "source": "Balvenie 21 Portwood|Beignets"
-      },
-      {
         "template": "Works; Portwood handles the brulee but Balvenie 14 Caribbean Cask's rum-caramel is the featured brulee match.",
         "source": "Balvenie 21 Portwood|Creme Brulee"
       },
       {
         "template": "Works; craft-blender finds the cake spice with layered character.",
         "source": "Bardstown Discovery #6|Carrot Cake"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert call lands as a measured alongside.",
-        "source": "Bardstown Discovery #6|Creme Brulee"
       },
       {
         "template": "Works; distinctive finish meets the cake with beer-barrel character.",
@@ -461,20 +337,12 @@ const CORPUS_MINED = {
         "source": "Beignets|E.H. Taylor Small Batch"
       },
       {
-        "template": "Works; the bourbon-on-rich-side call holds — neither soars nor fights.",
-        "source": "Beignets|Henry McKenna 10 Year Bottled in Bond"
-      },
-      {
         "template": "Works; JW Black handles the richness at premium-blend register.",
         "source": "Beignets|Larceny Small Batch"
       },
       {
         "template": "Works; richer profile is slightly over-specified for the dessert.",
         "source": "Beignets|Macallan 12 Sherry"
-      },
-      {
-        "template": "Works; the digestif-on-dessert call sits without pulling focus.",
-        "source": "Beignets|WhistlePig 12 Year Old World"
       },
       {
         "template": "Works; gentle match at matched registers.",
@@ -685,10 +553,6 @@ const CORPUS_MINED = {
         "source": "Carrot Cake|Tullamore D.E.W."
       },
       {
-        "template": "Works; the digestif-on-dessert pairing holds at neutral.",
-        "source": "Carrot Cake|WhistlePig 12 Year Old World"
-      },
-      {
         "template": "Works; small-batch fruit and cake spice find each other.",
         "source": "Carrot Cake|Woodford Reserve Rye"
       },
@@ -889,14 +753,6 @@ const CORPUS_MINED = {
         "source": "Cheesecake|Yamazaki 18 Year"
       },
       {
-        "template": "Works; the digestif-on-light-side call holds — neither soars nor fights.",
-        "source": "Creme Brulee|Hakushu 12 Year"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-starter call lands as a measured alongside.",
-        "source": "Creme Brulee|Old Emmer"
-      },
-      {
         "template": "Works; distinctive character doesn't drive.",
         "source": "Creme Brulee|Old Fitzgerald 7 Year"
       },
@@ -907,52 +763,16 @@ const CORPUS_MINED = {
     ],
     "BOURBON_BOLD|LIGHT_SOUP": [
       {
-        "template": "Works; safe bourbon-on-light-soup alongside, but not the headline call.",
-        "source": "1792 Small Batch|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; capable bourbon-on-light-soup match, not the recommendation.",
-        "source": "1792 Small Batch|Butternut Squash"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call lands as a measured alongside.",
-        "source": "1792 Small Batch|Creamy Potato"
-      },
-      {
         "template": "Works; the bourbon's character is distinctive but the pairing isn't a standout.",
         "source": "1792 Small Batch|Seasonal Soup"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing reads as a quiet alongside.",
-        "source": "1792 Sweet Wheat|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing sits at neutral register without clash.",
-        "source": "1792 Sweet Wheat|Butternut Squash"
       },
       {
         "template": "Works; light body doesn't overshoot.",
         "source": "1792 Sweet Wheat|Creamy Potato"
       },
       {
-        "template": "Works; the bourbon-on-light-soup call sits without pulling focus.",
-        "source": "1792 Sweet Wheat|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call holds — neither soars nor fights.",
-        "source": "A Midnight's Winter Dram|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Angel's Envy|Broccoli Cheddar"
-      },
-      {
         "template": "Works; HH 20's aged character meets the glaze at collector register.",
         "source": "Angel's Envy|Butternut Squash"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing holds at neutral.",
-        "source": "Angel's Envy|Tomato Basil"
       },
       {
         "template": "Works; AE Triple Cask's layered character rides the cream at distinctive register.",
@@ -977,10 +797,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; Fox & Oden frames the cut at Double-Oaked register.",
         "source": "Balvenie 21 Portwood|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; capable bourbon-on-hearty-soup match, not the recommendation.",
-        "source": "Bardstown Château Laboude|Broccoli Cheddar"
       },
       {
         "template": "Works; milestone-collector wasted on salad.",
@@ -1017,10 +833,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; 100-proof complexity sits beside the soup.",
         "source": "Blood Oath Pact 9|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing holds at neutral.",
-        "source": "Bowman Brothers Small Batch|Broccoli Cheddar"
       },
       {
         "template": "Works; the toast notes don't really interplay with the soup but don't clash.",
@@ -1075,20 +887,12 @@ const CORPUS_MINED = {
         "source": "Broccoli Cheddar|Sazerac Rye"
       },
       {
-        "template": "Works; the bourbon-on-light-side pairing sits at neutral register without clash.",
-        "source": "Broccoli Cheddar|Stagg Jr. Batch #15"
-      },
-      {
         "template": "Works; pour's narrative is underused by the salad.",
         "source": "Broccoli Cheddar|Tullamore D.E.W."
       },
       {
         "template": "Works; Old Elk Cigar Cut meets the char at cigar-companion register.",
         "source": "Broccoli Cheddar|Weller 12 Year"
-      },
-      {
-        "template": "Works; the bourbon-on-salad call sits without pulling focus.",
-        "source": "Broccoli Cheddar|WhistlePig 15 Year"
       },
       {
         "template": "Works; concentrated blend slightly over-specified.",
@@ -1139,28 +943,12 @@ const CORPUS_MINED = {
         "source": "Butternut Squash|Weller 12 Year"
       },
       {
-        "template": "Works; the digestif-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Butternut Squash|WhistlePig 12 Year Old World"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Butternut Squash|WhistlePig 15 Year"
-      },
-      {
         "template": "Works; the story is wasted on the salad.",
         "source": "Canadian Club 43 Year|Seasonal Soup"
       },
       {
         "template": "Works; rare-release wasted on salad.",
         "source": "Creamy Potato|Fox & Oden"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing reads as a quiet alongside.",
-        "source": "Creamy Potato|Heaven Hill Bottled in Bond"
-      },
-      {
-        "template": "Works; the bourbon-on-salad call lands as a measured alongside.",
-        "source": "Creamy Potato|Ironfish Bourbon in Mezcal Casks"
       },
       {
         "template": "Works; AE CS meets the char at premium wine-finish register.",
@@ -1171,16 +959,8 @@ const CORPUS_MINED = {
         "source": "Creamy Potato|Redbreast 12 Year"
       },
       {
-        "template": "Works; the bourbon-on-light-side pairing holds at neutral.",
-        "source": "Creamy Potato|Stagg Jr. Batch #15"
-      },
-      {
         "template": "Works; the VR Twin Oak is over-specified for the soup's register.",
         "source": "Creamy Potato|Weller Special Reserve"
-      },
-      {
-        "template": "Works; safe digestif-on-light-soup alongside, but not the headline call.",
-        "source": "Creamy Potato|WhistlePig 12 Year Old World"
       },
       {
         "template": "Works; the 100-proof is a touch over-specified for the dessert's register.",
@@ -1227,10 +1007,6 @@ const CORPUS_MINED = {
         "source": "Kentucky Owl Confiscated|Tomato Basil"
       },
       {
-        "template": "Works; the bourbon-on-light-side call sits without pulling focus.",
-        "source": "Knob Creek 15 Year|Roasted Red Pepper Chickpea"
-      },
-      {
         "template": "Works; annual-release covers both cuts without standing out.",
         "source": "Knob Creek Bourbon/Rye|Roasted Red Pepper Chickpea"
       },
@@ -1263,20 +1039,8 @@ const CORPUS_MINED = {
         "source": "Old Fitzgerald 9 Year|Tomato Basil"
       },
       {
-        "template": "Works; the bourbon-on-rich-side call holds — neither soars nor fights.",
-        "source": "Parker's Heritage Collection 16th Edition|Tomato Basil"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert call lands as a measured alongside.",
-        "source": "Pikesville Rye|Seasonal Soup"
-      },
-      {
         "template": "Works; the complex character gives the dessert a refined frame.",
         "source": "Redbreast 12 Year|Tomato Basil"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert call sits without pulling focus.",
-        "source": "Rishi's Old Antique|Seasonal Soup"
       },
       {
         "template": "Works; JW Black handles the richness at premium-blend register.",
@@ -1291,10 +1055,6 @@ const CORPUS_MINED = {
         "source": "Thomas S. Moore Chardonnay Cask|Tomato Basil"
       },
       {
-        "template": "Works; the digestif-on-light-soup call lands as a measured alongside.",
-        "source": "Tomato Basil|WhistlePig 12 Year Old World"
-      },
-      {
         "template": "Works; Sinatra Select handles the richness at Sinatra-tribute register.",
         "source": "Tomato Basil|Yamazaki 12 Year"
       }
@@ -1305,24 +1065,12 @@ const CORPUS_MINED = {
         "source": "1792 Small Batch|Chocolate Brownie"
       },
       {
-        "template": "Works; safe bourbon-on-dessert alongside, but not the headline call.",
-        "source": "1792 Small Batch|Chocolate Cake"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert pairing reads as a quiet alongside.",
-        "source": "1792 Small Batch|Mocha Creme"
-      },
-      {
         "template": "Works; the spicy-sweet character gives the dessert a Barton frame.",
         "source": "1792 Small Batch|Peanut Butter Brownie"
       },
       {
         "template": "Works; for cocoa interplay, Weller 107 or Basil Hayden's Toast bring more.",
         "source": "1792 Sweet Wheat|Chocolate Brownie"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert pairing sits at neutral register without clash.",
-        "source": "1792 Sweet Wheat|Peanut Butter Brownie"
       },
       {
         "template": "Works; Aberlour 16's sherry-side threads the mocha; Balvenie 21 Portwood is the featured mocha match.",
@@ -1341,40 +1089,20 @@ const CORPUS_MINED = {
         "source": "Baker's|Chocolate Brownie"
       },
       {
-        "template": "Works; the bourbon-on-dessert pairing holds at neutral.",
-        "source": "Baker's|Mocha Creme"
-      },
-      {
         "template": "Works; rich vanilla and high-proof give the dessert bolder match than standard Beam brings.",
         "source": "Baker's|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert call lands as a measured alongside.",
-        "source": "Balvenie 12 American Oak|Mocha Creme"
       },
       {
         "template": "Works; Balvenie's American Oak vanilla marries the dessert density — the best Speyside match in the batch for PB brownie.",
         "source": "Balvenie 12 American Oak|Peanut Butter Brownie"
       },
       {
-        "template": "Works; the bourbon-on-dessert call sits without pulling focus.",
-        "source": "Balvenie 14 Caribbean Cask|Chocolate Cake"
-      },
-      {
         "template": "Works; Caribbean Cask's vanilla-caramel threads the mocha; Balvenie 21 Portwood's port-cask is the featured mocha match.",
         "source": "Balvenie 14 Caribbean Cask|Mocha Creme"
       },
       {
-        "template": "Works; capable bourbon-on-dessert match, not the recommendation.",
-        "source": "Balvenie 16 Single Barrel|Mocha Creme"
-      },
-      {
         "template": "Works; Bardstown Château Laboude's French-wine-fruit threads mocha at contemporary-craft register.",
         "source": "Bardstown Château Laboude|Mocha Creme"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert call holds — neither soars nor fights.",
-        "source": "Bardstown Founders KBS|Mocha Creme"
       },
       {
         "template": "Works; for more interplay with chocolate, Basil Hayden's Toast (in the family) or Weller 107 is the call.",
@@ -1593,20 +1321,12 @@ const CORPUS_MINED = {
         "source": "Chocolate Cake|Garavogue Irish Whiskey"
       },
       {
-        "template": "Works; the bourbon-on-light-side call sits without pulling focus.",
-        "source": "Chocolate Cake|Knob Creek"
-      },
-      {
         "template": "Works; the 100-proof is a touch over-specified for the dessert's register.",
         "source": "Chocolate Cake|Loch Lomond 20 Year"
       },
       {
         "template": "Works; BIB structure is a touch over-specified for the dessert.",
         "source": "Chocolate Cake|Russell's Reserve 10 Year"
-      },
-      {
-        "template": "Works; the digestif-on-dessert pairing holds at neutral.",
-        "source": "Chocolate Cake|WhistlePig 12 Year Old World"
       },
       {
         "template": "Works; OGD 16 frames the two-cut plate at distinctive register.",
@@ -1753,10 +1473,6 @@ const CORPUS_MINED = {
         "source": "Mister Sam Tribute Whiskey|Peanut Butter Brownie"
       },
       {
-        "template": "Works; the digestif-on-dessert call sits without pulling focus.",
-        "source": "Mocha Creme|WhistlePig 12 Year Old World"
-      },
-      {
         "template": "Works; Woodford Double Oaked's second-char caramel threads mocha at KY-benchmark register.",
         "source": "Mocha Creme|Woodford Reserve Double Oaked"
       },
@@ -1779,10 +1495,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; Remus 15 handles dessert density at Gatsby-tribute register.",
         "source": "Peanut Butter Brownie|Remus 15 Year Gatsby Reserve"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side pairing holds at neutral.",
-        "source": "Peanut Butter Brownie|Sazerac Rye"
       },
       {
         "template": "Works; boutique character doesn't drive.",
@@ -1815,16 +1527,8 @@ const CORPUS_MINED = {
     ],
     "BOURBON_BOLD|HEARTY_SOUP": [
       {
-        "template": "Works; the bourbon-on-light-soup call lands as a measured alongside.",
-        "source": "1792 Small Batch|Clam Chowder"
-      },
-      {
         "template": "Works; richer profile is slightly over-specified for the dessert.",
         "source": "1792 Small Batch|French Onion"
-      },
-      {
-        "template": "Works; safe bourbon-on-light-soup alongside, but not the headline call.",
-        "source": "1792 Small Batch|Gumbo"
       },
       {
         "template": "Works; wine-cask over-specified.",
@@ -1835,48 +1539,12 @@ const CORPUS_MINED = {
         "source": "1792 Small Batch|Mushroom Bisque"
       },
       {
-        "template": "Works; capable bourbon-on-light-soup match, not the recommendation.",
-        "source": "1792 Sweet Wheat|Clam Chowder"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "1792 Sweet Wheat|French Onion"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup call sits without pulling focus.",
-        "source": "1792 Sweet Wheat|Loaded Potato"
-      },
-      {
-        "template": "Works; capable bourbon-on-hearty-soup match, not the recommendation.",
-        "source": "1792 Sweet Wheat|Mushroom Bisque"
-      },
-      {
         "template": "Works; sweet character distinctive but not driving.",
         "source": "1792 Sweet Wheat|Shrimp Bisque"
       },
       {
-        "template": "Works; the bourbon-on-light-soup pairing holds at neutral.",
-        "source": "A Midnight's Winter Dram|Clam Chowder"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup call lands as a measured alongside.",
-        "source": "A Midnight's Winter Dram|Loaded Potato"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Aberlour 16|Mushroom Bisque"
-      },
-      {
         "template": "Works; the intensity overpowers the salad.",
         "source": "Aberlour 16|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call sits without pulling focus.",
-        "source": "Angel's Envy Cask Strength|Gumbo"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup pairing holds at neutral.",
-        "source": "Angel's Envy Cask Strength|Mushroom Bisque"
       },
       {
         "template": "Works; AE's fruity-jammy character engages the bleu at wine-finish register.",
@@ -1893,18 +1561,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; CC 43 Year is over-specified for a side; save the rare bottle for the main.",
         "source": "Angel's Envy|Loaded Potato"
-      },
-      {
-        "template": "Works; safe bourbon-on-hearty-soup alongside, but not the headline call.",
-        "source": "Angel's Envy|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call holds — neither soars nor fights.",
-        "source": "Baker's|Clam Chowder"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Baker's|Gumbo"
       },
       {
         "template": "Works; CC 43 Year is over-specified for a side — save the rare bottle for the main course.",
@@ -1927,10 +1583,6 @@ const CORPUS_MINED = {
         "source": "Balvenie 21 Portwood|Shrimp Bisque"
       },
       {
-        "template": "Works; the bourbon-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Bardstown Château Laboude|Mushroom Bisque"
-      },
-      {
         "template": "Works; light body doesn't overshoot.",
         "source": "Bardstown Discovery #6|Shrimp Bisque"
       },
@@ -1945,10 +1597,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; distinctive character doesn't drive but adds interest.",
         "source": "Bardstown Foursquare|French Onion"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Bardstown Foursquare|Gumbo"
       },
       {
         "template": "Works; premium proof overpowers the salad.",
@@ -2031,10 +1679,6 @@ const CORPUS_MINED = {
         "source": "Clam Chowder|Heaven Hill Bottled in Bond"
       },
       {
-        "template": "Works; capable bourbon-on-dessert match, not the recommendation.",
-        "source": "Clam Chowder|Jack Daniel's Old No. 7"
-      },
-      {
         "template": "Works; regional craft at matched register.",
         "source": "Clam Chowder|Jefferson's Ocean Marian McLain L.E."
       },
@@ -2053,10 +1697,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; the pour's assertiveness is a bit much for the soup but doesn't clash.",
         "source": "Clam Chowder|Remus 15 Year Gatsby Reserve"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Clam Chowder|WhistlePig 12 Year Old World"
       },
       {
         "template": "Works; Cragganmore's subtle smoke cuts the bisque at distinctive register.",
@@ -2115,10 +1755,6 @@ const CORPUS_MINED = {
         "source": "Four Roses Small Batch Select|Shrimp Bisque"
       },
       {
-        "template": "Works; the digestif-on-dessert pairing holds at neutral.",
-        "source": "French Onion|Garavogue Irish Whiskey"
-      },
-      {
         "template": "Works; the complex profile is slightly over-specified for the dessert.",
         "source": "French Onion|Jack Daniel's Old No. 7"
       },
@@ -2129,10 +1765,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; GTS is over-specified for an app; save the collector bottle for the main course.",
         "source": "French Onion|Russell's Reserve 10 Year"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup pairing holds at neutral.",
-        "source": "French Onion|WhistlePig 12 Year Old World"
       },
       {
         "template": "Works; Fiddich rides the bisque at gateway register.",
@@ -2175,24 +1807,12 @@ const CORPUS_MINED = {
         "source": "Glenmorangie 18|Shrimp Bisque"
       },
       {
-        "template": "Works; the bourbon-on-salad call lands as a measured alongside.",
-        "source": "Gumbo|Heaven Hill Bottled in Bond"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing reads as a quiet alongside.",
-        "source": "Gumbo|Jack Daniel's 12 Year"
-      },
-      {
         "template": "Works; annual-release wasted on salad.",
         "source": "Gumbo|Jack Daniel's Sinatra Select"
       },
       {
         "template": "Works; bonded weight a touch ambitious for the dessert.",
         "source": "Gumbo|Knob Creek 12 Year"
-      },
-      {
-        "template": "Works; safe digestif-on-light-side alongside, but not the headline call.",
-        "source": "Gumbo|Macallan Estate"
       },
       {
         "template": "Works; cleaner than wheated versions but not exceptional.",
@@ -2267,16 +1887,8 @@ const CORPUS_MINED = {
         "source": "Kentucky Owl Confiscated|Loaded Potato"
       },
       {
-        "template": "Works; the bourbon-on-hearty-starter call holds — neither soars nor fights.",
-        "source": "Kentucky Owl Confiscated|Mushroom Bisque"
-      },
-      {
         "template": "Works; Kentucky Owl is over-specified for a soup — save the collector bottle for the main course.",
         "source": "Kentucky Owl St. Patrick's|Shrimp Bisque"
-      },
-      {
-        "template": "Works; safe bourbon-on-dessert alongside, but not the headline call.",
-        "source": "Knob Creek Bourbon/Rye|Loaded Potato"
       },
       {
         "template": "Works; 100-proof complexity sits beside the soup.",
@@ -2305,18 +1917,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; 10-year depth overshoots delicacy.",
         "source": "Loaded Potato|Toki Suntory Japanese Whisky"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert pairing sits at neutral register without clash.",
-        "source": "Loaded Potato|Weller 12 Year"
-      },
-      {
-        "template": "Works; the bourbon-on-salad pairing reads as a quiet alongside.",
-        "source": "Loaded Potato|Weller Millennium"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Loaded Potato|WhistlePig 12 Year Old World"
       },
       {
         "template": "Works; high proof over-specified.",
@@ -2437,10 +2037,6 @@ const CORPUS_MINED = {
         "source": "Aberlour 16|Grilled Caesar"
       },
       {
-        "template": "Works; the bourbon-on-salad call lands as a measured alongside.",
-        "source": "Aberlour 16|House Wedge"
-      },
-      {
         "template": "Works; AE CS meets the char at premium wine-finish register.",
         "source": "Angel's Envy Cask Strength|Grilled Caesar"
       },
@@ -2473,24 +2069,12 @@ const CORPUS_MINED = {
         "source": "Balvenie 12 American Oak|House Wedge"
       },
       {
-        "template": "Works; safe bourbon-on-salad alongside, but not the headline call.",
-        "source": "Balvenie 14 Caribbean Cask|Grilled Caesar"
-      },
-      {
-        "template": "Works; the bourbon-on-salad call sits without pulling focus.",
-        "source": "Balvenie 14 Caribbean Cask|House Wedge"
-      },
-      {
         "template": "Works; Balvenie 16's vanilla-depth meets the char; Cragganmore 12's subtle smoke leads the Speyside-Caesar pairing.",
         "source": "Balvenie 16 Single Barrel|Grilled Caesar"
       },
       {
         "template": "Works; Balvenie 16 is over-specified for the wedge — save for the filet or dessert course.",
         "source": "Balvenie 16 Single Barrel|House Wedge"
-      },
-      {
-        "template": "Works; capable bourbon-on-salad match, not the recommendation.",
-        "source": "Balvenie 21 Portwood|House Wedge"
       },
       {
         "template": "Works; Bardstown Château Laboude meets the char at contemporary-craft register.",
@@ -2601,10 +2185,6 @@ const CORPUS_MINED = {
         "source": "Blanton's Straight from the Barrel|Grilled Caesar"
       },
       {
-        "template": "Works; the bourbon-on-salad call holds — neither soars nor fights.",
-        "source": "Blanton's Straight from the Barrel|House Wedge"
-      },
-      {
         "template": "Works; milestone-release doesn't drive.",
         "source": "Blood Oath Pact 10|Grilled Caesar"
       },
@@ -2669,10 +2249,6 @@ const CORPUS_MINED = {
         "source": "Elijah Craig 18 Year|Grilled Caesar"
       },
       {
-        "template": "Works; the bourbon-on-salad pairing sits at neutral register without clash.",
-        "source": "Elijah Craig 18 Year|House Wedge"
-      },
-      {
         "template": "Works; curated character doesn't quite drive the Caesar.",
         "source": "Elijah Craig Private Barrel|Grilled Caesar"
       },
@@ -2707,14 +2283,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; the light body doesn't overshoot the salad.",
         "source": "Four Roses Yellow Label|House Wedge"
-      },
-      {
-        "template": "Works; the bourbon-on-salad pairing holds at neutral.",
-        "source": "Fox & Oden Double Oaked|Grilled Caesar"
-      },
-      {
-        "template": "Works; the bourbon-on-salad pairing reads as a quiet alongside.",
-        "source": "Fox & Oden Double Oaked|House Wedge"
       },
       {
         "template": "Works; boutique character doesn't drive the Caesar.",
@@ -3043,20 +2611,8 @@ const CORPUS_MINED = {
     ],
     "BOURBON_BOLD|CREAMY_SIDE": [
       {
-        "template": "Works; the bourbon-on-rich-side call sits without pulling focus.",
-        "source": "1792 Small Batch|Lobster Mac"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side pairing sits at neutral register without clash.",
-        "source": "1792 Sweet Wheat|Lobster Mac"
-      },
-      {
         "template": "Works; boutique over-specified.",
         "source": "A Midnight's Winter Dram|Au Gratin Potatoes"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing sits at neutral register without clash.",
-        "source": "A Midnight's Winter Dram|Lobster Mac"
       },
       {
         "template": "Works; Aberlour 16's balance handles the richness.",
@@ -3065,10 +2621,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; Aberlour 16's bourbon-side vanilla rides the cream.",
         "source": "Aberlour 16|Creamed Spinach"
-      },
-      {
-        "template": "Works; capable bourbon-on-rich-side match, not the recommendation.",
-        "source": "Aberlour 16|Lobster Mac"
       },
       {
         "template": "Works; AE CS handles the richness at premium register.",
@@ -3085,10 +2637,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; AE Triple Cask's layered character rides the cream at distinctive register.",
         "source": "Angel's Envy Triple Cask|Creamed Spinach"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Angel's Envy Triple Cask|Lobster Mac"
       },
       {
         "template": "Works; AE's port-finish handles the richness at wine-finish register.",
@@ -3155,10 +2703,6 @@ const CORPUS_MINED = {
         "source": "Au Gratin Potatoes|Booker's"
       },
       {
-        "template": "Works; the bourbon-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Bruichladdich"
-      },
-      {
         "template": "Works; Canadian Club's grain-forward character handles the richness at heritage register.",
         "source": "Au Gratin Potatoes|Canadian Club"
       },
@@ -3221,10 +2765,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; Glenmorangie 18 handles the richness at premium register.",
         "source": "Au Gratin Potatoes|Glenmorangie 18"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Hibiki Japanese Harmony"
       },
       {
         "template": "Works; Ironfish Mezcal handles the richness at Michigan-hometown register.",
@@ -3343,10 +2883,6 @@ const CORPUS_MINED = {
         "source": "Au Gratin Potatoes|Pikesville Rye"
       },
       {
-        "template": "Works; the bourbon-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Redbreast 12 Year"
-      },
-      {
         "template": "Works; the rye's bright character is slightly at odds with the side's richness.",
         "source": "Au Gratin Potatoes|Sazerac Rye"
       },
@@ -3405,14 +2941,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; BH Red Wine Cask's softer-proof character rides the cream at distinctive register.",
         "source": "Basil Hayden's Red Wine Cask|Creamed Spinach"
-      },
-      {
-        "template": "Works; safe bourbon-on-rich-side alongside, but not the headline call.",
-        "source": "Blood Oath Pact 8|Lobster Mac"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing reads as a quiet alongside.",
-        "source": "Bruichladdich|Creamed Spinach"
       },
       {
         "template": "Works; CC 43 Year is over-specified for a side — save the rare bottle for the main course.",
@@ -3499,10 +3027,6 @@ const CORPUS_MINED = {
         "source": "Creamed Spinach|Yamazaki 18 Year"
       },
       {
-        "template": "Works; safe bourbon-on-fish-main alongside, but not the headline call.",
-        "source": "Fox & Oden|Lobster Mac"
-      },
-      {
         "template": "Works; Hakushu's subtle peat handles the rich dish at distinctive register.",
         "source": "Hakushu 12 Year|Lobster Mac"
       },
@@ -3515,24 +3039,12 @@ const CORPUS_MINED = {
         "source": "Jameson Irish Whiskey|Lobster Mac"
       },
       {
-        "template": "Works; the bourbon-on-hearty-soup pairing holds at neutral.",
-        "source": "Lobster Mac|New Holland Beer Barrel Bourbon"
-      },
-      {
         "template": "Works; Japanese whisky's delicate category handles the rich dish without fighting it.",
         "source": "Lobster Mac|Toki Suntory Japanese Whisky"
       },
       {
-        "template": "Works; capable digestif-on-rich-side match, not the recommendation.",
-        "source": "Lobster Mac|WhistlePig 12 Year Old World"
-      },
-      {
         "template": "Works; aged character overshoots delicacy.",
         "source": "Lobster Mac|WhistlePig 15 Year"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call holds — neither soars nor fights.",
-        "source": "Lobster Mac|Woodinville Rye"
       },
       {
         "template": "Works; Yamazaki 12's honey-fruit elegance handles the rich dish at flagship register.",
@@ -3544,30 +3056,6 @@ const CORPUS_MINED = {
       }
     ],
     "BOURBON_BOLD|CHICKEN_MAIN": [
-      {
-        "template": "Works; the bourbon-on-chicken-main call holds — neither soars nor fights.",
-        "source": "1792 Small Batch|Roast Half Chicken"
-      },
-      {
-        "template": "Works; capable bourbon-on-chicken-main match, not the recommendation.",
-        "source": "1792 Sweet Wheat|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the bourbon-on-chicken-main pairing reads as a quiet alongside.",
-        "source": "A Midnight's Winter Dram|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe bourbon-on-chicken-main alongside, but not the headline call.",
-        "source": "Aberlour 16|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the bourbon-on-chicken-main call lands as a measured alongside.",
-        "source": "Angel's Envy Cask Strength|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the bourbon-on-chicken-main pairing holds at neutral.",
-        "source": "Bardstown Founders KBS|Roast Half Chicken"
-      },
       {
         "template": "Works; richer profile is slightly over-specified for the dessert.",
         "source": "Bardstown Fusion #7|Roast Half Chicken"
@@ -3581,22 +3069,6 @@ const CORPUS_MINED = {
         "source": "Basil Hayden's Red Wine Cask|Roast Half Chicken"
       },
       {
-        "template": "Works; the bourbon-on-chicken-main call sits without pulling focus.",
-        "source": "Basil Hayden's|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the bourbon-on-chicken-main pairing sits at neutral register without clash.",
-        "source": "Blood Oath Pact 8|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe bourbon-on-dessert alongside, but not the headline call.",
-        "source": "Bowdie's Private Select — Maker's Mark|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing sits at neutral register without clash.",
-        "source": "Buffalo Trace|Roast Half Chicken"
-      },
-      {
         "template": "Works; save the BTAC bottle for the protein course — the side doesn't deserve the pour.",
         "source": "Clermont Steep|Roast Half Chicken"
       },
@@ -3607,10 +3079,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; EC 18's aged character meets the glaze at aged-HH register.",
         "source": "Jack Daniel's Bonded|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call lands as a measured alongside.",
-        "source": "Jefferson's Ocean Marian McLain L.E.|Roast Half Chicken"
       },
       {
         "template": "Works; X Commandments story wasted on salad.",
@@ -3631,52 +3099,11 @@ const CORPUS_MINED = {
       {
         "template": "Works; boutique-blend depth gives composed dessert character.",
         "source": "Roast Half Chicken|Weller Special Reserve"
-      },
-      {
-        "template": "Works; the digestif-on-chicken-main call lands as a measured alongside.",
-        "source": "Roast Half Chicken|WhistlePig 12 Year Old World"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert pairing reads as a quiet alongside.",
-        "source": "Roast Half Chicken|Woodford Reserve Double Oaked"
-      }
-    ],
+      }],
     "BOURBON_BOLD|VEG_MAIN": [
-      {
-        "template": "Works; the bourbon-on-light-soup call sits without pulling focus.",
-        "source": "1792 Sweet Wheat|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Aberlour 16|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing holds at neutral.",
-        "source": "Angel's Envy|Vegetable Curry with Chickpeas"
-      },
       {
         "template": "Works; neutral, not elevating.",
         "source": "Balvenie 16 Single Barrel|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe bourbon-on-light-soup alongside, but not the headline call.",
-        "source": "Balvenie 21 Portwood|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call lands as a measured alongside.",
-        "source": "Bardstown Château Laboude|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call holds — neither soars nor fights.",
-        "source": "Bardstown Founders KBS|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable bourbon-on-light-soup match, not the recommendation.",
-        "source": "Blanton's Gold|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Blood Oath Pact 8|Vegetable Curry with Chickpeas"
       },
       {
         "template": "Works; the Dylan-brand story is wasted on the salad.",
@@ -3707,10 +3134,6 @@ const CORPUS_MINED = {
         "source": "Larceny Small Batch|Vegetable Curry with Chickpeas"
       },
       {
-        "template": "Works; the digestif-on-dessert call sits without pulling focus.",
-        "source": "Michter's US*1 Rye|Vegetable Curry with Chickpeas"
-      },
-      {
         "template": "Works; Caribbean Cask handles the richness at distinctive register.",
         "source": "Old Grand-Dad 16 Year|Vegetable Curry with Chickpeas"
       },
@@ -3725,45 +3148,8 @@ const CORPUS_MINED = {
       {
         "template": "Works; grain notes don't really engage the soup but don't clash.",
         "source": "Toki Suntory Japanese Whisky|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing holds at neutral.",
-        "source": "Vegetable Curry with Chickpeas|WhistlePig 12 Year Old World"
-      }
-    ],
+      }],
     "BIG_RED|LIGHT_SIDE": [
-      {
-        "template": "Works; the Cab-on-light-side call lands as a measured alongside.",
-        "source": "1881 Napa Valley|Asparagus"
-      },
-      {
-        "template": "Works; the Cab-on-light-side call holds — neither soars nor fights.",
-        "source": "1881 Napa Valley|Broccolini"
-      },
-      {
-        "template": "Works; the Cab-on-light-side pairing reads as a quiet alongside.",
-        "source": "1881 Napa Valley|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the Cab-on-light-side pairing holds at neutral.",
-        "source": "1881 Napa Valley|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; safe Cab-on-light-side alongside, but not the headline call.",
-        "source": "Alexander Valley Cyrus|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; capable Cab-on-light-side match, not the recommendation.",
-        "source": "Alexander Valley Cyrus|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the Cab-on-light-side pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Cyrus|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the Cab-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|Domaine Tempier Bandol"
-      },
       {
         "template": "Works; the opener sits without competing.",
         "source": "Asparagus|Domaine du Grand Tinel"
@@ -3777,83 +3163,11 @@ const CORPUS_MINED = {
         "source": "Broccolini|Keenan Mernet"
       },
       {
-        "template": "Works; the Cab-on-salad call lands as a measured alongside.",
-        "source": "Broccolini|Scotto Cellars The Lost Chapters"
-      },
-      {
         "template": "Works; the dessert sits cleanly against the meal's register.",
         "source": "Epoch Ingenuity|Seasonal Vegetables"
       }
     ],
     "BIG_RED|HEARTY_SOUP": [
-      {
-        "template": "Works; the Cab-on-light-soup pairing reads as a quiet alongside.",
-        "source": "1881 Napa Valley|Clam Chowder"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup call holds — neither soars nor fights.",
-        "source": "1881 Napa Valley|Gumbo"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup call sits without pulling focus.",
-        "source": "1881 Napa Valley|Loaded Potato"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "1881 Napa Valley|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Cyrus|French Onion"
-      },
-      {
-        "template": "Works; safe Cab-on-light-soup alongside, but not the headline call.",
-        "source": "Alexander Valley Cyrus|Gumbo"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup pairing holds at neutral.",
-        "source": "Alexander Valley Cyrus|Loaded Potato"
-      },
-      {
-        "template": "Works; capable Cab-on-hearty-soup match, not the recommendation.",
-        "source": "Alexander Valley Cyrus|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup call lands as a measured alongside.",
-        "source": "Alexander Valley Cyrus|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the Cab-on-salad call sits without pulling focus.",
-        "source": "Austin Hope Cabernet Sauvignon|Loaded Potato"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Austin Hope Cabernet Sauvignon|Mushroom Bisque"
-      },
-      {
-        "template": "Works; safe Cab-on-hearty-soup alongside, but not the headline call.",
-        "source": "Cade Cabernet Sauvignon|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup call sits without pulling focus.",
-        "source": "Clam Chowder|Corazón del Sol Malbec"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Clam Chowder|Epoch Ingenuity"
-      },
-      {
-        "template": "Works; capable Cab-on-light-soup match, not the recommendation.",
-        "source": "Clam Chowder|Fattoria Le Pupille Saffredi"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup pairing holds at neutral.",
-        "source": "Clam Chowder|Freemark Abbey Bosché"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup call lands as a measured alongside.",
-        "source": "Clam Chowder|Venge Family Reserve"
-      },
       {
         "template": "Works; the dessert closes without crowding.",
         "source": "Domaine du Grand Tinel|Mushroom Bisque"
@@ -3867,32 +3181,8 @@ const CORPUS_MINED = {
         "source": "Fattoria Le Pupille Saffredi|Shrimp Bisque"
       },
       {
-        "template": "Works; the Cab-on-light-side call sits without pulling focus.",
-        "source": "Freemark Abbey Bosché|French Onion"
-      },
-      {
         "template": "Works; the call holds at neutral register.",
         "source": "Freemark Abbey Bosché|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "French Onion|G.D. Vajra Albe Nebbiolo"
-      },
-      {
-        "template": "Works; capable Cab-on-light-side match, not the recommendation.",
-        "source": "French Onion|Spottswoode Lyndenhurst"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "G.D. Vajra Albe Nebbiolo|Loaded Potato"
-      },
-      {
-        "template": "Works; capable digestif-on-hearty-soup match, not the recommendation.",
-        "source": "G.D. Vajra Albe Nebbiolo|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the Cab-on-salad call lands as a measured alongside.",
-        "source": "Heitz Trailside Vineyard|Shrimp Bisque"
       },
       {
         "template": "Works; the side call holds at neutral register.",
@@ -3903,137 +3193,35 @@ const CORPUS_MINED = {
         "source": "Lail Vineyards Blueprint|Shrimp Bisque"
       },
       {
-        "template": "Works; the Cab-on-light-side call lands as a measured alongside.",
-        "source": "Lail Vineyards Daniel Cuvée|Loaded Potato"
-      },
-      {
         "template": "Works; the side sits without pulling focus.",
         "source": "Le Ragnaie Brunello|Loaded Potato"
       },
       {
         "template": "Works; the close composes without strain.",
         "source": "Les Pallières Raciné|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the Cab-on-salad pairing reads as a quiet alongside.",
-        "source": "Mushroom Bisque|San Simeon Stormwatch"
-      },
-      {
-        "template": "Works; the Cab-on-salad pairing holds at neutral.",
-        "source": "Mushroom Bisque|St Supéry Cabernet Sauvignon"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Mushroom Bisque|Teeter Totter Cabernet Sauvignon"
-      }
-    ],
+      }],
     "BIG_RED|LIGHT_SOUP": [
-      {
-        "template": "Works; the Cab-on-light-soup call sits without pulling focus.",
-        "source": "1881 Napa Valley|Creamy Potato"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup call holds — neither soars nor fights.",
-        "source": "1881 Napa Valley|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; capable Cab-on-hearty-soup match, not the recommendation.",
-        "source": "1881 Napa Valley|Tomato Basil"
-      },
-      {
-        "template": "Works; capable Cab-on-light-soup match, not the recommendation.",
-        "source": "Alexander Valley Cyrus|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup call lands as a measured alongside.",
-        "source": "Alexander Valley Cyrus|Creamy Potato"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup pairing holds at neutral.",
-        "source": "Alexander Valley Cyrus|Seasonal Soup"
-      },
       {
         "template": "Works; the dessert sits cleanly against the meal's register.",
         "source": "Bodega Noemia A Lisa|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; safe Cab-on-light-soup alongside, but not the headline call.",
-        "source": "Bodega Noemia A Lisa|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Bodega Noemia A Lisa|Tomato Basil"
       },
       {
         "template": "Works; the close composes without strain.",
         "source": "Broccoli Cheddar|Les Pallières Raciné"
       },
       {
-        "template": "Works; the Cab-on-hearty-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Venge Family Reserve"
-      },
-      {
         "template": "Works; the call holds at neutral register.",
         "source": "Butternut Squash|Fattoria Le Pupille Saffredi"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup call lands as a measured alongside.",
-        "source": "Butternut Squash|Venge Family Reserve"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Creamy Potato|Scotto Cellars The Lost Chapters"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Creamy Potato|Simon Family Estate Reserve"
       },
       {
         "template": "Works; the side call holds at neutral register.",
         "source": "Creamy Potato|Venge Family Reserve"
       },
       {
-        "template": "Works; the Cab-on-rich-side pairing holds at neutral.",
-        "source": "Creamy Potato|Venge Silencieux"
-      },
-      {
         "template": "Works; the opener sits without competing.",
         "source": "Domaine Tempier Bandol|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the Cab-on-salad pairing holds at neutral.",
-        "source": "Tomato Basil|Venge Silencieux"
-      }
-    ],
+      }],
     "BIG_RED|CREAMY_SIDE": [
-      {
-        "template": "Works; safe Cab-on-rich-side alongside, but not the headline call.",
-        "source": "1881 Napa Valley|Lobster Mac"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side call lands as a measured alongside.",
-        "source": "Austin Hope Cabernet Sauvignon|Lobster Mac"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side call sits without pulling focus.",
-        "source": "Cade Cabernet Sauvignon|Lobster Mac"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Château Batailley|Lobster Mac"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side call holds — neither soars nor fights.",
-        "source": "Château Beaucastel|Lobster Mac"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side pairing holds at neutral.",
-        "source": "Epoch Ingenuity|Lobster Mac"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Frias Block 5|Lobster Mac"
-      },
       {
         "template": "Works; the two sides share the meal without competing.",
         "source": "G.D. Vajra Albe Nebbiolo|Lobster Mac"
@@ -4043,79 +3231,10 @@ const CORPUS_MINED = {
         "source": "Keenan Mernet|Lobster Mac"
       },
       {
-        "template": "Works; capable Cab-on-rich-side match, not the recommendation.",
-        "source": "Lobster Mac|Macauley Petite Syrah"
-      },
-      {
         "template": "Works; the side sits without pulling focus.",
         "source": "Lobster Mac|Shafer Hillside Select"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Lobster Mac|Venge Family Reserve"
-      }
-    ],
+      }],
     "BIG_RED|CHICKEN_MAIN": [
-      {
-        "template": "Works; the Cab-on-chicken-main pairing reads as a quiet alongside.",
-        "source": "1881 Napa Valley|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Cab-on-chicken-main call sits without pulling focus.",
-        "source": "Alexander Valley Cyrus|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side call holds — neither soars nor fights.",
-        "source": "Austin Hope Cabernet Sauvignon|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Cab-on-chicken-main pairing holds at neutral.",
-        "source": "Bodega Noemia A Lisa|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Cab-on-chicken-main call lands as a measured alongside.",
-        "source": "Brandlin Estate Cabernet Sauvignon|Roast Half Chicken"
-      },
-      {
-        "template": "Works; capable Cab-on-light-side match, not the recommendation.",
-        "source": "Cade Cabernet Sauvignon|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Caymus Cabernet Sauvignon|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe Cab-on-chicken-main alongside, but not the headline call.",
-        "source": "Château Gombaude-Guillot|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Cab-on-chicken-main call holds — neither soars nor fights.",
-        "source": "Darioush Cabernet Sauvignon|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup pairing holds at neutral.",
-        "source": "Lail Vineyards Daniel Cuvée|Roast Half Chicken"
-      },
-      {
-        "template": "Works; capable Cab-on-chicken-main match, not the recommendation.",
-        "source": "Les Pallières Raciné|Roast Half Chicken"
-      },
-      {
-        "template": "Works; capable Cab-on-rich-side match, not the recommendation.",
-        "source": "Odette Cabernet Sauvignon|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe Cab-on-salad alongside, but not the headline call.",
-        "source": "Peju Cabernet Sauvignon|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Cab-on-light-side call sits without pulling focus.",
-        "source": "Roast Half Chicken|St Supéry Élu Meritage"
-      },
-      {
-        "template": "Works; the Cab-on-rich-side call lands as a measured alongside.",
-        "source": "Roast Half Chicken|Venge Family Reserve"
-      },
       {
         "template": "Works; the opener sits without competing.",
         "source": "Roast Half Chicken|Venge Scout's Honor"
@@ -4123,145 +3242,13 @@ const CORPUS_MINED = {
     ],
     "BIG_RED|VEG_MAIN": [
       {
-        "template": "Works; the Cab-on-light-soup pairing reads as a quiet alongside.",
-        "source": "1881 Napa Valley|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup pairing holds at neutral.",
-        "source": "Bodega Noemia A Lisa|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe Cab-on-light-soup alongside, but not the headline call.",
-        "source": "Corazón del Sol Malbec|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable Cab-on-light-soup match, not the recommendation.",
-        "source": "Domaine du Grand Tinel|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup call lands as a measured alongside.",
-        "source": "Fattoria Le Pupille Saffredi|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup call sits without pulling focus.",
-        "source": "Freemark Abbey Bosché|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Lail Vineyards Blueprint|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Cab-on-light-soup call holds — neither soars nor fights.",
-        "source": "Lail Vineyards Daniel Cuvée|Vegetable Curry with Chickpeas"
-      },
-      {
         "template": "Works; the dessert sits cleanly against the meal's register.",
         "source": "Vegetable Curry with Chickpeas|Venge Silencieux"
       }
     ],
     "GIN|LIGHT_SIDE": [
-      {
-        "template": "Works; the gin-on-light-side pairing holds at neutral.",
-        "source": "2 James Gin|Asparagus"
-      },
-      {
-        "template": "Works; capable gin-on-light-side match, not the recommendation.",
-        "source": "2 James Gin|Broccolini"
-      },
-      {
-        "template": "Works; the gin-on-light-side pairing sits at neutral register without clash.",
-        "source": "2 James Gin|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; safe gin-on-light-side alongside, but not the headline call.",
-        "source": "2 James Gin|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the gin-on-light-side call lands as a measured alongside.",
-        "source": "Asparagus|Beefeater Gin"
-      },
-      {
-        "template": "Works; the gin-on-light-side pairing reads as a quiet alongside.",
-        "source": "Asparagus|Hendricks Flora Adora"
-      },
-      {
-        "template": "Works; the gin-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|Inverroche Gin"
-      },
-      {
-        "template": "Works; the gin-on-light-side call holds — neither soars nor fights.",
-        "source": "Asparagus|Tanq 10 Gin"
-      },
-      {
-        "template": "Works; capable gin-on-hearty-soup match, not the recommendation.",
-        "source": "Honey Roasted Carrots|Tanqueray Gin"
-      }
     ],
     "GIN|CREAMY_SIDE": [
-      {
-        "template": "Works; safe gin-on-rich-side alongside, but not the headline call.",
-        "source": "2 James Gin|Au Gratin Potatoes"
-      },
-      {
-        "template": "Works; the gin-on-light-side pairing holds at neutral.",
-        "source": "2 James Gin|Creamed Spinach"
-      },
-      {
-        "template": "Works; the gin-on-rich-side pairing sits at neutral register without clash.",
-        "source": "2 James Gin|Lobster Mac"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Beefeater Gin"
-      },
-      {
-        "template": "Works; capable gin-on-rich-side match, not the recommendation.",
-        "source": "Au Gratin Potatoes|Bluecoat Gin"
-      },
-      {
-        "template": "Works; the gin-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Bombay Dry Gin"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|Botanist Gin"
-      },
-      {
-        "template": "Works; the gin-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|Eastern Kille Dry Gin"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Hendricks Gin"
-      },
-      {
-        "template": "Works; the gin-on-light-side call holds — neither soars nor fights.",
-        "source": "Aviation Gin|Creamed Spinach"
-      },
-      {
-        "template": "Works; safe gin-on-light-side alongside, but not the headline call.",
-        "source": "Beefeater Gin|Creamed Spinach"
-      },
-      {
-        "template": "Works; the gin-on-light-side call sits without pulling focus.",
-        "source": "Creamed Spinach|Detroit City Gin"
-      },
-      {
-        "template": "Works; the gin-on-light-side pairing sits at neutral register without clash.",
-        "source": "Creamed Spinach|Eastern Kille Dry Gin"
-      },
-      {
-        "template": "Works; the gin-on-light-side pairing reads as a quiet alongside.",
-        "source": "Creamed Spinach|Hendricks Gin"
-      },
-      {
-        "template": "Works; capable gin-on-light-side match, not the recommendation.",
-        "source": "Creamed Spinach|Hendricks Grand Cabaret"
-      },
-      {
-        "template": "Works; the gin-on-light-side call lands as a measured alongside.",
-        "source": "Creamed Spinach|Roku Gin"
-      }
     ],
     "GIN|DESSERT_LIGHT": [
       {
@@ -4367,59 +3354,11 @@ const CORPUS_MINED = {
     ],
     "GIN|LIGHT_SOUP": [
       {
-        "template": "Works; the gin-on-light-soup call sits without pulling focus.",
-        "source": "2 James Gin|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing reads as a quiet alongside.",
-        "source": "2 James Gin|Butternut Squash"
-      },
-      {
-        "template": "Works; capable gin-on-light-soup match, not the recommendation.",
-        "source": "2 James Gin|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; safe gin-on-light-soup alongside, but not the headline call.",
-        "source": "2 James Gin|Tomato Basil"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing holds at neutral.",
-        "source": "Aviation Gin|Creamy Potato"
-      },
-      {
-        "template": "Works; the gin-on-light-soup call holds — neither soars nor fights.",
-        "source": "Aviation Gin|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; safe gin-on-rich-side alongside, but not the headline call.",
-        "source": "Beefeater Gin|Butternut Squash"
-      },
-      {
-        "template": "Works; safe gin-on-light-side alongside, but not the headline call.",
-        "source": "Bluecoat Gin|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Bluecoat Gin|Tomato Basil"
-      },
-      {
-        "template": "Works; the gin-on-light-soup call lands as a measured alongside.",
-        "source": "Bombay Dry Gin|Tomato Basil"
-      },
-      {
         "template": "Works; gin over-specified; Sapphire's softness is a functional case.",
         "source": "Plymouth Gin|Tomato Basil"
       }
     ],
     "GIN|HEARTY_STARTER": [
-      {
-        "template": "Works; the gin-on-rich-side pairing reads as a quiet alongside.",
-        "source": "2 James Gin|Brussels and Belly"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call sits without pulling focus.",
-        "source": "Aviation Gin|Brussels and Belly"
-      },
       {
         "template": "Works; Aviation's soft juniper meets butter at crowd-pleasing register; Mahón and Eastern Kille's sharper juniper cut it harder.",
         "source": "Aviation Gin|Escargot"
@@ -4427,34 +3366,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; Bluecoat's citrus meets butter with American-craft character; Mahón's Mediterranean juniper cuts it harder.",
         "source": "Bluecoat Gin|Escargot"
-      },
-      {
-        "template": "Works; safe gin-on-rich-side alongside, but not the headline call.",
-        "source": "Botanist Gin|Brussels and Belly"
-      },
-      {
-        "template": "Works; the gin-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Brussels and Belly|Detroit City Gin"
-      },
-      {
-        "template": "Works; the gin-on-rich-side pairing holds at neutral.",
-        "source": "Brussels and Belly|Eastern Kille Dry Gin"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call holds — neither soars nor fights.",
-        "source": "Brussels and Belly|Elephant Gin"
-      },
-      {
-        "template": "Works; the gin-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Brussels and Belly|Hendricks Grand Cabaret"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call lands as a measured alongside.",
-        "source": "Brussels and Belly|Hendricks Neptunia"
-      },
-      {
-        "template": "Works; capable gin-on-rich-side match, not the recommendation.",
-        "source": "Brussels and Belly|Plymouth Gin"
       },
       {
         "template": "Works; Empress's rose-profile is over-specified for escargot — Mahón's Mediterranean juniper cuts butter sharper.",
@@ -4486,74 +3397,6 @@ const CORPUS_MINED = {
       }
     ],
     "GIN|HEARTY_SOUP": [
-      {
-        "template": "Works; safe gin-on-light-soup alongside, but not the headline call.",
-        "source": "2 James Gin|Clam Chowder"
-      },
-      {
-        "template": "Works; the gin-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "2 James Gin|French Onion"
-      },
-      {
-        "template": "Works; capable gin-on-light-soup match, not the recommendation.",
-        "source": "2 James Gin|Gumbo"
-      },
-      {
-        "template": "Works; the gin-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "2 James Gin|Loaded Potato"
-      },
-      {
-        "template": "Works; capable gin-on-hearty-soup match, not the recommendation.",
-        "source": "2 James Gin|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the gin-on-hearty-soup pairing holds at neutral.",
-        "source": "Aviation Gin|Loaded Potato"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Beefeater Gin|Gumbo"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Bluecoat Gin|Clam Chowder"
-      },
-      {
-        "template": "Works; the gin-on-hearty-soup call lands as a measured alongside.",
-        "source": "Bluecoat Gin|French Onion"
-      },
-      {
-        "template": "Works; the gin-on-hearty-soup call sits without pulling focus.",
-        "source": "Bluecoat Gin|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the gin-on-light-soup call sits without pulling focus.",
-        "source": "Bombay Dry Gin|Gumbo"
-      },
-      {
-        "template": "Works; the gin-on-light-soup call lands as a measured alongside.",
-        "source": "Bombay Sapphire Gin|Gumbo"
-      },
-      {
-        "template": "Works; the gin-on-light-side pairing reads as a quiet alongside.",
-        "source": "Bombay Sapphire Gin|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing holds at neutral.",
-        "source": "Botanist Gin|Gumbo"
-      },
-      {
-        "template": "Works; the gin-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Hendricks Orbium"
-      },
-      {
-        "template": "Works; the gin-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Detroit City Gin|Loaded Potato"
-      },
-      {
-        "template": "Works; safe gin-on-hearty-soup alongside, but not the headline call.",
-        "source": "Detroit City Gin|Mushroom Bisque"
-      }
     ],
     "GIN|STEAK_LEAN": [
       {
@@ -4640,38 +3483,6 @@ const CORPUS_MINED = {
       }
     ],
     "GIN|RICH_SIDE": [
-      {
-        "template": "Works; safe gin-on-rich-side alongside, but not the headline call.",
-        "source": "2 James Gin|Mushrooms"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call lands as a measured alongside.",
-        "source": "2 James Gin|Truffle Fries"
-      },
-      {
-        "template": "Works; the gin-on-rich-side pairing holds at neutral.",
-        "source": "Aviation Gin|Mushrooms"
-      },
-      {
-        "template": "Works; capable gin-on-rich-side match, not the recommendation.",
-        "source": "Aviation Gin|Truffle Fries"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call holds — neither soars nor fights.",
-        "source": "Beefeater Gin|Mushrooms"
-      },
-      {
-        "template": "Works; the gin-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Detroit City Gin|Truffle Fries"
-      },
-      {
-        "template": "Works; the gin-on-rich-side call sits without pulling focus.",
-        "source": "Empress 1908 Gin|Mushrooms"
-      },
-      {
-        "template": "Works; the gin-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Empress 1908 Gin|Truffle Fries"
-      }
     ],
     "GIN|CHICKEN_MAIN": [
       {
@@ -4772,38 +3583,6 @@ const CORPUS_MINED = {
       }
     ],
     "GIN|VEG_MAIN": [
-      {
-        "template": "Works; capable gin-on-light-soup match, not the recommendation.",
-        "source": "2 James Gin|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing holds at neutral.",
-        "source": "Aviation Gin|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the gin-on-light-soup call lands as a measured alongside.",
-        "source": "Beefeater Gin|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the gin-on-light-soup call holds — neither soars nor fights.",
-        "source": "Bombay Sapphire Gin|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the gin-on-light-soup call sits without pulling focus.",
-        "source": "Eastern Kille Dry Gin|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Hendricks Gin|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the gin-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Hendricks Orbium|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe gin-on-light-soup alongside, but not the headline call.",
-        "source": "Inverroche Gin|Vegetable Curry with Chickpeas"
-      }
     ],
     "BOURBON_BOLD|STEAK_BOLD": [
       {
@@ -4847,24 +3626,8 @@ const CORPUS_MINED = {
         "source": "Blood Oath Pact 8|Porterhouse"
       },
       {
-        "template": "Works; the bourbon-on-bone-in-ribeye call lands as a measured alongside.",
-        "source": "Canadian Club 43 Year|Porterhouse"
-      },
-      {
-        "template": "Works; the bourbon-on-bone-in-ribeye pairing sits at neutral register without clash.",
-        "source": "Canadian Club 43 Year|The Tomahawk"
-      },
-      {
         "template": "Works; Canadian Club is lighter than ribeye demands; CC 43 Year handles it better.",
         "source": "Canadian Club|Cowboy Ribeye"
-      },
-      {
-        "template": "Works; the bourbon-on-bone-in-ribeye call sits without pulling focus.",
-        "source": "Canadian Club|Porterhouse"
-      },
-      {
-        "template": "Works; the bourbon-on-bone-in-ribeye pairing holds at neutral.",
-        "source": "Canadian Club|The Tomahawk"
       },
       {
         "template": "Works; Caribou Crossing is lighter than ribeye demands; CC 43 Year handles it better.",
@@ -4875,20 +3638,8 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Crown Royal"
       },
       {
-        "template": "Works; capable bourbon-on-bone-in-ribeye match, not the recommendation.",
-        "source": "Cowboy Ribeye|Jameson Irish Whiskey"
-      },
-      {
-        "template": "Works; the bourbon-on-bone-in-ribeye call holds — neither soars nor fights.",
-        "source": "Cowboy Ribeye|Redbreast 21 Year"
-      },
-      {
         "template": "Works; TSM Chardonnay Cask is under-specified for cap-fat — white-wine finish is lighter than red; AE Cask Strength handles ribeye better.",
         "source": "Cowboy Ribeye|Thomas S. Moore Chardonnay Cask"
-      },
-      {
-        "template": "Works; the bourbon-on-bone-in-ribeye pairing reads as a quiet alongside.",
-        "source": "Cowboy Ribeye|Toki Suntory Japanese Whisky"
       },
       {
         "template": "Works; EC 18 frames the two-cut plate at aged-HH register.",
@@ -5025,16 +3776,8 @@ const CORPUS_MINED = {
         "source": "Angel's Envy Cask Strength|Bone Marrow"
       },
       {
-        "template": "Works; the bourbon-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Angel's Envy Cask Strength|Brussels and Belly"
-      },
-      {
         "template": "Works; AE Triple Cask's layered character sits alongside marrow; AE Cask Strength handles marrow intensity better.",
         "source": "Angel's Envy Triple Cask|Bone Marrow"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Angel's Envy Triple Cask|Brussels and Belly"
       },
       {
         "template": "Works; AE at 86.6 proof is under-specified for marrow intensity; AE Cask Strength handles marrow better.",
@@ -5069,24 +3812,8 @@ const CORPUS_MINED = {
         "source": "Basil Hayden's Red Wine Cask|Bone Marrow"
       },
       {
-        "template": "Works; the bourbon-on-rich-side call lands as a measured alongside.",
-        "source": "Basil Hayden's Red Wine Cask|Brussels and Belly"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-starter call lands as a measured alongside.",
-        "source": "Bone Marrow|Canadian Club"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-starter pairing reads as a quiet alongside.",
-        "source": "Bone Marrow|Canadian Club 43 Year"
-      },
-      {
         "template": "Works; Cragganmore's subtle smoke meets marrow better than the lighter siblings, but Fernet Branca is still the featured marrow pairing.",
         "source": "Bone Marrow|Cragganmore 12"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-starter call holds — neither soars nor fights.",
-        "source": "Bone Marrow|Crown Royal"
       },
       {
         "template": "Works; Dewar's 15's sherry-finish sits alongside marrow at premium register; Fernet Branca still cuts it harder.",
@@ -5181,24 +3908,12 @@ const CORPUS_MINED = {
         "source": "Brussels and Belly|Glenmorangie 18"
       },
       {
-        "template": "Works; the bourbon-on-rich-side pairing holds at neutral.",
-        "source": "Brussels and Belly|Hakushu 12 Year"
-      },
-      {
         "template": "Works; HH 20's aged character meets the glaze at collector register.",
         "source": "Brussels and Belly|Heaven Hill 20 Year"
       },
       {
-        "template": "Works; safe bourbon-on-rich-side alongside, but not the headline call.",
-        "source": "Brussels and Belly|Hibiki Japanese Harmony"
-      },
-      {
         "template": "Works; IW Harper 15's cherry-oak meets the glaze at aged-KY-heritage register.",
         "source": "Brussels and Belly|I.W. Harper 15 Year"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side call sits without pulling focus.",
-        "source": "Brussels and Belly|Isaac Bowman Port Finish"
       },
       {
         "template": "Works; JW Blue is over-specified for the side — save the rare-cask bottle for the protein course.",
@@ -5241,10 +3956,6 @@ const CORPUS_MINED = {
         "source": "Brussels and Belly|Mister Sam Tribute Whiskey"
       },
       {
-        "template": "Works; capable bourbon-on-rich-side match, not the recommendation.",
-        "source": "Brussels and Belly|Old Emmer"
-      },
-      {
         "template": "Works; OGD 16's rye-spice meets the glaze at distinctive register.",
         "source": "Brussels and Belly|Old Grand-Dad 16 Year"
       },
@@ -5267,112 +3978,31 @@ const CORPUS_MINED = {
       {
         "template": "Works; Vermont-brand at matched register; Fernet Branca still cuts it harder.",
         "source": "Canadian Club 43 Year|Escargot"
-      },
-      {
-        "template": "Works; capable bourbon-on-hearty-starter match, not the recommendation.",
-        "source": "Canadian Club 43 Year|Prime Tartare"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-starter pairing sits at neutral register without clash.",
-        "source": "Canadian Club|Escargot"
-      },
-      {
-        "template": "Works; safe bourbon-on-hearty-starter alongside, but not the headline call.",
-        "source": "Caribou Crossing|Escargot"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|LIGHT_SIDE": [
-      {
-        "template": "Works; safe light-spirit-on-light-side alongside, but not the headline call.",
-        "source": "Adictivo Cristalino|Asparagus"
-      },
       {
         "template": "Works; ceremonial pour over-specified for two-cut plate.",
         "source": "Adictivo Cristalino|Broccolini"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call holds — neither soars nor fights.",
-        "source": "Adictivo Cristalino|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-side match, not the recommendation.",
-        "source": "Adictivo Cristalino|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the añejo-on-light-side call lands as a measured alongside.",
-        "source": "Adictivo Reposado|Asparagus"
-      },
-      {
-        "template": "Works; the añejo-on-light-side pairing reads as a quiet alongside.",
-        "source": "Adictivo Reposado|Broccolini"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter call sits without pulling focus.",
-        "source": "Adictivo Reposado|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the añejo-on-light-side call holds — neither soars nor fights.",
-        "source": "Adictivo Reposado|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the añejo-on-light-side pairing sits at neutral register without clash.",
-        "source": "Adictivo Reposado|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the añejo-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|Camarena Tequila"
       },
       {
         "template": "Works; clean but not a standout.",
         "source": "Asparagus|Clase Azul Reposado"
       },
       {
-        "template": "Works; the añejo-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Codigo 1530 Rosa"
-      },
-      {
-        "template": "Works; safe añejo-on-light-side alongside, but not the headline call.",
-        "source": "Asparagus|Don Fulano Anejo"
-      },
-      {
-        "template": "Works; capable añejo-on-light-side match, not the recommendation.",
-        "source": "Asparagus|Don Julio Reposado"
-      },
-      {
         "template": "Works; multi-cask complexity over-specified for two-cut plate.",
         "source": "Asparagus|El Mayor Reposado"
-      },
-      {
-        "template": "Works; safe añejo-on-hearty-starter alongside, but not the headline call.",
-        "source": "Asparagus|Tears of Llorona"
       },
       {
         "template": "Works; distinctive-bottle over-specified.",
         "source": "Avion 44|Honey Roasted Carrots"
       },
       {
-        "template": "Works; the añejo-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Broccolini|Clase Azul Gold"
-      },
-      {
         "template": "Works; the wine-cask character adds dimension but not standout.",
         "source": "Broccolini|Don Julio 70th"
       },
       {
-        "template": "Works; the añejo-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Broccolini|G4 High Proof"
-      },
-      {
-        "template": "Works; the añejo-on-salad call holds — neither soars nor fights.",
-        "source": "Broccolini|Komos Extra Anejo"
-      },
-      {
         "template": "Works; the 70th's clarity is too delicate to drive the pairing.",
         "source": "Broccolini|Rey Sol Anejo"
-      },
-      {
-        "template": "Works; safe añejo-on-rich-side alongside, but not the headline call.",
-        "source": "Clase Azul Anejo|Honey Roasted Carrots"
       },
       {
         "template": "Works; ceremonial over-specified.",
@@ -5381,10 +4011,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; ceremony over-specified.",
         "source": "Clase Azul Gold|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call lands as a measured alongside.",
-        "source": "Clase Azul Ultra|Honey Roasted Carrots"
       },
       {
         "template": "Works; accessible aged composes with the plate.",
@@ -5399,16 +4025,8 @@ const CORPUS_MINED = {
         "source": "G4 High Proof|Seasonal Vegetables"
       },
       {
-        "template": "Works; the añejo-on-dessert pairing reads as a quiet alongside.",
-        "source": "Honey Roasted Carrots|Komos Extra Anejo"
-      },
-      {
         "template": "Works; clean and refined but not a marquee pairing.",
         "source": "Patron Anejo|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter call holds — neither soars nor fights.",
-        "source": "Rey Sol Anejo|Sauteed Garlic Spinach"
       },
       {
         "template": "Works; iconic pour over-specified.",
@@ -5417,36 +4035,8 @@ const CORPUS_MINED = {
     ],
     "TEQUILA_BOLD|CREAMY_SIDE": [
       {
-        "template": "Works; the light-spirit-on-rich-side call holds — neither soars nor fights.",
-        "source": "Adictivo Cristalino|Au Gratin Potatoes"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-side match, not the recommendation.",
-        "source": "Adictivo Cristalino|Creamed Spinach"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call sits without pulling focus.",
-        "source": "Adictivo Cristalino|Lobster Mac"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Adictivo Reposado|Au Gratin Potatoes"
-      },
-      {
-        "template": "Works; the añejo-on-light-side pairing holds at neutral.",
-        "source": "Adictivo Reposado|Creamed Spinach"
-      },
-      {
-        "template": "Works; the añejo-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Adictivo Reposado|Lobster Mac"
-      },
-      {
         "template": "Works; extended maturation over-specified.",
         "source": "Au Gratin Potatoes|Avion 44"
-      },
-      {
-        "template": "Works; the añejo-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Camarena Tequila"
       },
       {
         "template": "Works; sherry-butt-finished complexity handles richness at luxury register.",
@@ -5459,10 +4049,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; Ultra over-specified.",
         "source": "Au Gratin Potatoes|Clase Azul Ultra"
-      },
-      {
-        "template": "Works; capable añejo-on-rich-side match, not the recommendation.",
-        "source": "Au Gratin Potatoes|Codigo 1530 Rosa"
       },
       {
         "template": "Works; ex-rye-barrel spice handles richness at Expresiones register.",
@@ -5481,24 +4067,12 @@ const CORPUS_MINED = {
         "source": "Au Gratin Potatoes|Don Fulano Anejo"
       },
       {
-        "template": "Works; the añejo-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|Don Fulano Reposado"
-      },
-      {
         "template": "Works; iconic pour over-specified.",
         "source": "Au Gratin Potatoes|Don Julio 1942"
       },
       {
-        "template": "Works; the añejo-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Don Julio Reposado"
-      },
-      {
         "template": "Works; accessible aged sits with richness.",
         "source": "Au Gratin Potatoes|El Mayor Extra Anejo"
-      },
-      {
-        "template": "Works; safe añejo-on-rich-side alongside, but not the headline call.",
-        "source": "Au Gratin Potatoes|El Mayor Reposado"
       },
       {
         "template": "Works; multi-cask complexity handles richness at luxury register.",
@@ -5533,44 +4107,8 @@ const CORPUS_MINED = {
         "source": "Au Gratin Potatoes|Tears of Llorona"
       },
       {
-        "template": "Works; the añejo-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Trombo Cedano Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Clase Azul Anejo|Lobster Mac"
-      },
-      {
-        "template": "Works; the añejo-on-light-side pairing sits at neutral register without clash.",
-        "source": "Clase Azul Reposado|Creamed Spinach"
-      },
-      {
-        "template": "Works; safe añejo-on-light-side alongside, but not the headline call.",
-        "source": "Codigo 1530 Rosa|Creamed Spinach"
-      },
-      {
-        "template": "Works; the añejo-on-light-side call lands as a measured alongside.",
-        "source": "Corazon Reposado|Creamed Spinach"
-      },
-      {
         "template": "Works; the agave cuts the glaze but the pairing isn't marquee.",
         "source": "Corazon Sazerac|Lobster Mac"
-      },
-      {
-        "template": "Works; the añejo-on-light-side call holds — neither soars nor fights.",
-        "source": "Creamed Spinach|Don Julio Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-light-side pairing reads as a quiet alongside.",
-        "source": "Creamed Spinach|El Cabo"
-      },
-      {
-        "template": "Works; the añejo-on-light-side call sits without pulling focus.",
-        "source": "Creamed Spinach|G4 High Proof"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter pairing reads as a quiet alongside.",
-        "source": "Don Fulano Reposado|Lobster Mac"
       },
       {
         "template": "Works; 1942 aged depth is a touch over-specified for the small plate.",
@@ -5578,95 +4116,19 @@ const CORPUS_MINED = {
       }
     ],
     "TEQUILA_BOLD|STEAK_LEAN": [
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet call lands as a measured alongside.",
-        "source": "Adictivo Cristalino|Bone-In Filet"
-      },
-      {
-        "template": "Works; safe añejo-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Bone-In Filet|Komos Crystallino Anejo"
-      }
     ],
     "TEQUILA_BOLD|LIGHT_SOUP": [
       {
-        "template": "Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Adictivo Cristalino|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing holds at neutral.",
-        "source": "Adictivo Cristalino|Butternut Squash"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Adictivo Cristalino|Creamy Potato"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Adictivo Cristalino|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call lands as a measured alongside.",
-        "source": "Adictivo Cristalino|Seasonal Soup"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-soup match, not the recommendation.",
-        "source": "Adictivo Cristalino|Tomato Basil"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Adictivo Reposado|Broccoli Cheddar"
-      },
-      {
         "template": "Works; multi-cask complexity composed with dessert at distinctive register.",
         "source": "Adictivo Reposado|Butternut Squash"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Adictivo Reposado|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; capable añejo-on-light-soup match, not the recommendation.",
-        "source": "Adictivo Reposado|Seasonal Soup"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call lands as a measured alongside.",
-        "source": "Adictivo Reposado|Tomato Basil"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call holds — neither soars nor fights.",
-        "source": "Avion 44|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Camarena Tequila"
       },
       {
         "template": "Works; the 70th's smoothness is an unusual but interesting counterpoint.",
         "source": "Broccoli Cheddar|Corazon Reposado"
       },
       {
-        "template": "Works; the añejo-on-dessert call sits without pulling focus.",
-        "source": "Broccoli Cheddar|Corazon Stagg"
-      },
-      {
-        "template": "Works; safe añejo-on-light-soup alongside, but not the headline call.",
-        "source": "Broccoli Cheddar|Don Fulano Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-salad pairing sits at neutral register without clash.",
-        "source": "Broccoli Cheddar|Don Julio Reposado"
-      },
-      {
         "template": "Works; clean and refined but not a marquee pairing.",
         "source": "Broccoli Cheddar|Komos Extra Anejo"
-      },
-      {
-        "template": "Works; capable añejo-on-rich-side match, not the recommendation.",
-        "source": "Broccoli Cheddar|Komos Rosa Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call sits without pulling focus.",
-        "source": "Broccoli Cheddar|Milagro Anejo"
       },
       {
         "template": "Works; accessible match.",
@@ -5677,20 +4139,8 @@ const CORPUS_MINED = {
         "source": "Butternut Squash|Corazon Stagg"
       },
       {
-        "template": "Works; the añejo-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Butternut Squash|Don Julio Reposado"
-      },
-      {
         "template": "Works; single-estate character handles richness at craft register.",
         "source": "Butternut Squash|Ocho Anejo"
-      },
-      {
-        "template": "Works; safe añejo-on-hearty-soup alongside, but not the headline call.",
-        "source": "Butternut Squash|Patron Anejo"
-      },
-      {
-        "template": "Works; capable añejo-on-hearty-starter match, not the recommendation.",
-        "source": "Corazon Sazerac|Tomato Basil"
       },
       {
         "template": "Works; refinement is underserved by the dish density.",
@@ -5705,19 +4155,11 @@ const CORPUS_MINED = {
         "source": "Don Julio Reposado|Roasted Red Pepper Chickpea"
       },
       {
-        "template": "Works; the añejo-on-hearty-soup call sits without pulling focus.",
-        "source": "Komos Rosa Reposado|Roasted Red Pepper Chickpea"
-      },
-      {
         "template": "Works; the agave cuts the glaze but the pairing isn't marquee.",
         "source": "Milagro Reposado|Seasonal Soup"
       }
     ],
     "TEQUILA_BOLD|HEARTY_STARTER": [
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Adictivo Cristalino|Brussels and Belly"
-      },
       {
         "template": "Works; the aged character is a different register than the dish calls for.",
         "source": "Adictivo Reposado|Brussels and Belly"
@@ -5851,10 +4293,6 @@ const CORPUS_MINED = {
         "source": "El Mayor Reposado|Prime Tartare"
       },
       {
-        "template": "Works; capable añejo-on-hearty-starter match, not the recommendation.",
-        "source": "Escargot|Komos Crystallino Anejo"
-      },
-      {
         "template": "Works; bold agave is a distinctive counterpoint but slightly overpowering.",
         "source": "G4 High Proof|Prime Tartare"
       },
@@ -5881,104 +4319,12 @@ const CORPUS_MINED = {
     ],
     "TEQUILA_BOLD|HEARTY_SOUP": [
       {
-        "template": "Works; capable light-spirit-on-light-soup match, not the recommendation.",
-        "source": "Adictivo Cristalino|Clam Chowder"
-      },
-      {
-        "template": "Works; capable light-spirit-on-hearty-soup match, not the recommendation.",
-        "source": "Adictivo Cristalino|French Onion"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Adictivo Cristalino|Loaded Potato"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Adictivo Cristalino|Mushroom Bisque"
-      },
-      {
-        "template": "Works; safe añejo-on-light-soup alongside, but not the headline call.",
-        "source": "Adictivo Reposado|Clam Chowder"
-      },
-      {
-        "template": "Works; safe añejo-on-hearty-soup alongside, but not the headline call.",
-        "source": "Adictivo Reposado|French Onion"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call sits without pulling focus.",
-        "source": "Adictivo Reposado|Gumbo"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Adictivo Reposado|Loaded Potato"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Adictivo Reposado|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call holds — neither soars nor fights.",
-        "source": "Avion 44|Clam Chowder"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-soup call lands as a measured alongside.",
-        "source": "Avion 44|French Onion"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call lands as a measured alongside.",
-        "source": "Avion 44|Gumbo"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Avion 44|Loaded Potato"
-      },
-      {
-        "template": "Works; capable añejo-on-hearty-soup match, not the recommendation.",
-        "source": "Avion 44|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup pairing holds at neutral.",
-        "source": "Camarena Tequila|Clam Chowder"
-      },
-      {
         "template": "Works; distinctive-bottle over-specified.",
         "source": "Camarena Tequila|French Onion"
       },
       {
-        "template": "Works; the añejo-on-hearty-soup pairing holds at neutral.",
-        "source": "Camarena Tequila|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Clam Chowder|Codigo 1530 Rosa"
-      },
-      {
-        "template": "Works; capable añejo-on-light-soup match, not the recommendation.",
-        "source": "Clam Chowder|Corazon Weller"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Clam Chowder|Don Julio 1942"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clase Azul Durango|Loaded Potato"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-soup call sits without pulling focus.",
-        "source": "Clase Azul Durango|Shrimp Bisque"
-      },
-      {
         "template": "Works; clean agave cuts the glaze but isn't a standout.",
         "source": "Clase Azul Gold|Loaded Potato"
-      },
-      {
-        "template": "Works; the añejo-on-salad pairing reads as a quiet alongside.",
-        "source": "Clase Azul Ultra|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call holds — neither soars nor fights.",
-        "source": "El Cabo|French Onion"
       },
       {
         "template": "Works; refined but not a standout.",
@@ -5987,28 +4333,11 @@ const CORPUS_MINED = {
       {
         "template": "Works; boutique agave brightness is an unusual counterpoint.",
         "source": "Gumbo|Komos Anejo Reserva"
-      },
-      {
-        "template": "Works; the añejo-on-salad pairing sits at neutral register without clash.",
-        "source": "Loaded Potato|Milagro Reposado"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|STEAK_BOLD": [
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Adictivo Cristalino|Kansas City"
-      },
-      {
-        "template": "Works; the light-spirit-on-bone-in-ribeye call lands as a measured alongside.",
-        "source": "Adictivo Cristalino|Porterhouse"
-      },
       {
         "template": "Works; extended-aged Avion over-specified for two-cut plate.",
         "source": "Avion 44|Porterhouse"
-      },
-      {
-        "template": "Works; safe añejo-on-bone-in-ribeye alongside, but not the headline call.",
-        "source": "Avion 44|The Tomahawk"
       },
       {
         "template": "Works; ceremonial pour over-specified for two-cut plate.",
@@ -6021,14 +4350,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; 5-year Ultra over-specified for two-cut plate.",
         "source": "Clase Azul Ultra|Porterhouse"
-      },
-      {
-        "template": "Works; the añejo-on-bone-in-ribeye call lands as a measured alongside.",
-        "source": "Corazon Sazerac|Porterhouse"
-      },
-      {
-        "template": "Works; the añejo-on-bone-in-ribeye pairing holds at neutral.",
-        "source": "Corazon Weller|Porterhouse"
       },
       {
         "template": "Works; benchmark extra añejo is slightly ambitious for the two-cut plate.",
@@ -6049,64 +4370,15 @@ const CORPUS_MINED = {
       {
         "template": "Works; multi-cask complexity over-specified for two-cut plate.",
         "source": "Porterhouse|Tears of Llorona"
-      },
-      {
-        "template": "Works; the añejo-on-bone-in-ribeye call sits without pulling focus.",
-        "source": "Tears of Llorona|The Tomahawk"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|FISH_MAIN_DELICATE": [
       {
         "template": "Works; distinctive craft character lifts the fish depending on preparation.",
         "source": "Adictivo Cristalino|Market Fish"
       },
       {
-        "template": "Works; safe añejo-on-fish-main alongside, but not the headline call.",
-        "source": "Adictivo Reposado|Market Fish"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main pairing reads as a quiet alongside.",
-        "source": "Adictivo Reposado|Rainbow Trout"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main pairing holds at neutral.",
-        "source": "Adictivo Reposado|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Avion 44|Market Fish"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main call sits without pulling focus.",
-        "source": "Avion 44|Rainbow Trout"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main call lands as a measured alongside.",
-        "source": "Clase Azul Durango|Market Fish"
-      },
-      {
-        "template": "Works; the añejo-on-light-side pairing holds at neutral.",
-        "source": "Clase Azul Durango|Rainbow Trout"
-      },
-      {
         "template": "Works; Ultra over-specified for small plate.",
         "source": "Clase Azul Durango|Salt-Cured Halibut"
-      },
-      {
-        "template": "Works; capable añejo-on-fish-main match, not the recommendation.",
-        "source": "Clase Azul Reposado|Market Fish"
-      },
-      {
-        "template": "Works; safe añejo-on-light-side alongside, but not the headline call.",
-        "source": "Clase Azul Reposado|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Works; the añejo-on-light-side call sits without pulling focus.",
-        "source": "Codigo 1530 Rosa|Salt-Cured Halibut"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main call holds — neither soars nor fights.",
-        "source": "Don Fulano Reposado|Tuxedo-Crusted Yellowfin Tuna"
       },
       {
         "template": "Works; accessible aged composes with the plate.",
@@ -6122,10 +4394,6 @@ const CORPUS_MINED = {
       }
     ],
     "TEQUILA_BOLD|RICH_SIDE": [
-      {
-        "template": "Works; capable light-spirit-on-rich-side match, not the recommendation.",
-        "source": "Adictivo Cristalino|Mushrooms"
-      },
       {
         "template": "Works; the extended maturation gives the side more than standard reposados bring, though not a standout.",
         "source": "Adictivo Reposado|Truffle Fries"
@@ -6193,20 +4461,8 @@ const CORPUS_MINED = {
         "source": "Adictivo Reposado|Roast Half Chicken"
       },
       {
-        "template": "Works; the añejo-on-chicken-main pairing holds at neutral.",
-        "source": "Avion 44|Roast Half Chicken"
-      },
-      {
         "template": "Works; clean entry match.",
         "source": "Camarena Tequila|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the añejo-on-chicken-main call sits without pulling focus.",
-        "source": "Clase Azul Anejo|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the añejo-on-chicken-main call holds — neither soars nor fights.",
-        "source": "Clase Azul Gold|Roast Half Chicken"
       },
       {
         "template": "Works; the ceremony earns the dish a different register than standard reposado brings.",
@@ -6219,14 +4475,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; clean and composed pairing.",
         "source": "Corazon Reposado|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the añejo-on-chicken-main pairing reads as a quiet alongside.",
-        "source": "Corazon Sazerac|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the añejo-on-chicken-main call lands as a measured alongside.",
-        "source": "Corazon Stagg|Roast Half Chicken"
       },
       {
         "template": "Works; refined but not a standout.",
@@ -6245,10 +4493,6 @@ const CORPUS_MINED = {
         "source": "El Cabo|Roast Half Chicken"
       },
       {
-        "template": "Works; the light-spirit-on-rich-side call holds — neither soars nor fights.",
-        "source": "El Mayor Extra Anejo|Roast Half Chicken"
-      },
-      {
         "template": "Works; clean accessible match.",
         "source": "El Mayor Reposado|Roast Half Chicken"
       },
@@ -6257,16 +4501,8 @@ const CORPUS_MINED = {
         "source": "G4 High Proof|Roast Half Chicken"
       },
       {
-        "template": "Works; the añejo-on-chicken-main pairing sits at neutral register without clash.",
-        "source": "Komos Anejo Reserva|Roast Half Chicken"
-      },
-      {
         "template": "Works; the wine-cask character adds interest but isn't a standout.",
         "source": "Komos Rosa Reposado|Roast Half Chicken"
-      },
-      {
-        "template": "Works; capable añejo-on-chicken-main match, not the recommendation.",
-        "source": "Milagro Anejo|Roast Half Chicken"
       },
       {
         "template": "Works; accessible match.",
@@ -6283,114 +4519,21 @@ const CORPUS_MINED = {
     ],
     "TEQUILA_BOLD|VEG_MAIN": [
       {
-        "template": "Works; the light-spirit-on-light-soup pairing holds at neutral.",
-        "source": "Adictivo Cristalino|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Camarena Tequila|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the añejo-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Clase Azul Anejo|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call sits without pulling focus.",
-        "source": "Clase Azul Gold|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call lands as a measured alongside.",
-        "source": "Clase Azul Reposado|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clase Azul Ultra|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable añejo-on-light-soup match, not the recommendation.",
-        "source": "Corazon Reposado|Vegetable Curry with Chickpeas"
-      },
-      {
         "template": "Works; craft character doesn't drive the pairing.",
         "source": "Corazon Sazerac|Vegetable Curry with Chickpeas"
       },
       {
-        "template": "Works; safe añejo-on-light-soup alongside, but not the headline call.",
-        "source": "Corazon Stagg|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the añejo-on-light-soup pairing holds at neutral.",
-        "source": "Don Fulano Anejo|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe añejo-on-dessert alongside, but not the headline call.",
-        "source": "Don Fulano Reposado|Vegetable Curry with Chickpeas"
-      },
-      {
         "template": "Works; Durango ceremony over-specified for small plate.",
         "source": "El Mayor Extra Anejo|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe añejo-on-hearty-soup alongside, but not the headline call.",
-        "source": "G4 High Proof|Vegetable Curry with Chickpeas"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|DESSERT_LIGHT": [
-      {
-        "template": "Works; the añejo-on-dessert pairing holds at neutral.",
-        "source": "Adictivo Reposado|Beignets"
-      },
-      {
-        "template": "Works; the añejo-on-dessert call lands as a measured alongside.",
-        "source": "Adictivo Reposado|Cheesecake"
-      },
       {
         "template": "Works; maturation depth composed with dessert.",
         "source": "Avion 44|Cheesecake"
       },
       {
-        "template": "Works; the añejo-on-dessert call sits without pulling focus.",
-        "source": "Beignets|Camarena Tequila"
-      },
-      {
-        "template": "Works; the añejo-on-dessert pairing sits at neutral register without clash.",
-        "source": "Beignets|Clase Azul Anejo"
-      },
-      {
-        "template": "Works; capable añejo-on-light-side match, not the recommendation.",
-        "source": "Beignets|Clase Azul Durango"
-      },
-      {
-        "template": "Works; safe añejo-on-dessert alongside, but not the headline call.",
-        "source": "Beignets|Clase Azul Gold"
-      },
-      {
-        "template": "Works; capable añejo-on-dessert match, not the recommendation.",
-        "source": "Beignets|Clase Azul Ultra"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Beignets|Codigo 1530 Rosa"
-      },
-      {
-        "template": "Works; the añejo-on-dessert pairing reads as a quiet alongside.",
-        "source": "Beignets|Corazon Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-dessert call holds — neither soars nor fights.",
-        "source": "Beignets|Corazon Weller"
-      },
-      {
         "template": "Works; distinctive ceremony over-specified.",
         "source": "Beignets|Milagro Reposado"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Beignets|Siete Leguas Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter call sits without pulling focus.",
-        "source": "Carrot Cake|Corazon Reposado"
       },
       {
         "template": "Works; the ex-rye-barrel spice amplifies cake spice at Expresiones register — rye-cinnamon-cake harmony.",
@@ -6421,20 +4564,12 @@ const CORPUS_MINED = {
         "source": "Cheesecake|Don Fulano Anejo"
       },
       {
-        "template": "Works; the añejo-on-hearty-starter call lands as a measured alongside.",
-        "source": "Cheesecake|Don Fulano Reposado"
-      },
-      {
         "template": "Works; aged depth is refined but not a standout.",
         "source": "Cheesecake|Don Julio 1942"
       },
       {
         "template": "Works; accessible aged composed with dessert.",
         "source": "Cheesecake|El Mayor Extra Anejo"
-      },
-      {
-        "template": "Works; the añejo-on-salad pairing holds at neutral.",
-        "source": "Cheesecake|Komos Crystallino Anejo"
       },
       {
         "template": "Works; extra añejo depth composed with dessert.",
@@ -6451,134 +4586,20 @@ const CORPUS_MINED = {
       {
         "template": "Works; multi-cask depth composed with dessert.",
         "source": "Cheesecake|Tears of Llorona"
-      },
-      {
-        "template": "Works; capable añejo-on-rich-side match, not the recommendation.",
-        "source": "Creme Brulee|Don Fulano Reposado"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|LIGHT_STARTER": [
-      {
-        "template": "Works; safe añejo-on-hearty-starter alongside, but not the headline call.",
-        "source": "Adictivo Reposado|Burrata"
-      },
-      {
-        "template": "Works; the añejo-on-delicate-shellfish call sits without pulling focus.",
-        "source": "Adictivo Reposado|Seafood Tower"
-      },
-      {
-        "template": "Works; the añejo-on-delicate-shellfish call holds — neither soars nor fights.",
-        "source": "Avion 44|Seafood Tower"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter call holds — neither soars nor fights.",
-        "source": "Burrata|Camarena Tequila"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter call lands as a measured alongside.",
-        "source": "Burrata|Clase Azul Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter pairing sits at neutral register without clash.",
-        "source": "Burrata|Codigo 1530 Rosa"
-      },
-      {
-        "template": "Works; capable añejo-on-hearty-starter match, not the recommendation.",
-        "source": "Burrata|Corazon Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter call sits without pulling focus.",
-        "source": "Burrata|Don Fulano Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-starter pairing reads as a quiet alongside.",
-        "source": "Burrata|Siete Leguas Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-delicate-shellfish pairing sits at neutral register without clash.",
-        "source": "Camarena Tequila|Seafood Tower"
-      },
-      {
-        "template": "Works; the añejo-on-delicate-shellfish pairing holds at neutral.",
-        "source": "Clase Azul Reposado|Seafood Tower"
-      },
-      {
-        "template": "Works; the añejo-on-delicate-shellfish pairing reads as a quiet alongside.",
-        "source": "Codigo 1530 Rosa|Seafood Tower"
-      },
-      {
-        "template": "Works; safe añejo-on-delicate-shellfish alongside, but not the headline call.",
-        "source": "Corazon Sazerac|Seafood Tower"
-      },
       {
         "template": "Works; distinctive ceremony over-specified.",
         "source": "Corazon Stagg|Seafood Tower"
-      },
-      {
-        "template": "Works; capable añejo-on-delicate-shellfish match, not the recommendation.",
-        "source": "Corazon Weller|Seafood Tower"
-      },
-      {
-        "template": "Works; the añejo-on-rich-side call holds — neither soars nor fights.",
-        "source": "G4 High Proof|Seafood Tower"
-      },
-      {
-        "template": "Works; capable añejo-on-light-soup match, not the recommendation.",
-        "source": "Milagro Reposado|Seafood Tower"
-      },
-      {
-        "template": "Works; the añejo-on-delicate-shellfish call lands as a measured alongside.",
-        "source": "Seafood Tower|Tears of Llorona"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|FISH_MAIN_RICH": [
-      {
-        "template": "Works; the añejo-on-fish-main pairing reads as a quiet alongside.",
-        "source": "Adictivo Reposado|Chilean Seabass"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main call holds — neither soars nor fights.",
-        "source": "Avion 44|Chilean Seabass"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main call sits without pulling focus.",
-        "source": "Camarena Tequila|Chilean Seabass"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main call lands as a measured alongside.",
-        "source": "Camarena Tequila|Swordfish"
-      },
       {
         "template": "Works; heavy-caramel-GTS character handles richness at intense register.",
         "source": "Chilean Seabass|Clase Azul Reposado"
       },
       {
-        "template": "Works; capable añejo-on-fish-main match, not the recommendation.",
-        "source": "Chilean Seabass|Codigo 1530 Rosa"
-      },
-      {
-        "template": "Works; capable light-spirit-on-rich-side match, not the recommendation.",
-        "source": "Chilean Seabass|Corazon Stagg"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Chilean Seabass|Don Fulano Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-dessert pairing holds at neutral.",
-        "source": "Chilean Seabass|Don Julio 1942"
-      },
-      {
         "template": "Works; Ultra over-specified.",
         "source": "Chilean Seabass|Don Julio Reposado"
-      },
-      {
-        "template": "Works; safe añejo-on-fish-main alongside, but not the headline call.",
-        "source": "Chilean Seabass|G4 High Proof"
-      },
-      {
-        "template": "Works; the añejo-on-fish-main pairing holds at neutral.",
-        "source": "Chilean Seabass|Komos Rosa Reposado"
       },
       {
         "template": "Works; aged-but-clear character composes with the dish.",
@@ -6599,52 +4620,12 @@ const CORPUS_MINED = {
         "source": "Adictivo Reposado|Chocolate Brownie"
       },
       {
-        "template": "Works; the añejo-on-dessert pairing holds at neutral.",
-        "source": "Adictivo Reposado|Chocolate Cake"
-      },
-      {
-        "template": "Works; the añejo-on-dessert call holds — neither soars nor fights.",
-        "source": "Adictivo Reposado|Mocha Creme"
-      },
-      {
-        "template": "Works; the añejo-on-dessert pairing sits at neutral register without clash.",
-        "source": "Adictivo Reposado|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; capable añejo-on-dessert match, not the recommendation.",
-        "source": "Avion 44|Chocolate Cake"
-      },
-      {
         "template": "Works; extended maturation finds mocha at premium register.",
         "source": "Avion 44|Mocha Creme"
       },
       {
         "template": "Works; extended maturation composed with dessert.",
         "source": "Avion 44|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; safe añejo-on-dessert alongside, but not the headline call.",
-        "source": "Camarena Tequila|Chocolate Brownie"
-      },
-      {
-        "template": "Works; the añejo-on-dessert call sits without pulling focus.",
-        "source": "Camarena Tequila|Mocha Creme"
-      },
-      {
-        "template": "Works; capable añejo-on-hearty-starter match, not the recommendation.",
-        "source": "Chocolate Brownie|Don Fulano Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-dessert call lands as a measured alongside.",
-        "source": "Chocolate Brownie|Don Julio Reposado"
-      },
-      {
-        "template": "Works; capable añejo-on-salad match, not the recommendation.",
-        "source": "Chocolate Brownie|Milagro Reposado"
-      },
-      {
-        "template": "Works; the añejo-on-dessert pairing reads as a quiet alongside.",
-        "source": "Chocolate Cake|Corazon Stagg"
       },
       {
         "template": "Works; Durango aged depth finds mocha at ceremonial register.",
@@ -6691,10 +4672,6 @@ const CORPUS_MINED = {
         "source": "Don Julio 70th|Peanut Butter Brownie"
       },
       {
-        "template": "Works; the añejo-on-light-soup pairing reads as a quiet alongside.",
-        "source": "El Cabo|Mocha Creme"
-      },
-      {
         "template": "Works; accessible aged finds mocha at value register.",
         "source": "El Mayor Extra Anejo|Mocha Creme"
       },
@@ -6719,14 +4696,6 @@ const CORPUS_MINED = {
         "source": "Komos Extra Anejo|Peanut Butter Brownie"
       },
       {
-        "template": "Works; the añejo-on-salad pairing sits at neutral register without clash.",
-        "source": "Komos Rosa Reposado|Mocha Creme"
-      },
-      {
-        "template": "Works; the añejo-on-salad pairing holds at neutral.",
-        "source": "Milagro Reposado|Peanut Butter Brownie"
-      },
-      {
         "template": "Works; distinctive ceremony finds mocha.",
         "source": "Mocha Creme|Rey Sol Anejo"
       },
@@ -6744,324 +4713,30 @@ const CORPUS_MINED = {
       }
     ],
     "WHITE_WINE|CREAMY_SIDE": [
-      {
-        "template": "Works; capable white-on-rich-side match, not the recommendation.",
-        "source": "Alexander Valley Chardonnay|Au Gratin Potatoes"
-      },
-      {
-        "template": "Works; capable white-on-light-side match, not the recommendation.",
-        "source": "Alexander Valley Chardonnay|Creamed Spinach"
-      },
-      {
-        "template": "Works; the white-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Elk Cove Pinot Blanc"
-      },
-      {
-        "template": "Works; the white-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|Jean-Pierre Grossot Chablis"
-      },
-      {
-        "template": "Works; the white-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|Joseph Mellot Sancerre"
-      },
-      {
-        "template": "Works; safe white-on-rich-side alongside, but not the headline call.",
-        "source": "Au Gratin Potatoes|Our Lady of Guadalupe Acolytes"
-      },
-      {
-        "template": "Works; the white-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Schloss Vollrads Riesling"
-      },
-      {
-        "template": "Works; the white-on-light-side pairing reads as a quiet alongside.",
-        "source": "Creamed Spinach|Domaine de Berthiers Pouilly-Fumé"
-      },
-      {
-        "template": "Works; the white-on-light-side pairing sits at neutral register without clash.",
-        "source": "Creamed Spinach|Jean-Pierre Grossot Chablis"
-      },
-      {
-        "template": "Works; the white-on-light-side call holds — neither soars nor fights.",
-        "source": "Creamed Spinach|Joseph Mellot Sancerre"
-      },
-      {
-        "template": "Works; safe white-on-light-side alongside, but not the headline call.",
-        "source": "Creamed Spinach|Our Lady of Guadalupe Acolytes"
-      },
-      {
-        "template": "Works; the white-on-rich-side call holds — neither soars nor fights.",
-        "source": "Lobster Mac|Schloss Vollrads Riesling"
-      }
     ],
     "WHITE_WINE|HEARTY_STARTER": [
-      {
-        "template": "Works; the white-on-hearty-starter pairing holds at neutral.",
-        "source": "Alexander Valley Chardonnay|Bone Marrow"
-      },
-      {
-        "template": "Works; the white-on-rich-side call holds — neither soars nor fights.",
-        "source": "Alexander Valley Chardonnay|Brussels and Belly"
-      },
-      {
-        "template": "Works; the white-on-hearty-starter call holds — neither soars nor fights.",
-        "source": "Alexander Valley Chardonnay|Prime Tartare"
-      },
-      {
-        "template": "Works; safe white-on-hearty-starter alongside, but not the headline call.",
-        "source": "Bone Marrow|Elk Cove Pinot Blanc"
-      },
-      {
-        "template": "Works; the white-on-hearty-starter call sits without pulling focus.",
-        "source": "Bone Marrow|Far Niente Chardonnay"
-      },
-      {
-        "template": "Works; the white-on-hearty-starter call lands as a measured alongside.",
-        "source": "Bone Marrow|Keenan Chardonnay"
-      },
-      {
-        "template": "Works; the white-on-rich-side pairing holds at neutral.",
-        "source": "Brussels and Belly|Domaine de Berthiers Pouilly-Fumé"
-      },
-      {
-        "template": "Works; the white-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Brussels and Belly|Elk Cove Pinot Blanc"
-      },
-      {
-        "template": "Works; the white-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Brussels and Belly|Far Niente Chardonnay"
-      },
-      {
-        "template": "Works; the white-on-rich-side call lands as a measured alongside.",
-        "source": "Brussels and Belly|Joseph Mellot Sancerre"
-      },
-      {
-        "template": "Works; safe white-on-rich-side alongside, but not the headline call.",
-        "source": "Brussels and Belly|Le Garenne Rosé"
-      },
-      {
-        "template": "Works; the white-on-hearty-starter pairing reads as a quiet alongside.",
-        "source": "Far Niente Chardonnay|Prime Tartare"
-      }
     ],
     "WHITE_WINE|HEARTY_SOUP": [
       {
-        "template": "Works; the white-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Alexander Valley Chardonnay|Gumbo"
-      },
-      {
-        "template": "Works; the white-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Schloss Vollrads Riesling"
-      },
-      {
-        "template": "Works; the white-on-light-soup pairing holds at neutral.",
-        "source": "Clam Chowder|Stoneleigh Sauvignon Blanc"
-      },
-      {
-        "template": "Works; the white-on-hearty-soup call lands as a measured alongside.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|French Onion"
-      },
-      {
-        "template": "Works; safe white-on-light-soup alongside, but not the headline call.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Gumbo"
-      },
-      {
-        "template": "Works; the white-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Loaded Potato"
-      },
-      {
-        "template": "Works; the white-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Mushroom Bisque"
-      },
-      {
-        "template": "Works; safe white-on-hearty-soup alongside, but not the headline call.",
-        "source": "Elk Cove Pinot Blanc|French Onion"
-      },
-      {
-        "template": "Works; the white-on-hearty-soup call sits without pulling focus.",
-        "source": "Elk Cove Pinot Blanc|Loaded Potato"
-      },
-      {
         "template": "Works; the side reads as a measured plate companion.",
         "source": "French Onion|Jean-Pierre Grossot Chablis"
-      },
-      {
-        "template": "Works; the white-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "French Onion|St Supéry Sauvignon Blanc"
-      },
-      {
-        "template": "Works; the white-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Gumbo|St Supéry Sauvignon Blanc"
-      },
-      {
-        "template": "Works; capable white-on-hearty-soup match, not the recommendation.",
-        "source": "Le Garenne Rosé|Mushroom Bisque"
-      }
-    ],
+      }],
     "WHITE_WINE|RICH_SIDE": [
-      {
-        "template": "Works; safe white-on-rich-side alongside, but not the headline call.",
-        "source": "Alexander Valley Chardonnay|Mushrooms"
-      },
-      {
-        "template": "Works; capable white-on-rich-side match, not the recommendation.",
-        "source": "Alexander Valley Chardonnay|Truffle Fries"
-      },
-      {
-        "template": "Works; the white-on-rich-side call holds — neither soars nor fights.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Mushrooms"
-      },
-      {
-        "template": "Works; the white-on-light-side call holds — neither soars nor fights.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Truffle Fries"
-      },
-      {
-        "template": "Works; the white-on-rich-side call sits without pulling focus.",
-        "source": "Far Niente Chardonnay|Mushrooms"
-      },
-      {
-        "template": "Works; the white-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Jean-Pierre Grossot Chablis|Truffle Fries"
-      },
-      {
-        "template": "Works; the white-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Joseph Mellot Sancerre|Mushrooms"
-      },
-      {
-        "template": "Works; the white-on-rich-side pairing holds at neutral.",
-        "source": "Keenan Chardonnay|Mushrooms"
-      },
       {
         "template": "Works; the two desserts share the close without crowding.",
         "source": "Schloss Vollrads Riesling|Truffle Fries"
       }
     ],
     "WHITE_WINE|LIGHT_SOUP": [
-      {
-        "template": "Works; the white-on-light-soup call lands as a measured alongside.",
-        "source": "Alexander Valley Chardonnay|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the white-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Chardonnay|Tomato Basil"
-      },
-      {
-        "template": "Works; safe white-on-light-soup alongside, but not the headline call.",
-        "source": "Broccoli Cheddar|Domaine de Berthiers Pouilly-Fumé"
-      },
-      {
-        "template": "Works; the white-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Our Lady of Guadalupe Acolytes"
-      },
-      {
-        "template": "Works; capable white-on-light-soup match, not the recommendation.",
-        "source": "Broccoli Cheddar|St Supéry Sauvignon Blanc"
-      },
-      {
-        "template": "Works; the white-on-light-soup call sits without pulling focus.",
-        "source": "Broccoli Cheddar|Stoneleigh Sauvignon Blanc"
-      },
-      {
-        "template": "Works; the white-on-light-soup call holds — neither soars nor fights.",
-        "source": "Butternut Squash|St Supéry Sauvignon Blanc"
-      },
-      {
-        "template": "Works; the white-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Creamy Potato|Our Lady of Guadalupe Acolytes"
-      }
     ],
     "WHITE_WINE|LIGHT_SIDE": [
       {
-        "template": "Works; the white-on-light-side call holds — neither soars nor fights.",
-        "source": "Alexander Valley Chardonnay|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the white-on-light-side pairing sits at neutral register without clash.",
-        "source": "Asparagus|Far Niente Chardonnay"
-      },
-      {
-        "template": "Works; the white-on-light-side call lands as a measured alongside.",
-        "source": "Asparagus|Keenan Chardonnay"
-      },
-      {
-        "template": "Works; the white-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Our Lady of Guadalupe Acolytes"
-      },
-      {
         "template": "Works; the side reads as a measured plate companion.",
         "source": "Broccolini|Our Lady of Guadalupe Acolytes"
-      },
-      {
-        "template": "Works; safe white-on-light-side alongside, but not the headline call.",
-        "source": "Broccolini|Schloss Vollrads Riesling"
-      },
-      {
-        "template": "Works; the white-on-hearty-starter call sits without pulling focus.",
-        "source": "Far Niente Chardonnay|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the white-on-light-side call sits without pulling focus.",
-        "source": "Honey Roasted Carrots|Our Lady of Guadalupe Acolytes"
-      },
-      {
-        "template": "Works; the white-on-light-side pairing reads as a quiet alongside.",
-        "source": "Joseph Mellot Sancerre|Seasonal Vegetables"
-      }
-    ],
+      }],
     "WHITE_WINE|VEG_MAIN": [
-      {
-        "template": "Works; the white-on-light-soup call sits without pulling focus.",
-        "source": "Alexander Valley Chardonnay|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the white-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the white-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Far Niente Chardonnay|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable white-on-light-soup match, not the recommendation.",
-        "source": "Keenan Chardonnay|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the white-on-light-soup pairing holds at neutral.",
-        "source": "St Supéry Sauvignon Blanc|Vegetable Curry with Chickpeas"
-      }
     ],
     "ELEGANT_RED|LIGHT_SIDE": [
-      {
-        "template": "Works; the elegant-red-on-light-side pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Homestead Red|Asparagus"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call holds — neither soars nor fights.",
-        "source": "Alexander Valley Homestead Red|Broccolini"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call sits without pulling focus.",
-        "source": "Alexander Valley Homestead Red|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing reads as a quiet alongside.",
-        "source": "Alexander Valley Homestead Red|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-side match, not the recommendation.",
-        "source": "Alexander Valley Homestead Red|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
-        "source": "Asparagus|Clos Petit Ona Grenache"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call lands as a measured alongside.",
-        "source": "Asparagus|Elk Cove Five Mountain"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Evening Land Seven Springs"
-      },
       {
         "template": "Works; the side-salad call holds.",
         "source": "Asparagus|Kermit Lynch Côtes du Rhône"
@@ -7071,82 +4746,17 @@ const CORPUS_MINED = {
         "source": "Asparagus|Macauley Pinot Noir"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Broccolini|Jax Calesa Vineyard Pinot Noir"
-      },
-      {
-        "template": "Works; safe elegant-red-on-hearty-soup alongside, but not the headline call.",
-        "source": "Broccolini|Sanford & Benedict Pinot Noir"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
-        "source": "Domaine Serene Grand Cheval|Seasonal Vegetables"
-      },
-      {
         "template": "Works; the courses share the table without crowding.",
         "source": "Fento Ollo de Sapo Mencía|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-starter pairing holds at neutral.",
-        "source": "Honey Roasted Carrots|Lunaria Coste di Moro"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Sauteed Garlic Spinach|Tenuta di Arceno Chianti Classico"
-      }
-    ],
+      }],
     "ELEGANT_RED|LIGHT_SOUP": [
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Homestead Red|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Alexander Valley Homestead Red|Butternut Squash"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
-        "source": "Alexander Valley Homestead Red|Creamy Potato"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
-        "source": "Alexander Valley Homestead Red|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
-        "source": "Braida Montebruna Barbera|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
-        "source": "Braida Montebruna Barbera|Butternut Squash"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
-        "source": "Braida Montebruna Barbera|Creamy Potato"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
-        "source": "Broccoli Cheddar|Cristom Mt Jefferson Cuvée"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Evening Land Seven Springs"
-      },
       {
         "template": "Works; the close holds, neither soars nor fights.",
         "source": "Broccoli Cheddar|Kermit Lynch Côtes du Rhône"
       },
       {
-        "template": "Works; the elegant-red-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Broccoli Cheddar|Marc Brédif Chinon"
-      },
-      {
         "template": "Works; the call holds at neutral register.",
         "source": "Butternut Squash|J Davies Ferrington Vineyards"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing holds at neutral.",
-        "source": "Butternut Squash|Kermit Lynch Côtes du Rhône"
       },
       {
         "template": "Works; the side call holds at neutral register.",
@@ -7157,110 +4767,21 @@ const CORPUS_MINED = {
         "source": "Creamy Potato|Jax Calesa Vineyard Pinot Noir"
       },
       {
-        "template": "Works; safe elegant-red-on-rich-side alongside, but not the headline call.",
-        "source": "Creamy Potato|Le Volte dell'Ornellaia"
-      },
-      {
         "template": "Works; the courses share the table without crowding.",
         "source": "Creamy Potato|Marimar Estate Christina"
       },
       {
         "template": "Works; too light for dessert density at this level.",
         "source": "Evening Land Seven Springs|Seasonal Soup"
-      },
-      {
-        "template": "Works; capable elegant-red-on-rich-side match, not the recommendation.",
-        "source": "Le Volte dell'Ornellaia|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-side match, not the recommendation.",
-        "source": "Le Volte dell'Ornellaia|Tomato Basil"
-      }
-    ],
+      }],
     "ELEGANT_RED|HEARTY_SOUP": [
-      {
-        "template": "Works; safe elegant-red-on-hearty-starter alongside, but not the headline call.",
-        "source": "Alexander Valley Homestead Red|Clam Chowder"
-      },
       {
         "template": "Works; a measured close to the meal.",
         "source": "Alexander Valley Homestead Red|French Onion"
       },
       {
-        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
-        "source": "Alexander Valley Homestead Red|Gumbo"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup call lands as a measured alongside.",
-        "source": "Alexander Valley Homestead Red|Loaded Potato"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup pairing holds at neutral.",
-        "source": "Alexander Valley Homestead Red|Mushroom Bisque"
-      },
-      {
-        "template": "Works; safe elegant-red-on-hearty-soup alongside, but not the headline call.",
-        "source": "Alexander Valley Homestead Red|Shrimp Bisque"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
-        "source": "Braida Montebruna Barbera|Clam Chowder"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Braida Montebruna Barbera|French Onion"
-      },
-      {
-        "template": "Works; capable elegant-red-on-hearty-soup match, not the recommendation.",
-        "source": "Braida Montebruna Barbera|Loaded Potato"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Braida Montebruna Barbera|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call sits without pulling focus.",
-        "source": "Château de Rouillac|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
-        "source": "Clam Chowder|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
-        "source": "Clam Chowder|Fisher Unity Pinot Noir"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Jax Calesa Vineyard Pinot Noir"
-      },
-      {
         "template": "Works; the side sits without pulling focus.",
         "source": "Clam Chowder|Le Volte dell'Ornellaia"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Clam Chowder|Macauley Pinot Noir"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup call sits without pulling focus.",
-        "source": "Clos Petit Ona Grenache|French Onion"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Clos Petit Ona Grenache|Loaded Potato"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Darioush Cabernet Franc|French Onion"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
-        "source": "Fisher Unity Pinot Noir|Gumbo"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-starter pairing holds at neutral.",
-        "source": "French Onion|Marc Brédif Chinon"
       },
       {
         "template": "Works; the call holds at neutral register.",
@@ -7268,109 +4789,12 @@ const CORPUS_MINED = {
       }
     ],
     "ELEGANT_RED|CREAMY_SIDE": [
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Alexander Valley Homestead Red|Lobster Mac"
-      },
-      {
-        "template": "Works; safe elegant-red-on-rich-side alongside, but not the headline call.",
-        "source": "Au Gratin Potatoes|Clos Petit Ona Grenache"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|Cristom Mt Jefferson Cuvée"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Elk Cove Five Mountain"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Evening Land Seven Springs"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|J Davies Ferrington Vineyards"
-      },
-      {
-        "template": "Works; capable elegant-red-on-rich-side match, not the recommendation.",
-        "source": "Au Gratin Potatoes|RAEN Royal St Robert"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-side match, not the recommendation.",
-        "source": "Clos Petit Ona Grenache|Creamed Spinach"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
-        "source": "Creamed Spinach|Daniel Chotard Sancerre Rouge"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call sits without pulling focus.",
-        "source": "Creamed Spinach|Domaine Serene Grand Cheval"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing reads as a quiet alongside.",
-        "source": "Creamed Spinach|Elk Cove Five Mountain"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call holds — neither soars nor fights.",
-        "source": "Creamed Spinach|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing sits at neutral register without clash.",
-        "source": "Creamed Spinach|Marimar Estate Christina"
-      }
     ],
     "ELEGANT_RED|VEG_MAIN": [
       {
-        "template": "Works; the elegant-red-on-light-soup call holds — neither soars nor fights.",
-        "source": "Alexander Valley Homestead Red|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing holds at neutral.",
-        "source": "Clos Petit Ona Grenache|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Daniel Chotard Sancerre Rouge|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call lands as a measured alongside.",
-        "source": "Elk Cove Five Mountain|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Fisher Unity Pinot Noir|Vegetable Curry with Chickpeas"
-      },
-      {
         "template": "Works; a measured close to the meal.",
         "source": "J Davies Ferrington Vineyards|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side pairing reads as a quiet alongside.",
-        "source": "Jax Calesa Vineyard Pinot Noir|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable elegant-red-on-light-soup match, not the recommendation.",
-        "source": "Kermit Lynch Côtes du Rhône|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-side call sits without pulling focus.",
-        "source": "Macauley Pinot Noir|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
-        "source": "Marimar Estate Christina|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-soup alongside, but not the headline call.",
-        "source": "RAEN Royal St Robert|Vegetable Curry with Chickpeas"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|DESSERT_LIGHT": [
       {
         "template": "Works; the botanical complexity adds refinement to the casual dessert.",
@@ -7487,20 +4911,12 @@ const CORPUS_MINED = {
         "source": "Averna Amaro|Truffle Fries"
       },
       {
-        "template": "Works; the aperitivo-on-rich-side call sits without pulling focus.",
-        "source": "Contratto Vermouth|Truffle Fries"
-      },
-      {
         "template": "Works; Branca's savory lean makes this a functional side pairing, not a featured match.",
         "source": "Fernet Branca|Truffle Fries"
       },
       {
         "template": "Works; mint is a refreshing counterpoint to the earthy side.",
         "source": "Fernet Menta|Truffle Fries"
-      },
-      {
-        "template": "Works; the digestif-on-rich-side call lands as a measured alongside.",
-        "source": "Green Chartreuse|Truffle Fries"
       },
       {
         "template": "Works; floral-anise is a distinctive counterpoint.",
@@ -7534,28 +4950,8 @@ const CORPUS_MINED = {
       }
     ],
     "SWEET_LIQUEUR|STEAK_LEAN": [
-      {
-        "template": "Works; the digestif-on-strip-or-filet pairing sits at neutral register without clash.",
-        "source": "Ancho Reyes|Filet Mignon"
-      },
-      {
-        "template": "Works; the digestif-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Filet Mignon|Sambuca"
-      }
     ],
     "SWEET_LIQUEUR|STEAK_BOLD": [
-      {
-        "template": "Works; the digestif-on-strip-or-filet call sits without pulling focus.",
-        "source": "Ancho Reyes|Kansas City"
-      },
-      {
-        "template": "Works; safe digestif-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Drambuie|Kansas City"
-      },
-      {
-        "template": "Works; the digestif-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Kansas City|Sambuca"
-      }
     ],
     "APERITIVO_BITTER|DESSERT_CHOCOLATE": [
       {
@@ -7569,501 +4965,37 @@ const CORPUS_MINED = {
       {
         "template": "Works; Campari is lighter than sipping amari want to be against PB density.",
         "source": "Campari|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; the aperitivo-on-dessert call sits without pulling focus.",
-        "source": "Chocolate Cake|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the aperitivo-on-dessert pairing holds at neutral.",
-        "source": "Contratto Vermouth|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; the aperitivo-on-dessert pairing reads as a quiet alongside.",
-        "source": "Fernet Branca|Mocha Creme"
-      },
-      {
-        "template": "Works; the aperitivo-on-dessert pairing sits at neutral register without clash.",
-        "source": "Fernet Menta|Mocha Creme"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|LIGHT_STARTER": [
       {
         "template": "Works; this is the one amaro in the family gentle enough to sit alongside crab — not a featured match, but it doesn't overpower.",
         "source": "Aperol|Crab Cake"
-      },
-      {
-        "template": "Works; safe aperitivo-on-hearty-starter alongside, but not the headline call.",
-        "source": "Burrata|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the aperitivo-on-delicate-shellfish pairing sits at neutral register without clash.",
-        "source": "Contratto Vermouth|Seafood Tower"
-      },
-      {
-        "template": "Works; the aperitivo-on-delicate-shellfish pairing reads as a quiet alongside.",
-        "source": "Fernet Branca|Seafood Tower"
-      },
-      {
-        "template": "Works; safe aperitivo-on-delicate-shellfish alongside, but not the headline call.",
-        "source": "Fernet Branca|Shrimp Cocktail"
-      },
-      {
-        "template": "Works; capable aperitivo-on-delicate-shellfish match, not the recommendation.",
-        "source": "Fernet Menta|Seafood Tower"
-      }
-    ],
+      }],
     "COCKTAIL_LIGHT|LIGHT_SIDE": [
-      {
-        "template": "Works; capable light-cocktail-on-light-side match, not the recommendation.",
-        "source": "Asparagus|Aviation"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Corpse Reviver"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing sits at neutral register without clash.",
-        "source": "Asparagus|French 75"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing reads as a quiet alongside.",
-        "source": "Asparagus|Paloma"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|The Happy Wife"
-      },
-      {
-        "template": "Works; capable digestif-on-light-side match, not the recommendation.",
-        "source": "Broccolini|Head Fake"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call holds — neither soars nor fights.",
-        "source": "Broccolini|The Happy Wife"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call lands as a measured alongside.",
-        "source": "Broccolini|Transfusion"
-      },
-      {
-        "template": "Works; the digestif-on-light-side call sits without pulling focus.",
-        "source": "Head Fake|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the digestif-on-light-side pairing sits at neutral register without clash.",
-        "source": "Head Fake|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-light-side alongside, but not the headline call.",
-        "source": "Lemon Lavender Gin Martini|Seasonal Vegetables"
-      }
     ],
     "LIGHT_SPIRIT|LIGHT_SIDE": [
-      {
-        "template": "Works; safe light-spirit-on-light-side alongside, but not the headline call.",
-        "source": "Asparagus|Bacardi Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call lands as a measured alongside.",
-        "source": "Asparagus|Clase Azul Plata"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|Corazon Blanco"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Lalo Silver"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-side match, not the recommendation.",
-        "source": "Asparagus|Mount Gay Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call holds — neither soars nor fights.",
-        "source": "Avion Silver|Broccolini"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side pairing reads as a quiet alongside.",
-        "source": "Broccolini|Clase Azul Plata"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side pairing sits at neutral register without clash.",
-        "source": "Don Fulano Blanco|Seasonal Vegetables"
-      }
     ],
     "VODKA|LIGHT_SIDE": [
-      {
-        "template": "Works; capable vodka-on-light-side match, not the recommendation.",
-        "source": "Asparagus|Belvedere Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-side pairing reads as a quiet alongside.",
-        "source": "Asparagus|Chopin Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-side pairing sits at neutral register without clash.",
-        "source": "Asparagus|HDW 100 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-side call lands as a measured alongside.",
-        "source": "Asparagus|Hangar 1 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|Wheatley Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call lands as a measured alongside.",
-        "source": "Belvedere Vodka|Broccolini"
-      },
-      {
-        "template": "Works; the vodka-on-light-side call holds — neither soars nor fights.",
-        "source": "Belvedere Vodka|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the vodka-on-light-side pairing holds at neutral.",
-        "source": "Broccolini|Grey Goose Vodka"
-      },
-      {
-        "template": "Works; safe vodka-on-light-side alongside, but not the headline call.",
-        "source": "Broccolini|Reyka Vodka"
-      }
     ],
     "MEZCAL|LIGHT_SIDE": [
       {
-        "template": "Works; the mezcal-on-light-side pairing sits at neutral register without clash.",
-        "source": "Asparagus|Casamigos Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|Clase Azul Guerrero Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-light-side call holds — neither soars nor fights.",
-        "source": "Asparagus|Los Vecinos Mezcal"
-      },
-      {
         "template": "Works; the side call holds at neutral register.",
         "source": "Broccolini|Los Vecinos Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-light-side pairing holds at neutral.",
-        "source": "Casamigos Mezcal|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the mezcal-on-light-side pairing reads as a quiet alongside.",
-        "source": "Casamigos Mezcal|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; safe mezcal-on-light-side alongside, but not the headline call.",
-        "source": "Honey Roasted Carrots|Los Vecinos Mezcal"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|LIGHT_SIDE": [
-      {
-        "template": "Works; the aperitivo-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|Fernet Branca"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side pairing sits at neutral register without clash.",
-        "source": "Asparagus|Fernet Menta"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-soup call sits without pulling focus.",
-        "source": "Asparagus|Green Chartreuse"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side pairing reads as a quiet alongside.",
-        "source": "Broccolini|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the digestif-on-light-side call lands as a measured alongside.",
-        "source": "Broccolini|Green Chartreuse"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side call lands as a measured alongside.",
-        "source": "Contratto Vermouth|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side call holds — neither soars nor fights.",
-        "source": "Contratto Vermouth|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; safe aperitivo-on-light-side alongside, but not the headline call.",
-        "source": "Fernet Menta|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; capable digestif-on-light-side match, not the recommendation.",
-        "source": "Green Chartreuse|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; safe digestif-on-light-side alongside, but not the headline call.",
-        "source": "Green Chartreuse|Seasonal Vegetables"
-      }
     ],
     "HEAVY_SPIRIT|LIGHT_SIDE": [
-      {
-        "template": "Works; the bourbon-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side call holds — neither soars nor fights.",
-        "source": "Asparagus|Myers's Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side pairing reads as a quiet alongside.",
-        "source": "Asparagus|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side call sits without pulling focus.",
-        "source": "Broccolini|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call lands as a measured alongside.",
-        "source": "Broccolini|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing sits at neutral register without clash.",
-        "source": "Broccolini|Myers's Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call holds — neither soars nor fights.",
-        "source": "Broccolini|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing reads as a quiet alongside.",
-        "source": "Doctor Bird Jamaica Rum|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; safe bourbon-on-light-side alongside, but not the headline call.",
-        "source": "Doctor Bird Jamaica Rum|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side pairing sits at neutral register without clash.",
-        "source": "Honey Roasted Carrots|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call sits without pulling focus.",
-        "source": "Honey Roasted Carrots|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Myers's Rum|Seasonal Vegetables"
-      }
     ],
     "SPARKLING|LIGHT_SIDE": [
-      {
-        "template": "Works; the Champagne-on-light-side pairing sits at neutral register without clash.",
-        "source": "Asparagus|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Works; the Champagne-on-light-side call lands as a measured alongside.",
-        "source": "Asparagus|Laurent Perrier Brut Rosé"
-      },
-      {
-        "template": "Works; the Champagne-on-light-side pairing holds at neutral.",
-        "source": "Asparagus|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup call sits without pulling focus.",
-        "source": "Asparagus|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Works; capable Champagne-on-light-side match, not the recommendation.",
-        "source": "Asparagus|Pommery Cuvée Louise"
-      },
-      {
-        "template": "Works; the Champagne-on-light-side call sits without pulling focus.",
-        "source": "Asparagus|Robert Moncuit Les Grand Blancs"
-      },
-      {
-        "template": "Works; safe Champagne-on-light-side alongside, but not the headline call.",
-        "source": "Honey Roasted Carrots|Il Colle Prosecco Superiore"
-      }
     ],
     "COCKTAIL_BOLD|LIGHT_SIDE": [
       {
-        "template": "Works; the light-cocktail-on-light-side pairing reads as a quiet alongside.",
-        "source": "Asparagus|Inhibited"
-      },
-      {
         "template": "Works; the opener sits without competing.",
         "source": "Asparagus|The Manhattan"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call sits without pulling focus.",
-        "source": "Asparagus|Vieux Carré"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-side pairing holds at neutral.",
-        "source": "Bowdie's Old Fashioned|Honey Roasted Carrots"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-side pairing reads as a quiet alongside.",
-        "source": "Bowdie's Old Fashioned|Seasonal Vegetables"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing sits at neutral register without clash.",
-        "source": "Broccolini|Negroni"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-side call holds — neither soars nor fights.",
-        "source": "Broccolini|The Manhattan"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-side call sits without pulling focus.",
-        "source": "Broccolini|Vieux Carré"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-light-side alongside, but not the headline call.",
-        "source": "Honey Roasted Carrots|Negroni"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call lands as a measured alongside.",
-        "source": "Honey Roasted Carrots|Not a Paper Plane"
-      },
-      {
-        "template": "Works; safe whiskey-cocktail-on-light-side alongside, but not the headline call.",
-        "source": "Honey Roasted Carrots|Sazerac"
-      },
-      {
-        "template": "Works; capable whiskey-cocktail-on-light-side match, not the recommendation.",
-        "source": "Honey Roasted Carrots|The Manhattan"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing holds at neutral.",
-        "source": "Negroni|Sauteed Garlic Spinach"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call sits without pulling focus.",
-        "source": "Negroni|Seasonal Vegetables"
-      }
-    ],
+      }],
     "COCKTAIL_LIGHT|CREAMY_SIDE": [
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Aviation"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|Bee's Knees"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Corpse Reviver"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-rich-side alongside, but not the headline call.",
-        "source": "Au Gratin Potatoes|Cucumber Gimlet"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|French 75"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|The BG"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-rich-side match, not the recommendation.",
-        "source": "Au Gratin Potatoes|Transfusion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing holds at neutral.",
-        "source": "Aviation|Creamed Spinach"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing reads as a quiet alongside.",
-        "source": "Corpse Reviver|Creamed Spinach"
-      },
-      {
-        "template": "Works; safe digestif-on-hearty-soup alongside, but not the headline call.",
-        "source": "Corpse Reviver|Lobster Mac"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call sits without pulling focus.",
-        "source": "Creamed Spinach|Cucumber Gimlet"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-light-side alongside, but not the headline call.",
-        "source": "Creamed Spinach|Head Fake"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup call lands as a measured alongside.",
-        "source": "Creamed Spinach|Vesper"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing sits at neutral register without clash.",
-        "source": "French 75|Lobster Mac"
-      }
     ],
     "LIGHT_SPIRIT|CREAMY_SIDE": [
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|Avion Silver"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Bacardi Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Au Gratin Potatoes|Captain Morgan Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Don Julio Blanco"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|Gran Patron Platinum"
-      },
-      {
-        "template": "Works; capable light-spirit-on-hearty-soup match, not the recommendation.",
-        "source": "Au Gratin Potatoes|Malibu Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Mijenta Blanco"
-      },
-      {
-        "template": "Works; safe light-spirit-on-rich-side alongside, but not the headline call.",
-        "source": "Au Gratin Potatoes|Patron Silver"
-      },
-      {
-        "template": "Works; safe light-spirit-on-light-side alongside, but not the headline call.",
-        "source": "Avion Silver|Creamed Spinach"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side pairing sits at neutral register without clash.",
-        "source": "Bacardi Rum|Creamed Spinach"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call holds — neither soars nor fights.",
-        "source": "Clase Azul Plata|Creamed Spinach"
-      },
-      {
-        "template": "Works; capable light-spirit-on-rich-side match, not the recommendation.",
-        "source": "Corazon Blanco|Lobster Mac"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side pairing reads as a quiet alongside.",
-        "source": "Creamed Spinach|Mount Gay Rum"
-      },
-      {
-        "template": "Works; the digestif-on-rich-side call lands as a measured alongside.",
-        "source": "Lobster Mac|Malibu Rum"
-      },
       {
         "template": "Works; ceremonial pairing depends on preparation.",
         "source": "Lobster Mac|Mijenta Blanco"
@@ -8071,66 +5003,9 @@ const CORPUS_MINED = {
     ],
     "VODKA|CREAMY_SIDE": [
       {
-        "template": "Works; capable vodka-on-rich-side match, not the recommendation.",
-        "source": "Au Gratin Potatoes|Belvedere Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|Chopin Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|Grey Goose Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|HDW 100 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Hangar 1 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-side pairing reads as a quiet alongside.",
-        "source": "Belvedere Vodka|Creamed Spinach"
-      },
-      {
-        "template": "Works; the vodka-on-light-side pairing sits at neutral register without clash.",
-        "source": "Chopin Vodka|Creamed Spinach"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call lands as a measured alongside.",
-        "source": "Chopin Vodka|Lobster Mac"
-      },
-      {
-        "template": "Works; the vodka-on-light-side call sits without pulling focus.",
-        "source": "Creamed Spinach|Detroit City Vodka"
-      },
-      {
-        "template": "Works; safe vodka-on-light-side alongside, but not the headline call.",
-        "source": "Creamed Spinach|HDW 100 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-side pairing holds at neutral.",
-        "source": "Creamed Spinach|Hangar 1 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-side call lands as a measured alongside.",
-        "source": "Creamed Spinach|Ketel One Vodka"
-      },
-      {
         "template": "Works; the glacial-clean finish is a luxury-register Russian-tradition dessert finisher.",
         "source": "Hangar 1 Vodka|Lobster Mac"
-      },
-      {
-        "template": "Works; safe vodka-on-rich-side alongside, but not the headline call.",
-        "source": "Lobster Mac|Reyka Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Lobster Mac|Titos Vodka"
-      }
-    ],
+      }],
     "DEFAULT|CREAMY_SIDE": [
       {
         "template": "Works; the side reads as a measured plate companion.",
@@ -8146,65 +5021,12 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_BOLD|CREAMY_SIDE": [
-      {
-        "template": "Works; the whiskey-cocktail-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Bowdie's Old Fashioned"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Negroni"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Sazerac"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call holds — neither soars nor fights.",
-        "source": "Creamed Spinach|Inhibited"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call holds — neither soars nor fights.",
-        "source": "Lobster Mac|Not a Paper Plane"
-      },
-      {
-        "template": "Works; safe whiskey-cocktail-on-rich-side alongside, but not the headline call.",
-        "source": "Lobster Mac|Sazerac"
-      },
-      {
-        "template": "Works; capable whiskey-cocktail-on-rich-side match, not the recommendation.",
-        "source": "Lobster Mac|Vieux Carré"
-      }
     ],
     "MEZCAL|CREAMY_SIDE": [
       {
-        "template": "Works; the mezcal-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|Casamigos Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Clase Azul Guerrero Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-light-side call lands as a measured alongside.",
-        "source": "Casamigos Mezcal|Creamed Spinach"
-      },
-      {
         "template": "Works; the side-salad call holds.",
         "source": "Casamigos Mezcal|Lobster Mac"
-      },
-      {
-        "template": "Works; the mezcal-on-light-side pairing sits at neutral register without clash.",
-        "source": "Clase Azul Guerrero Mezcal|Creamed Spinach"
-      },
-      {
-        "template": "Works; the mezcal-on-rich-side call holds — neither soars nor fights.",
-        "source": "Clase Azul Guerrero Mezcal|Lobster Mac"
-      },
-      {
-        "template": "Works; capable mezcal-on-rich-side match, not the recommendation.",
-        "source": "Lobster Mac|Los Vecinos Mezcal"
-      }
-    ],
+      }],
     "COGNAC|CREAMY_SIDE": [
       {
         "template": "Works; Christian Bros handles the richness at approachable register.",
@@ -8237,113 +5059,12 @@ const CORPUS_MINED = {
     ],
     "APERITIVO_BITTER|CREAMY_SIDE": [
       {
-        "template": "Works; the aperitivo-on-rich-side call sits without pulling focus.",
-        "source": "Au Gratin Potatoes|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the aperitivo-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|Fernet Branca"
-      },
-      {
-        "template": "Works; the aperitivo-on-rich-side call lands as a measured alongside.",
-        "source": "Au Gratin Potatoes|Fernet Menta"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side call sits without pulling focus.",
-        "source": "Contratto Vermouth|Creamed Spinach"
-      },
-      {
-        "template": "Works; safe aperitivo-on-rich-side alongside, but not the headline call.",
-        "source": "Contratto Vermouth|Lobster Mac"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side pairing sits at neutral register without clash.",
-        "source": "Creamed Spinach|Fernet Branca"
-      },
-      {
         "template": "Works; too light for dessert density at this level.",
         "source": "Creamed Spinach|Fernet Menta"
-      },
-      {
-        "template": "Works; the digestif-on-light-side call lands as a measured alongside.",
-        "source": "Creamed Spinach|Green Chartreuse"
-      },
-      {
-        "template": "Works; capable aperitivo-on-light-soup match, not the recommendation.",
-        "source": "Green Chartreuse|Lobster Mac"
-      }
-    ],
+      }],
     "HEAVY_SPIRIT|CREAMY_SIDE": [
-      {
-        "template": "Works; safe bourbon-on-rich-side alongside, but not the headline call.",
-        "source": "Au Gratin Potatoes|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side pairing holds at neutral.",
-        "source": "Au Gratin Potatoes|Myers's Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Au Gratin Potatoes|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-side call sits without pulling focus.",
-        "source": "Creamed Spinach|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-light-side pairing reads as a quiet alongside.",
-        "source": "Creamed Spinach|Myers's Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Jung and Wulff Guyana|Lobster Mac"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Jung and Wulff Trinidad|Lobster Mac"
-      },
-      {
-        "template": "Works; safe light-spirit-on-rich-side alongside, but not the headline call.",
-        "source": "Lobster Mac|Ron Zacapa Rum"
-      }
     ],
     "SPARKLING|CREAMY_SIDE": [
-      {
-        "template": "Works; safe Champagne-on-rich-side alongside, but not the headline call.",
-        "source": "Au Gratin Potatoes|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side call holds — neither soars nor fights.",
-        "source": "Au Gratin Potatoes|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; capable Champagne-on-rich-side match, not the recommendation.",
-        "source": "Au Gratin Potatoes|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Works; safe Champagne-on-light-side alongside, but not the headline call.",
-        "source": "Creamed Spinach|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Works; the Champagne-on-light-side pairing sits at neutral register without clash.",
-        "source": "Creamed Spinach|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Works; capable Champagne-on-light-side match, not the recommendation.",
-        "source": "Creamed Spinach|Raventós Cava de NIT Rosé Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-light-side call sits without pulling focus.",
-        "source": "Creamed Spinach|Veuve Clicquot Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side call lands as a measured alongside.",
-        "source": "Il Colle Prosecco Superiore|Lobster Mac"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Laurent Perrier Brut Rosé|Lobster Mac"
-      }
     ],
     "COGNAC_LUXURY|CREAMY_SIDE": [
       {
@@ -8423,378 +5144,29 @@ const CORPUS_MINED = {
       {
         "template": "Works; Monkey 47's complexity meets the char at premium register.",
         "source": "Grilled Caesar|Monkey 47 Gin"
-      },
-      {
-        "template": "Works; the gin-on-salad pairing reads as a quiet alongside.",
-        "source": "Grilled Caesar|Roku Gin"
-      }
-    ],
+      }],
     "COCKTAIL_LIGHT|LIGHT_SOUP": [
-      {
-        "template": "Works; safe light-cocktail-on-light-soup alongside, but not the headline call.",
-        "source": "Aviation|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call sits without pulling focus.",
-        "source": "Aviation|Butternut Squash"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Aviation|Creamy Potato"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing holds at neutral.",
-        "source": "Aviation|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Aviation|Seasonal Soup"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-light-soup match, not the recommendation.",
-        "source": "Bee's Knees|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call lands as a measured alongside.",
-        "source": "Bee's Knees|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; safe digestif-on-hearty-soup alongside, but not the headline call.",
-        "source": "Broccoli Cheddar|Head Fake"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-light-side alongside, but not the headline call.",
-        "source": "Butternut Squash|Head Fake"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call holds — neither soars nor fights.",
-        "source": "Creamy Potato|French 75"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup call holds — neither soars nor fights.",
-        "source": "Creamy Potato|Head Fake"
-      },
-      {
-        "template": "Works; safe digestif-on-light-soup alongside, but not the headline call.",
-        "source": "Head Fake|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing holds at neutral.",
-        "source": "Head Fake|Tomato Basil"
-      }
     ],
     "COCKTAIL_LIGHT|HEARTY_STARTER": [
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing holds at neutral.",
-        "source": "Aviation|Brussels and Belly"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-starter call lands as a measured alongside.",
-        "source": "Bee's Knees|Bone Marrow"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Bee's Knees|Brussels and Belly"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-starter pairing holds at neutral.",
-        "source": "Bone Marrow|Margarita"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call holds — neither soars nor fights.",
-        "source": "Brussels and Belly|Corpse Reviver"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call sits without pulling focus.",
-        "source": "Brussels and Belly|Margarita"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-rich-side match, not the recommendation.",
-        "source": "Brussels and Belly|Transfusion"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-hearty-starter match, not the recommendation.",
-        "source": "Escargot|Margarita"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-starter pairing reads as a quiet alongside.",
-        "source": "Escargot|Paloma"
-      }
     ],
     "COCKTAIL_LIGHT|HEARTY_SOUP": [
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing holds at neutral.",
-        "source": "Aviation|Clam Chowder"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Aviation|French Onion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Aviation|Loaded Potato"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-hearty-soup match, not the recommendation.",
-        "source": "Aviation|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call sits without pulling focus.",
-        "source": "Bee's Knees|Clam Chowder"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-hearty-soup alongside, but not the headline call.",
-        "source": "Bee's Knees|French Onion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call holds — neither soars nor fights.",
-        "source": "Bee's Knees|Gumbo"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup pairing holds at neutral.",
-        "source": "Bee's Knees|Loaded Potato"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-light-soup match, not the recommendation.",
-        "source": "Clam Chowder|French 75"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup call lands as a measured alongside.",
-        "source": "Clam Chowder|Head Fake"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-light-soup alongside, but not the headline call.",
-        "source": "Clam Chowder|Lemon Lavender Gin Martini"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call lands as a measured alongside.",
-        "source": "Clam Chowder|Margarita"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call sits without pulling focus.",
-        "source": "Corpse Reviver|French Onion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Corpse Reviver|Gumbo"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup call lands as a measured alongside.",
-        "source": "Corpse Reviver|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup call sits without pulling focus.",
-        "source": "French 75|Loaded Potato"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "French 75|Mushroom Bisque"
-      },
-      {
-        "template": "Works; capable digestif-on-hearty-soup match, not the recommendation.",
-        "source": "French Onion|Head Fake"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-light-side match, not the recommendation.",
-        "source": "French Onion|The BG"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup call sits without pulling focus.",
-        "source": "Gumbo|Head Fake"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup call lands as a measured alongside.",
-        "source": "Head Fake|Loaded Potato"
-      },
-      {
-        "template": "Works; safe digestif-on-hearty-soup alongside, but not the headline call.",
-        "source": "Head Fake|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Lemon Lavender Gin Martini|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-starter call lands as a measured alongside.",
-        "source": "Loaded Potato|Transfusion"
-      },
       {
         "template": "Works; the side sits without pulling focus.",
         "source": "Mushroom Bisque|Vesper"
       }
     ],
     "COCKTAIL_LIGHT|RICH_SIDE": [
-      {
-        "template": "Works; the light-cocktail-on-rich-side call lands as a measured alongside.",
-        "source": "Aviation|Mushrooms"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing holds at neutral.",
-        "source": "Aviation|Truffle Fries"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Bee's Knees|Mushrooms"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call sits without pulling focus.",
-        "source": "Bee's Knees|Truffle Fries"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call holds — neither soars nor fights.",
-        "source": "Corpse Reviver|Mushrooms"
-      },
-      {
-        "template": "Works; safe digestif-on-light-soup alongside, but not the headline call.",
-        "source": "Lemon Lavender Gin Martini|Truffle Fries"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-rich-side alongside, but not the headline call.",
-        "source": "Margarita|Mushrooms"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Mushrooms|The BG"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-rich-side match, not the recommendation.",
-        "source": "Mushrooms|Transfusion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call holds — neither soars nor fights.",
-        "source": "The Happy Wife|Truffle Fries"
-      }
     ],
     "COCKTAIL_LIGHT|CHICKEN_MAIN": [
-      {
-        "template": "Works; the light-cocktail-on-chicken-main pairing holds at neutral.",
-        "source": "Aviation|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-cocktail-on-chicken-main pairing reads as a quiet alongside.",
-        "source": "Corpse Reviver|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-chicken-main alongside, but not the headline call.",
-        "source": "Cucumber Gimlet|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side call lands as a measured alongside.",
-        "source": "French 75|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the digestif-on-chicken-main call holds — neither soars nor fights.",
-        "source": "Head Fake|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-cocktail-on-chicken-main call lands as a measured alongside.",
-        "source": "Lemon Lavender Gin Martini|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-cocktail-on-chicken-main call sits without pulling focus.",
-        "source": "Roast Half Chicken|Vesper"
-      }
     ],
     "COCKTAIL_LIGHT|VEG_MAIN": [
-      {
-        "template": "Works; the light-cocktail-on-light-soup call lands as a measured alongside.",
-        "source": "Aviation|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-light-soup alongside, but not the headline call.",
-        "source": "Cucumber Gimlet|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup call lands as a measured alongside.",
-        "source": "French 75|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing sits at neutral register without clash.",
-        "source": "Head Fake|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call sits without pulling focus.",
-        "source": "Lemon Lavender Gin Martini|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-light-soup match, not the recommendation.",
-        "source": "The BG|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing sits at neutral register without clash.",
-        "source": "The Happy Wife|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call holds — neither soars nor fights.",
-        "source": "Vegetable Curry with Chickpeas|Vesper"
-      }
     ],
     "TEQUILA_BOLD|SALAD": [
-      {
-        "template": "Works; the añejo-on-salad call sits without pulling focus.",
-        "source": "Avion 44|Grilled Caesar"
-      },
-      {
-        "template": "Works; the añejo-on-salad pairing sits at neutral register without clash.",
-        "source": "Avion 44|House Wedge"
-      },
-      {
-        "template": "Works; safe añejo-on-salad alongside, but not the headline call.",
-        "source": "Clase Azul Anejo|Grilled Caesar"
-      },
-      {
-        "template": "Works; the añejo-on-salad pairing reads as a quiet alongside.",
-        "source": "Clase Azul Durango|House Wedge"
-      },
-      {
-        "template": "Works; capable añejo-on-salad match, not the recommendation.",
-        "source": "Clase Azul Gold|Grilled Caesar"
-      },
-      {
-        "template": "Works; the añejo-on-salad call lands as a measured alongside.",
-        "source": "Corazon Stagg|Grilled Caesar"
-      },
-      {
-        "template": "Works; the añejo-on-salad pairing holds at neutral.",
-        "source": "Corazon Stagg|House Wedge"
-      },
-      {
-        "template": "Works; the añejo-on-salad call holds — neither soars nor fights.",
-        "source": "Grilled Caesar|Ocho Anejo"
-      },
-      {
-        "template": "Works; the añejo-on-hearty-soup call lands as a measured alongside.",
-        "source": "Grilled Caesar|Rey Sol Anejo"
-      }
     ],
     "LIGHT_SPIRIT|STEAK_LEAN": [
       {
-        "template": "Works; capable digestif-on-rich-side match, not the recommendation.",
-        "source": "Avion Silver|Bone-In Filet"
-      },
-      {
         "template": "Works; blanco isn't the natural filet call.",
         "source": "Avion Silver|Filet Mignon"
-      },
-      {
-        "template": "Works; safe light-spirit-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Bone-In Filet|Clase Azul Plata"
-      },
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet call lands as a measured alongside.",
-        "source": "Bone-In Filet|Don Julio Blanco"
-      },
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet pairing sits at neutral register without clash.",
-        "source": "Bone-In Filet|G4 Blanco"
-      },
-      {
-        "template": "Works; capable light-spirit-on-strip-or-filet match, not the recommendation.",
-        "source": "Bone-In Filet|Lalo Silver"
-      },
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Bone-In Filet|Siete Leguas Blanco"
       },
       {
         "template": "Works; the ceremony is a statement but blanco isn't the natural filet call.",
@@ -8814,197 +5186,17 @@ const CORPUS_MINED = {
       }
     ],
     "LIGHT_SPIRIT|LIGHT_SOUP": [
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing holds at neutral.",
-        "source": "Avion Silver|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Avion Silver|Butternut Squash"
-      },
-      {
-        "template": "Works; safe light-spirit-on-light-soup alongside, but not the headline call.",
-        "source": "Avion Silver|Creamy Potato"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Avion Silver|Tomato Basil"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-soup match, not the recommendation.",
-        "source": "Bacardi Rum|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call sits without pulling focus.",
-        "source": "Bacardi Rum|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Butternut Squash|Gran Patron Platinum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call lands as a measured alongside.",
-        "source": "Clase Azul Plata|Tomato Basil"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup pairing holds at neutral.",
-        "source": "Patron Silver|Seasonal Soup"
-      }
     ],
     "LIGHT_SPIRIT|HEARTY_STARTER": [
-      {
-        "template": "Works; the light-spirit-on-rich-side call sits without pulling focus.",
-        "source": "Avion Silver|Brussels and Belly"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing holds at neutral.",
-        "source": "Bacardi Rum|Brussels and Belly"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Brussels and Belly|Corazon Blanco"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call holds — neither soars nor fights.",
-        "source": "Brussels and Belly|Don Fulano Blanco"
-      },
-      {
-        "template": "Works; capable light-spirit-on-rich-side match, not the recommendation.",
-        "source": "Brussels and Belly|Don Julio Blanco"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Brussels and Belly|G4 Blanco"
-      },
-      {
-        "template": "Works; capable digestif-on-rich-side match, not the recommendation.",
-        "source": "Brussels and Belly|Malibu Rum"
-      }
     ],
     "LIGHT_SPIRIT|HEARTY_SOUP": [
-      {
-        "template": "Works; safe light-spirit-on-light-soup alongside, but not the headline call.",
-        "source": "Avion Silver|Clam Chowder"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup pairing holds at neutral.",
-        "source": "Avion Silver|French Onion"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing holds at neutral.",
-        "source": "Avion Silver|Gumbo"
-      },
-      {
-        "template": "Works; safe light-spirit-on-hearty-soup alongside, but not the headline call.",
-        "source": "Avion Silver|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call lands as a measured alongside.",
-        "source": "Bacardi Rum|Clam Chowder"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup call sits without pulling focus.",
-        "source": "Bacardi Rum|Loaded Potato"
-      },
-      {
-        "template": "Works; capable light-spirit-on-hearty-soup match, not the recommendation.",
-        "source": "Bacardi Rum|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Captain Morgan Rum|Loaded Potato"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup call lands as a measured alongside.",
-        "source": "Captain Morgan Rum|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call sits without pulling focus.",
-        "source": "Clam Chowder|Clase Azul Plata"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-soup match, not the recommendation.",
-        "source": "Clam Chowder|Corazon Blanco"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Clam Chowder|Don Fulano Blanco"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Corazon Blanco|French Onion"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Corazon Blanco|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup call sits without pulling focus.",
-        "source": "French Onion|Malibu Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Gumbo|Mount Gay Rum"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-side match, not the recommendation.",
-        "source": "Malibu Rum|Shrimp Bisque"
-      }
     ],
     "LIGHT_SPIRIT|STEAK_BOLD": [
-      {
-        "template": "Works; safe light-spirit-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Avion Silver|Kansas City"
-      },
-      {
-        "template": "Works; the light-spirit-on-bone-in-ribeye pairing reads as a quiet alongside.",
-        "source": "Avion Silver|Porterhouse"
-      },
-      {
-        "template": "Works; capable light-spirit-on-strip-or-filet match, not the recommendation.",
-        "source": "Corazon Blanco|Kansas City"
-      },
-      {
-        "template": "Works; the light-spirit-on-bone-in-ribeye call lands as a measured alongside.",
-        "source": "Corazon Blanco|Porterhouse"
-      },
-      {
-        "template": "Works; the light-spirit-on-bone-in-ribeye pairing sits at neutral register without clash.",
-        "source": "Cowboy Ribeye|Gran Patron Platinum"
-      },
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet pairing reads as a quiet alongside.",
-        "source": "Don Julio Blanco|Kansas City"
-      },
-      {
-        "template": "Works; safe light-spirit-on-bone-in-ribeye alongside, but not the headline call.",
-        "source": "Don Julio Blanco|Porterhouse"
-      },
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet pairing sits at neutral register without clash.",
-        "source": "G4 Blanco|Kansas City"
-      },
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet call sits without pulling focus.",
-        "source": "Kansas City|Patron Silver"
-      },
-      {
-        "template": "Works; the light-spirit-on-strip-or-filet call lands as a measured alongside.",
-        "source": "Kansas City|Siete Leguas Blanco"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-side match, not the recommendation.",
-        "source": "Mijenta Blanco|Porterhouse"
-      }
     ],
     "LIGHT_SPIRIT|FISH_MAIN_DELICATE": [
       {
         "template": "Works; clean blanco lifts the fish depending on preparation.",
         "source": "Avion Silver|Market Fish"
-      },
-      {
-        "template": "Works; safe light-spirit-on-fish-main alongside, but not the headline call.",
-        "source": "Bacardi Rum|Market Fish"
       },
       {
         "template": "Works; ceremonial pairing depends on preparation.",
@@ -9031,24 +5223,12 @@ const CORPUS_MINED = {
         "source": "Gran Patron Platinum|Market Fish"
       },
       {
-        "template": "Works; the light-spirit-on-fish-main call holds — neither soars nor fights.",
-        "source": "Gran Patron Platinum|Salt-Cured Halibut"
-      },
-      {
-        "template": "Works; the light-spirit-on-fish-main call lands as a measured alongside.",
-        "source": "Gran Patron Platinum|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
         "template": "Works; clean additive-free lifts the fish depending on preparation.",
         "source": "Lalo Silver|Market Fish"
       },
       {
         "template": "Works; clean craft blanco lifts the fish depending on preparation.",
         "source": "Market Fish|Mijenta Blanco"
-      },
-      {
-        "template": "Works; the light-spirit-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Market Fish|Mount Gay Rum"
       },
       {
         "template": "Works; clean blanco lifts the fish at the accessible register.",
@@ -9060,55 +5240,11 @@ const CORPUS_MINED = {
       }
     ],
     "LIGHT_SPIRIT|RICH_SIDE": [
-      {
-        "template": "Works; capable light-spirit-on-rich-side match, not the recommendation.",
-        "source": "Avion Silver|Mushrooms"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call sits without pulling focus.",
-        "source": "Avion Silver|Truffle Fries"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Bacardi Rum|Mushrooms"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call holds — neither soars nor fights.",
-        "source": "Captain Morgan Rum|Truffle Fries"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call lands as a measured alongside.",
-        "source": "Clase Azul Plata|Truffle Fries"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing holds at neutral.",
-        "source": "Don Julio Blanco|Mushrooms"
-      },
-      {
-        "template": "Works; safe light-spirit-on-rich-side alongside, but not the headline call.",
-        "source": "G4 Blanco|Truffle Fries"
-      },
-      {
-        "template": "Works; capable digestif-on-rich-side match, not the recommendation.",
-        "source": "Malibu Rum|Mushrooms"
-      },
-      {
-        "template": "Works; the digestif-on-rich-side call holds — neither soars nor fights.",
-        "source": "Malibu Rum|Truffle Fries"
-      }
     ],
     "LIGHT_SPIRIT|CHICKEN_MAIN": [
       {
         "template": "Works; clean composes cleanly.",
         "source": "Avion Silver|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side call sits without pulling focus.",
-        "source": "Bacardi Rum|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-spirit-on-chicken-main call lands as a measured alongside.",
-        "source": "Captain Morgan Rum|Roast Half Chicken"
       },
       {
         "template": "Works; the ceremony overshoots the dish.",
@@ -9139,10 +5275,6 @@ const CORPUS_MINED = {
         "source": "Mijenta Blanco|Roast Half Chicken"
       },
       {
-        "template": "Works; the light-spirit-on-chicken-main call holds — neither soars nor fights.",
-        "source": "Mount Gay Rum|Roast Half Chicken"
-      },
-      {
         "template": "Works; citrus-forward composes cleanly.",
         "source": "Patron Silver|Roast Half Chicken"
       },
@@ -9152,90 +5284,10 @@ const CORPUS_MINED = {
       }
     ],
     "LIGHT_SPIRIT|VEG_MAIN": [
-      {
-        "template": "Works; the light-spirit-on-light-soup call sits without pulling focus.",
-        "source": "Avion Silver|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call lands as a measured alongside.",
-        "source": "Bacardi Rum|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Corazon Blanco|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-soup match, not the recommendation.",
-        "source": "Don Julio Blanco|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Lalo Silver|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Mount Gay Rum|Vegetable Curry with Chickpeas"
-      }
     ],
     "LIGHT_SPIRIT|DESSERT_LIGHT": [
-      {
-        "template": "Works; the light-spirit-on-dessert pairing reads as a quiet alongside.",
-        "source": "Bacardi Rum|Carrot Cake"
-      },
-      {
-        "template": "Works; the light-spirit-on-dessert call sits without pulling focus.",
-        "source": "Bacardi Rum|Cheesecake"
-      },
-      {
-        "template": "Works; the light-spirit-on-dessert pairing sits at neutral register without clash.",
-        "source": "Bacardi Rum|Creme Brulee"
-      },
-      {
-        "template": "Works; the light-spirit-on-dessert pairing holds at neutral.",
-        "source": "Carrot Cake|Mount Gay Rum"
-      },
-      {
-        "template": "Works; capable light-spirit-on-light-side match, not the recommendation.",
-        "source": "Cheesecake|Gran Patron Platinum"
-      },
-      {
-        "template": "Works; the light-spirit-on-dessert call holds — neither soars nor fights.",
-        "source": "Cheesecake|Mount Gay Rum"
-      }
     ],
     "LIGHT_SPIRIT|DESSERT_CHOCOLATE": [
-      {
-        "template": "Works; the light-spirit-on-dessert pairing holds at neutral.",
-        "source": "Bacardi Rum|Chocolate Brownie"
-      },
-      {
-        "template": "Works; safe light-spirit-on-dessert alongside, but not the headline call.",
-        "source": "Bacardi Rum|Chocolate Cake"
-      },
-      {
-        "template": "Works; safe light-spirit-on-light-soup alongside, but not the headline call.",
-        "source": "Bacardi Rum|Mocha Creme"
-      },
-      {
-        "template": "Works; the light-spirit-on-dessert pairing sits at neutral register without clash.",
-        "source": "Bacardi Rum|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; capable light-spirit-on-dessert match, not the recommendation.",
-        "source": "Chocolate Brownie|Gran Patron Platinum"
-      },
-      {
-        "template": "Works; the light-spirit-on-dessert call holds — neither soars nor fights.",
-        "source": "Chocolate Cake|Mount Gay Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-rich-side pairing holds at neutral.",
-        "source": "Gran Patron Platinum|Mocha Creme"
-      },
-      {
-        "template": "Works; the light-spirit-on-dessert pairing reads as a quiet alongside.",
-        "source": "Gran Patron Platinum|Peanut Butter Brownie"
-      }
     ],
     "BOURBON_BOLD|RICH_SIDE": [
       {
@@ -9257,32 +5309,12 @@ const CORPUS_MINED = {
         "source": "Blanton's Straight from the Barrel|Filet Mignon"
       },
       {
-        "template": "Works; the bourbon-on-strip-or-filet pairing reads as a quiet alongside.",
-        "source": "Bone-In Filet|Canadian Club"
-      },
-      {
-        "template": "Works; the bourbon-on-strip-or-filet call sits without pulling focus.",
-        "source": "Bone-In Filet|Canadian Club 43 Year"
-      },
-      {
-        "template": "Works; the bourbon-on-strip-or-filet pairing holds at neutral.",
-        "source": "Bone-In Filet|Caribou Crossing"
-      },
-      {
         "template": "Works; craft-blend covers both cuts without standing out.",
         "source": "Bone-In Filet|Crown Royal"
       },
       {
         "template": "Works; extended-aged home-state pour wasted on salad.",
         "source": "Bone-In Filet|Dalmore 12"
-      },
-      {
-        "template": "Works; the bourbon-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Bone-In Filet|Dewar's White Label"
-      },
-      {
-        "template": "Works; safe bourbon-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Bone-In Filet|Dunville's Single Malt"
       },
       {
         "template": "Works; Fox & Oden frames the cut at Double-Oaked register.",
@@ -9295,10 +5327,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; Ironfish Mezcal frames the cut at Michigan-hometown register.",
         "source": "Bone-In Filet|Ironfish Bourbon in Mezcal Casks"
-      },
-      {
-        "template": "Works; capable bourbon-on-strip-or-filet match, not the recommendation.",
-        "source": "Bone-In Filet|Jameson Irish Whiskey"
       },
       {
         "template": "Works; Marian McLain L.E.",
@@ -9319,10 +5347,6 @@ const CORPUS_MINED = {
       {
         "template": "Works; Old Emmer handles the cut at craft register.",
         "source": "Bone-In Filet|Old Emmer"
-      },
-      {
-        "template": "Works; the bourbon-on-strip-or-filet call lands as a measured alongside.",
-        "source": "Bone-In Filet|Redbreast 12 Year"
       },
       {
         "template": "Works; Woodford Double Oaked frames the cut at KY-benchmark register.",
@@ -9384,26 +5408,6 @@ const CORPUS_MINED = {
       }
     ],
     "MEZCAL|DESSERT_LIGHT": [
-      {
-        "template": "Works; the mezcal-on-dessert call holds — neither soars nor fights.",
-        "source": "Beignets|Casamigos Mezcal"
-      },
-      {
-        "template": "Works; capable mezcal-on-dessert match, not the recommendation.",
-        "source": "Beignets|Clase Azul Guerrero Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-dessert call sits without pulling focus.",
-        "source": "Beignets|Los Vecinos Mezcal"
-      },
-      {
-        "template": "Works; safe mezcal-on-dessert alongside, but not the headline call.",
-        "source": "Carrot Cake|Los Vecinos Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-dessert pairing reads as a quiet alongside.",
-        "source": "Casamigos Mezcal|Creme Brulee"
-      }
     ],
     "COGNAC|DESSERT_LIGHT": [
       {
@@ -9428,50 +5432,6 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_LIGHT|DESSERT_LIGHT": [
-      {
-        "template": "Works; the digestif-on-dessert call sits without pulling focus.",
-        "source": "Beignets|Head Fake"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-dessert alongside, but not the headline call.",
-        "source": "Beignets|The BG"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call lands as a measured alongside.",
-        "source": "Beignets|The Happy Wife"
-      },
-      {
-        "template": "Works; the light-cocktail-on-rich-side pairing holds at neutral.",
-        "source": "Carrot Cake|The BG"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing sits at neutral register without clash.",
-        "source": "Carrot Cake|The Happy Wife"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing holds at neutral.",
-        "source": "Carrot Cake|Transfusion"
-      },
-      {
-        "template": "Works; the digestif-on-dessert pairing reads as a quiet alongside.",
-        "source": "Cheesecake|Head Fake"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call holds — neither soars nor fights.",
-        "source": "Cheesecake|The BG"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call sits without pulling focus.",
-        "source": "Cheesecake|The Happy Wife"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing reads as a quiet alongside.",
-        "source": "Cheesecake|Transfusion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing holds at neutral.",
-        "source": "Cheesecake|Vesper"
-      }
     ],
     "COGNAC_LUXURY|DESSERT_LIGHT": [
       {
@@ -9488,138 +5448,10 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_BOLD|DESSERT_LIGHT": [
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing holds at neutral.",
-        "source": "Beignets|Not a Paper Plane"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-dessert pairing sits at neutral register without clash.",
-        "source": "Beignets|Vieux Carré"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call holds — neither soars nor fights.",
-        "source": "Carrot Cake|Not a Paper Plane"
-      },
-      {
-        "template": "Works; safe whiskey-cocktail-on-dessert alongside, but not the headline call.",
-        "source": "Carrot Cake|The Manhattan"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-dessert call sits without pulling focus.",
-        "source": "Carrot Cake|Vieux Carré"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-dessert match, not the recommendation.",
-        "source": "Cheesecake|Not a Paper Plane"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing holds at neutral.",
-        "source": "Cheesecake|The Manhattan"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call sits without pulling focus.",
-        "source": "Creme Brulee|Not a Paper Plane"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-dessert pairing reads as a quiet alongside.",
-        "source": "Creme Brulee|The Manhattan"
-      }
     ],
     "VODKA|HEARTY_STARTER": [
-      {
-        "template": "Works; the vodka-on-hearty-starter call lands as a measured alongside.",
-        "source": "Belvedere Vodka|Bone Marrow"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Belvedere Vodka|Brussels and Belly"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-starter call holds — neither soars nor fights.",
-        "source": "Bone Marrow|Chopin Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-starter call sits without pulling focus.",
-        "source": "Bone Marrow|Detroit City Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-starter pairing sits at neutral register without clash.",
-        "source": "Bone Marrow|Grey Goose Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-starter pairing reads as a quiet alongside.",
-        "source": "Bone Marrow|Hangar 1 Vodka"
-      },
-      {
-        "template": "Works; safe vodka-on-hearty-starter alongside, but not the headline call.",
-        "source": "Bone Marrow|Ketel One Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call lands as a measured alongside.",
-        "source": "Bone Marrow|Stoli Elit Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing holds at neutral.",
-        "source": "Brussels and Belly|Chopin Vodka"
-      },
-      {
-        "template": "Works; safe vodka-on-rich-side alongside, but not the headline call.",
-        "source": "Brussels and Belly|Detroit City Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call holds — neither soars nor fights.",
-        "source": "Brussels and Belly|HDW 100 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Brussels and Belly|Hangar 1 Vodka"
-      }
     ],
     "VODKA|LIGHT_SOUP": [
-      {
-        "template": "Works; the vodka-on-light-soup call holds — neither soars nor fights.",
-        "source": "Belvedere Vodka|Broccoli Cheddar"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup pairing holds at neutral.",
-        "source": "Belvedere Vodka|Butternut Squash"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup call lands as a measured alongside.",
-        "source": "Belvedere Vodka|Creamy Potato"
-      },
-      {
-        "template": "Works; the vodka-on-light-side call sits without pulling focus.",
-        "source": "Belvedere Vodka|Seasonal Soup"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup call sits without pulling focus.",
-        "source": "Broccoli Cheddar|Detroit City Vodka"
-      },
-      {
-        "template": "Works; safe vodka-on-light-soup alongside, but not the headline call.",
-        "source": "Broccoli Cheddar|Hangar 1 Vodka"
-      },
-      {
-        "template": "Works; capable vodka-on-light-soup match, not the recommendation.",
-        "source": "Broccoli Cheddar|Ketel One Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Broccoli Cheddar|Stoli Elit Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Butternut Squash|HDW 100 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-soup pairing holds at neutral.",
-        "source": "Chopin Vodka|Creamy Potato"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call lands as a measured alongside.",
-        "source": "Creamy Potato|Titos Vodka"
-      }
     ],
     "VODKA|DESSERT_LIGHT": [
       {
@@ -9656,78 +5488,6 @@ const CORPUS_MINED = {
       }
     ],
     "VODKA|HEARTY_SOUP": [
-      {
-        "template": "Works; safe vodka-on-light-soup alongside, but not the headline call.",
-        "source": "Belvedere Vodka|Clam Chowder"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Belvedere Vodka|French Onion"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-soup pairing holds at neutral.",
-        "source": "Belvedere Vodka|Loaded Potato"
-      },
-      {
-        "template": "Works; capable vodka-on-hearty-soup match, not the recommendation.",
-        "source": "Belvedere Vodka|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Chopin Vodka|Clam Chowder"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup pairing holds at neutral.",
-        "source": "Chopin Vodka|Gumbo"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Chopin Vodka|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup call sits without pulling focus.",
-        "source": "Clam Chowder|Detroit City Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Clam Chowder|Grey Goose Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup call lands as a measured alongside.",
-        "source": "Clam Chowder|HDW 100 Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Titos Vodka"
-      },
-      {
-        "template": "Works; capable vodka-on-light-soup match, not the recommendation.",
-        "source": "Clam Chowder|Wheatley Vodka"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-soup call lands as a measured alongside.",
-        "source": "Detroit City Vodka|French Onion"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Detroit City Vodka|Loaded Potato"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-soup call sits without pulling focus.",
-        "source": "Detroit City Vodka|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the vodka-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "French Onion|Grey Goose Vodka"
-      },
-      {
-        "template": "Works; safe vodka-on-hearty-soup alongside, but not the headline call.",
-        "source": "HDW 100 Vodka|Mushroom Bisque"
-      },
-      {
-        "template": "Works; safe vodka-on-light-side alongside, but not the headline call.",
-        "source": "Mushroom Bisque|Stoli Elit Vodka"
-      }
     ],
     "VODKA|STEAK_LEAN": [
       {
@@ -9822,38 +5582,6 @@ const CORPUS_MINED = {
       }
     ],
     "VODKA|RICH_SIDE": [
-      {
-        "template": "Works; safe vodka-on-rich-side alongside, but not the headline call.",
-        "source": "Belvedere Vodka|Mushrooms"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Chopin Vodka|Mushrooms"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call lands as a measured alongside.",
-        "source": "Chopin Vodka|Truffle Fries"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Detroit City Vodka|Mushrooms"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side pairing holds at neutral.",
-        "source": "Detroit City Vodka|Truffle Fries"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call holds — neither soars nor fights.",
-        "source": "Grey Goose Vodka|Truffle Fries"
-      },
-      {
-        "template": "Works; capable vodka-on-rich-side match, not the recommendation.",
-        "source": "HDW 100 Vodka|Truffle Fries"
-      },
-      {
-        "template": "Works; the vodka-on-rich-side call sits without pulling focus.",
-        "source": "Mushrooms|Reyka Vodka"
-      }
     ],
     "VODKA|CHICKEN_MAIN": [
       {
@@ -9902,81 +5630,12 @@ const CORPUS_MINED = {
       }
     ],
     "VODKA|VEG_MAIN": [
-      {
-        "template": "Works; the vodka-on-light-soup pairing holds at neutral.",
-        "source": "Belvedere Vodka|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Chopin Vodka|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup call sits without pulling focus.",
-        "source": "Detroit City Vodka|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup call holds — neither soars nor fights.",
-        "source": "HDW 100 Vodka|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the vodka-on-light-soup call lands as a measured alongside.",
-        "source": "Vegetable Curry with Chickpeas|Wheatley Vodka"
-      }
     ],
     "ELEGANT_RED|HEARTY_STARTER": [
       {
-        "template": "Works; the elegant-red-on-hearty-starter call holds — neither soars nor fights.",
-        "source": "Bone Marrow|Braida Montebruna Barbera"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-starter call lands as a measured alongside.",
-        "source": "Bone Marrow|Marc Brédif Chinon"
-      },
-      {
-        "template": "Works; safe elegant-red-on-hearty-starter alongside, but not the headline call.",
-        "source": "Braida Montebruna Barbera|Escargot"
-      },
-      {
         "template": "Works; the call holds at neutral register.",
         "source": "Braida Montebruna Barbera|Prime Tartare"
-      },
-      {
-        "template": "Works; the elegant-red-on-light-soup call sits without pulling focus.",
-        "source": "Brussels and Belly|Cristom Mt Jefferson Cuvée"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call lands as a measured alongside.",
-        "source": "Brussels and Belly|Daniel Chotard Sancerre Rouge"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Brussels and Belly|Domaine Serene Grand Cheval"
-      },
-      {
-        "template": "Works; capable elegant-red-on-rich-side match, not the recommendation.",
-        "source": "Brussels and Belly|Elk Cove Five Mountain"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing holds at neutral.",
-        "source": "Brussels and Belly|Jax Calesa Vineyard Pinot Noir"
-      },
-      {
-        "template": "Works; safe elegant-red-on-rich-side alongside, but not the headline call.",
-        "source": "Brussels and Belly|Marc Brédif Chinon"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Brussels and Belly|Marimar Estate Christina"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call holds — neither soars nor fights.",
-        "source": "Escargot|Fisher Unity Pinot Noir"
-      },
-      {
-        "template": "Works; the elegant-red-on-hearty-starter pairing holds at neutral.",
-        "source": "Escargot|Jax Calesa Vineyard Pinot Noir"
-      }
-    ],
+      }],
     "DEFAULT|HEARTY_STARTER": [
       {
         "template": "Works; the close composes without strain.",
@@ -9988,14 +5647,6 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_BOLD|HEARTY_STARTER": [
-      {
-        "template": "Works; the light-cocktail-on-hearty-starter call lands as a measured alongside.",
-        "source": "Bone Marrow|Inhibited"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-hearty-starter alongside, but not the headline call.",
-        "source": "Escargot|Inhibited"
-      }
     ],
     "DEFAULT|STEAK_LEAN": [
       {
@@ -10035,217 +5686,26 @@ const CORPUS_MINED = {
       {
         "template": "Works; Ferrand's craft character handles the richness.",
         "source": "Bone-In Filet|Christian Bros Brandy"
-      },
-      {
-        "template": "Works; the cognac-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Bone-In Filet|Courvoisier Cognac"
-      },
-      {
-        "template": "Works; capable cognac-on-strip-or-filet match, not the recommendation.",
-        "source": "Bone-In Filet|Hennessy Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-dessert pairing reads as a quiet alongside.",
-        "source": "Bone-In Filet|Pierre Ferrand Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-strip-or-filet pairing reads as a quiet alongside.",
-        "source": "Bone-In Filet|Remy VSOP Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-strip-or-filet call sits without pulling focus.",
-        "source": "Bone-In Filet|Villon Cognac"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|STEAK_LEAN": [
-      {
-        "template": "Works; the aperitivo-on-light-side call holds — neither soars nor fights.",
-        "source": "Bone-In Filet|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the aperitivo-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Bone-In Filet|Fernet Branca"
-      },
-      {
-        "template": "Works; the digestif-on-strip-or-filet pairing sits at neutral register without clash.",
-        "source": "Bone-In Filet|Green Chartreuse"
-      },
       {
         "template": "Works; the sweeter amaro style doubles the dish's sweetness slightly.",
         "source": "Contratto Vermouth|Filet Mignon"
-      },
-      {
-        "template": "Works; the aperitivo-on-strip-or-filet pairing reads as a quiet alongside.",
-        "source": "Fernet Branca|Filet Mignon"
-      },
-      {
-        "template": "Works; capable aperitivo-on-strip-or-filet match, not the recommendation.",
-        "source": "Fernet Menta|Filet Mignon"
-      },
-      {
-        "template": "Works; safe digestif-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Filet Mignon|Green Chartreuse"
-      },
-      {
-        "template": "Works; the digestif-on-strip-or-filet pairing holds at neutral.",
-        "source": "Filet Mignon|Yellow Chartreuse"
-      }
-    ],
+      }],
     "COCKTAIL_LIGHT|STEAK_LEAN": [
-      {
-        "template": "Works; safe digestif-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Bone-In Filet|Head Fake"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup call lands as a measured alongside.",
-        "source": "Bone-In Filet|Margarita"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-strip-or-filet match, not the recommendation.",
-        "source": "Bone-In Filet|Paloma"
-      },
-      {
-        "template": "Works; the light-cocktail-on-strip-or-filet pairing sits at neutral register without clash.",
-        "source": "Bone-In Filet|Transfusion"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Bone-In Filet|Vesper"
-      }
     ],
     "WHITE_WINE|STEAK_LEAN": [
-      {
-        "template": "Works; the white-on-strip-or-filet pairing holds at neutral.",
-        "source": "Bone-In Filet|Le Garenne Rosé"
-      }
     ],
     "COCKTAIL_BOLD|STEAK_LEAN": [
-      {
-        "template": "Works; safe light-cocktail-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Bone-In Filet|Not a Paper Plane"
-      }
     ],
     "COCKTAIL_BOLD|DESSERT_CHOCOLATE": [
-      {
-        "template": "Works; the whiskey-cocktail-on-dessert pairing reads as a quiet alongside.",
-        "source": "Bowdie's Old Fashioned|Chocolate Cake"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side pairing reads as a quiet alongside.",
-        "source": "Bowdie's Old Fashioned|Mocha Creme"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing reads as a quiet alongside.",
-        "source": "Chocolate Brownie|Not a Paper Plane"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-dessert pairing holds at neutral.",
-        "source": "Chocolate Brownie|The Manhattan"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing sits at neutral register without clash.",
-        "source": "Chocolate Cake|Not a Paper Plane"
-      },
-      {
-        "template": "Works; safe whiskey-cocktail-on-dessert alongside, but not the headline call.",
-        "source": "Chocolate Cake|The Manhattan"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call lands as a measured alongside.",
-        "source": "Mocha Creme|Not a Paper Plane"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-dessert match, not the recommendation.",
-        "source": "Not a Paper Plane|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-dessert call holds — neither soars nor fights.",
-        "source": "Peanut Butter Brownie|The Manhattan"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-dessert pairing sits at neutral register without clash.",
-        "source": "Peanut Butter Brownie|Vieux Carré"
-      }
     ],
     "COCKTAIL_BOLD|HEARTY_SOUP": [
       {
-        "template": "Works; the whiskey-cocktail-on-hearty-soup call sits without pulling focus.",
-        "source": "Bowdie's Old Fashioned|French Onion"
-      },
-      {
-        "template": "Works; safe whiskey-cocktail-on-hearty-soup alongside, but not the headline call.",
-        "source": "Bowdie's Old Fashioned|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Clam Chowder|Inhibited"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call lands as a measured alongside.",
-        "source": "Clam Chowder|Negroni"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|The Manhattan"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup call sits without pulling focus.",
-        "source": "Clam Chowder|Vieux Carré"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-hearty-soup alongside, but not the headline call.",
-        "source": "French Onion|Inhibited"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup pairing holds at neutral.",
-        "source": "French Onion|Negroni"
-      },
-      {
         "template": "Works; the opener sits without competing.",
         "source": "French Onion|Not a Paper Plane"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-hearty-soup call lands as a measured alongside.",
-        "source": "French Onion|Sazerac"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-light-soup alongside, but not the headline call.",
-        "source": "Gumbo|Inhibited"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing holds at neutral.",
-        "source": "Gumbo|Negroni"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-light-soup match, not the recommendation.",
-        "source": "Gumbo|Not a Paper Plane"
-      },
-      {
-        "template": "Works; capable whiskey-cocktail-on-light-soup match, not the recommendation.",
-        "source": "Gumbo|Vieux Carré"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Inhibited|Loaded Potato"
-      },
-      {
-        "template": "Works; the light-cocktail-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Mushroom Bisque|Negroni"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Mushroom Bisque|Sazerac"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Shrimp Bisque|The Manhattan"
-      }
-    ],
+      }],
     "COCKTAIL_BOLD|SALAD": [
-      {
-        "template": "Works; the whiskey-cocktail-on-salad call sits without pulling focus.",
-        "source": "Bowdie's Old Fashioned|Grilled Caesar"
-      },
       {
         "template": "Works; the dessert closes without crowding.",
         "source": "Grilled Caesar|Inhibited"
@@ -10253,72 +5713,8 @@ const CORPUS_MINED = {
     ],
     "COCKTAIL_BOLD|LIGHT_SOUP": [
       {
-        "template": "Works; capable whiskey-cocktail-on-light-soup match, not the recommendation.",
-        "source": "Bowdie's Old Fashioned|Roasted Red Pepper Chickpea"
-      },
-      {
         "template": "Works; the close composes without strain.",
         "source": "Bowdie's Old Fashioned|Seasonal Soup"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-side call holds — neither soars nor fights.",
-        "source": "Broccoli Cheddar|Inhibited"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call lands as a measured alongside.",
-        "source": "Broccoli Cheddar|Negroni"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Not a Paper Plane"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Broccoli Cheddar|Sazerac"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Broccoli Cheddar|The Manhattan"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Vieux Carré"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup call holds — neither soars nor fights.",
-        "source": "Butternut Squash|Sazerac"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-light-soup alongside, but not the headline call.",
-        "source": "Creamy Potato|Inhibited"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call holds — neither soars nor fights.",
-        "source": "Creamy Potato|Negroni"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup call sits without pulling focus.",
-        "source": "Creamy Potato|The Manhattan"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing sits at neutral register without clash.",
-        "source": "Creamy Potato|Vieux Carré"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Inhibited|Seasonal Soup"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Inhibited|Tomato Basil"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-light-soup match, not the recommendation.",
-        "source": "Negroni|Seasonal Soup"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup call lands as a measured alongside.",
-        "source": "Roasted Red Pepper Chickpea|Sazerac"
       },
       {
         "template": "Works; the side call holds at neutral register.",
@@ -10327,127 +5723,14 @@ const CORPUS_MINED = {
     ],
     "ELEGANT_RED|FISH_MAIN_RICH": [
       {
-        "template": "Works; the elegant-red-on-fish-main pairing reads as a quiet alongside.",
-        "source": "Braida Montebruna Barbera|Chilean Seabass"
-      },
-      {
         "template": "Works; the call holds at neutral register.",
         "source": "Braida Montebruna Barbera|Swordfish"
-      },
-      {
-        "template": "Works; the elegant-red-on-fish-main call holds — neither soars nor fights.",
-        "source": "Chilean Seabass|Daniel Chotard Sancerre Rouge"
-      },
-      {
-        "template": "Works; capable elegant-red-on-fish-main match, not the recommendation.",
-        "source": "Chilean Seabass|Jax Calesa Vineyard Pinot Noir"
-      },
-      {
-        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
-        "source": "Chilean Seabass|Macauley Pinot Noir"
-      },
-      {
-        "template": "Works; the elegant-red-on-fish-main call lands as a measured alongside.",
-        "source": "Chilean Seabass|Marc Brédif Chinon"
-      },
-      {
-        "template": "Works; the elegant-red-on-fish-main pairing holds at neutral.",
-        "source": "Jax Calesa Vineyard Pinot Noir|Swordfish"
-      },
-      {
-        "template": "Works; safe elegant-red-on-fish-main alongside, but not the headline call.",
-        "source": "Sanford & Benedict Pinot Noir|Swordfish"
-      }
-    ],
+      }],
     "ELEGANT_RED|FISH_MAIN_DELICATE": [
-      {
-        "template": "Works; the elegant-red-on-fish-main pairing holds at neutral.",
-        "source": "Braida Montebruna Barbera|Market Fish"
-      },
-      {
-        "template": "Works; the elegant-red-on-fish-main call sits without pulling focus.",
-        "source": "Braida Montebruna Barbera|Rainbow Trout"
-      },
-      {
-        "template": "Works; capable elegant-red-on-fish-main match, not the recommendation.",
-        "source": "Braida Montebruna Barbera|Salt-Cured Halibut"
-      },
-      {
-        "template": "Works; the elegant-red-on-fish-main call holds — neither soars nor fights.",
-        "source": "Braida Montebruna Barbera|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Works; the elegant-red-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Daniel Chotard Sancerre Rouge|Rainbow Trout"
-      },
-      {
-        "template": "Works; the elegant-red-on-fish-main pairing reads as a quiet alongside.",
-        "source": "Daniel Chotard Sancerre Rouge|Salt-Cured Halibut"
-      },
-      {
-        "template": "Works; the elegant-red-on-fish-main call lands as a measured alongside.",
-        "source": "Daniel Chotard Sancerre Rouge|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Works; safe elegant-red-on-fish-main alongside, but not the headline call.",
-        "source": "Jax Calesa Vineyard Pinot Noir|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Market Fish|Sanford & Benedict Pinot Noir"
-      }
     ],
     "ELEGANT_RED|STEAK_BOLD": [
-      {
-        "template": "Works; the elegant-red-on-bone-in-ribeye call holds — neither soars nor fights.",
-        "source": "Braida Montebruna Barbera|The Tomahawk"
-      },
-      {
-        "template": "Works; the elegant-red-on-bone-in-ribeye pairing reads as a quiet alongside.",
-        "source": "Cowboy Ribeye|Marc Brédif Chinon"
-      }
     ],
     "COGNAC|LIGHT_SOUP": [
-      {
-        "template": "Works; the cognac-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Broccoli Cheddar|Christian Bros Brandy"
-      },
-      {
-        "template": "Works; safe cognac-on-light-soup alongside, but not the headline call.",
-        "source": "Broccoli Cheddar|Courvoisier Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Hennessy Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call lands as a measured alongside.",
-        "source": "Broccoli Cheddar|Remy VSOP Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Broccoli Cheddar|Villon Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call sits without pulling focus.",
-        "source": "Butternut Squash|Christian Bros Brandy"
-      },
-      {
-        "template": "Works; capable cognac-on-light-soup match, not the recommendation.",
-        "source": "Butternut Squash|Courvoisier Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call holds — neither soars nor fights.",
-        "source": "Christian Bros Brandy|Seasonal Soup"
-      },
-      {
-        "template": "Works; safe cognac-on-rich-side alongside, but not the headline call.",
-        "source": "Courvoisier Cognac|Creamy Potato"
-      },
-      {
-        "template": "Works; safe cognac-on-dessert alongside, but not the headline call.",
-        "source": "Pierre Ferrand Cognac|Tomato Basil"
-      }
     ],
     "APERITIVO_BITTER|LIGHT_SOUP": [
       {
@@ -10455,161 +5738,12 @@ const CORPUS_MINED = {
         "source": "Broccoli Cheddar|Contratto Vermouth"
       },
       {
-        "template": "Works; the aperitivo-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Fernet Branca"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Broccoli Cheddar|Fernet Menta"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup call holds — neither soars nor fights.",
-        "source": "Broccoli Cheddar|Green Chartreuse"
-      },
-      {
         "template": "Works; the opener sits without competing.",
         "source": "Butternut Squash|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Butternut Squash|Fernet Branca"
-      },
-      {
-        "template": "Works; safe aperitivo-on-light-soup alongside, but not the headline call.",
-        "source": "Butternut Squash|Fernet Menta"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing holds at neutral.",
-        "source": "Butternut Squash|Green Chartreuse"
-      },
-      {
-        "template": "Works; capable aperitivo-on-light-soup match, not the recommendation.",
-        "source": "Contratto Vermouth|Roasted Red Pepper Chickpea"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-soup call sits without pulling focus.",
-        "source": "Contratto Vermouth|Seasonal Soup"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup call sits without pulling focus.",
-        "source": "Creamy Potato|Green Chartreuse"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-soup call lands as a measured alongside.",
-        "source": "Fernet Branca|Seasonal Soup"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-soup call holds — neither soars nor fights.",
-        "source": "Fernet Menta|Tomato Basil"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Green Chartreuse|Seasonal Soup"
-      }
-    ],
+      }],
     "HEAVY_SPIRIT|LIGHT_SOUP": [
-      {
-        "template": "Works; the bourbon-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call holds — neither soars nor fights.",
-        "source": "Broccoli Cheddar|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Broccoli Cheddar|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call lands as a measured alongside.",
-        "source": "Broccoli Cheddar|Myers's Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call lands as a measured alongside.",
-        "source": "Broccoli Cheddar|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; safe bourbon-on-light-soup alongside, but not the headline call.",
-        "source": "Butternut Squash|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Butternut Squash|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call sits without pulling focus.",
-        "source": "Butternut Squash|Myers's Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call sits without pulling focus.",
-        "source": "Butternut Squash|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; capable bourbon-on-light-soup match, not the recommendation.",
-        "source": "Creamy Potato|Myers's Rum"
-      },
-      {
-        "template": "Works; safe light-spirit-on-light-soup alongside, but not the headline call.",
-        "source": "Creamy Potato|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Roasted Red Pepper Chickpea|Ron Zacapa Rum"
-      }
     ],
     "SPARKLING|LIGHT_SOUP": [
-      {
-        "template": "Works; safe Champagne-on-light-soup alongside, but not the headline call.",
-        "source": "Broccoli Cheddar|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup call lands as a measured alongside.",
-        "source": "Broccoli Cheddar|Laurent Perrier Brut Rosé"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup pairing holds at neutral.",
-        "source": "Broccoli Cheddar|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Broccoli Cheddar|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Broccoli Cheddar|Pommery Cuvée Louise"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Broccoli Cheddar|Veuve Clicquot Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup call holds — neither soars nor fights.",
-        "source": "Butternut Squash|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup call sits without pulling focus.",
-        "source": "Butternut Squash|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side call holds — neither soars nor fights.",
-        "source": "Butternut Squash|Pommery Cuvée Louise"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side call lands as a measured alongside.",
-        "source": "Creamy Potato|Laurent Perrier Brut Rosé"
-      },
-      {
-        "template": "Works; capable Champagne-on-light-soup match, not the recommendation.",
-        "source": "Creamy Potato|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-hearty-soup call lands as a measured alongside.",
-        "source": "Laurent Perrier Brut Rosé|Tomato Basil"
-      },
-      {
-        "template": "Works; the Champagne-on-light-side pairing sits at neutral register without clash.",
-        "source": "Pommery Cuvée Louise|Roasted Red Pepper Chickpea"
-      },
       {
         "template": "Works; a measured close to the meal.",
         "source": "Robert Moncuit Les Grand Blancs|Tomato Basil"
@@ -10617,49 +5751,15 @@ const CORPUS_MINED = {
     ],
     "COGNAC|HEARTY_STARTER": [
       {
-        "template": "Works; the cognac-on-rich-side call sits without pulling focus.",
-        "source": "Brussels and Belly|Christian Bros Brandy"
-      },
-      {
         "template": "Works; Rémy's elegance handles the richness at premium register.",
         "source": "Brussels and Belly|Pierre Ferrand Cognac"
-      },
-      {
-        "template": "Works; safe cognac-on-rich-side alongside, but not the headline call.",
-        "source": "Brussels and Belly|Remy VSOP Cognac"
-      },
-      {
-        "template": "Works; safe cognac-on-hearty-soup alongside, but not the headline call.",
-        "source": "Brussels and Belly|Villon Cognac"
-      }
-    ],
+      }],
     "SPARKLING|HEARTY_STARTER": [
-      {
-        "template": "Works; the Champagne-on-rich-side call lands as a measured alongside.",
-        "source": "Brussels and Belly|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Brussels and Belly|Laurent Perrier Brut Rosé"
-      },
       {
         "template": "Works; the two desserts share the close without crowding.",
         "source": "Brussels and Belly|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Brussels and Belly|Pierre Gimonnet Special Club Brut"
-      }
-    ],
+      }],
     "LIGHT_SPIRIT|LIGHT_STARTER": [
-      {
-        "template": "Works; the light-spirit-on-light-side call lands as a measured alongside.",
-        "source": "Burrata|Captain Morgan Rum"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-starter call sits without pulling focus.",
-        "source": "Burrata|Malibu Rum"
-      }
     ],
     "BOURBON_BOLD|LIGHT_STARTER": [
       {
@@ -10739,227 +5839,33 @@ const CORPUS_MINED = {
         "source": "Crab Cake|Yamazaki 18 Year"
       },
       {
-        "template": "Works; the bourbon-on-delicate-shellfish pairing sits at neutral register without clash.",
-        "source": "Hakushu 12 Year|Seafood Tower"
-      },
-      {
-        "template": "Works; capable bourbon-on-delicate-shellfish match, not the recommendation.",
-        "source": "Hakushu 12 Year|Shrimp Cocktail"
-      },
-      {
-        "template": "Works; the bourbon-on-delicate-shellfish call sits without pulling focus.",
-        "source": "Hibiki Japanese Harmony|Shrimp Cocktail"
-      },
-      {
         "template": "Works; PNW character doesn't drive.",
         "source": "Seafood Tower|Toki Suntory Japanese Whisky"
-      },
-      {
-        "template": "Works; safe bourbon-on-delicate-shellfish alongside, but not the headline call.",
-        "source": "Seafood Tower|Yamazaki 12 Year"
-      }
-    ],
+      }],
     "LIGHT_SPIRIT|FISH_MAIN_RICH": [
-      {
-        "template": "Works; the light-spirit-on-fish-main call sits without pulling focus.",
-        "source": "Captain Morgan Rum|Faroe Island Salmon"
-      },
-      {
-        "template": "Works; the digestif-on-fish-main pairing reads as a quiet alongside.",
-        "source": "Faroe Island Salmon|Malibu Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Gran Patron Platinum|Swordfish"
-      }
     ],
     "LIGHT_SPIRIT|SALAD": [
-      {
-        "template": "Works; the light-spirit-on-salad call lands as a measured alongside.",
-        "source": "Captain Morgan Rum|Grilled Caesar"
-      },
-      {
-        "template": "Works; the digestif-on-salad pairing holds at neutral.",
-        "source": "Grilled Caesar|Malibu Rum"
-      }
     ],
     "WHITE_WINE|DESSERT_LIGHT": [
-      {
-        "template": "Works; capable white-on-dessert match, not the recommendation.",
-        "source": "Carrot Cake|Schloss Vollrads Riesling"
-      },
-      {
-        "template": "Works; the white-on-dessert pairing holds at neutral.",
-        "source": "Creme Brulee|Schloss Vollrads Riesling"
-      }
     ],
     "MEZCAL|DESSERT_CHOCOLATE": [
-      {
-        "template": "Works; capable mezcal-on-dessert match, not the recommendation.",
-        "source": "Casamigos Mezcal|Chocolate Brownie"
-      },
-      {
-        "template": "Works; the mezcal-on-dessert call lands as a measured alongside.",
-        "source": "Casamigos Mezcal|Chocolate Cake"
-      },
-      {
-        "template": "Works; capable mezcal-on-rich-side match, not the recommendation.",
-        "source": "Casamigos Mezcal|Mocha Creme"
-      },
-      {
-        "template": "Works; the mezcal-on-light-side pairing reads as a quiet alongside.",
-        "source": "Casamigos Mezcal|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; safe mezcal-on-dessert alongside, but not the headline call.",
-        "source": "Chocolate Brownie|Clase Azul Guerrero Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-dessert pairing reads as a quiet alongside.",
-        "source": "Chocolate Brownie|Los Vecinos Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-dessert call holds — neither soars nor fights.",
-        "source": "Chocolate Cake|Clase Azul Guerrero Mezcal"
-      },
-      {
-        "template": "Works; the mezcal-on-dessert pairing holds at neutral.",
-        "source": "Chocolate Cake|Los Vecinos Mezcal"
-      }
     ],
     "MEZCAL|STEAK_LEAN": [
-      {
-        "template": "Works; the mezcal-on-strip-or-filet call sits without pulling focus.",
-        "source": "Casamigos Mezcal|Filet Mignon"
-      },
-      {
-        "template": "Works; the mezcal-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Clase Azul Guerrero Mezcal|Filet Mignon"
-      }
     ],
     "MEZCAL|HEARTY_SOUP": [
-      {
-        "template": "Works; the mezcal-on-hearty-soup call sits without pulling focus.",
-        "source": "Casamigos Mezcal|French Onion"
-      },
-      {
-        "template": "Works; capable mezcal-on-hearty-soup match, not the recommendation.",
-        "source": "Casamigos Mezcal|Loaded Potato"
-      },
-      {
-        "template": "Works; the mezcal-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Casamigos Mezcal|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the mezcal-on-hearty-soup call lands as a measured alongside.",
-        "source": "Clase Azul Guerrero Mezcal|Loaded Potato"
-      }
     ],
     "MEZCAL|SALAD": [
-      {
-        "template": "Works; the mezcal-on-salad pairing holds at neutral.",
-        "source": "Casamigos Mezcal|House Wedge"
-      },
-      {
-        "template": "Works; the mezcal-on-salad pairing sits at neutral register without clash.",
-        "source": "Clase Azul Guerrero Mezcal|House Wedge"
-      }
     ],
     "MEZCAL|CHICKEN_MAIN": [
-      {
-        "template": "Works; the mezcal-on-chicken-main call lands as a measured alongside.",
-        "source": "Casamigos Mezcal|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the mezcal-on-chicken-main pairing holds at neutral.",
-        "source": "Clase Azul Guerrero Mezcal|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the mezcal-on-chicken-main pairing reads as a quiet alongside.",
-        "source": "Los Vecinos Mezcal|Roast Half Chicken"
-      }
     ],
     "BIG_RED|SALAD": [
       {
-        "template": "Works; safe Cab-on-salad alongside, but not the headline call.",
-        "source": "Caymus Cabernet Sauvignon|House Wedge"
-      },
-      {
         "template": "Works; the two sides share the meal without competing.",
         "source": "Corazón del Sol Malbec|House Wedge"
-      },
-      {
-        "template": "Works; the Cab-on-salad pairing holds at neutral.",
-        "source": "Far Niente Cabernet Sauvignon|Grilled Caesar"
-      },
-      {
-        "template": "Works; the Cab-on-salad call lands as a measured alongside.",
-        "source": "Fattoria Le Pupille Saffredi|Grilled Caesar"
-      },
-      {
-        "template": "Works; capable Cab-on-salad match, not the recommendation.",
-        "source": "Fattoria Le Pupille Saffredi|House Wedge"
-      },
-      {
-        "template": "Works; the Cab-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Grilled Caesar|Heitz Martha's Vineyard"
-      },
-      {
-        "template": "Works; the Cab-on-salad pairing reads as a quiet alongside.",
-        "source": "Grilled Caesar|Jubilation by Colgin"
-      },
-      {
-        "template": "Works; the Cab-on-salad call sits without pulling focus.",
-        "source": "Grilled Caesar|Silver Oak Cabernet Sauvignon"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|FISH_MAIN_RICH": [
-      {
-        "template": "Works; the aperitivo-on-fish-main call lands as a measured alongside.",
-        "source": "Chilean Seabass|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the aperitivo-on-fish-main call holds — neither soars nor fights.",
-        "source": "Chilean Seabass|Fernet Branca"
-      },
-      {
-        "template": "Works; the aperitivo-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Contratto Vermouth|Faroe Island Salmon"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Contratto Vermouth|Swordfish"
-      },
-      {
-        "template": "Works; the aperitivo-on-fish-main pairing reads as a quiet alongside.",
-        "source": "Faroe Island Salmon|Fernet Branca"
-      },
-      {
-        "template": "Works; the aperitivo-on-fish-main call sits without pulling focus.",
-        "source": "Fernet Branca|Swordfish"
-      },
-      {
-        "template": "Works; the aperitivo-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Fernet Menta|Swordfish"
-      }
     ],
     "BOURBON_BOLD|FISH_MAIN_RICH": [
-      {
-        "template": "Works; the bourbon-on-fish-main pairing holds at neutral.",
-        "source": "Chilean Seabass|Hakushu 12 Year"
-      },
-      {
-        "template": "Works; safe bourbon-on-fish-main alongside, but not the headline call.",
-        "source": "Chilean Seabass|Hibiki Japanese Harmony"
-      },
-      {
-        "template": "Works; the bourbon-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Chilean Seabass|Toki Suntory Japanese Whisky"
-      },
-      {
-        "template": "Works; capable bourbon-on-fish-main match, not the recommendation.",
-        "source": "Hakushu 12 Year|Swordfish"
-      },
       {
         "template": "Works; BIB structure is a touch over-specified for the dessert.",
         "source": "Swordfish|Toki Suntory Japanese Whisky"
@@ -10996,166 +5902,21 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_LIGHT|DESSERT_CHOCOLATE": [
-      {
-        "template": "Works; the digestif-on-dessert call sits without pulling focus.",
-        "source": "Chocolate Brownie|Head Fake"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing sits at neutral register without clash.",
-        "source": "Chocolate Brownie|The BG"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-dessert match, not the recommendation.",
-        "source": "Chocolate Brownie|The Happy Wife"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert pairing reads as a quiet alongside.",
-        "source": "Chocolate Brownie|Vesper"
-      },
-      {
-        "template": "Works; safe digestif-on-dessert alongside, but not the headline call.",
-        "source": "Chocolate Cake|Head Fake"
-      },
-      {
-        "template": "Works; the digestif-on-dessert pairing reads as a quiet alongside.",
-        "source": "Head Fake|Peanut Butter Brownie"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-dessert alongside, but not the headline call.",
-        "source": "Mocha Creme|The Happy Wife"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call sits without pulling focus.",
-        "source": "Mocha Creme|Transfusion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-dessert call holds — neither soars nor fights.",
-        "source": "Mocha Creme|Vesper"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-rich-side match, not the recommendation.",
-        "source": "Peanut Butter Brownie|Transfusion"
-      }
     ],
     "WHITE_WINE|DESSERT_CHOCOLATE": [
-      {
-        "template": "Works; the white-on-dessert call lands as a measured alongside.",
-        "source": "Chocolate Brownie|Schloss Vollrads Riesling"
-      },
-      {
-        "template": "Works; capable white-on-dessert match, not the recommendation.",
-        "source": "Chocolate Cake|Schloss Vollrads Riesling"
-      },
-      {
-        "template": "Works; the white-on-dessert pairing holds at neutral.",
-        "source": "Peanut Butter Brownie|Schloss Vollrads Riesling"
-      }
     ],
     "COGNAC|DESSERT_CHOCOLATE": [
       {
-        "template": "Works; safe cognac-on-dessert alongside, but not the headline call.",
-        "source": "Chocolate Cake|Christian Bros Brandy"
-      },
-      {
-        "template": "Works; the cognac-on-dessert call holds — neither soars nor fights.",
-        "source": "Chocolate Cake|Courvoisier Cognac"
-      },
-      {
-        "template": "Works; capable cognac-on-dessert match, not the recommendation.",
-        "source": "Chocolate Cake|Hennessy Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call lands as a measured alongside.",
-        "source": "Chocolate Cake|Remy VSOP Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-dessert pairing reads as a quiet alongside.",
-        "source": "Chocolate Cake|Villon Cognac"
-      },
-      {
         "template": "Works; Christian Bros meets the char at functional register.",
         "source": "Christian Bros Brandy|Mocha Creme"
-      },
-      {
-        "template": "Works; the cognac-on-dessert pairing holds at neutral.",
-        "source": "Mocha Creme|Villon Cognac"
-      }
-    ],
+      }],
     "COGNAC_LUXURY|DESSERT_CHOCOLATE": [
-      {
-        "template": "Works; the luxury-cognac-on-dessert call lands as a measured alongside.",
-        "source": "Chocolate Cake|Louis XIII Cognac"
-      },
-      {
-        "template": "Works; capable luxury-cognac-on-dessert match, not the recommendation.",
-        "source": "Louis XIII Cognac|Mocha Creme"
-      },
       {
         "template": "Works; the PB's fatty density competes with Louis XIII's finesse — a Pierre Ferrand or Hennessy is the right cognac here.",
         "source": "Louis XIII Cognac|Peanut Butter Brownie"
       }
     ],
     "COGNAC|HEARTY_SOUP": [
-      {
-        "template": "Works; the cognac-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Christian Bros Brandy|Clam Chowder"
-      },
-      {
-        "template": "Works; safe cognac-on-dessert alongside, but not the headline call.",
-        "source": "Christian Bros Brandy|French Onion"
-      },
-      {
-        "template": "Works; the cognac-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Christian Bros Brandy|Loaded Potato"
-      },
-      {
-        "template": "Works; the cognac-on-hearty-soup call lands as a measured alongside.",
-        "source": "Christian Bros Brandy|Mushroom Bisque"
-      },
-      {
-        "template": "Works; safe cognac-on-hearty-soup alongside, but not the headline call.",
-        "source": "Christian Bros Brandy|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Clam Chowder|Courvoisier Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Pierre Ferrand Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call sits without pulling focus.",
-        "source": "Clam Chowder|Remy VSOP Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup pairing holds at neutral.",
-        "source": "Clam Chowder|Villon Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Courvoisier Cognac|Gumbo"
-      },
-      {
-        "template": "Works; the cognac-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Courvoisier Cognac|Loaded Potato"
-      },
-      {
-        "template": "Works; the cognac-on-hearty-soup pairing holds at neutral.",
-        "source": "French Onion|Hennessy Cognac"
-      },
-      {
-        "template": "Works; safe cognac-on-light-soup alongside, but not the headline call.",
-        "source": "Gumbo|Hennessy Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call lands as a measured alongside.",
-        "source": "Gumbo|Pierre Ferrand Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-rich-side call sits without pulling focus.",
-        "source": "Loaded Potato|Villon Cognac"
-      }
     ],
     "COGNAC|SALAD": [
       {
@@ -11208,263 +5969,26 @@ const CORPUS_MINED = {
       }
     ],
     "COGNAC|STEAK_BOLD": [
-      {
-        "template": "Works; the cognac-on-dessert call holds — neither soars nor fights.",
-        "source": "Christian Bros Brandy|Porterhouse"
-      },
-      {
-        "template": "Works; the cognac-on-bone-in-ribeye pairing holds at neutral.",
-        "source": "Hennessy Cognac|Porterhouse"
-      },
-      {
-        "template": "Works; the cognac-on-bone-in-ribeye call lands as a measured alongside.",
-        "source": "Porterhouse|Remy VSOP Cognac"
-      },
-      {
-        "template": "Works; the cognac-on-bone-in-ribeye pairing sits at neutral register without clash.",
-        "source": "Porterhouse|Villon Cognac"
-      }
     ],
     "COGNAC|CHICKEN_MAIN": [
-      {
-        "template": "Works; the cognac-on-chicken-main pairing sits at neutral register without clash.",
-        "source": "Christian Bros Brandy|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the cognac-on-chicken-main call holds — neither soars nor fights.",
-        "source": "Courvoisier Cognac|Roast Half Chicken"
-      },
-      {
-        "template": "Works; capable cognac-on-chicken-main match, not the recommendation.",
-        "source": "Pierre Ferrand Cognac|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the cognac-on-chicken-main call sits without pulling focus.",
-        "source": "Remy VSOP Cognac|Roast Half Chicken"
-      }
     ],
     "ELEGANT_RED|CHICKEN_MAIN": [
-      {
-        "template": "Works; safe elegant-red-on-light-side alongside, but not the headline call.",
-        "source": "Château Haut Segottes|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the elegant-red-on-chicken-main call lands as a measured alongside.",
-        "source": "Château de Rouillac|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe elegant-red-on-chicken-main alongside, but not the headline call.",
-        "source": "Le Volte dell'Ornellaia|Roast Half Chicken"
-      }
     ],
     "APERITIVO_BITTER|HEARTY_SOUP": [
       {
-        "template": "Works; capable aperitivo-on-light-soup match, not the recommendation.",
-        "source": "Clam Chowder|Contratto Vermouth"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Fernet Branca"
-      },
-      {
-        "template": "Works; safe aperitivo-on-light-soup alongside, but not the headline call.",
-        "source": "Clam Chowder|Fernet Menta"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Green Chartreuse"
-      },
-      {
-        "template": "Works; safe aperitivo-on-hearty-soup alongside, but not the headline call.",
-        "source": "Contratto Vermouth|Loaded Potato"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side pairing reads as a quiet alongside.",
-        "source": "Contratto Vermouth|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Fernet Branca|Gumbo"
-      },
-      {
-        "template": "Works; the aperitivo-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Fernet Branca|Loaded Potato"
-      },
-      {
-        "template": "Works; capable aperitivo-on-hearty-soup match, not the recommendation.",
-        "source": "Fernet Branca|Mushroom Bisque"
-      },
-      {
-        "template": "Works; the aperitivo-on-hearty-soup call sits without pulling focus.",
-        "source": "Fernet Menta|Loaded Potato"
-      },
-      {
-        "template": "Works; the aperitivo-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Fernet Menta|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "French Onion|Green Chartreuse"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup call lands as a measured alongside.",
-        "source": "Green Chartreuse|Gumbo"
-      },
-      {
         "template": "Works; a measured close to the meal.",
         "source": "Green Chartreuse|Loaded Potato"
-      },
-      {
-        "template": "Works; the digestif-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Green Chartreuse|Mushroom Bisque"
-      }
-    ],
+      }],
     "HEAVY_SPIRIT|HEARTY_SOUP": [
-      {
-        "template": "Works; the bourbon-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Clam Chowder|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call sits without pulling focus.",
-        "source": "Clam Chowder|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Clam Chowder|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing holds at neutral.",
-        "source": "Clam Chowder|Myers's Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "Doctor Bird Jamaica Rum|French Onion"
-      },
-      {
-        "template": "Works; capable bourbon-on-light-soup match, not the recommendation.",
-        "source": "Doctor Bird Jamaica Rum|Gumbo"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup call sits without pulling focus.",
-        "source": "Doctor Bird Jamaica Rum|Loaded Potato"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup call lands as a measured alongside.",
-        "source": "Doctor Bird Jamaica Rum|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup pairing holds at neutral.",
-        "source": "French Onion|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "French Onion|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "French Onion|Myers's Rum"
-      },
-      {
-        "template": "Works; safe light-spirit-on-light-soup alongside, but not the headline call.",
-        "source": "Gumbo|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Gumbo|Myers's Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call lands as a measured alongside.",
-        "source": "Gumbo|Ron Zacapa Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Jung and Wulff Guyana|Loaded Potato"
-      },
-      {
-        "template": "Works; safe light-spirit-on-hearty-soup alongside, but not the headline call.",
-        "source": "Jung and Wulff Trinidad|Loaded Potato"
-      },
-      {
-        "template": "Works; capable light-spirit-on-hearty-soup match, not the recommendation.",
-        "source": "Jung and Wulff Trinidad|Shrimp Bisque"
-      },
-      {
-        "template": "Works; the light-spirit-on-hearty-soup call lands as a measured alongside.",
-        "source": "Mushroom Bisque|Ron Zacapa Rum"
-      }
     ],
     "SPARKLING|HEARTY_SOUP": [
-      {
-        "template": "Works; safe Champagne-on-light-soup alongside, but not the headline call.",
-        "source": "Clam Chowder|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Works; the Champagne-on-light-side call lands as a measured alongside.",
-        "source": "Clam Chowder|Laurent Perrier Brut Rosé"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Clam Chowder|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup call holds — neither soars nor fights.",
-        "source": "Clam Chowder|Pierre Gimonnet Special Club Brut"
-      },
       {
         "template": "Works; the opener sits without competing.",
         "source": "Clam Chowder|Pommery Cuvée Louise"
       },
       {
-        "template": "Works; the Champagne-on-light-soup pairing holds at neutral.",
-        "source": "Clam Chowder|Robert Moncuit Les Grand Blancs"
-      },
-      {
-        "template": "Works; capable Champagne-on-light-soup match, not the recommendation.",
-        "source": "Clam Chowder|Veuve Clicquot Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-hearty-soup call sits without pulling focus.",
-        "source": "French Onion|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Works; the Champagne-on-hearty-soup pairing holds at neutral.",
-        "source": "French Onion|Laurent Perrier Brut Rosé"
-      },
-      {
-        "template": "Works; the Champagne-on-hearty-soup call lands as a measured alongside.",
-        "source": "French Onion|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-hearty-soup pairing sits at neutral register without clash.",
-        "source": "French Onion|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "French Onion|Pommery Cuvée Louise"
-      },
-      {
-        "template": "Works; safe Champagne-on-hearty-soup alongside, but not the headline call.",
-        "source": "French Onion|Robert Moncuit Les Grand Blancs"
-      },
-      {
-        "template": "Works; capable Champagne-on-hearty-soup match, not the recommendation.",
-        "source": "French Onion|Veuve Clicquot Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Gumbo|Il Colle Prosecco Superiore"
-      },
-      {
         "template": "Works; the side call holds at neutral register.",
         "source": "Gumbo|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-hearty-soup call holds — neither soars nor fights.",
-        "source": "Pierre Gimonnet Special Club Brut|Shrimp Bisque"
       },
       {
         "template": "Works; too light for dessert density at this level.",
@@ -11472,160 +5996,19 @@ const CORPUS_MINED = {
       }
     ],
     "ELEGANT_RED|RICH_SIDE": [
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Clos Petit Ona Grenache|Truffle Fries"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call holds — neither soars nor fights.",
-        "source": "Cristom Mt Jefferson Cuvée|Truffle Fries"
-      },
-      {
-        "template": "Works; safe elegant-red-on-rich-side alongside, but not the headline call.",
-        "source": "Daniel Chotard Sancerre Rouge|Truffle Fries"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call lands as a measured alongside.",
-        "source": "Elk Cove Five Mountain|Truffle Fries"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing reads as a quiet alongside.",
-        "source": "Fento Ollo de Sapo Mencía|Truffle Fries"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side pairing holds at neutral.",
-        "source": "J Davies Ferrington Vineyards|Truffle Fries"
-      },
-      {
-        "template": "Works; the elegant-red-on-rich-side call sits without pulling focus.",
-        "source": "Macauley Pinot Noir|Truffle Fries"
-      },
-      {
-        "template": "Works; capable elegant-red-on-rich-side match, not the recommendation.",
-        "source": "Marc Brédif Chinon|Truffle Fries"
-      }
     ],
     "APERITIVO_BITTER|STEAK_BOLD": [
       {
-        "template": "Works; the aperitivo-on-bone-in-ribeye pairing sits at neutral register without clash.",
-        "source": "Contratto Vermouth|Cowboy Ribeye"
-      },
-      {
-        "template": "Works; the aperitivo-on-hearty-soup pairing reads as a quiet alongside.",
-        "source": "Contratto Vermouth|Kansas City"
-      },
-      {
-        "template": "Works; the aperitivo-on-bone-in-ribeye pairing holds at neutral.",
-        "source": "Contratto Vermouth|The Tomahawk"
-      },
-      {
-        "template": "Works; the aperitivo-on-bone-in-ribeye pairing reads as a quiet alongside.",
-        "source": "Cowboy Ribeye|Fernet Branca"
-      },
-      {
-        "template": "Works; the digestif-on-bone-in-ribeye pairing holds at neutral.",
-        "source": "Cowboy Ribeye|Green Chartreuse"
-      },
-      {
-        "template": "Works; the aperitivo-on-bone-in-ribeye call holds — neither soars nor fights.",
-        "source": "Fernet Branca|Porterhouse"
-      },
-      {
-        "template": "Works; the aperitivo-on-bone-in-ribeye call lands as a measured alongside.",
-        "source": "Fernet Menta|Porterhouse"
-      },
-      {
         "template": "Works; the side sits without pulling focus.",
         "source": "Fernet Menta|The Tomahawk"
-      },
-      {
-        "template": "Works; safe digestif-on-strip-or-filet alongside, but not the headline call.",
-        "source": "Green Chartreuse|Kansas City"
-      },
-      {
-        "template": "Works; the digestif-on-bone-in-ribeye call sits without pulling focus.",
-        "source": "Green Chartreuse|Porterhouse"
-      },
-      {
-        "template": "Works; the digestif-on-strip-or-filet pairing reads as a quiet alongside.",
-        "source": "Kansas City|Mata Hari Absinthe"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|FISH_MAIN_DELICATE": [
-      {
-        "template": "Works; the aperitivo-on-fish-main pairing reads as a quiet alongside.",
-        "source": "Contratto Vermouth|Market Fish"
-      },
-      {
-        "template": "Works; capable aperitivo-on-fish-main match, not the recommendation.",
-        "source": "Contratto Vermouth|Rainbow Trout"
-      },
-      {
-        "template": "Works; the aperitivo-on-fish-main call sits without pulling focus.",
-        "source": "Contratto Vermouth|Salt-Cured Halibut"
-      },
-      {
-        "template": "Works; the aperitivo-on-fish-main pairing holds at neutral.",
-        "source": "Fernet Branca|Market Fish"
-      },
-      {
-        "template": "Works; the aperitivo-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Fernet Branca|Rainbow Trout"
-      },
-      {
-        "template": "Works; the aperitivo-on-fish-main call lands as a measured alongside.",
-        "source": "Fernet Menta|Salt-Cured Halibut"
-      }
     ],
     "APERITIVO_BITTER|CHICKEN_MAIN": [
-      {
-        "template": "Works; safe aperitivo-on-chicken-main alongside, but not the headline call.",
-        "source": "Contratto Vermouth|Roast Half Chicken"
-      },
-      {
-        "template": "Works; capable aperitivo-on-chicken-main match, not the recommendation.",
-        "source": "Fernet Branca|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the digestif-on-chicken-main pairing holds at neutral.",
-        "source": "Green Chartreuse|Roast Half Chicken"
-      }
     ],
     "APERITIVO_BITTER|VEG_MAIN": [
-      {
-        "template": "Works; safe aperitivo-on-light-soup alongside, but not the headline call.",
-        "source": "Contratto Vermouth|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the aperitivo-on-light-side call sits without pulling focus.",
-        "source": "Fernet Branca|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the digestif-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Green Chartreuse|Vegetable Curry with Chickpeas"
-      }
     ],
     "COGNAC|VEG_MAIN": [
-      {
-        "template": "Works; capable cognac-on-light-soup match, not the recommendation.",
-        "source": "Courvoisier Cognac|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the cognac-on-dessert call holds — neither soars nor fights.",
-        "source": "Hennessy Cognac|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call holds — neither soars nor fights.",
-        "source": "Pierre Ferrand Cognac|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; safe cognac-on-light-soup alongside, but not the headline call.",
-        "source": "Remy VSOP Cognac|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the cognac-on-light-soup call sits without pulling focus.",
-        "source": "Vegetable Curry with Chickpeas|Villon Cognac"
-      }
     ],
     "DEFAULT|STEAK_BOLD": [
       {
@@ -11666,118 +6049,17 @@ const CORPUS_MINED = {
       }
     ],
     "HEAVY_SPIRIT|DESSERT_LIGHT": [
-      {
-        "template": "Works; safe bourbon-on-dessert alongside, but not the headline call.",
-        "source": "Creme Brulee|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Works; the bourbon-on-dessert pairing sits at neutral register without clash.",
-        "source": "Creme Brulee|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Works; capable light-spirit-on-dessert match, not the recommendation.",
-        "source": "Creme Brulee|Jung and Wulff Trinidad"
-      }
     ],
     "HEAVY_SPIRIT|SALAD": [
-      {
-        "template": "Works; the bourbon-on-salad call holds — neither soars nor fights.",
-        "source": "Doctor Bird Jamaica Rum|Grilled Caesar"
-      },
-      {
-        "template": "Works; safe bourbon-on-salad alongside, but not the headline call.",
-        "source": "Doctor Bird Jamaica Rum|House Wedge"
-      },
-      {
-        "template": "Works; the bourbon-on-salad call lands as a measured alongside.",
-        "source": "Grilled Caesar|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Works; the light-spirit-on-salad call lands as a measured alongside.",
-        "source": "Grilled Caesar|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the bourbon-on-salad call sits without pulling focus.",
-        "source": "Grilled Caesar|Myers's Rum"
-      },
-      {
-        "template": "Works; capable light-spirit-on-dessert match, not the recommendation.",
-        "source": "House Wedge|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Works; safe light-spirit-on-salad alongside, but not the headline call.",
-        "source": "House Wedge|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Works; the bourbon-on-salad pairing reads as a quiet alongside.",
-        "source": "House Wedge|Myers's Rum"
-      },
-      {
-        "template": "Works; the light-spirit-on-salad pairing holds at neutral.",
-        "source": "House Wedge|Ron Zacapa Rum"
-      }
     ],
     "HEAVY_SPIRIT|CHICKEN_MAIN": [
-      {
-        "template": "Works; the bourbon-on-chicken-main pairing reads as a quiet alongside.",
-        "source": "Doctor Bird Jamaica Rum|Roast Half Chicken"
-      },
-      {
-        "template": "Works; capable bourbon-on-chicken-main match, not the recommendation.",
-        "source": "Jung and Wulff Guyana|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe light-spirit-on-light-soup alongside, but not the headline call.",
-        "source": "Jung and Wulff Trinidad|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Myers's Rum|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-spirit-on-chicken-main call lands as a measured alongside.",
-        "source": "Roast Half Chicken|Ron Zacapa Rum"
-      }
     ],
     "HEAVY_SPIRIT|STEAK_BOLD": [
       {
-        "template": "Works; capable bourbon-on-bone-in-ribeye match, not the recommendation.",
-        "source": "Doctor Bird Jamaica Rum|The Tomahawk"
-      },
-      {
         "template": "Works; a measured close to the meal.",
         "source": "Jung and Wulff Guyana|The Tomahawk"
-      },
-      {
-        "template": "Works; the light-spirit-on-bone-in-ribeye call holds — neither soars nor fights.",
-        "source": "Jung and Wulff Trinidad|The Tomahawk"
-      },
-      {
-        "template": "Works; the bourbon-on-bone-in-ribeye call sits without pulling focus.",
-        "source": "Myers's Rum|The Tomahawk"
-      },
-      {
-        "template": "Works; the light-spirit-on-bone-in-ribeye pairing sits at neutral register without clash.",
-        "source": "Ron Zacapa Rum|The Tomahawk"
-      }
-    ],
+      }],
     "HEAVY_SPIRIT|VEG_MAIN": [
-      {
-        "template": "Works; the bourbon-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Doctor Bird Jamaica Rum|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the bourbon-on-light-soup call holds — neither soars nor fights.",
-        "source": "Jung and Wulff Guyana|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Jung and Wulff Trinidad|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-spirit-on-light-soup call holds — neither soars nor fights.",
-        "source": "Ron Zacapa Rum|Vegetable Curry with Chickpeas"
-      }
     ],
     "BOURBON_BOLD|FISH_MAIN_DELICATE": [
       {
@@ -11793,28 +6075,12 @@ const CORPUS_MINED = {
         "source": "Hakushu 12 Year|Market Fish"
       },
       {
-        "template": "Works; safe bourbon-on-fish-main alongside, but not the headline call.",
-        "source": "Hakushu 12 Year|Salt-Cured Halibut"
-      },
-      {
         "template": "Works; master-blender doesn't drive.",
         "source": "Hakushu 12 Year|Tuxedo-Crusted Yellowfin Tuna"
       },
       {
-        "template": "Works; the bourbon-on-fish-main pairing sits at neutral register without clash.",
-        "source": "Hibiki Japanese Harmony|Market Fish"
-      },
-      {
-        "template": "Works; the bourbon-on-fish-main call lands as a measured alongside.",
-        "source": "Hibiki Japanese Harmony|Rainbow Trout"
-      },
-      {
         "template": "Works; boutique-release covers both cuts without standing out.",
         "source": "Hibiki Japanese Harmony|Salt-Cured Halibut"
-      },
-      {
-        "template": "Works; the bourbon-on-fish-main call sits without pulling focus.",
-        "source": "Hibiki Japanese Harmony|Tuxedo-Crusted Yellowfin Tuna"
       },
       {
         "template": "Works; Jameson's smooth triple-distilled character is gentle enough to sit alongside scallops where heavier whiskies can't; not featured but the softest whisky option.",
@@ -11825,28 +6091,8 @@ const CORPUS_MINED = {
         "source": "Kentucky Owl St. Patrick's|Seared Scallops"
       },
       {
-        "template": "Works; the bourbon-on-fish-main call holds — neither soars nor fights.",
-        "source": "Market Fish|Toki Suntory Japanese Whisky"
-      },
-      {
-        "template": "Works; capable bourbon-on-fish-main match, not the recommendation.",
-        "source": "Market Fish|Yamazaki 12 Year"
-      },
-      {
-        "template": "Works; the bourbon-on-fish-main pairing holds at neutral.",
-        "source": "Market Fish|Yamazaki 18 Year"
-      },
-      {
         "template": "Works; HH 20 handles dessert density at collector register.",
         "source": "Rainbow Trout|Toki Suntory Japanese Whisky"
-      },
-      {
-        "template": "Works; the bourbon-on-fish-main pairing reads as a quiet alongside.",
-        "source": "Rainbow Trout|Yamazaki 12 Year"
-      },
-      {
-        "template": "Works; capable digestif-on-rich-side match, not the recommendation.",
-        "source": "Rainbow Trout|Yamazaki 18 Year"
       },
       {
         "template": "Works; Redbreast 12's pot still richness is heavier for scallops than Jameson's smoothness, but still lighter than most whiskies.",
@@ -11894,38 +6140,6 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_LIGHT|STEAK_BOLD": [
-      {
-        "template": "Works; the digestif-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Head Fake|Kansas City"
-      },
-      {
-        "template": "Works; the digestif-on-bone-in-ribeye call sits without pulling focus.",
-        "source": "Head Fake|Porterhouse"
-      },
-      {
-        "template": "Works; the light-cocktail-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Kansas City|Paloma"
-      },
-      {
-        "template": "Works; capable light-cocktail-on-strip-or-filet match, not the recommendation.",
-        "source": "Kansas City|Transfusion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-strip-or-filet pairing reads as a quiet alongside.",
-        "source": "Kansas City|Vesper"
-      },
-      {
-        "template": "Works; safe light-cocktail-on-bone-in-ribeye alongside, but not the headline call.",
-        "source": "Margarita|Porterhouse"
-      },
-      {
-        "template": "Works; the light-cocktail-on-bone-in-ribeye pairing reads as a quiet alongside.",
-        "source": "Porterhouse|Transfusion"
-      },
-      {
-        "template": "Works; the light-cocktail-on-bone-in-ribeye call lands as a measured alongside.",
-        "source": "Porterhouse|Vesper"
-      }
     ],
     "DEFAULT|SALAD": [
       {
@@ -11946,134 +6160,18 @@ const CORPUS_MINED = {
       }
     ],
     "SPARKLING|RICH_SIDE": [
-      {
-        "template": "Works; the Champagne-on-rich-side call holds — neither soars nor fights.",
-        "source": "Il Colle Prosecco Superiore|Mushrooms"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side pairing holds at neutral.",
-        "source": "Il Colle Prosecco Superiore|Truffle Fries"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side call sits without pulling focus.",
-        "source": "Laurent Perrier Brut Rosé|Mushrooms"
-      },
-      {
-        "template": "Works; capable Champagne-on-rich-side match, not the recommendation.",
-        "source": "Mushrooms|Paul Bara Grand Rosé Brut"
-      },
-      {
-        "template": "Works; safe Champagne-on-rich-side alongside, but not the headline call.",
-        "source": "Mushrooms|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side pairing sits at neutral register without clash.",
-        "source": "Mushrooms|Pommery Cuvée Louise"
-      },
-      {
-        "template": "Works; the Champagne-on-rich-side call lands as a measured alongside.",
-        "source": "Mushrooms|Robert Moncuit Les Grand Blancs"
-      },
-      {
-        "template": "Works; capable Champagne-on-hearty-soup match, not the recommendation.",
-        "source": "Mushrooms|Veuve Clicquot Brut"
-      }
     ],
     "SPARKLING|CHICKEN_MAIN": [
-      {
-        "template": "Works; capable Champagne-on-chicken-main match, not the recommendation.",
-        "source": "Il Colle Prosecco Superiore|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the Champagne-on-chicken-main call lands as a measured alongside.",
-        "source": "Paul Bara Grand Rosé Brut|Roast Half Chicken"
-      }
     ],
     "SPARKLING|VEG_MAIN": [
-      {
-        "template": "Works; the Champagne-on-light-soup call lands as a measured alongside.",
-        "source": "Il Colle Prosecco Superiore|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup pairing holds at neutral.",
-        "source": "Laurent Perrier Le Cuvée Brut|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; capable Champagne-on-light-soup match, not the recommendation.",
-        "source": "Paul Bara Grand Rosé Brut|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup call holds — neither soars nor fights.",
-        "source": "Pierre Gimonnet Special Club Brut|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup pairing sits at neutral register without clash.",
-        "source": "Pommery Cuvée Louise|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the Champagne-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Vegetable Curry with Chickpeas|Veuve Clicquot Brut"
-      }
     ],
     "COCKTAIL_BOLD|RICH_SIDE": [
-      {
-        "template": "Works; safe light-cocktail-on-rich-side alongside, but not the headline call.",
-        "source": "Inhibited|Mushrooms"
-      }
     ],
     "COCKTAIL_BOLD|CHICKEN_MAIN": [
-      {
-        "template": "Works; the light-cocktail-on-chicken-main pairing sits at neutral register without clash.",
-        "source": "Inhibited|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-cocktail-on-chicken-main pairing reads as a quiet alongside.",
-        "source": "Negroni|Roast Half Chicken"
-      },
-      {
-        "template": "Works; the light-cocktail-on-chicken-main call lands as a measured alongside.",
-        "source": "Not a Paper Plane|Roast Half Chicken"
-      },
-      {
-        "template": "Works; safe whiskey-cocktail-on-chicken-main alongside, but not the headline call.",
-        "source": "Roast Half Chicken|Vieux Carré"
-      }
     ],
     "COCKTAIL_BOLD|VEG_MAIN": [
-      {
-        "template": "Works; capable light-cocktail-on-light-soup match, not the recommendation.",
-        "source": "Inhibited|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup pairing reads as a quiet alongside.",
-        "source": "Negroni|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the light-cocktail-on-light-soup call holds — neither soars nor fights.",
-        "source": "Not a Paper Plane|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup call sits without pulling focus.",
-        "source": "Sazerac|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup pairing reads as a quiet alongside.",
-        "source": "The Manhattan|Vegetable Curry with Chickpeas"
-      },
-      {
-        "template": "Works; the whiskey-cocktail-on-light-soup pairing holds at neutral.",
-        "source": "Vegetable Curry with Chickpeas|Vieux Carré"
-      }
     ],
     "WHITE_WINE|STEAK_BOLD": [
-      {
-        "template": "Works; the white-on-strip-or-filet call holds — neither soars nor fights.",
-        "source": "Kansas City|Le Garenne Rosé"
-      },
-      {
-        "template": "Works; the white-on-bone-in-ribeye call holds — neither soars nor fights.",
-        "source": "Le Garenne Rosé|Porterhouse"
-      }
     ],
     "DEFAULT|RICH_SIDE": [
       {
@@ -12122,10 +6220,6 @@ const CORPUS_MINED = {
       }
     ],
     "WHITE_WINE|LIGHT_STARTER": [
-      {
-        "template": "Works; the white-on-delicate-shellfish pairing sits at neutral register without clash.",
-        "source": "Schloss Vollrads Riesling|Seafood Tower"
-      }
     ],
     "DEFAULT|FISH_MAIN_DELICATE": [
       {
@@ -12861,22 +6955,6 @@ const CORPUS_MINED = {
         "source": "1792 Small Batch|Bone Marrow"
       },
       {
-        "template": "Strong; the bourbon-on-hearty-starter match that holds its register.",
-        "source": "1792 Small Batch|Escargot"
-      },
-      {
-        "template": "Strong; reliable bourbon-on-hearty-starter recommendation.",
-        "source": "1792 Small Batch|Prime Tartare"
-      },
-      {
-        "template": "Strong; the bourbon-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "1792 Sweet Wheat|Escargot"
-      },
-      {
-        "template": "Strong; capable bourbon-on-hearty-starter pour for guests who want a confident pairing.",
-        "source": "1792 Sweet Wheat|Prime Tartare"
-      },
-      {
         "template": "Strong; Aberlour 16's balanced bourbon-plus-sherry character sits alongside marrow; Fernet Branca still cuts it harder.",
         "source": "Aberlour 16|Bone Marrow"
       },
@@ -12885,28 +6963,12 @@ const CORPUS_MINED = {
         "source": "Aberlour 16|Escargot"
       },
       {
-        "template": "Strong; the server-confident bourbon-on-hearty-starter call.",
-        "source": "Aberlour 16|Prime Tartare"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid bourbon-on-hearty-starter match.",
-        "source": "Angel's Envy Triple Cask|Escargot"
-      },
-      {
-        "template": "Strong; the bourbon-on-hearty-starter pairing holds without overshooting.",
-        "source": "Angel's Envy|Prime Tartare"
-      },
-      {
         "template": "Strong; collector intensity at allocated register; Fernet Branca still cuts it harder.",
         "source": "Baker's|Escargot"
       },
       {
         "template": "Strong; the 10-year oak gives the side backbone distinct from wheated approaches; Fernet Branca still cuts it harder.",
         "source": "Balvenie 12 American Oak|Escargot"
-      },
-      {
-        "template": "Strong; the bourbon-on-hearty-starter call lands without effort.",
-        "source": "Balvenie 12 American Oak|Prime Tartare"
       },
       {
         "template": "Strong; Caribbean Cask's brown-sugar-and-vanilla sits alongside marrow with tropical character; Fernet Branca still cuts it harder.",
@@ -13153,10 +7215,6 @@ const CORPUS_MINED = {
         "source": "Escargot|Glenfiddich 14"
       },
       {
-        "template": "Strong; non-wheated profile keeps the pairing from going sweet-on-sweet; Fernet Branca still cuts it harder.",
-        "source": "Escargot|Glenlivet 12"
-      },
-      {
         "template": "Strong; multi-distillery complexity sits with richness at craft-blender register; Fernet Branca still cuts it harder.",
         "source": "Escargot|Glenmorangie 18"
       },
@@ -13219,10 +7277,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Tullamore's drier character engages the bleu at traditional register; Fernet Branca still cuts it harder.",
         "source": "Escargot|Tullamore D.E.W."
-      },
-      {
-        "template": "Strong; the digestif-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Escargot|WhistlePig 12 Year Old World"
       },
       {
         "template": "Strong; bonded weight at matched premium register; Fernet Branca still cuts it harder.",
@@ -13327,14 +7381,6 @@ const CORPUS_MINED = {
     ],
     "BOURBON_BOLD|STEAK_LEAN": [
       {
-        "template": "Strong; reliable bourbon-on-strip-or-filet recommendation.",
-        "source": "1792 Small Batch|Bone-In Filet"
-      },
-      {
-        "template": "Strong; the bourbon-on-strip-or-filet call lands without effort.",
-        "source": "1792 Sweet Wheat|Bone-In Filet"
-      },
-      {
         "template": "Strong; boutique-craft is capable but single-distillery premium bourbons bring more focused character.",
         "source": "A Midnight's Winter Dram|Filet Mignon"
       },
@@ -13343,16 +7389,8 @@ const CORPUS_MINED = {
         "source": "Baker's|Bone-In Filet"
       },
       {
-        "template": "Strong; recommend with confidence — solid bourbon-on-strip-or-filet match.",
-        "source": "Bardstown Discovery #6|Bone-In Filet"
-      },
-      {
         "template": "Strong; the craft-blender complexity is capable but single-distillery aged bourbons (Weller 12, E.H.",
         "source": "Bardstown Discovery #6|Filet Mignon"
-      },
-      {
-        "template": "Strong; the bourbon-on-strip-or-filet match that holds its register.",
-        "source": "Bardstown Founders KBS|Bone-In Filet"
       },
       {
         "template": "Strong; KBS's beer-barrel distinctiveness is a conversation-starter but single-distillery aged bourbons (Weller 12, Blanton's) bring more traditional filet character.",
@@ -13361,10 +7399,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Bardstown Foursquare's tropical rum-cask character frames tenderloin at Caribbean-finish register.",
         "source": "Bardstown Foursquare|Filet Mignon"
-      },
-      {
-        "template": "Strong; the bourbon-on-strip-or-filet pairing holds without overshooting.",
-        "source": "Bardstown Fusion #7|Bone-In Filet"
       },
       {
         "template": "Strong; Fusion complexity is capable but single-distillery premium bourbons bring more focused character for this cut.",
@@ -13379,20 +7413,8 @@ const CORPUS_MINED = {
         "source": "Bardstown Rishi's Single Barrel|Filet Mignon"
       },
       {
-        "template": "Strong; the server-confident bourbon-on-strip-or-filet call.",
-        "source": "Basil Hayden's 10 Year|Bone-In Filet"
-      },
-      {
         "template": "Strong; accessible everyday match.",
         "source": "Basil Hayden's Malted Rye|Bone-In Filet"
-      },
-      {
-        "template": "Strong; capable bourbon-on-strip-or-filet pour for guests who want a confident pairing.",
-        "source": "Basil Hayden's Toast|Bone-In Filet"
-      },
-      {
-        "template": "Strong; the bourbon-on-strip-or-filet pairing servers pour without second-guessing.",
-        "source": "Blood Oath Pact 10|Bone-In Filet"
       },
       {
         "template": "Strong; the 10th-Pact collector-edition is capable but single-distillery premium bourbons bring more focused filet character.",
@@ -13429,10 +7451,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; covers both cuts cleanly.",
         "source": "Bone-In Filet|Michter's US*1 Rye"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid digestif-on-strip-or-filet match.",
-        "source": "Bone-In Filet|WhistlePig 12 Year Old World"
       },
       {
         "template": "Strong; extended-maturation character sits with richness.",
@@ -13501,10 +7519,6 @@ const CORPUS_MINED = {
         "source": "1792 Sweet Wheat|Porterhouse"
       },
       {
-        "template": "Strong; the bourbon-on-bone-in-ribeye pairing servers pour without second-guessing.",
-        "source": "1792 Sweet Wheat|The Tomahawk"
-      },
-      {
         "template": "Strong; boutique-craft covers the cut with rare-release character.",
         "source": "A Midnight's Winter Dram|The Tomahawk"
       },
@@ -13515,14 +7529,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Aberlour 16 handles the strip with balanced character; Macallan 18 and Balvenie 21 Portwood are the featured Sherried Speyside-KC matches.",
         "source": "Aberlour 16|Kansas City"
-      },
-      {
-        "template": "Strong; capable bourbon-on-bone-in-ribeye pour for guests who want a confident pairing.",
-        "source": "Aberlour 16|The Tomahawk"
-      },
-      {
-        "template": "Strong; reliable bourbon-on-bone-in-ribeye recommendation.",
-        "source": "Angel's Envy Cask Strength|Porterhouse"
       },
       {
         "template": "Strong; AE Triple Cask frames the ribeye at distinctive register; AE Cask Strength's 117+ proof is better for cap-fat.",
@@ -13543,10 +7549,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; AE handles the strip at port-finish register; AE Cask Strength's 117+ proof is the upgrade for marbling.",
         "source": "Angel's Envy|Kansas City"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid bourbon-on-bone-in-ribeye match.",
-        "source": "Angel's Envy|The Tomahawk"
       },
       {
         "template": "Strong; bold proof leans strip-side, filet tolerates.",
@@ -13601,14 +7603,6 @@ const CORPUS_MINED = {
         "source": "Bardstown Château Laboude|Kansas City"
       },
       {
-        "template": "Strong; the bourbon-on-bone-in-ribeye call lands without effort.",
-        "source": "Bardstown Château Laboude|Porterhouse"
-      },
-      {
-        "template": "Strong; the bourbon-on-bone-in-ribeye match that holds its register.",
-        "source": "Bardstown Château Laboude|The Tomahawk"
-      },
-      {
         "template": "Strong; craft-blender complexity covers the cut but Blanton's Gold or E.H.",
         "source": "Bardstown Discovery #6|The Tomahawk"
       },
@@ -13635,10 +7629,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; a refined Basil Hayden's call for this plate.",
         "source": "Basil Hayden's 10 Year|Porterhouse"
-      },
-      {
-        "template": "Strong; the bourbon-on-bone-in-ribeye pairing holds without overshooting.",
-        "source": "Basil Hayden's 10 Year|The Tomahawk"
       },
       {
         "template": "Strong; BH Red Wine Cask is under-specified for cap-fat at 80-proof; AE Cask Strength handles ribeye better.",
@@ -13827,10 +7817,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Cragganmore's complexity frames the two-cut plate with Classic Malt character.",
         "source": "Cragganmore 12|Porterhouse"
-      },
-      {
-        "template": "Strong; the server-confident bourbon-on-bone-in-ribeye call.",
-        "source": "Cragganmore 12|The Tomahawk"
       },
       {
         "template": "Strong; Dalmore's Matusalem-cask depth frames the two-cut plate at Highland-premium register.",
@@ -14271,34 +8257,6 @@ const CORPUS_MINED = {
     ],
     "BIG_RED|STEAK_LEAN": [
       {
-        "template": "Strong; the server-confident Cab-on-strip-or-filet call.",
-        "source": "1881 Napa Valley|Bone-In Filet"
-      },
-      {
-        "template": "Strong; the Cab-on-strip-or-filet call lands without effort.",
-        "source": "Alexander Valley Cyrus|Bone-In Filet"
-      },
-      {
-        "template": "Strong; reliable Cab-on-strip-or-filet recommendation.",
-        "source": "Austin Hope Cabernet Sauvignon|Bone-In Filet"
-      },
-      {
-        "template": "Strong; capable Cab-on-strip-or-filet pour for guests who want a confident pairing.",
-        "source": "Bodega Noemia A Lisa|Bone-In Filet"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid Cab-on-strip-or-filet match.",
-        "source": "Bone-In Filet|Brandlin Estate Cabernet Sauvignon"
-      },
-      {
-        "template": "Strong; reliable Cab-on-hearty-starter recommendation.",
-        "source": "Bone-In Filet|Cade Cabernet Sauvignon"
-      },
-      {
-        "template": "Strong; the Cab-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Bone-In Filet|Château Batailley"
-      },
-      {
         "template": "Strong; reliable match across the courses.",
         "source": "Bone-In Filet|Corazón del Sol Malbec"
       },
@@ -14307,20 +8265,8 @@ const CORPUS_MINED = {
         "source": "Bone-In Filet|Epoch Ingenuity"
       },
       {
-        "template": "Strong; the Cab-on-strip-or-filet match that holds its register.",
-        "source": "Bone-In Filet|Heitz Trailside Vineyard"
-      },
-      {
         "template": "Strong; the side composes cleanly with the cut.",
         "source": "Bone-In Filet|Le Ragnaie Brunello"
-      },
-      {
-        "template": "Strong; the Cab-on-strip-or-filet pairing servers pour without second-guessing.",
-        "source": "Bone-In Filet|Les Pallières Raciné"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid Cab-on-hearty-starter match.",
-        "source": "Bone-In Filet|Odette Cabernet Sauvignon"
       },
       {
         "template": "Strong; reliable opener for the cut.",
@@ -14329,40 +8275,8 @@ const CORPUS_MINED = {
     ],
     "BIG_RED|HEARTY_STARTER": [
       {
-        "template": "Strong; the server-confident Cab-on-hearty-starter call.",
-        "source": "1881 Napa Valley|Escargot"
-      },
-      {
-        "template": "Strong; the Cab-on-hearty-starter call lands without effort.",
-        "source": "1881 Napa Valley|Prime Tartare"
-      },
-      {
-        "template": "Strong; the Cab-on-hearty-starter match that holds its register.",
-        "source": "Alexander Valley Cyrus|Escargot"
-      },
-      {
         "template": "Strong; reliable match across the courses.",
         "source": "Alexander Valley Cyrus|Prime Tartare"
-      },
-      {
-        "template": "Strong; the Cab-on-hearty-starter pairing holds without overshooting.",
-        "source": "Austin Hope Cabernet Sauvignon|Escargot"
-      },
-      {
-        "template": "Strong; the Cab-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Austin Hope Cabernet Sauvignon|Prime Tartare"
-      },
-      {
-        "template": "Strong; capable Cab-on-hearty-starter pour for guests who want a confident pairing.",
-        "source": "Bodega Noemia A Lisa|Escargot"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid Cab-on-hearty-starter match.",
-        "source": "Brandlin Estate Cabernet Sauvignon|Escargot"
-      },
-      {
-        "template": "Strong; reliable Cab-on-hearty-starter recommendation.",
-        "source": "Brandlin Estate Cabernet Sauvignon|Prime Tartare"
       },
       {
         "template": "Strong; reliable opener for the cut.",
@@ -14375,58 +8289,14 @@ const CORPUS_MINED = {
     ],
     "BIG_RED|STEAK_BOLD": [
       {
-        "template": "Strong; capable Cab-on-bone-in-ribeye pour for guests who want a confident pairing.",
-        "source": "1881 Napa Valley|The Tomahawk"
-      },
-      {
-        "template": "Strong; the server-confident Cab-on-bone-in-ribeye call.",
-        "source": "Bodega Noemia A Lisa|The Tomahawk"
-      },
-      {
-        "template": "Strong; the Cab-on-bone-in-ribeye call lands without effort.",
-        "source": "Château Batailley|The Tomahawk"
-      },
-      {
-        "template": "Strong; the Cab-on-bone-in-ribeye pairing servers pour without second-guessing.",
-        "source": "Château Gombaude-Guillot|The Tomahawk"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid Cab-on-bone-in-ribeye match.",
-        "source": "Epoch Ingenuity|Porterhouse"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid digestif-on-bone-in-ribeye match.",
-        "source": "G.D. Vajra Albe Nebbiolo|The Tomahawk"
-      },
-      {
-        "template": "Strong; the Cab-on-bone-in-ribeye pairing holds without overshooting.",
-        "source": "Ghost Block Zinfandel|Porterhouse"
-      },
-      {
-        "template": "Strong; the Cab-on-bone-in-ribeye match that holds its register.",
-        "source": "J. Davies Cabernet Sauvignon|The Tomahawk"
-      },
-      {
         "template": "Strong; reliable opener for the cut.",
         "source": "Jordan Cabernet Sauvignon|The Tomahawk"
       }
     ],
     "GIN|FISH_MAIN_RICH": [
       {
-        "template": "Strong; recommend with confidence — solid gin-on-fish-main match.",
-        "source": "2 James Gin|Chilean Seabass"
-      },
-      {
         "template": "Strong; 2 James's juniper lifts the fish at local-craft register.",
         "source": "2 James Gin|Faroe Island Salmon"
-      },
-      {
-        "template": "Strong; capable gin-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Aviation Gin|Chilean Seabass"
-      },
-      {
-        "template": "Strong; the gin-on-fish-main pairing holds without overshooting.",
-        "source": "Aviation Gin|Swordfish"
       },
       {
         "template": "Strong; Beefeater's balance meets the char cleanly.",
@@ -14437,16 +8307,8 @@ const CORPUS_MINED = {
         "source": "Beefeater Gin|Faroe Island Salmon"
       },
       {
-        "template": "Strong; the gin-on-fish-main match that holds its register.",
-        "source": "Beefeater Gin|Swordfish"
-      },
-      {
         "template": "Strong; Neptunia's briny character engages the bleu with distinctive maritime profile.",
         "source": "Bluecoat Gin|Chilean Seabass"
-      },
-      {
-        "template": "Strong; the gin-on-fish-main call lands without effort.",
-        "source": "Bombay Dry Gin|Chilean Seabass"
       },
       {
         "template": "Strong; Bombay Dry's juniper lifts the fish with traditional-gin character.",
@@ -14455,10 +8317,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Sapphire's softer character frames the fish without the aggression of flagship London Drys.",
         "source": "Bombay Sapphire Gin|Faroe Island Salmon"
-      },
-      {
-        "template": "Strong; reliable gin-on-fish-main recommendation.",
-        "source": "Bombay Sapphire Gin|Swordfish"
       },
       {
         "template": "Strong; the Hebridean-coastal botanicals find resonance with Faroe Island fish — coastal gin meets coastal fish thematically.",
@@ -14471,10 +8329,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Elephant's contemporary botanicals engage the bleu with distinctive character.",
         "source": "Chilean Seabass|Elephant Gin"
-      },
-      {
-        "template": "Strong; the server-confident gin-on-fish-main call.",
-        "source": "Chilean Seabass|Empress 1908 Gin"
       },
       {
         "template": "Strong; Sapphire's softness meets the bleu at accessible register.",
@@ -14527,12 +8381,7 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Tanq's botanical spine lifts the fish's richness with British precision.",
         "source": "Faroe Island Salmon|Tanqueray Gin"
-      },
-      {
-        "template": "Strong; the gin-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Hendricks Gin|Swordfish"
-      }
-    ],
+      }],
     "GIN|SALAD": [
       {
         "template": "Strong; 2 James meets the char with American-juniper character; Tanq 10's citrus is still the sharper gin-Caesar.",
@@ -14786,38 +8635,6 @@ const CORPUS_MINED = {
       }
     ],
     "GIN|FISH_MAIN_DELICATE": [
-      {
-        "template": "Strong; recommend with confidence — solid gin-on-fish-main match.",
-        "source": "2 James Gin|Rainbow Trout"
-      },
-      {
-        "template": "Strong; capable gin-on-fish-main pour for guests who want a confident pairing.",
-        "source": "2 James Gin|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; reliable gin-on-fish-main recommendation.",
-        "source": "Aviation Gin|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the gin-on-fish-main call lands without effort.",
-        "source": "Aviation Gin|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the server-confident gin-on-fish-main call.",
-        "source": "Beefeater Gin|Rainbow Trout"
-      },
-      {
-        "template": "Strong; the gin-on-fish-main pairing holds without overshooting.",
-        "source": "Beefeater Gin|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the gin-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Beefeater Gin|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the gin-on-fish-main match that holds its register.",
-        "source": "Bluecoat Gin|Market Fish"
-      },
       {
         "template": "Strong; Neptunia's briny character engages the bleu with distinctive maritime profile.",
         "source": "Bombay Dry Gin|Salt-Cured Halibut"
@@ -15595,10 +9412,6 @@ const CORPUS_MINED = {
         "source": "Bowdie's Private Select — Maker's Mark|Carrot Cake"
       },
       {
-        "template": "Strong; non-wheated profile keeps the pairing from going sweet-on-sweet.",
-        "source": "Buffalo Trace|Carrot Cake"
-      },
-      {
         "template": "Strong; rye spice and cake spice find each other.",
         "source": "Bulleit Bourbon|Carrot Cake"
       },
@@ -15613,10 +9426,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; wheat caramel and cake spice at matched registers.",
         "source": "Carrot Cake|Clermont Steep"
-      },
-      {
-        "template": "Strong; less sweet-on-sweet than wheated versions of this pairing.",
-        "source": "Carrot Cake|Eagle Rare 10 Year"
       },
       {
         "template": "Strong; EC 18's aged dried-fruit threads the cake at aged-HH register.",
@@ -15719,10 +9528,6 @@ const CORPUS_MINED = {
         "source": "Carrot Cake|Redbreast 21 Year"
       },
       {
-        "template": "Strong; the 10-year's oak gives the cake a frame without sweet-on-sweet doubling.",
-        "source": "Carrot Cake|Russell's Reserve 10 Year"
-      },
-      {
         "template": "Strong; Fortuna's distinctive NZ terroir threads the cake at craft register.",
         "source": "Carrot Cake|Scapegrace Fortuna"
       },
@@ -15809,20 +9614,12 @@ const CORPUS_MINED = {
         "source": "Adictivo Cristalino|Faroe Island Salmon"
       },
       {
-        "template": "Strong; recommend with confidence — solid light-spirit-on-fish-main match.",
-        "source": "Adictivo Cristalino|Swordfish"
-      },
-      {
         "template": "Strong; the aged depth frames the salmon with more gravitas than younger reposados.",
         "source": "Adictivo Reposado|Faroe Island Salmon"
       },
       {
         "template": "Strong; accessible agave frames the salmon at entry tier.",
         "source": "Camarena Tequila|Faroe Island Salmon"
-      },
-      {
-        "template": "Strong; the añejo-on-fish-main match that holds its register.",
-        "source": "Chilean Seabass|Komos Crystallino Anejo"
       },
       {
         "template": "Strong; highland agave's brightness frames the salmon differently than oak-forward reposados.",
@@ -15845,10 +9642,6 @@ const CORPUS_MINED = {
         "source": "Faroe Island Salmon|G4 High Proof"
       },
       {
-        "template": "Strong; the añejo-on-fish-main call lands without effort.",
-        "source": "Faroe Island Salmon|Komos Crystallino Anejo"
-      },
-      {
         "template": "Strong; the modern cleanness frames the salmon at the accessible tier — Don Julio 70th for the refined take.",
         "source": "Faroe Island Salmon|Milagro Reposado"
       },
@@ -15859,28 +9652,11 @@ const CORPUS_MINED = {
       {
         "template": "Strong; cedar and salmon work (cedar plank salmon echoes here) but the pairing is a novelty more than a standout.",
         "source": "Faroe Island Salmon|Trombo Cedano Reposado"
-      },
-      {
-        "template": "Strong; the añejo-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Komos Crystallino Anejo|Swordfish"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|HEARTY_STARTER": [
       {
         "template": "Strong; cristalino depth cuts the garlic-butter with craft-theatrical distinctiveness.",
         "source": "Adictivo Cristalino|Escargot"
-      },
-      {
-        "template": "Strong; reliable añejo-on-hearty-starter recommendation.",
-        "source": "Adictivo Reposado|Escargot"
-      },
-      {
-        "template": "Strong; the añejo-on-hearty-starter call lands without effort.",
-        "source": "Avion 44|Escargot"
-      },
-      {
-        "template": "Strong; the añejo-on-hearty-starter pairing holds without overshooting.",
-        "source": "Avion 44|Prime Tartare"
       },
       {
         "template": "Strong; the accessible character is outmatched by marrow's intensity.",
@@ -15919,16 +9695,8 @@ const CORPUS_MINED = {
         "source": "Bone Marrow|El Mayor Reposado"
       },
       {
-        "template": "Strong; the server-confident añejo-on-hearty-starter call.",
-        "source": "Bone Marrow|Komos Anejo Reserva"
-      },
-      {
         "template": "Strong; the strawberry-cherry character is a distinctive counterpoint to marrow's intensity.",
         "source": "Bone Marrow|Komos Rosa Reposado"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid añejo-on-hearty-starter match.",
-        "source": "Bone Marrow|Milagro Anejo"
       },
       {
         "template": "Strong; modern cleanness is capable but the starter earns a more character-forward reposado.",
@@ -15943,22 +9711,6 @@ const CORPUS_MINED = {
         "source": "Bone Marrow|Trombo Cedano Reposado"
       },
       {
-        "template": "Strong; capable añejo-on-rich-side pour for guests who want a confident pairing.",
-        "source": "Brussels and Belly|Corazon Sazerac"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid añejo-on-rich-side match.",
-        "source": "Brussels and Belly|Corazon Stagg"
-      },
-      {
-        "template": "Strong; capable añejo-on-hearty-starter pour for guests who want a confident pairing.",
-        "source": "Camarena Tequila|Escargot"
-      },
-      {
-        "template": "Strong; the añejo-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Clase Azul Durango|Escargot"
-      },
-      {
         "template": "Strong; a balanced pairing at the everyday tier.",
         "source": "Clase Azul Gold|Escargot"
       },
@@ -15967,20 +9719,12 @@ const CORPUS_MINED = {
         "source": "Codigo 1530 Rosa|Prime Tartare"
       },
       {
-        "template": "Strong; the añejo-on-hearty-starter match that holds its register.",
-        "source": "Corazon Stagg|Escargot"
-      },
-      {
         "template": "Strong; cut's weight pushes against Don Julio's balance.",
         "source": "Don Julio 70th|Escargot"
       },
       {
         "template": "Strong; agave cuts the dairy at the accessible register.",
         "source": "El Mayor Reposado|Escargot"
-      },
-      {
-        "template": "Strong; the añejo-on-light-side pairing servers pour without second-guessing.",
-        "source": "Escargot|Komos Anejo Reserva"
       },
       {
         "template": "Strong; accessible agave cuts the dairy at the entry register.",
@@ -16047,32 +9791,8 @@ const CORPUS_MINED = {
     ],
     "TEQUILA_BOLD|FISH_MAIN_DELICATE": [
       {
-        "template": "Strong; recommend with confidence — solid light-spirit-on-fish-main match.",
-        "source": "Adictivo Cristalino|Rainbow Trout"
-      },
-      {
-        "template": "Strong; capable light-spirit-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Adictivo Cristalino|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the server-confident light-spirit-on-fish-main call.",
-        "source": "Adictivo Cristalino|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
         "template": "Strong; the 104-proof pushes against scallop sweetness; reach for Don Julio 70th for the refined scallop-reposado pairing.",
         "source": "G4 High Proof|Seared Scallops"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid añejo-on-fish-main match.",
-        "source": "Komos Crystallino Anejo|Market Fish"
-      },
-      {
-        "template": "Strong; the añejo-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Komos Crystallino Anejo|Rainbow Trout"
-      },
-      {
-        "template": "Strong; capable añejo-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Komos Crystallino Anejo|Salt-Cured Halibut"
       },
       {
         "template": "Strong; the cedar is distinctive but slightly overshadows the scallop — Don Julio 70th is the refined scallop-reposado call.",
@@ -16147,50 +9867,13 @@ const CORPUS_MINED = {
     ],
     "TEQUILA_BOLD|STEAK_LEAN": [
       {
-        "template": "Strong; the añejo-on-strip-or-filet match that holds its register.",
-        "source": "Adictivo Reposado|Bone-In Filet"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid añejo-on-strip-or-filet match.",
-        "source": "Bone-In Filet|Camarena Tequila"
-      },
-      {
         "template": "Strong; reliable opener for the cut.",
         "source": "Bone-In Filet|Clase Azul Anejo"
       },
       {
-        "template": "Strong; the server-confident añejo-on-hearty-starter call.",
-        "source": "Bone-In Filet|Clase Azul Reposado"
-      },
-      {
-        "template": "Strong; reliable añejo-on-strip-or-filet recommendation.",
-        "source": "Bone-In Filet|Codigo 1530 Rosa"
-      },
-      {
-        "template": "Strong; capable añejo-on-hearty-starter pour for guests who want a confident pairing.",
-        "source": "Bone-In Filet|Corazon Weller"
-      },
-      {
-        "template": "Strong; the añejo-on-strip-or-filet call lands without effort.",
-        "source": "Bone-In Filet|Don Fulano Anejo"
-      },
-      {
-        "template": "Strong; capable añejo-on-strip-or-filet pour for guests who want a confident pairing.",
-        "source": "Bone-In Filet|Don Fulano Reposado"
-      },
-      {
         "template": "Strong; aged depth sits with richness at iconic register.",
         "source": "Bone-In Filet|Don Julio 70th"
-      },
-      {
-        "template": "Strong; the server-confident añejo-on-strip-or-filet call.",
-        "source": "Bone-In Filet|Don Julio Reposado"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid añejo-on-rich-side match.",
-        "source": "Corazon Stagg|Filet Mignon"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|RICH_SIDE": [
       {
         "template": "Strong; rich oak layers into mushroom depth with aged-reposado complexity.",
@@ -16211,14 +9894,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the highland-agave character layers into mushroom depth.",
         "source": "Corazon Reposado|Mushrooms"
-      },
-      {
-        "template": "Strong; reliable añejo-on-rich-side recommendation.",
-        "source": "Corazon Sazerac|Mushrooms"
-      },
-      {
-        "template": "Strong; the server-confident añejo-on-rich-side call.",
-        "source": "Corazon Stagg|Mushrooms"
       },
       {
         "template": "Strong; the vanilla and honey layer into mushroom depth with refinement.",
@@ -16263,28 +9938,12 @@ const CORPUS_MINED = {
     ],
     "TEQUILA_BOLD|STEAK_BOLD": [
       {
-        "template": "Strong; reliable añejo-on-bone-in-ribeye recommendation.",
-        "source": "Adictivo Reposado|Porterhouse"
-      },
-      {
         "template": "Strong; Avion 44 covers the strip with premium extended-aged character.",
         "source": "Avion 44|Kansas City"
       },
       {
         "template": "Strong; underpowered for the cut — G4 High Proof (the premium Camarena sibling) or Adictivo are the ribeye calls.",
         "source": "Camarena Tequila|Cowboy Ribeye"
-      },
-      {
-        "template": "Strong; the server-confident añejo-on-hearty-starter call.",
-        "source": "Camarena Tequila|Porterhouse"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid añejo-on-bone-in-ribeye match.",
-        "source": "Clase Azul Anejo|Cowboy Ribeye"
-      },
-      {
-        "template": "Strong; the añejo-on-bone-in-ribeye pairing holds without overshooting.",
-        "source": "Clase Azul Anejo|Porterhouse"
       },
       {
         "template": "Strong; ceremonial extra añejo covers the ribeye with Durango-artisanship authority.",
@@ -16311,18 +9970,6 @@ const CORPUS_MINED = {
         "source": "Codigo 1530 Rosa|Cowboy Ribeye"
       },
       {
-        "template": "Strong; the server-confident añejo-on-strip-or-filet call.",
-        "source": "Codigo 1530 Rosa|Porterhouse"
-      },
-      {
-        "template": "Strong; the añejo-on-bone-in-ribeye call lands without effort.",
-        "source": "Corazon Reposado|Porterhouse"
-      },
-      {
-        "template": "Strong; the añejo-on-bone-in-ribeye match that holds its register.",
-        "source": "Corazon Weller|The Tomahawk"
-      },
-      {
         "template": "Strong; the cut is slightly ambitious for Don Fulano's 80-proof elegance; G4 High Proof or Adictivo bring more grip.",
         "source": "Cowboy Ribeye|Don Fulano Reposado"
       },
@@ -16341,10 +9988,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the cut pushes past El Mayor's light oak — G4 High Proof or Adictivo are the reposado ribeye calls.",
         "source": "Cowboy Ribeye|El Mayor Reposado"
-      },
-      {
-        "template": "Strong; the añejo-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Cowboy Ribeye|Komos Anejo Reserva"
       },
       {
         "template": "Strong; the wine-cask rosé character is slightly out of register for the ribeye's scale.",
@@ -16381,29 +10024,8 @@ const CORPUS_MINED = {
       {
         "template": "Strong; distinctive ceremony sits with richness.",
         "source": "Komos Anejo Reserva|Porterhouse"
-      },
-      {
-        "template": "Strong; the server-confident añejo-on-bone-in-ribeye call.",
-        "source": "Komos Rosa Reposado|Porterhouse"
-      },
-      {
-        "template": "Strong; the server-confident añejo-on-light-side call.",
-        "source": "Milagro Anejo|The Tomahawk"
-      },
-      {
-        "template": "Strong; the añejo-on-bone-in-ribeye pairing servers pour without second-guessing.",
-        "source": "Milagro Reposado|Porterhouse"
-      },
-      {
-        "template": "Strong; capable añejo-on-bone-in-ribeye pour for guests who want a confident pairing.",
-        "source": "Porterhouse|Siete Leguas Reposado"
-      }
-    ],
+      }],
     "WHITE_WINE|FISH_MAIN_DELICATE": [
-      {
-        "template": "Strong; capable white-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Alexander Valley Chardonnay|Market Fish"
-      },
       {
         "template": "Strong; the side carries its register against the cut.",
         "source": "Alexander Valley Chardonnay|Salt-Cured Halibut"
@@ -16411,26 +10033,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the side composes cleanly with the cut.",
         "source": "Alexander Valley Chardonnay|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the white-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Market Fish"
-      },
-      {
-        "template": "Strong; the white-on-fish-main call lands without effort.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid white-on-fish-main match.",
-        "source": "Far Niente Chardonnay|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the white-on-fish-main pairing holds without overshooting.",
-        "source": "Keenan Chardonnay|Market Fish"
-      },
-      {
-        "template": "Strong; the white-on-fish-main match that holds its register.",
-        "source": "Keenan Chardonnay|Tuxedo-Crusted Yellowfin Tuna"
       },
       {
         "template": "Strong; reliable match across the courses.",
@@ -16442,75 +10044,11 @@ const CORPUS_MINED = {
       }
     ],
     "WHITE_WINE|LIGHT_STARTER": [
-      {
-        "template": "Strong; the white-on-fish-main match that holds its register.",
-        "source": "Alexander Valley Chardonnay|Seafood Tower"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid white-on-delicate-shellfish match.",
-        "source": "Alexander Valley Chardonnay|Shrimp Cocktail"
-      },
-      {
-        "template": "Strong; the server-confident white-on-delicate-shellfish call.",
-        "source": "Domaine de Berthiers Pouilly-Fumé|Seafood Tower"
-      },
-      {
-        "template": "Strong; the white-on-delicate-shellfish call lands without effort.",
-        "source": "Keenan Chardonnay|Seafood Tower"
-      },
-      {
-        "template": "Strong; reliable white-on-delicate-shellfish recommendation.",
-        "source": "Keenan Chardonnay|Shrimp Cocktail"
-      },
-      {
-        "template": "Strong; the white-on-delicate-shellfish match that holds its register.",
-        "source": "Our Lady of Guadalupe Acolytes|Shrimp Cocktail"
-      }
     ],
     "ELEGANT_RED|STEAK_LEAN": [
       {
-        "template": "Strong; recommend with confidence — solid elegant-red-on-strip-or-filet match.",
-        "source": "Alexander Valley Homestead Red|Bone-In Filet"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet pairing servers pour without second-guessing.",
-        "source": "Bone-In Filet|Braida Montebruna Barbera"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet match that holds its register.",
-        "source": "Bone-In Filet|Château Haut Segottes"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet pairing holds without overshooting.",
-        "source": "Bone-In Filet|Clos Petit Ona Grenache"
-      },
-      {
-        "template": "Strong; reliable elegant-red-on-hearty-starter recommendation.",
-        "source": "Bone-In Filet|Cristom Mt Jefferson Cuvée"
-      },
-      {
-        "template": "Strong; the server-confident elegant-red-on-strip-or-filet call.",
-        "source": "Bone-In Filet|Darioush Cabernet Franc"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Bone-In Filet|Elk Cove Five Mountain"
-      },
-      {
-        "template": "Strong; reliable elegant-red-on-strip-or-filet recommendation.",
-        "source": "Bone-In Filet|Fento Ollo de Sapo Mencía"
-      },
-      {
-        "template": "Strong; capable elegant-red-on-strip-or-filet pour for guests who want a confident pairing.",
-        "source": "Bone-In Filet|Fisher Unity Pinot Noir"
-      },
-      {
         "template": "Strong; reliable match across the courses.",
         "source": "Bone-In Filet|Lunaria Coste di Moro"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet call lands without effort.",
-        "source": "Bone-In Filet|Macauley Pinot Noir"
       },
       {
         "template": "Strong; reliable opener for the cut.",
@@ -16519,84 +10057,14 @@ const CORPUS_MINED = {
     ],
     "ELEGANT_RED|HEARTY_STARTER": [
       {
-        "template": "Strong; the elegant-red-on-hearty-starter call lands without effort.",
-        "source": "Alexander Valley Homestead Red|Escargot"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Alexander Valley Homestead Red|Prime Tartare"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter pairing holds without overshooting.",
-        "source": "Bone Marrow|Clos Petit Ona Grenache"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid elegant-red-on-hearty-starter match.",
-        "source": "Bone Marrow|Fento Ollo de Sapo Mencía"
-      },
-      {
         "template": "Strong; reliable opener for the cut.",
         "source": "Bone Marrow|Kermit Lynch Côtes du Rhône"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter match that holds its register.",
-        "source": "Bone Marrow|Lunaria Coste di Moro"
-      },
-      {
-        "template": "Strong; the server-confident elegant-red-on-hearty-starter call.",
-        "source": "Château de Rouillac|Escargot"
-      },
-      {
-        "template": "Strong; reliable elegant-red-on-hearty-starter recommendation.",
-        "source": "Château de Rouillac|Prime Tartare"
-      }
-    ],
+      }],
     "ELEGANT_RED|STEAK_BOLD": [
-      {
-        "template": "Strong; the elegant-red-on-bone-in-ribeye pairing servers pour without second-guessing.",
-        "source": "Alexander Valley Homestead Red|The Tomahawk"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid elegant-red-on-bone-in-ribeye match.",
-        "source": "Braida Montebruna Barbera|Porterhouse"
-      },
-      {
-        "template": "Strong; the elegant-red-on-bone-in-ribeye call lands without effort.",
-        "source": "Château Haut Segottes|The Tomahawk"
-      },
-      {
-        "template": "Strong; the elegant-red-on-bone-in-ribeye pairing holds without overshooting.",
-        "source": "Château de Rouillac|The Tomahawk"
-      },
-      {
-        "template": "Strong; reliable elegant-red-on-strip-or-filet recommendation.",
-        "source": "Clos Petit Ona Grenache|Porterhouse"
-      },
-      {
-        "template": "Strong; capable elegant-red-on-bone-in-ribeye pour for guests who want a confident pairing.",
-        "source": "Clos Petit Ona Grenache|The Tomahawk"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter call lands without effort.",
-        "source": "Cowboy Ribeye|Domaine Serene Grand Cheval"
-      },
-      {
-        "template": "Strong; the elegant-red-on-strip-or-filet pairing servers pour without second-guessing.",
-        "source": "Daniel Chotard Sancerre Rouge|Kansas City"
-      },
-      {
-        "template": "Strong; the elegant-red-on-bone-in-ribeye match that holds its register.",
-        "source": "Elk Cove Five Mountain|Porterhouse"
-      },
       {
         "template": "Strong; the side composes cleanly with the cut.",
         "source": "Lunaria Coste di Moro|The Tomahawk"
-      },
-      {
-        "template": "Strong; the elegant-red-on-hearty-starter pairing holds without overshooting.",
-        "source": "Porterhouse|Sanford & Benedict Pinot Noir"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|HEARTY_STARTER": [
       {
         "template": "Strong; the Friulian botanicals cut through the marrow's richness as a post-bite digestif.",
@@ -16623,10 +10091,6 @@ const CORPUS_MINED = {
         "source": "Averna Amaro|Prime Tartare"
       },
       {
-        "template": "Strong; reliable digestif-on-hearty-starter recommendation.",
-        "source": "Bone Marrow|Green Chartreuse"
-      },
-      {
         "template": "Strong; floral-anise cuts through marrow distinctively.",
         "source": "Bone Marrow|Lucano Amaro"
       },
@@ -16639,28 +10103,8 @@ const CORPUS_MINED = {
         "source": "Brussels and Belly|Campari"
       },
       {
-        "template": "Strong; the server-confident digestif-on-rich-side call.",
-        "source": "Brussels and Belly|Contratto Vermouth"
-      },
-      {
         "template": "Strong; Branca cuts the glaze's sweetness harder than sipping amari and makes the side read savory.",
         "source": "Brussels and Belly|Fernet Branca"
-      },
-      {
-        "template": "Strong; reliable aperitivo-on-hearty-soup recommendation.",
-        "source": "Brussels and Belly|Green Chartreuse"
-      },
-      {
-        "template": "Strong; capable digestif-on-rich-side pour for guests who want a confident pairing.",
-        "source": "Brussels and Belly|Mata Hari Absinthe"
-      },
-      {
-        "template": "Strong; reliable aperitivo-on-hearty-starter recommendation.",
-        "source": "Contratto Vermouth|Prime Tartare"
-      },
-      {
-        "template": "Strong; the aperitivo-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Escargot|Fernet Branca"
       },
       {
         "template": "Strong; Branca's herbal depth lifts tartare's mineral notes at digestif register.",
@@ -16675,72 +10119,18 @@ const CORPUS_MINED = {
         "source": "Lucano Amaro|Prime Tartare"
       },
       {
-        "template": "Strong; capable digestif-on-hearty-starter pour for guests who want a confident pairing.",
-        "source": "Mata Hari Absinthe|Prime Tartare"
-      },
-      {
         "template": "Strong; vanilla-orange is a friendly counterpoint to tartare.",
         "source": "Montenegro Amaro|Prime Tartare"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-hearty-starter call.",
-        "source": "Prime Tartare|Yellow Chartreuse"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|DESSERT_CHOCOLATE": [
       {
         "template": "Strong; the side carries its register against the cut.",
         "source": "Amaro Nonino|Chocolate Cake"
       },
       {
-        "template": "Strong; reliable aperitivo-on-dessert recommendation.",
-        "source": "Amaro Nonino|Mocha Creme"
-      },
-      {
-        "template": "Strong; capable aperitivo-on-dessert pour for guests who want a confident pairing.",
-        "source": "Aperol|Chocolate Cake"
-      },
-      {
-        "template": "Strong; the server-confident aperitivo-on-dessert call.",
-        "source": "Averna Amaro|Chocolate Cake"
-      },
-      {
         "template": "Strong; orange-and-chocolate is the resonance, though Campari is lighter on dessert than the sipping amari.",
         "source": "Campari|Chocolate Brownie"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-dessert call.",
-        "source": "Campari|Chocolate Cake"
-      },
-      {
-        "template": "Strong; reliable digestif-on-dessert recommendation.",
-        "source": "Campari|Mocha Creme"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-hearty-soup call.",
-        "source": "Chocolate Cake|Mata Hari Absinthe"
-      },
-      {
-        "template": "Strong; the aperitivo-on-dessert match that holds its register.",
-        "source": "Chocolate Cake|Montenegro Amaro"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing servers pour without second-guessing.",
-        "source": "Chocolate Cake|Yellow Chartreuse"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid digestif-on-dessert match.",
-        "source": "Green Chartreuse|Mocha Creme"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert match that holds its register.",
-        "source": "Green Chartreuse|Peanut Butter Brownie"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing holds without overshooting.",
-        "source": "Mocha Creme|Yellow Chartreuse"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|SALAD": [
       {
         "template": "Strong; botanical complexity complements the Caesar's anchovy-and-char flavors.",
@@ -16759,22 +10149,13 @@ const CORPUS_MINED = {
         "source": "Fernet Menta|Grilled Caesar"
       },
       {
-        "template": "Strong; the server-confident digestif-on-salad call.",
-        "source": "Green Chartreuse|House Wedge"
-      },
-      {
         "template": "Strong; anise character finds the Caesar's anchovy distinctively.",
         "source": "Grilled Caesar|Lucano Amaro"
       },
       {
         "template": "Strong; vanilla-orange finds the Caesar at approachable register.",
         "source": "Grilled Caesar|Montenegro Amaro"
-      },
-      {
-        "template": "Strong; the digestif-on-salad match that holds its register.",
-        "source": "House Wedge|Mata Hari Absinthe"
-      }
-    ],
+      }],
     "APERITIVO_BITTER|STEAK_BOLD": [
       {
         "template": "Strong; the grappa-base and orange peel settle the meal after the strip.",
@@ -16811,20 +10192,8 @@ const CORPUS_MINED = {
         "source": "Campari|Mushrooms"
       },
       {
-        "template": "Strong; the digestif-on-rich-side pairing servers pour without second-guessing.",
-        "source": "Contratto Vermouth|Mushrooms"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-rich-side call.",
-        "source": "Green Chartreuse|Mushrooms"
-      },
-      {
         "template": "Strong; floral-anise layers into mushroom depth distinctively.",
         "source": "Lucano Amaro|Mushrooms"
-      },
-      {
-        "template": "Strong; capable digestif-on-rich-side pour for guests who want a confident pairing.",
-        "source": "Mata Hari Absinthe|Mushrooms"
       },
       {
         "template": "Strong; vanilla-orange layers into mushroom depth.",
@@ -16832,106 +10201,14 @@ const CORPUS_MINED = {
       }
     ],
     "SWEET_LIQUEUR|HEARTY_STARTER": [
-      {
-        "template": "Strong; the server-confident digestif-on-rich-side call.",
-        "source": "Ancho Reyes|Brussels and Belly"
-      },
-      {
-        "template": "Strong; the digestif-on-hearty-starter call lands without effort.",
-        "source": "Ancho Reyes|Prime Tartare"
-      },
-      {
-        "template": "Strong; reliable digestif-on-rich-side recommendation.",
-        "source": "Brussels and Belly|Drambuie"
-      },
-      {
-        "template": "Strong; the digestif-on-rich-side pairing holds without overshooting.",
-        "source": "Brussels and Belly|Sambuca"
-      },
-      {
-        "template": "Strong; the digestif-on-hearty-starter match that holds its register.",
-        "source": "Drambuie|Prime Tartare"
-      },
-      {
-        "template": "Strong; capable digestif-on-hearty-starter pour for guests who want a confident pairing.",
-        "source": "Prime Tartare|Sambuca"
-      }
     ],
     "SWEET_LIQUEUR|DESSERT_CHOCOLATE": [
-      {
-        "template": "Strong; the digestif-on-dessert call lands without effort.",
-        "source": "Ancho Reyes|Chocolate Cake"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert match that holds its register.",
-        "source": "Ancho Reyes|Mocha Creme"
-      },
-      {
-        "template": "Strong; capable digestif-on-dessert pour for guests who want a confident pairing.",
-        "source": "Ancho Reyes|Peanut Butter Brownie"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing servers pour without second-guessing.",
-        "source": "Buffalo Trace Cream|Chocolate Cake"
-      },
-      {
-        "template": "Strong; capable dessert-wine-on-dessert pour for guests who want a confident pairing.",
-        "source": "Chocolate Brownie|Pineau des Charentes"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-hearty-soup call.",
-        "source": "Chocolate Cake|Drambuie"
-      },
-      {
-        "template": "Strong; reliable dessert-wine-on-dessert recommendation.",
-        "source": "Chocolate Cake|Pineau des Charentes"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-dessert call.",
-        "source": "Chocolate Cake|Sambuca"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid digestif-on-dessert match.",
-        "source": "Drambuie|Mocha Creme"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing holds without overshooting.",
-        "source": "Drambuie|Peanut Butter Brownie"
-      }
     ],
     "SWEET_LIQUEUR|SALAD": [
-      {
-        "template": "Strong; recommend with confidence — solid digestif-on-salad match.",
-        "source": "Ancho Reyes|House Wedge"
-      },
-      {
-        "template": "Strong; the digestif-on-salad pairing holds without overshooting.",
-        "source": "Drambuie|House Wedge"
-      },
-      {
-        "template": "Strong; capable digestif-on-salad pour for guests who want a confident pairing.",
-        "source": "House Wedge|Sambuca"
-      }
     ],
     "SWEET_LIQUEUR|RICH_SIDE": [
-      {
-        "template": "Strong; reliable digestif-on-rich-side recommendation.",
-        "source": "Ancho Reyes|Mushrooms"
-      },
-      {
-        "template": "Strong; the digestif-on-rich-side match that holds its register.",
-        "source": "Drambuie|Mushrooms"
-      }
     ],
     "SWEET_LIQUEUR|HEARTY_SOUP": [
-      {
-        "template": "Strong; reliable digestif-on-hearty-soup recommendation.",
-        "source": "Ancho Reyes|Shrimp Bisque"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-hearty-soup call.",
-        "source": "Drambuie|Shrimp Bisque"
-      }
     ],
     "APERITIVO_BITTER|DESSERT_LIGHT": [
       {
@@ -16994,121 +10271,12 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_LIGHT|FISH_MAIN_RICH": [
-      {
-        "template": "Strong; the server-confident light-cocktail-on-fish-main call.",
-        "source": "Aviation|Chilean Seabass"
-      },
-      {
-        "template": "Strong; capable light-cocktail-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Aviation|Faroe Island Salmon"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main call lands without effort.",
-        "source": "Bee's Knees|Swordfish"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main pairing holds without overshooting.",
-        "source": "Chilean Seabass|Corpse Reviver"
-      },
-      {
-        "template": "Strong; the server-confident light-cocktail-on-dessert call.",
-        "source": "Chilean Seabass|French 75"
-      },
-      {
-        "template": "Strong; reliable digestif-on-fish-main recommendation.",
-        "source": "Chilean Seabass|Head Fake"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main match that holds its register.",
-        "source": "Chilean Seabass|Lemon Lavender Gin Martini"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Chilean Seabass|Margarita"
-      },
-      {
-        "template": "Strong; reliable light-cocktail-on-fish-main recommendation.",
-        "source": "Chilean Seabass|Vesper"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid light-cocktail-on-fish-main match.",
-        "source": "Corpse Reviver|Faroe Island Salmon"
-      },
-      {
-        "template": "Strong; the digestif-on-fish-main match that holds its register.",
-        "source": "Cucumber Gimlet|Swordfish"
-      },
-      {
-        "template": "Strong; the digestif-on-fish-main pairing holds without overshooting.",
-        "source": "Faroe Island Salmon|Head Fake"
-      },
-      {
-        "template": "Strong; the digestif-on-fish-main call lands without effort.",
-        "source": "Head Fake|Swordfish"
-      }
     ],
     "COCKTAIL_LIGHT|FISH_MAIN_DELICATE": [
       {
-        "template": "Strong; the light-cocktail-on-fish-main match that holds its register.",
-        "source": "Aviation|Market Fish"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main pairing holds without overshooting.",
-        "source": "Aviation|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid light-cocktail-on-fish-main match.",
-        "source": "Aviation|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; reliable light-cocktail-on-dessert recommendation.",
-        "source": "Bee's Knees|Salt-Cured Halibut"
-      },
-      {
         "template": "Strong; reliable opener for the cut.",
         "source": "Corpse Reviver|Market Fish"
-      },
-      {
-        "template": "Strong; capable light-cocktail-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Corpse Reviver|Rainbow Trout"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main pairing servers pour without second-guessing.",
-        "source": "French 75|Market Fish"
-      },
-      {
-        "template": "Strong; reliable light-cocktail-on-fish-main recommendation.",
-        "source": "French 75|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; capable light-cocktail-on-dessert pour for guests who want a confident pairing.",
-        "source": "French 75|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the digestif-on-fish-main match that holds its register.",
-        "source": "Head Fake|Market Fish"
-      },
-      {
-        "template": "Strong; the digestif-on-fish-main call lands without effort.",
-        "source": "Head Fake|Rainbow Trout"
-      },
-      {
-        "template": "Strong; the digestif-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Head Fake|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main call lands without effort.",
-        "source": "Margarita|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Salt-Cured Halibut|Transfusion"
-      },
-      {
-        "template": "Strong; the server-confident light-cocktail-on-fish-main call.",
-        "source": "Transfusion|Tuxedo-Crusted Yellowfin Tuna"
-      }
-    ],
+      }],
     "TEQUILA_BOLD|DESSERT_LIGHT": [
       {
         "template": "Strong; extended maturation meets the cake at premium Avion register.",
@@ -17217,10 +10385,6 @@ const CORPUS_MINED = {
         "source": "Avion 44|Creamed Spinach"
       },
       {
-        "template": "Strong; reliable añejo-on-light-side recommendation.",
-        "source": "Clase Azul Anejo|Creamed Spinach"
-      },
-      {
         "template": "Strong; Durango ceremony sits with richness at ultra-premium register.",
         "source": "Clase Azul Durango|Creamed Spinach"
       },
@@ -17231,14 +10395,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; 5-year Ultra sits with richness at collector-grade register.",
         "source": "Clase Azul Ultra|Creamed Spinach"
-      },
-      {
-        "template": "Strong; capable añejo-on-light-side pour for guests who want a confident pairing.",
-        "source": "Corazon Sazerac|Creamed Spinach"
-      },
-      {
-        "template": "Strong; the añejo-on-light-side pairing holds without overshooting.",
-        "source": "Corazon Weller|Creamed Spinach"
       },
       {
         "template": "Strong; aged depth sits with richness at iconic register.",
@@ -17257,23 +10413,11 @@ const CORPUS_MINED = {
         "source": "Creamed Spinach|Komos Extra Anejo"
       },
       {
-        "template": "Strong; the añejo-on-light-side pairing servers pour without second-guessing.",
-        "source": "Creamed Spinach|Milagro Anejo"
-      },
-      {
-        "template": "Strong; the server-confident añejo-on-light-side call.",
-        "source": "Creamed Spinach|Patron Anejo"
-      },
-      {
         "template": "Strong; distinctive ceremony sits with richness.",
         "source": "Creamed Spinach|Rey Sol Anejo"
       }
     ],
     "LIGHT_SPIRIT|FISH_MAIN_RICH": [
-      {
-        "template": "Strong; capable light-spirit-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Avion Silver|Chilean Seabass"
-      },
       {
         "template": "Strong; filtered clean agave frames the fish at accessible register.",
         "source": "Avion Silver|Faroe Island Salmon"
@@ -17281,34 +10425,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the traditional craft character sits with the soup in a distinctive register.",
         "source": "Avion Silver|Swordfish"
-      },
-      {
-        "template": "Strong; the server-confident light-spirit-on-fish-main call.",
-        "source": "Bacardi Rum|Chilean Seabass"
-      },
-      {
-        "template": "Strong; reliable light-spirit-on-fish-main recommendation.",
-        "source": "Bacardi Rum|Swordfish"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid light-spirit-on-fish-main match.",
-        "source": "Chilean Seabass|Clase Azul Plata"
-      },
-      {
-        "template": "Strong; the light-spirit-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Chilean Seabass|Don Fulano Blanco"
-      },
-      {
-        "template": "Strong; the light-spirit-on-fish-main match that holds its register.",
-        "source": "Chilean Seabass|Don Julio Blanco"
-      },
-      {
-        "template": "Strong; the light-spirit-on-fish-main pairing holds without overshooting.",
-        "source": "Chilean Seabass|G4 Blanco"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert match that holds its register.",
-        "source": "Chilean Seabass|Patron Silver"
       },
       {
         "template": "Strong; smooth agave frames the fish with ceremony.",
@@ -17333,10 +10449,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the premium-craft blanco frames the fish at the Maestra-Tequilera register.",
         "source": "Faroe Island Salmon|Mijenta Blanco"
-      },
-      {
-        "template": "Strong; the light-spirit-on-fish-main call lands without effort.",
-        "source": "Faroe Island Salmon|Mount Gay Rum"
       },
       {
         "template": "Strong; the rustic character is distinctive but less refined a salmon match than Don Fulano Blanco or Don Julio Blanco.",
@@ -17387,10 +10499,6 @@ const CORPUS_MINED = {
         "source": "Avion Silver|Grilled Caesar"
       },
       {
-        "template": "Strong; reliable light-spirit-on-salad recommendation.",
-        "source": "Bacardi Rum|Grilled Caesar"
-      },
-      {
         "template": "Strong; the ceremony earns the Caesar.",
         "source": "Clase Azul Plata|Grilled Caesar"
       },
@@ -17419,10 +10527,6 @@ const CORPUS_MINED = {
         "source": "Grilled Caesar|Mijenta Blanco"
       },
       {
-        "template": "Strong; recommend with confidence — solid light-spirit-on-salad match.",
-        "source": "Grilled Caesar|Mount Gay Rum"
-      },
-      {
         "template": "Strong; the citrus and anchovy find each other at the everyday globally-familiar register.",
         "source": "Grilled Caesar|Patron Silver"
       },
@@ -17433,52 +10537,12 @@ const CORPUS_MINED = {
     ],
     "LIGHT_SPIRIT|FISH_MAIN_DELICATE": [
       {
-        "template": "Strong; the server-confident light-spirit-on-fish-main call.",
-        "source": "Avion Silver|Rainbow Trout"
-      },
-      {
-        "template": "Strong; the light-spirit-on-fish-main match that holds its register.",
-        "source": "Avion Silver|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid light-spirit-on-fish-main match.",
-        "source": "Avion Silver|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the light-spirit-on-dessert call lands without effort.",
-        "source": "Bacardi Rum|Rainbow Trout"
-      },
-      {
-        "template": "Strong; reliable light-spirit-on-fish-main recommendation.",
-        "source": "Bacardi Rum|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the light-spirit-on-fish-main call lands without effort.",
-        "source": "Bacardi Rum|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; capable light-spirit-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Clase Azul Plata|Salt-Cured Halibut"
-      },
-      {
         "template": "Strong; luxury presentation earns the starter.",
         "source": "Corazon Blanco|Rainbow Trout"
       },
       {
-        "template": "Strong; the light-spirit-on-fish-main pairing holds without overshooting.",
-        "source": "Corazon Blanco|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the light-spirit-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Don Fulano Blanco|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
         "template": "Strong; the refined craft character provides a premium through-line.",
         "source": "Lalo Silver|Rainbow Trout"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert match that holds its register.",
-        "source": "Mount Gay Rum|Tuxedo-Crusted Yellowfin Tuna"
       },
       {
         "template": "Strong; the clean family-heritage character provides a craft through-line.",
@@ -17491,20 +10555,8 @@ const CORPUS_MINED = {
         "source": "Avion Silver|Seafood Tower"
       },
       {
-        "template": "Strong; capable light-spirit-on-delicate-shellfish pour for guests who want a confident pairing.",
-        "source": "Captain Morgan Rum|Crab Cake"
-      },
-      {
-        "template": "Strong; the light-spirit-on-delicate-shellfish pairing servers pour without second-guessing.",
-        "source": "Captain Morgan Rum|Shrimp Cocktail"
-      },
-      {
         "template": "Strong; the Sazerac-family character provides a distinctive through-line.",
         "source": "Corazon Blanco|Seafood Tower"
-      },
-      {
-        "template": "Strong; reliable digestif-on-delicate-shellfish recommendation.",
-        "source": "Crab Cake|Malibu Rum"
       },
       {
         "template": "Strong; the refined craft character provides a premium through-line.",
@@ -17517,14 +10569,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the clean family-heritage character provides a craft through-line.",
         "source": "Lalo Silver|Seafood Tower"
-      },
-      {
-        "template": "Strong; capable digestif-on-delicate-shellfish pour for guests who want a confident pairing.",
-        "source": "Malibu Rum|Shrimp Cocktail"
-      },
-      {
-        "template": "Strong; the light-spirit-on-delicate-shellfish match that holds its register.",
-        "source": "Mount Gay Rum|Seafood Tower"
       },
       {
         "template": "Strong; the rustic character gives the tower a distinctive craft thread.",
@@ -17565,54 +10609,17 @@ const CORPUS_MINED = {
         "source": "Mijenta Blanco|Shrimp Bisque"
       },
       {
-        "template": "Strong; the light-spirit-on-hearty-soup call lands without effort.",
-        "source": "Mount Gay Rum|Shrimp Bisque"
-      },
-      {
         "template": "Strong; the traditional craft character sits with the soup in a distinctive register.",
         "source": "Shrimp Bisque|Siete Leguas Blanco"
       }
     ],
     "LIGHT_SPIRIT|DESSERT_LIGHT": [
-      {
-        "template": "Strong; capable light-spirit-on-dessert pour for guests who want a confident pairing.",
-        "source": "Bacardi Rum|Beignets"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert match that holds its register.",
-        "source": "Creme Brulee|Malibu Rum"
-      }
     ],
     "SWEET_LIQUEUR|DESSERT_LIGHT": [
       {
-        "template": "Strong; recommend with confidence — solid digestif-on-salad match.",
-        "source": "Baileys Irish Cream|Beignets"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing holds without overshooting.",
-        "source": "Beignets|Buffalo Trace Cream"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert match that holds its register.",
-        "source": "Beignets|Disaronno"
-      },
-      {
-        "template": "Strong; reliable digestif-on-dessert recommendation.",
-        "source": "Beignets|Frangelico"
-      },
-      {
-        "template": "Strong; capable digestif-on-dessert pour for guests who want a confident pairing.",
-        "source": "Beignets|Patron XO Cafe"
-      },
-      {
         "template": "Strong; hazelnut-vanilla-cocoa plays cake spice at Italian-liqueur register.",
         "source": "Carrot Cake|Frangelico"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-dessert call.",
-        "source": "Cheesecake|Kahlua"
-      }
-    ],
+      }],
     "BOURBON_BOLD|SALAD": [
       {
         "template": "Strong; the bold proof earns the Caesar with small-batch authority.",
@@ -17896,22 +10903,6 @@ const CORPUS_MINED = {
       }
     ],
     "HEAVY_SPIRIT|DESSERT_LIGHT": [
-      {
-        "template": "Strong; reliable bourbon-on-dessert recommendation.",
-        "source": "Beignets|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Strong; capable bourbon-on-dessert pour for guests who want a confident pairing.",
-        "source": "Beignets|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Strong; the light-spirit-on-dessert call lands without effort.",
-        "source": "Beignets|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Strong; the server-confident light-spirit-on-rich-side call.",
-        "source": "Beignets|Myers's Rum"
-      }
     ],
     "GIN|DESSERT_LIGHT": [
       {
@@ -17920,43 +10911,11 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_BOLD|DESSERT_LIGHT": [
-      {
-        "template": "Strong; reliable light-cocktail-on-dessert recommendation.",
-        "source": "Beignets|New York Sour"
-      },
-      {
-        "template": "Strong; capable light-cocktail-on-dessert pour for guests who want a confident pairing.",
-        "source": "Cheesecake|New York Sour"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing holds without overshooting.",
-        "source": "Creme Brulee|Espresso Old Fashioned"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-dessert pairing holds without overshooting.",
-        "source": "Creme Brulee|New York Sour"
-      }
     ],
     "VODKA|FISH_MAIN_RICH": [
       {
-        "template": "Strong; the vodka-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Belvedere Vodka|Chilean Seabass"
-      },
-      {
         "template": "Strong; the rye pepper lifts the fish's richness with dimension the softer vodkas lack.",
         "source": "Belvedere Vodka|Faroe Island Salmon"
-      },
-      {
-        "template": "Strong; reliable vodka-on-fish-main recommendation.",
-        "source": "Belvedere Vodka|Swordfish"
-      },
-      {
-        "template": "Strong; the server-confident vodka-on-fish-main call.",
-        "source": "Chilean Seabass|Grey Goose Vodka"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid vodka-on-fish-main match.",
-        "source": "Chilean Seabass|Titos Vodka"
       },
       {
         "template": "Strong; Chopin's creaminess rides salmon's richness as a complementary pairing.",
@@ -17993,24 +10952,7 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Wheatley's clean profile frames the fish at value register without fighting richness.",
         "source": "Faroe Island Salmon|Wheatley Vodka"
-      },
-      {
-        "template": "Strong; the vodka-on-fish-main match that holds its register.",
-        "source": "HDW 100 Vodka|Swordfish"
-      },
-      {
-        "template": "Strong; capable vodka-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Ketel One Vodka|Swordfish"
-      },
-      {
-        "template": "Strong; the vodka-on-fish-main call lands without effort.",
-        "source": "Stoli Elit Vodka|Swordfish"
-      },
-      {
-        "template": "Strong; the vodka-on-fish-main pairing holds without overshooting.",
-        "source": "Swordfish|Wheatley Vodka"
-      }
-    ],
+      }],
     "VODKA|SALAD": [
       {
         "template": "Strong; Belvedere's character engages the char; Ketel's citrus still wins this pairing for vodka.",
@@ -18067,36 +11009,8 @@ const CORPUS_MINED = {
         "source": "Belvedere Vodka|Rainbow Trout"
       },
       {
-        "template": "Strong; the vodka-on-fish-main call lands without effort.",
-        "source": "Belvedere Vodka|Salt-Cured Halibut"
-      },
-      {
         "template": "Strong; the silkiness sits with butter; Belvedere's pepper still cuts the dish harder.",
         "source": "Belvedere Vodka|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the vodka-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Chopin Vodka|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the vodka-on-fish-main match that holds its register.",
-        "source": "Chopin Vodka|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; the vodka-on-fish-main pairing holds without overshooting.",
-        "source": "Detroit City Vodka|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid vodka-on-fish-main match.",
-        "source": "Detroit City Vodka|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; reliable vodka-on-fish-main recommendation.",
-        "source": "HDW 100 Vodka|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; capable vodka-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Hangar 1 Vodka|Tuxedo-Crusted Yellowfin Tuna"
       },
       {
         "template": "Strong; Ketel handles the tower cleanly, though Goose's luxury softness wins the flagship pairing.",
@@ -18105,10 +11019,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; reliable American vodka for the trout.",
         "source": "Rainbow Trout|Titos Vodka"
-      },
-      {
-        "template": "Strong; the server-confident vodka-on-fish-main call.",
-        "source": "Reyka Vodka|Tuxedo-Crusted Yellowfin Tuna"
       },
       {
         "template": "Strong; reliable American vodka for the halibut.",
@@ -18131,14 +11041,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Chopin frames the tower with creamy character, though Goose's wheat silkiness is the flagship luxury pairing.",
         "source": "Chopin Vodka|Seafood Tower"
-      },
-      {
-        "template": "Strong; the server-confident vodka-on-delicate-shellfish call.",
-        "source": "Detroit City Vodka|Seafood Tower"
-      },
-      {
-        "template": "Strong; the vodka-on-delicate-shellfish pairing servers pour without second-guessing.",
-        "source": "HDW 100 Vodka|Seafood Tower"
       },
       {
         "template": "Strong; Ketel handles the tower cleanly, though Goose's luxury softness wins the flagship pairing.",
@@ -18263,10 +11165,6 @@ const CORPUS_MINED = {
         "source": "Bone Marrow|Brussels and Belly"
       },
       {
-        "template": "Strong; reliable side-on-steak match.",
-        "source": "Brussels and Belly|Cowboy Ribeye"
-      },
-      {
         "template": "Strong; the side carries its register against the cut.",
         "source": "Brussels and Belly|Porterhouse"
       },
@@ -18287,37 +11185,8 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Villon's modern profile cuts marrow at contemporary register, though Courvoisier proper's drier oak cuts it harder.",
         "source": "Bone Marrow|Villon Cognac"
-      },
-      {
-        "template": "Strong; the cognac-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Christian Bros Brandy|Escargot"
-      },
-      {
-        "template": "Strong; capable cognac-on-hearty-starter pour for guests who want a confident pairing.",
-        "source": "Christian Bros Brandy|Prime Tartare"
-      },
-      {
-        "template": "Strong; the cognac-on-hearty-starter match that holds its register.",
-        "source": "Courvoisier Cognac|Escargot"
-      },
-      {
-        "template": "Strong; reliable cognac-on-hearty-starter recommendation.",
-        "source": "Courvoisier Cognac|Prime Tartare"
-      },
-      {
-        "template": "Strong; the server-confident cognac-on-hearty-starter call.",
-        "source": "Escargot|Hennessy Cognac"
-      },
-      {
-        "template": "Strong; the cognac-on-hearty-starter pairing holds without overshooting.",
-        "source": "Hennessy Cognac|Prime Tartare"
-      }
-    ],
+      }],
     "MEZCAL|STEAK_LEAN": [
-      {
-        "template": "Strong; reliable mezcal-on-rich-side recommendation.",
-        "source": "Bone-In Filet|Clase Azul Guerrero Mezcal"
-      },
       {
         "template": "Strong; reliable opener for the cut.",
         "source": "Bone-In Filet|Los Vecinos Mezcal"
@@ -18331,117 +11200,16 @@ const CORPUS_MINED = {
       {
         "template": "Strong; reliable opener for the cut.",
         "source": "Bone-In Filet|Shrimp Bisque"
-      },
-      {
-        "template": "Strong; reliable side-on-steak match.",
-        "source": "Filet Mignon|Creamed Spinach"
-      }
-    ],
+      }],
     "HEAVY_SPIRIT|STEAK_LEAN": [
-      {
-        "template": "Strong; reliable bourbon-on-strip-or-filet recommendation.",
-        "source": "Bone-In Filet|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Strong; the server-confident bourbon-on-strip-or-filet call.",
-        "source": "Bone-In Filet|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Strong; capable light-spirit-on-strip-or-filet pour for guests who want a confident pairing.",
-        "source": "Bone-In Filet|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Strong; the light-spirit-on-strip-or-filet pairing servers pour without second-guessing.",
-        "source": "Bone-In Filet|Ron Zacapa Rum"
-      },
-      {
-        "template": "Strong; the bourbon-on-strip-or-filet call lands without effort.",
-        "source": "Filet Mignon|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Strong; the server-confident light-spirit-on-rich-side call.",
-        "source": "Filet Mignon|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid bourbon-on-strip-or-filet match.",
-        "source": "Filet Mignon|Myers's Rum"
-      },
-      {
-        "template": "Strong; reliable light-spirit-on-strip-or-filet recommendation.",
-        "source": "Filet Mignon|Ron Zacapa Rum"
-      }
     ],
     "LIGHT_SPIRIT|STEAK_LEAN": [
-      {
-        "template": "Strong; the light-spirit-on-strip-or-filet call lands without effort.",
-        "source": "Bone-In Filet|Gran Patron Platinum"
-      }
     ],
     "COCKTAIL_BOLD|STEAK_LEAN": [
-      {
-        "template": "Strong; the whiskey-cocktail-on-strip-or-filet pairing servers pour without second-guessing.",
-        "source": "Bone-In Filet|Sazerac"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid whiskey-cocktail-on-strip-or-filet match.",
-        "source": "Bone-In Filet|Vieux Carré"
-      }
     ],
     "COCKTAIL_LIGHT|STEAK_LEAN": [
-      {
-        "template": "Strong; reliable light-cocktail-on-strip-or-filet recommendation.",
-        "source": "Bone-In Filet|The BG"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-strip-or-filet call lands without effort.",
-        "source": "Bone-In Filet|The Happy Wife"
-      }
     ],
     "HEAVY_SPIRIT|HEARTY_STARTER": [
-      {
-        "template": "Strong; recommend with confidence — solid bourbon-on-rich-side match.",
-        "source": "Brussels and Belly|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Strong; the bourbon-on-rich-side match that holds its register.",
-        "source": "Brussels and Belly|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Strong; the server-confident light-spirit-on-rich-side call.",
-        "source": "Brussels and Belly|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Strong; reliable light-spirit-on-rich-side recommendation.",
-        "source": "Brussels and Belly|Ron Zacapa Rum"
-      },
-      {
-        "template": "Strong; reliable bourbon-on-hearty-starter recommendation.",
-        "source": "Doctor Bird Jamaica Rum|Escargot"
-      },
-      {
-        "template": "Strong; capable bourbon-on-hearty-starter pour for guests who want a confident pairing.",
-        "source": "Doctor Bird Jamaica Rum|Prime Tartare"
-      },
-      {
-        "template": "Strong; the light-spirit-on-hearty-starter call lands without effort.",
-        "source": "Escargot|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Strong; the bourbon-on-hearty-starter call lands without effort.",
-        "source": "Escargot|Myers's Rum"
-      },
-      {
-        "template": "Strong; the light-spirit-on-hearty-starter pairing holds without overshooting.",
-        "source": "Escargot|Ron Zacapa Rum"
-      },
-      {
-        "template": "Strong; the server-confident light-spirit-on-hearty-starter call.",
-        "source": "Jung and Wulff Trinidad|Prime Tartare"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid bourbon-on-hearty-starter match.",
-        "source": "Myers's Rum|Prime Tartare"
-      }
     ],
     "BOURBON_BOLD|HEARTY_SOUP": [
       {
@@ -18503,30 +11271,6 @@ const CORPUS_MINED = {
     ],
     "LIGHT_SPIRIT|DESSERT_CHOCOLATE": [
       {
-        "template": "Strong; the light-spirit-on-dessert call lands without effort.",
-        "source": "Captain Morgan Rum|Chocolate Brownie"
-      },
-      {
-        "template": "Strong; capable light-spirit-on-dessert pour for guests who want a confident pairing.",
-        "source": "Captain Morgan Rum|Mocha Creme"
-      },
-      {
-        "template": "Strong; the light-spirit-on-dessert pairing holds without overshooting.",
-        "source": "Captain Morgan Rum|Peanut Butter Brownie"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing holds without overshooting.",
-        "source": "Chocolate Brownie|Malibu Rum"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing servers pour without second-guessing.",
-        "source": "Chocolate Cake|Malibu Rum"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert match that holds its register.",
-        "source": "Malibu Rum|Mocha Creme"
-      },
-      {
         "template": "Strong; luxury presentation earns the starter.",
         "source": "Malibu Rum|Peanut Butter Brownie"
       }
@@ -18538,96 +11282,20 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_LIGHT|DESSERT_LIGHT": [
-      {
-        "template": "Strong; capable light-cocktail-on-dessert pour for guests who want a confident pairing.",
-        "source": "Carrot Cake|Pablo Sour"
-      },
-      {
-        "template": "Strong; the server-confident light-cocktail-on-dessert call.",
-        "source": "Cheesecake|Pablo Sour"
-      }
     ],
     "MEZCAL|HEARTY_STARTER": [
-      {
-        "template": "Strong; the server-confident mezcal-on-hearty-starter call.",
-        "source": "Casamigos Mezcal|Escargot"
-      },
-      {
-        "template": "Strong; the mezcal-on-rich-side match that holds its register.",
-        "source": "Escargot|Los Vecinos Mezcal"
-      }
     ],
     "MEZCAL|SALAD": [
-      {
-        "template": "Strong; reliable mezcal-on-salad recommendation.",
-        "source": "Casamigos Mezcal|Grilled Caesar"
-      },
-      {
-        "template": "Strong; the mezcal-on-salad call lands without effort.",
-        "source": "Clase Azul Guerrero Mezcal|Grilled Caesar"
-      },
       {
         "template": "Strong; the side composes cleanly with the cut.",
         "source": "Grilled Caesar|Los Vecinos Mezcal"
       }
     ],
     "MEZCAL|STEAK_BOLD": [
-      {
-        "template": "Strong; the mezcal-on-strip-or-filet match that holds its register.",
-        "source": "Casamigos Mezcal|Kansas City"
-      },
-      {
-        "template": "Strong; the server-confident mezcal-on-strip-or-filet call.",
-        "source": "Clase Azul Guerrero Mezcal|Kansas City"
-      },
-      {
-        "template": "Strong; the mezcal-on-bone-in-ribeye pairing servers pour without second-guessing.",
-        "source": "Clase Azul Guerrero Mezcal|Porterhouse"
-      },
-      {
-        "template": "Strong; the mezcal-on-strip-or-filet call lands without effort.",
-        "source": "Kansas City|Los Vecinos Mezcal"
-      },
-      {
-        "template": "Strong; reliable mezcal-on-bone-in-ribeye recommendation.",
-        "source": "Los Vecinos Mezcal|Porterhouse"
-      }
     ],
     "MEZCAL|RICH_SIDE": [
-      {
-        "template": "Strong; the mezcal-on-rich-side match that holds its register.",
-        "source": "Casamigos Mezcal|Mushrooms"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid mezcal-on-rich-side match.",
-        "source": "Casamigos Mezcal|Truffle Fries"
-      },
-      {
-        "template": "Strong; the mezcal-on-rich-side pairing servers pour without second-guessing.",
-        "source": "Clase Azul Guerrero Mezcal|Mushrooms"
-      },
-      {
-        "template": "Strong; reliable mezcal-on-rich-side recommendation.",
-        "source": "Clase Azul Guerrero Mezcal|Truffle Fries"
-      },
-      {
-        "template": "Strong; the mezcal-on-rich-side call lands without effort.",
-        "source": "Los Vecinos Mezcal|Truffle Fries"
-      }
     ],
     "MEZCAL|HEARTY_SOUP": [
-      {
-        "template": "Strong; the mezcal-on-hearty-soup call lands without effort.",
-        "source": "Casamigos Mezcal|Shrimp Bisque"
-      },
-      {
-        "template": "Strong; the mezcal-on-rich-side call lands without effort.",
-        "source": "Clase Azul Guerrero Mezcal|Shrimp Bisque"
-      },
-      {
-        "template": "Strong; the mezcal-on-hearty-soup pairing servers pour without second-guessing.",
-        "source": "Los Vecinos Mezcal|Shrimp Bisque"
-      }
     ],
     "COGNAC|DESSERT_LIGHT": [
       {
@@ -18644,63 +11312,11 @@ const CORPUS_MINED = {
       }
     ],
     "WHITE_WINE|FISH_MAIN_RICH": [
-      {
-        "template": "Strong; the white-on-fish-main pairing holds without overshooting.",
-        "source": "Chilean Seabass|Domaine de Berthiers Pouilly-Fumé"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid white-on-fish-main match.",
-        "source": "Chilean Seabass|Joseph Mellot Sancerre"
-      },
-      {
-        "template": "Strong; the server-confident white-on-fish-main call.",
-        "source": "Chilean Seabass|Our Lady of Guadalupe Acolytes"
-      },
-      {
-        "template": "Strong; the white-on-fish-main call lands without effort.",
-        "source": "Chilean Seabass|Schloss Vollrads Riesling"
-      },
-      {
-        "template": "Strong; the white-on-fish-main match that holds its register.",
-        "source": "Chilean Seabass|Stoneleigh Sauvignon Blanc"
-      }
     ],
     "SPARKLING|FISH_MAIN_RICH": [
       {
-        "template": "Strong; the Champagne-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Chilean Seabass|Il Colle Prosecco Superiore"
-      },
-      {
-        "template": "Strong; capable Champagne-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Chilean Seabass|Laurent Perrier Brut Rosé"
-      },
-      {
-        "template": "Strong; the Champagne-on-fish-main pairing holds without overshooting.",
-        "source": "Chilean Seabass|Paul Bara Grand Rosé Brut"
-      },
-      {
         "template": "Strong; reliable opener for the cut.",
         "source": "Chilean Seabass|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid Champagne-on-fish-main match.",
-        "source": "Chilean Seabass|Robert Moncuit Les Grand Blancs"
-      },
-      {
-        "template": "Strong; the server-confident Champagne-on-fish-main call.",
-        "source": "Chilean Seabass|Veuve Clicquot Brut"
-      },
-      {
-        "template": "Strong; the Champagne-on-fish-main match that holds its register.",
-        "source": "Il Colle Prosecco Superiore|Swordfish"
-      },
-      {
-        "template": "Strong; the Champagne-on-fish-main call lands without effort.",
-        "source": "Laurent Perrier Brut Rosé|Swordfish"
-      },
-      {
-        "template": "Strong; reliable Champagne-on-fish-main recommendation.",
-        "source": "Laurent Perrier Le Cuvée Brut|Swordfish"
       },
       {
         "template": "Strong; the side composes cleanly with the cut.",
@@ -18708,30 +11324,6 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_BOLD|FISH_MAIN_RICH": [
-      {
-        "template": "Strong; capable light-cocktail-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Chilean Seabass|Inhibited"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main pairing holds without overshooting.",
-        "source": "Chilean Seabass|Negroni"
-      },
-      {
-        "template": "Strong; reliable light-cocktail-on-fish-main recommendation.",
-        "source": "Chilean Seabass|Not a Paper Plane"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main call lands without effort.",
-        "source": "Faroe Island Salmon|Inhibited"
-      },
-      {
-        "template": "Strong; the digestif-on-dessert pairing holds without overshooting.",
-        "source": "Faroe Island Salmon|Negroni"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Inhibited|Swordfish"
-      }
     ],
     "COGNAC|DESSERT_CHOCOLATE": [
       {
@@ -18756,58 +11348,10 @@ const CORPUS_MINED = {
       }
     ],
     "HEAVY_SPIRIT|DESSERT_CHOCOLATE": [
-      {
-        "template": "Strong; the bourbon-on-dessert match that holds its register.",
-        "source": "Chocolate Cake|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Strong; capable bourbon-on-dessert pour for guests who want a confident pairing.",
-        "source": "Chocolate Cake|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Strong; the light-spirit-on-dessert pairing servers pour without second-guessing.",
-        "source": "Chocolate Cake|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Strong; the server-confident light-spirit-on-dessert call.",
-        "source": "Chocolate Cake|Ron Zacapa Rum"
-      },
-      {
-        "template": "Strong; the server-confident bourbon-on-dessert call.",
-        "source": "Doctor Bird Jamaica Rum|Mocha Creme"
-      },
-      {
-        "template": "Strong; the bourbon-on-dessert call lands without effort.",
-        "source": "Mocha Creme|Myers's Rum"
-      },
-      {
-        "template": "Strong; reliable light-spirit-on-dessert recommendation.",
-        "source": "Mocha Creme|Ron Zacapa Rum"
-      }
     ],
     "COCKTAIL_BOLD|DESSERT_CHOCOLATE": [
-      {
-        "template": "Strong; the light-cocktail-on-dessert pairing servers pour without second-guessing.",
-        "source": "Chocolate Cake|New York Sour"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-dessert pairing holds without overshooting.",
-        "source": "New York Sour|Peanut Butter Brownie"
-      }
     ],
     "COCKTAIL_LIGHT|DESSERT_CHOCOLATE": [
-      {
-        "template": "Strong; the light-cocktail-on-dessert match that holds its register.",
-        "source": "Chocolate Cake|Pablo Sour"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-dessert call lands without effort.",
-        "source": "Mocha Creme|Pablo Sour"
-      },
-      {
-        "template": "Strong; reliable light-cocktail-on-dessert recommendation.",
-        "source": "Pablo Sour|Peanut Butter Brownie"
-      }
     ],
     "VODKA|HEARTY_STARTER": [
       {
@@ -18877,24 +11421,8 @@ const CORPUS_MINED = {
     ],
     "COGNAC|STEAK_BOLD": [
       {
-        "template": "Strong; recommend with confidence — solid cognac-on-bone-in-ribeye match.",
-        "source": "Christian Bros Brandy|Cowboy Ribeye"
-      },
-      {
         "template": "Strong; Christian Bros handles the strip at approachable register; Courvoisier's drier oak is still the featured cognac-KC pairing.",
         "source": "Christian Bros Brandy|Kansas City"
-      },
-      {
-        "template": "Strong; the server-confident cognac-on-bone-in-ribeye call.",
-        "source": "Christian Bros Brandy|The Tomahawk"
-      },
-      {
-        "template": "Strong; capable cognac-on-bone-in-ribeye pour for guests who want a confident pairing.",
-        "source": "Courvoisier Cognac|The Tomahawk"
-      },
-      {
-        "template": "Strong; the cognac-on-bone-in-ribeye call lands without effort.",
-        "source": "Cowboy Ribeye|Remy VSOP Cognac"
       },
       {
         "template": "Strong; Hennessy handles the strip with benchmark character, though Courvoisier's drier oak cuts marbling sharper.",
@@ -18911,12 +11439,7 @@ const CORPUS_MINED = {
       {
         "template": "Strong; Villon handles the strip at approachable register; Courvoisier's drier oak is still the featured cognac-KC pairing.",
         "source": "Kansas City|Villon Cognac"
-      },
-      {
-        "template": "Strong; the cognac-on-bone-in-ribeye pairing holds without overshooting.",
-        "source": "Pierre Ferrand Cognac|The Tomahawk"
-      }
-    ],
+      }],
     "COGNAC|CREAMY_SIDE": [
       {
         "template": "Strong; Christian Bros rides the cream at value register.",
@@ -19004,28 +11527,8 @@ const CORPUS_MINED = {
       }
     ],
     "APERITIVO_BITTER|HEARTY_SOUP": [
-      {
-        "template": "Strong; reliable aperitivo-on-hearty-soup recommendation.",
-        "source": "Contratto Vermouth|Shrimp Bisque"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-hearty-soup call.",
-        "source": "Green Chartreuse|Shrimp Bisque"
-      },
-      {
-        "template": "Strong; the digestif-on-hearty-soup pairing servers pour without second-guessing.",
-        "source": "Mata Hari Absinthe|Shrimp Bisque"
-      },
-      {
-        "template": "Strong; the server-confident digestif-on-hearty-starter call.",
-        "source": "Shrimp Bisque|Yellow Chartreuse"
-      }
     ],
     "DEFAULT|STEAK_BOLD": [
-      {
-        "template": "Strong; reliable side-on-steak match.",
-        "source": "Cowboy Ribeye|Brussels and Belly"
-      },
       {
         "template": "Strong; the side holds the steak's weight without competing.",
         "source": "Kansas City|Truffle Fries"
@@ -19040,68 +11543,8 @@ const CORPUS_MINED = {
       }
     ],
     "HEAVY_SPIRIT|STEAK_BOLD": [
-      {
-        "template": "Strong; the server-confident light-spirit-on-hearty-starter call.",
-        "source": "Cowboy Ribeye|Doctor Bird Jamaica Rum"
-      },
-      {
-        "template": "Strong; the bourbon-on-bone-in-ribeye pairing holds without overshooting.",
-        "source": "Cowboy Ribeye|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Strong; the server-confident light-spirit-on-bone-in-ribeye call.",
-        "source": "Cowboy Ribeye|Jung and Wulff Trinidad"
-      },
-      {
-        "template": "Strong; the bourbon-on-bone-in-ribeye match that holds its register.",
-        "source": "Cowboy Ribeye|Myers's Rum"
-      },
-      {
-        "template": "Strong; reliable light-spirit-on-bone-in-ribeye recommendation.",
-        "source": "Cowboy Ribeye|Ron Zacapa Rum"
-      },
-      {
-        "template": "Strong; reliable bourbon-on-strip-or-filet recommendation.",
-        "source": "Doctor Bird Jamaica Rum|Kansas City"
-      },
-      {
-        "template": "Strong; the light-spirit-on-dessert call lands without effort.",
-        "source": "Doctor Bird Jamaica Rum|Porterhouse"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid bourbon-on-strip-or-filet match.",
-        "source": "Jung and Wulff Guyana|Kansas City"
-      },
-      {
-        "template": "Strong; the bourbon-on-bone-in-ribeye call lands without effort.",
-        "source": "Jung and Wulff Guyana|Porterhouse"
-      },
-      {
-        "template": "Strong; the light-spirit-on-hearty-starter pairing holds without overshooting.",
-        "source": "Jung and Wulff Trinidad|Kansas City"
-      },
-      {
-        "template": "Strong; the light-spirit-on-strip-or-filet call lands without effort.",
-        "source": "Kansas City|Ron Zacapa Rum"
-      },
-      {
-        "template": "Strong; reliable light-spirit-on-dessert recommendation.",
-        "source": "Porterhouse|Ron Zacapa Rum"
-      }
     ],
     "COCKTAIL_LIGHT|STEAK_BOLD": [
-      {
-        "template": "Strong; reliable light-cocktail-on-dessert recommendation.",
-        "source": "Cowboy Ribeye|The Happy Wife"
-      },
-      {
-        "template": "Strong; capable light-cocktail-on-strip-or-filet pour for guests who want a confident pairing.",
-        "source": "Kansas City|The Happy Wife"
-      },
-      {
-        "template": "Strong; capable light-cocktail-on-bone-in-ribeye pour for guests who want a confident pairing.",
-        "source": "Porterhouse|The Happy Wife"
-      }
     ],
     "TEQUILA_BOLD|LIGHT_STARTER": [
       {
@@ -19115,10 +11558,6 @@ const CORPUS_MINED = {
       {
         "template": "Strong; the 104-proof can overpower the cold seafood's delicacy; Don Julio is the balanced call.",
         "source": "G4 High Proof|Shrimp Cocktail"
-      },
-      {
-        "template": "Strong; reliable añejo-on-delicate-shellfish recommendation.",
-        "source": "Komos Crystallino Anejo|Seafood Tower"
       },
       {
         "template": "Strong; the cedar character is novel but competes with the cocktail sauce.",
@@ -19141,75 +11580,15 @@ const CORPUS_MINED = {
         "source": "Creamed Spinach|Bone-In Filet"
       },
       {
-        "template": "Strong; reliable side-on-steak match.",
-        "source": "Creamed Spinach|Cowboy Ribeye"
-      },
-      {
         "template": "Strong; the side holds the steak's weight without competing.",
         "source": "Lobster Mac|Porterhouse"
       }
     ],
     "HEAVY_SPIRIT|RICH_SIDE": [
-      {
-        "template": "Strong; the bourbon-on-rich-side pairing servers pour without second-guessing.",
-        "source": "Doctor Bird Jamaica Rum|Mushrooms"
-      },
-      {
-        "template": "Strong; the bourbon-on-rich-side match that holds its register.",
-        "source": "Doctor Bird Jamaica Rum|Truffle Fries"
-      },
-      {
-        "template": "Strong; reliable bourbon-on-rich-side recommendation.",
-        "source": "Jung and Wulff Guyana|Mushrooms"
-      },
-      {
-        "template": "Strong; capable light-spirit-on-rich-side pour for guests who want a confident pairing.",
-        "source": "Jung and Wulff Trinidad|Mushrooms"
-      },
-      {
-        "template": "Strong; the light-spirit-on-rich-side pairing holds without overshooting.",
-        "source": "Jung and Wulff Trinidad|Truffle Fries"
-      },
-      {
-        "template": "Strong; the server-confident bourbon-on-rich-side call.",
-        "source": "Mushrooms|Myers's Rum"
-      },
-      {
-        "template": "Strong; the light-spirit-on-rich-side match that holds its register.",
-        "source": "Mushrooms|Ron Zacapa Rum"
-      },
-      {
-        "template": "Strong; the bourbon-on-rich-side pairing holds without overshooting.",
-        "source": "Myers's Rum|Truffle Fries"
-      },
-      {
-        "template": "Strong; the light-spirit-on-rich-side call lands without effort.",
-        "source": "Ron Zacapa Rum|Truffle Fries"
-      }
     ],
     "COCKTAIL_BOLD|HEARTY_STARTER": [
-      {
-        "template": "Strong; capable light-cocktail-on-dessert pour for guests who want a confident pairing.",
-        "source": "Escargot|Sazerac"
-      },
-      {
-        "template": "Strong; the whiskey-cocktail-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Escargot|The Manhattan"
-      },
-      {
-        "template": "Strong; the whiskey-cocktail-on-hearty-starter match that holds its register.",
-        "source": "Escargot|Vieux Carré"
-      }
     ],
     "COCKTAIL_LIGHT|HEARTY_STARTER": [
-      {
-        "template": "Strong; the light-cocktail-on-hearty-starter pairing servers pour without second-guessing.",
-        "source": "Escargot|The BG"
-      },
-      {
-        "template": "Strong; reliable light-cocktail-on-hearty-starter recommendation.",
-        "source": "Escargot|The Happy Wife"
-      }
     ],
     "BOURBON_BOLD|FISH_MAIN_RICH": [
       {
@@ -19218,14 +11597,6 @@ const CORPUS_MINED = {
       }
     ],
     "LIGHT_SPIRIT|STEAK_BOLD": [
-      {
-        "template": "Strong; the server-confident light-spirit-on-strip-or-filet call.",
-        "source": "Gran Patron Platinum|Kansas City"
-      },
-      {
-        "template": "Strong; the light-spirit-on-bone-in-ribeye match that holds its register.",
-        "source": "Gran Patron Platinum|Porterhouse"
-      }
     ],
     "BOURBON_BOLD|CHICKEN_MAIN": [
       {
@@ -19235,40 +11606,8 @@ const CORPUS_MINED = {
     ],
     "SPARKLING|FISH_MAIN_DELICATE": [
       {
-        "template": "Strong; the Champagne-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Il Colle Prosecco Superiore|Market Fish"
-      },
-      {
-        "template": "Strong; capable Champagne-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Il Colle Prosecco Superiore|Rainbow Trout"
-      },
-      {
-        "template": "Strong; the Champagne-on-fish-main pairing holds without overshooting.",
-        "source": "Il Colle Prosecco Superiore|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the Champagne-on-fish-main match that holds its register.",
-        "source": "Il Colle Prosecco Superiore|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid Champagne-on-fish-main match.",
-        "source": "Laurent Perrier Brut Rosé|Rainbow Trout"
-      },
-      {
         "template": "Strong; reliable opener for the cut.",
         "source": "Laurent Perrier Brut Rosé|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the Champagne-on-fish-main call lands without effort.",
-        "source": "Market Fish|Pierre Gimonnet Special Club Brut"
-      },
-      {
-        "template": "Strong; the server-confident Champagne-on-fish-main call.",
-        "source": "Market Fish|Pommery Cuvée Louise"
-      },
-      {
-        "template": "Strong; reliable Champagne-on-fish-main recommendation.",
-        "source": "Market Fish|Veuve Clicquot Brut"
       },
       {
         "template": "Strong; the side composes cleanly with the cut.",
@@ -19280,52 +11619,8 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_BOLD|FISH_MAIN_DELICATE": [
-      {
-        "template": "Strong; the light-cocktail-on-fish-main pairing holds without overshooting.",
-        "source": "Inhibited|Market Fish"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main pairing servers pour without second-guessing.",
-        "source": "Inhibited|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the server-confident light-cocktail-on-fish-main call.",
-        "source": "Inhibited|Tuxedo-Crusted Yellowfin Tuna"
-      },
-      {
-        "template": "Strong; reliable light-cocktail-on-fish-main recommendation.",
-        "source": "Market Fish|Negroni"
-      },
-      {
-        "template": "Strong; capable light-cocktail-on-fish-main pour for guests who want a confident pairing.",
-        "source": "Market Fish|Not a Paper Plane"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main match that holds its register.",
-        "source": "Negroni|Salt-Cured Halibut"
-      },
-      {
-        "template": "Strong; the light-cocktail-on-fish-main call lands without effort.",
-        "source": "Not a Paper Plane|Tuxedo-Crusted Yellowfin Tuna"
-      }
     ],
     "COCKTAIL_BOLD|LIGHT_STARTER": [
-      {
-        "template": "Strong; the server-confident light-cocktail-on-delicate-shellfish call.",
-        "source": "Inhibited|Shrimp Cocktail"
-      },
-      {
-        "template": "Strong; reliable light-cocktail-on-delicate-shellfish recommendation.",
-        "source": "Negroni|Seafood Tower"
-      },
-      {
-        "template": "Strong; capable light-cocktail-on-delicate-shellfish pour for guests who want a confident pairing.",
-        "source": "Not a Paper Plane|Seafood Tower"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid light-cocktail-on-delicate-shellfish match.",
-        "source": "Not a Paper Plane|Shrimp Cocktail"
-      }
     ],
     "COGNAC_LUXURY|STEAK_BOLD": [
       {
@@ -19350,18 +11645,6 @@ const CORPUS_MINED = {
       }
     ],
     "COCKTAIL_BOLD|STEAK_BOLD": [
-      {
-        "template": "Strong; the digestif-on-dessert pairing holds without overshooting.",
-        "source": "Sazerac|The Tomahawk"
-      },
-      {
-        "template": "Strong; recommend with confidence — solid whiskey-cocktail-on-bone-in-ribeye match.",
-        "source": "The Manhattan|The Tomahawk"
-      },
-      {
-        "template": "Strong; the whiskey-cocktail-on-bone-in-ribeye pairing holds without overshooting.",
-        "source": "The Tomahawk|Vieux Carré"
-      }
     ],
     "BOURBON_BOLD|FISH_MAIN_DELICATE": [
       {
@@ -19825,10 +12108,6 @@ const CORPUS_MINED = {
         "source": "Cowboy Ribeye|Macallan 12 Sherry"
       },
       {
-        "template": "Gold standard; this is the bourbon-on-bone-in-ribeye pour the table writes home about.",
-        "source": "Cowboy Ribeye|Macallan 18"
-      },
-      {
         "template": "Macallan Estate's distinctive cask character frames the ribeye; Macallan 18 and Balvenie 21 Portwood are the featured sherried-ribeye matches.",
         "source": "Cowboy Ribeye|Macallan Estate"
       },
@@ -19939,10 +12218,6 @@ const CORPUS_MINED = {
       {
         "template": "Garavogue handles the strip with craft-Irish character at distinctive register.",
         "source": "Garavogue Irish Whiskey|Kansas City"
-      },
-      {
-        "template": "Gold standard; the bourbon-on-bone-in-ribeye match that closes the table.",
-        "source": "George T. Stagg|The Tomahawk"
       },
       {
         "template": "The same mash as Blanton's but at 88.9 proof; carries the strip with restrained single-barrel character.",
@@ -20609,10 +12884,6 @@ const CORPUS_MINED = {
         "source": "Corazon Reposado|Cowboy Ribeye"
       },
       {
-        "template": "Gold standard; recommend the añejo-on-bone-in-ribeye pairing without hesitation.",
-        "source": "Corazon Stagg|The Tomahawk"
-      },
-      {
         "template": "iconic extra añejo covers the ribeye with benchmark character.",
         "source": "Cowboy Ribeye|Don Julio 1942"
       },
@@ -20787,10 +13058,6 @@ const CORPUS_MINED = {
         "source": "Ancho Reyes|Chocolate Brownie"
       },
       {
-        "template": "Gold standard; recommend the digestif-on-dessert pairing without hesitation.",
-        "source": "Baileys Irish Cream|Chocolate Cake"
-      },
-      {
         "template": "Baileys and coffee is the textbook pairing — the Irish-whiskey-cream meets mocha at iconic register.",
         "source": "Baileys Irish Cream|Mocha Creme"
       },
@@ -20803,20 +13070,8 @@ const CORPUS_MINED = {
         "source": "Chocolate Brownie|Frangelico"
       },
       {
-        "template": "Gold standard; this is the digestif-on-dessert call you put in front of every table.",
-        "source": "Disaronno|Peanut Butter Brownie"
-      },
-      {
         "template": "hazelnut-coffee-chocolate is a textbook Italian pairing — Frangelico brings Piedmont hazelnut depth to mocha at after-dinner register.",
         "source": "Frangelico|Mocha Creme"
-      },
-      {
-        "template": "Gold standard; the digestif-on-dessert pairing the menu was built around.",
-        "source": "Frangelico|Peanut Butter Brownie"
-      },
-      {
-        "template": "Excellent on mocha creme; the iconic sweet-coffee-rum profile threads coffee-chocolate at workhorse register — Kahlua-on-mocha is textbook.",
-        "source": "Kahlua|Mocha Creme"
       },
       {
         "template": "Excellent on mocha creme; the tequila-base-Arabica profile brings spirit-forward-coffee register to coffee-chocolate — less sweet, more assertive than the Kahlua approach.",
@@ -20905,12 +13160,7 @@ const CORPUS_MINED = {
       {
         "template": "Works — a capable side pour.",
         "source": "Au Gratin Potatoes|Far Niente Chardonnay"
-      },
-      {
-        "template": "Works well as Chardonnay for creamed spinach — cream-on-cream, oak-on-butter.",
-        "source": "Creamed Spinach|Far Niente Chardonnay"
-      }
-    ],
+      }],
     "GIN|LIGHT_STARTER": [
       {
         "template": "Aviation handles the tower at crowd-pleasing register; Gray Whale's ocean-conservation-California-botanicals is the featured craft-tower match.",
@@ -20927,18 +13177,6 @@ const CORPUS_MINED = {
       {
         "template": "Empress's rose-and-floral profile is the featured Smooth/Citrus Craft Gin-burrata pairing — rose-with-cream is classically beautiful, and the indigo-to-pink color change makes this a visual conversation-starter at the table.",
         "source": "Burrata|Empress 1908 Gin"
-      },
-      {
-        "template": "Flora Adora's intensified floral character is the featured Hendrick's Family-burrata pairing — floral-on-cream at its most explicit, more overtly floral than flagship Hendrick's.",
-        "source": "Burrata|Hendricks Flora Adora"
-      },
-      {
-        "template": "Grand Cabaret's fruit-forward black-currant profile complements cream at distinctive register — fruit-on-cream no other Hendrick's expression offers.",
-        "source": "Burrata|Hendricks Grand Cabaret"
-      },
-      {
-        "template": "Orbium's wormwood-quinine provides a distinctive bitter-on-cream contrast the floral siblings don't offer.",
-        "source": "Burrata|Hendricks Orbium"
       },
       {
         "template": "Inverroche's fynbos-floral profile is the featured craft-gin-burrata pairing in the cluster — the Cape-floral character meets cream with a register no other gin on the menu can touch.",
@@ -21046,10 +13284,6 @@ const CORPUS_MINED = {
       }
     ],
     "LIGHT_SPIRIT|HEARTY_SOUP": [
-      {
-        "template": "Gold standard; the light-spirit-on-hearty-soup lock that sells itself.",
-        "source": "Bacardi Rum|Shrimp Bisque"
-      }
     ],
     "BOURBON_BOLD|RICH_SIDE": [
       {
@@ -21079,10 +13313,6 @@ const CORPUS_MINED = {
     ],
     "SWEET_LIQUEUR|DESSERT_LIGHT": [
       {
-        "template": "Gold standard; this is the digestif-on-dessert match guests remember.",
-        "source": "Beignets|Kahlua"
-      },
-      {
         "template": "This is the Fireball pairing that actually earns its place on the dessert list.",
         "source": "Carrot Cake|Fireball Whisky"
       },
@@ -21091,18 +13321,9 @@ const CORPUS_MINED = {
         "source": "Chambord|Cheesecake"
       },
       {
-        "template": "Gold standard; the unskippable digestif-on-dessert pour.",
-        "source": "Cheesecake|Disaronno"
-      },
-      {
         "template": "A headliner match — context-driven peak.",
         "source": "Cheesecake|Limoncello"
-      },
-      {
-        "template": "heather-honey-scotch base meets burnt-sugar-cream at honey-on-honey register — one of the best scotch-adjacent desserts pairings.",
-        "source": "Creme Brulee|Drambuie"
-      }
-    ],
+      }],
     "VODKA|HEARTY_STARTER": [
       {
         "template": "Belvedere's aromatic rye pepper and vanilla lift tartare's minerality in a way no wheat or corn vodka can — the distinctive vodka-tartare pairing.",
@@ -21232,10 +13453,6 @@ const CORPUS_MINED = {
       }
     ],
     "TEQUILA_BOLD|HEARTY_STARTER": [
-      {
-        "template": "Gold standard; the unskippable añejo-on-rich-side pour.",
-        "source": "Brussels and Belly|Corazon Weller"
-      }
     ],
     "SPARKLING|LIGHT_STARTER": [
       {
@@ -21353,20 +13570,7 @@ const CORPUS_MINED = {
       {
         "template": "Peak flagship-Vintage for chocolate brownie — Taylor's celebrated bottle on the dense bake.",
         "source": "Chocolate Brownie|Taylor Fladgate Vintage Bottle"
-      },
-      {
-        "template": "Peak Vintage Port for chocolate cake — cocoa-on-cocoa with bottle-aged depth.",
-        "source": "Chocolate Cake|Graham's 2017 Vintage Port"
-      },
-      {
-        "template": "Peak flagship-Vintage for chocolate cake — cocoa-on-cocoa with evolving intensity.",
-        "source": "Chocolate Cake|Taylor Fladgate Vintage Bottle"
-      },
-      {
-        "template": "Peak step-up Tawny for peanut butter brownie — nut-on-nut complexity.",
-        "source": "Graham's 20 Year Tawny|Peanut Butter Brownie"
-      }
-    ],
+      }],
     "SPARKLING|DESSERT_LIGHT": [
       {
         "template": "Peak dessert-sparkling for our water-bath cheesecake's density.",
@@ -21435,12 +13639,7 @@ const CORPUS_MINED = {
       {
         "template": "Excellent on brownie; the heavy-molasses burnt-sugar character with earthy-woody depth threads chocolate at historical-rum register — this is the wooden-still story in a glass.",
         "source": "Chocolate Brownie|Jung and Wulff Guyana"
-      },
-      {
-        "template": "Excellent on brownie; the solera's honey-caramel thread meets warm chocolate at luxury register — this is the sipping-rum-on-dessert move.",
-        "source": "Chocolate Brownie|Ron Zacapa Rum"
-      }
-    ],
+      }],
     "COCKTAIL_BOLD|DESSERT_CHOCOLATE": [
       {
         "template": "Peak coffee-chocolate pairing — the espresso and coffee liqueur meet the dense fudge brownie's cocoa directly, and Averna's bitterness cuts the chocolate frosting's sweetness.",
@@ -21648,10 +13847,6 @@ const CORPUS_MINED = {
       }
     ],
     "MEZCAL|RICH_SIDE": [
-      {
-        "template": "Gold standard; the mezcal-on-rich-side lock that sells itself.",
-        "source": "Los Vecinos Mezcal|Mushrooms"
-      }
     ],
     "SPARKLING|HEARTY_STARTER": [
       {
@@ -21825,10 +14020,6 @@ const CORPUS_MINED = {
       {
         "template": "Excellent; Nolet's rose-peach-raspberry profile is the distinctive gin-burrata pairing in the batch — where Plymouth softens and Sapphire is floral-softer, Nolet's is overtly fruit-forward, reading almost like a floral companion to the cream.",
         "source": "Burrata|Nolets Dry Gin"
-      },
-      {
-        "template": "Excellent; Roku's sakura-floral complements cream with Japanese-elegance — floral-on-cream parallel to Flora Adora's lavish-garden or Empress 1908's rose, with distinctive sakura character.",
-        "source": "Burrata|Roku Gin"
       },
       {
         "template": "Excellent; the chamomile notes meet cream softer than Bombay Dry's angular juniper while the citrus adds lift Plymouth's sweetness doesn't.",
@@ -23337,10 +15528,6 @@ const CORPUS_MINED = {
     ],
     "WHITE_WINE|LIGHT_SIDE": [
       {
-        "template": "Excellent; this is the white-on-light-side pairing servers reach for.",
-        "source": "Asparagus|Stoneleigh Sauvignon Blanc"
-      },
-      {
         "template": "Excellent; Napa Sauv Blanc's green-herb brightness amplifies broccolini's green-vegetal character at flagship register.",
         "source": "Broccolini|St Supéry Sauvignon Blanc"
       }
@@ -23557,10 +15744,6 @@ const CORPUS_MINED = {
     ],
     "SWEET_LIQUEUR|DESSERT_CHOCOLATE": [
       {
-        "template": "Excellent; the cocoa-cream-vanilla profile threads chocolate at iconic-cream-liqueur register — chocolate-on-chocolate through cream.",
-        "source": "Baileys Irish Cream|Chocolate Brownie"
-      },
-      {
         "template": "Excellent; the vanilla-cocoa-cream profile wraps peanut-chocolate at classic-Baileys dessert register.",
         "source": "Baileys Irish Cream|Peanut Butter Brownie"
       },
@@ -23573,20 +15756,8 @@ const CORPUS_MINED = {
         "source": "Buffalo Trace Cream|Peanut Butter Brownie"
       },
       {
-        "template": "Excellent; the amaretto-vanilla-almond profile threads chocolate at iconic-Italian register — almond-on-cocoa, the chocolate-amaretto classic.",
-        "source": "Chocolate Brownie|Disaronno"
-      },
-      {
         "template": "Excellent; the Scotch-whisky base with heather-honey threads chocolate at Scottish-digestif register — honey-whisky on cocoa.",
         "source": "Chocolate Brownie|Drambuie"
-      },
-      {
-        "template": "Excellent; the rum-base-coffee-sugar character threads chocolate at iconic-coffee-liqueur register — sweet-coffee-on-cocoa, the Mexican-liqueur standard on dessert.",
-        "source": "Chocolate Brownie|Kahlua"
-      },
-      {
-        "template": "Excellent; the tequila-coffee character (drier, stronger) threads chocolate at 35% register — spirit-forward coffee-on-cocoa, for guests who find Kahlua too sweet.",
-        "source": "Chocolate Brownie|Patron XO Cafe"
       },
       {
         "template": "Excellent; sweet-anise-elderflower threads chocolate at Italian register — the coffee-bean tradition (con la mosca) already suggests chocolate-coffee-anise harmony.",
@@ -23885,10 +16056,6 @@ const CORPUS_MINED = {
         "source": "Belvedere Vodka|Shrimp Cocktail"
       },
       {
-        "template": "Excellent; Chopin's creaminess is the only vodka in the category that actually matches burrata's cream — a texture-on-texture pairing no wheat or rye vodka can replicate.",
-        "source": "Burrata|Chopin Vodka"
-      },
-      {
         "template": "Excellent; hometown craft vodka sits alongside cream at Michigan-pride register.",
         "source": "Burrata|Detroit City Vodka"
       },
@@ -24093,10 +16260,6 @@ const CORPUS_MINED = {
     ],
     "TEQUILA_BOLD|HEARTY_STARTER": [
       {
-        "template": "Excellent; the rye-cask spice-depth handles marrow's umami at Expresiones register — spice-on-fat through the rye-whiskey-barrel influence.",
-        "source": "Bone Marrow|Corazon Sazerac"
-      },
-      {
         "template": "Excellent; the ex-GTS-barrel bold-caramel-oak depth handles marrow's umami at Expresiones register — the intense expression matches the plate's intensity.",
         "source": "Bone Marrow|Corazon Stagg"
       },
@@ -24196,10 +16359,6 @@ const CORPUS_MINED = {
       }
     ],
     "DEFAULT|STEAK_LEAN": [
-      {
-        "template": "Excellent; the side-on-steak call lands at full register.",
-        "source": "Bone-In Filet|Lobster Mac"
-      },
       {
         "template": "Excellent; reliable headline side for the steak course.",
         "source": "Bone-In Filet|Truffle Fries"
@@ -24425,10 +16584,6 @@ const CORPUS_MINED = {
         "source": "Captain Morgan Rum|Carrot Cake"
       },
       {
-        "template": "Excellent; the vanilla-cinnamon-clove profile threads the cream at spiced-rum register — the spiced-rum-on-dessert classic, and the Captain's natural habitat.",
-        "source": "Captain Morgan Rum|Cheesecake"
-      },
-      {
         "template": "Excellent; the coconut sweetness adds tropical dimension to carrot-cake spice at sweet-flavored register.",
         "source": "Carrot Cake|Malibu Rum"
       }
@@ -24600,10 +16755,6 @@ const CORPUS_MINED = {
       }
     ],
     "VODKA|HEARTY_SOUP": [
-      {
-        "template": "Excellent; creamy-on-creamy is Chopin's featured pairing — the silky texture rides the bisque's richness as a luxury companion rather than cutting it.",
-        "source": "Chopin Vodka|Shrimp Bisque"
-      }
     ],
     "TEQUILA_BOLD|STEAK_LEAN": [
       {
@@ -24647,10 +16798,6 @@ const CORPUS_MINED = {
       {
         "template": "Excellent; ex-wheated-barrel soft character handles truffle-salt-fat at softer-Expresiones register.",
         "source": "Corazon Weller|Truffle Fries"
-      },
-      {
-        "template": "Excellent; Los Altos highland character with 3-year French-oak threads mushroom-earth at terroir-forward register — earth-on-earth through estate-grown depth.",
-        "source": "Don Fulano Anejo|Mushrooms"
       },
       {
         "template": "Excellent; the 3-year French-oak complexity handles truffle-salt-fat at extended-aged terroir register.",
@@ -24761,12 +16908,7 @@ const CORPUS_MINED = {
       {
         "template": "Excellent; reliable headline side for the steak course.",
         "source": "Creamed Spinach|Porterhouse"
-      },
-      {
-        "template": "Excellent; the side-on-steak call lands at full register.",
-        "source": "Lobster Mac|Bone-In Filet"
-      }
-    ],
+      }],
     "HEAVY_SPIRIT|DESSERT_CHOCOLATE": [
       {
         "template": "Excellent; the high-ester Jamaican funk wraps peanut-chocolate in tropical-fruit intensity — bold pairing, rewards the guest who wants character.",
@@ -24805,14 +16947,6 @@ const CORPUS_MINED = {
       {
         "template": "Excellent; Kentucky Owl St.",
         "source": "Faroe Island Salmon|Kentucky Owl St. Patrick's"
-      },
-      {
-        "template": "Excellent; Redbreast 12's oily-spicy pot still character matches the salmon's oiliness — texture-on-texture resonance at premium-Irish register.",
-        "source": "Faroe Island Salmon|Redbreast 12 Year"
-      },
-      {
-        "template": "Excellent; Redbreast 21's aged pot still character matches salmon's oiliness at collector register — the pot still oiliness texture-on-texture Redbreast 12 opens and the 21 closes.",
-        "source": "Faroe Island Salmon|Redbreast 21 Year"
       },
       {
         "template": "Excellent; Toki's light-floral character is gentle enough for fish — Japanese whisky's delicate-elegant-balanced category lets Toki sit with salmon where heavier whiskies overwhelm, parallel to Irish whiskey's category advantage.",

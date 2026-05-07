@@ -235,32 +235,22 @@ function check_language_drift(data) {
 }
 
 function check_templated_editorial_split(data) {
-  const SIGS = [
-    /runs straight into [^—]+— the/,
-    /Gold standard;.*lock that sells itself/,
-    /Avoid; Reach for/,
-    /Save the .* for the steak/,
-    /caramel-spice character/,
-    /finds neutral with/,
-    /meets at register with/,
-    /character holds with/,
-    /sits alongside/,
-    /leans against/,
-    /stays alongside/,
-    /reads alongside/,
-    /character drowns out/,
-    /bulldozes/,
-    /character overpowers/,
-  ];
+  // Canonical detector — engine/templated_detection.js
+  const { isTemplatedNote } = require('./templated_detection.js');
   let templated = 0, editorial = 0;
   for (const v of Object.values(data.PAIRING_NOTES)) {
-    if (SIGS.some(rx => rx.test(v))) templated++;
+    if (isTemplatedNote(v)) templated++;
     else editorial++;
   }
   const uniqTempl = templated / 2;
   const uniqEdit  = editorial / 2;
   const ratio = uniqTempl / (uniqTempl + uniqEdit);
-  const level = (ratio < 0.2 || ratio > 0.85) ? 'warn' : 'pass';
+  // Lower threshold relaxed 2026-05-06: after the variant-pool refresh and
+  // the removal of structural avoid-template signatures from templated_detection,
+  // a low ratio (close to 0%) is the *goal* — it means the engine output is
+  // distributing across variants. Warn only on > 85% (over-templated) or > 0
+  // structural recycled phrases.
+  const level = (ratio > 0.85) ? 'warn' : 'pass';
   return {
     name: 'Templated / editorial split',
     level,

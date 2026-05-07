@@ -234,7 +234,7 @@ const BOTTLE_PROFILES_MINED = {
     verdictHook: "digestif liqueur",
   },
   "G.D. Vajra Moscato d'Asti": {
-    character: "peach-and-honey frizzante sweetness cannot",
+    character: "peach-and-honey frizzante sweetness",
     verdictHook: "Moscato",
   },
   "Ghost Block Cabernet Sauvignon": {
